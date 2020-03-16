@@ -1,0 +1,23 @@
+state={
+	id=37
+	name="SEINE_INFERIEURE_37"
+	history={
+		owner = FRA
+		add_core_of = FRA
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 2
+		}
+		# Rouen
+		victory_points = {
+			917 20
+		}
+	}
+	provinces={
+		779 790 807 826 841 842 872 873 874 895 904 916 917 924 931 932 933 938 946 955 959 960 961 969 975 976 977 978 987 995 1001 1002 1008 1009 1016 1021 1028 1029 1030 1033 1039 1040 1057 1058 1059 1067 1068 1069 1070 1071 1091 1101 1107 1108 1109 1129 1149 937 1155
+	}
+	manpower=5000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

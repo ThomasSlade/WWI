@@ -1,0 +1,17 @@
+state={
+	id=36
+	name="SEINE_ET_MARNE_36"
+	history={
+		owner = FRA
+		add_core_of = FRA
+		buildings = {
+			infrastructure = 6
+		}
+	}
+	provinces={
+		452 458 471 472 480 498 504 505 508 515 516 521 531 538 544 545 557 558 560 561 572 615 624 625 634 641 642 651 666 672 673 698 719 686 722
+	}
+	manpower=5000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

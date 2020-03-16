@@ -1,0 +1,8 @@
+supply_area={
+	id=17
+	name="SAARBRUCKEN_17"
+	value=25
+	states={
+		32 35 
+	}
+}

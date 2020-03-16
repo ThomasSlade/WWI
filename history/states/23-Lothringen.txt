@@ -1,0 +1,21 @@
+state={
+	id=23
+	name="LOTHRINGEN_23"	# AKA Lorraine
+	history={
+		owner = GER
+		add_core_of = GER
+		buildings = {
+			infrastructure = 6
+		}
+		# Metz
+		victory_points = {
+			829 20
+		}
+	}
+	provinces={
+		571 621 654 655 669 682 712 713 714 740 741 746 764 765 771 774 775 785 794 802 803 829 836 880 881 893 920 929 953 
+	}
+	manpower=5000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

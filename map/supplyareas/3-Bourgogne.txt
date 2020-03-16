@@ -1,0 +1,8 @@
+supply_area={
+	id=3
+	name="BOURGOGNE_3"
+	value=25
+	states={
+		40 17 18 
+	}
+}

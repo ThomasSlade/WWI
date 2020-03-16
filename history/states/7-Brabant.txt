@@ -1,0 +1,31 @@
+state={
+	id=7
+	name="BRABANT_7"
+	history={
+		owner = BEL
+		add_core_of = BEL
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 2
+		}
+		# Brussels
+		victory_points = {
+			1381 50
+		}
+	}
+	provinces={
+		1329 1330 1342 1343 1350 1362 1363 1367 1368 1375 1380 1381 1391 1404 1409 1410 1412 1424 1425 1443 1479 1491 
+	}
+	resources={
+		steel=100
+		aluminium=100
+		oil=100
+		tungsten=100
+		rubber = 100
+		chromium = 100
+	}
+	manpower=8000000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

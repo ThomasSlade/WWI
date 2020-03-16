@@ -1,0 +1,21 @@
+state={
+	id=28
+	name="MEUSE_28"
+	history={
+		owner = FRA
+		add_core_of = FRA
+		buildings = {
+			infrastructure = 6
+		}
+		# Verdun
+		victory_points = {
+			671 15
+		}
+	}
+	provinces={
+		527 540 563 564 587 588 631 653 662 663 689 701 702 703 739 745 749 784 792 793 814 821 835 845 852 858 879 892 910 919 928 966 999 1012 
+	}
+	manpower=5000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,17 @@
+state={
+	id=22
+	name="LIMBOURG_22"
+	history={
+		owner = BEL
+		add_core_of = BEL
+		buildings = {
+			infrastructure = 6
+		}
+	}
+	provinces={
+		1382 1392 1405 1444 1471 1472 1473 1500 1512 1514 1529 
+	}
+	manpower=5000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

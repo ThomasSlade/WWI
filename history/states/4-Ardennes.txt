@@ -1,0 +1,21 @@
+state={
+	id=4
+	name="ARDENNES_4"
+	history={
+		owner = FRA
+		add_core_of = FRA
+		buildings = {
+			infrastructure = 6
+		}
+		# Sedan
+		victory_points = {
+			1095 5
+		}
+	}
+	provinces={
+		890 891 901 909 927 951 952 964 965 982 988 998 1024 1025 1048 1049 1053 1074 1082 1083 1087 1094 1095 1104 1123 1124 1134 1141 1182
+	}
+	manpower=5000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,23 @@
+state={
+	id=3
+	name="ANTWERP_3"
+	history={
+		owner = BEL
+		add_core_of = BEL
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		# Antwerp
+		victory_points = {
+			1522 30
+		}
+	}
+	provinces={
+		1504 1507 1510 1511 1513 1522 1523 1526 1532 1538 1543 1547 1548 1551 1558 
+	}
+	manpower=5000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

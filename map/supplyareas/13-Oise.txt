@@ -1,0 +1,8 @@
+supply_area={
+	id=13
+	name="OISE_13"
+	value=25
+	states={
+		31 
+	}
+}

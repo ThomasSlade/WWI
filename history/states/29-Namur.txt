@@ -1,0 +1,21 @@
+state={
+	id=29
+	name="NAMUR_29"
+	history={
+		owner = BEL
+		add_core_of = BEL
+		buildings = {
+			infrastructure = 6
+		}
+		# Namur
+		victory_points = {
+			1290 25
+		}
+	}
+	provinces={
+		1111 1151 1167 1186 1193 1194 1198 1207 1212 1218 1225 1230 1236 1245 1252 1262 1268 1269 1280 1290 1304 1311 1333 
+	}
+	manpower=5000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

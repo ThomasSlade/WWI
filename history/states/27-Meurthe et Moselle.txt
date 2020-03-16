@@ -1,0 +1,21 @@
+state={
+	id=27
+	name="MEURTHE_ET_MOSELLE_27"
+	history={
+		owner = FRA
+		add_core_of = FRA
+		buildings = {
+			infrastructure = 6
+		}
+		# Nancy
+		victory_points = {
+			618 50
+		}
+	}
+	provinces={
+		535 548 554 555 565 566 617 618 619 620 632 645 646 690 691 711 750 822 859 911 956 983 
+	}
+	manpower=5000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

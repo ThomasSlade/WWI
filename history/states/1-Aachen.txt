@@ -1,0 +1,21 @@
+state={
+	id=1
+	name="AACHEN_1"
+	history={
+		owner = GER
+		add_core_of = GER
+		buildings = {
+			infrastructure = 6
+		}
+		# Aachen
+		victory_points = {
+			1445 25
+		}
+	}
+	provinces={
+		1274 1281 1284 1323 1324 1351 1364 1369 1378 1394 1406 1417 1428 1445 1480 1486 1492 1493 1496 1508 1515 1539
+	}
+	manpower=5000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

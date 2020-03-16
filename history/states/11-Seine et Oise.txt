@@ -1,0 +1,21 @@
+state={
+	id=11
+	name="SEINE_ET_OISE_11"
+	history={
+		owner = FRA
+		add_core_of = FRA
+		buildings = {
+			infrastructure = 6
+		}
+		# Versailles
+		victory_points = {
+			623 25
+		}
+	}
+	provinces={
+		475 479 489 514 520 526 537 543 556 567 612 623 638 639 650 658 677 678 684 707 718 731 732 743 744 768 780 
+	}
+	manpower=5000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,3 @@
+# WWI: This needs to be here or the game will crash when loading a match. It took me 3 weeks to find this. 3 fucking weeks. No errors from Paradox.
+# I'm leaving this comment here because I'm stupendously bitter and I want those 3 weeks back. Paradox, if you're reading this, log your errors.
+tutorial = {}

@@ -1,0 +1,17 @@
+state={
+	id=10
+	name="EUPEN_MALMEDY_10"
+	history={
+		owner = GER
+		add_core_of = GER
+		buildings = {
+			infrastructure = 6
+		}
+	}
+	provinces={
+		1220 1240 1263 1264 1300 1345 
+	}
+	manpower=5000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

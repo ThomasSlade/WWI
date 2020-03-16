@@ -1,0 +1,31 @@
+state={
+	id=33
+	name="PARIS_33"
+	history={
+		owner = FRA
+		add_core_of = FRA
+		buildings = {
+			infrastructure = 9
+			arms_factory = 3
+			industrial_complex = 3
+		}
+		# Paris
+		victory_points = {
+			671 50
+		}
+	}
+	provinces={
+		586 633 640 659 671 679 685 697 706 
+	}
+	resources={
+		steel=100
+		aluminium=100
+		oil=100
+		tungsten=100
+		rubber = 100
+		chromium = 100
+	}
+	manpower=40000000
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

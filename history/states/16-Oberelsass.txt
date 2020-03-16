@@ -1,0 +1,21 @@
+state={
+	id=16
+	name="Oberelsass_16"	# AKA Haut-Rhin
+	history={
+		owner = GER
+		add_core_of = GER
+		buildings = {
+			infrastructure = 6
+		}
+		# Mulhausen
+		victory_points = {
+			431 5
+		}
+	}
+	provinces={
+		391 398 406 418 425 428 429 431 435 440 446 447 460 478 
+	}
+	manpower=5000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,21 @@
+state={
+	id=13
+	name="EAST_FLANDERS_13"
+	history={
+		owner = BEL
+		add_core_of = BEL
+		buildings = {
+			infrastructure = 6
+		}
+		# Ghent
+		victory_points = {
+			1503 25
+		}
+	}
+	provinces={
+		1386 1387 1403 1416 1423 1427 1441 1442 1470 1478 1484 1485 1498 1499 1502 1503 1518 1520 1521 1525 1528 1537 1542 1544 1545 1546 
+	}
+	manpower=5000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

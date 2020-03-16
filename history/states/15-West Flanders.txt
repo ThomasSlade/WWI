@@ -1,0 +1,21 @@
+state={
+	id=15
+	name="WEST_FLANDERS_15"
+	history={
+		owner = BEL
+		add_core_of = BEL
+		buildings = {
+			infrastructure = 6
+		}
+		# Ypres
+		victory_points = {
+			1415 5
+		}
+	}
+	provinces={
+		1374 1390 1401 1402 1408 1414 1415 1422 1440 1476 1477 1483 1494 1495 1501 1506 1517 1527 1536 1541 
+	}
+	manpower=5000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,8 @@
+supply_area={
+	id=12
+	name="NORTH_ARDENNES_12"
+	value=25
+	states={
+		25 24 
+	}
+}

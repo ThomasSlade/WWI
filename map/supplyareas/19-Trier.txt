@@ -1,0 +1,8 @@
+supply_area={
+	id=19
+	name="TRIER_19"
+	value=25
+	states={
+		39 10 
+	}
+}

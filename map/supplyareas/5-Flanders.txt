@@ -1,0 +1,8 @@
+supply_area={
+	id=5
+	name="FLANDERS_5"
+	value=25
+	states={
+		15 13 14 
+	}
+}
