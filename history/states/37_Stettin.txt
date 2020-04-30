@@ -1,0 +1,18 @@
+#COLOR 44 145 70
+state={
+	id=37
+	name=37_Stettin
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		3633 3645 3801 3703 3697 3711 3634 3739 3850 3541 3781 3628 3561 3800 3712 3749 3722 3685 3597 3582 3826 3576 3738 3794 3530 3788 3653 3618 3672 3787 3673 3657
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

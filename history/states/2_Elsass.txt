@@ -1,0 +1,18 @@
+#COLOR 0 147 60
+state={
+	id=2
+	name=2_Elsass
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		1581 1657 1870 1486 1587 1737 1756 1324 1237 1305 1713 1263 1341 1704 1827 1262 1838 1837 1658 1357 1400 1558 1796 1810 1641 1496 1375 1815 1546 1836 1809 1857 1288 1693 1444 1451
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

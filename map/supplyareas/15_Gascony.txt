@@ -1,0 +1,8 @@
+supply_area={
+	id=15
+	name=15_Gascony
+	value=0
+	states={
+		79 3 69 
+	}
+}

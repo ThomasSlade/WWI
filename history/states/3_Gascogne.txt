@@ -1,0 +1,18 @@
+#COLOR 1 133 222
+state={
+	id=3
+	name=3_Gascogne
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		258 488 290 261 253 599 501 435 203 362 531 208 310 277 198 305 647 202 276 347 553 197 482 393 450 525 535 416 352 234 311 337 493 508 613 629 648 693 242 395 616 615 515 300 594 498 235 503 354 353 588 567 462 577 204 327 559 671 546 338 519 451 417 430 558 293 534
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

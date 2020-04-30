@@ -1,0 +1,18 @@
+#COLOR 21 87 173
+state={
+	id=11
+	name=11_Dauphine
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		628 634 787 572 537 783 744 551 730 459 492 619 480 524 757 566 682 580 640 573 518 550 491 434 688 415 770 725 455 782 557 467 484 529 646 549 624 765 513 448 659 606 544 530 571 612 657 633 466 632 500 669 429 698 487 658 523 543 581 593 697 514 598 734 585 687
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

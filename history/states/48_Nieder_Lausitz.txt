@@ -1,0 +1,18 @@
+#COLOR 52 138 96
+state={
+	id=48
+	name=48_Nieder_Lausitz
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		3303 3333 2917 3186 2925 3439 3033 2916 3135 2824 2924 3058 2988 3236 3136 3044 3158 2867 3018 3185 2965 3092 3261 3070 3373 3313 2883 3101 3000 3105 3077 2989 3001 2974
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

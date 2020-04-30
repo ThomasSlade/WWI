@@ -1,0 +1,18 @@
+#COLOR 44 116 50
+state={
+	id=36
+	name=36_Schwarzwald_Kries
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		1699 1538 1696 1531 1334 1695 1434 1605 1480 1671 1627 1714 1411 1384 1452 1322 1670 1797 1771 1633 1479 1594 1618 1757 1539 1669 1473 1588 1530 1559 1740 1385 1490
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,8 @@
+supply_area={
+	id=11
+	name=11_Frankfurt
+	value=0
+	states={
+		48 
+	}
+}

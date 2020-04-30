@@ -1,0 +1,18 @@
+#COLOR 200 192 159
+state={
+	id=115
+	name=115_Belgian_Luxembourg
+	history={
+		owner = BEL
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = BEL
+	}
+	provinces={
+		2257 2309 2220 2351 2235 2105 2323 2194 2297 2261 2119 2316 2229 2158 2361 2163 2193 2277 2127
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,18 @@
+#COLOR 121 76 26
+state={
+	id=81
+	name=81_Utrecht
+	history={
+		owner = HOL
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = HOL
+	}
+	provinces={
+		2996 2997 3097 3083 3049 3006 2995 3021 3152 2984 3096 3011 2966 3048 3132 3072 3041 3137 3061 3029 3020 3082 3098 3109 3188 3022 3065
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

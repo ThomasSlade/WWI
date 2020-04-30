@@ -1,0 +1,8 @@
+supply_area={
+	id=47
+	name=47_Silesia
+	value=0
+	states={
+		92 50 64 28 8 
+	}
+}

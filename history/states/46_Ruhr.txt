@@ -1,0 +1,18 @@
+#COLOR 51 219 53
+state={
+	id=46
+	name=46_Ruhr
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		2624 2819 2776 2837 2738 2788 2758 2771 2797 2663 2752 2804 2706 2818 2860 2880 2848 2703 2625 2805 2556 2838 2667 2695 2711 2855
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

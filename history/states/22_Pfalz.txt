@@ -1,0 +1,18 @@
+#COLOR 34 71 38
+state={
+	id=22
+	name=22_Pfalz
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		2045 2142 1944 2137 1902 2113 1971 2097 2013 1979 1943 2027 2096 2044 1954 2146 2077 1964 2085 2014 2086 1992
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

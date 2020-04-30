@@ -1,0 +1,18 @@
+#COLOR 197 215 68
+state={
+	id=114
+	name=114_Namur
+	history={
+		owner = BEL
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = BEL
+	}
+	provinces={
+		2287 2302 2276 2251 2377 2256 2228 2338 2315 2412 2373 2192 2360 2344 2374 2270 2345 2411 2296
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

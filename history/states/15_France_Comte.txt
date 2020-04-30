@@ -1,0 +1,18 @@
+#COLOR 24 87 123
+state={
+	id=15
+	name=15_France_Comte
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		1007 1214 940 1366 1113 1229 1203 1100 1184 1178 1250 1256 1163 1134 1106 1332 1340 962 1135 1089 977 990 939 985 1225 1190 1015 1218 1230 1128 1147 1055 1008 1383 1150 1271 959 1183 1060 1173 934 1312 1038 1097 1196 1045 1294 1284 1202 1323 1255 1311 1077
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

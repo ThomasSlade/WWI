@@ -1,0 +1,18 @@
+#COLOR 149 137 91
+state={
+	id=101
+	name=101_Limburg
+	history={
+		owner = HOL
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = HOL
+	}
+	provinces={
+		2677 2504 2567 2554 2756 2878 2643 2693 2743 2844 2544 2786 2661
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

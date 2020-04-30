@@ -1,0 +1,18 @@
+#COLOR 43 64 142
+state={
+	id=33
+	name=33_Osnabruck
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		3183 3390 3230 3210 3263 3391 3444 3200 3544 3159 3194 3249 3276 3084 3593 3619 3558 3336 3548 3467 3123 3377 3154 3264 3328 3535 3209 3282 3286 3189 3579 3603 3500 3226 3343
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

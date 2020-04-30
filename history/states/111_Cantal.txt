@@ -1,0 +1,18 @@
+#COLOR 193 118 241
+state={
+	id=111
+	name=111_Cantal
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		655 605 562 554 622 644 643 604 586 527 564 650 642 639 583 623 592 579 664 618 667 651 691 570 637 578 521 627 547 587 517 665 608
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

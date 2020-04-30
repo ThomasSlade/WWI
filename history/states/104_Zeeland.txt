@@ -1,0 +1,18 @@
+#COLOR 160 226 116
+state={
+	id=104
+	name=104_Zeeland
+	history={
+		owner = HOL
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = HOL
+	}
+	provinces={
+		2708 2886 2812 2825 2770 2774 2719 2783 2735 2868 2794 2795
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,8 @@
+supply_area={
+	id=39
+	name=39_Pas_de_Calais
+	value=0
+	states={
+		80 10 
+	}
+}

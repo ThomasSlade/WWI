@@ -1,0 +1,18 @@
+#COLOR 141 141 150
+state={
+	id=96
+	name=96_North_Potsdam
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		3607 3540 3511 3438 3415 3385 3405 3570 3470 3357 3450 3340 3643 3565 3380 3596 3512 3547 3496 3428 3386 3471 3482 3525
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,8 @@
+supply_area={
+	id=32
+	name=32_Nattes_Liege
+	value=0
+	states={
+		114 117 
+	}
+}

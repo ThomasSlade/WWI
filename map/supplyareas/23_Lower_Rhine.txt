@@ -1,0 +1,8 @@
+supply_area={
+	id=23
+	name=23_Lower_Rhine
+	value=0
+	states={
+		101 109 
+	}
+}

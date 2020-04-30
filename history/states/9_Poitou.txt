@@ -1,0 +1,18 @@
+#COLOR 16 24 93
+state={
+	id=9
+	name=9_Poitou
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		1049 1061 992 1039 853 960 1010 981 872 952 1056 877 967 1034 1012 1031 932 915 1029 881 993 913 893 953 1047 987 966 957 1017 898 1003 928 935 1009 1016 911 986 912 1025 988 1004 867 943 1050 956 1011 1030 1067 1021 972 914 916 955 891
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

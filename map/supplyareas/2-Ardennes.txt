@@ -1,8 +1,0 @@
-supply_area={
-	id=2
-	name="ARDENNES_2"
-	value=25
-	states={
-		4 
-	}
-}

@@ -1,0 +1,18 @@
+#COLOR 40 136 158
+state={
+	id=32
+	name=32_Alpes_Maritimes
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		408 225 370 336 316 269 351 247 330 298 280 299 346 443 371
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,8 @@
+supply_area={
+	id=29
+	name=29_Moselle
+	value=0
+	states={
+		5 77 
+	}
+}

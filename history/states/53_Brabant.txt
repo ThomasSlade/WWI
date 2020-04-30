@@ -1,0 +1,18 @@
+#COLOR 60 54 40
+state={
+	id=53
+	name=53_Brabant
+	history={
+		owner = BEL
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = BEL
+	}
+	provinces={
+		2534 2502 2578 2631 2532 2441 2652 2642 2492 2543 2508 2666 2620 2736 2493 2462 2701 2742 2533 2705 2710 2484 2458 2579 2726 2580 2522 2612 2531 2594 2670 2461
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

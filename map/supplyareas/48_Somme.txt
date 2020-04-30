@@ -1,0 +1,8 @@
+supply_area={
+	id=48
+	name=48_Somme
+	value=0
+	states={
+		100 
+	}
+}

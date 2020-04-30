@@ -1,0 +1,18 @@
+#COLOR 74 217 204
+state={
+	id=62
+	name=62_Mittelfranken
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		2177 1980 2223 2132 1897 2167 2176 2133 2071 2131 2191 2098 1947 2190 1946 2066 2108 2015 1926 2183 2109 2138 2168 2148 2065 2016
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

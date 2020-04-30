@@ -1,0 +1,18 @@
+#COLOR 162 249 93
+state={
+	id=105
+	name=105_Gronigen
+	history={
+		owner = HOL
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = HOL
+	}
+	provinces={
+		3480 3376 3342 3432 3307 3327 3491 3534 3291 3403 3473 3362 3281 3431 3285
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

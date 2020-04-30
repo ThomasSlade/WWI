@@ -1,0 +1,18 @@
+#COLOR 179 36 164
+state={
+	id=108
+	name=108_Loire_Inferieure
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		1257 1219 1179 1185 1157 1129 1156 1081 1285 1083 1101 1232 1186 1198 1191 1222 1279
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

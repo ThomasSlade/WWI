@@ -1,0 +1,18 @@
+#COLOR 204 58 98
+state={
+	id=117
+	name=117_Liege
+	history={
+		owner = BEL
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = BEL
+	}
+	provinces={
+		2438 2442 2386 2595 2535 2503 2581 2463 2418 2465 2387 2428 2459 2575 2475 2671 2517 2466 2431 2497 2432 2393 2621 2356 2632
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

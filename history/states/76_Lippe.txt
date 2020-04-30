@@ -1,0 +1,18 @@
+#COLOR 111 151 138
+state={
+	id=76
+	name=76_Lippe
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		2949 2937 2861 2986 3067 3036 3155 3216 3177 3124 2902 2987 3176 2938 2870 3057 3023 3104 2998 2862 3063 2968 2948 3012 3190 3134 3148 2932 3195
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

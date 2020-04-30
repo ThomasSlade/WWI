@@ -1,0 +1,18 @@
+#COLOR 141 180 230
+state={
+	id=97
+	name=97_Avignon
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		427 388 325 441 289 406 367 309 368 345 428 376 331 421
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

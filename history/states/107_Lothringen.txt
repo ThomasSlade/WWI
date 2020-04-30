@@ -1,0 +1,18 @@
+#COLOR 177 195 105
+state={
+	id=107
+	name=107_Lothringen
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		1968 1856 1878 1917 1749 1921 1787 1896 1729 1736 1712 1895 1931 1855 2043 1922 1901 1959 1804 1668 1990 1886 2036 1869 1879 1942 1692 1786 1788 1805
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

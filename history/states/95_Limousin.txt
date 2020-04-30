@@ -1,0 +1,18 @@
+#COLOR 139 60 235
+state={
+	id=95
+	name=95_Limousin
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		707 699 884 878 591 826 908 736 739 844 610 732 861 680 679 714 805 882 868 754 654 771 885 900 778 917 811 918 603 737 841 700 621 808 800 869 596 849 873 713 828 636 718 792 617 840 832 582 827 649 883 815 747 817 899 738 653 755 746 793 663 794 901 855 676 728
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

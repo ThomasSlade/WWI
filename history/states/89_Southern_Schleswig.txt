@@ -1,0 +1,18 @@
+#COLOR 132 252 188
+state={
+	id=89
+	name=89_Southern_Schleswig
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		3843 3911 3953 3812 3927 3897 3837 3912 3898 3915 3932 3853 3855 3875 3854 3831 3878 3890 3877
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,8 @@
+supply_area={
+	id=2
+	name=2_Baden
+	value=0
+	states={
+		31 75 
+	}
+}

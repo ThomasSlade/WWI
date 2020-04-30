@@ -1,0 +1,18 @@
+#COLOR 203 172 230
+state={
+	id=116
+	name=116_Charente
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		824 807 775 742 753 769 726 779 837 825 838 866 712 839 708 854 745 763 759 674 673 735 852 683 790 910 711 638 843 768 810 672 767 814 722 886 804 903 813 758 652 731 876 791 823 776 859 678 806 635 799
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

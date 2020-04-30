@@ -1,0 +1,18 @@
+#COLOR 82 0 103
+state={
+	id=66
+	name=66_Luxembourg
+	history={
+		owner = LUX
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = LUX
+	}
+	provinces={
+		2164 2252 2120 2155 2262 2212 2083 2187 2173 2069 2094 2141 2135
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

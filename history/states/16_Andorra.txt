@@ -1,0 +1,18 @@
+#COLOR 26 92 0
+state={
+	id=16
+	name=16_Andorra
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		24 31 26 28
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

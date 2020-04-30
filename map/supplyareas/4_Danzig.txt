@@ -1,0 +1,8 @@
+supply_area={
+	id=4
+	name=4_Danzig
+	value=0
+	states={
+		27 49 
+	}
+}

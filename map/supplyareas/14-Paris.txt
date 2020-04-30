@@ -1,8 +1,0 @@
-supply_area={
-	id=14
-	name="PARIS_14"
-	value=25
-	states={
-		33 11 
-	}
-}

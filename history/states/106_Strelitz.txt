@@ -1,0 +1,18 @@
+#COLOR 173 207 41
+state={
+	id=106
+	name=106_Strelitz
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		3595 3694 3601 3652 3524 3590 3552 3569 3581 3670 3560 3632
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

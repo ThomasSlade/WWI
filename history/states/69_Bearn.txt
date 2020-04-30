@@ -1,0 +1,18 @@
+#COLOR 95 232 238
+state={
+	id=69
+	name=69_Bearn
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		155 114 177 127 105 121 201 77 78 80 101 57 65 152 136 95 153 92 91 109 161 154 145 71 82 48
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

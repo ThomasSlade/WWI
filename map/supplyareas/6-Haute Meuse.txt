@@ -1,8 +1,0 @@
-supply_area={
-	id=6
-	name="HAUTE_MEUSE_6"
-	value=25
-	states={
-		28 27 
-	}
-}

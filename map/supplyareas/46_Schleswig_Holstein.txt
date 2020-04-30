@@ -1,0 +1,8 @@
+supply_area={
+	id=46
+	name=46_Schleswig_Holstein
+	value=0
+	states={
+		89 44 42 
+	}
+}

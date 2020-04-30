@@ -1,0 +1,18 @@
+#COLOR 118 148 165
+state={
+	id=77
+	name=77_Vosges
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		1579 1603 1516 1616 1409 1408 1770 1680 1711 1911 1681 1814 1656 1724 1748 1485 1517 1999 1442 1632 1399 1507 1518 1545 1398 1747 1450 1471 1443 1529 1639 1604 1580 1640 1941 1461 1371 2063 1564
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

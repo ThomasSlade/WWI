@@ -1,0 +1,18 @@
+#COLOR 150 220 147
+state={
+	id=102
+	name=102_Braunschweig
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		3118 3196 3228 2933 2881 2903 2864 3197 3030 3251 3110 3087 3074 3156 3168 3126 2969 2951 2958 2950 3178 3202 3004 3025 2959 3161 2849 3068 3111 2970 3037 2888 3024 2922 2814
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

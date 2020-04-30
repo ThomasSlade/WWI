@@ -1,0 +1,8 @@
+supply_area={
+	id=24
+	name=24_Magdeburg
+	value=0
+	states={
+		74 
+	}
+}

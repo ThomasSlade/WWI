@@ -1,0 +1,18 @@
+#COLOR 21 21 190
+state={
+	id=10
+	name=10_Calais
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		2586 2604 2381 2483 2593 2552 2425 2434 2482 2527 2513
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

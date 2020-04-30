@@ -1,0 +1,18 @@
+#COLOR 22 71 78
+state={
+	id=12
+	name=13_Finisterre
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		1572 1379 1372 1465 1621 1273 1378 1361 1541 1327 1650 1716 1300 1438 1447 1701 1571 1231 1437 1367 1313 1424 1238 1731 1387 1501 1416 1425 1660 1197 1278 1360 1651 1510 1247 1299
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

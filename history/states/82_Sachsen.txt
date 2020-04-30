@@ -1,0 +1,18 @@
+#COLOR 122 131 224
+state={
+	id=82
+	name=82_Sachsen
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		2831 2882 2488 2684 2753 2615 2823 2790 2773 2691 2520 2873 2850 2430 2820 2761 2707 2822 2464 2866 2634 2857 2698 2558 2741 2572 2846 2766 2821 2636 2767 2722 2635 2760 2809 2791 2664 2768 2539 2830
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,8 @@
+supply_area={
+	id=3
+	name=3_Berlin
+	value=0
+	states={
+		96 43 4 
+	}
+}

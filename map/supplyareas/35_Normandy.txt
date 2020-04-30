@@ -1,0 +1,8 @@
+supply_area={
+	id=35
+	name=35_Normandy
+	value=0
+	states={
+		29 26 
+	}
+}

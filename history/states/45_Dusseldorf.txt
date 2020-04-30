@@ -1,0 +1,18 @@
+#COLOR 51 125 70
+state={
+	id=45
+	name=45_Dusseldorf
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		2803 2654 2887 2836 2892 2947 2936 2757 2744 2911 2689 2813 2854 2694 2662 2787 2728
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

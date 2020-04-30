@@ -1,0 +1,8 @@
+supply_area={
+	id=42
+	name=42_Ruhr
+	value=0
+	states={
+		46 45 13 
+	}
+}

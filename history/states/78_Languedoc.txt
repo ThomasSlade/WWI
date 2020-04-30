@@ -1,0 +1,18 @@
+#COLOR 119 142 232
+state={
+	id=78
+	name=78_Languedoc
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		195 238 174 119 59 256 206 118 180 43 85 244 200 74 100 194 173 89 84 75 70 117 60 223 231 124 53 165 141 76 148 61 123 286 106 143 63 120 99 264 167 205 139 134 94 103 224 295 45 219 166 142 107
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

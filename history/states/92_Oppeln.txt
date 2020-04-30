@@ -1,0 +1,18 @@
+#COLOR 136 132 214
+state={
+	id=92
+	name=92_Oppeln
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		2559 2733 2941 2686 2811 2718 2769 2800 2781 2724 2640 2762 2601 2734 2782 2639 2647 2875 2853 2920 2637 2700 2650 2573 2541 2723 2885 2699 2668 2638
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

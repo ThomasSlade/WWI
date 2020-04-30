@@ -1,0 +1,18 @@
+#COLOR 10 158 130
+state={
+	id=6
+	name=6_Kulmerland
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		3795 3731 3629 3745 3725 3733 3834 3751 3803 3713 3695 3696 3777 3835 3686 3758 3790 3764 3757 3865 3750 3705 3708 3768 3676 3867 3724 3732 3767 3796 3828 3773 3756 3666 3802 3845
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,18 @@
+#COLOR 40 44 42
+state={
+	id=31
+	name=31_Karlsruhe
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		1844 2087 2070 1739 2130 1816 1738 1887 1789 2182 1565 2181 1617 1694 1945 2088 2028 1626 2147 2121 1965 1871 1547 1923 2046 1972 1839 1682 1843 1552 1566 2047
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

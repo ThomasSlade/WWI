@@ -1,0 +1,8 @@
+supply_area={
+	id=14
+	name=14_Frisia
+	value=0
+	states={
+		105 118 
+	}
+}

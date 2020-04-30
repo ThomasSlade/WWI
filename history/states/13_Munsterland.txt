@@ -1,0 +1,18 @@
+#COLOR 22 79 61
+state={
+	id=13
+	name=13_Munsterland
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		3103 3042 2893 2942 2879 2931 2912 2957 2913 2978 3122 3066 2977 2901 3062 3160 2967 2859 2985 3050 3117 3056 3055 3139 3007 3051 3003
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

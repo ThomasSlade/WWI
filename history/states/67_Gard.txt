@@ -1,0 +1,18 @@
+#COLOR 91 95 138
+state={
+	id=67
+	name=67_Gard
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		287 478 391 548 507 542 422 645 611 340 533 584 504 344 359 461 555 329 440 460 279 302 366 432 265 470 486 404 313 505 536 420 528 465 423 471 565 390 266 320 414 405 479 545 324 323 506 563 433 400 497 387 365 360 677 597 496 228 411 185 552 314 512 576
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

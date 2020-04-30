@@ -1,0 +1,18 @@
+#COLOR 39 69 62
+state={
+	id=27
+	name=27_Pomerelia
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		3862 3995 3920 3846 3902 3841 3884 3959 4018 3955 3943 3999 3976 3866 3908 3921 3829 3883 4017
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

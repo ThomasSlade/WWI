@@ -1,0 +1,18 @@
+#COLOR 78 78 78
+state={
+	id=64
+	name=64_Liegnitz
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		2939 2810 2874 2927 3047 3120 3102 2991 2990 3221 2905 2858 2715 2962 2918 3059 3114 3035 3149 2851 2980 2833 2926 3172 3034 2749 2780 2732 2919 3038 2750 2832 2979 3145 3165 3071 3164
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

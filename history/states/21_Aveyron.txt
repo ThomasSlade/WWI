@@ -1,0 +1,18 @@
+#COLOR 29 207 107
+state={
+	id=21
+	name=21_Aveyron
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		343 328 397 410 383 364 357 386 312 333 464 308 356 291 454 399 469 477 418 453 375 282 389 476 485 278 306 355 447 394 263 270 439 426 452 294 322 437 358 252 398 522
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,18 @@
+#COLOR 58 79 26
+state={
+	id=51
+	name=51_Overijssel
+	history={
+		owner = HOL
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = HOL
+	}
+	provinces={
+		3248 3208 3121 3225 3229 3215 3239 3259 3138 3193 3153 3175 3133 3099 3298 3174
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

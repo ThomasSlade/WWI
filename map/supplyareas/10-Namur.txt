@@ -1,8 +1,0 @@
-supply_area={
-	id=10
-	name="NAMUR_10"
-	value=25
-	states={
-		29 21 
-	}
-}

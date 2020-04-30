@@ -1,0 +1,18 @@
+#COLOR 34 84 96
+state={
+	id=23
+	name=23_Stralsund
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		3716 3748 3928 3833 3913 3813 3664 3808 3929 3882 3798 3814 3644 3893 3780 3772 3779 3744 3671 3572 3832 3849 3892 3858 3799 3707 3737 3839 3761 3864 3720 3721 3571
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

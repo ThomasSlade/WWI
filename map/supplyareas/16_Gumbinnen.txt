@@ -1,0 +1,8 @@
+supply_area={
+	id=16
+	name=16_Gumbinnen
+	value=0
+	states={
+		38 63 
+	}
+}

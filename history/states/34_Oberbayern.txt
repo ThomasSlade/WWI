@@ -1,0 +1,18 @@
+#COLOR 43 85 155
+state={
+	id=34
+	name=34_Oberbayern
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		1498 1569 1377 1889 1752 1620 1583 1684 1481 1532 1491 1807 1698 1464 1673 1401 1446 1606 1415 1520 1499 1634 1859 1790 1402 1595 1307 1454 1715 1607 1436 1642 1674 1570 1509 1568 1500 1475 1386 1534 1533 1761 1298 1445 1453 1672 1760 1508 1725 1659 1596 1683 1306
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

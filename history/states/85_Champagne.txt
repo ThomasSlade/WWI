@@ -1,0 +1,18 @@
+#COLOR 127 52 171
+state={
+	id=85
+	name=85_Champagne
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		1678 1631 1667 1460 1865 1470 1413 2011 1813 1795 1602 1930 1459 1679 1421 1666 1483 1803 1355 1734 1420 1834 1708 1907 1382 1515 1562 1963 1768 1613 1707 1429 1767 1506 1527 1563 1866 1578 1825 1909 1735 1962 1867 1916 1908 1894 1537 1364 1614 1551 1706 1778
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

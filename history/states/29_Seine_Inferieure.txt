@@ -1,0 +1,18 @@
+#COLOR 40 23 175
+state={
+	id=29
+	name=29_Seine_Inferieure
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		1849 2018 2049 2152 1832 2004 2169 2203 2123 2178 1961 1915 2225 2099 1850 2050 1899 2060 2074 1754 2100 1949 2150 2039 2031 2080 2003 1863 1987 1721 1792 2091 2059 2151 1774 1928 1876 2101 1938
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

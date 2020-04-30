@@ -1,0 +1,18 @@
+#COLOR 45 85 58
+state={
+	id=38
+	name=38_Kleinlitauen
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		4040 3962 4019 4070 4060 4055 4059 3905 4056 4030 3970 4047 3989 4063 3937 4064 3918 4038 3941 4012 4002 3963 4039 3914 4068 4024 4015 4034 4027 3982 4050 3924 4045 3986 4067 3896 4053 4062 3881 4065 4003 3998 4066 3945 4025 3925 3964 3938 4033 4051 3997
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

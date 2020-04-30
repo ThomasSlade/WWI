@@ -1,0 +1,18 @@
+#COLOR 50 148 68
+state={
+	id=44
+	name=44_Northern_Schleswig
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		3974 3973 4010 3972 3954 3958 3983 4009 3965 3990 4013 3994 3947 3946
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,18 @@
+#COLOR 98 121 111
+state={
+	id=71
+	name=71_Schwaben
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		1463 1751 1297 1619 1435 1759 1474 1872 1700 1540 1335 1628 1390 1697 1582 1873 1821 1251 1519 1772 1359 1567 1326 1820
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

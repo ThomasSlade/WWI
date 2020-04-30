@@ -1,0 +1,8 @@
+supply_area={
+	id=12
+	name=12_French_Pyrenees
+	value=0
+	states={
+		60 61 16 
+	}
+}

@@ -1,0 +1,8 @@
+supply_area={
+	id=44
+	name=44_Savoie
+	value=0
+	states={
+		19 11 
+	}
+}

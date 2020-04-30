@@ -1,0 +1,18 @@
+#COLOR 206 132 93
+state={
+	id=118
+	name=118_Friesland
+	history={
+		owner = HOL
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = HOL
+	}
+	provinces={
+		3375 3459 3409 3360 3455 3353 3479 3574 3402 3361 3425 3430 3499
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

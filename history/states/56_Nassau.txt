@@ -1,0 +1,18 @@
+#COLOR 65 108 192
+state={
+	id=56
+	name=56_Nassau
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		2291 2626 2395 2339 2346 2413 2448 2476 2570 2303 2375 2547 2505 2477 2433 2429 2326 2317
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,8 @@
+supply_area={
+	id=45
+	name=45_Saxony
+	value=0
+	states={
+		82 94 
+	}
+}

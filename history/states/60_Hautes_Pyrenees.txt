@@ -1,0 +1,18 @@
+#COLOR 72 56 95
+state={
+	id=60
+	name=60_Hautes_Pyrenees
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		281 64 128 68 97 44 182 55 115 131 42 301 87 98 56 52 111 262 38 249 274 137 248 102 86 132 30 50 218 72 46 36 81 41 164 156 39 79 66 93 192 237 73 146 88 217 209 54 178 110 210 49 140 96 69 147 317 162 236 58 199
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

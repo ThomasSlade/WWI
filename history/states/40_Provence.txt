@@ -1,0 +1,18 @@
+#COLOR 46 0 137
+state={
+	id=40
+	name=40_Provence
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		297 233 378 334 424 151 315 214 304 144 170 321 268 468 240 341 267 326 296 135 272 130 190 216 303 260 502 189 377 108 442 407 191 104 350 215 126 241 273 113 481 392 163 292 112 335 449 369 384 401
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

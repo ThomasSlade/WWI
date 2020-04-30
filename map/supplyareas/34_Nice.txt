@@ -1,0 +1,8 @@
+supply_area={
+	id=34
+	name=34_Nice
+	value=0
+	states={
+		40 32 
+	}
+}

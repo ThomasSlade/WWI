@@ -1,0 +1,18 @@
+#COLOR 195 171 226
+state={
+	id=112
+	name=112_Lyonnais
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		764 786 762 803 830 740 802 668 797 842 724 704 750 860 889 812 772 703 796 845 702 710 733 856
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

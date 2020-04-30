@@ -1,0 +1,8 @@
+supply_area={
+	id=26
+	name=26_Marseille
+	value=0
+	states={
+		113 97 
+	}
+}

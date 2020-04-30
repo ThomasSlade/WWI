@@ -1,0 +1,18 @@
+#COLOR 27 52 38
+state={
+	id=17
+	name=17_Eupen_Malmedy
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		2331 2467 2406 2310 2362 2443
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,8 +1,0 @@
-supply_area={
-	id=18
-	name="STRASSBURG_18"
-	value=25
-	states={
-		6 23 16
-	}
-}

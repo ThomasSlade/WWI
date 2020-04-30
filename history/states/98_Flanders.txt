@@ -1,0 +1,18 @@
+#COLOR 143 171 52
+state={
+	id=98
+	name=98_Flanders
+	history={
+		owner = BEL
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = BEL
+	}
+	provinces={
+		2602 2665 2651 2587 2496 2574 2577 2619 2528 2688 2659 2709 2676 2617 2515 2658 2660 2530 2618 2641 2516 2566 2630 2507 2687 2529 2553 2588
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

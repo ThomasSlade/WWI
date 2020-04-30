@@ -1,0 +1,18 @@
+#COLOR 12 110 26
+state={
+	id=7
+	name=7_Unterfranken
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		2216 2248 2231 2333 2292 2415 2314 2439 2293 2318 2272 2298 2222 2247 2327 2398 2365 2236 2259 2380 2347 2175 2389 2388 2166 2334
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

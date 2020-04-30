@@ -1,0 +1,18 @@
+#COLOR 70 153 58
+state={
+	id=59
+	name=59_Bromberg
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		3557 3635 3533 3598 3542 3658 3411 3699 3682 3650 3599 3600 3704 3465 3602 3613 3649 3614 3513 3440 3478 3528 3466 3556 3489 3578 3408 3592 3623 3665 3490 3573 3543
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

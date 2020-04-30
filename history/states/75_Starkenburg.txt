@@ -1,0 +1,18 @@
+#COLOR 104 119 149
+state={
+	id=75
+	name=75_Starkenburg
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		2159 2215 2255 2246 2114 2180 2214 2243 2206 2189 2265 2195 2174
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,8 @@
+supply_area={
+	id=9
+	name=9_Flanders
+	value=0
+	states={
+		53 110 98 
+	}
+}

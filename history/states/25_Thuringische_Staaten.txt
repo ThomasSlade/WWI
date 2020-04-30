@@ -1,0 +1,18 @@
+#COLOR 36 48 55
+state={
+	id=25
+	name=25_Thuringische_Staaten
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		2600 2628 2690 2657 2421 2633 2551 2675 2584 2481 2399 2681 2453 2592 2627 2471 2550 2599 2549 2563 2721 2649 2704 2501 2613 2697 2470 2480 2564 2683 2519 2495 2526 2614 2610 2479 2511
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

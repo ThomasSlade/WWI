@@ -1,8 +1,0 @@
-supply_area={
-	id=20
-	name="PH_20"
-	value=25
-	states={
-		41 42 43 44 
-	}
-}

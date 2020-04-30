@@ -1,0 +1,8 @@
+supply_area={
+	id=1
+	name=1_Ardennes
+	value=0
+	states={
+		66 115 
+	}
+}

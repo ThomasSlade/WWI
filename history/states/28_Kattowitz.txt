@@ -1,0 +1,18 @@
+#COLOR 39 96 68
+state={
+	id=28
+	name=28_Kattowitz
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		2801 2585 2725 2793 2669 2560 2565 2616
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

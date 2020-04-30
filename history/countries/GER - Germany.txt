@@ -1,4 +1,4 @@
-﻿capital = 20
+﻿capital = 3338
 
 oob = "GER_1936"
 set_fuel_ratio = 0.8

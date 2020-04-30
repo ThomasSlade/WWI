@@ -1,0 +1,18 @@
+#COLOR 183 54 19
+state={
+	id=109
+	name=109_North_Brabant
+	history={
+		owner = HOL
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = HOL
+	}
+	provinces={
+		2775 2876 2910 2751 2796 2826 2921 2737 2877 2785 2835 2755 2930 2869 2909 2727 2842 2827 2843 2802 2900 2784 2946
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

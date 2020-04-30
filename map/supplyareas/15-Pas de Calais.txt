@@ -1,8 +1,0 @@
-supply_area={
-	id=15
-	name="PAS_DE_CALAIS_15"
-	value=25
-	states={
-		30 34
-	}
-}

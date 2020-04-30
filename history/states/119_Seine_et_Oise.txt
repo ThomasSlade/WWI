@@ -1,0 +1,18 @@
+#COLOR 216 96 210
+state={
+	id=119
+	name=119_Seine_et_Oise
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		1705 1665 1775 1505 1852 1561 1883 1823 1793 1524 1555 1905 1591 1637 1851 1893 1630 1689 1864 1833 1766 1525 1653 1590
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

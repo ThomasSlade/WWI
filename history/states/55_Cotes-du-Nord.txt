@@ -1,0 +1,18 @@
+#COLOR 61 158 247
+state={
+	id=55
+	name=55_Cotes-du-Nord
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		1799 1403 1448 1686 1635 1511 1598 1391 1717 1573 1662 1608 1314 1502 1661 1548 1412 1597 1741 1629 1584 1560 1643 1687 1622 1308 1336 1487 1585 1466 1542 1685 1623 1521 1380 1742 1492
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

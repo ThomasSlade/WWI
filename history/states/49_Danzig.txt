@@ -1,0 +1,18 @@
+#COLOR 52 175 120
+state={
+	id=49
+	name=49_Danzig
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		3939 3952 3935 3909 3967 4014 3977 3984 3930 3992 3951 3987 3931
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,18 @@
+#COLOR 127 232 196
+state={
+	id=87
+	name=87_Koln
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		2623 2569 2589 2555 2561 2485 2608 2607 2486 2446 2546 2605 2672 2524 2582 2655 2499 2606 2678 2518
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,8 @@
+supply_area={
+	id=22
+	name=22_Lippe
+	value=0
+	states={
+		76 
+	}
+}

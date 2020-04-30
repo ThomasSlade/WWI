@@ -1,0 +1,18 @@
+#COLOR 195 181 245
+state={
+	id=113
+	name=113_Bouches_du_Rhone
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		245 271 246 149 159 193 220 129 239 229 259 213 212 168 187 232 186 207 188 125 181 288 160 196 169 158 150 176 257
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

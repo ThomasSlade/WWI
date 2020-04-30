@@ -1,0 +1,18 @@
+#COLOR 52 21 126
+state={
+	id=47
+	name=47_Seine_et_Marne
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		1824 1248 1407 1842 1469 1513 1209 1677 1777 1477 1722 1354 1728 1286 1703 1576 1320 1612 1441 1550 1808 1223 1268 1348 1600 1526 1269 1458 1601 1514 1648 1339 1784 1319 1440 1649 1287 1397 1242 1406 1577 1625
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

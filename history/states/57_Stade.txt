@@ -1,0 +1,18 @@
+#COLOR 67 36 111
+state={
+	id=57
+	name=57_Stade
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GER
+	}
+	provinces={
+		3456 3586 3510 3566 3636 3585 3630 3519 3691 3379 3442 3546 3655 3484 3683 3501 3615 3413 3587 3537 3667 3468 3369 3624
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

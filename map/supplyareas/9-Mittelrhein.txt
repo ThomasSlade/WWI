@@ -1,8 +1,0 @@
-supply_area={
-	id=9
-	name="MITTLERHEIN_9"
-	value=25
-	states={
-		19 20 
-	}
-}

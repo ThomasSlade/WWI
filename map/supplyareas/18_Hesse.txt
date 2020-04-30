@@ -1,0 +1,8 @@
+supply_area={
+	id=18
+	name=18_Hesse
+	value=0
+	states={
+		72 39 56 
+	}
+}
