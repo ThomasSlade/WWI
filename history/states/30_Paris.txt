@@ -2,17 +2,27 @@
 state={
 	id=30
 	name=30_Paris
+	resources={
+		chromium = 999
+		tungsten = 999
+		aluminium = 999
+		oil = 999
+		rubber = 999
+		steel = 999
+	}
 	history={
 		owner = FRA
 		buildings = {
 			infrastructure = 4
+			industrial_complex = 6
+			arms_factory = 6
 		}
 		add_core_of = FRA
 	}
 	provinces={
 		1733 1817 1745 1776 1744 1755 1802
 	}
-	manpower=1000
+	manpower=10000000
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=megalopolis
 }

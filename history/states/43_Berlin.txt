@@ -2,17 +2,27 @@
 state={
 	id=43
 	name=43_Berlin
+	resources={
+		chromium = 999
+		tungsten = 999
+		aluminium = 999
+		oil = 999
+		rubber = 999
+		steel = 999
+	}
 	history={
 		owner = GER
 		buildings = {
 			infrastructure = 4
+			industrial_complex = 6
+			arms_factory = 6
 		}
 		add_core_of = GER
 	}
 	provinces={
 		3338 3312 3322 3355 3396 3356 3339 3302 3332
 	}
-	manpower=1000
+	manpower=10000000
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=megalopolis
 }

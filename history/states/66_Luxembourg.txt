@@ -2,17 +2,27 @@
 state={
 	id=66
 	name=66_Luxembourg
+	resources={
+		chromium = 999
+		tungsten = 999
+		aluminium = 999
+		oil = 999
+		rubber = 999
+		steel = 999
+	}
 	history={
 		owner = LUX
 		buildings = {
 			infrastructure = 4
+			industrial_complex = 6
+			arms_factory = 6
 		}
 		add_core_of = LUX
 	}
 	provinces={
 		2164 2252 2120 2155 2262 2212 2083 2187 2173 2069 2094 2141 2135
 	}
-	manpower=1000
+	manpower=10000000
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=megalopolis
 }

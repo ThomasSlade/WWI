@@ -2,17 +2,27 @@
 state={
 	id=120
 	name=120_Holland
+	resources={
+		chromium = 999
+		tungsten = 999
+		aluminium = 999
+		oil = 999
+		rubber = 999
+		steel = 999
+	}
 	history={
 		owner = HOL
 		buildings = {
 			infrastructure = 4
+			industrial_complex = 6
+			arms_factory = 6
 		}
 		add_core_of = HOL
 	}
 	provinces={
 		3040 2956 3274 3275 3192 3166 3080 3081 2955 3222 3199 2983 2899 3247 3290 3335 2963 3028 3019 3116 2908 3289 3002 3131 3108 2945 3167 3412 3536 2994 2929 2907
 	}
-	manpower=1000
+	manpower=10000000
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=megalopolis
 }
