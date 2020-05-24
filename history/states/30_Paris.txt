@@ -22,7 +22,7 @@ state={
 	provinces={
 		1733 1817 1745 1776 1744 1755 1802
 	}
-	manpower=10000000
+	manpower=100000000
 	buildings_max_level_factor=1.000
 	state_category=megalopolis
 }
