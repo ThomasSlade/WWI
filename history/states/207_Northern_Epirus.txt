@@ -1,0 +1,18 @@
+#COLOR 170 91 97
+state={
+	id=207
+	name=207_Northern_Epirus
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = TUR
+	}
+	provinces={
+		5224 5312 5362 5594 5793 5916 6103 6209 6425 6498 6527 6597 6727 6728 6864 7070 7171 7546 7766 7891 7922
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

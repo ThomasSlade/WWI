@@ -1,0 +1,18 @@
+#COLOR 142 26 37
+state={
+	id=192
+	name=192_Dalmatia
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = AUS
+	}
+	provinces={
+		3743 4065 4136 4186 4247 4560 4601 4890 4938 5267 5442 5782 5947 5951 6017 6064 6167 6588 6590 6595 6924 7116 7435 7463 7514
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

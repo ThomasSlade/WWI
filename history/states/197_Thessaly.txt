@@ -1,0 +1,18 @@
+#COLOR 154 208 235
+state={
+	id=197
+	name=197_Thessaly
+	history={
+		owner = GRE
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GRE
+	}
+	provinces={
+		4276 4318 4406 4533 4588 4589 4626 4704 4873 4921 4923 4930 5019 5026 5151 5155 5197 5199 5241 5289 5340 5348 5349 5394 5427 5480 5652 5657 5729 5827 5894 5931 5937 5977 6146 6158 6187 6372 6412 6644 6710 6761 6981 7063
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

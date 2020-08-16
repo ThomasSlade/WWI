@@ -1,0 +1,18 @@
+#COLOR 57 101 124
+state={
+	id=141
+	name=141_Pressburg
+	history={
+		owner = HUN
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = HUN
+	}
+	provinces={
+		984 985 986 1026 1027 1069 1071 1120 1287 1337 1345 1383 1691 1695 1696 1912 1963 2002 2003 2051 2052 2097 2140 2200 2204 2397 2408 2440 2505 2546 2644 2813 2856 3211 3484 3608 3811
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

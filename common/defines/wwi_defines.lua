@@ -4,3 +4,4 @@ NDefines.NGame.END_DATE = "1923.1.1.1"
 NDefines.NGame.MAP_SCALE_PIXEL_TO_KM = 2.1589	-- Based on the distance between Paris and Istanbul on the game map (~1045px).
 NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.1
 NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.1
+NDefines.NMilitary.UNIT_DIGIN_CAP = 2

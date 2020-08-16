@@ -1,0 +1,18 @@
+#COLOR 106 20 39
+state={
+	id=171
+	name=171_Syrmia
+	history={
+		owner = HUN
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = HUN
+	}
+	provinces={
+		1736 1993 2368 2714 2880 3461 3623 3661 3902 3903 3941 4891 5834 5835 6097 6387 6388 6461 6552
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

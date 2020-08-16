@@ -1,0 +1,18 @@
+#COLOR 62 154 187
+state={
+	id=145
+	name=145_Carpathian_Ruthenia
+	history={
+		owner = HUN
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = HUN
+	}
+	provinces={
+		618 958 1041 1093 1181 1221 1254 1257 1302 1303 1357 1431 1469 1569 1660 1727 1762 1774 1980 2217 2348 2466 2511 2553 2563 2646 2649 2748 2757 2758 2904 2917 3131 3138 3340 3403 3650 3737 3780 4098 4173 4715
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

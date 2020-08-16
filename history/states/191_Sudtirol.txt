@@ -1,0 +1,18 @@
+#COLOR 139 93 55
+state={
+	id=191
+	name=191_Sudtirol
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = AUS
+	}
+	provinces={
+		3551 4037 4038 4111 4144 4261 4519 4696 5049 5415 5416 5553 5598 5718 5876 6254 6565 6603 6693 6737 6816 6847 6848 6901 7156 7312
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

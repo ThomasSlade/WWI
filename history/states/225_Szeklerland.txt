@@ -1,0 +1,18 @@
+#COLOR 195 223 166
+state={
+	id=225
+	name=225_Szeklerland
+	history={
+		owner = HUN
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = HUN
+	}
+	provinces={
+		5933 5934 6188 6326 6408 6409 6485 6513 6514 6581 6582 6584 6614 6643 6648 6758 6785 6786 6880 6919 6983 7033 7089 7090 7092 7094 7165 7185 7226 7253 7276 7332 7353 7355 7386 7387 7428 7538 7560 7562 7563 7564 7565 7668 7703 7779 7780 7795 7985
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,18 @@
+#COLOR 236 150 140
+state={
+	id=238
+	name=238_Oberosterreich
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = AUS
+	}
+	provinces={
+		6772 6811 6845 6867 6934 7103 7238 7261 7493 7496 7498 7576 7639 7645 7660 7835 7874 7875 7928 7943 7972 7976 8020 8022 8039 8040 8070 8116 8118 8120 8128 8164 8184 8185 8228 8240 8252 8260 8283 8288 8296 8298 8305 8334
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

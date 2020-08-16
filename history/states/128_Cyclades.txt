@@ -1,0 +1,18 @@
+#COLOR 29 75 101
+state={
+	id=128
+	name=128_Cyclades
+	history={
+		owner = GRE
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GRE
+	}
+	provinces={
+		365 405 437 519 1558 1564 1845
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

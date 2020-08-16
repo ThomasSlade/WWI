@@ -1,0 +1,18 @@
+#COLOR 109 212 62
+state={
+	id=178
+	name=178_Bihar
+	history={
+		owner = HUN
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = HUN
+	}
+	provinces={
+		1010 1048 1441 1522 1871 2159 2224 2267 2317 2480 2523 2702 2703 2704 2765 2821 2911 2965 2978 3139 3178 3308 3309 3350 3448 3451 3458 3491 3620 3697 3935 3980 3983 4460 4499 4596 4838 4887 4936 5036 5487 5543
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,18 @@
+#COLOR 37 157 66
+state={
+	id=132
+	name=132_Sudetenland
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = AUS
+	}
+	provinces={
+		195 222 223 248 256 320 419 569 694 780 792 1054 1096 1308 1316 1434 1524 1721 1815 1876 1919 2067 2115 2309 2367 2766 2823 2974 3541
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

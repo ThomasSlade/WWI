@@ -1,0 +1,13 @@
+#COLOR 94 67 97
+state={
+	id=165
+	name=165_Zara
+	history={
+	}
+	provinces={
+		3189 4244 4294
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,18 @@
+#COLOR 242 83 115
+state={
+	id=239
+	name=239_Split
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = AUS
+	}
+	provinces={
+		6302 6522 7120 7211 7539 7610 7636 7683 7723 7744 7818 7937 8034 8095 8223 8236 8266 8268 8285 8328
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,18 @@
+#COLOR 126 109 25
+state={
+	id=187
+	name=187_Silistra
+	history={
+		owner = BUL
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = BUL
+	}
+	provinces={
+		2339 2676 2890 3114 3152 3594 3600 3872 4079 4270 4356 4569 4613 4615 5094 5234 5470 5850 5885 6007 6076 6184 6293 6319 6323 6479 6574 6608 6949
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

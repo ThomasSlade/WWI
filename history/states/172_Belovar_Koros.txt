@@ -1,0 +1,18 @@
+#COLOR 106 76 109
+state={
+	id=172
+	name=172_Belovar_Koros
+	history={
+		owner = HUN
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = HUN
+	}
+	provinces={
+		2780 2784 2934 2984 2985 3145 3148 3190 3240 3357 3359 3386 3510 3553 3791 4196 4467 4693 5087 5185 5223 5414 5554 5597 5637 5714 5795 5877 5955 5957 5998 6069 6106
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

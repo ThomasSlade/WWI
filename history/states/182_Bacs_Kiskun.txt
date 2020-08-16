@@ -1,0 +1,18 @@
+#COLOR 119 49 40
+state={
+	id=182
+	name=182_Bacs_Kiskun
+	history={
+		owner = HUN
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = HUN
+	}
+	provinces={
+		2717 2829 3147 3188 3319 3503 3706 3869 4188 4189 4190 4388 4427 4691 4719 4772 4775 4996 5453 5550 5710 5917 5958 5991 6525 6594 6658 6800 6840 6841
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

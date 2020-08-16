@@ -1,0 +1,18 @@
+#COLOR 185 45 30
+state={
+	id=217
+	name=217_Edirne
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = TUR
+	}
+	provinces={
+		5218 5630 5908 5950 6022 6171 6207 6341 6389 6460 6523 6554 6651 6839 7067 7169 7190 7208 7338 7460 7465 7595 7669 7685 7706 7782 7784 7800 7886 7987 7989 7998 8019 8052 8108 8147 8148 8204 8212 8238
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

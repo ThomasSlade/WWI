@@ -1,0 +1,18 @@
+#COLOR 235 115 219
+state={
+	id=236
+	name=236_Bukovina
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = AUS
+	}
+	provinces={
+		6526 6557 6655 6838 6989 7040 7041 7069 7121 7149 7259 7414 7415 7575 7611 7613 7670 7722 7741 7767 7831 7872 7903 7941 8031 8067 8068 8069 8115 8161 8183 8280 8287 8301 8302
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

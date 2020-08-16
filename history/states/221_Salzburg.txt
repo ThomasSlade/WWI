@@ -1,0 +1,18 @@
+#COLOR 190 176 165
+state={
+	id=221
+	name=221_Salzburg
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = AUS
+	}
+	provinces={
+		6445 6505 6607 6744 6745 6746 6749 6911 6944 6946 6973 7005 7057 7085 7133 7220 7221 7505 7531 7627 7700 7755 7756 7793 7811 7913 7932 7933 7935 7948 7980 8091 8092
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

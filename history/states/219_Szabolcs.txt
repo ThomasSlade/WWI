@@ -1,0 +1,18 @@
+#COLOR 187 155 62
+state={
+	id=219
+	name=219_Szabolcs
+	history={
+		owner = HUN
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = HUN
+	}
+	provinces={
+		6219 6292 6509 6740 6905 6913 7083 7247 7328 7347 7409 7447 7448 7626 7696 7733 7754 7845 7963 7970 8012 8089 8159 8167 8210 8221
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

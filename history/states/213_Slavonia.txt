@@ -1,0 +1,18 @@
+#COLOR 180 39 102
+state={
+	id=213
+	name=213_Slavonia
+	history={
+		owner = HUN
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = HUN
+	}
+	provinces={
+		5081 5127 5176 5177 5547 5831 5832 5914 6061 6098 6204 6240 6241 6272 6301 6303 6683 6684 6717 6719 6763 6797 6801 6836 6887 7167 7232 7306 7307 7308 7334 7390 7393 7396 7461 7484 7719 7798 7902 7915 8017 8065 8113 8114 8195
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

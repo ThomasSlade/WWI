@@ -1,0 +1,18 @@
+#COLOR 89 98 151
+state={
+	id=162
+	name=162_Branicevo
+	history={
+		owner = SER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = SER
+	}
+	provinces={
+		2088 2336 2430 2675 2678 2727 2731 2794 2891 2939 2940 2943 2995 3029 3150 3197 3292 3328 3396 3556 3602 3672 3753 3758 3952 4003 4004 4045 4048 4115 4212 4213 4269 4302 4399 4471 4474 4652 4700 4783 4785 4818 4959 5243 5245
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

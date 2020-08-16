@@ -1,0 +1,18 @@
+#COLOR 91 151 158
+state={
+	id=163
+	name=163_Trentschin
+	history={
+		owner = HUN
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = HUN
+	}
+	provinces={
+		2453 2551 2552 2594 2955 2956 3009 3052 3086 3166 3170 3214 3260 3373 3530 3566 3653 3685 3854 3898 3966 3973 3976 4094 4452 4494 4710
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,18 @@
+#COLOR 170 113 150
+state={
+	id=208
+	name=208_Ragusa
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = AUS
+	}
+	provinces={
+		6174 6528 6844 7172 7416 7807
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

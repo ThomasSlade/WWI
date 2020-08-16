@@ -1,0 +1,18 @@
+#COLOR 38 66 34
+state={
+	id=133
+	name=133_Gyumyurdjina
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = TUR
+	}
+	provinces={
+		157 203 264 305 328 329 390 539 541 640 643 686 716 857 861 987 1029 1078 1079 1118 1248 1297 1352 1505 1559 1615 1915 2054 2103 2295 2402
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

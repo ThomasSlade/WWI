@@ -1,0 +1,18 @@
+#COLOR 233 142 178
+state={
+	id=234
+	name=234_Agram
+	history={
+		owner = HUN
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = HUN
+	}
+	provinces={
+		6806 6892 6933 6962 7150 7192 7235 7260 7314 7339 7361 7365 7441 7488 7592 7617 7641 7642 7686 7708 7873 7942 7955 7956 7974 8005 8055 8056 8083 8084 8100 8173 8196 8206 8214 8215 8227 8239 8241 8250 8269 8304 8310 8311 8313 8323 8329 8331 8339
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

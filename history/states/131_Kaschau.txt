@@ -1,0 +1,18 @@
+#COLOR 37 139 165
+state={
+	id=131
+	name=131_Kaschau
+	history={
+		owner = HUN
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = HUN
+	}
+	provinces={
+		98 187 416 869 870 961 1363 1364 1394 1520 1618 1665 1704 1810 2509 2861
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

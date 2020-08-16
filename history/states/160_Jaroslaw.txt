@@ -1,0 +1,18 @@
+#COLOR 88 34 60
+state={
+	id=160
+	name=160_Jaroslaw
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = AUS
+	}
+	provinces={
+		1269 1484 1530 1634 2172 2269 2526 2828 2881 2927 3020 3353 3416 3462 3464 3625 3838 3986 4066 4426 4688 4894 4995 5445 5629 5745
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

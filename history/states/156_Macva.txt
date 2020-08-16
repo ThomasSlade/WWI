@@ -1,0 +1,18 @@
+#COLOR 80 40 166
+state={
+	id=156
+	name=156_Macva
+	history={
+		owner = SER
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = SER
+	}
+	provinces={
+		2169 2483 2715 3103 3142 3274 3275 3626 3701 3748 3837 3868 3942 4067 4140 4246 4379 4386 4390 4423 4512 4515 4642 4895 5221 5273 5317 6243 6309 6599
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

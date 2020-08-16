@@ -1,0 +1,18 @@
+#COLOR 235 165 56
+state={
+	id=237
+	name=237_Craiova
+	history={
+		owner = ROM
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = ROM
+	}
+	provinces={
+		5960 6026 6179 6218 6221 6251 6252 6356 6359 6362 6571 6606 6734 6992 7078 7152 7155 7241 7245 7319 7323 7403 7423 7687 7862 8009 8023 8060 8133 8139 8140 8232 8262 8271 8277 8307 8319
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

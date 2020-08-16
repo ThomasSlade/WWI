@@ -1,0 +1,18 @@
+#COLOR 175 207 114
+state={
+	id=209
+	name=209_Teleorman
+	history={
+		owner = ROM
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = ROM
+	}
+	provinces={
+		4792 5152 5297 5389 5433 5615 5654 5691 5889 6013 6085 6154 6416 6487 6547 6708 6709 6789 6828 6830 6831 6832 6952 7064 7252 7430 7431 7432 7512 7537 7701 7702
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

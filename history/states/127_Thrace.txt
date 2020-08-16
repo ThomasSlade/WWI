@@ -1,0 +1,18 @@
+#COLOR 26 168 54
+state={
+	id=127
+	name=127_Thrace
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = TUR
+	}
+	provinces={
+		72 132 247 251 255 418 456 457 625 698 837 877 1008 1043 1050 1053 1220 1366 1626 1924 2110 2477 2658 2659 2876 3183 3270
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

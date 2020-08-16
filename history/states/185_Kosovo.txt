@@ -1,0 +1,18 @@
+#COLOR 124 97 186
+state={
+	id=185
+	name=185_Kosovo
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = TUR
+	}
+	provinces={
+		3793 4029 4256 4563 4604 4900 4905 5183 5188 5225 5318 5503 5673 5796 5840 5841 5920 5961 6105 6108 6248 6281 6429 6469 6470 6501
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

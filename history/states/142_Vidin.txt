@@ -1,0 +1,18 @@
+#COLOR 58 80 0
+state={
+	id=142
+	name=142_Vidin
+	history={
+		owner = BUL
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = BUL
+	}
+	provinces={
+		233 509 538 646 672 674 717 808 893 943 981 1066 1073 1076 1157 1197 1280 1347 1377 1460 1549 1895 2213 2239 2398 2438 2544 2690 2740 2814 2902 3001 3008 3126 3154 3440 3677 3889 4408 4409
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

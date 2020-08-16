@@ -1,0 +1,18 @@
+#COLOR 166 150 134
+state={
+	id=204
+	name=204_South_Transdanubia
+	history={
+		owner = HUN
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = HUN
+	}
+	provinces={
+		5281 5326 5373 5377 5378 5420 5421 5422 5460 5509 5562 5643 5800 5849 5966 6111 6113 6220 6260 6263 6289 6321 6363 6404 6573 6609 6637 6640 6702 6743 6779 6818 6851 6874 6875 6943 6945 6972 7027 7158 7246 7271 7301 7324 7326 7351 7380 7408 7478 7503 7534 7678 7679 7697
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

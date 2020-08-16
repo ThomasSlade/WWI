@@ -1,0 +1,18 @@
+#COLOR 155 47 63
+state={
+	id=199
+	name=199_Lemko
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = AUS
+	}
+	provinces={
+		4107 4422 5911 6099 6305 6519 6724 6888 7138
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

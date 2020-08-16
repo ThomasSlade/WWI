@@ -1,0 +1,18 @@
+#COLOR 59 143 63
+state={
+	id=144
+	name=144_Sathmar
+	history={
+		owner = HUN
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = HUN
+	}
+	provinces={
+		777 1042 1044 1360 1391 1428 1510 1572 1583 1625 1698 1772 1777 1859 1928 1964 1967 2063 2072 2222 2360 2412 2508 2517 2566 2602 2648 2656 2706 2865 2962 3179 3266 3407 3410 3492 3614 3860
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

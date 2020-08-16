@@ -37,7 +37,7 @@ technologies = {
 		}
 
 		category_all_infantry = {
-			defense = 0.2
+			defense = 1
 		}
 	}
 
@@ -51,7 +51,7 @@ technologies = {
 		doctrine = yes
 		research_cost = 0.35
 
-		max_dig_in = 20
+		max_dig_in = 3
 
 		categories = {
 			land_doctrine
@@ -68,7 +68,7 @@ technologies = {
 		}
 
 		category_all_infantry = {
-			defense = 0.3
+			defense = 1
 		}
 	}
 
@@ -94,11 +94,13 @@ technologies = {
 		ai_will_do =
 		{
 			factor = 1
+
 		}
 
 		category_all_infantry = {
 			breakthrough = 0.1
-			max_organisation = 10
+			max_organisation = 20
+			soft_attack = 0.3
 		}
 	}
 }

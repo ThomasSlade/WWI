@@ -1,0 +1,18 @@
+#COLOR 106 155 137
+state={
+	id=173
+	name=173_Komorn
+	history={
+		owner = HUN
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = HUN
+	}
+	provinces={
+		2818 3087 3216 3372 3647 3649 3814 3891 3928 3977 4097 4279 4316 4548 4984 5166 5263 5351 5385 5582 5696 5828
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

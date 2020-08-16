@@ -1,0 +1,18 @@
+#COLOR 149 189 201
+state={
+	id=196
+	name=196_Crete
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = TUR
+	}
+	provinces={
+		5018 5150 5202 5472 5532 5610 5856 5862 5886 5935 5982 6009 6118 6148 6229 6376 6645 6649 6673 6674 6757 6982
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

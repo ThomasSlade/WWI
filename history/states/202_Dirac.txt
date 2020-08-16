@@ -1,0 +1,18 @@
+#COLOR 163 35 30
+state={
+	id=202
+	name=202_Dirac
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = TUR
+	}
+	provinces={
+		4508 4718 4766 4946 5173 5179 5219 5404 5490 5750 5788 5789 5837 5912 5913 5989 6127 6165 6392 6463 6553 6555 6596 6687 6891 6926 6985 7066 7142 7278 7280 7336 7337 7392 7395 7483 7541 7572 7573 7587 7721 7783 7815 7829 7855 7905 7952 7997
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

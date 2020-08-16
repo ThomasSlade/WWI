@@ -1,0 +1,18 @@
+#COLOR 125 65 117
+state={
+	id=186
+	name=186_Tarnopol
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = AUS
+	}
+	provinces={
+		3187 3234 3465 3867 4070 4138 4191 4253 4721 4723 4809 5132 5316 5406 5492 6213 6214 6342 6426 6725 6769 6842 6930
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

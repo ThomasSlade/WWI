@@ -1,0 +1,18 @@
+#COLOR 142 95 81
+state={
+	id=193
+	name=193_Carinthia
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = AUS
+	}
+	provinces={
+		4145 4193 4257 4260 4297 4351 4431 4468 4694 4902 4951 5001 5135 5227 5230 5319 5843 5918 5996 6027 6133 6250 6286 6310 6397 6432 6437 6468 6532 6661 6664 6735 6868 6904 6942 6995 7024 7049 7074 7075 7077 7105 7126 7290
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

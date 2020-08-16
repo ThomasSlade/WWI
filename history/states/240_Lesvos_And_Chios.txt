@@ -1,0 +1,18 @@
+#COLOR 7 59 174
+state={
+	id=240
+	name=240_Lesvos_And_Chios
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = TUR
+	}
+	provinces={
+		33 117 236 395 818 891 1495 1509 2093 2195 2287 2738
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

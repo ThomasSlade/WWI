@@ -1,0 +1,18 @@
+#COLOR 97 201 207
+state={
+	id=166
+	name=166_Bohmerwald
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = AUS
+	}
+	provinces={
+		2516 2762 3573 4459 4637 5265 5266 5869 6014
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

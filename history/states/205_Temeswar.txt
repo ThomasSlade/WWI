@@ -1,0 +1,18 @@
+#COLOR 169 228 127
+state={
+	id=205
+	name=205_Temeswar
+	history={
+		owner = HUN
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = HUN
+	}
+	provinces={
+		4133 4491 4925 5262 5353 5355 5589 5626 5662 5668 5695 5742 5778 5893 5895 5938 6055 6149 6152 6192 6339 6454 6489 6490 6550 6616 6793 6795 6829 6885 7013 7137 7228 7277 7333
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

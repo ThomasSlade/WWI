@@ -1,0 +1,18 @@
+#COLOR 209 82 206
+state={
+	id=230
+	name=230_Lika
+	history={
+		owner = HUN
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = HUN
+	}
+	provinces={
+		6340 6422 6462 6493 6720 6889 6927 6959 7068 7097 7140 7412 7464 7570 7656 7681 7768 7816 7817 7830 7990 8051 8066 8099 8171 8205 8237 8267 8322 8338
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

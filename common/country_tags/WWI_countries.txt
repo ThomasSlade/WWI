@@ -1,0 +1,6 @@
+SCS = "countries/State of Slovenes Croats and Serbs.txt"
+WUK = "countries/West Ukraine.txt"
+LEM = "countries/Lemko Republic.txt"
+HSR = "countries/Hungarian Soviet Republic.txt"
+SSR = "countries/Slovak Soviet Republic.txt"
+CRN = "countries/Carnaro.txt"

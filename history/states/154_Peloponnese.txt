@@ -1,0 +1,18 @@
+#COLOR 75 94 132
+state={
+	id=154
+	name=154_Peloponnese
+	history={
+		owner = GRE
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GRE
+	}
+	provinces={
+		1751 1893 2086 2190 2387 2540 2673 2674 2679 2944 3030 3078 3330 3475 3637 3641 3759 3765 3804 3808 3879 4215 4475 4618 4620
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

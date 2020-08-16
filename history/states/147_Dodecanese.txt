@@ -1,0 +1,18 @@
+#COLOR 66 145 124
+state={
+	id=147
+	name=147_Dodecanese
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = TUR
+	}
+	provinces={
+		2056 2062 2263 2306 2407 2420 2562 2907 3222 3306 3538
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

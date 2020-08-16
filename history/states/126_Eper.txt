@@ -1,0 +1,18 @@
+#COLOR 21 71 80
+state={
+	id=126
+	name=126_Eper
+	history={
+		owner = HUN
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = HUN
+	}
+	provinces={
+		55 80 95 115 116 142 161 163 164 176 177 241 266 267 271 278 330 335 393 394 411 516 554 683 728 729 735 764 778 814 859 988 998 1209 1217 1242 1388 1424 1506 1568 1614 1703 1707 2299
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

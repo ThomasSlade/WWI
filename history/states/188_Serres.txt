@@ -1,0 +1,18 @@
+#COLOR 132 184 184
+state={
+	id=188
+	name=188_Serres
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = TUR
+	}
+	provinces={
+		3895 4126 4450 4540 4624 4706 4828 4872 4926 5021 5022 5110 5159 5206 5527 5530 5651 5700 5766 5823 5858 5936 5939 5943 5979 6042 6051 6094 6122 6151 6230 6231 6546 6826
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

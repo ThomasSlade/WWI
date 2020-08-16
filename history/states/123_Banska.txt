@@ -1,0 +1,18 @@
+#COLOR 18 188 149
+state={
+	id=123
+	name=123_Banska
+	history={
+		owner = HUN
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = HUN
+	}
+	provinces={
+		30 47 128 154 197 384 417 428 602 702 834 838 1007 1365 1473 1922 2030 2113 2228 2314 2413 2660 2923 3229 3273 3498 3579 3657 3862
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

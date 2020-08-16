@@ -1,0 +1,18 @@
+#COLOR 32 98 44
+state={
+	id=129
+	name=129_Zapadni_Pokraynini
+	history={
+		owner = BUL
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = BUL
+	}
+	provinces={
+		487 781 788 867 1306 1582 1763 2467 2512
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

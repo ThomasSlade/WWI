@@ -1,0 +1,18 @@
+#COLOR 71 98 106
+state={
+	id=150
+	name=150_Phocis
+	history={
+		owner = GRE
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GRE
+	}
+	provinces={
+		1339 1553 1602 1900 1951 2192 2197 2340 2389 2392 2737 2810 3041 3215 3248 3564 3643 4054 4160 4481
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

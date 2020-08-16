@@ -1,0 +1,18 @@
+#COLOR 80 186 119
+state={
+	id=157
+	name=157_Ahtopol
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = TUR
+	}
+	provinces={
+		1718 3176 3268 3575 3621 3783 5035
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

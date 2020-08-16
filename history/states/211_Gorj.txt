@@ -1,0 +1,18 @@
+#COLOR 176 170 158
+state={
+	id=211
+	name=211_Gorj
+	history={
+		owner = ROM
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = ROM
+	}
+	provinces={
+		5925 5970 6003 6034 6077 6078 6116 6141 6223 6265 6290 6322 6448 6478 6577 6578 6751 6753 6781 6821 6878 6915 6978 7059 7060 7061 7113 7184 7198 7199 7250 7384 7385 7450 7451 7452 7453 7454 7557 7608 7629 7654 7666 7680 7757 7758 7826
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

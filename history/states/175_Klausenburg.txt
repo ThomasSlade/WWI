@@ -1,0 +1,18 @@
+#COLOR 108 128 61
+state={
+	id=175
+	name=175_Klausenburg
+	history={
+		owner = HUN
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = HUN
+	}
+	provinces={
+		2497 2585 2587 2739 2744 2746 2805 2850 3036 3038 3121 3160 3207 3366 3400 3401 3442 3522 3526 3639 3724 3926 3959 4087 4121 4165 4323 4482 4486 4742 4913 5016 5068 5205 5253 5346 5431 5613 6041
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

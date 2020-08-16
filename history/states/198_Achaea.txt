@@ -1,0 +1,18 @@
+#COLOR 154 226 222
+state={
+	id=198
+	name=198_Achaea
+	history={
+		owner = GRE
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GRE
+	}
+	provinces={
+		5122 5123 5125 5163 5259 5302 5307 5537 5656 5731 5820 5821 5870 6156 6161 6201 6269 6385 6486 6516 6587 6678 6681 6858 6859 6881 6882 7095 7187 7204
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

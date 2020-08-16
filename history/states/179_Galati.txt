@@ -1,0 +1,18 @@
+#COLOR 114 96 67
+state={
+	id=179
+	name=179_Galati
+	history={
+		owner = ROM
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = ROM
+	}
+	provinces={
+		2726 2789 2791 2839 2841 3323 3471 3554 3635 3669 3799 3911 3954 4300 4434 4436 4469 4472 4906 4954 5052 5093 5139 5278 5321 5457 5508 5640 5677 5758 5801 6001 6140 6176 6288 6402
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

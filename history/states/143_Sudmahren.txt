@@ -1,0 +1,18 @@
+#COLOR 59 116 135
+state={
+	id=143
+	name=143_Sudmahren
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = AUS
+	}
+	provinces={
+		1244 1613 1701 1855 1973 2066 2142 2290 2298 2504 3172 3258
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

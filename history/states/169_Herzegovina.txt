@@ -1,0 +1,18 @@
+#COLOR 103 59 31
+state={
+	id=169
+	name=169_Herzegovina
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = AUS
+	}
+	provinces={
+		2278 2486 2531 2534 2982 3146 3383 4032 4110 4254 4293 4603 4776 5186 5455 5639 5672 5839 6068 6348
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

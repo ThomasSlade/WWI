@@ -1,0 +1,18 @@
+#COLOR 108 0 71
+state={
+	id=174
+	name=174_Istria
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = AUS
+	}
+	provinces={
+		1733 1879 1935 1936 2031 2034 2122 2422 2482 2611 2718 2776 2827 3276 3356 3418 4341 4506 4602 4638 4802 4806 5037 5220 5310 5358 5361 5402 5493 5546 5590 5836 6020 6021 6065 6163 6169 6202 6271 6423 6459 6766 6861
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

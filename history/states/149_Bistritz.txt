@@ -1,0 +1,18 @@
+#COLOR 69 94 79
+state={
+	id=149
+	name=149_Bistritz
+	history={
+		owner = HUN
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = HUN
+	}
+	provinces={
+		1375 1449 1455 1604 1643 1839 1894 1950 2091 2240 2342 2495 2586 2637 2641 2741 2854 2950 2954 3085 3124 3159 3210 3253 3256 3297 3332 3371 3528 3607 3609 3610 3645 3682 3687 3813 3965 3967
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

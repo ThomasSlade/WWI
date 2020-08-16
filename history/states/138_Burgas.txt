@@ -1,0 +1,18 @@
+#COLOR 49 69 58
+state={
+	id=138
+	name=138_Burgas
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = TUR
+	}
+	provinces={
+		471 607 633 636 675 757 896 939 1020 1119 1162 1336 1500 1554 1755 1799 1952 1956 2005 2047 2132 2133 2138 2139 2244 2291 2446 2447 2448 2684 2804 2809 2816 2948 3002 3004 3045 3161 3162 3369
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

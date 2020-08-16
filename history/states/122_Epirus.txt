@@ -1,0 +1,18 @@
+#COLOR 15 95 174
+state={
+	id=122
+	name=122_Epirus
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = TUR
+	}
+	provinces={
+		120 146 308 486 521 597 651 770 868 950 993 1004 1083 1376 1421 1456 1578 1662 1761 1801 1971 2046 2550 2692 3090 3167
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

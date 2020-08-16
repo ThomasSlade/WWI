@@ -1,0 +1,18 @@
+#COLOR 115 137 56
+state={
+	id=180
+	name=180_Krasso_Szoreny
+	history={
+		owner = HUN
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = HUN
+	}
+	provinces={
+		2201 2394 2588 2687 2808 2851 2894 2897 2905 3040 3120 3202 3205 3250 3300 3438 3483 3722 3725 3767 3850 3893 4055 4058 4223 4272 4621 4709 4746 4931 5024 5072 5113 5207 5337 5522 5728 5818 5824 5981
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,18 @@
+#COLOR 142 204 200
+state={
+	id=194
+	name=194_Konnigratz
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = AUS
+	}
+	provinces={
+		4750 4753 4829 5071 5117 5211 5254 5298 5304 5305 5306 5352 5387 5391 5475 5618 5619 5697 5701 5904 5940 6050 6056 6092 6160 6236 6332 6333 6334 6381 6382 6455 6456 6679 6712 6714 6791 6792 6794 6984 7227 7255
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

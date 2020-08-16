@@ -1,0 +1,18 @@
+#COLOR 183 228 181
+state={
+	id=216
+	name=216_Strumica
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = TUR
+	}
+	provinces={
+		6920 7203 7433 7851
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

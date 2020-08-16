@@ -1,0 +1,18 @@
+#COLOR 13 178 185
+state={
+	id=121
+	name=121_Attica
+	history={
+		owner = GRE
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = GRE
+	}
+	provinces={
+		16 29 70 74 84 147 193 219 253 290 318 379 485 737 833 871 926 964 1046 1099 1708 1712 1730 1771 1813 2065 2111 2256 2262 2564 2567 2707 2709 2863 2875 2915 3537 3723
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

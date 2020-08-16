@@ -1,0 +1,18 @@
+#COLOR 38 167 35
+state={
+	id=134
+	name=134_Pirin_Macedonia
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = TUR
+	}
+	provinces={
+		43 45 126 165 250 291 425 499 793 826 835 839 1045 1052 1089 1144 1260 1587 1713 1717 1819 1934 2026 2109 2359 3019 3578
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

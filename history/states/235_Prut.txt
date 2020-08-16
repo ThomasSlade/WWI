@@ -1,0 +1,18 @@
+#COLOR 233 217 181
+state={
+	id=235
+	name=235_Prut
+	history={
+		owner = ROM
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = ROM
+	}
+	provinces={
+		7183 7330 7446 7477 7535 7536 7607 7735 7753 7777 7848 7880 7934 7967 8015 8028 8048 8050 8093 8111 8124 8145 8168 8169 8178 8179 8235 8264 8273 8284 8292 8308 8309 8320 8335
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

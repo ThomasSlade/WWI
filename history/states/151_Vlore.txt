@@ -1,0 +1,18 @@
+#COLOR 73 49 48
+state={
+	id=151
+	name=151_Vlore
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = TUR
+	}
+	provinces={
+		1062 1150 1188 1326 1327 1534 1880 2232 2372 2374 2375 2426 2620 2666 2667 3193 3385 3584 3839 4197 4352 4394
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

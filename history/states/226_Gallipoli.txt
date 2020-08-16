@@ -1,0 +1,18 @@
+#COLOR 197 127 103
+state={
+	id=226
+	name=226_Gallipoli
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = TUR
+	}
+	provinces={
+		6257 6436 6466 6773 6935 6991 7102 7106 7265 7368 7374 7401 7402 7404 7501 7598 7599 7643 7659 7746 7750 7788 7805 7821 7893 7894 7924 8000 8101 8151 8152 8162 8208 8225 8229 8251
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

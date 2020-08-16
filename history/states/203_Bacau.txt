@@ -1,0 +1,18 @@
+#COLOR 163 64 0
+state={
+	id=203
+	name=203_Bacau
+	history={
+		owner = ROM
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = ROM
+	}
+	provinces={
+		4036 4258 4296 4518 4729 4773 4811 4844 4901 5134 5275 5364 5502 5552 5879 6138 6312 6357 6499 6598 6633 6729 6808 7127 7316 7344 7516 7593 7707 7728 7878 7958 8036 8041 8057 8072
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

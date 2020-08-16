@@ -1,0 +1,18 @@
+#COLOR 162 154 146
+state={
+	id=201
+	name=201_Orvidek
+	history={
+		owner = HUN
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = HUN
+	}
+	provinces={
+		5280 5324 5327 5463 5681 5883 5923 5924 5926 6365 6446 6748 6750 7004 7006 7007 7272 7506 7508 7509
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

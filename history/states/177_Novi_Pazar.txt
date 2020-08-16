@@ -1,0 +1,18 @@
+#COLOR 109 101 126
+state={
+	id=177
+	name=177_Novi_Pazar
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = TUR
+	}
+	provinces={
+		3243 3801 3841 4202 4203 4520 4611 4858 5236 5237 5418 5461 5559 5561 5799
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

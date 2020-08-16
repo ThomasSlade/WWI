@@ -1,0 +1,18 @@
+#COLOR 91 191 192
+state={
+	id=164
+	name=164_Montenegro
+	history={
+		owner = MNT
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = MNT
+	}
+	provinces={
+		2151 2463 2476 2601 2655 2910 2920 3134 3271 3531 3577 3734 3820 3828 3861 4103 4240 4420 4457 4636 4757 4884 4885 4990 5030 5308 5356 5440 5486
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

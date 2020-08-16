@@ -1,0 +1,18 @@
+#COLOR 177 75 12
+state={
+	id=212
+	name=212_Erlau
+	history={
+		owner = HUN
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = HUN
+	}
+	provinces={
+		4843 4850 4899 4943 4947 5226 5314 5369 5412 5499 5595 5838 5875 5878 5919 5953 5959 5995 6395 6465 6631 6686 6810 7021 7043 7072 7076 7130 7148 7210 7239 7266 7283 7518 7640 7644 7671 7726 7785 7957 7971 8038 8059 8096 8175 8197 8207
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}
