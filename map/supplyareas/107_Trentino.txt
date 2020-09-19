@@ -1,0 +1,8 @@
+supply_area={
+	id=107
+	name=107_Trentino
+	value=0
+	states={
+		191 231 
+	}
+}

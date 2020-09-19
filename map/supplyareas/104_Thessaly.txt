@@ -1,0 +1,8 @@
+supply_area={
+	id=104
+	name=104_Thessaly
+	value=0
+	states={
+		137 197 
+	}
+}

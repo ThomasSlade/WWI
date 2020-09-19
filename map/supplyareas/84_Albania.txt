@@ -1,0 +1,8 @@
+supply_area={
+	id=84
+	name=84_Albania
+	value=0
+	states={
+		202 161 151
+	}
+}

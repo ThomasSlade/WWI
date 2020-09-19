@@ -1,5 +1,7 @@
 ﻿capital = 164
 
+oob = "MNT_1911"
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

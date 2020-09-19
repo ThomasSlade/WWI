@@ -1,0 +1,8 @@
+supply_area={
+	id=75
+	name=75_Inner_Austria
+	value=0
+	states={
+		193 155 
+	}
+}

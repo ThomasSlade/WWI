@@ -2,17 +2,27 @@
 state={
 	id=125
 	name=125_Sumadija
+	resources={
+		chromium = 999
+		tungsten = 999
+		aluminium = 999
+		oil = 999
+		rubber = 999
+		steel = 999
+	}
 	history={
 		owner = SER
 		buildings = {
 			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 3
 		}
 		add_core_of = SER
 	}
 	provinces={
 		87 170 172 173 174 225 226 227 257 258 345 502 503 532 570 571 574 578 629 704 707 708 746 750 795 842 846 881 928 931 973 974 976 1011 1016 1056 1061 1146 1147 1369 1404 1407 1536 1635 1678 1830 1881 1937 2179 2271 2272 2371 2427 2720
 	}
-	manpower=1000
+	manpower=100000000
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=megalopolis
 }

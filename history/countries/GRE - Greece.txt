@@ -1,5 +1,7 @@
 ﻿capital = 121
 
+oob = "GRE_1911"
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

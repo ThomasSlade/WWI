@@ -1,7 +1,7 @@
 #COLOR 58 79 26
 state={
 	id=51
-	name=51_Overijssel
+	name=51_Overijsse
 	history={
 		owner = HOL
 		buildings = {

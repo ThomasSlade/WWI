@@ -1,0 +1,8 @@
+supply_area={
+	id=67
+	name=67_Cyclades
+	value=0
+	states={
+		128 240 
+	}
+}

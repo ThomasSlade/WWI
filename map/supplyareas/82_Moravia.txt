@@ -1,0 +1,8 @@
+supply_area={
+	id=82
+	name=82_Moravia
+	value=0
+	states={
+		143 181 132
+	}
+}

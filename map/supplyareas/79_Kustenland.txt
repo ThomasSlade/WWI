@@ -1,0 +1,8 @@
+supply_area={
+	id=79
+	name=79_Kustenland
+	value=0
+	states={
+		214 174 
+	}
+}

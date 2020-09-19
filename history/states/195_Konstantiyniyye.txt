@@ -2,17 +2,27 @@
 state={
 	id=195
 	name=195_Konstantiyniyye
+	resources={
+		chromium = 999
+		tungsten = 999
+		aluminium = 999
+		oil = 999
+		rubber = 999
+		steel = 999
+	}
 	history={
 		owner = TUR
 		buildings = {
 			infrastructure = 4
+			industrial_complex = 6
+			arms_factory = 6
 		}
 		add_core_of = TUR
 	}
 	provinces={
 		4722 4849 4942 5451 5706 5709 6023 6170 6276 6306 6623 6837 6865 7234 7286 7440
 	}
-	manpower=1000
+	manpower=100000000
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=megapolis
 }

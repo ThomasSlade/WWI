@@ -1,0 +1,8 @@
+supply_area={
+	id=94
+	name=94_Sathmar
+	value=0
+	states={
+		149 144 
+	}
+}

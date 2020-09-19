@@ -1,0 +1,8 @@
+supply_area={
+	id=68
+	name=68_Dalmatia
+	value=0
+	states={
+		192 165 239 
+	}
+}

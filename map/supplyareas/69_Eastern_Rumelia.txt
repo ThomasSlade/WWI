@@ -1,0 +1,8 @@
+supply_area={
+	id=69
+	name=69_Eastern_Rumelia
+	value=0
+	states={
+		184 138 
+	}
+}

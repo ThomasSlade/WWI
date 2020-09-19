@@ -1,0 +1,8 @@
+supply_area={
+	id=97
+	name=97_Slavonia
+	value=0
+	states={
+		213 172 
+	}
+}

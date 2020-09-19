@@ -1,0 +1,8 @@
+supply_area={
+	id=72
+	name=72_Erlau
+	value=0
+	states={
+		212 219 
+	}
+}

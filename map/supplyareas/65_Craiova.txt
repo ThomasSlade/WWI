@@ -1,0 +1,8 @@
+supply_area={
+	id=65
+	name=65_Craiova
+	value=0
+	states={
+		211 237 
+	}
+}

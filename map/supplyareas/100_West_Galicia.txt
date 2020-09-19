@@ -1,0 +1,8 @@
+supply_area={
+	id=100
+	name=100_West_Galicia
+	value=0
+	states={
+		160 199 206 
+	}
+}

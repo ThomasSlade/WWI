@@ -2,17 +2,27 @@
 state={
 	id=130
 	name=130_Sofia
+	resources={
+		chromium = 999
+		tungsten = 999
+		aluminium = 999
+		oil = 999
+		rubber = 999
+		steel = 999
+	}
 	history={
 		owner = BUL
 		buildings = {
 			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 3
 		}
 		add_core_of = BUL
 	}
 	provinces={
 		5 77 110 139 140 230 301 357 389 435 472 508 635 637 639 677 714 850 855 897 940 947 1024 1123 1158 1159 1164 1198 1340 1342 1555 1644 1653 1757 1903 1955 2006 2009 2094 2199 2237 2395 2640
 	}
-	manpower=1000
+	manpower=100000000
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=megalopolis
 }

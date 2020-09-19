@@ -1,0 +1,8 @@
+supply_area={
+	id=60
+	name=60_Bosnia
+	value=0
+	states={
+		224 146 
+	}
+}

@@ -1,0 +1,8 @@
+supply_area={
+	id=85
+	name=85_Novi_Pazar
+	value=0
+	states={
+		177 135 
+	}
+}

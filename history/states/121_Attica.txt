@@ -2,17 +2,27 @@
 state={
 	id=121
 	name=121_Attica
+	resources={
+		chromium = 999
+		tungsten = 999
+		aluminium = 999
+		oil = 999
+		rubber = 999
+		steel = 999
+	}
 	history={
 		owner = GRE
 		buildings = {
 			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 3
 		}
 		add_core_of = GRE
 	}
 	provinces={
 		16 29 70 74 84 147 193 219 253 290 318 379 485 737 833 871 926 964 1046 1099 1708 1712 1730 1771 1813 2065 2111 2256 2262 2564 2567 2707 2709 2863 2875 2915 3537 3723
 	}
-	manpower=1000
+	manpower=100000000
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=megalopolis
 }

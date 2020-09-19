@@ -1,0 +1,8 @@
+supply_area={
+	id=56
+	name=56_Arges
+	value=0
+	states={
+		209 168 
+	}
+}

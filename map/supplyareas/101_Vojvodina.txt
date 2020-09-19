@@ -1,0 +1,8 @@
+supply_area={
+	id=101
+	name=101_Vojvodina
+	value=0
+	states={
+		182 232 171
+	}
+}

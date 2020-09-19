@@ -1,7 +1,7 @@
 #COLOR 176 114 98
 state={
 	id=210
-	name=210_Niederosterreich
+	name=210_Niederosterriech
 	history={
 		owner = AUS
 		buildings = {

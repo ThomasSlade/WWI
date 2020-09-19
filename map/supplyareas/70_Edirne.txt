@@ -1,0 +1,8 @@
+supply_area={
+	id=70
+	name=70_Edirne
+	value=0
+	states={
+		217 226 157
+	}
+}

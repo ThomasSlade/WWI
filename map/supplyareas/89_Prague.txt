@@ -1,0 +1,8 @@
+supply_area={
+	id=89
+	name=89_Prague
+	value=0
+	states={
+		194 124 
+	}
+}
