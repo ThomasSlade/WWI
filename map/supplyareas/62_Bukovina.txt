@@ -1,8 +1,0 @@
-supply_area={
-	id=62
-	name=62_Bukovina
-	value=0
-	states={
-		236 186 
-	}
-}

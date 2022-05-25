@@ -1,8 +1,0 @@
-supply_area={
-	id=99
-	name=99_Temeswar
-	value=0
-	states={
-		180 205
-	}
-}

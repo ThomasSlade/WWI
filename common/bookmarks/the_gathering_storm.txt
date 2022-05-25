@@ -9,7 +9,7 @@ bookmarks = {
 
 		"GER"={
 			history = "GER_GATHERING_STORM_DESC"
-			ideology = fascism
+			ideology = monarchism
 		}
 
 		effect = {

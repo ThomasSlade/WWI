@@ -1,0 +1,24 @@
+#COLOR 120 120 226
+state={
+	id=80
+	name=80_Artois
+	history={
+		owner = FRA
+		victory_points = {
+			1771 15#Lille
+		}
+		victory_points = {
+			1505 15#Cambrais
+		}
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		1798 1556 1313 1451 1580 1710 1725 1599 1742 1359 1492 1623 1624 1758 1505 1639 1771 1647 1648 1532 1533
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,8 +1,0 @@
-supply_area={
-	id=17
-	name=17_Hannover
-	value=0
-	states={
-		1 102 
-	}
-}

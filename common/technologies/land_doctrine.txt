@@ -1,19 +1,149 @@
 # WWI: Removed reference to vanilla idea for now. Obviously will be overhauling the entire doctrine tree for the mod.
 
 technologies = {
-	# Modern doctrine starts off with updating to dim uniform colors and abandoning the pomp of historic war (eyes France)
-	modern_doctrine = {
-		doctrine_name = "MODERN_UNIFORM"
 
+	early_reform = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_boost_cost = 100
 		xp_research_bonus = 1.00
 
 		doctrine = yes
-		research_cost = 15.3
+		research_cost = 1.1
 
 		path = {
-			leads_to_tech = digging_in 
+			leads_to_tech = pragmatic_uniform 
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = auftragstatik 
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = guerilla_warfare 
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = cult_of_the_offensive 
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = rapid_mobilisation 
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			land_doctrine
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 4 y = 0 }
+		}
+
+		ai_will_do = 
+		{
+			factor = 1
+		}
+
+		category_light_infantry = {
+			max_organisation = 1
+			breakthrough = 0.1
+		}
+
+		category_artillery = {
+			soft_attack = 0.1
+		}
+	}
+
+	pragmatic_uniform = {
+		xp_research_type = army
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+
+		doctrine = yes
+		research_cost = 2.2
+
+		path = {
+			leads_to_tech = integrated_firepower 
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			land_doctrine
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 0 y = 2 }
+		}
+
+		ai_will_do = 
+		{
+			factor = 1
+		}
+
+		category_all_infantry = {
+			defense = 0.2
+			soft_attack = 0.1
+		}
+
+		category_cavalry = {
+			defense = 0.1
+		}
+	}
+
+	auftragstatik = {
+		xp_research_type = army
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+
+		doctrine = yes
+		research_cost = 2.2
+
+		path = {
+			leads_to_tech = integrated_firepower 
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			land_doctrine
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 2 y = 2 }
+		}
+
+		ai_will_do = 
+		{
+			factor = 1
+		}
+
+		category_light_infantry = {
+			initiative = 0.2
+			max_organisation = 2
+		}
+
+		category_cavalry = {
+			initiative = 0.2
+			max_organisation = 2
+		}
+	}
+
+	guerilla_warfare = {
+		xp_research_type = army
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+
+		doctrine = yes
+		research_cost = 2.2
+
+		path = {
+			leads_to_tech = integrated_firepower 
 			research_cost_coeff = 1
 		}
 
@@ -28,7 +158,7 @@ technologies = {
 
 		folder = {
 			name = land_doctrine_folder
-			position = { x = 0 y = 0 }
+			position = { x = 4 y = 2 }
 		}
 
 		ai_will_do = 
@@ -36,22 +166,22 @@ technologies = {
 			factor = 1
 		}
 
-		category_all_infantry = {
-			defense = 1
-		}
+		army_core_defence_factor = 0.25
+		resistance_growth_on_our_occupied_states = 0.25 
 	}
 
-	digging_in = {
-		doctrine_name = "DIGGING_IN_DOCTRINE"
-
+	cult_of_the_offensive = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_boost_cost = 100
 		xp_research_bonus = 1.00
 
 		doctrine = yes
-		research_cost = 0.35
+		research_cost = 2.2
 
-		max_dig_in = 3
+		path = {
+			leads_to_tech = free_fire 
+			research_cost_coeff = 1
+		}
 
 		categories = {
 			land_doctrine
@@ -59,7 +189,80 @@ technologies = {
 
 		folder = {
 			name = land_doctrine_folder
-			position = { x = -1 y = 2 }
+			position = { x = 6 y = 2 }
+		}
+
+		ai_will_do = 
+		{
+			factor = 1
+		}
+
+		category_light_infantry = {
+			soft_attack = 0.1
+			breakthrough = 0.2
+		}
+
+		category_cavalry = {
+			soft_attack = 0.1
+			breakthrough = 0.2
+		}
+
+		category_line_artillery = {
+			breakthrough = 0.2
+		}
+	}
+
+	rapid_mobilisation = {
+		xp_research_type = army
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+
+		doctrine = yes
+		research_cost = 2.2
+
+		path = {
+			leads_to_tech = free_fire 
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			land_doctrine
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 8 y = 2 }
+		}
+
+		ai_will_do = 
+		{
+			factor = 1
+		}
+
+		minimum_training_level = -0.2
+		planning_speed = 0.4
+	}
+
+	integrated_firepower = {
+		xp_research_type = army
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+
+		doctrine = yes
+		research_cost = 4.5
+
+		path = {
+			leads_to_tech = digging_in 
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			land_doctrine
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 2 y = 4 }
 		}
 
 		ai_will_do =
@@ -67,20 +270,32 @@ technologies = {
 			factor = 1
 		}
 
-		category_all_infantry = {
-			defense = 1
+		category_light_infantry = {
+			defense = 0.2
+		}
+
+		category_line_artillery =
+		{
+			soft_attack = 0.15
+			defense = 0.2
+			max_organisation = 20
 		}
 	}
-
+	
 	free_fire = {
 		doctrine_name = "FREE_FIRE_DOCTRINE"
 
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_boost_cost = 100
 		xp_research_bonus = 1.00
 
 		doctrine = yes
-		research_cost = 0.35
+		research_cost = 4.5
+
+		path = {
+			leads_to_tech = digging_in 
+			research_cost_coeff = 1
+		}
 
 		categories = {
 			land_doctrine
@@ -88,19 +303,89 @@ technologies = {
 
 		folder = {
 			name = land_doctrine_folder
-			position = { x = 1 y = 2s }
+			position = { x = 6 y = 4 }
 		}
 
 		ai_will_do =
 		{
 			factor = 1
-
 		}
 
-		category_all_infantry = {
+		category_light_infantry = {
+			soft_attack = 0.3
 			breakthrough = 0.1
 			max_organisation = 20
-			soft_attack = 0.3
 		}
+	}
+
+	digging_in = {
+		xp_research_type = army
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+
+		doctrine = yes
+		research_cost = 4.5
+
+		path = {
+			leads_to_tech = trench_warfare 
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			land_doctrine
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 4 y = 6 }
+		}
+
+		ai_will_do =
+		{
+			factor = 1
+		}
+
+		category_light_infantry = {
+			defense = 0.3
+		}
+
+		category_artillery = {
+			defense = 0.3
+		}
+
+		dig_in_speed_factor = 0.33
+	}
+
+	trench_warfare = {
+		xp_research_type = army
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+
+		doctrine = yes
+		research_cost = 4.5
+
+		categories = {
+			land_doctrine
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 4 y = 8 }
+		}
+
+		ai_will_do =
+		{
+			factor = 1
+		}
+
+		category_light_infantry = {
+			defense = 0.4
+		}
+
+		category_artillery = {
+			defense = 0.4
+		}
+
+		max_dig_in = 10
 	}
 }

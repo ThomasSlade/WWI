@@ -1,0 +1,21 @@
+#COLOR 216 96 210
+state={
+	id=119
+	name=119_Seine_et_Oise
+	history={
+		owner = FRA
+		victory_points = {
+			1879 15#Versailles
+		}
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		1889 1862 1831 1864 1803 1874 1845 1879 1785 1786 1884 1882
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

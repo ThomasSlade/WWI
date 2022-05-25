@@ -1,0 +1,448 @@
+focus_tree = {
+	id = serbian_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SER
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1100 }
+
+	### Political Tree ###
+	focus = {
+		id = SER_moderate_nationalist_rhetoric
+		icon = GFX__shine
+		mutually_exclusive = { focus = SER_follow_the_independent_radicals }
+		x = 0
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = SER_follow_the_independent_radicals
+		icon = GFX__shine
+		mutually_exclusive = { focus = SER_moderate_nationalist_rhetoric }
+		x = 6
+		y = 0
+		relative_position_id = SER_moderate_nationalist_rhetoric
+		cost = 10
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_war_support = 0.05
+			add_timed_idea = {
+				idea = SER_follow_the_independent_radicals
+				days = 730
+			}
+		}
+	}
+
+	focus = {
+		id = SER_retire_the_may_coup_conspirators
+		icon = GFX__shine
+		prerequisite = { focus = SER_moderate_nationalist_rhetoric focus = SER_follow_the_independent_radicals }
+		x = 0
+		y = 1
+		relative_position_id = SER_moderate_nationalist_rhetoric
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 120
+			# WWITODO: Remove some of the conspirator politicians.
+		}
+	}
+
+	focus = {
+		id = SER_ban_publications_of_the_nacertanije
+		icon = GFX__shine
+		prerequisite = { focus = SER_retire_the_may_coup_conspirators }
+		x = 1
+		y = 1
+		relative_position_id = SER_retire_the_may_coup_conspirators
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = SER_nacertanije
+		}
+	}
+
+	focus = {
+		id = SER_build_a_conciliatory_cabinet
+		icon = GFX__shine
+		prerequisite = { focus = SER_retire_the_may_coup_conspirators }
+		x = -1
+		y = 1
+		relative_position_id = SER_retire_the_may_coup_conspirators
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			# Unlocks moderate (sometimes austrophile) politicians.
+		}
+	}
+
+	focus = {
+		id = SER_root_out_the_black_hand
+		icon = GFX__shine
+		prerequisite = { focus = SER_build_a_conciliatory_cabinet }
+		prerequisite = { focus = SER_ban_publications_of_the_nacertanije }
+		x = 1
+		y = 1
+		relative_position_id = SER_build_a_conciliatory_cabinet
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			# Fire uprooting of Apis and the Black Hand event (may lead to civil war).
+		}
+	}
+
+	# Serbian terrorist cells continue working in Bosnia.
+	focus = {
+		id = SER_support_the_nadorna_odbrana
+		icon = GFX__shine
+		prerequisite = { focus = SER_moderate_nationalist_rhetoric focus = SER_follow_the_independent_radicals }
+		x = 3
+		y = 1
+		relative_position_id = SER_moderate_nationalist_rhetoric
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			# With this flag, Bosnia is likely to try and defect to Serbia in a few years.
+			set_country_flag = nadorna_odbrana_operating
+			# With this flag, if the archduke visits Sarajevo he will be shot. This can be removed if Pasic wins the civil war, with all the benefits of narodna_odbrana_operating.
+			set_country_flag = nadorna_odbrana_autonomous
+		}
+	}
+
+	focus = {
+		id = SER_seize_belgrade_for_the_black_hand
+		icon = GFX__shine
+		prerequisite = { focus = SER_moderate_nationalist_rhetoric focus = SER_follow_the_independent_radicals }
+		x = 6
+		y = 1
+		relative_position_id = SER_moderate_nationalist_rhetoric
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			# Fires the civil war with the player controlling Apis.
+		}
+	}
+
+	### Foreign Affairs and Expansion Tree ###
+	focus = {
+		id = SER_claim_old_serbia
+		icon = GFX__shine
+		x = 11
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_war_support = 0.05
+			add_state_core = 185
+			add_state_core = 177
+			add_state_core = 135
+		}
+	}
+
+	focus = {
+		id = SER_entice_montenegro
+		icon = GFX__shine
+		prerequisite = { focus = SER_claim_old_serbia }
+		available = {
+			NOT = {
+				OR = {
+					161 = { is_owned_by = SER }
+					135 = { is_owned_by = SER }
+				}
+			}
+		}
+		x = 1
+		y = 2
+		relative_position_id = SER_claim_old_serbia
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			MNT = { country_event = wwi_montenegro.1 }
+
+			# Remove claims on Montenegro-adjacent lands.
+			if = {
+				limit = {
+					161 = { is_core_of = SER } 
+				}
+				remove_state_core = 161
+			}
+			if = {
+				limit = {
+					135 = { is_core_of = SER } 
+				}
+				remove_state_core = 135
+			}
+		}
+	}
+
+	focus = {
+		id = SER_ports_on_the_adriatic
+		icon = GFX__shine
+		prerequisite = { focus = SER_claim_old_serbia }
+		x = -1
+		y = 2
+		relative_position_id = SER_claim_old_serbia
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_state_core = 202
+			if = {
+				limit = {
+					NOT = { has_completed_focus = SER_entice_montenegro }
+				}
+				# Scutari is only claimed if Serbia isn't sharing with Montenegro.
+				add_state_core = 161
+			}
+		}
+	}
+
+	focus = {
+		id = SER_fund_macedonian_militia
+		icon = GFX__shine
+		x = 17
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 8
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_state_core = 218
+			add_state_core = 148
+		}
+	}
+
+	focus = {
+		id = SER_seek_russian_mediation
+		icon = GFX__shine
+		prerequisite = { focus = SER_fund_macedonian_militia }
+		mutually_exclusive = { focus = SER_appeal_to_austria_for_support }
+		x = -2
+		y = 1
+		relative_position_id = SER_fund_macedonian_militia
+		cost = 10
+		ai_will_do = {
+			factor = 6
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			SOV = { add_opinion_modifier = { target = SER modifier = SER_appealed_for_arbitration } }
+			SOV = { set_country_flag = macedonian_arbitrator }
+		}
+	}
+
+	focus = {
+		id = SER_appeal_to_austria_for_support
+		icon = GFX__shine
+		prerequisite = { focus = SER_fund_macedonian_militia }
+		mutually_exclusive = { focus = SER_seek_russian_mediation }
+		x = 0
+		y = 1
+		relative_position_id = SER_fund_macedonian_militia
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			AUS = { add_opinion_modifier = { target = SER modifier = SER_appealed_for_arbitration } }
+			AUS = { set_country_flag = macedonian_arbitrator }
+		}
+	}
+
+	focus = {
+		id = SER_promote_serb_guerilla_forces
+		icon = GFX__shine
+		prerequisite = { focus = SER_fund_macedonian_militia }
+		x = 3
+		y = 2
+		relative_position_id = SER_fund_macedonian_militia
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 100
+			add_tech_bonus = {
+				name = infantry_equipment_bonus
+				bonus = 0.5
+				ahead_reduction = 2
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = SER_strike_a_deal_with_bulgaria
+		icon = GFX__shine
+		prerequisite = { focus = SER_seek_russian_mediation focus = SER_appeal_to_austria_for_support }
+		mutually_exclusive = { focus = SER_offer_territory_to_romania }
+		x = 1
+		y = 1
+		relative_position_id = SER_seek_russian_mediation
+		cost = 10
+		ai_will_do = {
+			factor = 6
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				# Same event, just one references Russia and the other Austria.
+				limit = { AUS = { has_country_flag = macedonian_arbitrator } }
+				BUL = { country_event = wwi_bulgaria.2 }
+				else = {
+					BUL = { country_event = wwi_bulgaria.1 }
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SER_offer_territory_to_romania
+		icon = GFX__shine
+		mutually_exclusive = { focus = SER_strike_a_deal_with_bulgaria }
+		x = 3
+		y = 1
+		relative_position_id = SER_seek_russian_mediation
+		cost = 10
+		ai_will_do = {
+			factor = 6
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			ROM = { country_event = wwi_romania.1 }
+		}
+	}
+
+	focus = {
+		id = SER_war_with_the_ottomans
+		icon = GFX__shine
+		prerequisite = { focus = SER_entice_montenegro focus = SER_strike_a_deal_with_bulgaria }
+		available = {
+			OR = {
+				# Required force size is higher than Serbia's historic Balkan War army, unless Italy swoops in and proves that the Ottomans are weak.
+				has_army_manpower = { size > 260000 }
+				has_global_flag = TUR_humiliated_by_war
+			}
+		}
+		x = 2
+		y = 1
+		relative_position_id = SER_entice_montenegro
+		cost = 10
+		ai_will_do = {
+			factor = 6
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = TUR
+			}
+		}
+	}
+
+	focus = {
+		id = SER_end_bulgarian_posturing_in_macedonia
+		icon = GFX__shine
+		prerequisite = { focus = SER_offer_territory_to_romania }
+		prerequisite = { focus = SER_promote_serb_guerilla_forces }
+		x = 1
+		y = 1
+		relative_position_id = SER_offer_territory_to_romania
+		cost = 10
+		ai_will_do = {
+			factor = 6
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			BUL = { country_event = wwi_bulgaria.3 }
+		}
+	}
+}

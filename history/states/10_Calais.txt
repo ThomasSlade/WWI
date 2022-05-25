@@ -8,9 +8,15 @@ state={
 			infrastructure = 4
 		}
 		add_core_of = FRA
+		victory_points = {
+			1270 5 #CALAIS
+		}
+		victory_points = {
+			659 5 #DUNKERQUE
+		}
 	}
 	provinces={
-		324 929 1186 1994 2837 2883 3028 3423 4192 4205 5003
+		872 1295 818 371 468 659 1270
 	}
 	manpower=1000
 	buildings_max_level_factor=1.000

@@ -1,0 +1,194 @@
+add_namespace = wwi_serbia
+
+# Ultimatum from Austria-Hungary
+country_event = {
+	id = wwi_serbia.1
+	title = wwi_serbia.1.t
+	desc = wwi_serbia.1.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	# Refuse the ultimatum.
+	option = {
+		name = wwi_serbia.1.a
+		ai_chance = { factor = 100 }
+		AUS = { country_event = wwi_austria.3 }
+	}
+
+	# Accept the ultimatum.
+	option = {
+		name = wwi_serbia.1.b
+		ai_chance = { factor = 0 }
+		add_stability = -0.3
+		remove_state_core = 224
+		remove_state_core = 169
+		add_timed_idea = {
+			idea = SER_austrian_jurisdiction
+			days = 730
+		}
+		AUS = { country_event = wwi_austria.4 }
+	}
+}
+
+# Someone joins the Balkan League.
+country_event = {
+	id = wwi_serbia.2
+	title = wwi_serbia.2.t
+	desc = wwi_serbia.2.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		# The idea here is that this event MUST have been caused by a Serbia that is the faction leader OR is not in a faction.
+		# If Serbia isn't in a faction, the Balkan League will be founded.
+		if = {
+			limit = { is_in_faction = no }
+			create_faction = BALKAN_LEAGUE
+		}
+
+		if = {
+			limit = { is_faction_leader = yes }
+			add_to_faction = FROM
+		}
+	}
+
+	# Hooray!
+	option = {
+		name = wwi_serbia.2.a
+	}
+}
+
+# Bulgaria in particular joins the Balkan League - Russian arbitration.
+country_event = {
+	id = wwi_serbia.3
+	title = wwi_serbia.3.t
+	desc = wwi_serbia.3.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		# The idea here is that this event MUST have been caused by a Serbia that is the faction leader OR is not in a faction.
+		# If Serbia isn't in a faction, the Balkan League will be founded.
+		if = {
+			limit = { is_in_faction = no }
+			create_faction = BALKAN_LEAGUE
+		}
+
+		if = {
+			limit = { is_faction_leader = yes }
+			add_to_faction = FROM
+		}
+	}
+
+	option = {
+		name = wwi_serbia.3.a
+	}
+}
+
+# Bulgaria in particular joins the Balkan League - Austrian arbitration.
+country_event = {
+	id = wwi_serbia.4
+	title = wwi_serbia.4.t
+	desc = wwi_serbia.4.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		# The idea here is that this event MUST have been caused by a Serbia that is the faction leader OR is not in a faction.
+		# If Serbia isn't in a faction, the Balkan League will be founded.
+		if = {
+			limit = { is_in_faction = no }
+			create_faction = BALKAN_LEAGUE
+		}
+
+		if = {
+			limit = { is_faction_leader = yes }
+			add_to_faction = FROM
+		}
+	}
+
+	option = {
+		name = wwi_serbia.4.a
+	}
+}
+
+# Bulgaria refuses Macedonia ultimatum.
+country_event = {
+	id = wwi_serbia.5
+	title = wwi_serbia.5.t
+	desc = wwi_serbia.5.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = wwi_serbia.5.a
+		declare_war_on = {
+			target = SER
+			type = annex_everything
+		}
+	}
+}
+
+# Bulgaria accepts Macedonia ultimatum.
+country_event = {
+	id = wwi_serbia.6
+	title = wwi_serbia.6.t
+	desc = wwi_serbia.6.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = wwi_serbia.6.a
+	}
+}
+
+#  Greece asks to join League.
+country_event = {
+	id = wwi_serbia.7
+	title = wwi_serbia.7.t
+	desc = {
+		text = wwi_serbia.7.d
+		trigger = {
+			BUL = { is_in_faction = no }
+		}
+	}
+
+	desc = {
+		text = wwi_serbia.7.d_bulgaria
+		trigger = {
+			BUL = { is_in_faction = yes }
+		}
+	}
+
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = wwi_serbia.7.a
+		ai_chance = { factor = 100 }
+
+		# The idea here is that this event MUST have been caused by a Serbia that is the faction leader OR is not in a faction.
+		# If Serbia isn't in a faction, the Balkan League will be founded.
+		if = {
+			limit = { is_in_faction = no }
+			create_faction = BALKAN_LEAGUE
+		}
+
+		if = {
+			limit = { is_faction_leader = yes }
+			add_to_faction = FROM
+		}
+	}
+
+	option = {
+		name = wwi_serbia.7.b
+		ai_chance = { factor = 0 }
+	}
+}

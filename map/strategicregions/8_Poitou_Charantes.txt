@@ -1,0 +1,10 @@
+#COLOR 59 45 59
+strategic_region={
+	id=8
+	name=8_Poitou_Charantes
+	provinces={
+		1872 1828 159
+	}
+	weather={
+	}
+}

@@ -1,0 +1,10 @@
+#COLOR 222 136 38
+strategic_region={
+	id=18
+	name=18_Rhine_Delta
+	provinces={
+		1696 1641 1739 1516 1805 1582 1835 1784 1721
+	}
+	weather={
+	}
+}

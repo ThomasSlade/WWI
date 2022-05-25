@@ -1,8 +1,0 @@
-supply_area={
-	id=77
-	name=77_Klausenburg
-	value=0
-	states={
-		175 159 225
-	}
-}

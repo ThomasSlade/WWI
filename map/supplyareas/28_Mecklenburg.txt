@@ -1,8 +1,0 @@
-supply_area={
-	id=28
-	name=28_Mecklenburg
-	value=0
-	states={
-		84 23 106 
-	}
-}

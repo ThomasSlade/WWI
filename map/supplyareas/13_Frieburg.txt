@@ -1,8 +1,0 @@
-supply_area={
-	id=13
-	name=13_Frieburg
-	value=0
-	states={
-		99 36 
-	}
-}

@@ -8,9 +8,12 @@ state={
 			infrastructure = 4
 		}
 		add_core_of = FRA
+		victory_points = {
+			250 5 #LANGRES
+		}
 	}
 	provinces={
-		69 121 127 133 221 287 369 410 414 484 523 527 557 567 610 612 773 872 967 1035 1092 1128 1130 1174 1814 1979 2261 3015
+		1282 548 15 400 145 528 404 247 57 250 251 124 1081 319
 	}
 	manpower=1000
 	buildings_max_level_factor=1.000

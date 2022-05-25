@@ -11,22 +11,25 @@ set_war_support = 0.3
 set_technology = {
 	infantry_weapons = 1
 
-	modern_doctrine = 1
-	digging_in = 1
+	early_reform = 1
+	auftragstatik = 1
+	pragmatic_uniform = 1
 }
 
 set_politics = {
-	ruling_party = fascism
-	last_election = "1936.1.1"
+	ruling_party = monarchism
+	last_election = "1911.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 25
-	fascism = 50
-	communism = 20
-	neutrality = 5
+	democratic = 5
+	democratic_expansionist = 0
+	monarchism = 45
+	monarchism_expansionist = 20
+	communism = 30
+	communism_expansionist = 0
 }
 
 add_ideas = {
@@ -37,36 +40,26 @@ add_ideas = {
 
 create_faction = CentralPowers
 add_to_faction = GER
+add_to_faction = AUS
 
 create_country_leader = {
-	name = "Adolf Hitler"
-	desc = "POLITICS_ADOLF_HITLER_DESC"
-	picture = "Portrait_Germany_Adolf_Hitler.dds"
-	expire = "1965.1.1"
-	ideology = nazism
+	name = "Wilhelm II"
+	desc = "POLITICS_WILHELM_II_DESC"
+	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
+	expire = "1930.1.1"
+	ideology = t_monarchism
 	traits = {
-		dictator
+		#
 	}
 }
 
 create_country_leader = {
-	name = "Konrad Adenauer"
-	desc = "POLITICS_KONRAD_ADENAUER_DESC"
-	picture = "Portrait_Germany_Konrad_Adenauer.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
+	name = "Wilhelm II"
+	desc = "POLITICS_WILHELM_II_DESC"
+	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
+	expire = "1930.1.1"
+	ideology = t_monarchism_expansionist
 	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Wilhelm Pieck"
-	desc = "POLITICS_WILHELM_PIECK_DESC"
-	picture = "Portrait_Germany_Wilhelm_Pieck.dds"
-	expire = "1965.1.1"
-	ideology = stalinism
-	traits = {
-		#stalins_puppet # This will now be added in on_actions if SOV releases the country as a puppet via action or war conference
-		exiled # He left in 1933 so he should still be exiled
+		#
 	}
 }

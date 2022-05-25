@@ -8,9 +8,12 @@ state={
 			infrastructure = 4
 		}
 		add_core_of = FRA
+		victory_points = {
+			1785 5 #VERSAILLES
+		}
 	}
 	provinces={
-		6591 6624 6656 6721 6726 7144 7397 7437 7515 7574 7588 7589 7635 7638 7765 7856 7890 7938 7999 8054 8248 8275 8295 8303
+		1889 1862 1831 1864 1803 1874 1845 1879 1785 1786 1884 1882
 	}
 	manpower=1000
 	buildings_max_level_factor=1.000

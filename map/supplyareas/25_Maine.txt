@@ -1,8 +1,0 @@
-supply_area={
-	id=25
-	name=25_Maine
-	value=0
-	states={
-		65 55 
-	}
-}

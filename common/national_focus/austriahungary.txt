@@ -1,0 +1,274 @@
+focus_tree = {
+	id = austrohungarian_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = AUS
+		}
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1100 }
+
+	### Political Tree ###
+	focus = {
+		id = AUS_acknowledge_agram_trials_blunder
+		icon = GFX__shine
+		mutually_exclusive = { focus = AUS_disenfranchise_croatian_serbs }
+		x = 0
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = AUS_humiliated_government
+				days = 365
+			}
+			# Also unlocks Tomas Masaryk
+		}
+	}
+
+	focus = {
+		id = AUS_disenfranchise_croatian_serbs
+		icon = GFX__shine
+		mutually_exclusive = { focus = AUS_acknowledge_agram_trials_blunder }
+		x = 2
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = AUS_silenced_croatian_serbs
+				days = 365
+			}
+			add_political_power = 120
+			# Also unlocks Tomas Masaryk
+		}
+	}
+
+	focus = {
+		id = AUS_expand_the_military_chancellry
+		icon = GFX__shine
+		prerequisite = { focus = AUS_acknowledge_agram_trials_blunder focus = AUS_disenfranchise_croatian_serbs }
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = AUS_national_security_renewel
+				days = 365
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_abolish_bosnian_serfdom
+		icon = GFX__shine
+		prerequisite = { focus = AUS_acknowledge_agram_trials_blunder focus = AUS_disenfranchise_croatian_serbs }
+		available = {
+			OR = {
+				169 = { is_owned_and_controlled_by = AUS }
+				146 = { is_owned_and_controlled_by = AUS }
+				224 = { is_owned_and_controlled_by = AUS }
+			}
+		}
+		x = 3
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = { limit = { 169 = { is_owned_and_controlled_by = AUS } }
+				169 = {
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+
+			if = { limit = { 146 = { is_owned_and_controlled_by = AUS } }
+				146 = {
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+
+			if = { limit = { 224 = { is_owned_and_controlled_by = AUS } }
+				224 = {
+					add_extra_state_shared_building_slots = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_suspend_the_bosnian_constitution
+		icon = GFX__shine
+		prerequisite = { focus = AUS_acknowledge_agram_trials_blunder focus = AUS_disenfranchise_croatian_serbs }
+		available = {
+			OR = {
+				169 = { is_owned_and_controlled_by = AUS }
+				146 = { is_owned_and_controlled_by = AUS }
+				224 = { is_owned_and_controlled_by = AUS }
+			}
+		}
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.05
+			SER = {
+				add_opinion_modifier = { target = AUS modifier = AUS_bosnian_constitution_suspended }
+			}
+		}
+	}
+
+	focus = {
+		id = AUS_counter_espionage_in_bosnia
+		icon = GFX__shine
+		prerequisite = { focus = AUS_suspend_the_bosnian_constitution }
+		available = {
+			OR = {
+				169 = { is_owned_and_controlled_by = AUS }
+				146 = { is_owned_and_controlled_by = AUS }
+				224 = { is_owned_and_controlled_by = AUS }
+			}
+		}
+		x = -1
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AUS_counter_espionage_in_bosnia_fruition
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				# WWITODO: This will likely change if I adjust the way computer tech works.
+				category = encryption_tech
+			}
+		}
+	}
+
+	### Root of the Reform Tree ###
+	focus = {
+		id = AUS_challenge_the_1867_compromise
+		icon = GFX__shine
+		prerequisite = { focus = AUS_expand_the_military_chancellry }
+		x = 1
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			# Begin the Hungarian Resistance modifiers.
+			AUS_hungarian_resistance_level_up = yes
+		}
+	}
+
+	focus = {
+		id = AUS_galician_compromise
+		icon = GFX__shine
+		prerequisite = { focus = AUS_challenge_the_1867_compromise }
+		x = 0
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 7
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = AUS_polish_galician_universities
+		}
+	}
+
+	focus = {
+		id = AUS_afford_south_slav_press_freedoms
+		icon = GFX__shine
+		prerequisite = { focus = AUS_challenge_the_1867_compromise }
+		x = 2
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			AUS_hungarian_resistance_level_up = yes
+			add_war_support = 0.05
+		}
+	}
+
+	# This is where Franz Ferdinand is likely to get shot.
+	focus = {
+		id = AUS_imperial_visit_to_bosnia
+		icon = GFX__shine
+		prerequisite = { focus = AUS_galician_compromise }
+		prerequisite = { focus = AUS_afford_south_slav_press_freedoms }
+		x = 1
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+		available = {
+			NOT = { has_country_flag = AUS_ferdinand_dead }
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					SER = { has_country_flag = nadorna_odbrana_autonomous }
+				}
+				# Archduke dies.
+				AUS = { country_event = austriahungary.wwi.1 }
+				else = {
+					# Archduke lives.
+					AUS = { country_event = austriahungary.wwi.2 }
+				}
+			}
+		}
+	}
+}

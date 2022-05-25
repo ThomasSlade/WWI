@@ -1,8 +1,0 @@
-supply_area={
-	id=6
-	name=6_Dutch_West_Coast
-	value=0
-	states={
-		104 120 
-	}
-}

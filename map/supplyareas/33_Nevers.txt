@@ -1,8 +1,0 @@
-supply_area={
-	id=33
-	name=33_Nevers
-	value=0
-	states={
-		112 20 
-	}
-}

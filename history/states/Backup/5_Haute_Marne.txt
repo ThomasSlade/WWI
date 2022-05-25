@@ -1,0 +1,18 @@
+#COLOR 7 119 95
+state={
+	id=5
+	name=5_Haute_Marne
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		1282 548 15 400 145 528 404 247 57 250 251 124 1081 319
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

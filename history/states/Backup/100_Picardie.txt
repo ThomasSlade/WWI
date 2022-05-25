@@ -1,0 +1,27 @@
+#COLOR 148 147 174
+state={
+	id=100
+	name=100_Picardie
+	history={
+		owner = FRA
+		victory_points = {
+			1806 15#Amiens
+		}
+		victory_points = {
+			1690 5#Saint-Quentin
+		}
+		victory_points = {
+			1765 5#Beauvais
+		}
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		1664 1792 1671 1802 1678 1806 1808 1684 1814 1689 1690 1694 1824 1699 1700 1830 1705 1706 1712 1713 1719 1726 1601 1731 1738 1743 1617 1747 1755 1631 1759 1760 1763 1765 1638 1777 1653 1782 1783 1660 1663
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

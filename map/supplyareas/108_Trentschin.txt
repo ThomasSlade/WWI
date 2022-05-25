@@ -1,8 +1,0 @@
-supply_area={
-	id=108
-	name=108_Trentschin
-	value=0
-	states={
-		123 163 
-	}
-}

@@ -5,20 +5,50 @@ oob = "SER_1911"
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+
+	early_reform = 1
 }
 
 set_convoys = 50
 
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1936.1.1"
+	ruling_party = democratic
+	last_election = "1908.5.31"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 
 set_popularities = {
-	democratic = 25
-	fascism = 20
-	communism = 5
-	neutrality = 50
+	democratic = 40
+	democratic_expansionist = 35
+	monarchism = 10
+	monarchism_expansionist = 0
+	communism = 15
+	communism_expansionist = 0
+}
+
+add_ideas = {
+	SER_nacertanije
+}
+
+create_country_leader = {
+	name = "Nikola Pašić"
+	desc = "POLITICS_NIKOLA_PASIC_DESC"
+	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
+	expire = "1930.1.1"
+	ideology = t_democratic
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Dragutin 'Apis' Dimitrijević"
+	desc = "POLITICS_APIS_DESC"
+	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
+	expire = "1930.1.1"
+	ideology = t_democratic_expansionist
+	traits = {
+		#
+	}
 }

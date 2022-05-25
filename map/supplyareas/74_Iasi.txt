@@ -1,8 +1,0 @@
-supply_area={
-	id=74
-	name=74_Iasi
-	value=0
-	states={
-		203 235 
-	}
-}

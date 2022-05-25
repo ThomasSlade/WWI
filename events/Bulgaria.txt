@@ -1,0 +1,127 @@
+add_namespace = wwi_bulgaria
+
+# Offer to Join Balkan League (Russian Arbitration)
+country_event = {
+	id = wwi_bulgaria.1
+	title = wwi_bulgaria.1.t
+	desc = wwi_bulgaria.1.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	# Accept
+	option = {
+		name = wwi_bulgaria.1.a
+		ai_chance = { factor = 95 }
+		
+		# Give non-Macedonian cores to Bulgaria (includes Salonika).
+		add_state_core = 157
+		add_state_core = 220
+		add_state_core = 133
+		add_state_core = 217
+		add_state_core = 226
+		add_state_core = 127
+		add_state_core = 188
+		add_state_core = 140
+
+		FROM = { country_event = wwi_serbia.3 }
+	}
+
+	# Decline
+	option = {
+		name = wwi_bulgaria.1.b
+		ai_chance = {
+			factor = 5
+			modifier = {
+				add = 20
+				strength_ratio = {
+					tag = FROM
+					ratio > 2
+				}
+			}
+		}
+	}
+}
+
+# Offer to Join Balkan League (Austrian Arbitration)
+country_event = {
+	id = wwi_bulgaria.2
+	title = wwi_bulgaria.2.t
+	desc = wwi_bulgaria.2.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	# Accept
+	option = {
+		name = wwi_bulgaria.2.a
+		ai_chance = { factor = 95 }
+		
+		# Give non-Macedonian cores to Bulgaria (includes Salonika).
+		add_state_core = 157
+		add_state_core = 220
+		add_state_core = 133
+		add_state_core = 217
+		add_state_core = 226
+		add_state_core = 127
+		add_state_core = 188
+		add_state_core = 140
+
+		FROM = { country_event = wwi_serbia.4 }
+	}
+
+	# Decline
+	option = {
+		name = wwi_bulgaria.2.b
+		ai_chance = {
+			factor = 5
+			modifier = {
+				add = 20
+				strength_ratio = {
+					tag = FROM
+					ratio > 2
+				}
+			}
+		}
+	}
+}
+
+# Serbian Ultimatum to relinquish claims of Macedonia
+country_event = {
+	id = wwi_bulgaria.3
+	title = wwi_bulgaria.3.t
+	desc = wwi_bulgaria.3.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	# Decline
+	option = {
+		name = wwi_bulgaria.3.a
+		ai_chance = {
+			modifier = {
+				factor = 0
+				FROM = {
+					alliance_strength_ratio > 2
+				}
+			}
+			factor = 90
+		}
+
+		FROM = { country_event = wwi_serbia.5 }
+	}
+
+	# Accept
+	option = {
+		name = wwi_bulgaria.3.b
+		ai_chance = {
+			factor = 10
+		}
+
+		remove_state_core = 216
+		remove_state_core = 148
+		remove_state_core = 218
+
+		FROM = { country_event = wwi_serbia.6 }
+	}
+}

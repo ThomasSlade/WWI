@@ -1,8 +1,0 @@
-supply_area={
-	id=105
-	name=105_Thrace
-	value=0
-	states={
-		220 127 133 
-	}
-}

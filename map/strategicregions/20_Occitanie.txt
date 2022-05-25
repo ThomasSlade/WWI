@@ -1,0 +1,10 @@
+#COLOR 155 28 86
+strategic_region={
+	id=20
+	name=20_Occitanie
+	provinces={
+		392 1121 486 1679
+	}
+	weather={
+	}
+}

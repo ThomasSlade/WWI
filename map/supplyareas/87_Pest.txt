@@ -1,8 +1,0 @@
-supply_area={
-	id=87
-	name=87_Pest
-	value=0
-	states={
-		189 176 
-	}
-}

@@ -1,8 +1,0 @@
-supply_area={
-	id=31
-	name=31_Nantes
-	value=0
-	states={
-		108 12 
-	}
-}

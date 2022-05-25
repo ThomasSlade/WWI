@@ -1,8 +1,0 @@
-supply_area={
-	id=59
-	name=59_Bohemia
-	value=0
-	states={
-		158 139 166
-	}
-}

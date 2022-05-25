@@ -1,8 +1,0 @@
-supply_area={
-	id=43
-	name=43_Saarland
-	value=0
-	states={
-		22 54 
-	}
-}

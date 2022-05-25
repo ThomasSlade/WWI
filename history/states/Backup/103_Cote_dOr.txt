@@ -1,0 +1,21 @@
+#COLOR 159 203 233
+state={
+	id=103
+	name=103_Cote_dOr
+	history={
+		owner = FRA
+		victory_points = {
+			1756 15#Dijon
+		}
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		1665 1799 1544 1680 1810 1822 1707 1714 1717 1604 1732 1734 1756 1632 1764 1766 1770 1773 1779 1788
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

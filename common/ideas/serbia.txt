@@ -1,0 +1,58 @@
+ideas = {
+	country = {
+		SER_follow_the_independent_radicals = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic_expansionist
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				democratic_expansionist_drift = 0.1
+			}
+		}
+
+		SER_austrian_jurisdiction = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ast_classify_aliens
+
+			modifier = {
+				political_power_factor = -0.5
+				stability_weekly = -0.001
+			}
+		}
+
+		SER_nacertanije = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_constitution_guarantee
+
+			modifier = {
+				land_doctrine_cost_factor = -0.3
+			}
+		}
+	}
+}

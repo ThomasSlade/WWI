@@ -1,8 +1,0 @@
-supply_area={
-	id=57
-	name=57_Attica
-	value=0
-	states={
-		121 150 
-	}
-}

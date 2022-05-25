@@ -1,8 +1,0 @@
-supply_area={
-	id=71
-	name=71_Epirus
-	value=0
-	states={
-		183 122 207
-	}
-}

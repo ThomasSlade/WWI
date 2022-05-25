@@ -1,0 +1,21 @@
+#COLOR 27 179 178
+state={
+	id=18
+	name=18_Orleanais
+	history={
+		owner = FRA
+		victory_points = {
+			993 15#Orléans
+		}
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		391 1035 780 655 1427 917 1178 1310 287 31 35 170 45 302 689 817 952 953 1080 60 709 843 1227 83 85 97 98 99 484 609 993 996 369 370 1010 1399
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

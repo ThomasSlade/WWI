@@ -8,15 +8,39 @@ set_technology = {
 set_convoys = 50
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 25
-	fascism = 20
-	communism = 5
-	neutrality = 50
+	democratic = 30
+	democratic_expansionist = 0
+	monarchism = 40
+	monarchism_expansionist = 30
+	communism = 0
+	communism_expansionist = 0
+}
+
+create_country_leader = {
+	name = "Carol I"
+	desc = "POLITICS_CAROL_I_DESC"
+	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
+	expire = "1930.1.1"
+	ideology = t_monarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Carol I"
+	desc = "POLITICS_CAROL_I_DESC"
+	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
+	expire = "1930.1.1"
+	ideology = t_monarchism_expansionist
+	traits = {
+		#
+	}
 }

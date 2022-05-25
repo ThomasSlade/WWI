@@ -1,8 +1,0 @@
-supply_area={
-	id=83
-	name=83_Nis
-	value=0
-	states={
-		162 136 
-	}
-}

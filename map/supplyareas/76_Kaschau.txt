@@ -1,8 +1,0 @@
-supply_area={
-	id=76
-	name=76_Kaschau
-	value=0
-	states={
-		126 131 
-	}
-}

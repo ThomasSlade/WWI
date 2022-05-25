@@ -1,8 +1,0 @@
-supply_area={
-	id=80
-	name=80_Lemberg
-	value=0
-	states={
-		215 167 
-	}
-}

@@ -444,13 +444,14 @@ technologies = {
 			name = infantry_folder
 			position = { x = 2 y = @1911 }
 		}
+
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = paratrooper
+			}
+		}
 		
 		on_research_complete = {
-			limit = {
-				NOT = {
-					has_template_containing_unit = paratrooper
-				}
-			}
 			hidden_effect = {
 				load_oob = "unlock_paratroopers"
 			}
@@ -567,13 +568,14 @@ technologies = {
 		enable_subunits = {
 			marine
 		}
+
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = marine
+			}
+		}
 		
 		on_research_complete = {
-			limit = {
-				NOT = {
-					has_template_containing_unit = marine
-				}
-			}
 			hidden_effect = {
 				load_oob = "unlock_marines"
 			}			
@@ -687,12 +689,13 @@ technologies = {
 			mountaineers
 		}
 
-		on_research_complete = {
-			limit = {
-				NOT = {
-					has_template_containing_unit = mountaineers
-				}
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = mountaineers
 			}
+		}
+
+		on_research_complete = {
 			hidden_effect = {
 				load_oob = "unlock_mountineers"
 			}
@@ -1478,12 +1481,13 @@ technologies = {
 			motorized_equipment_1
 		}
 
-		on_research_complete = {
-			limit = {
-				NOT = {
-					has_template_containing_unit = motorized
-				}
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = motorized
 			}
+		}
+
+		on_research_complete = {
 			hidden_effect = {
 				load_oob = "unlock_motorized"
 			}			

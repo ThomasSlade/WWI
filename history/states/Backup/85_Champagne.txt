@@ -1,0 +1,21 @@
+#COLOR 127 52 171
+state={
+	id=85
+	name=85_Champagne
+	history={
+		owner = FRA
+		victory_points = {
+			1811 15#Reims
+		}
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		1538 1800 1675 1811 1692 1821 1827 1832 1840 1729 1607 1608 1736 1740 1489 1746 1757 1629 1643 1644 1645 1775 1781 1657 1790
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,8 +1,0 @@
-supply_area={
-	id=40
-	name=40_Poitou
-	value=0
-	states={
-		116 95 9 
-	}
-}

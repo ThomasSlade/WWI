@@ -1,8 +1,0 @@
-supply_area={
-	id=64
-	name=64_Central_Transdanubia
-	value=0
-	states={
-		228 201 204
-	}
-}

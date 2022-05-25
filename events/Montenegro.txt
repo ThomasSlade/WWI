@@ -1,0 +1,27 @@
+add_namespace = wwi_montenegro
+
+# Offer to Join Balkan League
+country_event = {
+	id = wwi_montenegro.1
+	title = wwi_montenegro.1.t
+	desc = wwi_montenegro.1.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	# Accept
+	option = {
+		name = wwi_montenegro.1.a
+		ai_chance = { factor = 100 }
+		add_state_core = 135
+		add_state_core = 161
+
+		FROM = { country_event = wwi_serbia.2 }
+	}
+
+	# Decline
+	option = {
+		name = wwi_montenegro.1.b
+		ai_chance = { factor = 0 }
+	}
+}

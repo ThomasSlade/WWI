@@ -1,8 +1,0 @@
-supply_area={
-	id=20
-	name=20_Konigsberg
-	value=0
-	states={
-		86 6 
-	}
-}

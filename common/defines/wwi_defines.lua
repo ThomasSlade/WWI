@@ -5,3 +5,6 @@ NDefines.NGame.MAP_SCALE_PIXEL_TO_KM = 2.1589	-- Based on the distance between P
 NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.1
 NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.1
 NDefines.NMilitary.UNIT_DIGIN_CAP = 2
+NDefines.NProduction.BASE_FACTORY_SPEED = 2
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 1.5
+NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 1

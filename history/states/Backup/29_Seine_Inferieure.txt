@@ -1,0 +1,24 @@
+#COLOR 40 23 175
+state={
+	id=29
+	name=29_Seine_Inferieure
+	history={
+		owner = FRA
+		victory_points = {
+			643 15#Le Havre
+		}
+		victory_points = {
+			692 15#Rouen
+		}
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		643 1286 1547 1165 793 922 1185 935 1448 692 820 954 1467 984 1501 1379 743 372 629 1269 631 1400 1148
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

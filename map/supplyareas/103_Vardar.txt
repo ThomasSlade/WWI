@@ -1,8 +1,0 @@
-supply_area={
-	id=103
-	name=103_Vardar
-	value=0
-	states={
-		148 216 134
-	}
-}

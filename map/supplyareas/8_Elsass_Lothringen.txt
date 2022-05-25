@@ -1,8 +1,0 @@
-supply_area={
-	id=8
-	name=8_Elsass_Lothringen
-	value=0
-	states={
-		2 107 
-	}
-}

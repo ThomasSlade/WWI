@@ -1,0 +1,24 @@
+#COLOR 34 175 227
+state={
+	id=24
+	name=24_Ardennes
+	history={
+		owner = FRA
+		victory_points = {
+			539 15#Verdun
+		}
+		victory_points = {
+			761 5#Sedan
+		}
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		514 390 266 1294 539 284 288 289 673 46 1076 58 195 835 837 1353 74 331 209 856 1243 481 740 1008 761 502 760 249
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,67 @@
+add_namespace = wwi_news
+
+# Turkey humiliated in war (probably by Italy).
+country_event = {
+	id = wwi_news.1
+	title = wwi_news.1.t
+	desc = wwi_news.1.d
+	picture = GFX_report_event_german_speech
+
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = TUR_humiliated_by_war
+	}
+
+	option = {
+		name = wwi_news.1.a_turkish_enemy
+	   	trigger = {
+			has_opinion = { target = TUR value < -39 }
+		}
+	}
+
+	option = {
+		name = wwi_news.1.a_turkish_ally
+		trigger = {
+			has_opinion = { target = TUR value > 49 }
+		}
+	}
+
+	option = {
+		name = wwi_news.1.a_neutral
+		trigger = {
+			AND ={
+				has_opinion = { target = TUR value > -40 }
+				has_opinion = { target = TUR value < 50 }
+			}
+		}
+	}
+}
+
+# Turkish Humiliation Trigger (HIDDEN)
+country_event = {
+	id = wwi_news.2
+	title = wwi_news.2.t
+	desc = wwi_news.2.d
+	picture = GFX_report_event_german_speech
+
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		date > 1912.6.0
+	}
+
+	# WWI PLACEHOLDER: Will eventually be caused by the Italo-Turkish war (or something else).
+	mean_time_to_happen = { days = 10 }
+
+	immediate = {
+		TUR = { news_event = wwi_news.1 }
+	}
+
+	option = {
+		name = wwi_news.1.a
+	}
+}
+

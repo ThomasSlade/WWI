@@ -1,8 +1,0 @@
-supply_area={
-	id=106
-	name=106_Tirol
-	value=0
-	states={
-		229 
-	}
-}

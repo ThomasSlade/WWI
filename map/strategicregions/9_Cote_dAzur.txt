@@ -1,0 +1,10 @@
+#COLOR 20 17 70
+strategic_region={
+	id=21
+	name=21_Cote_dAzur
+	provinces={
+		1865 1180 708
+	}
+	weather={
+	}
+}

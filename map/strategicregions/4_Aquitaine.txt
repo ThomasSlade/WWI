@@ -1,0 +1,10 @@
+#COLOR 12 173 172
+strategic_region={
+	id=4
+	name=4_Aquitaine
+	provinces={
+		585 813 975 1137 1691
+	}
+	weather={
+	}
+}

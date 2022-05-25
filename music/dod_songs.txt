@@ -1,0 +1,3 @@
+# WWI: Exists solely to avoid a database error referring to fascism in the vanilla dod_songs.txt file.
+
+music_station = "base_music"

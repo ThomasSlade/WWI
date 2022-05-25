@@ -1,8 +1,0 @@
-supply_area={
-	id=95
-	name=95_Shumen
-	value=0
-	states={
-		153 187
-	}
-}

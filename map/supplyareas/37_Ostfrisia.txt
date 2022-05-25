@@ -1,8 +1,0 @@
-supply_area={
-	id=37
-	name=37_Ostfrisia
-	value=0
-	states={
-		58 33 57 
-	}
-}

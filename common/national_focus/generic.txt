@@ -1753,9 +1753,7 @@ focus_tree = {
 		mutually_exclusive = { focus = liberty_ethos}
 		available = {
 			OR = {
-				has_government = fascism
 				has_government = communism
-				has_government = neutrality
 			}
 		}
 		x = -1
@@ -1772,12 +1770,9 @@ focus_tree = {
 			factor = 5
 			modifier = {
 				factor = 0
-				OR = {
-					AND = {
-						is_historical_focus_on = yes
-						has_government = neutrality
-					}
-					has_idea = neutrality_idea
+				AND = {
+					is_historical_focus_on = yes
+					has_government = monarchism
 				}
 			}
 		}
@@ -1794,8 +1789,7 @@ focus_tree = {
 		mutually_exclusive = { focus = internationalism_focus }
 		available = {
 			OR = {
-				has_government = fascism
-				has_government = neutrality
+				has_government = monarchism
 			}
 		}
 		x = -2
@@ -1810,27 +1804,9 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 5
-			modifier = {
-				factor = 2
-				any_neighbor_country = {
-					is_major = yes
-					has_government = fascism
-				}
-			}
-			modifier = {
-				factor = 0
-				AND = {
-					is_historical_focus_on = yes
-					NOT = { has_government = fascism }
-				}
-			}
 		}
 
 		completion_reward = {
-			add_timed_idea = {
-				idea = nationalism
-				days = 720
-			}
 		}
 	}
 	
@@ -1846,7 +1822,7 @@ focus_tree = {
 				else = {
 					OR = {
 						has_government = communism
-						has_government = neutrality
+						has_government = monarchism
 					}
 				}
 			}
@@ -1895,7 +1871,7 @@ focus_tree = {
 		available = {
 			OR = {
 				has_government = democratic
-				has_government = neutrality
+				has_government = monarchism
 			}
 		}
 		x = 1
@@ -1914,10 +1890,7 @@ focus_tree = {
 				factor = 0.1
 				any_neighbor_country = {
 					is_major = yes
-					OR = {
-						has_government = communism
-						has_government = fascism
-					}
+					has_government = communism
 				}
 				NOT = {
 					any_neighbor_country = {
@@ -1946,11 +1919,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		completion_reward = {
-			if = {
-				limit = { has_idea = neutrality_idea }
-				remove_ideas = neutrality_idea
-			}			
+		completion_reward = {			
 			add_ideas = militarism_focus
 			army_experience = 20
 			set_rule = { can_send_volunteers = yes }
@@ -1971,10 +1940,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			if = {
-				limit = { has_idea = neutrality_idea }
-				remove_ideas = neutrality_idea
-			}		
 			add_political_power = 200
 			add_ideas = idea_political_correctness
 		}
@@ -2003,10 +1968,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			if = {
-				limit = { NOT = { has_idea = neutrality_idea } }
-				add_ideas = neutrality_idea
-			}
 			add_political_power = 150
 		}
 	}
@@ -2028,17 +1989,9 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				has_idea = neutrality_idea
-			}
 		}
 
 		completion_reward = {
-			if = {
-				limit = { has_idea = neutrality_idea }
-				remove_ideas = neutrality_idea
-			}	
 			set_rule = { can_send_volunteers = yes }
 			add_political_power = 150
 		}
@@ -2059,13 +2012,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = military_youth_focus
-			if = {
-				limit = { has_government = fascism }
-				add_popularity = {
-					ideology = fascism
-					popularity = 0.2
-				}
-			}
 			if = {
 				limit = { has_government = communism }
 				add_popularity = {
@@ -2193,10 +2139,7 @@ focus_tree = {
 			add_ideas = why_we_fight_focus
 			custom_effect_tooltip = why_we_fight_effect
 			hidden_effect = {
-				if = {
-					limit = { NOT = { has_idea = neutrality_idea } }
-					set_rule = { can_create_factions = yes }
-				}			
+				set_rule = { can_create_factions = yes }		
 			}
 		}
 	}
@@ -2218,13 +2161,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = political_commissars_focus
-			if = {
-				limit = { has_government = fascism }
-				add_popularity = {
-					ideology = fascism
-					popularity = 0.2
-				}
-			}
 			if = {
 				limit = { has_government = communism }
 				add_popularity = {

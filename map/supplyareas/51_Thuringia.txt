@@ -1,8 +1,0 @@
-supply_area={
-	id=51
-	name=51_Thuringia
-	value=0
-	states={
-		25 7 35 
-	}
-}

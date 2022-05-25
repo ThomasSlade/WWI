@@ -1,0 +1,62 @@
+#Add to scripted triggers if more levels of hyper inflation is added
+AUS_hungarian_resistance_clear_all = {
+	remove_ideas = {
+		AUS_hungarian_resistance_1
+		AUS_hungarian_resistance_2
+		AUS_hungarian_resistance_3
+	}
+}
+
+#Important to put HIGHEST first
+AUS_hungarian_resistance_level_up = {
+	# level 5 not relevant. Cannot go above.
+	custom_effect_tooltip = AUS_hungarian_resistance_up_tt
+	if = {
+		limit = { has_idea = AUS_hungarian_resistance_2 }
+		swap_ideas = {
+			remove_idea = AUS_hungarian_resistance_2
+			add_idea = AUS_hungarian_resistance_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = AUS_hungarian_resistance_1 }
+		swap_ideas = {
+			remove_idea = AUS_hungarian_resistance_1
+			add_idea = AUS_hungarian_resistance_2
+		}
+	}
+	else_if = {
+		limit = { NOT = { has_idea = AUS_hungarian_resistance_1 } }
+		add_ideas = AUS_hungarian_resistance_1
+	}
+}
+
+#Important to put LOWEST first
+AUS_hungarian_resistance_level_down = {
+custom_effect_tooltip = CHI_inflation_down_tt
+	if = {
+		limit = { has_idea = AUS_hungarian_resistance_1 }
+		#Makes the tooltip clearer if player looks at the effect early in the game
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = AUS_hungarian_resistance_1
+				add_idea = AUS_hungarian_resistance_none
+			}
+		}
+		hidden_effect = { remove_ideas = AUS_hungarian_resistance_1 }
+	}
+	if = {
+		limit = { has_idea = AUS_hungarian_resistance_2 }
+		swap_ideas = {
+			remove_idea = AUS_hungarian_resistance_2
+			add_idea = AUS_hungarian_resistance_1
+		}
+	}
+	if = {
+		limit = { has_idea = AUS_hungarian_resistance_3 }
+		swap_ideas = {
+			remove_idea = AUS_hungarian_resistance_3
+			add_idea = AUS_hungarian_resistance_2
+		}
+	}
+}

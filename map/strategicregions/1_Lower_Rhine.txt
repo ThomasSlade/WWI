@@ -1,0 +1,10 @@
+#COLOR 0 46 69
+strategic_region={
+	id=1
+	name=1_Lower_Rhine
+	provinces={
+		934 583 337 1308 1597
+	}
+	weather={
+	}
+}

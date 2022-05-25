@@ -1,8 +1,0 @@
-supply_area={
-	id=5
-	name=5_Dijon
-	value=0
-	states={
-		15 103 90 
-	}
-}

@@ -1,0 +1,86 @@
+add_namespace = wwi_austria
+
+# Assassination of Franz Ferdinand
+country_event = {
+	id = wwi_austria.1
+	title = wwi_austria.1.t
+	desc = wwi_austria.1.d
+	picture = GFX_report_event_german_speech
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = AUS_ferdinand_dead
+			remove_ideas = franz_ferdinand
+		}
+	}
+
+	# Ultimatum.
+	option = {
+		name = wwi_austria.1.a
+		ai_chance = { factor = 100 }
+		SER = { country_event = { id = wwi_serbia.1 } }
+	}
+
+	# Back down.
+	option = {
+		name = wwi_austria.1.b
+		ai_chance = { factor = 0 }
+		add_stability = -0.1
+		add_timed_idea = {
+			idea = AUS_serbian_punching_bag
+			days = 730
+		}
+	}
+}
+
+# Franz Ferdinand Survives
+country_event = {
+	id = wwi_austria.2
+	title = wwi_austria.2.t
+	desc = wwi_austria.2.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = wwi_austria.2.a
+		add_political_power = 100
+	}
+}
+
+# Serbia rejects the Ultimatum.
+country_event = {
+	id = wwi_austria.3
+	title = wwi_austria.3.t
+	desc = wwi_austria.3.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = wwi_austria.3.a
+		declare_war_on = {
+			target = SER
+			type = annex_everything
+		}
+	}
+}
+
+# Serbia accepts the Ultimatum.
+country_event = {
+	id = wwi_austria.4
+	title = wwi_austria.4.t
+	desc = wwi_austria.4.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = wwi_austria.4.a
+	}
+}
+

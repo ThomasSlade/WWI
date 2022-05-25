@@ -1,8 +1,0 @@
-supply_area={
-	id=30
-	name=30_Munich
-	value=0
-	states={
-		34 71 
-	}
-}

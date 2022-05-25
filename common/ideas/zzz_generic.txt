@@ -103,26 +103,6 @@ ideas = {
 
 	# Special ones that can be applied on other countries through focus system.
 	country = {
-	
-		nationalism = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = fascism
-			}
-
-			removal_cost = -1
-
-			picture = generic_infantry_bonus
-
-			
-			modifier = {
-				fascism_drift = 0.1
-			}
-		}
 		MTG_TEST_NAVAL_IDEA = { #MTG_TODO_GABRIEL: remove before shipping
 			
 			allowed = {
@@ -158,26 +138,6 @@ ideas = {
 			modifier = {
 				#justify_war_goal_time = -0.25
 				communism_drift = 0.1
-			}
-		}
-
-		fascist_influence = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = fascism
-			}
-
-			removal_cost = -1
-
-			picture = generic_fascism_drift_bonus
-			
-			modifier = {
-				fascism_drift = 0.1
-				fascism_acceptance = 85
 			}
 		}
 		
@@ -221,57 +181,7 @@ ideas = {
 				democratic_acceptance = 85
 			}
 		}
-		neutrality_influence = {
-			allowed = {
-				always = no
-			}
 
-			allowed_civil_war = {
-				has_government = neutrality
-			}
-
-			removal_cost = -1
-
-			picture = generic_pp_unity_bonus
-			
-			modifier = {
-				neutrality_drift = 0.1
-				neutrality_acceptance = 85
-			}
-		}
-		
-		soviet_german_friendship = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				OR = {
-					AND = {
-						tag = GER
-						has_government = fascism
-						SOV = {
-							has_government = communism
-						}
-					}
-					AND = {
-						tag = SOV
-						has_government = communism
-						GER = {
-							has_government = fascism
-						}
-					}
-				}
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				communism_acceptance = 100
-				fascism_acceptance = 100
-			}
-		}
-		
 		communist_pressure = {
 			
 			
@@ -312,26 +222,7 @@ ideas = {
 				research_speed_factor = 0.035
 			}
 		}
-		# from decision
-		paramilitary_training = {
-			
-			allowed = {
-				always = no
-			}
 
-			allowed_civil_war = {
-				has_government = fascism
-			}
-
-			removal_cost = -1
-
-			picture = generic_fascism_drift_bonus
-			
-			modifier = {
-				fascism_drift = 0.1
-				experience_gain_army = 0.1
-			}
-		}
 		# from decision
 		nation_building = {
 			
@@ -360,7 +251,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = neutrality
+				has_government = monarchism
 			}
 
 			removal_cost = -1
@@ -368,7 +259,7 @@ ideas = {
 			picture = generic_pp_unity_bonus
 			
 			modifier = {
-				neutrality_drift = 0.1
+				monarchism_drift = 0.1
 				mobilization_speed = 0.15
 			}
 		}
@@ -438,10 +329,6 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
-			allowed_civil_war = {
-				has_government = fascism
-			}
 			
 			removal_cost = -1
 
@@ -461,10 +348,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				OR = {
-					has_government = communism
-					has_government = fascism
-				}
+				has_government = communism
 			}
 			
 			removal_cost = -1
@@ -484,10 +368,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				OR = {
-					has_government = communism
-					has_government = fascism
-				}
+				has_government = communism
 			}
 			
 			removal_cost = -1
@@ -507,10 +388,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				OR = {
-					has_government = communism
-					has_government = fascism
-				}
+				has_government = communism
 			}
 			
 			removal_cost = -1
@@ -568,7 +446,7 @@ ideas = {
 			}
 		}
 	
-		neutrality_idea = {
+		monarchism_idea = {
 			
 			
 			allowed = {
@@ -576,7 +454,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = neutrality
+				has_government = monarchism
 			}
 
 			cancel = {
@@ -706,25 +584,6 @@ ideas = {
 
 			modifier = {
 				communism_drift = -0.05
-			}
-		}
-
-		fascism_banned = {
-
-			picture = generic_fascism_banned
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				NOT = {
-					has_government = fascism
-				}
-			}
-
-			modifier = {
-				fascism_drift = -0.05
 			}
 		}
 
@@ -1148,33 +1007,6 @@ ideas = {
 			do_effect = {
 				NOT = {
 					has_government = democratic
-				}
-			}
-	
-			ai_will_do = {
-				factor = 0
-			}
-		}
-		
-		generic_fascist_demagogue = {
-			
-			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV original_tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = ROM tag = CZE tag = PRC tag = CHI tag = MAN tag = MEX tag = HOL original_tag = SPR original_tag = POR } }
-				NOT = {
-					has_available_idea_with_traits = { idea = fascist_demagogue limit = 1 }
-				}
-
-			}
-			
-			traits = { fascist_demagogue }
-	
-			on_add = {
-				#country_event = political.7
-			}
-	
-			do_effect = {
-				NOT = {
-					has_government = fascism
 				}
 			}
 	

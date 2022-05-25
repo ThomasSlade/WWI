@@ -1,0 +1,10 @@
+#COLOR 122 145 190
+strategic_region={
+	id=12
+	name=12_Upper_Rhine
+	provinces={
+		1098 1762 751
+	}
+	weather={
+	}
+}

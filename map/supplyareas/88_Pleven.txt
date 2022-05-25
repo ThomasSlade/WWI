@@ -1,8 +1,0 @@
-supply_area={
-	id=88
-	name=88_Pleven
-	value=0
-	states={
-		170 
-	}
-}

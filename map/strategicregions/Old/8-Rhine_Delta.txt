@@ -1,0 +1,9 @@
+strategic_region={
+	id=8
+	name="8_Rhine_Delta"
+	provinces={
+		6 121 243 267 283 295 312 313 328 338 387 420 427 450 353
+	}
+	weather={
+	}
+}

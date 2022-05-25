@@ -1,0 +1,9 @@
+strategic_region={
+	id=4
+	name="4_Oberrhein"
+	provinces={
+		5 56 115 149 203 345 
+	}
+	weather={
+	}
+}

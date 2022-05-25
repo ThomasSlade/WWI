@@ -1,0 +1,213 @@
+ideas = {
+	country = {
+		AUS_humiliated_government = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = disjointed_government
+
+			modifier = {
+				stability_weekly = -0.002
+			}
+		}
+
+		AUS_silenced_croatian_serbs = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ast_classify_aliens
+
+			modifier = {
+				monarchism_expansionist_drift = 0.05
+			}
+		}
+
+		AUS_national_security_renewel = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = german_advisors
+
+			modifier = {
+				experience_gain_army = 0.05
+			}
+		}
+
+		AUS_serbian_punching_bag = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_wargaming_division
+
+			modifier = {
+				political_power_factor = -0.5
+				stability_weekly = -0.002
+			}
+		}
+
+		AUS_bosnian_landowner_recompence = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_foreign_capital
+
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		AUS_polish_galician_universities = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_research_bonus
+
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+
+		### Hungarian Resistance Scale ###
+		AUS_hungarian_resistance_none = {
+			picture = chi_war_of_resistance
+		
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+			}
+		}
+
+		AUS_hungarian_resistance_1 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance
+
+			modifier = {
+				political_power_gain = -0.05
+				stability_weekly = -0.002
+				war_support_weekly = -0.002
+			}
+		}
+
+		AUS_hungarian_resistance_2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance2
+
+			modifier = {
+				political_power_gain = -0.1
+				stability_weekly = -0.004
+				war_support_weekly = -0.004
+			}
+		}
+
+		AUS_hungarian_resistance_3 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_war_of_resistance3
+
+			modifier = {
+				political_power_gain = -0.15
+				stability_weekly = -0.006
+				war_support_weekly = -0.006
+			}
+		}
+	}
+
+	political_advisor = {
+		tomas_masaryk = {
+			picture = generic_political_advisor_europe_1
+
+			allowed = {
+				original_tag = AUS
+			}
+
+			available = {
+				has_completed_focus = AUS_acknowledge_agram_trials_blunder
+			}
+
+			traits = { advocate_of_the_disenfranchised }
+		}
+
+		franz_ferdinand = {
+			picture = generic_political_advisor_europe_1
+
+			allowed = {
+				original_tag = AUS
+			}
+
+			traits = { disliked_moderate }
+		}
+	}
+}

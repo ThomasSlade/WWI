@@ -1,0 +1,17 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+opinion_modifiers = {
+	AUS_bosnian_constitution_suspended = { value = -20 }
+}
+
+opinion_modifiers = {
+	SER_appealed_for_arbitration = { value = 20 }
+}

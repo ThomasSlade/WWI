@@ -1,5 +1,6 @@
 # WWI: Removed country-specific and content-specific on_action effects, but tried to maintain 'standard' event results
 # (like ace pilots, victory/defeat notifications, etc ...)
+# Removed refs to vanilla ideologies.
 
 on_actions = {
 	# country 
@@ -7,14 +8,6 @@ on_actions = {
 		random_events = {
 			100 = election.2
 			100 = election.3
-			100 = election.4
-			100 = election.5
-			100 = election.6
-			100 = election.11
-			100 = election.12
-			100 = election.13
-			100 = election.14
-			100 = election.15
 		}
 	}
 
@@ -77,22 +70,6 @@ on_actions = {
 	on_justifying_wargoal_pulse = {
 
 		random_events = {
-			100 = war_justification.1
-			100 = war_justification.2
-			100 = war_justification.3
-			100 = war_justification.4
-			100 = war_justification.5
-			100 = war_justification.6
-			100 = war_justification.7
-			100 = war_justification.8
-			100 = war_justification.9
-			100 = war_justification.10
-			100 = war_justification.11
-			100 = war_justification.12
-			100 = war_justification.13
-			100 = war_justification.14
-			100 = war_justification.15
-			100 = war_justification.16
 			100 = war_justification.17
 			100 = war_justification.18
 			100 = war_justification.19
@@ -217,7 +194,6 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					NOT = { has_government = fascism }
 					NOT = { has_civil_war = yes }
 				}
 				news_event = { id = country_capitulated.0 days = 0 }
@@ -262,21 +238,6 @@ on_actions = {
 				if = {
 					limit = { has_idea = communism_defeated }
 					remove_ideas = communism_defeated
-				}
-			}
-			if = {
-				limit = { has_government = fascism }
-				if = {
-					limit = { has_idea = fascist_assault_divisions }
-					remove_ideas = fascist_assault_divisions
-				}
-				if = {
-					limit = { has_idea = fascist_revolutionaries }
-					remove_ideas = fascist_revolutionaries
-				}
-				if = {
-					limit = { has_idea = fascism_defeated }
-					remove_ideas = fascism_defeated
 				}
 			}
 		}

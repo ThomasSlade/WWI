@@ -1,8 +1,0 @@
-supply_area={
-	id=61
-	name=61_Bucharest
-	value=0
-	states={
-		200 233 
-	}
-}

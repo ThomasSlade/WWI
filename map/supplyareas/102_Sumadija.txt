@@ -1,8 +1,0 @@
-supply_area={
-	id=102
-	name=102_Sumadija
-	value=0
-	states={
-		125 156 
-	}
-}

@@ -1,8 +1,0 @@
-supply_area={
-	id=96
-	name=96_Skopje
-	value=0
-	states={
-		185 218 
-	}
-}

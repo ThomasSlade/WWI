@@ -1,0 +1,28 @@
+add_namespace = wwi_romania
+
+# Territory in exchange for joining the Balkan League.
+country_event = {
+	id = wwi_romania.1
+	title = wwi_romania.1.t
+	desc = wwi_romania.1.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	# Accept
+	option = {
+		name = wwi_romania.1.a
+		ai_chance = { factor = 90 }
+		FROM = { remove_state_core = 162 }
+		add_state_core = 162
+		transfer_state = 162
+
+		FROM = { country_event = wwi_serbia.2 }
+	}
+
+	# Decline
+	option = {
+		name = wwi_romania.1.b
+		ai_chance = { factor = 10 }
+	}
+}

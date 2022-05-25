@@ -1,8 +1,0 @@
-supply_area={
-	id=21
-	name=21_Kustrin
-	value=0
-	states={
-		41 93 
-	}
-}

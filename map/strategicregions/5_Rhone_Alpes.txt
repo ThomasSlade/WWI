@@ -1,0 +1,10 @@
+#COLOR 17 173 12
+strategic_region={
+	id=5
+	name=5_Rhone_Alpes
+	provinces={
+		1124 946 1715 1593 1852
+	}
+	weather={
+	}
+}

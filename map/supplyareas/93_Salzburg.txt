@@ -1,8 +1,0 @@
-supply_area={
-	id=93
-	name=93_Salzburg
-	value=0
-	states={
-		221 238 
-	}
-}

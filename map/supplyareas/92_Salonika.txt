@@ -1,8 +1,0 @@
-supply_area={
-	id=92
-	name=92_Salonika
-	value=0
-	states={
-		188 140 
-	}
-}
