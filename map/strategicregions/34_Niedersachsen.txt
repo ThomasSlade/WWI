@@ -1,0 +1,10 @@
+#COLOR 128 2 2
+strategic_region={
+	id=34
+	name="34_Niedersachsen"
+	provinces={
+		2176 2178 2179 2184 2186 2187 2192 2207 2208 2081 2087 948 1340 2110 2125 2140 2158 2163 2165 2174
+	}
+	weather={
+	}
+}

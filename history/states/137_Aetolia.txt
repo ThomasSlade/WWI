@@ -11,7 +11,7 @@ state={
 		add_core_of = GRE
 	}
 	provinces={
-		658
+		375
 	}
 	manpower=544094
 	buildings_max_level_factor=1.000

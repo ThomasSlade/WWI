@@ -8,11 +8,17 @@ state={
 			infrastructure = 4
 		}
 		add_core_of = BEL
+		victory_points = {
+			1878 5
+		}
+		victory_points = {
+			1871 2
+		}
 	}
 	provinces={
-		1857 1772 1869 1809 1778 1844 1876 1848 1850
+		1826 1890 1862 1865 1839 1871 1843 1844 1878
 	}
-	manpower=1000
+	manpower=529199 
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

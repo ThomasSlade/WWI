@@ -3,7 +3,7 @@ strategic_region={
 	id=20
 	name=20_Occitanie
 	provinces={
-		392 1121 486 1679
+		954 762 1157 1453
 	}
 	weather={
 	}

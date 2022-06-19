@@ -1,0 +1,10 @@
+#COLOR 148 56 7
+strategic_region={
+	id=23
+	name="23_Brandenburg"
+	provinces={
+		1262 1712 820 58 1693
+	}
+	weather={
+	}
+}

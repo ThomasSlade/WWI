@@ -20,9 +20,9 @@ state={
 		add_core_of = GER
 	}
 	provinces={
-		310
+		1262
 	}
-	manpower=100000000
+	manpower=1047193
 	buildings_max_level_factor=1.000
 	state_category=megalopolis
 }

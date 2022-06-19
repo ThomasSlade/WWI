@@ -9,16 +9,16 @@ state={
 		}
 		add_core_of = FRA
 		victory_points = {
-			1270 5 #CALAIS
+			1202 15
 		}
 		victory_points = {
-			659 5 #DUNKERQUE
+			1054 5
 		}
 	}
 	provinces={
-		872 1295 818 371 468 659 1270
+		672 644 975 1202 1239 1373 1054
 	}
-	manpower=1000
+	manpower=744645
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

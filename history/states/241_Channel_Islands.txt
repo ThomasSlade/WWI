@@ -1,0 +1,19 @@
+#COLOR 178 51 37
+state={
+	id=241
+	name=241_Channel_Islands
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		add_core_of = ENG
+	}
+	provinces={
+		2216 2232
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

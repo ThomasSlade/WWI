@@ -1,0 +1,10 @@
+#COLOR 219 63 140
+strategic_region={
+	id=27
+	name="27_Upper_Danube"
+	provinces={
+		1536 1776 1877 1722 701
+	}
+	weather={
+	}
+}

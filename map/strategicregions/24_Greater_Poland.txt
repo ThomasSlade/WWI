@@ -1,0 +1,10 @@
+#COLOR 33 84 8
+strategic_region={
+	id=24
+	name="24_Greater_Poland"
+	provinces={
+		985 1729 597 871
+	}
+	weather={
+	}
+}

@@ -3,7 +3,7 @@ strategic_region={
 	id=21
 	name=21_Cote_dAzur
 	provinces={
-		1865 1180 708
+		178 844 1874
 	}
 	weather={
 	}

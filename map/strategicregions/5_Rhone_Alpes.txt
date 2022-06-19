@@ -3,7 +3,7 @@ strategic_region={
 	id=5
 	name=5_Rhone_Alpes
 	provinces={
-		1124 946 1715 1593 1852
+		82 1495 1305 1883 1790
 	}
 	weather={
 	}

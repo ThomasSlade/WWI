@@ -9,13 +9,34 @@ state={
 		}
 		add_core_of = FRA
 		victory_points = {
-			993 5 #ORLEANS
+			7 15
+		}
+		victory_points = {
+			355 15
+		}
+		victory_points = {
+			784 5
+		}
+		victory_points = {
+			722 5
+		}
+		victory_points = {
+			47 2
+		}
+		victory_points = {
+			725 2
+		}
+		victory_points = {
+			196 2
+		}
+		victory_points = {
+			467 2
 		}
 	}
 	provinces={
-		391 1035 780 655 1427 917 1178 1310 287 31 35 170 45 302 689 817 952 953 1080 60 709 843 1227 83 85 97 98 99 484 609 993 996 369 370 1010 1399
+		7 8 267 268 784 279 24 667 1051 415 544 799 547 47 1076 59 448 449 195 196 74 466 211 467 468 469 722 725 726 1248 354 355 879 628 252 767
 	}
-	manpower=1000
+	manpower=978089
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

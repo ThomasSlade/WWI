@@ -3,7 +3,7 @@ strategic_region={
 	id=17
 	name=17_Brittany
 	provinces={
-		916 1135 1838 87
+		1769 1029 998 271
 	}
 	weather={
 	}

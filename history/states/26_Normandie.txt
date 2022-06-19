@@ -9,16 +9,37 @@ state={
 		}
 		add_core_of = FRA
 		victory_points = {
-			828 5 #CAEN
+			294 15
 		}
 		victory_points = {
-			441 5 #CHERBOURG
+			419 5
+		}
+		victory_points = {
+			715 5
+		}
+		victory_points = {
+			344 5
+		}
+		victory_points = {
+			737 5
+		}
+		victory_points = {
+			1060 2
+		}
+		victory_points = {
+			320 2
+		}
+		victory_points = {
+			112 2
+		}
+		victory_points = {
+			1256 2
 		}
 	}
 	provinces={
-		255 132 530 276 1044 924 293 677 424 1065 1197 182 441 698 827 828 960 86 611 100 357 613 489 1258 885 506 125 767
+		256 1282 647 537 922 1180 419 1060 294 295 806 180 1082 829 320 324 453 715 592 976 342 344 737 613 872 1256 112 890
 	}
-	manpower=1000
+	manpower=1292009
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

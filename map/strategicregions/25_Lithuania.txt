@@ -1,0 +1,10 @@
+#COLOR 17 97 164
+strategic_region={
+	id=25
+	name="25_Lithuania"
+	provinces={
+		816 1439
+	}
+	weather={
+	}
+}

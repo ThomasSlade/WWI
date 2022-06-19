@@ -1,0 +1,10 @@
+#COLOR 29 202 12
+strategic_region={
+	id=28
+	name="28_Erzgebirge"
+	provinces={
+		1349 1037 783 1749 343 1599
+	}
+	weather={
+	}
+}

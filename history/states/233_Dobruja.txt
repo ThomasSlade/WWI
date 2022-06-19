@@ -11,7 +11,7 @@ state={
 		add_core_of = ROM
 	}
 	provinces={
-		1841
+		1884
 	}
 	manpower=531882
 	buildings_max_level_factor=1.000

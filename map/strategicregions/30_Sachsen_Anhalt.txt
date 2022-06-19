@@ -1,0 +1,10 @@
+#COLOR 0 22 98
+strategic_region={
+	id=30
+	name="30_Sachsen_Anhalt"
+	provinces={
+		1649 1761 1295
+	}
+	weather={
+	}
+}

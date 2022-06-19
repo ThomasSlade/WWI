@@ -8,11 +8,20 @@ state={
 			infrastructure = 4
 		}
 		add_core_of = GER
+		victory_points = {
+			2221 5
+		}
+		victory_points = {
+			2230 2
+		}
+		victory_points = {
+			2210 2
+		}
 	}
 	provinces={
-		1750
+		2209 2210 2213 2214 2221 2222 2223 2224 2225 2226 2228 2230 2231 2233 2189
 	}
-	manpower=1000
+	manpower=702755
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

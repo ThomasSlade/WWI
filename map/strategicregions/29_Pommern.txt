@@ -1,0 +1,10 @@
+#COLOR 4 84 51
+strategic_region={
+	id=29
+	name="29_Pommern"
+	provinces={
+		357 1709 215 283 796
+	}
+	weather={
+	}
+}

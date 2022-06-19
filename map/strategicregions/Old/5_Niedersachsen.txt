@@ -1,9 +1,0 @@
-strategic_region={
-	id=5
-	name="5_Niedersachsen"
-	provinces={
-		76 90 97 109 269 363 419 
-	}
-	weather={
-	}
-}

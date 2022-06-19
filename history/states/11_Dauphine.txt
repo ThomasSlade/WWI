@@ -10,9 +10,9 @@ state={
 		add_core_of = FRA
 	}
 	provinces={
-		946
+		82
 	}
-	manpower=1000
+	manpower=1018925
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

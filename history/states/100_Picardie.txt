@@ -9,28 +9,28 @@ state={
 		}
 		add_core_of = FRA
 		victory_points = {
-			1806 5 #AMIENS
+			1681 15
 		}
 		victory_points = {
-			1690 5 #STAINT-QUENTIN
+			1823 5
 		}
 		victory_points = {
-			1760 5 #SOISSONS
+			1809 5
 		}
 		victory_points = {
-			1601 5 #CHATEAU-THIERRY
+			1629 2
 		}
 		victory_points = {
-			1664 5 #LAON
+			1745 2
 		}
 		victory_points = {
-			1765 5 #BEAUVAIS
+			1824 2
 		}
 	}
 	provinces={
-		1664 1792 1671 1802 1678 1806 1808 1684 1814 1689 1690 1694 1824 1699 1700 1830 1705 1706 1712 1713 1719 1726 1601 1731 1738 1743 1617 1747 1755 1631 1759 1760 1763 1765 1638 1777 1653 1782 1783 1660 1663
+		1667 1797 1799 1803 1806 1680 1681 1808 1809 1684 1810 1813 1817 1823 1824 1697 1707 1710 1715 1720 1725 1726 1742 1743 1744 1745 1618 1751 1752 1754 1629 1630 1760 1635 1636 1637 1772 1779 1786 1787 1660 1662
 	}
-	manpower=1000
+	manpower=1568668
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

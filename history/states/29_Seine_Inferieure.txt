@@ -9,16 +9,22 @@ state={
 		}
 		add_core_of = FRA
 		victory_points = {
-			643 5 #HAVRE
+			1028 25
 		}
 		victory_points = {
-			692 5 #ROUEN
+			674 15
+		}
+		victory_points = {
+			849 2
+		}
+		victory_points = {
+			968 2
 		}
 	}
 	provinces={
-		643 1286 1547 1165 793 922 1185 935 1448 692 820 954 1467 984 1501 1379 743 372 629 1269 631 1400 1148
+		1028 1287 1162 526 1423 1300 674 933 1320 689 1329 1589 1351 968 849 1363 1237 1238 1242 1115 1251 752 1526 1528
 	}
-	manpower=1000
+	manpower=1265921
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

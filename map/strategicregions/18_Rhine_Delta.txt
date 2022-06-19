@@ -3,7 +3,7 @@ strategic_region={
 	id=18
 	name=18_Rhine_Delta
 	provinces={
-		1696 1641 1739 1516 1805 1582 1835 1784 1721
+		1764 1733 1828 1640 1418 1807 1559 1658 1886
 	}
 	weather={
 	}

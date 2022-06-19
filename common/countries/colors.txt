@@ -1,0 +1,50 @@
+#reload countrycolors
+
+FRA = {
+	color = rgb { 16 23 106 }
+	color_ui = rgb { 16 23 106 }
+}
+GER = {
+	color = rgb { 100 131 166 }
+	color_ui = rgb { 100 131 166 }
+}
+AUS = {
+	color = rgb { 205 189 184 }
+	color_ui = rgb { 205 189 184 }
+}
+TUR = {
+	color = rgb { 83 16 30 }
+	color_ui = rgb { 83 16 30 }
+}
+BEL = {
+	color = rgb { 55 51 46 }
+	color_ui = rgb { 55 51 46 }
+}
+HOL = {
+	color = rgb { 156 62 17 }
+	color_ui = rgb { 156 62 17 }
+}
+LUX = {
+	color = rgb { 109 31 29 }
+	color_ui = rgb { 109 31 29 }
+}
+SER = {
+	color = rgb { 105 51 117 }
+	color_ui = rgb { 105 51 117 }
+}
+ROM = {
+	color = rgb { 127 130 30 }
+	color_ui = rgb { 127 130 30 }
+}
+BUL = {
+	color = rgb { 45 76 56 }
+	color_ui = rgb { 45 76 56 }
+}
+MON = {
+	color = rgb { 102 39 24 }
+	color_ui = rgb { 102 39 24 }
+}
+GRE = {
+	color = rgb { 106 168 172 }
+	color_ui = rgb { 106 168 172 }
+}

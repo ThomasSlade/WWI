@@ -11,7 +11,7 @@ state={
 		add_core_of = AUS
 	}
 	provinces={
-		1709
+		1659
 	}
 	manpower=836549
 	buildings_max_level_factor=1.000

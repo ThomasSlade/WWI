@@ -1,0 +1,10 @@
+#COLOR 229 227 105
+strategic_region={
+	id=32
+	name="32_Prussia"
+	provinces={
+		1633 168 746 880 1050 510
+	}
+	weather={
+	}
+}

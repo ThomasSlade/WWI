@@ -18,11 +18,20 @@ state={
 			arms_factory = 6
 		}
 		add_core_of = BEL
+		victory_points = {
+			1425 50
+		}
+		victory_points = {
+			1245 25
+		}
+		victory_points = {
+			1210 2
+		}
 	}
 	provinces={
-		769 231 456 871 937 1290 1415 593 1394 1043 1172 375 923 343 959
+		323 516 870 1226 555 269 1166 1425 594 755 596 501 1210 1245 1469
 	}
-	manpower=10000000
+	manpower=2309232
 	buildings_max_level_factor=1.000
 	state_category=megalopolis
 }

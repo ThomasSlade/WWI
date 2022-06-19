@@ -9,13 +9,16 @@ state={
 		}
 		add_core_of = FRA
 		victory_points = {
-			250 5 #LANGRES
+			264 15
+		}
+		victory_points = {
+			779 5
 		}
 	}
 	provinces={
-		1282 548 15 400 145 528 404 247 57 250 251 124 1081 319
+		260 325 356 391 264 75 12 779 1004 687 371 348 724 23 60 509
 	}
-	manpower=1000
+	manpower=235826
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

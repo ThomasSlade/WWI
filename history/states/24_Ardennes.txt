@@ -9,16 +9,25 @@ state={
 		}
 		add_core_of = FRA
 		victory_points = {
-			46 5 #VERDUN
+			822 15
 		}
 		victory_points = {
-			761 5 #SEDAN
+			106 5
+		}
+		victory_points = {
+			1095 5
+		}
+		victory_points = {
+			669 2
+		}
+		victory_points = {
+			482 2
 		}
 	}
 	provinces={
-		514 390 266 1294 539 284 288 289 673 46 1076 58 195 835 837 1353 74 331 209 856 1243 481 740 1008 761 502 760 249
+		1410 777 142 144 916 155 669 798 932 1072 1075 822 1339 445 1348 1095 843 1361 727 1114 988 989 97 482 485 106 1002 877 624
 	}
-	manpower=1000
+	manpower=621400
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

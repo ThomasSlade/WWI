@@ -20,9 +20,9 @@ state={
 		add_core_of = HOL
 	}
 	provinces={
-		1721 1835
+		1764 1886
 	}
-	manpower=10000000
+	manpower=963255
 	buildings_max_level_factor=1.000
 	state_category=megalopolis
 }

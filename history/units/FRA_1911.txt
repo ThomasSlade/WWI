@@ -23,7 +23,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -32,7 +32,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -41,7 +41,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -50,7 +50,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -59,54 +59,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-
-	# 5 Infantry Units
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 663
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 663
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 663
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 663
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -117,7 +70,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -126,7 +79,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -135,7 +88,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -144,7 +97,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -153,54 +106,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-
-	# 5 Infantry Units
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 663
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 663
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 663
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 663
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -211,7 +117,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -220,7 +126,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -229,7 +135,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -238,7 +144,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -247,54 +153,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-
-	# 5 Infantry Units
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 663
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 663
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 663
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 663
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -305,7 +164,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -314,7 +173,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -323,7 +182,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -332,7 +191,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -341,54 +200,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-
-	# 5 Infantry Units
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 663
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 663
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 663
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 663
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -399,7 +211,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -408,7 +220,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -417,7 +229,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -426,7 +238,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -435,54 +247,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-
-	# 5 Infantry Units
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 663
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 663
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 663
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 663
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -493,7 +258,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -502,7 +267,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -511,7 +276,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -520,7 +285,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -529,54 +294,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-
-	# 5 Infantry Units
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 663
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 663
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 663
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 663
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -587,7 +305,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -596,7 +314,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -605,7 +323,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -614,7 +332,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -623,54 +341,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-
-	# 5 Infantry Units
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 663
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 663
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 663
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 663
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -681,7 +352,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -690,7 +361,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -699,7 +370,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -708,7 +379,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -717,7 +388,54 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 663
+		location = 1266
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+
+	# 5 Infantry Units
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 1266
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 1266
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 1266
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 1266
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 1266
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}

@@ -1,0 +1,10 @@
+#COLOR 249 157 29
+strategic_region={
+	id=33
+	name="33_Upper_Silesia"
+	provinces={
+		56 1816 1880 764
+	}
+	weather={
+	}
+}

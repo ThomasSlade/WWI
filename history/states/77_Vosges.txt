@@ -9,22 +9,25 @@ state={
 		}
 		add_core_of = FRA
 		victory_points = {
-			1360 5 #NANCY
+			1576 15
 		}
 		victory_points = {
-			1483 5 #EPINAL
+			1406 5
 		}
 		victory_points = {
-			1718 5 #TOUL
+			1591 2
 		}
 		victory_points = {
-			1381 5 #BELFORT
+			1708 2
+		}
+		victory_points = {
+			1493 2
 		}
 	}
 	provinces={
-		1674 1300 1685 1695 1568 1702 1576 1581 1585 1718 1603 1483 1614 1360 1748 1626 1381 1514 1520 1655 1403 1661
+		1685 1686 1690 1435 1698 1699 1576 1708 1587 1591 1343 1608 1738 1493 1755 1374 1631 1632 1648 1403 1532 1406
 	}
-	manpower=1000
+	manpower=975788
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

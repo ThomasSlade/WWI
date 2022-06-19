@@ -13,7 +13,7 @@ state={
 		add_core_of = SER
 	}
 	provinces={
-		1880
+		1802
 	}
 	manpower=855125
 	buildings_max_level_factor=1.000

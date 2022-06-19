@@ -1,18 +1,27 @@
 #COLOR 94 138 94
 state={
 	id=68
-	name=68_Neckar_Kries
+	name="68_Neckar_Kries"
 	history={
 		owner = GER
 		buildings = {
 			infrastructure = 4
 		}
 		add_core_of = GER
+		victory_points = {
+			2166 15
+		}
+		victory_points = {
+			2156 2
+		}
+		victory_points = {
+			2193 2
+		}
 	}
 	provinces={
-		1542
+		2146 2085 2086 2119 2088 2090 2091 2156 2188 2094 2190 2193 2130 2173 2166 2201 2141
 	}
-	manpower=1000
+	manpower=1750551
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

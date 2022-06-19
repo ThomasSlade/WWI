@@ -1,0 +1,10 @@
+#COLOR 107 252 255
+strategic_region={
+	id=31
+	name="31_Ostseekuste"
+	provinces={
+		1664 1634 1182 1172
+	}
+	weather={
+	}
+}

@@ -11,7 +11,7 @@ state={
 		add_core_of = BUL
 	}
 	provinces={
-		1251
+		1219
 	}
 	manpower=471773
 	buildings_max_level_factor=1.000

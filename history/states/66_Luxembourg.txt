@@ -18,11 +18,17 @@ state={
 			arms_factory = 6
 		}
 		add_core_of = LUX
+		victory_points = {
+			1514 15
+		}
+		victory_points = {
+			1419 2
+		}
 	}
 	provinces={
-		1345 1673 1420 1683 1560 1625
+		1670 1514 1419 1549 749 1399
 	}
-	manpower=10000000
+	manpower=259027
 	buildings_max_level_factor=1.000
 	state_category=megalopolis
 }
