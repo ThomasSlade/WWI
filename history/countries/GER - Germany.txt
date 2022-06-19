@@ -26,8 +26,8 @@ set_politics = {
 set_popularities = {
 	democratic = 5
 	democratic_expansionist = 0
-	monarchism = 45
-	monarchism_expansionist = 20
+	monarchism = 10
+	monarchism_expansionist = 55
 	communism = 30
 	communism_expansionist = 0
 }
