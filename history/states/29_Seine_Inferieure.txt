@@ -8,18 +8,6 @@ state={
 			infrastructure = 4
 		}
 		add_core_of = FRA
-		victory_points = {
-			1028 25
-		}
-		victory_points = {
-			674 15
-		}
-		victory_points = {
-			849 2
-		}
-		victory_points = {
-			968 2
-		}
 	}
 	provinces={
 		1028 1287 1162 526 1423 1300 674 933 1320 689 1329 1589 1351 968 849 1363 1237 1238 1242 1115 1251 752 1526 1528

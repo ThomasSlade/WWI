@@ -18,12 +18,6 @@ state={
 			arms_factory = 6
 		}
 		add_core_of = LUX
-		victory_points = {
-			1514 15
-		}
-		victory_points = {
-			1419 2
-		}
 	}
 	provinces={
 		1670 1514 1419 1549 749 1399

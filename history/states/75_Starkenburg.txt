@@ -8,12 +8,6 @@ state={
 			infrastructure = 4
 		}
 		add_core_of = GER
-		victory_points = {
-			2144 5
-		}
-		victory_points = {
-			2138 2
-		}
 	}
 	provinces={
 		2144 2123 2092 2191 2128 2129 2100 2138

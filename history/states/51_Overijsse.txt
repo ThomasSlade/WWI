@@ -10,7 +10,7 @@ state={
 		add_core_of = HOL
 	}
 	provinces={
-		170 461
+		2305 2433 2404 2468 2349 2577 2514 2326 2361 2427 2334
 	}
 	manpower=1000
 	buildings_max_level_factor=1.000

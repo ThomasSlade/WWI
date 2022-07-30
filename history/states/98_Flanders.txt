@@ -8,15 +8,6 @@ state={
 			infrastructure = 4
 		}
 		add_core_of = BEL
-		victory_points = {
-			1335 15
-		}
-		victory_points = {
-			1564 15
-		}
-		victory_points = {
-			1812 5
-		}
 	}
 	provinces={
 		1383 1580 1656 1727 1747 1780 1812 1335 1592 1721 1819 1564 1407

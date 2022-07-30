@@ -8,27 +8,9 @@ state={
 			infrastructure = 4
 		}
 		add_core_of = FRA
-		victory_points = {
-			1794 25
-		}
-		victory_points = {
-			1734 15
-		}
-		victory_points = {
-			1651 5
-		}
-		victory_points = {
-			1815 2
-		}
-		victory_points = {
-			1763 2
-		}
-		victory_points = {
-			1645 2
-		}
 	}
 	provinces={
-		1794 1805 1815 1818 1822 1695 1840 1841 1842 1717 1846 1728 1730 1734 1739 1740 1758 1759 1763 1515 1645 1650 1651 1525 1789
+		1794 3722 1805 1815 1818 1822 1695 1840 1841 1842 1717 1846 1728 1730 1734 1739 1740 1758 1759 1763 3687 1515 1645 1650 1651 1525 3708 1789
 	}
 	manpower=719859
 	buildings_max_level_factor=1.000

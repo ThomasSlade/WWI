@@ -10,7 +10,7 @@ state={
 		add_core_of = GER
 	}
 	provinces={
-		1182
+		2977 3138 3201 3297 3047 2984 3049 3307 2988 2992 3090 3282 3190 3096 3256 3038 3039
 	}
 	manpower=869442
 	buildings_max_level_factor=1.000

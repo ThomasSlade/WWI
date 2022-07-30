@@ -1,0 +1,39 @@
+on_actions = {
+	on_daily = {
+		effect = {
+		every_country = {
+			if = {
+				limit = {
+					OR = {
+						has_government = monarchism
+						has_government = monarchism_expansionist
+					}
+				}
+				set_temp_variable = { expansionist_ideology = token:monarchism_expansionist }
+			}
+			if = {
+				limit = {
+					OR = {
+						has_government = democratic
+						has_government = democratic_expansionist
+					}
+				}
+				set_temp_variable = { expansionist_ideology = token:democratic_expansionist }
+			}
+			if = {
+				limit = {
+					OR = {
+						has_government = communism
+						has_government = communism_expansionist
+					}
+				}
+				set_temp_variable = { expansionist_ideology = token:communism_expansionist }
+			}
+
+
+			set_temp_variable = { expansionist_growth = var:num_of_factories }
+			divide_temp_variable = { expansionist_growth = 100000 }
+			add_popularity = { ideology = var:expansionist_ideology popularity = var:expansionist_growth }
+		}
+	}
+}

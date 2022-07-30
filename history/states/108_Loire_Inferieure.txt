@@ -10,7 +10,7 @@ state={
 		add_core_of = FRA
 	}
 	provinces={
-		1769
+		2784 2849 2850 2947 2908 2888 2893 2927 2929 2868 2844 2941 2815
 	}
 	manpower=714206
 	buildings_max_level_factor=1.000
