@@ -10,9 +10,27 @@ state={
 		arms_factory = 1
 		}
 		add_core_of = BUL
+		victory_points = {
+			5447 5
+		}
+		victory_points = {
+			5583 5
+		}
+		victory_points = {
+			5454 5
+		}
+		victory_points = {
+			5742 2
+		}
+		victory_points = {
+			5733 2
+		}
+		victory_points = {
+			5852 2
+		}
 	}
 	provinces={
-		1624
+		5376 5633 5637 5767 5775 5650 5657 5785 5531 5533 5790 5793 5411 5925 5544 5673 5547 5676 5935 5553 5945 5697 5701 5447 5833 5834 5454 5583 5584 5330 5845 5846 5852 5477 5733 5742 5363 5619 5620 5624 5369 5758
 	}
 	manpower=891737
 	buildings_max_level_factor=1.000

@@ -1,0 +1,10 @@
+#COLOR 89 249 44
+strategic_region={
+	id=39
+	name="39_Lesser_Poland"
+	provinces={
+		3841 4033 4034 4065 4161 4070 4365 4334 4462 3824 3889 3957 4085 4405 4469 4287
+	}
+	weather={
+	}
+}

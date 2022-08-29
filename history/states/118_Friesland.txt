@@ -8,9 +8,15 @@ state={
 			infrastructure = 4
 		}
 		add_core_of = HOL
+		victory_points = {
+			2928 5
+		}
+		victory_points = {
+			2873 2
+		}
 	}
 	provinces={
-		2821 2828 2860 2835 2931 2837 2933 2871 2878
+		2816 2855 2823 2830 2926 2832 2928 2866 2873
 	}
 	manpower=1000
 	buildings_max_level_factor=1.000

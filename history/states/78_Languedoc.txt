@@ -8,9 +8,24 @@ state={
 			infrastructure = 4
 		}
 		add_core_of = FRA
+		victory_points = {
+			2724 15
+		}
+		victory_points = {
+			2677 5
+		}
+		victory_points = {
+			2575 5
+		}
+		victory_points = {
+			2709 2
+		}
+		victory_points = {
+			2690 2
+		}
 	}
 	provinces={
-		2562 2691 2566 2695 2702 2580 2714 2586 2721 2472 2728 2729 2612 2744 2625 2765 2510 2655 2656 2536 2546 2682 2683
+		2561 2690 2697 2575 2581 2709 2716 2467 2723 2724 2607 2739 2620 2760 2505 2650 2651 2531 2541 2677 2678 2557 2686
 	}
 	manpower=830032
 	buildings_max_level_factor=1.000

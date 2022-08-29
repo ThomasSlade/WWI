@@ -9,9 +9,18 @@ state={
 			industrial_complex = 1
 		}
 		add_core_of = BUL
+		victory_points = {
+			5235 5
+		}
+		victory_points = {
+			5611 2
+		}
+		victory_points = {
+			5242 2
+		}
 	}
 	provinces={
-		362
+		5765 5386 5266 5529 1565 5282 1829 5419 5558 5303 5563 5182 5439 5183 5320 5195 5333 5589 5209 5226 5611 5617 5490 5235 5242
 	}
 	manpower=201931
 	buildings_max_level_factor=1.000

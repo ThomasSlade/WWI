@@ -1,0 +1,10 @@
+#COLOR 147 61 51
+strategic_region={
+	id=43
+	name=43_UNNAMEDSTATE_147_61_51
+	provinces={
+		5920 6208 5666 6214 5992 6153 5677 6125 5839 6132 5685 6168 6170 5919
+	}
+	weather={
+	}
+}

@@ -8,9 +8,12 @@ state={
 			infrastructure = 4
 		}
 		add_core_of = TUR
+		victory_points = {
+			5388 2
+		}
 	}
 	provinces={
-		1379
+		5479 5672 5388 5590 5818
 	}
 	manpower=75617
 	buildings_max_level_factor=1.000

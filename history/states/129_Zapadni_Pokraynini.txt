@@ -8,9 +8,12 @@ state={
 			infrastructure = 4
 		}
 		add_core_of = BUL
+		victory_points = {
+			5248 2
+		}
 	}
 	provinces={
-		205 118 423
+		5248 5251 5224 5261 5177
 	}
 	manpower=46419
 	buildings_max_level_factor=1.000

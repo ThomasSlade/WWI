@@ -18,9 +18,15 @@ state={
 			arms_factory = 1
 		}
 		add_core_of = TUR
+		victory_points = {
+			6153 50
+		}
+		victory_points = {
+			5920 2
+		}
 	}
 	provinces={
-		1465
+		5920 6208 5666 6214 5992 6153 5677 6125 5839 6132 5685 6168 6170 5919
 	}
 	manpower=1125028
 	buildings_max_level_factor=1.000

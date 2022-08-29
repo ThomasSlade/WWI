@@ -1,0 +1,10 @@
+#COLOR 75 67 75
+strategic_region={
+	id=58
+	name=58_UNNAMEDSTATE_75_67_75
+	provinces={
+		3946
+	}
+	weather={
+	}
+}

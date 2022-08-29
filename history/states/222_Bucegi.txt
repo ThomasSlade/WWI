@@ -9,9 +9,21 @@ state={
 			arms_factory = 1
 		}
 		add_core_of = ROM
+		victory_points = {
+			6065 25
+		}
+		victory_points = {
+			6112 15
+		}
+		victory_points = {
+			6017 5
+		}
+		victory_points = {
+			6088 2
+		}
 	}
 	provinces={
-		1836
+		6017 5891 5892 6284 6161 6294 6299 6177 6184 6065 5811 6324 6073 5820 5955 5960 6088 6090 5963 6218 6105 5979 6111 5984 6112 5858 6246 5863 6121 6000 6130 6005 6133 6269 6014
 	}
 	manpower=912834
 	buildings_max_level_factor=1.000

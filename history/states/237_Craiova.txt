@@ -9,9 +9,18 @@ state={
 			industrial_complex = 1
 		}
 		add_core_of = ROM
+		victory_points = {
+			6224 15
+		}
+		victory_points = {
+			6310 2
+		}
+		victory_points = {
+			6289 2
+		}
 	}
 	provinces={
-		1737
+		6146 6277 6282 6155 6033 6289 6045 6310 6318 6199 6072 5947 6339 6341 6344 6095 6096 6224 6234 5982 6243 5989 5994 6252
 	}
 	manpower=544236
 	buildings_max_level_factor=1.000

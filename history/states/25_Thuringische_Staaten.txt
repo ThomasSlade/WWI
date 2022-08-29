@@ -8,9 +8,24 @@ state={
 			infrastructure = 4
 		}
 		add_core_of = GER
+		victory_points = {
+			3158 5
+		}
+		victory_points = {
+			2959 2
+		}
+		victory_points = {
+			3283 2
+		}
+		victory_points = {
+			2947 2
+		}
+		victory_points = {
+			3012 2
+		}
 	}
 	provinces={
-		2952 3210 2955 2964 3221 1816 1050 3101 3229 3231 3014 3016 3017 3028 3288 3162 3163 3037 3170 871 3179 1649 3057 3059 3191 3199
+		2947 3205 2950 2959 3216 1812 3096 1049 3224 3226 3009 3011 3012 3023 3283 3157 3158 3032 3165 870 3174 3052 1646 3054 3186 3194
 	}
 	manpower=1511049
 	buildings_max_level_factor=1.000

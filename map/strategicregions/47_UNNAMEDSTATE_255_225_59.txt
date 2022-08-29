@@ -1,0 +1,10 @@
+#COLOR 255 225 59
+strategic_region={
+	id=47
+	name=47_UNNAMEDSTATE_255_225_59
+	provinces={
+		576 1477 1830 1879 5295 1010 5618 1622 118 5245
+	}
+	weather={
+	}
+}

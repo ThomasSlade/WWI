@@ -9,9 +9,12 @@ state={
 			arms_factory = 1
 		}
 		add_core_of = AUS
+		victory_points = {
+			4643 5
+		}
 	}
 	provinces={
-		1776
+		4641 4770 4643 5057 4805 4712 4713 4744 5001 4990 5010 4693 4919 4888 4729 5051 4798
 	}
 	manpower=727949
 	buildings_max_level_factor=1.000

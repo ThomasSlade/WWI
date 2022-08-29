@@ -1,7 +1,7 @@
-#COLOR 125 65 117
+#COLOR 191 15 129
 state={
 	id=186
-	name=186_Tarnopol
+	name=186_Belz
 	history={
 		owner = AUS
 		buildings = {
@@ -9,9 +9,12 @@ state={
 			industrial_complex = 1
 		}
 		add_core_of = AUS
+		victory_points = {
+			4480 2
+		}
 	}
 	provinces={
-		1583
+		4480 4992 4868 4902 4807 4873 4460 4589 5166 5072 4626 5013 5080 4633 4604 4510
 	}
 	manpower=923744
 	buildings_max_level_factor=1.000

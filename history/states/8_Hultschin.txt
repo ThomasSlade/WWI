@@ -8,9 +8,12 @@ state={
 			infrastructure = 4
 		}
 		add_core_of = GER
+		victory_points = {
+			3056 2
+		}
 	}
 	provinces={
-		3061
+		3056
 	}
 	manpower=243923
 	buildings_max_level_factor=1.000

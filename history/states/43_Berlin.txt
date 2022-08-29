@@ -18,9 +18,12 @@ state={
 			arms_factory = 6
 		}
 		add_core_of = GER
+		victory_points = {
+			3116 50
+		}
 	}
 	provinces={
-		3041 3202 3021 2989 3121
+		2984 3016 3116 3036 3197
 	}
 	manpower=1047193
 	buildings_max_level_factor=1.000

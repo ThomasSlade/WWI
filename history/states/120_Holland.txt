@@ -18,9 +18,27 @@ state={
 			arms_factory = 6
 		}
 		add_core_of = HOL
+		victory_points = {
+			2788 50
+		}
+		victory_points = {
+			2784 50
+		}
+		victory_points = {
+			2943 15
+		}
+		victory_points = {
+			2930 5
+		}
+		victory_points = {
+			2937 5
+		}
+		victory_points = {
+			1778 2
+		}
 	}
 	provinces={
-		2948 2949 2950 3727 2853 3640 2877 2886 2889 2909 2910 2782 2916 2789 2793 2922 2924 1782 2935 2937 2942
+		2944 2945 3722 2848 3635 2872 2881 2884 2904 2777 2905 2911 2784 2788 2917 2919 2930 1778 2932 2937 2943
 	}
 	manpower=963255
 	buildings_max_level_factor=1.000

@@ -9,9 +9,21 @@ state={
 			industrial_complex = 1
 		}
 		add_core_of = SER
+		victory_points = {
+			5580 5
+		}
+		victory_points = {
+			5613 2
+		}
+		victory_points = {
+			5524 2
+		}
+		victory_points = {
+			5680 2
+		}
 	}
 	provinces={
-		1255
+		5507 5509 5640 5514 5390 5524 5404 5789 5537 5538 5542 5802 5675 5551 5680 5556 5816 5561 5436 5696 5450 5580 5581 5716 5729 5605 5607 5613 5630
 	}
 	manpower=402985
 	buildings_max_level_factor=1.000

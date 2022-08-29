@@ -9,9 +9,12 @@ state={
 		}
 		add_core_of = TUR
 		add_core_of = BUL
+		victory_points = {
+			6229 2
+		}
 	}
 	provinces={
-		1774
+		6074 6229 6079
 	}
 	manpower=30071
 	buildings_max_level_factor=1.000

@@ -8,9 +8,15 @@ state={
 			infrastructure = 4
 		}
 		add_core_of = GRE
+		victory_points = {
+			5406 2
+		}
+		victory_points = {
+			5350 2
+		}
 	}
 	provinces={
-		573
+		5502 5379 5350 5543 5574 5644 5681 5300 5525 5337 5499 5596 5406
 	}
 	manpower=385618
 	buildings_max_level_factor=1.000

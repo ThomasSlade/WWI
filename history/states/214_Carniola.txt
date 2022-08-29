@@ -9,9 +9,21 @@ state={
 			industrial_complex = 1
 		}
 		add_core_of = AUS
+		victory_points = {
+			4723 15
+		}
+		victory_points = {
+			4476 5
+		}
+		victory_points = {
+			4588 2
+		}
+		victory_points = {
+			4929 2
+		}
 	}
 	provinces={
-		1825
+		4867 4749 4750 4495 4757 5014 4503 5022 4512 5031 4649 4653 4781 4782 4533 4790 4929 4546 5068 4561 4696 5086 4835 4709 4970 5098 4588 4461 4844 4978 4723 4476 4477
 	}
 	manpower=778457
 	buildings_max_level_factor=1.000

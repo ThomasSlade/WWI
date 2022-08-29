@@ -1,0 +1,30 @@
+#COLOR 19 0 94
+state={
+	id=242
+	name=242_Lemberg
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = AUS
+		victory_points = {
+			3950 25
+		}
+		victory_points = {
+			3823 15
+		}
+		victory_points = {
+			3930 2
+		}
+		victory_points = {
+			3902 2
+		}
+	}
+	provinces={
+		3845 3728 3985 3741 3869 3871 3748 4007 3755 3759 3763 3764 3768 1720 3901 3902 3912 1865 1870 1872 3920 3930 3815 4091 4201 1772 3950 3823 1649 3825 1141 3961 1147
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}
