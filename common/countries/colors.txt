@@ -40,11 +40,35 @@ BUL = {
 	color = rgb { 45 76 56 }
 	color_ui = rgb { 45 76 56 }
 }
-MON = {
-	color = rgb { 102 39 24 }
-	color_ui = rgb { 102 39 24 }
+MNT = {
+	color = rgb { 45 142 124 }
+	color_ui = rgb { 45 142 124 }
 }
 GRE = {
 	color = rgb { 106 168 172 }
 	color_ui = rgb { 106 168 172 }
+}
+SVO = {
+	color = rgb { 120 118 52 }
+	color_ui = rgb { 120 118 52 }
+}
+CRO = {
+	color = rgb { 135 18 27 }
+	color_ui = rgb { 135 18 27 }
+}
+BOS = {
+	color = rgb { 186 127 60 }
+	color_ui = rgb { 186 127 60 }
+}
+SLV = {
+	color = rgb { 177 169 207 }
+	color_ui = rgb { 177 169 207 }
+}
+SCS = {
+	color = rgb { 113 187 199 }
+	color_ui = rgb { 113 187 199 }
+}
+MAC = {
+	color = rgb { 176 89 72 }
+	color_ui = rgb { 176 89 72 }
 }

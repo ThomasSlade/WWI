@@ -25,3 +25,41 @@ country_event = {
 		ai_chance = { factor = 0 }
 	}
 }
+
+# Offer to unite with Serbia
+country_event = {
+	id = wwi_montenegro.2
+	title = wwi_montenegro.2.t
+	desc = wwi_montenegro.2.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	# Accept
+	option = {
+		name = wwi_montenegro.2.a
+
+		# AI Montenegro always unifies.
+		ai_chance = { factor = 100 }
+		
+		SER = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+
+	# Accept as Puppet
+	option = {
+		name = wwi_montenegro.2.b
+		
+		SER = {
+			diplomatic_relation = {
+				country = ROOT
+				relation = puppet
+				active = yes
+			}
+		}
+	}
+
+	# Decline
+	option = {
+		name = wwi_montenegro.2.c
+	}
+}

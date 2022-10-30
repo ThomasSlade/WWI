@@ -1,8 +1,8 @@
 ideas = {
 	country = {
-		SER_follow_the_independent_radicals = {
+		SER_idea_follow_the_independent_radicals = {
 			allowed = {
-				always = no
+				always = yes
 			}
 
 			allowed_civil_war = {
@@ -11,16 +11,16 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_democratic_drift_bonus
+			picture = GFX_idea_generic_democratic_expansionist
 
 			modifier = {
-				democratic_expansionist_drift = 0.1
+				democratic_expansionist_drift = 0.01
 			}
 		}
 
 		SER_austrian_jurisdiction = {
 			allowed = {
-				always = no
+				always = yes
 			}
 
 			allowed_civil_war = {
@@ -39,7 +39,7 @@ ideas = {
 
 		SER_nacertanije = {
 			allowed = {
-				always = no
+				always = yes
 			}
 
 			allowed_civil_war = {
@@ -48,10 +48,159 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_constitution_guarantee
+			picture = GFX_idea_generic_constitution_guarantee
 
 			modifier = {
 				land_doctrine_cost_factor = -0.3
+			}
+		}
+
+		SER_the_pijemont = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_generic_propoganda_megaphone
+
+			modifier = {
+				army_core_attack_factor = 0.25
+				war_support_factor = 0.1
+			}
+		}
+
+		SER_king_of_all_the_serbs = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_aus_narodna_odbrana
+
+			modifier = {
+				supply_combat_penalties_on_core_factor = -0.33
+				local_manpower = 0.10
+			}
+		}
+
+		SER_french_military_contracts = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_generic_crate
+
+			modifier = {
+				production_speed_industrial_complex_factor = 1
+			}
+		}
+
+		SER_russian_weapon_imports = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_generic_crate
+
+			modifier = {
+				production_speed_industrial_complex_factor = 1
+			}
+		}
+
+		SER_traditional_uniform_production = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_generic_gear_and_star
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.8
+				production_lack_of_resource_penalty_factor = -0.25
+				army_infantry_attack_factor = -0.1
+			}
+		}
+
+		SER_idea_the_third_ban = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_generic_gear_and_star
+
+			modifier = {
+				conscription = 0.02
+			}
+		}
+
+		SER_idea_integration_of_new_citizens = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_generic_gear_and_star
+
+			modifier = {
+				compliance_growth = 0.5
+			}
+		}
+
+		SER_idea_martial_law_in_new_serbia = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_generic_gear_and_star
+
+			modifier = {
+				production_speed_bunker_factor = 1
+				democratic_expansionist_drift = 0.01
 			}
 		}
 	}

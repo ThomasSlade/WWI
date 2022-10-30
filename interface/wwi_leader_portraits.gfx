@@ -1,0 +1,24 @@
+spriteTypes = {
+	### SER
+
+	spriteType = {
+		name = "GFX_portrait_ser_nikola_pasic"
+		texturefile = "gfx/leaders/SER/portrait_ser_nikola_pasic.dds"
+	}
+
+	
+
+	### GER
+
+	spriteType = {
+		name = "GFX_portrait_ger_wilhelm_ii"
+		texturefile = "gfx/leaders/GER/portrait_ger_wilhelm_ii.dds"
+	}
+
+	### FRA
+
+	spriteType = {
+		name = "GFX_portrait_fra_raymond_poincare"
+		texturefile = "gfx/leaders/FRA/portrait_fra_raymond_poincare.dds"
+	}
+}

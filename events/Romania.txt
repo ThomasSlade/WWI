@@ -12,9 +12,8 @@ country_event = {
 	# Accept
 	option = {
 		name = wwi_romania.1.a
-		ai_chance = { factor = 90 }
+		ai_chance = { factor = 100 }
 		FROM = { remove_state_core = 162 }
-		add_state_core = 162
 		transfer_state = 162
 
 		FROM = { country_event = wwi_serbia.2 }
@@ -23,6 +22,6 @@ country_event = {
 	# Decline
 	option = {
 		name = wwi_romania.1.b
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 0 }
 	}
 }

@@ -1,0 +1,14 @@
+SER_insurgencies = {
+	icon = decision_generic_independence
+
+	allowed = {
+		original_tag = SER
+	}
+	
+	visible = {
+		AND = {
+			has_completed_focus = SER_rearm_the_vojvodina
+			NOT = { has_global_flag = serb_vojvodina_revolted }
+		}
+	}
+}

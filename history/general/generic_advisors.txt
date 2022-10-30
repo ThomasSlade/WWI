@@ -1,0 +1,40 @@
+# Political advisors
+every_possible_country = {
+	limit = {
+		NOT = { OR = { tag = GER tag = AUS tag = ENG tag = SOV tag = FRA tag = SER tag = BUL } }
+		is_dynamic_country = no
+	}
+	generate_character = {
+		token_base = generic_dove
+		advisor = {
+			slot = political_advisor
+			traits = { dove }
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		portraits = { 
+			army = { small = GFX_idea_generic_political_advisor_europe_1 }
+		}
+	}
+}
+
+every_possible_country = {
+	limit = {
+		NOT = { OR = { tag = GER tag = AUS tag = ENG tag = SOV tag = FRA tag = SER tag = BUL } }
+		is_dynamic_country = no
+	}
+	generate_character = {
+		token_base = generic_hawk
+		advisor = {
+			slot = political_advisor
+			traits = { hawk }
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		portraits = { 
+			army = { small = GFX_idea_generic_political_advisor_europe_1 }
+		}
+	}
+}

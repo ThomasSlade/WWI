@@ -38,28 +38,8 @@ add_ideas = {
 	partial_economic_mobilisation
 }
 
+recruit_character = GER_wilhelm_ii
+
 create_faction = CentralPowers
 add_to_faction = GER
 add_to_faction = AUS
-
-create_country_leader = {
-	name = "Wilhelm II"
-	desc = "POLITICS_WILHELM_II_DESC"
-	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
-	expire = "1930.1.1"
-	ideology = t_monarchism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Wilhelm II"
-	desc = "POLITICS_WILHELM_II_DESC"
-	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
-	expire = "1930.1.1"
-	ideology = t_monarchism_expansionist
-	traits = {
-		#
-	}
-}

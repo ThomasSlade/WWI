@@ -39,25 +39,3 @@ add_ideas = {
 
 create_faction = Entente
 add_to_faction = FRA
-
-create_country_leader = {
-	name = "Aristide Briand"
-	desc = "POLITICS_ARISTIDE_BRIAND_DESC"
-	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
-	expire = "1930.1.1"
-	ideology = t_democratic
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Aristide Briand"
-	desc = "POLITICS_ARISTIDE_BRIAND_DESC"
-	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
-	expire = "1930.1.1"
-	ideology = t_democratic_expansionist
-	traits = {
-		#
-	}
-}

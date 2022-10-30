@@ -1,0 +1,13 @@
+spriteTypes = {	
+	### Generic
+	spriteType = {
+		name = "GFX_idea_generic_political_advisor_europe_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_ser_johan_johanovic.dds"
+	}
+
+	# SER
+	spriteType = {
+		name = "GFX_idea_ser_johan_johanovic"
+		texturefile = "gfx/interface/ideas/advisors/idea_ser_johan_johanovic.dds"
+	}
+}

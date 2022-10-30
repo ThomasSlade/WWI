@@ -60,11 +60,19 @@ country_event = {
 	}
 }
 
-# Bulgaria in particular joins the Balkan League - Russian arbitration.
+# Bulgaria in particular joins the Balkan League
 country_event = {
 	id = wwi_serbia.3
 	title = wwi_serbia.3.t
-	desc = wwi_serbia.3.d
+	desc = {
+		trigger = { AUS = { has_country_flag = macedonian_arbitrator } }
+		text = wwi_serbia.3.d_austria
+	}
+	desc = {
+		trigger = { SOV = { has_country_flag = macedonian_arbitrator } }
+		text = wwi_serbia.3.d_russia
+	}
+
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
@@ -85,34 +93,14 @@ country_event = {
 
 	option = {
 		name = wwi_serbia.3.a
-	}
-}
-
-# Bulgaria in particular joins the Balkan League - Austrian arbitration.
-country_event = {
-	id = wwi_serbia.4
-	title = wwi_serbia.4.t
-	desc = wwi_serbia.4.d
-	picture = GFX_report_event_german_speech
-
-	is_triggered_only = yes
-
-	immediate = {
-		# The idea here is that this event MUST have been caused by a Serbia that is the faction leader OR is not in a faction.
-		# If Serbia isn't in a faction, the Balkan League will be founded.
 		if = {
-			limit = { is_in_faction = no }
-			create_faction = BALKAN_LEAGUE
+			limit = { AUS = { has_country_flag = macedonian_arbitrator } }
+			custom_effect_tooltip = wwi_macedonian_arbitration_austria_tt
 		}
-
-		if = {
-			limit = { is_faction_leader = yes }
-			add_to_faction = FROM
+		else = {
+			custom_effect_tooltip = wwi_macedonian_arbitration_russia_tt
 		}
-	}
-
-	option = {
-		name = wwi_serbia.4.a
+		
 	}
 }
 
@@ -190,5 +178,431 @@ country_event = {
 	option = {
 		name = wwi_serbia.7.b
 		ai_chance = { factor = 0 }
+	}
+}
+
+# Bosnia peacefully seceeds from Austria Hungary
+country_event = {
+	id = wwi_serbia.8
+	title = wwi_serbia.8.t
+	desc = wwi_serbia.8.d
+
+	is_triggered_only = yes
+
+	# Accept
+	option = {
+		name = wwi_serbia.8.a
+
+		if = {
+			limit = { FROM = { owns_state = 224 } }
+			transfer_state = 224
+			add_state_core = 224
+		}
+		if = {
+			limit = { FROM = { owns_state = 146 } }
+			transfer_state = 146
+			add_state_core = 146
+		}
+		if = {
+			limit = { FROM = { owns_state = 169 } }
+			transfer_state = 169
+			add_state_core = 169
+		}
+		add_timed_idea = {
+			idea = territory_restored
+			days = 180
+		}
+
+		hidden_effect = {
+			FROM = { country_event = wwi_austria.8 }
+			FROM = {
+				remove_ideas = {
+					AUS_narodna_odbrana
+					AUS_black_hand_cells
+				}
+			}
+		}
+	}
+
+	# Decline for now, unlock the option to accept later
+	option = {
+		name = wwi_serbia.8.b
+
+		activate_targeted_decision = {
+		    target = FROM
+		    decision = SER_accept_bosnian_secession
+		}
+
+		ai_chance = { factor = 0 }
+	}
+}
+
+# Serbian Vojvodina unifies with Serbia once the coast is clear
+country_event = {
+	id = wwi_serbia.9
+	title = wwi_serbia.9.t
+	desc = wwi_serbia.9.d
+
+	trigger = {
+		original_tag = SER
+		surrender_progress < 0.2
+		SVO = {
+			is_puppet_of = SER
+			surrender_progress < 0.2
+		}
+	}
+
+	mean_time_to_happen = {
+	    days = 5
+	}
+
+	# Accept
+	option = {
+		name = wwi_serbia.9.a
+		annex_country = {
+			target = SVO
+			transfer_troops = yes
+		}
+	}
+
+	# Keep them as puppets
+	option = {
+		name = wwi_serbia.9.b
+		# Opinion boost should target all constituents and predecessor states of Yugoslavia
+		MNT = { add_opinion_modifier = { target = SER modifier = SER_refused_annexation_of_vojvodina } }
+		SVO = { add_opinion_modifier = { target = SER modifier = SER_refused_annexation_of_vojvodina } }
+		CRO = { add_opinion_modifier = { target = SER modifier = SER_refused_annexation_of_vojvodina } }
+		SLV = { add_opinion_modifier = { target = SER modifier = SER_refused_annexation_of_vojvodina } }
+		SCS = { add_opinion_modifier = { target = SER modifier = SER_refused_annexation_of_vojvodina } }
+		MAC = { add_opinion_modifier = { target = SER modifier = SER_refused_annexation_of_vojvodina } }
+	}
+}
+
+# Civil war starts, player playing as Black Hand
+country_event = {
+	id = wwi_serbia.10
+	title = wwi_serbia.10.t
+	desc = wwi_serbia.10.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		start_civil_war = {
+			ruling_party = democratic_expansionist
+			ideology = democratic
+			size = 0.65
+			capital = 136 # Nis
+			states = { 136 162 218 148 216 129 134 }
+		}
+	}
+
+	# Civil war starts
+	option = {
+		name = wwi_serbia.10.a
+	}
+}
+
+# Civil war starts, player playing as Moderates
+country_event = {
+	id = wwi_serbia.11
+	title = wwi_serbia.11.t
+	desc = wwi_serbia.11.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		start_civil_war = {
+			ideology = democratic_expansionist
+			size = 0.65
+			capital = 125 # Belgrade
+			states = { 125 156 177 135 185 }
+		}
+	}
+
+	# Civil war starts
+	option = {
+		name = wwi_serbia.11.a
+	}
+}
+
+# Serbian royal visit to Paris
+country_event = {
+	id = wwi_serbia.12
+	title = wwi_serbia.12.t
+	desc = wwi_serbia.12.d
+
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = wwi_serbia.12.a_serbia
+
+		trigger = {
+			original_tag = SER
+		}
+	}
+
+	option = {
+		name = wwi_serbia.12.a_france
+
+		trigger = {
+			original_tag = FRA
+		}
+	}
+
+	option = {
+		name = wwi_serbia.12.a_austria
+
+		trigger = {
+			original_tag = AUS
+		}
+	}
+}
+
+# After the Balkan War, whichever country is the selected arbitrator gets the event to give macedonian border-states between Bulg and Serb to whoever it favours.
+# The AI will always award states to who they have the highest opinion of.
+country_event = {
+	id = wwi_serbia.13
+	title = wwi_serbia.13.t
+	desc = wwi_serbia.13.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				check_variable = {
+					var = ROOT.opinion@SER
+					value = ROOT.opinion@BUL
+					compare = greater_than_or_equals
+				}
+			}
+			set_variable = { var = macedonian_arbitrators_favourite value = SER }
+		}
+		else = {
+			set_variable = { var = macedonian_arbitrators_favourite value = BUL }
+		}
+
+		log = "Determined Macednian Arbitrator [?ROOT.GetName]'s preferred Balkan client: [?var:macedonian_arbitrators_favourite.GetName]"
+	}
+
+	# Rule in Serbia's favour.
+	option = {
+		name = wwi_serbia.13.a
+
+		ai_chance = {
+			base = 0
+			modifier = {
+				check_variable = { var = var:macedonian_arbitrators_favourite value = SER compare = equals }
+				add = 100
+			}
+		}
+
+		log = "Favouring Serbia in Macedonian arbitration."
+
+		effect_tooltip = {
+			every_state = {
+				limit = {
+					has_state_flag = macedonian_state_for_arbitration
+				}
+				transfer_state_to = SER
+			}
+		}
+
+		set_variable = {
+			var = global.favoured_in_macedonian_arbitration
+			value = SER
+		}
+
+		SER = { country_event = wwi_serbia.14 }
+		BUL = { country_event = wwi_serbia.15 }
+	}
+
+	# Rule in Bulgaria's favour.
+	option = {
+		name = wwi_serbia.13.b
+
+		ai_chance = {
+			base = 0
+			modifier = {
+				check_variable = { var = var:macedonian_arbitrators_favourite value = BUL compare = equals }
+				add = 100
+			}
+		}
+
+		log = "Favouring Bulgaria in Macedonian arbitration."
+
+		effect_tooltip = {
+			every_state = {
+				limit = {
+					has_state_flag = macedonian_state_for_arbitration
+				}
+				transfer_state_to = BUL
+			}
+		}
+
+		set_variable = {
+			var = global.favoured_in_macedonian_arbitration
+			value = BUL
+		}
+
+		BUL = { country_event = wwi_serbia.14 }
+		SER = { country_event = wwi_serbia.15 }
+	}
+}
+
+# After the Balkan War is won, provinces on the Serbia-Bulgaria border (if there is one) are handed to Serbia or Bulgaria depending on who the selected mediator (Austria or Russia) likes best. The territorial loser then has the option to ignore the mediation and declare war, causing a big opinion loss towards the mediator.
+# Arbitrator rules in our favour.
+country_event = {
+	id = wwi_serbia.14
+	title = wwi_serbia.14.t
+	desc = {
+		text = wwi_serbia.14.d_serbia
+		trigger = {
+			tag = SER
+		}
+	}
+
+	desc = {
+		text = wwi_serbia.14.d_bulgaria
+		trigger = {
+			tag = BUL
+		}
+	}
+
+	is_triggered_only = yes
+
+	immediate = {
+		every_state = {
+			limit = {
+				has_state_flag = macedonian_state_for_arbitration
+			}
+			transfer_state_to = var:global.favoured_in_macedonian_arbitration
+		}
+	}
+
+	# Good!
+	option = {
+		name = wwi_serbia.14.a
+	}
+}
+
+# Arbitrator rules against us.
+country_event = {
+	id = wwi_serbia.15
+	title = wwi_serbia.15.t
+	desc = {
+		text = wwi_serbia.15.d_serbia
+		trigger = {
+			tag = SER
+		}
+	}
+
+	desc = {
+		text = wwi_serbia.15.d_bulgaria
+		trigger = {
+			tag = BUL
+		}
+	}
+
+	is_triggered_only = yes
+
+	immediate = {
+		effect_tooltip = {
+			every_state = {
+				limit = {
+					has_state_flag = macedonian_state_for_arbitration
+				}
+				transfer_state_to = var:global.favoured_in_macedonian_arbitration
+			}
+		}
+	}
+
+	# Accept it.
+	option = {
+		name = wwi_serbia.15.b
+	}
+
+	# Declare war.
+	option = {
+		name = wwi_serbia.15.a
+
+		log = "[?THIS.GetName] has been arbitrated against in the Balkan war, and their enemy is [?var:global.favoured_in_macedonian_arbitration.GetName]."
+
+		if = {
+			limit = { is_in_faction_with = var:global.favoured_in_macedonian_arbitration }
+			leave_faction = yes
+		}
+
+		declare_war_on = {
+			target = var:global.favoured_in_macedonian_arbitration
+			type = take_state_focus
+			generator = { 218 148 216 134 188 133 127 220 183 140 }
+		}
+	}
+}
+
+# Event to determine macedonian territories on the Serbian-Bulgarian border after the Balkan War.
+country_event = {
+	id = wwi_serbia.16
+
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		# Identify all states in the macedonian area controlled by either Serbia or Bulgarian.
+		every_state = {
+			limit = {
+				has_state_flag = disputed_macedonian_state
+				is_owned_and_controlled_by = SER
+			}
+			
+			set_state_flag = serbian_controlled_disputed_macedonian_state
+			set_state_name = "Serbian Controlled Macedonia"
+		}
+
+		every_state = {
+			limit = {
+				has_state_flag = disputed_macedonian_state
+				is_owned_and_controlled_by = BUL
+			}
+			
+			set_state_flag = bulgarian_controlled_disputed_macedonian_state
+			set_state_name = "Bulgarian Controlled Macedonia"
+		}
+
+		# Of these, mark any Serbia-controlled states bordering Bulgaria-controlled states as disputed, and vice versa.
+		every_state = {
+			limit = {
+				has_state_flag = serbian_controlled_disputed_macedonian_state
+			}
+			every_neighbor_state = {
+				limit = {
+					has_state_flag = disputed_macedonian_state
+					is_owned_and_controlled_by = BUL
+				}
+
+				set_state_flag = macedonian_state_for_arbitration
+				set_state_name = "Border"
+			}
+		}
+
+		every_state = {
+			limit = {
+				has_state_flag = bulgarian_controlled_disputed_macedonian_state
+			}
+			every_neighbor_state = {
+				limit = {
+					has_state_flag = disputed_macedonian_state
+					is_owned_and_controlled_by = SER
+				}
+
+				set_state_flag = macedonian_state_for_arbitration
+				set_state_name = "Border"
+			}
+		}
 	}
 }

@@ -1,0 +1,48 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_generic_democratic"
+		texturefile = "gfx/interface/ideas/idea_generic_democratic.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_democratic_expansionist"
+		texturefile = "gfx/interface/ideas/idea_generic_democratic_expansionist.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_monarchist"
+		texturefile = "gfx/interface/ideas/idea_generic_monarchist.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_monarchist_expansionist"
+		texturefile = "gfx/interface/ideas/idea_generic_monarchist_expansionist.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_communist"
+		texturefile = "gfx/interface/ideas/idea_generic_communist.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_communist_expansionist"
+		texturefile = "gfx/interface/ideas/idea_generic_communist_expansionist.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_generic_gear_and_star"
+		texturefile = "gfx/interface/ideas/idea_generic_gear_and_star.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_crate"
+		texturefile = "gfx/interface/ideas/idea_generic_crate.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_propoganda_megaphone"
+		texturefile = "gfx/interface/ideas/idea_generic_propoganda_megaphone.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_aus_black_hand_cells"
+		texturefile = "gfx/interface/ideas/idea_aus_black_hand_cells.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_aus_narodna_odbrana"
+		texturefile = "gfx/interface/ideas/idea_aus_narodna_odbrana.dds"
+	}
+}

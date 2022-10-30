@@ -1,0 +1,71 @@
+characters = {
+	FRA_raymond_poincare = {
+		portraits = {
+			civilian = {
+				large = GFX_portrait_FRA_raymond_poincare
+			}
+		}
+		country_leader = {
+			ideology = t_democratic
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+
+	GER_test_guy_3 = {
+		name = GER_test_guy
+		portraits = {
+			army = {
+				small="GFX_idea_martin_bormann"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = test_guy_3
+			allowed = {
+				original_tag = FRA
+			}
+			traits = {
+				silent_workhorse 
+			}
+		}		
+	}
+
+	GER_test_guy_4 = {
+		name = GER_test_guy
+		portraits = {
+			army = {
+				small="GFX_idea_martin_bormann"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = test_guy_4
+			allowed = {
+				original_tag = FRA
+			}
+			traits = {
+				silent_workhorse 
+			}
+		}		
+	}
+
+	GER_test_guy_5 = {
+		name = GER_test_guy
+		portraits = {
+			army = {
+				small="GFX_idea_martin_bormann"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = test_guy_5
+			allowed = {
+				original_tag = FRA
+			}
+			traits = {
+				silent_workhorse 
+			}
+		}		
+	}
+}

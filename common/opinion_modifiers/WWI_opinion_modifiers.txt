@@ -10,8 +10,17 @@
 
 opinion_modifiers = {
 	AUS_bosnian_constitution_suspended = { value = -20 }
-}
 
-opinion_modifiers = {
 	SER_appealed_for_arbitration = { value = 20 }
+
+	SER_refused_annexation_of_vojvodina = { value = 20 }
+
+	AUS_serbian_royal_visit = { value = -10 }
+	serbian_royal_visit_negative = { value = 10 }
+
+	serbia_seeks_entente_membership = { value = 30 }
+
+	MNT_betrayed_by_serbia = { value = -50 }
+
+	AUS_serb_rapproachment = { value = 30 }
 }

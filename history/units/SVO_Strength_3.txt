@@ -1,0 +1,127 @@
+division_template = {
+	name = "Vojvodina Advanced Division"
+
+	division_names_group = GER_Inf_01
+	template_counter = 03
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		artillery_brigade = { x = 1 y = 2 }
+		artillery_brigade = { x = 1 y = 3 }
+	}
+
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		location = 4442 # Neusatz
+		division_template = "Vojvodina Advanced Division"
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 4442 # Neusatz
+		division_template = "Vojvodina Advanced Division"
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 4442 # Neusatz
+		division_template = "Vojvodina Advanced Division"
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 5165 # Pancsova
+		division_template = "Vojvodina Advanced Division"
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 5165 # Pancsova
+		division_template = "Vojvodina Advanced Division"
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 5067 # Versecz
+		division_template = "Vojvodina Advanced Division"
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 5067 # Versecz
+		division_template = "Vojvodina Advanced Division"
+		start_experience_factor = 0.2
+	}
+
+	# Level 1
+	division = {
+		location = 4068 # Semlin
+		division_template = "Vojvodina Advanced Division"
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 5153 # Obecse
+		division_template = "Vojvodina Advanced Division"
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 4944 # Zenta
+		division_template = "Vojvodina Advanced Division"
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 4944 # Zenta
+		division_template = "Vojvodina Advanced Division"
+		start_experience_factor = 0.2
+	}
+
+	# Level 2
+	division = {
+		location = 4878 # Grossbetschkerek
+		division_template = "Vojvodina Advanced Division"
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 5165 # Pancsova
+		division_template = "Vojvodina Advanced Division"
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 5165 # Pancsova
+		division_template = "Vojvodina Advanced Division"
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 5067 # Versecz
+		division_template = "Vojvodina Advanced Division"
+		start_experience_factor = 0.2
+	}
+
+	# Level 3
+	division = {
+		location = 4442 # Neusatz
+		division_template = "Vojvodina Advanced Division"
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 5139 # Zombor
+		division_template = "Vojvodina Advanced Division"
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 4811 # Maria Theresiopel
+		division_template = "Vojvodina Advanced Division"
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 4811 # Maria Theresiopel
+		division_template = "Vojvodina Advanced Division"
+		start_experience_factor = 0.2
+	}
+}

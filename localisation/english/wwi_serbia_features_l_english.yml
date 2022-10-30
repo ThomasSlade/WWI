@@ -1,0 +1,12 @@
+﻿l_english:
+  custom_cost_bolster_serb_vojvodina_1: "$infantry_equipment$ §Y3000§!"
+  custom_cost_bolster_serb_vojvodina_1_blocked: "$infantry_equipment$ §Y3000§!"
+  custom_cost_bolster_serb_vojvodina_1_tooltip: "It costs $infantry_equipment$ §Y3000§! to take the decision"
+
+  custom_cost_bolster_serb_vojvodina_2: "$artillery_equipment$ §Y200§!"
+  custom_cost_bolster_serb_vojvodina_2_blocked: "$artillery_equipment$ §Y200§!"
+  custom_cost_bolster_serb_vojvodina_2_tooltip: "It costs $artillery_equipment$ §Y200§! to take the decision"
+
+  custom_cost_bolster_serb_vojvodina_3: "$support_equipment$ §Y400§!"
+  custom_cost_bolster_serb_vojvodina_3_blocked: "$support_equipment$ §Y400§!"
+  custom_cost_bolster_serb_vojvodina_3_tooltip: "It costs $support_equipment$ §Y400§! to take the decision"

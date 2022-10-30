@@ -1,0 +1,167 @@
+characters = {
+	SER_nikola_pasic = {
+		name = SER_nikola_pasic
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_GER_wilhelm_ii"
+			}
+		}
+		country_leader = {
+			ideology = t_democratic
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+
+	SER_jovan_jovanovic = {
+		name = SER_jovan_jovanovic
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SER_jovan_jovanovic
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				delicate_mediator
+			}
+		}
+	}
+
+	SER_stojan_protic = {
+		name = SER_stojan_protic
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SER_stojan_protic
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				state_architect 
+			}
+		}
+	}
+
+	SER_lazar_pacu = {
+		name = SER_lazar_pacu
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SER_lazar_pacu
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				stewardly_treasurer 
+			}
+		}
+	}
+
+	SER_velikar_jankovic = {
+		name = SER_velikar_jankovic
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SER_velikar_jankovic
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				public_works_tycoon 
+			}
+		}
+	}
+
+	SER_ljuba_jovanobic = {
+		name = SER_ljuba_jovanobic
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SER_ljuba_jovanobic
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				educative_chamberlain
+			}
+		}
+	}
+
+	SER_marko_djuricic = {
+		name = SER_marko_djuricic
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SER_marko_djuricic
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				firm_adjudicator
+			}
+		}
+	}
+
+	SER_miroslav_spalajovic = {
+		name = SER_miroslav_spalajovic
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SER_marko_djuricic
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				diplomatic_encircler
+			}
+		}
+	}
+
+	SER_apis = {
+		name = SER_apis
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SER_apis
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				untraceable_conspirator
+			}
+		}
+	}
+}

@@ -1,0 +1,2 @@
+SVO = "countries/Serbian Vojvodina.txt"
+SCS = "countries/State of Slovenes Croats and Serbs.txt"

@@ -1,0 +1,35 @@
+capital = 171
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	early_reform = 1
+}
+
+# Need to enable production for units provided by various OOB strength levels - SVO gets engineers at levels 1 or higher, and artillery/arty support at levels 2 or higher
+if = {
+	limit = { check_variable = { SER.serb_vojvodina_armament > 1 } }
+	set_technology = { gw_artillery = 1 }
+}
+if = {
+	limit = { check_variable = { SER.serb_vojvodina_armament > 0 } }
+	set_technology = { tech_support = 1 }
+}
+
+set_convoys = 10
+
+set_politics = {
+	ruling_party = monarchism
+	last_election = "1911.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 40
+	democratic_expansionist = 0
+	monarchism = 60
+	monarchism_expansionist = 0
+	communism = 0
+	communism_expansionist = 0
+}

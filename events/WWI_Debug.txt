@@ -1,0 +1,61 @@
+add_namespace = wwi_debug
+
+country_event = {
+	id = wwi_debug.1
+	title = wwi_debug.1.t
+	desc = wwi_debug.1.d
+	picture = GFX_report_event_german_speech
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = wwi_debug.1.a
+	}
+}
+
+country_event = {
+	id = wwi_debug.2
+	title = wwi_debug.2.t
+	desc = wwi_debug.2.d
+	picture = GFX_report_event_german_speech
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = wwi_debug.2.a
+	}
+}
+
+country_event = {
+	id = wwi_debug.3
+	title = wwi_debug.3.t
+	desc = wwi_debug.3.d
+	picture = GFX_report_event_german_speech
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = wwi_debug.3.a
+	}
+}
+
+country_event = {
+	id = wwi_debug.4
+	title = wwi_debug.4.t
+	desc = wwi_debug.4.d
+	picture = GFX_report_event_german_speech
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = wwi_debug.4.a
+	}
+}

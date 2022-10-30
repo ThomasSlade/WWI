@@ -1,39 +1,196 @@
 on_actions = {
 	on_daily = {
 		effect = {
-		every_country = {
-			if = {
-				limit = {
-					OR = {
-						has_government = monarchism
-						has_government = monarchism_expansionist
+			every_country = {
+				if = {
+					limit = {
+						OR = {
+							has_government = monarchism
+							has_government = monarchism_expansionist
+						}
 					}
+					set_temp_variable = { expansionist_ideology = token:monarchism_expansionist }
 				}
-				set_temp_variable = { expansionist_ideology = token:monarchism_expansionist }
-			}
-			if = {
-				limit = {
-					OR = {
-						has_government = democratic
-						has_government = democratic_expansionist
+				if = {
+					limit = {
+						OR = {
+							has_government = democratic
+							has_government = democratic_expansionist
+						}
 					}
+					set_temp_variable = { expansionist_ideology = token:democratic_expansionist }
 				}
-				set_temp_variable = { expansionist_ideology = token:democratic_expansionist }
-			}
-			if = {
-				limit = {
-					OR = {
-						has_government = communism
-						has_government = communism_expansionist
+				if = {
+					limit = {
+						OR = {
+							has_government = communism
+							has_government = communism_expansionist
+						}
 					}
+					set_temp_variable = { expansionist_ideology = token:communism_expansionist }
 				}
-				set_temp_variable = { expansionist_ideology = token:communism_expansionist }
-			}
 
 
-			set_temp_variable = { expansionist_growth = var:num_of_factories }
-			divide_temp_variable = { expansionist_growth = 100000 }
-			add_popularity = { ideology = var:expansionist_ideology popularity = var:expansionist_growth }
+				set_temp_variable = { expansionist_growth = var:num_of_factories }
+				divide_temp_variable = { expansionist_growth = 100000 }
+				add_popularity = { ideology = var:expansionist_ideology popularity = var:expansionist_growth }
+			}
+		}
+	}
+
+	#ROOT = attacking side
+	#FROM = defending side
+	on_war_relation_added = {
+		effect = {
+			# Determine if this is the Balkan War.
+			if = {
+				# If the war has Serbia against Turkey, and a Macedonian mediator has been picked, this is the Balkan War.
+				limit = {
+					NOT = { has_global_flag = first_balkan_war_finished }
+					OR = { FROM = { tag = TUR } ROOT = { tag = TUR } }
+					OR = { FROM = { tag = SER } ROOT = { tag = SER } }
+					any_country = {
+						has_country_flag = macedonian_arbitrator
+					}
+				}
+				set_global_flag = first_balkan_war_active
+				log = "Starting the First Balkan War."
+			}
+
+			# Run the 'Serbian Vojvodina Rebels against Austria' event's trigger whenever Serbia joins a war.
+			if = {
+				limit = {
+					AND = {
+						OR = {
+							tag = SER
+							FROM = { tag = SER }
+						}
+						AUS = { has_idea = AUS_vojvodina_separatists }
+					}
+				}
+				# Attacker or defender could be Serbia/Serbia's opponent, and the event itself will filter Serbia out, so just fire to both of them.
+				ROOT = { country_event = { id = wwi_austria.9 random_days = 2 } }
+				FROM = { country_event = { id = wwi_austria.9 random_days = 2 } }
+			}
+		}
+	}
+
+	on_state_control_changed = {
+		effect = {
+			# Transfer state-related vojvodina statuses.
+			if = {
+				limit = {
+					AND = {
+						OR = {
+							FROM.FROM = { state = 171 } # Styrmia
+							FROM.FROM = { state = 232 } # Vojvodina
+						}
+						FROM = { has_idea = AUS_vojvodina_separatists }
+					}
+				}
+				
+				if = {
+					limit = { 
+						AND = {
+							NOT = { FROM = { controls_state = 171 } }
+							NOT = { FROM = { controls_state = 232 } }
+						}
+					}
+					FROM = { remove_ideas = { AUS_vojvodina_separatists } }
+				}
+
+				if = {
+					limit = {
+						AND = {
+							NOT = { original_tag = SER }
+							NOT = { original_tag = SVO }
+						}
+					}
+
+					add_ideas = AUS_vojvodina_separatists
+				}
+				
+			}
+		}
+	}
+
+	#ROOT is the winner, FROM is the loser. 
+	on_peaceconference_ended = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = { OR = { tag = SER tag = TUR }}
+					FROM = { OR = { tag = SER tag = TUR }}
+					has_global_flag = first_balkan_war_active
+				}
+
+				set_global_flag = first_balkan_war_finished
+				log = "Ending the First Balkan War."
+
+				# Identify all states in the macedonian area controlled by either Serbia or Bulgarian.
+				every_state = {
+					limit = {
+						has_state_flag = disputed_macedonian_state
+						is_owned_and_controlled_by = SER
+					}
+					
+					set_state_flag = serbian_controlled_disputed_macedonian_state
+				}
+
+				every_state = {
+					limit = {
+						has_state_flag = disputed_macedonian_state
+						is_owned_and_controlled_by = BUL
+					}
+					
+					set_state_flag = bulgarian_controlled_disputed_macedonian_state
+				}
+
+				# Of these, mark any Serbia-controlled states bordering Bulgaria-controlled states as disputed, and vice versa.
+				every_state = {
+					limit = {
+						has_state_flag = serbian_controlled_disputed_macedonian_state
+					}
+					every_neighbor_state = {
+						limit = {
+							has_state_flag = bulgarian_controlled_disputed_macedonian_state
+						}
+
+						set_state_flag = macedonian_state_for_arbitration
+						log = "[?THIS.GetName] marked for Macedonian Arbitration."
+					}
+				}
+
+				every_state = {
+					limit = {
+						has_state_flag = bulgarian_controlled_disputed_macedonian_state
+					}
+					every_neighbor_state = {
+						limit = {
+							has_state_flag = serbian_controlled_disputed_macedonian_state
+						}
+
+						set_state_flag = macedonian_state_for_arbitration
+						log = "[?THIS.GetName] marked for Macedonian Arbitration."
+					}
+				}
+
+				if = {
+					limit = {
+						any_state = {
+							has_state_flag = macedonian_state_for_arbitration
+						}
+					}
+					random_country = {
+						limit = {
+							has_country_flag = macedonian_arbitrator
+						}
+
+						# Balkan clients request arbitration.
+						country_event = { id = wwi_serbia.13 days = 5 }
+					}
+				}
+			}
 		}
 	}
 }

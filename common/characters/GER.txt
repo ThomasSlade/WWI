@@ -1,0 +1,53 @@
+characters = {
+	GER_wilhelm_ii = {
+		name = GER_test_leader
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_GER_wilhelm_ii"
+			}
+		}
+		country_leader = {
+			ideology = t_monarchism_expansionist
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+
+	GER_test_guy = {
+		name = GER_test_guy
+		portraits = {
+			army = {
+				small="GFX_idea_martin_bormann"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = test_guy
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				silent_workhorse 
+			}
+		}
+	}
+
+	GER_test_guy_other = {
+		name = GER_test_guy_other
+		portraits = {
+			army = {
+				small="GFX_idea_GER_hans_oster"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = test_guy_other
+			allowed = {
+				original_tag = GER
+			}
+			traits = {
+				prince_of_terror 
+			}
+		}
+	}
+}

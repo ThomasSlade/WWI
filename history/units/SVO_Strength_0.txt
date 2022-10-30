@@ -1,0 +1,54 @@
+division_template = {
+	name = "Vojvodina Guerilla Division"
+
+	division_names_group = GER_Inf_01
+	template_counter = 07
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		location = 4442 # Neusatz
+		division_template = "Vojvodina Guerilla Division"
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 4442 # Neusatz
+		division_template = "Vojvodina Guerilla Division"
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 4442 # Neusatz
+		division_template = "Vojvodina Guerilla Division"
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 5165 # Pancsova
+		division_template = "Vojvodina Guerilla Division"
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 5165 # Pancsova
+		division_template = "Vojvodina Guerilla Division"
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 5067 # Versecz
+		division_template = "Vojvodina Guerilla Division"
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 5067 # Versecz
+		division_template = "Vojvodina Guerilla Division"
+		start_experience_factor = 0.2
+	}
+}

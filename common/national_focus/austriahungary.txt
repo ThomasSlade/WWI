@@ -263,10 +263,10 @@ focus_tree = {
 					SER = { has_country_flag = nadorna_odbrana_autonomous }
 				}
 				# Archduke dies.
-				AUS = { country_event = austriahungary.wwi.1 }
+				AUS = { country_event = wwi_austriahungary.1 }
 				else = {
 					# Archduke lives.
-					AUS = { country_event = austriahungary.wwi.2 }
+					AUS = { country_event = wwi_austriahungary.2 }
 				}
 			}
 		}

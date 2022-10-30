@@ -1,0 +1,44 @@
+SER_historical = {
+	name = "Serbian historical plan"
+	desc = "Begins the Balkan Wars, sets up the assassination of Franz Ferdinand, then tries to survive Austria Hungary's invasion."
+
+	allowed = {
+		original_tag = SER
+	}
+	enable = {
+		is_historical_focus_on = yes
+	}
+
+	ai_national_focuses = {
+		# 1911
+		SER_support_the_narodna_odbrana
+		SER_moderate_nationalist_rhetoric
+		SER_french_finance
+		SER_royal_visit_to_paris
+		SER_claim_old_serbia
+
+		# 1912
+		SER_entice_montenegro
+		SER_fund_macedonian_militia
+		SER_seek_russian_mediation
+		SER_strike_a_deal_with_bulgaria
+		SER_war_with_the_ottomans
+
+		# 1913
+		SER_ports_on_the_adriatic
+		SER_french_military_contracts
+		SER_martial_law_in_new_serbia
+		SER_retire_the_may_coup_conspirators
+		SER_build_a_conciliatory_cabinet
+
+		# 1914
+		SER_revise_education_budget
+		SER_inflamatory_articles_in_the_pijemont
+		SER_foreign_railway_loans
+		SER_russian_weapon_imports
+		SER_opanci
+
+		# 1915
+		SER_the_third_ban
+	}
+}

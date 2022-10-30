@@ -1,0 +1,239 @@
+political_actions = {
+	# Annex Bosnia after they've finalised their secession: This is available if Serbia doesn't want to immediately annex Bosnia, e.g. in the event that Bosnia is surrounded by hostile territory.
+	SER_accept_bosnian_secession = {
+		allowed = {
+			original_tag = SER
+		}
+
+		available = {
+		}
+
+		cost = 0
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			AND = {
+				# Hide the event unless the target isn't Serbia.
+				NOT = { FROM = { original_tag = SER } }
+				OR = {
+					FROM = { owns_state = 224 }
+					FROM = { owns_state = 146 }
+					FROM = { owns_state = 169 }
+				}
+			}
+		}
+
+		complete_effect = {
+			if = {
+				limit = { FROM = { owns_state = 224 } }
+				transfer_state = 224
+				add_state_core = 224
+			}
+			if = {
+				limit = { FROM = { owns_state = 146 } }
+				transfer_state = 146
+				add_state_core = 146
+			}
+			if = {
+				limit = { FROM = { owns_state = 169 } }
+				transfer_state = 169
+				add_state_core = 169
+			}
+			add_timed_idea = {
+				idea = territory_restored
+				days = 180
+			}
+
+			hidden_effect = {
+				FROM = { country_event = wwi_austria.8 }
+				FROM = {
+					remove_ideas = {
+						AUS_narodna_odbrana
+						AUS_black_hand_cells
+					}
+				}
+			}
+		}
+	}
+
+	SER_arm_macedonian_militia = {
+		custom_cost_trigger = {
+			has_equipment = { infantry_equipment > 999 }
+		}
+
+		fire_only_once = yes
+		days_remove = 30
+		days_re_enable = 180
+
+		allowed = {
+			original_tag = SER
+		}
+
+		visible = {
+			has_completed_focus = SER_fund_macedonian_militia
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 40
+				has_equipment = { infantry_equipment > 2000 }
+			}
+			modifier = {
+				factor = 0
+				has_army_experience > 20
+			}
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			
+			army_experience = 20
+		}
+	}
+}
+
+SER_insurgencies = {
+	SER_bolster_serb_vojvodina_1 = {
+		custom_cost_trigger = {
+			has_equipment = { infantry_equipment > 2999 }
+		}
+		custom_cost_text = custom_cost_bolster_serb_vojvodina_1
+
+		fire_only_once = yes
+		days_remove = -1
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 40
+				has_equipment = { infantry_equipment > 5999 }
+			} 
+		}
+
+		complete_effect = {
+			add_to_variable = {
+				var = serb_vojvodina_armament
+				value = 1
+			}
+
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -3000
+			}
+		}
+	}
+
+	SER_bolster_serb_vojvodina_2 = {
+		custom_cost_trigger = {
+			has_equipment = { artillery_equipment > 199 }
+		}
+		custom_cost_text = custom_cost_bolster_serb_vojvodina_2
+
+		fire_only_once = yes
+		days_remove = -1
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 40
+				has_equipment = { artillery_equipment > 399 }
+			}
+		}
+
+		complete_effect = {
+			add_to_variable = {
+				var = serb_vojvodina_armament
+				value = 1
+			}
+
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = -200
+			}
+		}
+	}
+
+	SER_bolster_serb_vojvodina_3 = {
+		custom_cost_trigger = {
+			has_equipment = { support_equipment > 399 }
+		}
+		custom_cost_text = custom_cost_bolster_serb_vojvodina_3
+
+		fire_only_once = yes
+		days_remove = -1
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 40
+				has_equipment = { support_equipment > 799 }
+			}
+		}
+
+		complete_effect = {
+			add_to_variable = {
+				var = serb_vojvodina_armament
+				value = 1
+			}
+
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -400
+			}
+		}
+	}
+
+	SER_launch_vojvodina_uprising = {
+		available = {
+			AND = {
+				has_decision = SER_bolster_serb_vojvodina_1
+				has_decision = SER_bolster_serb_vojvodina_2
+				has_decision = SER_bolster_serb_vojvodina_3
+			}
+		}
+
+		fire_only_once = yes
+		days_remove = -1
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 80
+				171 = {
+					owner = { strength_ratio = { tag = ROOT ratio < 2 } }
+				}
+				232 = {
+					owner = { strength_ratio = { tag = ROOT ratio < 2 } }
+				}
+			}
+			modifier = {
+				add = 100
+				AND = {
+					171 = {
+						owner = { has_war_with = ROOT }
+					}
+					232 = {
+						owner = { has_war_with = ROOT }
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			171 = {
+				owner = { country_event = { id = wwi_austria.9 } }
+			}
+			232 = {
+				owner = { country_event = { id = wwi_austria.9 } }
+			}
+		}
+	}
+}

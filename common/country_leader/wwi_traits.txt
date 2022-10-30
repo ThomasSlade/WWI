@@ -1,0 +1,108 @@
+leader_traits = {
+	### WWI Traits Start Here ###
+	advocate_of_the_disenfranchised = {
+		random = no
+		sprite = 13
+		political_power_factor = 0.05
+		stability_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	disliked_moderate = {
+		random = no
+		sprite = 13
+		political_power_factor = 0.1
+		monarchism_drift = 0.2
+	}
+
+	### Special Character Traits
+	#Apis
+	untraceable_conspirator = {
+		democratic_expansionist_drift = 0.05
+		offensive_war_stability_factor = 0.3
+		encryption = 1
+	}
+
+	# Jovan Jovanovic (with focus) - better version of delicate_mediator
+	clean_handed = {
+		improve_relations_maintain_cost_factor = -0.75
+		opinion_gain_monthly = 25
+		enemy_justify_war_goal_time = 0.5
+	}
+
+	# Miroslav Spalajovic (with focus) - better version of state_architect
+	arbitrators_pet = {
+		opinion_gain_monthly_same_ideology = 30
+		guarantee_cost = -0.5
+		annex_cost_factor = 0.3
+	}
+
+	# Stojan Protic (with focus) - better version of firm_adjudicator
+	civil_occupation = {
+		random = no
+		stability_factor = 0.1
+		drift_defence_factor = 0.4
+		resistance_activity = -0.6
+		required_garrison_factor = 0.3
+	}
+
+	### Generic WWI Advisor Traits ###
+	dove = {
+		random = no
+		sprite = 10
+		democratic_drift = 0.1
+		opinion_gain_monthly_factor = 0.3
+	}
+
+	hawk = {
+		random = no
+		sprite = 10
+		democratic_expansionist_drift = 0.1
+		war_support_factor = 0.05
+	}
+
+	delicate_mediator = {
+		random = no
+		improve_relations_maintain_cost_factor = -0.5
+		opinion_gain_monthly = 15
+	}
+
+	state_architect = {
+		random = no
+		stability_factor = 0.05
+		drift_defence_factor = 0.3
+	}
+
+	stewardly_treasurer = {
+		random = no
+		trade_opinion_factor = 1
+		production_speed_industrial_complex_factor = 0.3
+	}
+
+	public_works_tycoon = {
+		random = no
+		production_speed_infrastructure_factor = 0.75
+		production_speed_rail_way_factor = 0.5
+		conversion_cost_civ_to_mil_factor = -0.3
+		conversion_cost_mil_to_civ_factor = -0.3
+	}
+
+	educative_chamberlain = {
+		random = no
+		research_speed_factor = 0.1
+	}
+
+	firm_adjudicator = {
+		random = no
+		resistance_activity = -0.3
+	}
+
+	diplomatic_encircler = {
+		random = no
+		opinion_gain_monthly_same_ideology = 20
+		guarantee_cost = -0.5
+	}
+}

@@ -1,0 +1,29 @@
+﻿l_english:
+  # Generic
+  territory_restored: "Territory Restored"
+  territory_restored_desc: "Securing claimed territory has earned you the confidence in financiers and the pride of your citizens."
+  foreign_investment: "Foreign Investment"
+  foreign_investment_desc: "Stock-brokers the world over clamour to invest in your nation."
+  agricultural_exports: "Agricultural Exports"
+  agricultural_exports_desc: "The fields and mines of your hinterland secure a splendid profit overseas. Extracting and exporting these goods becomes paramount."
+  expansionism_withers: "Expansionism Withers"
+  expansionism_withers_desc: "The chest-beating of revaunchists and irredentists falls on deaf ears in your capital: your people find themselves defending the status quo."
+  rail_loans: "Railway Loans"
+  rail_loans_desc: "Seeing the great potential of [ROOT.GetDefName], tycoons and capitalists readily shell` money into your railways."
+
+  # Austria
+  AUS_black_hand_cells: "Black Hand Cells"
+  AUS_black_hand_cells_desc: "Groups of Serb Nationalists operate quietly within our cities. Their exact intentions, while mysterious, are certainly threatening."
+  AUS_black_hand_cells_tt: "§R'Imperial Visit to Bosnia' focus: Delegate will be assassinated.§!"
+  AUS_narodna_odbrana: "Bosnian Serb Activists"
+  AUS_narodna_odbrana_desc: "The Narodna Odbrana ('National Defense') is an ostensibly peaceful network of Serb nationalists within our borders. Though [SER.GetName] downplays the organisation's significance, its objective of secession from [This.GetName] is brazenly clear."
+  AUS_narodna_odbrana_tt: "§RStability lower than 50% will result in [224.GetName], [146.GetName], and [169.GetName] seceeding to [SER.GetName].§!"
+  AUS_vojvodina_separatists: "Vojvodina Separatitst"
+  AUS_vojvodina_separatists_desc: "Not since the 1848 Revolutions have the Vojvodina Serbs been so nakedly treasonous. Left unchecked, our subjects in this region will surely defect to [SER.GetName]."
+  AUS_vojvodina_separatists_tt: "§RStability lower than 50% will result in [224.GetName] and [171.GetName] seceeding to [SER.GetName].§!"
+
+  # Serbia
+  SER_nacertanije: "The Načertanije"
+  SER_nacertanije_desc: "Written by Ilija Garašanin during the nascency of independent Serbia, the Načertanije or 'The Draft' is a blueprint of greater Serbia and formulates the ambition of her governments. Macedonia, Albania, Croatia, Bosnia - all are posited as Serbdom within the Načertanije."
+  SER_idea_follow_the_independent_radicals: "Follow the Independent Radicals"
+  SER_idea_follow_the_independent_radicals_desc: "Encircled by threats Serbia may be, but the delicate foreign policy of past governments must be done away with. Citizens of Serbia now turn to the Independent Radicals and their hardline revaunchism, even if this risks the wrath of powerful neighboring states."

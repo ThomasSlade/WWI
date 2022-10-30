@@ -27,28 +27,16 @@ set_popularities = {
 	communism_expansionist = 0
 }
 
+recruit_character = SER_nikola_pasic
+recruit_character = SER_jovan_jovanovic
+recruit_character = SER_stojan_protic
+recruit_character = SER_lazar_pacu
+recruit_character = SER_velikar_jankovic
+recruit_character = SER_ljuba_jovanobic
+recruit_character = SER_marko_djuricic
+recruit_character = SER_miroslav_spalajovic
+recruit_character = SER_apis
+
 add_ideas = {
 	SER_nacertanije
-}
-
-create_country_leader = {
-	name = "Nikola Pašić"
-	desc = "POLITICS_NIKOLA_PASIC_DESC"
-	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
-	expire = "1930.1.1"
-	ideology = t_democratic
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Dragutin 'Apis' Dimitrijević"
-	desc = "POLITICS_APIS_DESC"
-	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
-	expire = "1930.1.1"
-	ideology = t_democratic_expansionist
-	traits = {
-		#
-	}
 }
