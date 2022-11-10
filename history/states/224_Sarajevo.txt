@@ -5,23 +5,14 @@ state={
 	history={
 		owner = AUS
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 1
-			arms_factory = 1
 		}
 		add_core_of = AUS
 		add_core_of = SER
-		victory_points = {
-			4907 15
-		}
-		victory_points = {
-			4638 2
-		}
 	}
 	provinces={
 		5123 4742 5132 4751 5008 4883 4638 4639 5027 4907 5035 4784 4657 4658 4916 4918 4927 4813 4564 5076 5078 4699 4830 4831 5105 4600 5113
 	}
 	manpower=855125
 	buildings_max_level_factor=1.000
-	state_category = large_town
+	state_category = town
 }

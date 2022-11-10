@@ -5,25 +5,8 @@ state={
 	history={
 		owner = AUS
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 2
 		}
 		add_core_of = AUS
-		victory_points = {
-			4675 15
-		}
-		victory_points = {
-			4266 5
-		}
-		victory_points = {
-			4591 5
-		}
-		victory_points = {
-			4135 2
-		}
-		victory_points = {
-			4427 2
-		}
 	}
 	provinces={
 		4354 4487 4112 4629 3999 4135 4266 4525 4667 4668 4157 4675 4427 4307 4571 4580 4075 4591 4342

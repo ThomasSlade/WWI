@@ -13,28 +13,13 @@ state={
 	history={
 		owner = BEL
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 6
-			arms_factory = 6
 		}
 		add_core_of = BEL
-		victory_points = {
-			1424 50
-		}
-		victory_points = {
-			1244 25
-		}
-		victory_points = {
-			1209 2
-		}
-		victory_points = {
-			1468 2
-		}
 	}
 	provinces={
 		323 516 869 1225 555 269 1165 1424 594 754 596 501 1209 1468 1244
 	}
 	manpower=2309232
 	buildings_max_level_factor=1.000
-	state_category = megalopolis
+	state_category = city
 }

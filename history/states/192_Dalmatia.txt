@@ -5,8 +5,6 @@ state={
 	history={
 		owner = AUS
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 1
 		}
 		add_core_of = AUS
 	}
@@ -15,5 +13,5 @@ state={
 	}
 	manpower=210723
 	buildings_max_level_factor=1.000
-	state_category = town
+	state_category = rural
 }

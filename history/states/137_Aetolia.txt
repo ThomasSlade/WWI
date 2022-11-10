@@ -5,18 +5,13 @@ state={
 	history={
 		owner = GRE
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 1
 		}
 		add_core_of = GRE
-		victory_points = {
-			5247 2
-		}
 	}
 	provinces={
 		5262 5521 5277 5279 5285 5429 5180 5309 5181 5564 5445 6346 5329 5202 5460 5462 5463 5338 5467 5247
 	}
 	manpower=544094
 	buildings_max_level_factor=1.000
-	state_category = town
+	state_category = rural
 }

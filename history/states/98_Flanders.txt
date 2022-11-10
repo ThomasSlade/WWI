@@ -5,29 +5,13 @@ state={
 	history={
 		owner = BEL
 		buildings = {
-			infrastructure = 4
 		}
 		add_core_of = BEL
-		victory_points = {
-			1334 15
-		}
-		victory_points = {
-			1562 15
-		}
-		victory_points = {
-			1808 5
-		}
-		victory_points = {
-			1382 2
-		}
-		victory_points = {
-			1776 2
-		}
 	}
 	provinces={
 		1382 1578 1815 1744 1776 1808 1653 1334 1590 1718 1562 1724 1406
 	}
 	manpower=1587597 
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = city
 }

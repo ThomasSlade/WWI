@@ -5,12 +5,8 @@ state={
 	history={
 		owner = GER
 		buildings = {
-			infrastructure = 4
 		}
 		add_core_of = GER
-		victory_points = {
-			3056 2
-		}
 	}
 	provinces={
 		3056

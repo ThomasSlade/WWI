@@ -5,20 +5,8 @@ state={
 	history={
 		owner = SER
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 1
-			arms_factory = 1
 		}
 		add_core_of = SER
-		victory_points = {
-			5812 5
-		}
-		victory_points = {
-			5683 2
-		}
-		victory_points = {
-			5549 2
-		}
 	}
 	provinces={
 		5504 5760 5638 5786 5664 5795 5928 5549 5808 5683 5812 5433 5822 5318 5578 5579 5585 5335 5728 5493 5621 5881 5629

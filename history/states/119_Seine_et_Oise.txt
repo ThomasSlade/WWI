@@ -5,20 +5,13 @@ state={
 	history={
 		owner = FRA
 		buildings = {
-			infrastructure = 4
 		}
 		add_core_of = FRA
-		victory_points = {
-			1877 15
-		}
-		victory_points = {
-			1883 2
-		}
 	}
 	provinces={
 		1891 1828 1892 1766 1862 1841 1843 1780 1876 1877 1847 1848 1883 1884 1886
 	}
 	manpower=717396
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = town
 }

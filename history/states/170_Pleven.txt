@@ -5,22 +5,8 @@ state={
 	history={
 		owner = BUL
 		buildings = {
-			infrastructure = 4
-			arms_factory = 1
 		}
 		add_core_of = BUL
-		victory_points = {
-			5497 5
-		}
-		victory_points = {
-			5711 2
-		}
-		victory_points = {
-			5827 2
-		}
-		victory_points = {
-			5791 2
-		}
 	}
 	provinces={
 		5635 5895 5497 5645 5658 5918 5791 5792 5798 5799 5807 5688 5817 5944 5827 5700 5832 5707 5838 5711 5461 5718 5853 5854 5855 5612 5491 5747 5625 5626

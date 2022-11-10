@@ -5,30 +5,13 @@ state={
 	history={
 		owner = AUS
 		buildings = {
-			infrastructure = 4
-			arms_factory = 2
 		}
 		add_core_of = AUS
-		victory_points = {
-			4808 25
-		}
-		victory_points = {
-			4689 5
-		}
-		victory_points = {
-			4632 5
-		}
-		victory_points = {
-			5025 2
-		}
-		victory_points = {
-			4486 2
-		}
 	}
 	provinces={
 		4866 4613 4486 4872 5003 5012 4502 5015 4632 4889 5017 5025 4388 4522 4912 4286 5058 4421 4680 4808 4299 4940 4431 4687 4688 4689 4815 4817 4947 4570 4703 4704 4833 4842 4459 4332 4333 4973 4847
 	}
 	manpower=2018455
 	buildings_max_level_factor=1.000
-	state_category = large_town
+	state_category = city
 }

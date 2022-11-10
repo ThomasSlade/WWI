@@ -5,12 +5,6 @@ state={
 		history={
 		owner = SOV
 		add_core_of = SOV
-			victory_points = {
-				6694 5
-			}
-			victory_points = {
-				7014 2
-			}
 	}
 	provinces={
 		6720 6818 6723 6694 6758 6600 6632 7014 7049 7110 6866 6775 6778 6556

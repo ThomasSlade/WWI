@@ -5,23 +5,13 @@ state={
 	history={
 		owner = HOL
 		buildings = {
-			infrastructure = 4
 		}
 		add_core_of = HOL
-		victory_points = {
-			2499 15
-		}
-		victory_points = {
-			2853 5
-		}
-		victory_points = {
-			2721 2
-		}
 	}
 	provinces={
 		2624 2688 2721 2499 2722 2789 2853 2727 2858 2733 2734 2544 2545 2869 2550 2488 2842 2589
 	}
 	manpower=1000
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = city
 }

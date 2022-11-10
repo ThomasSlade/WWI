@@ -13,22 +13,13 @@ state={
 	history={
 		owner = LUX
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 6
-			arms_factory = 6
 		}
 		add_core_of = LUX
-		victory_points = {
-			1513 15
-		}
-		victory_points = {
-			1418 2
-		}
 	}
 	provinces={
 		1667 1513 1418 1547 748 1398
 	}
 	manpower=259027
 	buildings_max_level_factor=1.000
-	state_category = megalopolis
+	state_category = city
 }
