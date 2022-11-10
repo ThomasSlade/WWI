@@ -1,7 +1,7 @@
 #COLOR 94 138 94
 state={
 	id=68
-	name="68_Neckar_Kries"
+	name=68_Neckar_Kries
 	history={
 		owner = GER
 		buildings = {
@@ -23,5 +23,5 @@ state={
 	}
 	manpower=1750551
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category = rural
 }

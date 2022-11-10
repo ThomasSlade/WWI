@@ -1,0 +1,21 @@
+#COLOR 52 57 25
+state={
+	id=378
+	name=378_Bely
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				6740 2
+			}
+			victory_points = {
+				7080 2
+			}
+	}
+	provinces={
+		7425 6531 7427 7430 7176 7310 6546 6805 6806 6684 7080 6574 6576 7356 6605 7374 6740 6741 5221 7409 7286 6395
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

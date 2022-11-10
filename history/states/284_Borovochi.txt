@@ -1,0 +1,21 @@
+#COLOR 97 173 95
+state={
+	id=284
+	name=284_Borovochi
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				7664 2
+			}
+			victory_points = {
+				7807 2
+			}
+	}
+	provinces={
+		7553 7554 7810 7811 7302 7178 7435 8083 7318 7702 7830 7831 7834 7723 7724 7607 7103 7489 8130 7239 8011 7378 7521 7139 7779 7272 7661 7664 8056 7289 7807
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

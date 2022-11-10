@@ -1,0 +1,24 @@
+#COLOR 230 127 100
+state={
+	id=343
+	name=343_Lublin
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				8437 5
+			}
+			victory_points = {
+				9148 2
+			}
+			victory_points = {
+				8929 2
+			}
+	}
+	provinces={
+		8840 8971 8591 8983 9117 8868 8492 9138 8884 9015 9148 9152 8392 9034 8779 8929 9062 8680 8426 8554 9072 8564 8437 8697 8444 8574
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

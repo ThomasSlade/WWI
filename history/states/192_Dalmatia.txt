@@ -11,9 +11,9 @@ state={
 		add_core_of = AUS
 	}
 	provinces={
-		4352 4891 4578 4440 4738 4389 4775 4264 4871 4715 4785 4404 4661 4791 4152 4443 4701
+		4578 4738 4389 4264 4715 4785 4404 4661 4791 4152 4443 4701
 	}
 	manpower=210723
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category = town
 }

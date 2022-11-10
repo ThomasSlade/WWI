@@ -1,0 +1,18 @@
+#COLOR 225 177 5
+state={
+	id=361
+	name=361_Moscow
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				8857 25
+			}
+	}
+	provinces={
+		8289 8546 9156 8773 8807 8361 9105 8857 8415
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

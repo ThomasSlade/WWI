@@ -1,0 +1,24 @@
+#COLOR 92 64 63
+state={
+	id=246
+	name=246_Vilna
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				7902 25
+			}
+			victory_points = {
+				7363 2
+			}
+			victory_points = {
+				7815 2
+			}
+	}
+	provinces={
+		7815 6923 7950 7185 7706 7583 8098 7207 8120 8121 7870 7363 6986 7755 8016 7889 7902 7275 7026 7800 7929
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

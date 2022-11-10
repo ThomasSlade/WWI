@@ -1,0 +1,21 @@
+#COLOR 149 141 222
+state={
+	id=298
+	name=298_Jagoldai
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				8150 2
+			}
+			victory_points = {
+				8831 2
+			}
+	}
+	provinces={
+		8066 8330 8331 7953 7954 8085 8606 7967 8114 8123 8769 8259 8141 8150 8416 8290 8547 8805 8300 8047 8177 8831
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

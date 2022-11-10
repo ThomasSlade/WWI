@@ -1,0 +1,15 @@
+#COLOR 93 91 148
+state={
+	id=269
+	name=269_Izmail
+	history={
+		owner = SOV
+		add_core_of = SOV
+	}
+	provinces={
+		7584 8160 7939 8100 8101 7655 7210 7979 8019 7541 7573 7802 7932 7709 7614
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

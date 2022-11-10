@@ -1,0 +1,21 @@
+#COLOR 81 202 206
+state={
+	id=289
+	name=289_Wesenberg
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				7109 5
+			}
+			victory_points = {
+				7474 2
+			}
+	}
+	provinces={
+		7360 7649 7010 7109 6982 7180 7436 7597 7057 7474 6965 7256 7320 7391
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

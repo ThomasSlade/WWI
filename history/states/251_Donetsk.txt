@@ -1,0 +1,24 @@
+#COLOR 78 105 133
+state={
+	id=251
+	name=251_Donetsk
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				7958 2
+			}
+			victory_points = {
+				7605 2
+			}
+			victory_points = {
+				7064 2
+			}
+	}
+	provinces={
+		7843 7429 7531 7372 7469 7855 6836 7605 7958 7191 7064
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

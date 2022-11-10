@@ -1,0 +1,21 @@
+#COLOR 126 206 230
+state={
+	id=345
+	name=345_Tarashcha
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				7658 2
+			}
+			victory_points = {
+				8107 2
+			}
+	}
+	provinces={
+		8064 7777 7877 8155 7623 7658 8107 7918 7982 7794 7763 7826 7863 7547 7452 7645 7806 7551
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

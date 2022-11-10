@@ -1,0 +1,21 @@
+#COLOR 62 117 119
+state={
+	id=377
+	name=377_Revel
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				7161 15
+			}
+			victory_points = {
+				6716 2
+			}
+	}
+	provinces={
+		7136 7686 6825 6765 7376 7251 7388 6744 7161 7066 6716 6845
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

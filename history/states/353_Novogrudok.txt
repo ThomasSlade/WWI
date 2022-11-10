@@ -1,0 +1,21 @@
+#COLOR 159 66 60
+state={
+	id=353
+	name=353_Novogrudok
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				8111 2
+			}
+			victory_points = {
+				8789 2
+			}
+	}
+	provinces={
+		8136 8553 8045 8111 8660 8789 8310 8604 8508 7837
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

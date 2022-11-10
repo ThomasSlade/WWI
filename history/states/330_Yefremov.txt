@@ -1,0 +1,18 @@
+#COLOR 232 230 2
+state={
+	id=330
+	name=330_Yefremov
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				8557 2
+			}
+	}
+	provinces={
+		8164 9099 8557 8915 8276 9139 8855 8254 8191
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

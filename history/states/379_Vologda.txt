@@ -1,0 +1,18 @@
+#COLOR 135 149 2
+state={
+	id=379
+	name=379_Vologda
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				7312 5
+			}
+	}
+	provinces={
+		7973 8550 7656 8008 7659 8558 7312 7995
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

@@ -1,0 +1,24 @@
+#COLOR 97 96 35
+state={
+	id=255
+	name=255_Tula
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				7029 25
+			}
+			victory_points = {
+				7373 2
+			}
+			victory_points = {
+				7370 2
+			}
+	}
+	provinces={
+		7385 7114 7083 7370 7373 8142 7343 7344 8050 7029 7446 7575 8152 6937 7293
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

@@ -1,0 +1,21 @@
+#COLOR 255 108 99
+state={
+	id=390
+	name=390_Disna
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				8603 2
+			}
+			victory_points = {
+				8382 2
+			}
+	}
+	provinces={
+		8838 8734 8936 8490 9131 9134 8369 8882 8883 8436 8469 8757 9048 9145 8603 8382
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

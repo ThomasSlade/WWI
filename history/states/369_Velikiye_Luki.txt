@@ -1,0 +1,18 @@
+#COLOR 100 213 94
+state={
+	id=369
+	name=369_Velikiye_Luki
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				7646 2
+			}
+	}
+	provinces={
+		7648 7362 7202 7588 7624 7473 7154 7764 7258 7646
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

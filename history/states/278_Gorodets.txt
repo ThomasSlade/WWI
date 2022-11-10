@@ -1,0 +1,21 @@
+#COLOR 208 206 170
+state={
+	id=278
+	name=278_Gorodets
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				8913 2
+			}
+			victory_points = {
+				9036 2
+			}
+	}
+	provinces={
+		8965 8999 9067 9036 8958 8783 9006 8913 8594 8946 9011 9022 9039 8567 8792 8826 8894
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

@@ -1,0 +1,27 @@
+#COLOR 152 22 24
+state={
+	id=312
+	name=312_Lomza
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				8380 15
+			}
+			victory_points = {
+				8211 2
+			}
+			victory_points = {
+				8095 2
+			}
+			victory_points = {
+				8268 2
+			}
+	}
+	provinces={
+		8713 7947 8717 8848 8849 8211 8212 8340 8467 8600 8601 8350 7966 8095 8749 8239 8367 8881 7988 8888 8380 8388 8135 7752 7626 8268 8015 8797 8798 7650 7782 8044 8306 8819 8821 8695 8059
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

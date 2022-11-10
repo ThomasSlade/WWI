@@ -15,8 +15,8 @@ opinion_modifiers = {
 
 	SER_refused_annexation_of_vojvodina = { value = 20 }
 
-	AUS_serbian_royal_visit = { value = -10 }
-	serbian_royal_visit_negative = { value = 10 }
+	FRA_serbian_royal_visit = { value = 10 }
+	serbian_royal_visit_negative = { value = -10 }
 
 	serbia_seeks_entente_membership = { value = 30 }
 

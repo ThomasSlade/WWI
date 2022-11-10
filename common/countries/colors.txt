@@ -4,6 +4,10 @@ FRA = {
 	color = rgb { 16 23 106 }
 	color_ui = rgb { 16 23 106 }
 }
+SOV = {
+	color = rgb { 5 26 6 }
+	color_ui = rgb { 5 26 6 }
+}
 GER = {
 	color = rgb { 100 131 166 }
 	color_ui = rgb { 100 131 166 }
@@ -13,8 +17,8 @@ AUS = {
 	color_ui = rgb { 205 189 184 }
 }
 TUR = {
-	color = rgb { 83 16 30 }
-	color_ui = rgb { 83 16 30 }
+	color = rgb { 71 4 19 }
+	color_ui = rgb { 71 4 19 }
 }
 BEL = {
 	color = rgb { 55 51 46 }
@@ -37,8 +41,8 @@ ROM = {
 	color_ui = rgb { 127 130 30 }
 }
 BUL = {
-	color = rgb { 45 76 56 }
-	color_ui = rgb { 45 76 56 }
+	color = rgb { 3 71 59 }
+	color_ui = rgb { 3, 71, 59 }
 }
 MNT = {
 	color = rgb { 45 142 124 }

@@ -1,0 +1,18 @@
+#COLOR 206 206 206
+state={
+	id=359
+	name=359_Wenden
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				8931 2
+			}
+	}
+	provinces={
+		8673 8962 8931 8710 8808 9032 8844 8781 8624 9010 8692 8991 8663 8760 8921 9050 8862 8799
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

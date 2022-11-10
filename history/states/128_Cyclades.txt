@@ -9,16 +9,13 @@ state={
 		}
 		add_core_of = GRE
 		victory_points = {
-			5200 2
-		}
-		victory_points = {
 			5192 2
 		}
 	}
 	provinces={
-		5221 5192 1771 5197 5805 5200 5328 5552 1020 5215
+		5192 5197
 	}
 	manpower=54029
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category = pastoral
 }

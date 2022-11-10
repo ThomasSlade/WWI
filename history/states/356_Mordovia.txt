@@ -1,0 +1,30 @@
+#COLOR 255 216 79
+state={
+	id=356
+	name=356_Mordovia
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				8933 2
+			}
+			victory_points = {
+				8417 2
+			}
+			victory_points = {
+				8861 2
+			}
+			victory_points = {
+				8684 2
+			}
+			victory_points = {
+				8410 2
+			}
+	}
+	provinces={
+		8577 8584 9098 8592 8593 8727 8858 8861 8997 8998 9130 9144 9157 8904 8523 8782 8664 8793 8410 8417 8933 8556 8684 9085
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

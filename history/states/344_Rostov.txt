@@ -1,0 +1,21 @@
+#COLOR 22 18 7
+state={
+	id=344
+	name=344_Rostov
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				6421 2
+			}
+			victory_points = {
+				6522 2
+			}
+	}
+	provinces={
+		6819 7395 7208 7336 7601 6421 7574 6522 6878
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

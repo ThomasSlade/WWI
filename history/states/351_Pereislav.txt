@@ -1,0 +1,21 @@
+#COLOR 100 124 157
+state={
+	id=351
+	name=351_Pereislav
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				7820 2
+			}
+			victory_points = {
+				7959 2
+			}
+	}
+	provinces={
+		7683 7428 7820 7823 7701 7959 7193 7970 7718 7592 7603 7618 7893 8022 7514 7908 7398 7400 7544 7545 8189
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

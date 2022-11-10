@@ -1,0 +1,27 @@
+#COLOR 16 5 100
+state={
+	id=363
+	name=363_Rostov_on_Don
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				6777 25
+			}
+			victory_points = {
+				6895 5
+			}
+			victory_points = {
+				6408 5
+			}
+			victory_points = {
+				6602 2
+			}
+	}
+	provinces={
+		6528 6408 7438 6799 7694 6420 6682 6557 6815 6432 6817 6949 7590 6569 6649 5438 6599 7111 6602 6736 6867 6485 6631 6509 6895 6774 6777
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

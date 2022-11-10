@@ -1,0 +1,24 @@
+#COLOR 203 70 20
+state={
+	id=357
+	name=357_Lutsk
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				9069 2
+			}
+			victory_points = {
+				8206 2
+			}
+			victory_points = {
+				8581 2
+			}
+	}
+	provinces={
+		8581 9094 8206 8213 8351 9119 9127 8491 9135 9009 9141 8636 8767 8257 8643 9033 8272 9044 8790 8171 9069 9071 8561 8562 8689 8182 8822 8572
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

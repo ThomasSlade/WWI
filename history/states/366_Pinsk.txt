@@ -1,0 +1,21 @@
+#COLOR 252 177 172
+state={
+	id=366
+	name=366_Pinsk
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				9143 5
+			}
+			victory_points = {
+				9137 2
+			}
+	}
+	provinces={
+		9089 9102 8982 9113 8735 8736 8742 8623 9137 9143 9146 9019 9020 9149 8804 8682 8683 9079 9081 8699 9087
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

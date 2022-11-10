@@ -1,0 +1,27 @@
+#COLOR 37 119 152
+state={
+	id=352
+	name=352_Valuyki
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				7071 5
+			}
+			victory_points = {
+				6702 2
+			}
+			victory_points = {
+				6475 2
+			}
+			victory_points = {
+				5552 2
+			}
+	}
+	provinces={
+		4352 6401 6402 6790 6791 7069 7071 6702 6703 5552 7350 5559 6844 6717 6719 6848 5569 6983 6475 6612 6360 6745 6363 6495 6498 7269 6770 7039
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

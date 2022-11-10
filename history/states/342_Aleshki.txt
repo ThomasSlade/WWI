@@ -1,0 +1,21 @@
+#COLOR 0 59 87
+state={
+	id=342
+	name=342_Aleshki
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				6673 2
+			}
+			victory_points = {
+				6448 2
+			}
+	}
+	provinces={
+		6788 6536 1065 458 1020 6637 6414 6446 6448 6673 6701 6355 4440 6427 412 6397 6399
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

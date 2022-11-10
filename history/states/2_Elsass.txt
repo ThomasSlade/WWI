@@ -1,7 +1,7 @@
 #COLOR 0 147 60
 state={
 	id=2
-	name="2_Elsass"
+	name=2_Elsass
 	history={
 		owner = GER
 		buildings = {
@@ -26,5 +26,5 @@ state={
 	}
 	manpower=1171259
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category = rural
 }

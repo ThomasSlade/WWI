@@ -1,0 +1,24 @@
+#COLOR 230 241 187
+state={
+	id=354
+	name=354_Pereslavl
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				8477 2
+			}
+			victory_points = {
+				8580 2
+			}
+			victory_points = {
+				8812 2
+			}
+	}
+	provinces={
+		8961 8898 8612 8580 8712 9097 8906 8811 8812 8880 9012 9051 8477
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

@@ -1,0 +1,24 @@
+#COLOR 62 31 32
+state={
+	id=252
+	name=252_Brest_Litovsk
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				6896 5
+			}
+			victory_points = {
+				7796 2
+			}
+			victory_points = {
+				6721 2
+			}
+	}
+	provinces={
+		7047 6664 7570 6948 7205 7851 7476 7477 6721 6985 7242 7627 7754 6486 7652 7526 6896 7025 7538 7156 7796 7797 6520 7421
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

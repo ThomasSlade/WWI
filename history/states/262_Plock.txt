@@ -1,0 +1,21 @@
+#COLOR 122 77 71
+state={
+	id=262
+	name=262_Plock
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				7457 5
+			}
+			victory_points = {
+				7423 2
+			}
+	}
+	provinces={
+		7456 7457 8484 7525 7813 7911 8042 7630 7572 8471 7928 7838 7423
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

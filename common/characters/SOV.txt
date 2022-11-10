@@ -1,0 +1,15 @@
+characters = {
+	SOV_nicholas_ii = {
+		name = SOV_nicholas_ii
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_GER_wilhelm_ii"
+			}
+		}
+		country_leader = {
+			ideology = t_monarchism
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+}

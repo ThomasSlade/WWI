@@ -1,0 +1,24 @@
+#COLOR 60 72 69
+state={
+	id=367
+	name=367_Mariupol
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				7236 5
+			}
+			victory_points = {
+				6886 5
+			}
+			victory_points = {
+				7174 2
+			}
+	}
+	provinces={
+		6912 7172 7174 7311 7467 7213 7604 6713 6592 7236 6855 6856 6997 6871 7386 7515 6753 6884 6886 6763 6899 7285 7030
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

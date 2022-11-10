@@ -1,0 +1,27 @@
+#COLOR 19 53 109
+state={
+	id=333
+	name=333_Bender
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				1850 5
+			}
+			victory_points = {
+				6726 5
+			}
+			victory_points = {
+				6636 2
+			}
+			victory_points = {
+				1771 2
+			}
+	}
+	provinces={
+		4871 395 6412 6670 6672 6426 6428 6942 1461 1850 6459 6462 6594 6726 5326 6607 5328 6357 345 6746 6620 6493 6494 1771 6636 6381 6385 1010 6513 6644 7160
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

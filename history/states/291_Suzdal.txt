@@ -1,0 +1,21 @@
+#COLOR 123 109 4
+state={
+	id=291
+	name=291_Suzdal
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				7441 5
+			}
+			victory_points = {
+				8218 2
+			}
+	}
+	provinces={
+		8451 7112 7307 8495 7441 7698 8625 7956 8218
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

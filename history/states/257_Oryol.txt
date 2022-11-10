@@ -1,0 +1,21 @@
+#COLOR 222 208 175
+state={
+	id=257
+	name=257_Oryol
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				9059 15
+			}
+			victory_points = {
+				8745 2
+			}
+	}
+	provinces={
+		8672 9059 9128 8745 8912 9147 8893 8990
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

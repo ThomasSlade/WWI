@@ -1,0 +1,21 @@
+#COLOR 124 227 99
+state={
+	id=288
+	name=288_Luga
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				7975 2
+			}
+			victory_points = {
+				7581 2
+			}
+	}
+	provinces={
+		7937 8065 7688 7437 7182 7581 7453 7454 7974 7975 7722 7608 7609 8402 7123 8147 7647 7523 7780 7145 7920 7921 7922 7417
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

@@ -1,0 +1,18 @@
+#COLOR 11 163 3
+state={
+	id=373
+	name=373_Toropets
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				7666 2
+			}
+	}
+	provinces={
+		7008 7107 5577 5358 7024 7666 6772 6389 6582 6583 7223
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

@@ -1,0 +1,21 @@
+#COLOR 105 94 76
+state={
+	id=341
+	name=341_Kovrov
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				7322 2
+			}
+			victory_points = {
+				7731 2
+			}
+	}
+	provinces={
+		8186 7654 7337 8273 7730 7731 7508 7381 7382 7890 7891 7322 8124 7742 7231
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

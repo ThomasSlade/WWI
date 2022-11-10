@@ -1,0 +1,18 @@
+#COLOR 86 131 179
+state={
+	id=380
+	name=380_Chernomorskaya
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				7375 2
+			}
+	}
+	provinces={
+		6976 7265 7268 7399 7375 6959 7825 7513
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

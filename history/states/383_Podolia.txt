@@ -1,0 +1,27 @@
+#COLOR 36 31 112
+state={
+	id=383
+	name=383_Podolia
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				6662 5
+			}
+			victory_points = {
+				6800 2
+			}
+			victory_points = {
+				6542 2
+			}
+			victory_points = {
+				6521 2
+			}
+	}
+	provinces={
+		6722 6852 6662 6502 7048 7244 6542 6800 7125 6776 6521 7259 6527
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

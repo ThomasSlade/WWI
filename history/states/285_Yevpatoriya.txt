@@ -1,0 +1,18 @@
+#COLOR 137 167 181
+state={
+	id=285
+	name=285_Yevpatoriya
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				8424 2
+			}
+	}
+	provinces={
+		8128 8035 8356 7943 8424 7857 8339 8190 8089 8506 8348 8126 8127
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

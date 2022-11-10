@@ -1,0 +1,18 @@
+#COLOR 37 209 40
+state={
+	id=381
+	name=381_Yamburg
+		history={
+		owner = SOV
+		add_core_of = SOV
+			victory_points = {
+				7093 2
+			}
+	}
+	provinces={
+		6659 7045 6798 7058 7060 6813 7073 7074 4648 6568 7093 6477 6734 6484 6364 6751 6507 6773 6518 6905
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

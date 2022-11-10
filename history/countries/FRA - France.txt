@@ -39,3 +39,4 @@ add_ideas = {
 
 create_faction = Entente
 add_to_faction = FRA
+add_to_faction = SOV
