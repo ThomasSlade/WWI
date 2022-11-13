@@ -2,14 +2,20 @@
 state={
 	id=330
 	name=330_Yefremov
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			8557 2
+		}
 	}
 	provinces={
 		8164 9099 8557 8915 8276 9139 8855 8254 8191
 	}
-	manpower=0
+	manpower=223402
 	buildings_max_level_factor=1.000
 	state_category = rural
 }

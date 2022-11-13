@@ -39,4 +39,5 @@ recruit_character = SER_apis
 
 add_ideas = {
 	SER_nacertanije
+	extensive_conscription
 }

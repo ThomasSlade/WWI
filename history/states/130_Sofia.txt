@@ -13,13 +13,25 @@ state={
 	history={
 		owner = BUL
 		buildings = {
+			arms_factory = 3
+			infrastructure = 2
+			industrial_complex = 2
 		}
 		add_core_of = BUL
+		victory_points = {
+			5359 25
+		}
+		victory_points = {
+			5244 2
+		}
+		victory_points = {
+			5274 2
+		}
 	}
 	provinces={
 		5250 5391 5267 5274 1702 5288 5289 5290 1583 5425 5301 5175 573 5313 67 5452 718 1495 362 5485 5359 5234 5244 5373
 	}
-	manpower=1292599
+	manpower=991052
 	buildings_max_level_factor=1.000
 	state_category = city
 }

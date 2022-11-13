@@ -2,14 +2,23 @@
 state={
 	id=273
 	name=273_Cherepovets
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			6947 2
+		}
+		victory_points = {
+			6692 2
+		}
 	}
 	provinces={
 		7041 6404 6661 1545 6921 6539 4624 6417 6419 6945 7201 6947 6692 557 7472 7221 7222 6586 6847 7488 6466 6850 7106 7625 7121 6614 6875 5340 7141 6378 6892 6894 6769 7665 6516
 	}
-	manpower=0
+	manpower=392973
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = pastoral
 }

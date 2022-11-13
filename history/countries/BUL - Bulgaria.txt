@@ -5,6 +5,7 @@ oob = "BUL_1911"
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	gw_artillery = 1
 
 	early_reform = 1
 }
@@ -25,6 +26,10 @@ set_popularities = {
 	monarchism_expansionist = 30
 	communism = 0
 	communism_expansionist = 0
+}
+
+add_ideas = {
+	extensive_conscription
 }
 
 create_country_leader = {

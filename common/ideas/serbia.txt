@@ -11,7 +11,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = GFX_idea_generic_democratic_expansionist
+			picture = generic_democratic_expansionist
 
 			modifier = {
 				democratic_expansionist_drift = 0.01
@@ -48,10 +48,11 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = GFX_idea_generic_constitution_guarantee
+			picture = generic_propoganda_megaphone
 
 			modifier = {
 				land_doctrine_cost_factor = -0.3
+				conscription = 0.015
 			}
 		}
 
@@ -66,7 +67,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = GFX_idea_generic_propoganda_megaphone
+			picture = generic_propoganda_megaphone
 
 			modifier = {
 				army_core_attack_factor = 0.25
@@ -85,7 +86,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = GFX_idea_aus_narodna_odbrana
+			picture = aus_narodna_odbrana
 
 			modifier = {
 				supply_combat_penalties_on_core_factor = -0.33
@@ -104,7 +105,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = GFX_idea_generic_crate
+			picture = generic_crate
 
 			modifier = {
 				production_speed_industrial_complex_factor = 1
@@ -122,7 +123,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = GFX_idea_generic_crate
+			picture = generic_crate
 
 			modifier = {
 				production_speed_industrial_complex_factor = 1
@@ -140,7 +141,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = GFX_idea_generic_gear_and_star
+			picture = generic_gear_and_star
 
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.8
@@ -160,7 +161,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = GFX_idea_generic_gear_and_star
+			picture = generic_gear_and_star
 
 			modifier = {
 				conscription = 0.02
@@ -178,7 +179,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = GFX_idea_generic_gear_and_star
+			picture = generic_gear_and_star
 
 			modifier = {
 				compliance_growth = 0.5
@@ -196,7 +197,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = GFX_idea_generic_gear_and_star
+			picture = generic_gear_and_star
 
 			modifier = {
 				production_speed_bunker_factor = 1

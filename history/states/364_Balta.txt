@@ -2,14 +2,26 @@
 state={
 	id=364
 	name=364_Balta
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			7977 5
+		}
+		victory_points = {
+			7582 2
+		}
+		victory_points = {
+			8176 2
+		}
 	}
 	provinces={
 		7938 7949 8078 7582 7976 7977 7728 8245 7354 7869 7491 7243 8140 7631 7653 7527 8173 8176 7539 7798 7799
 	}
-	manpower=0
+	manpower=786171
 	buildings_max_level_factor=1.000
 	state_category = rural
 }

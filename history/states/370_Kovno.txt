@@ -2,14 +2,24 @@
 state={
 	id=370
 	name=370_Kovno
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			arms_factory = 1
+			infrastructure = 1
+		}
+		victory_points = {
+			7076 15
+		}
+		victory_points = {
+			8886 2
+		}
 	}
 	provinces={
 		8835 9092 9093 8980 8981 9109 8094 7076 8109 8238 8886 9018 8507 8765 9042 9043 8670 8927 8294 9068 8943
 	}
-	manpower=0
+	manpower=421347
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = town
 }

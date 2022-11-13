@@ -2,14 +2,20 @@
 state={
 	id=369
 	name=369_Velikiye_Luki
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			7646 2
+		}
 	}
 	provinces={
 		7648 7362 7202 7588 7624 7473 7154 7764 7258 7646
 	}
-	manpower=0
+	manpower=92680
 	buildings_max_level_factor=1.000
 	state_category = rural
 }

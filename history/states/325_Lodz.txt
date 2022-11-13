@@ -2,14 +2,27 @@
 state={
 	id=325
 	name=325_Lodz
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			arms_factory = 1
+			infrastructure = 2
+		}
+		victory_points = {
+			8195 25
+		}
+		victory_points = {
+			8902 5
+		}
+		victory_points = {
+			8768 2
+		}
 	}
 	provinces={
 		8195 8196 8708 8970 7952 8866 8994 8493 8622 7987 8768 9025 8901 8902 8137 8183 8563 7927 8824
 	}
-	manpower=0
+	manpower=613685
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = town
 }

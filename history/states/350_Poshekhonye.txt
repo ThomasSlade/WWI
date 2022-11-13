@@ -2,14 +2,23 @@
 state={
 	id=350
 	name=350_Poshekhonye
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			7790 2
+		}
+		victory_points = {
+			7906 2
+		}
 	}
 	provinces={
 		6560 7906 7907 6469 6952 7306 7787 7790 6739 8031 7387 6652 7839
 	}
-	manpower=0
+	manpower=306954
 	buildings_max_level_factor=1.000
 	state_category = rural
 }

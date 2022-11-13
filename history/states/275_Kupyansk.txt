@@ -2,14 +2,23 @@
 state={
 	id=275
 	name=275_Kupyansk
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			1215 2
+		}
+		victory_points = {
+			4737 2
+		}
 	}
 	provinces={
 		4737 6657 6535 276 6424 6425 33 943 5295 6456 1215 6728 5453 1622 6371 6885 6645 6646 6396 6526
 	}
-	manpower=0
+	manpower=481572
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = pastoral
 }

@@ -2,14 +2,26 @@
 state={
 	id=274
 	name=274_Vinnytsia
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			7792 5
+		}
+		victory_points = {
+			7384 2
+		}
+		victory_points = {
+			7211 2
+		}
 	}
 	provinces={
 		7297 7173 7309 7054 7313 7192 7593 7082 7211 7084 7619 9160 7498 7117 7249 6996 7383 7384 7131 7132 7264 7916 7280 7792
 	}
-	manpower=0
+	manpower=1063855
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = town
 }

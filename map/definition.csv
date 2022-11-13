@@ -367,7 +367,7 @@
 366;27;65;143;sea;false;ocean;1
 367;27;66;150;sea;false;ocean;1
 368;27;69;130;sea;false;ocean;1
-369;1;44;17;sea;false;ocean;1
+369;1;44;17;land;true;urban;1
 370;27;72;191;sea;false;ocean;1
 371;27;88;75;land;false;forest;1
 372;27;93;160;sea;true;ocean;1

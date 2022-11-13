@@ -2,14 +2,24 @@
 state={
 	id=301
 	name=301_Odessa
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			7361 25
+		}
+		victory_points = {
+			7153 2
+		}
 	}
 	provinces={
 		7104 6689 7361 6755 7550 6794 6732 7535 6864 7153 7217 7795 7449 7004 7390
 	}
-	manpower=0
+	manpower=744564
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = town
 }

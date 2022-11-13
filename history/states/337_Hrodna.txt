@@ -2,14 +2,23 @@
 state={
 	id=337
 	name=337_Hrodna
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			8992 5
+		}
+		victory_points = {
+			9129 2
+		}
 	}
 	provinces={
 		8458 8716 8976 8468 8725 8726 9108 8992 8871 8872 8873 9129 9132 9133 9136 8755 9142 9151 9029 9030 9031 8521 8916 8534 8281 9061 8681 8435 8950 8951 8696 8318
 	}
-	manpower=0
+	manpower=839611
 	buildings_max_level_factor=1.000
 	state_category = rural
 }

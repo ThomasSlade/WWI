@@ -2,14 +2,24 @@
 state={
 	id=372
 	name=372_Yaroslavl
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			8791 15
+		}
+		victory_points = {
+			8462 2
+		}
 	}
 	provinces={
 		8448 8512 8674 8774 8585 8651 8843 8462 8784 8337 8791 8860 8863
 	}
-	manpower=0
+	manpower=520152
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = town
 }

@@ -25,6 +25,10 @@ set_popularities = {
 	communism_expansionist = 0
 }
 
+add_ideas = {
+	service_by_requirement
+}
+
 create_country_leader = {
 	name = "Nicholas I of Montenegro"
 	desc = "POLITICS_NICHOLAS_I_MNT_DESC"

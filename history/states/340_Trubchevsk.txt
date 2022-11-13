@@ -2,14 +2,20 @@
 state={
 	id=340
 	name=340_Trubchevsk
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			8586 2
+		}
 	}
 	provinces={
 		8419 8905 8586 8780 8627 8566 8919
 	}
-	manpower=0
+	manpower=126505
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = pastoral
 }

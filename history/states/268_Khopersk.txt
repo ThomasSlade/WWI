@@ -2,14 +2,29 @@
 state={
 	id=268
 	name=268_Khopersk
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			6482 2
+		}
+		victory_points = {
+			6534 2
+		}
+		victory_points = {
+			6532 2
+		}
+		victory_points = {
+			6545 2
+		}
 	}
 	provinces={
 		6656 6532 6534 6409 6541 6543 6545 6422 6808 6437 6571 6444 6572 6834 6452 6587 6715 6591 6907 6593 6471 6729 9161 6988 6608 6481 6482 6488 6489 6492 6365 6621 5215 6622 6369 742 6374 6887 6382 6641 7027 1017 6394 6523 6780
 	}
-	manpower=0
+	manpower=545004
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = pastoral
 }

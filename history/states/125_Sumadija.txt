@@ -12,14 +12,29 @@ state={
 	}
 	history={
 		owner = SER
-		buildings = {
-		}
 		add_core_of = SER
+		buildings = {
+			arms_factory = 3
+			infrastructure = 2
+			industrial_complex = 2
+		}
+		victory_points = {
+			5323 25
+		}
+		victory_points = {
+			5233 5
+		}
+		victory_points = {
+			1305 2
+		}
+		victory_points = {
+			5294 2
+		}
 	}
 	provinces={
 		1796 1670 5382 5256 5265 5395 1558 1816 1305 5272 414 5281 1701 5287 1834 1069 5294 1464 5308 1218 1482 5194 5323 5324 1871 5331 5332 1623 5219 1764 5220 1254 5349 1129 1774 5233 5241
 	}
-	manpower=1081335
+	manpower=1276222
 	buildings_max_level_factor=1.000
 	state_category = city
 }

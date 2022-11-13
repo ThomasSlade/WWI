@@ -2,14 +2,27 @@
 state={
 	id=324
 	name=324_Yekaterinoslav
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			8327 25
+		}
+		victory_points = {
+			7963 2
+		}
+		victory_points = {
+			7923 2
+		}
 	}
 	provinces={
 		8096 8097 8192 8573 8327 8455 8041 7886 7923 8756 8309 8341 7768 7290 7963 8060 8026 7678
 	}
-	manpower=0
+	manpower=1202136
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = town
 }

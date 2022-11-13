@@ -5,13 +5,26 @@ state={
 	history={
 		owner = GER
 		buildings = {
+			infrastructure = 1
 		}
 		add_core_of = GER
+		victory_points = {
+			2084 5
+		}
+		victory_points = {
+			1981 2
+		}
+		victory_points = {
+			1957 2
+		}
+		victory_points = {
+			2002 2
+		}
 	}
 	provinces={
 		2048 2053 1930 1934 1938 1939 2077 2084 1957 1960 1976 1981 1982 1983 2002 2004 2005 2017 2021 2025 2030 1916 1917
 	}
-	manpower=758572
+	manpower=334731
 	buildings_max_level_factor=1.000
 	state_category = rural
 }

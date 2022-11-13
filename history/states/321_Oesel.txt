@@ -2,14 +2,17 @@
 state={
 	id=321
 	name=321_Oesel
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		victory_points = {
+			6742 5
+		}
 	}
 	provinces={
 		7162 7266 6889 6573 6862 6957 7470 6577 6742 6810 7100
 	}
-	manpower=0
+	manpower=111925
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = town
 }

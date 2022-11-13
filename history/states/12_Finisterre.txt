@@ -5,13 +5,30 @@ state={
 	history={
 		owner = FRA
 		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
 		}
 		add_core_of = FRA
+		victory_points = {
+			2240 15
+		}
+		victory_points = {
+			2248 5
+		}
+		victory_points = {
+			1557 2
+		}
+		victory_points = {
+			2297 2
+		}
+		victory_points = {
+			2235 2
+		}
 	}
 	provinces={
 		2434 2307 2315 1557 2325 2339 2345 949 2360 2235 2236 2239 2240 2245 2248 2383 1881 2269 2271 1765 2278 2289 2291 2423 2296 2297
 	}
-	manpower=1457548
+	manpower=830373
 	buildings_max_level_factor=1.000
 	state_category = town
 }

@@ -2,14 +2,23 @@
 state={
 	id=382
 	name=382_Staraya_Russa
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			6400 2
+		}
+		victory_points = {
+			6514 2
+		}
 	}
 	provinces={
 		6400 6918 6537 6538 6793 5532 6704 6705 6961 6579 7090 6461 7102 6598 6473 6611 6496 7138 6504 6639 6640 6514 6517 6647 6525
 	}
-	manpower=0
+	manpower=243589
 	buildings_max_level_factor=1.000
 	state_category = rural
 }

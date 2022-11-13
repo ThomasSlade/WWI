@@ -2,14 +2,20 @@
 state={
 	id=338
 	name=338_Tikhvin
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			6442 2
+		}
 	}
 	provinces={
 		772 6415 6416 4244 4891 1446 6440 6441 6442 814 310 68 6474 5200 978 6354 5334 6359 1274 1533 767
 	}
-	manpower=0
+	manpower=190385
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = pastoral
 }

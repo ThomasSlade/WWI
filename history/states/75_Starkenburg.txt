@@ -5,13 +5,22 @@ state={
 	history={
 		owner = GER
 		buildings = {
+			arms_factory = 1
+			infrastructure = 2
+			industrial_complex = 1
 		}
 		add_core_of = GER
+		victory_points = {
+			2139 15
+		}
+		victory_points = {
+			2133 2
+		}
 	}
 	provinces={
 		2118 2087 2186 2123 2124 2095 2133 2139
 	}
-	manpower=1017501
+	manpower=794193
 	buildings_max_level_factor=1.000
 	state_category = city
 }

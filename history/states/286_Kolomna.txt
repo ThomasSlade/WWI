@@ -2,14 +2,24 @@
 state={
 	id=286
 	name=286_Kolomna
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			7720 2
+		}
+		victory_points = {
+			7660 2
+		}
 	}
 	provinces={
 		7845 7720 7689 8232 7660 8204 8093 8304 7346 7413 7832 7546 7676 7517
 	}
-	manpower=0
+	manpower=277739
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = town
 }

@@ -2,14 +2,20 @@
 state={
 	id=270
 	name=270_Werro
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			1146 5
+		}
 	}
 	provinces={
 		6946 6403 6499 6500 7142 487 6718 6362 6795 7122 6580 6613 6550 6678 6361 1146 187 6430
 	}
-	manpower=0
+	manpower=651367
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = town
 }

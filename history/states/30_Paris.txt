@@ -13,13 +13,19 @@ state={
 	history={
 		owner = FRA
 		buildings = {
+			arms_factory = 2
+			infrastructure = 3
+			industrial_complex = 2
 		}
 		add_core_of = FRA
+		victory_points = {
+			1265 50
+		}
 	}
 	provinces={
 		360 1265 1157 696
 	}
-	manpower=3903295
+	manpower=4828112
 	buildings_max_level_factor=1.000
 	state_category = metropolis
 }

@@ -2,14 +2,22 @@
 state={
 	id=361
 	name=361_Moscow
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			arms_factory = 2
+			infrastructure = 3
+			industrial_complex = 3
+		}
+		victory_points = {
+			8857 25
+		}
 	}
 	provinces={
 		8289 8546 9156 8773 8807 8361 9105 8857 8415
 	}
-	manpower=0
+	manpower=392368
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = metropolis
 }

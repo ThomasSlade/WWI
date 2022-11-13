@@ -2,14 +2,23 @@
 state={
 	id=294
 	name=294_Pavlohrad
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			7140 2
+		}
+		victory_points = {
+			6555 2
+		}
 	}
 	provinces={
 		7042 7043 6407 7183 7317 7319 6555 6814 7203 5415 6828 7219 6708 6709 7094 6465 6467 6735 1112 7257 6876 6750 7011 7140 6629 6630 6377 7146 6390
 	}
-	manpower=0
+	manpower=579479
 	buildings_max_level_factor=1.000
 	state_category = rural
 }

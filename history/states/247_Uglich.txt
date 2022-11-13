@@ -2,14 +2,23 @@
 state={
 	id=247
 	name=247_Uglich
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			8989 2
+		}
+		victory_points = {
+			9122 2
+		}
 	}
 	provinces={
 		9122 8739 8420 8845 8973 8911 8947 8948 8885 8985 8827 8989 9054
 	}
-	manpower=0
+	manpower=106497
 	buildings_max_level_factor=1.000
 	state_category = rural
 }

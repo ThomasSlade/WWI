@@ -2,14 +2,33 @@
 state={
 	id=297
 	name=297_Zhitomir
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			arms_factory = 1
+			infrastructure = 2
+		}
+		victory_points = {
+			6619 15
+		}
+		victory_points = {
+			6869 5
+		}
+		victory_points = {
+			6590 2
+		}
+		victory_points = {
+			6643 2
+		}
+		victory_points = {
+			6511 2
+		}
 	}
 	provinces={
 		6529 6663 6665 6802 6804 6423 7077 4775 945 6451 6457 699 6590 6468 5446 7113 6352 6869 6487 985 6619 6372 6762 6510 6511 6512 6643 118 6909
 	}
-	manpower=0
+	manpower=1602175
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = town
 }

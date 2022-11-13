@@ -25,6 +25,10 @@ set_popularities = {
 	communism_expansionist = 0
 }
 
+add_ideas = {
+	extensive_conscription
+}
+
 create_country_leader = {
 	name = "George I of the Hellenes"
 	desc = "POLITICS_GEORGE_I_GRE_DESC"

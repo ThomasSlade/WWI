@@ -2,14 +2,20 @@
 state={
 	id=334
 	name=334_Yelets
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			8407 5
+		}
 	}
 	provinces={
 		8644 8744 9096 9038 9103 9104 8407 8891
 	}
-	manpower=0
+	manpower=261758
 	buildings_max_level_factor=1.000
 	state_category = rural
 }

@@ -2,14 +2,32 @@
 state={
 	id=290
 	name=290_Chernigov
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			7116 5
+		}
+		victory_points = {
+			7019 2
+		}
+		victory_points = {
+			6908 2
+		}
+		victory_points = {
+			7147 2
+		}
+		victory_points = {
+			7061 2
+		}
 	}
 	provinces={
 		6784 7051 6926 7439 6801 7061 6971 7228 7365 6603 7116 6989 6606 7246 7633 7126 7130 6618 7262 7394 6635 7019 7147 7276 6908 6653 7166
 	}
-	manpower=0
+	manpower=757349
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = town
 }

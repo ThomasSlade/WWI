@@ -2,14 +2,24 @@
 state={
 	id=384
 	name=384_Minsk
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			7717 15
+		}
+		victory_points = {
+			6972 2
+		}
 	}
 	provinces={
 		7443 6933 7190 7577 7717 7081 7212 6972 7358 6854 7499 6992 6994 6868 7639 7512 7640 7775 6882 7017 7282 7283 6911
 	}
-	manpower=0
+	manpower=939593
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = town
 }

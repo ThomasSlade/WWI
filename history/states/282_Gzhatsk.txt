@@ -2,14 +2,20 @@
 state={
 	id=282
 	name=282_Gzhatsk
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			9111 2
+		}
 	}
 	provinces={
 		8611 8551 8907 8814 9111 8759 8984
 	}
-	manpower=0
+	manpower=111925
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = pastoral
 }

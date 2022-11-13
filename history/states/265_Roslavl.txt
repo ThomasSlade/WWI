@@ -2,14 +2,20 @@
 state={
 	id=265
 	name=265_Roslavl
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			8720 2
+		}
 	}
 	provinces={
 		8720 9041 8498 8963
 	}
-	manpower=0
+	manpower=118991
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = pastoral
 }

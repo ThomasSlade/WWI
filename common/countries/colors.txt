@@ -42,7 +42,7 @@ ROM = {
 }
 BUL = {
 	color = rgb { 3 71 59 }
-	color_ui = rgb { 3, 71, 59 }
+	color_ui = rgb { 3 71 59 }
 }
 MNT = {
 	color = rgb { 45 142 124 }

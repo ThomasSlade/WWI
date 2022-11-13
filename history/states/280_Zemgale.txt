@@ -2,14 +2,27 @@
 state={
 	id=280
 	name=280_Zemgale
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+		victory_points = {
+			8311 15
+		}
+		victory_points = {
+			7695 5
+		}
+		victory_points = {
+			8018 2
+		}
 	}
 	provinces={
 		8320 7558 7818 7695 8207 7704 7707 7332 7333 8242 8243 8244 7355 8018 7380 8405 8287 8288 7393 7786 8311
 	}
-	manpower=0
+	manpower=571628
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = town
 }

@@ -2,14 +2,23 @@
 state={
 	id=339
 	name=339_Kostroma
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			7233 5
+		}
+		victory_points = {
+			7461 2
+		}
 	}
 	provinces={
 		7233 6434 6820 7364 7396 7461 7016 6697 7462 6779 7440 6651 6589
 	}
-	manpower=0
+	manpower=314805
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = town
 }

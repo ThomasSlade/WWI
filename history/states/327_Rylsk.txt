@@ -2,14 +2,23 @@
 state={
 	id=327
 	name=327_Rylsk
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			6564 2
+		}
+		victory_points = {
+			6903 2
+		}
 	}
 	provinces={
 		6939 6658 6564 6916 7401 7433 6731 6861 6958 7534 6677 6903 7001 6842 6747 6687
 	}
-	manpower=0
+	manpower=285421
 	buildings_max_level_factor=1.000
 	state_category = rural
 }

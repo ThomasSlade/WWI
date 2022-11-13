@@ -2,14 +2,27 @@
 state={
 	id=259
 	name=259_Riga
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			7667 25
+		}
+		victory_points = {
+			7392 2
+		}
+		victory_points = {
+			7679 2
+		}
 	}
 	provinces={
 		7392 7781 7241 7679 7883 7885 8046 7610 7569 7888 7475 7667 7985 6967 7226 7227 7455
 	}
-	manpower=0
+	manpower=814545
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = city
 }

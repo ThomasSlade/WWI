@@ -2,14 +2,23 @@
 state={
 	id=313
 	name=313_Kashin
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			8806 2
+		}
+		victory_points = {
+			8427 2
+		}
 	}
 	provinces={
 		9120 8354 9058 9028 8646 8806 8903 8841 9065 8427 8718 8910 9074 8920 8510
 	}
-	manpower=0
+	manpower=299889
 	buildings_max_level_factor=1.000
 	state_category = rural
 }

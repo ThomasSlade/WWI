@@ -2,14 +2,23 @@
 state={
 	id=344
 	name=344_Rostov
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			6421 2
+		}
+		victory_points = {
+			6522 2
+		}
 	}
 	provinces={
 		6819 7395 7208 7336 7601 6421 7574 6522 6878
 	}
-	manpower=0
+	manpower=175851
 	buildings_max_level_factor=1.000
 	state_category = rural
 }

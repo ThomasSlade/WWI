@@ -5,13 +5,18 @@ state={
 	history={
 		owner = BUL
 		buildings = {
+			arms_factory = 1
+			infrastructure = 2
 		}
 		add_core_of = BUL
+		victory_points = {
+			5248 2
+		}
 	}
 	provinces={
 		5248 5251 5224 5261 5177
 	}
-	manpower=46419
+	manpower=57852
 	buildings_max_level_factor=1.000
 	state_category = rural
 }

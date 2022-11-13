@@ -2,24 +2,23 @@
 state={
 	id=66
 	name=66_Luxembourg
-	resources={
-		chromium = 999
-		tungsten = 999
-		aluminium = 999
-		oil = 999
-		rubber = 999
-		steel = 999
-	}
 	history={
 		owner = LUX
 		buildings = {
+			arms_factory = 3
+			infrastructure = 2
+			industrial_complex = 2
 		}
-		add_core_of = LUX
+		victory_points = {
+			1513 15
+		}
+		victory_points = {
+			1418 2
+		}
 	}
 	provinces={
 		1667 1513 1418 1547 748 1398
 	}
-	manpower=259027
-	buildings_max_level_factor=1.000
+	manpower=258130
 	state_category = city
 }

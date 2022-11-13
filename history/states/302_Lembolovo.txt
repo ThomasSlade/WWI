@@ -3,11 +3,16 @@ state={
 	id=302
 	name=302_Lembolovo
 	history={
+		owner = SOV
+		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
 	}
 	provinces={
 		7196
 	}
-	manpower=0
+	manpower=21084
 	buildings_max_level_factor=1.000
 	state_category = rural
 }

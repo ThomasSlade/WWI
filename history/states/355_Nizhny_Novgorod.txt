@@ -2,14 +2,24 @@
 state={
 	id=355
 	name=355_Nizhny_Novgorod
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			8610 15
+		}
+		victory_points = {
+			7990 2
+		}
 	}
 	provinces={
 		8576 7557 7305 8217 7458 8610 7599 7600 7990 7479 7611 7229 7613 8258 7492 7493 8645 7756 8536 8029 7261 7903 8418 8548 7540
 	}
-	manpower=0
+	manpower=1115893
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = town
 }

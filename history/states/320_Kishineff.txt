@@ -2,14 +2,30 @@
 state={
 	id=320
 	name=320_Kishineff
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			arms_factory = 1
+			infrastructure = 2
+		}
+		victory_points = {
+			7483 15
+		}
+		victory_points = {
+			7410 5
+		}
+		victory_points = {
+			7620 2
+		}
+		victory_points = {
+			7287 2
+		}
 	}
 	provinces={
 		7685 7824 7447 7197 7971 7465 7981 7215 7087 7858 7347 7735 7736 7482 7483 7738 7996 7359 7620 7748 7238 7876 7501 7502 7641 7133 7267 8165 7657 7408 7410 7287 7804
 	}
-	manpower=0
+	manpower=1010696
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = town
 }

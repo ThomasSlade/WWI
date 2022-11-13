@@ -2,14 +2,20 @@
 state={
 	id=391
 	name=391_Rezhitsa
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			9073 2
+		}
 	}
 	provinces={
 		9057 9026 8743 9064 8830 8874 8939 8909 9073 8851 8852 8889 8470 8758 9080 8445 8509 8446
 	}
-	manpower=0
+	manpower=388599
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = pastoral
 }

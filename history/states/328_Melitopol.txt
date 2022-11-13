@@ -2,14 +2,23 @@
 state={
 	id=328
 	name=328_Melitopol
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			7861 2
+		}
+		victory_points = {
+			7414 2
+		}
 	}
 	provinces={
 		7552 6754 6980 7589 6567 6443 7022 6449 6418 6387 6388 7349 7377 7414 6584 7861 7199 6463
 	}
-	manpower=0
+	manpower=396226
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = pastoral
 }

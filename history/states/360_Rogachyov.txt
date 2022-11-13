@@ -2,14 +2,23 @@
 state={
 	id=360
 	name=360_Rogachyov
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			8378 2
+		}
+		victory_points = {
+			8489 2
+		}
 	}
 	provinces={
 		8203 7962 8221 8480 8482 8489 8378 8764 8641 8516 8517 8010 8656 8401 8278 7896 8154 8036 8678 8167 8432 8433 8434 8179 8560 8443
 	}
-	manpower=0
+	manpower=539329
 	buildings_max_level_factor=1.000
 	state_category = rural
 }

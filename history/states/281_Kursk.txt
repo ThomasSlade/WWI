@@ -2,14 +2,30 @@
 state={
 	id=281
 	name=281_Kursk
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			7009 15
+		}
+		victory_points = {
+			7919 2
+		}
+		victory_points = {
+			7935 2
+		}
+		victory_points = {
+			7567 2
+		}
 	}
 	provinces={
 		7808 7567 8210 7961 8349 7844 7847 7983 7862 7998 8387 7750 8146 7255 7899 7009 7778 8043 7919 8305 8057 7935
 	}
-	manpower=0
+	manpower=1093687
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = town
 }

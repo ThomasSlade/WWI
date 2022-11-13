@@ -2,14 +2,24 @@
 state={
 	id=387
 	name=387_Bryansk
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			arms_factory = 1
+			infrastructure = 2
+		}
+		victory_points = {
+			6570 5
+		}
+		victory_points = {
+			7672 2
+		}
 	}
 	provinces={
 		7559 6667 8333 8334 7697 6932 7188 8088 7321 8344 6951 6570 8236 7230 7615 6724 6738 7892 6634 7789 7672 7934
 	}
-	manpower=0
+	manpower=744900
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = town
 }

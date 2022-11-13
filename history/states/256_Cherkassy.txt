@@ -2,14 +2,26 @@
 state={
 	id=256
 	name=256_Cherkassy
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			6919 5
+		}
+		victory_points = {
+			7352 2
+		}
+		victory_points = {
+			7224 2
+		}
 	}
 	provinces={
 		8000 7809 7587 6917 6919 7271 6508 7566 6768 6865 7352 1591 7224 6812 7134
 	}
-	manpower=0
+	manpower=480450
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = town
 }

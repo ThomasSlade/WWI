@@ -5,13 +5,29 @@ state={
 	history={
 		owner = ROM
 		buildings = {
+			infrastructure = 2
 		}
 		add_core_of = ROM
+		victory_points = {
+			6083 5
+		}
+		victory_points = {
+			6203 2
+		}
+		victory_points = {
+			5876 2
+		}
+		victory_points = {
+			6126 2
+		}
+		victory_points = {
+			6285 2
+		}
 	}
 	provinces={
 		6272 6273 5900 6285 6286 6295 5914 6068 6197 6203 6206 5823 6209 6083 5831 6223 5719 6241 6242 5860 5734 5993 6126 6255 6256 6001 5876 6263 6015
 	}
-	manpower=671736
+	manpower=344757
 	buildings_max_level_factor=1.000
 	state_category = rural
 }

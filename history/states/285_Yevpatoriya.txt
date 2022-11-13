@@ -2,14 +2,20 @@
 state={
 	id=285
 	name=285_Yevpatoriya
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			8424 2
+		}
 	}
 	provinces={
 		8128 8035 8356 7943 8424 7857 8339 8190 8089 8506 8348 8126 8127
 	}
-	manpower=0
+	manpower=304599
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = pastoral
 }

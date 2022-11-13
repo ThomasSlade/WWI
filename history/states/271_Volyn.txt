@@ -2,14 +2,32 @@
 state={
 	id=271
 	name=271_Volyn
-		history={
+	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			8966 5
+		}
+		victory_points = {
+			8381 2
+		}
+		victory_points = {
+			8358 2
+		}
+		victory_points = {
+			8714 2
+		}
+		victory_points = {
+			8778 2
+		}
 	}
 	provinces={
 		8707 8326 8966 8714 9101 9107 8986 8358 8234 9002 8621 7984 8887 8381 8134 8777 8778 9052 8801 8038 8679 8169 8818 8823 8698
 	}
-	manpower=0
+	manpower=449721
 	buildings_max_level_factor=1.000
-	state_category = rural
+	state_category = town
 }
