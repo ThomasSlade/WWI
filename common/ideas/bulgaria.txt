@@ -1,0 +1,22 @@
+ideas = {
+	country = {
+		BUL_balkan_prussia = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = bul_balkan_prussia
+
+			modifier = {
+				army_attack_factor = 0.25
+				conscription = 0.02
+			}
+		}
+	}
+}

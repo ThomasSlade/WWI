@@ -29,6 +29,7 @@ set_popularities = {
 }
 
 add_ideas = {
+	BUL_balkan_prussia
 	extensive_conscription
 }
 

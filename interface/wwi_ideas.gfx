@@ -41,8 +41,14 @@ spriteTypes = {
 		name = "GFX_idea_aus_black_hand_cells"
 		texturefile = "gfx/interface/ideas/idea_aus_black_hand_cells.dds"
 	}
+
+	# Country Specials
 	spriteType = {
-		name = "GFX_idea_aus_narodna_odbrana"
-		texturefile = "gfx/interface/ideas/idea_aus_narodna_odbrana.dds"
+		name = "GFX_idea_ser_nacertanije"
+		texturefile = "gfx/interface/ideas/idea_ser_nacertanije".dds"
+	}
+	spriteType = {
+		name = "GFX_idea_bul_balkan_prussia"
+		texturefile = "gfx/interface/ideas/idea_bul_balkan_prussia".dds"
 	}
 }
