@@ -2,6 +2,10 @@
 # Effects are fully scriptable here.
 # These names can NOT be removed or changes, as the code uses them....
 
+_test_power_balance_mod = {
+	power_balance_daily = 0.02
+}
+
 weather_rain_light = { # on Region 
 	air_detection = -0.1
 	naval_detection = -0.1
@@ -297,6 +301,10 @@ war_support_bad_modifier = {
 	surrender_limit = -0.3
 }
 
+war_support_during_war = { #Applied during war, scaled from 0-100% with war support, not split.
+	stability_factor = -0.3
+}
+
 
 attache_sent = {
 	war_support_factor = 0.1
@@ -341,10 +349,12 @@ diff_very_hard_player = {
 
 
 diff_very_easy_ai = {
+	peace_score_ratio_transferred_to_players = 0.25
 }
 
 diff_easy_ai = {
-	
+	no_supply_grace = 24
+	peace_score_ratio_transferred_to_players = 0.1
 }
 
 diff_normal_ai = {

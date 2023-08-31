@@ -45,10 +45,10 @@ spriteTypes = {
 	# Country Specials
 	spriteType = {
 		name = "GFX_idea_ser_nacertanije"
-		texturefile = "gfx/interface/ideas/idea_ser_nacertanije".dds"
+		texturefile = "gfx/interface/ideas/idea_ser_nacertanije.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_bul_balkan_prussia"
-		texturefile = "gfx/interface/ideas/idea_bul_balkan_prussia".dds"
+		texturefile = "gfx/interface/ideas/idea_bul_balkan_prussia.dds"
 	}
 }
