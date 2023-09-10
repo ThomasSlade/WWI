@@ -9,9 +9,6 @@ state={
 		}
 		add_core_of = TUR
 		add_core_of = BUL
-		victory_points = {
-			6229 2
-		}
 	}
 	provinces={
 		6074 6229 6079

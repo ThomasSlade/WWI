@@ -5,16 +5,10 @@ state={
 	history={
 		owner = ROM
 		buildings = {
-			arms_factory = 1
 			infrastructure = 1
+			arms_factory = 1
 		}
 		add_core_of = ROM
-		victory_points = {
-			6028 5
-		}
-		victory_points = {
-			6205 2
-		}
 	}
 	provinces={
 		6022 6151 6279 6028 6156 6036 6037 6048 6176 6181 6183 6057 6058 6063 6064 5938 6196 6205 5959 6228 6104 5978 6235 6110 6240 6113 6114 6120 5996 6129 6257 6004

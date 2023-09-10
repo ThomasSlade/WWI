@@ -5,16 +5,10 @@ state={
 	history={
 		owner = BEL
 		buildings = {
-			infrastructure = 2
 			industrial_complex = 1
+			infrastructure = 2
 		}
 		add_core_of = BEL
-		victory_points = {
-			1792 15
-		}
-		victory_points = {
-			1882 5
-		}
 	}
 	provinces={
 		1792 1859 1864 1680 1874 1721 1882 1853

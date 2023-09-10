@@ -51,3 +51,7 @@
 
   # Austria
   AUS_imperial_visit_to_bosnia: "Imperial Visit to Bosnia"
+
+  # Turkey
+  TUR_humiliated_by_war: "[TUR.GetNameDef] has recently lost a war"
+  TUR_humiliated_by_war_serbia_tt: "[TUR.GetNameDef] has been humiliated, clearing the way for §Y$SER_war_with_the_ottomans$§"

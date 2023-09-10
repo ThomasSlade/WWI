@@ -922,6 +922,10 @@ focus_tree = {
 				}
 				remove_state_core = 135
 			}
+
+			
+			# TEMP: Fire the event signifying the end of the Italo-Turkish war, allowing Serbia to get War With the Ottomans
+			news_event = { id = wwi_news.1 }
 		}
 	}
 
@@ -1209,6 +1213,9 @@ focus_tree = {
 				type = take_state_focus
 				target = TUR
 			}
+
+			# TEMP: Firing the event to invite Greece to the Balkan League, which ought to come from Britain.
+			GRE = { country_event = wwi_greece.1.a }
 		}
 	}
 

@@ -1,0 +1,10 @@
+#COLOR 21 30 221
+strategic_region={
+	id=78
+	name=78_Ionian_Sea
+	provinces={
+		9217 1127 9193 9195 9227 9167 9169 9202 9205 9213 350
+	}
+	weather={
+	}
+}

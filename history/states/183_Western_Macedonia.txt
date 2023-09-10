@@ -9,18 +9,6 @@ state={
 		}
 		add_core_of = TUR
 		add_core_of = GRE
-		victory_points = {
-			5826 2
-		}
-		victory_points = {
-			5998 2
-		}
-		victory_points = {
-			5932 2
-		}
-		victory_points = {
-			5745 2
-		}
 	}
 	provinces={
 		5904 5654 5655 5668 5803 5931 5932 5692 5693 7357 5826 5704 5708 5836 5975 5849 5977 5987 5862 5869 5997 5998 5745 5756

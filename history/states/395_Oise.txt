@@ -7,15 +7,6 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
-		victory_points = {
-			1819 5
-		}
-		victory_points = {
-			1805 5
-		}
-		victory_points = {
-			1742 2
-		}
 	}
 	provinces={
 		1664 1793 1802 1804 1677 1805 1809 1813 1819 1694 1717 1722 1739 1741 1742 1616 1748 1751 1628 1768 1783 1659

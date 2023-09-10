@@ -5,20 +5,11 @@ state={
 	history={
 		owner = FRA
 		buildings = {
-			arms_factory = 1
-			infrastructure = 2
 			industrial_complex = 1
+			infrastructure = 2
+			arms_factory = 1
 		}
 		add_core_of = FRA
-		victory_points = {
-			2456 15
-		}
-		victory_points = {
-			697 2
-		}
-		victory_points = {
-			2327 2
-		}
 	}
 	provinces={
 		1028 2309 2316 2322 2327 2456 2330 2340 2353 2229 2361 2362 697 2365 2250 2391 2272 2274 1637 2279 2409 2411 2424

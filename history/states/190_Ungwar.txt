@@ -8,9 +8,6 @@ state={
 			infrastructure = 2
 		}
 		add_core_of = AUS
-		victory_points = {
-			4297 5
-		}
 	}
 	provinces={
 		4545 4609 4323 4297 4330 4338 4439 4313 4346 4350

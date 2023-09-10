@@ -1,0 +1,10 @@
+#COLOR 6 39 98
+strategic_region={
+	id=80
+	name=80_Sea_of_Azov
+	provinces={
+		176 649 9180 9166
+	}
+	weather={
+	}
+}

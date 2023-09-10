@@ -5,22 +5,10 @@ state={
 	history={
 		owner = GRE
 		buildings = {
-			infrastructure = 2
 			industrial_complex = 1
+			infrastructure = 2
 		}
 		add_core_of = GRE
-		victory_points = {
-			5917 15
-		}
-		victory_points = {
-			6008 5
-		}
-		victory_points = {
-			5844 5
-		}
-		victory_points = {
-			5943 2
-		}
 	}
 	provinces={
 		5888 6026 5774 5880 5778 5906 5911 5917 6052 5934 6067 5943 6080 5965 5843 5844 6101 5985 5986 5866 5872 6008 5887

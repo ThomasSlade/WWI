@@ -1,0 +1,10 @@
+#COLOR 6 125 160
+strategic_region={
+	id=82
+	name=82_Gulf_of_Venice
+	provinces={
+		9196 9197 9204 244 9210 9181
+	}
+	weather={
+	}
+}

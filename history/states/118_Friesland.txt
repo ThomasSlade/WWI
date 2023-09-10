@@ -5,16 +5,10 @@ state={
 	history={
 		owner = HOL
 		buildings = {
-			arms_factory = 1
 			infrastructure = 1
+			arms_factory = 1
 		}
 		add_core_of = HOL
-		victory_points = {
-			2928 5
-		}
-		victory_points = {
-			2873 2
-		}
 	}
 	provinces={
 		2816 2855 2823 2830 2926 2832 2928 2866 2873

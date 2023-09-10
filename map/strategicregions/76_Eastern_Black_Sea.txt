@@ -1,0 +1,10 @@
+#COLOR 38 35 117
+strategic_region={
+	id=76
+	name=76_Eastern_Black_Sea
+	provinces={
+		9189 9221 9191 9192 9194 9173 117 1592 1407
+	}
+	weather={
+	}
+}

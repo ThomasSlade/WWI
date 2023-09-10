@@ -6,17 +6,8 @@ state={
 		owner = SER
 		add_core_of = SER
 		buildings = {
-			infrastructure = 1
 			industrial_complex = 1
-		}
-		victory_points = {
-			5812 5
-		}
-		victory_points = {
-			5683 2
-		}
-		victory_points = {
-			5549 2
+			infrastructure = 1
 		}
 	}
 	provinces={

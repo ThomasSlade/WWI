@@ -1,0 +1,10 @@
+#COLOR 55 183 211
+strategic_region={
+	id=83
+	name=83_Gulf_of_Burgas
+	provinces={
+		9250 9220 9224 9230 9237 9245 9214 9215
+	}
+	weather={
+	}
+}

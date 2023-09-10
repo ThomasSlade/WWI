@@ -5,16 +5,10 @@ state={
 	history={
 		owner = BEL
 		buildings = {
-			arms_factory = 1
 			infrastructure = 1
+			arms_factory = 1
 		}
 		add_core_of = BEL
-		victory_points = {
-			1873 5
-		}
-		victory_points = {
-			1866 2
-		}
 	}
 	provinces={
 		1857 1860 1866 1835 1839 1840 1873 1885 1822

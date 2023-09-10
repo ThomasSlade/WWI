@@ -30,7 +30,6 @@
 
   # News
   wwi_news.1.t: "[TUR.GetNameDef] Humiliated in Italo-[TUR.GetAdjective] War"
-  wwi_news.1.d: "When war broke out between [ITA.GetNameDef] and the long-attested Sick Man of Europe, there was little wonder of who would emerge victorious. Still, Italy's consistent beating back of its mediterranean foe has left even the most speculative pundits stunned at the military weakness of the ageing empire. Now, as [ITA.GetNameDef] gathers up its winnings, it must be supposed that other [TUR.GetAdjective] neighbors might soon follow the [ITA.GetADjective] example."
-  wwi_news.1.a_turkish_ally: "A troubling challenge to our interests."
+  wwi_news.1.d: "When war broke out between [ITA.GetNameDef] and the long-attested Sick Man of Europe, there was little wonder of who would emerge victorious. Still, the [ITA.GetAdjective] victory has left even the most speculative pundits stunned at the ageing empire's weakness.\n\nNow, as [ITA.GetNameDef] gathers up its winnings, it must be supposed that other [TUR.GetAdjective] neighbors might soon follow the [ITA.GetADjective] example."
   wwi_news.1.a_neutral: "[TUR.GetNameDef] is surely on its last legs."
-  wwi_news.1.a_turkish_enemy: "This could be our chance!"
+  wwi_news.1.a_enemy: "This could be our chance!"

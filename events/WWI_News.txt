@@ -1,11 +1,11 @@
 add_namespace = wwi_news
 
 # Turkey humiliated in war (probably by Italy).
-country_event = {
+news_event = {
 	id = wwi_news.1
 	title = wwi_news.1.t
 	desc = wwi_news.1.d
-	picture = GFX_report_event_german_speech
+	picture = GFX_news_event_generic_parliament
 
 	major = yes
 	is_triggered_only = yes
@@ -15,26 +15,18 @@ country_event = {
 	}
 
 	option = {
-		name = wwi_news.1.a_turkish_enemy
+		name = wwi_news.1.a_enemy
 	   	trigger = {
-			has_opinion = { target = TUR value < -39 }
+	   		tag = SER
 		}
-	}
 
-	option = {
-		name = wwi_news.1.a_turkish_ally
-		trigger = {
-			has_opinion = { target = TUR value > 49 }
-		}
+		custom_effect_tooltip = TUR_humiliated_by_war_serbia_tt
 	}
 
 	option = {
 		name = wwi_news.1.a_neutral
 		trigger = {
-			AND ={
-				has_opinion = { target = TUR value > -40 }
-				has_opinion = { target = TUR value < 50 }
-			}
+			NOT = { tag = SER }
 		}
 	}
 }

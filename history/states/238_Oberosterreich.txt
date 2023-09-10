@@ -8,12 +8,6 @@ state={
 			industrial_complex = 1
 		}
 		add_core_of = AUS
-		victory_points = {
-			4962 15
-		}
-		victory_points = {
-			4777 2
-		}
 	}
 	provinces={
 		4732 5126 5136 5137 4758 5150 5032 4777 5162 5163 5039 4915 5049 5064 5069 4819 4823 4824 4706 4962 4719 4988

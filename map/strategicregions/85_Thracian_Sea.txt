@@ -1,0 +1,10 @@
+#COLOR 26 21 60
+strategic_region={
+	id=85
+	name=85_Thracian_Sea
+	provinces={
+		9187 9226 9199 9175 9177 9243
+	}
+	weather={
+	}
+}

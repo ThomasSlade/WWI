@@ -1,0 +1,10 @@
+#COLOR 12 46 99
+strategic_region={
+	id=79
+	name=79_Peloponnesian_Sea
+	provinces={
+		9184 9222 1191 520 9165 664 1210 9183
+	}
+	weather={
+	}
+}

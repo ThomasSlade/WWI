@@ -6,17 +6,8 @@ state={
 		owner = SOV
 		add_core_of = SOV
 		buildings = {
-			arms_factory = 1
 			infrastructure = 2
-		}
-		victory_points = {
-			8195 25
-		}
-		victory_points = {
-			8902 5
-		}
-		victory_points = {
-			8768 2
+			arms_factory = 1
 		}
 	}
 	provinces={

@@ -82,7 +82,7 @@ ideologies = {
 		faction_modifiers = {
 		}
 
-		ai_democratic = yes # uses the democratic AI behaviour
+		ai_fascist = yes
 	}
 
 	monarchism = {
@@ -119,7 +119,7 @@ ideologies = {
 		faction_modifiers = {
 		}
 
-		ai_neutral = yes
+		ai_democratic = yes
 	}
 
 	monarchism_expansionist = {
@@ -159,7 +159,7 @@ ideologies = {
 		faction_modifiers = {
 		}
 
-		ai_neutral = yes
+		ai_fascist = yes
 	}
 
 	communism = {
@@ -196,7 +196,7 @@ ideologies = {
 		faction_modifiers = {
 		}
 
-		ai_communist = yes
+		ai_democratic = yes
 	}
 
 	communism_expansionist = {
@@ -236,6 +236,6 @@ ideologies = {
 		faction_modifiers = {
 		}
 
-		ai_communist = yes
+		ai_fascist = yes
 	}
 }

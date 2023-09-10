@@ -1,0 +1,10 @@
+#COLOR 33 112 127
+strategic_region={
+	id=81
+	name=81_Gulf_of_Odessa
+	provinces={
+		9190 1566 1298 9174 1336 9182
+	}
+	weather={
+	}
+}

@@ -1,0 +1,10 @@
+#COLOR 22 28 137
+strategic_region={
+	id=84
+	name=84_Strait_of_Otranto
+	provinces={
+		9198 9170 9171 9172 9211
+	}
+	weather={
+	}
+}
