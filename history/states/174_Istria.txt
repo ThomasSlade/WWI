@@ -4,12 +4,12 @@ state={
 	name=174_Istria
 	history={
 		owner = AUS
+		add_core_of = AUS
 		buildings = {
 			industrial_complex = 1
-			infrastructure = 2
 			arms_factory = 1
+			infrastructure = 2
 		}
-		add_core_of = AUS
 	}
 	provinces={
 		4096 3978 3860 4628 3990 4376 3870 4128 4385 9254 4646 9258 4674 4292 4038 4180 4054 4441 4314 4187 3812 3942 4590 4341 4221

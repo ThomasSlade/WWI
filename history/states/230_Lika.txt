@@ -4,10 +4,10 @@ state={
 	name=230_Lika
 	history={
 		owner = AUS
+		add_core_of = AUS
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = AUS
 	}
 	provinces={
 		4705 5155 5124 4710 9255 4934 5097 4971 4620 5164 5134 4975 4946 4697 4666 5145 4991

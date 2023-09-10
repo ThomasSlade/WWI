@@ -4,11 +4,11 @@ state={
 	name=68_Neckar_Kries
 	history={
 		owner = GER
+		add_core_of = GER
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
 		}
-		add_core_of = GER
 	}
 	provinces={
 		2080 2081 2114 2083 2085 2086 2151 2183 2089 2185 2188 2125 2161 2196 2136 2168 2141

@@ -4,12 +4,12 @@ state={
 	name=189_Budapest
 	history={
 		owner = AUS
+		add_core_of = AUS
 		buildings = {
 			industrial_complex = 2
-			infrastructure = 3
 			arms_factory = 1
+			infrastructure = 3
 		}
-		add_core_of = AUS
 	}
 	provinces={
 		4490 4622 4466 4566 4636 4637

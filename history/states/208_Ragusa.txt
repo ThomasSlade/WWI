@@ -4,10 +4,10 @@ state={
 	name=208_Ragusa
 	history={
 		owner = AUS
+		add_core_of = AUS
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = AUS
 	}
 	provinces={
 		4768 4663 4662 4615

@@ -4,11 +4,11 @@ state={
 	name=115_Belgian_Luxembourg
 	history={
 		owner = BEL
-		buildings = {
-			infrastructure = 1
-			arms_factory = 1
-		}
 		add_core_of = BEL
+		buildings = {
+			arms_factory = 1
+			infrastructure = 1
+		}
 	}
 	provinces={
 		1857 1860 1866 1835 1839 1840 1873 1885 1822

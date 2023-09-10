@@ -4,11 +4,11 @@ state={
 	name=22_Pfalz
 	history={
 		owner = GER
+		add_core_of = GER
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
 		}
-		add_core_of = GER
 	}
 	provinces={
 		1921 1607 1962 1964 1904 2001 1940 1909 1974 2008 1913 1948 2073

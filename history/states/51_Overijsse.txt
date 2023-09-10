@@ -4,11 +4,11 @@ state={
 	name=51_Overijsse
 	history={
 		owner = HOL
+		add_core_of = HOL
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
 		}
-		add_core_of = HOL
 	}
 	provinces={
 		2344 2463 2572 2509 2321 2356 2422 2428 2329 2300 2399

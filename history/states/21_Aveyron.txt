@@ -4,10 +4,10 @@ state={
 	name=21_Aveyron
 	history={
 		owner = FRA
+		add_core_of = FRA
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = FRA
 	}
 	provinces={
 		2304 2436 2437 2317 2331 2461 2464 2347 2348 2349 2479 2352 695 2231 2367 2369 1730 2503 1869 2527 2412 2293 2551 2302

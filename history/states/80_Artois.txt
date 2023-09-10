@@ -4,12 +4,12 @@ state={
 	name=80_Artois
 	history={
 		owner = FRA
+		add_core_of = FRA
 		buildings = {
 			industrial_complex = 2
-			infrastructure = 3
 			arms_factory = 3
+			infrastructure = 3
 		}
-		add_core_of = FRA
 	}
 	provinces={
 		1669 1797 1686 1432 1451 1716 1467 1600 1476 1611 1484 1615 1624 1625 1626 1636 1517 1777 1781 1401 1530

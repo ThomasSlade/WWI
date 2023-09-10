@@ -4,12 +4,12 @@ state={
 	name=81_Utrecht
 	history={
 		owner = HOL
+		add_core_of = HOL
 		buildings = {
 			industrial_complex = 2
-			infrastructure = 3
 			arms_factory = 1
+			infrastructure = 3
 		}
-		add_core_of = HOL
 	}
 	provinces={
 		2624 2688 2721 2499 2722 2789 2853 2727 2858 2733 2734 2544 2545 2869 2550 2488 2842 2589

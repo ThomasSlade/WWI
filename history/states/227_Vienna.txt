@@ -4,12 +4,12 @@ state={
 	name=227_Vienna
 	history={
 		owner = AUS
+		add_core_of = AUS
 		buildings = {
 			industrial_complex = 2
-			infrastructure = 3
 			arms_factory = 1
+			infrastructure = 3
 		}
-		add_core_of = AUS
 	}
 	provinces={
 		5154 4645 5066 4852 4859 5117

@@ -4,10 +4,10 @@ state={
 	name=102_Braunschweig
 	history={
 		owner = GER
+		add_core_of = GER
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = GER
 	}
 	provinces={
 		3591 3719 3720 3595 3605 3606 3608 3610 3487 3488 3498 3638 3525 3657 3658 3405 3667 3548 3680 3554 3702

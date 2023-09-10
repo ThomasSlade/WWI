@@ -4,10 +4,10 @@ state={
 	name=240_Lesvos_And_Chios
 	history={
 		owner = TUR
+		add_core_of = TUR
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = TUR
 	}
 	provinces={
 		163 1477 1830 1066 430 174 9200 1879 9244 5245

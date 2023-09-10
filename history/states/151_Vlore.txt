@@ -4,11 +4,11 @@ state={
 	name=151_Vlore
 	history={
 		owner = TUR
+		add_core_of = TUR
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 1
 		}
-		add_core_of = TUR
 	}
 	provinces={
 		5377 5348 5639 5546 5647 5714 5396 5495 5403 5566

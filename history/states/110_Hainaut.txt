@@ -4,11 +4,11 @@ state={
 	name=110_Hainaut
 	history={
 		owner = BEL
+		add_core_of = BEL
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
 		}
-		add_core_of = BEL
 	}
 	provinces={
 		1792 1859 1864 1680 1874 1721 1882 1853

@@ -4,10 +4,10 @@ state={
 	name=172_Belovar_Koros
 	history={
 		owner = AUS
+		add_core_of = AUS
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = AUS
 	}
 	provinces={
 		4102 4366 4378 4122 4123 4256 4129 4267 4274 4407 4281 4153 4318 4574 4452 4325 4454 4076 4087 4216

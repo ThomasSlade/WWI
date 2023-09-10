@@ -4,10 +4,10 @@ state={
 	name=59_Bromberg
 	history={
 		owner = GER
+		add_core_of = GER
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = GER
 	}
 	provinces={
 		3329 3202 3078 3343 3218 3346 3349 3355 3229 3361 3237 3238 3254 3383 3262 3139 3147 3149 3281 3284 3161 3167 3309 3182 3312 3187 3316 3189 3191 3192 3326

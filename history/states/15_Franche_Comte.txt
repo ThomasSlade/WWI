@@ -4,11 +4,11 @@ state={
 	name=15_Franche_Comte
 	history={
 		owner = FRA
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-		}
 		add_core_of = FRA
+		buildings = {
+			arms_factory = 1
+			infrastructure = 2
+		}
 	}
 	provinces={
 		128 16 146 662 281 26 540 413 928 37 421 422 303 185 6347 332 80 89 219 93 477 98 1136 113 248 633 251 125

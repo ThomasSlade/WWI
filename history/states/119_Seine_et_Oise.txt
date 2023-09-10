@@ -4,11 +4,11 @@ state={
 	name=119_Seine_et_Oise
 	history={
 		owner = FRA
+		add_core_of = FRA
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
 		}
-		add_core_of = FRA
 	}
 	provinces={
 		1891 1828 1892 1766 1862 1841 1843 1780 1876 1877 1847 1848 1883 1884 1886

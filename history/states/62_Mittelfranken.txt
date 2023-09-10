@@ -4,11 +4,11 @@ state={
 	name=62_Mittelfranken
 	history={
 		owner = GER
+		add_core_of = GER
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
 		}
-		add_core_of = GER
 	}
 	provinces={
 		3297 3365 3368 3400 3083 3501 3374 3090 3348 3061 3288 3162 3324 3230 3231

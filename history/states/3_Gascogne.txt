@@ -4,12 +4,12 @@ state={
 	name=3_Gascogne
 	history={
 		owner = FRA
+		add_core_of = FRA
 		buildings = {
 			industrial_complex = 2
-			infrastructure = 2
 			arms_factory = 1
+			infrastructure = 2
 		}
-		add_core_of = FRA
 	}
 	provinces={
 		2435 2308 2693 1417 2444 2319 2447 2448 2450 2451 2326 2584 2341 170 2475 1452 178 953 1852 2493 2366 2500 2633 2379 1359 2523 2270 2408 2286 2542 2416 2675 2292 1143 2301 2558 2559

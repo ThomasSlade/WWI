@@ -4,11 +4,11 @@ state={
 	name=44_Northern_Schleswig
 	history={
 		owner = GER
+		add_core_of = GER
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
 		}
-		add_core_of = GER
 	}
 	provinces={
 		3075 3049 3210 3051 3373 3025 3353 3066 3356 3038 3263

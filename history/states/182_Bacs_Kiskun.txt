@@ -4,11 +4,11 @@ state={
 	name=182_Bacs_Kiskun
 	history={
 		owner = AUS
+		add_core_of = AUS
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
 		}
-		add_core_of = AUS
 	}
 	provinces={
 		4354 4487 4112 4629 3999 4135 4266 4525 4667 4668 4157 4675 4427 4307 4571 4580 4075 4591 4342

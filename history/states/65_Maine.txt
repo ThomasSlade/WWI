@@ -4,11 +4,11 @@ state={
 	name=65_Maine
 	history={
 		owner = FRA
+		add_core_of = FRA
 		buildings = {
 			industrial_complex = 2
 			infrastructure = 2
 		}
-		add_core_of = FRA
 	}
 	provinces={
 		2563 2571 2445 2446 2574 2713 2458 2586 2465 2480 2610 2484 2741 2487 2490 2621 2622 2749 2497 2630 2762 2639 2769 2521 2525 2528 2533 2663 2548 2804 2805 2552 2426

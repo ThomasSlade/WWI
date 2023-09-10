@@ -4,11 +4,11 @@ state={
 	name=236_Bukovina
 	history={
 		owner = AUS
+		add_core_of = AUS
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
 		}
-		add_core_of = AUS
 	}
 	provinces={
 		4993 4885 5147 5149 4767 4774 4913 5046 4792 4801 4802 5073 4690 4818 4952 4961 4716 4974 5111 5118 5119

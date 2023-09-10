@@ -4,11 +4,11 @@ state={
 	name=175_Klausenburg
 	history={
 		owner = AUS
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-		}
 		add_core_of = AUS
+		buildings = {
+			arms_factory = 1
+			infrastructure = 2
+		}
 	}
 	provinces={
 		3973 4104 4232 4361 4363 4238 4114 4242 4251 4381 4001 4131 4519 3894 4176 4183 4193 4194 4079 4214 4222 4479

@@ -5,6 +5,8 @@ state={
 	history={
 		owner = SOV
 		add_core_of = SOV
+		buildings = {
+		}
 	}
 	provinces={
 		7162 7266 6889 6573 6862 6957 7470 6577 6742 6810 7100

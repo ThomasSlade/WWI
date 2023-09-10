@@ -4,11 +4,11 @@ state={
 	name=185_Kosovo
 	history={
 		owner = TUR
-		buildings = {
-			infrastructure = 1
-			arms_factory = 1
-		}
 		add_core_of = TUR
+		buildings = {
+			arms_factory = 1
+			infrastructure = 1
+		}
 	}
 	provinces={
 		6016 5761 5762 5901 6157 6165 6044 5921 5942 6070 6077 5824 5830 5713 5743 5877 5878 6010 6011 6012

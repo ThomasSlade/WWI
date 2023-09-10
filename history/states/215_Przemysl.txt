@@ -4,11 +4,11 @@ state={
 	name=215_Przemysl
 	history={
 		owner = AUS
+		add_core_of = AUS
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
 		}
-		add_core_of = AUS
 	}
 	provinces={
 		4611 4740 4996 5006 5007 4760 5016 5026 4904 4905 4651 4655 5055 4677 4681 4554 4572 4573 4837 4966 4977 4854 4863

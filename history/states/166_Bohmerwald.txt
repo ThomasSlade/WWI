@@ -4,10 +4,10 @@ state={
 	name=166_Bohmerwald
 	history={
 		owner = AUS
+		add_core_of = AUS
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = AUS
 	}
 	provinces={
 		4384 4134 4298 4108 4186 4284 4094

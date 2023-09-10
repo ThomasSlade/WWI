@@ -4,11 +4,11 @@ state={
 	name=84_Mecklenburg
 	history={
 		owner = GER
+		add_core_of = GER
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 1
 		}
-		add_core_of = GER
 	}
 	provinces={
 		3462 3598 3476 3489 3494 3623 3496 3624 3625 3499 3630 3379 3513 3517 3518 3645 3650 3651 3527 3531 3533 3538 3679 3424 3425 3552 3556 3686 3562 3441 3447 3576 3454

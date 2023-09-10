@@ -4,11 +4,11 @@ state={
 	name=232_Vojvodina
 	history={
 		owner = AUS
+		add_core_of = AUS
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 3
 		}
-		add_core_of = AUS
 	}
 	provinces={
 		5122 4997 5129 5130 5131 4878 5138 5139 4769 5153 5156 5157 5165 5168 5170 5171 5044 5173 5048 4925 4930 5063 4811 4812 5067 5071 4944 4954 4957 5089 5092 4839 5104 4981 4982 5112 4857

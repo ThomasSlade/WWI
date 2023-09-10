@@ -4,12 +4,12 @@ state={
 	name=42_Holstein
 	history={
 		owner = GER
+		add_core_of = GER
 		buildings = {
 			industrial_complex = 1
-			infrastructure = 2
 			arms_factory = 1
+			infrastructure = 2
 		}
-		add_core_of = GER
 	}
 	provinces={
 		3042 2979 3044 3302 2983 2987 3085 3277 3196 3185 3091 3251 3292 3033 3034 2972 3133

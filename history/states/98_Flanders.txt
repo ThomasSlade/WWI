@@ -4,12 +4,12 @@ state={
 	name=98_Flanders
 	history={
 		owner = BEL
+		add_core_of = BEL
 		buildings = {
 			industrial_complex = 2
-			infrastructure = 3
 			arms_factory = 1
+			infrastructure = 3
 		}
-		add_core_of = BEL
 	}
 	provinces={
 		1382 1578 1815 1744 1776 1808 1653 1334 1590 1718 1562 1724 1406

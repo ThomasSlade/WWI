@@ -4,10 +4,10 @@ state={
 	name=93_Neumark
 	history={
 		owner = GER
+		add_core_of = GER
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = GER
 	}
 	provinces={
 		3597 3473 3474 3609 3481 3617 3621 3506 3640 3643 3648 3655 3529 3660 3666 3541 3551 3687 3434 3445 3446 3575 3704 3707 3583

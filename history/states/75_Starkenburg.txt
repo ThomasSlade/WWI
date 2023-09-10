@@ -4,12 +4,12 @@ state={
 	name=75_Starkenburg
 	history={
 		owner = GER
+		add_core_of = GER
 		buildings = {
 			industrial_complex = 1
-			infrastructure = 2
 			arms_factory = 1
+			infrastructure = 2
 		}
-		add_core_of = GER
 	}
 	provinces={
 		2118 2087 2186 2123 2124 2095 2133 2139

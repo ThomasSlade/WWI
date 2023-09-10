@@ -4,10 +4,10 @@ state={
 	name=207_Northern_Epirus
 	history={
 		owner = TUR
+		add_core_of = TUR
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = TUR
 	}
 	provinces={
 		5952 6081 6122 6251 6190 5840 5937 6261 6103 5913 5882 6171 6137 6239

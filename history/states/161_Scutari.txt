@@ -4,11 +4,11 @@ state={
 	name=161_Scutari
 	history={
 		owner = TUR
+		add_core_of = TUR
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
 		}
-		add_core_of = TUR
 	}
 	provinces={
 		5505 5828 5448 5897 5264 5457 5298 5311

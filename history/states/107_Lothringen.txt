@@ -4,11 +4,11 @@ state={
 	name=107_Lothringen
 	history={
 		owner = GER
+		add_core_of = GER
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
 		}
-		add_core_of = GER
 	}
 	provinces={
 		2208 2209 2216 2217 2218 2219 2220 2221 2184 2223 2225 2226 2228 2204 2205

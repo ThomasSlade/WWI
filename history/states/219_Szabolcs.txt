@@ -4,10 +4,10 @@ state={
 	name=219_Szabolcs
 	history={
 		owner = AUS
+		add_core_of = AUS
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = AUS
 	}
 	provinces={
 		4630 4887 4764 4640 4642 4771 4644 4518 4659 4788 4917 4794 4543 5056 4683 4959 4584 4596 4472

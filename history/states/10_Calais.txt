@@ -4,11 +4,11 @@ state={
 	name=10_Calais
 	history={
 		owner = FRA
+		add_core_of = FRA
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
 		}
-		add_core_of = FRA
 	}
 	provinces={
 		643 974 1201 1238 1372 1053 671

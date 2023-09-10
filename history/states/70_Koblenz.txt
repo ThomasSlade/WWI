@@ -4,11 +4,11 @@ state={
 	name=70_Koblenz
 	history={
 		owner = GER
+		add_core_of = GER
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
 		}
-		add_core_of = GER
 	}
 	provinces={
 		2116 2117 2149 2154 2127 2191 2065 2098 2137 2079

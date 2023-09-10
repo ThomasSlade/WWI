@@ -12,12 +12,12 @@ state={
 	}
 	history={
 		owner = GRE
+		add_core_of = GRE
 		buildings = {
 			industrial_complex = 2
-			infrastructure = 3
 			arms_factory = 1
+			infrastructure = 3
 		}
-		add_core_of = GRE
 	}
 	provinces={
 		5636 5263 5270 9242 1439 5408 5410 36 5540 5286 5503 1832 5545 5759 5554 5307 1851 5185 5188 5317 5456 5203 346 5339 5214 5352 5231 497 375 5370 5375

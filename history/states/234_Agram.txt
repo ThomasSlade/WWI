@@ -4,12 +4,12 @@ state={
 	name=234_Agram
 	history={
 		owner = AUS
+		add_core_of = AUS
 		buildings = {
 			industrial_complex = 1
-			infrastructure = 2
 			arms_factory = 1
+			infrastructure = 2
 		}
-		add_core_of = AUS
 	}
 	provinces={
 		5120 4741 5141 5142 5143 4761 5146 5148 4899 5033 4906 5161 4787 5174 5060 4809 4943 5075 4820 5084 4965 4731 4845 4718 5107 4724 5108 4987

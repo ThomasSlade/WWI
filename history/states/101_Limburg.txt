@@ -4,11 +4,11 @@ state={
 	name=101_Limburg
 	history={
 		owner = HOL
+		add_core_of = HOL
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
 		}
-		add_core_of = HOL
 	}
 	provinces={
 		2658 2818 2851 2701 2708 2742 2870 2874

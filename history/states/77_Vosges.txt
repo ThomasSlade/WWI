@@ -4,11 +4,11 @@ state={
 	name=77_Vosges
 	history={
 		owner = FRA
+		add_core_of = FRA
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
 		}
-		add_core_of = FRA
 	}
 	provinces={
 		1682 1683 1687 1434 1695 1696 1574 1705 1585 1589 1342 1606 1735 1492 1752 1629 1630 1373 1645 1402 1531 1405

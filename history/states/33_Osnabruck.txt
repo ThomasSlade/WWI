@@ -4,10 +4,10 @@ state={
 	name=33_Osnabruck
 	history={
 		owner = GER
+		add_core_of = GER
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = GER
 	}
 	provinces={
 		1985 2052 1926 1927 1990 1991 2056 1899 2028 1518 1967 1968 1937 2007 2099 1943 1944 1980

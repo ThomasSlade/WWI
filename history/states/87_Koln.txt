@@ -4,12 +4,12 @@ state={
 	name=87_Koln
 	history={
 		owner = GER
+		add_core_of = GER
 		buildings = {
 			industrial_complex = 2
-			infrastructure = 3
 			arms_factory = 1
+			infrastructure = 3
 		}
-		add_core_of = GER
 	}
 	provinces={
 		2144 2207 2147 2148 2097 2131 2132 2175 2199 2142 2111

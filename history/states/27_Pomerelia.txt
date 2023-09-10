@@ -4,10 +4,10 @@ state={
 	name=27_Pomerelia
 	history={
 		owner = GER
+		add_core_of = GER
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = GER
 	}
 	provinces={
 		2948 3115 3245 3086 3151 2961 1746 3315 2997 3004 3037 3166 3295

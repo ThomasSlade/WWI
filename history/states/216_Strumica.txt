@@ -4,11 +4,11 @@ state={
 	name=216_Strumica
 	history={
 		owner = TUR
+		add_core_of = TUR
+		add_core_of = BUL
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = TUR
-		add_core_of = BUL
 	}
 	provinces={
 		6074 6229 6079

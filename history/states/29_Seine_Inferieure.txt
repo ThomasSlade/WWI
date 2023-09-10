@@ -4,12 +4,12 @@ state={
 	name=29_Seine_Inferieure
 	history={
 		owner = FRA
+		add_core_of = FRA
 		buildings = {
 			industrial_complex = 2
-			infrastructure = 3
 			arms_factory = 1
+			infrastructure = 3
 		}
-		add_core_of = FRA
 	}
 	provinces={
 		1027 1286 1161 526 1422 1299 673 932 1319 688 1328 1587 1350 967 848 1362 1236 1237 1241 1114 1250 751 1525 1527

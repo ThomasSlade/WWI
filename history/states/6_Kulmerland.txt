@@ -4,10 +4,10 @@ state={
 	name=6_Kulmerland
 	history={
 		owner = GER
+		add_core_of = GER
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = GER
 	}
 	provinces={
 		3203 2949 3077 510 3084 2964 3093 3221 795 2976 3105 168 3112 3113 819 3000 3001 58 1339 700 3129 3136 3138 3039 3172 3304 3067 3070 763

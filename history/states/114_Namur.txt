@@ -4,11 +4,11 @@ state={
 	name=114_Namur
 	history={
 		owner = BEL
+		add_core_of = BEL
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
 		}
-		add_core_of = BEL
 	}
 	provinces={
 		1728 1665 1697 1729 1700 1769 1676 1773 1807 1522 1618 1810 1845 1593

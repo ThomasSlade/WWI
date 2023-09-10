@@ -4,12 +4,12 @@ state={
 	name=72_Hesse_Kassel
 	history={
 		owner = GER
+		add_core_of = GER
 		buildings = {
 			industrial_complex = 2
-			infrastructure = 2
 			arms_factory = 1
+			infrastructure = 2
 		}
-		add_core_of = GER
 	}
 	provinces={
 		2050 2058 2064 2067 2072 2074 2104 2112 1986 2122 2138 2011 2146 2020 2152 2163 2166 2167 2170 3452 2047

@@ -4,11 +4,11 @@ state={
 	name=9_Poitou
 	history={
 		owner = FRA
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-		}
 		add_core_of = FRA
+		buildings = {
+			arms_factory = 1
+			infrastructure = 2
+		}
 	}
 	provinces={
 		2306 1156 2311 2318 2320 1554 917 1304 2334 2351 2233 2234 2242 2243 2244 2249 2252 461 2253 2256 2259 2260 2261 1878 2387 2264 1500 2403 2277 2282 2284 761 2299 2430 2303

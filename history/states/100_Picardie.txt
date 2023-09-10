@@ -4,11 +4,11 @@ state={
 	name=100_Picardie
 	history={
 		owner = FRA
+		add_core_of = FRA
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
 		}
-		add_core_of = FRA
 	}
 	provinces={
 		1795 1799 1678 1806 1681 1820 1704 1707 1712 1723 1740 1749 1627 1757 1633 1634 1635 1775 1782 1657

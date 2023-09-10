@@ -4,12 +4,12 @@ state={
 	name=153_Shumen
 	history={
 		owner = BUL
+		add_core_of = BUL
 		buildings = {
 			industrial_complex = 2
-			infrastructure = 2
 			arms_factory = 1
+			infrastructure = 2
 		}
-		add_core_of = BUL
 	}
 	provinces={
 		5383 5511 5643 5517 5398 5399 5526 5656 5662 5539 5670 5671 5686 5687 5562 5437 5694 5567 5312 5443 5573 5319 5705 5451 5325 5582 5709 5466 5595 5342 5608 5609 5355 5486 5487 5616 5364

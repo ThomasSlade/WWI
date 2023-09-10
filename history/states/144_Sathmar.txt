@@ -4,11 +4,11 @@ state={
 	name=144_Sathmar
 	history={
 		owner = AUS
+		add_core_of = AUS
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
 		}
-		add_core_of = AUS
 	}
 	provinces={
 		3848 3850 3856 3731 3738 4126 3876 3751 3756 3757 3886 3887 4013 4017 4145 3908 3782 3915 3917 3806 3941 3948 3949 3833

@@ -4,11 +4,11 @@ state={
 	name=134_Pirin_Macedonia
 	history={
 		owner = TUR
+		add_core_of = TUR
+		add_core_of = BUL
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = TUR
-		add_core_of = BUL
 	}
 	provinces={
 		5565 5218 423 1639 5193 5354 715 205 5389 5297 309 1052 5213 5278 1759

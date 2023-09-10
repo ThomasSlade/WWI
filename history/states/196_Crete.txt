@@ -4,12 +4,12 @@ state={
 	name=196_Crete
 	history={
 		owner = TUR
+		add_core_of = TUR
+		add_core_of = GRE
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
 		}
-		add_core_of = TUR
-		add_core_of = GRE
 	}
 	provinces={
 		6148 6149 5766 6023 6024 5772 5905 5909 6050 6059 6060 5933 5949 6350 6100 5990 5991 5864 5999 5885

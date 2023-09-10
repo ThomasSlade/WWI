@@ -4,10 +4,10 @@ state={
 	name=149_Bistritz
 	history={
 		owner = AUS
+		add_core_of = AUS
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = AUS
 	}
 	provinces={
 		3852 3853 3862 3992 3864 4010 4015 4143 4148 4022 4029 3905 3906 4163 4169 3791 4048 4184 3801 3934 3936 3811 4072 3819 4080 4081 3964 3966 3967

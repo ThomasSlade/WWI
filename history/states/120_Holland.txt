@@ -12,12 +12,12 @@ state={
 	}
 	history={
 		owner = HOL
+		add_core_of = HOL
 		buildings = {
 			industrial_complex = 3
-			infrastructure = 3
 			arms_factory = 2
+			infrastructure = 3
 		}
-		add_core_of = HOL
 	}
 	provinces={
 		2944 2945 3722 2848 3635 2872 2881 2884 2904 2777 2905 2911 2784 2788 2917 2919 2930 1778 2932 2937 2943

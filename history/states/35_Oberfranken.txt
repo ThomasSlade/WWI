@@ -4,10 +4,10 @@ state={
 	name=35_Oberfranken
 	history={
 		owner = GER
+		add_core_of = GER
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = GER
 	}
 	provinces={
 		3168 3107 3235 3142 3111 3208 3336 2988 3246 3092 3126 3261 3198

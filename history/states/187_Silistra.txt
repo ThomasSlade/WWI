@@ -4,11 +4,11 @@ state={
 	name=187_Silistra
 	history={
 		owner = BUL
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-		}
 		add_core_of = BUL
+		buildings = {
+			arms_factory = 1
+			infrastructure = 2
+		}
 	}
 	provinces={
 		5632 5506 5890 5623 5523 5653 6038 5674 5939 5691 5571 5974 5976 5722 6109 6117 5750 5879 5884 5631

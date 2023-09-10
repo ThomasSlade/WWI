@@ -4,10 +4,10 @@ state={
 	name=55_Cotes-du-Nord
 	history={
 		owner = FRA
+		add_core_of = FRA
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = FRA
 	}
 	provinces={
 		2432 2433 2946 2441 2442 2455 2346 2476 2477 2357 2358 2237 2378 2251 2519 2266 2396 2273 2401 2402 2280 2287 2421 1786 2431

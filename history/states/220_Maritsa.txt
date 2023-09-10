@@ -4,11 +4,11 @@ state={
 	name=220_Maritsa
 	history={
 		owner = TUR
+		add_core_of = TUR
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
 		}
-		add_core_of = TUR
 	}
 	provinces={
 		6274 6280 6253 6062 6097 6193 6290 6291

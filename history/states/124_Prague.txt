@@ -4,12 +4,12 @@ state={
 	name=124_Prague
 	history={
 		owner = AUS
+		add_core_of = AUS
 		buildings = {
 			industrial_complex = 2
-			infrastructure = 3
 			arms_factory = 2
+			infrastructure = 3
 		}
-		add_core_of = AUS
 	}
 	provinces={
 		3746 4004 3785 432 3766 86

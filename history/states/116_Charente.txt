@@ -4,10 +4,10 @@ state={
 	name=116_Charente
 	history={
 		owner = FRA
+		add_core_of = FRA
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = FRA
 	}
 	provinces={
 		2829 2834 2837 2841 2849 2850 2856 2859 2860 2861 2867 2876 2886 2887 2891 2893 2894 2898 2900 2910 2916 2921 2927 2934 2941 2815

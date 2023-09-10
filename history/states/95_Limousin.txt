@@ -4,11 +4,11 @@ state={
 	name=95_Limousin
 	history={
 		owner = FRA
+		add_core_of = FRA
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
 		}
-		add_core_of = FRA
 	}
 	provinces={
 		2825 2703 2578 2706 2711 2712 2846 2591 2596 2862 2612 2871 2617 2877 2812 2629 2889 2890 2763 2766 2770 2906 2782 2787 2664 2667 2796 2797 2684

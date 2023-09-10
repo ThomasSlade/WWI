@@ -4,11 +4,11 @@ state={
 	name=233_Dobruja
 	history={
 		owner = ROM
+		add_core_of = ROM
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 1
 		}
-		add_core_of = ROM
 	}
 	provinces={
 		6144 6167 6302 6049 6306 6307 6187 6188 6320 6327 6200 6201 6202 6328 6332 6333 6078 6207 6334 6336 6085 6086 6342 6091 6098 6099 6236 6237 6245 6118 6123 6127 6266 6267 6268 6141

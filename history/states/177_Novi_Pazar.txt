@@ -4,10 +4,10 @@ state={
 	name=177_Novi_Pazar
 	history={
 		owner = TUR
+		add_core_of = TUR
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = TUR
 	}
 	provinces={
 		5857 5796 5702 5703 5740 5777 5652 5915 5661 5598

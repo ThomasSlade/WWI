@@ -4,10 +4,10 @@ state={
 	name=165_Zara
 	history={
 		owner = AUS
+		add_core_of = AUS
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = AUS
 	}
 	provinces={
 		4418 9247

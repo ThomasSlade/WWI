@@ -4,10 +4,10 @@ state={
 	name=171_Syrmia
 	history={
 		owner = AUS
+		add_core_of = AUS
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = AUS
 	}
 	provinces={
 		4416 4547 4068 3879 4587 3888 3890 4403 4340 4442

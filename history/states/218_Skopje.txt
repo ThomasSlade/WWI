@@ -4,12 +4,12 @@ state={
 	name=218_Skopje
 	history={
 		owner = TUR
+		add_core_of = TUR
+		add_core_of = BUL
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
 		}
-		add_core_of = TUR
-		add_core_of = BUL
 	}
 	provinces={
 		6180 6276 6182 6215 6247 6185 5962 6124 6061 6031 6002 5971 5970 5941 6194 6260 6264 6142

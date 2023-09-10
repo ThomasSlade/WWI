@@ -4,11 +4,11 @@ state={
 	name=90_Saone_et_Loire
 	history={
 		owner = FRA
+		add_core_of = FRA
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
 		}
-		add_core_of = FRA
 	}
 	provinces={
 		2699 2704 2707 2580 2731 2738 2868 2613 2745 2746 2618 2750 2625 2626 2757 2632 2642 2643 2773 2774 2655 2783 2668 2672 2801 2802 2556

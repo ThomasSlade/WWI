@@ -12,12 +12,12 @@ state={
 	}
 	history={
 		owner = GER
+		add_core_of = GER
 		buildings = {
 			industrial_complex = 2
-			infrastructure = 3
 			arms_factory = 1
+			infrastructure = 3
 		}
-		add_core_of = GER
 	}
 	provinces={
 		2984 3016 3116 3036 3197

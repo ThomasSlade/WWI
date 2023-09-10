@@ -4,11 +4,23 @@ state={
 	name=197_Thessaly
 	history={
 		owner = GRE
+		add_core_of = GRE
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
+			5842 = {
+				bunker = 1
+			}
+			6040 = {
+				bunker = 5
+			}
+			5736 = {
+				bunker = 5
+			}
+			5732 = {
+				bunker = 5
+			}
 		}
-		add_core_of = GRE
 	}
 	provinces={
 		6145 6025 6029 6030 5781 6040 6043 9246 5924 6066 5940 5821 5950 5956 6087 5964 5837 5842 5726 5731 5732 5736 5741 5871 6134 6007 6013 5886

@@ -4,11 +4,11 @@ state={
 	name=128_Cyclades
 	history={
 		owner = GRE
+		add_core_of = GRE
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
 		}
-		add_core_of = GRE
 	}
 	provinces={
 		9185 9186 9208 9251 5192 491 9164 5197 9238 9176

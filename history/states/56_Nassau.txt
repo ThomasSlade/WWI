@@ -4,10 +4,10 @@ state={
 	name=56_Nassau
 	history={
 		owner = GER
+		add_core_of = GER
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = GER
 	}
 	provinces={
 		2057 2000 2035 2036 1973 2038 1975 2039 1945 2107 2109 2046

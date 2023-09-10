@@ -4,11 +4,11 @@ state={
 	name=168_Arges
 	history={
 		owner = ROM
+		add_core_of = ROM
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
 		}
-		add_core_of = ROM
 	}
 	provinces={
 		5508 5764 5642 5515 5516 5771 5649 5397 5667 5923 5669 5797 5417 5679 5560 5825 5954 5572 5588 5848 5594 5469 5600 5606 5482 5483 5870 5873 5753 5754 5755

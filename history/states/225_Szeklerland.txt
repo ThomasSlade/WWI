@@ -4,10 +4,10 @@ state={
 	name=225_Szeklerland
 	history={
 		owner = AUS
+		add_core_of = AUS
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = AUS
 	}
 	provinces={
 		4618 4619 4747 4748 5002 4752 5011 4631 4772 4780 5036 4910 4911 4660 4920 4795 4672 4928 4933 4939 4684 4945 4951 4576 4832 4964 4968 4714

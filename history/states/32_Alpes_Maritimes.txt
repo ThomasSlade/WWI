@@ -4,11 +4,11 @@ state={
 	name=32_Alpes_Maritimes
 	history={
 		owner = FRA
+		add_core_of = FRA
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
 		}
-		add_core_of = FRA
 	}
 	provinces={
 		2532 2288 2257 2258 2262 2230 2263

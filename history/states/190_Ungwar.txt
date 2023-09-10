@@ -4,10 +4,10 @@ state={
 	name=190_Ungwar
 	history={
 		owner = AUS
+		add_core_of = AUS
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = AUS
 	}
 	provinces={
 		4545 4609 4323 4297 4330 4338 4439 4313 4346 4350

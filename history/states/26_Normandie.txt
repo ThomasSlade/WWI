@@ -4,11 +4,11 @@ state={
 	name=26_Normandie
 	history={
 		owner = FRA
+		add_core_of = FRA
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
 		}
-		add_core_of = FRA
 	}
 	provinces={
 		256 1281 646 537 921 1179 419 1059 805 294 295 180 1081 828 320 324 453 714 975 592 342 344 736 613 871 1255 112 889

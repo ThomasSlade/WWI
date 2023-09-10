@@ -4,11 +4,11 @@ state={
 	name=155_Styria
 	history={
 		owner = AUS
+		add_core_of = AUS
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 3
 		}
-		add_core_of = AUS
 	}
 	provinces={
 		4097 4227 4230 4367 3736 3737 3742 3881 3882 4142 4398 3760 4273 3765 4406 4280 3769 3770 4408 4162 3795 4310 1880 4190 1887 4192 3810 4067 3814 3945 4205 4335 4343

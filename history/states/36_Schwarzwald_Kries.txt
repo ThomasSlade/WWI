@@ -4,10 +4,10 @@ state={
 	name=36_Schwarzwald_Kries
 	history={
 		owner = GER
+		add_core_of = GER
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = GER
 	}
 	provinces={
 		2048 2053 1930 1934 1938 1939 2077 2084 1957 1960 1976 1981 1982 1983 2002 2004 2005 2017 2021 2025 2030 1916 1917

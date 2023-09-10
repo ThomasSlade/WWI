@@ -4,11 +4,11 @@ state={
 	name=138_Burgas
 	history={
 		owner = BUL
+		add_core_of = BUL
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
 		}
-		add_core_of = BUL
 	}
 	provinces={
 		5380 5384 5257 5385 5243 5527 5400 5273 1817 5528 5412 5418 5302 5440 5568 5444 5189 5190 5191 5196 5205 5343 5473 5474 5225 5356 5366 5371 5372 5501

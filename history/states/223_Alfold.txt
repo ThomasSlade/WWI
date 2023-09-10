@@ -4,12 +4,12 @@ state={
 	name=223_Alfold
 	history={
 		owner = AUS
+		add_core_of = AUS
 		buildings = {
 			industrial_complex = 1
-			infrastructure = 2
 			arms_factory = 1
+			infrastructure = 2
 		}
-		add_core_of = AUS
 	}
 	provinces={
 		4736 4999 5128 5135 4880 4881 4886 4759 5020 5021 5034 4924 4931 4676 4549 5061 4936 5065 4555 5077 4953 5081 4956 4575 5088 4582 4972 4846 4594 4595 4727 5116

@@ -4,10 +4,10 @@ state={
 	name=92_Oppeln
 	history={
 		owner = GER
+		add_core_of = GER
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = GER
 	}
 	provinces={
 		3713 3586 3721 3723 3596 3613 3627 3647 3663 3536 3675 3676 3690 3436 3437 3692 3694 3708 3582

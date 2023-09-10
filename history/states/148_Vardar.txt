@@ -4,12 +4,12 @@ state={
 	name=148_Vardar
 	history={
 		owner = TUR
+		add_core_of = TUR
+		add_core_of = BUL
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 1
 		}
-		add_core_of = TUR
-		add_core_of = BUL
 	}
 	provinces={
 		5776 5394 5522 5780 5627 5402 5665 5801 5548 5423 5424 5809 5555 5684 5815 5689 5434 5435 5695 5442 5835 6348 6349 5712 5969 5586 5592 5464 5468 5597 5727 5602 5480 5492 7419 5628

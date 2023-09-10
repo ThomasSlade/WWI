@@ -4,10 +4,10 @@ state={
 	name=170_Pleven
 	history={
 		owner = BUL
+		add_core_of = BUL
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = BUL
 	}
 	provinces={
 		5635 5895 5497 5645 5658 5918 5791 5792 5798 5799 5807 5688 5817 5944 5827 5700 5832 5707 5838 5711 5461 5718 5853 5854 5855 5612 5491 5747 5625 5626

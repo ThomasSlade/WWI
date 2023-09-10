@@ -4,11 +4,11 @@ state={
 	name=237_Craiova
 	history={
 		owner = ROM
+		add_core_of = ROM
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
 		}
-		add_core_of = ROM
 	}
 	provinces={
 		6146 6277 6282 6155 6033 6289 6045 6310 6318 6199 6072 5947 6339 6341 6344 6095 6096 6224 6234 5982 6243 5989 5994 6252

@@ -4,11 +4,11 @@ state={
 	name=94_Anhalt
 	history={
 		owner = GER
+		add_core_of = GER
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
 		}
-		add_core_of = GER
 	}
 	provinces={
 		3587 3589 3590 3464 3465 3601 3478 3479 3607 3615 3616 3620 3502 3508 3509 3510 3639 3528 3532 3540 3670 3545 3684 3685 3691 3693 3439 3440 3568 3569 3570 3698 3699 3448 3451 3455

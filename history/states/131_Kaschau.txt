@@ -4,10 +4,10 @@ state={
 	name=131_Kaschau
 	history={
 		owner = AUS
+		add_core_of = AUS
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = AUS
 	}
 	provinces={
 		1794 3752 3726 1614 3761 3793 3955 856 3866 3739

@@ -4,12 +4,12 @@ state={
 	name=82_Sachsen
 	history={
 		owner = GER
+		add_core_of = GER
 		buildings = {
 			industrial_complex = 2
-			infrastructure = 3
 			arms_factory = 1
+			infrastructure = 3
 		}
-		add_core_of = GER
 	}
 	provinces={
 		3585 3460 3461 3599 3472 3600 3490 3377 3507 3385 3641 3388 3644 3520 3521 3654 3399 3401 3659 3535 3412 3669 3414 3416 3677 3426 3683 3567 3442 3444

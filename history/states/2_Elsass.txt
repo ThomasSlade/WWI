@@ -4,12 +4,12 @@ state={
 	name=2_Elsass
 	history={
 		owner = GER
+		add_core_of = GER
 		buildings = {
 			industrial_complex = 2
-			infrastructure = 2
 			arms_factory = 1
+			infrastructure = 2
 		}
-		add_core_of = GER
 	}
 	provinces={
 		1988 581 198 1671 1958 329 1897 1989 2121 687 1936 1905 2031 1684 2009 1946

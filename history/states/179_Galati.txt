@@ -4,12 +4,12 @@ state={
 	name=179_Galati
 	history={
 		owner = ROM
+		add_core_of = ROM
 		buildings = {
 			industrial_complex = 3
-			infrastructure = 2
 			arms_factory = 1
+			infrastructure = 2
 		}
-		add_core_of = ROM
 	}
 	provinces={
 		5513 6027 5648 6035 5660 5788 5536 5922 5541 5678 5690 5841 5587 5715 5972 5973 5720 5721 5593 5723 5724 5599 5983 5603 5604 5861 5481 5614 5744 5622 5751 5883

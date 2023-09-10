@@ -4,10 +4,10 @@ state={
 	name=145_Carpathian_Ruthenia
 	history={
 		owner = AUS
+		add_core_of = AUS
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = AUS
 	}
 	provinces={
 		3840 4110 3855 3984 4116 3744 3745 3875 4003 3877 3750 3753 4155 3900 4030 4031 4159 3909 3910 4171 3916 4044 3794 4051 3802 4061 4074 3829 3831 4351

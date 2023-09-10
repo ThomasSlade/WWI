@@ -4,12 +4,12 @@ state={
 	name=97_Avignon
 	history={
 		owner = FRA
+		add_core_of = FRA
 		buildings = {
 			industrial_complex = 1
-			infrastructure = 2
 			arms_factory = 1
+			infrastructure = 2
 		}
-		add_core_of = FRA
 	}
 	provinces={
 		2628 2822 2791 2803 2807 2747

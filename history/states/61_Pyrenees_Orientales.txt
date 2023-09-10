@@ -4,11 +4,11 @@ state={
 	name=61_Pyrenees_Orientales
 	history={
 		owner = FRA
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-		}
 		add_core_of = FRA
+		buildings = {
+			arms_factory = 1
+			infrastructure = 2
+		}
 	}
 	provinces={
 		2469 2569 2634 2539 2489 2685

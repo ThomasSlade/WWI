@@ -4,11 +4,11 @@ state={
 	name=154_Peloponnese
 	history={
 		owner = GRE
-		buildings = {
-			infrastructure = 1
-			arms_factory = 1
-		}
 		add_core_of = GRE
+		buildings = {
+			arms_factory = 1
+			infrastructure = 1
+		}
 	}
 	provinces={
 		5378 5510 5641 9229 5405 5426 5299 5557 5710 5458 5336 5465 5341 5470 5471 5472 5730 5735 5484 5615 5365 5498 5500

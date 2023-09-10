@@ -4,10 +4,10 @@ state={
 	name=104_Zeeland
 	history={
 		owner = HOL
+		add_core_of = HOL
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = HOL
 	}
 	provinces={
 		2720 2792 2793 2857 2736 2546

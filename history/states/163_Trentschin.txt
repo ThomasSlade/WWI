@@ -4,10 +4,10 @@ state={
 	name=163_Trentschin
 	history={
 		owner = AUS
+		add_core_of = AUS
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = AUS
 	}
 	provinces={
 		4357 4243 4117 4002 4133 4261 4011 4144 4149 4278 4158 4037 4426 4043 4174 4049 4082 4211 4092

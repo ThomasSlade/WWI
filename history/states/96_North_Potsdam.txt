@@ -4,10 +4,10 @@ state={
 	name=96_North_Potsdam
 	history={
 		owner = GER
+		add_core_of = GER
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = GER
 	}
 	provinces={
 		3714 3710 3628 3695 3696 3636 3701 3544 3706 3678

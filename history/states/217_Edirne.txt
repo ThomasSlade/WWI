@@ -4,12 +4,12 @@ state={
 	name=217_Edirne
 	history={
 		owner = TUR
+		add_core_of = TUR
 		buildings = {
 			industrial_complex = 1
-			infrastructure = 2
 			arms_factory = 1
+			infrastructure = 2
 		}
-		add_core_of = TUR
 	}
 	provinces={
 		5889 6275 5896 6281 5898 6287 6288 5907 6292 6169 6172 6305 6179 6309 6055 6317 5936 6321 6322 5951 5961 6220 6221 6222 5968 6231 5859 6249 5867 5875 6131 6262

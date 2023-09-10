@@ -4,10 +4,10 @@ state={
 	name=143_Sudmahren
 	history={
 		owner = AUS
+		add_core_of = AUS
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = AUS
 	}
 	provinces={
 		3907 3781 3847 3977 4170 3884 3828 3926 4124

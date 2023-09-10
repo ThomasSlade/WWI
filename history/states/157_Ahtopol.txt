@@ -4,10 +4,10 @@ state={
 	name=157_Ahtopol
 	history={
 		owner = TUR
+		add_core_of = TUR
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = TUR
 	}
 	provinces={
 		5479 5672 5388 5590 5818

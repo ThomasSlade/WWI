@@ -4,11 +4,11 @@ state={
 	name=105_Gronigen
 	history={
 		owner = HOL
+		add_core_of = HOL
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
 		}
-		add_core_of = HOL
 	}
 	provinces={
 		2496 2754 2568 2696 2506 2443 2573 2800 2737 2775 2776 2649 2748

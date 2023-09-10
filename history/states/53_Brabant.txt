@@ -12,12 +12,12 @@ state={
 	}
 	history={
 		owner = BEL
+		add_core_of = BEL
 		buildings = {
 			industrial_complex = 2
-			infrastructure = 3
 			arms_factory = 2
+			infrastructure = 3
 		}
-		add_core_of = BEL
 	}
 	provinces={
 		323 516 869 1225 555 269 1165 1424 594 754 596 501 1209 1468 1244
