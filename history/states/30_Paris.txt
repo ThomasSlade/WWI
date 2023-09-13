@@ -14,8 +14,8 @@ state={
 		owner = FRA
 		add_core_of = FRA
 		buildings = {
-			industrial_complex = 2
 			arms_factory = 2
+			industrial_complex = 2
 			infrastructure = 3
 		}
 	}

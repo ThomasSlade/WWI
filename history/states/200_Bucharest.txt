@@ -14,8 +14,8 @@ state={
 		owner = ROM
 		add_core_of = ROM
 		buildings = {
-			industrial_complex = 3
 			arms_factory = 1
+			industrial_complex = 3
 			infrastructure = 3
 		}
 	}
