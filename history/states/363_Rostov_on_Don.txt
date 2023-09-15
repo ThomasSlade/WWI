@@ -6,8 +6,12 @@ state={
 		owner = SOV
 		add_core_of = SOV
 		buildings = {
-			industrial_complex = 1
-			infrastructure = 2
+			6408 = {
+				naval_base = 2
+			}
+			6777 = {
+				naval_base = 4
+			}
 		}
 	}
 	provinces={

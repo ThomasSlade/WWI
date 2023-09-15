@@ -7,8 +7,6 @@ state={
 		add_core_of = AUS
 		add_core_of = SER
 		buildings = {
-			arms_factory = 1
-			infrastructure = 1
 		}
 	}
 	provinces={

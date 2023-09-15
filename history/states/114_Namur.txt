@@ -6,8 +6,6 @@ state={
 		owner = BEL
 		add_core_of = BEL
 		buildings = {
-			industrial_complex = 1
-			infrastructure = 2
 		}
 	}
 	provinces={

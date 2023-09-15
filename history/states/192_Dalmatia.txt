@@ -6,11 +6,10 @@ state={
 		owner = AUS
 		add_core_of = AUS
 		buildings = {
-			infrastructure = 1
 		}
 	}
 	provinces={
-		4578 4738 9252 4389 9253 4264 9257 4715 9259 9260 4785 4404 4661 4791 4152 4443 4701
+		4578 4738 9252 4389 9253 4264 9257 4715 9259 1460 4785 4404 4661 4791 4152 4443 4701
 	}
 	manpower=119204
 	buildings_max_level_factor=1.000

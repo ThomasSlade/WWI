@@ -14,9 +14,6 @@ state={
 		owner = SER
 		add_core_of = SER
 		buildings = {
-			arms_factory = 3
-			industrial_complex = 2
-			infrastructure = 2
 		}
 	}
 	provinces={

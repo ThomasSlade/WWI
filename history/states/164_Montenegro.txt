@@ -6,9 +6,9 @@ state={
 		owner = MNT
 		add_core_of = MNT
 		buildings = {
-			arms_factory = 3
-			industrial_complex = 2
-			infrastructure = 2
+			5634 = {
+				naval_base = 1
+			}
 		}
 	}
 	provinces={

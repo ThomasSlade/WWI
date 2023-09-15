@@ -1458,7 +1458,7 @@
 1457;97;73;160;sea;false;ocean;1
 1458;97;76;220;sea;false;ocean;1
 1459;97;130;222;sea;false;ocean;1
-1460;97;136;202;sea;false;ocean;1
+1460;196;105;89;land;true;plains;1
 1461;4;42;111;land;false;plains;1
 1462;4;72;3;land;false;forest;1
 1463;97;163;230;sea;false;ocean;1
@@ -9258,4 +9258,3 @@
 9257;178;108;120;land;true;plains;1
 9258;186;31;122;land;true;hills;1
 9259;192;7;10;land;true;plains;1
-9260;196;105;89;land;true;plains;1

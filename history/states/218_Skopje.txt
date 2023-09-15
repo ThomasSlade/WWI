@@ -7,8 +7,6 @@ state={
 		add_core_of = TUR
 		add_core_of = BUL
 		buildings = {
-			industrial_complex = 1
-			infrastructure = 2
 		}
 	}
 	provinces={

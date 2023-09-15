@@ -6,7 +6,6 @@ state={
 		owner = BUL
 		add_core_of = BUL
 		buildings = {
-			infrastructure = 2
 		}
 	}
 	provinces={

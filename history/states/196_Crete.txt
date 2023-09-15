@@ -7,8 +7,15 @@ state={
 		add_core_of = TUR
 		add_core_of = GRE
 		buildings = {
-			industrial_complex = 1
-			infrastructure = 2
+			6350 = {
+				naval_base = 1
+			}
+			6100 = {
+				naval_base = 2
+			}
+			6059 = {
+				naval_base = 4
+			}
 		}
 	}
 	provinces={

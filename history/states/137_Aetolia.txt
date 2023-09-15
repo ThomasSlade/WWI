@@ -6,8 +6,12 @@ state={
 		owner = GRE
 		add_core_of = GRE
 		buildings = {
-			arms_factory = 1
-			infrastructure = 1
+			5247 = {
+				naval_base = 1
+			}
+			9178 = {
+				naval_base = 1
+			}
 		}
 	}
 	provinces={

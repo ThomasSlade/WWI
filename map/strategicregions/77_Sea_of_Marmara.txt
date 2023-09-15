@@ -3,7 +3,7 @@ strategic_region={
 	id=77
 	name=77_Sea_of_Marmara
 	provinces={
-		817 930 652 9223
+		817 930 652 9223 15
 	}
 	weather={
 	}

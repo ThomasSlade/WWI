@@ -6,18 +6,11 @@ state={
 		owner = TUR
 		add_core_of = TUR
 		buildings = {
-			arms_factory = 1
-			industrial_complex = 2
-			infrastructure = 3
-			5304 = {
-				coastal_bunker = 10
-				naval_base = 5
+			9209 = {
+				naval_base = 1
 			}
-			5575 = {
-				bunker = 1
-			}
-			5216 = {
-				bunker = 1
+			5253 = {
+				naval_base = 6
 			}
 		}
 	}
