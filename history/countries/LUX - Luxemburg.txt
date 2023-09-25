@@ -14,19 +14,16 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = established
 	last_election = "1910.5.11"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-	democratic = 75
-	democratic_expansionist = 0
-	monarchism = 20
-	monarchism_expansionist = 0
-	communism = 5
-	communism_expansionist = 0
+	established = 75
+	expansionist = 25
+	revolutionary = 0
 }
 
 add_ideas = {
@@ -40,18 +37,7 @@ create_country_leader = {
 	desc = "POLITICS_PAUL_EYSCHEN_DESC"
 	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
 	expire = "1930.1.1"
-	ideology = t_democratic
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Paul Eyschen"
-	desc = "POLITICS_PAUL_EYSCHEN_DESC"
-	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
-	expire = "1930.1.1"
-	ideology = t_democratic_expansionist
+	ideology = established_democratic
 	traits = {
 		#
 	}

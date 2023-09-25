@@ -6,6 +6,16 @@ state={
 		owner = ROM
 		add_core_of = ROM
 		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+		}
+		victory_points = {6065 25
+		}
+		victory_points = {6112 15
+		}
+		victory_points = {6017 5
+		}
+		victory_points = {6088 2
 		}
 	}
 	provinces={

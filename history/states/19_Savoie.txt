@@ -6,6 +6,14 @@ state={
 		owner = FRA
 		add_core_of = FRA
 		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+		}
+		victory_points = {2414 5
+		}
+		victory_points = {2507 2
+		}
+		victory_points = {2538 2
 		}
 	}
 	provinces={

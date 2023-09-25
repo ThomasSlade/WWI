@@ -6,6 +6,26 @@ state={
 		owner = FRA
 		add_core_of = FRA
 		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {294 15
+		}
+		victory_points = {419 5
+		}
+		victory_points = {714 5
+		}
+		victory_points = {344 5
+		}
+		victory_points = {736 5
+		}
+		victory_points = {1059 2
+		}
+		victory_points = {320 2
+		}
+		victory_points = {112 2
+		}
+		victory_points = {1255 2
 		}
 	}
 	provinces={

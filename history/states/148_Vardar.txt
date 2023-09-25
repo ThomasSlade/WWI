@@ -7,6 +7,16 @@ state={
 		add_core_of = TUR
 		add_core_of = BUL
 		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+		victory_points = {5402 15
+		}
+		victory_points = {7419 5
+		}
+		victory_points = {5727 2
+		}
+		victory_points = {5586 2
 		}
 	}
 	provinces={

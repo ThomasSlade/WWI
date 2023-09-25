@@ -1,5 +1,12 @@
 ﻿capital = 120
 
+oob = "HOL_1911"
+set_fuel_ratio = 0.8
+set_research_slots = 4
+set_convoys = 200
+set_stability = 0.75 
+set_war_support = 0.3
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -9,19 +16,16 @@ set_technology = {
 set_convoys = 50
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = established
 	last_election = "1909.6.11"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-	democratic = 60
-	democratic_expansionist = 0
-	monarchism = 35
-	monarchism_expansionist = 0
-	communism = 5
-	communism_expansionist = 0
+	established = 75
+	expansionist = 25
+	revolutionary = 0
 }
 
 create_country_leader = {
@@ -29,18 +33,7 @@ create_country_leader = {
 	desc = "POLITICS_THEO_HEEMSKERK_DESC"
 	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
 	expire = "1930.1.1"
-	ideology = t_democratic
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Theo Heemskerk"
-	desc = "POLITICS_THEO_HEEMSKERK_DESC"
-	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
-	expire = "1930.1.1"
-	ideology = t_democratic_expansionist
+	ideology = established_democratic
 	traits = {
 		#
 	}

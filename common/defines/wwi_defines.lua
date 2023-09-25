@@ -8,3 +8,4 @@ NDefines.NMilitary.UNIT_DIGIN_CAP = 2
 NDefines.NProduction.BASE_FACTORY_SPEED = 5
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 2
 NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 2.5
+NDefines.NSupply.INFRA_TO_SUPPLY = 0.4

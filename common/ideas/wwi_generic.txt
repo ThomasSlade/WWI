@@ -71,7 +71,7 @@ ideas = {
 			picture = generic_democratic
 
 			modifier = {
-				democratic_expansionist_drift = -0.07
+				expansionist_drift = -0.07
 			}
 		}
 

@@ -6,6 +6,15 @@ state={
 		owner = AUS
 		add_core_of = AUS
 		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = {5033 15
+		}
+		victory_points = {5143 5
+		}
+		victory_points = {5084 2
 		}
 	}
 	provinces={

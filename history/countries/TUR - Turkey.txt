@@ -12,19 +12,16 @@ set_technology = {
 set_convoys = 50
 
 set_politics = {
-	ruling_party = monarchism
+	ruling_party = established
 	last_election = "1911.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 20
-	democratic_expansionist = 30
-	monarchism = 50
-	monarchism_expansionist = 0
-	communism = 0
-	communism_expansionist = 0
+	established = 50
+	expansionist = 50
+	revolutionary = 0
 }
 
 add_ideas = {
@@ -36,18 +33,7 @@ create_country_leader = {
 	desc = "POLITICS_MEHMED_I_DESC"
 	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
 	expire = "1930.1.1"
-	ideology = t_monarchism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Mehmed V"
-	desc = "POLITICS_MEHMED_I_DESC"
-	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
-	expire = "1930.1.1"
-	ideology = t_monarchism_expansionist
+	ideology = established_monarchist
 	traits = {
 		#
 	}

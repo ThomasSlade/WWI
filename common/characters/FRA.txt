@@ -6,7 +6,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = t_democratic
+			ideology = established_democratic
 			expire = "1965.1.1.1"
 			id = -1
 		}

@@ -21,7 +21,7 @@ leader_traits = {
 	### Special Character Traits
 	#Apis
 	untraceable_conspirator = {
-		democratic_expansionist_drift = 0.05
+		expansionist_drift = 0.05
 		offensive_war_stability_factor = 0.3
 		encryption = 1
 	}
@@ -53,14 +53,14 @@ leader_traits = {
 	dove = {
 		random = no
 		sprite = 10
-		democratic_drift = 0.1
+		established_drift = 0.1
 		opinion_gain_monthly_factor = 0.3
 	}
 
 	hawk = {
 		random = no
 		sprite = 10
-		democratic_expansionist_drift = 0.1
+		expansionist_drift = 0.1
 		war_support_factor = 0.05
 	}
 

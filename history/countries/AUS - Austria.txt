@@ -20,19 +20,16 @@ set_technology = {
 set_convoys = 50
 
 set_politics = {
-	ruling_party = monarchism_expansionist
+	ruling_party = expansionist
 	last_election = "1911.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 20
-	democratic_expansionist = 0
-	monarchism = 45
-	monarchism_expansionist = 35
-	communism = 0
-	communism_expansionist = 0
+	established = 25
+	expansionist = 75
+	revolutionary = 0
 }
 
 create_country_leader = {
@@ -40,18 +37,7 @@ create_country_leader = {
 	desc = "POLITICS_FRANZ_JOSEPH_I_DESC"
 	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
 	expire = "1930.1.1"
-	ideology = t_monarchism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Franz Joseph I"
-	desc = "POLITICS_FRANZ_JOSEPH_I_DESC"
-	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
-	expire = "1930.1.1"
-	ideology = t_monarchism_expansionist
+	ideology = expansionist_monarchist
 	traits = {
 		#
 	}

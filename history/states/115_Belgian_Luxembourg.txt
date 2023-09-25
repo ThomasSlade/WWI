@@ -6,6 +6,12 @@ state={
 		owner = BEL
 		add_core_of = BEL
 		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+		}
+		victory_points = {1873 5
+		}
+		victory_points = {1866 2
 		}
 	}
 	provinces={

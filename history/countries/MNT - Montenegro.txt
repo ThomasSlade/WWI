@@ -10,23 +10,21 @@ set_technology = {
 set_convoys = 50
 
 set_politics = {
-	ruling_party = monarchism
+	ruling_party = established
 	last_election = "1911.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 5
-	democratic_expansionist = 0
-	monarchism = 55
-	monarchism_expansionist = 40
-	communism = 0
-	communism_expansionist = 0
+	established = 75
+	expansionist = 25
+	revolutionary = 0
 }
 
 add_ideas = {
 	service_by_requirement
+	status_quo_acceptance
 }
 
 create_country_leader = {
@@ -34,18 +32,7 @@ create_country_leader = {
 	desc = "POLITICS_NICHOLAS_I_MNT_DESC"
 	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
 	expire = "1930.1.1"
-	ideology = t_monarchism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Nicholas I of Montenegro"
-	desc = "POLITICS_NICHOLAS_I_MNT_DESC"
-	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
-	expire = "1930.1.1"
-	ideology = t_monarchism_expansionist
+	ideology = established_monarchist
 	traits = {
 		#
 	}

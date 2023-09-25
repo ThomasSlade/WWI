@@ -18,7 +18,7 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = established
 	last_election = "1910.4.24"
 	election_frequency = 48
 	elections_allowed = yes
@@ -31,6 +31,12 @@ set_popularities = {
 	monarchism_expansionist = 0
 	communism = 20
 	communism_expansionist = 0
+}
+
+set_popularities = {
+	established = 75
+	expansionist = 25
+	revolutionary = 0
 }
 
 create_faction = Entente

@@ -20,19 +20,16 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = monarchism_expansionist
+	ruling_party = expansionist
 	last_election = "1911.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 5
-	democratic_expansionist = 0
-	monarchism = 10
-	monarchism_expansionist = 55
-	communism = 30
-	communism_expansionist = 0
+	established = 25
+	expansionist = 75
+	revolutionary = 0
 }
 
 recruit_character = GER_wilhelm_ii

@@ -9,25 +9,6 @@
 # trade = yes/no
 
 opinion_modifiers = {
-	# Core Diplomacy
-	# Whether the country is expansionist or not.
-	WWI_same_alignment = {
-		value = 20
-	}
-
-	WWI_different_alignment = {
-		value = -20
-	}
-
-	# Whether the country is democratic, autocratic, or communist.
-	WWI_same_ideology = {
-		value = 10
-	}
-
-	WWI_different_ideology = {
-		value = 10
-	}
-
 	AUS_bosnian_constitution_suspended = { value = -20 }
 
 	SER_appealed_for_arbitration = { value = 20 }

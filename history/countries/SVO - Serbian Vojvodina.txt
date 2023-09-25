@@ -19,17 +19,14 @@ if = {
 set_convoys = 10
 
 set_politics = {
-	ruling_party = monarchism
+	ruling_party = established
 	last_election = "1911.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 40
-	democratic_expansionist = 0
-	monarchism = 60
-	monarchism_expansionist = 0
-	communism = 0
-	communism_expansionist = 0
+	established = 75
+	expansionist = 25
+	revolutionary = 0
 }

@@ -5,6 +5,13 @@ state={
 	history={
 		owner = FRA
 		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {1819 5
+		}
+		victory_points = {1805 5
+		}
+		victory_points = {1742 2
 		}
 	}
 	provinces={

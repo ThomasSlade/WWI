@@ -6,9 +6,15 @@ state={
 		owner = TUR
 		add_core_of = TUR
 		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
 			5714 = {
 				naval_base = 1
 			}
+		}
+		victory_points = {5546 2
+		}
+		victory_points = {5714 2
 		}
 	}
 	provinces={

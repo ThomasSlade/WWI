@@ -6,7 +6,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = democratic_expansionist
+				has_government = expansionist
 			}
 
 			removal_cost = -1
@@ -14,7 +14,7 @@ ideas = {
 			picture = generic_democratic_expansionist
 
 			modifier = {
-				democratic_expansionist_drift = 0.01
+				expansionist_drift = 0.01
 			}
 		}
 
@@ -201,7 +201,7 @@ ideas = {
 
 			modifier = {
 				production_speed_bunker_factor = 1
-				democratic_expansionist_drift = 0.01
+				expansionist_drift = 0.01
 			}
 		}
 	}
