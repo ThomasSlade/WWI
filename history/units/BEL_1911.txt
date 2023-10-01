@@ -44,7 +44,54 @@ division_template = {
 	}
 }
 
+division_template = {
+	name = "Test Division"
+
+	division_names_group = GER_Inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+	}
+}
+
+
 units = {
+	# Test Division
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 869
+		division_template = "Test Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 869
+		division_template = "Test Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 869
+		division_template = "Test Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+
 	# 3 Cavalry Units
 	division= {	
 		division_name = {
