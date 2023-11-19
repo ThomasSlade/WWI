@@ -169,4 +169,173 @@ characters = {
 			id = -1
 		}
 	}
+
+	SER_nicholas_hartwig = {
+		name = SER_nicholas_hartwig
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SER_nicholas_hartwig
+			cost = 50
+			available = {
+				has_completed_focus = SER_invite_entente_dignitaries 
+				NOT = { has_war_with = SOV }
+			}
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				ultra_serb
+			}
+			on_add = {
+				SOV = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = recruited_our_advisor
+					}
+				}
+				hidden_effect = {
+					ROOT = {
+						add_opinion_modifier = {
+							target = SOV
+							modifier = recruited_our_advisor
+						}
+					}
+				}
+			}
+			on_remove = {
+				SOV = {
+					remove_opinion_modifier = {
+						target = ROOT
+						modifier = recruited_our_advisor
+					}
+				}
+				hidden_effect = {
+					ROOT = {
+						add_opinion_modifier = {
+							target = SOV
+							modifier = recruited_our_advisor
+						}
+					}
+				}
+			}
+		}
+	}
+
+	SER_leon_descos = {
+		name = SER_leon_descos
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SER_leon_descos
+			cost = 50
+			available = {
+				has_completed_focus = SER_invite_entente_dignitaries
+				NOT = { has_war_with = FRA }
+			}
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				fiscal_mediator
+			}
+			on_add = {
+				FRA = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = recruited_our_advisor
+					}
+				}
+				hidden_effect = {
+					ROOT = {
+						add_opinion_modifier = {
+							target = FRA
+							modifier = recruited_our_advisor
+						}
+					}
+				}
+			}
+			on_remove = {
+				FRA = {
+					remove_opinion_modifier = {
+						target = ROOT
+						modifier = recruited_our_advisor
+					}
+				}
+				hidden_effect = {
+					ROOT = {
+						remove_opinion_modifier = {
+							target = FRA
+							modifier = recruited_our_advisor
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+	SER_dayrell_crackanthorpe = {
+		name = SER_dayrell_crackanthorpe
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SER_dayrell_crackanthorpe
+			cost = 50
+			available = {
+				has_completed_focus = SER_invite_entente_dignitaries
+				NOT = { has_war_with = ENG }
+			}
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				cover_up_artist
+			}
+			on_add = {
+				ENG = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = recruited_our_advisor
+					}
+				}
+				hidden_effect = {
+					ROOT = {
+						add_opinion_modifier = {
+							target = ENG
+							modifier = recruited_our_advisor
+						}
+					}
+				}
+			}
+			on_remove = {
+				ENG = {
+					remove_opinion_modifier = {
+						target = ROOT
+						modifier = recruited_our_advisor
+					}
+				}
+				hidden_effect = {
+					ROOT = {
+						add_opinion_modifier = {
+							target = ENG
+							modifier = recruited_our_advisor
+						}
+					}
+				}
+			}
+		}
+	}
 }

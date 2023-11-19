@@ -17,10 +17,10 @@
   wwi_montenegro.2.c: "No. [ROOT.GetNameDefCap] will remain independent."
 
   # Romania
-  wwi_romania.1.t: "Serbia Offers Territory in Exchange for Mutual Assurances"
-  wwi_romania.1.d: "Our Balkan co-inhabitants to the west have come to the [Root.GetAdjective] foreign office, this morning, with a proposal: join their little 'Balkan League', and we'll be granted the province of Branicevo - home to a large Romanian-speaking minority.\n\nSuch an offer hardly caters to the concerns centre-stage of [Root.GetAdjective] posturing, but perhaps an alliance with [From.GetName] would serve us well in our fight against greater foes ..."
-  wwi_romania.1.a: "We'll take it!"
-  wwi_romania.1.b: "An ill-advised entanglement."
+  wwi_romania.1.t: "Serbia Invites Us to Balkan League"
+  wwi_romania.1.d: "Diplomats from [FROM.capital.GetCapitalVictoryPointName] this morning expressed their hope that [ROOT.GetNameDef] might enter a military alliance - the 'Balkan League' - with them.\n\nThough the agenda of this proposal was less than obvious, [FROM.GetNameDef] has since clarified that signing on would be met with Serb diplomatic support in any simmering territorial disputes - [BUL.GetNameDef] and [AUS.GetNameDef] were not named explicitly."
+  wwi_romania.1.a: "Our only good neighbors: Serbs and the Black Sea"
+  wwi_romania.1.b: "Joining would be ill-advised"
 
   # Greece
   wwi_greece.1.t: "Britain Encourages Greece to Join Balkan League"

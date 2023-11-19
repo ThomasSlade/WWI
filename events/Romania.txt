@@ -1,6 +1,6 @@
 add_namespace = wwi_romania
 
-# Territory in exchange for joining the Balkan League.
+# Serbia invites Romanians to Balkan League at the expense of Bulgaria or maybe Austria
 country_event = {
 	id = wwi_romania.1
 	title = wwi_romania.1.t
@@ -13,9 +13,8 @@ country_event = {
 	option = {
 		name = wwi_romania.1.a
 		ai_chance = { factor = 100 }
-		FROM = { remove_state_core = 162 }
-		transfer_state = 162
-
+		AUS = { add_opinion_modifier = { target = FROM modifier = fears_of_serb_encirclement } }
+		BUL = { add_opinion_modifier = { target = FROM modifier = fears_of_serb_encirclement } }
 		FROM = { country_event = wwi_serbia.2 }
 	}
 

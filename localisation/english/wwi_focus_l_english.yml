@@ -42,12 +42,10 @@
   SER_opanci: "Opanci"
   SER_modernise_infantry: "Modernise the Serb Infantry"
   SER_the_third_ban: "The Third Ban"
-
-
-
+  
   SER_seize_belgrade_for_the_black_hand_tt: "§RA civil war begins. You will control the Revaunchist party.§!\n"
   SER_root_out_the_black_hand_tt: "§RA civil war begins. You will fight against the Revaunchist party.§!\n"
-  SER_renegotiate_bosnia_tt: "§RIf Austria accepts:§!\n\t\t§GSerbia is awarded [224.GetName]§!\n\tRemove claims on Bosnia\n\tAustria gains war goal on Montenegro\n"
+  SER_renegotiate_bosnia_2_tt: "We can choose one of the following:"
 
   # Austria
   AUS_imperial_visit_to_bosnia: "Imperial Visit to Bosnia"

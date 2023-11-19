@@ -1,0 +1,15 @@
+SER_belgrade_investment = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_military_industry
+	
+	state_production_speed_buildings_factor = 0.5
+}
+
+SER_settled_territory = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_military_industry
+
+	recruitable_population = 0.02
+}

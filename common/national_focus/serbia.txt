@@ -12,12 +12,12 @@ focus_tree = {
 	
 	default = no
 
-	continuous_focus_position = { x = 50 y = 1100 }
+	continuous_focus_position = { x = 100 y = 1400 }
 
 	### Political Tree ###
 	focus = {
 		id = SER_support_the_narodna_odbrana
-		icon = GFX__shine
+		icon = GFX_focus_narodna_odbrana
 		x = 0
 		y = 0
 		cost = 10
@@ -33,6 +33,9 @@ focus_tree = {
 			set_country_flag = nadorna_odbrana_operating
 			# With this flag, if the archduke visits Sarajevo he will be shot. This can be removed if Pasic wins the civil war, with all the benefits of narodna_odbrana_operating.
 			set_country_flag = nadorna_odbrana_autonomous
+
+			add_political_power = 100
+			add_ideas = SER_narodna_odbrana
 
 			AUS = {
 				add_ideas = {
@@ -54,7 +57,7 @@ focus_tree = {
 		icon = GFX__shine
 		prerequisite = { focus = SER_support_the_narodna_odbrana }
 		mutually_exclusive = { focus = SER_follow_the_independent_radicals }
-		x = 1
+		x = -1
 		y = 1
 		relative_position_id = SER_support_the_narodna_odbrana
 		cost = 10
@@ -75,7 +78,7 @@ focus_tree = {
 		icon = GFX__shine
 		prerequisite = { focus = SER_support_the_narodna_odbrana }
 		mutually_exclusive = { focus = SER_moderate_nationalist_rhetoric }
-		x = -1
+		x = 1
 		y = 1
 		relative_position_id = SER_support_the_narodna_odbrana
 		cost = 10
@@ -98,7 +101,7 @@ focus_tree = {
 		id = SER_retire_the_may_coup_conspirators
 		icon = GFX__shine
 		prerequisite = { focus = SER_moderate_nationalist_rhetoric focus = SER_follow_the_independent_radicals }
-		x = 0
+		x = -2
 		y = 1
 		relative_position_id = SER_moderate_nationalist_rhetoric
 		cost = 10
@@ -110,6 +113,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 120
+			add_command_power = 100
 			# WWITODO: Remove some of the conspirator politicians.
 		}
 	}
@@ -117,10 +121,10 @@ focus_tree = {
 	focus = {
 		id = SER_build_a_conciliatory_cabinet
 		icon = GFX__shine
-		prerequisite = { focus = SER_retire_the_may_coup_conspirators focus = SER_inflamatory_articles_in_the_pijemont }
-		x = -1
+		prerequisite = { focus = SER_moderate_nationalist_rhetoric focus = SER_follow_the_independent_radicals }
+		x = 0
 		y = 1
-		relative_position_id = SER_retire_the_may_coup_conspirators
+		relative_position_id = SER_moderate_nationalist_rhetoric
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -170,10 +174,10 @@ focus_tree = {
 	focus = {
 		id = SER_revise_education_budget
 		icon = GFX__shine
-		prerequisite = { focus = SER_build_a_conciliatory_cabinet }
-		x = 0
+		prerequisite = { focus = SER_moderate_nationalist_rhetoric focus = SER_follow_the_independent_radicals }
+		x = 2
 		y = 1
-		relative_position_id = SER_build_a_conciliatory_cabinet
+		relative_position_id = SER_moderate_nationalist_rhetoric
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -200,7 +204,8 @@ focus_tree = {
 		id = SER_expand_the_grande_ecole
 		icon = GFX__shine
 		prerequisite = { focus = SER_revise_education_budget }
-		x = 0
+		prerequisite = { focus = SER_build_a_conciliatory_cabinet }
+		x = -1
 		y = 1
 		relative_position_id = SER_revise_education_budget
 		cost = 10
@@ -226,7 +231,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SER_unite_the_south_slavs
 		}
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = SER_retire_the_may_coup_conspirators
 		cost = 10
@@ -252,8 +257,8 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SER_seize_belgrade_for_the_black_hand
 		}
-		x = -1
-		y = 3
+		x = 0
+		y = 1
 		relative_position_id = SER_ban_publications_of_the_nacertanije
 		cost = 10
 		ai_will_do = {
@@ -273,7 +278,7 @@ focus_tree = {
 		id = SER_inflamatory_articles_in_the_pijemont
 		icon = GFX__shine
 		prerequisite = { focus = SER_moderate_nationalist_rhetoric focus = SER_follow_the_independent_radicals }
-		x = 0
+		x = 2
 		y = 1
 		relative_position_id = SER_follow_the_independent_radicals
 		cost = 10
@@ -293,7 +298,7 @@ focus_tree = {
 		id = SER_covert_cell_training
 		icon = GFX__shine
 		prerequisite = { focus = SER_inflamatory_articles_in_the_pijemont }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = SER_inflamatory_articles_in_the_pijemont
 		cost = 10
@@ -305,19 +310,19 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = SER_the_pijemont
+			add_ideas = SER_covert_cell_training
 		}
 	}
 
+	# Black Hand Serbia Tree #
 	focus = {
 		id = SER_seize_belgrade_for_the_black_hand
 		icon = GFX__shine
 		prerequisite = { focus = SER_covert_cell_training }
-		mutually_exclusive = {
-			focus = SER_root_out_the_black_hand
-		}
-		x = 1
-		y = 3
+		mutually_exclusive = { focus = SER_root_out_the_black_hand }
+		mutually_exclusive = { focus = SER_royal_visit_to_paris }
+		x = 0
+		y = 1
 		relative_position_id = SER_covert_cell_training
 		cost = 10
 		ai_will_do = {
@@ -337,14 +342,523 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = SER_assassinate_heads_of_state
+		icon = GFX__shine
+		prerequisite = { focus = SER_seize_belgrade_for_the_black_hand }
+		x = 0
+		y = 1
+		relative_position_id = SER_seize_belgrade_for_the_black_hand
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			unlock_decision_category_tooltip = SER_assassinate_head_of_state
+		}
+	}
+
+	focus = {
+		id = SER_montenegro_coup
+		icon = GFX__shine
+		prerequisite = { focus = SER_assassinate_heads_of_state }
+		x = -2
+		y = 1
+		relative_position_id = SER_assassinate_heads_of_state
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = no
+
+		available = {
+			MNT = {
+				exists = yes
+				is_neighbor_of = ROOT
+				has_country_flag = SER_head_of_state_assassination_succeeded
+			}
+		}
+
+		completion_reward = {
+			MNT = { country_event = { id = wwi_serbia.27 hours = 1 } }
+			custom_effect_tooltip = if_they_accept_tt
+			effect_tooltip = {
+				ROOT = { annex_country = { target = MNT } }
+			}
+
+			custom_effect_tooltip = if_they_refuse_tt
+			effect_tooltip = {
+			custom_effect_tooltip = gain_control_of_border_states_tt
+				ROOT = {
+					declare_war_on = {
+						target = MNT
+						type = annex_everything
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SER_albania_coup
+		icon = GFX__shine
+		prerequisite = { focus = SER_assassinate_heads_of_state }
+		x = 0
+		y = 1
+		relative_position_id = SER_assassinate_heads_of_state
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = no
+
+		available = {
+			ALB = {
+				exists = yes
+				is_neighbor_of = ROOT
+				has_country_flag = SER_head_of_state_assassination_succeeded
+			}
+		}
+
+		completion_reward = {
+			ALB = { country_event = { id = wwi_serbia.27 hours = 1 } }
+			custom_effect_tooltip = if_they_accept_tt
+			effect_tooltip = {
+				ROOT = { annex_country = { target = ALB } }
+			}
+
+			custom_effect_tooltip = if_they_refuse_tt
+			effect_tooltip = {
+			custom_effect_tooltip = gain_control_of_border_states_tt
+				ROOT = {
+					declare_war_on = {
+						target = ALB
+						type = annex_everything
+					}
+				}
+			}
+		}
+	}
+
 	### Economic and Foreign Relations Tree ###
+
+	# Economic and Entente Diplomacy Branch
+	focus = {
+		id = SER_seek_new_markets
+		icon = GFX_focus_seek_new_markets
+		prerequisite = { focus = SER_support_the_narodna_odbrana }
+		mutually_exclusive = { focus = SER_concede_the_pig_war }
+		x = 6
+		y = 1
+		relative_position_id = SER_support_the_narodna_odbrana
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 2
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			add_ideas = SER_new_markets
+		}
+	}
+
+	focus = {
+		id = SER_invite_entente_dignitaries
+		icon = GFX__shine
+		prerequisite = { focus = SER_seek_new_markets focus = SER_concede_the_pig_war }
+		x = 1
+		y = 1
+		relative_position_id = SER_seek_new_markets
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = no
+
+		available = {
+			NOT = { has_war_with = SOV }
+		}
+
+		completion_reward = {
+			add_popularity = {
+				ideology = established
+				popularity = 0.1
+			}
+
+			custom_effect_tooltip = wwi_newline_tt
+
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = SER_nicholas_hartwig
+			custom_effect_tooltip = when_recruited_tt
+			effect_tooltip = {
+				SOV = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = recruited_our_advisor
+					}
+				}
+			}
+
+			custom_effect_tooltip = wwi_newline_tt
+
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = SER_leon_descos
+			custom_effect_tooltip = when_recruited_tt
+			effect_tooltip = {
+				FRA = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = recruited_our_advisor
+					}
+				}
+			}
+
+			custom_effect_tooltip = wwi_newline_tt
+
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = SER_dayrell_crackanthorpe
+			custom_effect_tooltip = when_recruited_tt
+			effect_tooltip = {
+				ENG = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = recruited_our_advisor
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SER_royal_visit_to_paris
+		icon = GFX__shine
+		prerequisite = { focus = SER_seek_new_markets }
+		mutually_exclusive = { focus = SER_seize_belgrade_for_the_black_hand }
+		x = -1
+		y = 3
+		relative_position_id = SER_seek_new_markets
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = { SER_king_of_all_the_serbs }
+			FRA = { add_opinion_modifier = { target = SER modifier = FRA_serbian_royal_visit } }
+			every_country = {
+				limit = {
+					is_major = yes
+					OR = {
+						owns_state = 156
+						owns_state = 125
+						owns_state = 162
+						owns_state = 136
+						owns_state = 177
+						owns_state = 185
+						owns_state = 218
+						owns_state = 148
+						owns_state = 135
+						owns_state = 164
+						owns_state = 169
+						owns_state = 224
+						owns_state = 146
+					}
+					NOT = { tag = SER }
+				}
+				add_opinion_modifier = { target = SER modifier = serbian_royal_visit_negative }
+			}
+			hidden_effect = {
+				country_event = { id = wwi_serbia.12 random_hours = 6 }
+			}
+		}
+	}
+
+	focus = {
+		id = SER_french_finance
+		icon = GFX__shine
+		prerequisite = { focus = SER_royal_visit_to_paris }
+		x = 0
+		y = 1
+		relative_position_id = SER_royal_visit_to_paris
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			add_timed_idea = {
+				idea = foreign_investment
+				days = 170
+			}
+		}
+	}
+
+	focus = {
+		id = SER_french_military_contracts
+		icon = GFX__shine
+		prerequisite = { focus = SER_french_finance }
+		prerequisite = { focus = SER_russian_weapon_imports }
+		x = 1
+		y = 1
+		relative_position_id = SER_french_finance
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			FRA = {
+				has_opinion = { target = ROOT value > 9 }
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 2
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			add_timed_idea = {
+				idea = SER_french_military_contracts
+				days = 365
+			}
+		}
+	}
+
+	focus = {
+		id = SER_russian_weapon_imports
+		icon = GFX__shine
+		prerequisite = { focus = SER_invite_entente_dignitaries }
+		x = 0
+		y = 1
+		relative_position_id = SER_invite_entente_dignitaries
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			SOV = {
+				has_opinion = { target = ROOT value > 9 }
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_equipment_to_stockpile ={
+				type = infantry_equipment
+				amount = 4000
+			}
+			add_equipment_to_stockpile ={
+				type = artillery_equipment
+				amount = 400
+			}
+			add_equipment_to_stockpile ={
+				type = support_equipment
+				amount = 100
+			}
+		}
+	}
+
+	focus = {
+		id = SER_danube_adriatic_railway
+		icon = GFX__shine
+		prerequisite = { focus = SER_russian_weapon_imports focus = SER_foreign_railway_loans }
+		x = 1
+		y = 1
+		relative_position_id = SER_russian_weapon_imports
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			OR = {
+				AND = {
+					125 = { is_controlled_by_ROOT_or_ally = yes }
+					177 = { is_controlled_by_ROOT_or_ally = yes }
+					135 = { is_controlled_by_ROOT_or_ally = yes }
+					164 = { is_controlled_by_ROOT_or_ally = yes }
+				}
+				AND = {
+					125 = { is_controlled_by_ROOT_or_ally = yes }
+					156 = { is_controlled_by_ROOT_or_ally = yes }
+					224 = { is_controlled_by_ROOT_or_ally = yes }
+					169 = { is_controlled_by_ROOT_or_ally = yes }
+				}
+				AND = {
+					125 = { is_controlled_by_ROOT_or_ally = yes }
+					185 = { is_controlled_by_ROOT_or_ally = yes }
+					202 = { is_controlled_by_ROOT_or_ally = yes }
+				}
+			}
+			
+		}
+
+		completion_reward = {
+			unlock_decision_category_tooltip = SER_danube_adriatic_railway
+		}
+	}
+
+	focus = {
+		id = SER_pursue_entente_alliance
+		icon = GFX__shine
+		prerequisite = { focus = SER_french_military_contracts focus = SER_root_out_the_black_hand }
+		x = 0
+		y = 3
+		relative_position_id = SER_root_out_the_black_hand
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			NOT = { has_war_with = FRA }
+			OR = {
+				num_of_factories > 30
+				has_country_flag = moderates_won_civil_war
+			}
+		}
+
+		completion_reward = {
+			FRA = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = serbia_seeks_entente_membership
+				}
+			}
+			SOV = {
+				if = {
+					limit = { is_in_faction_with = FRA }
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = serbia_seeks_entente_membership
+					}
+				}
+			}
+			ENG = {
+				if = {
+					limit = { is_in_faction_with = FRA }
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = serbia_seeks_entente_membership
+					}
+				}
+			}
+		}
+	}
+
 	focus = {
 		id = SER_rearm_the_vojvodina
 		icon = GFX__shine
-		prerequisite = { focus = SER_support_the_narodna_odbrana }
-		x = 4
+		prerequisite = { focus = SER_french_military_contracts }
+		x = 0
 		y = 1
-		relative_position_id = SER_support_the_narodna_odbrana
+		relative_position_id = SER_french_military_contracts
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -412,6 +926,7 @@ focus_tree = {
 		}
 
 		available = {
+			country_exists = AUS
 			has_army_manpower = { size > 499999 }
 			is_subject = no
 			NOT = { is_in_faction_with = AUS }
@@ -423,6 +938,36 @@ focus_tree = {
 			create_wargoal = {
  				type = take_state_focus
  				target = AUS
+ 				expire = 0
+ 				generator = {
+ 					# Bosnia
+ 					224 146 169
+ 				}
+ 			}
+		}
+	}
+
+	focus = {
+		id = SER_reclaim_albania
+		icon = GFX__shine
+		prerequisite = { focus = SER_rearm_the_vojvodina focus = SER_the_great_retreat }
+		x = 2
+		y = 2
+		relative_position_id = SER_rearm_the_vojvodina
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			country_exists = ALB
+		}
+
+		completion_reward = {
+			create_wargoal = {
+ 				type = take_state_focus
+ 				target = ALB
  				expire = 0
  				generator = {
  					# Bosnia
@@ -474,225 +1019,13 @@ focus_tree = {
 		}
 	}
 
-	# Economic and Entente Diplomacy Branch
-	focus = {
-		id = SER_french_finance
-		icon = GFX__shine
-		prerequisite = { focus = SER_support_the_narodna_odbrana }
-		mutually_exclusive = { focus = SER_concede_the_pig_war }
-		x = 6
-		y = 1
-		relative_position_id = SER_support_the_narodna_odbrana
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = no
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 1
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-
-			add_timed_idea = {
-				idea = foreign_investment
-				days = 170
-			}
-		}
-	}
-
-	focus = {
-		id = SER_royal_visit_to_paris
-		icon = GFX__shine
-		prerequisite = { focus = SER_french_finance }
-		x = 0
-		y = 3
-		relative_position_id = SER_french_finance
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = { SER_king_of_all_the_serbs }
-			FRA = { add_opinion_modifier = { target = SER modifier = FRA_serbian_royal_visit } }
-			every_country = {
-				limit = {
-					is_major = yes
-					OR = {
-						owns_state = 156
-						owns_state = 125
-						owns_state = 162
-						owns_state = 136
-						owns_state = 177
-						owns_state = 185
-						owns_state = 218
-						owns_state = 148
-						owns_state = 135
-						owns_state = 164
-						owns_state = 169
-						owns_state = 224
-						owns_state = 146
-					}
-					NOT = { tag = SER }
-				}
-				add_opinion_modifier = { target = SER modifier = serbian_royal_visit_negative }
-			}
-			hidden_effect = {
-				country_event = { id = wwi_serbia.12 random_hours = 6 }
-			}
-		}
-	}
-
-	focus = {
-		id = SER_french_military_contracts
-		icon = GFX__shine
-		prerequisite = { focus = SER_royal_visit_to_paris }
-		available = {
-			FRA = {
-				has_opinion = { target = ROOT value > 9 }
-			}
-		}
-		x = -3
-		y = 1
-		relative_position_id = SER_royal_visit_to_paris
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_timed_idea = {
-				idea = SER_french_military_contracts
-				days = 365
-			}
-		}
-	}
-
-	focus = {
-		id = SER_russian_weapon_imports
-		icon = GFX__shine
-		prerequisite = { focus = SER_royal_visit_to_paris }
-		available = {
-			SOV = {
-				has_opinion = { target = ROOT value > 9 }
-			}
-		}
-		x = -1
-		y = 1
-		relative_position_id = SER_royal_visit_to_paris
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_equipment_to_stockpile ={
-				type = infantry_equipment
-				amount = 4000
-			}
-			add_equipment_to_stockpile ={
-				type = artillery_equipment
-				amount = 400
-			}
-			add_equipment_to_stockpile ={
-				type = support_equipment
-				amount = 100
-			}
-		}
-	}
-
-	focus = {
-		id = SER_pursue_entente_alliance
-		icon = GFX__shine
-		prerequisite = { focus = SER_french_military_contracts focus = SER_russian_weapon_imports focus = SER_root_out_the_black_hand }
-		x = 1
-		y = 2
-		relative_position_id = SER_french_military_contracts
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		available = {
-			NOT = { has_war_with = FRA }
-			OR = {
-				num_of_factories > 30
-				has_country_flag = moderates_won_civil_war
-			}
-		}
-
-		completion_reward = {
-			FRA = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = serbia_seeks_entente_membership
-				}
-			}
-			SOV = {
-				if = {
-					limit = { is_in_faction_with = FRA }
-					add_opinion_modifier = {
-						target = ROOT
-						modifier = serbia_seeks_entente_membership
-					}
-				}
-			}
-			ENG = {
-				if = {
-					limit = { is_in_faction_with = FRA }
-					add_opinion_modifier = {
-						target = ROOT
-						modifier = serbia_seeks_entente_membership
-					}
-				}
-			}
-		}
-	}
-
 	# Pro-Austria Branch
 	focus = {
 		id = SER_concede_the_pig_war
-		icon = GFX__shine
+		icon = GFX_focus_concede_the_pig_war
 		prerequisite = { focus = SER_support_the_narodna_odbrana }
-		mutually_exclusive = { focus = SER_french_finance }
-		x = 10
+		mutually_exclusive = { focus = SER_seek_new_markets }
+		x = 11
 		y = 1
 		relative_position_id = SER_support_the_narodna_odbrana
 		cost = 10
@@ -724,11 +1057,188 @@ focus_tree = {
 	}
 
 	focus = {
+		id = SER_educate_engineers
+		icon = GFX__shine
+		prerequisite = { focus = SER_concede_the_pig_war focus = SER_seek_new_markets }
+		x = 4
+		y = 1
+		relative_position_id = SER_seek_new_markets
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = industry
+			}
+
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = electronics
+			}
+		}
+	}
+
+	focus = {
+		id = SER_foreign_engineering
+		icon = GFX__shine
+		prerequisite = { focus = SER_educate_engineers }
+		x = 0
+		y = 2
+		relative_position_id = SER_educate_engineers
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			# Sumadija
+			125 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_extra_state_shared_building_slots = 2
+				}
+			}
+			# Nis
+			136 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_extra_state_shared_building_slots = 2
+				}
+			}
+			# Macva
+			156 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			# Branicevo
+			162 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SER_french_curriculum
+		icon = GFX__shine
+		prerequisite = { focus = SER_foreign_engineering }
+		mutually_exclusive = { focus = SER_german_curriculum }
+		x = -1
+		y = 1
+		relative_position_id = SER_foreign_engineering
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = armor
+			}
+
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = motorized_equipment
+			}
+
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = naval_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = SER_german_curriculum
+		icon = GFX__shine
+		prerequisite = { focus = SER_foreign_engineering }
+		mutually_exclusive = { focus = SER_french_curriculum }
+		x = 1
+		y = 1
+		relative_position_id = SER_foreign_engineering
+
+		completion_reward = {
+			# TODO: Add Chemicals tech bonus and MGs tech bonus
+
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = artillery
+			}
+
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = engineers_tech
+			}
+
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = SER_recognition_for_ports
+		icon = GFX__shine
+		prerequisite = { focus = SER_concede_the_pig_war }
+		x = 1
+		y = 1
+		relative_position_id = SER_concede_the_pig_war
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+
+		available_if_capitulated = no
+
+		available = {
+			AUS = {
+				any_controlled_state = {
+					is_coastal = yes
+				}
+				is_neighbor_of = ROOT
+			}
+		}
+
+		completion_reward = {
+			add_ideas = { SER_idea_austrian_ports }
+			224 = { remove_core_of = ROOT }
+			146 = { remove_core_of = ROOT }
+			169 = { remove_core_of = ROOT }
+		}
+	}
+
+	focus = {
 		id = SER_renegotiate_bosnia
 		icon = GFX__shine
 		prerequisite = { focus = SER_concede_the_pig_war }
 		mutually_exclusive = { focus = SER_entice_montenegro }
-		x = 0
+		x = 3
 		y = 1
 		relative_position_id = SER_concede_the_pig_war
 		cost = 10
@@ -737,6 +1247,15 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
+
+		available = {
+			OR = {
+				224 = {
+					is_controlled_by = AUS
+					any_neighbor_state = { is_owned_and_controlled_by = ROOT }
+				}
+			}
+		}
 
 		completion_reward = {
 			AUS = { country_event = wwi_austria.10 }
@@ -763,11 +1282,54 @@ focus_tree = {
 	}
 
 	focus = {
+		id = SER_renegotiate_bosnia_2
+		icon = GFX__shine
+		prerequisite = { focus = SER_renegotiate_bosnia }
+		x = -1
+		y = 1
+		relative_position_id = SER_renegotiate_bosnia
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+
+		available_if_capitulated = no
+
+		available = {
+			OR = {
+				146 = {
+					is_controlled_by = AUS
+					any_neighbor_state = { is_owned_and_controlled_by = ROOT }
+				}
+				169 = {
+					is_controlled_by = AUS
+					any_neighbor_state = { is_owned_and_controlled_by = ROOT }
+				}
+			}
+		}
+
+		completion_reward = {
+			hidden_effect = {
+				country_event = { id = wwi_serbia.19 }
+			}
+
+			effect_tooltip = {
+				AUS = { country_event = wwi_austria.13 }
+				custom_effect_tooltip = if_they_accept
+				add_ideas = SER_idea_economic_subservience
+				custom_effect_tooltip = SER_renegotiate_bosnia_2_tt
+				146 = { transfer_state_to = ROOT }
+				169 = { transfer_state_to = ROOT }
+			}
+		}
+	}
+
+	focus = {
 		id = SER_rapproachment_with_austria_hungary
 		icon = GFX__shine
 		prerequisite = { focus = SER_renegotiate_bosnia }
-		x = 0
-		y = 2
+		x = 1
+		y = 1
 		relative_position_id = SER_renegotiate_bosnia
 		cost = 10
 		ai_will_do = {
@@ -813,12 +1375,83 @@ focus_tree = {
 	}
 
 	focus = {
+		id = SER_negotiate_treaty_port
+		icon = GFX__shine
+		prerequisite = { focus = SER_recognition_for_ports }
+		prerequisite = { focus = SER_rapproachment_with_austria_hungary }
+		x = 0
+		y = 2
+		relative_position_id = SER_recognition_for_ports
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+
+		available_if_capitulated = no
+
+		available = {
+			AUS = {
+				OR = {
+					controls_state = 208
+					controls_state = 165
+					controls_state = 152
+				}
+				is_neighbor_of = ROOT
+			}
+
+			# TODO: Serbia should offer some food or livestock resources permanently to Austria Hungary in return for a treaty port.
+		}
+
+		completion_reward = {
+			unlock_decision_category_tooltip = SER_treaty_ports
+			set_variable = { serbia_requested_port = -1 }
+		}
+	}
+
+	focus = {
+		id = SER_joint_serb_croat_drills
+		icon = GFX__shine
+		prerequisite = { focus = SER_rapproachment_with_austria_hungary }
+		x = 0
+		y = 3
+		relative_position_id = SER_rapproachment_with_austria_hungary
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 3
+				category = land_doctrine
+			}
+			add_ideas = SER_idea_joint_serb_croat_drills
+			AUS = { add_ideas = SER_idea_joint_serb_croat_drills }
+			hidden_effect = {
+				set_technology = {
+					mountain_training = 1
+					popup = no
+				}
+				AUS = {
+					set_technology = {
+						mountain_training = 1
+						popup = no
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = SER_foreign_railway_loans
 		icon = GFX__shine
-		prerequisite = { focus = SER_royal_visit_to_paris focus = SER_rapproachment_with_austria_hungary }
-		x = 1
+		prerequisite = { focus = SER_educate_engineers }
+		x = -1
 		y = 1
-		relative_position_id = SER_royal_visit_to_paris
+		relative_position_id = SER_educate_engineers
 		cost = 10
 		ai_will_do = {
 			factor = 0
@@ -835,12 +1468,33 @@ focus_tree = {
 	}
 
 	focus = {
+		id = SER_found_the_srpska_avijatika
+		icon = GFX__shine
+		prerequisite = { focus = SER_french_military_contracts focus = SER_joint_serb_croat_drills }
+		x = 6
+		y = 1
+		relative_position_id = SER_french_military_contracts
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			air_experience = 150
+			add_timed_idea = {
+				idea = air_force_construction
+				days = 365
+			}
+		}
+	}
+
+	focus = {
 		id = SER_order_foreign_planes
 		icon = GFX__shine
-		prerequisite = { focus = SER_royal_visit_to_paris focus = SER_rapproachment_with_austria_hungary }
-		x = 3
+		prerequisite = { focus = SER_found_the_srpska_avijatika }
+		x = 0
 		y = 1
-		relative_position_id = SER_royal_visit_to_paris
+		relative_position_id = SER_found_the_srpska_avijatika
 		cost = 10
 		ai_will_do = {
 			factor = 0
@@ -849,9 +1503,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_timed_idea = {
-				idea = foreign_plane_orders
-				days = 365
+			add_equipment_to_stockpile = {
+				type = small_plane_airframe
+				amount = 10
 			}
 
 			add_tech_bonus = {
@@ -866,7 +1520,7 @@ focus_tree = {
 	focus = {
 		id = SER_claim_old_serbia
 		icon = GFX__shine
-		x = 13
+		x = 17
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -896,7 +1550,7 @@ focus_tree = {
 				}
 			}
 		}
-		x = -1
+		x = 0
 		y = 2
 		relative_position_id = SER_claim_old_serbia
 		cost = 10
@@ -933,7 +1587,7 @@ focus_tree = {
 		id = SER_ports_on_the_adriatic
 		icon = GFX__shine
 		prerequisite = { focus = SER_claim_old_serbia }
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = SER_claim_old_serbia
 		cost = 10
@@ -1014,7 +1668,7 @@ focus_tree = {
 	focus = {
 		id = SER_fund_macedonian_militia
 		icon = GFX__shine
-		x = 18
+		x = 23
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -1101,7 +1755,7 @@ focus_tree = {
 		id = SER_promote_serb_guerilla_forces
 		icon = GFX__shine
 		prerequisite = { focus = SER_fund_macedonian_militia }
-		x = 3
+		x = 4
 		y = 2
 		relative_position_id = SER_fund_macedonian_militia
 		cost = 10
@@ -1127,8 +1781,8 @@ focus_tree = {
 		id = SER_strike_a_deal_with_bulgaria
 		icon = GFX__shine
 		prerequisite = { focus = SER_seek_russian_mediation focus = SER_appeal_to_austria_for_support }
-		mutually_exclusive = { focus = SER_offer_territory_to_romania }
-		x = -1
+		mutually_exclusive = { focus = SER_befriend_romania }
+		x = -2
 		y = 1
 		relative_position_id = SER_seek_russian_mediation
 		cost = 10
@@ -1163,11 +1817,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SER_offer_territory_to_romania
+		id = SER_befriend_romania
 		icon = GFX__shine
-		prerequisite = { focus = SER_seek_russian_mediation }
+		prerequisite = { focus = SER_seek_russian_mediation focus = SER_appeal_to_austria_for_support }
 		mutually_exclusive = { focus = SER_strike_a_deal_with_bulgaria }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = SER_seek_russian_mediation
 		cost = 10
@@ -1178,11 +1832,79 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			ROM = { country_event = wwi_romania.1 }
+			ROM = { country_event = { id = wwi_romania.1 hours = 1 } }
 			custom_effect_tooltip = if_they_accept
 			effect_tooltip = {
-				FROM = { remove_state_core = 162 }
-				transfer_state = 162
+				
+			}
+		}
+	}
+
+	focus = {
+		id = SER_danube_trade
+		icon = GFX__shine
+		prerequisite = { focus = SER_befriend_romania focus = SER_strike_a_deal_with_bulgaria }
+		x = -1
+		y = 1
+		relative_position_id = SER_befriend_romania
+		cost = 10
+		ai_will_do = {
+			factor = 6
+		}
+
+		available_if_capitulated = no
+
+		available = {
+			OR = {
+				owns_state = 125
+				owns_state = 162
+				owns_state = 171
+				owns_state = 232
+				owns_state = 180
+			}
+		}
+
+		completion_reward = {
+			ROM = { add_ideas = SER_idea_danube_trade_partner }
+			BUL = { add_ideas = SER_idea_danube_trade_partner }
+
+			random_owned_controlled_state = {
+				prioritize = { 125 162 171 232 180 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SER_expand_belgrade_docks
+		icon = GFX__shine
+		prerequisite = { focus = SER_danube_trade focus = SER_german_arms }
+		x = 0
+		y = 2
+		relative_position_id = SER_danube_trade
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+
+		available_if_capitulated = no
+
+		available = {
+			owns_state = 125
+		}
+
+		completion_reward = {
+			125 = {
+				add_extra_state_shared_building_slots = 3
+				add_dynamic_modifier = {
+					modifier = SER_belgrade_investment
+					days = 500
+				}
 			}
 		}
 	}
@@ -1190,7 +1912,7 @@ focus_tree = {
 	focus = {
 		id = SER_war_with_the_ottomans
 		icon = GFX__shine
-		prerequisite = { focus = SER_entice_montenegro focus = SER_strike_a_deal_with_bulgaria focus = SER_rapproachment_with_austria_hungary }
+		prerequisite = { focus = SER_entice_montenegro focus = SER_strike_a_deal_with_bulgaria focus = SER_joint_serb_croat_drills }
 		available = {
 			OR = {
 				# Required force size is higher than Serbia's historic Balkan War army, unless Italy swoops in and proves that the Ottomans are weak.
@@ -1198,8 +1920,8 @@ focus_tree = {
 				has_global_flag = TUR_humiliated_by_war
 			}
 		}
-		x = 2
-		y = 3
+		x = 1
+		y = 5
 		relative_position_id = SER_entice_montenegro
 		cost = 10
 		ai_will_do = {
@@ -1223,8 +1945,8 @@ focus_tree = {
 		id = SER_provisional_government_in_occupied_lands
 		icon = GFX__shine
 		mutually_exclusive = { focus = SER_martial_law_in_new_serbia }
-		prerequisite = { focus = SER_war_with_the_ottomans }
-		x = -1
+		prerequisite = { focus = SER_war_with_the_ottomans focus = SER_end_bulgarian_posturing_in_macedonia }
+		x = 1
 		y = 1
 		relative_position_id = SER_war_with_the_ottomans
 		cost = 10
@@ -1256,8 +1978,8 @@ focus_tree = {
 		id = SER_martial_law_in_new_serbia
 		icon = GFX__shine
 		mutually_exclusive = { focus = SER_provisional_government_in_occupied_lands }
-		prerequisite = { focus = SER_war_with_the_ottomans }
-		x = 1
+		prerequisite = { focus = SER_war_with_the_ottomans focus = SER_end_bulgarian_posturing_in_macedonia }
+		x = 3
 		y = 1
 		relative_position_id = SER_war_with_the_ottomans
 		cost = 10
@@ -1285,34 +2007,80 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SER_end_bulgarian_posturing_in_macedonia
+		id = SER_resurrection_of_serbia
 		icon = GFX__shine
-		prerequisite = { focus = SER_offer_territory_to_romania }
-		prerequisite = { focus = SER_promote_serb_guerilla_forces }
-		x = 1
+		prerequisite = { focus = SER_provisional_government_in_occupied_lands focus = SER_martial_law_in_new_serbia }
+		x = 2
 		y = 1
-		relative_position_id = SER_offer_territory_to_romania
+		relative_position_id = SER_provisional_government_in_occupied_lands
 		cost = 10
 		ai_will_do = {
-			factor = 6
+			factor = 1
+		}
+
+		available = {
+			OR = {
+				controls_state = 177
+				controls_state = 185
+				controls_state = 218
+				controls_state = 148
+			}
+		}
+
+		completion_reward = {
+			add_ideas = SER_resurrection_of_serbia
+		}
+	}
+
+
+	focus = {
+		id = SER_settle_territory
+		icon = GFX__shine
+		prerequisite = { focus = SER_provisional_government_in_occupied_lands focus = SER_martial_law_in_new_serbia }
+		x = 0
+		y = 1
+		relative_position_id = SER_provisional_government_in_occupied_lands
+		cost = 10
+		ai_will_do = {
+			factor = 1
 		}
 
 		available_if_capitulated = yes
 
+		available = {
+			OR = {
+				controls_state = 177
+				controls_state = 185
+				controls_state = 218
+				controls_state = 148
+			}
+		}
+
 		completion_reward = {
-			BUL = { country_event = wwi_bulgaria.3 }
+			every_state = {
+				limit = {
+					OR = {
+						state = 177
+						state = 185
+						state = 218
+						state = 148
+					}
+					is_owned_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_dynamic_modifier = { modifier = SER_settled_territory }
+			}
 		}
 	}
 
-	# Generic Military Stuff
 	focus = {
 		id = SER_opanci
 		icon = GFX__shine
-		prerequisite = { focus = SER_fund_macedonian_militia }
+		prerequisite = { focus = SER_promote_serb_guerilla_forces }
 		mutually_exclusive = { focus = SER_modernise_infantry }
-		x = 4
+		x = -1
 		y = 1
-		relative_position_id = SER_fund_macedonian_militia
+		relative_position_id = SER_promote_serb_guerilla_forces
 		cost = 10
 		ai_will_do = {
 			factor = 6
@@ -1328,11 +2096,11 @@ focus_tree = {
 	focus = {
 		id = SER_modernise_infantry
 		icon = GFX__shine
-		prerequisite = { focus = SER_fund_macedonian_militia }
+		prerequisite = { focus = SER_promote_serb_guerilla_forces }
 		mutually_exclusive = { focus = SER_opanci }
-		x = 6
+		x = 1
 		y = 1
-		relative_position_id = SER_fund_macedonian_militia
+		relative_position_id = SER_promote_serb_guerilla_forces
 		cost = 10
 		ai_will_do = {
 			factor = 6
@@ -1353,8 +2121,8 @@ focus_tree = {
 		id = SER_the_third_ban
 		icon = GFX__shine
 		prerequisite = { focus = SER_opanci focus = SER_modernise_infantry }
-		x = 1
-		y = 1
+		x = 0
+		y = 2
 		relative_position_id = SER_opanci
 		cost = 10
 		ai_will_do = {
@@ -1365,6 +2133,381 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = { SER_idea_the_third_ban }
+		}
+	}
+
+	focus = {
+		id = SER_mobilise_the_cheta
+		icon = GFX__shine
+		prerequisite = { focus = SER_opanci focus = SER_modernise_infantry }
+		x = 2
+		y = 2
+		relative_position_id = SER_opanci
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			division_template = {
+				name = "Chetnik Division"
+				template_counter = 68
+				division_names_group = GER_Inf_01
+
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+			        infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+				}
+
+				support = {
+					recon = { x = 0 y = 0 }
+				}
+			}
+
+			capital_scope = {
+				create_unit = {
+					division = "name = \"Chetnik Division\" division_template = \"Chetnik Division\" start_experience_factor = 0.3"
+					owner = ROOT
+					count = 3
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SER_end_bulgarian_posturing_in_macedonia
+		icon = GFX__shine
+		prerequisite = { focus = SER_mobilise_the_cheta }
+		prerequisite = { focus = SER_the_third_ban }
+		x = 1
+		y = 2
+		relative_position_id = SER_the_third_ban
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			BUL = { country_event = wwi_bulgaria.3 }
+		}
+	}
+
+	focus = {
+		id = SER_french_arms
+		icon = GFX__shine
+		prerequisite = { focus = SER_modernise_infantry }
+		x = 3
+		y = 1
+		relative_position_id = SER_opanci
+		cost = 10
+		ai_will_do = {
+			factor = 6
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			NOT = { has_war_with = FRA }
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = light_air
+			}
+
+			add_timed_idea = {
+				idea = SER_french_arms
+				days = 365
+			}
+		}
+	}
+
+	focus = {
+		id = SER_british_arms
+		icon = GFX__shine
+		prerequisite = { focus = SER_modernise_infantry }
+		x = 5
+		y = 1
+		relative_position_id = SER_opanci
+		cost = 10
+		ai_will_do = {
+			factor = 6
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			NOT = { has_war_with = ENG }
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = armor
+			}
+
+			add_timed_idea = {
+				idea = SER_british_arms
+				days = 365
+			}
+		}
+	}
+
+	focus = {
+		id = SER_russian_arms
+		icon = GFX__shine
+		prerequisite = { focus = SER_opanci }
+		x = -1
+		y = 1
+		relative_position_id = SER_opanci
+		cost = 10
+		ai_will_do = {
+			factor = 6
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			NOT = { has_war_with = SOV }
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = infantry_tech
+			}
+
+			add_timed_idea = {
+				idea = SER_russian_arms
+				days = 365
+			}
+		}
+	}
+
+	focus = {
+		id = SER_german_arms
+		icon = GFX__shine
+		prerequisite = { focus = SER_opanci }
+		x = -3
+		y = 1
+		relative_position_id = SER_opanci
+		cost = 10
+		ai_will_do = {
+			factor = 6
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			OR = {
+				NOT = { has_war_with = GER }
+				NOT = { has_war_with = AUS }
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = artillery
+			}
+
+			add_timed_idea = {
+				idea = SER_german_arms
+				days = 365
+			}
+		}
+	}
+
+	# Great Retreat and Defensive Measures
+	focus = {
+		id = SER_form_tanasko_rajic_regiment
+		icon = GFX__shine
+		prerequisite = { focus = SER_french_military_contracts focus = SER_joint_serb_croat_drills }
+		x = 8
+		y = 1
+		relative_position_id = SER_french_military_contracts
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = cat_anti_air
+			}
+
+			division_template = {
+				name = "Anti-Air Division"
+
+				division_names_group = GER_Inf_01
+
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+			        infantry = { x = 0 y = 3 }
+			        infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+			        infantry = { x = 1 y = 3 }
+			        anti_air_brigade = { x = 2 y = 0 }
+			        anti_air_brigade = { x = 2 y = 1 }
+				}
+			}
+
+			capital_scope = {
+				create_unit = {
+					division = "name = \"Tanasko Rajic Regiment\" division_template = \"Anti-Air Division\""
+					owner = ROOT
+					count = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SER_relocate_nbs_treasury
+		icon = GFX__shine
+		prerequisite = { focus = SER_french_military_contracts focus = SER_joint_serb_croat_drills }
+		x = 4
+		y = 1
+		relative_position_id = SER_french_military_contracts
+		cost = 10
+		ai_will_do = {
+			factor = 6
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			125 = {
+				AND = {
+					industrial_complex > 3
+					arms_factory > 3
+				}
+			}
+		}
+
+		completion_reward = {
+			add_ideas = SER_relocate_nbs_treasury
+
+			125 = {
+				remove_building = {
+					type = industrial_complex
+					level = 4
+				}
+				remove_building = {
+					type = arms_factory
+					level = 4
+				}
+			}
+
+			add_offsite_building = {
+				type = industrial_complex
+				level = 4
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 4
+			}
+		}
+	}
+
+	focus = {
+		id = SER_first_serbian_volunteer_division
+		icon = GFX__shine
+		prerequisite = { focus = SER_french_military_contracts focus = SER_joint_serb_croat_drills }
+		x = 2
+		y = 1
+		relative_position_id = SER_french_military_contracts
+		cost = 10
+		ai_will_do = {
+			factor = 6
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			any_country = {
+				OR = {
+					tag = AUS
+					tag = BUL
+					tag = TUR
+				}
+				has_war_with = ROOT
+				casualties_k > 200
+			}
+		}
+
+		completion_reward = {
+			division_template = {
+				name = "Serbian Volunteer Division"
+				template_counter = 25
+				division_names_group = GER_Inf_01
+
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+			        infantry = { x = 0 y = 3 }
+			        infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+			        infantry = { x = 1 y = 3 }
+				}
+
+				support = {
+					engineer = { x = 0 y = 0 }
+				}
+			}
+
+			capital_scope = {
+				create_unit = {
+					division = "name = \"Serbian Volunteer Division\" division_template = \"Serbian Volunteer Division\" start_experience_factor = 0.5"
+					owner = ROOT
+					count = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SER_the_great_retreat
+		icon = GFX__shine
+		prerequisite = { focus = SER_relocate_nbs_treasury }
+		x = 0
+		y = 1
+		relative_position_id = SER_relocate_nbs_treasury
+		cost = 10
+		ai_will_do = {
+			factor = 6
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+
+		}
+
+		completion_reward = {
+			SER_increase_great_retreat = yes
+			unlock_decision_category_tooltip = SER_the_great_retreat
 		}
 	}
 }

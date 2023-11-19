@@ -1,0 +1,41 @@
+SER_increase_great_retreat = {
+	if = {
+		limit = {
+			has_idea = SER_the_great_retreat_4
+		}
+		swap_ideas = {
+			remove_idea = SER_the_great_retreat_4
+			add_idea = SER_the_great_retreat_5
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = SER_the_great_retreat_3
+		}
+		swap_ideas = {
+			remove_idea = SER_the_great_retreat_3
+			add_idea = SER_the_great_retreat_4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = SER_the_great_retreat_2
+		}
+		swap_ideas = {
+			remove_idea = SER_the_great_retreat_2
+			add_idea = SER_the_great_retreat_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = SER_the_great_retreat_1
+		}
+		swap_ideas = {
+			remove_idea = SER_the_great_retreat_1
+			add_idea = SER_the_great_retreat_2
+		}
+	}
+	else = {
+		add_ideas = SER_the_great_retreat_1
+	}
+}

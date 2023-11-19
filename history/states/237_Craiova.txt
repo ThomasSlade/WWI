@@ -6,8 +6,8 @@ state={
 		owner = ROM
 		add_core_of = ROM
 		buildings = {
-			infrastructure = 2
 			industrial_complex = 1
+			infrastructure = 2
 		}
 		victory_points = {6224 15
 		}

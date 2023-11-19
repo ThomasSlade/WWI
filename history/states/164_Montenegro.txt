@@ -2,13 +2,21 @@
 state={
 	id=164
 	name=164_Montenegro
+	resources={
+		chromium = 999
+		tungsten = 999
+		aluminium = 999
+		oil = 999
+		rubber = 999
+		steel = 999
+	}
 	history={
 		owner = MNT
 		add_core_of = MNT
 		buildings = {
+			arms_factory = 5
+			industrial_complex = 3
 			infrastructure = 2
-			industrial_complex = 2
-			arms_factory = 3
 			5634 = {
 				naval_base = 1
 			}

@@ -36,10 +36,18 @@ spriteTypes = {
 		name = "GFX_idea_generic_propoganda_megaphone"
 		texturefile = "gfx/interface/ideas/idea_generic_propoganda_megaphone.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_generic_chevron"
+		texturefile = "gfx/interface/ideas/idea_generic_chevron.dds"
+	}
 
 	spriteType = {
 		name = "GFX_idea_aus_black_hand_cells"
 		texturefile = "gfx/interface/ideas/idea_aus_black_hand_cells.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_aus_narodna_odbrana"
+		texturefile = "gfx/interface/ideas/idea_aus_narodna_odbrana.dds"
 	}
 
 	# Country Specials

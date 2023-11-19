@@ -1,5 +1,5 @@
 SER_insurgencies = {
-	icon = decision_generic_independence
+	icon = generic_independence
 
 	allowed = {
 		original_tag = SER
@@ -10,5 +10,61 @@ SER_insurgencies = {
 			has_completed_focus = SER_rearm_the_vojvodina
 			NOT = { has_global_flag = serb_vojvodina_revolted }
 		}
+	}
+}
+
+SER_treaty_ports = {
+	icon = generic_naval
+
+	allowed = {
+		original_tag = SER
+	}
+
+	visible = {
+		has_completed_focus = SER_negotiate_treaty_port
+	}
+}
+
+SER_danube_adriatic_railway = {
+	icon = generic_construction
+
+	allowed = {
+		original_tag = SER
+	}
+
+	visible = {
+		has_completed_focus = SER_danube_adriatic_railway
+	}
+}
+
+SER_the_great_retreat = {
+	icon = eng_organize_the_blackshirts
+
+	allowed = {
+		original_tag = SER
+	}
+
+	visible = {
+		has_completed_focus = SER_the_great_retreat
+	}
+}
+
+SER_assassinate_head_of_state = {
+	allowed = {
+		original_tag = SER
+	}
+
+	visible = {
+		has_completed_focus = SER_assassinate_heads_of_state
+	}
+}
+
+SER_assassin_plot_against_us = {
+	allowed = {
+		always = yes
+	}
+
+	visible = {
+		has_country_flag = SER_assassin_plot_against_us
 	}
 }

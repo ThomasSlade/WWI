@@ -23,4 +23,8 @@ opinion_modifiers = {
 	MNT_betrayed_by_serbia = { value = -50 }
 
 	AUS_serb_rapproachment = { value = 30 }
+
+	fears_of_serb_encirclement = { value = -30 }
+
+	recruited_our_advisor = { value = 20 }
 }

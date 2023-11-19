@@ -21,13 +21,15 @@ leader_traits = {
 	### Special Character Traits
 	#Apis
 	untraceable_conspirator = {
+		random = no
 		expansionist_drift = 0.05
 		offensive_war_stability_factor = 0.3
-		encryption = 1
+		encryption = 2
 	}
 
 	# Jovan Jovanovic (with focus) - better version of delicate_mediator
 	clean_handed = {
+		random = no
 		improve_relations_maintain_cost_factor = -0.75
 		opinion_gain_monthly = 25
 		enemy_justify_war_goal_time = 0.5
@@ -35,6 +37,7 @@ leader_traits = {
 
 	# Miroslav Spalajovic (with focus) - better version of state_architect
 	arbitrators_pet = {
+		random = no
 		opinion_gain_monthly_same_ideology = 30
 		guarantee_cost = -0.5
 		annex_cost_factor = 0.3
@@ -47,6 +50,30 @@ leader_traits = {
 		drift_defence_factor = 0.4
 		resistance_activity = -0.6
 		required_garrison_factor = 0.3
+	}
+
+	# Nicholas Hartwig
+	ultra_serb = {
+		random = no
+		war_support_factor = 0.15
+		justify_war_goal_time = -0.5
+		weekly_casualties_war_support = 0.002
+	}
+
+	# Leon Descos
+	fiscal_mediator = {
+		random = no
+		production_speed_arms_factory_factor = 0.15
+		production_speed_industrial_complex_factor = 0.15
+		conversion_cost_mil_to_civ_factor = -0.5
+	}
+
+	# Dayrell Crackanthorpe
+	cover_up_artist = {
+		random = no
+		opinion_gain_monthly_factor = 0.5
+		annex_cost_factor = -0.25
+		encryption_factor = 0.5
 	}
 
 	### Generic WWI Advisor Traits ###
@@ -104,5 +131,58 @@ leader_traits = {
 		random = no
 		opinion_gain_monthly_same_ideology = 20
 		guarantee_cost = -0.5
+	}
+
+	# Law and Focus Traits
+	french_arms_imports = {
+		equipment_bonus = {
+			infantry = {
+				build_cost_ic = -0.2
+			}
+
+			fighter = {
+				build_cost_ic = -0.2
+			}
+
+			cas = {
+				build_cost_ic = -0.2
+			}
+		}
+	}
+
+	british_arms_imports = {
+		equipment_bonus = {
+			armor = {
+				build_cost_ic = -0.2
+			}
+
+			screen_ship = {
+				build_cost_ic = -0.2
+			}
+		}
+	}
+
+	german_arms_imports = {
+		equipment_bonus = {
+			artillery = {
+				build_cost_ic = -0.2
+			}
+
+			support = {
+				build_cost_ic = -0.2
+			}
+		}
+	}
+
+	russian_arms_imports = {
+		equipment_bonus = {
+			infantry = {
+				build_cost_ic = -0.2
+			}
+
+			support = {
+				build_cost_ic = -0.2
+			}
+		}
 	}
 }

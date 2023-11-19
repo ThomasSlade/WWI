@@ -606,3 +606,419 @@ country_event = {
 		}
 	}
 }
+
+# Austria gives treaty port.
+country_event = {
+	id = wwi_serbia.17
+	title = wwi_serbia.17.t
+	desc = wwi_serbia.17.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = wwi_serbia.17.a
+		set_variable = { serbia_requested_port = -1 }
+	}
+}
+
+# Austria declines treaty port.
+country_event = {
+	id = wwi_serbia.18
+	title = wwi_serbia.18.t
+	desc = wwi_serbia.18.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = wwi_serbia.18.a
+		set_variable = { serbia_requested_port = -1 }
+	}
+}
+
+# Ask Austria for either Herzegovina or Banja Luka
+country_event = {
+	id = wwi_serbia.19
+	title = {
+		text = wwi_serbia.19.t
+		trigger = {
+			NOT = { has_global_flag = austria_declined_bosnia_renegotation_2 }
+		}
+	}
+
+	title = {
+		text = wwi_serbia.19.t_second
+		trigger = {
+			has_global_flag = austria_declined_bosnia_renegotation_2
+		}
+	}
+
+	desc = {
+		text = wwi_serbia.19.d
+		trigger = {
+			NOT = { has_global_flag = austria_declined_bosnia_renegotation_2 }
+		}
+	}
+
+	desc = {
+		text = wwi_serbia.19.d_second
+		trigger = {
+			has_global_flag = austria_declined_bosnia_renegotation_2
+		}
+	}
+
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	# Herzegovina
+	option = {
+		name = wwi_serbia.19.a
+
+		ai_chance = {
+			base = 1
+		}
+
+		trigger = {
+			169 = {
+				is_controlled_by = AUS
+				any_neighbor_state = { is_owned_and_controlled_by = ROOT }
+			}
+			NOT = { has_country_flag = requested_herzegovina }
+			NOT = { has_global_flag = austria_declined_bosnia_renegotation_2 }
+		}
+		
+		set_country_flag = requested_herzegovina
+
+		169 ={ save_event_target_as = requested_bosnia_province }
+		AUS = { country_event = { id = wwi_austria.13 hours = 1 } }
+	}
+
+	# Herzegovina after refusal
+	option = {
+		name = wwi_serbia.19.a_second
+
+		ai_chance = {
+			base = 0
+		}
+
+		trigger = {
+			169 = {
+				is_controlled_by = AUS
+				any_neighbor_state = { is_owned_and_controlled_by = ROOT }
+			}
+			NOT = { has_country_flag = requested_herzegovina }
+			has_global_flag = austria_declined_bosnia_renegotation_2
+		}
+		
+		set_country_flag = requested_herzegovina
+
+		169 ={ save_event_target_as = requested_bosnia_province }
+		AUS = { country_event = { id = wwi_austria.13 hours = 1 } }
+	}
+
+	# Banja Luka
+	option = {
+		name = wwi_serbia.19.b
+
+		ai_chance = {
+			base = 2
+		}
+
+		trigger = {
+			146 = {
+				is_controlled_by = AUS
+				any_neighbor_state = { is_owned_and_controlled_by = ROOT }
+			}
+			NOT = { has_country_flag = requested_banja_luka }
+			NOT = { has_global_flag = austria_declined_bosnia_renegotation_2 }
+		}
+		
+		set_country_flag = requested_banja_luka
+
+		146 ={ save_event_target_as = requested_bosnia_province }
+		AUS = { country_event = { id = wwi_austria.13 hours = 1 } }
+	}
+
+	# Banja Luka after refusal
+	option = {
+		name = wwi_serbia.19.b_second
+
+		ai_chance = {
+			base = 0
+		}
+
+		trigger = {
+			146 = {
+				is_controlled_by = AUS
+				any_neighbor_state = { is_owned_and_controlled_by = ROOT }
+			}
+			NOT = { has_country_flag = requested_banja_luka }
+			has_global_flag = austria_declined_bosnia_renegotation_2
+		}
+		
+		set_country_flag = requested_banja_luka
+
+		146 ={ save_event_target_as = requested_bosnia_province }
+		AUS = { country_event = { id = wwi_austria.13 hours = 1 } }
+	}
+
+	# Nevermind
+	option = {
+		name = wwi_serbia.19.c
+
+		ai_chance = {
+			base = 0
+		}
+
+		trigger = {
+			NOT = { has_global_flag = austria_declined_bosnia_renegotation_2 }
+		}
+	}
+
+	# Nevermind after refusal
+	option = {
+		name = wwi_serbia.19.c_second
+
+		ai_chance = {
+			base = 0
+		}
+
+		trigger = {
+			has_global_flag = austria_declined_bosnia_renegotation_2
+		}
+	}
+}
+
+# Austria agrees to hand over a second part of Bosnia
+country_event = {
+	id = wwi_serbia.20
+	title = wwi_serbia.20.t
+	desc = wwi_serbia.20.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = wwi_serbia.20.a
+		event_target:requested_bosnia_province = { transfer_state_to = ROOT }
+		add_ideas = SER_idea_economic_subservience
+	}
+}
+
+# Head of state assasination plot crisis
+country_event = {
+	id = wwi_serbia.21
+	title = wwi_serbia.21.t
+	desc = wwi_serbia.21.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	# Do nothing. 
+	option = {
+		name = wwi_serbia.21.a
+		ai_chance = {
+			base = 0
+		}
+
+		activate_mission = SER_prevent_assassination_mission
+		unlock_decision_tooltip = SER_cancel_tour
+		unlock_decision_tooltip = SER_increase_security
+		custom_effect_tooltip = prevent_leader_assassination_prompt
+	}
+}
+
+# Assassination failed because leader hid.
+country_event = {
+	id = wwi_serbia.22
+	title = wwi_serbia.22.t
+	desc = wwi_serbia.22.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	# Okay
+	option = {
+		name = wwi_serbia.22.a
+
+		effect_tooltip = {
+			FROM = {
+				add_political_power = -100
+				add_timed_idea = {
+					idea = SER_leader_hid_from_assassins
+					days = 180
+				}
+			}
+		}
+	}
+}
+
+# Assassination failed because they used security forces.
+country_event = {
+	id = wwi_serbia.23
+	title = wwi_serbia.23.t
+	desc = wwi_serbia.23.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	# Okay
+	option = {
+		name = wwi_serbia.23.a
+
+		effect_tooltip = {
+			FROM = {
+				add_manpower = -1000
+				add_equipment_to_stockpile = {
+				    type = infantry_equipment
+				    amount = -1000
+				}
+			}
+		}
+	}
+}
+
+# Assassination succeeded.
+country_event = {
+	id = wwi_serbia.24
+	title = wwi_serbia.24.t
+	desc = wwi_serbia.24.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	# Okay
+	option = {
+		name = wwi_serbia.24.a
+
+		effect_tooltip = {
+			FROM = {
+				custom_effect_tooltip = leader_target_assassinated_tt
+
+				add_stability = -0.15
+				add_timed_idea = {
+					idea = SER_leader_assassinated
+					days = 1000
+				}
+			}
+		}
+	}
+}
+
+# Your leader was assassinated by Serbia.
+country_event = {
+	id = wwi_serbia.25
+	title = wwi_serbia.25.t
+	desc = wwi_serbia.25.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			# Inform Serbia
+			SER = { country_event = { id = wwi_serbia.24 hours = 1 } }
+			# Inform the world
+			news_event = {
+				id = wwi_serbia.26
+				hours = 1
+			}
+		}
+	}
+
+	# Okay
+	option = {
+		name = wwi_serbia.25.a
+
+		effect_tooltip = {
+			custom_effect_tooltip = leader_target_assassinated_tt
+
+			add_stability = -0.15
+			add_timed_idea = {
+				idea = SER_leader_assassinated
+				days = 1000
+			}
+		}
+	}
+}
+
+# News event about Black Hand assassination.
+news_event = {
+	id = wwi_serbia.26
+	title = wwi_serbia.26.t
+	desc = wwi_serbia.26.d
+	picture = GFX_news_event_001
+
+	is_triggered_only = yes
+	major = yes
+	fire_for_sender = no
+
+	show_major = {
+		NOT = { tag = SER }
+	}
+
+	# Sad react
+	option = {
+		name = wwi_serbia.26.a
+		trigger = {
+			has_opinion = {
+				target = FROM
+				value > 0
+			}
+		}
+	}
+
+	# Indifferent react
+	option = {
+		name = wwi_serbia.26.b
+		trigger = {
+			has_opinion = {
+				target = FROM
+				value < 1
+			}
+		}
+	}
+}
+
+# Your country is being annexed by the Black Hand after they killed your leader.
+news_event = {
+	id = wwi_serbia.27
+	title = wwi_serbia.27.t
+	desc = wwi_serbia.27.d
+	picture = GFX_news_event_001
+
+	is_triggered_only = yes
+
+	# Accept annexation
+	option = {
+		name = wwi_serbia.27.a
+		ai_chance = { factor = 100 }
+		FROM = { annex_country = { target = PREV } }
+	}
+
+	# Resist but lose territory
+	option = {
+		name = wwi_serbia.27.b
+		FROM = {
+			declare_war_on = {
+				target = ROOT
+				type = annex_everything
+			}
+		}
+
+		# Only take borderlands if this country has more than 1 state.
+		if = {
+			limit = { num_of_controlled_states > 1 }
+			every_owned_state = {
+				limit = {
+					any_neighbor_state = {
+						is_controlled_by = FROM
+					}
+				}
+				set_state_controller_to = FROM
+			}
+		}
+	}
+}

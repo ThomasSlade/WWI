@@ -1,0 +1,36 @@
+technologies = {
+	mountain_training = {
+		research_cost = 1
+
+		# Focus only
+		allow = {
+			always = no
+		}
+
+		infantry = {
+			mountain = {
+				attack = 0.2
+				defence = 0.1
+				movement = 0.3
+			}
+			hills = {
+				attack = 0.2
+				defence = 0.1
+				movement = 0.3
+			}
+		}
+
+		artillery = {
+			mountain = {
+				attack = 0.2
+				defence = 0.1
+				movement = 0.3
+			}
+			hills = {
+				attack = 0.2
+				defence = 0.1
+				movement = 0.3
+			}
+		}
+	}
+}

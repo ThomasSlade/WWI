@@ -1,0 +1,10 @@
+leader_traits = {
+	mountain_training_idea_trait = {
+		random = no
+		equipment_bonus = {
+			armor = {
+				reliability = 0.5
+			}
+		}
+	}
+}

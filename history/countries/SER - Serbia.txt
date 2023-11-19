@@ -34,6 +34,9 @@ recruit_character = SER_ljuba_jovanobic
 recruit_character = SER_marko_djuricic
 recruit_character = SER_miroslav_spalajovic
 recruit_character = SER_apis
+recruit_character = SER_nicholas_hartwig
+recruit_character = SER_leon_descos
+recruit_character = SER_dayrell_crackanthorpe
 
 add_ideas = {
 	SER_nacertanije

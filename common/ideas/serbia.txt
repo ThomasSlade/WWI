@@ -75,6 +75,25 @@ ideas = {
 			}
 		}
 
+		SER_covert_cell_training = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_chevron
+
+			modifier = {
+				special_forces_cap = 0.25
+				special_forces_training_time_factor = -0.33
+			}
+		}
+
 		SER_king_of_all_the_serbs = {
 			allowed = {
 				always = yes
@@ -108,7 +127,7 @@ ideas = {
 			picture = generic_crate
 
 			modifier = {
-				production_speed_industrial_complex_factor = 1
+				production_speed_arms_factory_factor = 1
 			}
 		}
 
@@ -202,6 +221,413 @@ ideas = {
 			modifier = {
 				production_speed_bunker_factor = 1
 				expansionist_drift = 0.01
+			}
+		}
+
+		SER_idea_austrian_ports = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_crate
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.15
+			}
+		}
+
+		SER_idea_joint_serb_croat_drills = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_chevron
+
+			modifier = {
+				custom_modifier_tooltip = mountain_training_tt
+			}
+		}
+
+		SER_idea_danube_trade = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_crate
+
+			modifier = {
+				supply_factor = 0.25
+			}
+		}
+
+		SER_idea_danube_trade_partner = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_crate
+
+			targeted_modifier = {
+				tag = SER
+				trade_cost_for_target_factor = -0.5
+			}
+
+			targeted_modifier = {
+				tag = SER
+				trade_cost_for_target_factor = -0.5
+			}
+		}
+
+		SER_idea_economic_subservience = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_crate
+
+			targeted_modifier = {
+				tag = AUS
+				cic_to_target_factor = 0.1
+				# TODO: Should give resource rights from some states to Austria
+			}
+		}
+
+		SER_new_markets = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_crate
+
+			modifier = {
+				trade_opinion_factor = 0.5
+				stability_factor = 0.1
+			}
+		}
+
+		SER_narodna_odbrana = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = narodna_odbrana
+
+			modifier = {
+				decryption = 1
+				recon_factor = 0.2
+				equipment_capture_factor = 0.5
+			}
+		}
+
+		SER_french_arms = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_chevron
+
+			traits = {
+				french_arms_imports
+			}
+		}
+
+		SER_british_arms = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_chevron
+
+			traits = {
+				british_arms_imports
+			}
+		}
+
+		SER_german_arms = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_chevron
+
+			traits = {
+				german_arms_imports
+			}
+		}
+
+		SER_russian_arms = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_chevron
+
+			traits = {
+				russian_arms_imports
+			}
+		}
+
+		SER_relocate_nbs_treasury = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = narodna_odbrana
+
+			modifier = {
+				surrender_limit = 0.15
+			}
+		}
+
+		SER_resurrection_of_serbia = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ser_nacertanije
+
+			modifier = {
+				army_morale_factor = 0.4
+				training_time_factor = -0.33
+			}
+		}
+
+		SER_the_great_retreat_1 = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_chevron
+
+			modifier = {
+				exile_manpower_factor = 0.1
+				supply_combat_penalties_on_core_factor = -0.15
+				winter_attrition_factor = -0.2
+			}
+		}
+
+		SER_the_great_retreat_2 = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_chevron
+
+			modifier = {
+				exile_manpower_factor = 0.2
+				supply_combat_penalties_on_core_factor = -0.3
+				winter_attrition_factor = -0.3
+			}
+		}
+
+		SER_the_great_retreat_3 = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_chevron
+
+			modifier = {
+				exile_manpower_factor = 0.3
+				supply_combat_penalties_on_core_factor = -0.45
+				winter_attrition_factor = -0.4
+			}
+		}
+
+		SER_the_great_retreat_4 = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_chevron
+
+			modifier = {
+				exile_manpower_factor = 0.4
+				supply_combat_penalties_on_core_factor = -0.6
+				winter_attrition_factor = -0.5
+			}
+		}
+
+		SER_the_great_retreat_5 = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_chevron
+
+			modifier = {
+				exile_manpower_factor = 0.5
+				supply_combat_penalties_on_core_factor = -0.75
+				winter_attrition_factor = -0.6
+			}
+		}
+
+		SER_assasin_network = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_chevron
+
+			targeted_modifier = {
+				tag = SER
+				defense_bonus_against = 0.2
+				breakthrough_bonus_against = 0.2
+			}
+		}
+
+		SER_leader_hid_from_assassins = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_propoganda_megaphone
+
+			modifier = {
+				army_morale_factor = -0.5
+			}
+		}
+
+		SER_leader_assassinated = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_propoganda_megaphone
+
+			modifier = {
+				command_power_gain_mult = -0.5
+				army_core_defence_factor = -0.20
+
+				# Should regain lost stability when the idea is removed.
+				stability_weekly = 0.001
 			}
 		}
 	}

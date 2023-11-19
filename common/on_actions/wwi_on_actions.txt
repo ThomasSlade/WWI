@@ -43,6 +43,22 @@ on_actions = {
 				ROOT = { country_event = { id = wwi_austria.9 random_days = 2 } }
 				FROM = { country_event = { id = wwi_austria.9 random_days = 2 } }
 			}
+
+			# Clear partnership ideas that don't make sense if the countries are fighting.
+			if = {
+				limit = {
+					tag = SER
+					FROM = { has_idea = SER_idea_danube_trade_partner }
+				}
+				FROM = { remove_ideas = SER_idea_danube_trade_partner }
+			}
+			if = {
+				limit = {
+					FROM = { tag = SER }
+					has_idea = SER_idea_danube_trade_partner
+				}
+				ROOT = { remove_ideas = SER_idea_danube_trade_partner }
+			}
 		}
 	}
 

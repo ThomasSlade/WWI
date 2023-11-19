@@ -10,3 +10,6 @@
   custom_cost_bolster_serb_vojvodina_3: "$support_equipment$ §Y400§!"
   custom_cost_bolster_serb_vojvodina_3_blocked: "$support_equipment$ §Y400§!"
   custom_cost_bolster_serb_vojvodina_3_tooltip: "It costs $support_equipment$ §Y400§! to take the decision"
+
+  prevent_leader_assassination_prompt: "To prevent the assassination of [ROOT.GetLeader], take one of the following decisions:\n§YCancel the Tour§!\n§YIncrease Security§!"
+  SER_head_of_state_assassination_succeeded: "Has had its leader assassinated by [SER.GetNameWithFlag]"

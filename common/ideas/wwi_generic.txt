@@ -93,7 +93,7 @@ ideas = {
 			}
 		}
 
-		foreign_plane_orders = {
+		air_force_construction = {
 			allowed = {
 				always = no
 			}

@@ -1,0 +1,16 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_focus_narodna_odbrana"
+		texturefile = "gfx/interface/goals/focus_narodna_odbrana.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_concede_the_pig_war"
+		texturefile = "gfx/interface/goals/focus_concede_the_pig_war.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_seek_new_markets"
+		texturefile = "gfx/interface/goals/focus_seek_new_markets.dds"
+	}
+}

@@ -12,8 +12,8 @@ SER_historical = {
 	ai_national_focuses = {
 		# 1911
 		SER_support_the_narodna_odbrana
-		SER_moderate_nationalist_rhetoric
-		SER_french_finance
+		SER_seek_new_markets
+		SER_invite_entente_dignitaries
 		SER_royal_visit_to_paris
 		SER_claim_old_serbia
 
@@ -25,20 +25,52 @@ SER_historical = {
 		SER_war_with_the_ottomans
 
 		# 1913
+		SER_russian_weapon_imports
 		SER_ports_on_the_adriatic
-		SER_french_military_contracts
 		SER_martial_law_in_new_serbia
-		SER_retire_the_may_coup_conspirators
-		SER_build_a_conciliatory_cabinet
+		SER_ressurection_of_serbia
+		SER_french_finance
 
 		# 1914
-		SER_revise_education_budget
-		SER_inflamatory_articles_in_the_pijemont
-		SER_foreign_railway_loans
-		SER_russian_weapon_imports
-		SER_opanci
+		SER_moderate_nationalist_rhetoric
+		SER_retire_the_may_coup_conspirators
+		SER_promote_serb_guerilla_forces
+		SER_the_third_ban
+		SER_french_military_contracts
 
 		# 1915
-		SER_the_third_ban
+		SER_relocate_nbs_treasury
+		SER_mobilise_the_cheta
+		SER_form_tanasko_rajic_regiment
+		SER_the_great_retreat
+		SER_inflamatory_articles_in_the_pijemont
+
+		# 1916
+		SER_build_a_conciliatory_cabinet
+		SER_revise_education_budget
+		SER_modernise_the_serb_infantry
+		SER_educate_engineers
+		SER_foreign_railway_loans
+
+		# 1917
+		SER_rearm_the_vojvodina_serbs
+		SER_pursue_entente_alliance
+		SER_war_with_austria_hungary
+		SER_unite_the_south_slavs
+		SER_order_foreign_planes
+
+		# 1918
+		SER_reclaim_albania
+		SER_french_arms
+		SER_covert_cell_traning
+		SER_settle_territory
+		SER_british_arms
+
+		# 1919
+		SER_french_curriculum
+		SER_foreign_engineering
+		SER_french_curriculum
+		SER_serb_naval_armament
+		SER_expand_the_grand_ecole
 	}
 }

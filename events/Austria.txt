@@ -354,3 +354,117 @@ country_event = {
 		}
 	}
 }
+
+# Serbia asks for treaty port.
+country_event = {
+	id = wwi_austria.12
+	title = wwi_austria.12.t
+	desc = wwi_austria.12.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	# Accept
+	option = {
+		name = wwi_austria.12.a
+
+		ai_chance = {
+			base = 10
+
+			modifier = {
+				factor = 0
+				has_opinion = { target = FROM value < 0 }
+			}
+		}
+
+		var:FROM.serbia_requested_port = { transfer_state_to = FROM }
+		give_military_access = FROM
+		FROM = { country_event = { id = wwi_serbia.17 hours = 1 } }
+		# Todo: Should transfer some agriculture from Serbia to Austria here.
+	}
+
+	# Decline
+	option = {
+		name = wwi_austria.12.b
+
+		ai_chance = {
+			base = 0
+
+			modifier = {
+				add = 30
+				SER = {
+					OR = {
+						controls_state = 208
+						controls_state = 165
+						controls_state = 152
+					}
+				}
+			}
+
+			modifier = {
+				add = 1
+				has_opinion = { target = FROM value < 0 }
+			}
+		}
+
+		FROM = { country_event = { id = wwi_serbia.18 hours = 1 } }
+	}
+}
+
+# Serbia asks for a little bit more Bosnia
+country_event = {
+	id = wwi_austria.13
+	title = wwi_austria.13.t
+	desc = {
+		text = wwi_austria.13.d
+		trigger = {
+			NOT = { has_country_flag = austria_declined_bosnia_renegotation_2 }
+		}
+	}
+	desc = {
+		text = wwi_austria.13.d_second
+		trigger = {
+			has_global_flag = austria_declined_bosnia_renegotation_2
+		}
+	}
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	# Accept
+	option = {
+		name = wwi_austria.13.a
+
+		ai_chance = {
+			base = 1
+			modifier = {
+				add = -1
+				has_opinion = { target = FROM value < -49 }
+			}
+		}
+
+		effect_tooltip = {
+			event_target:requested_bosnia_province = { transfer_state_to = FROM }
+			FROM = { add_ideas = SER_idea_economic_subservience }
+		}
+		
+		from = { country_event = { id = wwi_serbia.20 hours = 1 } }
+	}
+
+	# Decline
+	option = {
+		name = wwi_austria.13.b
+
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 1
+				has_opinion = { target = FROM value < -49 }
+			}
+		}
+		
+		# Setting this means that if Serbia asks for the other province instead, the text of this event reflects it.
+		set_global_flag = austria_declined_bosnia_renegotation_2
+		FROM = { country_event = { id = wwi_serbia.19 hours = 1 } }
+	}
+}

@@ -6,6 +6,7 @@ state={
 		owner = TUR
 		add_core_of = TUR
 		buildings = {
+			industrial_complex = 1
 			infrastructure = 1
 			1066 = {
 				naval_base = 1

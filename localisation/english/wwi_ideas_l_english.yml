@@ -10,6 +10,7 @@
   expansionism_withers_desc: "The chest-beating of revaunchists and irredentists falls on deaf ears in your capital: your people find themselves defending the status quo."
   rail_loans: "Railway Loans"
   rail_loans_desc: "Seeing the great potential of [ROOT.GetDefName], tycoons and capitalists readily shell` money into your railways."
+  mountain_training_tt: "£unit_infantry_icon_small£Infantry and £unit_artillery_brigade_icon_small£Artillery:\n §YMountains§!:\n Attack: §G+20%§!\n Defense: §G+10%§!\n Movement: §G+30%§!\n \n§YHills§!:\n Attack: §G+20%§!\n Defense: §G+10%§!\n Movement: §G+30%§!"
 
   # Austria
   AUS_black_hand_cells: "Black Hand Cells"

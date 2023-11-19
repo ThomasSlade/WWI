@@ -7,8 +7,8 @@ state={
 		add_core_of = AUS
 		add_core_of = SER
 		buildings = {
-			infrastructure = 2
 			industrial_complex = 1
+			infrastructure = 2
 		}
 		victory_points = {4907 15
 		}
