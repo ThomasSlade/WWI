@@ -1,0 +1,39 @@
+HUN_AUSTRIAHUNGARY = {
+	color = rgb { 158 139 133 }
+	color_ui = { 158 139 133 }
+}
+
+SCS_AUSTRIAHUNGARY = {
+	color = rgb { 122 111 113 }
+	color_ui = { 122 111 113 }
+}
+
+GLD_AUSTRIAHUNGARY = {
+	color = rgb { 156 131 126 }
+	color_ui = { 56 131 126 }
+}
+
+ALB_AUSTRIAHUNGARY = {
+	color = rgb { 163 149 142 }
+	color_ui = { 163 149 142 }
+}
+
+AUS_AH = {
+	color = rgb { 148 116 114 }
+	color_ui = { 148 116 114 }
+}
+
+AUS_EMPIRE = {
+	color = rgb { 110 84 25 }
+	color_ui = { 110 84 25 }
+}
+
+AUS_USGA = {
+	color = rgb { 173 171 120 }
+	color_ui = { 173 171 120 }
+}
+
+SER_OBRENOVIC = {
+	color = rgb { 49 56 102 }
+	color_ui = { 49 56 102 }
+}
