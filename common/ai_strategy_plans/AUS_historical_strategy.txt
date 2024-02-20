@@ -1,0 +1,91 @@
+AUS_historical = {
+	name = "Austrian historical plan"
+	desc = "Develops Bosnia, invests in Military, sticks with Germany, and then Franz goes to Sarajevo. Generally plays all sides in the reform tree."
+
+	allowed = {
+		original_tag = AUS
+	}
+	enable = {
+		is_historical_focus_on = yes
+	}
+
+	ai_national_focuses = {
+		# 1911
+		AUS_disenfranchise_croatian_serbs
+		AUS_abolish_bosnian_serfdom
+		AUS_expand_the_military_chancellry
+		AUS_matshenko_memorandum
+		AUS_the_blank_cheque
+
+		# 1912
+		AUS_preempt_albanian_independence
+		AUS_pula_and_cattaro_shipyards
+		AUS_kaisermanover
+		AUS_imperial_visit_to_airshow
+		AUS_general_staff_report
+		
+		# 1913
+		AUS_blockade_fleet
+		AUS_buy_orient_railway_shares
+		AUS_steyr_arms
+		AUS_the_seeflugwesen
+		AUS_suspend_the_bosnian_constitution
+
+		# 1914
+		AUS_challenge_the_1867_compromise
+		AUS_galician_compromise
+		AUS_imperial_visit_to_bosnia
+		AUS_balkanstreitkrafte
+		AUS_the_polish_legion
+
+		# 1915
+		AUS_invest_in_bosnia
+		AUS_replace_statthalters_with_generals
+		AUS_afford_south_slav_press_freedoms
+		AUS_empower_deutscher_nationalverband
+		AUS_summon_the_standschutzen
+
+		# 1916
+		AUS_establish_war_surveilance_office
+		AUS_exchange_ethnic_garrisons
+		AUS_expand_skoda_works
+		AUS_the_polish_legion
+		AUS_oktroi
+
+		# 1917
+		AUS_foster_danube_industry
+		AUS_economic_placations_to_hungary
+		AUS_skoda_guns
+		AUS_ministries_of_welfare_and_food
+		AUS_grant_amnesty_to_dissidents
+
+		# 1918
+		AUS_ruthenian_food_purchasing_agencies
+		AUS_expand_erzberg_mines
+		AUS_kinder_aufs_land
+		AUS_request_national_representatives
+		AUS_enfranchise_cisleithanian_minorities
+
+		# 1919
+		AUS_enfranchise_veterans
+		AUS_universal_suffrage_across_the_empire
+		AUS_united_states_of_greater_austria
+		AUS_minority_universities
+		AUS_skoda_naval_commission
+
+		# 1920
+		AUS_pension_off_inept_officers
+		AUS_fund_burstyns_machine
+		AUS_panzerautomobil_commission
+		AUS_adriatic_fleet
+		AUS_secure_albania
+
+		# 1921
+		AUS_viennese_nepotism
+		AUS_expand_bosnian_railways
+		AUS_austrian_german_economic_union
+		AUS_the_graycoats
+		AUS_submarine_fleet
+		AUS_the_ZAMG
+	}
+}

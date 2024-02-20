@@ -1,0 +1,94 @@
+on_actions = {
+	on_actions = {
+		on_puppet = {
+			effect = {
+				if = {
+					limit = { FROM = { original_tag = AUS } }
+					AUS_mark_ah_puppets = yes
+				}
+			}
+		}
+
+		on_release_as_puppet = {
+			effect = {
+				if = {
+					limit = { FROM = { original_tag = AUS } }
+					AUS_mark_ah_puppets = yes
+				}
+			}
+		}
+
+		on_release_as_free = {
+			effect = {
+				if = {
+					limit = { FROM = { original_tag = AUS } }
+					AUS_clear_ah_puppets = yes
+				}
+			}
+		}
+
+		on_liberate = {
+			effect = {
+				if = {
+					limit = { FROM = { original_tag = AUS } }
+					AUS_clear_ah_puppets = yes
+				}
+			}
+		}
+	}
+
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { original_tag = SER }
+					has_country_flag = partitioning_serbia_with_austria
+				}
+				log = "This is the war in which [THIS.GetName] attempts to partition [FROM.GetName] with [AUS.GetName]."
+				FROM = { country_event = { id = event_AUS_goad_bulgaria_into_war.4 hours = 24 } }
+				clr_country_flag = partitioning_serbia_with_austria
+				set_country_flag = war_will_partition_serbia_with_austria
+			}
+		}
+	}
+
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = SER
+					FROM = { has_country_flag = war_will_partition_serbia_with_austria }
+					AUS = { NOT = { has_war_with = SER } }
+				}
+				log = "[FROM.GetName] has won the war, [THIS.GetName] will now be partitioned with [AUS.GetName]."
+
+				BUL = { clr_country_flag = war_will_partition_serbia_with_austria }
+				news_event = { id = event_AUS_goad_bulgaria_into_war.5 }
+			}
+		}
+	}
+
+	# From is owner country
+	on_unit_leader_created = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { has_idea = AUS_multi_lingual_empire }
+				}
+				add_trait = { trait = multilingual_army }
+			}
+		}
+	}
+
+	on_state_control_changed = {
+		effect = {
+			if = {
+				# When Austria gains a state, check if it's a core of one of their bonus tags for local organisation.
+				# We don't do it for when Austria loses a state, as the dynamic modifier handles that.
+				limit = { original_tag = AUS }
+				log = "Austria gained state '[FROM.FROM.GetName]': checking for local organisation bonuses."
+				AUS_update_ethnicity_local_organisation = yes
+			}
+		}
+	}
+}

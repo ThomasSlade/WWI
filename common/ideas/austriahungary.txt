@@ -1,5 +1,83 @@
 ideas = {
 	country = {
+		AUS_multi_lingual_empire = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_propoganda_megaphone
+
+			modifier = {
+				land_reinforce_rate = -0.5
+				custom_modifier_tooltip = AUS_multi_lingual_empire_tt
+			}
+
+			on_add = {
+				every_unit_leader = {
+					add_trait = { trait = multilingual_army }
+				}
+			}
+
+			on_remove = {
+				every_unit_leader = {
+					remove_trait = { trait = multilingual_army }
+				}
+			}
+		}
+
+		AUS_empire_of_peoples = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_propoganda_megaphone
+
+			modifier = {
+				stability_factor = -0.1
+				mobilization_speed = -0.2
+				army_core_attack_factor = 0.1
+
+				# TODO: Enable this when I upgrade
+				#army_core_defense_factor = 0.2
+				production_speed_arms_factory_factor = 0.1
+				production_speed_infrastructure_factor = 0.3
+			}
+		}
+
+		AUS_empire_without_qualities = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_propoganda_megaphone
+
+			modifier = {
+				army_core_defence_factor = -0.15
+				mobilization_laws_cost_factor = 1
+				economy_cost_factor = 1
+				production_speed_infrastructure_factor = 0.33
+				monthly_population = 0.25
+			}
+		}
+
 		AUS_humiliated_government = {
 			allowed = {
 				always = yes
@@ -73,42 +151,6 @@ ideas = {
 			}
 		}
 
-		AUS_bosnian_landowner_recompence = {
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_foreign_capital
-
-			modifier = {
-				consumer_goods_factor = 0.05
-			}
-		}
-
-		AUS_polish_galician_universities = {
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_research_bonus
-
-			modifier = {
-				research_speed_factor = 0.05
-			}
-		}
-
 		AUS_black_hand_cells = {
 			allowed = {
 				always = yes
@@ -164,17 +206,22 @@ ideas = {
 		}
 
 		### Hungarian Resistance Scale ###
-		AUS_hungarian_resistance_none = {
-			picture = chi_war_of_resistance
-		
+		AUS_hungarian_resistance_0 = {
 			allowed = {
 				always = no
 			}
 
-			removal_cost = -1
-			
-			modifier = {
+			allowed_civil_war = {
+				always = yes
+			}
 
+			removal_cost = -1
+
+			picture = AUS_hungarian_resistance_0
+
+			modifier = {
+				local_resources_factor = -0.0
+				production_lack_of_resource_penalty_factor = 0
 			}
 		}
 
@@ -189,12 +236,11 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = chi_war_of_resistance
+			picture = AUS_hungarian_resistance_1
 
 			modifier = {
-				political_power_gain = -0.05
-				stability_weekly = -0.002
-				war_support_weekly = -0.002
+				local_resources_factor = -0.15
+				production_lack_of_resource_penalty_factor = 0.15
 			}
 		}
 
@@ -209,12 +255,11 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = chi_war_of_resistance2
+			picture = AUS_hungarian_resistance_2
 
 			modifier = {
-				political_power_gain = -0.1
-				stability_weekly = -0.004
-				war_support_weekly = -0.004
+				local_resources_factor = -0.3
+				production_lack_of_resource_penalty_factor = 0.3
 			}
 		}
 
@@ -229,39 +274,737 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = chi_war_of_resistance3
+			picture = AUS_hungarian_resistance_3
 
 			modifier = {
-				political_power_gain = -0.15
-				stability_weekly = -0.006
-				war_support_weekly = -0.006
+				local_resources_factor = -0.45
+				production_lack_of_resource_penalty_factor = 0.45
 			}
 		}
-	}
 
-	political_advisor = {
-		tomas_masaryk = {
-			picture = generic_political_advisor_europe_1
-
+		### Minority Loyalty Scale ###
+		AUS_minority_resistance_0 = {
 			allowed = {
-				original_tag = AUS
+				always = no
 			}
 
-			available = {
-				has_completed_focus = AUS_acknowledge_agram_trials_blunder
+			allowed_civil_war = {
+				always = yes
 			}
 
-			traits = { advocate_of_the_disenfranchised }
+			removal_cost = -1
+
+			picture = AUS_minority_resistance_0
+
+			modifier = {
+				army_attack_factor = -0.0
+				recruitable_population_factor = -0.0
+			}
 		}
 
-		franz_ferdinand = {
-			picture = generic_political_advisor_europe_1
-
+		AUS_minority_resistance_1 = {
 			allowed = {
-				original_tag = AUS
+				always = no
 			}
 
-			traits = { disliked_moderate }
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = AUS_minority_resistance_1
+
+			modifier = {
+				army_attack_factor = -0.1
+				recruitable_population_factor = -0.05
+			}
+		}
+
+		AUS_minority_resistance_2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = AUS_minority_resistance_2
+
+			modifier = {
+				army_attack_factor = -0.2
+				recruitable_population_factor = -0.1
+			}
+		}
+
+		AUS_minority_resistance_3 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = AUS_minority_resistance_3
+
+			modifier = {
+				army_attack_factor = -0.3
+				recruitable_population_factor = -0.2
+			}
+		}
+
+		AUS_balkanstreitkrafte = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				unit_mountaineers_design_cost_factor = -0.5
+				special_forces_min = 8
+			}
+		}
+
+		AUS_austrian_influenced_free_city = {
+			modifier = {
+				cic_to_target_factor = 0.5
+				mic_to_target_factor = 1
+				extra_trade_to_target_factor = 0.5
+			}
+		}
+
+		AUS_italian_influenced_free_city = {
+			modifier = {
+				cic_to_target_factor = 0.5
+				mic_to_target_factor = 1
+				extra_trade_to_target_factor = 0.5
+			}
+		}
+
+		AUS_dissidents_released_expansionist = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				expansionist_drift = -0.02
+			}
+		}
+
+		AUS_dissidents_released_revolutionary = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				revolutionary_drift = -0.02
+			}
+		}
+
+		AUS_dissidents_released_established = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				established_drift = -0.02
+			}
+		}
+
+		AUS_czech_reconciliation = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.5
+				production_factory_efficiency_gain_factor = 0.5
+			}
+		}
+
+		AUS_croat_reconciliation = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.5
+				experience_gain_navy_factor = 1
+			}
+		}
+
+		AUS_oktroi = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				mobilization_laws_cost_factor = -0.33
+				economy_cost_factor = -0.33
+				trade_laws_cost_factor = -0.33
+				command_power_gain_mult = 0.33
+				production_speed_industrial_complex_factor = 0.2
+			}
+		}
+
+		AUS_trade_for_bukovina = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = AUS
+				trade_cost_for_target_factor = -0.5
+			}
+		}
+		
+		AUS_austrian_german_common_market = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+				has_war_with = GER
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_cost_industrial_complex_factor  = -0.25
+				local_resources_factor = 0.2
+			}
+
+			targeted_modifier = {
+				tag = GER
+				trade_cost_for_target_factor = -0.5
+			}
+		}
+
+		GER_austrian_german_common_market = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+				has_war_with = AUS
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_cost_industrial_complex_factor = -0.25
+				local_resources_factor = 0.2
+			}
+
+			targeted_modifier = {
+				tag = AUS
+				trade_cost_for_target_factor = -0.5
+			}
+		}
+
+		AUS_economic_placations_to_hungary = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+				has_war_with = HUN
+			}
+
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = HUN
+				cic_to_target_factor = 0.25
+			}
+		}
+
+		AUS_germanising_regime = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				recruitable_population_factor = -0.15
+				war_support_factor = 0.15
+				production_speed_infrastructure_factor = 0.5
+				production_speed_arms_factory_factor = 0.25
+			}
+		}
+
+		AUS_endorsed_magyarisation = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+				has_war_with = HUN
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.2
+				research_speed_factor = -0.05
+			}
+		}
+
+		AUS_customs_duty_lifted = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+				OR = {
+					has_war_with = AUS
+					NOT = { is_subject_of = AUS }
+				}
+			}
+
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = AUS
+				extra_trade_to_target_factor = 0.1
+			}
+		}
+
+		AUS_army_slavic = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+				OR = {
+					has_war_with = AUS
+					# Cancelled if you're not Austria, and are no longer a subject of Austria.
+					AND = {
+						NOT = { original_tag = AUS }
+						NOT = { is_subject_of = AUS }
+					}
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				mobilization_speed = 0.33
+				recruitable_population = 0.002
+			}
+		}
+
+		AUS_blank_cheque = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+				NOT = { is_in_faction_with = GER }
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				offensive_war_stability_factor = 0.2
+				guarantee_cost = -0.5
+			}
+		}
+
+		AUS_strengthen_the_ottomans = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+				has_war_with = AUS
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.33
+				experience_gain_army = 0.5
+			}
+		}
+
+		AUS_anglo_austrian_naval_treaty = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+				OR = {
+					has_war_with = AUS
+					has_war_with = ENG
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				convoy_escort_efficiency = 0.33
+				navy_max_range_factor = 0.25
+				spotting_chance = 0.33
+			}
+		}
+
+		idea_AUS_influenced_by_austria = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+				OR = {
+					has_war_with = AUS
+					is_puppet = no
+					is_subject_of = AUS
+				}
+			}
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = AUS
+				mic_to_target_factor = 0.5
+			}
+		}
+
+		idea_AUS_loan_for_south_german_autonomy = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+				has_war_with = GER
+			}
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+				consumer_goods_factor = 0.1
+				production_factory_efficiency_gain_factor = -0.5
+			}
+		}
+
+		idea_AUS_received_loan_for_south_german_autonomy = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+				has_war_with = AUS
+			}
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+				production_speed_industrial_complex_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.33
+			}
+		}
+
+		idea_AUS_south_german_placation = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+				production_speed_industrial_complex_factor = -0.2
+			}
+		}
+
+		idea_AUS_import_romanian_grain = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+				has_war_with = AUS
+			}
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+				# See if country_resource modifier works in updated game.
+				tag = AUS
+				trade_cost_for_target_factor = -0.5
+			}
+		}
+
+		idea_AUS_assisting_bulgarian_mobilisation = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+				has_war_with = AUS
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				training_time_army_factor = -0.5
+			}
+		}
+
+		idea_AUS_orient_railway_investment = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_rail_way_factor = 0.33
+				production_speed_infrastructure_factor = 0.25
+			}
+		}
+
+		idea_AUS_novi_pazar_line = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_industrial_complex_factor = 0.25
+				local_resources = 0.1
+			}
+		}
+
+		idea_AUS_pension_off_inept_officers = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				training_time_factor = 0.5
+				max_training = -0.3
+			}
+		}
+
+		idea_AUS_ships_for_industry = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+				NOT = { is_puppet_of = AUS }
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+			
+			targeted_modifier = {
+				tag = AUS
+				cic_to_target_factor = 0.2
+				mic_to_target_factor = 0.2
+			}
+		}
+
+		idea_AUS_war_surveilance_office = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+				has_war = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				weekly_casualties_war_support = 0.005
+				weekly_convoys_war_support = 0.005
+				drift_defence_factor = 0.33
+			}
+		}
+
+		idea_AUS_statthalters_replaced_by_generals = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+				has_war = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conversion_cost_civ_to_mil_factor = -0.4
+				non_core_manpower = 0.5
+				resistance_growth = -0.6
+			}
+		}
+
+		idea_AUS_zamg = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				navy_weather_penalty = -0.33
+				air_weather_penalty = -0.33
+				air_accidents_factor = -0.33
+			}
 		}
 	}
 }
