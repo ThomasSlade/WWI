@@ -16,6 +16,10 @@ AUS = {
 	color = rgb { 205 189 184 }
 	color_ui = rgb { 205 189 184 }
 }
+HUN = {
+	color = rgb { 99 48 19 }
+	color_ui = rgb { 99 48 19 }
+}
 TUR = {
 	color = rgb { 71 4 19 }
 	color_ui = rgb { 71 4 19 }
@@ -41,12 +45,12 @@ ROM = {
 	color_ui = rgb { 127 130 30 }
 }
 BUL = {
-	color = rgb { 3 71 59 }
-	color_ui = rgb { 3 71 59 }
-}
-MNT = {
 	color = rgb { 45 142 124 }
 	color_ui = rgb { 45 142 124 }
+}
+MNT = {
+	color = rgb { 86 96 133 }
+	color_ui = rgb { 86 96 133 }
 }
 GRE = {
 	color = rgb { 106 168 172 }
@@ -75,4 +79,56 @@ SCS = {
 MAC = {
 	color = rgb { 176 89 72 }
 	color_ui = rgb { 176 89 72 }
+}
+TRS = {
+	color = rgb { 102 14 22 }
+	color_ui = rgb { 102 14 22 }
+}
+ZAR = {
+	color = rgb { 11 33 56 }
+	color_ui = rgb { 11 33 56 }
+}
+TRE = {
+	color = rgb { 66 25 52 }
+	color_ui = rgb { 66 25 52 }
+}
+BAD = {
+	color = rgb { 128 120 70 }
+	color_ui = rgb { 128 120 70 }
+}
+NAS = {
+	color = rgb { 40 38 74 }
+	color_ui = rgb { 40 38 74 }
+}
+HES = {
+	color = rgb { 194 23 8 }
+	color_ui = rgb { 194 23 8 }
+}
+HKL = {
+	color = rgb { 186 168 166 }
+	color_ui = rgb { 186 168 166 }
+}
+THU = {
+	color = rgb { 128 166 156 }
+	color_ui = rgb { 128 166 156 }
+}
+ELR = {
+	color = rgb { 130 106 40 }
+	color_ui = rgb { 130 106 40 }
+}
+ELA = {
+	color = rgb { 135 103 118 }
+	color_ui = rgb { 135 103 118 }
+}
+BAY = {
+	color = rgb { 50 84 117 }
+	color_ui = rgb { 50 84 117 }
+}
+WUR = {
+	color = rgb { 41 64 24 }
+	color_ui = rgb { 41 64 24 }
+}
+SAX = {
+	color = rgb { 49 99 45 }
+	color_ui = rgb { 9 99 45 }
 }
