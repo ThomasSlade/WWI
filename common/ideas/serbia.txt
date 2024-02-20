@@ -296,11 +296,6 @@ ideas = {
 				tag = SER
 				trade_cost_for_target_factor = -0.5
 			}
-
-			targeted_modifier = {
-				tag = SER
-				trade_cost_for_target_factor = -0.5
-			}
 		}
 
 		SER_idea_economic_subservience = {
@@ -353,7 +348,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = narodna_odbrana
+			picture = aus_narodna_odbrana
 
 			modifier = {
 				decryption = 1
@@ -628,6 +623,61 @@ ideas = {
 
 				# Should regain lost stability when the idea is removed.
 				stability_weekly = 0.001
+			}
+		}
+
+
+		SER_lausanne_established = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_propoganda_megaphone
+
+			modifier = {
+				expansionist_drift = 0.04
+			}
+		}
+
+		SER_lausanne_expansionist = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_propoganda_megaphone
+
+			modifier = {
+				expansionist_drift = 0.04
+			}
+		}
+
+		SER_lausanne_revolutionary = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_propoganda_megaphone
+
+			modifier = {
+				expansionist_drift = 0.04
 			}
 		}
 	}

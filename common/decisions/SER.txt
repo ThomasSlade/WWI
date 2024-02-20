@@ -602,7 +602,6 @@ SER_the_great_retreat = {
 }
 
 SER_assassinate_head_of_state = {
-
 	SER_prepare_network = {
 		days_remove = 30
 
@@ -645,7 +644,7 @@ SER_assassinate_head_of_state = {
 		days_remove = 30 # Should always equal the timer on SER_prevent_assassination_mission
 
 		target_array = neighbors
-		target_Array = enemies
+		target_array = enemies
 
 		available = {
 			has_army_experience > 100
@@ -744,6 +743,79 @@ SER_assassin_plot_against_us = {
 				country_event = wwi_serbia.25
 				clr_country_flag = SER_assassin_plot_against_us
 				set_country_flag = SER_head_of_state_assassination_succeeded
+			}
+		}
+	}
+}
+
+SER_publish_lausanne_investigation = {
+	SER_publish_lausanne_investigation_decision = {
+		icon = eng_propaganda_campaigns
+		cost = 50
+		fire_only_once = yes
+
+		target_array = global.countries
+
+		available = {
+			NOT = { has_war_with = FROM }
+			NOT = { is_in_faction_with = FROM }
+		}
+
+		complete_effect = {
+
+			FROM = {
+				SER_publish_lausanne_investigation_effect = yes
+				
+				save_event_target_as = swayed_by_lausanne_investigation
+				country_event = { id = wwi_serbia.28 hours = 1 }
+				hidden_effect = {
+					ROOT = {
+						every_enemy_country = {
+							country_event = { id = wwi_serbia.29 hours = 1 }
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+SER_bombard_kotor = {
+	SER_bombard_kotor = {
+		icon = ger_military_buildup
+		days_remove = 180
+
+		available = {
+			has_equipment = { artillery_equipment > 99 }
+			controls_state = 164
+			208 = {
+				controller = {
+					has_war_with = ROOT
+				}
+			}
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = -100
+			}
+			SER_bombard_kotor = yes
+			208 = {
+				controller = {
+					country_event = { id = wwi_serbia.30 hours = 1 }
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				add = 1
+				stockpile_ratio = {
+				    archetype = artillery_equipment
+				    ratio > 0.25
+				}
 			}
 		}
 	}
