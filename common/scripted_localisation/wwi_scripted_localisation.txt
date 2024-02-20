@@ -1,0 +1,186 @@
+defined_text = {
+	name = GetHungarianRegionName
+	text = {
+		trigger = { state = 141 }
+		localization_key = AUS_hungarian_region_name_slovakia
+	}
+	text = {
+		trigger = { state = 190 }
+		localization_key = AUS_hungarian_region_name_carpathian_ruthenia
+	}
+	text = {
+		trigger = { state = 228 }
+		localization_key = AUS_hungarian_region_name_transdanubia
+	}
+	text = {
+		trigger = { state = 189 }
+		localization_key = AUS_hungarian_region_name_central_hungary
+	}
+	text = {
+		trigger = { state = 223 }
+		localization_key = AUS_hungarian_region_name_east_hungary
+	}
+	text = {
+		trigger = { state = 175 }
+		localization_key = AUS_hungarian_region_name_transylvania
+	}
+	text = {
+		trigger = { state = 234 }
+		localization_key = AUS_hungarian_region_name_croatia
+	}
+	text = {
+		trigger = { state = 189 }
+		localization_key = AUS_hungarian_region_name_central_hungary
+	}
+	text = {
+		trigger = { state = 232 }
+		localization_key = AUS_hungarian_region_name_vojvodina
+	}
+	text = {
+		localization_key = AUS_hungarian_region_name_unspecified
+	}
+}
+
+defined_text = {
+	name = GetRivalEthnicityAdjective
+	text = {
+		trigger = { tag = SER }
+		localization_key = [CRO.GetAdjective]
+	}
+	text = {
+		trigger = { tag = ITA }
+		localization_key = [SLV.GetAdjective]
+	}
+	text = {
+		trigger = { tag = CZE }
+		localization_key = [AUS.GetAdjective]
+	}
+	text = {
+		trigger = { tag = GLD }
+		localization_key = [SLO.GetAdjective]
+	}
+	text = {
+		trigger = { tag = UKR }
+		localization_key = [GLD.GetAdjective]
+	}
+	text = {
+		trigger = { tag = ROM }
+		localization_key = [HUN.GetAdjective]
+	}
+	text = {
+		trigger = { tag = HUN }
+		localization_key = [SER.GetAdjective]
+	}
+	text = {
+		trigger = { tag = BUL }
+		localization_key = [ROM.GetAdjective]
+	}
+	text = {
+		trigger = { tag = ALB }
+		localization_key = [ZAR.GetAdjective]
+	}
+	text = {
+		trigger = { tag = SLV }
+		localization_key = [TRE.GetAdjective]
+	}
+	text = {
+		trigger = { tag = CRO }
+		localization_key = [TRS.GetAdjective]
+	}
+	text = {
+		trigger = { tag = MNT }
+		localization_key = [BOS.GetAdjective]
+	}
+}
+
+defined_text = {
+	name = GetRiverNeighborsList
+	text = {
+		trigger = { state = 227 }
+		localization_key = AUS_has_adjacent_river_ports_227
+	}
+	text = {
+		trigger = { state = 201 }
+		localization_key = AUS_has_adjacent_river_ports_201
+	}
+	text = {
+		trigger = { state = 141 }
+		localization_key = AUS_has_adjacent_river_ports_141
+	}
+	text = {
+		trigger = { state = 173 }
+		localization_key = AUS_has_adjacent_river_ports_173
+	}
+	text = {
+		trigger = { state = 176 }
+		localization_key = AUS_has_adjacent_river_ports_176
+	}
+	text = {
+		trigger = { state = 189 }
+		localization_key = AUS_has_adjacent_river_ports_189
+	}
+	text = {
+		trigger = { state = 182 }
+		localization_key = AUS_has_adjacent_river_ports_182
+	}
+	text = {
+		trigger = { state = 204 }
+		localization_key = AUS_has_adjacent_river_ports_204
+	}
+	text = {
+		trigger = { state = 213 }
+		localization_key = AUS_has_adjacent_river_ports_213
+	}
+	text = {
+		trigger = { state = 171 }
+		localization_key = AUS_has_adjacent_river_ports_171
+	}
+	text = {
+		trigger = { state = 125 }
+		localization_key = AUS_has_adjacent_river_ports_125
+	}
+	text = {
+		trigger = { state = 232 }
+		localization_key = AUS_has_adjacent_river_ports_232
+	}
+	text = {
+		trigger = { state = 205 }
+		localization_key = AUS_has_adjacent_river_ports_205
+	}
+	text = {
+		trigger = { state = 180 }
+		localization_key = AUS_has_adjacent_river_ports_180
+	}
+	text = {
+		trigger = { state = 223 }
+		localization_key = AUS_has_adjacent_river_ports_223
+	}
+	text = {
+		trigger = { state = 178 }
+		localization_key = AUS_has_adjacent_river_ports_178
+	}
+	text = {
+		trigger = { state = 214 }
+		localization_key = AUS_has_adjacent_river_ports_214
+	}
+	text = {
+		trigger = { state = 172 }
+		localization_key = AUS_has_adjacent_river_ports_172
+	}
+	text = {
+		trigger = { state = 228 }
+		localization_key = AUS_has_adjacent_river_ports_228
+	}
+	text = {
+		trigger = { state = 146 }
+		localization_key = AUS_has_adjacent_river_ports_146
+	}
+	text = {
+		trigger = { state = 224 }
+		localization_key = AUS_has_adjacent_river_ports_224
+	}
+	text = {
+		trigger = { state = 156 }
+		localization_key = AUS_has_adjacent_river_ports_156
+	}
+}

@@ -468,3 +468,2554 @@ country_event = {
 		FROM = { country_event = { id = wwi_serbia.19 hours = 1 } }
 	}
 }
+
+# Austria offers Italy territory for allegiance
+country_event = {
+	id = wwi_austria.14
+	title = wwi_austria.14.t
+	desc = wwi_austria.14.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	# Accept
+	option = {
+		name = wwi_austria.14.a
+
+		ai_chance = {
+			base = 1
+		}
+
+		set_global_flag = AUS_free_ports_released
+
+		diplomatic_relation = {
+			country = FROM
+			relation = non_aggression_pact
+			active = yes
+		}
+		add_opinion_modifier = { target = FROM modifier = AUS_purchased_italian_neutrality }
+		transfer_state = 231
+		unlock_decision_category_tooltip = AUS_influence_adriatic_territory
+
+		FROM = {
+			add_opinion_modifier = { target = ITA modifier = AUS_purchased_italian_neutrality }
+			release = ZAR
+			release = TRS
+			unlock_decision_category_tooltip = AUS_influence_adriatic_territory
+
+			country_event = { id = wwi_austria.15 hours = 1 }
+		}
+
+		hidden_effect = {
+			AUS_pick_random_priority_city_state = yes
+			FROM = { AUS_pick_random_priority_city_state = yes }
+		}
+	}
+
+	# Decline
+	option = {
+		name = wwi_austria.14.b
+
+		ai_chance = {
+			base = 0
+		}
+
+		FROM = { country_event = { id = wwi_austria.16 hours = 1 } }
+	}
+}
+
+# Tell Austria that Italy accepted free city proposal
+country_event = {
+	id = wwi_austria.15
+	title = wwi_austria.15.t
+	desc = wwi_austria.15.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = wwi_austria.15.a
+
+		effect_tooltip = {
+			add_opinion_modifier = { target = ITA modifier = AUS_purchased_italian_neutrality }
+			release = ZAR
+			release = TRS
+			unlock_decision_category_tooltip = AUS_influence_adriatic_territory
+
+			ITA = {
+				diplomatic_relation = {
+					country = ROOT
+					relation = non_aggression_pact
+					active = yes
+				}
+				add_opinion_modifier = { target = ROOT modifier = AUS_purchased_italian_neutrality }
+				transfer_state = 231
+				unlock_decision_category_tooltip = AUS_influence_adriatic_territory
+			}
+		}
+	}
+}
+
+# Tell Austria that Italy declined free city proposal
+country_event = {
+	id = wwi_austria.16
+	title = wwi_austria.16.t
+	desc = wwi_austria.16.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = wwi_austria.16.a
+	}
+}
+
+# Austria or Italy influenced a free city
+country_event = {
+	id = wwi_austria.17
+	title = wwi_austria.17.t
+	desc = {
+		text = wwi_austria.17.d_increase_of_enemy_influence
+		trigger = {
+			# This idea means that the enemy country has influenced the city to their favour.
+			event_target:influenced_free_city = {
+				OR = {
+					has_idea = AUS_austrian_influenced_free_city
+					has_idea = AUS_italian_influenced_free_city
+				}
+			}
+		}
+	}
+	desc = {
+		# Otherwise, the city has become neutral.
+		text = wwi_austria.17.d_increase_of_enemy_influence
+	}
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = wwi_austria.17.a
+
+		effect_tooltip = {
+			event_target:influenced_free_city = { AUS_sway_free_city_tt = yes }
+		}
+	}
+}
+
+# Austria or Italy annexed a free city
+country_event = {
+	id = wwi_austria.18
+	title = wwi_austria.18.t
+	desc = wwi_austria.18.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = wwi_austria.18.a
+
+		effect_tooltip = {
+			FROM = {
+				annex_country = { target = event_target:influenced_free_city transfer_troops = no }
+			}
+		}
+	}
+}
+
+# United States of Greater Austria is formed
+news_event = {
+	id = wwi_austria.19
+	title = wwi_austria.19.t
+	desc = wwi_austria.19.d
+	picture = GFX_news_event_001
+
+	is_triggered_only = yes
+	major = yes
+
+	# Austria
+	option = {
+		name = wwi_austria.19.a
+
+		trigger = {
+			original_tag = AUS
+		}
+	}
+
+	# Hungary
+	option = {
+		name = wwi_austria.19.d
+		effect_tooltip = {
+			FROM = { AUS_form_united_states_of_greater_austria = yes }
+		}
+
+		trigger = {
+			original_tag = HUN
+		}
+	}
+
+	# Angry
+	option = {
+		name = wwi_austria.19.c
+		effect_tooltip = {
+			FROM = { AUS_form_united_states_of_greater_austria = yes }
+		}
+
+		trigger = {
+			NOT = { original_tag = AUS }
+			NOT = { original_tag = HUN }
+			OR = {
+				has_opinion = {
+					target = FROM
+					value < -49
+				}
+				has_war_with = FROM
+			}
+		}
+	}
+
+	# Indifferent
+	option = {
+		name = wwi_austria.19.b
+		effect_tooltip = {
+			FROM = { AUS_form_united_states_of_greater_austria = yes }
+		}
+
+		trigger = {
+			NOT = { original_tag = AUS }
+			NOT = { original_tag = HUN }
+			AND = {
+				has_opinion = {
+					target = FROM
+					value > -50
+				}
+				NOT = { has_war_with = FROM }
+			}
+		}
+	}
+}
+
+# Releasing Croatia as a trialist kingdom
+country_event = {
+	id = wwi_austria.20
+	title = wwi_austria.20.t
+	desc = wwi_austria.trialist_reform_d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = wwi_austria.20.a
+
+		effect_tooltip = {
+			release_puppet_on_controlled = SCS
+		}
+	}
+}
+
+# Releasing Poland as a trialist kingdom
+country_event = {
+	id = wwi_austria.21
+	title = wwi_austria.21.t
+	desc = wwi_austria.trialist_reform_d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = trialist_reform_a
+
+		effect_tooltip = {
+			release_puppet_on_controlled = GLD
+		}
+	}
+}
+
+# Get Littoral back from SCS in exchange for Serbian land
+country_event = {
+	id = wwi_austria.22
+	title = wwi_austria.22.t
+	desc = wwi_austria.22.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = wwi_austria.22.a
+
+		effect_tooltip = {
+			AUS = {
+				AUS_trade_serbia_montenegro_for_littoral = yes
+			}
+		}
+
+		FROM = { country_event = { id = wwi_austria.23 hours = 1 } }
+	}
+}
+
+# Austria hears about SCS giving back Littoral.
+country_event = {
+	id = wwi_austria.23
+	title = wwi_austria.23.t
+	desc = wwi_austria.23.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = wwi_austria.23.a
+
+		effect_tooltip = {
+			AUS_trade_serbia_montenegro_for_littoral = yes
+		}
+	}
+}
+
+# Tell Hungary about Austrian territory trade.
+country_event = {
+	id = wwi_austria.24
+	title = {
+		text = wwi_austria.23.t_croatia
+		trigger = { FROM = { check_variable = { territory_negotiation_demand = 0 } } }
+	}
+	title = {
+		text = wwi_austria.23.t_transylvania
+		trigger = { FROM = { check_variable = { territory_negotiation_demand = 1 } } }
+	}
+	desc = {
+		text = wwi_austria.23.d_croatia_serbia
+		trigger = { FROM = { check_variable = { territory_negotiation_demand = 0 } check_variable = { territory_negotiation_offer = 0 } } }
+	}
+	desc = {
+		text = wwi_austria.23.d_croatia_wallachia
+		trigger = { FROM = { check_variable = { territory_negotiation_demand = 0 } check_variable = { territory_negotiation_offer = 1 } } }
+	}
+	desc = {
+		text = wwi_austria.23.d_croatia_moldovia
+		trigger = { FROM = { check_variable = { territory_negotiation_demand = 0 } check_variable = { territory_negotiation_offer = 2 } } }
+	}
+	desc = {
+		text = wwi_austria.23.d_croatia_ruthenia
+		trigger = { FROM = { check_variable = { territory_negotiation_demand = 0 } check_variable = { territory_negotiation_offer = 3 } } }
+	}
+	desc = {
+		text = wwi_austria.23.d_croatia_poland
+		trigger = { FROM = { check_variable = { territory_negotiation_demand = 0 } check_variable = { territory_negotiation_offer = 4 } } }
+	}
+	desc = {
+		text = wwi_austria.23.d_transylvania_serbia
+		trigger = { FROM = { check_variable = { territory_negotiation_demand = 1 } check_variable = { territory_negotiation_offer = 0 } } }
+	}
+	desc = {
+		text = wwi_austria.23.d_transylvania_wallachia
+		trigger = { FROM = { check_variable = { territory_negotiation_demand = 1 } check_variable = { territory_negotiation_offer = 1 } } }
+	}
+	desc = {
+		text = wwi_austria.23.d_transylvania_moldovia
+		trigger = { FROM = { check_variable = { territory_negotiation_demand = 1 } check_variable = { territory_negotiation_offer = 2 } } }
+	}
+	desc = {
+		text = wwi_austria.23.d_transylvania_ruthenia
+		trigger = { FROM = { check_variable = { territory_negotiation_demand = 1 } check_variable = { territory_negotiation_offer = 3 } } }
+	}
+	desc = {
+		text = wwi_austria.23.d_transylvania_poland
+		trigger = { FROM = { check_variable = { territory_negotiation_demand = 1 } check_variable = { territory_negotiation_offer = 4 } } }
+	}
+
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = wwi_austria.23.a
+
+		FROM = {
+			clear_variable = territory_negotiation_demand
+			clear_variable = territory_negotiation_offer
+		}
+	}
+}
+
+# News event about trialist reform.
+news_event = {
+	id = wwi_austria.25
+	title = {
+		text = wwi_austria.25.t_croatia
+		trigger = {
+			FROM = { has_completed_focus = AUS_croatian_trialism }
+		}
+	}
+	title = {
+		text = wwi_austria.25.t_poland
+		trigger = {
+			FROM = { has_completed_focus = AUS_polish_trialism }
+		}
+	}
+	desc = {
+		text = wwi_austria.25.d_croatia
+		trigger = {
+			FROM = { has_completed_focus = AUS_croatian_trialism }
+		}
+	}
+	desc = {
+		text = wwi_austria.25.d_poland
+		trigger = {
+			FROM = { has_completed_focus = AUS_polish_trialism }
+		}
+	}
+	picture = GFX_news_event_001
+
+	is_triggered_only = yes
+	major = yes
+
+	# Austria
+	option = {
+		name = wwi_austria.25.a
+
+		trigger = {
+			original_tag = AUS
+		}
+	}
+
+	# Hungary
+	option = {
+		name = wwi_austria.25.b
+
+		trigger = {
+			original_tag = HUN
+		}
+	}
+
+	# Indifferent
+	option = {
+		name = wwi_austria.25.c
+
+		trigger = {
+			NOT = { original_tag = AUS }
+			NOT = { original_tag = HUN }
+			AND = {
+				has_opinion = {
+					target = FROM
+					value > -50
+				}
+				NOT = { has_war_with = FROM }
+			}
+		}
+	}
+
+	# Angry
+	option = {
+		name = wwi_austria.25.d
+
+		trigger = {
+			NOT = { original_tag = AUS }
+			NOT = { original_tag = HUN }
+			OR = {
+				has_opinion = {
+					target = FROM
+					value < -49
+				}
+				has_war_with = FROM
+			}
+		}
+	}
+}
+
+# Get offered Bukovina
+country_event = {
+	id = wwi_austria.27
+	title = wwi_austria.27.t
+	desc = wwi_austria.27.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	
+	option = {
+		name = wwi_austria.27.a
+		ai_chance = { base = 1 }
+
+		transfer_state = 236
+		add_timed_idea = { idea = AUS_trade_for_bukovina days = 730 }
+		add_opinion_modifier = {
+			target = FROM
+			modifier = AUS_received_bukovina
+		}
+		FROM = {
+			add_opinion_modifier = {
+				target = PREV
+				modifier = AUS_gave_bukovina
+			}
+		}
+	}
+
+	option = {
+		name = wwi_austria.27.b
+		ai_chance = { base = 0 }
+	}
+}
+
+# Tell Hungary you're taking their land
+country_event = {
+	id = wwi_austria.28
+	title = wwi_austria.28.t
+	desc = wwi_austria.28.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wwi_austria.28.a
+	}
+}
+
+# Tell Hungary they're getting annexed
+country_event = {
+	id = wwi_austria.29
+	title = wwi_austria.29.t
+	desc = wwi_austria.29.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wwi_austria.29.a
+		custom_effect_tooltip = GAME_OVER_TT
+		FROM = {
+			annex_country = {
+				target = HUN
+				transfer_troops = yes
+			}
+		}
+	}
+}
+
+# Tell Hungary you're taking their land (via referendum)
+country_event = {
+	id = wwi_austria.30
+	title = wwi_austria.30.t
+	desc = wwi_austria.30.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wwi_austria.30.a
+	}
+}
+
+# Tell Hungary they're willingily uniting with Austria to get a cool new flag
+country_event = {
+	id = wwi_austria.31
+	title = wwi_austria.31.t
+	desc = wwi_austria.31.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wwi_austria.31.a
+		custom_effect_tooltip = GAME_OVER_TT
+		FROM = {
+			annex_country = {
+				target = HUN
+				transfer_troops = yes
+			}
+		}
+		hidden_effect = {
+			FROM = { news_event = { id = wwi_austria.32 days = 1 } }
+		}
+	}
+}
+
+# News event about uniting of Austria-Hungary.
+news_event = {
+	id = wwi_austria.32
+	title = wwi_austria.32.t
+	desc = wwi_austria.32.d
+	picture = GFX_news_event_001
+
+	is_triggered_only = yes
+	major = yes
+
+	show_major = {
+		# Hungary gets a more personal event.
+		NOT = { tag = HUN }
+	}
+
+	# Austria
+	option = {
+		name = wwi_austria.32.a
+
+		trigger = {
+			original_tag = AUS
+		}
+	}
+
+	# Indifferent
+	option = {
+		name = wwi_austria.32.b
+
+		trigger = {
+			NOT = { original_tag = AUS }
+			AND = {
+				has_opinion = {
+					target = FROM
+					value > -50
+				}
+				NOT = { has_war_with = FROM }
+			}
+		}
+	}
+
+	# Angry
+	option = {
+		name = wwi_austria.32.c
+
+		trigger = {
+			NOT = { original_tag = AUS }
+			OR = {
+				has_opinion = {
+					target = FROM
+					value < -49
+				}
+				has_war_with = FROM
+			}
+		}
+	}
+}
+
+# News event about forming the Austrian Empire.
+news_event = {
+	id = wwi_austria.33
+	title = wwi_austria.33.t
+	desc = wwi_austria.33.d
+	picture = GFX_news_event_001
+
+	is_triggered_only = yes
+	major = yes
+
+	# Austria
+	option = {
+		name = wwi_austria.33.a
+
+		trigger = {
+			original_tag = AUS
+		}
+	}
+
+	# Supportive
+	option = {
+		name = wwi_austria.33.b
+
+		trigger = {
+			NOT = { original_tag = AUS }
+			AND = {
+				has_opinion = {
+					target = FROM
+					value > 50
+				}
+				NOT = { has_war_with = FROM }
+			}
+		}
+	}
+
+	# Apprehensive
+	option = {
+		name = wwi_austria.33.c
+
+		trigger = {
+			NOT = { original_tag = AUS }
+			AND = {
+				has_opinion = {
+					target = FROM
+					value > -50
+				}
+				NOT = { has_war_with = FROM }
+			}
+		}
+	}
+
+	# Angry
+	option = {
+		name = wwi_austria.33.d
+
+		trigger = {
+			NOT = { original_tag = AUS }
+			OR = {
+				has_opinion = {
+					target = FROM
+					value < -49
+				}
+				has_war_with = FROM
+			}
+		}
+	}
+}
+
+# Tell Germany about the blank cheque.
+country_event = {
+	id = wwi_austria.34
+	title = wwi_austria.34.t
+	desc = wwi_austria.34.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wwi_austria.34.a
+		ai_chance = { factor = 100 }
+		FROM = { country_event = { id = wwi_austria.35 hours = 1 } }
+		effect_tooltip = {
+			FROM = { add_ideas = AUS_blank_cheque }
+			add_opinion_modifier = {
+				target = FROM
+				modifier = AUS_blank_cheque_accepted
+			}
+			reverse_add_opinion_modifier = {
+			    target = FROM
+			    modifier = AUS_blank_cheque_accepted
+			}
+		}
+	}
+
+	option = {
+		name = wwi_austria.34.b
+		ai_chance = { factor = 0 }
+		FROM = { country_event = { id = wwi_austria.36 hours = 1 } }
+		effect_tooltip = {
+			reverse_add_opinion_modifier = {
+				target = FROM
+				modifier = AUS_blank_cheque_declined
+			}
+		}
+	}
+}
+
+# Tell Austria Germany accepts.
+country_event = {
+	id = wwi_austria.35
+	title = wwi_austria.35.t
+	desc = wwi_austria.35.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wwi_austria.35.a
+		add_ideas = AUS_blank_cheque
+		add_opinion_modifier = {
+			target = FROM
+			modifier = AUS_blank_cheque_accepted
+		}
+		reverse_add_opinion_modifier = {
+		    target = FROM
+		    modifier = AUS_blank_cheque_accepted
+		}
+	}
+}
+
+# Tell Austria Germany declines.
+country_event = {
+	id = wwi_austria.36
+	title = wwi_austria.36.t
+	desc = wwi_austria.36.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wwi_austria.36.a
+		add_opinion_modifier = {
+			target = FROM
+			modifier = AUS_blank_cheque_declined
+		}
+	}
+}
+
+# Albania becomes independent.
+country_event = {
+	id = wwi_austria.37
+	title = wwi_austria.37.t
+	desc = wwi_austria.37.d
+	picture = GFX_report_event_german_speech
+
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		AUS_albanian_independence_will_happen = yes
+	}
+
+	immediate = {
+		release = ALB
+		every_country = {
+			limit = {
+				OR = {
+					capital_scope = { is_in_balkans = yes }
+					original_tag = AUS
+					original_tag = TUR
+				}
+			}
+			country_event = { id = wwi_austria.38 hours = 1 }
+		}
+	}
+}
+
+# Tell everyone Albania is independent.
+country_event = {
+	id = wwi_austria.38
+	title = wwi_austria.38.t
+	desc = wwi_austria.38.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Austria rubs hands menacingly
+	option = {
+		name = wwi_austria.38.a
+		trigger = {
+			tag = AUS
+		}
+	}
+
+	# Turkey is upset
+	option = {
+		name = wwi_austria.38.b
+		trigger = {
+			tag = TUR
+		}
+	}
+
+	# Indifferent
+	option = {
+		name = wwi_austria.38.c
+		trigger = {
+			NOT = { tag = AUS }
+			NOT = { tag = TUR }
+			ALB = {
+				any_owned_state = {
+					is_core_of = ROOT
+				}
+			}
+		}
+	}
+
+	# We have cores on Albania
+	option = {
+		name = wwi_austria.38.c
+		trigger = {
+			NOT = { tag = AUS }
+			NOT = { tag = TUR }
+			NOT = {
+				ALB = {
+					any_owned_state = {
+						is_core_of = ROOT
+					}
+				}
+			}
+		}
+	}
+}
+
+# Ask Germany to send submarines by train.
+country_event = {
+	id = wwi_austria.39
+	title = wwi_austria.39.t
+	desc = wwi_austria.39.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Yes
+	option = {
+		name = wwi_austria.39.a
+		ai_chance = { factor = 100 }
+
+		create_equipment_variant = {
+			name = "U-10 Class"
+			type = submarine_3
+			allow_without_tech = yes
+		}
+
+		custom_effect_tooltip = AUS_rail_import_submarines_rail_tt
+		AUS = {
+			custom_effect_tooltip = AUS_rail_import_submarines_delay_tt
+			custom_effect_tooltip = AUS_rail_import_submarines_equipment_tt
+			AUS = { country_event = { id = wwi_austria.41 hours = 1 } }
+		}
+
+		# Update the focus tooltip if the delay changes.
+		hidden_effect = {
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = -25
+			}
+			country_event = { id = wwi_austria.40 days = 30 }
+			AUS = { country_event = { id = wwi_austria.40 days = 30 } }
+		}
+	}
+
+	# No
+	option = {
+		name = wwi_austria.39.b
+		ai_chance = { factor = 0 }
+
+		AUS = { country_event = { id = wwi_austria.42 hours = 1 } }
+	}
+}
+
+# Rail transfer of submarines complete.
+country_event = {
+	id = wwi_austria.40
+	title = wwi_austria.40.t
+	desc = {
+		text = wwi_austria.40.d_austria
+		trigger = { original_tag = AUS }
+	}
+	desc = {
+		text = wwi_austria.40.d_germany
+		trigger = { original_tag = GER }
+	}
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Okay (Austria)
+	option = {
+		name = wwi_austria.40.a
+
+		custom_effect_tooltip = AUS_rail_import_submarines_equipment_tt
+		hidden_effect = {
+			create_ship = { type = submarine_3 equipment_variant = "U-10 Class" creator = GER }
+			create_ship = { type = submarine_3 equipment_variant = "U-10 Class" creator = GER }
+			create_ship = { type = submarine_3 equipment_variant = "U-10 Class" creator = GER }
+			create_ship = { type = submarine_3 equipment_variant = "U-10 Class" creator = GER }
+			create_ship = { type = submarine_3 equipment_variant = "U-10 Class" creator = GER }
+			create_ship = { type = submarine_3 equipment_variant = "U-10 Class" creator = GER }
+		}
+
+		#trigger = { original_tag = AUS }
+	}
+
+	# Okay (Germany)
+	option = {
+		name = wwi_austria.40.a
+
+		add_equipment_to_stockpile = {
+			type = train_equipment
+			amount = 25
+		}
+
+		AUS = { custom_effect_tooltip = AUS_rail_import_submarines_equipment_tt }
+
+		trigger = { original_tag = GER }
+	}
+}
+
+# Germany accepted rail submarine deal.
+country_event = {
+	id = wwi_austria.41
+	title = wwi_austria.41.t
+	desc = wwi_austria.41.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Okay.
+	option = {
+		name = wwi_austria.41.a
+		custom_effect_tooltip = AUS_rail_import_submarines_delay_tt
+		custom_effect_tooltip = AUS_rail_import_submarines_equipment_tt
+	}
+}
+
+# Germany declined rail submarine deal.
+country_event = {
+	id = wwi_austria.42
+	title = wwi_austria.42.t
+	desc = wwi_austria.42.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Okay.
+	option = {
+		name = wwi_austria.42.a
+	}
+}
+
+# Tell Albania you're puppeting them.
+country_event = {
+	id = wwi_austria.43
+	title = wwi_austria.43.t
+	desc = {
+		text = wwi_austria.43.d_fight
+		trigger = { strength_ratio = { tag = FROM ratio > 0.25  } }
+	}
+	desc = {
+		text = wwi_austria.43.d_hopeless
+	}
+	
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Okay.
+	option = {
+		name = wwi_austria.43.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { strength_ratio = { tag = FROM ratio > 0.5 } }
+			}
+		}
+
+		FROM = { country_event = { id = wwi_austria.44 hours = 1 } }
+		effect_tooltip = {
+			FROM = { puppet = { target = ROOT } }
+		}
+	}
+
+	# Go to war.
+	option = {
+		name = wwi_austria.43.b
+		ai_chance = {
+			factor = 0
+			modifier = {
+				add = 1
+				strength_ratio = { tag = FROM ratio > 0.5 }
+			}
+		}
+
+		FROM = { country_event = { id = wwi_austria.45 hours = 1 } }
+		trigger = { strength_ratio = { tag = FROM ratio > 0.25  } }
+		effect_tooltip = {
+			FROM = {
+				create_wargoal = {
+					type = annex_everything
+					target = ROOT
+				}
+			}
+		}
+	}
+}
+
+# Albania submitted.
+country_event = {
+	id = wwi_austria.44
+	title = wwi_austria.44.t
+	desc = wwi_austria.44.d
+	
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Okay.
+	option = {
+		name = wwi_austria.44.a
+		puppet = { target = FROM }
+	}
+}
+
+# Albania declined.
+country_event = {
+	id = wwi_austria.45
+	title = wwi_austria.45.t
+	desc = wwi_austria.45.d
+	
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Okay.
+	option = {
+		name = wwi_austria.45.a
+		create_wargoal = {
+			type = annex_everything
+			target = FROM
+		}
+	}
+}
+
+# Austria offers to strengthen Ottomans
+country_event = {
+	id = wwi_austria.46
+	title = wwi_austria.46.t
+	desc = wwi_austria.46.d
+	
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Yes
+	option = {
+		name = wwi_austria.46.a
+		ai_chance = { factor = 1 }
+		FROM = { country_event = { id = wwi_austria.47 hours = 1 } }
+		effect_tooltip = {
+			add_opinion_modifier = { target = FROM modifier = AUS_strengthen_the_ottomans }
+			reverse_add_opinion_modifier = { target = FROM modifier = AUS_strengthen_the_ottomans }
+			add_timed_idea = {
+				idea = AUS_strengthen_the_ottomans
+				days = 180
+			}
+			add_timed_idea = {
+				idea = var:FROM.ideology_influence_idea
+				days = 365
+			}
+		}
+	}
+
+	# No
+	option = {
+		name = wwi_austria.46.b
+		ai_chance = { factor = 0 }
+		FROM = { country_event = { id = wwi_austria.48 hours = 1 } }
+	}
+}
+
+# Ottomans agreed.
+country_event = {
+	id = wwi_austria.47
+	title = wwi_austria.47.t
+	desc = wwi_austria.47.d
+	
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Okay.
+	option = {
+		name = wwi_austria.47.a
+		add_opinion_modifier = { target = FROM modifier = AUS_strengthen_the_ottomans }
+		reverse_add_opinion_modifier = { target = FROM modifier = AUS_strengthen_the_ottomans }
+		FROM = {
+			add_timed_idea = {
+				idea = AUS_strengthen_the_ottomans
+				days = 180
+			}
+			add_timed_idea = {
+				idea = var:ROOT.ideology_influence_idea
+				days = 365
+			}
+		}
+	}
+}
+
+# Ottomans declined.
+country_event = {
+	id = wwi_austria.48
+	title = wwi_austria.48.t
+	desc = wwi_austria.48.d
+	
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Okay.
+	option = {
+		name = wwi_austria.48.a
+	}
+}
+
+# Austria seeks closer ties with UK.
+country_event = {
+	id = wwi_austria.49
+	title = wwi_austria.49.t
+	desc = wwi_austria.49.d
+	
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Okay
+	option = {
+		name = wwi_austria.49.a
+		effect_tooltip = {
+			FROM = {
+				add_timed_idea = {
+					idea = established_influence
+					days = 365
+				}
+			}
+		}
+	}
+}
+
+# Anglo-Austrian Naval Treaty
+country_event = {
+	id = wwi_austria.50
+	title = wwi_austria.50.t
+	desc = wwi_austria.50.d
+	
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Yes
+	option = {
+		name = wwi_austria.50.a
+		ai_chance = { factor = 1 }
+
+		effect_tooltip = {
+			add_equipment_to_stockpile = {
+			    type = convoy
+			    amount = 20
+			}
+			add_ideas = AUS_anglo_austrian_naval_treaty
+			FROM = {
+				add_equipment_to_stockpile = {
+				    type = convoy
+				    amount = 20
+				}
+				add_ideas = AUS_anglo_austrian_naval_treaty
+			}
+		}
+
+		FROM = { country_event = { id = wwi_austria.51 hours = 1 } }
+	}
+
+	# No
+	option = {
+		name = wwi_austria.50.b
+		ai_chance = { factor = 0 }
+		FROM = { country_event = { id = wwi_austria.52 hours = 1 } }
+	}
+}
+
+# Britain agreed.
+country_event = {
+	id = wwi_austria.51
+	title = wwi_austria.51.t
+	desc = wwi_austria.51.d
+	
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Okay.
+	option = {
+		name = wwi_austria.51.a
+
+		add_equipment_to_stockpile = {
+		    type = convoy
+		    amount = 20
+		}
+		add_ideas = AUS_anglo_austrian_naval_treaty
+		FROM = {
+			add_equipment_to_stockpile = {
+			    type = convoy
+			    amount = 20
+			}
+			add_ideas = AUS_anglo_austrian_naval_treaty
+		}
+	}
+}
+
+# Britain declined.
+country_event = {
+	id = wwi_austria.52
+	title = wwi_austria.52.t
+	desc = wwi_austria.52.d
+	
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Okay.
+	option = {
+		name = wwi_austria.52.a
+	}
+}
+
+
+add_namespace = event_AUS_offer_military_alliance
+
+# Invite Someone to Concert of Europe
+country_event = {
+	id = event_AUS_offer_military_alliance.1
+	title = event_AUS_offer_military_alliance.1.t
+	desc = {
+		text = event_AUS_offer_military_alliance.1.d_britain
+		trigger = {
+			FROM = { has_completed_focus = AUS_uphold_the_concert_of_europe }
+			original_tag = ENG
+		}
+	}
+	desc = {
+		text = event_AUS_offer_military_alliance.1.d
+	}
+	
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Yes
+	option = {
+		name = event_AUS_offer_military_alliance.1.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				add = 5
+				has_opinion = {
+					target = FROM
+					value > 50
+				}
+			}
+		}
+		FROM = { country_event = { id = event_AUS_offer_military_alliance.2 hours = 1 } }
+		effect_tooltip = {
+			FROM = {
+				add_to_faction = ROOT
+			}
+		}
+
+		add_ai_strategy = {
+			type = alliance
+			id = FROM
+			value = 200
+		}
+	}
+
+	# No
+	option = {
+		name = event_AUS_offer_military_alliance.1.b
+		ai_chance = {
+			factor = 0
+			modifier = {
+				add = 3
+				is_in_faction = yes
+			}
+		}
+		FROM = { country_event = { id = event_AUS_offer_military_alliance.3 hours = 1 } }
+	}
+}
+
+# Faction recipient agreed.
+country_event = {
+	id = event_AUS_offer_military_alliance.2
+	title = event_AUS_offer_military_alliance.2.t
+	desc = event_AUS_offer_military_alliance.2.d
+	
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Okay.
+	option = {
+		name = event_AUS_offer_military_alliance.2.a
+		add_to_faction = FROM
+	}
+}
+
+# Faction recipient declined.
+country_event = {
+	id = event_AUS_offer_military_alliance.3
+	title = event_AUS_offer_military_alliance.3.t
+	desc = event_AUS_offer_military_alliance.3.d
+	
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Okay.
+	option = {
+		name = event_AUS_offer_military_alliance.3.a
+	}
+}
+
+add_namespace = event_AUS_south_german_influence
+
+# Warn Germany that Austria has taken the focus.
+news_event = {
+	id = event_AUS_south_german_influence.1
+	title = event_AUS_south_german_influence.1.t
+	desc = event_AUS_south_german_influence.1.d
+	picture = GFX_news_event_001
+
+	is_triggered_only = yes
+	major = yes
+	
+	# Germany is angry
+	option = {
+		name = event_AUS_south_german_influence.1.a
+		trigger = { tag = GER }
+
+		unlock_decision_category_tooltip = decision_category_AUS_south_german_influence
+		FROM = { unlock_decision_category_tooltip = decision_category_AUS_south_german_influence }
+	}
+
+	# Austria is smug
+	option = {
+		name = event_AUS_south_german_influence.1.b
+		trigger = { tag = FROM }
+
+		unlock_decision_category_tooltip = decision_category_AUS_south_german_influence
+		GER = { unlock_decision_category_tooltip = decision_category_AUS_south_german_influence }
+	}
+
+	# Everyone else
+	option = {
+		name = event_AUS_south_german_influence.1.c
+		trigger = {
+			NOT = { tag = GER }
+			NOT = { tag = FROM }
+		}
+	} 
+}
+
+# Tell Germany Austria is giving economic aid for vassal autonomy
+country_event = {
+	id = event_AUS_south_german_influence.2
+	title = event_AUS_south_german_influence.2.t
+	desc = event_AUS_south_german_influence.2.d
+	
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# No
+	option = {
+		name = event_AUS_south_german_influence.2.a
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0.5
+				has_manpower < 20000
+			}
+			modifier = {
+				factor = 0.5
+				conscription_ratio > 0.99 # If on Service By Requirement or higher
+			}
+		}
+		
+		add_timed_idea = { idea = idea_AUS_south_german_placation days = 90 }
+		add_manpower = -15000
+
+		add_to_variable = {
+			times_taken_south_german_placation = 1
+		}
+
+		hidden_effect = {
+			FROM = { country_event = { id = event_AUS_south_german_influence.4 hours = 1 } }
+		}
+
+		trigger = {
+			# Should in theory never happen, as Austria can't send the event until the 90 day period expires. But just in case.
+			NOT = { has_idea = idea_AUS_received_loan_for_south_german_autonomy }
+			has_manpower > -14999
+		}
+	}
+
+	# Yes
+	option = {
+		name = event_AUS_south_german_influence.2.b
+		ai_chance = {
+			base = 2
+			modifier = {
+				add = 2
+				has_war = yes
+			}
+			# If you keep taking the malus, start conceding.
+			modifier = {
+				add = 2
+				check_variable = { times_taken_south_german_placation > 0 }
+			}
+			modifier = {
+				add = 1
+				check_variable = { times_taken_south_german_placation > 1 }
+			}
+			modifier = {
+				factor = 2
+				alliance_strength_ratio < 0.85
+			}
+			modifier = {
+				factor = 3
+				alliance_strength_ratio > 0.75
+			}
+		}
+
+		# Use this to stop the AI immediately changing its mind.
+		set_country_flag = { flag = recently_granted_south_german_autonomy days = 60 }
+		
+		FROM = { add_timed_idea = { idea = idea_AUS_loan_for_south_german_autonomy days = 90 } }
+		add_timed_idea = { idea = idea_AUS_received_loan_for_south_german_autonomy days = 90 }
+		release_puppet = event_target:influenced_south_german_country
+		event_target:influenced_south_german_country = { add_ideas = idea_AUS_influenced_by_austria }
+
+		# Not actually being unlocked here but a good way of communciating how the player can reabsorb the puppet.
+		unlock_decision_tooltip = decision_AUS_reintegrate_south_german_subject
+
+		hidden_effect = {
+			FROM = { country_event = { id = event_AUS_south_german_influence.3 hours = 1 } }
+		}
+	}
+}
+
+# Tell Austria autonomy was granted.
+country_event = {
+	id = event_AUS_south_german_influence.3
+	title = event_AUS_south_german_influence.3.t
+	desc = event_AUS_south_german_influence.3.d
+	
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = event_AUS_south_german_influence.3.a
+		
+		effect_tooltip = {
+			add_timed_idea = { idea = idea_AUS_loan_for_south_german_autonomy days = 90 }
+			FROM = {
+				add_timed_idea = { idea = idea_AUS_received_loan_for_south_german_autonomy days = 90 }
+				release_puppet = event_target:influenced_south_german_country
+				event_target:influenced_south_german_country = { add_ideas = idea_AUS_influenced_by_austria }
+			}
+		}
+	}
+}
+
+# Tell Austria autonomy was denied.
+country_event = {
+	id = event_AUS_south_german_influence.4
+	title = event_AUS_south_german_influence.4.t
+	desc = event_AUS_south_german_influence.4.d
+	
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = event_AUS_south_german_influence.4.a
+		
+		effect_tooltip = {
+			FROM = {
+				add_timed_idea = { idea = idea_AUS_south_german_placation days = 90 }
+				add_manpower = -15000
+			}
+		}
+	}
+}
+
+# Tell Germany a state has seceded.
+country_event = {
+	id = event_AUS_south_german_influence.5
+	title = event_AUS_south_german_influence.5.t
+	desc = event_AUS_south_german_influence.5.d
+	
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = event_AUS_south_german_influence.5.a
+		
+		effect_tooltip = {
+			FROM = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -4000
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = -500
+				}
+
+				event_target:seceding_south_german_country = { remove_ideas = idea_AUS_influenced_by_austria }
+				puppet = { target = event_target:seceding_south_german_country end_wars = yes }
+
+				reverse_add_opinion_modifier = { target = ROOT modifier = opinion_AUS_supported_south_germen_secession }
+			}
+		}
+	}
+}
+
+# Tell Austria a state was re-absorbed.
+country_event = {
+	id = event_AUS_south_german_influence.6
+	title = event_AUS_south_german_influence.6.t
+	desc = event_AUS_south_german_influence.6.d
+	
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = event_AUS_south_german_influence.6.a
+		
+		effect_tooltip = {
+			FROM = {
+				add_manpower = -15000
+				add_timed_idea = { idea = idea_AUS_south_german_placation days = 90 }
+				if = {
+					limit = { has_idea = idea_AUS_received_loan_for_south_german_autonomy }
+					remove_ideas = idea_AUS_received_loan_for_south_german_autonomy
+				}
+				annex_country  = { target = event_target:reabsorbed_south_german_country transfer_troops = yes }
+			}
+			
+			event_target:reabsorbed_south_german_country = { remove_ideas = idea_AUS_influenced_by_austria }
+
+			if = {
+				limit = { has_idea = idea_AUS_loan_for_south_german_autonomy }
+				remove_ideas = idea_AUS_loan_for_south_german_autonomy
+			}
+		}
+	}
+}
+
+add_namespace = event_AUS_placate_romania
+
+# Offer Romania Transylvania
+country_event = {
+	id = event_AUS_placate_romania.1
+	title = event_AUS_placate_romania.1.t
+	desc = event_AUS_placate_romania.1.d
+	
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Yes
+	option = {
+		name = event_AUS_placate_romania.1.a
+		ai_chance = { base = 1 }
+
+		175 = {
+			if = {
+				limit = { is_controlled_by = FROM }
+				transfer_state_to = ROOT
+			}
+		}
+		149 = {
+			if = {
+				limit = { is_controlled_by = FROM }
+				transfer_state_to = ROOT
+			}
+		}
+		225 = {
+			if = {
+				limit = { is_controlled_by = FROM }
+				transfer_state_to = ROOT
+			}
+		}
+		159 = {
+			if = {
+				limit = { is_controlled_by = FROM }
+				transfer_state_to = ROOT
+			}
+		}
+
+		diplomatic_relation = {
+			country = FROM
+			relation = non_aggression_pact
+			active = yes
+		}
+
+		add_ai_strategy = {
+		    type = befriend
+		    id = FROM
+		    value = 100
+		}
+
+		hidden_effect = {
+			FROM = { country_event = { id = event_AUS_placate_romania.2 hours = 1 } }
+		}
+	}
+
+	# No
+	option = {
+		name = event_AUS_placate_romania.1.b
+		ai_chance = { base = 0 }
+
+		hidden_effect = {
+			FROM = { country_event = { id = event_AUS_placate_romania.3 hours = 1 } }
+		}
+	}
+}
+
+# Romania accepts
+country_event = {
+	id = event_AUS_placate_romania.2
+	title = event_AUS_placate_romania.2.t
+	desc = event_AUS_placate_romania.2.d
+	
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = event_AUS_placate_romania.2.a
+
+		effect_tooltip = {
+			175 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					transfer_state_to = FROM
+				}
+			}
+			149 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					transfer_state_to = FROM
+				}
+			}
+			225 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					transfer_state_to = FROM
+				}
+			}
+			159 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					transfer_state_to = FROM
+				}
+			}
+
+			diplomatic_relation = {
+				country = ROM
+				relation = non_aggression_pact
+				active = yes
+			}
+		}
+	}
+}
+
+# Romania declines
+country_event = {
+	id = event_AUS_placate_romania.3
+	title = event_AUS_placate_romania.3.t
+	desc = event_AUS_placate_romania.3.d
+	
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = event_AUS_placate_romania.3.a
+	}
+}
+
+add_namespace = event_AUS_goad_bulgaria_into_war
+
+# Bulgaria gets offered arms for partitioning Serbia
+country_event = {
+	id = event_AUS_goad_bulgaria_into_war.1
+	title = event_AUS_goad_bulgaria_into_war.1.t
+	desc = event_AUS_goad_bulgaria_into_war.1.d
+	
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Yes
+	option = {
+		name = event_AUS_goad_bulgaria_into_war.1.a
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0.25
+				has_opinion = { target = SER value > 33 }
+			}
+		}
+
+		effect_AUS_goad_bulgaria_into_war_bulgaria = yes
+		FROM = { effect_AUS_goad_bulgaria_into_war_austria = yes }
+
+		hidden_effect = {
+			FROM = { country_event = { id = event_AUS_goad_bulgaria_into_war.2 hours = 1 } }
+		}
+	}
+
+	# No
+	option = {
+		name = event_AUS_goad_bulgaria_into_war.1.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 5
+				strength_ratio = {
+					tag = SER
+					ratio < 0.66
+				}
+			}
+		}
+
+		hidden_effect = {
+			FROM = { country_event = { id = event_AUS_goad_bulgaria_into_war.3 hours = 1 } }
+		}
+	}
+}
+
+# Bulgaria accepts.
+country_event = {
+	id = event_AUS_goad_bulgaria_into_war.2
+	title = event_AUS_goad_bulgaria_into_war.2.t
+	desc = event_AUS_goad_bulgaria_into_war.2.d
+	
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = event_AUS_goad_bulgaria_into_war.2.a
+
+		effect_tooltip = {
+			effect_AUS_goad_bulgaria_into_war_austria = yes
+			BUL = { effect_AUS_goad_bulgaria_into_war_bulgaria = yes }
+		}
+	}
+}
+
+# Bulgaria declines.
+country_event = {
+	id = event_AUS_goad_bulgaria_into_war.3
+	title = event_AUS_goad_bulgaria_into_war.3.t
+	desc = event_AUS_goad_bulgaria_into_war.3.d
+	
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = event_AUS_goad_bulgaria_into_war.3.a
+	}
+}
+
+# Tell Serbia they're getting attacked because Austria took a focus.
+country_event = {
+	id = event_AUS_goad_bulgaria_into_war.4
+	title = event_AUS_goad_bulgaria_into_war.4.t
+	desc = event_AUS_goad_bulgaria_into_war.4.d
+	
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = event_AUS_goad_bulgaria_into_war.4.a
+	}
+}
+
+news_event = {
+	id = event_AUS_goad_bulgaria_into_war.5
+	title = event_AUS_goad_bulgaria_into_war.5.t
+	desc = event_AUS_goad_bulgaria_into_war.5.d
+	picture = GFX_news_event_001
+
+	is_triggered_only = yes
+	major = yes
+
+	immediate = {
+		125 = {
+			if = {
+				limit = {
+					OR = {
+						is_controlled_by = SER
+						controller = { has_war_with = SER }
+					}
+				}
+				transfer_state_to = AUS
+			}
+		}
+
+		156 = {
+			if = {
+				limit = {
+					OR = {
+						is_controlled_by = SER
+						controller = { has_war_with = SER }
+					}
+				}
+				transfer_state_to = AUS
+			}
+		}
+
+		185 = {
+			if = {
+				limit = {
+					OR = {
+						is_controlled_by = SER
+						controller = { has_war_with = SER }
+					}
+				}
+				transfer_state_to = AUS
+			}
+		}
+	}
+
+	option = {
+		name = event_AUS_goad_bulgaria_into_war.5.a
+		trigger = { original_tag = AUS }
+	}
+
+	option = {
+		name = event_AUS_goad_bulgaria_into_war.5.b
+
+		trigger = {
+			NOT = { original_tag = AUS }
+			has_opinion = {
+				target = AUS
+				value > 15
+			}
+		}
+	}
+
+	option = {
+		name = event_AUS_goad_bulgaria_into_war.5.c
+
+		trigger = {
+			NOT = { original_tag = AUS }
+			has_opinion = {
+				target = AUS
+				value < 16
+			}
+		}
+	}
+}
+
+add_namespace = event_AUS_buy_orient_railway_shares
+
+# Tell countries about Austrian rail shares
+country_event = {
+	id = event_AUS_buy_orient_railway_shares.1
+	title = event_AUS_buy_orient_railway_shares.1.t
+	desc = event_AUS_buy_orient_railway_shares.1.d
+	
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Yes
+	option = {
+		name = event_AUS_buy_orient_railway_shares.1.a
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 0
+				has_opinion = { target = FROM value > -5 }
+			}
+		}
+		add_timed_idea = { idea = idea_AUS_orient_railway_investment days = 180 }
+		effect_boost_popularity_of_from_ideology_10 = yes
+
+		hidden_effect = {
+			FROM = { country_event = { id = event_AUS_buy_orient_railway_shares.2 hours = 1 } }
+		}
+	}
+
+	# No
+	option = {
+		name = event_AUS_buy_orient_railway_shares.1.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 1
+				has_opinion = { target = FROM value < -4 }
+			}
+		}
+	}
+}
+
+# A country accepts Austrian influence.
+country_event = {
+	id = event_AUS_buy_orient_railway_shares.2
+	title = event_AUS_buy_orient_railway_shares.2.t
+	desc = event_AUS_buy_orient_railway_shares.2.d
+	
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = event_AUS_buy_orient_railway_shares.2.a
+
+		effect_tooltip = {
+			FROM = { effect_boost_popularity_of_root_ideology_10 = yes }
+			add_timed_idea = { idea = idea_AUS_orient_railway_investment days = 180 }
+		}
+	}
+}
+
+add_namespace = event_AUS_complete_the_novi_pazar_line
+
+# Tell the Sanjak owner the railway is built. Offer them an ideology boost.
+country_event = {
+	id = event_AUS_complete_the_novi_pazar_line.1
+	title = event_AUS_complete_the_novi_pazar_line.1.t
+	desc = event_AUS_complete_the_novi_pazar_line.1.d
+	
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Yes
+	option = {
+		name = event_AUS_complete_the_novi_pazar_line.1.a
+		ai_chance = { base = 1 }
+
+		add_timed_idea = {
+			idea = FROM.ideology_influence_idea
+			days = 180
+		}
+
+		add_timed_idea = {
+			idea = idea_AUS_novi_pazar_line
+			days = 365
+		}
+
+		hidden_effect = {
+			FROM = { country_event = { id = event_AUS_complete_the_novi_pazar_line.2 hours = 1 } }
+		}
+	}
+
+	# No
+	option = {
+		name = event_AUS_complete_the_novi_pazar_line.1.b
+		ai_chance = { base = 0 }
+	}
+}
+
+country_event = {
+	id = event_AUS_complete_the_novi_pazar_line.2
+	title = event_AUS_complete_the_novi_pazar_line.2.t
+	desc = event_AUS_complete_the_novi_pazar_line.2.d
+	
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = event_AUS_complete_the_novi_pazar_line.2.a
+
+		effect_tooltip = {
+			FROM = {
+				add_timed_idea = {
+					idea = FROM.ideology_influence_idea
+					days = 180
+				}
+
+				add_timed_idea = {
+					idea = idea_AUS_novi_pazar_line
+					days = 365
+				}
+			}
+		}
+	}
+}
+
+add_namespace = event_AUS_occupy_the_sanjak
+
+news_event = {
+	id = event_AUS_occupy_the_sanjak.1
+	title = event_AUS_occupy_the_sanjak.1.t
+	desc = event_AUS_occupy_the_sanjak.1.d
+	picture = GFX_news_event_001
+
+	is_triggered_only = yes
+	major = yes
+	
+	# Previous sanjak owner
+	option = {
+		name = event_AUS_occupy_the_sanjak.3.a_sanjak_owner
+		add_opinion_modifier = { target = FROM modifier = opinion_AUS_occupied_sanjak }
+		trigger = { tag = event_target:previous_owner }
+	}
+
+	# Austria
+	option = {
+		name = event_AUS_occupy_the_sanjak.1.a_austria
+		trigger = { tag = FROM }
+	}
+
+	# Positive
+	option = {
+		name = event_AUS_occupy_the_sanjak.1.a_positive
+		trigger = {
+			NOT = { tag = FROM }
+			NOT = { tag = event_target:previous_owner }
+			has_opinion = { target = FROM value > 0 }
+		}
+	}
+
+	# Negative
+	option = {
+		name = event_AUS_occupy_the_sanjak.1.a_negative
+		trigger = {
+			NOT = { tag = FROM }
+			NOT = { tag = event_target:previous_owner }
+			has_opinion = { target = FROM value < 1 }
+		}
+	}
+}
+
+add_namespace = event_AUS_kaisermanover
+
+country_event = {
+	id = event_AUS_kaisermanover.1
+	title = event_AUS_kaisermanover.1.t
+	desc = event_AUS_kaisermanover.1.d
+	
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		country_event = { id = event_AUS_kaisermanover.1 days = 365 }
+	}
+	
+	# Land
+	option = {
+		name = event_AUS_kaisermanover.1.a
+		ai_chance = { base = 1 }
+
+		army_experience = 100
+	}
+
+	# Sea
+	option = {
+		name = event_AUS_kaisermanover.1.b
+		ai_chance = { base = 0.5 }
+
+		navy_experience = 100
+	}
+
+	# Air
+	option = {
+		name = event_AUS_kaisermanover.1.c
+		ai_chance = { base = 0.5 }
+
+		air_experience = 100
+	}
+}
+
+add_namespace = events_AUS_ships_for_industry
+
+country_event = {
+	id = events_AUS_ships_for_industry.1
+	title = events_AUS_ships_for_industry.1.t
+	desc = events_AUS_ships_for_industry.1.d
+	
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Yes
+	option = {
+		name = events_AUS_ships_for_industry.1.a
+		ai_chance = { base = 1 }
+
+		navy_experience = 100
+		FROM = { transfer_navy = { target = ROOT } }
+
+		add_ideas = idea_AUS_ships_for_industry
+
+		hidden_effect = {
+			FROM = { country_event = { id = events_AUS_ships_for_industry.2 hours = 2 } }
+		}
+	}
+
+	# No
+	option = {
+		name = events_AUS_ships_for_industry.1.b
+		ai_chance = { base = 0 }
+
+		hidden_effect = {
+			FROM = { country_event = { id = events_AUS_ships_for_industry.3 hours = 2 } }
+		}
+	}
+}
+
+# Tell Austria yes
+country_event = {
+	id = events_AUS_ships_for_industry.2
+	title = events_AUS_ships_for_industry.2.t
+	desc = events_AUS_ships_for_industry.2.d
+	
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Yes
+	option = {
+		name = events_AUS_ships_for_industry.2.a
+
+		effect_tooltip = {
+			FROM = { transfer_navy = { target = FROM } }
+			FROM = {
+				navy_experience = 100
+				add_ideas = idea_AUS_ships_for_industry
+			}
+		}
+	}
+
+	# No
+	option = {
+		name = events_AUS_ships_for_industry.2.b
+	}
+}
+
+# Tell Austria no
+country_event = {
+	id = events_AUS_ships_for_industry.3
+	title = events_AUS_ships_for_industry.3.t
+	desc = events_AUS_ships_for_industry.3.d
+	
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Yes
+	option = {
+		name = events_AUS_ships_for_industry.3.a
+	}
+}
+
+add_namespace = events_AUS_foment_obrenovic_sympathies
+
+# Initial event to warn Serbia
+news_event = {
+	id = events_AUS_foment_obrenovic_sympathies.1
+	title = events_AUS_foment_obrenovic_sympathies.1.t
+	desc = events_AUS_foment_obrenovic_sympathies.1.d
+	picture = GFX_news_event_001
+
+	is_triggered_only = yes
+	major = yes
+	
+	# Serbia
+	option = {
+		name = events_AUS_foment_obrenovic_sympathies.1.a_serbia
+		trigger = { tag = SER }
+	}
+
+	# Austria
+	option = {
+		name = events_AUS_foment_obrenovic_sympathies.1.a_austria
+		trigger = { tag = AUS }
+	}
+
+	# Positive
+	option = {
+		name = events_AUS_foment_obrenovic_sympathies.1.a_positive
+		trigger = {
+			NOT = { tag = SER }
+			NOT = { tag = AUS }
+			has_opinion = { target = AUS value > 0 }
+		}
+	}
+
+	# Negative
+	option = {
+		name = events_AUS_foment_obrenovic_sympathies.1.a_negative
+		trigger = {
+			NOT = { tag = SER }
+			NOT = { tag = AUS }
+			has_opinion = { target = AUS value < 1 }
+		}
+	}
+}
+
+# Sympathies have been fomented
+country_event = {
+	id = events_AUS_foment_obrenovic_sympathies.2
+	title = events_AUS_foment_obrenovic_sympathies.2.t
+	desc = events_AUS_foment_obrenovic_sympathies.2.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Uh oh
+	option = {
+		name = events_AUS_foment_obrenovic_sympathies.2.a
+		event_target:obrenovic_sympathiser_province = { custom_effect_tooltip = state_will_side_with_obrenovic_tt }
+	}
+}
+
+# Sympathies wane
+country_event = {
+	id = events_AUS_foment_obrenovic_sympathies.3
+	title = events_AUS_foment_obrenovic_sympathies.3.t
+	desc = {
+		text = events_AUS_foment_obrenovic_sympathies.3.d_serbia
+		trigger = { original_tag = SER }
+	}
+	desc = {
+		text = events_AUS_foment_obrenovic_sympathies.3.d_austria
+		trigger = { original_tag = AUS }
+	}
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = events_AUS_foment_obrenovic_sympathies.3.a_serbia
+		event_target:obrenovic_sympathiser_province = { custom_effect_tooltip = state_will_not_side_with_obrenovic_tt }
+		trigger = { original_tag = SER }
+	}
+
+	option = {
+		name = events_AUS_foment_obrenovic_sympathies.3.a_austria
+		event_target:obrenovic_sympathiser_province = { custom_effect_tooltip = state_will_not_side_with_obrenovic_tt }
+		trigger = { original_tag = AUS }
+	}
+}
+
+# Hidden event to select the province losing Obrenovic sympathies. To be fired in the scope of that province's controller (Serbia).
+country_event = {
+	id = events_AUS_foment_obrenovic_sympathies.4
+	title = events_AUS_foment_obrenovic_sympathies.4.t
+	desc = events_AUS_foment_obrenovic_sympathies.4.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		log = "Finding state most recently flagged as fomented Obrenovic sympathies."
+
+		set_temp_variable = { last_flagged_order = -1 }
+		for_each_scope_loop = {
+			array = owned_controlled_states
+
+			if = {
+				limit = {
+					has_variable = fomented_sympathies_order
+					check_variable = { fomented_sympathies_order > last_flagged_order }
+				}
+				set_temp_variable = { last_flagged_order = fomented_sympathies_order }
+				set_temp_variable = { last_flagged = THIS }
+			}
+		}
+
+		if = {
+			limit = { NOT = { check_variable = { last_flagged = 0 } } }
+			log = "Most recent Obrenovic sympathiser state found was: [?last_flagged.GetName]."
+			var:last_flagged = {
+				effect_AUS_remove_obrenovic_sympathies_in_state = yes
+
+				save_event_target_as = obrenovic_sympathiser_province
+				owner = { country_event = { id = events_AUS_foment_obrenovic_sympathies.3 } }
+				save_event_target_as = obrenovic_sympathiser_province
+				AUS = {
+					country_event = { id = events_AUS_foment_obrenovic_sympathies.3 }
+				}
+			}
+		}
+		else = {
+			log = "No states owned by [SER.GetAdjective] found with Obrenovic sympathies.."
+		}
+	}
+}
+
+# Trigger the Obrenovic coup.
+country_event = {
+	id = events_AUS_foment_obrenovic_sympathies.5
+	title = events_AUS_foment_obrenovic_sympathies.5.t
+	desc = events_AUS_foment_obrenovic_sympathies.5.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = events_AUS_foment_obrenovic_sympathies.5.a
+
+		effect_AUS_determine_obrenovic_coup_strength = yes
+
+		start_civil_war = {
+			ideology = expansionist
+			states = all
+			states_filter = {
+				has_state_flag = obrenovic_sympathies
+			}
+			army_ratio = obrenovic_coup_strength
+			navy_ratio = obrenovic_coup_strength
+			air_ratio = obrenovic_coup_strength
+			keep_all_characters = yes
+			PREV = {
+				SER_george_obrenovic = {
+					set_nationality = PREV.PREV
+					add_country_leader_role = {
+						country_leader = {
+							expire = "1965.1.1"
+							ideology = expansionist_t
+						}
+						promote_leader = yes
+					}
+				}
+			}
+		}
+
+		random_other_country = {
+			limit = {
+				original_tag = SER
+				has_government = expansionist
+			}
+			set_cosmetic_tag = SER_OBRENOVIC
+			
+		}
+
+		hidden_effect = {
+			news_event = { id = events_AUS_foment_obrenovic_sympathies.6 hours = 6 }
+		}
+	}
+}
+
+# The Serbian Obrenovic coup.
+news_event = {
+	id = events_AUS_foment_obrenovic_sympathies.6
+	title = events_AUS_foment_obrenovic_sympathies.6.t
+	desc = events_AUS_foment_obrenovic_sympathies.6.d
+	picture = GFX_news_event_001
+
+	is_triggered_only = yes
+	major = yes
+	fire_for_sender = no
+
+	option = {
+		name = events_AUS_foment_obrenovic_sympathies.6.a_positive
+		trigger = {
+			OR = {
+				has_opinion = { target = AUS value > 0 }
+				original_tag = AUS
+			}
+		}
+	}
+
+	option = {
+		name = events_AUS_foment_obrenovic_sympathies.6.a_negative
+		trigger = {
+			NOT = { original_tag = AUS }
+			has_opinion = { target = AUS value < 1 }
+		}
+	}
+}
+
+add_namespace = events_AUS_erode_hungarian_influence
+
+# Warn Hungary
+country_event = {
+	id = events_AUS_erode_hungarian_influence.1
+	title = events_AUS_erode_hungarian_influence.1.t
+	desc = events_AUS_erode_hungarian_influence.1.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = events_AUS_erode_hungarian_influence.1.a
+		FROM = {
+			unlock_decision_category_tooltip = decision_category_AUS_overpower_the_honved
+			custom_effect_tooltip = AUS_overpower_the_honved_hungary_warning_tt
+		}
+	}
+}
+
+# Tell hungary a state was taken by flotilla.
+country_event = {
+	id = events_AUS_erode_hungarian_influence.2
+	title = events_AUS_erode_hungarian_influence.2.t
+	desc = events_AUS_erode_hungarian_influence.2.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = events_AUS_erode_hungarian_influence.2.a
+		effect_tooltip = {
+			event_target:annexed_state = {
+				transfer_state_to = FROM
+			}
+
+			custom_effect_tooltip = wwi_newline_tt
+			custom_effect_tooltip = AUS_overpower_the_honved_return_state_time_tt
+			custom_effect_tooltip = wwi_newline_tt
+			custom_effect_tooltip = AUS_overpower_the_honved_budapest_tt
+			custom_effect_tooltip = wwi_newline_tt
+			custom_effect_tooltip = AUS_overpower_the_honved_hungary_annexation_tt
+		}
+	}
+}
+
+# Tell hungary and austria a state timed out.
+country_event = {
+	id = events_AUS_erode_hungarian_influence.3
+	title = events_AUS_erode_hungarian_influence.3.t
+	desc = {
+		text = events_AUS_erode_hungarian_influence.3.d_austria
+		trigger = {
+			original_tag = AUS
+		}
+	}
+	desc = {
+		text = events_AUS_erode_hungarian_influence.3.d_hungary
+		trigger = {
+			original_tag = HUN
+		}
+	}
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = events_AUS_erode_hungarian_influence.3.a_austria
+		effect_tooltip = {
+			event_target:returned_state = {
+				transfer_state_to = HUN
+			}
+		}
+
+		trigger = {
+			original_tag = AUS
+		}
+	}
+
+	option = {
+		name = events_AUS_erode_hungarian_influence.3.a_hungary
+		effect_tooltip = {
+			event_target:returned_state = {
+				transfer_state_to = ROOT
+			}
+		}
+
+		trigger = {
+			original_tag = HUN
+		}
+	}
+}
+
+# Tell Hungary Budapest was taken.
+country_event = {
+	id = events_AUS_erode_hungarian_influence.4
+	title = events_AUS_erode_hungarian_influence.4.t
+	desc = events_AUS_erode_hungarian_influence.4.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = events_AUS_erode_hungarian_influence.4.a
+		effect_tooltip = {
+			189 = { transfer_state_to = FROM }
+		}
+		custom_effect_tooltip = AUS_overpower_the_honved_return_state_cancelled_tt
+		custom_effect_tooltip = AUS_overpower_the_honved_hungary_annexation_tt
+	}
+}

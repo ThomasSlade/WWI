@@ -1,0 +1,15 @@
+characters = {
+	BUL_ferdinand_i = {
+		name = BUL_ferdinand_i
+		portraits = {
+			civilian = {
+				large = GFX_portrait_bul_ferdinand_i
+			}
+		}
+		country_leader = {
+			ideology = expansionist_t
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+}

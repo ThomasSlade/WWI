@@ -1,0 +1,16 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ideology_expansionist_group"
+		texturefile = "gfx/interface/ideologies/expansionist_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_established_group"
+		texturefile = "gfx/interface/ideologies/established_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_revolutionary_group"
+		texturefile = "gfx/interface/ideologies/revolutionary_group.dds"
+	}
+}

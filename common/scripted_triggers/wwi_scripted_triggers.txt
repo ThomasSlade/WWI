@@ -1,0 +1,62 @@
+# ROOT is character
+trigger_state_is_neighbor = {
+	custom_trigger_tooltip = {
+		tooltip = trigger_state_is_neighbor_tt
+		any_neighbor_state = {
+			is_controlled_by = ROOT
+		}
+	}
+}
+
+trigger_state_is_fully_controlled = {
+	custom_trigger_tooltip = {
+		tooltip = trigger_state_is_fully_controlled_tt
+		owner = {
+			has_full_control_of_state = PREV
+		}
+	}
+}
+
+is_in_active_role = {
+	OR = {
+		is_political_advisor = yes
+		is_theorist = yes
+		is_army_chief = yes
+		is_navy_chief = yes
+		is_air_chief = yes
+		is_high_command = yes
+	}
+}
+
+is_in_balkans = {
+	OR = {
+		region = 43
+		region = 55
+		region = 49
+		region = 38
+		region = 54
+		region = 52
+		region = 50
+		region = 48
+		region = 40
+		region = 57
+		region = 46
+		region = 44
+		region = 45
+		region = 19
+		region = 51
+	}
+}
+
+# The balkans south of the Danube and the Drina
+is_in_southern_balkans = {
+	OR = {
+		region = 43
+		region = 55
+		region = 49
+		region = 38
+		region = 54
+		region = 57
+		region = 46
+	}
+}

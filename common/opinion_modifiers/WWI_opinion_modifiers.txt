@@ -9,11 +9,66 @@
 # trade = yes/no
 
 opinion_modifiers = {
+	invited_to_faction = {
+		value = 25
+		decay = 1
+	}
+
 	AUS_bosnian_constitution_suspended = { value = -20 }
 
-	SER_appealed_for_arbitration = { value = 20 }
+	AUS_heinrich_friedjung_trade = {
+		trade = yes
+		value = 50
+	}
 
-	SER_refused_annexation_of_vojvodina = { value = 20 }
+	AUS_gave_bukovina = {
+		value = 25
+		decay = 0.5
+	}
+
+	AUS_received_bukovina = { value = 25 }
+
+	AUS_blank_cheque_accepted = {
+		value = 25
+		decay = 1
+	}
+	AUS_blank_cheque_declined = {
+		value = 25
+		decay = 1
+	}
+
+	AUS_strengthen_the_ottomans = {
+		value = 25
+		decay = 0.5
+	}
+
+	AUS_uphold_concert_of_europe_positive = {
+		value = 15
+	}
+
+	AUS_uphold_concert_of_europe_negative = {
+		value = -15
+	}
+
+	opinion_AUS_supported_south_germen_secession = {
+		value = -10
+		decay = 0.5
+	}
+
+	opinion_AUS_occupied_sanjak = {
+		value = -20
+		decay = -1
+	}
+
+	SER_appealed_for_arbitration = {
+		value = 20
+		decay = 1
+	}
+
+	SER_refused_annexation_of_vojvodina = {
+		value = 20
+		decay = 1
+	}
 
 	FRA_serbian_royal_visit = { value = 10 }
 	serbian_royal_visit_negative = { value = -10 }
@@ -27,4 +82,11 @@ opinion_modifiers = {
 	fears_of_serb_encirclement = { value = -30 }
 
 	recruited_our_advisor = { value = 20 }
+
+	SER_lausanne_investigation = {
+		value = 25
+		decay = 1
+	}
+
+	AUS_purchased_italian_neutrality = { value = 25 }
 }

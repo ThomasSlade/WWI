@@ -1,0 +1,386 @@
+characters = {
+	AUS_franz_joseph_i = {
+		name = AUS_franz_joseph_i
+		portraits = {
+			civilian = {
+				large = GFX_portrait_aus_franz_joseph_i
+			}
+		}
+		country_leader = {
+			ideology = expansionist_t
+			expire = "1916.11.21.1"
+			id = -1
+			traits = { first_bureaucrat }
+		}
+	}
+
+	AUS_franz_ferdinand = {
+		name = AUS_franz_ferdinand
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = AUS_franz_ferdinand
+			allowed = {
+				original_tag = AUS
+			}
+			traits = { disliked_moderate }
+			on_add = {
+				custom_effect_tooltip = AUS_austrian_nationality
+				AUS_minority_resistance_level_down = yes
+				AUS_add_deutscher_nationalverband_stability = yes
+			}
+			on_remove = {
+				AUS_minority_resistance_level_up = yes
+				AUS_remove_deutscher_nationalverband_stability = yes
+			}
+		}
+	}
+
+	### Generals ###
+	AUS_franz_conrad_von_hotzendorf = {
+		name = AUS_franz_conrad_von_hotzendorf
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		field_marshal = {
+			traits = { polyglot }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+
+	AUS_friedrich_duke_of_teschen = {
+		name = AUS_friedrich_duke_of_teschen
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		field_marshal = {
+			traits = { trait_cautious }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	AUS_hermann_kovess_von_kovesshaza = {
+		name = AUS_hermann_kovess_von_kovesshaza
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+
+	AUS_hermann_kusmanek = {
+		name = AUS_hermann_kusmanek
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		corps_commander = {
+			traits = { logistics_wizard }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	AUS_svetozar_boroevic = {
+		name = AUS_svetozar_boroevic
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		corps_commander = {
+			traits = { hill_fighter }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = high_command
+			idea_token = AUS_svetozar_boroevic
+			allowed = {
+				OR = {
+					original_tag = AUS
+					original_tag = SCS
+					tag = YUG
+				}
+			}
+			traits = { stout_defender }
+			on_add = {
+				custom_effect_tooltip = AUS_secrobroat_nationality
+				AUS_add_ethnicity_local_organisations = yes
+			}
+		}
+	}
+
+	### Advisors ###
+	AUS_karl_von_sturgkh = {
+		name = AUS_karl_von_sturgkh
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = AUS_karl_von_sturgkh
+			allowed = {
+				original_tag = AUS
+			}
+			traits = { hawk }
+			on_add = {
+				custom_effect_tooltip = AUS_austrian_nationality
+				AUS_add_deutscher_nationalverband_stability = yes
+			}
+			on_remove = {
+				AUS_remove_deutscher_nationalverband_stability = yes
+			}
+		}
+	}
+
+	AUS_victor_adler = {
+		name = AUS_victor_adler
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = AUS_victor_adler
+			allowed = {
+				original_tag = AUS
+			}
+			traits = { dove }
+			on_add = {
+				custom_effect_tooltip = AUS_austrian_nationality
+				AUS_add_deutscher_nationalverband_stability = yes
+			}
+			on_remove = {
+				AUS_remove_deutscher_nationalverband_stability = yes
+			}
+		}
+	}
+
+	AUS_leon_bilinski = {
+		name = AUS_leon_bilinski
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = AUS_leon_bilinski
+			allowed = {
+				OR = {
+					original_tag = AUS
+					original_tag = POL
+					original_tag = GLD
+				}
+			}
+			traits = { stewardly_treasurer }
+			on_add = {
+				custom_effect_tooltip = AUS_polish_nationality
+				AUS_add_ethnicity_local_organisations = yes
+			}
+		}
+	}
+
+	AUS_milan_hodza = {
+		name = AUS_milan_hodza
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = AUS_milan_hodza
+			allowed = {
+				OR = {
+					original_tag = AUS
+					original_tag = CZE
+				}
+			}
+			traits = { state_architect }
+			on_add = {
+				custom_effect_tooltip = AUS_czechoslovak_nationality
+				AUS_add_ethnicity_local_organisations = yes
+			}
+		}
+	}
+
+	AUS_nikola_bjelovucic = {
+		name = AUS_nikola_bjelovucic
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = AUS_nikola_bjelovucic
+			allowed = {
+				OR = {
+					original_tag = AUS
+					original_tag = SCS
+					tag = YUG
+				}
+			}
+			traits = { press_influencer }
+			on_add = {
+				custom_effect_tooltip = AUS_serbocroat_nationality
+				AUS_add_ethnicity_local_organisations = yes
+			}
+		}
+	}
+
+	AUS_agenor_goluchowski = {
+		name = AUS_agenor_goluchowski
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = AUS_agenor_goluchowski
+			allowed = {
+				OR = {
+					original_tag = AUS
+					original_tag = POL
+				}
+			}
+			traits = { delicate_mediator }
+			on_add = {
+				custom_effect_tooltip = AUS_polish_nationality
+				AUS_add_ethnicity_local_organisations = yes
+			}
+		}
+	}
+
+	AUS_yuliian_romanchuk = {
+		name = AUS_yuliian_romanchuk
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = AUS_yuliian_romanchuk
+			allowed = {
+				OR = {
+					original_tag = AUS
+					original_tag = UKR
+				}
+			}
+			traits = { national_organiser }
+			on_add = {
+				custom_effect_tooltip = AUS_ruthene_nationality
+				AUS_add_ethnicity_local_organisations = yes
+			}
+		}
+	}
+
+	AUS_tomas_masaryk = {
+		name = AUS_tomas_masaryk
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = AUS_tomas_masaryk
+			cost = 50
+			available = {
+				has_completed_focus = AUS_acknowledge_agram_trials_blunder
+			} 
+			allowed = {
+				OR = {
+					original_tag = AUS
+					original_tag = CZE
+				}
+			}
+			traits = { enlightened_lawyer }
+			on_add = {
+				custom_effect_tooltip = AUS_czechoslovak_nationality
+				AUS_add_ethnicity_local_organisations = yes
+			}
+		}
+	}
+
+	### Deutscher Nationalverband ###
+	AUS_heinrich_friedjung = {
+		name = AUS_heinrich_friedjung
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = AUS_heinrich_friedjung
+			available = {
+				has_completed_focus = AUS_disenfranchise_croatian_serbs
+			}
+			allowed = {
+				original_tag = AUS
+			}
+			traits = { pan_germanist }
+			on_add = {
+				# TODO: Make this all possible German countries? (Switzerland?)
+				GER = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = AUS_heinrich_friedjung_trade
+					}
+				}
+
+				custom_effect_tooltip = AUS_austrian_nationality
+				AUS_add_deutscher_nationalverband_stability = yes
+			}
+			on_remove = {
+				GER = {
+					remove_opinion_modifier = {
+						target = ROOT
+						modifier = AUS_heinrich_friedjung_trade
+					}
+				}
+
+				AUS_remove_deutscher_nationalverband_stability = yes
+			}
+		}
+	}
+}

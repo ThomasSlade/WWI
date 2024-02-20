@@ -1,7 +1,5 @@
 technologies = {
 	mountain_training = {
-		research_cost = 1
-
 		# Focus only
 		allow = {
 			always = no
@@ -31,6 +29,39 @@ technologies = {
 				defence = 0.1
 				movement = 0.3
 			}
+		}
+	}
+
+	tech_polish_cavalry = {
+		# Focus only
+		allow = {
+			always = no
+		}
+
+		enable_subunits = {
+			polish_cavalry
+		}
+	}
+
+	tech_croatian_guard = {
+		# Focus only
+		allow = {
+			always = no
+		}
+
+		enable_subunits = {
+			croatian_guard
+		}
+	}
+
+	tech_standschutzen = {
+		# Focus only
+		allow = {
+			always = no
+		}
+
+		enable_subunits = {
+			standschutzen
 		}
 	}
 }

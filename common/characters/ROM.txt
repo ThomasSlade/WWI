@@ -1,0 +1,15 @@
+characters = {
+	ROM_ferdinand_i = {
+		name = ROM_ferdinand_i
+		portraits = {
+			civilian = {
+				large = GFX_portrait_rom_ferdinand_i
+			}
+		}
+		country_leader = {
+			ideology = established_t
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+}

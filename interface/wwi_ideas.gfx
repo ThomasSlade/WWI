@@ -59,4 +59,38 @@ spriteTypes = {
 		name = "GFX_idea_bul_balkan_prussia"
 		texturefile = "gfx/interface/ideas/idea_bul_balkan_prussia.dds"
 	}
+
+	# Austria resistances
+	spriteType = {
+		name = "GFX_idea_AUS_hungarian_resistance_0"
+		texturefile = "gfx/interface/ideas/idea_AUS_hungarian_resistance_0.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AUS_hungarian_resistance_1"
+		texturefile = "gfx/interface/ideas/idea_AUS_hungarian_resistance_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AUS_hungarian_resistance_2"
+		texturefile = "gfx/interface/ideas/idea_AUS_hungarian_resistance_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AUS_hungarian_resistance_3"
+		texturefile = "gfx/interface/ideas/idea_AUS_hungarian_resistance_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AUS_minority_resistance_0"
+		texturefile = "gfx/interface/ideas/idea_AUS_minority_resistance_0.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AUS_minority_resistance_1"
+		texturefile = "gfx/interface/ideas/idea_AUS_minority_resistance_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AUS_minority_resistance_2"
+		texturefile = "gfx/interface/ideas/idea_AUS_minority_resistance_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AUS_minority_resistance_3"
+		texturefile = "gfx/interface/ideas/idea_AUS_minority_resistance_3.dds"
+	}
 }

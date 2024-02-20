@@ -49,6 +49,26 @@
 
   # Austria
   AUS_imperial_visit_to_bosnia: "Imperial Visit to Bosnia"
+  SER_lovcen_heights_mountain_guns_tt: "Add §Y5 Level 3 Land Forts§! along the north-western border.\n"
+  AUS_request_national_representatives: "Committee of National Governments"
+  AUS_request_national_representatives_tt: "Advisors with minority nationalities provide:"
+  AUS_request_national_representatives_tt_2: "to states cored by:\n[CZE.GetNameWithFlag]\n[SCS.GetNameWithFlag]\n[POL.GetNameWithFlag]\n[UKR.GetNameWithFlag]\ndepending on their nationality."
+  AUS_empower_deutscher_nationalverband: "Empower the Deutscher Nationalverband"
+  AUS_empower_deutscher_nationalverband_tt: "Advisors with [AUS.GetNameWithFlag] nationality provide:"
+  AUS_cisleithania_referendum_tt: "Regions of §Y[HUN.GetOldNameDef]§! can be incorporated into §Y[THIS.GetNameDef]§! if §YMinority Resistance§! is low."
+  AUS_overpower_the_honved_tt: "Regions of §Y[HUN.GetOldNameDef]§! can be brought under §Y[AUS.GetAdjective]§! control by dispatching river flotillas."
+  AUS_overpower_the_honved_budapest_tt: "§Y[189.GetName]§! can be taken once §Y[AUS.GetNameDef]§! controls §Y3§! of the following:\n§Y[141.GetName]§!\n§Y[213.GetName]§!\n§Y[232.GetName]§!\n§Y[223.GetName]§!"
+  AUS_overpower_the_honved_hungary_annexation_tt: "§RThis will lead to our annexation!§!"
+  AUS_overpower_the_honved_hungary_warning_tt: "$AUS_overpower_the_honved_tt$\n$AUS_overpower_the_honved_budapest_tt$\n$AUS_overpower_the_honved_hungary_annexation_tt#"
+  AUS_overpower_the_honved_return_state_time_tt: "§Y[annexed_state.GetName]§! will return to §Y[HUN.GetAdjective]§! control in §Y90 days§!."
+  AUS_overpower_the_honved_return_state_cancelled_tt: "States taken by §Y[FROM.GetName]§! will no longer return to §Y[THIS.GetName]§!."
+  AUS_rail_import_submarines_rail_tt: "For §Y30 days§!, §Y25§! units of §Y$train_equipment$§! are used.\n"
+  AUS_rail_import_submarines_delay_tt: "In §Y30 days§!:\n"
+  AUS_rail_import_submarines_equipment_tt: "Create §Y6§! §YU-10 Class§! submarines from §Y[GER.GetNameDef]§!\n"
+  AUS_preempt_albanian_independence_tt: "[ALB.GetNameWithFlag] will become independent if:\n"
+  AUS_kaisermanover_tt: "Each year, choose between 100 §Y$ARMY_EXPERIENCE$§!, §Y$NAVY_EXPERIENCE$§!, and §Y$AIR_EXPERIENCE$§!."
+  AUS_exchange_ethnic_garrisons_tt: "Allows garrisoning of a nationality's core states.\nAll states cored by the target nationality receive:"
+  AUS_owner_of_novi_pazar_route_tt: "Owner of Novi Pazar route:"
 
   # Turkey
   TUR_humiliated_by_war: "[TUR.GetNameDef] has recently lost a war"

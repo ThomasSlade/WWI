@@ -1,0 +1,53 @@
+effect_boost_popularity_of_from_ideology_10 = {
+	if = {
+		limit = { FROM = { has_government = expansionist } }
+		THIS = {
+			add_popularity = {
+				ideology = expansionist
+				popularity = 0.1
+			}
+		}
+	}
+	if = {
+		limit = { FROM = { has_government = established } }
+		THIS = {
+			add_popularity = {
+				ideology = established
+				popularity = 0.1
+			}
+		}
+	}
+	if = {
+		limit = { FROM = { has_government = revolutionary } }
+		THIS = {
+			add_popularity = {
+				ideology = revolutionary
+				popularity = 0.1
+			}
+		}
+	}
+}
+
+effect_boost_popularity_of_root_ideology_10 = {
+	if = {
+		limit = { ROOT = { has_government = expansionist } }
+		add_popularity = {
+			ideology = expansionist
+			popularity = 0.1
+		}
+	}
+	if = {
+		limit = { ROOT = { has_government = established } }
+		add_popularity = {
+			ideology = established
+			popularity = 0.1
+		}
+	}
+	if = {
+		limit = { ROOT = { has_government = revolutionary } }
+		add_popularity = {
+			ideology = revolutionary
+			popularity = 0.1
+		}
+	}
+}

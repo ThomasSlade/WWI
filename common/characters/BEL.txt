@@ -1,0 +1,15 @@
+characters = {
+	BEL_albert_i = {
+		name = BEL_albert_i
+		portraits = {
+			civilian = {
+				large = GFX_portrait_bel_albert_i
+			}
+		}
+		country_leader = {
+			ideology = established_t
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+}

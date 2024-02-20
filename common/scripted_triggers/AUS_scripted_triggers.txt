@@ -1,0 +1,234 @@
+AUS_has_any_hungarian_resistance = {
+	custom_trigger_tooltip = {
+		tooltip = AUS_has_any_hungarian_resistance_tt
+		OR = {
+			has_idea = AUS_hungarian_resistance_1
+			has_idea = AUS_hungarian_resistance_2
+			has_idea = AUS_hungarian_resistance_3
+		}
+	}
+	hidden_trigger = {
+		OR = {
+			has_idea = AUS_hungarian_resistance_1
+			has_idea = AUS_hungarian_resistance_2
+			has_idea = AUS_hungarian_resistance_3
+		}
+	}
+}
+
+AUS_has_any_minority_resistance = {
+	custom_trigger_tooltip = {
+		tooltip = AUS_has_any_hungarian_resistance_tt
+		OR = {
+			has_idea = AUS_minority_resistance_1
+			has_idea = AUS_minority_resistance_2
+			has_idea = AUS_minority_resistance_3
+		}
+	}
+	hidden_trigger = {
+		OR = {
+			has_idea = AUS_minority_resistance_1
+			has_idea = AUS_minority_resistance_2
+			has_idea = AUS_minority_resistance_3
+		}
+	}
+}
+
+# Territory negotiation triggers
+AUS_controls_any_croatia = {
+	OR = {
+		controls_state = 230
+		controls_state = 234
+		controls_state = 152
+		controls_state = 172
+		controls_state = 213
+	}
+}
+
+AUS_controls_any_transylvania = {
+	OR = {
+		controls_state = 159
+		controls_state = 180
+		controls_state = 205
+	}
+}
+
+AUS_controls_some_serbia = {
+	count_triggers = {
+		amount = 3
+		controls_state = 156
+		controls_state = 125
+		controls_state = 162
+		controls_state = 136
+		controls_state = 177
+		controls_state = 185
+	}
+}
+
+AUS_controls_some_wallachia = {
+	count_triggers = {
+		amount = 4
+		controls_state = 211
+		controls_state = 168
+		controls_state = 237
+		controls_state = 209
+		controls_state = 222
+		controls_state = 200
+		controls_state = 233
+		controls_state = 187
+	}
+}
+
+AUS_controls_some_moldovia = {
+	count_triggers = {
+		amount = 3
+		controls_state = 235
+		controls_state = 203
+		controls_state = 179
+		controls_state = 368
+		controls_state = 320
+		controls_state = 333
+		controls_state = 269
+	}
+}
+
+AUS_controls_some_ruthenia = {
+	count_triggers = {
+		amount = 5
+		controls_state = 242
+		controls_state = 167
+		controls_state = 236
+		controls_state = 383
+		controls_state = 274
+		controls_state = 297
+		controls_state = 271
+	}
+}
+
+AUS_controls_some_poland = {
+	count_triggers = {
+		amount = 7
+		controls_state = 206
+		controls_state = 199
+		controls_state = 160
+		controls_state = 186
+		controls_state = 215
+		controls_state = 329
+		controls_state = 371
+		controls_state = 343
+		controls_state = 318
+		controls_state = 357
+	}
+}
+
+AUS_has_enough_south_slav_states_for_littoral = {
+	count_triggers = {
+		amount = 3
+		controls_state = 164
+		controls_state = 156
+		controls_state = 125
+		controls_state = 162
+		controls_state = 136
+	}
+}
+
+AUS_albanian_independence_will_happen = {
+	AUS = { has_completed_focus = AUS_preempt_albanian_independence }
+	tag = TUR
+	has_war = yes
+	any_enemy_country = {
+		capital_scope = { is_in_balkans = yes }
+	}
+	surrender_progress > 0.5
+	any_owned_state = { is_core_of = ALB }
+}
+
+trigger_AUS_has_high_development_and_controlled_by_root = {
+	is_controlled_by = ROOT
+	arms_factory > 2
+}
+
+trigger_AUS_has_many_german_characters = {
+	hidden_trigger = {
+		set_temp_variable = { german_characters = 0 }
+		all_character = {
+			if = {
+				limit = {
+					is_in_active_role = yes
+					has_character_flag = ethnicity_german
+				}
+				add_to_temp_variable = { german_characters = 1 }
+			}
+		}
+		check_variable = { german_characters > 3 }
+	}
+	custom_trigger_tooltip = {
+		tooltip = trigger_AUS_has_many_german_characters_tt
+		check_variable = { german_characters > 3 }
+	}
+}
+
+trigger_AUS_is_in_austrohungarian_coast = {
+	OR = {
+		state = 174
+		state = 152
+		state = 230
+		state = 192
+		state = 165
+		state = 239
+		state = 169
+		state = 208
+	}
+}
+
+trigger_AUS_can_foment_obrenovic_sympathies = {
+	custom_trigger_tooltip = {
+		tooltip = trigger_AUS_at_least_one_serbian_state_not_obrenovic
+
+		set_temp_variable = { non_obrenovic_states = 0 }
+		SER = {
+			all_core_state = {
+				if = {
+					limit = {
+						is_controlled_by = SER
+						NOT = { has_state_flag = obrenovic_sympathies }
+					}
+					add_to_temp_variable = { non_obrenovic_states = 1 }
+				}
+			}
+		}
+		check_variable = { non_obrenovic_states > 1 }
+	}
+	
+
+	FROM = {
+		NOT = { has_state_flag = obrenovic_sympathies }
+		any_neighbor_state = {
+			OR = {
+				controls_or_subject_of = yes
+				has_state_flag = obrenovic_sympathies
+			}
+		}
+	}
+
+	set_temp_variable = { level_plus_one = obrenovic_sympathies_level }
+	add_to_temp_variable = { level_plus_one = 1 }
+
+	set_temp_variable = { required_infantry_eq = 500 }
+	multiply_temp_variable = { required_infantry_eq = level_plus_one }
+	add_to_temp_variable = { required_infantry_eq = -1 }
+
+	set_temp_variable = { required_support_eq = 50 }
+	multiply_temp_variable = { required_support_eq = level_plus_one }
+	add_to_temp_variable = { required_support_eq = -1 }
+
+	has_equipment = { infantry_equipment > required_infantry_eq }
+	has_equipment = { support_equipment > required_support_eq }
+}
+
+trigger_AUS_sanjak_state_can_build_novi_pazar_railway = {
+	trigger_state_is_fully_controlled = yes
+	controller = {
+		has_opinion = { target = ROOT value > 9 }
+	}
+}

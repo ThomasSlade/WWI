@@ -1,0 +1,54 @@
+sub_units = {
+	
+	# Like regular infantry but better in hills and mountains, plus suppression.
+	croatian_guard = {
+		abbreviation = "CRG"
+		sprite = croatian_guard
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+		special_forces = yes
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 10
+		max_organisation = 20
+		default_morale = 0.3
+		manpower = 1500
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 2
+		weight = 0.5
+		
+		supply_consumption = 0.06
+	
+		need = {
+			infantry_equipment = 100
+		}
+
+		hills = {
+			attack = 0.1
+		}
+
+		mountain = {
+			attack = 0.05
+		}
+	}
+}

@@ -13,4 +13,29 @@ spriteTypes = {
 		name = "GFX_focus_seek_new_markets"
 		texturefile = "gfx/interface/goals/focus_seek_new_markets.dds"
 	}
+
+	spriteType = {
+		name = "GFX_focus_AUS_polish_trialism"
+		texturefile = "gfx/interface/goals/focus_AUS_polish_trialism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_AUS_croatian_trialism"
+		texturefile = "gfx/interface/goals/focus_AUS_croatian_trialism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_AUS_austro_hungarian_parliament"
+		texturefile = "gfx/interface/goals/focus_AUS_austro_hungarian_parliament.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_AUS_united_states_of_greater_austria"
+		texturefile = "gfx/interface/goals/focus_AUS_united_states_of_greater_austria.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_AUS_restore_austrian_empire"
+		texturefile = "gfx/interface/goals/focus_AUS_restore_austrian_empire.dds"
+	}
 }

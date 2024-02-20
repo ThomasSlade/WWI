@@ -1,0 +1,15 @@
+characters = {
+	TUR_mehmed_v = {
+		name = TUR_mehmed_v
+		portraits = {
+			civilian = {
+				large = GFX_portrait_tur_mehmed_v
+			}
+		}
+		country_leader = {
+			ideology = established_t
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+}

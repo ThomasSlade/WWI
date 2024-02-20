@@ -1,0 +1,1250 @@
+@AUS_port_overpowered_countdown = 180 # Change events_AUS_erode_hungarian_influence tooltips when you change this.
+
+AUS_influence_adriatic_territory = {
+	AUS_influence_free_city = {
+		targets = { TRS ZAR }
+
+		available = {
+			has_navy_experience > 99
+			if = {
+				limit = { original_tag = AUS }
+				FROM = { NOT = { has_idea = AUS_austrian_influenced_free_city } }
+			}
+			if = {
+				limit = { original_tag = ITA }
+				FROM = { NOT = { has_idea = AUS_italian_influenced_free_city } }
+			}
+		}
+
+		complete_effect = {
+			navy_experience = -100
+			if = {
+				limit = { original_tag = AUS }
+				FROM = { AUS_sway_free_city_to_austria = yes }
+			}
+			else_if = {
+				limit = { original_tag = ITA }
+				FROM = { AUS_sway_free_city_to_italy = yes }
+			}
+
+			hidden_effect = {
+				FROM = { save_event_target_as = influenced_free_city }
+				if = {
+					limit = { original_tag = AUS }
+					ITA = { country_event = { id = wwi_austria.17 hours = 1 } }
+				}
+				else_if = {
+					limit = { original_tag = ITA }
+					AUS = { country_event = { id = wwi_austria.17 hours = 1 } }
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_navy_experience > 149
+			}
+			modifier = {
+				add = 1
+				is_neighbor_of = FROM
+			}
+			# If you're already close to having one free city annexed, deprioritize spending experience on another one.
+			modifier = {
+				factor = 0
+				if = {
+					limit = { tag = AUS }
+					OR = {
+						TRS = { has_idea = AUS_austrian_influenced_free_city }
+						ZAR = { has_idea = AUS_austrian_influenced_free_city }
+					}
+				}
+				else = {
+					OR = {
+						TRS = { has_idea = AUS_italian_influenced_free_city }
+						ZAR = { has_idea = AUS_italian_influenced_free_city }
+					}
+				}
+			}
+			# If this is the AI's favoured free city, but the opponent has influenced it, work extra hard to undo the influence.
+			modifier = {
+				add = 1
+				AND = {
+					check_variable = { priority_free_city = FROM }
+					if = {
+						limit = { tag = AUS }
+						FROM = { has_idea = AUS_italian_influenced_free_city }
+					}
+					else = {
+						FROM = { has_idea = AUS_austrian_influenced_free_city }
+					}
+				}
+			}
+		}
+	}
+
+	AUS_annex_free_ciy = {
+		targets = { TRS ZAR }
+
+		available = {
+			has_navy_experience > 199
+			if = {
+				limit = { original_tag = AUS }
+				FROM = { has_idea = AUS_austrian_influenced_free_city }
+			}
+			if = {
+				limit = { original_tag = ITA }
+				FROM = { has_idea = AUS_italian_influenced_free_city }
+			}
+		}
+
+		complete_effect = {
+			navy_experience = -200
+			annex_country = { target = FROM transfer_troops = no }
+			hidden_effect = {
+				remove_ideas = { AUS_austrian_influenced_free_city AUS_italian_influenced_free_city }
+				FROM = {
+					save_event_target_as = influenced_free_city
+					# Important that these get removed. Otherwise, they remain on the dead countries and it messes with the AI's judgement.
+					remove_ideas = { AUS_austrian_influenced_free_city AUS_italian_influenced_free_city }
+				}
+				if = {
+					limit = { original_tag = AUS }
+					ITA = { country_event = { id = wwi_austria.18 hours = 1 } }
+				}
+				else_if = {
+					limit = { original_tag = ITA }
+					AUS = { country_event = { id = wwi_austria.18 hours = 1 } }
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_navy_experience > 249
+			}
+			modifier = {
+				add = 1
+				is_neighbor_of = FROM
+			}
+			modifier = {
+				factor = 3
+				check_variable = { priority_free_city = FROM }
+			}
+		}
+	}
+}
+
+AUS_negotiate_croatia = {
+	AUS_serbia_for_croatia = {
+		allowed = {
+			original_tag = AUS
+		}
+
+		available = {
+			AUS_controls_some_serbia = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			set_variable = { territory_negotiation_demand = 0 }
+			set_variable = { territory_negotiation_offer = 0 }
+			AUS_give_serbia = yes
+			AUS_receive_croatia = yes
+			HUN = { country_event = { id = wwi_austria.24 hours = 1 } }
+		}
+	}
+
+	AUS_wallachia_for_croatia = {
+		allowed = {
+			original_tag = AUS
+		}
+
+		available = {
+			AUS_controls_some_wallachia = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			set_variable = { territory_negotiation_demand = 0 }
+			set_variable = { territory_negotiation_offer = 1 }
+			AUS_give_wallachia = yes
+			AUS_receive_croatia = yes
+			HUN = { country_event = { id = wwi_austria.24 hours = 1 } }
+		}
+	}
+
+	AUS_moldovia_for_croatia = {
+		allowed = {
+			original_tag = AUS
+		}
+
+		available = {
+			AUS_controls_some_moldovia = yes
+			HUN = { AUS_controls_any_croatia = yes }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			set_variable = { territory_negotiation_demand = 0 }
+			set_variable = { territory_negotiation_offer = 2 }
+			AUS_give_moldovia = yes
+			AUS_receive_croatia = yes
+			HUN = { country_event = { id = wwi_austria.24 hours = 1 } }
+		}
+	}
+
+	AUS_ruthenia_for_croatia = {
+		allowed = {
+			original_tag = AUS
+		}
+
+		available = {
+			AUS_controls_some_ruthenia = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			set_variable = { territory_negotiation_demand = 0 }
+			set_variable = { territory_negotiation_offer = 3 }
+			AUS_give_ruthenia = yes
+			AUS_receive_croatia = yes
+			HUN = { country_event = { id = wwi_austria.24 hours = 1 } }
+		}
+	}
+
+	AUS_poland_for_croatia = {
+		allowed = {
+			original_tag = AUS
+		}
+
+		available = {
+			AUS_controls_some_poland = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			set_variable = { territory_negotiation_demand = 0 }
+			set_variable = { territory_negotiation_offer = 4 }
+			AUS_give_poland = yes
+			AUS_receive_croatia = yes
+			HUN = { country_event = { id = wwi_austria.24 hours = 1 } }
+		}
+	}
+}
+
+AUS_negotiate_transylvania = {
+	AUS_serbia_for_transylvania = {
+		allowed = {
+			original_tag = AUS
+		}
+
+		available = {
+			AUS_controls_some_serbia = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			set_variable = { territory_negotiation_demand = 1 }
+			set_variable = { territory_negotiation_offer = 0 }
+			AUS_give_serbia = yes
+			AUS_receive_translyvania = yes
+			HUN = { country_event = { id = wwi_austria.24 hours = 1 } }
+		}
+	}
+
+	AUS_wallachia_for_transylvania = {
+		allowed = {
+			original_tag = AUS
+		}
+
+		available = {
+			AUS_controls_some_wallachia = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			set_variable = { territory_negotiation_demand = 1 }
+			set_variable = { territory_negotiation_offer = 1 }
+			AUS_give_wallachia = yes
+			AUS_receive_translyvania = yes
+			HUN = { country_event = { id = wwi_austria.24 hours = 1 } }
+		}
+	}
+
+	AUS_moldovia_for_transylvania = {
+		allowed = {
+			original_tag = AUS
+		}
+
+		available = {
+			AUS_controls_some_moldovia = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			set_variable = { territory_negotiation_demand = 1 }
+			set_variable = { territory_negotiation_offer = 2 }
+			AUS_give_moldovia = yes
+			AUS_receive_translyvania = yes
+			HUN = { country_event = { id = wwi_austria.24 hours = 1 } }
+		}
+	}
+
+	AUS_ruthenia_for_transylvania = {
+		allowed = {
+			original_tag = AUS
+		}
+
+		available = {
+			AUS_controls_some_ruthenia = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			set_variable = { territory_negotiation_demand = 1 }
+			set_variable = { territory_negotiation_offer = 3 }
+			AUS_give_ruthenia = yes
+			AUS_receive_translyvania = yes
+			HUN = { country_event = { id = wwi_austria.24 hours = 1 } }
+		}
+	}
+
+	AUS_poland_for_transylvania = {
+		allowed = {
+			original_tag = AUS
+		}
+
+		available = {
+			AUS_controls_some_poland = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			set_variable = { territory_negotiation_demand = 1 }
+			set_variable = { territory_negotiation_offer = 4 }
+			AUS_give_poland = yes
+			AUS_receive_translyvania = yes
+			HUN = { country_event = { id = wwi_austria.24 hours = 1 } }
+		}
+	}
+}
+
+AUS_give_away_bukovina = {
+	AUS_give_away_bukovina = {
+		target_array = neighbors
+
+		target_trigger = {
+			236 = { any_neighbor_state = { is_controlled_by = FROM } }
+		}
+
+		fire_only_once = yes
+
+		available = {
+			NOT = { has_war_with = FROM }
+		}
+
+		complete_effect = {
+			FROM = { country_event = { id = wwi_austria.27 hours = 1 } }
+			custom_effect_tooltip = if_they_accept_tt
+			effect_tooltip = {
+				FROM = {
+					transfer_state = 236
+					add_timed_idea = { idea = AUS_trade_for_bukovina days = 730 }
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = AUS_received_bukovina
+					}
+				}
+				
+				add_opinion_modifier = {
+					target = FROM
+					modifier = AUS_gave_bukovina
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				236 = {
+					any_neighbor_state = { is_controlled_by = ROOT }
+				}
+				factor = 0
+			}
+			modifier = {
+				FROM = { original_tag = ROM }
+				add = 5
+			}
+			modifier = {
+				FROM = { is_puppet_of = ROOT }
+				add = 3
+			}
+			modifier = {
+				FROM = { is_in_faction_with = ROOT }
+				add = 2
+			}
+		}
+	}
+}
+
+AUS_manage_the_empire = {
+	AUS_economic_placations_to_hungary = {
+		cost = 75
+		days_re_enable = 90
+		allowed = {
+			original_tag = AUS
+		}
+
+		available = {
+			has_completed_focus = AUS_economic_placations_to_hungary
+			AUS_has_any_hungarian_resistance = yes
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			AUS_hungarian_resistance_level_down = yes
+			add_timed_idea = { idea = AUS_economic_placations_to_hungary days = 90 }
+		}
+	}
+
+	AUS_dismantle_hungary = {
+		cost = 75
+		allowed = {
+			original_tag = AUS
+		}
+
+		available = {
+			has_completed_focus = AUS_erode_hungarian_influence
+			has_subject = HUN
+			ic_ratio = {
+				tag = HUN
+				ratio > 2 
+			}
+		}
+
+		complete_effect = {
+			HUN = { country_event = { id = wwi_austria.29 hours = 1 } }
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+
+	AUS_cisleithania_referendum = {
+		state_target = yes
+
+		# Same as seize_hungarian_territory but without hungarian majority areas
+		targets = { 141 190 234 232 175 }
+
+		visible = {
+			has_completed_focus = AUS_universal_suffrage_across_the_empire
+			any_of_scopes = {
+				array = FROM.hungarian_region
+				is_controlled_by = HUN
+			}
+		}
+
+		available = {
+			AUS_has_any_minority_resistance = no
+		}
+
+		complete_effect = {
+			AUS_minority_resistance_level_up = yes
+
+			for_each_loop = {
+				array = FROM.hungarian_region
+				value = hungarian_region
+				var:hungarian_region ={
+					if = {
+						limit = { is_controlled_by = HUN }
+						transfer_state_to = ROOT
+					}
+				}
+			}
+
+			FROM = { save_event_target_as = seized_territory }
+			HUN = { country_event = { id = wwi_austria.30 hours = 1 } }
+		}
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				add = 5
+				capital_scope = {
+					distance_to = {
+						value < 200
+						target = FROM
+					}
+				}
+			}
+			modifier = {
+				add = 1
+				capital_scope = {
+					distance_to = {
+						value < 400
+						target = FROM
+					}
+				}
+			}
+			modifier = {
+				add = 1
+				capital_scope = {
+					distance_to = {
+						value < 600
+						target = FROM
+					}
+				}
+			}
+			modifier = {
+				add = 1
+				capital_scope = {
+					distance_to = {
+						value < 800
+						target = FROM
+					}
+				}
+			}
+		}
+	}
+
+	AUS_persuade_hungarian_diet = {
+		cost = 100
+		state_target = yes
+
+		targets = { 189 228 223 204 176 219 212 182 }
+
+		visible = {
+			has_completed_focus = AUS_guarantee_hungarian_privileges
+			FROM = { is_controlled_by = HUN }
+		}
+
+		available = {
+			AUS_has_any_minority_resistance = no
+		}
+
+		complete_effect = {
+			# TODO: This should give resource rights once I update to BBA.
+		}
+
+		ai_will_do = {
+			
+		}
+	}
+}
+
+decision_category_AUS_south_german_influence = {
+	decision_AUS_aid_for_autonomy = {
+		cost = 100 
+		target_non_existing = yes
+		targets = { BAY WUR SAX BAD THU HES ELS }
+
+		days_re_enable = 90
+
+		visible = {
+			tag = AUS
+			FROM = {
+				any_core_state = { is_controlled_by = GER }
+			}
+		}
+
+		available = {
+			NOT = { is_in_faction_with = GER }
+			NOT = { has_war_with = GER }
+			NOT = { has_idea = idea_AUS_loan_for_south_german_autonomy }
+		}
+
+		complete_effect = {
+			# Use this to prevent the AI from spamming the decision too often.
+			set_country_flag = { flag = recently_offered_aid_for_autonomy days = 180 }
+
+			FROM = { save_event_target_as = influenced_south_german_country }
+			GER = { country_event = { id = event_AUS_south_german_influence.2 hours = 1 } }
+
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				add_timed_idea = { idea = idea_AUS_loan_for_south_german_autonomy days = 90 }
+				GER = {
+					add_timed_idea = { idea = idea_AUS_received_loan_for_south_german_autonomy days = 90 }
+					release_puppet = FROM
+					FROM = { add_ideas = idea_AUS_influenced_by_austria }
+				}
+
+				custom_effect_tooltip = if_they_refuse_tt
+				GER = {
+					add_timed_idea = { idea = idea_AUS_south_german_placation days = 90 }
+					add_manpower = -15000
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 0
+				has_country_flag = recently_offered_aid_for_autonomy
+			}
+			modifier = {
+				add = 5
+				has_opinion = {
+				    target = GER
+				    value < 10
+				}
+			}
+			modifier = {
+				factor = 2
+				FROM = {
+					any_core_state = {
+						any_neighbor_state = { is_controlled_by = ROOT }
+					}
+				}
+			}
+			modifier = {
+				factor = 0.75
+				alliance_strength_ratio < 0.75
+			}
+		}
+	}
+
+	decision_AUS_support_secession = {
+		cost = 150
+		target_non_existing = yes
+		targets = { BAY WUR SAX BAD THU HES ELA }
+
+		visible = {
+			tag = AUS
+			FROM = {
+				has_idea = idea_AUS_influenced_by_austria
+			}
+		}
+
+		available = {
+			NOT = { is_in_faction_with = GER }
+			NOT = { has_war_with = GER }
+			has_equipment = { infantry_equipment > 3999 }
+			has_equipment = { artillery_equipment > 499 }
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -4000
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = -500
+			}
+
+			FROM = { remove_ideas = idea_AUS_influenced_by_austria }
+			puppet = { target = FROM end_wars = yes }
+			reverse_add_opinion_modifier = { target = GER modifier = opinion_AUS_supported_south_germen_secession }
+
+			hidden_effect = {
+				FROM = { save_event_target_as = seceding_south_german_country }
+				GER = { country_event = event_AUS_south_german_influence.5 }
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 1.5
+				has_equipment = { infantry_equipment > 6000 }
+			}
+			modifier = {
+				factor = 1.5
+				has_equipment = { artillery_equipment > 750 }
+			}
+		}
+	}
+
+	decision_AUS_reintegrate_south_german_subject = {
+		target_non_existing = yes
+		targets = { BAY WUR SAX BAD THU HES ELA }
+
+		visible = {
+			tag = GER
+			FROM = {
+				is_puppet = yes
+				has_idea = idea_AUS_influenced_by_austria
+			}
+		}
+
+		available = {
+			has_manpower > -14999
+			NOT = { has_idea = idea_AUS_south_german_placation }
+		}
+
+		complete_effect = {
+			add_manpower = -15000
+			add_timed_idea = { idea = idea_AUS_south_german_placation days = 90 }
+			if = {
+				limit = { has_idea = idea_AUS_received_loan_for_south_german_autonomy }
+				remove_ideas = idea_AUS_received_loan_for_south_german_autonomy
+			}
+			annex_country  = { target = FROM transfer_troops = yes }
+			
+			FROM = { remove_ideas = idea_AUS_influenced_by_austria }
+
+			AUS = {
+				if = {
+					limit = { has_idea = idea_AUS_loan_for_south_german_autonomy }
+					remove_ideas = idea_AUS_loan_for_south_german_autonomy
+				}
+			}
+
+			hidden_effect = {
+				FROM = { save_event_target_as = reabsorbed_south_german_country }
+				AUS = { country_event = event_AUS_south_german_influence.6 }
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 0
+				has_country_flag = recently_granted_south_german_autonomy
+			}
+			modifier = {
+				factor = 0.5
+				has_manpower < 20000
+			}
+			modifier = {
+				factor = 0.5
+				conscription_ratio > 0.99 # If on Service By Requirement or higher
+			}
+		}
+	}
+}
+
+decision_category_AUS_exchange_ethnic_garrisons = {
+	decision_AUS_import_foreign_garrison = {
+		target_non_existing = yes
+		targets = { SER ITA CZE GLD UKR ROM HUN BUL ALB SLV CRO MNT }
+
+		days_re_enable = 365
+
+		visible = {
+			any_controlled_state = {
+				is_core_of = FROM
+			}
+		}
+
+		available = {
+			has_equipment = {
+				train_equipment > 0
+			}
+
+			if = {
+				limit = { FROM = { tag = SER } }
+				234 = { trigger_AUS_has_high_development_and_controlled_by_root = yes }
+			}
+			else_if = {
+				limit = { FROM = { tag = ITA } }
+				214 = { trigger_AUS_has_high_development_and_controlled_by_root = yes }
+			}
+			else_if = {
+				limit = { FROM = { tag = CZE } }
+				227 = { trigger_AUS_has_high_development_and_controlled_by_root = yes }
+			}
+			else_if = {
+				limit = { FROM = { tag = GLD } }
+				141 = { trigger_AUS_has_high_development_and_controlled_by_root = yes }
+			}
+			else_if = {
+				limit = { FROM = { tag = UKR } }
+				206 = { trigger_AUS_has_high_development_and_controlled_by_root = yes }
+			}
+			else_if = {
+				limit = { FROM = { tag = ROM } }
+				225 = { trigger_AUS_has_high_development_and_controlled_by_root = yes }
+			}
+			else_if = {
+				limit = { FROM = { tag = HUN } }
+				224 = { trigger_AUS_has_high_development_and_controlled_by_root = yes }
+			}
+			else_if = {
+				limit = { FROM = { tag = BUL } }
+				236 = { trigger_AUS_has_high_development_and_controlled_by_root = yes }
+			}
+			else_if = {
+				limit = { FROM = { tag = ALB } }
+				165 = { trigger_AUS_has_high_development_and_controlled_by_root = yes }
+			}
+			else_if = {
+				limit = { FROM = { tag = SLV } }
+				231 = { trigger_AUS_has_high_development_and_controlled_by_root = yes }
+			}
+			else_if = {
+				limit = { FROM = { tag = CRO } }
+				174 = { trigger_AUS_has_high_development_and_controlled_by_root = yes }
+			}
+			else_if = {
+				limit = { FROM = { tag = MNT } }
+				146 = { trigger_AUS_has_high_development_and_controlled_by_root = yes }
+			}
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = -5
+			}
+			
+			every_controlled_state = {
+				limit = { is_core_of = FROM }
+				# TODO: Try this again after upgrading.
+				#display_individual_scopes = yes
+				add_dynamic_modifier = {
+					modifier = AUS_foreign_garrison
+					days = 365
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+			# If you're almost out of trains, don't.
+			modifier = {
+				factor = 0
+				stockpile_ratio = {
+					archetype = train_equipment
+					ratio < 1.25
+				}
+			}
+			modifier = {
+				factor = 0.25
+				stockpile_ratio = {
+					archetype = train_equipment
+					ratio < 2
+				}
+			}
+		}
+	}
+}
+
+decision_category_AUS_obrenovic_pretender = {
+	mission_AUS_obrenovic_sympathies_waning = {
+		available = {
+			always = no 
+		}
+
+		activation = {
+			SER = {
+				any_controlled_state = {
+					has_state_flag = obrenovic_sympathies
+				}
+			}
+		}
+
+		is_good = yes
+		days_mission_timeout = 60
+
+		timeout_effect = {
+			custom_effect_tooltip = undetermined_state_will_not_side_with_obrenovic_tt
+
+			hidden_effect = {
+				SER = { country_event = { id = events_AUS_foment_obrenovic_sympathies.4 hours = 1 } }
+			}
+		}
+
+		icon = GFX_decision_generic_stopwatch
+	}
+
+	decision_AUS_foment_sympathies_in_state_low = {
+		cost = 20
+		days_remove = 5
+
+		# TODO: Once continents are set up, this should really check states of a smaller area for performance.
+		state_target = yes
+
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = SER
+				hidden_trigger = {
+					arms_factory < 4
+					is_capital = no
+				}
+			}
+		}
+
+		available = {
+			trigger_AUS_can_foment_obrenovic_sympathies = yes
+		}
+
+		remove_effect = {
+			effect_AUS_foment_obrenovic_sympathies = yes
+		}
+
+		icon = {
+			key = GFX_decision_eng_support_imperialist_coup
+			trigger = {
+				FROM = { has_state_flag = obrenovic_sympathies }
+			}
+		}
+
+		icon = {
+			key = GFX_decision_generic_monarchy
+			trigger = {
+				FROM = { NOT = { has_state_flag = obrenovic_sympathies } }
+			}
+		}
+	}
+
+	decision_AUS_foment_sympathies_in_state_high = {
+		cost = 40
+		days_remove = 5
+
+		state_target = yes
+
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = SER
+				hidden_trigger = {
+					arms_factory > 3
+					is_capital = no
+				}
+			}
+		}
+
+		available = {
+			trigger_AUS_can_foment_obrenovic_sympathies = yes
+		}
+
+		remove_effect = {
+			effect_AUS_foment_obrenovic_sympathies = yes
+		}
+
+		icon = {
+			key = GFX_decision_eng_support_imperialist_coup
+			trigger = {
+				FROM = { has_state_flag = obrenovic_sympathies }
+			}
+		}
+
+		icon = {
+			key = GFX_decision_generic_monarchy
+			trigger = {
+				FROM = { NOT = { has_state_flag = obrenovic_sympathies } }
+			}
+		}
+	}
+
+	decision_AUS_foment_sympathies_in_state_capital = {
+		cost = 60
+		days_remove = 5
+
+		state_target = yes
+
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = SER
+				hidden_trigger = {
+					is_capital = yes
+				}
+			}
+		}
+
+		available = {
+			trigger_AUS_can_foment_obrenovic_sympathies = yes
+		}
+
+		remove_effect = {
+			effect_AUS_foment_obrenovic_sympathies = yes
+		}
+
+		icon = {
+			key = GFX_decision_eng_support_imperialist_coup
+			trigger = {
+				FROM = { has_state_flag = obrenovic_sympathies }
+			}
+		}
+
+		icon = {
+			key = GFX_decision_generic_monarchy
+			trigger = {
+				FROM = { NOT = { has_state_flag = obrenovic_sympathies } }
+			}
+		}
+	}
+
+	decision_AUS_launch_coup = {
+		allowed = {
+			original_tag = AUS
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		available = {
+			SER = {
+				any_owned_state = {
+					has_state_flag = obrenovic_sympathies
+				}
+			}
+
+			has_equipment = { artillery_equipment > 299 }
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = -300
+			}
+
+			effect_AUS_launch_obrenovic_coup = yes
+
+			hidden_effect = {
+				SER = { country_event = { id = events_AUS_foment_obrenovic_sympathies.5 hours = 1 } }
+			}
+		}
+
+		icon = GFX_decision_generic_ignite_civil_war
+	}
+}
+
+decision_category_AUS_overpower_the_honved = {
+	AUS_overpower_the_honved = {
+		cost = 10
+		state_target = yes
+		targets = { 227 201 141 173 176 182 204 213 171 125 232 205 180 223 178 214 172 228 146 224 156 }
+
+		# TODO: Try again after upgrade
+		#priority = FROM.overpower_the_honved_order
+		priority = 0
+
+		visible = {
+			FROM = { is_controlled_by = HUN }
+		}
+
+		available = {
+			has_equipment = { convoy > 9 }
+
+			has_equipment = { artillery_equipment > 49 }
+
+			any_of_scopes = {
+				array = FROM.river_neighbors
+				tooltip = AUS_has_adjacent_river_ports_tt
+				is_controlled_by = ROOT
+			}
+		}
+
+		complete_effect = {
+			transfer_state = FROM
+			FROM = {
+				set_state_flag = honved_overpowered
+				transfer_state_to = AUS
+			}
+			activate_targeted_decision = {
+				target = FROM
+				decision = AUS_port_overpowered
+			}
+
+			hidden_effect = {
+				FROM = { save_event_target_as = annexed_state }
+				HUN = { country_event = { id = events_AUS_erode_hungarian_influence.2 hours = 1 } }
+				# Prevent AI from spamming.
+				set_country_flag = {
+					flag = recently_overpower_the_honved
+					value = 1
+					days = 5
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 25
+
+			modifier = {
+				factor = 0
+				has_country_flag = recently_overpower_the_honved
+			}
+
+			# If you can already take Budapest, don't do these anymore.
+			modifier = {
+				factor = 0
+				count_triggers = {
+					amount = 3
+					controls_state = 141
+					controls_state = 213
+					controls_state = 232
+					controls_state = 223
+				}
+			}
+
+			modifier = {
+				factor = 0
+				stockpile_ratio = {
+					archetype = convoy
+					ratio < 1
+				}
+			}
+
+			modifier = {
+				factor = 0
+				stockpile_ratio = {
+					archetype = artillery_equipment
+					ratio < 0.75
+				}
+			}
+
+			modifier = {
+				add = 25
+				FROM = {
+					OR = {
+						state = 172
+						state = 228
+						state = 204
+					}
+				}
+			}
+			modifier = {
+				add = 25
+				FROM = {
+					OR = {
+						state = 171
+					}
+				}
+			}
+			modifier = {
+				add = 25
+				FROM = {
+					OR = {
+						state = 178
+					}
+				}
+			}
+			# Prioritise the states that unlock Budapest
+			modifier = {
+				add = 50
+				FROM = {
+					OR = {
+						state = 141
+						state = 213
+						state = 232
+						state = 223
+					}
+				}
+			}
+		}
+
+		icon = GFX_decision_generic_human_torpedo
+	}
+
+	AUS_overpower_the_honved_budapest = {
+		cost = 30
+		state_target = yes
+		targets = { 189 }
+
+		priority = 100
+
+		visible = {
+			FROM = { is_controlled_by = HUN }
+		}
+
+		available = {
+			count_triggers = {
+				amount = 3
+				controls_state = 141
+				controls_state = 213
+				controls_state = 232
+				controls_state = 223
+			}
+		}
+
+		complete_effect = {
+			transfer_state = FROM
+			hidden_effect = {
+				set_country_flag = budapest_overpowered
+				every_state = {
+					limit = { has_state_flag = honved_overpowered }
+					clr_state_flag = honved_overpowered
+				}
+				HUN = { country_event = { id = events_AUS_erode_hungarian_influence.4 hours = 1 } }
+			}
+		}
+
+		ai_will_do = {
+			base = 100`tag
+		}
+
+		icon = GFX_decision_infiltrate_state
+	}
+
+	AUS_port_overpowered = {
+		is_good = no
+		days_mission_timeout = @AUS_port_overpowered_countdown
+		state_target = yes
+		targets = { 227 201 141 173 176 182 204 213 171 125 232 205 180 223 178 214 172 228 146 224 156 }
+		fire_only_once = yes
+
+		allowed = {
+			always = no
+		}
+
+		available = {
+			always = no
+		}
+
+		cancel_trigger = {
+			FROM = {
+				OR = {
+					NOT = { has_state_flag = honved_overpowered }
+					NOT = { is_controlled_by = AUS }
+				}
+			}
+		}
+
+		timeout_effect = {
+			FROM = {
+				clr_state_flag = honved_overpowered
+				transfer_state_to = HUN
+			}
+
+			hidden_effect = {
+				FROM = { save_event_target_as = returned_state }
+				country_event = { id = events_AUS_erode_hungarian_influence.3 hours = 1 }
+				HUN = { country_event = { id = events_AUS_erode_hungarian_influence.3 hours = 1 } }
+			}
+		}
+
+		icon = GFX_decision_generic_stopwatch
+	}
+}

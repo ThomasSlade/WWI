@@ -39,3 +39,54 @@ SER_increase_great_retreat = {
 		add_ideas = SER_the_great_retreat_1
 	}
 }
+
+# Apply the effects of a 'Publish Lausanne Report' decision. PREV is Serbia, FROM is the target.
+# Must be used in the format of scope [SER or Serbian Decision] = { [Target Tag] = { function = yes } }
+SER_publish_lausanne_investigation_effect = {
+	PREV = {
+		if = {
+			limit = {
+				has_government = established
+			}
+			set_temp_variable = { temp_lausanne_drift_idea = token:SER_lausanne_established }
+		}
+		else_if = {
+			limit = {
+				has_government = expansionist
+			}
+			set_temp_variable = { temp_lausanne_drift_idea = token:SER_lausanne_expansionist }
+		}
+		else_if = {
+			limit = {
+				has_government = revolutionary
+			}
+			set_temp_variable = { temp_lausanne_drift_idea = token:SER_lausanne_revolutionary }
+		}
+		else = {
+			log = "ERROR: Unhandled ideology of [FROM.GetName] (FROM.GetRulingIdeology) when applying SER_lausanne_ideology_drift."
+		}
+	}
+
+	add_opinion_modifier = {
+		target = PREV
+		modifier = SER_lausanne_investigation
+	}
+	add_timed_idea = { idea = var:temp_lausanne_drift_idea days = 365 }
+}
+
+SER_bombard_kotor = {
+	208 = {
+		damage_building = {
+			type = dockyard
+			damage = 10
+		}
+		damage_building = {
+			type = naval_base
+			damage = 7
+		}
+		damage_building = {
+			type = bunker
+			damage = 3
+		}
+	}
+}

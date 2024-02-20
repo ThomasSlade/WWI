@@ -1,0 +1,11 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_trait_multilingual_army"
+		texturefile = "gfx/interface/traits/personal/trait_multilingual_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_polyglot"
+		texturefile = "gfx/interface/traits/personal/trait_polyglot.dds"
+	}
+}

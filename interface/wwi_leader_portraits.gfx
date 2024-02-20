@@ -2,23 +2,102 @@ spriteTypes = {
 	### SER
 
 	spriteType = {
-		name = "GFX_portrait_ser_nikola_pasic"
+		name = GFX_portrait_ser_nikola_pasic
 		texturefile = "gfx/leaders/SER/portrait_ser_nikola_pasic.dds"
 	}
-
-	
+	spriteType = {
+		name = GFX_portrait_ser_george_obrenovic
+		texturefile = "gfx/leaders/SER/portrait_ser_george_obrenovic.dds"
+	}
 
 	### GER
 
 	spriteType = {
-		name = "GFX_portrait_ger_wilhelm_ii"
+		name = GFX_portrait_ger_wilhelm_ii
 		texturefile = "gfx/leaders/GER/portrait_ger_wilhelm_ii.dds"
 	}
 
 	### FRA
 
 	spriteType = {
-		name = "GFX_portrait_fra_raymond_poincare"
+		name = GFX_portrait_fra_raymond_poincare
 		texturefile = "gfx/leaders/FRA/portrait_fra_raymond_poincare.dds"
+	}
+
+	### SOV
+
+	spriteType = {
+		name = GFX_portrait_sov_nicholas_ii
+		texturefile = "gfx/leaders/SOV/portrait_sov_nicholas_ii.dds"
+	}
+
+	### AUS
+
+	spriteType = {
+		name = GFX_portrait_aus_franz_joseph_i
+		texturefile = "gfx/leaders/AUS/portrait_aus_franz_joseph_i.dds"
+	}
+
+	### HUN
+
+	spriteType = {
+		name = GFX_portrait_hun_istvan_tisza
+		texturefile = "gfx/leaders/HUN/portrait_hun_istvan_tisza.dds"
+	}
+
+	### TUR
+
+	spriteType = {
+		name = GFX_portrait_tur_mehmed_v
+		texturefile = "gfx/leaders/TUR/portrait_tur_mehmed_v.dds"
+	}
+
+	### BUL
+
+	spriteType = {
+		name = GFX_portrait_bul_ferdinand_i
+		texturefile = "gfx/leaders/BUL/portrait_bul_ferdinand_i.dds"
+	}
+
+	### GRE
+
+	spriteType = {
+		name = GFX_portrait_gre_eleftherios_venizelos
+		texturefile = "gfx/leaders/GRE/portrait_gre_eleftherios_venizelos.dds"
+	}
+
+	### ROM
+
+	spriteType = {
+		name = GFX_portrait_rom_ferdinand_i
+		texturefile = "gfx/leaders/ROM/portrait_rom_ferdinand_i.dds"
+	}
+
+	### MNT
+
+	spriteType = {
+		name = GFX_portrait_mnt_nikola_i
+		texturefile = "gfx/leaders/MNT/portrait_mnt_nikola_i.dds"
+	}
+
+	### BEL
+
+	spriteType = {
+		name = GFX_portrait_bel_albert_i
+		texturefile = "gfx/leaders/BEL/portrait_bel_albert_i.dds"
+	}
+
+	### HOL
+
+	spriteType = {
+		name = GFX_portrait_hol_wilhelmina
+		texturefile = "gfx/leaders/HOL/portrait_hol_wilhelmina.dds"
+	}
+
+	### LUX
+
+	spriteType = {
+		name = GFX_portrait_lux_paul_eyschen
+		texturefile = "gfx/leaders/LUX/portrait_lux_paul_eyschen.dds"
 	}
 }

@@ -1,0 +1,15 @@
+characters = {
+	GRE_eleftherios_venizelos = {
+		name = GRE_eleftherios_venizelos
+		portraits = {
+			civilian = {
+				large = GFX_portrait_gre_eleftherios_venizelos
+			}
+		}
+		country_leader = {
+			ideology = established_t
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+}

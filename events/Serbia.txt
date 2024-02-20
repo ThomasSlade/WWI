@@ -288,8 +288,7 @@ country_event = {
 
 	immediate = {
 		start_civil_war = {
-			ruling_party = democratic_expansionist
-			ideology = democratic
+			ideology = established
 			size = 0.65
 			capital = 136 # Nis
 			states = { 136 162 218 148 216 129 134 }
@@ -312,7 +311,7 @@ country_event = {
 
 	immediate = {
 		start_civil_war = {
-			ideology = democratic_expansionist
+			ideology = expansionist
 			size = 0.65
 			capital = 125 # Belgrade
 			states = { 125 156 177 135 185 }
@@ -487,6 +486,15 @@ country_event = {
 	# Good!
 	option = {
 		name = wwi_serbia.14.a
+
+		effect_tooltip = {
+			every_state = {
+				limit = {
+					has_state_flag = macedonian_state_for_arbitration
+				}
+				transfer_state_to = var:global.favoured_in_macedonian_arbitration
+			}
+		}
 	}
 }
 
@@ -510,7 +518,23 @@ country_event = {
 
 	is_triggered_only = yes
 
-	immediate = {
+	# Accept it.
+	option = {
+		name = wwi_serbia.15.b
+
+		ai_chance = {
+			base = 0
+			modifier = {
+				var:global.favoured_in_macedonian_arbitration = {
+					strength_ratio = { tag = ROOT ratio > 2 }
+				}
+				
+				add = 3
+			}
+		}
+
+		log = "[?THIS.GetName] accepts macedonian arbitration and loses territory to [?global.favoured_in_macedonian_arbitration.GetName]."
+
 		effect_tooltip = {
 			every_state = {
 				limit = {
@@ -521,88 +545,29 @@ country_event = {
 		}
 	}
 
-	# Accept it.
-	option = {
-		name = wwi_serbia.15.b
-	}
-
 	# Declare war.
 	option = {
 		name = wwi_serbia.15.a
 
-		log = "[?THIS.GetName] has been arbitrated against in the Balkan war, and their enemy is [?var:global.favoured_in_macedonian_arbitration.GetName]."
+		ai_chance = {
+			base = 1
+		}
+
+		log = "[?THIS.GetName] declares war on [?var:global.favoured_in_macedonian_arbitration.GetName] due to macedonian arbitration."
 
 		if = {
-			limit = { is_in_faction_with = var:global.favoured_in_macedonian_arbitration }
+			limit = { is_in_faction_with = [?var:global.favoured_in_macedonian_arbitration.GetName] }
+			log = "Is in faction with [?var:global.favoured_in_macedonian_arbitration.GetName]."
 			leave_faction = yes
+		}
+		else = {
+			log = "Is not in faction with [?var:global.favoured_in_macedonian_arbitration.GetName]."
 		}
 
 		declare_war_on = {
 			target = var:global.favoured_in_macedonian_arbitration
 			type = take_state_focus
 			generator = { 218 148 216 134 188 133 127 220 183 140 }
-		}
-	}
-}
-
-# Event to determine macedonian territories on the Serbian-Bulgarian border after the Balkan War.
-country_event = {
-	id = wwi_serbia.16
-
-	is_triggered_only = yes
-	hidden = yes
-
-	immediate = {
-		# Identify all states in the macedonian area controlled by either Serbia or Bulgarian.
-		every_state = {
-			limit = {
-				has_state_flag = disputed_macedonian_state
-				is_owned_and_controlled_by = SER
-			}
-			
-			set_state_flag = serbian_controlled_disputed_macedonian_state
-			set_state_name = "Serbian Controlled Macedonia"
-		}
-
-		every_state = {
-			limit = {
-				has_state_flag = disputed_macedonian_state
-				is_owned_and_controlled_by = BUL
-			}
-			
-			set_state_flag = bulgarian_controlled_disputed_macedonian_state
-			set_state_name = "Bulgarian Controlled Macedonia"
-		}
-
-		# Of these, mark any Serbia-controlled states bordering Bulgaria-controlled states as disputed, and vice versa.
-		every_state = {
-			limit = {
-				has_state_flag = serbian_controlled_disputed_macedonian_state
-			}
-			every_neighbor_state = {
-				limit = {
-					has_state_flag = disputed_macedonian_state
-					is_owned_and_controlled_by = BUL
-				}
-
-				set_state_flag = macedonian_state_for_arbitration
-				set_state_name = "Border"
-			}
-		}
-
-		every_state = {
-			limit = {
-				has_state_flag = bulgarian_controlled_disputed_macedonian_state
-			}
-			every_neighbor_state = {
-				limit = {
-					has_state_flag = disputed_macedonian_state
-					is_owned_and_controlled_by = SER
-				}
-
-				set_state_flag = macedonian_state_for_arbitration
-				set_state_name = "Border"
-			}
 		}
 	}
 }
@@ -983,11 +948,11 @@ news_event = {
 }
 
 # Your country is being annexed by the Black Hand after they killed your leader.
-news_event = {
+country_event = {
 	id = wwi_serbia.27
 	title = wwi_serbia.27.t
 	desc = wwi_serbia.27.d
-	picture = GFX_news_event_001
+	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
 
@@ -1019,6 +984,60 @@ news_event = {
 				}
 				set_state_controller_to = FROM
 			}
+		}
+	}
+}
+
+# Serbia tells you about the Lausanne Investigation
+country_event = {
+	id = wwi_serbia.28
+	title = wwi_serbia.28.t
+	desc = wwi_serbia.28.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = wwi_serbia.28.a
+
+		effect_tooltip = {
+			FROM = { PREV = { SER_publish_lausanne_investigation_effect = yes } }
+		}
+	}
+}
+
+# Serbia's enemies hear about the Lausanne Investigation
+country_event = {
+	id = wwi_serbia.29
+	title = wwi_serbia.29.t
+	desc = wwi_serbia.29.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = wwi_serbia.29.a
+
+		effect_tooltip = {
+			FROM = { event_target:swayed_by_lausanne_investigation = { SER_publish_lausanne_investigation_effect = yes } }
+		}
+	}
+}
+
+# Serbia bombards Kotor from Montenegro
+country_event = {
+	id = wwi_serbia.30
+	title = wwi_serbia.30.t
+	desc = wwi_serbia.30.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = wwi_serbia.30.a
+
+		effect_tooltip = {
+			SER_bombard_kotor = yes
 		}
 	}
 }

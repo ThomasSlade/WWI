@@ -1,0 +1,43 @@
+leader_traits = {
+	multilingual_army = {
+		type = land
+		trait_type = personality_trait
+		
+		corps_commander_modifier = {
+			max_commander_army_size = -6
+		}
+
+		field_marshal_modifier = {
+			max_army_group_size = -2
+		}
+
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+	polyglot = {
+		type = land
+		trait_type = personality_trait
+
+		modifier = {
+			planning_speed = 0.33
+		}
+		
+		corps_commander_modifier = {
+			max_commander_army_size = 6
+		}
+
+		field_marshal_modifier = {
+			max_army_group_size = 2
+		}
+
+		modifier = {
+			experience_gain_factor = 0.33
+		}
+
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+}

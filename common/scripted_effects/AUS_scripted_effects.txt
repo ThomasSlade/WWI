@@ -1,15 +1,43 @@
-#Add to scripted triggers if more levels of hyper inflation is added
 AUS_hungarian_resistance_clear_all = {
-	remove_ideas = {
-		AUS_hungarian_resistance_1
-		AUS_hungarian_resistance_2
-		AUS_hungarian_resistance_3
+	if = {
+		limit = { has_idea = AUS_hungarian_resistance_0 }
+		remove_ideas = AUS_hungarian_resistance_0
+	}
+	else_if = {
+		limit = { has_idea = AUS_hungarian_resistance_1 }
+		remove_ideas = AUS_hungarian_resistance_1
+	}
+	else_if = {
+		limit = { has_idea = AUS_hungarian_resistance_2 }
+		remove_ideas = AUS_hungarian_resistance_2
+	}
+	else_if = {
+		limit = { has_idea = AUS_hungarian_resistance_3 }
+		remove_ideas = AUS_hungarian_resistance_3
+	}
+}
+
+AUS_minority_resistance_clear_all = {
+	if = {
+		limit = { has_idea = AUS_minority_resistance_0 }
+		remove_ideas = AUS_minority_resistance_0
+	}
+	else_if = {
+		limit = { has_idea = AUS_minority_resistance_1 }
+		remove_ideas = AUS_minority_resistance_1
+	}
+	else_if = {
+		limit = { has_idea = AUS_minority_resistance_2 }
+		remove_ideas = AUS_minority_resistance_2
+	}
+	else_if = {
+		limit = { has_idea = AUS_minority_resistance_3 }
+		remove_ideas = AUS_minority_resistance_3
 	}
 }
 
 #Important to put HIGHEST first
 AUS_hungarian_resistance_level_up = {
-	# level 5 not relevant. Cannot go above.
 	custom_effect_tooltip = AUS_hungarian_resistance_up_tt
 	if = {
 		limit = { has_idea = AUS_hungarian_resistance_2 }
@@ -26,24 +54,23 @@ AUS_hungarian_resistance_level_up = {
 		}
 	}
 	else_if = {
-		limit = { NOT = { has_idea = AUS_hungarian_resistance_1 } }
-		add_ideas = AUS_hungarian_resistance_1
+		limit = { has_idea = AUS_hungarian_resistance_0 }
+		swap_ideas = {
+			remove_idea = AUS_hungarian_resistance_0
+			add_idea = AUS_hungarian_resistance_1
+		}
 	}
 }
 
 #Important to put LOWEST first
 AUS_hungarian_resistance_level_down = {
-custom_effect_tooltip = CHI_inflation_down_tt
+	custom_effect_tooltip = AUS_hungarian_resistance_down_tt
 	if = {
 		limit = { has_idea = AUS_hungarian_resistance_1 }
-		#Makes the tooltip clearer if player looks at the effect early in the game
-		effect_tooltip = {
-			swap_ideas = {
-				remove_idea = AUS_hungarian_resistance_1
-				add_idea = AUS_hungarian_resistance_none
-			}
+		swap_ideas = {
+			remove_idea = AUS_hungarian_resistance_1
+			add_idea = AUS_hungarian_resistance_0
 		}
-		hidden_effect = { remove_ideas = AUS_hungarian_resistance_1 }
 	}
 	if = {
 		limit = { has_idea = AUS_hungarian_resistance_2 }
@@ -60,3 +87,1005 @@ custom_effect_tooltip = CHI_inflation_down_tt
 		}
 	}
 }
+
+AUS_minority_resistance_level_up = {
+	custom_effect_tooltip = AUS_minority_resistance_up_tt
+	if = {
+		limit = { has_idea = AUS_minority_resistance_2 }
+		swap_ideas = {
+			remove_idea = AUS_minority_resistance_2
+			add_idea = AUS_minority_resistance_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = AUS_minority_resistance_1 }
+		swap_ideas = {
+			remove_idea = AUS_minority_resistance_1
+			add_idea = AUS_minority_resistance_2
+		}
+	}
+	else_if = {
+		limit = { NOT = { has_idea = AUS_minority_resistance_0 } }
+		add_ideas = AUS_minority_resistance_1
+	}
+}
+
+AUS_minority_resistance_level_down = {
+	custom_effect_tooltip = AUS_minority_resistance_down_tt
+	if = {
+		limit = { has_idea = AUS_minority_resistance_1 }
+		swap_ideas = {
+			remove_idea = AUS_minority_resistance_1
+			add_idea = AUS_minority_resistance_0
+		}
+	}
+	if = {
+		limit = { has_idea = AUS_minority_resistance_2 }
+		swap_ideas = {
+			remove_idea = AUS_minority_resistance_2
+			add_idea = AUS_minority_resistance_1
+		}
+	}
+	if = {
+		limit = { has_idea = AUS_minority_resistance_3 }
+		swap_ideas = {
+			remove_idea = AUS_minority_resistance_3
+			add_idea = AUS_minority_resistance_2
+		}
+	}
+}
+
+AUS_sway_free_city_to_austria = {
+	custom_effect_tooltip = AUS_sway_free_city
+	if = {
+		limit = { has_idea = AUS_italian_influenced_free_city }
+		log = "Swaying [GetName] to Austria: Had Italian influence"
+		remove_ideas = AUS_italian_influenced_free_city
+		# Needed for tooltip purposes. -1 for Italy, 1 for Austria.
+		set_variable = { previous_influence = -1 }
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				OR = {
+					has_idea = AUS_austrian_influenced_free_city
+					has_idea = AUS_italian_influenced_free_city
+				}
+			}
+		}
+		log = "Swaying [GetName] to Austria: Had no influence"
+		add_ideas = AUS_austrian_influenced_free_city
+		set_variable = { previous_influence = 0 }
+	}
+}
+
+AUS_sway_free_city_to_italy = {
+	custom_effect_tooltip = AUS_sway_free_city
+	if = {
+		limit = { has_idea = AUS_austrian_influenced_free_city }
+		log = "Swaying [GetName] to Italy: Had Austrian influence"
+		remove_ideas = AUS_austrian_influenced_free_city
+		set_variable = { previous_influence = 1 }
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				OR = {
+					has_idea = AUS_austrian_influenced_free_city
+					has_idea = AUS_italian_influenced_free_city
+				}
+			}
+		}
+		log = "Swaying [GetName] to Italy: Had no influence"
+		add_ideas = AUS_italian_influenced_free_city
+		set_variable = { previous_influence = 0 }
+	}
+}
+
+# Reports how the free city's influence level has just been changed, for tooltip purposes.
+AUS_sway_free_city_tt = {
+	if = {
+		limit = { has_idea = AUS_austrian_influenced_free_city }
+		add_ideas = AUS_austrian_influenced_free_city
+	}
+	else_if = {
+		limit = { has_idea = AUS_italian_influenced_free_city }
+		add_ideas = AUS_italian_influenced_free_city
+	}
+	else_if = {
+		limit = { check_variable = { previous_influence = 1 } }
+		remove_ideas = AUS_austrian_influenced_free_city
+	}
+	else_if = {
+		limit = { check_variable = { previous_influence = -1 } }
+		remove_ideas = AUS_italian_influenced_free_city
+	}
+}
+
+# Pick either Trieste or Zara as Austria or Italy's priority for reintegration.
+AUS_pick_random_priority_city_state = {
+	log = "Picking random priority free city for [THIS.GetName]. If there are no valid free cities, no log message will follow."
+	random_list = {
+		50 = {
+			modifier = {
+				factor = 0
+				NOT = { country_exists = TRS }
+			}
+			log = "Priority Free City: [TRS.GetName]."
+			set_variable = {
+				var = priority_free_city
+				value = TRS
+			}
+		}
+		50 = {
+			modifier = {
+				factor = 0
+				NOT = { country_exists = ZAR }
+			}
+			log = "Priority Free City: [ZAR.GetName]."
+			set_variable = {
+				var = priority_free_city
+				value = ZAR
+			}
+		}
+	}
+}
+
+AUS_clear_ah_puppets = {
+	if = {
+		limit = { original_tag = HUN }
+		log = "Clearing Hungary as Austrian puppet."
+		drop_cosmetic_tag = yes
+	}
+	if = {
+		limit = { original_tag = SCS }
+		log = "Clearing Croatia-Slovenia as Austrian puppet."
+		drop_cosmetic_tag = yes
+	}
+	if = {
+		limit = { original_tag = GLD }
+		log = "Clearing Galicia as Austrian puppet."
+		drop_cosmetic_tag = yes
+	}
+	if = {
+		limit = { original_tag = ALB }
+		log = "Clearing Albania as Austrian puppet."
+		drop_cosmetic_tag = yes
+	}
+}
+
+AUS_mark_ah_puppets = {
+	if = {
+		limit = { original_tag = HUN }
+		log = "Marking Hungary as Austrian puppet."
+		set_cosmetic_tag = HUN_AUSTRIAHUNGARY
+	}
+	if = {
+		limit = { original_tag = SCS }
+		log = "Marking Croatia-Slovenia as Austrian puppet."
+		set_cosmetic_tag = SCS_AUSTRIAHUNGARY
+	}
+	if = {
+		limit = { original_tag = GLD }
+		log = "Marking Galicia as Austrian puppet."
+		set_cosmetic_tag = GLC_AUSTRIAHUNGARY
+	}
+	if = {
+		limit = { original_tag = ALB }
+		log = "Marking Albania as Austrian puppet."
+		set_cosmetic_tag = ALB_AUSTRIAHUNGARY
+	}
+}
+
+# Check state local organisation bonuses for all employed characters.
+AUS_update_ethnicity_local_organisation = {
+	every_character = {
+		limit = { is_in_active_role = yes }
+		AUS_add_ethnicity_local_organisations = yes
+	}
+}
+
+# Root should be the character.
+AUS_add_ethnicity_local_organisations = {
+	effect_tooltip = {
+		if = {
+			limit = { owner = { has_completed_focus = AUS_request_national_representatives } }
+			custom_effect_tooltip = AUS_request_national_representatives_unlocked_tt
+		}
+		else = {
+			custom_effect_tooltip = AUS_request_national_representatives_locked_tt
+		}
+		
+		if = {
+			limit = { has_character_flag = ethnicity_czechoslovak }
+			custom_effect_tooltip = AUS_czechoslovak_local_organisation_tt
+		}
+		if = {
+			limit = { has_character_flag = ethnicity_croatslovene }
+			custom_effect_tooltip = AUS_croatslovene_local_organisation_tt
+		}
+		if = {
+			limit = { has_character_flag = ethnicity_galician }
+			custom_effect_tooltip = AUS_polish_local_organisation_tt
+		}
+		if = {
+			limit = { has_character_flag = ethnicity_ruthene }
+			custom_effect_tooltip = AUS_ruthene_local_organisation_tt
+		}
+		add_dynamic_modifier = { modifier = AUS_ethnic_local_organisation }
+	}
+
+	hidden_effect = {
+		if = {
+			limit = {
+				owner = { has_completed_focus = AUS_request_national_representatives }
+			}
+			if = {
+				limit = { has_character_flag = ethnicity_czechoslovak }
+				log = "[THIS.GetName] was a valid character for providing czechoslovak AUS_ethnic_local_organisation bonuses."
+				every_state = {
+					limit = { is_core_of = CZE is_controlled_by = owner }
+					if = {
+						add_dynamic_modifier = { modifier = AUS_ethnic_local_organisation }
+					}
+				}
+			}
+			if = {
+				limit = { has_character_flag = ethnicity_croatslvoene }
+				log = "[THIS.GetName] was a valid character for providing south slav AUS_ethnic_local_organisation bonuses."
+				every_state = {
+					limit = { is_core_of = SCS is_controlled_by = owner 
+					}
+					if = {
+						add_dynamic_modifier = { modifier = AUS_ethnic_local_organisation }
+					}
+				}
+			}
+			if = {
+				limit = { has_character_flag = ethnicity_galician }
+				log = "[THIS.GetName] was a valid character for providing polish AUS_polish_local_organisation bonuses."
+				every_state = {
+					limit = { is_core_of = POL is_controlled_by = owner  }
+					if = {
+						add_dynamic_modifier = { modifier = AUS_ethnic_local_organisation }
+					}
+				}
+			}
+			if = {
+				limit = { has_character_flag = ethnicity_ruthene }
+				log = "[THIS.GetName] was a valid character for providing ukrainian AUS_ethnic_local_organisation bonuses."
+				every_state = {
+					limit = { is_core_of = UKR is_controlled_by = owner  }
+					if = {
+						add_dynamic_modifier = { modifier = AUS_ethnic_local_organisation }
+					}
+				}
+			}
+		}
+	}
+}
+
+# Add all stabilities from all employed german characters once the Deutscher Nationalverband focus has been completed.
+AUS_init_deutscher_nationalverband_stability = {
+	every_character = {
+		limit = { is_in_active_role = yes has_character_flag = ethnicity_german }
+		AUS_add_deutscher_nationalverband_stability = yes
+	}
+}
+
+# Root should be the country.
+AUS_add_deutscher_nationalverband_stability = {
+	effect_tooltip = {
+		if = {
+			limit = { has_completed_focus = AUS_empower_deutscher_nationalverband }
+			custom_effect_tooltip = AUS_deutscher_nationalverband_stability_unlocked_tt
+		}
+		else = {
+			custom_effect_tooltip = AUS_deutscher_nationalverband_stability_locked_tt
+		}
+
+		add_stability = 0.025
+	}
+
+	hidden_effect = {
+		if = {
+			limit = { has_completed_focus = AUS_empower_deutscher_nationalverband }
+			add_stability = 0.025
+		}
+	}
+}
+
+# Root should be the country.
+AUS_remove_deutscher_nationalverband_stability = {
+	hidden_effect = {
+		if = {
+			limit = { has_completed_focus = AUS_empower_deutscher_nationalverband }
+			add_stability = -0.025
+		}
+	}
+}
+
+AUS_form_united_states_of_greater_austria = {
+	AUS_hungarian_resistance_clear_all = yes
+	AUS_minority_resistance_clear_all = yes
+	add_ideas = AUS_empire_of_peoples
+	set_cosmetic_tag = AUS_USGA
+
+	hidden_effect = {
+		news_event = { id = wwi_austria.19 days = 1 }
+	}
+}
+
+AUS_form_austrian_empire = {
+	AUS_hungarian_resistance_clear_all = yes
+	AUS_minority_resistance_clear_all = yes
+	add_ideas = AUS_germanising_regime
+	set_cosmetic_tag = AUS_EMPIRE
+
+	hidden_effect = {
+		news_event = { id = wwi_austria.33 days = 1 }
+	}
+}
+
+AUS_form_austria_hungary = {
+	AUS_hungarian_resistance_clear_all = yes
+	AUS_minority_resistance_clear_all = yes
+	add_ideas = AUS_empire_without_qualities
+
+	effect_tooltip = {
+		annex_country = { target = HUN transfer_troops = yes }
+	}
+
+	set_cosmetic_tag = AUS_AH
+	
+	hidden_effect = {
+		if = {
+			limit = { has_subject = HUN }
+			HUN = { country_event = { id =  wwi_austria.31 hours = 1 } }
+		}
+	}
+}
+
+# Territory negotiations
+AUS_receive_croatia = {
+	HUN = {
+		every_controlled_state = {
+			limit = {
+				OR = {
+					state = 230
+					state = 234
+					state = 152
+					state = 172
+					state = 213
+				}
+			}
+			transfer_state_to = AUS
+		}
+	}
+}
+
+AUS_receive_translyvania = {
+	HUN = {
+		every_controlled_state = {
+			limit = {
+				OR = {
+					state = 159
+					state = 180
+					state = 205
+				}
+			}
+			transfer_state_to = AUS
+		}
+	}
+}
+
+AUS_give_serbia = {
+	every_controlled_state = {
+		limit = {
+			OR = {
+				state = 156
+				state = 125
+				state = 162
+				state = 136
+				state = 177
+				state = 185
+			}
+		}
+		transfer_state_to = HUN
+	}
+}
+
+AUS_give_wallachia = {
+	every_controlled_state = {
+		limit = {
+			OR = {
+				state = 211
+				state = 168
+				state = 237
+				state = 209
+				state = 222
+				state = 200
+				state = 233
+				state = 187
+			}
+		}
+		transfer_state_to = HUN
+	}
+}
+
+AUS_give_moldovia = {
+	every_controlled_state = {
+		limit = {
+			OR = {
+				state = 235
+				state = 203
+				state = 179
+				state = 368
+				state = 320
+				state = 333
+				state = 269
+			}
+		}
+		transfer_state_to = HUN
+	}
+}
+
+AUS_give_ruthenia = {
+	every_controlled_state = {
+		limit = {
+			OR = {
+				state = 242
+				state = 167
+				state = 236
+				state = 383
+				state = 274
+				state = 297
+				state = 271
+			}
+		}
+		transfer_state_to = HUN
+	}
+}
+
+AUS_give_poland = {
+	every_controlled_state = {
+		limit = {
+			OR = {
+				state = 206
+				state = 199
+				state = 160
+				state = 186
+				state = 215
+				state = 329
+				state = 371
+				state = 343
+				state = 318
+				state = 357
+			}
+		}
+		transfer_state_to = HUN
+	}
+}
+
+AUS_release_trialist_croatia = {
+	release_puppet_on_controlled = SCS
+	every_controlled_state = {
+		limit = {
+			OR = {
+				is_core_of = SER
+				is_core_of = MNT
+			}
+		}
+		remove_dynamic_modifier = { modifier = AUS_ethnic_autonomy } 
+		transfer_state_to = SCS
+	}
+}
+
+AUS_trade_serbia_montenegro_for_littoral = {
+	effect_tooltip = {
+		174 = { transfer_state_to = ROOT }
+		214 = { transfer_state_to = ROOT }
+	}
+
+	hidden_effect = {
+		174 = {
+			if = {
+				limit = { is_controlled_by = SCS }
+				transfer_state_to = ROOT
+				remove_core_of = SCS
+			}
+		}
+		214 = {
+			if = {
+				limit = { is_controlled_by = SCS }
+				transfer_state_to = ROOT
+				remove_core_of = SCS
+			}
+		}
+	}
+
+	FROM = {
+		every_controlled_state = {
+			limit = {
+				OR = {
+					is_core_of = SER
+					is_core_of = MNT
+				}
+			}
+			transfer_state_to = SCS
+		}
+	}
+}
+
+# Set up regions of Hungary for easier annexation.
+AUS_init_hungarian_regions = {
+	# Pressburg (Slovakia)
+	141 = {
+		add_to_array = { array = hungarian_region value = 141 }
+		add_to_array = { array = hungarian_region value = 163 }
+		add_to_array = { array = hungarian_region value = 123 }
+	}
+
+	# Ungwar (Carpathian Ruthenia)
+	190 = {
+		add_to_array = { array = hungarian_region value = 190 }
+		add_to_array = { array = hungarian_region value = 145 }
+		add_to_array = { array = hungarian_region value = 126 }
+	}
+
+	# Central Transdanubia (West Hungary)
+	228 = {
+		add_to_array = { array = hungarian_region value = 228 }
+		add_to_array = { array = hungarian_region value = 201 }
+		add_to_array = { array = hungarian_region value = 204 }
+		add_to_array = { array = hungarian_region value = 173 }
+	}
+
+	# Agram (Croatia)
+	234 = {
+		add_to_array = { array = hungarian_region value = 234 }
+		add_to_array = { array = hungarian_region value = 230 }
+		add_to_array = { array = hungarian_region value = 152 }
+		add_to_array = { array = hungarian_region value = 172 }
+		add_to_array = { array = hungarian_region value = 213 }
+	}
+
+	# Vojvodina
+	232 = {
+		add_to_array = { array = hungarian_region value = 232 }
+		add_to_array = { array = hungarian_region value = 171 }
+		add_to_array = { array = hungarian_region value = 205 }
+		add_to_array = { array = hungarian_region value = 180 }
+	}
+
+	# Budapest (Central Hungary)
+	189 = {
+		add_to_array = { array = hungarian_region value = 189 }
+		add_to_array = { array = hungarian_region value = 176 }
+		add_to_array = { array = hungarian_region value = 182 }
+		add_to_array = { array = hungarian_region value = 212 }
+		add_to_array = { array = hungarian_region value = 131 }
+	}
+
+	# Debrecen (East Hungary)
+	223 = {
+		add_to_array = { array = hungarian_region value = 223 }
+		add_to_array = { array = hungarian_region value = 178 }
+		add_to_array = { array = hungarian_region value = 219 }
+		add_to_array = { array = hungarian_region value = 144 }
+	}
+
+	# Klausenburg (Transylvania)
+	175 = {
+		add_to_array = { array = hungarian_region value = 175 }
+		add_to_array = { array = hungarian_region value = 149 }
+		add_to_array = { array = hungarian_region value = 225 }
+		add_to_array = { array = hungarian_region value = 159 }
+	}
+}
+
+# Set up river neighbor states that Austria needs to move through when overpowering Hungary on the Danube.
+AUS_init_hungarian_river_chain = {
+	### Danube ###
+
+	# Wien (Root)
+	227 = {
+		set_variable = { overpower_the_honved_order = 99 }
+		add_to_array = { array = river_neighbors value = 201 }
+		add_to_array = { array = river_neighbors value = 141 }
+	}
+
+	# Orvidek
+	201 = {
+		set_variable = { overpower_the_honved_order = 98 }
+		add_to_array = { array = river_neighbors value = 227 }
+		add_to_array = { array = river_neighbors value = 141 }
+	}
+
+	# Pressburg
+	141 = {
+		set_variable = { overpower_the_honved_order = 97 }
+		add_to_array = { array = river_neighbors value = 227 }
+		add_to_array = { array = river_neighbors value = 201 }
+		add_to_array = { array = river_neighbors value = 173 }
+	}
+
+	# Neuhausel
+	173 = {
+		set_variable = { overpower_the_honved_order = 96 }
+		add_to_array = { array = river_neighbors value = 141 }
+		add_to_array = { array = river_neighbors value = 176 }
+	}
+
+	# Pest
+	176 = {
+		set_variable = { overpower_the_honved_order = 95 }
+		add_to_array = { array = river_neighbors value = 173 }
+		add_to_array = { array = river_neighbors value = 182 }
+	}
+
+	# Baja
+	182 = {
+		set_variable = { overpower_the_honved_order = 94 }
+		add_to_array = { array = river_neighbors value = 176 }
+		add_to_array = { array = river_neighbors value = 204 }
+	}
+
+	# Mohacs
+	204 = {
+		set_variable = { overpower_the_honved_order = 93 }
+		add_to_array = { array = river_neighbors value = 182 }
+		add_to_array = { array = river_neighbors value = 213 }
+	}
+
+	# Esseg
+	213 = {
+		set_variable = { overpower_the_honved_order = 92 }
+		add_to_array = { array = river_neighbors value = 204 }
+		add_to_array = { array = river_neighbors value = 171 }
+		add_to_array = { array = river_neighbors value = 172 }
+	}
+
+	# Neusatz
+	171 = {
+		set_variable = { overpower_the_honved_order = 91 }
+		add_to_array = { array = river_neighbors value = 125 }
+		add_to_array = { array = river_neighbors value = 213 }
+		add_to_array = { array = river_neighbors value = 232 }
+	}
+
+	# Belgrade (Root)
+	125 = {
+		set_variable = { overpower_the_honved_order = 90 }
+		add_to_array = { array = river_neighbors value = 171 }
+		add_to_array = { array = river_neighbors value = 232 }
+	}
+
+	### Timis and Tisa
+
+	# Vojvodina
+	232 = {
+		set_variable = { overpower_the_honved_order = 49 }
+		add_to_array = { array = river_neighbors value = 125 }
+		add_to_array = { array = river_neighbors value = 205 }
+		add_to_array = { array = river_neighbors value = 223 }
+		add_to_array = { array = river_neighbors value = 171 }
+		add_to_array = { array = river_neighbors value = 156 }
+	}
+
+	# Temeswer
+	205 = {
+		set_variable = { overpower_the_honved_order = 48 }
+		add_to_array = { array = river_neighbors value = 232 }
+		add_to_array = { array = river_neighbors value = 180 }
+	}
+
+	# Lugos (Root)
+	180 = {
+		set_variable = { overpower_the_honved_order = 47 }
+		add_to_array = { array = river_neighbors value = 205 }
+	}
+
+	# Szeged
+	223 = {
+		set_variable = { overpower_the_honved_order = 46 }
+		add_to_array = { array = river_neighbors value = 232 }
+		add_to_array = { array = river_neighbors value = 178 }
+	}
+
+	# Grosswardein (Root)
+	178 = {
+		set_variable = { overpower_the_honved_order = 45 }
+		add_to_array = { array = river_neighbors value = 223 }
+	}
+
+	### Drava ###
+
+	# Marburg (Root)
+	214 = {
+		set_variable = { overpower_the_honved_order = 19 }
+		add_to_array = { array = river_neighbors value = 172 }
+	}
+
+	# Belovar Koros
+	172 = {
+		set_variable = { overpower_the_honved_order = 18 }
+		add_to_array = { array = river_neighbors value = 214 }
+		add_to_array = { array = river_neighbors value = 228 }
+	}
+
+	# Kanizsna
+	228 = {
+		set_variable = { overpower_the_honved_order = 17 }
+		add_to_array = { array = river_neighbors value = 172 }
+		add_to_array = { array = river_neighbors value = 213 }
+	}
+
+	### Sava ###
+
+	# Banja Luka
+	146 = {
+		set_variable = { overpower_the_honved_order = 9 }
+		add_to_array = { array = river_neighbors value = 224 }
+	}
+
+	# Sarajevo
+	224 = {
+		set_variable = { overpower_the_honved_order = 8 }
+		add_to_array = { array = river_neighbors value = 146 }
+		add_to_array = { array = river_neighbors value = 156 }
+	}
+
+	# Macva
+	156 = {
+		set_variable = { overpower_the_honved_order = 7 }
+		add_to_array = { array = river_neighbors value = 224 }
+		add_to_array = { array = river_neighbors value = 232 }
+	}
+}
+
+# Trigger needs to be done as effect so it can be seen in the focus tooltip.
+AUS_albanian_independence_will_happen_trigger_tooltip = {
+	TUR = {
+		if = {
+			limit = {
+				has_war = yes
+				any_enemy_country = {
+					capital_scope = { is_in_balkans = yes }
+				}
+			}
+			custom_effect_tooltip = AUS_albania_independence_condition_balkan_war_true_tt
+		}
+		else = { custom_effect_tooltip = AUS_albania_independence_condition_balkan_war_false_tt }
+	}
+	TUR = {
+		if = {
+			limit = {
+				surrender_progress > 0.5
+				any_owned_state = { is_core_of = ALB }
+			}
+			custom_effect_tooltip = AUS_albania_independence_condition_surrender_progress_true_tt
+		}
+		else = { custom_effect_tooltip = AUS_albania_independence_condition_surrender_progress_false_tt }
+	}
+}
+
+effect_AUS_goad_bulgaria_into_war_bulgaria = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 2000
+		producer = AUS
+	}
+
+	add_equipment_to_stockpile = {
+		type = artillery_equipment
+		amount = 200
+		producer = AUS
+	}
+
+	add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = 50
+		producer = AUS
+	}
+
+	add_timed_idea = {
+		idea = idea_AUS_assisting_bulgarian_mobilisation
+		days = 90
+	}
+
+	136 = {
+		if = {
+			limit = { is_controlled_by = SER }
+			add_core_of = BUL
+		}
+	}
+
+	162 = {
+		if = {
+			limit = { is_controlled_by = SER }
+			add_core_of = BUL
+		}
+	}
+
+	create_wargoal = {
+	    type = take_core_state
+	    target = SER
+	    expire = 730
+	}
+
+	set_country_flag = { flag = partitioning_serbia_with_austria value = 1 days = 730 }
+
+	add_ai_strategy = {
+		type = conquer
+		id = SER
+		value = 100
+	}
+}
+
+effect_AUS_goad_bulgaria_into_war_austria = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = -2000
+		producer = AUS
+	}
+
+	add_equipment_to_stockpile = {
+		type = artillery_equipment
+		amount = -200
+		producer = AUS
+	}
+
+	add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = -50
+		producer = AUS
+	}
+
+	125 = {
+		if = {
+			limit = { is_controlled_by = SER }
+			add_core_of = AUS
+		}
+	}
+
+	156 = {
+		if = {
+			limit = { is_controlled_by = SER }
+			add_core_of = AUS
+		}
+	}
+
+	185 = {
+		if = {
+			limit = { is_controlled_by = SER }
+			add_core_of = AUS
+		}
+	}
+}
+
+effect_AUS_foment_obrenovic_sympathies = {
+	add_to_variable = { obrenovic_sympathies_level = 1 }
+	add_to_variable = { times_fomented_sympathies = 1 }
+	# Start counting the order of fomenting from 1, not 0, because 0 doesn't set off the has_flag trigger.
+	FROM = {
+		log = "Fomenting Obrenovic sympathies in [?THIS.GetName]. Order of fomentation is [?PREV.times_fomented_sympathies]."
+		set_state_flag = obrenovic_sympathies
+		set_variable = { fomented_sympathies_order = PREV.times_fomented_sympathies }
+	}
+	
+
+	set_temp_variable = { level_plus_one = obrenovic_sympathies_level }
+	add_to_temp_variable = { level_plus_one = 1 }
+
+	set_temp_variable = { required_infantry_eq = 500 }
+	multiply_temp_variable = { required_infantry_eq = level_plus_one }
+
+	set_temp_variable = { required_support_eq = 50 }
+	multiply_temp_variable = { required_support_eq = level_plus_one }
+
+	add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = required_infantry_eq
+	}
+
+	add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = required_support_eq
+	}
+
+	FROM = { custom_effect_tooltip = state_will_side_with_obrenovic_tt }
+
+	hidden_effect = {
+		# Clear the countdown to removing a sympathetic state.
+		remove_mission = mission_AUS_obrenovic_sympathies_waning
+
+		FROM = {
+			save_event_target_as = obrenovic_sympathiser_province
+			controller = {
+				country_event = { id = events_AUS_foment_obrenovic_sympathies.2 hours = 1 }
+			}
+		}
+	}
+}
+
+effect_AUS_remove_obrenovic_sympathies_in_state = {
+	log = "Removing Obrenovic sympathies in [?THIS.GetName]."
+	add_to_variable = { AUS.obrenovic_sympathies_level = -1 }
+	clr_state_flag = obrenovic_sympathies
+	clear_variable = fomented_sympathies_order
+
+	custom_effect_tooltip = state_will_not_side_with_obrenovic_tt
+}
+
+effect_AUS_launch_obrenovic_coup = {
+	set_global_flag = obrenovic_coup_launched
+	custom_effect_tooltip = effect_AYS_launch_obrenovic_coup_tt
+	SER = {
+		every_controlled_state = {
+			# TODO: Try again after upgrading.
+			#isplay_individual_scopes = yes
+			limit = { has_state_flag = obrenovic_sympathies }
+			custom_effect_tooltip = effect_AYS_launch_obrenovic_coup_state_name_tt
+		}
+	}
+}
+
+# THIS = route state, PREV = destination state.
+effect_AUS_build_novi_pazar_line = {
+	log = "Building Novi Pazar railway in state: [?THIS.GetName] towards state [?PREV.GetName]."
+
+	if = {
+		limit = { state = 177 }
+		# Mitrovica to Sarajevo
+		build_railway = {
+			level = 3
+			path = { 6157 6016 6070 5796 5652 5857 5740 5702 4658 5027 4564 4907 }
+		}
+	}
+	else_if = {
+		limit = { state = 135 }
+		if = {
+			# Pristina to Sarajevo via Ipek
+			limit = { PREV = { state = 224 } }
+			build_railway = {
+				level = 3
+				start_province = 5254
+				path = { 6157 5877 5254	5230 5217 5229 5316 5488 5518 4639 4564 4907 }
+			}
+		}
+		else_if = {
+			limit = { PREV = { state = 164 } }
+			# Mitrovica to Kotor via Cetinje
+			log = "Montenegro to Mitrovica"
+			build_railway = {
+				level = 3
+				path = { 6157 5877 5254	5184 5698 5699 5455 5746 5422 4768 4615 }
+			}
+		}
+		else = {
+			log = "ERROR: [PREV.GetName] is not a valid destination state for building the Novi Pazar line."
+		}
+	}
+	else = {
+		log = "ERROR: [THIS.GetName] is not a valid route state for building the Novi Pazar line."
+	}
+}
+
+# Determines strength of the Obrenovic coup given how many core states have Obrenovic sympathies, and stores as variable on the ROOT scope named 'obrenovic_coup_strength'
+effect_AUS_determine_obrenovic_coup_strength = {
+	set_temp_variable = { obrenovic_states = 0 }
+	for_each_scope_loop = {
+		array = owned_controlled_states
+		log = "[THIS.GetName]"
+		if = {
+			limit = { has_state_flag = obrenovic_sympathies }
+			add_to_temp_variable = { obrenovic_states = 1 }
+		}
+	}
+
+	set_temp_variable = { obrenovic_coup_strength = obrenovic_states }
+	divide_variable = { obrenovic_coup_strength = num_owned_controlled_states }
+	log = "Determined Obrenovic coup strength as [?obrenovic_states] Obrenovic States / Core States [?num_owned_controlled_states] = [?obrenovic_coup_strength]
+}
+

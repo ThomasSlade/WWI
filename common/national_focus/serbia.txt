@@ -1019,6 +1019,48 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = SER_lovcen_heights_mountain_guns
+		icon = GFX__shine
+		prerequisite = { focus = SER_rearm_the_vojvodina }
+		x = -2
+		y = 1
+		relative_position_id = SER_rearm_the_vojvodina
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			164 = {
+				is_fully_controlled_by = ROOT
+			}
+		}
+
+		completion_reward = {
+			# Montenegro-Austria border forts
+			164 = {
+				custom_effect_tooltip = SER_lovcen_heights_mountain_guns_tt
+				hidden_effect = {
+					add_building_construction = {
+						type = bunker
+						level = 3 # Keep tooltip updated with bunker level.
+						instant_build = yes
+						province = {
+							id = 5773
+							id = 5422
+							id = 5512
+							id = 5894
+							id = 5570
+						}
+					}
+				}
+			}
+			unlock_decision_tooltip = SER_bombard_kotor
+		}
+	}
+
 	# Pro-Austria Branch
 	focus = {
 		id = SER_concede_the_pig_war
@@ -1412,7 +1454,7 @@ focus_tree = {
 		id = SER_joint_serb_croat_drills
 		icon = GFX__shine
 		prerequisite = { focus = SER_rapproachment_with_austria_hungary }
-		x = 0
+		x = 1
 		y = 3
 		relative_position_id = SER_rapproachment_with_austria_hungary
 		cost = 10
@@ -1471,7 +1513,7 @@ focus_tree = {
 		id = SER_found_the_srpska_avijatika
 		icon = GFX__shine
 		prerequisite = { focus = SER_french_military_contracts focus = SER_joint_serb_croat_drills }
-		x = 6
+		x = 7
 		y = 1
 		relative_position_id = SER_french_military_contracts
 		cost = 10
@@ -1598,7 +1640,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = SER_jovan_cvijic
 			add_state_core = 202
+			add_state_core = 151
 			if = {
 				limit = {
 					NOT = { has_completed_focus = SER_entice_montenegro }
@@ -2335,7 +2380,7 @@ focus_tree = {
 		id = SER_form_tanasko_rajic_regiment
 		icon = GFX__shine
 		prerequisite = { focus = SER_french_military_contracts focus = SER_joint_serb_croat_drills }
-		x = 8
+		x = 9
 		y = 1
 		relative_position_id = SER_french_military_contracts
 		cost = 10
@@ -2397,6 +2442,7 @@ focus_tree = {
 
 		available = {
 			125 = {
+				is_owned_and_controlled_by = ROOT
 				AND = {
 					industrial_complex > 3
 					arms_factory > 3
@@ -2469,11 +2515,12 @@ focus_tree = {
 			        infantry = { x = 1 y = 0 }
 					infantry = { x = 1 y = 1 }
 					infantry = { x = 1 y = 2 }
-			        infantry = { x = 1 y = 3 }
+			        artillery_brigade = { x = 1 y = 3 }
 				}
 
 				support = {
 					engineer = { x = 0 y = 0 }
+					recon = { x = 0 y = 1 }
 				}
 			}
 
@@ -2491,7 +2538,7 @@ focus_tree = {
 		id = SER_the_great_retreat
 		icon = GFX__shine
 		prerequisite = { focus = SER_relocate_nbs_treasury }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = SER_relocate_nbs_treasury
 		cost = 10
@@ -2502,12 +2549,37 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available = {
-
+			has_war = yes
 		}
 
 		completion_reward = {
 			SER_increase_great_retreat = yes
 			unlock_decision_category_tooltip = SER_the_great_retreat
+		}
+	}
+
+	focus = {
+		id = SER_commission_the_lausanne_investigation
+		prerequisite = { focus = SER_relocate_nbs_treasury }
+		x = 1
+		y = 1
+		relative_position_id = SER_relocate_nbs_treasury
+		cost = 10
+		ai_will_do = {
+			factor = 6
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			NOT = { has_war_with = SWI }
+			any_owned_state = {
+				NOT = { is_fully_controlled_by = ROOT }
+			}
+		}
+
+		completion_reward = {
+			unlock_decision_category_tooltip = SER_publish_lausanne_investigation
 		}
 	}
 }

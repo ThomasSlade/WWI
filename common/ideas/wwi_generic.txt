@@ -1,5 +1,81 @@
 ideas = {
 	country = {
+		### Alignment ###
+		expansionist_influence = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = expansionist
+			}
+
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+			
+			modifier = {
+				expansionist_drift = 0.1
+				expansionist_acceptance = 85
+			}
+		}
+
+		established_influence = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = established
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				established_drift = 0.1
+				established_acceptance = 85
+			}
+		}
+
+		revolutionary_influence = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = revolutionary
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				revolutionary_drift = 0.1
+				revolutionary_acceptance = 85
+			}
+		}
+
+		expansionism_withers = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic
+
+			modifier = {
+				expansionist_drift = -0.07
+			}
+		}
+
 		territory_restored = {
 			allowed = {
 				always = no
@@ -57,24 +133,6 @@ ideas = {
 			}
 		}
 
-		expansionism_withers = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_democratic
-
-			modifier = {
-				expansionist_drift = -0.07
-			}
-		}
-
 		rail_loans = {
 			allowed = {
 				always = no
@@ -107,7 +165,19 @@ ideas = {
 			picture = generic_gear_and_star
 
 			equipment_bonus = {
-			    air_equipment = {
+			    fighter = {
+			        instant = yes
+			        build_cost_ic = -0.5
+			    }
+			    cas = {
+			        instant = yes
+			        build_cost_ic = -0.5
+			    }
+			    tactical_bomber = {
+			        instant = yes
+			        build_cost_ic = -0.5
+			    }
+			    scout_plane = {
 			        instant = yes
 			        build_cost_ic = -0.5
 			    }

@@ -1,0 +1,15 @@
+characters = {
+	HOL_wilhelmina = {
+		name = HOL_wilhelmina
+		portraits = {
+			civilian = {
+				large = GFX_portrait_hol_wilhelmina
+			}
+		}
+		country_leader = {
+			ideology = established_t
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+}

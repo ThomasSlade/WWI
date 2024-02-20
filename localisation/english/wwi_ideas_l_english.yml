@@ -13,6 +13,17 @@
   mountain_training_tt: "£unit_infantry_icon_small£Infantry and £unit_artillery_brigade_icon_small£Artillery:\n §YMountains§!:\n Attack: §G+20%§!\n Defense: §G+10%§!\n Movement: §G+30%§!\n \n§YHills§!:\n Attack: §G+20%§!\n Defense: §G+10%§!\n Movement: §G+30%§!"
 
   # Austria
+  AUS_hungarian_resistance_0: "Hungary Satisfied"
+  AUS_hungarian_resistance_1: "Hungary Disgruntled"
+  AUS_hungarian_resistance_2: "Hungary Outraged"
+  AUS_hungarian_resistance_3: "Hungary Defiant"
+  AUS_minority_resistance_0: "Loyal Minorities"
+  AUS_minority_resistance_1: "Disaffected Minorities"
+  AUS_minority_resistance_2: "Fractious Minorities"
+  AUS_minority_resistance_3: "Partisan Minorities"
+  AUS_multi_lingual_empire: "Multi-Lingual Empire"
+  AUS_multi_lingual_empire_desc: "[ROOT.GetNameDefCap] is a patchwork of peoples, and its army is no exception."
+  AUS_multi_lingual_empire_tt: "§RGenerals can lead fewer divisions.\nField marshals can lead fewer generals.§!"
   AUS_black_hand_cells: "Black Hand Cells"
   AUS_black_hand_cells_desc: "Groups of Serb Nationalists operate quietly within our cities. Their exact intentions, while mysterious, are certainly threatening."
   AUS_black_hand_cells_tt: "§R'Imperial Visit to Bosnia' focus: Delegate will be assassinated.§!"
@@ -22,6 +33,10 @@
   AUS_vojvodina_separatists: "Vojvodina Separatitst"
   AUS_vojvodina_separatists_desc: "Not since the 1848 Revolutions have the Vojvodina Serbs been so nakedly treasonous. Left unchecked, our subjects in this region will surely defect to [SER.GetName]."
   AUS_vojvodina_separatists_tt: "§RStability lower than 50% will result in [224.GetName] and [171.GetName] seceeding to [SER.GetName].§!"
+  idea_AUS_influenced_by_austria: "[AUS.GetAdjective] Influence"
+  idea_AUS_south_german_placation: "South German Placations"
+  idea_AUS_received_loan_for_south_german_autonomy: "Loans for Autonomy"
+  idea_AUS_loan_for_south_german_autonomy: "Bankrolling Autonomy"
 
   # Serbia
   SER_nacertanije: "The Načertanije"

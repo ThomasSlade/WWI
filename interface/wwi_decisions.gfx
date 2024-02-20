@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_decision_generic_stopwatch"
+		texturefile = "gfx/interface/decision/decision_generic_stopwatch.dds"
+	}
+}

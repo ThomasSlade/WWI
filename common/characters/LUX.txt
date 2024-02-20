@@ -1,0 +1,15 @@
+characters = {
+	LUX_paul_eyschen = {
+		name = LUX_paul_eyschen
+		portraits = {
+			civilian = {
+				large = GFX_portrait_lux_paul_eyschen
+			}
+		}
+		country_leader = {
+			ideology = established_t
+			expire = "1915.10.11.1"
+			id = -1
+		}
+	}
+}
