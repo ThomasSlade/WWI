@@ -29,13 +29,4 @@ add_ideas = {
 	sick_man_of_europe
 }
 
-create_country_leader = {
-	name = "Mehmed V"
-	desc = "POLITICS_MEHMED_I_DESC"
-	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
-	expire = "1930.1.1"
-	ideology = established_monarchist
-	traits = {
-		#
-	}
-}
+recruit_character = TUR_mehmed_v

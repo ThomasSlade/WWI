@@ -26,19 +26,12 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 50
-	democratic_expansionist = 20
-	monarchism = 10
-	monarchism_expansionist = 0
-	communism = 20
-	communism_expansionist = 0
-}
-
-set_popularities = {
 	established = 75
 	expansionist = 25
 	revolutionary = 0
 }
+
+recruit_character = FRA_raymond_poincare
 
 create_faction = Entente
 add_to_faction = FRA

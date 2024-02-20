@@ -27,13 +27,4 @@ add_ideas = {
 	extensive_conscription
 }
 
-create_country_leader = {
-	name = "George I of the Hellenes"
-	desc = "POLITICS_GEORGE_I_GRE_DESC"
-	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
-	expire = "1965.1.1"
-	ideology = established_democratic
-	traits = {
-		#
-	}
-}
+recruit_character = GRE_eleftherios_venizelos

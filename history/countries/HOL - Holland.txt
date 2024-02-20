@@ -29,13 +29,4 @@ set_popularities = {
 	revolutionary = 0
 }
 
-create_country_leader = {
-	name = "Theo Heemskerk"
-	desc = "POLITICS_THEO_HEEMSKERK_DESC"
-	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
-	expire = "1930.1.1"
-	ideology = established_democratic
-	traits = {
-		#
-	}
-}
+recruit_character = HOL_wilhelmina

@@ -33,13 +33,55 @@ set_popularities = {
 	revolutionary = 0
 }
 
-create_country_leader = {
-	name = "Franz Joseph I"
-	desc = "POLITICS_FRANZ_JOSEPH_I_DESC"
-	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
-	expire = "1930.1.1"
-	ideology = expansionist_monarchist
-	traits = {
-		#
-	}
+add_ideas = {
+	AUS_hungarian_resistance_0
+	AUS_minority_resistance_1
+	AUS_multi_lingual_empire
+}
+
+set_autonomy = {
+	target = HUN
+	autonomous_state = crownland_0
+}
+
+HUN = {
+	set_cosmetic_tag = HUN_AUSTRIAHUNGARY
+}
+
+recruit_character = AUS_franz_joseph_i
+AUS_franz_joseph_i = { set_character_flag = ethnicity_german }
+recruit_character = AUS_franz_ferdinand
+AUS_franz_ferdinand = { set_character_flag = ethnicity_german }
+recruit_character = AUS_franz_conrad_von_hotzendorf
+AUS_franz_conrad_von_hotzendorf = { set_character_flag = ethnicity_german }
+recruit_character = AUS_friedrich_duke_of_teschen
+AUS_friedrich_duke_of_teschen = { set_character_flag = ethnicity_german }
+recruit_character = AUS_hermann_kovess_von_kovesshaza
+AUS_hermann_kovess_von_kovesshaza = { set_character_flag = ethnicity_german }
+recruit_character = AUS_hermann_kusmanek
+AUS_hermann_kusmanek = { set_character_flag = ethnicity_german }
+recruit_character = AUS_svetozar_boroevic
+AUS_svetozar_boroevic = { set_character_flag = ethnicity_croatslovene }
+recruit_character = AUS_karl_von_sturgkh
+AUS_karl_von_sturgkh = { set_character_flag = ethnicity_german }
+recruit_character = AUS_victor_adler
+AUS_victor_adler = { set_character_flag = ethnicity_german }
+recruit_character = AUS_leon_bilinski
+AUS_leon_bilinski = { set_character_flag = ethnicity_galician }
+recruit_character = AUS_milan_hodza
+AUS_milan_hodza = { set_character_flag = ethnicity_czechoslovak }
+recruit_character = AUS_nikola_bjelovucic
+AUS_nikola_bjelovucic = { set_character_flag = ethnicity_croatslovene }
+recruit_character = AUS_agenor_goluchowski
+AUS_agenor_goluchowski = { set_character_flag = ethnicity_galician }
+recruit_character = AUS_yuliian_romanchuk
+AUS_yuliian_romanchuk = { set_character_flag = ethnicity_ruthene }
+recruit_character = AUS_tomas_masaryk
+AUS_tomas_masaryk = { set_character_flag = ethnicity_czechoslovak }
+recruit_character = AUS_heinrich_friedjung
+AUS_heinrich_friedjung = { set_character_flag = ethnicity_german }
+
+# Apply the effects of the AUS_multi_lingual_empire idea manually.
+every_unit_leader = {
+	add_trait = { trait = multilingual_army }
 }

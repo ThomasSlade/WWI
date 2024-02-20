@@ -31,13 +31,4 @@ add_ideas = {
 	extensive_conscription
 }
 
-create_country_leader = {
-	name = "Ferdinand I of Bulgaria"
-	desc = "POLITICS_FERDINAND_I_BUL_DESC"
-	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
-	expire = "1930.1.1"
-	ideology = established_monarchist
-	traits = {
-		#
-	}
-}
+recruit_character = BUL_ferdinand_i

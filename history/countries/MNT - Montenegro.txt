@@ -25,16 +25,6 @@ set_popularities = {
 
 add_ideas = {
 	service_by_requirement
-	status_quo_acceptance
 }
 
-create_country_leader = {
-	name = "Nicholas I of Montenegro"
-	desc = "POLITICS_NICHOLAS_I_MNT_DESC"
-	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
-	expire = "1930.1.1"
-	ideology = established_monarchist
-	traits = {
-		#
-	}
-}
+recruit_character = MNT_nikola_i

@@ -33,13 +33,4 @@ add_ideas = {
 	partial_economic_mobilisation
 }
 
-create_country_leader = {
-	name = "Paul Eyschen"
-	desc = "POLITICS_PAUL_EYSCHEN_DESC"
-	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
-	expire = "1930.1.1"
-	ideology = established_democratic
-	traits = {
-		#
-	}
-}
+recruit_character = LUX_paul_eyschen

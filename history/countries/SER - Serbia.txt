@@ -21,8 +21,8 @@ set_politics = {
 
 set_popularities = {
 	established = 60
-	expansionist = 40
-	revolutionary = 0
+	expansionist = 5
+	revolutionary = 35
 }
 
 recruit_character = SER_nikola_pasic
@@ -37,6 +37,8 @@ recruit_character = SER_apis
 recruit_character = SER_nicholas_hartwig
 recruit_character = SER_leon_descos
 recruit_character = SER_dayrell_crackanthorpe
+
+recruit_character = SER_george_obrenovic
 
 add_ideas = {
 	SER_nacertanije
