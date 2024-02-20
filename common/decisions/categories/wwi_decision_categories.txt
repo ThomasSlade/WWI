@@ -68,3 +68,147 @@ SER_assassin_plot_against_us = {
 		has_country_flag = SER_assassin_plot_against_us
 	}
 }
+
+SER_publish_lausanne_investigation = {
+	icon = generic_foreign_policy
+
+	allowed = {
+		original_tag = SER
+	}
+
+	visible = {
+		has_completed_focus = SER_commission_the_lausanne_investigation
+	}
+}
+
+SER_bombard_kotor = {
+	icon = border_conflicts
+
+	allowed = {
+		original_tag = SER
+	}
+
+	visible = {
+		has_completed_focus = SER_lovcen_heights_mountain_guns
+	}
+}
+
+AUS_influence_adriatic_territory = {
+	icon = generic_foreign_policy
+
+	allowed = {
+		OR = {
+			original_tag = AUS
+			original_tag = ITA
+		}
+	}
+
+	visible = {
+		has_global_flag = AUS_free_ports_released
+	}
+}
+
+AUS_negotiate_croatia = {
+	icon = generic_foreign_policy
+
+	allowed = {
+		original_tag = AUS
+	}
+
+	visible = {
+		has_completed_focus = AUS_negotiate_croatia
+		HUN = { AUS_controls_any_croatia = yes }
+	}
+}
+
+AUS_negotiate_transylvania = {
+	icon = generic_foreign_policy
+
+	allowed = {
+		original_tag = AUS
+	}
+
+	visible = {
+		has_completed_focus = AUS_negotiate_transylvania
+		HUN = { AUS_controls_any_transylvania = yes }
+	}
+}
+
+AUS_give_away_bukovina = {
+	icon = generic_foreign_policy
+
+	allowed = {
+		original_tag = AUS
+	}
+
+	visible = {
+		has_completed_focus = AUS_give_away_bukovina
+		controls_state = 236
+	}
+}
+
+AUS_manage_the_empire = {
+	icon = generic_foreign_policy
+
+	allowed = {
+		original_tag = AUS
+	}
+}
+
+decision_category_AUS_south_german_influence = {
+	icon = generic_foreign_policy
+
+	allowed = {
+		OR = {
+			original_tag = AUS
+			original_tag = GER
+		}
+	}
+
+	visible = {
+		has_completed_focus = AUS_reassert_south_german_influence
+	}
+}
+
+decision_category_AUS_exchange_ethnic_garrisons = {
+	icon = generic_foreign_policy
+
+	allowed = {
+		original_tag = AUS
+	}
+
+	visible = {
+		has_completed_focus = AUS_exchange_ethnic_garrisons
+	}
+}
+
+decision_category_AUS_obrenovic_pretender = {
+	icon = generic_monarchism
+
+	allowed = {
+		original_tag = AUS
+	}
+
+	visible = {
+		SER = {
+			is_puppet = no
+			NOT = { is_ally_with = ROOT }
+			NOT = { has_war_with = ROOT }
+		}
+		has_completed_focus = AUS_obrenovic_pretender
+		NOT = { has_global_flag = obrenovic_coup_launched }
+	}
+}
+
+decision_category_AUS_overpower_the_honved = {
+	icon = border_conflicts
+
+	allowed = {
+		original_tag = AUS
+	}
+
+	visible = {
+		has_completed_focus = AUS_erode_hungarian_influence
+		NOT = { has_country_flag = budapest_overpowered }
+	}
+}
