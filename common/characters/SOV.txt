@@ -3,11 +3,11 @@ characters = {
 		name = SOV_nicholas_ii
 		portraits = {
 			civilian = {
-				large = "GFX_portrait_GER_wilhelm_ii"
+				large = GFX_portrait_sov_nicholas_ii
 			}
 		}
 		country_leader = {
-			ideology = established_monarchist
+			ideology = established_t
 			expire = "1965.1.1.1"
 			id = -1
 		}

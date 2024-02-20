@@ -1,13 +1,13 @@
 characters = {
 	GER_wilhelm_ii = {
-		name = GER_test_leader
+		name = GER_wilhelm_ii
 		portraits = {
 			civilian = {
-				large = "GFX_portrait_GER_wilhelm_ii"
+				large = GFX_portrait_ger_wilhelm_ii
 			}
 		}
 		country_leader = {
-			ideology = expansionist_monarchist
+			ideology = expansionist_t
 			expire = "1965.1.1.1"
 			id = -1
 		}
