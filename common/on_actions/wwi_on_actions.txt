@@ -62,6 +62,7 @@ on_actions = {
 		}
 	}
 
+	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
 	on_state_control_changed = {
 		effect = {
 			# Transfer state-related vojvodina statuses.
@@ -96,7 +97,6 @@ on_actions = {
 
 					add_ideas = AUS_vojvodina_separatists
 				}
-				
 			}
 		}
 	}
@@ -121,6 +121,7 @@ on_actions = {
 						is_owned_and_controlled_by = SER
 					}
 					
+					log = "[?THIS.GetName], controlled by Serbia, marked as disputed between Serbia and Bulgaria."
 					set_state_flag = serbian_controlled_disputed_macedonian_state
 				}
 
@@ -130,17 +131,18 @@ on_actions = {
 						is_owned_and_controlled_by = BUL
 					}
 					
+					log = "[?THIS.GetName], controlled by Bulgaria, marked as disputed between Serbia and Bulgaria."
 					set_state_flag = bulgarian_controlled_disputed_macedonian_state
 				}
 
 				# Of these, mark any Serbia-controlled states bordering Bulgaria-controlled states as disputed, and vice versa.
 				every_state = {
 					limit = {
-						has_state_flag = serbian_controlled_disputed_macedonian_state
+						is_owned_and_controlled_by = BUL
 					}
 					every_neighbor_state = {
 						limit = {
-							has_state_flag = bulgarian_controlled_disputed_macedonian_state
+							is_owned_and_controlled_by = serbian_controlled_disputed_macedonian_state
 						}
 
 						set_state_flag = macedonian_state_for_arbitration
@@ -150,11 +152,11 @@ on_actions = {
 
 				every_state = {
 					limit = {
-						has_state_flag = bulgarian_controlled_disputed_macedonian_state
+						is_owned_and_controlled_by = SER
 					}
 					every_neighbor_state = {
 						limit = {
-							has_state_flag = serbian_controlled_disputed_macedonian_state
+							has_state_flag = bulgarian_controlled_disputed_macedonian_state
 						}
 
 						set_state_flag = macedonian_state_for_arbitration
@@ -173,10 +175,59 @@ on_actions = {
 							has_country_flag = macedonian_arbitrator
 						}
 
+						log = "Beggining Macedonian Arbitration event."
+
 						# Balkan clients request arbitration.
 						country_event = { id = wwi_serbia.13 days = 5 }
 					}
 				}
+				else = {
+					log = "No states were marked for Macedonian Arbitration."
+				}
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			every_possible_country = {
+				# Keep standard influence-idea variables up to date.
+				if = {
+					limit = { has_government = established }
+					set_variable = { ideology_influence_idea = token:established_influence }
+					log = "Setting [THIS.GetName] influence idea to Established."
+				}
+				else_if = {
+					limit = { has_government = expansionist }
+					set_variable = { ideology_influence_idea = token:expansionist_influence }
+					log = "Setting [THIS.GetName] influence idea to Expansionist."
+				}
+				else_if = {
+					limit = { has_government = revolutionary }
+					set_variable = { ideology_influence_idea = token:revolutionary_influence }
+					log = "Setting [THIS.GetName] influence idea to Revolutionary."
+				}
+			}
+		}
+	}
+
+	on_ruling_party_change = {
+		effect = {
+			# Keep standard influence-idea variables up to date.
+			if = {
+				limit = { has_government = established }
+				set_variable = { ideology_influence_idea = token:established_influence }
+				log = "Setting [THIS.GetName] influence idea to Established."
+			}
+			else_if = {
+				limit = { has_government = expansionist }
+				set_variable = { ideology_influence_idea = token:expansionist_influence }
+				log = "Setting [THIS.GetName] influence idea to Expansionist."
+			}
+			else_if = {
+				limit = { has_government = revolutionary }
+				set_variable = { ideology_influence_idea = token:revolutionary_influence }
+				log = "Setting [THIS.GetName] influence idea to Revolutionary."
 			}
 		}
 	}
