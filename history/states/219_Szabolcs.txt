@@ -3,8 +3,8 @@ state={
 	id=219
 	name=219_Szabolcs
 	history={
-		owner = AUS
-		add_core_of = AUS
+		owner = HUN
+		add_core_of = HUN
 		buildings = {
 			infrastructure = 2
 		}

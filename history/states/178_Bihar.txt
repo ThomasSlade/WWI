@@ -3,8 +3,8 @@ state={
 	id=178
 	name=178_Bihar
 	history={
-		owner = AUS
-		add_core_of = AUS
+		owner = HUN
+		add_core_of = HUN
 		buildings = {
 			infrastructure = 2
 		}

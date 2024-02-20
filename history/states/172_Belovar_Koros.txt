@@ -3,8 +3,10 @@ state={
 	id=172
 	name=172_Belovar_Koros
 	history={
-		owner = AUS
-		add_core_of = AUS
+		owner = HUN
+		add_core_of = HUN
+		add_core_of = SCS
+		add_core_of = CRO
 		buildings = {
 			infrastructure = 1
 		}

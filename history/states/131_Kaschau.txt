@@ -3,8 +3,8 @@ state={
 	id=131
 	name=131_Kaschau
 	history={
-		owner = AUS
-		add_core_of = AUS
+		owner = HUN
+		add_core_of = HUN
 		buildings = {
 			infrastructure = 2
 		}
