@@ -13,3 +13,73 @@ SER_settled_territory = {
 
 	recruitable_population = 0.02
 }
+
+AUS_ethnic_local_organisation = {
+	enable = { always = yes }
+	remove_trigger = {
+		OR = {
+			# Remove if not held by Austria, or if a core of the target nations but none of the required advisors are employed.
+			controller = {
+				NOT = { original_tag = AUS }
+			}
+			# None of the following can be true if the effect is to be removed.
+			NOT = {
+				OR = {
+					AND = {
+						is_core_of = CZE
+						controller = { any_character = { is_in_active_role = yes has_character_flag = ethnicity_czechoslovak } }
+					}
+					AND = {
+						is_core_of = SCS
+						controller = { any_character = { is_in_active_role = yes has_character_flag = ethnicity_croatslovene } }
+					}
+					AND = {
+						is_core_of = POL
+						controller = { any_character = { is_in_active_role = yes has_character_flag = ethnicity_galician } }
+					}
+					AND = {
+						is_core_of = UKR
+						controller = { any_character = { is_in_active_role = yes has_character_flag = ethnicity_ruthene } }
+					}
+				}
+			}
+		}
+	}
+
+	icon = GFX_modifiers_generic_military_industry
+
+	local_resources_factor = 0.25
+	production_speed_arms_factory_factor = 0.33
+}
+
+AUS_ethnic_autonomy = {
+	enable = {
+		controller = { original_tag = AUS }
+	}
+
+	remove_trigger = {
+		NOT = { owner = { original_tag = AUS } }
+	}
+
+	icon = GFX_modifiers_generic_military_industry
+
+	industrial_capacity_factory = -0.25
+	conscription_factor = -0.25
+	production_speed_buildings_factor = 0.33
+}
+
+AUS_foreign_garrison = {
+	enable = {
+		controller = { original_tag = AUS }
+	}
+
+	remove_trigger = {
+		NOT = { owner = { original_tag = AUS } }
+	}
+
+	icon = GFX_modifiers_generic_military_industry
+
+	local_resources = 0.2
+	production_speed_bunker_factor = 0.33
+	production_speed_coastal_bunker_factor = 0.33
+}
