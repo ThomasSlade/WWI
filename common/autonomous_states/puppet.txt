@@ -39,7 +39,7 @@ autonomy_state = {
 	}
 
 	allowed = {
-		has_dlc = "Death or Dishonor"
+		always = yes
 	}
 
 	#ROOT is puppet - FROM is potential OVERLORD

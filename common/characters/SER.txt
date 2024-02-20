@@ -3,13 +3,22 @@ characters = {
 		name = SER_nikola_pasic
 		portraits = {
 			civilian = {
-				large = "GFX_portrait_GER_wilhelm_ii"
+				large = GFX_portrait_ser_nikola_pasic
 			}
 		}
 		country_leader = {
-			ideology = established_democratic
+			ideology = established_t
 			expire = "1965.1.1.1"
 			id = -1
+		}
+	}
+
+	SER_george_obrenovic = {
+		name = SER_george_obrenovic
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ser_george_obrenovic
+			}
 		}
 	}
 
@@ -146,6 +155,29 @@ characters = {
 		}
 	}
 
+	SER_jovan_cvijic = {
+		name = SER_jovan_svijic
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SER_jovan_svijic
+			cost = 50
+			allowed = {
+				original_tag = SER
+			}
+			available = {
+				has_completed_focus = SER_ports_on_the_adriatic
+			}
+			traits = {
+				ethnographer
+			}
+		}
+	}
+
 	SER_apis = {
 		name = SER_apis
 		portraits = {
@@ -164,7 +196,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = expansionist_democratic
+			ideology = expansionist_t
 			expire = "1965.1.1.1"
 			id = -1
 		}

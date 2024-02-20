@@ -9,7 +9,28 @@ bookmarks = {
 
 		"GER"={
 			history = "GER_GATHERING_STORM_DESC"
-			ideology = monarchism
+			ideology = expansionist
+		}
+
+		"AUS"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = expansionist
+		}
+
+		"FRA"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = established
+		}
+
+		"SOV"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = established
+		}
+
+		"SER"={
+			minor = yes
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = established
 		}
 
 		effect = {

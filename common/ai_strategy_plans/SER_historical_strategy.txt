@@ -28,7 +28,7 @@ SER_historical = {
 		SER_russian_weapon_imports
 		SER_ports_on_the_adriatic
 		SER_martial_law_in_new_serbia
-		SER_ressurection_of_serbia
+		SER_resurrection_of_serbia
 		SER_french_finance
 
 		# 1914
@@ -48,12 +48,12 @@ SER_historical = {
 		# 1916
 		SER_build_a_conciliatory_cabinet
 		SER_revise_education_budget
-		SER_modernise_the_serb_infantry
+		SER_modernise_infantry
 		SER_educate_engineers
 		SER_foreign_railway_loans
 
 		# 1917
-		SER_rearm_the_vojvodina_serbs
+		SER_rearm_the_vojvodina
 		SER_pursue_entente_alliance
 		SER_war_with_austria_hungary
 		SER_unite_the_south_slavs
@@ -62,7 +62,7 @@ SER_historical = {
 		# 1918
 		SER_reclaim_albania
 		SER_french_arms
-		SER_covert_cell_traning
+		SER_covert_cell_training
 		SER_settle_territory
 		SER_british_arms
 
@@ -71,6 +71,6 @@ SER_historical = {
 		SER_foreign_engineering
 		SER_french_curriculum
 		SER_serb_naval_armament
-		SER_expand_the_grand_ecole
+		SER_expand_the_grande_ecole
 	}
 }
