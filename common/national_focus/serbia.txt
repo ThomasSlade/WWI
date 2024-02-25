@@ -495,7 +495,7 @@ focus_tree = {
 				}
 			}
 
-			add_ideas = SER_new_markets
+			add_timed_idea = { idea = SER_new_markets days = 730 } 
 		}
 	}
 
@@ -1621,7 +1621,7 @@ focus_tree = {
 
 			
 			# TEMP: Fire the event signifying the end of the Italo-Turkish war, allowing Serbia to get War With the Ottomans
-			news_event = { id = wwi_news.1 }
+			TUR = { news_event = { id = wwi_news.1 } }
 		}
 	}
 
@@ -1979,6 +1979,12 @@ focus_tree = {
 			create_wargoal = {
 				type = take_state_focus
 				target = TUR
+			}
+
+			add_ai_strategy = {
+				type = declare_war
+				id = TUR
+				value = 1000
 			}
 
 			# TEMP: Firing the event to invite Greece to the Balkan League, which ought to come from Britain.
