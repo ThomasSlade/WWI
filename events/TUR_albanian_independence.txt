@@ -1,0 +1,452 @@
+add_namespace = event_TUR_albanian_independence
+
+# Prepare for Albanian independence.
+country_event = {
+	id = event_TUR_albanian_independence.1
+	title = event_TUR_albanian_independence.1.t
+	desc = event_TUR_albanian_independence.1.d
+
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		trigger_TUR_albanian_independence = yes
+	}
+
+	immediate = {
+		log = "([THIS.GetName] event) Releasing Albania"
+
+		if = {
+			limit = {
+				TUR = {
+					any_controlled_state = {
+						is_core_of = ALB
+					}
+				}
+			}
+			TUR = {
+				log = "Albanian Independence: Some of Albania controlled by Ottomans. Releasing there."
+				release_on_controlled = ALB
+			}
+		}
+		else_if = {
+			limit = {
+				ALB = {
+					any_core_state = {
+						controller = { has_war_with = TUR }
+					}
+				}
+			}
+			ALB = {
+				log = "Albanian Independence: No Albanian states controlled by Ottomans. Picking a random one occupied by belligerants instead."
+				random_core_state = {
+					limit = {
+						controller = { has_war_with = TUR }
+					}
+					transfer_state_to = ALB
+				}
+			}
+		}
+		else = {
+			log = "(ERROR) Albanian Independence: No Albanian states were controlled by Ottomans, or Ottoman enemies. Cannot release Albania."
+		}
+
+		every_country = {
+			limit = {
+				has_war_with = TUR
+				any_core_state = {
+					is_core_of = ALB
+				}
+			}
+
+			if = {
+				limit = { AUS = { NOT = { has_completed_focus = AUS_preempt_albanian_independence } } }
+				log = "Giving [THIS.GetName] the chance to declare war on Albania without opposition from anyone."
+				country_event = { id = event_TUR_albanian_independence.5 hours = 1 }
+			}
+			else = {
+				log = "Giving [THIS.GetName] the chance to declare war on Albania and its guarantors."
+				country_event = { id = event_TUR_albanian_independence.4 hours = 1 }
+			}
+		}
+
+		if = {
+			limit = { AUS = { NOT = { has_completed_focus = AUS_preempt_albanian_independence } } }
+			news_event = { id = event_TUR_albanian_independence.7 days = 5 }
+		}
+		else = {
+			AUS = { give_guarantee = ALB }
+			ALB = {
+				add_opinion_modifier = {
+					target = AUS
+					modifier = opinion_AUS_supported_albanian_independence
+				}
+				reverse_add_opinion_modifier = {
+					target = AUS
+					modifier = opinion_AUS_supported_albanian_independence
+				}
+			}
+
+			news_event = { id = event_TUR_albanian_independence.8 days = 5 }
+		}
+	}
+}
+
+# Tell Albanian core holders that it's been guaranteed by Austria.
+country_event = {
+	id = event_TUR_albanian_independence.4
+	title = event_TUR_albanian_independence.4.t
+	desc = event_TUR_albanian_independence.4.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Albania is released and guaranteed."
+		set_country_flag = notified_of_albanian_independence
+	}
+
+	# Let Albania go
+	option = {
+		name = event_TUR_albanian_independence.4.a
+		every_controlled_state = {
+			limit = { is_core_of = ALB }
+			transfer_state_to = ALB
+		}
+
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 0
+				strength_ratio = {
+					tag = AUS
+					ratio > 0.75
+				}
+			}
+		}
+	}
+
+	# War with Albania
+	option = {
+		name = event_TUR_albanian_independence.4.b
+		declare_war_on = {
+			target = ALB
+			type = take_core_state
+		}
+
+		set_global_flag = {
+			flag = flag_austrian_warning_over_albania_ignored
+			days = 30
+			value = 1
+		}
+
+		set_country_flag = flag_austrian_warning_over_albania_ignored
+		
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 1
+				strength_ratio = {
+					tag = AUS
+					ratio < 0.75
+				}
+			}
+		}
+	}
+}
+
+# Tell Albanian core holders that it's declared independence but is not guaranteed by Austria.
+country_event = {
+	id = event_TUR_albanian_independence.5
+	title = event_TUR_albanian_independence.5.t
+	desc = event_TUR_albanian_independence.5.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Albania is released and not guaranteed."
+		set_country_flag = notified_of_albanian_independence
+	}
+
+	# War with Albania
+	option = {
+		name = event_TUR_albanian_independence.5.a
+
+		hidden_effect = {
+			# If anyone has sneakily guaranteed Albania while this event is pending, we're having none of that.
+			every_country = {
+				limit = {
+					has_guaranteed = ALB
+				}
+				diplomatic_relation = {
+					country = ALB
+					relation = guarantee
+					active = no
+				}
+			}
+		}
+
+		declare_war_on = {
+			target = ALB
+			type = take_core_state
+		}
+
+		ALB = { set_country_flag = flag_ALB_is_fighting_for_independence }
+
+		ai_chance = { base = 1 }
+	}
+
+	# Let Albania go
+	option = {
+		name = event_TUR_albanian_independence.5.b
+		every_controlled_state = {
+			limit = { is_core_of = ALB }
+			transfer_state_to = ALB
+		}
+
+		ai_chance = { base = 0 }
+	}
+}
+
+# Austria has guaranteed Albanian independence mid-war.
+country_event = {
+	id = event_TUR_albanian_independence.6
+	title = event_TUR_albanian_independence.6.t
+	desc = event_TUR_albanian_independence.6.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Received warning over attacking Albania from [FROM.GetName]."
+	}
+
+	# Let Albania go
+	option = {
+		name = event_TUR_albanian_independence.6.a
+		every_controlled_state = {
+			limit = { is_core_of = ALB }
+			transfer_state_to = ALB
+		}
+
+		white_peace = {
+			tag = ALB
+			message = effect_AUS_white_peace_message_albanian_intervention
+		}
+
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 0
+				strength_ratio = {
+					tag = AUS
+					ratio > 0.75
+				}
+			}
+		}
+	}
+
+	# War with Albania
+	option = {
+		name = event_TUR_albanian_independence.6.b
+		declare_war_on = {
+			target = ALB
+			type = take_core_state
+		}
+
+		FROM = {
+			create_wargoal = {
+				target = ROOT
+				type = liberate_wargoal
+				expire = 90
+			}
+
+			add_ai_strategy = {
+				type = protect
+				id = ALB
+				value = 200
+			}
+
+			add_ai_strategy = {
+				type = declare_war
+				id = ROOT
+				value = 200
+			}
+		}
+
+		ALB = { set_country_flag = flag_ALB_is_fighting_for_independence }
+
+		set_global_flag = {
+			flag = flag_austrian_warning_over_albania_ignored
+			days = 30
+			value = 1
+		}
+
+		set_country_flag = flag_austrian_warning_over_albania_ignored
+
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 1
+				strength_ratio = {
+					tag = AUS
+					ratio < 0.75
+				}
+			}
+		}
+	}
+}
+
+# Tell everyone Albania is independent (Austria had nothing to do with it).
+news_event = {
+	id = event_TUR_albanian_independence.7
+	title = event_TUR_albanian_independence.7.t
+	desc = event_TUR_albanian_independence.7.d
+	picture = GFX_news_event_001
+
+	is_triggered_only = yes
+	major = yes
+
+	show_major = {
+		NOT = { has_country_flag = notified_of_albanian_independence }
+	}
+
+	immediate = {
+		log = "([THIS.GetName] news event) Albanian Independence (not involving Austria)."
+	}
+	
+	# Ottomans are upset
+	option = {
+		name = event_TUR_albanian_independence.7.a
+		trigger = {
+			original_tag = TUR
+		}
+	}
+
+	# Indifferent
+	option = {
+		name = event_TUR_albanian_independence.7.b
+		trigger = {
+			NOT = { original_tag = TUR }
+		}
+	}
+}
+
+# Tell everyone Albania is independent (Austria is helping).
+news_event = {
+	id = event_TUR_albanian_independence.8
+	title = event_TUR_albanian_independence.8.t
+	desc = event_TUR_albanian_independence.8.d
+	picture = GFX_news_event_001
+
+	is_triggered_only = yes
+	major = yes
+
+	show_major = {
+		NOT = { has_country_flag = notified_of_albanian_independence }
+	}
+
+	immediate = {
+		log = "([THIS.GetName] news event) Albanian Independence (involving Austria)."
+	}
+
+	# Austria rubs hands deviously
+	option = {
+		name = event_TUR_albanian_independence.8.a
+		trigger = {
+			original_tag = AUS
+		}
+
+		effect_tooltip = {
+			give_guarantee = ALB
+			add_opinion_modifier = {
+				target = AUS
+				modifier = opinion_AUS_supported_albanian_independence
+			}
+			reverse_add_opinion_modifier = {
+				target = AUS
+				modifier = opinion_AUS_supported_albanian_independence
+			}
+		}
+	}
+	
+	# Ottomans are upset
+	option = {
+		name = event_TUR_albanian_independence.8.b
+		trigger = {
+			original_tag = TUR
+		}
+	}
+
+	# Indifferent
+	option = {
+		name = event_TUR_albanian_independence.8.c
+		trigger = {
+			NOT = { original_tag = TUR }
+			NOT = { original_tag = AUS }
+		}
+	}
+}
+
+# If the Balkan League goes to war with Albania and by extension Austria, do a news event.
+news_event = {
+	id = event_TUR_albanian_independence.9
+	title = event_TUR_albanian_independence.9.t
+	desc = event_TUR_albanian_independence.9.d
+	picture = GFX_news_event_001
+
+	major = yes
+	mean_time_to_happen = { days = 2 }
+
+	trigger = {
+		has_global_flag = flag_austrian_warning_over_albania_ignored
+		AUS = { has_war_together_with = ALB }
+	}
+
+	immediate = {
+		log = "([THIS.GetName] news event) Austria enters the Balkan war over Albania."
+
+		random_country = {
+			limit = { has_country_flag = flag_austrian_warning_over_albania_ignored }
+			save_event_target_as = albania_enemy
+		}
+	}
+
+	# Austria
+	option = {
+		name = event_TUR_albanian_independence.9.a
+		trigger = {
+			original_tag = AUS
+		}
+
+		effect_tooltip = {
+			give_guarantee = ALB
+			add_opinion_modifier = {
+				target = AUS
+				modifier = opinion_AUS_supported_albanian_independence
+			}
+			reverse_add_opinion_modifier = {
+				target = AUS
+				modifier = opinion_AUS_supported_albanian_independence
+			}
+		}
+	}
+	
+	# Austrian enemies
+	option = {
+		name = event_TUR_albanian_independence.9.b
+		trigger = {
+			is_ally_with = FROM
+		}
+	}
+
+	# Everyone else
+	option = {
+		name = event_TUR_albanian_independence.9.c
+		trigger = {
+			NOT = { original_tag = AUS }
+			NOT = { is_ally_with = FROM }
+		}
+	}
+}

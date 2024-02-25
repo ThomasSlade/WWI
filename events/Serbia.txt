@@ -186,6 +186,7 @@ country_event = {
 	id = wwi_serbia.8
 	title = wwi_serbia.8.t
 	desc = wwi_serbia.8.d
+	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
 
@@ -242,6 +243,7 @@ country_event = {
 	id = wwi_serbia.9
 	title = wwi_serbia.9.t
 	desc = wwi_serbia.9.d
+	picture = GFX_report_event_german_speech
 
 	trigger = {
 		original_tag = SER
@@ -283,6 +285,7 @@ country_event = {
 	id = wwi_serbia.10
 	title = wwi_serbia.10.t
 	desc = wwi_serbia.10.d
+	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
 
@@ -306,6 +309,7 @@ country_event = {
 	id = wwi_serbia.11
 	title = wwi_serbia.11.t
 	desc = wwi_serbia.11.d
+	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
 
@@ -329,6 +333,7 @@ country_event = {
 	id = wwi_serbia.12
 	title = wwi_serbia.12.t
 	desc = wwi_serbia.12.d
+	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
 
@@ -367,6 +372,7 @@ country_event = {
 	id = wwi_serbia.13
 	title = wwi_serbia.13.t
 	desc = wwi_serbia.13.d
+	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
 
@@ -464,13 +470,13 @@ country_event = {
 			tag = SER
 		}
 	}
-
 	desc = {
 		text = wwi_serbia.14.d_bulgaria
 		trigger = {
 			tag = BUL
 		}
 	}
+	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
 
@@ -508,13 +514,13 @@ country_event = {
 			tag = SER
 		}
 	}
-
 	desc = {
 		text = wwi_serbia.15.d_bulgaria
 		trigger = {
 			tag = BUL
 		}
 	}
+	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
 

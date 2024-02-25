@@ -861,13 +861,86 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available = {
-
+			OR = {
+				NOT = { country_exists = ALB }
+				ALB = { has_country_flag = flag_ALB_is_fighting_for_independence }
+			}
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = AUS_preempt_albanian_independence_tt
 			effect_tooltip = {
-				AUS_albanian_independence_will_happen_trigger_tooltip = yes
+				# If albania is already fighting for independence, send warning events to its enemies.
+				# Otherwise, the TT says 'when Albania becomes independent ...'
+				if = {
+					limit = {
+						#ALB = {
+						#	exists = yes
+						#	has_country_flag = flag_ALB_is_fighting_for_independence
+						#}
+						always = yes
+					}
+
+					
+
+					add_opinion_modifier = {
+						target = ALB
+						modifier = opinion_AUS_supported_albanian_independence
+					}
+					reverse_add_opinion_modifier = {
+						target = ALB
+						modifier = opinion_AUS_supported_albanian_independence
+					}
+
+					every_country = {
+						limit = {
+							has_war_with = ALB
+						}
+						country_event = { id = event_TUR_albanian_independence.6 hours = 1 }
+
+						custom_effect_tooltip = if_they_refuse_tt
+						ROOT = {
+							create_wargoal = {
+								target = PREV
+								type = liberate_wargoal
+								expire = 90
+							}
+						}
+					}
+				}
+				else = {
+					custom_effect_tooltip = AUS_preempt_albanian_independence_effect_tt
+
+					give_guarantee = ALB
+					add_opinion_modifier = {
+						target = ALB
+						modifier = opinion_AUS_supported_albanian_independence
+					}
+					reverse_add_opinion_modifier = {
+						target = ALB
+						modifier = opinion_AUS_supported_albanian_independence
+					}
+
+
+					custom_effect_tooltip = AUS_preempt_albanian_independence_condition_tt
+					effect_TUR_albanian_independence_tooltip = yes
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						ALB = {
+							exists = yes
+							has_country_flag = flag_ALB_is_fighting_for_independence
+						}
+					}
+					every_country = {
+						limit = {
+							has_war_with = ALB
+						}
+						country_event = { id = event_TUR_albanian_independence.6 hours = 1 }
+					}
+				}
 			}
 		}
 	}

@@ -55,6 +55,11 @@ opinion_modifiers = {
 		decay = 0.5
 	}
 
+	opinion_AUS_supported_albanian_independence = {
+		value = 25
+		decay = 0.5
+	}
+
 	opinion_AUS_occupied_sanjak = {
 		value = -20
 		decay = -1

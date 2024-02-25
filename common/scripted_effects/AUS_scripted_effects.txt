@@ -844,32 +844,6 @@ AUS_init_hungarian_river_chain = {
 	}
 }
 
-# Trigger needs to be done as effect so it can be seen in the focus tooltip.
-AUS_albanian_independence_will_happen_trigger_tooltip = {
-	TUR = {
-		if = {
-			limit = {
-				has_war = yes
-				any_enemy_country = {
-					capital_scope = { is_in_balkans = yes }
-				}
-			}
-			custom_effect_tooltip = AUS_albania_independence_condition_balkan_war_true_tt
-		}
-		else = { custom_effect_tooltip = AUS_albania_independence_condition_balkan_war_false_tt }
-	}
-	TUR = {
-		if = {
-			limit = {
-				surrender_progress > 0.5
-				any_owned_state = { is_core_of = ALB }
-			}
-			custom_effect_tooltip = AUS_albania_independence_condition_surrender_progress_true_tt
-		}
-		else = { custom_effect_tooltip = AUS_albania_independence_condition_surrender_progress_false_tt }
-	}
-}
-
 effect_AUS_goad_bulgaria_into_war_bulgaria = {
 	add_equipment_to_stockpile = {
 		type = infantry_equipment
@@ -1020,13 +994,13 @@ effect_AUS_remove_obrenovic_sympathies_in_state = {
 
 effect_AUS_launch_obrenovic_coup = {
 	set_global_flag = obrenovic_coup_launched
-	custom_effect_tooltip = effect_AYS_launch_obrenovic_coup_tt
+	custom_effect_tooltip = effect_AUS_launch_obrenovic_coup_tt
 	SER = {
 		every_controlled_state = {
 			# TODO: Try again after upgrading.
 			#isplay_individual_scopes = yes
 			limit = { has_state_flag = obrenovic_sympathies }
-			custom_effect_tooltip = effect_AYS_launch_obrenovic_coup_state_name_tt
+			custom_effect_tooltip = effect_AUS_launch_obrenovic_coup_state_name_tt
 		}
 	}
 }

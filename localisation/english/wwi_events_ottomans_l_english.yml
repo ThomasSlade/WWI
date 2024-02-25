@@ -1,0 +1,33 @@
+﻿l_english:
+  
+  event_TUR_albanian_independence.4.t: "[ALB.GetAdjective] Independence Guaranteed by [AUS.GetName]"
+  event_TUR_albanian_independence.4.d: "Despite our longstanding interests in the [ALB.GetAdjective] region, the rancid opportunists in [AUS.capital.GetCapitalVictoryPointName] have announced their guarantee of an 'independent' [ALB.GetName], emboldening the [ALB.GetAdjective]s to declare its sovreignty from [TUR.GetNameDef] only hours ago.\n\nThis dramatically complicates our intentions along the southern Adriatic.\n\nMore hawkish ministers insist we ignore the guarantee and subjugate the fledgeling state, but this would mean war with [AUS.GetNameDef]."
+  event_TUR_albanian_independence.4.a: "We cannot stand up to [AUS.GetNameDef]."
+  event_TUR_albanian_independence.4.b: "So be it. [ALB.GetNameDef] is ours."
+
+  event_TUR_albanian_independence.5.t: "[ALB.GetNameDef] Seeks Independence Amid [TUR.GetAdjective] War"
+  event_TUR_albanian_independence.5.d: "[ALB.GetAdjective] militias in [ALB.capital.GetCapitalVictoryPointName] have sought to exploit the chaos of our war with [TUR.GetNameDef], proclaiming independence from the weakened sultunate.\n\nHad the [ALB.GetAdjective]s any powerful sponsors, we may have had to respect the new nation's borders. But the fact is that they pose little resistance."
+  event_TUR_albanian_independence.5.a: "We beat [TUR.GetNameDef], we will beat [ALB.GetNameDef]."
+  event_TUR_albanian_independence.5.b: "We cannot handle another war."
+
+  event_TUR_albanian_independence.6.t: "[AUS.GetName] Threatens Enemies of [ALB.GetName] With War"
+  event_TUR_albanian_independence.6.d: "Following our refusal to recognise [ALB.GetAdjective] independence, [AUS.GetNameDef] has saw fit to intervene on the side of [ALB.capital.GetCapitalVictoryPointName].\n\n[AUS.GetAdjective] statesmen have internationally assured the survival of [ALB.GetNameDef], and furthermore, have expressed a readiness to wage war in its defense."
+  event_TUR_albanian_independence.6.a: "We cannot stand up to [AUS.GetNameDef]."
+  event_TUR_albanian_independence.6.b: "So be it. [ALB.GetNameDef] is ours."
+
+  event_TUR_albanian_independence.7.t: "The Declaration of [ALB.GetAdjective] Independence"
+  event_TUR_albanian_independence.7.d: "Amid [TUR.GetAdjective] losses in its war, once subject peoples of [TUR.GetNameDef] are finding the courage to break rank with [TUR.capital.GetCapitalVictoryPointName]. Chief among these is [ALB.GetNameDef].\n\nThough [TUR.GetNameDef] is powerless to challenge [ALB.GetAdjective] sovreignty, the new nation's security remains delicate: its administration falters, while fellow Balkan governments have previously laid claim to the region."
+  event_TUR_albanian_independence.7.b: "A disaster."
+  event_TUR_albanian_independence.7.d: "[ALB.GetNameDefCap] is free ... for now."
+
+  event_TUR_albanian_independence.8.t: "[ALB.GetAdjectiveCap] Independence Guaranteed by [AUS.GetName]"
+  event_TUR_albanian_independence.8.d: "Amid [TUR.GetAdjective] losses in its war, once subject peoples of [TUR.GetNameDef] are finding the courage to break rank with [TUR.capital.GetCapitalVictoryPointName]. Chief among these is [ALB.GetNameDef].\n\nThough [TUR.GetNameDef] is powerless to challenge [ALB.GetAdjective] sovreignty, other Balkan nations had historically laid claim to the region. For this reason, [AUS.GetNameDef] has been quick to announce its guarantee of [ALB.GetAdjective] independence.\n\nObservers wonder if [AUS.GetAdjective] interference could have precipitated the separatist movement in the first place."
+  event_TUR_albanian_independence.8.a: "We only wish for a free [ALB.GetName]."
+  event_TUR_albanian_independence.8.b: "A disaster."
+  event_TUR_albanian_independence.8.c: "[ALB.GetNameDefCap] is free ... for now."
+
+  event_TUR_albanian_independence.9.t: "[ALB.GetAdjective] Independence Conflagrates"
+  event_TUR_albanian_independence.9.d: "Despite the warnings of the [AUS.GetADjective] government over [ALB.GetAdjective] sovreignty, [albania_enemy.GetNameDef] has continued to wage war with the newly formed Balkan state. Per the ultimata of [AUS.capital.GetCapitalVictoryPointName], [AUS.GetNameDef] today announced its entry into the Balkan conflict.\n\nThe entry of a Great Power into what began as a regional [TUR.GetAdjective] war has caused alarm in many foreign policy ministries, as observers across Europe fear other powers may intervene with or against [AUS.GetNameDef]."
+  event_TUR_albanian_independence.9.a: "They were warned."
+  event_TUR_albanian_independence.9.b: "We will not be cowed by [AUS.GetNameDef]"
+  event_TUR_albanian_independence.9.c: "The Balkan situation is out of control!"

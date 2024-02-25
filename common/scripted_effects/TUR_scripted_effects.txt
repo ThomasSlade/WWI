@@ -1,0 +1,29 @@
+effect_TUR_albanian_independence_tooltip = {
+	effect_tooltip = {
+		TUR = {
+			if = {
+				limit = { has_global_flag = TUR_humiliated_by_war }
+				custom_effect_tooltip = AUS_albania_independence_condition_humiliated_true_tt
+			}
+			else = {
+				custom_effect_tooltip = AUS_albania_independence_condition_humiliated_false_tt
+			}
+
+			if = {
+				limit = { has_war = yes }
+				custom_effect_tooltip = AUS_albania_independence_condition_has_war_true_tt
+			}
+			else = {
+				custom_effect_tooltip = AUS_albania_independence_condition_has_war_false_tt
+			}
+
+			if = {
+				limit = { surrender_progress > 0.5 }
+				custom_effect_tooltip = AUS_albania_independence_condition_surrender_progress_true_tt
+			}
+			else = {
+				custom_effect_tooltip = AUS_albania_independence_condition_surrender_progress_false_tt
+			}
+		}
+	}
+}
