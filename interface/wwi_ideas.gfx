@@ -1,46 +1,189 @@
 spriteTypes = {
+
+	# Generic
 	spriteType = {
-		name = "GFX_idea_generic_democratic"
-		texturefile = "gfx/interface/ideas/idea_generic_democratic.dds"
+		name = "GFX_idea_generic_arms_industry_1"
+		texturefile = "gfx/interface/ideas/idea_generic_arms_industry_1.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_generic_democratic_expansionist"
-		texturefile = "gfx/interface/ideas/idea_generic_democratic_expansionist.dds"
+		name = "GFX_idea_generic_arms_industry_2"
+		texturefile = "gfx/interface/ideas/idea_generic_arms_industry_2.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_generic_monarchist"
-		texturefile = "gfx/interface/ideas/idea_generic_monarchist.dds"
+		name = "GFX_idea_generic_industry_1"
+		texturefile = "gfx/interface/ideas/idea_generic_industry_1.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_generic_monarchist_expansionist"
-		texturefile = "gfx/interface/ideas/idea_generic_monarchist_expansionist.dds"
+		name = "GFX_idea_generic_industry_2"
+		texturefile = "gfx/interface/ideas/idea_generic_industry_2.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_generic_communist"
-		texturefile = "gfx/interface/ideas/idea_generic_communist.dds"
+		name = "GFX_idea_generic_combat"
+		texturefile = "gfx/interface/ideas/idea_generic_combat.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_generic_communist_expansionist"
-		texturefile = "gfx/interface/ideas/idea_generic_communist_expansionist.dds"
+		name = "GFX_idea_generic_construction"
+		texturefile = "gfx/interface/ideas/idea_generic_construction.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_construction"
+		texturefile = "gfx/interface/ideas/idea_generic_construction.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_propoganda"
+		texturefile = "gfx/interface/ideas/idea_generic_propoganda.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_trade"
+		texturefile = "gfx/interface/ideas/idea_generic_propoganda.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_wrenches"
+		texturefile = "gfx/interface/ideas/idea_generic_propoganda.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_special_forces"
+		texturefile = "gfx/interface/ideas/idea_generic_special_forces.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_civilian_conscription"
+		texturefile = "gfx/interface/ideas/idea_generic_civilian_conscription.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_justice"
+		texturefile = "gfx/interface/ideas/idea_generic_justice.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_martial_law"
+		texturefile = "gfx/interface/ideas/idea_generic_martial_law.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_economic_subserviance"
+		texturefile = "gfx/interface/ideas/idea_generic_economic_subserviance.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_resistance"
+		texturefile = "gfx/interface/ideas/idea_generic_resistance.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_railways"
+		texturefile = "gfx/interface/ideas/idea_generic_railways.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_air_experience"
+		texturefile = "gfx/interface/ideas/idea_generic_air_experience.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_army_experience"
+		texturefile = "gfx/interface/ideas/idea_generic_army_experience.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_naval_experience"
+		texturefile = "gfx/interface/ideas/idea_generic_naval_experience.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_military_jurisdiction"
+		texturefile = "gfx/interface/ideas/idea_generic_military_jurisdiction.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_officers"
+		texturefile = "gfx/interface/ideas/idea_generic_officers.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_soldier_conscription"
+		texturefile = "gfx/interface/ideas/idea_generic_soldier_conscription.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_territory_agreement"
+		texturefile = "gfx/interface/ideas/idea_generic_territory_agreement.dds"
 	}
 
+	# Unit Targetting
 	spriteType = {
-		name = "GFX_idea_generic_gear_and_star"
-		texturefile = "gfx/interface/ideas/idea_generic_gear_and_star.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_generic_crate"
-		texturefile = "gfx/interface/ideas/idea_generic_crate.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_generic_propoganda_megaphone"
-		texturefile = "gfx/interface/ideas/idea_generic_propoganda_megaphone.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_generic_chevron"
-		texturefile = "gfx/interface/ideas/idea_generic_chevron.dds"
+		name = "GFX_idea_generic_combat_mountaineers_artillery"
+		texturefile = "gfx/interface/ideas/idea_generic_combat_mountaineers_artillery.dds"
 	}
 
+	# Ideologies
+	spriteType = {
+		name = "GFX_idea_generic_established"
+		texturefile = "gfx/interface/ideas/idea_generic_established.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_expansionist"
+		texturefile = "gfx/interface/ideas/idea_generic_expansionist.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_revolutionary"
+		texturefile = "gfx/interface/ideas/idea_generic_revolutionary.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_established_decrease"
+		texturefile = "gfx/interface/ideas/idea_generic_established_decrease.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_expansionist_decrease"
+		texturefile = "gfx/interface/ideas/idea_generic_expansionist_decrease.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_revolutionary_decrease"
+		texturefile = "gfx/interface/ideas/idea_generic_revolutionary_decrease.dds"
+	}
+
+	### Country Specials ###
+	# Serbia
+	spriteType = {
+		name = "GFX_idea_ser_nacertanije"
+		texturefile = "gfx/interface/ideas/idea_ser_nacertanije.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ser_austrian_jurisdiction"
+		texturefile = "gfx/interface/ideas/idea_ser_austrian_jurisdiction.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ser_king_of_all_the_serbs"
+		texturefile = "gfx/interface/ideas/idea_ser_king_of_all_the_serbs.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ser_austrian_ports"
+		texturefile = "gfx/interface/ideas/idea_ser_austrian_ports.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ser_austrian_ports"
+		texturefile = "gfx/interface/ideas/idea_ser_austrian_ports.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ser_french_arms"
+		texturefile = "gfx/interface/ideas/idea_ser_french_arms.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ser_british_arms"
+		texturefile = "gfx/interface/ideas/idea_ser_british_arms.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ser_german_arms"
+		texturefile = "gfx/interface/ideas/idea_ser_german_arms.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ser_russian_arms"
+		texturefile = "gfx/interface/ideas/idea_ser_russian_arms.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ser_opanci"
+		texturefile = "gfx/interface/ideas/idea_ser_opanci.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ser_resurrection_of_serbia"
+		texturefile = "gfx/interface/ideas/idea_ser_resurrection_of_serbia.dds"
+	}
+
+	# Bulgaria
+	spriteType = {
+		name = "GFX_idea_bul_balkan_prussia"
+		texturefile = "gfx/interface/ideas/idea_bul_balkan_prussia.dds"
+	}
+
+	# Austria
 	spriteType = {
 		name = "GFX_idea_aus_black_hand_cells"
 		texturefile = "gfx/interface/ideas/idea_aus_black_hand_cells.dds"
@@ -49,15 +192,41 @@ spriteTypes = {
 		name = "GFX_idea_aus_narodna_odbrana"
 		texturefile = "gfx/interface/ideas/idea_aus_narodna_odbrana.dds"
 	}
-
-	# Country Specials
 	spriteType = {
-		name = "GFX_idea_ser_nacertanije"
-		texturefile = "gfx/interface/ideas/idea_ser_nacertanije.dds"
+		name = "GFX_idea_aus_austrian_influenced_free_city"
+		texturefile = "gfx/interface/ideas/idea_aus_austrian_influenced_free_city.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_bul_balkan_prussia"
-		texturefile = "gfx/interface/ideas/idea_bul_balkan_prussia.dds"
+		name = "GFX_idea_aus_uninfluenced_free_city"
+		texturefile = "gfx/interface/ideas/idea_aus_uninfluenced_free_city.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_aus_italian_influenced_free_city"
+		texturefile = "gfx/interface/ideas/idea_aus_italian_influenced_free_city.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_aus_blank_cheque"
+		texturefile = "gfx/interface/ideas/idea_aus_blank_cheque.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_aus_czech_reconciliation"
+		texturefile = "gfx/interface/ideas/idea_aus_czech_reconciliation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_aus_croat_reconciliation"
+		texturefile = "gfx/interface/ideas/idea_aus_croat_reconciliation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_aus_economic_placations_to_hungary"
+		texturefile = "gfx/interface/ideas/idea_aus_economic_placations_to_hungary.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_aus_endorsed_magyarization"
+		texturefile = "gfx/interface/ideas/idea_aus_endorsed_magyarization.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_aus_german_austrian_common_market"
+		texturefile = "gfx/interface/ideas/idea_aus_german_austrian_common_market.dds"
 	}
 
 	# Austria resistances
@@ -92,5 +261,30 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_AUS_minority_resistance_3"
 		texturefile = "gfx/interface/ideas/idea_AUS_minority_resistance_3.dds"
+	}
+
+	### Country Related ###
+	# Grain To
+	spriteType = {
+		name = "GFX_idea_generic_aus_grain_to"
+		texturefile = "gfx/interface/ideas/idea_generic_aus_grain_to.dds"
+	}
+
+	# Arms Industry To
+	spriteType = {
+		name = "GFX_idea_generic_aus_idea_arms_industry_to"
+		texturefile = "gfx/interface/ideas/idea_generic_aus_idea_arms_industry_to.dds"
+	}
+
+	# Generic Railways
+	spriteType = {
+		name = "GFX_idea_generic_aus_railways"
+		texturefile = "gfx/interface/ideas/idea_generic_aus_railways.dds"
+	}
+
+	# Generic Soldier Conscription
+	spriteType = {
+		name = "GFX_idea_generic_aus_soldier_conscription"
+		texturefile = "gfx/interface/ideas/idea_generic_aus_soldier_conscription.dds"
 	}
 }

@@ -107,7 +107,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = ast_classify_aliens
+			picture = generic_martial_law
 
 			modifier = {
 				expansionist_drift = 0.05
@@ -125,7 +125,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = german_advisors
+			picture = generic_army_experience
 
 			modifier = {
 				experience_gain_army = 0.05
@@ -370,13 +370,21 @@ ideas = {
 
 			removal_cost = -1
 
+			picture = generic_special_forces
+
 			modifier = {
 				unit_mountaineers_design_cost_factor = -0.5
 				special_forces_min = 8
 			}
 		}
 
+		AUS_uninfluienced_free_city = {
+			picture = aus_uninfluenced_free_city
+		}
+
 		AUS_austrian_influenced_free_city = {
+			picture = aus_austrian_free_city
+
 			modifier = {
 				cic_to_target_factor = 0.5
 				mic_to_target_factor = 1
@@ -385,6 +393,8 @@ ideas = {
 		}
 
 		AUS_italian_influenced_free_city = {
+			picture = aus_italian_free_city
+
 			modifier = {
 				cic_to_target_factor = 0.5
 				mic_to_target_factor = 1
@@ -393,6 +403,8 @@ ideas = {
 		}
 
 		AUS_dissidents_released_expansionist = {
+			picture = generic_expansionist_decrease
+
 			allowed = {
 				always = no
 			}
@@ -409,6 +421,8 @@ ideas = {
 		}
 
 		AUS_dissidents_released_revolutionary = {
+			picture = generic_revolutionary_decrease
+
 			allowed = {
 				always = no
 			}
@@ -425,6 +439,8 @@ ideas = {
 		}
 
 		AUS_dissidents_released_established = {
+			picture = generic_established_decrease
+
 			allowed = {
 				always = no
 			}
@@ -441,6 +457,8 @@ ideas = {
 		}
 
 		AUS_czech_reconciliation = {
+			picture = aus_czech_reconciliation
+
 			allowed = {
 				always = no
 			}
@@ -458,6 +476,8 @@ ideas = {
 		}
 
 		AUS_croat_reconciliation = {
+			picture = aus_croat_reconciliation
+
 			allowed = {
 				always = no
 			}
@@ -475,6 +495,8 @@ ideas = {
 		}
 
 		AUS_oktroi = {
+			picture = generic_propoganda
+
 			allowed = {
 				always = no
 			}
@@ -495,6 +517,8 @@ ideas = {
 		}
 
 		AUS_trade_for_bukovina = {
+			picture = generic_territory_agreement
+
 			allowed = {
 				always = no
 			}
@@ -512,6 +536,8 @@ ideas = {
 		}
 		
 		AUS_austrian_german_common_market = {
+			picture = aus_german_austrian_common_market
+
 			allowed = {
 				always = no
 			}
@@ -538,6 +564,8 @@ ideas = {
 		}
 
 		GER_austrian_german_common_market = {
+			picture = aus_german_austrian_common_market
+
 			allowed = {
 				always = no
 			}
@@ -564,6 +592,8 @@ ideas = {
 		}
 
 		AUS_economic_placations_to_hungary = {
+			picture = aus_economic_placations_to_hungary
+
 			allowed = {
 				always = no
 			}
@@ -604,6 +634,8 @@ ideas = {
 		}
 
 		AUS_endorsed_magyarisation = {
+			picture = aus_endorsed_magyarisation
+
 			allowed = {
 				always = no
 			}
@@ -625,6 +657,8 @@ ideas = {
 		}
 
 		AUS_customs_duty_lifted = {
+			picture = generic_aus_grain_to
+
 			allowed = {
 				always = no
 			}
@@ -649,6 +683,8 @@ ideas = {
 		}
 
 		AUS_army_slavic = {
+			picture = aus_idea_generic_soldier_conscription
+
 			allowed = {
 				always = no
 			}
@@ -677,6 +713,8 @@ ideas = {
 		}
 
 		AUS_blank_cheque = {
+			picture = aus_blank_cheque
+
 			allowed = {
 				always = no
 			}
@@ -698,6 +736,8 @@ ideas = {
 		}
 
 		AUS_strengthen_the_ottomans = {
+			picture = generic_aus_railways
+
 			allowed = {
 				always = no
 			}
@@ -744,6 +784,8 @@ ideas = {
 		}
 
 		idea_AUS_influenced_by_austria = {
+			picture = aus_idea_arms_industry_to
+
 			allowed = {
 				always = no
 			}
@@ -827,6 +869,8 @@ ideas = {
 		}
 
 		idea_AUS_import_romanian_grain = {
+			picture = generic_aus_grain_to
+
 			allowed = {
 				always = no
 			}
@@ -849,6 +893,8 @@ ideas = {
 		}
 
 		idea_AUS_assisting_bulgarian_mobilisation = {
+			picture = generic_aus_soldier_conscription
+
 			allowed = {
 				always = no
 			}
@@ -869,6 +915,8 @@ ideas = {
 		}
 
 		idea_AUS_orient_railway_investment = {
+			picture = generic_railways
+
 			allowed = {
 				always = no
 			}
@@ -886,6 +934,8 @@ ideas = {
 		}
 
 		idea_AUS_novi_pazar_line = {
+			picture = generic_railways
+
 			allowed = {
 				always = no
 			}
@@ -903,6 +953,8 @@ ideas = {
 		}
 
 		idea_AUS_pension_off_inept_officers = {
+			picture = generic_officers
+
 			allowed = {
 				always = no
 			}
@@ -920,6 +972,8 @@ ideas = {
 		}
 
 		idea_AUS_ships_for_industry = {
+			picture = generic_arms_industry_to
+
 			allowed = {
 				always = no
 			}
@@ -946,6 +1000,8 @@ ideas = {
 		}
 
 		idea_AUS_war_surveilance_office = {
+			picture = generic_propoganda
+
 			allowed = {
 				always = no
 			}
@@ -968,6 +1024,8 @@ ideas = {
 		}
 
 		idea_AUS_statthalters_replaced_by_generals = {
+			picture = generic_military_jurisdiction
+
 			allowed = {
 				always = no
 			}
