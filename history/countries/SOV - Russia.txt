@@ -30,4 +30,8 @@ set_popularities = {
 	revolutionary = 0
 }
 
+add_ideas = {
+	extensive_conscription
+}
+
 recruit_character = SOV_nicholas_ii

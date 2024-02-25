@@ -37,6 +37,7 @@ add_ideas = {
 	AUS_hungarian_resistance_0
 	AUS_minority_resistance_1
 	AUS_multi_lingual_empire
+	extensive_conscription
 }
 
 set_autonomy = {

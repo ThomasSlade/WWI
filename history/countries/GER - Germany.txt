@@ -33,6 +33,10 @@ set_popularities = {
 	revolutionary = 0
 }
 
+add_ideas = {
+	extensive_conscription
+}
+
 recruit_character = GER_wilhelm_ii
 
 create_faction = CentralPowers

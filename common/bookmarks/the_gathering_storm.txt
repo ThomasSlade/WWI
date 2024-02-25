@@ -1,7 +1,7 @@
 bookmarks = {
 	bookmark = {
-		name = "GATHERING_STORM_NAME"
-		desc = "GATHERING_STORM_DESC"
+		name = "CONCERT_OF_EUROPE_NAME"
+		desc = "CONCERT_OF_EUROPE_DESC"
 		date = 1911.1.1.12
 		picture = "GFX_select_date_1936"
 		default_country = "GER"
@@ -13,7 +13,7 @@ bookmarks = {
 		}
 
 		"AUS"={
-			history = "GER_GATHERING_STORM_DESC"
+			history = "AUS_CONCERT_OF_EUROPE"
 			ideology = expansionist
 		}
 
@@ -29,7 +29,7 @@ bookmarks = {
 
 		"SER"={
 			minor = yes
-			history = "GER_GATHERING_STORM_DESC"
+			history = "SER_CONCERT_OF_EUROPE"
 			ideology = established
 		}
 

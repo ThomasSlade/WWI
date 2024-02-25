@@ -60,7 +60,7 @@ division_template = {
 
 units = {
 	# Test Division
-	division= {	
+	division = {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -70,7 +70,7 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 	}
-	division= {	
+	division = {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -80,7 +80,7 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 	}
-	division= {	
+	division = {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -92,7 +92,7 @@ units = {
 	}
 
 	# 3 Cavalry Units
-	division= {	
+	division = {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -101,7 +101,7 @@ units = {
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
+	division = {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -110,7 +110,7 @@ units = {
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
+	division = {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -121,7 +121,7 @@ units = {
 	}
 
 	# 2 Artillery Units
-	division= {	
+	division = {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -130,7 +130,7 @@ units = {
 		division_template = "Artillery Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
+	division = {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -141,7 +141,7 @@ units = {
 	}
 
 	# 3 Infantry Units
-	division= {	
+	division = {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -150,7 +150,7 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
+	division = {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -159,54 +159,7 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 2788
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-
-	# 5 Infantry Units
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 2788
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 2788
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 2788
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 2788
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
+	division = {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -217,7 +170,7 @@ units = {
 	}
 
 	# 5 Infantry Units
-	division= {	
+	division = {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -226,7 +179,7 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
+	division = {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -235,7 +188,7 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
+	division = {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -244,7 +197,7 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
+	division = {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -253,7 +206,54 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 2788
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	# 5 Infantry Units
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 2788
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 2788
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 2788
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 2788
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2

@@ -5,6 +5,10 @@
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
 	}
 }
 
@@ -16,12 +20,14 @@ division_template = {
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
 	}
 }
 
 units = {
 	# 2 Cavalry Units
-	division= {	
+	division = {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -30,7 +36,7 @@ units = {
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
+	division = {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -40,26 +46,8 @@ units = {
 		start_experience_factor = 0.3
 	}
 
-	# 3 Infantry Units
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 5422
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 5422
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
+	# 1 Infantry Units
+	division = {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -70,7 +58,7 @@ units = {
 	}
 
 	# 5 Infantry Units
-	division= {	
+	division = {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -79,7 +67,7 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
+	division = {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -88,7 +76,7 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
+	division = {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -97,7 +85,7 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
+	division = {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -106,7 +94,54 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 5422
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	# 5 Infantry Units
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 5422
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 5422
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 5422
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 5422
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2

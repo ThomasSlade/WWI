@@ -31,3 +31,7 @@ set_popularities = {
 	expansionist = 25
 	revolutionary = 0
 }
+
+add_ideas = {
+	limited_conscription
+}

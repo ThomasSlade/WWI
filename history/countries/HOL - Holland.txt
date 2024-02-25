@@ -29,4 +29,8 @@ set_popularities = {
 	revolutionary = 0
 }
 
+add_ideas = {
+	limited_conscription
+}
+
 recruit_character = HOL_wilhelmina

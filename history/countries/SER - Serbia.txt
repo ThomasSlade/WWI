@@ -25,6 +25,11 @@ set_popularities = {
 	revolutionary = 35
 }
 
+add_ideas = {
+	SER_nacertanije
+	extensive_conscription
+}
+
 recruit_character = SER_nikola_pasic
 recruit_character = SER_jovan_jovanovic
 recruit_character = SER_stojan_protic
@@ -39,8 +44,3 @@ recruit_character = SER_leon_descos
 recruit_character = SER_dayrell_crackanthorpe
 
 recruit_character = SER_george_obrenovic
-
-add_ideas = {
-	SER_nacertanije
-	extensive_conscription
-}

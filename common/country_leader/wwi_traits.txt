@@ -18,7 +18,7 @@ leader_traits = {
 	#Apis
 	untraceable_conspirator = {
 		random = no
-		expansionist_drift = 0.05
+		revolutionary_drift = 0.05
 		offensive_war_stability_factor = 0.3
 		encryption = 2
 	}
