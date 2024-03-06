@@ -11,10 +11,10 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_expansionist
+			picture = generic_revolutionary
 
 			modifier = {
-				expansionist_drift = 0.01
+				revolutionary_drift = 0.01
 			}
 		}
 
@@ -660,6 +660,62 @@ ideas = {
 
 			modifier = {
 				expansionist_drift = 0.04
+			}
+		}
+
+		# This idea handles the adding and removing of the dynamic modifier that actually delivers the reduced annexaion cost effect.
+		idea_SER_favoured_by_arbitrator = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_territory_agreement
+
+			cancel = {
+				OR = {
+					var:global.balkan_arbitrator = {
+						OR = {
+							exists = no
+							if = {
+								limit = { PREV = { original_tag = SER } }
+								check_variable = { opinion@ROOT < opinion@BUL }
+							}
+							else = {
+								check_variable = { opinion@ROOT < opinion@SER }
+							}
+						}
+					}
+					exists = no
+					has_war_with = var:global.balkan_arbitrator
+				}
+			}
+
+			on_add = {
+				add_dynamic_modifier = { modifier = modifier_SER_balkan_arbitration }
+			}
+
+			on_remove = {
+				log = "Removing Balkan Arbitration favour from [THIS.GetName]."
+				if = {
+					limit = {
+						country_exists = var:global.balkan_arbitrator
+						NOT = { has_war_with = var:global.balkan_arbitrator }
+					}
+					country_event = { id = wwi_events_SER_balkan_arbitration.2 hours = 1 }
+					var:balkan_arbitration_opponent = { country_event = { id = wwi_events_SER_balkan_arbitration.1 hours = 1 } }
+				}
+
+				remove_dynamic_modifier = { modifier = modifier_SER_balkan_arbitration }
+			}
+
+			modifier = {
+				custom_modifier_tooltip = idea_SER_favoured_by_arbitrator_turkey_annexation_tt
 			}
 		}
 	}

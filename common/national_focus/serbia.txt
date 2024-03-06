@@ -1605,20 +1605,14 @@ focus_tree = {
 		completion_reward = {
 			MNT = { country_event = wwi_montenegro.1 }
 
-			# Remove claims on Montenegro-adjacent lands.
-			if = {
-				limit = {
-					161 = { is_core_of = SER } 
+			effect_tooltip = {
+				custom_effect_tooltip = if_they_accept_tt
+				MNT = {
+					effect_SER_join_balkan_league = yes
+					add_state_core = 135
+					add_state_core = 161
 				}
-				remove_state_core = 161
 			}
-			if = {
-				limit = {
-					135 = { is_core_of = SER } 
-				}
-				remove_state_core = 135
-			}
-
 			
 			# TEMP: Fire the event signifying the end of the Italo-Turkish war, allowing Serbia to get War With the Ottomans
 			TUR = { news_event = { id = wwi_news.1 } }
@@ -1644,13 +1638,7 @@ focus_tree = {
 			show_ideas_tooltip = SER_jovan_cvijic
 			add_state_core = 202
 			add_state_core = 151
-			if = {
-				limit = {
-					NOT = { has_completed_focus = SER_entice_montenegro }
-				}
-				# Scutari is only claimed if Serbia isn't sharing with Montenegro.
-				add_state_core = 161
-			}
+			add_state_core = 161
 		}
 	}
 
@@ -1731,72 +1719,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SER_seek_russian_mediation
-		icon = GFX__shine
-		prerequisite = { focus = SER_fund_macedonian_militia }
-		mutually_exclusive = { focus = SER_appeal_to_austria_for_support }
-		x = 0
-		y = 1
-		relative_position_id = SER_fund_macedonian_militia
-		cost = 10
-		ai_will_do = {
-			factor = 6
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			SOV = { add_opinion_modifier = { target = SER modifier = SER_appealed_for_arbitration } }
-			SOV = { set_country_flag = macedonian_arbitrator }
-			218 = { set_state_flag = disputed_macedonian_state }
-			148 = { set_state_flag = disputed_macedonian_state }
-			216 = { set_state_flag = disputed_macedonian_state }
-			134 = { set_state_flag = disputed_macedonian_state }
-			188 = { set_state_flag = disputed_macedonian_state }
-			133 = { set_state_flag = disputed_macedonian_state }
-			127 = { set_state_flag = disputed_macedonian_state }
-			220 = { set_state_flag = disputed_macedonian_state }
-			183 = { set_state_flag = disputed_macedonian_state }
-			140 = { set_state_flag = disputed_macedonian_state }
-
-			custom_effect_tooltip = wwi_macedonian_arbitration_russia_tt
-		}
-	}
-
-	focus = {
-		id = SER_appeal_to_austria_for_support
-		icon = GFX__shine
-		prerequisite = { focus = SER_fund_macedonian_militia }
-		mutually_exclusive = { focus = SER_seek_russian_mediation }
-		x = -2
-		y = 1
-		relative_position_id = SER_fund_macedonian_militia
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			AUS = { add_opinion_modifier = { target = SER modifier = SER_appealed_for_arbitration } }
-			AUS = { set_country_flag = macedonian_arbitrator }
-			218 = { set_state_flag = disputed_macedonian_state }
-			148 = { set_state_flag = disputed_macedonian_state }
-			216 = { set_state_flag = disputed_macedonian_state }
-			134 = { set_state_flag = disputed_macedonian_state }
-			188 = { set_state_flag = disputed_macedonian_state }
-			133 = { set_state_flag = disputed_macedonian_state }
-			127 = { set_state_flag = disputed_macedonian_state }
-			220 = { set_state_flag = disputed_macedonian_state }
-			183 = { set_state_flag = disputed_macedonian_state }
-			140 = { set_state_flag = disputed_macedonian_state }
-
-			custom_effect_tooltip = wwi_macedonian_arbitration_austria_tt
-		}
-	}
-
-	focus = {
 		id = SER_promote_serb_guerilla_forces
 		icon = GFX__shine
 		prerequisite = { focus = SER_fund_macedonian_militia }
@@ -1825,11 +1747,11 @@ focus_tree = {
 	focus = {
 		id = SER_strike_a_deal_with_bulgaria
 		icon = GFX__shine
-		prerequisite = { focus = SER_seek_russian_mediation focus = SER_appeal_to_austria_for_support }
+		prerequisite = { focus = SER_fund_macedonian_militia }
 		mutually_exclusive = { focus = SER_befriend_romania }
 		x = -2
-		y = 1
-		relative_position_id = SER_seek_russian_mediation
+		y = 2
+		relative_position_id = SER_fund_macedonian_militia
 		cost = 10
 		ai_will_do = {
 			factor = 6
@@ -1838,16 +1760,16 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			BUL = { country_event = wwi_bulgaria.1 }
-			custom_effect_tooltip = if_they_accept
+			country_event = { id = wwi_events_SER_balkan_arbitration.3 }
+			
 			effect_tooltip = {
-				if = {
-					limit = { is_in_faction = no }
-					create_faction = BALKAN_LEAGUE
-				}
-				add_to_faction = BUL
-
+				custom_effect_tooltip = SER_strike_a_deal_with_bulgaria_choose_arbitrator_tt
+				custom_effect_tooltip = SER_strike_a_deal_with_bulgaria_choose_arbitration_rule_tt
+				add_ideas = idea_SER_favoured_by_arbitrator
+				custom_effect_tooltip = wwi_newline_tt
+				custom_effect_tooltip = if_they_accept
 				BUL = {
+					effect_SER_join_balkan_league = yes
 					add_state_core = 157
 					add_state_core = 220
 					add_state_core = 133
@@ -1864,11 +1786,11 @@ focus_tree = {
 	focus = {
 		id = SER_befriend_romania
 		icon = GFX__shine
-		prerequisite = { focus = SER_seek_russian_mediation focus = SER_appeal_to_austria_for_support }
+		prerequisite = { focus = SER_fund_macedonian_militia }
 		mutually_exclusive = { focus = SER_strike_a_deal_with_bulgaria }
 		x = 0
-		y = 1
-		relative_position_id = SER_seek_russian_mediation
+		y = 2
+		relative_position_id = SER_fund_macedonian_militia
 		cost = 10
 		ai_will_do = {
 			factor = 6

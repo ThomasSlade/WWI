@@ -83,3 +83,12 @@ AUS_foreign_garrison = {
 	production_speed_bunker_factor = 0.33
 	production_speed_coastal_bunker_factor = 0.33
 }
+
+modifier_SER_balkan_arbitration = {
+	enable = {
+		pc_is_on_winning_side = yes
+		TUR = { pc_is_loser = yes }
+	}
+
+	annex_cost_factor = -0.33
+}
