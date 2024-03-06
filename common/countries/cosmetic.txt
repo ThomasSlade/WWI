@@ -37,3 +37,8 @@ SER_OBRENOVIC = {
 	color = rgb { 49 56 102 }
 	color_ui = { 49 56 102 }
 }
+
+SER_BLACKHAND = {
+	color = rgb { 107 4 59 }
+	color_ui = { 107 4 59 }
+}

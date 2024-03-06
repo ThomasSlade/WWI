@@ -2,6 +2,10 @@ spriteTypes = {
 
 	# Generic
 	spriteType = {
+		name = "GFX_idea_generic_blank"
+		texturefile = "gfx/interface/ideas/idea_generic_blank.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_generic_arms_industry_1"
 		texturefile = "gfx/interface/ideas/idea_generic_arms_industry_1.dds"
 	}

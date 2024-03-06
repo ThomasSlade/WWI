@@ -1,0 +1,18 @@
+ideas = {
+	country = {
+		idea_debug_weakened = {
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_blank
+
+			modifier = {
+				army_attack_factor = -0.9
+				army_defence_factor = -0.9
+			}
+		}
+	}
+}

@@ -1,0 +1,121 @@
+add_namespace = event_WWI_cities
+
+news_event = {
+	id = event_WWI_cities.1
+	title = event_WWI_cities.1.t
+	desc = event_WWI_cities.1.d
+	picture = GFX_news_event_001
+
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		195 = {
+			is_owned_by = TUR
+			controller = { NOT = { tag = TUR } }
+		}
+	}
+
+	immediate = {
+		log = "([THIS.GetName] news event) Konstantiniyye Falls to Balkan League."
+	}
+
+	# Capturer
+	option = {
+		name = event_WWI_cities.1.d_conquerer
+		trigger = {
+			NOT = {
+				OR = {
+					tag = GRE
+					tag = BYZ
+					tag = ROM
+					tag = SOV
+					tag = BUL
+					tag = SER
+					tag = YUG
+					tag = MNT
+					tag = MAC
+					tag = CRO
+					tag = BOS
+					tag = SLV
+					tag = VOJ
+				}
+			}
+		}
+	}
+
+	# Capturer (Greek and Romanian)
+	option = {
+		name = event_WWI_cities.1.d_conquerer_greek
+		trigger = {
+			controls_state = 195
+			OR = {
+				tag = GRE
+				tag = BYZ
+				tag = ROM
+			}
+		}
+	}
+
+	# Capturer (Slavic)
+	option = {
+		name = event_WWI_cities.1.d_conquerer_slavic
+		trigger = {
+			controls_state = 195
+			OR = {
+				tag = SOV
+				tag = BUL
+				tag = SER
+				tag = YUG
+				tag = MNT
+				tag = MAC
+				tag = CRO
+				tag = BOS
+				tag = SLV
+				tag = VOJ
+			}
+		}
+	}
+
+	# Positive
+	option = {
+		name = event_WWI_cities.1.d_positive
+		trigger = {
+			NOT = { controls_state = 195 }
+			NOT = { owns_state = 195 }
+			has_opinion = { target = FROM value > 10 }
+		}
+	}
+
+	# Neutral
+	option = {
+		name = event_WWI_cities.1.d_neutral
+		trigger = {
+			NOT = { controls_state = 195 }
+			NOT = { owns_state = 195 }
+			has_opinion = { target = FROM value < 11 }
+			has_opinion = { target = FROM value > -11 }
+		}
+	}
+
+	# Negative
+	option = {
+		name = event_WWI_cities.1.d_negative
+		trigger = {
+			NOT = { controls_state = 195 }
+			NOT = { owns_state = 195 }
+			OR = {
+				195 = { is_core_of = ROOT }
+				has_opinion = { target = FROM value < -11 }
+			}
+		}
+	}
+
+	# Captured from
+	option = {
+		name = event_WWI_cities.1.d_conquered
+		trigger = {
+			owns_state = 195
+		}
+	}
+}
