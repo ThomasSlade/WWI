@@ -1,38 +1,36 @@
 on_actions = {
-	on_actions = {
-		on_puppet = {
-			effect = {
-				if = {
-					limit = { FROM = { original_tag = AUS } }
-					AUS_mark_ah_puppets = yes
-				}
+	on_puppet = {
+		effect = {
+			if = {
+				limit = { FROM = { original_tag = AUS } }
+				AUS_mark_ah_puppets = yes
 			}
 		}
+	}
 
-		on_release_as_puppet = {
-			effect = {
-				if = {
-					limit = { FROM = { original_tag = AUS } }
-					AUS_mark_ah_puppets = yes
-				}
+	on_release_as_puppet = {
+		effect = {
+			if = {
+				limit = { FROM = { original_tag = AUS } }
+				AUS_mark_ah_puppets = yes
 			}
 		}
+	}
 
-		on_release_as_free = {
-			effect = {
-				if = {
-					limit = { FROM = { original_tag = AUS } }
-					AUS_clear_ah_puppets = yes
-				}
+	on_release_as_free = {
+		effect = {
+			if = {
+				limit = { FROM = { original_tag = AUS } }
+				AUS_clear_ah_puppets = yes
 			}
 		}
+	}
 
-		on_liberate = {
-			effect = {
-				if = {
-					limit = { FROM = { original_tag = AUS } }
-					AUS_clear_ah_puppets = yes
-				}
+	on_liberate = {
+		effect = {
+			if = {
+				limit = { FROM = { original_tag = AUS } }
+				AUS_clear_ah_puppets = yes
 			}
 		}
 	}
