@@ -184,3 +184,108 @@ defined_text = {
 		localization_key = AUS_has_adjacent_river_ports_156
 	}
 }
+
+defined_text = {
+	name = GetBalkanDisputesList
+	
+	# Yes this is stupid, but the reccomended 'recursion' approach simply isn't working. I am done playing games. Do not fuck with me.
+	text = {
+		trigger = { check_variable = { global.has_been_in_balkan_league^num = 1 } }
+		localization_key = balkan_disputes_list_1
+	}
+	text = {
+		trigger = { check_variable = { global.has_been_in_balkan_league^num = 2 } }
+		localization_key = balkan_disputes_list_2
+	}
+	text = {
+		trigger = { check_variable = { global.has_been_in_balkan_league^num = 3 } }
+		localization_key = balkan_disputes_list_3
+	}
+	text = {
+		trigger = { check_variable = { global.has_been_in_balkan_league^num = 4 } }
+		localization_key = balkan_disputes_list_4
+	}
+	text = {
+		trigger = { check_variable = { global.has_been_in_balkan_league^num = 5 } }
+		localization_key = balkan_disputes_list_5
+	}
+	text = {
+		trigger = { check_variable = { global.has_been_in_balkan_league^num = 6 } }
+		localization_key = balkan_disputes_list_6
+	}
+	text = {
+		trigger = { check_variable = { global.has_been_in_balkan_league^num = 7 } }
+		localization_key = balkan_disputes_list_7
+	}
+	text = {
+		trigger = { check_variable = { global.has_been_in_balkan_league^num = 8 } }
+		localization_key = balkan_disputes_list_8
+	}
+	text = {
+		trigger = { check_variable = { global.has_been_in_balkan_league^num = 9 } }
+		localization_key = balkan_disputes_list_9
+	}
+	text = {
+		trigger = { check_variable = { global.has_been_in_balkan_league^num = 10 } }
+		localization_key = balkan_disputes_list_10
+	}
+	text = {
+		trigger = { check_variable = { global.has_been_in_balkan_league^num = 11 } }
+		localization_key = balkan_disputes_list_11
+	}
+	text = {
+		trigger = { check_variable = { global.has_been_in_balkan_league^num = 12 } }
+		localization_key = balkan_disputes_list_12
+	}
+	text = {
+		trigger = { check_variable = { global.has_been_in_balkan_league^num = 13 } }
+		localization_key = balkan_disputes_list_13
+	}
+	text = {
+		trigger = { check_variable = { global.has_been_in_balkan_league^num = 14 } }
+		localization_key = balkan_disputes_list_14
+	}
+	text = {
+		trigger = { check_variable = { global.has_been_in_balkan_league^num = 15 } }
+		localization_key = balkan_disputes_list_15
+	}
+	text = {
+		trigger = { check_variable = { global.has_been_in_balkan_league^num = 16 } }
+		localization_key = balkan_disputes_list_16
+	}
+	text = {
+		trigger = { check_variable = { global.has_been_in_balkan_league^num = 17 } }
+		localization_key = balkan_disputes_list_17
+	}
+	text = {
+		trigger = { check_variable = { global.has_been_in_balkan_league^num = 18 } }
+		localization_key = balkan_disputes_list_18
+	}
+	text = {
+		trigger = { check_variable = { global.has_been_in_balkan_league^num = 19 } }
+		localization_key = balkan_disputes_list_19
+	}
+	text = {
+		trigger = { check_variable = { global.has_been_in_balkan_league^num = 20 } }
+		localization_key = balkan_disputes_list_20
+	}
+}
+
+defined_text = {
+	name = GetBalkanDisputesText
+
+	text = {
+		trigger = {}
+		localization_key = "[THIS.GetNameWithFlag]: [?THIS.GetBalkanDisputesCount]"
+	}
+}
+
+# Unclear why I need this to show a simple variable, but I do.
+defined_text = {
+	name = GetBalkanDisputesCount
+
+	text = {
+		trigger = {}
+		localization_key = "[?balkan_war_disputed_states_count]"
+	}
+}

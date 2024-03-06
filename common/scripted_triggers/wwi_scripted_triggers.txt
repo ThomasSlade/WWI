@@ -17,6 +17,17 @@ trigger_state_is_fully_controlled = {
 	}
 }
 
+trigger_has_any_resources = {
+	OR = {
+		oil > 0
+		aluminium > 0
+		rubber > 0
+		tungsten > 0
+		steel > 0
+		chromium > 0
+	}
+}
+
 is_in_active_role = {
 	OR = {
 		is_political_advisor = yes

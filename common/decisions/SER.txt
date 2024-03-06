@@ -820,3 +820,253 @@ SER_bombard_kotor = {
 		}
 	}
 }
+
+decision_category_SER_balkan_league = {
+	mission_SER_balkan_league_breakup = {
+		is_good = no
+		#days_mission_timeout = 90 # Change mission_SER_balkan_league_breakup_tt if you change this.
+		days_mission_timeout = 20
+
+		activation = {
+			has_global_flag = flag_balkan_disputes_ongoing
+			NOT = { has_global_flag = flag_second_balkan_war_started }
+		}
+
+		available = {
+	       	has_global_flag = flag_balkan_disputes_resolved
+	    }
+
+		timeout_effect = {
+			# Show the effect to everyone but only fire it for the instigator.
+			if = {
+				limit = { check_variable = { global.country_with_most_balkan_war_disputes = ROOT } }
+				var:global.country_with_most_balkan_war_disputes = {
+					hidden_effect  = {
+						country_event = { id = event_WWI_balkan_league_second_balkan_war.1 hours = 1 }
+					}
+					effect_SER_second_balkan_war_tt = yes
+				}
+			}
+			else = {
+				effect_tooltip = {
+					var:global.country_with_most_balkan_war_disputes = {
+						hidden_effect  = {
+							country_event = { id = event_WWI_balkan_league_second_balkan_war.1 hours = 1 }
+						}
+						effect_SER_second_balkan_war_tt = yes
+					}
+				}
+			}
+		}
+
+		war_with_on_timeout = global.balkan_league_leader
+
+		icon = GFX_decision_generic_ignite_civil_war
+
+		priority = 1
+	}
+
+	decision_SER_garrison_territory = {
+		# TODO: Need to try specifying a continent after updating.
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				is_on_continent = balkans
+				is_core_of = ROOT
+				NOT = { is_controlled_by = ROOT }
+				has_state_flag = flag_balkan_war_disputed
+				NOT = { has_state_flag = flag_balkan_war_dispute_resolved }
+			}
+	    }
+
+	    custom_cost_trigger = {
+	    	command_power > 30
+	    }
+	    custom_cost_text = decision_SER_garrison_territory_cost
+
+	    visible = {
+	    	FROM = { trigger_state_is_neighbor = yes }
+	    }
+
+	    complete_effect = {
+	    	add_command_power = -30
+
+	    	hidden_effect = {
+	    		FROM = {
+	    			save_event_target_as = occupied_state
+	    			owner = {
+	    				country_event = { id = event_WWI_balkan_league_presence_intensified.1 hours = 1 }
+	    			}
+
+	    			set_state_flag = {
+	    				flag = flag_recently_garrisoned_disputed_territory
+	    				value = 1
+	    				days = 15
+	    			}
+	    		}
+
+	    		set_country_flag = {
+	    			flag = flag_recently_garrisoned_disputed_territory
+	    			value = 1
+	    			days = 10
+	    		}
+	    	}
+
+	    	transfer_state = FROM
+	    }
+
+	    ai_will_do = {
+	    	base = 20
+	    	modifier = {
+	    		factor = 0
+	    		surrender_progress > 0.25
+	    	}
+	    	modifier = {
+	    		factor = 0
+	    		has_country_flag = flag_recently_garrisoned_disputed_territory
+	    	}
+	    	modifier = {
+	    		factor = 0
+	    		FROM = { has_state_flag = flag_recently_garrisoned_disputed_territory }
+	    	}
+	    	modifier = {
+	    		add = 10
+	    		capital_scope = {
+					distance_to = {
+						value < 100
+						target = FROM
+					}
+				}
+	    	}
+	    	modifier = {
+	    		add = 10
+	    		capital_scope = {
+					distance_to = {
+						value < 200
+						target = FROM
+					}
+				}
+	    	}
+	    	modifier = {
+	    		factor = 2
+	    		check_variable = { balkan_war_disputed_states_count > 1 }
+	    	}
+	    }
+
+	    icon = GFX_decision_infiltrate_state
+	}
+
+	decision_SER_resolve_dispute = {
+		state_target = yes
+		target_trigger = {
+			FROM = { has_state_flag = flag_balkan_war_disputed }
+			FROM = { NOT = { has_state_flag = flag_balkan_war_dispute_resolved } }
+		}
+
+		cost = 30
+
+		available = {
+			set_temp_variable = { recipients = FROM.balkan_league_claimants }
+
+			trigger_SER_get_balkan_dispute_concession_recipients = yes
+
+			if = {
+				limit = { check_variable  = { recipients > 0 } }
+				OR = {
+					num_of_civilian_factories > recipients
+					num_of_military_factories > recipients
+				}
+			}
+		}
+
+		complete_effect = {
+			effect_SER_add_resolution_point = yes
+
+			set_country_flag = {
+				flag = flag_recently_resolved_balkan_dispute
+				value = 1
+				days = 5
+			}
+
+	    	if = {
+	    		limit = {
+		    		set_temp_variable = { remaining_disputes = 0 }
+		    		all_state = {
+		    			if = {
+		    				limit = {
+			    				has_state_flag = flag_balkan_war_disputed
+			    				NOT = { has_state_flag = flag_balkan_war_dispute_resolved }
+			    			}
+		    				add_to_temp_variable = { remaining_disputes = 1 }
+		    			}
+		    		}
+	    			check_variable = { remaining_disputes < 2 }
+	    		}
+
+	    		effect_SER_end_balkan_disputes = yes
+	    	}
+	    	else = {
+	    		add_days_mission_timeout = {
+	    			mission = mission_SER_balkan_league_breakup
+	    			days = 15
+	    		}
+	    	}
+
+	    	FROM = { set_state_flag = flag_balkan_war_dispute_resolved }
+
+	    	every_other_country = {
+	    		limit = {
+	    			has_country_flag = flag_has_been_in_balkan_league
+	    			NOT = { controls_state = FROM }
+	    			FROM = { is_core_of = PREV }
+	    		}
+
+	    		FROM = { save_event_target_as = disputed_state }
+	    		country_event = { id = event_WWI_balkan_league_resolve_dispute.1 hours = 1 }
+	    	}
+
+	    	if = {
+	    		limit = {
+	    			trigger_SER_get_balkan_dispute_concession_recipients = yes
+	    			check_variable = { recipients > 0 }
+	    		}
+
+	    		custom_effect_tooltip = resolve_dispute_concession_tt
+	    	}
+
+	    	hidden_effect = {
+	    		effect_SER_count_balkan_disputes = yes
+	    	}
+	    }
+
+	    ai_will_do = {
+	    	base = 0
+
+	    	modifier = {
+	    		add = 50
+	    		has_country_flag = flag_is_balkan_league_leader
+	    	}
+	    	# If you're not sure you can beat the 2nd Balkan War instigator, this becomes more urgent.
+	    	modifier = {
+	    		add = 20
+	    		NOT = { check_variable = { global.country_with_most_balkan_war_disputes = THIS } }
+	    		var:global.country_with_most_balkan_war_disputes = {
+	    			strength_ratio = {
+	    				tag = ROOT
+	    				ratio < 0.66
+	    			}
+	    		}
+	    	}
+	    	modifier = {
+	    		factor = 2
+	    		controls_state = FROM
+	    	}
+	    	modifier = {
+	    		factor = 0.2
+	    		has_country_flag = flag_recently_resolved_balkan_dispute
+	    	}
+	    }
+
+	    icon = GFX_decision_hol_exchange_intelligence_data
+	}
+}

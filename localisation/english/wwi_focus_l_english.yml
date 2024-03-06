@@ -46,6 +46,8 @@
   SER_seize_belgrade_for_the_black_hand_tt: "§RA civil war begins. You will control the Revaunchist party.§!\n"
   SER_root_out_the_black_hand_tt: "§RA civil war begins. You will fight against the Revaunchist party.§!\n"
   SER_renegotiate_bosnia_2_tt: "We can choose one of the following:"
+  SER_strike_a_deal_with_bulgaria_choose_arbitrator_tt: "We may choose §Y[SOV.GetNameWithFlag]§! or §Y[AUS.GetNameWithFlag]§! as a §YBalkan War§! arbitrator."
+  SER_strike_a_deal_with_bulgaria_choose_arbitration_rule_tt: "If the §Yarbitrator§! has a greater §Yopinion§! of us than of §Y[?balkan_arbitration_opponent.GetNameWithFlag]§!:"
 
   # Austria
   AUS_imperial_visit_to_bosnia: "Imperial Visit to Bosnia"

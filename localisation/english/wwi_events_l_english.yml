@@ -1,9 +1,4 @@
 ﻿l_english:
-  # Tooltips
-  wwi_macedonian_arbitration_austria_tt: "§YAfter defeating [TUR.GetNameDef]: Macedonian states on the [SER.GetNameDef]-[BUL.GetNameDef] border will be awarded to whichever country [AUS.GetNameDef] has the highest opinion of.§!"
-  wwi_macedonian_arbitration_russia_tt: "§YAfter defeating [TUR.GetNameDef]: Macedonian states on the [SER.GetNameDef]-[BUL.GetNameDef] border will be awarded to whichever country [SOV.GetNameDef] has the highest opinion of.§!"
-
-
   # Montenegro
   wwi_montenegro.1.t: "Serbia Invites Us to Join the Balkan League"
   wwi_montenegro.1.d: "Long have we coveted the Turkish lands on our borders, but our small kingdom could never stand up to the Ottoman Empire, even in its decline.\n\nNow, however, it seems that Serbia wants to make us an offer: they will support our claims, if we join them in the coming wars.\n\nThe Serbs are old friends of ours, but the Turks are not to be underestimated. How should we respond?"

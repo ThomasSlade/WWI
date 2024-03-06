@@ -13,21 +13,36 @@ news_event = {
 
 	immediate = {
 		set_global_flag = TUR_humiliated_by_war
+		set_variable = { global.turkish_humiliator = ITA }
 	}
 
 	option = {
 		name = wwi_news.1.a_enemy
 	   	trigger = {
-	   		tag = SER
+	   		OR = {
+	   			tag = SER
+	   			is_in_array = { FROM.neighbors = ROOT }
+	   		}
 		}
 
 		custom_effect_tooltip = TUR_humiliated_by_war_serbia_tt
+
+		add_ai_strategy = {
+		    type = consider_weak
+		    id = FROM
+		    value = 500
+		}
 	}
 
 	option = {
 		name = wwi_news.1.a_neutral
 		trigger = {
-			NOT = { tag = SER }
+			NOT = {
+				OR = {
+					tag = SER
+					is_in_array = { FROM.neighbors = ROOT }
+				}
+			}
 		}
 	}
 }
@@ -57,30 +72,3 @@ country_event = {
 		name = wwi_news.1.a
 	}
 }
-
-# 1st Balkan War
-#country_event = {
-#	id = wwi_news.3
-#	title = wwi_news.3.t
-#	desc = wwi_news.3.d
-#	picture = GFX_report_event_german_speech
-#
-#	hidden = yes
-#	fire_only_once = yes
-#
-#	trigger = {
-#		date > 1912.6.0
-#	}
-#
-#	# WWI PLACEHOLDER: Will eventually be caused by the Italo-Turkish war (or something else).
-#	mean_time_to_happen = { days = 10 }
-#
-#	immediate = {
-#		TUR = { news_event = wwi_news.1 }
-#	}
-#
-#	option = {
-#		name = wwi_news.1.a
-#	}
-#}
-

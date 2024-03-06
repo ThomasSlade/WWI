@@ -1,3 +1,28 @@
+effect_SER_form_balkan_league = {
+	if = {
+		limit = { is_in_faction = no }
+		create_faction = BALKAN_LEAGUE
+		set_country_flag = flag_is_balkan_league_leader
+		set_variable = { global.balkan_league_leader = THIS }
+		effect_SER_register_balkan_league_member = yes
+	}
+}
+
+# PREV must be the balkan league faction leader
+effect_SER_join_balkan_league = {
+	log = "[THIS.GetName] joined Balkan League faction."
+	PREV = { add_to_faction = PREV }
+	effect_SER_register_balkan_league_member = yes
+}
+
+effect_SER_register_balkan_league_member = {
+	if = {
+		limit = { NOT = { has_country_flag = flag_has_been_in_balkan_league } }
+		set_country_flag = flag_has_been_in_balkan_league
+		add_to_array = { global.has_been_in_balkan_league = THIS } # This array will contain every country that was every in the Balkan League.
+	}
+}
+
 SER_increase_great_retreat = {
 	if = {
 		limit = {
@@ -88,5 +113,244 @@ SER_bombard_kotor = {
 			type = bunker
 			damage = 3
 		}
+	}
+}
+
+effect_SER_count_balkan_disputes = {
+	# Clear existing variables to make debugging easier.
+	clr_global_flag = flag_balkan_disputes_ongoing
+	clr_global_flag = flag_balkan_disputes_resolved
+
+	every_country = {
+		limit = {
+			has_country_flag = flag_has_been_in_balkan_league
+		}
+
+		set_variable = { balkan_war_disputed_states_count = 0 }
+	}
+
+	every_state = {
+		limit = {
+			is_on_continent = balkans
+		}
+
+		clr_state_flag = flag_balkan_war_disputed
+		set_variable = { balkan_league_claimants = 0 }
+	}
+
+	every_state = {
+		limit = {
+			is_on_continent = balkans
+			owner = { has_country_flag = flag_has_been_in_balkan_league }
+		}
+
+		if = {
+			limit = { has_state_flag = flag_balkan_war_dispute_resolved }
+			set_variable = { balkan_war_disputed_states_count = 0 }
+		}
+		else = {
+			for_each_scope_loop = {
+				array = core_countries
+				if = {
+					limit = { has_country_flag = flag_has_been_in_balkan_league }
+					PREV = { add_to_variable = { balkan_league_claimants = 1 } }
+				}
+			}
+
+			if = {
+				limit = { check_variable = { balkan_league_claimants > 1 } }
+				log = "[THIS.GetName] is cored by [?balkan_league_claimants] members of the Balkan League. Marking as disputed."
+				set_state_flag = flag_balkan_war_disputed
+			
+				for_each_scope_loop = {
+					array = core_countries
+					if = {
+						limit = {
+							has_country_flag = flag_has_been_in_balkan_league
+							NOT = { owns_state = PREV }
+						}
+						add_to_variable = { balkan_war_disputed_states_count = 1 }
+					}
+				}
+
+				set_global_flag = flag_balkan_disputes_ongoing
+			}
+		}
+	}
+
+	if = {
+		limit = { NOT = { has_variable = global.country_with_most_balkan_war_disputes } }
+		log = "No country yet considered to have the most balkan war disputes. Setting to faction leader."
+		set_variable = { global.country_with_most_balkan_war_disputes = THIS }
+	}
+	set_temp_variable = { most_disputes = global.country_with_most_balkan_war_disputes }
+	var:global.country_with_most_balkan_war_disputes = {
+		set_temp_variable = { most_disputes_amount = balkan_war_disputed_states_count }
+	}
+
+	every_country = {
+		limit = {
+			has_country_flag = flag_has_been_in_balkan_league
+		}
+	
+		log = "[THIS.GetName] has [?balkan_war_disputed_states_count] disputed states from the Balkan War."
+	
+		if = {
+			limit = {
+				check_variable = {
+					var = balkan_war_disputed_states_count
+					value = most_disputes_amount
+					compare = greater_than
+				}
+			}
+	
+			set_temp_variable = { most_disputes = THIS }
+			set_temp_variable = { most_disputes_amount = THIS.balkan_war_disputed_states_count }
+		}
+		else_if = {
+			# If some countries have equal number of disputed states, pick the more powerful to be the opponent.
+			limit = {
+				check_variable = {
+					var = balkan_war_disputed_states_count
+					value = most_disputes_amount
+					compare = equals
+				}
+				var:most_disputes = {
+					strength_ratio = {
+						tag = PREV
+						ratio < 1
+					}
+				}
+			}
+		
+			set_temp_variable = { most_disputes = THIS }
+		}
+	}
+
+	if = {
+		limit = {
+			check_variable = {
+				var = most_disputes
+				value = global.country_with_most_balkan_war_disputes 
+				compare = not_equals
+			}
+		}
+		log = "[?most_disputes.GetName] had more disputes or was stronger than [?country_with_most_balkan_war_disputes.GetName]. Making it the new Balkan League opponent."
+		set_variable = { global.country_with_most_balkan_war_disputes = most_disputes }
+	}
+
+	if = {
+		limit = { NOT = { has_global_flag = flag_balkan_disputes_ongoing } }
+		set_global_flag = flag_balkan_disputes_resolved
+	}
+}
+
+d_effect_SER_count_balkan_disputes = {
+	FROM = { effect_SER_count_balkan_disputes = yes }
+}
+
+effect_SER_balkan_concession_civ_give = {
+	random_owned_controlled_state = {
+		limit = {
+			is_in_home_area = yes
+			NOT = { has_state_flag = flag_balkan_war_disputed }
+		}
+		remove_building = {
+			type = industrial_complex
+			level = 1
+		}
+	}
+}
+
+effect_SER_balkan_concession_civ_receive = {
+	random_owned_controlled_state = {
+		limit = {
+			is_in_home_area = yes
+			NOT = { has_state_flag = flag_balkan_war_disputed }
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+	}
+}
+
+effect_SER_balkan_concession_mil_give = {
+	random_owned_controlled_state = {
+		limit = {
+			is_in_home_area = yes
+			NOT = { has_state_flag = flag_balkan_war_disputed }
+		}
+		remove_building = {
+			type = arms_factory
+			level = 1
+		}
+	}
+}
+
+effect_SER_balkan_concession_mil_receive = {
+	random_owned_controlled_state = {
+		limit = {
+			is_in_home_area = yes
+			NOT = { has_state_flag = flag_balkan_war_disputed }
+		}
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = yes
+		}
+	}
+}
+
+effect_SER_end_balkan_disputes = {
+	remove_mission = mission_SER_balkan_league_breakup
+
+	every_state = {
+		limit = {
+			is_on_continent = balkans
+			has_state_flag = flag_balkan_war_disputed
+		}
+
+		clr_state_flag = flag_balkan_war_disputed
+		clear_variable = balkan_league_claimants
+	}
+
+	every_country = {
+		limit = {
+			has_country_flag = flag_has_been_in_balkan_league
+		}
+
+		clear_variable = balkan_war_disputed_states_count
+	}
+
+	clear_variable = global.country_with_most_balkan_war_disputes
+
+	news_event = { id = event_WWI_balkan_league_second_balkan_war_averted.1 hours = 1 }
+}
+
+# We track who did the most resolving so that the news event can correctly congratulate whoever saved the Balkan League :)
+effect_SER_add_resolution_point = {
+	add_to_variable = { balkan_resolutions_made = 1 }
+
+	if = {
+		limit = {
+			OR = {
+				NOT = { has_variable = global.most_balkan_resolutions_country }
+				check_variable = { balkan_resolutions_made > global.most_balkan_resolutions }
+			}
+		}
+		set_variable = { global.most_balkan_resolutions_country = THIS }
+		set_variable = { global.most_balkan_resolutions = balkan_resolutions_made }
+	}
+}
+
+effect_SER_second_balkan_war_tt = {
+	effect_tooltip = {
+		custom_effect_tooltip = second_balkan_war_declare_war_on_balkan_league_tt
+		custom_effect_tooltip = second_balkan_war_neighbors_may_attack_tt
+		custom_effect_tooltip = second_balkan_war_balkan_league_dissolves_tt
 	}
 }

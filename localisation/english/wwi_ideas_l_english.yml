@@ -43,3 +43,5 @@
   SER_nacertanije_desc: "Written by Ilija Garašanin during the nascency of independent Serbia, the Načertanije or 'the Draft' is a blueprint of greater Serbia and formulates the ambition of her governments. Macedonia, Albania, Croatia, Bosnia - all are posited as Serbdom within the Načertanije."
   SER_idea_follow_the_independent_radicals: "Follow the Independent Radicals"
   SER_idea_follow_the_independent_radicals_desc: "Encircled by threats Serbia may be, but the delicate foreign policy of past governments must be done away with. Citizens of Serbia now turn to the Independent Radicals and their hardline revaunchism, even if this risks the wrath of powerful neighboring states."
+ idea_SER_favoured_by_arbitrator: "Favoured by Arbitrator ([?global.balkan_arbitrator.GetNameWithFlag])"
+  idea_SER_favoured_by_arbitrator_turkey_annexation_tt: "In peace conference against §Y[TUR.GetNameWithFlag]:§! Annex cost: §G-33.3%§!"

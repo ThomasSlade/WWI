@@ -1,0 +1,17 @@
+debug_decisions = {
+	decision_toggle_weak = {
+		target_array = global.countries
+
+		complete_effect = {
+			FROM = {
+				if = {
+					limit = { has_idea = idea_debug_weakened }
+					remove_ideas = idea_debug_weakened
+				}
+				else = {
+					add_ideas = idea_debug_weakened
+				}
+			}
+		}
+	}
+}

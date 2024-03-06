@@ -1,9 +1,6 @@
 continents = {
-	europe
-	north_america
-	south_america
-	australia
-	africa
-	asia
-	middle_east
+	balkans
+	east_europe
+	central_europe
+	western_europe
 }

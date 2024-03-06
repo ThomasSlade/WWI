@@ -1,0 +1,506 @@
+add_namespace = event_WWI_balkan_league_first_balkan_war
+
+# The first Balkan League breaks out. This is the first time that a lot of countries will hear of the Balkan League (which was historically secret).
+news_event = {
+	id = event_WWI_balkan_league_first_balkan_war.1
+	title = event_WWI_balkan_league_first_balkan_war.1.t
+	desc = {
+		text = event_WWI_balkan_league_first_balkan_war.1.d_turkey_humiliated
+		trigger = {
+			has_global_flag = TUR_humiliated_by_war
+		}
+	}
+	desc = {
+		text = event_WWI_balkan_league_first_balkan_war.1.d
+	}
+	picture = GFX_news_event_001
+
+	is_triggered_only = yes
+	major = yes
+
+	immediate = {
+		log = "([THIS.GetName] news event) First Balkan War"
+		set_global_flag = flag_first_balkan_war_started
+	}
+
+	# Member.
+	option = {
+		name = event_WWI_balkan_league_first_balkan_war.1.a_member
+
+		trigger = {
+			is_in_faction_with = FROM
+		}
+	}
+
+	# Neutral.
+	option = {
+		name = event_WWI_balkan_league_first_balkan_war.1.a_neutral
+
+		trigger = {
+			NOT = { is_in_faction_with = FROM }
+			has_opinion = {
+				target = FROM
+				value > -5
+			}
+		}
+	}
+
+	# Negative.
+	option = {
+		name = event_WWI_balkan_league_first_balkan_war.1.a_negative
+
+		trigger = {
+			NOT = { is_in_faction_with = FROM }
+			has_opinion = {
+				target = FROM
+				value < -4
+			}
+		}
+	}
+}
+
+# End of First Balkan War, start of Balkan Disputes system.
+country_event = {
+	id = event_WWI_balkan_league_first_balkan_war.2
+	title = event_WWI_balkan_league_first_balkan_war.2.t
+	desc = event_WWI_balkan_league_first_balkan_war.2.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] news event) End of First Balkan War, start of Balkan Disputes system."
+	}
+
+	# Okay.
+	option = {
+		name = event_WWI_balkan_league_first_balkan_war.2.a
+
+		effect_tooltip = {
+			unlock_decision_category_tooltip = decision_category_SER_balkan_league
+			activate_mission = mission_SER_balkan_league_breakup
+			custom_effect_tooltip = mission_SER_balkan_league_breakup_tt
+		}
+	}
+}
+
+add_namespace = event_WWI_balkan_league_second_balkan_war
+
+# The country with the most disputes will now need to declare the 2nd Balkan War.
+country_event = {
+	id = event_WWI_balkan_league_second_balkan_war.1
+	title = event_WWI_balkan_league_second_balkan_war.1.t
+	desc = event_WWI_balkan_league_second_balkan_war.1.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) 2nd Balkan War Instigator must declare 2nd Balkan War."
+		set_global_flag = flag_second_balkan_war_started
+	}
+
+	# Okay.
+	option = {
+		name = event_WWI_balkan_league_second_balkan_war.1.a
+
+		set_country_flag = flag_second_balkan_war_attacker
+
+		leave_faction = yes
+
+		# Have to do this absolutely insanely obtuse shit because is_in_faction doesn't actually fucking work with fucking variables.
+		var:global.balkan_league_leader = {
+			for_each_scope_loop = {
+				array = faction_members
+				ROOT = {
+					create_wargoal = {
+					    type = take_core_state
+					    target = PREV
+					}
+
+					declare_war_on = {
+		                target = PREV
+		                type = take_core_state
+		            }
+				}
+
+				set_country_flag = flag_second_balkan_war_defender
+				country_event = { id = event_WWI_balkan_league_second_balkan_war.2 hours = 1 }
+			}
+		}
+
+		for_each_scope_loop = {
+			array = countries
+			if = {
+				limit = {
+					trigger_SER_has_disputed_state_of_balkan_instigator = yes
+					NOT = { has_country_flag = flag_second_balkan_war_defender }
+				}
+				ROOT = {
+					create_wargoal = {
+					    type = take_core_state
+					    target = PREV
+					}
+
+					declare_war_on = {
+		                target = PREV
+		                type = take_core_state
+		            }
+				}
+
+				set_country_flag = flag_second_balkan_war_defender
+				country_event = { id = event_WWI_balkan_league_second_balkan_war.2 hours = 1 }
+			}
+		}
+
+		for_each_scope_loop = {
+			array = neighbors
+			log = "[ROOT.GetName]: My neighbor is [THIS.GetName]."
+
+			if = {
+				limit = {
+					NOT = { has_country_flag = flag_second_balkan_war_defender }
+					any_core_state = {
+						is_controlled_by = ROOT
+					}
+				}
+				country_event = { id = event_WWI_balkan_league_second_balkan_war.4 days = 10 }
+			}
+		}
+
+		effect_tooltip = {
+			create_wargoal = {
+			    type = take_core_state
+			    target = global.balkan_league_leader
+			}
+
+			declare_war_on = {
+                target = global.balkan_league_leader
+                type = take_core_state
+            }
+
+            custom_effect_tooltip = second_balkan_war_neighbors_may_attack_tt
+		}
+
+		hidden_effect = {
+			news_event = { id = event_WWI_balkan_league_second_balkan_war.3 days = 2 }
+			var:global.balkan_league_leader = {
+				country_event = { id = event_WWI_balkan_league_second_balkan_war.5 days = 3 }
+			}
+		}
+	}
+}
+
+# Tell Balkan League members that it's time for the 2nd Balkan War, and that the League will dissolve after it's done.
+country_event = {
+	id = event_WWI_balkan_league_second_balkan_war.2
+	title = event_WWI_balkan_league_second_balkan_war.2.t
+	desc = event_WWI_balkan_league_second_balkan_war.2.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Told that 2nd Balkan League instigator is about to declare war."
+	}
+
+	# Okay.
+	option = {
+		name = event_WWI_balkan_league_second_balkan_war.2.a
+		
+		effect_tooltip = {
+			var:global.balkan_league_leader = {
+				dismantle_faction = yes
+			}
+		}
+	}
+}
+
+# The 2nd Balkan War breaks out between the instigator and the rest of the league, destroying the Balkan League.
+news_event = {
+	id = event_WWI_balkan_league_second_balkan_war.3
+	title = event_WWI_balkan_league_second_balkan_war.3.t
+	desc = event_WWI_balkan_league_second_balkan_war.3.d
+	picture = GFX_news_event_001
+
+	is_triggered_only = yes
+	major = yes
+
+	immediate = {
+		log = "([THIS.GetName] news event) 2nd Balkan War."
+	}
+
+	# Neutral.
+	option = {
+		name = event_WWI_balkan_league_second_balkan_war.3.a_neutral
+
+		trigger = {
+			NOT = { has_country_flag = flag_second_balkan_war_attacker }
+			NOT = { has_country_flag = flag_second_balkan_war_defender }
+		}
+	}
+
+	# Attacker.
+	option = {
+		name = event_WWI_balkan_league_second_balkan_war.3.a_attacker
+
+		trigger = {
+			has_country_flag = flag_second_balkan_war_attacker
+		}
+	}
+
+	# Defender.
+	option = {
+		name = event_WWI_balkan_league_second_balkan_war.3.a_defender
+
+		trigger = {
+			has_country_flag = flag_second_balkan_war_defender
+		}
+	}
+}
+
+# Actually dismantle the League after no localisation needs it anymore.
+country_event = {
+	id = event_WWI_balkan_league_second_balkan_war.5
+
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		log = "([THIS.GetName] hidden event) Dismantling Balkan League."
+		dismantle_faction = yes
+	}
+}
+
+# Tell non-League neighbors of the instigator that they can attack the instigator.
+country_event = {
+	id = event_WWI_balkan_league_second_balkan_war.4
+	title = event_WWI_balkan_league_second_balkan_war.4.t
+	desc = event_WWI_balkan_league_second_balkan_war.4.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Opportunity to attack the 2nd Balkan War instigator."
+	}
+
+	# Let's attack them.
+	option = {
+		name = event_WWI_balkan_league_second_balkan_war.4.a
+		
+		declare_war_on = {
+			target = FROM
+			type = take_core_state
+		}
+
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 0
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.33
+				}
+			}
+		}
+	}
+
+	# Nah.
+	option = {
+		name = event_WWI_balkan_league_second_balkan_war.4.b
+
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 1
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.33
+				}
+			}
+		}
+	}
+}
+
+add_namespace = event_WWI_balkan_league_resolve_dispute
+
+# Offer (force, really) a country to accept the resolution of a disputed state, in exchange for their choice of concession.
+country_event = {
+	id = event_WWI_balkan_league_resolve_dispute.1
+	title = event_WWI_balkan_league_resolve_dispute.1.t
+	desc = event_WWI_balkan_league_resolve_dispute.1.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Disputed Balkan state ([?disputed_state.GetName]) concession offer."
+	}
+
+	# Take a civ factory
+	option = {
+		name = event_WWI_balkan_league_resolve_dispute.1.a
+		
+		FROM = { effect_SER_balkan_concession_civ_give = yes }
+		effect_SER_balkan_concession_civ_receive = yes
+
+		1 = { save_event_target_as = concession_made }
+		hidden_effect = {
+			FROM = {
+				country_event = { id = event_WWI_balkan_league_resolve_dispute.2 hours = 1 }
+			}	
+		}
+
+		trigger = {
+			FROM = { num_of_civilian_factories > 1 }
+		}
+	}
+
+	# Take a mil factory
+	option = {
+		name = event_WWI_balkan_league_resolve_dispute.1.b
+
+		FROM = { effect_SER_balkan_concession_mil_give = yes }
+		effect_SER_balkan_concession_mil_receive = yes
+
+		2 = { save_event_target_as = concession_made }
+		hidden_effect = {
+			FROM = {
+				country_event = { id = event_WWI_balkan_league_resolve_dispute.2 hours = 1 }
+			}	
+		}
+
+		trigger = {
+			FROM = { num_of_military_factories > 1 }
+		}
+	}
+
+	# Resource rights
+	option = {
+		name = event_WWI_balkan_league_resolve_dispute.1.c
+		# TODO: Add resource rights after update
+
+		3 = { save_event_target_as = concession_made }
+		hidden_effect = {
+			FROM = {
+				country_event = { id = event_WWI_balkan_league_resolve_dispute.2 hours = 1 }
+			}	
+		}
+
+		trigger = {
+			event_target:disputed_state = {
+				is_controlled_by = FROM
+				trigger_has_any_resources = yes
+			}
+		}
+	}
+}
+
+# Tell resolver what was selected.
+country_event = {
+	id = event_WWI_balkan_league_resolve_dispute.2
+	title = {
+		text = event_WWI_balkan_league_resolve_dispute.2.t_industry
+		trigger = { check_variable = { event_target:concession_made = 1 } }
+	}
+	title = {
+		text = event_WWI_balkan_league_resolve_dispute.2.t_military
+		trigger = { check_variable = { event_target:concession_made = 2 } }
+	}
+	title = {
+		text = event_WWI_balkan_league_resolve_dispute.2.t_resource
+		trigger = { check_variable = { event_target:concession_made = 3 } }
+	}
+	desc = event_WWI_balkan_league_resolve_dispute.2.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Concession taken for disputed Balkan state ([?disputed_state.GetName])."
+	}
+
+	# Okay.
+	option = {
+		name = event_WWI_balkan_league_resolve_dispute.2.a
+		
+		effect_tooltip = {
+			if = {
+				limit = { check_variable = { event_target:concession_made = 1 } }
+				effect_SER_balkan_concession_civ_give = yes
+				FROM = { effect_SER_balkan_concession_civ_receive = yes }
+			}
+			else_if = {
+				limit = { check_variable = { event_target:concession_made = 1 } }
+				effect_SER_balkan_concession_mil_give = yes
+				FROM = { effect_SER_balkan_concession_mil_receive = yes }
+			}
+		}
+	}
+}
+
+add_namespace = event_WWI_balkan_league_presence_intensified
+
+# Tell former owner a state was stolen by intensifying presence.
+country_event = {
+	id = event_WWI_balkan_league_presence_intensified.1
+	title = event_WWI_balkan_league_presence_intensified.1.t
+	desc = event_WWI_balkan_league_presence_intensified.1.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Disputed Balkan state ([?disputed_state.GetName]) taken by [FROM.GetName]."
+	}
+
+	# Okay.
+	option = {
+		name = event_WWI_balkan_league_presence_intensified.1.a
+		
+		effect_tooltip = {
+			event_target:occupied_state = {
+				transfer_state_to = FROM
+			}
+		}
+	}
+}
+
+add_namespace = event_WWI_balkan_league_second_balkan_war_averted
+
+news_event = {
+	id = event_WWI_balkan_league_second_balkan_war_averted.1
+	title = event_WWI_balkan_league_second_balkan_war_averted.1.t
+	desc = event_WWI_balkan_league_second_balkan_war_averted.1.d
+	picture = GFX_news_event_001
+
+	is_triggered_only = yes
+	major = yes
+
+	immediate = {
+		log = "([THIS.GetName] news event) 2nd Balkan War averted."
+	}
+
+	# Neutral.
+	option = {
+		name = event_WWI_balkan_league_second_balkan_war_averted.1.a_neutral
+
+		trigger = {
+			OR = {
+				has_opinion = { target = FROM value > 0 }
+				is_in_faction_with = FROM
+			}
+		}
+	}
+
+	# Negative.
+	option = {
+		name = event_WWI_balkan_league_second_balkan_war_averted.1.a_negative
+
+		trigger = {
+			has_opinion = { target = FROM value < 1 }
+			NOT = { is_in_faction_with = FROM }
+		}
+	}
+}

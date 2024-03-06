@@ -40,67 +40,12 @@ country_event = {
 
 	is_triggered_only = yes
 
-	immediate = {
-		# The idea here is that this event MUST have been caused by a Serbia that is the faction leader OR is not in a faction.
-		# If Serbia isn't in a faction, the Balkan League will be founded.
-		if = {
-			limit = { is_in_faction = no }
-			create_faction = BALKAN_LEAGUE
-		}
-
-		if = {
-			limit = { is_faction_leader = yes }
-			add_to_faction = FROM
-		}
-	}
-
 	# Hooray!
 	option = {
 		name = wwi_serbia.2.a
-	}
-}
 
-# Bulgaria in particular joins the Balkan League
-country_event = {
-	id = wwi_serbia.3
-	title = wwi_serbia.3.t
-	desc = {
-		trigger = { AUS = { has_country_flag = macedonian_arbitrator } }
-		text = wwi_serbia.3.d_austria
-	}
-	desc = {
-		trigger = { SOV = { has_country_flag = macedonian_arbitrator } }
-		text = wwi_serbia.3.d_russia
-	}
-
-	picture = GFX_report_event_german_speech
-
-	is_triggered_only = yes
-
-	immediate = {
-		# The idea here is that this event MUST have been caused by a Serbia that is the faction leader OR is not in a faction.
-		# If Serbia isn't in a faction, the Balkan League will be founded.
-		if = {
-			limit = { is_in_faction = no }
-			create_faction = BALKAN_LEAGUE
-		}
-
-		if = {
-			limit = { is_faction_leader = yes }
-			add_to_faction = FROM
-		}
-	}
-
-	option = {
-		name = wwi_serbia.3.a
-		if = {
-			limit = { AUS = { has_country_flag = macedonian_arbitrator } }
-			custom_effect_tooltip = wwi_macedonian_arbitration_austria_tt
-		}
-		else = {
-			custom_effect_tooltip = wwi_macedonian_arbitration_russia_tt
-		}
-		
+		effect_SER_form_balkan_league = yes
+		FROM = { effect_SER_join_balkan_league = yes }
 	}
 }
 
@@ -162,17 +107,8 @@ country_event = {
 		name = wwi_serbia.7.a
 		ai_chance = { factor = 100 }
 
-		# The idea here is that this event MUST have been caused by a Serbia that is the faction leader OR is not in a faction.
-		# If Serbia isn't in a faction, the Balkan League will be founded.
-		if = {
-			limit = { is_in_faction = no }
-			create_faction = BALKAN_LEAGUE
-		}
-
-		if = {
-			limit = { is_faction_leader = yes }
-			add_to_faction = FROM
-		}
+		effect_SER_form_balkan_league = yes
+		FROM = { effect_SER_join_balkan_league = yes }
 	}
 
 	option = {
@@ -290,17 +226,30 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		start_civil_war = {
-			ideology = established
-			size = 0.65
-			capital = 136 # Nis
-			states = { 136 162 218 148 216 129 134 }
+		hidden_effect = {
+			start_civil_war = {
+				ideology = established
+				size = 0.65
+				capital = 136 # Nis
+				states = { 136 162 218 148 216 129 134 }
+			}
+			set_cosmetic_tag = SER_BLACKHAND
 		}
 	}
 
 	# Civil war starts
 	option = {
 		name = wwi_serbia.10.a
+
+		effect_tooltip = {
+			start_civil_war = {
+				ideology = established
+				size = 0.65
+				capital = 136 # Nis
+				states = { 136 162 218 148 216 129 134 }
+			}
+			set_cosmetic_tag = SER_BLACKHAND
+		}
 	}
 }
 
@@ -362,218 +311,6 @@ country_event = {
 
 		trigger = {
 			original_tag = AUS
-		}
-	}
-}
-
-# After the Balkan War, whichever country is the selected arbitrator gets the event to give macedonian border-states between Bulg and Serb to whoever it favours.
-# The AI will always award states to who they have the highest opinion of.
-country_event = {
-	id = wwi_serbia.13
-	title = wwi_serbia.13.t
-	desc = wwi_serbia.13.d
-	picture = GFX_report_event_german_speech
-
-	is_triggered_only = yes
-
-	immediate = {
-		if = {
-			limit = {
-				check_variable = {
-					var = ROOT.opinion@SER
-					value = ROOT.opinion@BUL
-					compare = greater_than_or_equals
-				}
-			}
-			set_variable = { var = macedonian_arbitrators_favourite value = SER }
-		}
-		else = {
-			set_variable = { var = macedonian_arbitrators_favourite value = BUL }
-		}
-
-		log = "Determined Macednian Arbitrator [?ROOT.GetName]'s preferred Balkan client: [?var:macedonian_arbitrators_favourite.GetName]"
-	}
-
-	# Rule in Serbia's favour.
-	option = {
-		name = wwi_serbia.13.a
-
-		ai_chance = {
-			base = 0
-			modifier = {
-				check_variable = { var = var:macedonian_arbitrators_favourite value = SER compare = equals }
-				add = 100
-			}
-		}
-
-		log = "Favouring Serbia in Macedonian arbitration."
-
-		effect_tooltip = {
-			every_state = {
-				limit = {
-					has_state_flag = macedonian_state_for_arbitration
-				}
-				transfer_state_to = SER
-			}
-		}
-
-		set_variable = {
-			var = global.favoured_in_macedonian_arbitration
-			value = SER
-		}
-
-		SER = { country_event = wwi_serbia.14 }
-		BUL = { country_event = wwi_serbia.15 }
-	}
-
-	# Rule in Bulgaria's favour.
-	option = {
-		name = wwi_serbia.13.b
-
-		ai_chance = {
-			base = 0
-			modifier = {
-				check_variable = { var = var:macedonian_arbitrators_favourite value = BUL compare = equals }
-				add = 100
-			}
-		}
-
-		log = "Favouring Bulgaria in Macedonian arbitration."
-
-		effect_tooltip = {
-			every_state = {
-				limit = {
-					has_state_flag = macedonian_state_for_arbitration
-				}
-				transfer_state_to = BUL
-			}
-		}
-
-		set_variable = {
-			var = global.favoured_in_macedonian_arbitration
-			value = BUL
-		}
-
-		BUL = { country_event = wwi_serbia.14 }
-		SER = { country_event = wwi_serbia.15 }
-	}
-}
-
-# After the Balkan War is won, provinces on the Serbia-Bulgaria border (if there is one) are handed to Serbia or Bulgaria depending on who the selected mediator (Austria or Russia) likes best. The territorial loser then has the option to ignore the mediation and declare war, causing a big opinion loss towards the mediator.
-# Arbitrator rules in our favour.
-country_event = {
-	id = wwi_serbia.14
-	title = wwi_serbia.14.t
-	desc = {
-		text = wwi_serbia.14.d_serbia
-		trigger = {
-			tag = SER
-		}
-	}
-	desc = {
-		text = wwi_serbia.14.d_bulgaria
-		trigger = {
-			tag = BUL
-		}
-	}
-	picture = GFX_report_event_german_speech
-
-	is_triggered_only = yes
-
-	immediate = {
-		every_state = {
-			limit = {
-				has_state_flag = macedonian_state_for_arbitration
-			}
-			transfer_state_to = var:global.favoured_in_macedonian_arbitration
-		}
-	}
-
-	# Good!
-	option = {
-		name = wwi_serbia.14.a
-
-		effect_tooltip = {
-			every_state = {
-				limit = {
-					has_state_flag = macedonian_state_for_arbitration
-				}
-				transfer_state_to = var:global.favoured_in_macedonian_arbitration
-			}
-		}
-	}
-}
-
-# Arbitrator rules against us.
-country_event = {
-	id = wwi_serbia.15
-	title = wwi_serbia.15.t
-	desc = {
-		text = wwi_serbia.15.d_serbia
-		trigger = {
-			tag = SER
-		}
-	}
-	desc = {
-		text = wwi_serbia.15.d_bulgaria
-		trigger = {
-			tag = BUL
-		}
-	}
-	picture = GFX_report_event_german_speech
-
-	is_triggered_only = yes
-
-	# Accept it.
-	option = {
-		name = wwi_serbia.15.b
-
-		ai_chance = {
-			base = 0
-			modifier = {
-				var:global.favoured_in_macedonian_arbitration = {
-					strength_ratio = { tag = ROOT ratio > 2 }
-				}
-				
-				add = 3
-			}
-		}
-
-		log = "[?THIS.GetName] accepts macedonian arbitration and loses territory to [?global.favoured_in_macedonian_arbitration.GetName]."
-
-		effect_tooltip = {
-			every_state = {
-				limit = {
-					has_state_flag = macedonian_state_for_arbitration
-				}
-				transfer_state_to = var:global.favoured_in_macedonian_arbitration
-			}
-		}
-	}
-
-	# Declare war.
-	option = {
-		name = wwi_serbia.15.a
-
-		ai_chance = {
-			base = 1
-		}
-
-		log = "[?THIS.GetName] declares war on [?var:global.favoured_in_macedonian_arbitration.GetName] due to macedonian arbitration."
-
-		if = {
-			limit = { is_in_faction_with = [?var:global.favoured_in_macedonian_arbitration.GetName] }
-			log = "Is in faction with [?var:global.favoured_in_macedonian_arbitration.GetName]."
-			leave_faction = yes
-		}
-		else = {
-			log = "Is not in faction with [?var:global.favoured_in_macedonian_arbitration.GetName]."
-		}
-
-		declare_war_on = {
-			target = var:global.favoured_in_macedonian_arbitration
-			type = take_state_focus
-			generator = { 218 148 216 134 188 133 127 220 183 140 }
 		}
 	}
 }
@@ -1044,6 +781,183 @@ country_event = {
 
 		effect_tooltip = {
 			SER_bombard_kotor = yes
+		}
+	}
+}
+
+add_namespace = wwi_events_SER_balkan_arbitration
+
+# The arbitrator has picked you as a favourite.
+country_event = {
+	id = wwi_events_SER_balkan_arbitration.1
+	title = wwi_events_SER_balkan_arbitration.1.t
+	desc = wwi_events_SER_balkan_arbitration.1.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = wwi_events_SER_balkan_arbitration.1.a
+
+		add_ideas = idea_SER_favoured_by_arbitrator
+
+		effect_tooltip = {
+			var:balkan_arbitration_opponent = {
+				if = {
+					limit = { has_idea = idea_SER_favoured_by_arbitrator }
+				}
+				remove_ideas = idea_SER_favoured_by_arbitrator
+			}
+		}
+	}
+}
+
+# The arbitrator has stopped favouring you.
+country_event = {
+	id = wwi_events_SER_balkan_arbitration.2
+	title = wwi_events_SER_balkan_arbitration.2.t
+	desc = wwi_events_SER_balkan_arbitration.2.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = wwi_events_SER_balkan_arbitration.2.a
+
+		effect_tooltip = {
+			remove_ideas = idea_SER_favoured_by_arbitrator
+			var:balkan_arbitration_opponent = {
+				if = {
+					limit = { has_idea = idea_SER_favoured_by_arbitrator }
+				}
+				add_ideas = idea_SER_favoured_by_arbitrator
+			}
+		}
+	}
+}
+
+# Serbia picks arbitrator.
+country_event = {
+	id = wwi_events_SER_balkan_arbitration.3
+	title = wwi_events_SER_balkan_arbitration.3.t
+	desc = wwi_events_SER_balkan_arbitration.3.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	# Russia
+	option = {
+		name = wwi_events_SER_balkan_arbitration.3.a
+
+		SOV = {
+			set_variable = { global.balkan_arbitrator = THIS }
+			add_opinion_modifier = { target = ROOT modifier = SER_appealed_for_arbitration }
+		}
+
+		# Required to make the tooltip say the right event name before an arbitrator variable has actually been set.
+		effect_tooltip = {
+			BUL = {
+				set_temp_variable = { global.balkan_arbitrator = SOV }
+				country_event = { id = wwi_events_SER_balkan_arbitration.4 hours = 1 }
+			}
+		}
+
+		hidden_effect = {
+			set_variable = { global.balkan_arbitrator = SOV }
+			BUL = {
+				country_event = { id = wwi_events_SER_balkan_arbitration.4 hours = 1 }
+			}
+		}
+	}
+
+	# Austria
+	option = {
+		name = wwi_events_SER_balkan_arbitration.3.b
+
+		AUS = {
+			set_variable = { global.balkan_arbitrator = THIS }
+			add_opinion_modifier = { target = ROOT modifier = SER_appealed_for_arbitration }
+		}
+
+		effect_tooltip = {
+			BUL = {
+				set_temp_variable = { global.balkan_arbitrator = AUS }
+				country_event = { id = wwi_events_SER_balkan_arbitration.4 hours = 1 }
+			}
+		}
+
+		hidden_effect = {
+			set_variable = { global.balkan_arbitrator = SOV }
+			BUL = {
+				country_event = { id = wwi_events_SER_balkan_arbitration.4 hours = 1 }
+			}
+		}
+	}
+}
+
+# Bulgaria gets the offer to join the league under the arbitration the selected arbitrator.
+country_event = {
+	id = wwi_events_SER_balkan_arbitration.4
+	title = wwi_events_SER_balkan_arbitration.4.t
+	desc = wwi_events_SER_balkan_arbitration.4.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	# Yes
+	option = {
+		name = wwi_events_SER_balkan_arbitration.4.a
+
+		add_state_core = 157
+		add_state_core = 220
+		add_state_core = 133
+		add_state_core = 217
+		add_state_core = 226
+		add_state_core = 127
+		add_state_core = 188
+		add_state_core = 140
+
+		effect_tooltip = {
+			FROM = {
+				add_to_faction = ROOT
+			}
+
+			custom_effect_tooltip = SER_strike_a_deal_with_bulgaria_choose_arbitration_rule_tt
+			add_ideas = idea_SER_favoured_by_arbitrator
+		}
+
+		hidden_effect = {
+			FROM = {
+				country_event = { id = wwi_serbia.2 hours = 1 }
+			}
+
+			# Initiate the swappable arbitrator-favourite idea.
+			if = {
+				limit = {
+					var:global.balkan_arbitrator = {
+						check_variable = { opinion@ROOT > opinion@FROM }
+					}
+				}
+				log = "Initialising Balkan arbitration idea: Giving favour to [ROOT.GetName]."
+				country_event = { id = wwi_events_SER_balkan_arbitration.1 hours = 6 }
+			}
+			else = {
+				log = "Initialising Balkan arbitration idea: Giving favour to [FROM.GetName]."
+				FROM = { country_event = { id = wwi_events_SER_balkan_arbitration.1 hours = 6 } }
+			}
+		}
+
+		ai_chance = {
+			base = 1
+		}
+	}
+
+	# No
+	option = {
+		name = wwi_events_SER_balkan_arbitration.4.b
+
+		ai_chance = {
+			base = 0
 		}
 	}
 }

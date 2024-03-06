@@ -1,10 +1,4 @@
 ﻿l_english:
-  # Bulgaria
-  wwi_bulgaria.1.t: "[From.GetNameDef] Proposes a Deal, Invites Us to the Balkan League"
-  wwi_bulgaria.1.d_austria: "[From.GetNameDef] has been an insolent rival of ours in Macedonia - clearly [Root.GetAdjective] territory - for quite some time. Yet a telegraph from [SER.capital.GetCapitalVictoryPointName] today suggests that we put our scrapping aside to take on yet greater perils in the Balkans. Any disputes over the spoils of conquest, [From.GetName] insists, can be arbitrated by [SOV.GetNameDef].\n\nWhat are we to make of their offer? Should we join this 'Balkan League'?"
-  wwi_bulgaria.2.d_russia: "[From.GetName] has been an insolent rival of ours in Macedonia - clearly [Root.GetAdjective] territory - for quite some time. Yet a telegraph from [From.Capital.GetName] today suggests that we put our scrapping aside to take on yet greater perils in the Balkans. Any disputes over the spoils of conquest, [From.GetName] insists, can be arbitrated by [AUS.GetNameDef].\n\nWhat are we to make of their offer? Should we join this 'Balkan League'?"
-  wwi_bulgaria.1.a: "The Serbs would make valuable allies, we suppose ..."
-  wwi_bulgaria.1.b: "Macedonia is not up for negotiation."
   wwi_bulgaria.3.t: "[From.GetName] Demands an End to Bulgarian Posturing in Macedonia"
   wwi_bulgaria.3.d: "[From.Adjective] meddling in our nation's rightful hinterland, Macedonia, has finally come to a head: the treacherous [From.Adjective] ministers have concocted an ultimatum. We are to withdraw all claims in the Macedonian region, or face war with [From.GetName].\n\nInsolent as the [From.GetAdjective] leadership is, their armies are not to be underestimated. That said, we certainly gave them a beating back in 1885. Why shouldn't we do it again?"
   wwi_bulgaria.3.a: "Look who's come back for more."

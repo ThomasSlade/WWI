@@ -1,0 +1,26 @@
+# For a given disputed state, gets how many countries would be offered concessions to resolve the dispute (the owner doesn't get a concession, and the resolver never makes a concession to themselves).
+# FROM is the disputed state, ROOT is the country doing the resolving.
+trigger_SER_get_balkan_dispute_concession_recipients = {
+	set_temp_variable = { recipients = FROM.balkan_league_claimants }
+	add_to_temp_variable = { recipients = -1 }
+
+	if = {
+		limit = {
+			FROM = {
+				is_core_of = ROOT
+				NOT = { is_controlled_by = ROOT }
+			}
+		}
+		add_to_temp_variable = { recipients = -1 }
+	}
+
+	always = yes
+}
+
+trigger_SER_has_disputed_state_of_balkan_instigator = {
+	has_country_flag = flag_was_in_balkan_league
+	any_owned_state = {
+		has_state_flag = flag_balkan_war_disputed
+		is_core_of = global.country_with_most_balkan_war_disputes
+	}
+}
