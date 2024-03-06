@@ -16,39 +16,16 @@ country_event = {
 	immediate = {
 		log = "([THIS.GetName] event) Releasing Albania"
 
+		TUR = {
+			log = "Albanian Independence: Releasing all Ottoman controlled Albania."
+			release = ALB
+		}
+
 		if = {
 			limit = {
-				TUR = {
-					any_controlled_state = {
-						is_core_of = ALB
-					}
-				}
+				check_variable = { alb.num_controlled_states = 0 }
 			}
-			TUR = {
-				log = "Albanian Independence: Some of Albania controlled by Ottomans. Releasing there."
-				release_on_controlled = ALB
-			}
-		}
-		else_if = {
-			limit = {
-				ALB = {
-					any_core_state = {
-						controller = { has_war_with = TUR }
-					}
-				}
-			}
-			ALB = {
-				log = "Albanian Independence: No Albanian states controlled by Ottomans. Picking a random one occupied by belligerants instead."
-				random_core_state = {
-					limit = {
-						controller = { has_war_with = TUR }
-					}
-					transfer_state_to = ALB
-				}
-			}
-		}
-		else = {
-			log = "(ERROR) Albanian Independence: No Albanian states were controlled by Ottomans, or Ottoman enemies. Cannot release Albania."
+			log = "(ERROR) Albanian Independence: Releasing Albania failed."
 		}
 
 		every_country = {
@@ -68,11 +45,12 @@ country_event = {
 				log = "Giving [THIS.GetName] the chance to declare war on Albania and its guarantors."
 				country_event = { id = event_TUR_albanian_independence.4 hours = 1 }
 			}
+			set_country_flag = notified_of_albanian_independence
 		}
 
 		if = {
 			limit = { AUS = { NOT = { has_completed_focus = AUS_preempt_albanian_independence } } }
-			news_event = { id = event_TUR_albanian_independence.7 days = 5 }
+			news_event = { id = event_TUR_albanian_independence.7 hours = 1 }
 		}
 		else = {
 			AUS = { give_guarantee = ALB }
@@ -87,7 +65,7 @@ country_event = {
 				}
 			}
 
-			news_event = { id = event_TUR_albanian_independence.8 days = 5 }
+			news_event = { id = event_TUR_albanian_independence.8 hours = 1 }
 		}
 	}
 }
@@ -103,7 +81,6 @@ country_event = {
 
 	immediate = {
 		log = "([THIS.GetName] event) Albania is released and guaranteed."
-		set_country_flag = notified_of_albanian_independence
 	}
 
 	# Let Albania go
@@ -166,7 +143,6 @@ country_event = {
 
 	immediate = {
 		log = "([THIS.GetName] event) Albania is released and not guaranteed."
-		set_country_flag = notified_of_albanian_independence
 	}
 
 	# War with Albania

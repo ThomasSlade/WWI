@@ -1,7 +1,7 @@
 ﻿l_english:
   
   event_TUR_albanian_independence.4.t: "[ALB.GetAdjective] Independence Guaranteed by [AUS.GetName]"
-  event_TUR_albanian_independence.4.d: "Despite our longstanding interests in the [ALB.GetAdjective] region, the rancid opportunists in [AUS.capital.GetCapitalVictoryPointName] have announced their guarantee of an 'independent' [ALB.GetName], emboldening the [ALB.GetAdjective]s to declare its sovreignty from [TUR.GetNameDef] only hours ago.\n\nThis dramatically complicates our intentions along the southern Adriatic.\n\nMore hawkish ministers insist we ignore the guarantee and subjugate the fledgeling state, but this would mean war with [AUS.GetNameDef]."
+  event_TUR_albanian_independence.4.d: "Despite our longstanding interests in the [ALB.GetAdjective] region, the rancid opportunists in [AUS.capital.GetCapitalVictoryPointName] have announced their guarantee of an 'independent' [ALB.GetName], emboldening the [ALB.GetAdjective]s to throw off [TUR.GetNameDef] rule.\n\nThis dramatically complicates our intentions along the southern Adriatic.\n\nMore hawkish ministers insist we ignore the guarantee and subjugate the fledgeling state, but this would mean war with [AUS.GetNameDef]."
   event_TUR_albanian_independence.4.a: "We cannot stand up to [AUS.GetNameDef]."
   event_TUR_albanian_independence.4.b: "So be it. [ALB.GetNameDef] is ours."
 
@@ -16,12 +16,12 @@
   event_TUR_albanian_independence.6.b: "So be it. [ALB.GetNameDef] is ours."
 
   event_TUR_albanian_independence.7.t: "The Declaration of [ALB.GetAdjective] Independence"
-  event_TUR_albanian_independence.7.d: "Amid [TUR.GetAdjective] losses in its war, once subject peoples of [TUR.GetNameDef] are finding the courage to break rank with [TUR.capital.GetCapitalVictoryPointName]. Chief among these is [ALB.GetNameDef].\n\nThough [TUR.GetNameDef] is powerless to challenge [ALB.GetAdjective] sovreignty, the new nation's security remains delicate: its administration falters, while fellow Balkan governments have previously laid claim to the region."
+  event_TUR_albanian_independence.7.d: "Amid the [TUR.GetAdjective] retreat, its once subject peoples are finding the courage to break rank with [TUR.capital.GetCapitalVictoryPointName]. Chief among these is [ALB.GetNameDef].\n\nThough [TUR.GetNameDef] is powerless to challenge [ALB.GetAdjective] sovreignty, the new nation's security remains delicate: its administration falters, while fellow Balkan governments have previously laid claim to the region."
   event_TUR_albanian_independence.7.b: "A disaster."
   event_TUR_albanian_independence.7.d: "[ALB.GetNameDefCap] is free ... for now."
 
   event_TUR_albanian_independence.8.t: "[ALB.GetAdjectiveCap] Independence Guaranteed by [AUS.GetName]"
-  event_TUR_albanian_independence.8.d: "Amid [TUR.GetAdjective] losses in its war, once subject peoples of [TUR.GetNameDef] are finding the courage to break rank with [TUR.capital.GetCapitalVictoryPointName]. Chief among these is [ALB.GetNameDef].\n\nThough [TUR.GetNameDef] is powerless to challenge [ALB.GetAdjective] sovreignty, other Balkan nations had historically laid claim to the region. For this reason, [AUS.GetNameDef] has been quick to announce its guarantee of [ALB.GetAdjective] independence.\n\nObservers wonder if [AUS.GetAdjective] interference could have precipitated the separatist movement in the first place."
+  event_TUR_albanian_independence.8.d: "Amid [TUR.GetAdjective] losses in its war, once subject peoples of [TUR.GetNameDef] are finding the courage to break rank with [TUR.capital.GetCapitalVictoryPointName]. Chief among these is [ALB.GetNameDef].\n\nThough [TUR.GetNameDef] is powerless to challenge [ALB.GetAdjective] sovreignty, other Balkan nations may prefer [ALB.GetAdjective] lands for themselves. For this reason, [AUS.GetNameDef] has been quick to announce its guarantee of [ALB.GetAdjective] independence.\n\nObservers wonder if [AUS.GetAdjective] interference could have precipitated the separatist movement in the first place."
   event_TUR_albanian_independence.8.a: "We only wish for a free [ALB.GetName]."
   event_TUR_albanian_independence.8.b: "A disaster."
   event_TUR_albanian_independence.8.c: "[ALB.GetNameDefCap] is free ... for now."
