@@ -39,6 +39,6 @@ add_ideas = {
 
 recruit_character = GER_wilhelm_ii
 
-create_faction = CentralPowers
+create_faction = CENTRAL_POWERS
 add_to_faction = GER
 add_to_faction = AUS

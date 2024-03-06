@@ -37,6 +37,6 @@ add_ideas = {
 
 recruit_character = FRA_raymond_poincare
 
-create_faction = Entente
+create_faction = ENTENTE
 add_to_faction = FRA
 add_to_faction = SOV
