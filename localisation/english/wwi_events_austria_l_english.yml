@@ -260,7 +260,7 @@
   event_AUS_goad_bulgaria_into_war.5.c: "Highly suspect."
 
   event_AUS_buy_orient_railway_shares.1.t: "[FROM.GetName] Poised to Influence Balkan Railways"
-  event_AUS_buy_orient_railway_shares.1.d: "Credit Suisse has announced the sale of shares in the Chemins de fer Orientaux - the Orient Railway - to [FROM.GetAdjective] purchasers.\n\nThe railway company operates lines across the Southern Balkans. Though [FROM.capital.GetCapitalVictoryPointName] assures us that the purchase is routine, they clearly intend to extend influence in the region."
+  event_AUS_buy_orient_railway_shares.1.d: "Credit Suisse has announced the sale of shares in the Chemins de fer Orientaux - the Orient Railway - to [FROM.GetAdjective] purchasers.\n\nThe railway company operates lines across the Southern Balkans. Though [FROM.capital.GetCapitalVictoryPointName] assures us that the purchase is routine, they clearly intend to exert influence in the region."
   event_AUS_buy_orient_railway_shares.1.a: "We could make use of [FROM.GetAdjective] investment."
   event_AUS_buy_orient_railway_shares.1.b: "They can keep their railways away from us."
   event_AUS_buy_orient_railway_shares.2.t: "[FROM.GetName] Welcomes [THIS.GetAdjective] Rail Purchase"
