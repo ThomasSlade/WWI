@@ -705,7 +705,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = wwi_austria.20.a
+		name = wwi_austria.trialist_reform_a
 
 		effect_tooltip = {
 			release_puppet_on_controlled = SCS
