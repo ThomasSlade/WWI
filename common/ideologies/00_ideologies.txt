@@ -33,6 +33,9 @@ ideologies = {
 		faction_impact_on_world_tension = 0.1
 		
 		modifiers = {
+			join_faction_tension = 0.8
+			send_volunteers_tension = 0.5
+			guarantee_tension = 0.3
 		}
 		
 		faction_modifiers = {
@@ -75,6 +78,9 @@ ideologies = {
 		faction_impact_on_world_tension = 0.1
 		
 		modifiers = {
+			join_faction_tension = 0.5
+			send_volunteers_tension = 0.2
+			guarantee_tension = 0.3
 		}
 		
 		faction_modifiers = {
@@ -117,6 +123,9 @@ ideologies = {
 		faction_impact_on_world_tension = 0.1
 		
 		modifiers = {
+			join_faction_tension = 0.5
+			send_volunteers_tension = 0
+			guarantee_tension = 0.3
 		}
 		
 		faction_modifiers = {
