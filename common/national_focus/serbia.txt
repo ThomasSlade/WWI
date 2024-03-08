@@ -669,8 +669,7 @@ focus_tree = {
 	focus = {
 		id = SER_french_military_contracts
 		icon = GFX__shine
-		prerequisite = { focus = SER_french_finance }
-		prerequisite = { focus = SER_russian_weapon_imports }
+		prerequisite = { focus = SER_french_finance focus = SER_fight_like_lions }
 		x = 1
 		y = 1
 		relative_position_id = SER_french_finance
@@ -759,6 +758,25 @@ focus_tree = {
 				type = support_equipment
 				amount = 100
 			}
+		}
+	}
+
+	focus = {
+		id = SER_fight_like_lions
+		icon = GFX__shine
+		prerequisite = { focus = SER_russian_weapon_imports }
+		x = 0
+		y = 2
+		relative_position_id = SER_russian_weapon_imports
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea = { idea = idea_SER_fight_like_lions days = 1095 }
 		}
 	}
 

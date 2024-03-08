@@ -19,7 +19,7 @@ SER_historical = {
 
 		# 1912
 		SER_entice_montenegro
-		SER_fund_macedonian_militian
+		SER_fund_macedonian_militia
 		SER_strike_a_deal_with_bulgaria
 		SER_war_with_the_ottomans
 		SER_russian_weapon_imports
@@ -34,39 +34,40 @@ SER_historical = {
 		# 1914
 		SER_retire_the_may_coup_conspirators
 		SER_promote_serb_guerilla_forces
-		SER_the_third_ban
+		SER_fight_like_lions
 		SER_french_military_contracts
 		SER_relocate_nbs_treasury
 
 		# 1915
+		SER_the_third_ban
 		SER_mobilise_the_cheta
 		SER_form_tanasko_rajic_regiment
 		SER_the_great_retreat
 		SER_inflamatory_articles_in_the_pijemont
-		SER_build_a_conciliatory_cabinet
 
 		# 1916
+		SER_build_a_conciliatory_cabinet
 		SER_revise_education_budget
 		SER_modernise_infantry
 		SER_educate_engineers
 		SER_foreign_railway_loans
-		SER_rearm_the_vojvodina
 
 		# 1917
+		SER_rearm_the_vojvodina
 		SER_pursue_entente_alliance
 		SER_war_with_austria_hungary
 		SER_unite_the_south_slavs
 		SER_order_foreign_planes
-		SER_reclaim_albania
 
 		# 1918
 		SER_french_arms
+		SER_reclaim_albania
 		SER_covert_cell_training
 		SER_settle_territory
 		SER_british_arms
-		SER_french_curriculum
 
 		# 1919
+		SER_french_curriculum
 		SER_foreign_engineering
 		SER_french_curriculum
 		SER_serb_naval_armament

@@ -718,5 +718,24 @@ ideas = {
 				custom_modifier_tooltip = idea_SER_favoured_by_arbitrator_turkey_annexation_tt
 			}
 		}
+
+		idea_SER_fight_like_lions = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_combat_lion
+
+			modifier = {
+				army_morale_factor = 0.33
+				weekly_casualties_war_support = 0.5
+			}
+		}
 	}
 }
