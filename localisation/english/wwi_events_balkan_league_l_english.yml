@@ -1,9 +1,9 @@
 ﻿l_english:
   event_WWI_balkan_league_first_balkan_war.1.t: "[?global.balkan_league_leader.GetName] Declares Balkan War"
   event_WWI_balkan_league_first_balkan_war.1.d_start: "The Balkan region's reputation as a powderkeg has proven well-earned with the outbreak of war in Europe's South-East.\n\n"
-  event_WWI_balkan_league_first_balkan_war.1.d_end: ", has emboldened its upstart neighbors to proclaim themselves 'the [?global.balkan_league_leader.GetFactionName]' and drive the last slither of [TUR.GetAdjective] influence from Europe.\n\nThe [?global.balkan_league_leader.GetFactionName]'s partnership is a brittle one: cynical observers do not imagine it will last."
-  event_WWI_balkan_league_first_balkan_war.1.d: "$event_WWI_balkan_league_first_balkan_war.1.d_start$A weakened [TUR.GetAdjective] grip on its European minorities$event_WWI_balkan_league_first_balkan_war.1.d_end$"
-  event_WWI_balkan_league_first_balkan_war.1.d_turkey_humiliated: "$event_WWI_balkan_league_first_balkan_war.1.d_start$A weakened [TUR.GetAdjective] grip on its European minorities, compounded by its recent [?global.turkish_humiliator.GetAdjective] humiliation$event_WWI_balkan_league_first_balkan_war.1.d_end$"
+  event_WWI_balkan_league_first_balkan_war.1.d_end: "has emboldened its upstart neighbors to proclaim themselves 'the [?global.balkan_league_leader.GetFactionName]' and drive the last slither of [TUR.GetAdjective] influence from Europe.\n\nThe [?global.balkan_league_leader.GetFactionName]'s partnership is a brittle one: cynical observers do not imagine it will last."
+  event_WWI_balkan_league_first_balkan_war.1.d: "$event_WWI_balkan_league_first_balkan_war.1.d_start$A weakened [TUR.GetAdjective] grip on its European minorities $event_WWI_balkan_league_first_balkan_war.1.d_end$"
+  event_WWI_balkan_league_first_balkan_war.1.d_turkey_humiliated: "$event_WWI_balkan_league_first_balkan_war.1.d_start$A weakened [TUR.GetAdjective] grip on its European minorities, compounded by its recent [?global.turkish_humiliator.GetAdjective] humiliation, $event_WWI_balkan_league_first_balkan_war.1.d_end$"
   event_WWI_balkan_league_first_balkan_war.1.a_member: "We will dislodge [TUR.GetNameDef] at last."
   event_WWI_balkan_league_first_balkan_war.1.a_neutral: "Can [TUR.GetNameDef] be defeated by such ragtag nations?"
   event_WWI_balkan_league_first_balkan_war.1.a_negative: "[TUR.GetNameDefCap] are a keystone of Balkan stability!"

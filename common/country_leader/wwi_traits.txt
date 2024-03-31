@@ -128,7 +128,7 @@ leader_traits = {
 	stewardly_treasurer = {
 		random = no
 		trade_opinion_factor = 1
-		production_speed_industrial_complex_factor = 0.3
+		production_speed_industrial_complex_factor = 0.2
 	}
 
 	public_works_tycoon = {

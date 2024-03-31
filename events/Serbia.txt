@@ -887,7 +887,7 @@ country_event = {
 		}
 
 		hidden_effect = {
-			set_variable = { global.balkan_arbitrator = SOV }
+			set_variable = { global.balkan_arbitrator = AUS }
 			BUL = {
 				country_event = { id = wwi_events_SER_balkan_arbitration.4 hours = 1 }
 			}

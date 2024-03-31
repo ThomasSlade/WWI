@@ -1,0 +1,403 @@
+tactic_basic_attack = {
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+	}
+	
+	active = yes
+
+	base =  { factor = 4 }
+	picture = attack
+	
+	countered_by = tactic_counterattack
+
+	attacker = 0.05
+}
+
+tactic_charge = {
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+	}
+	
+	active = yes
+	
+	base =  { factor = 4 }
+	picture = shock
+
+	countered_by = tactic_bombard
+	countered_by = tactic_trench_defense
+	
+	attacker = 0.2
+	attacker_movement_speed = 0.4
+}
+
+tactic_outflank = {
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+	}
+	
+	active = yes
+	
+	base =  { factor = 4 }
+	picture = tactic_unexpected_thrust
+
+	countered_by = tactic_trench_defense
+	
+	defender = -0.2
+	combat_width = 0.25
+}
+
+tactic_strike_out = {
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+	}
+	
+	active = yes
+	
+	base =  { factor = 4 }
+	picture = tactic_relentless_assault
+
+	countered_by = tactic_rapid_concentration
+	
+	attacker = 0.25
+	defender = -0.1
+	attacker_movement_speed = 0.25
+}
+
+tactic_creeping_barrage = {
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+	}
+	
+	active = yes
+	
+	base =  { factor = 4 }
+	picture = tactic_barrage
+
+	countered_by = tactic_counter_battery
+	
+	attacker = 0.2
+	defender = -0.2
+	attacker_movement_speed = -0.25
+}
+
+tactic_bite_and_hold = {
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+	}
+	
+	active = yes
+	
+	base =  { factor = 4 }
+	picture = tactic_banzai_charge
+
+	countered_by = tactic_reverse_slope
+	
+	attacker = 0.3
+	defender = -0.1
+	attacker_movement_speed = 0.25
+}
+
+tactic_rear_barrage = {
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+	}
+	
+	active = yes
+	
+	base =  { factor = 4 }
+	picture = tactic_barrage
+
+	countered_by = tactic_counter_battery
+	
+	attacker = 0.2
+	defender = -0.1
+}
+
+tactic_spallate = {
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+	}
+	
+	active = yes
+	
+	base =  { factor = 4 }
+	picture = tactic_unexpected_thrust
+
+	countered_by = tactic_elastic_defense
+	
+	attacker = 0.1
+	combat_width = 0.25
+	attacker_movement_speed = 0.25
+}
+
+tactic_assault_waves = {
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+	}
+	
+	active = yes
+	
+	base =  { factor = 4 }
+	picture = tactic_relentless_assault
+
+	countered_by = tactic_reverse_slope
+	
+	attacker = 0.3
+	defender = -0.15
+	combat_width = 0.5
+}
+
+tactic_broad_front_assault = {
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+	}
+	
+	active = yes
+	
+	base =  { factor = 4 }
+	picture = tactic_mass_charge
+	
+	defender = -0.1
+	combat_width = 0.25
+}
+
+tactic_enfilade = {
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+	}
+	
+	active = yes
+	
+	base =  { factor = 4 }
+	picture = tactic_unexpected_thrust
+
+	countered_by = tactic_elastic_defense
+	
+	attacker = 0.3
+	combat_width = -0.25
+	attacker_movement_speed = 0.25
+}
+
+tactic_map_shooting = {
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+	}
+	
+	active = yes
+	
+	base =  { factor = 4 }
+	picture = tactic_barrage
+	
+	attacker = 0.25
+	defender = -0.2
+}
+
+tactic_bleed_them_white = {
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+	}
+	
+	active = yes
+	
+	base =  { factor = 4 }
+	picture = tactic_banzai_charge
+	
+	attacker = 0.25
+	defender = -0.4
+	attacker_movement_speed = -0.75
+}
+
+tactic_basic_defend = {
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+	}
+	
+	active = yes
+	
+	base =  { factor = 4 }
+	picture = defend
+
+	countered_by = tactic_charge
+	
+	defender = 0.05
+}
+
+tactic_bombard = {
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+	}
+	
+	active = yes
+	
+	base =  { factor = 4 }
+	picture = tactic_overwhelming_fire
+
+	countered_by = tactic_outflank
+	countered_by = tactic_strike_out
+	
+	defender = 0.2
+	attacker_movement_speed = -0.25
+}
+
+tactic_counterattack = {
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+	}
+	
+	active = yes
+	
+	base =  { factor = 4 }
+	picture = counterattack
+
+	countered_by = tactic_bite_and_hold
+	
+	attacker = -0.1
+	defender = 0.1
+}
+
+tactic_trench_defense = {
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+	}
+	
+	active = yes
+	
+	base =  { factor = 4 }
+	picture = tactic_elastic_defense
+
+	countered_by = tactic_creeping_barrage
+	countered_by = tactic_spallate
+	countered_by = tactic_assault_waves
+	
+	attacker = -0.2
+	defender = 0.3
+	attacker_movement_speed = -0.5
+}
+
+tactic_rapid_concentration = {
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+	}
+	
+	active = yes
+	
+	base =  { factor = 4 }
+	picture = tactic_delay
+
+	countered_by = tactic_broad_front_assault
+	countered_by = tactic_bleed_them_white
+	
+	attacker = 0.1
+	defender = 0.3
+	combat_width = 0.25
+}
+
+tactic_guerilla_tactics = {
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+	}
+	
+	active = yes
+	
+	base =  { factor = 4 }
+	picture = tactic_guerilla_tactics
+
+	countered_by = tactic_strike_out
+	
+	attacker = -0.25
+	combat_width = 0.5
+}
+
+tactic_counter_battery = {
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+	}
+	
+	active = yes
+	
+	base =  { factor = 4 }
+	picture = tactic_overwhelming_fire
+
+	countered_by = tactic_map_shooting
+	
+	attacker = -0.4
+	defender = -0.1
+	attacker_movement_speed = 0.25
+}
+
+tactic_reverse_slope = {
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+	}
+	
+	active = yes
+	
+	base =  { factor = 4 }
+	picture = tactic_backhand_blow
+
+	countered_by = tactic_enfilade
+	
+	attacker = -0.1
+	defender = 0.3
+	combat_width = -0.25
+}
+
+tactic_elastic_defense = {
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+	}
+	
+	active = yes
+	
+	base =  { factor = 4 }
+	picture = tactic_unexpected_thrust
+
+	countered_by = tactic_elastic_defense
+	
+	attacker = -0.3
+	defender = 0.15
+}
