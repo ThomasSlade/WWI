@@ -1,6 +1,7 @@
 ﻿capital = 125
 
 oob = "SER_1911"
+starting_train_buffer = 1.5
 
 # Starting tech
 set_technology = {
@@ -42,5 +43,10 @@ recruit_character = SER_apis
 recruit_character = SER_nicholas_hartwig
 recruit_character = SER_leon_descos
 recruit_character = SER_dayrell_crackanthorpe
+
+recruit_character = SER_radomir_putnik
+recruit_character = SER_stepan_stepanovic
+recruit_character = SER_zivojin_misic
+recruit_character = SER_petar_bojovic
 
 recruit_character = SER_george_obrenovic

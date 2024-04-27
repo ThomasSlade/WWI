@@ -24,3 +24,12 @@ trigger_SER_has_disputed_state_of_balkan_instigator = {
 		is_core_of = global.country_with_most_balkan_war_disputes
 	}
 }
+
+trigger_SER_is_serb = {
+	OR = {
+		tag = SER
+		tag = MNT
+		tag = VOJ
+		# Not counting SCS because it's only partly Serbian
+	}
+}

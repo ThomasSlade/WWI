@@ -43,13 +43,12 @@ technologies = {
 			position = { x = 4 y = 0 }
 		}
 
-		ai_will_do = 
-		{
-			factor = 1
+		ai_will_do =  {
+			factor = 20
 		}
 
 		category_light_infantry = {
-			max_organisation = 4
+			max_organisation = 3
 			breakthrough = 0.15
 		}
 
@@ -66,7 +65,12 @@ technologies = {
 		research_cost = 2.2
 
 		path = {
-			leads_to_tech = integrated_firepower 
+			leads_to_tech = indirect_artillery 
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = free_fire
 			research_cost_coeff = 1
 		}
 
@@ -79,15 +83,18 @@ technologies = {
 			position = { x = 0 y = 2 }
 		}
 
-		ai_will_do = 
-		{
-			factor = 1
+		ai_will_do = {
+			factor = 20
 		}
 
-		category_all_infantry = {
+		category_light_infantry = {
+			max_strength = 0.25
 			defense = 0.2
-			breakthrough = 0.15
-			recon_factor_while_entrenched = 1
+		}
+
+		category_cavalry = {
+			max_strength = 0.25
+			defense = 0.2
 		}
 	}
 
@@ -99,7 +106,12 @@ technologies = {
 		research_cost = 2.2
 
 		path = {
-			leads_to_tech = integrated_firepower 
+			leads_to_tech = indirect_artillery 
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = free_fire
 			research_cost_coeff = 1
 		}
 
@@ -112,20 +124,18 @@ technologies = {
 			position = { x = 2 y = 2 }
 		}
 
-		ai_will_do = 
-		{
-			factor = 1
+		ai_will_do = {
+			factor = 20
 		}
+
+		initiative_factor = 0.2
 
 		category_light_infantry = {
-			initiative = 0.2
-			max_organisation = 2
+			default_morale = 0.05
+			org_loss_when_moving = -0.33
 		}
 
-		category_cavalry = {
-			initiative = 0.2
-			max_organisation = 2
-		}
+		enable_tactic = tactic_strike_out
 	}
 
 	guerilla_warfare = {
@@ -136,12 +146,12 @@ technologies = {
 		research_cost = 2.2
 
 		path = {
-			leads_to_tech = integrated_firepower 
+			leads_to_tech = indirect_artillery 
 			research_cost_coeff = 1
 		}
 
 		path = {
-			leads_to_tech = free_fire 
+			leads_to_tech = free_fire
 			research_cost_coeff = 1
 		}
 
@@ -154,13 +164,20 @@ technologies = {
 			position = { x = 4 y = 2 }
 		}
 
-		ai_will_do = 
-		{
-			factor = 1
+		ai_will_do = {
+			factor = 20
 		}
 
-		army_core_defence_factor = 0.25
-		resistance_growth_on_our_occupied_states = 0.25 
+		resistance_growth_on_our_occupied_states = 0.5
+		resistance_damage_to_garrison_on_our_occupied_states = 0.33
+
+		category_light_infantry = {
+			urban = {
+				defence = 0.3
+			}
+		}
+
+		enable_tactic = tactic_guerilla_tactics
 	}
 
 	cult_of_the_offensive = {
@@ -171,7 +188,7 @@ technologies = {
 		research_cost = 2.2
 
 		path = {
-			leads_to_tech = free_fire 
+			leads_to_tech = free_fire
 			research_cost_coeff = 1
 		}
 
@@ -184,9 +201,8 @@ technologies = {
 			position = { x = 6 y = 2 }
 		}
 
-		ai_will_do = 
-		{
-			factor = 1
+		ai_will_do = {
+			factor = 20
 		}
 
 		category_light_infantry = {
@@ -200,7 +216,7 @@ technologies = {
 		}
 
 		category_line_artillery = {
-			breakthrough = 0.2
+			soft_attack = 0.2
 		}
 	}
 
@@ -212,7 +228,12 @@ technologies = {
 		research_cost = 2.2
 
 		path = {
-			leads_to_tech = free_fire 
+			leads_to_tech = indirect_artillery 
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = free_fire
 			research_cost_coeff = 1
 		}
 
@@ -225,16 +246,24 @@ technologies = {
 			position = { x = 8 y = 2 }
 		}
 
-		ai_will_do = 
-		{
-			factor = 1
+		ai_will_do = {
+			factor = 20
 		}
 
-		minimum_training_level = -0.2
-		planning_speed = 0.4
+		training_time_factor = -0.3
+
+		category_light_infantry = {
+			maximum_speed = 0.25
+		}
+
+		category_cavalry = {
+			maximum_speed = 0.25
+		}
+
+		enable_tactic = tactic_rapid_concentration
 	}
 
-	integrated_firepower = {
+	indirect_artillery = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 
@@ -252,23 +281,22 @@ technologies = {
 
 		folder = {
 			name = land_doctrine_folder
-			position = { x = 2 y = 4 }
+			position = { x = 6 y = 4 }
 		}
 
-		ai_will_do =
-		{
-			factor = 1
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				OR = {
+					has_tech = digging_in
+					can_research = digging_in
+				}
+				factor = 0.05
+			}
 		}
 
-		category_light_infantry = {
-			defense = 0.2
-		}
-
-		category_line_artillery =
-		{
-			soft_attack = 0.15
-			defense = 0.2
-			max_organisation = 20
+		category_artillery = {
+			defense = 0.1
 		}
 	}
 	
@@ -292,18 +320,24 @@ technologies = {
 
 		folder = {
 			name = land_doctrine_folder
-			position = { x = 6 y = 4 }
+			position = { x = 2 y = 4 }
 		}
 
-		ai_will_do =
-		{
-			factor = 1
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				OR = {
+					has_tech = digging_in
+					can_research = digging_in
+				}
+				factor = 0.05
+			}
 		}
 
 		category_light_infantry = {
-			soft_attack = 0.3
-			breakthrough = 0.1
-			max_organisation = 20
+			max_organisation = 2
+			soft_attack = 0.2
+			default_morale = 0.05
 		}
 	}
 
@@ -328,20 +362,16 @@ technologies = {
 			position = { x = 4 y = 6 }
 		}
 
-		ai_will_do =
-		{
-			factor = 1
+		ai_will_do = {
+			factor = 40
 		}
+
+		dig_in_speed_factor = 0.5
+		max_dig_in = 1
 
 		category_light_infantry = {
-			defense = 0.3
+			defense = 0.5
 		}
-
-		category_artillery = {
-			defense = 0.3
-		}
-
-		dig_in_speed_factor = 0.33
 	}
 
 	trench_warfare = {
@@ -360,19 +390,20 @@ technologies = {
 			position = { x = 4 y = 8 }
 		}
 
-		ai_will_do =
-		{
-			factor = 1
+		ai_will_do = {
+			factor = 40
 		}
 
+		max_dig_in = 2
+
 		category_light_infantry = {
-			defense = 0.4
+			defense = 0.25
 		}
 
 		category_artillery = {
-			defense = 0.4
+			defense = 0.25
 		}
 
-		max_dig_in = 10
+		enable_tactic = tactic_trench_defense
 	}
 }

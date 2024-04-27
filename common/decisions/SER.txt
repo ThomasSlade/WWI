@@ -837,6 +837,8 @@ decision_category_SER_balkan_league = {
 	    }
 
 		timeout_effect = {
+			effect_SER_clear_balkan_disputes = yes
+
 			# Show the effect to everyone but only fire it for the instigator.
 			if = {
 				limit = { check_variable = { global.country_with_most_balkan_war_disputes = ROOT } }

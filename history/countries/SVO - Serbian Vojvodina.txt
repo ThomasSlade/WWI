@@ -1,5 +1,7 @@
 capital = 171
 
+starting_train_buffer = 1.5
+
 # Starting tech
 set_technology = {
 	basic_train = 1
@@ -35,3 +37,8 @@ set_popularities = {
 add_ideas = {
 	limited_conscription
 }
+
+recruit_character = SVO_generic_prudent_defender
+recruit_character = SVO_generic_bold_attacker
+recruit_character = SVO_generic_thorough_logistician
+recruit_character = SVO_generic_master_planner

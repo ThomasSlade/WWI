@@ -4,6 +4,7 @@ oob = "HUN_1911"
 set_fuel_ratio = 0.8
 set_research_slots = 3
 set_convoys = 200
+starting_train_buffer = 1.5
 set_stability = 0.75 
 set_war_support = 0.3
 
@@ -39,6 +40,11 @@ add_ideas = {
 }
 
 recruit_character = HUN_istvan_tisza
+
+recruit_character = HUN_generic_prudent_defender
+recruit_character = HUN_generic_bold_attacker
+recruit_character = HUN_generic_thorough_logistician
+recruit_character = HUN_generic_master_planner
 
 # Apply the effects of the AUS_multi_lingual_empire idea manually.
 every_unit_leader = {

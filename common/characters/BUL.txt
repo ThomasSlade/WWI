@@ -12,4 +12,96 @@ characters = {
 			id = -1
 		}
 	}
+
+	BUL_nikola_zhekov = {
+		name = BUL_nikola_zhekov
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = BUL_nikola_zhekov
+			allowed = {
+				original_tag = BUL
+			}
+			traits = {
+				master_planner
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	BUL_radko_dimitriev = {
+		name = BUL_radko_dimitriev
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = BUL_radko_dimitriev
+			allowed = {
+				original_tag = BUL
+			}
+			traits = {
+				bulgar_napoleon
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	BUL_ivan_fichev = {
+		name = BUL_ivan_fichev
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = BUL_ivan_fichev
+			allowed = {
+				original_tag = BUL
+			}
+			traits = {
+				bold_attacker
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	BUL_pravoslav_tenev = {
+		name = BUL_pravoslav_tenev
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = BUL_pravoslav_tenev
+			allowed = {
+				original_tag = BUL
+			}
+			traits = {
+				supply_consumption_factor
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
 }

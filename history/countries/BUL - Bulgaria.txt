@@ -1,6 +1,7 @@
 ﻿capital = 130
 
 oob = "BUL_1911"
+starting_train_buffer = 1.5
 
 # Starting tech
 set_technology = {
@@ -32,3 +33,8 @@ add_ideas = {
 }
 
 recruit_character = BUL_ferdinand_i
+
+recruit_character = BUL_nikola_zhekov
+recruit_character = BUL_radko_dimitriev
+recruit_character = BUL_ivan_fichev
+recruit_character = BUL_pravoslav_tenev

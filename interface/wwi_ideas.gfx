@@ -39,11 +39,11 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_generic_trade"
-		texturefile = "gfx/interface/ideas/idea_generic_propoganda.dds"
+		texturefile = "gfx/interface/ideas/idea_generic_trade.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_generic_wrenches"
-		texturefile = "gfx/interface/ideas/idea_generic_propoganda.dds"
+		texturefile = "gfx/interface/ideas/idea_generic_wrenches.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_generic_special_forces"

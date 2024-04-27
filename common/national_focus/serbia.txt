@@ -587,7 +587,6 @@ focus_tree = {
 			FRA = { add_opinion_modifier = { target = SER modifier = FRA_serbian_royal_visit } }
 			every_country = {
 				limit = {
-					is_major = yes
 					OR = {
 						owns_state = 156
 						owns_state = 125
@@ -603,7 +602,7 @@ focus_tree = {
 						owns_state = 224
 						owns_state = 146
 					}
-					NOT = { tag = SER }
+					trigger_SER_is_serb = no
 				}
 				add_opinion_modifier = { target = SER modifier = serbian_royal_visit_negative }
 			}
@@ -661,7 +660,7 @@ focus_tree = {
 
 			add_timed_idea = {
 				idea = foreign_investment
-				days = 170
+				days = 365
 			}
 		}
 	}

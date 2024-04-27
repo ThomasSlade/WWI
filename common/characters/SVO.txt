@@ -1,21 +1,5 @@
 characters = {
-	HUN_istvan_tisza = {
-		name = HUN_istvan_tisza
-		portraits = {
-			civilian = {
-				large = GFX_portrait_hun_istvan_tisza
-			}
-		}
-		country_leader = {
-			ideology = expansionist_t
-			expire = "1916.11.21.1"
-			id = -1
-		}
-	}
-
-	### Generics ###
-
-	HUN_generic_prudent_defender = {
+	SVO_generic_prudent_defender = {
 		portraits = {
 			army = {
 				small = "GFX_idea_generic_political_advisor_europe_1"
@@ -23,9 +7,9 @@ characters = {
 		}
 		advisor = {
 			slot = army_chief
-			idea_token = HUN_generic_prudent_defender
+			idea_token = SVO_generic_prudent_defender
 			allowed = {
-				original_tag = HUN
+				original_tag = SVO
 			}
 			traits = {
 				prudent_defender
@@ -37,7 +21,7 @@ characters = {
 		}
 	}
 	
-	HUN_generic_bold_attacker = {
+	SVO_generic_bold_attacker = {
 		portraits = {
 			army = {
 				small = "GFX_idea_generic_political_advisor_europe_1"
@@ -45,9 +29,9 @@ characters = {
 		}
 		advisor = {
 			slot = army_chief
-			idea_token = HUN_generic_bold_attacker
+			idea_token = SVO_generic_bold_attacker
 			allowed = {
-				original_tag = HUN
+				original_tag = SVO
 			}
 			traits = {
 				bold_attacker
@@ -59,7 +43,7 @@ characters = {
 		}
 	}
 	
-	HUN_generic_thorough_logistician = {
+	SVO_generic_thorough_logistician = {
 		portraits = {
 			army = {
 				small = "GFX_idea_generic_political_advisor_europe_1"
@@ -67,9 +51,9 @@ characters = {
 		}
 		advisor = {
 			slot = army_chief
-			idea_token = HUN_generic_thorough_logistician
+			idea_token = SVO_generic_thorough_logistician
 			allowed = {
-				original_tag = HUN
+				original_tag = SVO
 			}
 			traits = {
 				thorough_logistician
@@ -81,7 +65,7 @@ characters = {
 		}
 	}
 	
-	HUN_generic_master_planner = {
+	SVO_generic_master_planner = {
 		portraits = {
 			army = {
 				small = "GFX_idea_generic_political_advisor_europe_1"
@@ -89,9 +73,9 @@ characters = {
 		}
 		advisor = {
 			slot = army_chief
-			idea_token = HUN_generic_master_planner
+			idea_token = SVO_generic_master_planner
 			allowed = {
-				original_tag = HUN
+				original_tag = SVO
 			}
 			traits = {
 				master_planner

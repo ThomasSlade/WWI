@@ -4,6 +4,7 @@ oob = "AUS_1911"
 set_fuel_ratio = 0.8
 set_research_slots = 4
 set_convoys = 200
+starting_train_buffer = 1.5
 set_stability = 0.75 
 set_war_support = 0.3
 
@@ -81,6 +82,11 @@ recruit_character = AUS_tomas_masaryk
 AUS_tomas_masaryk = { set_character_flag = ethnicity_czechoslovak }
 recruit_character = AUS_heinrich_friedjung
 AUS_heinrich_friedjung = { set_character_flag = ethnicity_german }
+
+recruit_character = AUS_generic_prudent_defender
+recruit_character = AUS_generic_bold_attacker
+recruit_character = AUS_generic_thorough_logistician
+recruit_character = AUS_generic_master_planner
 
 # Apply the effects of the AUS_multi_lingual_empire idea manually.
 every_unit_leader = {

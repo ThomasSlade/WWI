@@ -34,7 +34,7 @@ division_template = {
 
 units = {
 	# 3 Cavalry Units
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -43,7 +43,7 @@ units = {
 		division_template = "Süvari Firkasi"
 		start_experience_factor = 0.3
 	}
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -52,54 +52,7 @@ units = {
 		division_template = "Süvari Firkasi"
 		start_experience_factor = 0.3
 	}
-	division = {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Süvari Firkasi"
-		start_experience_factor = 0.3
-	}
-
-	# 5 Cavalry Units
-	division = {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Süvari Firkasi"
-		start_experience_factor = 0.3
-	}
-	division = {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Süvari Firkasi"
-		start_experience_factor = 0.3
-	}
-	division = {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Süvari Firkasi"
-		start_experience_factor = 0.3
-	}
-	division = {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Süvari Firkasi"
-		start_experience_factor = 0.3
-	}
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -110,7 +63,7 @@ units = {
 	}
 
 	# 5 Cavalry Units
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -119,7 +72,7 @@ units = {
 		division_template = "Süvari Firkasi"
 		start_experience_factor = 0.3
 	}
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -128,7 +81,7 @@ units = {
 		division_template = "Süvari Firkasi"
 		start_experience_factor = 0.3
 	}
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -137,7 +90,7 @@ units = {
 		division_template = "Süvari Firkasi"
 		start_experience_factor = 0.3
 	}
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -146,7 +99,7 @@ units = {
 		division_template = "Süvari Firkasi"
 		start_experience_factor = 0.3
 	}
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -157,7 +110,7 @@ units = {
 	}
 
 	# 5 Cavalry Units
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -166,7 +119,7 @@ units = {
 		division_template = "Süvari Firkasi"
 		start_experience_factor = 0.3
 	}
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -175,7 +128,7 @@ units = {
 		division_template = "Süvari Firkasi"
 		start_experience_factor = 0.3
 	}
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -184,7 +137,7 @@ units = {
 		division_template = "Süvari Firkasi"
 		start_experience_factor = 0.3
 	}
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -193,7 +146,54 @@ units = {
 		division_template = "Süvari Firkasi"
 		start_experience_factor = 0.3
 	}
-	division = {	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Süvari Firkasi"
+		start_experience_factor = 0.3
+	}
+
+	# 5 Cavalry Units
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Süvari Firkasi"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Süvari Firkasi"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Süvari Firkasi"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Süvari Firkasi"
+		start_experience_factor = 0.3
+	}
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -204,7 +204,7 @@ units = {
 	}
 
 	# 3 Infantry Units
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -213,7 +213,7 @@ units = {
 		division_template = "Piyade Firkasi"
 		start_experience_factor = 0.3
 	}
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -222,54 +222,7 @@ units = {
 		division_template = "Piyade Firkasi"
 		start_experience_factor = 0.3
 	}
-	division = {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Firkasi"
-		start_experience_factor = 0.3
-	}
-
-	# 5 Infantry Units
-	division = {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Firkasi"
-		start_experience_factor = 0.3
-	}
-	division = {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Firkasi"
-		start_experience_factor = 0.3
-	}
-	division = {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Firkasi"
-		start_experience_factor = 0.3
-	}
-	division = {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Firkasi"
-		start_experience_factor = 0.3
-	}
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -280,7 +233,7 @@ units = {
 	}
 
 	# 5 Infantry Units
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -289,7 +242,7 @@ units = {
 		division_template = "Piyade Firkasi"
 		start_experience_factor = 0.3
 	}
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -298,7 +251,7 @@ units = {
 		division_template = "Piyade Firkasi"
 		start_experience_factor = 0.3
 	}
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -307,7 +260,7 @@ units = {
 		division_template = "Piyade Firkasi"
 		start_experience_factor = 0.3
 	}
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -316,54 +269,7 @@ units = {
 		division_template = "Piyade Firkasi"
 		start_experience_factor = 0.3
 	}
-	division = {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Firkasi"
-		start_experience_factor = 0.3
-	}
-
-	# 5 Infantry Units
-	division = {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Firkasi"
-		start_experience_factor = 0.3
-	}
-	division = {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Firkasi"
-		start_experience_factor = 0.3
-	}
-	division = {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Firkasi"
-		start_experience_factor = 0.3
-	}
-	division = {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Firkasi"
-		start_experience_factor = 0.3
-	}
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -374,7 +280,7 @@ units = {
 	}
 
 	# 5 Infantry Units
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -383,7 +289,7 @@ units = {
 		division_template = "Piyade Firkasi"
 		start_experience_factor = 0.3
 	}
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -392,7 +298,7 @@ units = {
 		division_template = "Piyade Firkasi"
 		start_experience_factor = 0.3
 	}
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -401,7 +307,7 @@ units = {
 		division_template = "Piyade Firkasi"
 		start_experience_factor = 0.3
 	}
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -410,54 +316,7 @@ units = {
 		division_template = "Piyade Firkasi"
 		start_experience_factor = 0.3
 	}
-	division = {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Firkasi"
-		start_experience_factor = 0.3
-	}
-
-	# 5 Infantry Units
-	division = {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Firkasi"
-		start_experience_factor = 0.3
-	}
-	division = {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Firkasi"
-		start_experience_factor = 0.3
-	}
-	division = {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Firkasi"
-		start_experience_factor = 0.3
-	}
-	division = {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Firkasi"
-		start_experience_factor = 0.3
-	}
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -468,7 +327,7 @@ units = {
 	}
 
 	# 5 Infantry Units
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -477,7 +336,7 @@ units = {
 		division_template = "Piyade Firkasi"
 		start_experience_factor = 0.3
 	}
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -486,7 +345,7 @@ units = {
 		division_template = "Piyade Firkasi"
 		start_experience_factor = 0.3
 	}
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -495,7 +354,7 @@ units = {
 		division_template = "Piyade Firkasi"
 		start_experience_factor = 0.3
 	}
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -504,54 +363,7 @@ units = {
 		division_template = "Piyade Firkasi"
 		start_experience_factor = 0.3
 	}
-	division = {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Firkasi"
-		start_experience_factor = 0.3
-	}
-
-	# 5 Infantry Units
-	division = {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Firkasi"
-		start_experience_factor = 0.3
-	}
-	division = {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Firkasi"
-		start_experience_factor = 0.3
-	}
-	division = {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Firkasi"
-		start_experience_factor = 0.3
-	}
-	division = {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Firkasi"
-		start_experience_factor = 0.3
-	}
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -562,7 +374,7 @@ units = {
 	}
 
 	# 5 Infantry Units
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -571,7 +383,7 @@ units = {
 		division_template = "Piyade Firkasi"
 		start_experience_factor = 0.3
 	}
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -580,7 +392,7 @@ units = {
 		division_template = "Piyade Firkasi"
 		start_experience_factor = 0.3
 	}
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -589,7 +401,7 @@ units = {
 		division_template = "Piyade Firkasi"
 		start_experience_factor = 0.3
 	}
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -598,7 +410,7 @@ units = {
 		division_template = "Piyade Firkasi"
 		start_experience_factor = 0.3
 	}
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -609,7 +421,7 @@ units = {
 	}
 
 	# 5 Infantry Units
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -618,7 +430,7 @@ units = {
 		division_template = "Piyade Firkasi"
 		start_experience_factor = 0.3
 	}
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -627,7 +439,7 @@ units = {
 		division_template = "Piyade Firkasi"
 		start_experience_factor = 0.3
 	}
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -636,7 +448,7 @@ units = {
 		division_template = "Piyade Firkasi"
 		start_experience_factor = 0.3
 	}
-	division = {	
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -645,7 +457,195 @@ units = {
 		division_template = "Piyade Firkasi"
 		start_experience_factor = 0.3
 	}
-	division = {	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Piyade Firkasi"
+		start_experience_factor = 0.3
+	}
+
+	# 5 Infantry Units
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Piyade Firkasi"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Piyade Firkasi"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Piyade Firkasi"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Piyade Firkasi"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Piyade Firkasi"
+		start_experience_factor = 0.3
+	}
+
+	# 5 Infantry Units
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Piyade Firkasi"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Piyade Firkasi"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Piyade Firkasi"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Piyade Firkasi"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Piyade Firkasi"
+		start_experience_factor = 0.3
+	}
+
+	# 5 Infantry Units
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Piyade Firkasi"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Piyade Firkasi"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Piyade Firkasi"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Piyade Firkasi"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Piyade Firkasi"
+		start_experience_factor = 0.3
+	}
+
+	# 5 Infantry Units
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Piyade Firkasi"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Piyade Firkasi"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Piyade Firkasi"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Piyade Firkasi"
+		start_experience_factor = 0.3
+	}
+	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2

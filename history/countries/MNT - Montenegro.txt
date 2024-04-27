@@ -1,6 +1,7 @@
 ﻿capital = 164
 
 oob = "MNT_1911"
+starting_train_buffer = 1.5
 
 # Starting tech
 set_technology = {
@@ -28,3 +29,8 @@ add_ideas = {
 }
 
 recruit_character = MNT_nikola_i
+
+recruit_character = MNT_generic_prudent_defender
+recruit_character = MNT_generic_bold_attacker
+recruit_character = MNT_generic_thorough_logistician
+recruit_character = MNT_generic_master_planner

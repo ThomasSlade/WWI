@@ -249,6 +249,31 @@ d_effect_SER_count_balkan_disputes = {
 	FROM = { effect_SER_count_balkan_disputes = yes }
 }
 
+effect_SER_clear_balkan_disputes = {
+	log = "Clearing flags and variables of Balkan Dispute system."
+
+	clr_global_flag = flag_balkan_disputes_ongoing
+	clr_global_flag = flag_balkan_disputes_resolved
+	clear_variable = global.country_with_most_balkan_war_disputes
+
+	every_country = {
+		limit = {
+			has_country_flag = flag_has_been_in_balkan_league
+		}
+
+		clear_variable = balkan_war_disputed_states_count
+	}
+
+	every_state = {
+		limit = {
+			is_on_continent = balkans
+		}
+
+		clr_state_flag = flag_balkan_war_disputed
+		clear_variable = balkan_league_claimants
+	}
+}
+
 effect_SER_balkan_concession_civ_give = {
 	random_owned_controlled_state = {
 		limit = {
@@ -308,25 +333,7 @@ effect_SER_balkan_concession_mil_receive = {
 effect_SER_end_balkan_disputes = {
 	remove_mission = mission_SER_balkan_league_breakup
 
-	every_state = {
-		limit = {
-			is_on_continent = balkans
-			has_state_flag = flag_balkan_war_disputed
-		}
-
-		clr_state_flag = flag_balkan_war_disputed
-		clear_variable = balkan_league_claimants
-	}
-
-	every_country = {
-		limit = {
-			has_country_flag = flag_has_been_in_balkan_league
-		}
-
-		clear_variable = balkan_war_disputed_states_count
-	}
-
-	clear_variable = global.country_with_most_balkan_war_disputes
+	effect_SER_clear_balkan_disputes = yes
 
 	news_event = { id = event_WWI_balkan_league_second_balkan_war_averted.1 hours = 1 }
 }

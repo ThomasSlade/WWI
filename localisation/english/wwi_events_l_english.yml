@@ -19,7 +19,7 @@
 
   # Greece
   wwi_greece.1.t: "Britain Encourages Greece to Join Balkan League"
-  wwi_greece.1.d: "The British - historic partners of ours - have nonetheless always maintained a conservative stance on the recession of Turkish influence. Until recently, that is. This morning, a telegram from London arrived detailing British approval - insistence, really - of Greek entry into a military alliance with Serbia. Such an alliance would surely aid in our reclamaition of Greek territory, if we could only earn Serbian approval. Britain, in addition, has promised political support in exchange for our compliance."
+  wwi_greece.1.d: "After many decades of upholding [TUR.GetAdjective] stability in the Balkans, our historic allies in [ENG.capital.GetCapitalVictoryPointName] have signalled a reversal of attitudes.\n\nA [ENG.GetAdjective] telegram this morning insisted upon Greek entry into a military alliance with Serbia.\n\nSuch an alliance would surely aid in our reclamaition of Greek territory."
   wwi_greece.1.a: "Thessaloniki shall be ours again!"
   wwi_greece.1.b: "Throw our lot in with the Serbs? Perhaps not."
 

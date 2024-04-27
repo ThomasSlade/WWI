@@ -22,6 +22,98 @@ characters = {
 		}
 	}
 
+	SER_radomir_putnik = {
+		name = SER_radomir_putnik
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = SER_radomir_putnik
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				prudent_defender
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	SER_stepan_stepanovic = {
+		name = SER_stepan_stepanovic
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = SER_stepan_stepanovic
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				one_of_the_soldiers
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	SER_zivojin_misic = {
+		name = SER_zivojin_misic
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = SER_zivojin_misic
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				obrenovic_affiliate
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	SER_petar_bojovic = {
+		name = SER_petar_bojovic
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = SER_petar_bojovic
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				bold_attacker
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
 	SER_jovan_jovanovic = {
 		name = SER_jovan_jovanovic
 		portraits = {
@@ -55,7 +147,7 @@ characters = {
 				original_tag = SER
 			}
 			traits = {
-				state_architect 
+				state_architect
 			}
 		}
 	}

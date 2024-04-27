@@ -145,7 +145,7 @@ ideas = {
 			picture = generic_industry_2
 
 			modifier = {
-				production_speed_industrial_complex_factor = 1
+				production_speed_industrial_complex_factor = 0.5
 			}
 		}
 

@@ -1,5 +1,6 @@
 add_namespace = event_WWI_cities
 
+# Konstantiniyye
 news_event = {
 	id = event_WWI_cities.1
 	title = event_WWI_cities.1.t

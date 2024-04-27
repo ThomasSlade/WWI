@@ -383,4 +383,94 @@ characters = {
 			}
 		}
 	}
+
+	### Generic ###
+
+	AUS_generic_prudent_defender = {
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = AUS_generic_prudent_defender
+			allowed = {
+				original_tag = AUS
+			}
+			traits = {
+				prudent_defender
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	AUS_generic_bold_attacker = {
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = AUS_generic_bold_attacker
+			allowed = {
+				original_tag = AUS
+			}
+			traits = {
+				bold_attacker
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	AUS_generic_thorough_logistician = {
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = AUS_generic_thorough_logistician
+			allowed = {
+				original_tag = AUS
+			}
+			traits = {
+				thorough_logistician
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	AUS_generic_master_planner = {
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = AUS_generic_master_planner
+			allowed = {
+				original_tag = AUS
+			}
+			traits = {
+				master_planner
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
 }

@@ -1,6 +1,7 @@
 ﻿capital = 200
 
 oob = "ROM_1911"
+starting_train_buffer = 1.5
 
 # Starting tech
 set_technology = {
@@ -28,3 +29,8 @@ add_ideas = {
 }
 
 recruit_character = ROM_ferdinand_i
+
+recruit_character = ROM_generic_prudent_defender
+recruit_character = ROM_generic_bold_attacker
+recruit_character = ROM_generic_thorough_logistician
+recruit_character = ROM_generic_master_planner

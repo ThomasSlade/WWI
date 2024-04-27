@@ -469,6 +469,7 @@ country_event = {
 
 add_namespace = event_WWI_balkan_league_second_balkan_war_averted
 
+# Balkan dispute averted.
 news_event = {
 	id = event_WWI_balkan_league_second_balkan_war_averted.1
 	title = event_WWI_balkan_league_second_balkan_war_averted.1.t

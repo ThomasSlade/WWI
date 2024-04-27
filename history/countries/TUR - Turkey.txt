@@ -1,6 +1,7 @@
 ﻿capital = 195
 
 oob = "TUR_1911"
+starting_train_buffer = 1.5
 
 # Starting tech
 set_technology = {
@@ -31,3 +32,5 @@ add_ideas = {
 }
 
 recruit_character = TUR_mehmed_v
+
+recruit_character = TUR_enver_pasha

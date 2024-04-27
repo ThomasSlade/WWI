@@ -12,4 +12,27 @@ characters = {
 			id = -1
 		}
 	}
+
+	TUR_enver_pasha = {
+		name = TUR_enver_pasha
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = TUR_enver_pasha
+			allowed = {
+				original_tag = TUR
+			}
+			traits = {
+				bold_attacker
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
 }

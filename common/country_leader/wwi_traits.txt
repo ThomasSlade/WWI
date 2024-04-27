@@ -1,3 +1,5 @@
+@chief_experience_gain = 0.3
+
 leader_traits = {
 	disliked_moderate = {
 		random = no
@@ -93,6 +95,34 @@ leader_traits = {
 		political_power_gain = 0.3
 	}
 
+	# Stepan Stepanovic
+	one_of_the_soldiers = {
+		random = no
+		offence = 0.15
+		army_morale_factor = 0.33
+		revolutionary_drift = 0.01
+		experience_gain_army = @chief_experience_gain
+	}
+
+	# Zivojin Misic
+	obrenovic_affiliate = {
+		random = no
+		initiative_factor = 0.33
+		max_planning_factor = 0.2
+		expansionist_drift = 0.01
+		experience_gain_army = @chief_experience_gain
+	}
+
+	# Radko Dimitriev
+	bulgar_napoleon = {
+		random = no
+		offence = 0.15
+		army_morale_factor = 0.33
+		experience_gain_infantry_combat_factor = 0.33
+		experience_gain_army = @chief_experience_gain
+	}
+
+	### Special Mechanic Traits ###
 	ethnicity_german_upgrade = {
 		random = no
 		stability_factor = 0.025
@@ -167,7 +197,34 @@ leader_traits = {
 		conversion_cost_civ_to_mil_factor = 0.5
 	}
 
-	### Generic WWI Military Advisor Traits ###
+	### Generic WWI Army Chief Traits ###
+	prudent_defender = {
+		random = yes
+		defence = 0.15
+		dig_in_speed_factor = 0.25
+		experience_gain_army = @chief_experience_gain
+	}
+
+	bold_attacker = {
+		random = yes
+		offence = 0.15
+		army_attack_speed_factor = 0.5
+		experience_gain_army = @chief_experience_gain
+	}
+
+	thorough_logistician = {
+		random = yes
+		supply_consumption_factor = -0.1
+		org_loss_when_moving = -0.25
+		experience_gain_army = @chief_experience_gain
+	}
+
+	master_planner = {
+		random = yes
+		max_planning_factor = 0.25
+		coordination_bonus = 0.3
+		experience_gain_army = @chief_experience_gain
+	}
 
 	# Law and Focus Traits
 	french_arms_imports = {
