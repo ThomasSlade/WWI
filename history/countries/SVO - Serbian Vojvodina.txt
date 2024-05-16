@@ -6,7 +6,6 @@ starting_train_buffer = 1.5
 set_technology = {
 	basic_train = 1
 	infantry_weapons = 1
-	early_reform = 1
 }
 
 # Need to enable production for units provided by various OOB strength levels - SVO gets engineers at levels 1 or higher, and artillery/arty support at levels 2 or higher

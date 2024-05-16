@@ -132,7 +132,8 @@ technologies = {
 
 		category_light_infantry = {
 			default_morale = 0.05
-			org_loss_when_moving = -0.33
+			# TODO: Test when update
+			#org_loss_when_moving = -0.33
 		}
 
 		enable_tactic = tactic_strike_out
@@ -189,6 +190,11 @@ technologies = {
 
 		path = {
 			leads_to_tech = free_fire
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = indirect_artillery
 			research_cost_coeff = 1
 		}
 
@@ -343,7 +349,7 @@ technologies = {
 
 	digging_in = {
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 50
 
 		doctrine = yes
 		research_cost = 4.5
@@ -376,7 +382,7 @@ technologies = {
 
 	trench_warfare = {
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 50
 
 		doctrine = yes
 		research_cost = 4.5

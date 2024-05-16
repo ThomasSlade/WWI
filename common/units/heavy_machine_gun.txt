@@ -1,0 +1,36 @@
+sub_units = {
+	heavy_machine_gun = {
+		abbreviation = "HMG"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 6000
+		ai_priority = 100
+		active = yes
+
+		type = {
+			artillery
+		}
+
+		group = infantry
+
+		categories = {
+			category_army
+			category_line_artillery
+			category_artillery
+		}
+
+		combat_width = 2
+
+		manpower = 400
+		need = {
+			heavy_machine_gun_equipment = 50
+		}
+
+		max_strength = 3
+		max_organisation = 7
+		default_morale = 0.05
+		training_time = 90
+		weight = 0.5
+		supply_consumption = 0.1
+	}
+}

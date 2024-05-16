@@ -1,9 +1,24 @@
 spriteTypes = {
-	spriteType = { name = "GFX_unit_polish_cavalry_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/unit_polish_cavalry_icon.dds" noOfFrames = 2 }
-	spriteType = { name = "GFX_unit_croatian_guard_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/unit_croatian_guard_icon.dds" noOfFrames = 2 }
-	spriteType = { name = "GFX_unit_standschutzen_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/unit_standschutzen_icon.dds" noOfFrames = 2 }
+	### Large Division Icons ###
 
-	spriteType = { name = "GFX_unit_polish_cavalry_icon_medium_white"								textureFile = "gfx/interface/counters/divisions_small/onmap_unit_polish_cavalry_icon.dds" noOfFrames = 2}
-	spriteType = { name = "GFX_unit_croatian_guard_icon_medium_white"								textureFile = "gfx/interface/counters/divisions_small/onmap_unit_croatian_guard_icon.dds" noOfFrames = 2}
-	spriteType = { name = "GFX_unit_croatian_guard_icon_medium_white"								textureFile = "gfx/interface/counters/divisions_small/onmap_unit_standschutzen_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_field_artillery_brigade_icon_medium" textureFile = "gfx/interface/counters/divisions_large/unit_field_artillery_brigade_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_heavy_artillery_brigade_icon_medium" textureFile = "gfx/interface/counters/divisions_large/unit_heavy_artillery_brigade_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_siege_artillery_brigade_icon_medium" textureFile = "gfx/interface/counters/divisions_large/unit_siege_artillery_brigade_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_heavy_machine_gun_icon_medium" textureFile = "gfx/interface/counters/divisions_large/unit_heavy_machine_gun_icon.dds" noOfFrames = 2 }
+
+	spriteType = { name = "GFX_unit_polish_cavalry_icon_medium" textureFile = "gfx/interface/counters/divisions_large/unit_polish_cavalry_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_croatian_guard_icon_medium" textureFile = "gfx/interface/counters/divisions_large/unit_croatian_guard_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_standschutzen_icon_medium" textureFile = "gfx/interface/counters/divisions_large/unit_standschutzen_icon.dds" noOfFrames = 2 }
+
+
+	### Medium (on-map) Division Icons ###
+
+	spriteType = { name = "GFX_unit_field_artillery_brigade_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_unit_field_artillery_brigade_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_heavy_artillery_brigade_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_artillery_brigade_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_siege_artillery_brigade_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_unit_siege_artillery_brigade_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_heavy_machine_gun_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_machine_gun_icon.dds" noOfFrames = 2 }
+
+	spriteType = { name = "GFX_unit_polish_cavalry_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_unit_polish_cavalry_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_croatian_guard_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_unit_croatian_guard_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_croatian_guard_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_unit_standschutzen_icon.dds" noOfFrames = 2}
 }

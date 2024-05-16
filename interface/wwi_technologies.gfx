@@ -1,0 +1,61 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_field_artillery_1_medium"
+		texturefile = "gfx/interface/technologies/Art_1_axis.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_field_artillery_2_medium"
+		texturefile = "gfx/interface/technologies/Art_1_axis.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_field_artillery_3_medium"
+		texturefile = "gfx/interface/technologies/Art_1_axis.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_heavy_artillery_1_medium"
+		texturefile = "gfx/interface/technologies/Art_2_axis.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_heavy_artillery_2_medium"
+		texturefile = "gfx/interface/technologies/Art_2_axis.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_heavy_artillery_3_medium"
+		texturefile = "gfx/interface/technologies/Art_2_axis.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_siege_artillery_1_medium"
+		texturefile = "gfx/interface/technologies/Art_3_axis.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_siege_artillery_2_medium"
+		texturefile = "gfx/interface/technologies/Art_3_axis.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_heavy_machine_gun_1_medium"
+		texturefile = "gfx/interface/technologies/support_weapons.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_heavy_machine_gun_2_medium"
+		texturefile = "gfx/interface/technologies/support_weapons2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_shotgun_1_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_shotgun_2_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_2.dds"
+	}
+}

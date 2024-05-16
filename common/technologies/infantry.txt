@@ -25,7 +25,12 @@ technologies = {
 		path = {
 			leads_to_tech = infantry_weapons1
 			research_cost_coeff = 1
-		}		
+		}	
+
+		path = {
+			leads_to_tech = heavy_machine_gun_1
+			research_cost_coeff = 1
+		}	
 
 		research_cost = 1.5
 		start_year = 1893
@@ -84,6 +89,30 @@ technologies = {
 			}
 		}
 	}	
+
+	heavy_machine_gun_1 = {
+		enable_subunits = {
+			heavy_machine_gun
+		}
+
+		enable_equipments = {
+			heavy_machine_gun_equipment_1
+		}
+
+		path = {
+			leads_to_tech = heavy_machine_gun_2
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = infantry_folder
+			position = { x = -2 y = @1913 }
+		}
+		
+		categories = {
+			artillery
+		}
+	}
 	
 	infantry_weapons2 = {
 
@@ -156,10 +185,16 @@ technologies = {
 			leads_to_tech = improved_infantry_weapons_2
 			research_cost_coeff = 1
 		}
+
 		path = {
-			leads_to_tech = infantry_at
+			leads_to_tech = shotgun_1
 			research_cost_coeff = 1
-		}		
+		}
+
+		path = {
+			leads_to_tech = heavy_machine_gun_2
+			research_cost_coeff = 1
+		}
 
 		research_cost = 2
 		start_year = 1914
@@ -252,85 +287,31 @@ technologies = {
 			}
 		}
 	}
-	
-	infantry_at = {
 
-		category_all_infantry = {
-			hard_attack = 0.25
-			ap_attack = 1
-		}
-		
+	shotgun_1 = {
 		path = {
-			leads_to_tech = infantry_at2
+			leads_to_tech = shotgun_2
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
-		start_year = 1917
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = @1917 }
+			position = { x = 2 y = @1916 }
 		}
 		
 		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				date > "1917.1.6"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1918.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1919.1.1"
-			}
+			artillery
 		}
 	}
-	
-	infantry_at2 = {
 
-		category_all_infantry = {
-			hard_attack = 0.25
-			ap_attack = 1
-		}
-		
-		research_cost = 1.5
-		start_year = 1918
+	heavy_machine_gun_2 = {
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = @1918 }
+			position = { x = -2 y = @1917 }
 		}
 		
 		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				date > "1918.1.6"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1919.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1920.1.1"
-			}
+			artillery
 		}
 	}
 	
@@ -342,6 +323,11 @@ technologies = {
 		
 		path = {
 			leads_to_tech = advanced_infantry_weapons2
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = shotgun_2
 			research_cost_coeff = 1
 		}
 
@@ -373,6 +359,17 @@ technologies = {
 				num_of_military_factories < 50
 				factor = 0.5
 			}
+		}
+	}
+
+	shotgun_2 = {
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = @1919 }
+		}
+		
+		categories = {
+			artillery
 		}
 	}
 	
@@ -1116,357 +1113,6 @@ technologies = {
 			modifier = {
 				factor = 5
 				date > "1921.1.6"
-			}
-		}
-	}
-	
-	support_weapons = {
-
-		infantry = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		bicycle_battalion = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		cavalry = {
-			defense = 0.02
-			breakthrough = 0.02
-		}		
-		mountaineers = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		marine = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		motorized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		amphibious_mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		
-		path = {
-			leads_to_tech = support_weapons2
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1893
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = @1893 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 15
-
-				OR = {
-					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
-				}
-			}
-			modifier = {
-				factor = 2
-				date > "1912.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1913.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1914.1.1"
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
-		}
-	}
-	
-	support_weapons2 = {
-
-		infantry = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		bicycle_battalion = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		cavalry = {
-			defense = 0.02
-			breakthrough = 0.02
-		}		
-		mountaineers = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		marine = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		motorized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		amphibious_mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		
-		path = {
-			leads_to_tech = support_weapons3
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1913
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = @1913 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 5
-
-				OR = {
-					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
-				}
-			}
-			modifier = {
-				factor = 2
-				date > "1913.1.6"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1914.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1915.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1916.1.1"
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
-		}
-	}
-	
-	support_weapons3 = {
-
-		infantry = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		bicycle_battalion = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		cavalry = {
-			defense = 0.02
-			breakthrough = 0.02
-		}		
-		mountaineers = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		marine = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		motorized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		amphibious_mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		
-		path = {
-			leads_to_tech = support_weapons4
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.5
-		start_year = 1915
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = @1915 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				date > "1915.1.6"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1916.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1917.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1918.1.1"
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
-		}
-	}
-	
-	support_weapons4 = {
-
-		infantry = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		bicycle_battalion = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		cavalry = {
-			defense = 0.02
-			breakthrough = 0.02
-		}		
-		mountaineers = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		marine = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		motorized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		amphibious_mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		
-		research_cost = 1.5
-		start_year = 1917
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = @1917 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				date > "1917.1.6"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1918.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1919.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1920.1.1"
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
 			}
 		}
 	}
