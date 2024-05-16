@@ -22,7 +22,7 @@
   balkan_disputes_list_19: "$balkan_disputes_list_18$\n\t[?global.has_been_in_balkan_league^18.GetBalkanDisputesText]"
   balkan_disputes_list_20: "$balkan_disputes_list_19$\n\t[?global.has_been_in_balkan_league^19.GetBalkanDisputesText]"
   mission_SER_balkan_league_breakup: "The Second Balkan War"
-  mission_SER_balkan_league_breakup_tt: "In §Y90§! days: Unless all §Ydisputed states§! are §Yresolved§!, the strongest ally with the most disputes\n(§R[?global.country_with_most_balkan_war_disputes.GetNameWithFlag]§!) will declare a §YSecond Balkan War§!."
+  mission_SER_balkan_league_breakup_tt: "In §Y60§! days: Unless all §Ydisputed states§! are §Yresolved§!, the strongest ally with the most disputes\n(§R[?global.country_with_most_balkan_war_disputes.GetNameWithFlag]§!) will declare a §YSecond Balkan War§!."
   decision_SER_garrison_territory: "Intensify presence in [FROM.GetName]"
   decision_SER_garrison_territory_cost: "£command_power §R30§!"
   decision_SER_garrison_territory_cost_blocked: "£command_power §R30§!"
