@@ -830,6 +830,7 @@ decision_category_SER_balkan_league = {
 		activation = {
 			has_global_flag = flag_balkan_disputes_ongoing
 			NOT = { has_global_flag = flag_second_balkan_war_started }
+			has_country_flag = flag_has_been_in_balkan_league
 		}
 
 		available = {
@@ -837,7 +838,7 @@ decision_category_SER_balkan_league = {
 	    }
 
 		timeout_effect = {
-			effect_SER_clear_balkan_disputes = yes
+			log = "Most balkan disputes: [?global.country_with_most_balkan_war_disputes]"
 
 			# Show the effect to everyone but only fire it for the instigator.
 			if = {
@@ -859,6 +860,8 @@ decision_category_SER_balkan_league = {
 					}
 				}
 			}
+
+			effect_SER_clear_balkan_disputes = yes
 		}
 
 		war_with_on_timeout = global.balkan_league_leader
@@ -1008,9 +1011,12 @@ decision_category_SER_balkan_league = {
 	    		effect_SER_end_balkan_disputes = yes
 	    	}
 	    	else = {
-	    		add_days_mission_timeout = {
-	    			mission = mission_SER_balkan_league_breakup
-	    			days = 15
+	    		every_country = {
+	    			limit = { has_active_mission = mission_SER_balkan_league_breakup }
+	    			add_days_mission_timeout = {
+	    				mission = mission_SER_balkan_league_breakup
+	    				days = 15
+	    			}
 	    		}
 	    	}
 

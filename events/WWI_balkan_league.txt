@@ -105,6 +105,7 @@ country_event = {
 		name = event_WWI_balkan_league_second_balkan_war.1.a
 
 		set_country_flag = flag_second_balkan_war_attacker
+		set_variable = { global.second_balkan_war_attacker = THIS }
 
 		leave_faction = yes
 
@@ -155,8 +156,6 @@ country_event = {
 
 		for_each_scope_loop = {
 			array = neighbors
-			log = "[ROOT.GetName]: My neighbor is [THIS.GetName]."
-
 			if = {
 				limit = {
 					NOT = { has_country_flag = flag_second_balkan_war_defender }
@@ -319,6 +318,78 @@ country_event = {
 					ratio < 0.33
 				}
 			}
+		}
+	}
+}
+
+# Balkan war ends
+news_event = {
+	id = event_WWI_balkan_league_second_balkan_war.6
+	title = event_WWI_balkan_league_second_balkan_war.6.t
+	desc = {
+		text = event_WWI_balkan_league_second_balkan_war.6.d
+		trigger = {
+			NOT = { has_global_flag = flag_attacker_win_second_balkan_war }
+		}
+	}
+	desc = {
+		text = event_WWI_balkan_league_second_balkan_war.6.d_attacker_wins
+		trigger = {
+			has_global_flag = flag_attacker_win_second_balkan_war
+		}
+	}
+	picture = GFX_news_event_001
+
+	is_triggered_only = yes
+	major = yes
+
+	immediate = {
+		log = "([THIS.GetName] news event) 2nd Balkan War ends, instigator lost."
+	}
+
+	# Loser.
+	option = {
+		name = event_WWI_balkan_league_second_balkan_war.6.a_loser
+
+		trigger = {
+			OR = {
+				AND = {
+					has_country_flag = flag_second_balkan_war_attacker
+					NOT = { has_global_flag = flag_attacker_win_second_balkan_war }
+				}
+				AND = {
+					has_country_flag = flag_second_balkan_war_defender
+					has_global_flag = flag_attacker_win_second_balkan_war
+				}
+			}
+		}
+	}
+
+	# Participant.
+	option = {
+		name = event_WWI_balkan_league_second_balkan_war.6.a_participant
+
+		trigger = {
+			OR = {
+				AND = {
+					has_country_flag = flag_second_balkan_war_defender
+					has_global_flag = flag_attacker_win_second_balkan_war
+				}
+				AND = {
+					has_country_flag = flag_second_balkan_war_attacker
+					NOT = { has_global_flag = flag_attacker_win_second_balkan_war }
+				}
+			}
+		}
+	}
+
+	# Neutral.
+	option = {
+		name = event_WWI_balkan_league_second_balkan_war.6.a_neutral
+
+		trigger = {
+			NOT = { has_country_flag = flag_second_balkan_war_defender }
+			NOT = { has_country_flag = flag_second_balkan_war_attacker }
 		}
 	}
 }

@@ -29,6 +29,13 @@
   event_WWI_balkan_league_second_balkan_war.4.a: "Yes. While [FROM.GetNameDef] is weak."
   event_WWI_balkan_league_second_balkan_war.4.b: "Now is not the time."
 
+  event_WWI_balkan_league_second_balkan_war.6.t: "The Second Balkan War Ends"
+  event_WWI_balkan_league_second_balkan_war.6.d: "War between the former Balkan partners has ended: [?global.second_balkan_war_attacker.GetNameDef], outnumbered and diplomatically isolated, has admitted its defeat. It stands to lose much of what it gained in the First Balkan War.\n\nThough the collapse of the Balkan alliance was a surprise to few, spectators have been alarmed at the chaos on the peninsula. Many wonder if this will be the last Balkan War."
+  event_WWI_balkan_league_second_balkan_war.6.d_attacker_wins: "War between the former Balkan partners has ended: despite being outnumbered and isolated, [?global.second_balkan_war_attacker.GetNameDef] emerges victorious. Yet more of the region will fall to her control.\n\nThough the collapse of the Balkan alliance was a surprise to few, spectators have been alarmed at the chaos on the peninsula. Many wonder if this will be the last Balkan War."
+  event_WWI_balkan_league_second_balkan_war.6.a_neutral: "Unlikely."
+  event_WWI_balkan_league_second_balkan_war.6.a_participant: "We must be ready."
+  event_WWI_balkan_league_second_balkan_war.6.a_loser: "This isn't over."
+
   event_WWI_balkan_league_resolve_dispute.1.t: "[FROM.GetName] Offers Concession to End [disputed_state.GetName] Dispute"
   event_WWI_balkan_league_resolve_dispute.1.d: "Seeking concord amongst the Balkan War victors, [FROM.GetAdjective] negotiators have insisted that we end our posturing over [disputed_state.controller.GetAdjective]-occupied [disputed_state.GetName].\n\nWe have been asked to name the price of our cooperation."
   event_WWI_balkan_league_resolve_dispute.1.a: "We demand industrial reparations."
