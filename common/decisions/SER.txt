@@ -1,6 +1,6 @@
 political_actions = {
 	# Annex Bosnia after they've finalised their secession: This is available if Serbia doesn't want to immediately annex Bosnia, e.g. in the event that Bosnia is surrounded by hostile territory.
-	SER_accept_bosnian_secession = {
+	decision_SER_accept_bosnian_secession = {
 		allowed = {
 			original_tag = SER
 		}
@@ -60,7 +60,7 @@ political_actions = {
 		}
 	}
 
-	SER_arm_macedonian_militia = {
+	decision_SER_arm_macedonian_militia = {
 		custom_cost_trigger = {
 			has_equipment = { infantry_equipment > 999 }
 		}
@@ -100,8 +100,8 @@ political_actions = {
 	}
 }
 
-SER_insurgencies = {
-	SER_bolster_serb_vojvodina_1 = {
+decision_category_SER_insurgencies = {
+	decision_SER_bolster_serb_vojvodina_1 = {
 		custom_cost_trigger = {
 			has_equipment = { infantry_equipment > 2999 }
 		}
@@ -131,7 +131,7 @@ SER_insurgencies = {
 		}
 	}
 
-	SER_bolster_serb_vojvodina_2 = {
+	decision_SER_bolster_serb_vojvodina_2 = {
 		custom_cost_trigger = {
 			has_equipment = { artillery_equipment > 199 }
 		}
@@ -161,7 +161,7 @@ SER_insurgencies = {
 		}
 	}
 
-	SER_bolster_serb_vojvodina_3 = {
+	decision_SER_bolster_serb_vojvodina_3 = {
 		custom_cost_trigger = {
 			has_equipment = { support_equipment > 399 }
 		}
@@ -191,12 +191,12 @@ SER_insurgencies = {
 		}
 	}
 
-	SER_launch_vojvodina_uprising = {
+	decision_SER_launch_vojvodina_uprising = {
 		available = {
 			AND = {
-				has_decision = SER_bolster_serb_vojvodina_1
-				has_decision = SER_bolster_serb_vojvodina_2
-				has_decision = SER_bolster_serb_vojvodina_3
+				has_decision = decision_SER_bolster_serb_vojvodina_1
+				has_decision = decision_SER_bolster_serb_vojvodina_2
+				has_decision = decision_SER_bolster_serb_vojvodina_3
 			}
 		}
 
@@ -238,8 +238,8 @@ SER_insurgencies = {
 	}
 }
 
-SER_treaty_ports = {
-	SER_request_fiume = {
+decision_category_SER_treaty_ports = {
+	decision_SER_request_fiume = {
 		available = {
 			NOT = { 152 = { is_controlled_by = SER } }
 			AUS = {
@@ -260,7 +260,7 @@ SER_treaty_ports = {
 		}
 	}
 
-	SER_request_zara = {
+	decision_SER_request_zara = {
 		available = {
 			NOT = { 165 = { is_controlled_by = SER } }
 			AUS = {
@@ -281,7 +281,7 @@ SER_treaty_ports = {
 		}
 	}
 
-	SER_request_ragusa = {
+	decision_SER_request_ragusa = {
 		available = {
 			NOT = { 208 = { is_controlled_by = SER } }
 			AUS = {
@@ -303,8 +303,8 @@ SER_treaty_ports = {
 	}
 }
 
-SER_danube_adriatic_railway = {
-	SER_montenegro_route = {
+decision_category_SER_danube_adriatic_railway = {
+	decision_SER_montenegro_route = {
 		available = {
 			125 = { is_controlled_by_ROOT_or_ally = yes }
 			177 = { is_controlled_by_ROOT_or_ally = yes }
@@ -341,11 +341,9 @@ SER_danube_adriatic_railway = {
 				}
 			}
 		}
-
-		
 	}
 
-	SER_herzegovina_route = {
+	decision_SER_herzegovina_route = {
 		available = {
 			125 = { is_controlled_by_ROOT_or_ally = yes }
 			156 = { is_controlled_by_ROOT_or_ally = yes }
@@ -384,7 +382,7 @@ SER_danube_adriatic_railway = {
 		}
 	}
 
-	SER_dirac_route = {
+	decision_SER_dirac_route = {
 		available = {
 			125 = { is_controlled_by_ROOT_or_ally = yes }
 			185 = { is_controlled_by_ROOT_or_ally = yes }
@@ -423,8 +421,8 @@ SER_danube_adriatic_railway = {
 	}
 }
 
-SER_the_great_retreat = {
-	SER_via_montenegro = {
+decision_category_SER_the_great_retreat = {
+	decision_SER_via_montenegro = {
 		available = {
 			164 = {
 				OR = {
@@ -468,7 +466,7 @@ SER_the_great_retreat = {
 		}
 	}
 
-	SER_via_scutari = {
+	decision_SER_via_scutari = {
 		available = {
 			161 = {
 				OR = {
@@ -512,7 +510,7 @@ SER_the_great_retreat = {
 		}
 	}
 
-	SER_via_dirac = {
+	decision_SER_via_dirac = {
 		available = {
 			202 = {
 				OR = {
@@ -556,7 +554,7 @@ SER_the_great_retreat = {
 		}
 	}
 
-	SER_via_salonica = {
+	decision_SER_via_salonica = {
 		available = {
 			140 = {
 				OR = {
@@ -601,8 +599,8 @@ SER_the_great_retreat = {
 	}
 }
 
-SER_assassinate_head_of_state = {
-	SER_prepare_network = {
+decision_category_SER_assassinate_head_of_state = {
+	decision_SER_prepare_network = {
 		days_remove = 30
 
 		target_array = neighbors
@@ -640,8 +638,8 @@ SER_assassinate_head_of_state = {
 		}
 	}
 	
-	SER_dispatch_assassin = {
-		days_remove = 30 # Should always equal the timer on SER_prevent_assassination_mission
+	decision_SER_dispatch_assassin = {
+		days_remove = 30 # Should always equal the timer on decision_SER_prevent_assassination_mission
 
 		target_array = neighbors
 		target_array = enemies
@@ -669,10 +667,10 @@ SER_assassinate_head_of_state = {
 }
 
 # Countries threatened by Serbian assassin plans get this crisis decision.
-SER_assassin_plot_against_us = {
-	SER_cancel_tour = {
+decision_category_SER_assassin_plot_against_us = {
+	decision_SER_cancel_tour = {
 		visible = {
-			has_active_mission = SER_prevent_assassination_mission
+			has_active_mission = decision_SER_prevent_assassination_mission
 		}
 
 		available = {
@@ -690,13 +688,13 @@ SER_assassin_plot_against_us = {
 
 			SER = { country_event = { id = wwi_serbia.22 hours = 1 } }
 
-			remove_mission = SER_prevent_assassination_mission
+			remove_mission = decision_SER_prevent_assassination_mission
 		}
 	} 
 
-	SER_increase_security = {
+	decision_SER_increase_security = {
 		visible = {
-			has_active_mission = SER_prevent_assassination_mission
+			has_active_mission = decision_SER_prevent_assassination_mission
 		}
 
 		available = {
@@ -715,11 +713,11 @@ SER_assassin_plot_against_us = {
 
 			SER = { country_event = { id = wwi_serbia.23 hours = 1 } }
 
-			remove_mission = SER_prevent_assassination_mission
+			remove_mission = decision_SER_prevent_assassination_mission
 		}
 	}
 
-	SER_prevent_assassination_mission = {
+	decision_SER_prevent_assassination_mission = {
 		icon = generic_assassination
 
 		days_mission_timeout = 30
@@ -748,8 +746,8 @@ SER_assassin_plot_against_us = {
 	}
 }
 
-SER_publish_lausanne_investigation = {
-	SER_publish_lausanne_investigation_decision = {
+decision_category_SER_publish_lausanne_investigation = {
+	decision_SER_publish_lausanne_investigation_decision = {
 		icon = eng_propaganda_campaigns
 		cost = 50
 		fire_only_once = yes
@@ -780,8 +778,8 @@ SER_publish_lausanne_investigation = {
 	}
 }
 
-SER_bombard_kotor = {
-	SER_bombard_kotor = {
+decision_category_SER_bombard_kotor = {
+	decision_SER_bombard_kotor = {
 		icon = ger_military_buildup
 		days_remove = 180
 

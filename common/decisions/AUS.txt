@@ -1,7 +1,7 @@
 @AUS_port_overpowered_countdown = 180 # Change events_AUS_erode_hungarian_influence tooltips when you change this.
 
-AUS_influence_adriatic_territory = {
-	AUS_influence_free_city = {
+decision_category_AUS_influence_adriatic_territory = {
+	decision_AUS_influence_free_city = {
 		targets = { TRS ZAR }
 
 		available = {
@@ -84,7 +84,7 @@ AUS_influence_adriatic_territory = {
 		}
 	}
 
-	AUS_annex_free_ciy = {
+	decision_AUS_annex_free_ciy = {
 		targets = { TRS ZAR }
 
 		available = {
@@ -138,8 +138,8 @@ AUS_influence_adriatic_territory = {
 	}
 }
 
-AUS_negotiate_croatia = {
-	AUS_serbia_for_croatia = {
+decision_category_AUS_negotiate_croatia = {
+	decision_AUS_serbia_for_croatia = {
 		allowed = {
 			original_tag = AUS
 		}
@@ -161,7 +161,7 @@ AUS_negotiate_croatia = {
 		}
 	}
 
-	AUS_wallachia_for_croatia = {
+	decision_AUS_wallachia_for_croatia = {
 		allowed = {
 			original_tag = AUS
 		}
@@ -183,7 +183,7 @@ AUS_negotiate_croatia = {
 		}
 	}
 
-	AUS_moldovia_for_croatia = {
+	decision_AUS_moldovia_for_croatia = {
 		allowed = {
 			original_tag = AUS
 		}
@@ -206,7 +206,7 @@ AUS_negotiate_croatia = {
 		}
 	}
 
-	AUS_ruthenia_for_croatia = {
+	decision_AUS_ruthenia_for_croatia = {
 		allowed = {
 			original_tag = AUS
 		}
@@ -228,7 +228,7 @@ AUS_negotiate_croatia = {
 		}
 	}
 
-	AUS_poland_for_croatia = {
+	decision_AUS_poland_for_croatia = {
 		allowed = {
 			original_tag = AUS
 		}
@@ -251,8 +251,8 @@ AUS_negotiate_croatia = {
 	}
 }
 
-AUS_negotiate_transylvania = {
-	AUS_serbia_for_transylvania = {
+decision_category_AUS_negotiate_transylvania = {
+	decision_AUS_serbia_for_transylvania = {
 		allowed = {
 			original_tag = AUS
 		}
@@ -274,7 +274,7 @@ AUS_negotiate_transylvania = {
 		}
 	}
 
-	AUS_wallachia_for_transylvania = {
+	decision_AUS_wallachia_for_transylvania = {
 		allowed = {
 			original_tag = AUS
 		}
@@ -296,7 +296,7 @@ AUS_negotiate_transylvania = {
 		}
 	}
 
-	AUS_moldovia_for_transylvania = {
+	decision_AUS_moldovia_for_transylvania = {
 		allowed = {
 			original_tag = AUS
 		}
@@ -318,7 +318,7 @@ AUS_negotiate_transylvania = {
 		}
 	}
 
-	AUS_ruthenia_for_transylvania = {
+	decision_AUS_ruthenia_for_transylvania = {
 		allowed = {
 			original_tag = AUS
 		}
@@ -340,7 +340,7 @@ AUS_negotiate_transylvania = {
 		}
 	}
 
-	AUS_poland_for_transylvania = {
+	decision_AUS_poland_for_transylvania = {
 		allowed = {
 			original_tag = AUS
 		}
@@ -363,8 +363,8 @@ AUS_negotiate_transylvania = {
 	}
 }
 
-AUS_give_away_bukovina = {
-	AUS_give_away_bukovina = {
+decision_category_AUS_give_away_bukovina = {
+	decision_AUS_give_away_bukovina = {
 		target_array = neighbors
 
 		target_trigger = {
@@ -421,8 +421,8 @@ AUS_give_away_bukovina = {
 	}
 }
 
-AUS_manage_the_empire = {
-	AUS_economic_placations_to_hungary = {
+decision_category_AUS_manage_the_empire = {
+	decision_AUS_economic_placations_to_hungary = {
 		cost = 75
 		days_re_enable = 90
 		allowed = {
@@ -444,7 +444,7 @@ AUS_manage_the_empire = {
 		}
 	}
 
-	AUS_dismantle_hungary = {
+	decision_AUS_dismantle_hungary = {
 		cost = 75
 		allowed = {
 			original_tag = AUS
@@ -468,7 +468,7 @@ AUS_manage_the_empire = {
 		}
 	}
 
-	AUS_cisleithania_referendum = {
+	decision_AUS_cisleithania_referendum = {
 		state_target = yes
 
 		# Same as seize_hungarian_territory but without hungarian majority areas
@@ -545,7 +545,7 @@ AUS_manage_the_empire = {
 		}
 	}
 
-	AUS_persuade_hungarian_diet = {
+	decision_AUS_persuade_hungarian_diet = {
 		cost = 100
 		state_target = yes
 
@@ -1041,7 +1041,7 @@ decision_category_AUS_obrenovic_pretender = {
 }
 
 decision_category_AUS_overpower_the_honved = {
-	AUS_overpower_the_honved = {
+	decision_AUS_overpower_the_honved = {
 		cost = 10
 		state_target = yes
 		targets = { 227 201 141 173 176 182 204 213 171 125 232 205 180 223 178 214 172 228 146 224 156 }
@@ -1074,7 +1074,7 @@ decision_category_AUS_overpower_the_honved = {
 			}
 			activate_targeted_decision = {
 				target = FROM
-				decision = AUS_port_overpowered
+				decision = decision_AUS_port_overpowered
 			}
 
 			hidden_effect = {
@@ -1168,7 +1168,7 @@ decision_category_AUS_overpower_the_honved = {
 		icon = GFX_decision_generic_human_torpedo
 	}
 
-	AUS_overpower_the_honved_budapest = {
+	decision_AUS_overpower_the_honved_budapest = {
 		cost = 30
 		state_target = yes
 		targets = { 189 }
@@ -1208,7 +1208,7 @@ decision_category_AUS_overpower_the_honved = {
 		icon = GFX_decision_infiltrate_state
 	}
 
-	AUS_port_overpowered = {
+	decision_AUS_port_overpowered = {
 		is_good = no
 		days_mission_timeout = @AUS_port_overpowered_countdown
 		state_target = yes

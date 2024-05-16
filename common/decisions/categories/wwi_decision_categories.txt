@@ -1,4 +1,4 @@
-SER_insurgencies = {
+decision_category_SER_insurgencies = {
 	icon = generic_independence
 
 	allowed = {
@@ -13,7 +13,7 @@ SER_insurgencies = {
 	}
 }
 
-SER_treaty_ports = {
+decision_category_SER_treaty_ports = {
 	icon = generic_naval
 
 	allowed = {
@@ -25,7 +25,7 @@ SER_treaty_ports = {
 	}
 }
 
-SER_danube_adriatic_railway = {
+decision_category_SER_danube_adriatic_railway = {
 	icon = generic_construction
 
 	allowed = {
@@ -33,11 +33,11 @@ SER_danube_adriatic_railway = {
 	}
 
 	visible = {
-		has_completed_focus = SER_danube_adriatic_railway
+		has_completed_focus = decision_category_SER_danube_adriatic_railway
 	}
 }
 
-SER_the_great_retreat = {
+decision_category_SER_the_great_retreat = {
 	icon = eng_organize_the_blackshirts
 
 	allowed = {
@@ -45,11 +45,11 @@ SER_the_great_retreat = {
 	}
 
 	visible = {
-		has_completed_focus = SER_the_great_retreat
+		has_completed_focus = decision_category_SER_the_great_retreat
 	}
 }
 
-SER_assassinate_head_of_state = {
+decision_category_SER_assassinate_head_of_state = {
 	allowed = {
 		original_tag = SER
 	}
@@ -59,7 +59,7 @@ SER_assassinate_head_of_state = {
 	}
 }
 
-SER_assassin_plot_against_us = {
+decision_category_SER_assassin_plot_against_us = {
 	allowed = {
 		always = yes
 	}
@@ -69,7 +69,7 @@ SER_assassin_plot_against_us = {
 	}
 }
 
-SER_publish_lausanne_investigation = {
+decision_category_SER_publish_lausanne_investigation = {
 	icon = generic_foreign_policy
 
 	allowed = {
@@ -81,7 +81,7 @@ SER_publish_lausanne_investigation = {
 	}
 }
 
-SER_bombard_kotor = {
+decision_category_SER_bombard_kotor = {
 	icon = border_conflicts
 
 	allowed = {
@@ -110,7 +110,7 @@ decision_category_SER_balkan_league = {
 	}
 }
 
-AUS_influence_adriatic_territory = {
+decision_category_AUS_influence_adriatic_territory = {
 	icon = generic_foreign_policy
 
 	allowed = {
@@ -125,7 +125,7 @@ AUS_influence_adriatic_territory = {
 	}
 }
 
-AUS_negotiate_croatia = {
+decision_category_AUS_negotiate_croatia = {
 	icon = generic_foreign_policy
 
 	allowed = {
@@ -138,7 +138,7 @@ AUS_negotiate_croatia = {
 	}
 }
 
-AUS_negotiate_transylvania = {
+decision_category_AUS_negotiate_transylvania = {
 	icon = generic_foreign_policy
 
 	allowed = {
@@ -151,7 +151,7 @@ AUS_negotiate_transylvania = {
 	}
 }
 
-AUS_give_away_bukovina = {
+decision_category_AUS_give_away_bukovina = {
 	icon = generic_foreign_policy
 
 	allowed = {
@@ -164,7 +164,7 @@ AUS_give_away_bukovina = {
 	}
 }
 
-AUS_manage_the_empire = {
+decision_category_AUS_manage_the_empire = {
 	icon = generic_foreign_policy
 
 	allowed = {

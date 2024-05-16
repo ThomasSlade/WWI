@@ -781,7 +781,7 @@ focus_tree = {
 				add_opinion_modifier = { target = ITA modifier = AUS_purchased_italian_neutrality }
 				release = ZAR
 				release = TRS
-				unlock_decision_category_tooltip = AUS_influence_adriatic_territory
+				unlock_decision_category_tooltip = decision_category_AUS_influence_adriatic_territory
 
 				ITA = {
 					diplomatic_relation = {
@@ -791,7 +791,7 @@ focus_tree = {
 					}
 					add_opinion_modifier = { target = ROOT modifier = AUS_purchased_italian_neutrality }
 					transfer_state = 231
-					unlock_decision_category_tooltip = AUS_influence_adriatic_territory
+					unlock_decision_category_tooltip = decision_category_AUS_influence_adriatic_territory
 				}
 			}
 		}
@@ -1676,7 +1676,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			unlock_decision_category_tooltip = AUS_negotiate_transylvania
+			unlock_decision_category_tooltip = decision_category_AUS_negotiate_transylvania
 		}
 	}
 
@@ -2291,7 +2291,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			unlock_decision_category_tooltip = AUS_negotiate_croatia
+			unlock_decision_category_tooltip = decision_category_AUS_negotiate_croatia
 		}
 	}
 
@@ -2861,7 +2861,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			unlock_decision_category_tooltip = AUS_give_away_bukovina
+			unlock_decision_category_tooltip = decision_category_AUS_give_away_bukovina
 			custom_effect_tooltip = wwi_newline_tt
 			custom_effect_tooltip = AUS_give_away_bukovina_tt
 			effect_tooltip = {
@@ -2961,7 +2961,7 @@ focus_tree = {
 			unlock_decision_category_tooltip = decision_category_AUS_overpower_the_honved
 			custom_effect_tooltip = AUS_overpower_the_honved_tt
 			custom_effect_tooltip = AUS_overpower_the_honved_budapest_tt
-			unlock_decision_tooltip = AUS_dismantle_hungary
+			unlock_decision_tooltip = decision_AUS_dismantle_hungary
 			add_political_power = 100
 
 			hidden_effect = {
@@ -3116,7 +3116,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			unlock_decision_tooltip = AUS_economic_placations_to_hungary
+			unlock_decision_tooltip = decision_AUS_economic_placations_to_hungary
 		}
 	}
 
@@ -3220,7 +3220,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			unlock_decision_tooltip = AUS_persuade_hungarian_diet
+			unlock_decision_tooltip = decision_AUS_persuade_hungarian_diet
 		}
 	}
 
@@ -3511,9 +3511,9 @@ focus_tree = {
 		completion_reward = {
 			AUS_init_hungarian_regions = yes
 			AUS_hungarian_resistance_level_up = yes
-			unlock_decision_tooltip = AUS_cisleithania_referendum
+			unlock_decision_tooltip = decision_AUS_cisleithania_referendum
 			custom_effect_tooltip = AUS_cisleithania_referendum_tt
-			unlock_decision_tooltip = AUS_dismantle_hungary
+			unlock_decision_tooltip = decision_AUS_dismantle_hungary
 		}
 	}
 

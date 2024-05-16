@@ -495,13 +495,13 @@ country_event = {
 		}
 		add_opinion_modifier = { target = FROM modifier = AUS_purchased_italian_neutrality }
 		transfer_state = 231
-		unlock_decision_category_tooltip = AUS_influence_adriatic_territory
+		unlock_decision_category_tooltip = decision_category_AUS_influence_adriatic_territory
 
 		FROM = {
 			add_opinion_modifier = { target = ITA modifier = AUS_purchased_italian_neutrality }
 			release = ZAR
 			release = TRS
-			unlock_decision_category_tooltip = AUS_influence_adriatic_territory
+			unlock_decision_category_tooltip = decision_category_AUS_influence_adriatic_territory
 
 			country_event = { id = wwi_austria.15 hours = 1 }
 		}
@@ -540,7 +540,7 @@ country_event = {
 			add_opinion_modifier = { target = ITA modifier = AUS_purchased_italian_neutrality }
 			release = ZAR
 			release = TRS
-			unlock_decision_category_tooltip = AUS_influence_adriatic_territory
+			unlock_decision_category_tooltip = decision_category_AUS_influence_adriatic_territory
 
 			ITA = {
 				diplomatic_relation = {
@@ -550,7 +550,7 @@ country_event = {
 				}
 				add_opinion_modifier = { target = ROOT modifier = AUS_purchased_italian_neutrality }
 				transfer_state = 231
-				unlock_decision_category_tooltip = AUS_influence_adriatic_territory
+				unlock_decision_category_tooltip = decision_category_AUS_influence_adriatic_territory
 			}
 		}
 	}

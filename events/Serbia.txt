@@ -167,7 +167,7 @@ country_event = {
 
 		activate_targeted_decision = {
 		    target = FROM
-		    decision = SER_accept_bosnian_secession
+		    decision = decision_SER_accept_bosnian_secession
 		}
 
 		ai_chance = { factor = 0 }
@@ -531,9 +531,9 @@ country_event = {
 			base = 0
 		}
 
-		activate_mission = SER_prevent_assassination_mission
-		unlock_decision_tooltip = SER_cancel_tour
-		unlock_decision_tooltip = SER_increase_security
+		activate_mission = decision_SER_prevent_assassination_mission
+		unlock_decision_tooltip = decision_SER_cancel_tour
+		unlock_decision_tooltip = decision_SER_increase_security
 		custom_effect_tooltip = prevent_leader_assassination_prompt
 	}
 }

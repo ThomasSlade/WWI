@@ -1074,7 +1074,7 @@ focus_tree = {
 					}
 				}
 			}
-			unlock_decision_tooltip = SER_bombard_kotor
+			unlock_decision_tooltip = decision_category_SER_bombard_kotor
 		}
 	}
 
@@ -1731,7 +1731,7 @@ focus_tree = {
 			add_state_core = 218
 			add_state_core = 148
 
-			unlock_decision_tooltip = SER_arm_macedonian_militia
+			unlock_decision_tooltip = decision_SER_arm_macedonian_militia
 		}
 	}
 
@@ -2499,7 +2499,7 @@ focus_tree = {
 
 		completion_reward = {
 			SER_increase_great_retreat = yes
-			unlock_decision_category_tooltip = SER_the_great_retreat
+			unlock_decision_category_tooltip = decision_category_SER_the_great_retreat
 		}
 	}
 
@@ -2524,7 +2524,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			unlock_decision_category_tooltip = SER_publish_lausanne_investigation
+			unlock_decision_category_tooltip = decision_category_SER_publish_lausanne_investigation
 		}
 	}
 }
