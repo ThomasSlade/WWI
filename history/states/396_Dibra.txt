@@ -1,0 +1,20 @@
+#COLOR 150 34 171
+state={
+	id=396
+	name=396_Dibra
+	history={
+		owner = TUR
+		add_core_of = TUR
+		add_core_of = BUL
+		buildings = {
+		}
+		victory_points = {6124 2
+		}
+	}
+	provinces={
+		8610 7493 6182 6247 6124 6927 8816 7540 7542 8858
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -7,16 +7,16 @@ state={
 		add_core_of = GER
 		buildings = {
 			arms_factory = 1
-			industrial_complex = 1
 			infrastructure = 2
+			industrial_complex = 1
 		}
-		victory_points = {2987 15
+		victory_points = {3044 15
 		}
-		victory_points = {3044 2
+		victory_points = {3091 2
 		}
 	}
 	provinces={
-		3042 2979 3044 3302 2983 2987 3085 3277 3196 3185 3091 3251 3292 3033 3034 2972 3133
+		3042 3044 3109 3398 3271 3274 3213 3277 3418 3026 3091 3251 3030 3130 3133 3327
 	}
 	manpower=1969600
 	buildings_max_level_factor=1.000

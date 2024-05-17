@@ -1,0 +1,19 @@
+#COLOR 28 145 117
+state={
+	id=398
+	name=398_Hamburg
+	history={
+		owner = GER
+		add_core_of = GER
+		buildings = {
+		}
+		victory_points = {879 25
+		}
+	}
+	provinces={
+		3169 2956 879 815 2993 3060 2965 1719
+	}
+	manpower=931035
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

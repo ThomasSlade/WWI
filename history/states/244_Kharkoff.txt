@@ -8,8 +8,8 @@ state={
 		add_core_of = UKR
 		buildings = {
 			arms_factory = 1
-			industrial_complex = 1
 			infrastructure = 2
+			industrial_complex = 1
 		}
 		victory_points = {7771 25
 		}
