@@ -231,7 +231,7 @@ country_event = {
 				ideology = established
 				size = 0.65
 				capital = 136 # Nis
-				states = { 136 162 218 148 216 129 134 }
+				states = { 136 162 218 148 397 396 216 129 134 }
 			}
 			set_cosmetic_tag = SER_BLACKHAND
 		}
@@ -246,7 +246,7 @@ country_event = {
 				ideology = established
 				size = 0.65
 				capital = 136 # Nis
-				states = { 136 162 218 148 216 129 134 }
+				states = { 136 162 218 148 397 396 216 129 134 }
 			}
 			set_cosmetic_tag = SER_BLACKHAND
 		}

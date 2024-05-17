@@ -35,6 +35,8 @@ country_event = {
 		remove_state_core = 216
 		remove_state_core = 148
 		remove_state_core = 218
+		remove_state_core = 396
+		remove_state_core = 397
 
 		FROM = { country_event = wwi_serbia.6 }
 	}

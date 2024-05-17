@@ -34,7 +34,7 @@ state={
 	provinces={
 		5888 6026 5774 5880 5778 5906 5911 5917 6052 5934 6067 5943 6080 5965 5843 5844 6101 5985 5986 5866 5872 6008 5887
 	}
-	manpower=708991
+	manpower=709043
 	buildings_max_level_factor=1.000
 	state_category = city
 }

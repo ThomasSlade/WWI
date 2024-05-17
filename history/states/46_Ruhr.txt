@@ -18,7 +18,7 @@ state={
 	provinces={
 		1953 2018 2019 1925 934 2055 1898 1386 1995 1902 1966 2094 2003 2014 2069 2070 1918
 	}
-	manpower=2126767
+	manpower=2161447
 	buildings_max_level_factor=1.000
 	state_category = metropolis
 }

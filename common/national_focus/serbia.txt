@@ -596,6 +596,8 @@ focus_tree = {
 						owns_state = 185
 						owns_state = 218
 						owns_state = 148
+						owns_state = 396
+						owns_state = 397
 						owns_state = 135
 						owns_state = 164
 						owns_state = 169
@@ -1730,6 +1732,8 @@ focus_tree = {
 		completion_reward = {
 			add_state_core = 218
 			add_state_core = 148
+			add_state_core = 396
+			add_state_core = 397
 
 			unlock_decision_tooltip = decision_SER_arm_macedonian_militia
 		}
@@ -1952,8 +1956,10 @@ focus_tree = {
 				controls_state = 185
 				controls_state = 218
 				controls_state = 148
+				controls_state = 396
+				controls_state = 397
+				controls_state = 216
 			}
-			
 		}
 
 		completion_reward = {
@@ -1985,6 +1991,9 @@ focus_tree = {
 				controls_state = 185
 				controls_state = 218
 				controls_state = 148
+				controls_state = 396
+				controls_state = 397
+				controls_state = 216
 			}
 		}
 
@@ -2014,6 +2023,9 @@ focus_tree = {
 				controls_state = 185
 				controls_state = 218
 				controls_state = 148
+				controls_state = 396
+				controls_state = 397
+				controls_state = 216
 			}
 		}
 
@@ -2043,6 +2055,9 @@ focus_tree = {
 				controls_state = 185
 				controls_state = 218
 				controls_state = 148
+				controls_state = 396
+				controls_state = 397
+				controls_state = 216
 			}
 		}
 
@@ -2054,6 +2069,9 @@ focus_tree = {
 						state = 185
 						state = 218
 						state = 148
+						state = 396
+						state = 397
+						state = 216
 					}
 					is_owned_by = ROOT
 				}

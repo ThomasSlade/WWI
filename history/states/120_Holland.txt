@@ -34,7 +34,7 @@ state={
 	provinces={
 		2944 2945 3722 2848 3635 2872 2881 2884 2904 2777 2905 2911 2784 2788 2917 2919 2930 1778 2932 2937 2943
 	}
-	manpower=2233818
+	manpower=2233942
 	buildings_max_level_factor=1.000
 	state_category = metropolis
 }

@@ -20,7 +20,7 @@ state={
 	provinces={
 		2208 2209 2216 2217 2218 2219 2220 2221 2184 2223 2225 2226 2228 2204 2205
 	}
-	manpower=697636
+	manpower=709012
 	buildings_max_level_factor=1.000
 	state_category = town
 }

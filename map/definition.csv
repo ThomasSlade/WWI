@@ -5553,7 +5553,7 @@
 5552;8;53;109;land;false;rural;2
 5553;80;207;6;land;false;plains;1
 5554;80;213;237;land;false;rural;1
-5555;75;107;174;land;true;hills;1
+5555;114;29;160;land;false;plains;3
 5556;81;80;116;land;false;forest;1
 5557;81;95;156;land;true;hills;1
 5558;81;133;33;land;false;plains;1
@@ -9264,4 +9264,3 @@
 9263;96;44;121;land;false;plains;3
 9264;100;33;144;land;false;plains;3
 9265;109;34;161;land;false;plains;3
-9266;114;29;160;land;false;plains;3

@@ -1616,6 +1616,18 @@ focus_tree = {
 					add_core_of = ROOT
 				}
 			}
+			397 = {
+				if = {
+					limit = { OR = { is_controlled_by = 140.controller is_controlled_by = SER } }
+					add_core_of = ROOT
+				}
+			}
+			396 = {
+				if = {
+					limit = { OR = { is_controlled_by = 140.controller is_controlled_by = SER } }
+					add_core_of = ROOT
+				}
+			}
 			216 = {
 				if = {
 					limit = { OR = { is_controlled_by = 140.controller is_controlled_by = SER } }

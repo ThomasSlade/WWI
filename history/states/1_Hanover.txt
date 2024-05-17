@@ -7,8 +7,8 @@ state={
 		add_core_of = GER
 		buildings = {
 			arms_factory = 1
-			infrastructure = 3
-			industrial_complex = 3
+			infrastructure = 2
+			industrial_complex = 1
 		}
 		victory_points = {2983 15
 		}
@@ -22,7 +22,7 @@ state={
 	provinces={
 		3201 2952 2953 3085 2958 1171 2963 2972 1181 2975 2979 2983 2986 2987 556 1199 2991 3249 947 2995 3253 2999 3268 3272 597 215 3033 3034 3292 1632 3171 3046 3302 745 3305 1261 3185 378 3196
 	}
-	manpower=384261
+	manpower=1966034
 	buildings_max_level_factor=1.000
-	state_category = metropolis
+	state_category = town
 }

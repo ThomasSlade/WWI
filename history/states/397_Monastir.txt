@@ -7,6 +7,8 @@ state={
 		add_core_of = TUR
 		add_core_of = BUL
 		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
 		}
 		victory_points = {8577 15
 		}
@@ -20,7 +22,7 @@ state={
 	provinces={
 		8577 9100 8220 7713 8867 8237 7229 9021 9153 8649 8398 8655 7761 8664 8536 5597 7903 8933 8684 7157 7543 7419
 	}
-	manpower=0
+	manpower=480523
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=town
 }
