@@ -8,8 +8,8 @@ state={
 		add_core_of = CZE
 		add_core_of = SLO
 		buildings = {
-			infrastructure = 1
 			industrial_complex = 1
+			infrastructure = 1
 		}
 		victory_points = {1597 5
 		}

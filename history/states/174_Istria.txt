@@ -10,28 +10,24 @@ state={
 		add_core_of = TRS
 		add_core_of = SLV
 		buildings = {
+			industrial_complex = 1
 			arms_factory = 1
 			infrastructure = 2
-			industrial_complex = 1
-			4221 = {
+			4646 = {
 				naval_base = 6
 			}
 		}
-		victory_points = {4180 25
+		victory_points = {3942 25
 		}
-		victory_points = {4221 15
+		victory_points = {4646 15
 		}
-		victory_points = {4128 5
-		}
-		victory_points = {4038 2
-		}
-		victory_points = {4674 2
+		victory_points = {4180 2
 		}
 	}
 	provinces={
-		4096 3978 3860 4628 3990 4376 3870 4128 4385 9254 4646 4674 4292 4038 1103 4180 4054 4441 4314 4187 3812 3942 4590 4341 4221
+		4096 4385 3268 3942 3398 4646 3978 4590 3860 4180 3990 4054 4376 4441 4628
 	}
-	manpower=1343629
+	manpower=884606
 	buildings_max_level_factor=1.000
 	state_category = city
 }

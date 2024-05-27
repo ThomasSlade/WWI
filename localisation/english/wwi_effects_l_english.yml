@@ -41,3 +41,5 @@
   effect_AUS_launch_obrenovic_coup_tt: "§Y$SER_OBRENOVIC$§! starts a civil war."
   effect_AUS_launch_obrenovic_coup_state_name_tt: "Join §Y$SER_OBRENOVIC$§! in civil war."
   effect_AUS_white_peace_message_albanian_intervention: "[AUS.GetNameDefCap] guaranteed [ALB.GetAdjective] independence."
+  SER_macedonian_states_receive: "§YMacedonian states§!:"
+  SER_owned_macedonian_states_receive: "§YOwned Macedonian states§!:"

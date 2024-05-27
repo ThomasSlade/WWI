@@ -7,9 +7,9 @@ state={
 		add_core_of = GER
 		add_core_of = HKL
 		buildings = {
+			industrial_complex = 2
 			arms_factory = 1
 			infrastructure = 2
-			industrial_complex = 2
 		}
 		victory_points = {2058 25
 		}
@@ -25,7 +25,7 @@ state={
 	provinces={
 		2050 2058 2064 2067 2072 2074 2104 2112 1986 2122 2138 2011 2146 2020 2152 2163 2166 2167 2170 3452 2047
 	}
-	manpower=860670
+	manpower=852965
 	buildings_max_level_factor=1.000
 	state_category = city
 }

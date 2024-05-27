@@ -39,11 +39,11 @@ country_event = {
 			if = {
 				limit = { AUS = { NOT = { has_completed_focus = AUS_preempt_albanian_independence } } }
 				log = "Giving [THIS.GetName] the chance to declare war on Albania without opposition from anyone."
-				country_event = { id = event_TUR_albanian_independence.5 hours = 1 }
+				country_event = { id = event_TUR_albanian_independence.5 hours = 6 }
 			}
 			else = {
 				log = "Giving [THIS.GetName] the chance to declare war on Albania and its guarantors."
-				country_event = { id = event_TUR_albanian_independence.4 hours = 1 }
+				country_event = { id = event_TUR_albanian_independence.4 hours = 6 }
 			}
 			set_country_flag = notified_of_albanian_independence
 		}

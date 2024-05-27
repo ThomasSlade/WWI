@@ -169,43 +169,6 @@ ideas = {
 			}
 		}
 
-		SER_idea_integration_of_new_citizens = {
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_justice
-
-			modifier = {
-				compliance_growth = 0.5
-			}
-		}
-
-		SER_idea_martial_law_in_new_serbia = {
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_martial_law
-
-			modifier = {
-				production_speed_bunker_factor = 1
-				expansionist_drift = 0.01
-			}
-		}
-
 		SER_idea_austrian_ports = {
 			allowed = {
 				always = yes

@@ -8,8 +8,8 @@ state={
 		add_core_of = UKR
 		add_core_of = ROM
 		buildings = {
-			infrastructure = 2
 			industrial_complex = 1
+			infrastructure = 2
 		}
 		victory_points = {5119 15
 		}
@@ -19,7 +19,7 @@ state={
 	provinces={
 		4993 4885 5147 5149 4767 4774 4913 5046 4792 4801 4802 5073 4690 4818 4952 4961 4716 4974 5111 5118 5119
 	}
-	manpower=1124240
+	manpower=1130543
 	buildings_max_level_factor=1.000
 	state_category = town
 }

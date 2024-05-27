@@ -585,6 +585,7 @@ AUS_trade_serbia_montenegro_for_littoral = {
 	effect_tooltip = {
 		174 = { transfer_state_to = ROOT }
 		214 = { transfer_state_to = ROOT }
+		399 = { transfer_state_to = ROOT }
 	}
 
 	hidden_effect = {
@@ -596,6 +597,13 @@ AUS_trade_serbia_montenegro_for_littoral = {
 			}
 		}
 		214 = {
+			if = {
+				limit = { is_controlled_by = SCS }
+				transfer_state_to = ROOT
+				remove_core_of = SCS
+			}
+		}
+		399 = {
 			if = {
 				limit = { is_controlled_by = SCS }
 				transfer_state_to = ROOT

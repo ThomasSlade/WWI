@@ -9,9 +9,9 @@ state={
 		add_core_of = UKR
 		add_core_of = GLD
 		buildings = {
+			industrial_complex = 1
 			arms_factory = 1
 			infrastructure = 2
-			industrial_complex = 1
 		}
 		victory_points = {3950 25
 		}
@@ -25,7 +25,7 @@ state={
 	provinces={
 		3845 3728 3985 3741 3869 3871 3748 4390 4007 3755 3759 3763 3764 3768 1720 3901 3902 3912 1865 1870 1872 3920 3930 3815 4091 4201 1772 3950 3823 1649 3825 1141 3961 1147
 	}
-	manpower=2575555
+	manpower=2589995
 	buildings_max_level_factor=1.000
 	state_category = city
 }

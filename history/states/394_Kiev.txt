@@ -7,9 +7,9 @@ state={
 		add_core_of = SOV
 		add_core_of = UKR
 		buildings = {
+			industrial_complex = 2
 			arms_factory = 1
 			infrastructure = 2
-			industrial_complex = 2
 		}
 		victory_points = {8280 25
 		}
@@ -19,7 +19,7 @@ state={
 	provinces={
 		8133 8457 8366 7924 8280 7835 8317
 	}
-	manpower=301452
+	manpower=299731
 	buildings_max_level_factor=1.000
 	state_category = city
 }

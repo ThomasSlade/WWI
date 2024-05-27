@@ -770,7 +770,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available = {
-			174 = { is_owned_and_controlled_by = ROOT }
+			399 = { is_owned_and_controlled_by = ROOT }
+			231 = { is_owned_and_controlled_by = ROOT }
 			NOT = { has_non_aggression_pact_with = ITA }
 		}
 
@@ -791,6 +792,7 @@ focus_tree = {
 					}
 					add_opinion_modifier = { target = ROOT modifier = AUS_purchased_italian_neutrality }
 					transfer_state = 231
+					transfer_state = 399
 					unlock_decision_category_tooltip = decision_category_AUS_influence_adriatic_territory
 				}
 			}
@@ -2574,7 +2576,7 @@ focus_tree = {
 
 			 # Avoid using is_in_home_area here because Bosnia and Dalmation probably won't be considered Austria's home area.
 			random_owned_controlled_state = {
-				prioritize = { 174 152 165 208 }
+				prioritize = { 174 152 165 208 399 }
 				limit = {
 					trigger_AUS_is_in_austrohungarian_coast = yes
 					free_building_slots = {
@@ -2593,7 +2595,7 @@ focus_tree = {
 			}
 
 			random_owned_controlled_state = {
-				prioritize = { 174 152 165 208 }
+				prioritize = { 174 152 165 208 399 }
 				limit = {
 					NOT = { state = previous_state }
 					trigger_AUS_is_in_austrohungarian_coast = yes
@@ -2734,6 +2736,7 @@ focus_tree = {
 				OR = {
 					controls_state = 174
 					controls_state = 214
+					controls_state = 399
 				}
 			}
 			count_triggers = {

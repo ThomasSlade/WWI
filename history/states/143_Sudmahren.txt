@@ -12,11 +12,13 @@ state={
 		}
 		victory_points = {3977 2
 		}
+		victory_points = {3884 2
+		}
 	}
 	provinces={
 		3907 3781 3847 3977 4170 3884 3828 3926 4124
 	}
-	manpower=165441
+	manpower=166369
 	buildings_max_level_factor=1.000
 	state_category = rural
 }

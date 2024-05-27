@@ -7,9 +7,9 @@ state={
 		add_core_of = SOV
 		add_core_of = POL
 		buildings = {
+			industrial_complex = 1
 			arms_factory = 1
 			infrastructure = 2
-			industrial_complex = 1
 		}
 		victory_points = {8225 25
 		}
@@ -21,7 +21,7 @@ state={
 	provinces={
 		8328 8588 8589 8850 8987 8605 9118 8225 8993 9004 8750 9007 8752 8255 8642 8899 8390 8271 8659 9045 8406 8283 9063 8297 8298 8940 8700
 	}
-	manpower=1592495
+	manpower=1583402
 	buildings_max_level_factor=1.000
 	state_category = city
 }

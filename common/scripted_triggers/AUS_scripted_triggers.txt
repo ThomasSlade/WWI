@@ -170,6 +170,7 @@ trigger_AUS_has_many_german_characters = {
 
 trigger_AUS_is_in_austrohungarian_coast = {
 	OR = {
+		state = 399
 		state = 174
 		state = 152
 		state = 230

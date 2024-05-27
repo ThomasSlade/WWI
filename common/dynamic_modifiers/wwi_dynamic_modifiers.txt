@@ -92,3 +92,25 @@ modifier_SER_balkan_arbitration = {
 
 	annex_cost_factor = -0.33
 }
+
+modifier_SER_provisional_government_in_occupied_lands = {
+	enable = {
+		controller = { original_tag = SER }
+	}
+
+	icon = GFX_modifiers_generic_military_industry
+
+	state_repair_speed_industrial_complex_factor  = 1
+	state_repair_speed_arms_factory_factor  = 1
+	state_repair_speed_infrastructure_factor  = 1
+	state_production_speed_infrastructure_factor = 0.5
+}
+
+modifier_SER_martial_law_in_new_serbia = {
+	enable = {
+		controller = { original_tag = SER }
+	}
+
+	resistance_decay = 1
+	local_factories = 0.5
+}

@@ -1,0 +1,26 @@
+#COLOR 223 150 219
+state={
+	id=399
+	name=399_Gorz
+	history={
+		owner = AUS
+		add_core_of = AUS
+		add_core_of = ITA
+		add_core_of = SCS
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {9264 5
+		}
+		victory_points = {9260 2
+		}
+		victory_points = {9263 2
+		}
+	}
+	provinces={
+		4674 9254 9260 9261 9262 9263 9264 9265 9266 5555 9267
+	}
+	manpower=311037
+	buildings_max_level_factor=1.000
+	state_category=town
+}

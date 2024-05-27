@@ -6,9 +6,9 @@ state={
 		owner = FRA
 		add_core_of = FRA
 		buildings = {
+			industrial_complex = 1
 			arms_factory = 1
 			infrastructure = 2
-			industrial_complex = 1
 		}
 		victory_points = {2628 15
 		}
@@ -16,7 +16,7 @@ state={
 	provinces={
 		2628 2822 2791 2803 2807 2747
 	}
-	manpower=358156
+	manpower=352343
 	buildings_max_level_factor=1.000
 	state_category = town
 }

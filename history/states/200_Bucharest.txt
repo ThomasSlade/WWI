@@ -14,13 +14,15 @@ state={
 		owner = ROM
 		add_core_of = ROM
 		buildings = {
+			industrial_complex = 3
 			arms_factory = 1
 			infrastructure = 3
-			industrial_complex = 3
 		}
 		victory_points = {6216 50
 		}
-		victory_points = {6225 2
+		victory_points = {5953 2
+		}
+		victory_points = {6089 2
 		}
 	}
 	provinces={

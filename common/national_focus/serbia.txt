@@ -357,7 +357,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			unlock_decision_category_tooltip = SER_assassinate_head_of_state
+			unlock_decision_category_tooltip = decision_category_SER_assassinate_head_of_state
 		}
 	}
 
@@ -367,7 +367,7 @@ focus_tree = {
 		prerequisite = { focus = SER_assassinate_heads_of_state }
 		x = -2
 		y = 1
-		relative_position_id = SER_assassinate_heads_of_state
+		relative_position_id = decision_SER_assassinate_heads_of_state
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -817,7 +817,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			unlock_decision_category_tooltip = SER_danube_adriatic_railway
+			unlock_decision_category_tooltip = decision_category_SER_danube_adriatic_railway
 		}
 	}
 
@@ -921,7 +921,7 @@ focus_tree = {
 			}
 			else = {
 				# Otherwise, unlock the Bolster Insurgents decisions.
-				unlock_decision_category_tooltip = SER_insurgencies
+				unlock_decision_category_tooltip = decision_category_SER_insurgencies
 				# Initialise Serb Vojvodina's bolster system.
 				set_variable = {
 					var = serb_vojvodina_armament
@@ -1032,6 +1032,7 @@ focus_tree = {
 			# Slovenia
 			add_state_core = 174
 			add_state_core = 214
+			add_state_core = 399
 			# Vojvodina
 			add_state_core = 171
 			add_state_core = 232
@@ -1076,7 +1077,7 @@ focus_tree = {
 					}
 				}
 			}
-			unlock_decision_tooltip = decision_category_SER_bombard_kotor
+			unlock_decision_category_tooltip = decision_category_SER_bombard_kotor
 		}
 	}
 
@@ -1464,7 +1465,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			unlock_decision_category_tooltip = SER_treaty_ports
+			unlock_decision_category_tooltip = decision_category_SER_treaty_ports
 			set_variable = { serbia_requested_port = -1 }
 		}
 	}
@@ -1963,9 +1964,56 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_timed_idea = {
-				idea = SER_idea_integration_of_new_citizens
-				days = 365
+			effect_tooltip = {
+				custom_effect_tooltip = SER_macedonian_states_receive
+				add_dynamic_modifier = {
+					modifier = modifier_SER_provisional_government_in_occupied_lands
+					days = 730
+				}
+			}
+			hidden_effect = {
+				177 = {
+					add_dynamic_modifier = {
+						modifier = modifier_SER_provisional_government_in_occupied_lands
+						days = 730
+					}
+				}
+				185 = {
+					add_dynamic_modifier = {
+						modifier = modifier_SER_provisional_government_in_occupied_lands
+						days = 730
+					}
+				}
+				218 = {
+					add_dynamic_modifier = {
+						modifier = modifier_SER_provisional_government_in_occupied_lands
+						days = 730
+					}
+				}
+				148 = {
+					add_dynamic_modifier = {
+						modifier = modifier_SER_provisional_government_in_occupied_lands
+						days = 730
+					}
+				}
+				396 = {
+					add_dynamic_modifier = {
+						modifier = modifier_SER_provisional_government_in_occupied_lands
+						days = 730
+					}
+				}
+				397 = {
+					add_dynamic_modifier = {
+						modifier = modifier_SER_provisional_government_in_occupied_lands
+						days = 730
+					}
+				}
+				216 = {
+					add_dynamic_modifier = {
+						modifier = modifier_SER_provisional_government_in_occupied_lands
+						days = 730
+					}
+				}
 			}
 		}
 	}
@@ -1998,10 +2046,58 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_timed_idea = {
-				idea = SER_idea_martial_law_in_new_serbia
-				days = 365
+			effect_tooltip = {
+				custom_effect_tooltip = SER_macedonian_states_receive
+				add_dynamic_modifier = {
+					modifier = modifier_SER_martial_law_in_new_serbia
+					days = 730
+				}
 			}
+			hidden_effect = {
+				177 = {
+					add_dynamic_modifier = {
+						modifier = modifier_SER_martial_law_in_new_serbia
+						days = 730
+					}
+				}
+				185 = {
+					add_dynamic_modifier = {
+						modifier = modifier_SER_martial_law_in_new_serbia
+						days = 730
+					}
+				}
+				218 = {
+					add_dynamic_modifier = {
+						modifier = modifier_SER_martial_law_in_new_serbia
+						days = 730
+					}
+				}
+				148 = {
+					add_dynamic_modifier = {
+						modifier = modifier_SER_martial_law_in_new_serbia
+						days = 730
+					}
+				}
+				396 = {
+					add_dynamic_modifier = {
+						modifier = modifier_SER_martial_law_in_new_serbia
+						days = 730
+					}
+				}
+				397 = {
+					add_dynamic_modifier = {
+						modifier = modifier_SER_martial_law_in_new_serbia
+						days = 730
+					}
+				}
+				216 = {
+					add_dynamic_modifier = {
+						modifier = modifier_SER_martial_law_in_new_serbia
+						days = 730
+					}
+				}
+			}
+			
 		}
 	}
 
@@ -2017,23 +2113,10 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-			OR = {
-				controls_state = 177
-				controls_state = 185
-				controls_state = 218
-				controls_state = 148
-				controls_state = 396
-				controls_state = 397
-				controls_state = 216
-			}
-		}
-
 		completion_reward = {
 			add_ideas = SER_resurrection_of_serbia
 		}
 	}
-
 
 	focus = {
 		id = SER_settle_territory
@@ -2062,21 +2145,29 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			every_state = {
-				limit = {
-					OR = {
-						state = 177
-						state = 185
-						state = 218
-						state = 148
-						state = 396
-						state = 397
-						state = 216
-					}
-					is_owned_by = ROOT
-				}
+			effect_tooltip = {
+				custom_effect_tooltip = SER_owned_macedonian_states_receive
 				add_extra_state_shared_building_slots = 1
 				add_dynamic_modifier = { modifier = SER_settled_territory }
+			}
+
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							state = 177
+							state = 185
+							state = 218
+							state = 148
+							state = 396
+							state = 397
+							state = 216
+						}
+						is_owned_by = ROOT
+					}
+					add_extra_state_shared_building_slots = 1
+					add_dynamic_modifier = { modifier = SER_settled_territory }
+				}
 			}
 		}
 	}

@@ -80,22 +80,26 @@ political_actions = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				add = 40
-				has_equipment = { infantry_equipment > 2000 }
+				add = 20
+				has_equipment = { infantry_equipment > 1000 }
 			}
 			modifier = {
-				factor = 0
-				has_army_experience > 20
+				add = 20
+				has_equipment = { infantry_equipment > 3000 }
+			}
+			modifier = {
+				factor = 0.1
+				has_army_experience > 200
 			}
 		}
 
 		complete_effect = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = -1000
+				amount = -500
 			}
 			
-			army_experience = 20
+			army_experience = 50
 		}
 	}
 }
@@ -822,7 +826,7 @@ decision_category_SER_bombard_kotor = {
 decision_category_SER_balkan_league = {
 	mission_SER_balkan_league_breakup = {
 		is_good = no
-		days_mission_timeout = 60 # Change mission_SER_balkan_league_breakup_tt if you change this.
+		days_mission_timeout = 30 # Change mission_SER_balkan_league_breakup_tt if you change this.
 
 		activation = {
 			has_global_flag = flag_balkan_disputes_ongoing

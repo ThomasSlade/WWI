@@ -6,9 +6,9 @@ state={
 		owner = GRE
 		add_core_of = GRE
 		buildings = {
+			industrial_complex = 1
 			arms_factory = 1
 			infrastructure = 2
-			industrial_complex = 1
 			6134 = {
 				naval_base = 2
 			}
@@ -21,9 +21,11 @@ state={
 		}
 		victory_points = {5821 2
 		}
+		victory_points = {9268 2
+		}
 	}
 	provinces={
-		6145 6025 6029 6030 5781 6040 6043 9246 5924 6066 5940 5821 5950 5956 6087 5964 5837 5842 5726 5731 5732 5736 5741 5871 6134 6007 6013 5886
+		6145 6025 6029 6030 5781 6040 6043 9246 5924 6066 9268 5940 5821 5950 5956 6087 5964 5837 5842 5726 5731 5732 5736 5741 5871 6134 6007 6013 5886
 	}
 	manpower=583048
 	buildings_max_level_factor=1.000
