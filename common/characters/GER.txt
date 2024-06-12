@@ -13,6 +13,44 @@ characters = {
 		}
 	}
 
+	### Generals ###
+
+	GER_erich_von_falkenhayn = {
+		name = GER_erich_von_falkenhayn
+		portraits = {
+			army = {
+				large = GFX_portrait_ger_erich_von_falkenhayn
+			}
+		}
+	}
+
+	GER_erich_ludendorff = {
+		name = GER_erich_ludendorff
+		portraits = {
+			army = {
+				large = GFX_portrait_ger_erich_ludendorff
+			}
+		}
+	}
+
+	GER_helmuth_von_moltke = {
+		name = GER_helmuth_von_moltke
+		portraits = {
+			army = {
+				large = GFX_portrait_ger_helmuth_von_moltke
+			}
+		}
+	}
+
+	GER_paul_von_hindenburg = {
+		name = GER_paul_von_hindenburg
+		portraits = {
+			army = {
+				large = GFX_portrait_paul_von_hindenburg
+			}
+		}
+	}
+
 	### Generic ###
 
 	GER_generic_prudent_defender = {

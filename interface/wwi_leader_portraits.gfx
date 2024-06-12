@@ -17,6 +17,26 @@ spriteTypes = {
 		texturefile = "gfx/leaders/GER/portrait_ger_wilhelm_ii.dds"
 	}
 
+	spriteType = {
+		name = GFX_portrait_ger_erich_von_falkenhayn
+		texturefile = "gfx/leaders/GER/portrait_ger_erich_von_falkenhayn.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_ger_helmuth_von_moltke
+		texturefile = "gfx/leaders/GER/portrait_ger_helmuth_von_moltke.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_ger_paul_von_hindenburg
+		texturefile = "gfx/leaders/GER/portrait_ger_paul_von_hindenburg.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_ger_erich_ludendorff
+		texturefile = "gfx/leaders/GER/portrait_ger_erich_ludendorff.dds"
+	}
+
 	### FRA
 
 	spriteType = {
