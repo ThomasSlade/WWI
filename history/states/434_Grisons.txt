@@ -1,0 +1,21 @@
+#COLOR 211 70 46
+state={
+	id=434
+	name=434_Grisons
+	history={
+		owner = SWI
+		add_core_of = SWI
+		buildings = {
+		}
+		victory_points = {10026 2
+		}
+		victory_points = {10029 2
+		}
+	}
+	provinces={
+		9989 10000 10009 10010 10011 10015 10017 10018 10019 10021 10026 10029 10030 10032 10033 10035 10051 9961 9978
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

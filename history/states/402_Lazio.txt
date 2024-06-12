@@ -1,0 +1,29 @@
+#COLOR 18 87 25
+state={
+	id=402
+	name=402_Lazio
+	history={
+		owner = ITA
+		add_core_of = ITA
+		buildings = {
+		}
+		victory_points = {9419 50
+		}
+		victory_points = {9437 5
+		}
+		victory_points = {9386 2
+		}
+		victory_points = {9417 2
+		}
+		victory_points = {9427 2
+		}
+		victory_points = {9328 2
+		}
+	}
+	provinces={
+		9349 1542 9355 399 9359 9361 532 9367 280 665 156 9376 425 9386 9392 9393 820 9271 9273 9279 9280 577 9281 9283 9284 9410 9417 9419 9294 9298 9427 9302 9303 9306 9437 738 9446 9451 1135 9328 9338
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

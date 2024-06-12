@@ -1,0 +1,23 @@
+#COLOR 138 224 42
+state={
+	id=428
+	name=428_Liguria
+	history={
+		owner = ITA
+		add_core_of = ITA
+		buildings = {
+		}
+		victory_points = {9602 15
+		}
+		victory_points = {9873 5
+		}
+		victory_points = {9591 5
+		}
+	}
+	provinces={
+		9602 9832 9835 9869 9873 9651 9878 9591 9882 9726
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

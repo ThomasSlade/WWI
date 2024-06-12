@@ -1,0 +1,31 @@
+#COLOR 99 221 61
+state={
+	id=420
+	name=420_Campania
+	history={
+		owner = ITA
+		add_core_of = ITA
+		buildings = {
+		}
+		victory_points = {9570 25
+		}
+		victory_points = {9553 5
+		}
+		victory_points = {9710 2
+		}
+		victory_points = {9627 2
+		}
+		victory_points = {9660 2
+		}
+		victory_points = {9449 2
+		}
+		victory_points = {9603 2
+		}
+	}
+	provinces={
+		9603 9605 9478 9614 9489 9748 9749 9625 9627 9768 9771 9645 9527 9655 9660 9536 9665 9792 9668 9796 9414 9671 9805 9679 9553 9681 9682 9683 9559 9696 9697 9442 9570 9699 9825 9449 9324 9710 9840 9846 9592 9593
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

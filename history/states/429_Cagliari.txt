@@ -1,0 +1,25 @@
+#COLOR 141 183 19
+state={
+	id=429
+	name=429_Cagliari
+	history={
+		owner = ITA
+		add_core_of = ITA
+		buildings = {
+		}
+		victory_points = {9638 15
+		}
+		victory_points = {9856 2
+		}
+		victory_points = {10008 2
+		}
+		victory_points = {9888 2
+		}
+	}
+	provinces={
+		9856 9858 9987 9862 9997 9872 10005 9879 9880 10008 9888 9891 9638 9925 9932 9807 9686 9949 9955 9830 9833 9965 9838 9970 9850 9851
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

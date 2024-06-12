@@ -1,0 +1,10 @@
+#COLOR 31 21 53
+strategic_region={
+	id=96
+	name=96_UNNAMEDSTATE_31_21_53
+	provinces={
+		9481 9709 9330 9555 9364 9365 9621 9596 9406
+	}
+	weather={
+	}
+}

@@ -1,0 +1,27 @@
+#COLOR 117 138 39
+state={
+	id=423
+	name=423_Florence
+	history={
+		owner = ITA
+		add_core_of = ITA
+		buildings = {
+		}
+		victory_points = {9962 15
+		}
+		victory_points = {9644 15
+		}
+		victory_points = {9636 5
+		}
+		victory_points = {9784 2
+		}
+		victory_points = {9750 2
+		}
+	}
+	provinces={
+		9601 9750 9752 9884 9636 9637 9644 9900 9908 9909 9783 9784 9663 9799 9937 9942 9962 9842 9844 9976 9849 9724
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

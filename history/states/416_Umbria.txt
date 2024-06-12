@@ -1,0 +1,25 @@
+#COLOR 74 226 90
+state={
+	id=416
+	name=416_Umbria
+	history={
+		owner = ITA
+		add_core_of = ITA
+		buildings = {
+		}
+		victory_points = {9652 5
+		}
+		victory_points = {9624 2
+		}
+		victory_points = {9734 2
+		}
+		victory_points = {9797 2
+		}
+	}
+	provinces={
+		9734 9863 9870 9617 9745 9624 9630 9760 9770 9646 9521 9523 9652 9789 9535 9797 9672 9552 9429 9818 9441 9826 9576 9580 9456
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

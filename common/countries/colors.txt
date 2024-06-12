@@ -136,3 +136,11 @@ ALB = {
 	color = rgb { 125 51 35 }
 	color_ui = rgb { 125 51 35 }
 }
+SWI = {
+	color = rgb { 117 65 49 }
+	color_ui = rgb { 117 65 49 }
+}
+ITA = {
+	color = rgb { 86 105 73 }
+	color_ui = rgb { 86 105 73 }
+}

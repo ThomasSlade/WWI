@@ -1,0 +1,17 @@
+#COLOR 73 146 14
+state={
+	id=415
+	name=415_Pelagies_and_Pantelleria
+	history={
+		owner = ITA
+		add_core_of = ITA
+		buildings = {
+		}
+	}
+	provinces={
+		9881 9754
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

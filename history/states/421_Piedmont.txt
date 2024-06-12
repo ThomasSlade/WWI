@@ -1,0 +1,27 @@
+#COLOR 113 148 117
+state={
+	id=421
+	name=421_Piedmont
+	history={
+		owner = ITA
+		add_core_of = ITA
+		buildings = {
+		}
+		victory_points = {9867 25
+		}
+		victory_points = {9950 2
+		}
+		victory_points = {9918 2
+		}
+		victory_points = {9885 2
+		}
+		victory_points = {9934 2
+		}
+	}
+	provinces={
+		9737 9738 9866 9867 10003 9875 9876 9751 9885 9887 9890 9898 9899 9772 9904 9905 9914 9917 9918 9794 9795 9930 9934 9809 9939 9812 9941 9815 9944 9817 9820 9950 9824 9701 9829 9958 9720
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

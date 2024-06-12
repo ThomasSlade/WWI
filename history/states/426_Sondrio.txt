@@ -1,0 +1,17 @@
+#COLOR 125 164 55
+state={
+	id=426
+	name=426_Sondrio
+	history={
+		owner = ITA
+		add_core_of = ITA
+		buildings = {
+		}
+	}
+	provinces={
+		9632 9929 9931 9868 9843 9715 9687 9945 9919
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,25 @@
+#COLOR 39 146 13
+state={
+	id=408
+	name=408_Marche
+	history={
+		owner = ITA
+		add_core_of = ITA
+		buildings = {
+		}
+		victory_points = {9673 5
+		}
+		victory_points = {9507 5
+		}
+		victory_points = {9545 2
+		}
+		victory_points = {9369 2
+		}
+	}
+	provinces={
+		9732 9369 9370 9379 9507 9387 9388 9525 9409 9537 9545 9290 9673 9439 9317 9447 9448 9326 9714 9335 9343
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

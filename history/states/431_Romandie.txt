@@ -1,0 +1,27 @@
+#COLOR 162 36 41
+state={
+	id=431
+	name=431_Romandie
+	history={
+		owner = SWI
+		add_core_of = SWI
+		buildings = {
+		}
+		victory_points = {10020 15
+		}
+		victory_points = {9980 5
+		}
+		victory_points = {9883 2
+		}
+		victory_points = {9855 2
+		}
+		victory_points = {10016 2
+		}
+	}
+	provinces={
+		10016 9923 9924 10012 10020 9991 10024 9993 9999 9969 9975 9883 9980 10013 9855
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,31 @@
+#COLOR 37 139 33
+state={
+	id=406
+	name=406_Puglia
+	history={
+		owner = ITA
+		add_core_of = ITA
+		buildings = {
+		}
+		victory_points = {9435 15
+		}
+		victory_points = {9382 5
+		}
+		victory_points = {9476 5
+		}
+		victory_points = {9494 2
+		}
+		victory_points = {9514 2
+		}
+		victory_points = {9274 2
+		}
+		victory_points = {9488 2
+		}
+	}
+	provinces={
+		9345 9476 9609 9488 9362 9494 9382 9514 9394 9274 9282 9297 9435 9692 9436 744 9452 9457 9342
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

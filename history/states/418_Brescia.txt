@@ -1,0 +1,27 @@
+#COLOR 83 219 81
+state={
+	id=418
+	name=418_Brescia
+	history={
+		owner = ITA
+		add_core_of = ITA
+		buildings = {
+		}
+		victory_points = {9586 5
+		}
+		victory_points = {9549 5
+		}
+		victory_points = {9522 5
+		}
+		victory_points = {9635 5
+		}
+		victory_points = {9725 2
+		}
+	}
+	provinces={
+		9608 9742 9615 9469 9498 9753 9635 9853 9642 9649 9522 9781 9530 9802 9549 9680 9554 9690 9837 9712 9586 9722 9595 9725 9599
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

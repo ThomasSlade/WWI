@@ -8,8 +8,8 @@ state={
 		add_core_of = ELR
 		add_core_of = ELA
 		buildings = {
-			industrial_complex = 2
 			arms_factory = 1
+			industrial_complex = 2
 			infrastructure = 2
 		}
 		victory_points = {1946 25

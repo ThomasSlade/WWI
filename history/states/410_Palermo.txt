@@ -1,0 +1,29 @@
+#COLOR 42 105 33
+state={
+	id=410
+	name=410_Palermo
+	history={
+		owner = ITA
+		add_core_of = ITA
+		buildings = {
+		}
+		victory_points = {9550 25
+		}
+		victory_points = {9341 5
+		}
+		victory_points = {9534 2
+		}
+		victory_points = {9420 2
+		}
+		victory_points = {9347 2
+		}
+		victory_points = {9542 2
+		}
+	}
+	provinces={
+		9344 9534 9347 9348 9444 9542 9482 9356 9420 9485 9327 9295 9360 9519 9550 9433 9341 9374
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,25 @@
+#COLOR 173 239 94
+state={
+	id=432
+	name=432_Sassari
+	history={
+		owner = ITA
+		add_core_of = ITA
+		buildings = {
+		}
+		victory_points = {9946 5
+		}
+		victory_points = {9897 2
+		}
+		victory_points = {9889 2
+		}
+		victory_points = {9839 2
+		}
+	}
+	provinces={
+		9864 9995 10004 9889 9892 9896 9897 9901 9906 9912 9915 9788 9927 9800 9935 9943 9946 9839 9983
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

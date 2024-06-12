@@ -1,0 +1,23 @@
+#COLOR 130 17 50
+state={
+	id=427
+	name=427_Bern
+	history={
+		owner = SWI
+		add_core_of = SWI
+		buildings = {
+		}
+		victory_points = {9871 15
+		}
+		victory_points = {9984 2
+		}
+		victory_points = {9847 2
+		}
+	}
+	provinces={
+		9984 9990 9998 9871 10007 9902 9910 9785 9657 9916 9793 9922 9669 9675 9684 9952 9827 9828 9956 9959 9964 9968 9974 9847 9848 9977 9854
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

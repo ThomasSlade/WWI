@@ -1,0 +1,27 @@
+#COLOR 64 115 19
+state={
+	id=411
+	name=411_Calabria
+	history={
+		owner = ITA
+		add_core_of = ITA
+		buildings = {
+		}
+		victory_points = {9558 5
+		}
+		victory_points = {9659 2
+		}
+		victory_points = {9422 2
+		}
+		victory_points = {9358 2
+		}
+		victory_points = {9778 2
+		}
+	}
+	provinces={
+		9474 9610 9740 9358 9500 9634 9764 9510 9517 9518 9773 9776 9778 9528 9659 9408 9421 9422 9808 9558 9305 9562 9702 9577 9705 9325 9587
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

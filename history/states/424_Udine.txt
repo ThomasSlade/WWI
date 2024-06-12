@@ -1,0 +1,25 @@
+#COLOR 121 219 30
+state={
+	id=424
+	name=424_Udine
+	history={
+		owner = ITA
+		add_core_of = ITA
+		buildings = {
+		}
+		victory_points = {10048 5
+		}
+		victory_points = {9774 2
+		}
+		victory_points = {9733 2
+		}
+		victory_points = {9804 2
+		}
+	}
+	provinces={
+		9859 9733 9739 9613 9741 9619 9755 9765 9894 9774 9520 9780 9920 10048 9801 9676 9804 9810 9816 9695 9951 9953 9703 9836 9852
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

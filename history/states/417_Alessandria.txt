@@ -1,0 +1,23 @@
+#COLOR 81 143 20
+state={
+	id=417
+	name=417_Alessandria
+	history={
+		owner = ITA
+		add_core_of = ITA
+		buildings = {
+		}
+		victory_points = {9539 5
+		}
+		victory_points = {9713 2
+		}
+		victory_points = {9861 2
+		}
+	}
+	provinces={
+		9664 9377 9569 9539 9633 9445 9861 9511 9658 9713 9556 9721 9466 9629 9471
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

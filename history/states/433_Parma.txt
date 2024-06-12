@@ -1,0 +1,23 @@
+#COLOR 195 236 148
+state={
+	id=433
+	name=433_Parma
+	history={
+		owner = ITA
+		add_core_of = ITA
+		buildings = {
+		}
+		victory_points = {9948 5
+		}
+		victory_points = {9963 5
+		}
+		victory_points = {9994 2
+		}
+	}
+	provinces={
+		9988 9994 9963 9996 9967 10014 9938 9971 10006 9911 9948 9982
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

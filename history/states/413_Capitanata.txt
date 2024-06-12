@@ -1,0 +1,27 @@
+#COLOR 66 122 33
+state={
+	id=413
+	name=413_Capitanata
+	history={
+		owner = ITA
+		add_core_of = ITA
+		buildings = {
+		}
+		victory_points = {9763 15
+		}
+		victory_points = {9416 5
+		}
+		victory_points = {9502 2
+		}
+		victory_points = {9538 2
+		}
+		victory_points = {9496 2
+		}
+	}
+	provinces={
+		9604 9354 9486 9493 9366 9496 9497 9502 9763 9508 9384 9385 9650 9538 9540 9670 9416 9677 9563 9704 9467
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

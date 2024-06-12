@@ -1,0 +1,29 @@
+#COLOR 64 204 45
+state={
+	id=412
+	name=412_Catania
+	history={
+		owner = ITA
+		add_core_of = ITA
+		buildings = {
+		}
+		victory_points = {9620 15
+		}
+		victory_points = {9340 15
+		}
+		victory_points = {9589 5
+		}
+		victory_points = {9487 2
+		}
+		victory_points = {986 2
+		}
+		victory_points = {9611 2
+		}
+	}
+	provinces={
+		9351 9736 9611 9487 9744 9490 9620 9372 9758 9759 9640 9647 9397 9287 9430 986 9571 9575 873 9450 9582 9455 9460 9589 9340 9727
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

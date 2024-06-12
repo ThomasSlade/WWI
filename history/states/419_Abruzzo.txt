@@ -1,0 +1,25 @@
+#COLOR 95 197 35
+state={
+	id=419
+	name=419_Abruzzo
+	history={
+		owner = ITA
+		add_core_of = ITA
+		buildings = {
+		}
+		victory_points = {9453 5
+		}
+		victory_points = {9567 2
+		}
+		victory_points = {9716 2
+		}
+		victory_points = {9940 2
+		}
+	}
+	provinces={
+		9743 9877 9623 9766 9777 9779 9654 9661 9803 9933 9424 9936 9940 9567 9572 9831 9453 9583 9841 9716 9845 9465 9468
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,17 @@
+#COLOR 144 229 75
+state={
+	id=430
+	name=430_Malta
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+		}
+	}
+	provinces={
+		9787 9628
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

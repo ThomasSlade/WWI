@@ -1,0 +1,25 @@
+#COLOR 9 100 25
+state={
+	id=400
+	name=400_Cuneo
+	history={
+		owner = ITA
+		add_core_of = ITA
+		buildings = {
+		}
+		victory_points = {9329 5
+		}
+		victory_points = {9440 2
+		}
+		victory_points = {1000 2
+		}
+		victory_points = {9353 2
+		}
+	}
+	provinces={
+		9440 9506 9543 1000 41 9353 9323 9293 9329 9331 9334 9399 632 9310 9278 9311
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

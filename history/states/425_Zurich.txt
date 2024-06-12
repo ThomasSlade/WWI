@@ -1,0 +1,31 @@
+#COLOR 122 63 70
+state={
+	id=425
+	name=425_Zurich
+	history={
+		owner = SWI
+		add_core_of = SWI
+		buildings = {
+		}
+		victory_points = {9762 25
+		}
+		victory_points = {9860 15
+		}
+		victory_points = {9895 5
+		}
+		victory_points = {9957 5
+		}
+		victory_points = {9979 2
+		}
+		victory_points = {9893 2
+		}
+		victory_points = {10042 2
+		}
+	}
+	provinces={
+		9857 9730 9985 9860 9986 9992 9865 9746 9747 9886 9979 9761 9762 9893 9895 9903 9907 9782 10041 9786 10042 9913 9791 10047 9928 9806 9685 9813 9814 9819 9947 9957 9960 9834 9708 9966 9973 9719 9723 9981
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

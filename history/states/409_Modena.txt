@@ -1,0 +1,23 @@
+#COLOR 42 84 3
+state={
+	id=409
+	name=409_Modena
+	history={
+		owner = ITA
+		add_core_of = ITA
+		buildings = {
+		}
+		victory_points = {9434 5
+		}
+		victory_points = {9315 2
+		}
+		victory_points = {9320 2
+		}
+	}
+	provinces={
+		9315 1093 9320 9513 1579 1260 9516 9391 9425 9426 9333 9561 9434 9598
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}
