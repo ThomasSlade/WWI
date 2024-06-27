@@ -9,8 +9,8 @@ state={
 		add_core_of = SCS
 		add_core_of = BOS
 		buildings = {
-			industrial_complex = 1
 			infrastructure = 2
+			industrial_complex = 1
 		}
 		victory_points = {4907 15
 		}

@@ -1,0 +1,29 @@
+#COLOR 195 40 18
+state={
+	id=480
+	name=480_UNNAMEDSTATE_195_40_18
+	history={
+		owner = TUR
+		add_core_of = TUR
+		buildings = {
+		}
+		victory_points = {10755 15
+		}
+		victory_points = {11129 5
+		}
+		victory_points = {10831 2
+		}
+		victory_points = {11511 2
+		}
+		victory_points = {11192 2
+		}
+		victory_points = {10555 2
+		}
+	}
+	provinces={
+		10755 10500 11527 11400 11289 11290 10912 11429 11437 11182 11439 11442 10805 11192 11129 10938 10555 10812 10684 10686 11326 11327 11384 11455 11456 11587 10831 11353 10586 11108 10981 10726 11365 10990 10863 11247 10742 11511 11128 10873 11262
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

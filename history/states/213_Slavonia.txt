@@ -8,8 +8,8 @@ state={
 		add_core_of = SCS
 		add_core_of = CRO
 		buildings = {
-			industrial_complex = 1
 			infrastructure = 1
+			industrial_complex = 1
 		}
 		victory_points = {4409 5
 		}

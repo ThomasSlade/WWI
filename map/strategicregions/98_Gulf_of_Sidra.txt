@@ -1,0 +1,10 @@
+#COLOR 55 217 212
+strategic_region={
+	id=98
+	name=98_Gulf_of_Sidra
+	provinces={
+		9504 9573 9574 9579 9484 9454 9584 9396 9462 9662
+	}
+	weather={
+	}
+}

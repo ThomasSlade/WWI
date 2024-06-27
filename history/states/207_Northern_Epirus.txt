@@ -7,8 +7,8 @@ state={
 		add_core_of = TUR
 		add_core_of = ALB
 		buildings = {
-			industrial_complex = 1
 			infrastructure = 1
+			industrial_complex = 1
 		}
 		victory_points = {6239 5
 		}

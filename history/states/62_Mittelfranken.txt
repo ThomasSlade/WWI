@@ -7,8 +7,8 @@ state={
 		add_core_of = GER
 		add_core_of = BAY
 		buildings = {
-			industrial_complex = 1
 			infrastructure = 2
+			industrial_complex = 1
 		}
 		victory_points = {3230 15
 		}

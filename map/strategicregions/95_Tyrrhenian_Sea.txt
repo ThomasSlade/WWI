@@ -1,0 +1,10 @@
+#COLOR 30 83 115
+strategic_region={
+	id=95
+	name=95_Tyrrhenian_Sea
+	provinces={
+		9346 9322 9292 302 19 9524 9270 1111 9400 9337 9501 9432
+	}
+	weather={
+	}
+}

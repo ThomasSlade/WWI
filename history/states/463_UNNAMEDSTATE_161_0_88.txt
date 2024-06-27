@@ -1,0 +1,21 @@
+#COLOR 161 0 88
+state={
+	id=463
+	name=463_UNNAMEDSTATE_161_0_88
+	history={
+		owner = TUR
+		add_core_of = TUR
+		buildings = {
+		}
+		victory_points = {10407 2
+		}
+		victory_points = {10245 2
+		}
+	}
+	provinces={
+		10242 10245 10407 10249 11050 11101 10413 11216 11090 10323 11357 11422 11255 10235 10813 10238 10623
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

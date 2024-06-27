@@ -1,0 +1,21 @@
+#COLOR 67 35 30
+state={
+	id=437
+	name=437_UNNAMEDSTATE_67_35_30
+	history={
+		owner = TUR
+		add_core_of = TUR
+		buildings = {
+		}
+		victory_points = {10087 15
+		}
+		victory_points = {603 2
+		}
+	}
+	provinces={
+		10112 386 10246 10119 10137 289 10146 678 10151 300 10157 10170 1088 10054 10055 10311 10072 600 603 10087 10231 10109
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

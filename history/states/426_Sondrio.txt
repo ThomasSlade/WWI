@@ -7,6 +7,8 @@ state={
 		add_core_of = ITA
 		buildings = {
 		}
+		victory_points = {9632 2
+		}
 	}
 	provinces={
 		9632 9929 9931 9868 9843 9715 9687 9945 9919

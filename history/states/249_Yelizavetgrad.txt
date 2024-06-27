@@ -7,8 +7,8 @@ state={
 		add_core_of = SOV
 		add_core_of = UKR
 		buildings = {
-			arms_factory = 1
 			infrastructure = 2
+			arms_factory = 1
 		}
 		victory_points = {7046 15
 		}

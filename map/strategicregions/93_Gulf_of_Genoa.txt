@@ -1,0 +1,10 @@
+#COLOR 3 12 130
+strategic_region={
+	id=93
+	name=93_Gulf_of_Genoa
+	provinces={
+		9600 9505 9443 9316 9352 297 9643 9581 368 9597 9277 383
+	}
+	weather={
+	}
+}

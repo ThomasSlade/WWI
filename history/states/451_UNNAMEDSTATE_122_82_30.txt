@@ -1,0 +1,27 @@
+#COLOR 122 82 30
+state={
+	id=451
+	name=451_UNNAMEDSTATE_122_82_30
+	history={
+		owner = SOV
+		add_core_of = SOV
+		buildings = {
+		}
+		victory_points = {10956 5
+		}
+		victory_points = {10901 5
+		}
+		victory_points = {10748 2
+		}
+		victory_points = {10164 2
+		}
+		victory_points = {10140 2
+		}
+	}
+	provinces={
+		10247 10131 10133 10901 10140 10141 10270 10360 10658 10533 10667 10289 10164 10809 10366 10367 10176 10559 10818 10570 10956 10879 10970 10205 10206 10207 10462 10338 10852 10853 10727 10091 10349 10096 10232 11641 10748 10110 10111
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

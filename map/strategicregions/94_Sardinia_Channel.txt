@@ -1,0 +1,10 @@
+#COLOR 11 28 87
+strategic_region={
+	id=94
+	name=94_Sardinia_Channel
+	provinces={
+		9375 9568 9415 177 9276 9373 9407
+	}
+	weather={
+	}
+}
