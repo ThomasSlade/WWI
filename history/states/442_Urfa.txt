@@ -1,0 +1,23 @@
+#COLOR 104 37 41
+state={
+	id=442
+	name=442_Urfa
+	history={
+		owner = TUR
+		add_core_of = TUR
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+		}
+		victory_points = {10609 5
+		}
+		victory_points = {10356 2
+		}
+	}
+	provinces={
+		10625 10116 10117 10516 10274 10148 10536 10670 10182 10061 10197 10460 10078 10211 10342 10095 10609 10355 10356 11646
+	}
+	manpower=306920
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

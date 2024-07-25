@@ -14,9 +14,10 @@ state={
 		owner = TUR
 		add_core_of = TUR
 		buildings = {
+			industrial_complex = 2
 			infrastructure = 3
-			industrial_complex = 3
-			arms_factory = 3
+			dockyard = 1
+			arms_factory = 1
 			6153 = {
 				naval_base = 8
 			}
@@ -29,7 +30,7 @@ state={
 	provinces={
 		5920 6208 5666 6214 5992 6153 5677 6125 5839 6132 5685 6168 6170 5919
 	}
-	manpower=10590394
+	manpower=1042928
 	buildings_max_level_factor=1.000
 	state_category = metropolis
 }

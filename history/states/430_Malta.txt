@@ -6,12 +6,19 @@ state={
 		owner = ENG
 		add_core_of = ENG
 		buildings = {
+			industrial_complex = 1
+			infrastructure = 1
+			9628 = {
+				naval_base = 3
+			}
+		}
+		victory_points = {9628 2
 		}
 	}
 	provinces={
 		9787 9628
 	}
-	manpower=0
+	manpower=26895
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=pastoral
 }

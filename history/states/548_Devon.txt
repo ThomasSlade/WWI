@@ -1,0 +1,31 @@
+#COLOR 216 170 117
+state={
+	id=548
+	name=548_Devon
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			infrastructure = 2
+			dockyard = 1
+			arms_factory = 1
+			12576 = {
+				naval_base = 4
+			}
+		}
+		victory_points = {12576 15
+		}
+		victory_points = {12578 5
+		}
+		victory_points = {12335 5
+		}
+		victory_points = {12562 2
+		}
+	}
+	provinces={
+		12421 12422 12295 12424 12562 12315 12576 12578 12451 12579 12331 12335 12348 12365 12371 12386 12523 12536 12537
+	}
+	manpower=1352711
+	buildings_max_level_factor=1.000
+	state_category=town
+}

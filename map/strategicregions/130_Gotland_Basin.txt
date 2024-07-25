@@ -1,0 +1,10 @@
+#COLOR 42 46 192
+strategic_region={
+	id=130
+	name=130_Gotland_Basin
+	provinces={
+		12066 12035 11975 12108 12094 11925 11959 11901 12030 11999
+	}
+	weather={
+	}
+}

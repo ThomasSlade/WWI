@@ -1,0 +1,23 @@
+#COLOR 205 102 40
+state={
+	id=546
+	name=546_Faroe
+	history={
+		owner = DEN
+		add_core_of = DEN
+		buildings = {
+			infrastructure = 1
+			12575 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {12575 2
+		}
+	}
+	provinces={
+		12512 12521 12572 12575
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

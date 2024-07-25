@@ -6,6 +6,7 @@ state={
 		owner = AUS
 		add_core_of = AUS
 		buildings = {
+			industrial_complex = 1
 			infrastructure = 2
 		}
 		victory_points = {3828 5
@@ -18,7 +19,7 @@ state={
 	provinces={
 		3907 3781 3847 3977 4170 3884 3828 3926 4124
 	}
-	manpower=166369
+	manpower=166390
 	buildings_max_level_factor=1.000
 	state_category = rural
 }

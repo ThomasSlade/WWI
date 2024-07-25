@@ -1,0 +1,34 @@
+#COLOR 2 43 15
+state={
+	id=513
+	name=513_Ormund
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+			11906 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {11906 5
+		}
+		victory_points = {234 2
+		}
+		victory_points = {11803 2
+		}
+		victory_points = {472 2
+		}
+		victory_points = {11792 2
+		}
+		victory_points = {11849 2
+		}
+	}
+	provinces={
+		130 11906 11912 11917 11792 658 11795 11803 11811 810 1205 11845 11849 472 11869 11870 11880 234 236 11884 11886 379
+	}
+	manpower=389293
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,22 @@
+#COLOR 225 96 136
+state={
+	id=554
+	name=554_Dumfriesshire
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {12552 5
+		}
+		victory_points = {12471 2
+		}
+	}
+	provinces={
+		12416 12291 12543 12552 12491 12332 12525 12366 12305 12471 12472 12414 12287
+	}
+	manpower=205052
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,10 @@
+#COLOR 166 11 186
+strategic_region={
+	id=124
+	name=124_Bay_of_Biscay
+	provinces={
+		12611 12632 1550 12591 12593 12626 12628 12629 12600 12633 12638 12639
+	}
+	weather={
+	}
+}

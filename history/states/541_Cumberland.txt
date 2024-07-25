@@ -1,0 +1,28 @@
+#COLOR 180 116 77
+state={
+	id=541
+	name=541_Cumberland
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			12209 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {12354 5
+		}
+		victory_points = {12181 2
+		}
+		victory_points = {12209 2
+		}
+	}
+	provinces={
+		12481 12354 12292 12452 12200 12363 12364 12176 12209 12401 12211 12465 12181 12182 12467 12507 12476
+	}
+	manpower=520861
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

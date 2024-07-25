@@ -1,0 +1,10 @@
+#COLOR 83 44 118
+strategic_region={
+	id=125
+	name=125_Sea_of_the_Hebrides
+	provinces={
+		929 1473 12612 1097 1420 12588 12624 12598 12599 825 12602 1469
+	}
+	weather={
+	}
+}

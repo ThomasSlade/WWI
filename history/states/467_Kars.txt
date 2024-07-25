@@ -1,0 +1,22 @@
+#COLOR 173 50 0
+state={
+	id=467
+	name=467_Kars
+	history={
+		owner = SOV
+		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {10927 2
+		}
+		victory_points = {10964 2
+		}
+	}
+	provinces={
+		11271 10512 10903 11176 10541 10927 11057 10427 10301 10437 11207 11211 10317 10447 10964 10327 11361 11492 10598 11120 11263
+	}
+	manpower=283199
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

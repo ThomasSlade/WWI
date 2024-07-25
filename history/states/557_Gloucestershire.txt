@@ -1,0 +1,28 @@
+#COLOR 247 127 102
+state={
+	id=557
+	name=557_Gloucestershire
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			industrial_complex = 2
+			infrastructure = 3
+			12489 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {12489 25
+		}
+		victory_points = {12500 5
+		}
+		victory_points = {12564 5
+		}
+	}
+	provinces={
+		12384 12516 12489 12585 12556 12526 12500 12277 12564 12473
+	}
+	manpower=940901
+	buildings_max_level_factor=1.000
+	state_category=city
+}

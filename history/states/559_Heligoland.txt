@@ -1,0 +1,17 @@
+#COLOR 224 234 55
+state={
+	id=559
+	name=559_Heligoland
+	history={
+		owner = GER
+		add_core_of = GER
+		buildings = {
+		}
+	}
+	provinces={
+		11821
+	}
+	manpower=645
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

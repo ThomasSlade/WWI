@@ -1,0 +1,27 @@
+#COLOR 126 40 34
+state={
+	id=531
+	name=531_Yorshire_West_Riding
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+		}
+		victory_points = {12082 15
+		}
+		victory_points = {12126 5
+		}
+		victory_points = {12229 2
+		}
+		victory_points = {12146 2
+		}
+	}
+	provinces={
+		12640 12322 12100 12037 12196 12229 12328 12169 12042 12238 12015 12239 12082 12146 12339 12053 12120 12126
+	}
+	manpower=1754820
+	buildings_max_level_factor=1.000
+	state_category=city
+}

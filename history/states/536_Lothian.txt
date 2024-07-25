@@ -1,0 +1,25 @@
+#COLOR 152 32 25
+state={
+	id=536
+	name=536_Lothian
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+		}
+		victory_points = {12206 15
+		}
+		victory_points = {12136 2
+		}
+		victory_points = {12262 2
+		}
+	}
+	provinces={
+		12480 12163 12262 12136 12236 12206 12302 12253 12398 12179 12310 12438 12184 12125 12478 12415
+	}
+	manpower=580825
+	buildings_max_level_factor=1.000
+	state_category=town
+}

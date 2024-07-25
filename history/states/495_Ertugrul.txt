@@ -1,0 +1,25 @@
+#COLOR 220 49 50
+state={
+	id=495
+	name=495_Ertugrul
+	history={
+		owner = TUR
+		add_core_of = TUR
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+		}
+		victory_points = {11413 5
+		}
+		victory_points = {11618 2
+		}
+		victory_points = {11048 2
+		}
+	}
+	provinces={
+		10561 11106 10883 11618 11399 11048 11594 11147 11275 11533 10576 11184 11412 11413 11419 11261 11519
+	}
+	manpower=255348
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,10 @@
+#COLOR 33 50 71
+strategic_region={
+	id=131
+	name=131_Porcupine_Basin
+	provinces={
+		227 451 709 230 907 590 111 786 572 1365 439 188 317 62
+	}
+	weather={
+	}
+}

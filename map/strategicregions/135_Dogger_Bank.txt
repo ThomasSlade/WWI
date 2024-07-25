@@ -1,0 +1,10 @@
+#COLOR 186 71 200
+strategic_region={
+	id=135
+	name=135_Dogger_Bank
+	provinces={
+		12387 12483 12390 12397 12406 12154 12382
+	}
+	weather={
+	}
+}

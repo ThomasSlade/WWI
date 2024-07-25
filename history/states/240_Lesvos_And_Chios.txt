@@ -1,13 +1,16 @@
 #COLOR 7 59 174
 state={
 	id=240
-	name=240_Lesvos_And_Chios
+	name=240_Lesvos_and_Chios
 	history={
 		owner = TUR
 		add_core_of = TUR
 		buildings = {
-			infrastructure = 1
 			industrial_complex = 1
+			infrastructure = 1
+			1879 = {
+				naval_base = 1
+			}
 			1066 = {
 				naval_base = 1
 			}
@@ -20,7 +23,7 @@ state={
 	provinces={
 		163 1477 1830 1066 430 174 9200 1879 9244 5245
 	}
-	manpower=38299
+	manpower=20083
 	buildings_max_level_factor=1.000
-	state_category = town
+	state_category = pastoral
 }

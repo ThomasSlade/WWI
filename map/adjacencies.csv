@@ -1,2 +1,5 @@
 From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
-6153;10631;930;-1;-1;-1;-1;;Bosphorus
+6153;10631;sea;930;-1;-1;-1;-1;;Bosphorus
+12474;12468;sea;12637;-1;-1;-1;-1;;Holyhead
+12206;12306;sea;11993;-1;-1;-1;-1;;Firth
+12407;12317;sea;11993;-1;-1;-1;-1;;Tay

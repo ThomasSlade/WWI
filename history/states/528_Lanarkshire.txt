@@ -1,0 +1,32 @@
+#COLOR 111 30 36
+state={
+	id=528
+	name=528_Lanarkshire
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			industrial_complex = 2
+			infrastructure = 3
+			dockyard = 2
+			arms_factory = 2
+			12044 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {12129 25
+		}
+		victory_points = {12044 2
+		}
+		victory_points = {12014 2
+		}
+		victory_points = {12194 2
+		}
+	}
+	provinces={
+		12129 11970 12130 12161 12193 12194 12044 12269 12014 12079 12178 12210 12020 12052 12022 11990 12092 12189
+	}
+	manpower=2150463
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

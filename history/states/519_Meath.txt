@@ -1,0 +1,32 @@
+#COLOR 41 176 69
+state={
+	id=519
+	name=519_Meath
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+			11806 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {11806 5
+		}
+		victory_points = {11952 2
+		}
+		victory_points = {11824 2
+		}
+		victory_points = {11978 2
+		}
+		victory_points = {11888 2
+		}
+	}
+	provinces={
+		11913 1551 11920 1561 11806 11813 11947 11824 11952 11953 12085 11831 11961 11838 11966 11841 11972 11978 11853 11995 11888
+	}
+	manpower=747488
+	buildings_max_level_factor=1.000
+	state_category=town
+}

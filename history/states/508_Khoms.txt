@@ -1,0 +1,30 @@
+#COLOR 139 94 22
+state={
+	id=508
+	name=508_Khoms
+	history={
+		owner = TUR
+		add_core_of = TUR
+		add_core_of = ITA
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			143 = {
+				naval_base = 2
+			}
+			154 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {143 5
+		}
+		victory_points = {154 5
+		}
+	}
+	provinces={
+		11713 11714 1444 301 11661 143 11664 11665 154
+	}
+	manpower=201409
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

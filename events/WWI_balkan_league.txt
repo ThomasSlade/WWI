@@ -69,7 +69,7 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "([THIS.GetName] news event) End of First Balkan War, start of Balkan Disputes system."
+		log = "([THIS.GetName] event) End of First Balkan War, start of Balkan Disputes system."
 	}
 
 	# Okay.

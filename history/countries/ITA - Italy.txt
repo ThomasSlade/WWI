@@ -1,0 +1,46 @@
+capital = 402
+
+set_oob = "ITA_1911"
+set_naval_oob = "ITA_1911_naval"
+set_fuel_ratio = 0.8
+set_research_slots = 3
+set_convoys = 200
+starting_train_buffer = 1.5
+set_stability = 0.75 
+set_war_support = 0.5
+
+# Starting tech
+set_technology = {
+	basic_train = 1
+	infantry_weapons = 1
+	field_artillery_1 = 1
+	tech_support = 1
+
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_submarine = 1
+	transport = 1
+
+	early_reform = 1
+}
+
+set_convoys = 50
+
+set_politics = {
+	ruling_party = established
+	last_election = "1911.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	established = 55
+	expansionist = 40
+	revolutionary = 5
+}
+
+add_ideas = {
+	limited_conscription
+}

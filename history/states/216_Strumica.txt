@@ -8,7 +8,7 @@ state={
 		add_core_of = BUL
 		buildings = {
 			infrastructure = 1
-			industrial_complex = 1
+			arms_factory = 1
 		}
 		victory_points = {6229 2
 		}
@@ -16,7 +16,7 @@ state={
 	provinces={
 		6074 6229 6079
 	}
-	manpower=57859
+	manpower=30340
 	buildings_max_level_factor=1.000
 	state_category = rural
 }

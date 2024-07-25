@@ -1,0 +1,10 @@
+#COLOR 27 134 98
+strategic_region={
+	id=126
+	name=126_Southern_Bight
+	provinces={
+		12642 12643 12002 12028 12074 850 11864 11866 11931 11932 11965
+	}
+	weather={
+	}
+}

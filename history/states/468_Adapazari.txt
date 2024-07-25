@@ -1,0 +1,20 @@
+#COLOR 175 74 14
+state={
+	id=468
+	name=468_Adapazari
+	history={
+		owner = TUR
+		add_core_of = TUR
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {11144 2
+		}
+	}
+	provinces={
+		10817 11490 10372 10632 11144 10346 10826 11031 11432 10866 10357 10519
+	}
+	manpower=166406
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

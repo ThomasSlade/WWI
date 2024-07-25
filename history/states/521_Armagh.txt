@@ -1,0 +1,23 @@
+#COLOR 55 86 19
+state={
+	id=521
+	name=521_Armagh
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+		}
+		victory_points = {11897 5
+		}
+		victory_points = {11878 2
+		}
+	}
+	provinces={
+		11842 11878 12049 11897 11868
+	}
+	manpower=203994
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

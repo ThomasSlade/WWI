@@ -1,0 +1,10 @@
+#COLOR 158 221 232
+strategic_region={
+	id=133
+	name=133_Gulf_of_Finland
+	provinces={
+		12170 12203 12267 12177 12147 12158 12159
+	}
+	weather={
+	}
+}

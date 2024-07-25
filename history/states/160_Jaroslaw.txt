@@ -8,6 +8,7 @@ state={
 		add_core_of = POL
 		add_core_of = GLD
 		buildings = {
+			industrial_complex = 1
 			infrastructure = 1
 		}
 		victory_points = {3841 2
@@ -18,7 +19,7 @@ state={
 	provinces={
 		3841 4033 4034 4065 4161 4070 4365 4334 4462 3824 3889 3957 4085 4405 4469 4287
 	}
-	manpower=374436
+	manpower=374484
 	buildings_max_level_factor=1.000
 	state_category = rural
 }

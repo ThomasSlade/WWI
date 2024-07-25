@@ -1,0 +1,24 @@
+#COLOR 155 132 86
+state={
+	id=460
+	name=460_Nakchivan
+	history={
+		owner = SOV
+		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {10375 5
+		}
+		victory_points = {10438 2
+		}
+		victory_points = {10868 2
+		}
+	}
+	provinces={
+		10498 10375 10891 11020 10510 11158 11036 10438 10439 10571 10971 10718 10339 10600 10475 11117 10868 11124 11000
+	}
+	manpower=240143
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

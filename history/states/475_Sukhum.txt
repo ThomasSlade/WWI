@@ -1,0 +1,20 @@
+#COLOR 184 166 21
+state={
+	id=475
+	name=475_Sukhum
+	history={
+		owner = SOV
+		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {10526 2
+		}
+	}
+	provinces={
+		10402 10697 11243 11021 10546 10483 11251 11189 10526 10463
+	}
+	manpower=234999
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

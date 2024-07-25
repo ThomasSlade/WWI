@@ -1,0 +1,29 @@
+#COLOR 169 72 36
+state={
+	id=466
+	name=466_Denizli
+	history={
+		owner = TUR
+		add_core_of = TUR
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+		}
+		victory_points = {11249 15
+		}
+		victory_points = {10993 2
+		}
+		victory_points = {11177 2
+		}
+		victory_points = {10486 2
+		}
+		victory_points = {10714 2
+		}
+	}
+	provinces={
+		11264 10370 10371 10504 10385 11281 10773 10518 10774 10520 10392 10393 10909 10913 10406 11175 11431 10793 11049 11177 11305 10802 10549 10550 11191 11324 11639 10308 10566 10953 10954 10700 11341 11217 10707 10714 10590 10591 11230 11231 11359 10851 10725 11246 10479 10993 10994 11121 11249 11377 10358 10486 11386
+	}
+	manpower=482867
+	buildings_max_level_factor=1.000
+	state_category=town
+}

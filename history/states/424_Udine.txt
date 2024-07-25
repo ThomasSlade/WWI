@@ -6,6 +6,11 @@ state={
 		owner = ITA
 		add_core_of = ITA
 		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			9804 = {
+				naval_base = 1
+			}
 		}
 		victory_points = {10048 5
 		}
@@ -19,7 +24,7 @@ state={
 	provinces={
 		9859 9733 9739 9613 9741 9619 9755 9765 9894 9774 9520 9780 9920 10048 9801 9676 9804 9810 9816 9695 9951 9953 9703 9836 9852
 	}
-	manpower=0
+	manpower=1425593
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

@@ -1,0 +1,10 @@
+#COLOR 13 66 222
+strategic_region={
+	id=122
+	name=122_English_Channel
+	provinces={
+		12005 12070 12647 11854 11983 11796 11800 11801 11963
+	}
+	weather={
+	}
+}

@@ -36,7 +36,7 @@ set_popularities = {
 
 add_ideas = {
 	AUS_multi_lingual_empire
-	extensive_conscription
+	limited_conscription
 }
 
 recruit_character = HUN_istvan_tisza

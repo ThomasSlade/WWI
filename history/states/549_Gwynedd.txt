@@ -1,0 +1,32 @@
+#COLOR 217 120 123
+state={
+	id=549
+	name=549_Gwynedd
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			infrastructure = 2
+			dockyard = 1
+			12468 = {
+				naval_base = 3
+			}
+		}
+		victory_points = {12494 5
+		}
+		victory_points = {12468 2
+		}
+		victory_points = {12299 2
+		}
+		victory_points = {12450 2
+		}
+		victory_points = {12517 2
+		}
+	}
+	provinces={
+		12551 12299 12558 12559 12314 12450 12581 12461 12340 12468 12344 12474 12352 12494 12501 12517 12392 12393 12408
+	}
+	manpower=766595
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

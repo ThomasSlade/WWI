@@ -6,8 +6,8 @@ state={
 		owner = TUR
 		add_core_of = TUR
 		buildings = {
-			infrastructure = 1
 			industrial_complex = 1
+			infrastructure = 1
 		}
 		victory_points = {5652 5
 		}
@@ -17,7 +17,7 @@ state={
 	provinces={
 		5857 5796 5702 5703 5740 5777 5652 5915 5661 5598
 	}
-	manpower=150736
+	manpower=79043
 	buildings_max_level_factor=1.000
 	state_category = rural
 }

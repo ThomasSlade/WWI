@@ -1,0 +1,26 @@
+#COLOR 212 49 127
+state={
+	id=547
+	name=547_Cornwall
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 1
+			12457 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {12515 2
+		}
+		victory_points = {12457 2
+		}
+	}
+	provinces={
+		12321 12290 12513 12515 12326 12457 12436 12470 12349
+	}
+	manpower=314221
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

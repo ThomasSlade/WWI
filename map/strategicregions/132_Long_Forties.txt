@@ -1,0 +1,10 @@
+#COLOR 103 84 199
+strategic_region={
+	id=132
+	name=132_Long_Forties
+	provinces={
+		11969 12101 11974 12019 11958 11993
+	}
+	weather={
+	}
+}

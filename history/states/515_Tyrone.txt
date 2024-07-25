@@ -1,0 +1,27 @@
+#COLOR 22 86 49
+state={
+	id=515
+	name=515_Tyrone
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+			arms_factory = 1
+			11859 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {11859 15
+		}
+		victory_points = {11911 2
+		}
+	}
+	provinces={
+		11905 1251 11907 11911 11816 11946 1132 11859 11828 11829 11893 11802 11804 11933 11934 1535
+	}
+	manpower=497052
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,23 @@
+#COLOR 112 44 9
+state={
+	id=446
+	name=446_Cankiri
+	history={
+		owner = TUR
+		add_core_of = TUR
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+		}
+		victory_points = {10183 5
+		}
+		victory_points = {10865 2
+		}
+	}
+	provinces={
+		10529 10183 10056 10185 10695 10219 10060 10735 10865 10099 10067 10328 10747 10300 10079
+	}
+	manpower=280489
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

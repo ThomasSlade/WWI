@@ -1,0 +1,22 @@
+#COLOR 115 86 18
+state={
+	id=449
+	name=449_Kuba
+	history={
+		owner = SOV
+		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {10147 2
+		}
+		victory_points = {11640 2
+		}
+	}
+	provinces={
+		10657 10082 10147 10819 10351 10225 10839 11640 11643
+	}
+	manpower=156031
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

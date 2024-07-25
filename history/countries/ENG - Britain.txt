@@ -1,0 +1,36 @@
+capital = 551
+
+oob = "ENG_1911"
+set_fuel_ratio = 0.8
+set_research_slots = 4
+set_convoys = 200
+starting_train_buffer = 1.5
+set_stability = 0.75 
+set_war_support = 0.3
+
+set_technology = {
+	basic_train = 1
+	infantry_weapons = 1
+	field_artillery_1 = 1
+	tech_support = 1
+
+	early_reform = 1
+	pragmatic_uniform = 1
+}
+
+set_politics = {
+	ruling_party = established
+	last_election = "1910.4.24"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	established = 65
+	expansionist = 35
+	revolutionary = 0
+}
+
+add_ideas = {
+	volunteer_only
+}

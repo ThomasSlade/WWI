@@ -6,8 +6,8 @@ state={
 		owner = ROM
 		add_core_of = ROM
 		buildings = {
-			infrastructure = 2
 			industrial_complex = 1
+			infrastructure = 2
 		}
 		victory_points = {5508 5
 		}
@@ -21,7 +21,7 @@ state={
 	provinces={
 		5508 5764 5642 5515 5516 5771 5649 5397 5667 5923 5669 5797 5417 5679 5560 5825 5954 5572 5588 5848 5594 5469 5600 5606 5482 5483 5870 5873 5753 5754 5755
 	}
-	manpower=744357
+	manpower=744335
 	buildings_max_level_factor=1.000
 	state_category = town
 }

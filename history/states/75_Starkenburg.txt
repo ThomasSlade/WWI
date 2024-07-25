@@ -7,8 +7,8 @@ state={
 		add_core_of = GER
 		add_core_of = HES
 		buildings = {
-			infrastructure = 2
 			industrial_complex = 1
+			infrastructure = 2
 			arms_factory = 1
 		}
 		victory_points = {2139 15
@@ -19,7 +19,7 @@ state={
 	provinces={
 		2118 2087 2186 2123 2124 2095 2133 2139
 	}
-	manpower=799918
+	manpower=800116
 	buildings_max_level_factor=1.000
 	state_category = city
 }

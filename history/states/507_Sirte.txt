@@ -1,0 +1,26 @@
+#COLOR 110 53 39
+state={
+	id=507
+	name=507_Sirte
+	history={
+		owner = TUR
+		add_core_of = TUR
+		add_core_of = ITA
+		buildings = {
+			infrastructure = 1
+			925 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {925 2
+		}
+		victory_points = {1394 2
+		}
+	}
+	provinces={
+		1344 5 1063 1193 11662 11663 1394 11674 925
+	}
+	manpower=42232
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

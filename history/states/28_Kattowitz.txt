@@ -7,9 +7,9 @@ state={
 		add_core_of = GER
 		add_core_of = POL
 		buildings = {
-			infrastructure = 2
 			industrial_complex = 1
-			arms_factory = 1
+			infrastructure = 2
+			arms_factory = 2
 		}
 		victory_points = {3027 15
 		}
@@ -17,7 +17,7 @@ state={
 	provinces={
 		3137 3267 2982 3119 3024 3027 3068
 	}
-	manpower=575941
+	manpower=576084
 	buildings_max_level_factor=1.000
 	state_category = city
 }

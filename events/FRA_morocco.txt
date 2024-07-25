@@ -1,0 +1,73 @@
+add_namespace = event_FRA_morocco_italy_agreement
+
+country_event = {
+	id = event_FRA_morocco_italy_agreement.1
+	title = event_FRA_morocco_italy_agreement.1.t
+	desc = {
+		text = event_FRA_morocco_italy_agreement.1.d_german_ally
+		trigger = {
+			is_ally_with = GER
+		}
+	}
+	desc = event_FRA_morocco_italy_agreement.1.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Giving Italy chance to invade Libya following France's intervention in Morocco."
+	}
+
+	# Yes.
+	option = {
+		name = event_FRA_morocco_italy_agreement.1.a
+
+		create_wargoal = {
+			type = take_claimed_state
+			target = TUR
+		}
+		add_ai_strategy = {
+			type = consider_weak
+			id = TUR
+			value = 100
+		}
+		add_ai_strategy = {
+			type = declare_war
+			id = TUR
+			value = 100
+		}
+		add_ai_strategy = {
+		    type = naval_invasion_focus
+		    value = 100
+		}
+		add_ai_strategy = {
+		    type = area_priority
+		    id = libya
+		    value = 300
+		}
+		
+		# Reduce the likelihood of invading Albania for a while.
+		set_country_flag = {
+		    flag = flag_avoid_balkan_invasion
+		    days = 365
+		}
+		add_ai_strategy = {
+		    type = area_priority
+		    id = balkans
+		    value = -50
+		    abort = {
+		    	NOT = { has_country_flag = flag_avoid_balkan_invasion }
+		    }
+		}
+
+		# If this changes, change the French focus tt too.
+		effect_boost_popularity_of_from_ideology_10 = yes
+
+		ai_chance = { factor = 100 }
+	}
+
+	# No.
+	option = {
+		name = event_FRA_morocco_italy_agreement.1.b
+	}
+}

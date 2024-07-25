@@ -1,0 +1,23 @@
+#COLOR 157 61 40
+state={
+	id=538
+	name=538_Mann
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			infrastructure = 1
+			12484 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {12484 2
+		}
+	}
+	provinces={
+		12484 12102
+	}
+	manpower=19752
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

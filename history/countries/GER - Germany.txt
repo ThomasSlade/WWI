@@ -35,7 +35,7 @@ set_popularities = {
 }
 
 add_ideas = {
-	extensive_conscription
+	limited_conscription
 }
 
 recruit_character = GER_wilhelm_ii

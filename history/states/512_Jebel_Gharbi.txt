@@ -1,0 +1,25 @@
+#COLOR 226 193 139
+state={
+	id=512
+	name=512_Jebel_Gharbi
+	history={
+		owner = TUR
+		add_core_of = TUR
+		add_core_of = ITA
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {11689 2
+		}
+		victory_points = {11700 2
+		}
+		victory_points = {11771 2
+		}
+	}
+	provinces={
+		11779 11782 11786 11688 11689 11697 11699 11700 11701 11717 11722 11726 11731 11751 11752 11758 11763 11766 11769 11771 11773 11774 11775
+	}
+	manpower=105718
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

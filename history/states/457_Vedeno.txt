@@ -1,0 +1,22 @@
+#COLOR 140 117 92
+state={
+	id=457
+	name=457_Vedeno
+	history={
+		owner = SOV
+		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {10233 2
+		}
+		victory_points = {10751 2
+		}
+	}
+	provinces={
+		10409 10827 10765 10350 10332 10482 10451 10999 10233 10906 10428 10717 10750 10751
+	}
+	manpower=251954
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

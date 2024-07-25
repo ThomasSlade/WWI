@@ -1,0 +1,24 @@
+#COLOR 145 58 16
+state={
+	id=458
+	name=458_Nidge
+	history={
+		owner = TUR
+		add_core_of = TUR
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {11655 5
+		}
+		victory_points = {10230 2
+		}
+		victory_points = {10628 2
+		}
+	}
+	provinces={
+		10240 10628 11655 10759 10506 11025 10388 10266 11039 10930 11067 10299 10557 10942 11072 10310 10193 10705 11091 11233 10996 10230 11131
+	}
+	manpower=289347
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -7,8 +7,8 @@ state={
 		add_core_of = GER
 		add_core_of = BAY
 		buildings = {
-			infrastructure = 2
 			industrial_complex = 1
+			infrastructure = 2
 			arms_factory = 1
 		}
 		victory_points = {3335 25
@@ -23,7 +23,7 @@ state={
 	provinces={
 		3333 3206 3335 2955 3341 2960 3347 3351 2969 2970 3227 3100 2973 3354 3234 3114 2992 3123 3381 2998 3003 3006 3134 3266 3014 3143 3144 3145 3018 3029 3159 3035 3294 3307 3053 3311 3063 3320 3195 1661
 	}
-	manpower=3349553
+	manpower=3350384
 	buildings_max_level_factor=1.000
 	state_category = city
 }

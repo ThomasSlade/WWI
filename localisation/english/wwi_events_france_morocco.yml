@@ -1,0 +1,6 @@
+﻿l_english:
+  event_FRA_morocco_italy_agreement.1.t: "[FROM.GetOldNameDefCap] Offers Libya for Free Hand in Morroco"
+  event_FRA_morocco_italy_agreement.1.d: "It was in 1902 that [FRA.GetNameDef], under the Prinetti-Barrère accord, promised us their support of our Libyan interests as a qrid-pro-quo for their Moroccan interests, should a redistribution of North African territory ever come about.\n\nAs [FROM.GetAdjectiveCap] troops march on [MOR.capital.GetCapitalVictoryPointName], such a redistribution is drawing near. True to their word, the [FROM.GetAdjectiveCap] remain in support an [THIS.GetAdjectiveCap] Libya."
+  event_FRA_morocco_italy_agreement.1.d_german_ally: "$event_WWI_france_morocco_italy_agreement.2.d$\n\nPoliticians in [THIS.capital.GetCapitalVictoryPointName] wonder if [FROM.GetOldNameDefCap] would make a better ally than [GER.GetNameDef]."
+  event_FRA_morocco_italy_agreement.1.a: "We will act promptly and resolutely."
+  event_FRA_morocco_italy_agreement.1.b: "It cannot be risked."

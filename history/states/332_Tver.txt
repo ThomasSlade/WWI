@@ -6,8 +6,8 @@ state={
 		owner = SOV
 		add_core_of = SOV
 		buildings = {
-			infrastructure = 1
 			industrial_complex = 1
+			infrastructure = 1
 		}
 		victory_points = {7407 15
 		}
@@ -17,7 +17,7 @@ state={
 	provinces={
 		7296 7432 7500 7821 7822 7407 7759 7281 7917 8274 6837 6872 7099 7295
 	}
-	manpower=296274
+	manpower=253098
 	buildings_max_level_factor=1.000
 	state_category = town
 }

@@ -40,11 +40,12 @@ country_event = {
 		add_state_core = 240
 
 		SER = { country_event = wwi_serbia.7 }
+
+		ai_chance = { factor = 100 }
 	}
 
 	# Refuse
 	option = {
 		name = wwi_greece.1.b
-		ai_chance = { base = 10 }
 	}
 }

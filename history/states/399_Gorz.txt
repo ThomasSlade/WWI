@@ -8,7 +8,11 @@ state={
 		add_core_of = ITA
 		add_core_of = SCS
 		buildings = {
+			industrial_complex = 1
 			infrastructure = 2
+			9261 = {
+				bunker = 2
+			}
 		}
 		victory_points = {9264 5
 		}
@@ -20,7 +24,7 @@ state={
 	provinces={
 		4674 9254 9260 9261 9262 9263 9264 9265 9266 5555 9267
 	}
-	manpower=311037
+	manpower=311077
 	buildings_max_level_factor=1.000
 	state_category=town
 }

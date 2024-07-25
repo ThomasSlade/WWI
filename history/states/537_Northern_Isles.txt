@@ -1,0 +1,30 @@
+#COLOR 156 41 121
+state={
+	id=537
+	name=537_Northern_Isles
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+			dockyard = 1
+			12318 = {
+				naval_base = 1
+			}
+			12124 = {
+				naval_base = 6
+			}
+		}
+		victory_points = {12318 2
+		}
+		victory_points = {12124 2
+		}
+	}
+	provinces={
+		12128 12226 12174 12144 12274 12117 12379 12124 12318
+	}
+	manpower=17636
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

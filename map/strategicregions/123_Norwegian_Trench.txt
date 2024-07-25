@@ -1,0 +1,10 @@
+#COLOR 16 5 49
+strategic_region={
+	id=123
+	name=123_Norwegian_Trench
+	provinces={
+		11873 11876 12645 11847 12012 11889 11832 11867 11900 11807
+	}
+	weather={
+	}
+}

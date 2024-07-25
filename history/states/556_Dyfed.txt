@@ -1,0 +1,28 @@
+#COLOR 239 95 43
+state={
+	id=556
+	name=556_Dyfed
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			12283 = {
+				naval_base = 4
+			}
+		}
+		victory_points = {12283 5
+		}
+		victory_points = {12442 2
+		}
+		victory_points = {12571 2
+		}
+	}
+	provinces={
+		12224 12548 12442 12488 12425 12270 12399 12571 12446 12441 12346 12283 12510 12254
+	}
+	manpower=786582
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

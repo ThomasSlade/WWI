@@ -1,0 +1,31 @@
+#COLOR 214 67 113
+state={
+	id=488
+	name=488_Bolu
+	history={
+		owner = TUR
+		add_core_of = TUR
+		buildings = {
+			infrastructure = 2
+			10661 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {10661 5
+		}
+		victory_points = {11393 2
+		}
+		victory_points = {11575 2
+		}
+		victory_points = {10660 2
+		}
+		victory_points = {11609 2
+		}
+	}
+	provinces={
+		10624 11393 10892 11023 10650 11291 10780 11037 10660 10661 11559 11183 11311 11440 11441 11575 10941 10823 11593 10704 11218 11092 11476 11350 11609 10721 11107 10857 11626 11375 11390
+	}
+	manpower=435634
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

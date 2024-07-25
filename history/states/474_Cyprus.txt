@@ -1,0 +1,31 @@
+#COLOR 184 37 44
+state={
+	id=474
+	name=474_Cyprus
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			11109 = {
+				naval_base = 1
+			}
+			10829 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {11656 5
+		}
+		victory_points = {10829 2
+		}
+		victory_points = {11109 2
+		}
+	}
+	provinces={
+		11656 10641 10642 10411 10432 10562 10572 10829 10575 10962 10584 10974 11105 10466 11234 11109 10478 10484 10869
+	}
+	manpower=625209
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

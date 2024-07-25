@@ -1,0 +1,32 @@
+#COLOR 190 105 55
+state={
+	id=509
+	name=509_Trablus
+	history={
+		owner = TUR
+		add_core_of = TUR
+		add_core_of = ITA
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+			11715 = {
+				naval_base = 1
+			}
+			11743 = {
+				naval_base = 3
+			}
+		}
+		victory_points = {11743 15
+		}
+		victory_points = {11715 2
+		}
+		victory_points = {11736 2
+		}
+	}
+	provinces={
+		11776 11715 11686 11743 11725 11695 11736 11741 11711
+	}
+	manpower=214966
+	buildings_max_level_factor=1.000
+	state_category=town
+}

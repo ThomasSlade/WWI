@@ -4,4 +4,6 @@ continents = {
 	central_europe
 	western_europe
 	south_europe
+	middle_east
+	north_africa
 }

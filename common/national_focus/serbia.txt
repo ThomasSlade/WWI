@@ -367,7 +367,7 @@ focus_tree = {
 		prerequisite = { focus = SER_assassinate_heads_of_state }
 		x = -2
 		y = 1
-		relative_position_id = decision_SER_assassinate_heads_of_state
+		relative_position_id = SER_assassinate_heads_of_state
 		cost = 10
 		ai_will_do = {
 			factor = 1

@@ -1,0 +1,12 @@
+areas = {
+	libya = {
+		strategic_regions = {
+			109 110
+		}
+	}
+	balkans = {
+		continents = {
+			balkans
+		}
+	}
+}

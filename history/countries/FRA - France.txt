@@ -8,7 +8,6 @@ starting_train_buffer = 1.5
 set_stability = 0.75 
 set_war_support = 0.3
 
-# Starting tech
 set_technology = {
 	basic_train = 1
 	infantry_weapons = 1
@@ -33,7 +32,7 @@ set_popularities = {
 }
 
 add_ideas = {
-	extensive_conscription
+	limited_conscription
 }
 
 recruit_character = FRA_raymond_poincare

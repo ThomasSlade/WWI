@@ -1,0 +1,20 @@
+#COLOR 158 27 67
+state={
+	id=462
+	name=462_Elazig
+	history={
+		owner = TUR
+		add_core_of = TUR
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {10574 5
+		}
+	}
+	provinces={
+		10464 10752 10881 10563 10343 10313 10698 11337 10574 11087 10778 10420 10454 11318 10362 11099 10334
+	}
+	manpower=301361
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

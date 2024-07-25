@@ -1,0 +1,30 @@
+#COLOR 237 168 85
+state={
+	id=503
+	name=503_Icel
+	history={
+		owner = TUR
+		add_core_of = TUR
+		buildings = {
+			infrastructure = 1
+			dockyard = 1
+			11435 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {11517 5
+		}
+		victory_points = {11435 2
+		}
+		victory_points = {10749 2
+		}
+		victory_points = {11114 2
+		}
+	}
+	provinces={
+		11415 11550 11173 10918 11435 11055 11314 11062 10808 11579 10749 10696 10716 11616 11620 11623 11114 11501 11506 11508 11517 10878
+	}
+	manpower=281815
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

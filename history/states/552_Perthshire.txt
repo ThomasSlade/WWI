@@ -1,0 +1,34 @@
+#COLOR 221 122 88
+state={
+	id=552
+	name=552_Perthshire
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+			12306 = {
+				naval_base = 3
+			}
+		}
+		victory_points = {12373 5
+		}
+		victory_points = {12502 5
+		}
+		victory_points = {12313 2
+		}
+		victory_points = {12443 2
+		}
+		victory_points = {12306 2
+		}
+		victory_points = {12420 2
+		}
+	}
+	provinces={
+		12420 12427 12306 12563 12313 12443 12573 12459 12343 12487 12490 12499 12373 12502 12251 12256 12519 12265 12538 12407 12410 12284 12542
+	}
+	manpower=1144160
+	buildings_max_level_factor=1.000
+	state_category=town
+}

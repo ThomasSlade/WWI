@@ -1,0 +1,33 @@
+#COLOR 109 74 47
+state={
+	id=527
+	name=527_Northumberland
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+			dockyard = 2
+			12093 = {
+				naval_base = 3
+			}
+		}
+		victory_points = {12069 15
+		}
+		victory_points = {12156 5
+		}
+		victory_points = {12197 2
+		}
+		victory_points = {12093 2
+		}
+		victory_points = {12034 2
+		}
+	}
+	provinces={
+		12034 12132 12069 12165 12197 12230 12260 12093 12157 12271 12208 12018 12116 11992 12121 12156 11997 11998
+	}
+	manpower=1239838
+	buildings_max_level_factor=1.000
+	state_category=town
+}

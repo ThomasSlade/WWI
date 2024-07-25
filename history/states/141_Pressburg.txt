@@ -8,8 +8,8 @@ state={
 		add_core_of = CZE
 		add_core_of = SLO
 		buildings = {
-			infrastructure = 2
 			industrial_complex = 1
+			infrastructure = 2
 		}
 		victory_points = {3976 15
 		}
@@ -23,7 +23,7 @@ state={
 	provinces={
 		3974 3975 3976 3983 3863 3735 3892 4025 3771 3772 4166 4041 3789 3792 1875 3797 3798 3925 3804 3939 3947 3827 4089 3837
 	}
-	manpower=398245
+	manpower=398240
 	buildings_max_level_factor=1.000
 	state_category = city
 }

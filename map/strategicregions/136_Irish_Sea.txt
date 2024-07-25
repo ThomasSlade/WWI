@@ -1,0 +1,10 @@
+#COLOR 173 228 222
+strategic_region={
+	id=136
+	name=136_Irish_Sea
+	provinces={
+		11851 12631 12634 12635 12637
+	}
+	weather={
+	}
+}

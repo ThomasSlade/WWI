@@ -7,6 +7,7 @@ state={
 		add_core_of = FRA
 		buildings = {
 			infrastructure = 1
+			arms_factory = 1
 		}
 		victory_points = {1730 5
 		}
@@ -16,7 +17,7 @@ state={
 	provinces={
 		2304 2436 2437 2317 2331 2461 2464 2347 2348 2349 2479 2352 695 2231 2367 2369 1730 2503 1869 2527 2412 2293 2551 2302
 	}
-	manpower=503603
+	manpower=520118
 	buildings_max_level_factor=1.000
 	state_category = town
 }

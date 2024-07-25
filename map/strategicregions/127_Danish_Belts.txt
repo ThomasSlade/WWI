@@ -1,0 +1,10 @@
+#COLOR 33 145 80
+strategic_region={
+	id=127
+	name=127_Danish_Belts
+	provinces={
+		1155 104 11991 11903 12047 12031 11830 11895 1369 11837 11871
+	}
+	weather={
+	}
+}

@@ -1,0 +1,31 @@
+#COLOR 225 40 87
+state={
+	id=553
+	name=553_East_Anglia
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+		}
+		victory_points = {12545 15
+		}
+		victory_points = {12357 5
+		}
+		victory_points = {12240 5
+		}
+		victory_points = {12275 2
+		}
+		victory_points = {12550 2
+		}
+		victory_points = {12405 2
+		}
+	}
+	provinces={
+		12417 12545 12546 12293 12550 12297 12430 12560 12454 12336 12225 12482 12357 12485 12240 12509 12273 12275 12405 12285 12286
+	}
+	manpower=1089487
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

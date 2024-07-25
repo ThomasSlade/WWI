@@ -6,9 +6,12 @@ state={
 		owner = BUL
 		add_core_of = BUL
 		buildings = {
-			infrastructure = 2
 			industrial_complex = 2
+			infrastructure = 2
 			arms_factory = 2
+			5589 = {
+				bunker = 1
+			}
 		}
 		victory_points = {5235 5
 		}

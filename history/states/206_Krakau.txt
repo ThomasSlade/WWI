@@ -8,11 +8,8 @@ state={
 		add_core_of = POL
 		add_core_of = GLD
 		buildings = {
-			infrastructure = 2
 			industrial_complex = 1
-			4833 = {
-				naval_base = 1
-			}
+			infrastructure = 2
 		}
 		victory_points = {4808 25
 		}
@@ -28,7 +25,7 @@ state={
 	provinces={
 		4866 4613 4486 4872 5003 5012 4502 5015 4632 4889 5017 5025 4388 4522 4912 4286 5058 4421 4680 4808 4299 4940 4431 4687 4688 4689 4815 4817 4947 4570 4703 4704 4833 4842 4459 4332 4333 4973 4847
 	}
-	manpower=2714453
+	manpower=2714799
 	buildings_max_level_factor=1.000
 	state_category = city
 }

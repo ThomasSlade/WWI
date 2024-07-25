@@ -1,0 +1,50 @@
+#COLOR 83 46 55
+state={
+	id=523
+	name=523_Lancashire
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			industrial_complex = 3
+			infrastructure = 3
+			dockyard = 1
+			arms_factory = 1
+			12026 = {
+				naval_base = 4
+			}
+			12087 = {
+				bunker = 4
+			}
+			11923 = {
+				bunker = 4
+			}
+		}
+		victory_points = {12026 25
+		}
+		victory_points = {11950 15
+		}
+		victory_points = {11923 5
+		}
+		victory_points = {11971 5
+		}
+		victory_points = {12138 5
+		}
+		victory_points = {12033 5
+		}
+		victory_points = {12011 5
+		}
+		victory_points = {12045 2
+		}
+		victory_points = {12017 2
+		}
+		victory_points = {11949 2
+		}
+	}
+	provinces={
+		12033 12045 11923 12055 11927 11949 11950 12077 12083 11957 12087 12089 12091 11967 11971 12138 12011 12017 12149 12026
+	}
+	manpower=2497312
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

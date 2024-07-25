@@ -1,0 +1,26 @@
+#COLOR 190 164 55
+state={
+	id=510
+	name=510_Fezzan
+	history={
+		owner = TUR
+		add_core_of = TUR
+		add_core_of = ITA
+		buildings = {
+		}
+		victory_points = {11685 2
+		}
+		victory_points = {11709 2
+		}
+		victory_points = {11680 2
+		}
+		victory_points = {11757 2
+		}
+	}
+	provinces={
+		11781 11784 11666 11667 11668 11669 11671 11675 11676 11677 11680 11681 11684 11685 11690 11709 11718 11719 11724 11732 11734 11740 11744 11748 11750 11753 11754 11757 11765 11768
+	}
+	manpower=447713
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

@@ -1,0 +1,26 @@
+#COLOR 67 55 5
+state={
+	id=438
+	name=438_Elisavetopol
+	history={
+		owner = SOV
+		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {545 5
+		}
+		victory_points = {10062 2
+		}
+		victory_points = {10214 2
+		}
+		victory_points = {10354 2
+		}
+	}
+	provinces={
+		258 259 1546 1293 147 10395 10142 10271 545 424 10165 10296 190 10057 10062 10063 1493 10200 601 10075 10081 10083 484 10214 10354 764
+	}
+	manpower=980385
+	buildings_max_level_factor=1.000
+	state_category=town
+}

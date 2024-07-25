@@ -8,6 +8,9 @@ state={
 		add_core_of = UKR
 		buildings = {
 			infrastructure = 1
+			8442 = {
+				naval_base = 1
+			}
 		}
 		victory_points = {8442 2
 		}
@@ -15,7 +18,7 @@ state={
 	provinces={
 		8129 8481 8166 8233 8074 8787 8279 8055 8633 8442
 	}
-	manpower=220003
+	manpower=187942
 	buildings_max_level_factor=1.000
 	state_category = rural
 }

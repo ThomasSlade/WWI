@@ -1,0 +1,34 @@
+#COLOR 128 15 0
+state={
+	id=532
+	name=532_West_Midlands
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			industrial_complex = 2
+			infrastructure = 3
+			arms_factory = 3
+		}
+		victory_points = {12098 25
+		}
+		victory_points = {12391 5
+		}
+		victory_points = {12404 5
+		}
+		victory_points = {12258 5
+		}
+		victory_points = {12140 2
+		}
+		victory_points = {12001 2
+		}
+		victory_points = {12185 2
+		}
+	}
+	provinces={
+		12032 12164 12307 12054 12185 12064 12195 12068 12323 12327 12202 12207 12212 12221 12351 12098 12106 12368 12243 12246 12122 12001 12258 12263 12008 12009 12391 12140 12400 12404 12153
+	}
+	manpower=3033458
+	buildings_max_level_factor=1.000
+	state_category=city
+}

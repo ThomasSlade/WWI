@@ -7,7 +7,7 @@ state={
 		add_core_of = TUR
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
+			arms_factory = 1
 		}
 		victory_points = {6290 2
 		}
@@ -15,7 +15,7 @@ state={
 	provinces={
 		6274 6280 6253 6062 6097 6193 6290 6291
 	}
-	manpower=92466
+	manpower=48487
 	buildings_max_level_factor=1.000
 	state_category = rural
 }

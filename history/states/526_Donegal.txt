@@ -1,0 +1,23 @@
+#COLOR 102 209 84
+state={
+	id=526
+	name=526_Donegal
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+		}
+		victory_points = {11979 2
+		}
+		victory_points = {12062 2
+		}
+	}
+	provinces={
+		12000 12038 11979 12046 12048 12021 11962 12090 12062
+	}
+	manpower=157316
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

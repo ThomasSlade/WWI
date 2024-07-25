@@ -1,0 +1,24 @@
+#COLOR 214 146 115
+state={
+	id=489
+	name=489_Chernyi_Yar
+	history={
+		owner = SOV
+		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {11427 2
+		}
+		victory_points = {11498 2
+		}
+		victory_points = {11554 2
+		}
+	}
+	provinces={
+		11266 11522 11016 11657 10890 11658 11405 11407 11284 11286 10904 11033 11554 11427 11172 11434 11562 11436 11569 11443 11572 10816 11073 11075 11590 11599 11472 10836 11221 10838 11096 11613 11614 11488 11624 11241 11498 11630 11507 10997
+	}
+	manpower=444279
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

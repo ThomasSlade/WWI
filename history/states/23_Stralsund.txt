@@ -7,6 +7,8 @@ state={
 		add_core_of = GER
 		buildings = {
 			infrastructure = 1
+			dockyard = 1
+			arms_factory = 1
 		}
 		victory_points = {3124 5
 		}
@@ -16,7 +18,7 @@ state={
 	provinces={
 		3073 3108 3045 3110 3177 3244 2990 1294 3087 3057 2962 3124 3228 2974 3103
 	}
-	manpower=249013
+	manpower=249074
 	buildings_max_level_factor=1.000
 	state_category = rural
 }

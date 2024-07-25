@@ -2,10 +2,21 @@
 state={
 	id=427
 	name=427_Bern
+	resources={
+		chromium = 999
+		tungsten = 999
+		aluminium = 999
+		oil = 999
+		rubber = 999
+		steel = 999
+	}
 	history={
 		owner = SWI
 		add_core_of = SWI
 		buildings = {
+			industrial_complex = 1
+			infrastructure = 3
+			arms_factory = 1
 		}
 		victory_points = {9871 15
 		}
@@ -17,7 +28,7 @@ state={
 	provinces={
 		9984 9990 9998 9871 10007 9902 9910 9785 9657 9916 9793 9922 9669 9675 9684 9952 9827 9828 9956 9959 9964 9968 9974 9847 9848 9977 9854
 	}
-	manpower=0
+	manpower=639647
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=town
 }

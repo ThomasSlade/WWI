@@ -1,0 +1,33 @@
+#COLOR 194 75 115
+state={
+	id=544
+	name=544_Glamorgan
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			industrial_complex = 2
+			infrastructure = 3
+			arms_factory = 1
+			12463 = {
+				naval_base = 3
+			}
+		}
+		victory_points = {12372 15
+		}
+		victory_points = {12463 15
+		}
+		victory_points = {12350 5
+		}
+		victory_points = {12388 5
+		}
+		victory_points = {12250 2
+		}
+	}
+	provinces={
+		12514 12388 12553 12235 12555 12431 12432 12463 12528 12531 12372 12437 12250 12350
+	}
+	manpower=1263647
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,10 @@
+#COLOR 94 233 212
+strategic_region={
+	id=140
+	name=140_Levantine_Sea
+	provinces={
+		12610 1571 1543 12616 12621 12590 1711 12622 1651 12595 1435
+	}
+	weather={
+	}
+}

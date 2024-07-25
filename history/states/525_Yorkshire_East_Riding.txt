@@ -1,0 +1,33 @@
+#COLOR 91 13 6
+state={
+	id=525
+	name=525_Yorkshire_East_Riding
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+			dockyard = 1
+			12118 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {12118 15
+		}
+		victory_points = {12172 5
+		}
+		victory_points = {12023 5
+		}
+		victory_points = {11948 2
+		}
+		victory_points = {12198 2
+		}
+	}
+	provinces={
+		12218 12099 12198 11916 11948 12172 12143 11984 12016 12242 11924 11956 11926 12023 12025 11929 12118 12213
+	}
+	manpower=1039665
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

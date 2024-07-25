@@ -1,0 +1,10 @@
+#COLOR 172 100 244
+strategic_region={
+	id=134
+	name=134_Sea_of_Bothnia
+	provinces={
+		12227 12423 12234 12204 12334 12115 12148 12341 12311
+	}
+	weather={
+	}
+}

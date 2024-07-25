@@ -7,6 +7,7 @@ state={
 		add_core_of = GER
 		add_core_of = NAS
 		buildings = {
+			industrial_complex = 1
 			infrastructure = 2
 		}
 		victory_points = {2036 5
@@ -15,7 +16,7 @@ state={
 	provinces={
 		2057 2000 2035 2036 1973 2038 1975 2039 1945 2107 2109 2046
 	}
-	manpower=868964
+	manpower=869179
 	buildings_max_level_factor=1.000
 	state_category = town
 }

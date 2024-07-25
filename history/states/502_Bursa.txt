@@ -1,0 +1,28 @@
+#COLOR 234 152 79
+state={
+	id=502
+	name=502_Bursa
+	history={
+		owner = TUR
+		add_core_of = TUR
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+			11553 = {
+				naval_base = 3
+			}
+		}
+		victory_points = {10958 25
+		}
+		victory_points = {11553 2
+		}
+		victory_points = {11573 2
+		}
+	}
+	provinces={
+		10656 11008 11330 11489 11553 10919 11208 11272 11529 11373 10958 11636 11573 11097 11516
+	}
+	manpower=154500
+	buildings_max_level_factor=1.000
+	state_category=town
+}

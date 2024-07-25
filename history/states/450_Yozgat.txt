@@ -1,0 +1,28 @@
+#COLOR 122 19 66
+state={
+	id=450
+	name=450_Yozgat
+	history={
+		owner = TUR
+		add_core_of = TUR
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {11647 5
+		}
+		victory_points = {10114 5
+		}
+		victory_points = {10105 5
+		}
+		victory_points = {10739 2
+		}
+		victory_points = {10195 2
+		}
+	}
+	provinces={
+		10114 10118 10130 10770 10645 10777 10397 10403 10669 10291 10292 10419 10167 10171 10939 10177 10306 10690 10443 10702 10320 10321 10322 10195 10196 10452 10198 10459 10587 10333 10208 10341 10729 10093 10477 10991 10739 10105 10236 10237 11647
+	}
+	manpower=521958
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

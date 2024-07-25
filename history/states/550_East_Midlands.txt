@@ -1,0 +1,27 @@
+#COLOR 218 35 50
+state={
+	id=550
+	name=550_East_Midlands
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 3
+		}
+		victory_points = {12583 15
+		}
+		victory_points = {12567 5
+		}
+		victory_points = {12413 5
+		}
+		victory_points = {12505 5
+		}
+	}
+	provinces={
+		12561 12567 12568 12570 12187 12577 12580 12583 12477 12228 12492 12367 12505 12380 12381 12268 12524 12527 12403 12540 12413
+	}
+	manpower=1482044
+	buildings_max_level_factor=1.000
+	state_category=town
+}

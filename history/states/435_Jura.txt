@@ -6,6 +6,8 @@ state={
 		owner = SWI
 		add_core_of = SWI
 		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
 		}
 		victory_points = {10038 15
 		}
@@ -13,7 +15,7 @@ state={
 	provinces={
 		9954 10023 10002 10034 10038
 	}
-	manpower=0
+	manpower=107854
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=town
 }

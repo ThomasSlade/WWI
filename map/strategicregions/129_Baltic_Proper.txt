@@ -1,0 +1,10 @@
+#COLOR 37 78 121
+strategic_region={
+	id=129
+	name=129_Baltic_Proper
+	provinces={
+		1089 11874 11910 11879 11817 12010 11858 11954 11989 11960 11833 12027
+	}
+	weather={
+	}
+}

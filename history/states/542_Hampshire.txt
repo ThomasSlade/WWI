@@ -1,0 +1,43 @@
+#COLOR 183 79 30
+state={
+	id=542
+	name=542_Hampshire
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+			dockyard = 2
+			12171 = {
+				naval_base = 8
+			}
+		}
+		victory_points = {12280 15
+		}
+		victory_points = {12171 15
+		}
+		victory_points = {12455 5
+		}
+		victory_points = {12325 5
+		}
+		victory_points = {12362 2
+		}
+		victory_points = {12361 2
+		}
+		victory_points = {12498 2
+		}
+		victory_points = {12150 2
+		}
+		victory_points = {12479 2
+		}
+		victory_points = {11181 2
+		}
+	}
+	provinces={
+		12547 12549 12298 12171 12426 12304 12180 12325 12199 12455 11181 12462 12479 12361 12362 12498 12375 12377 12255 12257 12648 12264 872 12529 12150 12280 12155 12412
+	}
+	manpower=1918251
+	buildings_max_level_factor=1.000
+	state_category=town
+}

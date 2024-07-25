@@ -1,0 +1,22 @@
+#COLOR 168 99 9
+state={
+	id=464
+	name=464_Karahisar
+	history={
+		owner = TUR
+		add_core_of = TUR
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {11017 2
+		}
+		victory_points = {11223 2
+		}
+	}
+	provinces={
+		10436 10374 11017 10474 10348 10764 10544 10481 10580 11220 10678 11223 11348 11165
+	}
+	manpower=232395
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

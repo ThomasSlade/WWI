@@ -7,12 +7,13 @@ state={
 		add_core_of = AUS
 		buildings = {
 			infrastructure = 1
+			arms_factory = 1
 		}
 	}
 	provinces={
 		4384 4134 4298 4108 4186 4284 4094
 	}
-	manpower=164241
+	manpower=164262
 	buildings_max_level_factor=1.000
 	state_category = rural
 }

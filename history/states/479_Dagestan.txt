@@ -1,0 +1,27 @@
+#COLOR 188 111 41
+state={
+	id=479
+	name=479_Dagestan
+	history={
+		owner = SOV
+		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+			11297 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {11297 5
+		}
+		victory_points = {11650 2
+		}
+		victory_points = {10556 2
+		}
+	}
+	provinces={
+		11648 11650 11018 10636 10637 10638 11537 10389 11547 10911 11297 10786 11171 10917 11309 10286 10798 11056 10935 10807 10556 10945 11329 10957 11515 10595 10599 11371 11372 11503 11250 10361 10619
+	}
+	manpower=654606
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

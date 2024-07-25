@@ -1,0 +1,27 @@
+#COLOR 195 81 46
+state={
+	id=481
+	name=481_Antalya
+	history={
+		owner = TUR
+		add_core_of = TUR
+		buildings = {
+			infrastructure = 1
+			11378 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {11378 5
+		}
+		victory_points = {11510 2
+		}
+		victory_points = {11356 2
+		}
+	}
+	provinces={
+		10756 10757 11403 11532 10893 10900 11541 11545 10910 11294 11174 10791 11430 11178 11438 10815 10944 11512 11202 11589 10568 11601 10834 10965 11095 11356 11102 10592 10979 11112 11369 10733 11378 10614 11382 11510 11007
+	}
+	manpower=150053
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

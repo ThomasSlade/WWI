@@ -1,0 +1,21 @@
+#COLOR 128 101 80
+state={
+	id=533
+	name=533_Argyll
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 1
+		}
+		victory_points = {12060 2
+		}
+	}
+	provinces={
+		12192 12162 12103 12231 12232 12266 12107 12330 12173 12078 12110 12113 12151 12056 12281 12060 12061
+	}
+	manpower=292411
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,34 @@
+#COLOR 184 106 97
+state={
+	id=543
+	name=543_Inverness_Shire
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			12411 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {12247 15
+		}
+		victory_points = {12411 5
+		}
+		victory_points = {12329 2
+		}
+		victory_points = {12456 2
+		}
+		victory_points = {12511 2
+		}
+		victory_points = {12320 2
+		}
+	}
+	provinces={
+		12544 12301 12434 12439 12319 12320 12191 12324 12456 12201 12329 12333 12338 12214 12222 12353 12360 12237 12247 12248 12504 12511 12385 12259 12520 12394 12539 12530 12279 12409 12411 12541
+	}
+	manpower=462778
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

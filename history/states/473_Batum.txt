@@ -1,0 +1,24 @@
+#COLOR 182 138 11
+state={
+	id=473
+	name=473_Batum
+	history={
+		owner = SOV
+		add_core_of = SOV
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			11556 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {11556 5
+		}
+	}
+	provinces={
+		11556 11469 10606 11445 10776 10969
+	}
+	manpower=106449
+	buildings_max_level_factor=1.000
+	state_category=town
+}

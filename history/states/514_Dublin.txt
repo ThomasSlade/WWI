@@ -1,0 +1,30 @@
+#COLOR 7 90 44
+state={
+	id=514
+	name=514_Dublin
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			industrial_complex = 2
+			infrastructure = 3
+			dockyard = 1
+			arms_factory = 1
+			893 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {893 25
+		}
+		victory_points = {656 2
+		}
+		victory_points = {11856 2
+		}
+	}
+	provinces={
+		11810 11812 11819 656 11856 1080 11865 893 11935
+	}
+	manpower=741610
+	buildings_max_level_factor=1.000
+	state_category=city
+}

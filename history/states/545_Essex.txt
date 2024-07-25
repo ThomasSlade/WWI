@@ -1,0 +1,25 @@
+#COLOR 204 97 61
+state={
+	id=545
+	name=545_Essex
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+		}
+		victory_points = {12356 2
+		}
+		victory_points = {12370 2
+		}
+		victory_points = {12300 2
+		}
+	}
+	provinces={
+		12448 12419 12356 12453 12300 12460 12557 12370 12466 12276 12532 12574
+	}
+	manpower=623740
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -2,10 +2,28 @@
 state={
 	id=402
 	name=402_Lazio
+	resources={
+		chromium = 999
+		tungsten = 999
+		aluminium = 999
+		oil = 999
+		rubber = 999
+		steel = 999
+	}
 	history={
 		owner = ITA
 		add_core_of = ITA
 		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+			dockyard = 1
+			arms_factory = 2
+			9427 = {
+				naval_base = 2
+			}
+			9417 = {
+				naval_base = 3
+			}
 		}
 		victory_points = {9419 50
 		}
@@ -23,7 +41,7 @@ state={
 	provinces={
 		9349 1542 9355 399 9359 9361 532 9367 280 665 156 9376 425 9386 9392 9393 820 9271 9273 9279 9280 577 9281 9283 9284 9410 9417 9419 9294 9298 9427 9302 9303 9306 9437 738 9446 9451 1135 9328 9338
 	}
-	manpower=0
+	manpower=1212573
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=city
 }

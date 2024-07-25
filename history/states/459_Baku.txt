@@ -1,0 +1,27 @@
+#COLOR 150 152 13
+state={
+	id=459
+	name=459_Baku
+	history={
+		owner = SOV
+		add_core_of = SOV
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+			arms_factory = 1
+			11003 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {11003 25
+		}
+		victory_points = {10430 2
+		}
+	}
+	provinces={
+		10215 10767 10961 10228 11003 11645 10430
+	}
+	manpower=161460
+	buildings_max_level_factor=1.000
+	state_category=city
+}

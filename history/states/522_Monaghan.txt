@@ -1,0 +1,21 @@
+#COLOR 60 142 31
+state={
+	id=522
+	name=522_Monaghan
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+		}
+		victory_points = {11955 2
+		}
+	}
+	provinces={
+		12067 11945 11915 11980 11951 11857 11955 12024 11805
+	}
+	manpower=280124
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

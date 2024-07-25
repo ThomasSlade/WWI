@@ -1,0 +1,69 @@
+focus_tree = {
+	id = french_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 100 y = 1400 }
+
+	focus = {
+		id = FRA_dummy
+		icon = GFX__shine
+		x = 0
+		y = 0
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_occupy_fes
+		icon = GFX__shine
+		prerequisite = { focus = FRA_dummy }
+		x = 0
+		y = 1
+		relative_position_id = FRA_dummy
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			# TODO: Give resource rights on morocco or something.
+
+			if = {
+				limit = { NOT = { has_war_with = ITA } }
+				ITA = {
+					country_event = { id = event_FRA_morocco_italy_agreement.1 days = 1 }
+					effect_tooltip = {
+						custom_effect_tooltip = if_they_accept_tt
+						create_wargoal = {
+							type = take_claimed_state
+							target = TUR
+						}
+						effect_boost_popularity_of_root_ideology_10 = yes
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,1 +1,25 @@
-﻿
+﻿units = {
+	fleet = {
+		name = "Black Sea Fleet"
+		naval_base = 6153 # Istanbul
+		task_force = {
+			name = "Strike Force"
+			location = 6153 # Istanbul
+
+			# Battleships
+			ship = {
+				name = "Barbaros Hayreddin"
+				definition = battleship
+				start_experience_factor = 0.25
+				equipment = {
+					ship_hull_heavy_1 = {
+						amount = 1
+						owner = GER
+						# From 1891
+						version_name = "Kurfürst Friedrich Wilhelm-class"
+					}
+				}
+			}
+		}
+	}
+}

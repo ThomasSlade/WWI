@@ -1,0 +1,35 @@
+#COLOR 185 32 107
+state={
+	id=476
+	name=476_Samsun
+	history={
+		owner = TUR
+		add_core_of = TUR
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			11475 = {
+				naval_base = 1
+			}
+			11380 = {
+				naval_base = 4
+			}
+		}
+		victory_points = {11380 15
+		}
+		victory_points = {11475 5
+		}
+		victory_points = {11063 2
+		}
+		victory_points = {11495 2
+		}
+		victory_points = {10659 2
+		}
+	}
+	provinces={
+		11649 11651 10639 11168 10659 11299 10790 11558 11063 10822 11336 11215 11474 11475 10973 11495 11245 11380 10870 10491
+	}
+	manpower=286944
+	buildings_max_level_factor=1.000
+	state_category=town
+}

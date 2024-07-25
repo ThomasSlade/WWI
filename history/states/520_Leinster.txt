@@ -1,0 +1,24 @@
+#COLOR 53 137 24
+state={
+	id=520
+	name=520_Leinster
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+			11823 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {11823 5
+		}
+	}
+	provinces={
+		11973 11846 12006 11818 11823 11793 11994
+	}
+	manpower=107464
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

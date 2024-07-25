@@ -1,0 +1,10 @@
+#COLOR 10 34 78
+strategic_region={
+	id=121
+	name=121_Heligoland_Bight
+	provinces={
+		1570 11843 708 11821 11890 1204 11799
+	}
+	weather={
+	}
+}

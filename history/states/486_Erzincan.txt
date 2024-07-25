@@ -1,0 +1,25 @@
+#COLOR 211 80 34
+state={
+	id=486
+	name=486_Erzincan
+	history={
+		owner = TUR
+		add_core_of = TUR
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+		}
+		victory_points = {11450 5
+		}
+		victory_points = {11459 2
+		}
+		victory_points = {10781 2
+		}
+	}
+	provinces={
+		10627 10886 10633 11278 11535 10781 10792 11561 10804 11450 11578 10814 11459 11461 10701 11597 11088 10708 11355 11104 11238 10743 10877
+	}
+	manpower=233830
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

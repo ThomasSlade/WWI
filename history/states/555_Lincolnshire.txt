@@ -1,0 +1,25 @@
+#COLOR 228 158 89
+state={
+	id=555
+	name=555_Lincolnshire
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+		}
+		victory_points = {12272 5
+		}
+		victory_points = {12518 5
+		}
+		victory_points = {12369 2
+		}
+	}
+	provinces={
+		12288 12261 12518 12569 12522 12495 12272 12369 12444 12435 12469 12374 12345 12316
+	}
+	manpower=868592
+	buildings_max_level_factor=1.000
+	state_category=town
+}

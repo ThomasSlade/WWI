@@ -7,8 +7,8 @@ state={
 		add_core_of = GER
 		add_core_of = SAX
 		buildings = {
-			infrastructure = 3
 			industrial_complex = 2
+			infrastructure = 3
 			arms_factory = 1
 		}
 		victory_points = {3461 15
@@ -29,7 +29,7 @@ state={
 	provinces={
 		3585 3460 3461 3599 3472 3600 3490 3377 3507 3385 3641 3388 3644 3520 3521 3654 3399 3401 3659 3535 3412 3669 3414 3416 3677 3426 3683 3567 3442 3444
 	}
-	manpower=3935037
+	manpower=3936013
 	buildings_max_level_factor=1.000
 	state_category = metropolis
 }

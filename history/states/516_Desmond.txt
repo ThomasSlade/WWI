@@ -1,0 +1,39 @@
+#COLOR 34 82 39
+state={
+	id=516
+	name=516_Desmond
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+			dockyard = 1
+			arms_factory = 1
+			11885 = {
+				naval_base = 2
+			}
+			11791 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {11885 15
+		}
+		victory_points = {11791 15
+		}
+		victory_points = {11898 2
+		}
+		victory_points = {11809 2
+		}
+		victory_points = {11839 2
+		}
+		victory_points = {11836 2
+		}
+	}
+	provinces={
+		11904 11914 11791 11798 1174 1048 11930 11808 11809 11938 11940 11941 11815 11822 11825 11826 11827 11836 11964 11839 11840 11844 11848 11855 11985 11863 11877 11883 11885 11891 11892 11894 11898 11902
+	}
+	manpower=505341
+	buildings_max_level_factor=1.000
+	state_category=town
+}

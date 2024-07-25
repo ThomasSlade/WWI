@@ -1,0 +1,33 @@
+#COLOR 228 170 73
+state={
+	id=478
+	name=478_Benghazi
+	history={
+		owner = TUR
+		add_core_of = TUR
+		add_core_of = ITA
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 2
+			11729 = {
+				naval_base = 3
+			}
+		}
+		victory_points = {11729 15
+		}
+		victory_points = {11764 2
+		}
+		victory_points = {11721 2
+		}
+		victory_points = {11737 2
+		}
+		victory_points = {11679 2
+		}
+	}
+	provinces={
+		11780 11787 11788 11670 11672 11673 12445 11678 11679 11682 11683 11687 11691 11693 11698 11702 11703 11705 11706 11710 11716 11721 11729 11730 11735 11737 11739 11742 11745 11747 11749 11756 11762 11764 11772
+	}
+	manpower=1902060
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

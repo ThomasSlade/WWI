@@ -1,0 +1,25 @@
+#COLOR 158 7 0
+state={
+	id=461
+	name=461_Erzurum
+	history={
+		owner = TUR
+		add_core_of = TUR
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+		}
+		victory_points = {11368 15
+		}
+		victory_points = {11320 2
+		}
+		victory_points = {10202 2
+		}
+	}
+	provinces={
+		11392 11138 11268 10250 11151 10390 10391 10907 11293 10404 11047 11051 10412 11185 10551 11320 10297 10298 10937 10940 10305 10564 11078 10824 10952 11338 10445 10578 10325 11093 10202 10589 10976 10977 11368 10229 10492 10365
+	}
+	manpower=434953
+	buildings_max_level_factor=1.000
+	state_category=town
+}

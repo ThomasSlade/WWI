@@ -1,0 +1,26 @@
+#COLOR 176 63 57
+state={
+	id=539
+	name=539_Outer_Hebrides
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 1
+			12535 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {12535 5
+		}
+		victory_points = {12359 2
+		}
+	}
+	provinces={
+		12359 12141 12337 12215 12376 12535
+	}
+	manpower=26777
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

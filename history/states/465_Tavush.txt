@@ -1,0 +1,20 @@
+#COLOR 168 114 5
+state={
+	id=465
+	name=465_Tavush
+	history={
+		owner = SOV
+		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {10417 2
+		}
+	}
+	provinces={
+		10950 10854 11468 10417 10867 11197
+	}
+	manpower=138884
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

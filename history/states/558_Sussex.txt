@@ -1,0 +1,32 @@
+#COLOR 251 99 105
+state={
+	id=558
+	name=558_Sussex
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			infrastructure = 2
+			dockyard = 1
+			arms_factory = 1
+		}
+		victory_points = {12396 5
+		}
+		victory_points = {12447 5
+		}
+		victory_points = {12464 5
+		}
+		victory_points = {12506 5
+		}
+		victory_points = {12245 2
+		}
+		victory_points = {12566 2
+		}
+	}
+	provinces={
+		12449 12358 12582 12458 12554 12396 12586 12464 12496 12245 12565 12566 12312 12506 12440 12447
+	}
+	manpower=465600
+	buildings_max_level_factor=1.000
+	state_category=town
+}

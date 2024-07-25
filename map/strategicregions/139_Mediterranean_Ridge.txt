@@ -1,0 +1,10 @@
+#COLOR 98 11 146
+strategic_region={
+	id=139
+	name=139_Mediterranean_Ridge
+	provinces={
+		12613 12617 12587 12625 12594 12597 12630 12636 1208 12604 12606
+	}
+	weather={
+	}
+}

@@ -8,6 +8,10 @@ state={
 		add_core_of = UKR
 		buildings = {
 			infrastructure = 2
+			arms_factory = 1
+			6551 = {
+				naval_base = 2
+			}
 			6675 = {
 				naval_base = 3
 			}
@@ -22,7 +26,7 @@ state={
 	provinces={
 		6786 6533 6413 6674 6675 6551 6561 6562 6439 6699 6956 6447 5305 6843 6460 6596 6470 6472 6863 6356 6890 7021 6383 6384 6648
 	}
-	manpower=878453
+	manpower=750435
 	buildings_max_level_factor=1.000
 	state_category = town
 }

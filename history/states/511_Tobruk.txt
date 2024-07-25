@@ -1,0 +1,36 @@
+#COLOR 213 160 140
+state={
+	id=511
+	name=511_Tobruk
+	history={
+		owner = TUR
+		add_core_of = TUR
+		add_core_of = ITA
+		buildings = {
+			infrastructure = 1
+			11708 = {
+				naval_base = 1
+			}
+			11783 = {
+				naval_base = 1
+			}
+			11696 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {11783 5
+		}
+		victory_points = {11696 5
+		}
+		victory_points = {11708 2
+		}
+		victory_points = {11789 2
+		}
+	}
+	provinces={
+		11777 11778 11783 11785 11789 11790 11692 11694 11696 11704 11707 11708 11712 11720 11723 11727 11728 11733 11738 11746 11755 11759 11760 11761 11767 11770
+	}
+	manpower=394499
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

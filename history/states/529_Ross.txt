@@ -1,0 +1,24 @@
+#COLOR 112 41 62
+state={
+	id=529
+	name=529_Ross
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {12059 2
+		}
+		victory_points = {12241 2
+		}
+		victory_points = {12029 2
+		}
+	}
+	provinces={
+		12160 12036 12219 12167 12168 12041 12013 12145 12050 11987 12241 12127 12119 12088 12217 12059 12029 12063
+	}
+	manpower=114430
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

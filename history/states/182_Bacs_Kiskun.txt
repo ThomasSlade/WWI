@@ -6,8 +6,8 @@ state={
 		owner = HUN
 		add_core_of = HUN
 		buildings = {
-			infrastructure = 2
 			industrial_complex = 1
+			infrastructure = 2
 		}
 		victory_points = {4675 15
 		}
@@ -23,7 +23,7 @@ state={
 	provinces={
 		4354 4487 4112 4629 3999 4135 4266 4525 4667 4668 4157 4675 4427 4307 4571 4580 4075 4591 4342
 	}
-	manpower=981123
+	manpower=981111
 	buildings_max_level_factor=1.000
 	state_category = city
 }
