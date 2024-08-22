@@ -159,9 +159,17 @@ on_actions = {
 						var:global.second_balkan_war_attacker = { tag = FROM }
 						var:global.second_balkan_war_attacker = { tag = ROOT }
 					}
+					var:global.second_balkan_war_attacker = {
+						any_enemy_country = {
+							OR = {
+								has_country_flag = flag_second_balkan_war_defender
+								has_country_flag = flag_second_balkan_war_opportunist
+							}
+						}
+					}
 				}
 
-				log = "Ending the 2nd Balkan War."
+				log = "Peace conference ended involving Balkan War Attacker '[var:global.second_balkan_war_attacker.GetName]', and the attacker no longer had any enemies with tags 'flag_second_balkan_war_defender' or 'flag_second_balkan_war_opportunist'. Ending the 2nd Balkan War."
 				set_global_flag = flag_second_balkan_war_finished
 
 				if = {

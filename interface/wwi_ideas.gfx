@@ -138,6 +138,53 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_revolutionary_decrease.dds"
 	}
 
+	# Laws
+	spriteType = {
+		name = "GFX_idea_cab_autocratic"
+		texturefile = "gfx/interface/ideas/laws/idea_cab_autocratic.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_cab_conservative"
+		texturefile = "gfx/interface/ideas/laws/idea_cab_conservative.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_cab_liberal"
+		texturefile = "gfx/interface/ideas/laws/idea_cab_liberal.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_cab_socialist"
+		texturefile = "gfx/interface/ideas/laws/idea_cab_socialist.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_cab_communist"
+		texturefile = "gfx/interface/ideas/laws/idea_cab_communist.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_gov_absolute_monarchy"
+		texturefile = "gfx/interface/ideas/laws/idea_gov_absolute_monarchy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_gov_military_dictatorship"
+		texturefile = "gfx/interface/ideas/laws/idea_gov_military_dictatorship.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_gov_constitutional_monarchy"
+		texturefile = "gfx/interface/ideas/laws/idea_gov_constitutional_monarchy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_gov_limited_democracy"
+		texturefile = "gfx/interface/ideas/laws/idea_gov_limited_democracy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_gov_liberal_democracy"
+		texturefile = "gfx/interface/ideas/laws/idea_gov_liberal_democracy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_gov_social_democracy"
+		texturefile = "gfx/interface/ideas/laws/idea_gov_social_democracy.dds"
+	}
+
 	### Country Specials ###
 	# Serbia
 	spriteType = {

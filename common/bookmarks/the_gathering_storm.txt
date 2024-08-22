@@ -23,7 +23,7 @@ bookmarks = {
 		}
 
 		"SOV"={
-			history = "GER_GATHERING_STORM_DESC"
+			history = "SOV_CONCERT_OF_EUROPE"
 			ideology = established
 		}
 

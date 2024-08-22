@@ -287,6 +287,8 @@ country_event = {
 	# Let's attack them.
 	option = {
 		name = event_WWI_balkan_league_second_balkan_war.4.a
+
+		set_country_flag = flag_second_balkan_war_opportunist
 		
 		declare_war_on = {
 			target = FROM
@@ -344,8 +346,15 @@ news_event = {
 	major = yes
 
 	immediate = {
-		log = "([THIS.GetName] news event) 2nd Balkan War ends, instigator lost."
+		if = {
+			limit = { has_global_flag = flag_attacker_win_second_balkan_war }
+			log = "([THIS.GetName] news event) 2nd Balkan War ends, instigator won."
+		}
+		else = {
+			log = "([THIS.GetName] news event) 2nd Balkan War ends, instigator lost."
+		}
 	}
+		
 
 	# Loser.
 	option = {

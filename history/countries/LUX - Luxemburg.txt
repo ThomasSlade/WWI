@@ -6,7 +6,7 @@ set_research_slots = 4
 set_convoys = 200
 starting_train_buffer = 1.5
 set_stability = 0.75 
-set_war_support = 0.3
+set_war_support = 1.0
 
 # Starting tech
 set_technology = {
@@ -29,6 +29,8 @@ set_popularities = {
 }
 
 add_ideas = {
+	cab_liberal
+	gov_limited_democracy
 	limited_exports
 	extensive_conscription
 	partial_economic_mobilisation
