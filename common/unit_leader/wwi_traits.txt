@@ -20,7 +20,7 @@ leader_traits = {
 			defence = 0.2
 		}
 		modifier = {
-			infantry_defence_factor = 0.2
+			army_infantry_defence_factor = 0.2
 		}
 	}
 
@@ -29,7 +29,7 @@ leader_traits = {
 		trait_type = personality_trait
 
 		modifier = {
-			infantry_defence_factor = 0.1
+			army_infantry_defence_factor = 0.1
 		}
 		modifier = {
 			experience_gain_factor = -0.5
@@ -43,7 +43,7 @@ leader_traits = {
 		attack_skill = 2
 
 		modifier = {
-			infantry_breakthrough_factor = 0.2
+			army_infantry_breakthrough_factor = 0.2
 		}
 	}
 
@@ -64,8 +64,8 @@ leader_traits = {
 		trait_type = personality_trait
 
 		modifier = {
-			modifier_army_sub_unit_heavy_artillery_attack_factor = 0.25
-			modifier_army_sub_unit_heavy_artillery_defence_factor = 0.1
+			modifier_army_sub_unit_heavy_artillery_brigade_attack_factor = 0.25
+			modifier_army_sub_unit_heavy_artillery_brigade_defence_factor = 0.1
 		}
 
 		modifier = {

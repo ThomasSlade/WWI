@@ -415,6 +415,12 @@ country_event = {
 
 	trigger = {
 		has_war = no
+		NOT = {
+			AND = {
+				original_tag = ENG
+				has_completed_focus = ENG_enforce_the_naval_treaties
+			}
+		}
 	}
 	
 	option = {
@@ -435,6 +441,22 @@ country_event = {
 		add_war_support = -0.05
 		add_popularity = {
 			ideology = communism
+			popularity = -0.05
+		}
+	}
+
+	option = {
+		name = war_justification.301.c
+		trigger = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+		}
+		add_political_power = -30
+		add_war_support = -0.05
+		add_popularity = {
+			ideology = fascism
 			popularity = -0.05
 		}
 	}

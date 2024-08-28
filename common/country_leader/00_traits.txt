@@ -6,7 +6,9 @@ leader_traits = {
 	dictator = {
 		random = no
 		political_power_factor = 0.25
-		
+		weekly_casualties_war_support = 0.001
+		ai_desired_divisions_factor = 0.20
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -20,6 +22,28 @@ leader_traits = {
 		ai_will_do = {
 			factor = 1
 		}
+	}
+
+	underage_monarch = {
+		random = no
+		stability_factor = 0.10
+		political_advisor_cost_factor = 0.25
+		trade_laws_cost_factor = 0.25
+		mobilization_laws_cost_factor = 0.25
+		economy_cost_factor = 0.25
+	}
+
+	legitimate_heir = {
+		random = no
+		stability_factor = 0.10
+		political_power_factor = 0.1
+	}
+
+	collaborator_king = {
+		random = no
+		fascism_drift = 0.1
+		fascism_acceptance = 75
+		political_power_factor = 0.1
 	}
 
 	imperial_sanction = {
@@ -148,6 +172,15 @@ leader_traits = {
 		}
 	}
 
+	wallis_fancy_title = {
+		random = no
+		neutrality_drift = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	inexperienced_monarch = {
 		random = no
 		political_advisor_cost_factor = 0.25
@@ -203,6 +236,69 @@ leader_traits = {
 		}
 	}
 
+	snuggler = {
+		random = no
+		sprite = 10
+		political_power_factor = -0.1
+		stability_factor = 0.05
+		neutrality_drift = 0.05
+		consumer_goods_factor = -0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	face_licker = {
+		random = no
+		sprite = 10
+		political_power_factor = -0.1
+		war_support_factor = 0.05
+		conscription = 0.01
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	stammer = {
+		random = no
+		political_power_factor = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	humble = {
+		random = no
+		neutrality_drift = 0.05
+		consumer_goods_factor = -0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	british_bulldog = {
+		random = no
+		war_support_factor = 0.1
+		political_power_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	chamberlain_appeaser = {
+		random = no
+		war_support_factor = -0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	rearmer = {
 		random = no
 		industrial_capacity_factory = 0.05
@@ -225,14 +321,28 @@ leader_traits = {
 	famous_aviator = {
 		random = no
 		equipment_bonus = {
-			tac_bomber_equipment = {
+			medium_plane_airframe = {
 				air_range = 0.01
 			}
-			fighter_equipment = {
+			small_plane_airframe = {
 				air_range = 0.01
 			}
 		}
-		
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	spirit_of_genghis = {
+		random = no
+		cavalry_attack_factor = 0.05
+		equipment_bonus = {
+			small_plane_naval_bomber_airframe = {
+				air_range = 0.1 naval_strike_attack = 0.1
+			}
+		}
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -291,6 +401,57 @@ leader_traits = {
 			value = 200
 		}
 		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	dislikes_soviet = {
+		random = no
+		ai_strategy = {
+			type = antagonize
+			id = "SOV"
+			value = 200
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	likes_germany = {
+		random = no
+		ai_strategy = {
+			type = alliance
+			id = "GER"
+			value = 300
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	likes_allies = {
+		random = no
+		ai_strategy = {
+			type = alliance
+			id = "ENG"
+			value = 300
+		}
+
+		ai_strategy = {
+			type = alliance
+			id = "FRA"
+			value = 300
+		}
+
+		ai_strategy = {
+			type = alliance
+			id = "USA"
+			value = 300
+		}
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -401,7 +562,8 @@ leader_traits = {
 		political_power_factor = -0.15
 		justify_war_goal_time = 0.15
 		subversive_activites_upkeep = -0.3
-		
+		max_command_power = 30
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -495,7 +657,7 @@ leader_traits = {
 	protector_of_the_campesinos = { #communist Cardenas (land reformer)
 		random = no
 		production_speed_industrial_complex_factor = 0.1
-		production_speed_rail_way_factor = 0.1
+		production_speed_infrastructure_factor = 0.1
 		ai_will_do = {
 			factor = 1
 		}
@@ -523,20 +685,30 @@ leader_traits = {
 	}
 
 	conservative_nationalist = { #Antonio de Oliveira Salazar - Vanilla
+		sprite = 13 #Needed since Iceland uses this traits in an advisor.
 		random = no
 		stability_factor = 0.1
-		production_speed_rail_way_factor = 0.2
-		
+		production_speed_infrastructure_factor = 0.2
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
 
-	conservative_nationalist_lar = { #Antonio de Oliveira Salazar - LAR 
+	conservative_nationalist_lar = { #Antonio de Oliveira Salazar - LAR
 		random = no
 		stability_weekly = 0.005
-		production_speed_rail_way_factor = 0.2
-		
+		production_speed_infrastructure_factor = 0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	the_silver_president = { #Juan Andreu
+		random = no
+		consumer_goods_factor = -0.15
+		fascism_acceptance = 50
 		ai_will_do = {
 			factor = 1
 		}
@@ -555,6 +727,7 @@ leader_traits = {
 
 	staunch_stalinist = { #Dionisio Encina
 		random = no
+		sprite = 13
 		industrial_capacity_factory = 0.1
 		drift_defence_factor = 0.15
 		
@@ -577,6 +750,15 @@ leader_traits = {
 		random = no
 		war_support_factor = 0.05
 		subversive_activites_upkeep = -0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	fascist_sympathies = {
+		random = no
+		fascism_acceptance = 70
 
 		ai_will_do = {
 			factor = 1
@@ -658,6 +840,16 @@ leader_traits = {
 		}
 	}
 
+	eager_collaborator = {
+		random = yes
+		send_volunteer_size = 2
+		improve_relations_maintain_cost_factor = -1
+		fascism_acceptance = 75
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	constitutional_monarch = {
 		random = no
 		stability_weekly = 0.01
@@ -665,6 +857,30 @@ leader_traits = {
 		ai_will_do = {
 			factor = 1
 		}
+	}
+	duke_of_orleans = {
+		random = no
+		neutrality_drift = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	count_of_paris = {
+		random = no
+		global_building_slots_factor = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	reluctant_veteran = {
+		random = no
+		war_support_factor = 0.05
+		conscription_factor = 0.05
+	}
+	proletariat_internationalist = {
+		random = no
+		war_support_factor = 0.05
+		non_core_manpower = 0.025
 	}
 	anti_democrat = {
 		random = no
@@ -688,6 +904,15 @@ leader_traits = {
 		sprite = 13
 		stability_factor = 0.05
 		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	popular_figurehead3 = {
+		sprite = 13
+		stability_factor = 0.1
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -736,6 +961,11 @@ leader_traits = {
 		stability_factor = 0.05
 	}
 
+	incognito = {
+		fascism_drift = 0.1
+		drift_defence_factor = 0.15
+	}
+
 	nationalist_symbol = {
 		war_support_factor = 0.05
 		stability_factor = 0.05
@@ -746,8 +976,11 @@ leader_traits = {
 	red_army_organizer = { # Trotsky's trait if invited to join the Mexican government. Combines effects of Genius Army Organizer and Communist Revolutionary
 		sprite = 12
 		army_org_factor = 0.12
+		experience_gain_army = @chief_experience_gain_high
 		communism_drift = 0.1
-		
+
+		command_cap = @tier3
+
 		ai_will_do = {
 			factor = 2
 		}
@@ -787,14 +1020,14 @@ leader_traits = {
 		random = no
 		trade_laws_cost_factor = -0.33
 		economy_cost_factor = -0.33
-		consumer_goods_factor = -0.05
+		consumer_goods_factor = -0.15
 	}
 
 	strict_austerity_adherent = {
 		random = no
 		stability_factor = -0.15
 		economy_cost_factor = 0.5
-		consumer_goods_factor = -0.1
+		consumer_goods_factor = -0.30
 	}
 
 	defeatist = {
@@ -814,10 +1047,32 @@ leader_traits = {
 		stability_factor = 0.15
 	}
 
+	disdain_for_politicians_1 = {
+		random = no
+		political_power_factor = 0.05
+		communism_drift = -0.01
+		fascism_drift = -0.01
+		democratic_drift = -0.01
+	}
+
+	disdain_for_politicians_2 = {
+		random = no
+		political_power_factor = 0.1
+		communism_drift = -0.02
+		fascism_drift = -0.02
+		democratic_drift = -0.02
+	}
+
 	queen_of_the_people = {
 		random = no
 		war_support_factor = 0.1
 		resistance_target_on_our_occupied_states = 0.25
+	}
+
+	leider = {
+		random = no
+		war_support_factor = 0.1
+		fascism_acceptance = 50
 	}
 
 	comintern_workhorse = {
@@ -876,7 +1131,7 @@ leader_traits = {
 
 	jefe = {
 		random = no
-		war_support_weekly = 0.005
+		war_support_factor = 0.05
 	}
 
 	caudillo_1 = {
@@ -906,7 +1161,7 @@ leader_traits = {
 
 	disgraced_monarch = {
 		random = no
-		consumer_goods_factor = -0.05
+		consumer_goods_factor = -0.15
 		stability_factor = -0.1
 	}
 
@@ -929,11 +1184,18 @@ leader_traits = {
 		army_core_defence_factor = 0.1
 	}
 
+	anarchist_zeal = {
+		random = no
+		neutrality_drift = 0.05
+		war_support_factor = 0.1
+		minimum_training_level = -0.1
+	}
+
 	militant_socialist = {
 		random = no
 		war_support_factor = 0.05
 		targeted_modifier = {
-			tag = SOV
+			tag = SOU
 			attack_bonus_against = 0.1
 			defense_bonus_against = 0.1
 		}

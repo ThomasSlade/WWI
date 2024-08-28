@@ -15,7 +15,7 @@ ideas = {
 			removal_cost = -1
 		
 			modifier = {
-				consumer_goods_factor = 0.50
+				consumer_goods_expected_value = 0.50
 				production_speed_industrial_complex_factor = -0.5
 				production_speed_arms_factory_factor = -0.5
 				production_speed_dockyard_factor = -0.5
@@ -49,7 +49,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.4
+				consumer_goods_expected_value = 0.4
 				production_speed_industrial_complex_factor = -0.4
 				production_speed_arms_factory_factor = -0.4
 				production_speed_dockyard_factor = -0.4
@@ -57,6 +57,7 @@ ideas = {
 				conversion_cost_mil_to_civ_factor = 0.4
 				generate_wargoal_tension = 1.00
 				join_faction_tension = 0.20
+				lend_lease_tension = 0.10
 				send_volunteers_tension = 0.20
 				guarantee_tension = 0.5
 				max_fuel_factor = -0.35
@@ -80,7 +81,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.35
+				consumer_goods_expected_value = 0.35
 				production_speed_industrial_complex_factor = -0.3
 				production_speed_arms_factory_factor = -0.3
 				conversion_cost_civ_to_mil_factor= 0.3
@@ -110,7 +111,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.3
+				consumer_goods_expected_value = 0.3
 				production_speed_industrial_complex_factor = -0.1
 				production_speed_arms_factory_factor = -0.1
 				fuel_gain_factor = -0.25
@@ -143,7 +144,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.25
+				consumer_goods_expected_value = 0.25
 				production_speed_arms_factory_factor = 0.1
 				conversion_cost_civ_to_mil_factor= -0.1
 				conversion_cost_mil_to_civ_factor = -0.1
@@ -187,7 +188,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.2
+				consumer_goods_expected_value = 0.2
 				production_speed_arms_factory_factor = 0.2
 				conversion_cost_civ_to_mil_factor= -0.2
 				conversion_cost_mil_to_civ_factor = -0.2
@@ -238,7 +239,7 @@ ideas = {
 				modifier = {
 					#Block  unless nation has a lot of manpower
 					factor = 0
-					manpower_per_military_factory <  7000
+					manpower_per_military_factory <  10000
 				}
 
 				
@@ -256,7 +257,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.10
+				consumer_goods_expected_value = 0.10
 				conscription = -0.03
 				production_speed_arms_factory_factor = 0.3
 				conversion_cost_civ_to_mil_factor= -0.3
@@ -284,6 +285,7 @@ ideas = {
 				research_speed_factor = 0.10
 				civilian_intel_to_others = 40.0
 				navy_intel_to_others = 20.0
+				cic_construction_boost_factor = 0.05
 			}
 			
 			cancel_if_invalid = no
@@ -305,6 +307,7 @@ ideas = {
 				research_speed_factor = 0.05
 				civilian_intel_to_others = 20.0
 				navy_intel_to_others = 10.0
+				cic_construction_boost_factor = 0.1
 			}
 			
 			default = yes
@@ -353,6 +356,8 @@ ideas = {
 				research_speed_factor = 0.01
 				civilian_intel_to_others = 10.0
 				navy_intel_to_others = 5
+				lend_lease_tension = 0.20
+				cic_construction_boost = -0.05
 			}
 			
 			cancel_if_invalid = no
@@ -397,18 +402,20 @@ ideas = {
 					has_idea = tot_economic_mobilisation
 				}
 			}
+
+			rule = {
+				can_access_market = no
+				desc = can_not_access_market_closed_economy
+			}
 			
 			cost = 150
 			removal_cost = -1
 			
-			
 			modifier = {
 				min_export = 0
 				#civilian_intel_to_others = 0.0
-			}
-			
-			on_add = {
-				custom_effect_tooltip = closed_economy_TT
+				lend_lease_tension = 0.40
+				cic_construction_boost = -0.1
 			}
 			
 			cancel_if_invalid = no

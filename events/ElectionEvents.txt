@@ -34,6 +34,7 @@ country_event = {
 				date < 1949.1.1
 			} 
 		}
+		DEN_aat = no #Denmark has custom election events
 		OR = { NOT = { original_tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
 		NOT = {
@@ -89,6 +90,7 @@ country_event = {
 				date < 1949.1.1
 			} 
 		}
+		DEN_aat = no #Denmark has custom election events
 		OR = { NOT = { original_tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
 		has_war = no

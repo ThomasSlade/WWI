@@ -69,10 +69,17 @@ check_has_focus_tree_to_switch_to_fascism = {
 	NOT = { tag = GER }
 	NOT = { tag = MAN }
 	NOT = { tag = ITA }
-	NOT = {
+	OR = {
+		NOT = {
+			AND = {
+				tag = SAF
+				has_dlc = "Together for Victory"
+			}
+		}
 		AND = {
 			tag = SAF
 			has_dlc = "Together for Victory"
+			has_completed_focus = SAF_south_africa_first
 		}
 	}
 	NOT = {
@@ -99,6 +106,17 @@ check_has_focus_tree_to_switch_to_fascism = {
 			has_dlc = "La Resistance"
 		}
 	}
+	NOT = {
+		AND = {
+			original_tag = SPR
+			OR = {
+				has_completed_focus = SPA_the_phalanx_ascendant
+				has_completed_focus = SPA_supremacy_of_the_communion
+				has_completed_focus = SPR_the_popular_front
+			}
+			has_dlc = "La Resistance"
+		}
+	}
 }
 
 check_has_focus_tree_to_switch_to_democratic = {
@@ -108,7 +126,7 @@ check_has_focus_tree_to_switch_to_democratic = {
 	NOT = { tag = ENG }
 	NOT = { tag = CAN }
 	NOT = { tag = SAF }
-	NOT = { tag = AUS }
+	NOT = { tag = AST }
 	NOT = { tag = NZL }
 	NOT = { tag = RAJ }
 	NOT = { tag = CZE }
@@ -177,6 +195,18 @@ check_has_focus_tree_to_switch_to_communism = {
 		AND = {
 			original_tag = SPR
 			has_dlc = "La Resistance"
+		}
+	}
+	NOT = {
+		AND = {
+			original_tag = NOR
+			has_dlc =  "Arms Against Tyranny"
+		}
+	}
+	NOT = {
+		AND = {
+			original_tag = ARG
+			has_dlc =  "Trial of Allegiance"
 		}
 	}
 }
@@ -280,8 +310,143 @@ ai_land_doctrine_tier_2_trigger = {
 	}
 }
 
+anti_submarine_strategy_required_trigger = {
+	OR = {
+		AND = {
+			tag = ENG
+			not = { is_in_faction_with = GER }
+			GER = {
+				has_navy_size = {
+					type = submarine
+					size > 30
+				}
+			}
+		}
+		AND = {
+			tag = USA
+			not = { is_in_faction_with = GER }
+			GER = {
+				has_navy_size = {
+					type = submarine
+					size > 30
+				}
+			}
+		}
+		AND = {
+			tag = JAP
+			not = { is_in_faction_with = USA }
+		}
+		AND = {
+			has_war = yes
+			any_enemy_country = {
+				has_navy_size = {
+					type = submarine
+					size > 30
+				}
+			}
+		}
+		convoy_threat > 0.3
+	}
+}
+
+enemy_has_equal_or_better_radar_tech_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = enemy_has_equal_or_better_radar_tech_trigger_tt
+		if = {
+			limit = {
+				ROOT = {
+					has_tech = radio_detection
+					NOT = {
+						has_tech = decimetric_radar
+					}
+				}
+			}
+			FROM = {
+				OR = {
+					has_tech = radio_detection
+					has_tech = decimetric_radar
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					has_tech = decimetric_radar
+					NOT = {
+						has_tech = improved_decimetric_radar
+					}
+				}
+			}
+			FROM = {
+				OR = {
+					has_tech = decimetric_radar
+					has_tech = improved_decimetric_radar
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					has_tech = improved_decimetric_radar
+					NOT = {
+						has_tech = centimetric_radar
+					}
+				}
+			}
+			FROM = {
+				OR = {
+					has_tech = improved_decimetric_radar
+					has_tech = centimetric_radar
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					has_tech = centimetric_radar
+					NOT = {
+						has_tech = improved_centimetric_radar
+					}
+				}
+			}
+			FROM = {
+				OR = {
+					has_tech = centimetric_radar
+					has_tech = improved_centimetric_radar
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					has_tech = improved_centimetric_radar
+					NOT = {
+						has_tech = advanced_centimetric_radar
+					}
+				}
+			}
+			FROM = {
+				OR = {
+					has_tech = improved_centimetric_radar
+					has_tech = advanced_centimetric_radar
+				}
+			}
+		}
+		#no more steps needed because end of research tree is reached
+	}
+}
+
 is_available_to_collaboration_government = { # occupied_countries.1 should be updated along with this
 	NOT = {
+		AND = {
+			FROM = { original_tag = YUG }
+			original_tag = ITA
+		}
+		AND = {
+			FROM = { original_tag = DNZ }
+			original_tag = POL
+		}
+		TUR_cannot_form_kurdish_collaboration_government = yes
 		any_country_with_original_tag = {
 			original_tag_to_check = FROM
 			is_puppet_of = PREV # if already created one do not create another
@@ -452,5 +617,54 @@ country_can_be_reasonable_target_of_wargoal = { #Expected scopes: Target country
 		is_guaranteed_by = PREV
 		has_non_aggression_pact_with = PREV
 		is_subject_of = PREV
+	}
+}
+
+mio_original_country_exists_and_not_at_war_with_ROOT = { #Used for MIO decisions visibility - THIS is original country
+	exists = yes
+	has_capitulated = no
+	NOT = { has_war_with = ROOT }
+}
+
+mio_original_country_available_with_opinion_subject_and_war_requirements_fulfilled = { #Used for MIO decisions availability - THIS is original country
+	has_opinion = {
+		target = ROOT
+		value > 49
+	}
+	OR = {
+		is_subject = no
+		is_subject_of = ROOT
+	}
+	has_capitulated = no
+	NOT = { has_war_with = ROOT }
+}
+
+# These are to make strength comparisons easier 
+
+FROM_is_stronger = {
+	strength_ratio = {
+		tag = FROM 
+		ratio < 1
+	}
+}
+
+FROM_is_twice_as_strong = {
+	strength_ratio = {
+		tag = FROM 
+		ratio < 0.5
+	}
+}
+
+FROM_is_weaker = {
+	strength_ratio = {
+		tag = FROM 
+		ratio > 1
+	}
+}
+
+FROM_is_twice_as_weak = {
+	strength_ratio = {
+		tag = FROM 
+		ratio > 2
 	}
 }
