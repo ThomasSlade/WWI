@@ -3,8 +3,7 @@ NDefines.NGame.START_DATE = "1911.1.1.12"
 NDefines.NGame.END_DATE = "1923.1.1.1"
 NDefines.NGame.MAP_SCALE_PIXEL_TO_KM = 2.1589	-- Based on the distance between Paris and Istanbul on the game map (~1045px).
 
-NDefines.NDiplomacy.PEACE_SCORE_SCALE_FACTOR = 0.25	-- Losers' total value times this factor becomes the default total peace conference score that is distributed to the winners.
-
+NDefines.NDiplomacy.PEACE_SCORE_SCALE_FACTOR = 0.1	-- Losers' total value times this factor becomes the default total peace conference score that is distributed to the winners.
 
 NDefines.NCountry.BASE_SURRENDER_LIMIT = 0.15 -- Base level of occupation required for country surrender. Effectively double this when warscore is 100%.
 NDefines.NCountry.DEFAULT_WAR_SUPPORT = 1.0	-- Default war support if not scripted otherwise.

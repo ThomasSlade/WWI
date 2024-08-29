@@ -165,7 +165,7 @@ country_event = {
 
 		declare_war_on = {
 			target = ALB
-			type = take_claimed_state
+			type = take_core_state
 		}
 
 		ALB = { set_country_flag = flag_ALB_is_fighting_for_independence }
