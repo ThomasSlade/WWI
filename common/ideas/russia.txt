@@ -1,0 +1,142 @@
+ideas = {
+	country = {
+		idea_SOV_autocratic_tsardom = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = revolutionary }
+			}
+
+			picture = SOV_autocratic_tsardom
+
+			removal_cost = -1
+
+			modifier = {
+				custom_modifier_tooltip = idea_SOV_autocratic_tsardom_law_change_cost_tt
+				custom_modifier_tooltip = idea_SOV_autocratic_tsardom_government_change_disallowed_tt
+			}
+		}
+
+		idea_SOV_revolution_in_waiting = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_revolutionary
+
+			removal_cost = -1
+
+			modifier = {
+				custom_modifier_tooltip = idea_SOV_revolution_in_waiting_civil_war_tt
+				revolutionary_drift = 0.01
+			}
+		}
+
+		idea_SOV_russian_literacy = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			research_bonus = {
+				electronics = 0.25
+				support_tech = 0.25
+			}
+
+			picture = SOV_russian_literacy
+
+			modifier = {
+				revolutionary_drift = 0.01
+			}
+		}
+
+		idea_SOV_export_cheap_labour = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = SOV_russian_literacy
+
+			modifier = {
+				cic_construction_boost = 0.2
+				workers_rights_cost_factor = 1
+			}
+		}
+
+		idea_SOV_zemgor = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = SOV_russian_literacy
+
+			modifier = {
+				industry_repair_factor = 0.33
+				supply_factor = 0.15
+			}
+		}
+
+		idea_SOV_zemgor_2 = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = SOV_russian_literacy
+
+			modifier = {
+				industry_repair_factor = 0.33
+				supply_factor = 0.15
+				local_resources_factor = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		idea_SOV_provisional_government = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = SOV_russian_literacy
+
+			modifier = {
+				breakthrough_factor = -0.66
+				industrial_capacity_factory = -0.5
+			}
+		}
+	}
+}

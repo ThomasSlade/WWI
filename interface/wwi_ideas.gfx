@@ -318,6 +318,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_AUS_minority_resistance_3.dds"
 	}
 
+	# Russia
+	spriteType = {
+		name = "GFX_idea_SOV_autocratic_tsardom"
+		texturefile = "gfx/interface/ideas/idea_SOV_autocratic_tsardom.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOV_russian_literacy"
+		texturefile = "gfx/interface/ideas/idea_SOV_russian_literacy.dds"
+	}
+
 	### Country Related ###
 	# Grain To
 	spriteType = {

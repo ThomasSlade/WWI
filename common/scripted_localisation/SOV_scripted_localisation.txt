@@ -1,0 +1,115 @@
+defined_text = {
+	name = GetTsarFavorColoredCost1
+
+	text = {
+		trigger = { check_variable = { tsar_favor < 1 } }
+		localization_key = tsar_favor_coloured_unavailable_cost_1_tt
+	}
+
+	text = {
+		localization_key = tsar_favor_coloured_available_cost_1_tt
+	}
+}
+
+defined_text = {
+	name = GetTsarFavorColoredCost3
+
+	text = {
+		trigger = { check_variable = { tsar_favor < 3 } }
+		localization_key = tsar_favor_coloured_unavailable_cost_3_tt
+	}
+
+	text = {
+		localization_key = tsar_favor_coloured_available_cost_3_tt
+	}
+}
+
+defined_text = {
+	name = GetOwnedRussianCityForStolypinAssassination
+
+	text = {
+		trigger = { controls_state = 394 }
+		localization_key = "[394.GetCapitalVictoryPointName]"
+	}
+
+	text = {
+		trigger = { controls_state = 394 }
+		localization_key = "[394.GetCapitalVictoryPointName]"
+	}
+
+	text = {
+		trigger = { controls_state = 361 }
+		localization_key = "[394.GetCapitalVictoryPointName]"
+	}
+
+	text = {
+		# Just say 'Opera'
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = GetFreelandReformsText
+
+	text = {
+		trigger = {
+			AND = {
+				has_variable = free_land_reforms
+				check_variable = { free_land_reforms > 0 }
+			}
+		}
+		localization_key = free_land_reforms_text
+	}
+
+	text = {
+		localization_key = ""
+	}
+}
+
+# Given a state, determine the government building in that state for Russia.
+defined_text = {
+	name = GetRussiaSeatOfGovernment
+
+	text = {
+		trigger = {
+			state = 386
+			has_idea = idea_SOV_autocratic_tsardom
+		}
+		localization_key = "Winter Palace"
+	}
+
+	text = {
+		trigger = {
+			state = 386
+		}
+		localization_key = "Tauride Palace"
+	}
+
+	text = {
+		trigger = {
+			state = 361
+		}
+		localization_key = "Kremlin"
+	}
+
+	text = {
+		localization_key = "Duma"
+	}
+}
+
+defined_text = {
+	name = GetOctoberRevolutionCannonType
+
+	text = {
+		trigger = {
+			capital_scope = {
+				is_coastal = yes
+			}
+		}
+		localization_key = "Navy"
+	}
+
+	text = {
+		localization_key = "Army"
+	}
+}

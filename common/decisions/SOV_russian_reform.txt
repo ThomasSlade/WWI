@@ -1,0 +1,194 @@
+decision_category_SOV_russian_reform = {
+	decision_end_exporting_of_cheap_labour = {
+		visible = {
+			has_idea = idea_SOV_export_cheap_labour
+		}
+
+		available = {
+            NOT = {
+            	OR = {
+            		has_idea = quitting_illegal
+            		has_idea = unions_illegal
+            	}
+            }
+        }
+
+        complete_effect = {
+        	remove_ideas = idea_SOV_russian_literacy
+        }
+	}
+
+	decision_reform_land = {
+		state_target = yes
+		on_map_mode = map_only
+		target_trigger = {
+			check_variable = { free_land_reforms < 1 }
+
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				has_dynamic_modifier = {
+					modifier = modifier_SOV_unreformed_land
+				}
+
+				NOT = { has_state_flag = flag_land_reform_discount }
+
+				# Checking all neighbor states can be expensive so try to check the cheapest failures first for these decisions.
+				all_neighbor_state = {
+					has_dynamic_modifier = { modifier = modifier_SOV_unreformed_land }
+				}
+			}
+		}
+
+		cost = land_reform_cost
+
+		available = {
+            FROM = {
+            	OR = {
+            		industrial_complex > 0
+            		arms_factory > 0
+            	}
+            }
+        }
+
+		complete_effect = {
+			FROM = {
+				remove_dynamic_modifier = {
+					modifier = modifier_SOV_unreformed_land
+				}
+			}
+
+			FROM = { save_event_target_as = reformed_state }
+			country_event = { id = event_SOV_russian_reform.1 }
+		}
+
+		icon = GFX_decision_category_border_war
+	}
+
+	decision_reform_land_cheap = {
+		state_target = yes
+		on_map_mode = map_only
+		target_trigger = {
+			check_variable = { free_land_reforms < 1 }
+
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				has_dynamic_modifier = {
+					modifier = modifier_SOV_unreformed_land
+				}
+
+				NOT = { has_state_flag = flag_land_reform_discount }
+
+				any_neighbor_state = {
+					NOT = { has_dynamic_modifier = { modifier = modifier_SOV_unreformed_land } }
+				}
+			}
+		}
+
+		cost = land_reform_cost_cheap
+
+		available = {
+            FROM = {
+            	OR = {
+            		industrial_complex > 0
+            		arms_factory > 0
+            	}
+            }
+        }
+
+		complete_effect = {
+			FROM = {
+				remove_dynamic_modifier = {
+					modifier = modifier_SOV_unreformed_land
+				}
+			}
+
+			FROM = { save_event_target_as = reformed_state }
+			country_event = { id = event_SOV_russian_reform.1 }
+		}
+
+		icon = GFX_decision_category_border_war
+	}
+
+	decision_reform_land_very_cheap = {
+		state_target = yes
+		on_map_mode = map_only
+		target_trigger = {
+			check_variable = { free_land_reforms < 1 }
+
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				has_dynamic_modifier = {
+					modifier = modifier_SOV_unreformed_land
+				}
+
+				has_state_flag = flag_land_reform_discount
+			}
+		}
+
+		cost = land_reform_cost_discount
+
+		available = {
+            FROM = {
+            	OR = {
+            		industrial_complex > 0
+            		arms_factory > 0
+            	}
+            }
+        }
+
+		complete_effect = {
+			FROM = {
+				remove_dynamic_modifier = {
+					modifier = modifier_SOV_unreformed_land
+				}
+				clr_state_flag = flag_land_reform_discount
+			}
+
+			FROM = { save_event_target_as = reformed_state }
+			country_event = { id = event_SOV_russian_reform.1 }
+		}
+
+		icon = GFX_decision_category_border_war
+	}
+
+	decision_reform_land_free = {
+		state_target = yes
+		on_map_mode = map_only
+		target_trigger = {
+			check_variable = { free_land_reforms > 0 }
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				has_dynamic_modifier = {
+					modifier = modifier_SOV_unreformed_land
+				}
+			}
+		}
+
+		available = {
+            FROM = {
+            	OR = {
+            		industrial_complex > 0
+            		arms_factory > 0
+            	}
+            }
+
+            # Need to add this extra gating because the target trigger updates only daily, so a player could pause and just keep using the free reform charges.
+            check_variable = { free_land_reforms > 0 }
+        }
+
+		complete_effect = {
+			subtract_from_variable = { free_land_reforms = 1 }
+
+			FROM = {
+				remove_dynamic_modifier = {
+					modifier = modifier_SOV_unreformed_land
+				}
+			}
+
+			FROM = { save_event_target_as = reformed_state }
+			country_event = { id = event_SOV_russian_reform.1 }
+		}
+
+		icon = GFX_decision_category_border_war
+	}
+}

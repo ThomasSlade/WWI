@@ -33,7 +33,7 @@ decision_category_SER_danube_adriatic_railway = {
 	}
 
 	visible = {
-		has_completed_focus = decision_category_SER_danube_adriatic_railway
+		has_completed_focus = SER_danube_adriatic_railway
 	}
 }
 
@@ -95,6 +95,7 @@ decision_category_SER_bombard_kotor = {
 
 decision_category_SER_balkan_league = {
 	icon = border_conflicts
+	visible_when_empty = yes
 
 	allowed = {
 		always = yes
@@ -227,5 +228,22 @@ decision_category_AUS_overpower_the_honved = {
 	visible = {
 		has_completed_focus = AUS_erode_hungarian_influence
 		NOT = { has_country_flag = budapest_overpowered }
+	}
+}
+
+decision_category_SOV_russian_reform = {
+	icon = generic_monarchism
+	visible_when_empty = yes
+
+	allowed = {
+		original_tag = SOV
+	}
+}
+
+decision_category_SOV_russian_revolution = {
+	icon = SOV_permanent_revolution
+
+	allowed = {
+		original_tag = SOV
 	}
 }

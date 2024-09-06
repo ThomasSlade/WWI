@@ -1,0 +1,9 @@
+leader_traits = {
+	# Pyotr Stolypin
+	tsarist_land_reformer = {
+		# This assumes the trait is only ever used on Stolypin, who has the on_add and on_remove that does what this tooltip says.
+		custom_modifier_tooltip = stolypin_effect_tt
+		production_speed_infrastructure_factor = 0.25
+		stability_factor = 0.1
+	}
+}

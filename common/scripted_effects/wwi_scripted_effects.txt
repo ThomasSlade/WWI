@@ -51,3 +51,26 @@ effect_boost_popularity_of_root_ideology_10 = {
 		}
 	}
 }
+
+# Invoke from within the character's scope
+effect_kill_character = {
+	custom_effect_tooltip = effect_kill_character
+	hidden_effect = {
+		OWNER = { retire_character = PREV }
+	}
+}
+
+# These law changers are here because the default tooltips for changing these ideas are too bloated.
+effect_change_law_to_liberal = {
+	hidden_effect = {
+		add_ideas = cab_liberal
+	}
+	custom_effect_tooltip = SOV_change_law_to_liberal
+}
+
+effect_change_law_to_limited_democracy = {
+	hidden_effect = {
+		add_ideas = gov_limited_democracy
+	}
+	custom_effect_tooltip = SOV_change_law_to_limited_democracy
+}

@@ -1,0 +1,20 @@
+d_toggle_weakened = {
+	ROOT = {
+		if = {
+			limit = { has_idea = idea_debug_weakened }
+			log = "Removing Weakened idea from '[?ROOT.GetName]'"
+			remove_ideas = idea_debug_weakened
+		}
+		else = {
+			log = "Adding Weakened idea to '[?ROOT.GetName]'"
+			add_ideas = idea_debug_weakened
+		}
+	}
+}
+
+d_print_occupied_states = {
+	log = "Printing all states occupied by '[?ROOT.GetName]'"
+	every_controlled_state = {
+		log = "[?THIS.GetID]"
+	}
+}

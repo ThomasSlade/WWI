@@ -26,9 +26,9 @@ set_politics = {
 }
 
 set_popularities = {
-	established = 75
-	expansionist = 25
-	revolutionary = 0
+	established = 70
+	expansionist = 10
+	revolutionary = 20
 }
 
 add_ideas = {
@@ -36,9 +36,24 @@ add_ideas = {
 
 	cab_autocratic
 	gov_absolute_monarchy
+
+	idea_SOV_autocratic_tsardom
+	idea_SOV_revolution_in_waiting
 }
 
+set_variable = { tsar_favor = 0 }
+set_variable = { land_reform_cost = 50 }
+set_variable = { land_reform_cost_cheap = 25 }
+set_variable = { land_reform_cost_discount = 10 }
+set_variable = { civil_war_revolutionary_threshold = 0.75 }	# % Revolutionary ideology needed to trigger the civil war.
+set_variable = { civil_war_revolutionary_abort_threshold = 0.6 }
+effect_SOV_init_unreformed_land = yes
+
+#set_cosmetic_tag = SOV_EMPIRE
+
 recruit_character = SOV_nicholas_ii
+
+recruit_character = SOV_pyotr_stolypin
 
 recruit_character = SOV_generic_prudent_defender
 recruit_character = SOV_generic_bold_attacker

@@ -11,6 +11,8 @@ on_actions = {
 
 	on_startup = {
 		effect = {
+			SOV = { set_cosmetic_tag = SOV_EMPIRE }
+
 			every_possible_country = {
 				# Keep standard influence-idea variables up to date.
 				if = {

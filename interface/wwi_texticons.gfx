@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_tsar_favor"
+		texturefile = "gfx/texticons/tsar_favor.dds"
+		legacy_lazy_load = no
+	}
+}

@@ -1,0 +1,39 @@
+decision_category_SOV_russian_revolution = {
+	mission_SOV_bolshevik_revolution_imminent = {
+		cost = 50
+		is_good = no
+		days_mission_timeout = 45
+		selectable_mission = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			revolutionary < SOV.civil_war_revolutionary_abort_threshold
+		}
+
+		activation = {
+			always = no
+		}
+
+		complete_effect = {
+			country_event = { id = event_SOV_russian_revolution.2 }
+
+			hidden_effect = {
+				if = {
+					limit = { NOT = { has_country_flag = flag_SOV_revolution_averted_warning_news_fired } }
+					news_event = {
+						id = event_SOV_russian_revolution.4
+						days = 2
+					}
+					set_country_flag = flag_SOV_revolution_averted_warning_news_fired
+				}
+			}
+		}
+
+		timeout_effect = {
+			effect_SOV_begin_civil_war_as_whites = yes
+		}
+	}
+}

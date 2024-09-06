@@ -1,0 +1,4 @@
+﻿l_english:
+  event_SOV_generic.1.t: "Pyotr Stolypin Assassinated"
+  event_SOV_generic.1.d: "[SOV.GetAdjectiveCap] statesman and reformer Pyotr Stolypin has been shot dead at the [THIS.GetOwnedRussianCityForStolypinAssassination] Opera.\n\nStolypin had lobbied tirelessly for disrputive land reform that would end the simmering radicalism of the [SOV.GetAdjectiveCap] peasantry by transforming village communes into private farms.\n\nThough the assassin has been confirmed a socialist, [THIS.capital.GetCapitalVictoryPointName]'s interferance in the investigation has raised suspicions that Stolypin's efforts fell foul of the [SOV.GetAdjectiveCap] aristocracy.\n\nA Tsarist to the end, Stolypin's last act was to sign the cross to [THIS.GetLeader]."
+  event_SOV_generic.1.a: "[SOV.GetNameDefCap] was not ready."

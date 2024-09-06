@@ -7,36 +7,85 @@ ideas = {
 			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
+
+			available = {
+				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
+			}
+
+			on_add = {
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
 		}
 
 		unions_illegal = {
 			cost = 150
 			removal_cost = -1
+			default = yes
 			cancel_if_invalid = no
+
+			available = {
+				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
+			}
+
+			on_add = {
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
 		}
 
 		unions_legal = {
 			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
+
+			available = {
+				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
+			}
+
+			on_add = {
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
 		}
 
 		wage_controls = {
 			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
+
+			available = {
+				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
+			}
+
+			on_add = {
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
 		}
 
 		profit_confiscation = {
 			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
+
+			available = {
+				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
+			}
+
+			on_add = {
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
 		}
 
 		cooperative_ownership = {
 			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
+
+			available = {
+				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
+			}
+
+			on_add = {
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
 		}
 	}
 }

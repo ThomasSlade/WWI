@@ -1,0 +1,147 @@
+effect_SOV_init_unreformed_land = {
+	add_to_temp_array = { russian_unreformed_states = 386 }
+	add_to_temp_array = { russian_unreformed_states = 349 }
+	add_to_temp_array = { russian_unreformed_states = 314 }
+	add_to_temp_array = { russian_unreformed_states = 302 }
+	add_to_temp_array = { russian_unreformed_states = 388 }
+	add_to_temp_array = { russian_unreformed_states = 338 }
+	add_to_temp_array = { russian_unreformed_states = 273 }
+	add_to_temp_array = { russian_unreformed_states = 284 }
+	add_to_temp_array = { russian_unreformed_states = 276 }
+	add_to_temp_array = { russian_unreformed_states = 382 }
+	add_to_temp_array = { russian_unreformed_states = 304 }
+	add_to_temp_array = { russian_unreformed_states = 336 }
+	add_to_temp_array = { russian_unreformed_states = 381 }
+	add_to_temp_array = { russian_unreformed_states = 288 }
+	add_to_temp_array = { russian_unreformed_states = 263 }
+	add_to_temp_array = { russian_unreformed_states = 326 }
+	add_to_temp_array = { russian_unreformed_states = 374 }
+	add_to_temp_array = { russian_unreformed_states = 299 }
+	add_to_temp_array = { russian_unreformed_states = 378 }
+	add_to_temp_array = { russian_unreformed_states = 373 }
+	add_to_temp_array = { russian_unreformed_states = 369 }
+	add_to_temp_array = { russian_unreformed_states = 361 }
+	add_to_temp_array = { russian_unreformed_states = 306 }
+	add_to_temp_array = { russian_unreformed_states = 287 }
+	add_to_temp_array = { russian_unreformed_states = 286 }
+	add_to_temp_array = { russian_unreformed_states = 332 }
+	add_to_temp_array = { russian_unreformed_states = 300 }
+	add_to_temp_array = { russian_unreformed_states = 282 }
+	add_to_temp_array = { russian_unreformed_states = 245 }
+	add_to_temp_array = { russian_unreformed_states = 393 }
+	add_to_temp_array = { russian_unreformed_states = 308 }
+	add_to_temp_array = { russian_unreformed_states = 319 }
+	add_to_temp_array = { russian_unreformed_states = 257 }
+	add_to_temp_array = { russian_unreformed_states = 272 }
+	add_to_temp_array = { russian_unreformed_states = 330 }
+	add_to_temp_array = { russian_unreformed_states = 334 }
+	add_to_temp_array = { russian_unreformed_states = 293 }
+	add_to_temp_array = { russian_unreformed_states = 346 }
+	add_to_temp_array = { russian_unreformed_states = 255 }
+	add_to_temp_array = { russian_unreformed_states = 279 }
+	add_to_temp_array = { russian_unreformed_states = 277 }
+	add_to_temp_array = { russian_unreformed_states = 281 }
+	add_to_temp_array = { russian_unreformed_states = 295 }
+	add_to_temp_array = { russian_unreformed_states = 340 }
+	add_to_temp_array = { russian_unreformed_states = 387 }
+	add_to_temp_array = { russian_unreformed_states = 360 }
+	add_to_temp_array = { russian_unreformed_states = 265 }
+	add_to_temp_array = { russian_unreformed_states = 376 }
+	add_to_temp_array = { russian_unreformed_states = 266 }
+	add_to_temp_array = { russian_unreformed_states = 354 }
+	add_to_temp_array = { russian_unreformed_states = 313 }
+	add_to_temp_array = { russian_unreformed_states = 344 }
+	add_to_temp_array = { russian_unreformed_states = 247 }
+	add_to_temp_array = { russian_unreformed_states = 372 }
+	add_to_temp_array = { russian_unreformed_states = 355 }
+	add_to_temp_array = { russian_unreformed_states = 341 }
+	add_to_temp_array = { russian_unreformed_states = 291 }
+	add_to_temp_array = { russian_unreformed_states = 350 }
+	add_to_temp_array = { russian_unreformed_states = 379 }
+	add_to_temp_array = { russian_unreformed_states = 339 }
+	add_to_temp_array = { russian_unreformed_states = 248 }
+	add_to_temp_array = { russian_unreformed_states = 278 }
+	add_to_temp_array = { russian_unreformed_states = 307 }
+	add_to_temp_array = { russian_unreformed_states = 362 }
+	add_to_temp_array = { russian_unreformed_states = 323 }
+	add_to_temp_array = { russian_unreformed_states = 358 }
+	add_to_temp_array = { russian_unreformed_states = 356 }
+
+	for_each_scope_loop = {
+		array = russian_unreformed_states
+
+		add_dynamic_modifier = {
+			modifier = modifier_SOV_unreformed_land
+		}
+	}
+}
+
+effect_SOV_end_tsars_favour = {
+	remove_ideas = idea_SOV_autocratic_tsardom
+}
+
+effect_SOV_add_land_reform_discount = {
+	if = {
+		limit = {
+			is_owned_and_controlled_by = ROOT
+			has_dynamic_modifier = {
+				modifier = modifier_SOV_unreformed_land
+			}
+		}
+		custom_effect_tooltip = add_land_reform_discount_tt
+		set_state_flag = flag_land_reform_discount
+	}
+}
+
+### Tsar Favor Resource Effects ###
+effect_SOV_spend_1_tsar_favor = {
+	custom_effect_tooltip = tsar_favor_spend_1_tt
+	subtract_from_variable = { tsar_favor = 1 }
+	if = {
+		limit = { check_variable = { tsar_favor < 0 } }
+		log = "ERROR: After spending tsar_favor, the remaining tsar_favor was negative. Do not call this effect when there isn't enough tsar favour to spend."
+	}
+}
+
+# The conditional effects only apply the effect if Russia is has autocratic tsardom idea.
+effect_SOV_spend_1_tsar_favor_if_tsarist = {
+	if = {
+		limit = {
+			has_idea = idea_SOV_autocratic_tsardom
+		}
+		effect_SOV_spend_1_tsar_favor = yes
+	}
+}
+
+effect_SOV_spend_3_tsar_favor = {
+	custom_effect_tooltip = tsar_favor_spend_3_tt
+	subtract_from_variable = { tsar_favor = 3 }
+	if = {
+		limit = { check_variable = { tsar_favor < 0 } }
+		log = "ERROR: After spending tsar_favor, the remaining tsar_favor was negative. Do not call this effect when there isn't enough tsar favour to spend."
+	}
+}
+
+effect_SOV_spend_3_tsar_favor_if_tsarist = {
+	if = {
+		limit = {
+			has_idea = idea_SOV_autocratic_tsardom
+		}
+		effect_SOV_spend_3_tsar_favor = yes
+	}
+}
+
+effect_SOV_gain_1_tsar_favor = {
+	custom_effect_tooltip = tsar_favor_gain_1_tt
+	add_to_variable = { tsar_favor = 1 }
+}
+
+effect_SOV_gain_2_tsar_favor = {
+	custom_effect_tooltip = tsar_favor_gain_2_tt
+	add_to_variable = { tsar_favor = 2 }
+}
+
+effect_SOV_gain_3_tsar_favor = {
+	custom_effect_tooltip = tsar_favor_gain_3_tt
+	add_to_variable = { tsar_favor = 3 }
+}

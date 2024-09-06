@@ -13,8 +13,36 @@ characters = {
 		}
 	}
 
-	### Generics ###
+	### Advisors ###
+	SOV_pyotr_stolypin = {
+		name = SOV_pyotr_stolypin
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_pyotr_stolypin
+			allowed = {
+				original_tag = SOV
+			}
+			traits = { tsarist_land_reformer }
+			on_add = {
+				# If changing these values, change 'stolypin_effect_tt' localization
+				multiply_variable = { land_reform_cost = 0.75 }
+				multiply_variable = { land_reform_cost_cheap = 0.75 }
+				multiply_variable = { land_reform_cost_discount = 0.75 }
+			}
+			on_remove = {
+				divide_variable = { land_reform_cost = 0.75 }
+				divide_variable = { land_reform_cost_cheap = 0.75 }
+				divide_variable = { land_reform_cost_discount = 0.75 }
+			}
+		}
+	}
 
+	### Generics ###
 	SOV_generic_prudent_defender = {
 		portraits = {
 			army = {

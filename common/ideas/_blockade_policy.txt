@@ -6,31 +6,72 @@ ideas = {
 		open_sealanes = {
 			cost = 150
 			removal_cost = -1
+			default = yes
 			cancel_if_invalid = no
+
+			available = {
+				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
+			}
+
+			on_add = {
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
 		}
 
 		cargo_interception = {
 			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
+
+			available = {
+				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
+			}
+
+			on_add = {
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
 		}
 
 		surface_blockade = {
 			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
+
+			available = {
+				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
+			}
+
+			on_add = {
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
 		}
 
 		submarine_blockade = {
 			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
+
+			available = {
+				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
+			}
+
+			on_add = {
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
 		}
 
 		unrestricted_blockade = {
 			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
+
+			available = {
+				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
+			}
+
+			on_add = {
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
 		}
 	}
 }

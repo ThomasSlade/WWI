@@ -1,0 +1,15 @@
+on_actions = {
+	on_daily_SOV = {
+		effect = {
+			if = {
+				limit = {
+					NOT = { has_active_mission = mission_SOV_bolshevik_revolution_imminent }
+					has_idea = idea_SOV_revolution_in_waiting
+					revolutionary > SOV.civil_war_revolutionary_threshold
+				}
+	
+				country_event = { id = event_SOV_russian_revolution.1 }
+			}
+		}
+	}
+}

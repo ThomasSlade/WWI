@@ -1,0 +1,22 @@
+add_namespace = event_SOV_generic
+
+country_event = {
+	id = event_SOV_generic.1
+	title = event_SOV_generic.1.t
+	desc = event_SOV_generic.1.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Stolypin assassinated."
+	}
+
+	# Assure the Tsar
+	option = {
+		name = event_SOV_generic.1.a
+		effect_tooltip = {
+			SOV_pyotr_stolypin = { effect_kill_character = yes }
+		}
+	}
+}

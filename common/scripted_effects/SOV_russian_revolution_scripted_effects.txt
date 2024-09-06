@@ -1,0 +1,157 @@
+effect_SOV_init_february_revolution = {
+	country_event = { id = event_SOV_russian_revolution.8 }
+
+	effect_SOV_end_tsars_favour = yes
+	add_ideas = cab_liberal
+	if = {
+		limit = {
+			OR = {
+				has_idea = cab_autocratic
+				has_idea = cab_conservative
+			}
+		}
+		effect_change_law_to_liberal = yes
+	}
+	if = {
+		limit = {
+			OR = {
+				has_idea = gov_military_dictatorship
+				has_idea = gov_absolute_monarchy
+				has_idea = gov_constitutional_monarchy
+			}
+		}
+		effect_change_law_to_limited_democracy = yes
+
+	}
+	add_ideas = idea_SOV_provisional_government
+}
+
+effect_SOV_begin_civil_war_as_reds = {
+	remove_ideas = {
+		idea_SOV_revolution_in_waiting
+		idea_SOV_provisional_government
+	}
+
+	set_temp_variable = { civil_war_opponent = highest_party_ideology }
+
+	if = {
+		limit = {
+			check_variable = { civil_war_opponent = revolutionary }
+		}
+		set_temp_variable = { civil_war_opponent = highest_party_ideology@ruling_party }
+	}
+
+	start_civil_war = {
+		ideology = var:civil_war_opponent
+		ruling_party = revolutionary
+		capital = 497 # WWI TODO: Change this to Omsk probably, when I add it
+		size = 0.55
+		states = all
+		states_filter = {
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = modifier_SOV_unreformed_land
+				}
+			}
+		}
+	}
+
+	set_cosmetic_tag = SOV_RSFSR
+
+	set_variable = { globalcivil_war_revolutionaries = THIS }
+	hidden_effect = {
+		random_other_country = {
+			limit = {
+				original_tag = SOV
+				has_government = var:civil_war_opponent
+			}
+
+			set_cosmetic_tag = SOV_RUSSIANSTATE
+			ROOT = { set_variable = { global.russian_civil_war_reactionaries = PREV } }
+		}
+	}
+	capital_scope = {
+		save_event_target_as = revolutionary_state
+	}
+	country_event = { id = event_SOV_russian_revolution.5 hours = 3 }
+
+	effect_SOV_withdraw_from_wars_in_civil_war = yes
+}
+
+effect_SOV_begin_civil_war_as_whites = {
+	remove_ideas = {
+		idea_SOV_revolution_in_waiting
+		idea_SOV_provisional_government
+	}
+
+	set_variable = { pre_civil_war_capital = capital }
+
+	start_civil_war = {
+		ideology = revolutionary
+		capital = 386
+		size = 0.55
+		states = all
+		states_filter = {
+			has_dynamic_modifier = {
+				modifier = modifier_SOV_unreformed_land
+			}
+		}
+	}
+
+	if = {
+		limit = { has_cosmetic_tag = SOV_REPUBLIC }
+		set_cosmetic_tag = SOV_RUSSIANSTATE
+	}
+
+	set_variable = { global.russian_civil_war_reactionaries = THIS }
+	hidden_effect = {
+		random_other_country = {
+			limit = {
+				original_tag = SOV
+				has_government = revolutionary
+			}
+
+			set_cosmetic_tag = SOV_RSFSR
+			ROOT = { set_variable = { global.russian_civil_war_revolutionaries = PREV } }
+		}
+	}
+
+	var:global.russian_civil_war_revolutionaries = {
+		capital_scope = {
+			save_event_target_as = revolutionary_state
+		}
+	}
+	country_event = { id = event_SOV_russian_revolution.5 hours = 3 }
+
+	effect_SOV_withdraw_from_wars_in_civil_war = yes
+}
+
+# Call on the non-dynamic civil war participant (the player) to withdraw them from wars and alliances temporarily.
+effect_SOV_withdraw_from_wars_in_civil_war = {
+	if = {
+		limit = {
+			is_in_faction = yes
+		}
+
+		leave_faction = yes
+	}
+
+	# Ask Russian war enemies if they want to conclude a peace now.
+	if = {
+		limit = {
+			has_war = yes
+		}
+
+		random_enemy_country = {
+			limit = {
+				NOT = { original_tag = SOV }
+				is_faction_leader = yes
+			}
+
+			# Fire this offer from the revolutionaries
+			var:global.russian_civil_war_revolutionaries = {
+				PREV = { country_event = { id = event_SOV_russian_revolution.7 days = 10 } }
+			}
+		}
+	}
+}

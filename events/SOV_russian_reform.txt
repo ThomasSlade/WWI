@@ -1,0 +1,42 @@
+add_namespace = event_SOV_russian_reform
+
+country_event = {
+	id = event_SOV_russian_reform.1
+	title = event_SOV_russian_reform.1.t
+	desc = event_SOV_russian_reform.1.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Russian state was land-reformed."
+	}
+
+	# Assure the Tsar
+	option = {
+		name = event_SOV_russian_reform.1.a
+		effect_SOV_gain_1_tsar_favor = yes
+	}
+
+	# Continue industrialisation
+	option = {
+		name = event_SOV_russian_reform.1.b
+		event_target:reformed_state = {
+			add_dynamic_modifier = {
+				modifier = modifier_SOV_encouraged_industrialisation
+				days = 365
+			}
+		}
+	}
+
+	# Gain more resources
+	option = {
+		name = event_SOV_russian_reform.1.c
+		event_target:reformed_state = {
+			add_dynamic_modifier = {
+				modifier = modifier_SOV_exploited_resources
+				days = 365
+			}
+		}
+	}
+}

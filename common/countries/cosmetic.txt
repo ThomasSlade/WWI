@@ -42,3 +42,18 @@ SER_BLACKHAND = {
 	color = rgb { 107 4 59 }
 	color_ui = { 107 4 59 }
 }
+
+SOV_REPUBLIC = {
+	color = rgb { 46 133 53 }
+	color_ui = rgb { 46 133 53 }
+}
+
+SOV_RSFSR = {
+	color = rgb { 186 55 48 }
+	color_ui = { 107 4 59 }
+}
+
+SOV_RUSSIANSTATE = {
+	color = rgb { 132 161 122 }
+	color_ui = { 132 161 122 }
+}

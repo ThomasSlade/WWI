@@ -1,0 +1,32 @@
+trigger_SOV_at_least_1_tsar_favor = {
+	custom_trigger_tooltip = {
+		tooltip = tsar_favor_cost_1_tt
+		check_variable = { tsar_favor > 0 }
+	}
+}
+
+# The condition wrappers make the trigger only relevant to Russia if it has the auotcratic tsardon idea.
+trigger_SOV_at_least_1_tsar_favor_if_tsarist = {
+	if = {
+		limit = {
+			has_idea = idea_SOV_autocratic_tsardom
+		}
+		trigger_SOV_at_least_3_tsar_favor = yes
+	}
+}
+
+trigger_SOV_at_least_3_tsar_favor = {
+	custom_trigger_tooltip = {
+		tooltip = tsar_favor_cost_3_tt
+		check_variable = { tsar_favor > 0 }
+	}
+}
+
+trigger_SOV_requires_3_tsar_favor_if_tsarist = {
+	if = {
+		limit = {
+			has_idea = idea_SOV_autocratic_tsardom
+		}
+		trigger_SOV_at_least_3_tsar_favor = yes
+	}
+}

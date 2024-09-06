@@ -1,0 +1,326 @@
+﻿add_namespace = event_SOV_russian_revolution
+
+country_event = {
+	id = event_SOV_russian_revolution.1
+	title = event_SOV_russian_revolution.1.t
+	desc = {
+		trigger = {
+			has_idea = idea_SOV_autocratic_tsardom
+		}
+		text = event_SOV_russian_revolution.1.d
+	}
+	desc = {
+		trigger = {
+			NOT = { has_idea = idea_SOV_autocratic_tsardom }
+		}
+		text = event_SOV_russian_revolution.1.d_not_tsarist
+	}
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Warning of impending Civil War and starting mission."
+		hidden_effect = {
+			activate_mission = mission_SOV_bolshevik_revolution_imminent
+
+			if = {
+				limit = { NOT = { has_country_flag = flag_SOV_revolution_warning_news_fired } }
+				news_event = {
+					id = event_SOV_russian_revolution.3
+					days = 2
+				}
+				set_country_flag = flag_SOV_revolution_warning_news_fired
+			}
+		}
+	}
+
+	option = {
+		trigger = {
+			has_idea = idea_SOV_autocratic_tsardom
+		}
+		name = event_SOV_russian_revolution.1.a
+
+		effect_tooltip = {
+			activate_mission = mission_SOV_bolshevik_revolution_imminent
+		}
+	}
+
+	option = {
+		trigger = {
+			NOT = { has_idea = idea_SOV_autocratic_tsardom }
+		}
+		name = event_SOV_russian_revolution.1.a_not_tsarist
+
+		effect_tooltip = {
+			activate_mission = mission_SOV_bolshevik_revolution_imminent
+		}
+	}
+}
+
+country_event = {
+	id = event_SOV_russian_revolution.2
+	title = event_SOV_russian_revolution.2.t
+	desc = event_SOV_russian_revolution.2.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Civil War temporarily averted."
+	}
+
+	# Phew
+	option = {
+		name = event_SOV_russian_revolution.2.a
+	}
+}
+
+news_event = {
+	id = event_SOV_russian_revolution.3
+	title = event_SOV_russian_revolution.3.t
+	desc = {
+		trigger = {
+			has_idea = idea_SOV_autocratic_tsardom
+		}
+		text = event_SOV_russian_revolution.3.d
+	}
+	desc = {
+		trigger = {
+			NOT = { has_idea = idea_SOV_autocratic_tsardom }
+		}
+		text = event_SOV_russian_revolution.3.d_not_tsarist
+	}
+	picture = GFX_news_event_001
+
+	is_triggered_only = yes
+	major = yes
+	fire_for_sender = no
+
+	immediate = {
+		log = "([THIS.GetName] news event) Warning other countries of impending Civil War in Russia."
+	}
+
+	# Indifferent
+	option = {
+		trigger = {
+			NOT = { is_ally_with = FROM }
+			has_opinion = { target = FROM value > -10 }
+		}
+		name = event_SOV_russian_revolution.3.a
+	}
+
+	# Allies
+	option = {
+		trigger = {
+			is_ally_with = FROM
+		}
+		name = event_SOV_russian_revolution.3.b
+	}
+
+	# Approve
+	option = {
+		trigger = {
+			NOT = { is_ally_with = FROM }
+			has_opinion = { target = FROM value < -9 }
+		}
+		name = event_SOV_russian_revolution.3.c
+	}
+}
+
+news_event = {
+	id = event_SOV_russian_revolution.4
+	title = event_SOV_russian_revolution.4.t
+	desc = event_SOV_russian_revolution.4.d
+	picture = GFX_news_event_001
+
+	is_triggered_only = yes
+	major = yes
+	fire_for_sender = no
+
+	immediate = {
+		log = "([THIS.GetName] news event) Warning other countries of impending Civil War in Russia."
+	}
+
+	option = {
+		name = event_SOV_russian_revolution.4.a
+	}
+}
+
+country_event = {
+	id = event_SOV_russian_revolution.5
+	title = event_SOV_russian_revolution.5.t
+	desc = {
+		trigger = {
+			capital_scope = { state = pre_civil_war_capital }
+		}
+		text = event_SOV_russian_revolution.5.d
+	}
+	desc = {
+		trigger = {
+			NOT = { capital_scope = { state = pre_civil_war_capital } }
+		}
+		text = event_SOV_russian_revolution.5.d_lost_capital
+	}
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Civil War with Bolsheviks begins (playing as Whites)."
+
+		hidden_effect = {
+			var:global.russian_civil_war_reactionaries = {
+				news_event = { id = event_SOV_russian_revolution.6 days = 2 }
+			}
+		}
+	}
+
+	option = {
+		name = event_SOV_russian_revolution.5.a
+	}
+}
+
+news_event = {
+	id = event_SOV_russian_revolution.6
+	title = event_SOV_russian_revolution.6.t
+	desc = {
+		trigger = {
+			FROM = { has_idea = idea_SOV_autocratic_tsardom }
+		}
+		text = event_SOV_russian_revolution.6.d
+	}
+	desc = {
+		trigger = {
+			FROM = { NOT = { has_idea = idea_SOV_autocratic_tsardom } }
+		}
+		text = event_SOV_russian_revolution.6.d_not_tsarist
+	}
+	picture = GFX_news_event_001
+
+	is_triggered_only = yes
+	major = yes
+	fire_for_sender = no
+
+	immediate = {
+		log = "([THIS.GetName] news event) Civil War with Bolsheviks begins (playing as Whites)."
+	}
+	
+	# Indifferent
+	option = {
+		trigger = {
+			NOT = { is_ally_with = FROM }
+			has_opinion = { target = FROM value > -10 }
+		}
+		name = event_SOV_russian_revolution.6.a
+	}
+
+	# Allies
+	option = {
+		trigger = {
+			is_ally_with = FROM
+		}
+		name = event_SOV_russian_revolution.6.b
+	}
+
+	# Approve
+	option = {
+		trigger = {
+			NOT = { is_ally_with = FROM }
+			has_opinion = { target = FROM value < -9 }
+		}
+		name = event_SOV_russian_revolution.6.c
+	}
+}
+
+country_event = {
+	id = event_SOV_russian_revolution.7
+	title = event_SOV_russian_revolution.7.t
+	desc = event_SOV_russian_revolution.7.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Asking Russian war enemies if they want to make a treaty of Brest-Litovsk now that the Civil War has begun."
+	}
+
+	# Ok
+	option = {
+		name = event_SOV_russian_revolution.7.a
+
+		start_peace_conference = {
+			tag = FROM
+			score_factor = 0.15
+		}
+	}
+
+	# No
+	option = {
+		name = event_SOV_russian_revolution.7.b
+	}
+}
+
+country_event = {
+	id = event_SOV_russian_revolution.8
+	title = event_SOV_russian_revolution.8.t
+	desc = event_SOV_russian_revolution.8.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) February Revolution."
+
+		hidden_effect = {
+			news_event = { id = event_SOV_russian_revolution.9.t days = 1}
+		}
+	}
+
+	# Ok
+	option = {
+		name = event_SOV_russian_revolution.8.a
+	}
+}
+
+news_event = {
+	id = event_SOV_russian_revolution.9
+	title = event_SOV_russian_revolution.9.t
+	desc = event_SOV_russian_revolution.9.d
+	picture = GFX_news_event_001
+
+	is_triggered_only = yes
+	major = yes
+	fire_for_sender = no
+
+	immediate = {
+		log = "([THIS.GetName] news event) February Revolution."
+	}
+
+
+	# Dissaprove
+	option = {
+		trigger = {
+			has_idea = gov_absolute_monarchy
+		}
+		name = event_SOV_russian_revolution.9.a
+	}
+
+	# Ok
+	option = {
+		trigger = {
+			NOT = { has_idea = gov_absolute_monarchy }
+			NOT = { has_war_with = FROM }
+		}
+		name = event_SOV_russian_revolution.9.b
+	}
+
+	# At war
+	option = {
+		trigger = {
+			NOT = { has_idea = gov_absolute_monarchy }
+			has_war_with = FROM
+		}
+		name = event_SOV_russian_revolution.9.c
+	}
+}

@@ -1,0 +1,6 @@
+﻿l_english:
+  event_SOV_russian_reform.1.t: "Land Reform in [reformed_state.GetName] a Success"
+  event_SOV_russian_reform.1.d: "The village communes of [reformed_state.GetName] have been dismantled: the countryside is increasingly dense with Khutora and Otruba smallholders, who quickly take a shine to our regime.\n\nOutcompeted peasants flock to the cities for factory work."
+  event_SOV_russian_reform.1.a: "Inform the Tsar of this progress."
+  event_SOV_russian_reform.1.b: "Encourage this industrialisation."
+  event_SOV_russian_reform.1.c: "Exploit the abandoned land."

@@ -14,6 +14,12 @@ ideas = {
 					has_idea = gov_military_dictatorship
 					has_idea = gov_constitutional_monarchy
 				}
+
+				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
+			}
+
+			on_add = {
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
 			}
 
 			modifier = {
@@ -37,6 +43,12 @@ ideas = {
 					has_idea = gov_liberal_democracy
 					has_idea = gov_social_democracy
 				}
+
+				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
+			}
+
+			on_add = {
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
 			}
 
 			modifier = {
@@ -57,6 +69,12 @@ ideas = {
 					has_idea = gov_liberal_democracy
 					has_idea = gov_social_democracy
 				}
+
+				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
+			}
+
+			on_add = {
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
 			}
 
 			modifier = {
@@ -75,6 +93,12 @@ ideas = {
 					has_idea = gov_liberal_democracy
 					has_idea = gov_social_democracy
 				}
+
+				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
+			}
+
+			on_add = {
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
 			}
 
 			modifier = {
@@ -94,11 +118,17 @@ ideas = {
 					has_idea = gov_social_democracy
 					has_idea = gov_military_dictatorship
 				}
+
+				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
+			}
+
+			on_add = {
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
 			}
 
 			modifier = {
 				conversion_cost_civ_to_mil_factor = 1
-				conversion_cost_civ_to_mil_factor = 1
+				conversion_cost_mil_to_civ_factor = 1
 				consumer_goods_factor = -0.25
 			}
 		}

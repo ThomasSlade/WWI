@@ -1,4 +1,20 @@
 ﻿l_english:
+  # Laws
+  cabinet: "Cabinet"
+  government: "Government"
+  cab_autocratic: "Autocratic"
+  cab_conservative: "Conservative"
+  cab_liberal: "Liberal"
+  cab_socialist: "Socialist"
+  cab_communist: "Communist"
+  gov_military_dictatorship: "Military Dictatorship"
+  gov_absolute_monarchy: "Absolute Monarchy"
+  gov_constitutional_monarchy: "Constitutional Monarchy"
+  gov_limited_democracy: "Limited Democracy"
+  gov_liberal_democracy: "Liberal Democracy"
+  gov_social_democracy: "Social Democracy"
+
+
   # Generic
   territory_restored: "Territory Restored"
   territory_restored_desc: "Securing claimed territory has earned you the confidence in financiers and the pride of your citizens."
@@ -43,5 +59,12 @@
   SER_nacertanije_desc: "Written by Ilija Garašanin during the nascency of independent Serbia, the Načertanije or 'the Draft' is a blueprint of greater Serbia and formulates the ambition of her governments. Macedonia, Albania, Croatia, Bosnia - all are posited as Serbdom within the Načertanije."
   SER_idea_follow_the_independent_radicals: "Follow the Independent Radicals"
   SER_idea_follow_the_independent_radicals_desc: "Encircled by threats Serbia may be, but the delicate foreign policy of past governments must be done away with. Citizens of Serbia now turn to the Independent Radicals and their hardline revaunchism, even if this risks the wrath of powerful neighboring states."
- idea_SER_favoured_by_arbitrator: "Favoured by Arbitrator ([?global.balkan_arbitrator.GetNameWithFlag])"
+  idea_SER_favoured_by_arbitrator: "Favoured by Arbitrator ([?global.balkan_arbitrator.GetNameWithFlag])"
   idea_SER_favoured_by_arbitrator_turkey_annexation_tt: "In peace conference against §Y[TUR.GetNameWithFlag]:§! Annex cost: §G-33.3%§!"
+
+  # Russia
+  idea_SOV_autocratic_tsardom: "Autocratic Tsardom"
+  idea_SOV_autocratic_tsardom_law_change_cost_tt: "Changing laws costs $tsar_favor_resource$"
+  idea_SOV_autocratic_tsardom_government_change_disallowed_tt: "Cannot change $government$ from §Y$gov_absolute_monarchy$§!"
+  idea_SOV_revolution_in_waiting: "Revolution in Waiting"
+  idea_SOV_revolution_in_waiting_civil_war_tt: "When §Y$revolutionary$§! reaches [?SOV.civil_war_revolutionary_threshold|%Y] popularity:\n§RActivates Mission: $mission_SOV_bolshevik_revolution_imminent$§!"

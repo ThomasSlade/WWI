@@ -43,3 +43,6 @@
   effect_AUS_white_peace_message_albanian_intervention: "[AUS.GetNameDefCap] guaranteed [ALB.GetAdjective] independence."
   SER_macedonian_states_receive: "§YMacedonian states§!:"
   SER_owned_macedonian_states_receive: "§YOwned Macedonian states§!:"
+  effect_kill_character: "is killed"
+  SOV_change_law_to_liberal: "Change $cabinet$ to §Y$cab_liberal$§!"
+  SOV_change_law_to_limited_democracy: "Change $government$ to §Y$gov_limited_democracy$§!"

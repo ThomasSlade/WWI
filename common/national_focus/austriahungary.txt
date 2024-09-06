@@ -875,14 +875,11 @@ focus_tree = {
 				# Otherwise, the TT says 'when Albania becomes independent ...'
 				if = {
 					limit = {
-						#ALB = {
-						#	exists = yes
-						#	has_country_flag = flag_ALB_is_fighting_for_independence
-						#}
-						always = yes
+						ALB = {
+							exists = yes
+							has_country_flag = flag_ALB_is_fighting_for_independence
+						}
 					}
-
-					
 
 					add_opinion_modifier = {
 						target = ALB
