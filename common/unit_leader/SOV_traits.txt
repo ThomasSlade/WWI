@@ -1,0 +1,29 @@
+leader_traits = {
+	peasant_priest = {
+		type = land
+		trait_type = personality_trait
+
+		new_commander_weight = { base = 0 }
+		
+		modifier = {
+			reassignment_duration_factor = 1
+			sickness_chance = -0.5
+			army_infantry_defence_factor = 0.15
+			pocket_penalty = -0.5
+			attrition = -0.5
+		}
+	}
+
+	mystic = {
+		type = land
+		trait_type = personality_trait
+
+		new_commander_weight = { base = 0 }
+
+		modifier = {
+			land_night_attack = 0.25
+			initiative_factor = 0.75
+			planning_speed = -0.5
+		}
+	}
+}

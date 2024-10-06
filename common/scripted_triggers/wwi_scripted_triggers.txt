@@ -71,3 +71,37 @@ is_in_southern_balkans = {
 		region = 46
 	}
 }
+
+is_orthodox = {
+	OR = {
+		tag = SOV
+		tag = UKR
+		tag = BLR
+		tag = GEO
+		tag = MOL
+		tag = ROM
+		tag = BUL
+		tag = GRE
+		tag = SER
+		tag = MNT
+		tag = MAC
+	}
+}
+
+is_slavic = {
+	OR = {
+		tag = SOV
+		tag = UKR
+		tag = BLR
+		tag = POL
+		tag = CZE
+		tag = SLO
+		tag = BUL
+		tag = SER
+		tag = CRO
+		tag = SLV
+		tag = MAC
+		tag = BOS
+		tag = MNT
+	}
+}

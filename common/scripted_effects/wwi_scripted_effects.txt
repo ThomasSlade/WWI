@@ -74,3 +74,15 @@ effect_change_law_to_limited_democracy = {
 	}
 	custom_effect_tooltip = SOV_change_law_to_limited_democracy
 }
+
+effect_promote_character_to_non_revolutionary_leader = {
+	promote_character = {
+		character = SOV_grigori_rasputin
+		ideology = established_t
+	}
+
+	promote_character = {
+		character = SOV_grigori_rasputin
+		ideology = expansionist_t
+	}
+}

@@ -94,4 +94,24 @@ opinion_modifiers = {
 	}
 
 	AUS_purchased_italian_neutrality = { value = 25 }
+
+	SOV_rasputin_offended_diplomat = {
+		value = -20
+		decay = -2
+	}
+
+	SOV_rasputin_offended_diplomat_pleased_enemies = {
+		value = 25
+		decay = -1
+	}
+
+	SOV_orthodox_holy_peasant_diplomacy = {
+		value = 20
+		decay = -1
+	}
+
+	SOV_children_of_russia = {
+		value = 20
+		decay = -0.5
+	}
 }

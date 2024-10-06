@@ -1,0 +1,37 @@
+leader_traits = {
+	# Grigori Raspitin
+	holy_peasant = {
+		random = no
+		org_loss_at_low_org_factor = -0.5
+		weekly_casualties_war_support = 0.002
+		custom_modifier_tooltip = rasputin_events_tt
+	}
+
+	empowered_holy_peasant = {
+		random = no
+		org_loss_at_low_org_factor = -0.66
+		weekly_casualties_war_support = 0.003
+		custom_modifier_tooltip = empowered_rasputin_events_tt
+	}
+
+	holy_peasant_diplomacy = {
+		random = no
+		opinion_gain_monthly = 3
+	}
+
+	# Pyotr Stolypin
+	tsarist_land_reformer = {
+		random = no
+		# This assumes the trait is only ever used on Stolypin, who has the on_add and on_remove that does what this tooltip says.
+		custom_modifier_tooltip = stolypin_effect_tt
+		production_speed_infrastructure_factor = 0.25
+		stability_factor = 0.1
+	}
+
+	# Bad General
+	bad_general_released_from_prison = {
+		random = no
+		army_morale_factor = -0.25
+		command_power_gain = -0.2
+	}
+}

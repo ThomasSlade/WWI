@@ -2,12 +2,17 @@ spriteTypes = {
 	### Generic
 	spriteType = {
 		name = "GFX_idea_generic_political_advisor_europe_1"
-		texturefile = "gfx/interface/ideas/advisors/idea_ser_johan_johanovic.dds"
+		texturefile = "gfx/interface/ideas/advisors/idea_SOV_grigori_rasputin.dds"
 	}
 
-	# SER
+	# SOV
 	spriteType = {
-		name = "GFX_idea_ser_johan_johanovic"
-		texturefile = "gfx/interface/ideas/advisors/idea_ser_johan_johanovic.dds"
+		name = "GFX_idea_SOV_grigori_rasputin"
+		texturefile = "gfx/interface/ideas/advisors/idea_SOV_grigori_rasputin.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOV_pyotr_stolypin"
+		texturefile = "gfx/interface/ideas/advisors/idea_SOV_pyotr_stolypin.dds"
 	}
 }

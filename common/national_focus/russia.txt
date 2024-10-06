@@ -17,7 +17,8 @@ focus_tree = {
 	focus = {
 		id = SOV_western_zemstvo_bill
 		icon = GFX__shine
-		x = 0
+		mutually_exclusive = { focus = SOV_cooperate_with_polish_nobility }
+		x = 8
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -55,10 +56,241 @@ focus_tree = {
 		}
 	}
 
+	# Federal Russia Branch
+	focus = {
+		id = SOV_cooperate_with_polish_nobility
+		icon = GFX__shine
+		mutually_exclusive = { focus = SOV_western_zemstvo_bill }
+		x = -30
+		y = 0
+		cost = 10
+		relative_position_id = SOV_western_zemstvo_bill
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_repeal_language_laws
+		icon = GFX__shine
+		prerequisite = { focus = SOV_western_zemstvo_bill focus = SOV_cooperate_with_polish_nobility }
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = SOV_cooperate_with_polish_nobility
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_baltic_autonomy
+		icon = GFX__shine
+		prerequisite = { focus = SOV_repeal_language_laws }
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = SOV_repeal_language_laws
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_autocephaly
+		icon = GFX__shine
+		prerequisite = { focus = SOV_western_zemstvo_bill focus = SOV_cooperate_with_polish_nobility }
+		x = 7
+		y = 1
+		cost = 10
+		relative_position_id = SOV_cooperate_with_polish_nobility
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_return_kholm
+		icon = GFX__shine
+		prerequisite = { focus = SOV_cooperate_with_polish_nobility }
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = SOV_cooperate_with_polish_nobility
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_kingdom_of_poland
+		icon = GFX__shine
+		prerequisite = { focus = SOV_return_kholm }
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = SOV_return_kholm
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_ukrainian_first_universal
+		icon = GFX__shine
+		prerequisite = { focus = SOV_autocephaly }
+		x = -3
+		y = 1
+		cost = 10
+		relative_position_id = SOV_autocephaly
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_belarusian_autonomy
+		icon = GFX__shine
+		prerequisite = { focus = SOV_ukrainian_first_universal focus = SOV_kingdom_of_poland focus = SOV_baltic_autonomy}
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = SOV_ukrainian_first_universal
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_special_transcaucasian_committee
+		icon = GFX__shine
+		prerequisite = { focus = SOV_autocephaly }
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = SOV_autocephaly
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_cooperate_with_the_jadids
+		icon = GFX__shine
+		prerequisite = { focus = SOV_autocephaly }
+		mutually_exclusive = { focus = SOV_protect_ottoman_christians }
+		x = 0
+		y = 3
+		cost = 10
+		relative_position_id = SOV_autocephaly
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_protect_ottoman_christians
+		icon = GFX__shine
+		prerequisite = { focus = SOV_autocephaly focus = SOV_romanov_pilgrimage }
+		mutually_exclusive = { focus = SOV_cooperate_with_the_jadids }
+		x = 2
+		y = 3
+		cost = 10
+		relative_position_id = SOV_autocephaly
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_rights_of_the_nations_of_russia
+		icon = GFX__shine
+		prerequisite = { focus = SOV_kingdom_of_poland focus = SOV_ukrainian_first_universal focus = SOV_special_transcaucasian_committee focus = SOV_baltic_autonomy }
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = SOV_ukrainian_first_universal
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
 	focus = {
 		id = SOV_great_russification_programme
 		icon = GFX__shine
-		prerequisite = { focus = SOV_western_zemstvo_bill }
+		prerequisite = { focus = SOV_western_zemstvo_bill focus = SOV_cooperate_with_polish_nobility }
 		x = -7
 		y = 1
 		relative_position_id = SOV_western_zemstvo_bill
@@ -76,7 +308,7 @@ focus_tree = {
 	focus = {
 		id = SOV_resettle_peasants_eastward
 		icon = GFX__shine
-		prerequisite = { focus = SOV_western_zemstvo_bill }
+		prerequisite = { focus = SOV_western_zemstvo_bill focus = SOV_cooperate_with_polish_nobility }
 		x = -5
 		y = 1
 		relative_position_id = SOV_western_zemstvo_bill
@@ -152,7 +384,7 @@ focus_tree = {
 	focus = {
 		id = SOV_stolypins_demand
 		icon = GFX__shine
-		prerequisite = { focus = SOV_western_zemstvo_bill }
+		prerequisite = { focus = SOV_western_zemstvo_bill focus = SOV_cooperate_with_polish_nobility }
 		x = 1
 		y = 1
 		relative_position_id = SOV_western_zemstvo_bill
@@ -180,10 +412,60 @@ focus_tree = {
 	focus = {
 		id = SOV_restyle_st_petersburg_cathedrals
 		icon = GFX__shine
-		prerequisite = { focus = SOV_resettle_peasants_eastward }
-		x = -2
+		mutually_exclusive = { focus = SOV_window_on_europe }
+		x = -15
 		y = 1
-		relative_position_id = SOV_resettle_peasants_eastward
+		relative_position_id = SOV_western_zemstvo_bill
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			386 = {
+				if = {
+					limit = { is_owned_and_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+			381 = {
+				if = {
+					limit = { is_owned_and_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+			349 = {
+				if = {
+					limit = { is_owned_and_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_window_on_europe
+		icon = GFX__shine
+		mutually_exclusive = { focus = SOV_restyle_st_petersburg_cathedrals }
+		x = -13
+		y = 1
+		relative_position_id = SOV_western_zemstvo_bill
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -197,7 +479,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SOV_romanov_pilgrimage
+		id = SOV_the_holy_city
 		icon = GFX__shine
 		prerequisite = { focus = SOV_restyle_st_petersburg_cathedrals }
 		x = 0
@@ -215,11 +497,337 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = SOV_lake_ladoga_water_pipeline
+		icon = GFX__shine
+		prerequisite = { focus = SOV_window_on_europe }
+		x = 0
+		y = 1
+		relative_position_id = SOV_window_on_europe
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_romanov_pilgrimage
+		icon = GFX__shine
+		prerequisite = { focus = SOV_the_holy_city }
+		x = -4
+		y = 1
+		relative_position_id = SOV_the_holy_city
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Naval
+	focus = {
+		id = SOV_rebuild_the_navy
+		icon = GFX__shine
+		x = 3
+		y = 0
+		relative_position_id = SOV_romanov_pilgrimage
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_baltic_fleet
+		icon = GFX__shine
+		prerequisite = { focus = SOV_rebuild_the_navy }
+		mutually_exclusive = { focus = SOV_black_sea_fleet }
+		x = 1
+		y = 1
+		relative_position_id = SOV_rebuild_the_navy
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_pacific_fleet
+		icon = GFX__shine
+		prerequisite = { focus = SOV_baltic_fleet }
+		x = 0
+		y = 1
+		relative_position_id = SOV_baltic_fleet
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_secure_the_seas
+		icon = GFX__shine
+		prerequisite = { focus = SOV_pacific_fleet }
+		x = 0
+		y = 1
+		relative_position_id = SOV_pacific_fleet
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_black_sea_fleet
+		icon = GFX__shine
+		prerequisite = { focus = SOV_rebuild_the_navy }
+		mutually_exclusive = { focus = SOV_baltic_fleet }
+		x = -1
+		y = 1
+		relative_position_id = SOV_rebuild_the_navy
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_racconigi_bargain
+		icon = GFX__shine
+		prerequisite = { focus = SOV_black_sea_fleet }
+		x = 0
+		y = 1
+		relative_position_id = SOV_black_sea_fleet
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_the_straits_must_be_ours
+		icon = GFX__shine
+		prerequisite = { focus = SOV_racconigi_bargain focus = SOV_holy_peasant_diplomacy }
+		x = 0
+		y = 1
+		relative_position_id = SOV_racconigi_bargain
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_secure_grain_exports
+		icon = GFX__shine
+		prerequisite = { focus = SOV_the_straits_must_be_ours }
+		x = -1
+		y = 1
+		relative_position_id = SOV_the_straits_must_be_ours
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_claim_trezibond
+		icon = GFX__shine
+		prerequisite = { focus = SOV_the_straits_must_be_ours }
+		x = 1
+		y = 1
+		relative_position_id = SOV_the_straits_must_be_ours
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Empower Rasputin Branch
+	focus = {
+		id = SOV_empower_rasputin
+		icon = GFX__shine
+		prerequisite = { focus = SOV_romanov_pilgrimage }
+		x = 0
+		y = 1
+		relative_position_id = SOV_romanov_pilgrimage
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_advisor_role = {
+				character = SOV_grigori_rasputin
+				slot = political_advisor
+			}
+
+			SOV_grigori_rasputin = {
+				effect_promote_character_to_non_revolutionary_leader = yes
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_seduce_the_court
+		icon = GFX__shine
+		prerequisite = { focus = SOV_empower_rasputin }
+		x = -2
+		y = 1
+		relative_position_id = SOV_empower_rasputin
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			# WWI TODO: Look into a fun decision system for this.
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = SOV_holy_peasant_diplomacy
+		icon = GFX__shine
+		prerequisite = { focus = SOV_empower_rasputin }
+		x = 0
+		y = 1
+		relative_position_id = SOV_empower_rasputin
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
+			add_trait = {
+				character = SOV_grigori_rasputin
+				slot = country_leader
+				trait = holy_peasant_diplomacy
+			}
+
+			every_other_country = {
+				display_individual_scopes = yes
+
+				limit = {
+					exists = yes
+					is_orthodox = yes
+					NOT = { has_war_with = ROOT }
+				}
+
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = SOV_orthodox_holy_peasant_diplomacy
+				}
+
+				hidden_effect = {
+					reverse_add_opinion_modifier = {
+						target = ROOT
+						modifier = SOV_orthodox_holy_peasant_diplomacy
+					}
+				}
+
+				add_timed_idea = {
+					idea = var:ideology_acceptance_medium_idea
+					days = 1095
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_cult_of_the_peasant
+		icon = GFX__shine
+		prerequisite = { focus = SOV_seduce_the_court }
+		prerequisite = { focus = SOV_holy_peasant_diplomacy }
+		x = 1
+		y = 1
+		relative_position_id = SOV_seduce_the_court
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = idea_SOV_cult_of_the_peasant
+		}
+	}
+
 	# Liberal Zemstvo Branch
 	focus = {
 		id = SOV_zemstvo_men
 		icon = GFX__shine
-		prerequisite = { focus = SOV_western_zemstvo_bill }
+		prerequisite = { focus = SOV_western_zemstvo_bill focus = SOV_cooperate_with_polish_nobility }
 		x = -1
 		y = 1
 		relative_position_id = SOV_western_zemstvo_bill
@@ -300,242 +908,13 @@ focus_tree = {
 		}
 	}
 
-	# February Revolution Branch
-	focus = {
-		id = SOV_february_revolution
-		icon = GFX__shine
-		prerequisite = { focus = SOV_the_third_element }
-		prerequisite = { focus = SOV_the_labour_group }
-		mutually_exclusive = { focus = SOV_underground_soviets }
-		x = 0
-		y = 3
-		relative_position_id = SOV_the_third_element
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = no
-
-		completion_reward = {
-			effect_SOV_init_february_revolution = yes
-		}
-	}
-
-	focus = {
-		id = SOV_eight_hour_day
-		icon = GFX__shine
-		prerequisite = { focus = SOV_february_revolution }
-		x = -2
-		y = 1
-		relative_position_id = SOV_february_revolution
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = no
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = SOV_liberty_loan
-		icon = GFX__shine
-		prerequisite = { focus = SOV_eight_hour_day }
-		x = 0
-		y = 1
-		relative_position_id = SOV_eight_hour_day
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = no
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = SOV_remove_unreliables_from_the_capitol
-		icon = GFX__shine
-		prerequisite = { focus = SOV_eight_hour_day }
-		x = -2
-		y = 1
-		relative_position_id = SOV_eight_hour_day
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = no
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = SOV_dissolve_the_soviet
-		icon = GFX__shine
-		prerequisite = { focus = SOV_liberty_loan focus = SOV_remove_unreliables_from_the_capitol }
-		x = 0
-		y = 1
-		relative_position_id = SOV_liberty_loan
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = no
-
-		completion_reward = {
-			effect_SOV_begin_civil_war_as_whites = yes
-		}
-	}
-
-	focus = {
-		id = SOV_dislodge_the_clergy
-		icon = GFX__shine
-		prerequisite = { focus = SOV_february_revolution }
-		x = 0
-		y = 1
-		relative_position_id = SOV_february_revolution
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = no
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = SOV_commisars
-		icon = GFX__shine
-		prerequisite = { focus = SOV_dislodge_the_clergy focus = SOV_april_theses focus = SOV_eight_hour_day }
-		x = 0
-		y = 1
-		relative_position_id = SOV_dislodge_the_clergy
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = no
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = SOV_april_theses
-		icon = GFX__shine
-		prerequisite = { focus = SOV_february_revolution focus = SOV_underground_soviets }
-		x = 2
-		y = 1
-		relative_position_id = SOV_february_revolution
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = no
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = SOV_kronstadt_sailors
-		icon = GFX__shine
-		prerequisite = { focus = SOV_april_theses }
-		x = 0
-		y = 1
-		relative_position_id = SOV_april_theses
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = no
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = SOV_first_machine_gun_regiment
-		icon = GFX__shine
-		prerequisite = { focus = SOV_april_theses }
-		x = 2
-		y = 1
-		relative_position_id = SOV_april_theses
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = no
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = SOV_red_guard
-		icon = GFX__shine
-		prerequisite = { focus = SOV_first_machine_gun_regiment }
-		x = 0
-		y = 1
-		relative_position_id = SOV_first_machine_gun_regiment
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = no
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = SOV_october_revolution
-		icon = GFX__shine
-		prerequisite = { focus = SOV_kronstadt_sailors focus = SOV_first_machine_gun_regiment }
-		x = 0
-		y = 1
-		relative_position_id = SOV_kronstadt_sailors
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = no
-
-		completion_reward = {
-			effect_SOV_begin_civil_war_as_reds = yes
-		}
-	}
+	
 
 	# Underground Bolshevik / Industrial Branch
 	focus = {
 		id = SOV_russian_literacy
 		icon = GFX__shine
-		prerequisite = { focus = SOV_western_zemstvo_bill }
+		prerequisite = { focus = SOV_western_zemstvo_bill focus = SOV_cooperate_with_polish_nobility }
 		x = 5
 		y = 1
 		relative_position_id = SOV_western_zemstvo_bill
@@ -573,7 +952,7 @@ focus_tree = {
 	focus = {
 		id = SOV_the_peasant_land_bank
 		icon = GFX__shine
-		prerequisite = { focus = SOV_western_zemstvo_bill }
+		prerequisite = { focus = SOV_western_zemstvo_bill focus = SOV_cooperate_with_polish_nobility }
 		x = 3
 		y = 1
 		relative_position_id = SOV_western_zemstvo_bill
@@ -689,6 +1068,7 @@ focus_tree = {
 		icon = GFX__shine
 		x = -5
 		y = 3
+		relative_position_id = SOV_western_zemstvo_bill
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -727,6 +1107,139 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_junker_professionals
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_oath_to_the_tsar
+		icon = GFX__shine
+		prerequisite = { focus = SOV_lake_ladoga_water_pipeline focus = SOV_the_holy_city }
+		x = 2
+		y = 2
+		relative_position_id = SOV_lake_ladoga_water_pipeline
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_promise_land_to_soldiers
+		icon = GFX__shine
+		prerequisite = { focus = SOV_oath_to_the_tsar }
+		x = -2
+		y = 1
+		relative_position_id = SOV_oath_to_the_tsar
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_liquidation_law
+		icon = GFX__shine
+		prerequisite = { focus = SOV_oath_to_the_tsar }
+		x = -1
+		y = 3
+		relative_position_id = SOV_oath_to_the_tsar
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_black_hundreds
+		icon = GFX__shine
+		prerequisite = { focus = SOV_liquidation_law }
+		x = 0
+		y = 1
+		relative_position_id = SOV_liquidation_law
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_army_of_farmers_and_cobblers
+		icon = GFX__shine
+		prerequisite = { focus = SOV_oath_to_the_tsar }
+		x = 0
+		y = 1
+		relative_position_id = SOV_oath_to_the_tsar
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_tsar_tank
+		icon = GFX__shine
+		prerequisite = { focus = SOV_oath_to_the_tsar focus = SOV_junker_professionals }
+		x = 2
+		y = 1
+		relative_position_id = SOV_oath_to_the_tsar
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_call_up_the_ratniki
+		icon = GFX__shine
+		prerequisite = { focus = SOV_army_of_farmers_and_cobblers focus = SOV_the_great_programme }
+		x = 2
+		y = 1
+		relative_position_id = SOV_army_of_farmers_and_cobblers
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -784,6 +1297,938 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_war_industries_committee
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# February Revolution Branch
+	focus = {
+		id = SOV_february_revolution
+		icon = GFX__shine
+		prerequisite = { focus = SOV_the_third_element }
+		prerequisite = { focus = SOV_the_labour_group }
+		mutually_exclusive = { focus = SOV_underground_soviets }
+		x = 0
+		y = 3
+		relative_position_id = SOV_the_third_element
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			effect_SOV_init_february_revolution = yes
+		}
+	}
+
+	focus = {
+		id = SOV_eight_hour_day
+		icon = GFX__shine
+		prerequisite = { focus = SOV_february_revolution }
+		x = 0
+		y = 1
+		relative_position_id = SOV_february_revolution
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_liberty_loan
+		icon = GFX__shine
+		prerequisite = { focus = SOV_eight_hour_day }
+		x = 0
+		y = 1
+		relative_position_id = SOV_eight_hour_day
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_remove_unreliables_from_the_capitol
+		icon = GFX__shine
+		prerequisite = { focus = SOV_eight_hour_day }
+		prerequisite = { focus = SOV_liquidation_law }
+		x = -2
+		y = 1
+		relative_position_id = SOV_eight_hour_day
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_dislodge_the_clergy
+		icon = GFX__shine
+		prerequisite = { focus = SOV_february_revolution focus = SOV_underground_soviets }
+		x = 2
+		y = 1
+		relative_position_id = SOV_february_revolution
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_april_theses
+		icon = GFX__shine
+		prerequisite = { focus = SOV_underground_soviets }
+		x = 0
+		y = 1
+		relative_position_id = SOV_underground_soviets
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_commisars
+		icon = GFX__shine
+		prerequisite = { focus = SOV_dislodge_the_clergy focus = SOV_april_theses focus = SOV_eight_hour_day }
+		x = 0
+		y = 1
+		relative_position_id = SOV_dislodge_the_clergy
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_kronstadt_sailors
+		icon = GFX__shine
+		prerequisite = { focus = SOV_april_theses }
+		x = 0
+		y = 1
+		relative_position_id = SOV_april_theses
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_first_machine_gun_regiment
+		icon = GFX__shine
+		prerequisite = { focus = SOV_april_theses }
+		x = 2
+		y = 1
+		relative_position_id = SOV_april_theses
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_red_guard
+		icon = GFX__shine
+		prerequisite = { focus = SOV_first_machine_gun_regiment }
+		x = 0
+		y = 1
+		relative_position_id = SOV_first_machine_gun_regiment
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_october_revolution
+		icon = GFX__shine
+		prerequisite = { focus = SOV_kronstadt_sailors focus = SOV_first_machine_gun_regiment }
+		x = 0
+		y = 1
+		relative_position_id = SOV_kronstadt_sailors
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			effect_SOV_begin_civil_war_as_reds = yes
+		}
+	}
+
+	focus = {
+		id = SOV_dissolve_the_soviet
+		icon = GFX__shine
+		prerequisite = { focus = SOV_liberty_loan focus = SOV_remove_unreliables_from_the_capitol }
+		mutually_exclusive = { focus = SOV_kornilov_deal }
+		x = 0
+		y = 1
+		relative_position_id = SOV_liberty_loan
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			effect_SOV_begin_civil_war_as_whites = yes
+		}
+	}
+
+	focus = {
+		id = SOV_kornilov_deal
+		icon = GFX__shine
+		prerequisite = { focus = SOV_remove_unreliables_from_the_capitol }
+		mutually_exclusive = { focus = SOV_dissolve_the_soviet }
+		x = 0
+		y = 1
+		relative_position_id = SOV_remove_unreliables_from_the_capitol
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			effect_SOV_begin_civil_war_as_whites = yes
+		}
+	}
+
+	# Diplomatic Branch
+	focus = {
+		id = SOV_children_of_russia
+		icon = GFX__shine
+		mutually_exclusive = { focus = SOV_durnovo_memorandum }
+		x = -27
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			every_other_country = {
+				limit = {
+					is_slavic = yes
+					NOT = { has_war_with = ROOT }
+				}
+
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = SOV_children_of_russia
+				}
+
+				hidden_effect = {
+					reverse_add_opinion_modifier = {
+						target = ROOT
+						modifier = SOV_children_of_russia
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_durnovo_memorandum
+		icon = GFX__shine
+		mutually_exclusive = { focus = SOV_children_of_russia focus = SOV_franco_russian_staff_talks }
+		x = -5
+		y = 0
+		relative_position_id = SOV_children_of_russia
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_franco_russian_staff_talks
+		icon = GFX__shine
+		mutually_exclusive = { focus = SOV_durnovo_memorandum }
+		x = -10
+		y = 0
+		relative_position_id = SOV_children_of_russia
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Shared Foreign Support Branch
+	focus = {
+		id = SOV_foreign_putilov_investment
+		icon = GFX__shine
+		prerequisite = { focus = SOV_durnovo_memorandum focus = SOV_franco_russian_staff_talks }
+		x = 4
+		y = 1
+		relative_position_id = SOV_franco_russian_staff_talks
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_european_courtly_ties
+		icon = GFX__shine
+		prerequisite = { focus = SOV_durnovo_memorandum focus = SOV_franco_russian_staff_talks }
+		x = 1
+		y = 1
+		relative_position_id = SOV_franco_russian_staff_talks
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_expand_st_petersburg_suburbs
+		icon = GFX__shine
+		prerequisite = { focus = SOV_european_courtly_ties focus = SOV_foreign_putilov_investment }
+		x = 1
+		y = 1
+		relative_position_id = SOV_european_courtly_ties
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Pan-Slavist Branch
+	focus = {
+		id = SOV_align_montenegro
+		icon = GFX__shine
+		prerequisite = { focus = SOV_children_of_russia }
+		x = 3
+		y = 1
+		relative_position_id = SOV_children_of_russia
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		available = {
+			SER = {
+				exists = yes
+				NOT = { has_war_with = ROOT }
+			}
+		}
+
+		completion_reward = {
+			SER = {
+				add_timed_idea = {
+					idea = var:ideology_influence_idea
+					days = 730
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_align_serbia
+		icon = GFX__shine
+		prerequisite = { focus = SOV_children_of_russia }
+		mutually_exclusive = { focus = SOV_align_bulgaria }
+		x = 1
+		y = 1
+		relative_position_id = SOV_children_of_russia
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		available = {
+			SER = {
+				exists = yes
+				NOT = { has_war_with = ROOT }
+			}
+		}
+
+		completion_reward = {
+			SER = {
+				add_timed_idea = {
+					idea = var:ideology_influence_idea
+					days = 730
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_align_bulgaria
+		icon = GFX__shine
+		prerequisite = { focus = SOV_children_of_russia focus = SOV_durnovo_memorandum }
+		mutually_exclusive = { focus = SOV_align_serbia focus = SOV_promise_transylvania }
+		x = -3
+		y = 1
+		relative_position_id = SOV_children_of_russia
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		available = {
+			BUL = {
+				exists = yes
+				NOT = { has_war_with = ROOT }
+			}
+		}
+
+		completion_reward = {
+			BUL = {
+				add_timed_idea = {
+					idea = var:ideology_influence_idea
+					days = 730
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_promise_transylvania
+		icon = GFX__shine
+		prerequisite = { focus = SOV_children_of_russia }
+		mutually_exclusive = { focus = SOV_align_bulgaria }
+		x = -1
+		y = 1
+		relative_position_id = SOV_children_of_russia
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		available = {
+			ROM = {
+				exists = yes
+				NOT = { has_war_with = ROOT }
+			}
+		}
+
+		completion_reward = {
+			ROM = {
+				add_timed_idea = {
+					idea = var:ideology_influence_idea
+					days = 730
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_pan_slavic_conference
+		icon = GFX__shine
+		prerequisite = { focus = SOV_align_montenegro focus = SOV_align_serbia focus = SOV_align_bulgaria }
+		x = 0
+		y = 3
+		relative_position_id = SOV_align_serbia
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		available = {
+			
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = SOV_stage_slav_uprisings
+		icon = GFX__shine
+		prerequisite = { focus = SOV_pan_slavic_conference focus = SOV_rights_of_the_nations_of_russia }
+		x = 2
+		y = 1
+		relative_position_id = SOV_pan_slavic_conference
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_the_slavic_league
+		icon = GFX__shine
+		prerequisite = { focus = SOV_pan_slavic_conference }
+		x = 0
+		y = 1
+		relative_position_id = SOV_pan_slavic_conference
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_the_druzina
+		icon = GFX__shine
+		prerequisite = { focus = SOV_align_montenegro focus = SOV_align_serbia focus = SOV_align_bulgaria }
+		x = -2
+		y = 3
+		relative_position_id = SOV_align_serbia
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_thirteen_points
+		icon = GFX__shine
+		prerequisite = { focus = SOV_the_druzina focus = SOV_pan_slavic_conference }
+		x = 1
+		y = 2
+		relative_position_id = SOV_the_druzina
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		available = {
+
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Pro-German Branch
+	focus = {
+		id = SOV_ratify_bjorko_treaty
+		icon = GFX__shine
+		prerequisite = { focus = SOV_durnovo_memorandum }
+		x = 0
+		y = 3
+		relative_position_id = SOV_durnovo_memorandum
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_end_german_protectionism
+		icon = GFX__shine
+		prerequisite = { focus = SOV_ratify_bjorko_treaty }
+		x = 2
+		y = 1
+		relative_position_id = SOV_ratify_bjorko_treaty
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Pro French Branch
+	focus = {
+		id = SOV_franco_russian_railway_loan
+		icon = GFX__shine
+		prerequisite = { focus = SOV_franco_russian_staff_talks }
+		x = 0
+		y = 3
+		relative_position_id = SOV_franco_russian_staff_talks
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_murmansk_railway
+		icon = GFX__shine
+		prerequisite = { focus = SOV_franco_russian_railway_loan }
+		x = -2
+		y = 1
+		relative_position_id = SOV_franco_russian_railway_loan
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Pro / Anti British Decision
+	focus = {
+		id = SOV_undermine_anglo_russian_convention
+		icon = GFX__shine
+		prerequisite = { focus = SOV_franco_russian_railway_loan focus = SOV_ratify_bjorko_treaty }
+		mutually_exclusive = { focus = SOV_anglo_russian_naval_talks }
+		x = 0
+		y = 1
+		relative_position_id = SOV_franco_russian_railway_loan
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_anglo_russian_naval_talks
+		icon = GFX__shine
+		prerequisite = { focus = SOV_franco_russian_railway_loan focus = SOV_ratify_bjorko_treaty }
+		mutually_exclusive = { focus = SOV_undermine_anglo_russian_convention }
+		x = 5
+		y = 1
+		relative_position_id = SOV_franco_russian_railway_loan
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Pro British Branch
+	focus = {
+		id = SOV_balmoral_agreement
+		icon = GFX__shine
+		prerequisite = { focus = SOV_anglo_russian_naval_talks }
+		x = 0
+		y = 1
+		relative_position_id = SOV_anglo_russian_naval_talks
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_black_sea_investment
+		icon = GFX__shine
+		prerequisite = { focus = SOV_anglo_russian_naval_talks }
+		x = 1
+		y = 3
+		relative_position_id = SOV_anglo_russian_naval_talks
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_dissolve_the_majlis
+		icon = GFX__shine
+		prerequisite = { focus = SOV_anglo_russian_naval_talks focus = SOV_undermine_anglo_russian_convention }
+		x = -2
+		y = 1
+		relative_position_id = SOV_anglo_russian_naval_talks
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Anti British Branch
+	focus = {
+		id = SOV_strengthen_the_shah
+		icon = GFX__shine
+		prerequisite = { focus = SOV_dissolve_the_majlis }
+		prerequisite = { focus = SOV_undermine_anglo_russian_convention }
+		x = -1
+		y = 1
+		relative_position_id = SOV_dissolve_the_majlis
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_trans_persian_railway
+		icon = GFX__shine
+		prerequisite = { focus = SOV_strengthen_the_shah }
+		x = 0
+		y = 1
+		relative_position_id = SOV_strengthen_the_shah
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_arm_tibet
+		icon = GFX__shine
+		prerequisite = { focus = SOV_undermine_anglo_russian_convention }
+		x = 0
+		y = 1
+		relative_position_id = SOV_undermine_anglo_russian_convention
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_bribe_emir_of_afghanistan
+		icon = GFX__shine
+		prerequisite = { focus = SOV_arm_tibet }
+		x = 0
+		y = 1
+		relative_position_id = SOV_arm_tibet
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_duhamel_plan
+		icon = GFX__shine
+		prerequisite = { focus = SOV_arm_tibet }
+		x = -2
+		y = 1
+		relative_position_id = SOV_arm_tibet
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_landing_effort
+		icon = GFX__shine
+		prerequisite = { focus = SOV_black_sea_investment focus = SOV_duhamel_plan }
+		x = 0
+		y = 2
+		relative_position_id = SOV_duhamel_plan
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_invade_india
+		icon = GFX__shine
+		prerequisite = { focus = SOV_strengthen_the_shah focus = SOV_bribe_emir_of_afghanistan focus = SOV_duhamel_plan }
+		x = -2
+		y = 1
+		relative_position_id = SOV_strengthen_the_shah
 		cost = 10
 		ai_will_do = {
 			factor = 10

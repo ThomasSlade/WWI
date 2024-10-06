@@ -47,8 +47,18 @@ spriteTypes = {
 	### SOV
 
 	spriteType = {
-		name = GFX_portrait_sov_nicholas_ii
-		texturefile = "gfx/leaders/SOV/portrait_sov_nicholas_ii.dds"
+		name = GFX_portrait_SOV_nicholas_ii
+		texturefile = "gfx/leaders/SOV/portrait_SOV_nicholas_ii.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_SOV_grigori_rasputin.dds
+		texturefile = "gfx/leaders/SOV/portrait_SOV_grigori_rasputin.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_SOV_vladimir_lenin.dds
+		texturefile = "gfx/leaders/SOV/portrait_SOV_vladimir_lenin.dds"
 	}
 
 	### AUS

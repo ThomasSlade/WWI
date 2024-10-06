@@ -18,3 +18,7 @@ d_print_occupied_states = {
 		log = "[?THIS.GetID]"
 	}
 }
+
+d_rasputin = {
+	effect_SOV_begin_rasputin_events = yes
+}

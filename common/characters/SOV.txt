@@ -3,7 +3,7 @@ characters = {
 		name = SOV_nicholas_ii
 		portraits = {
 			civilian = {
-				large = GFX_portrait_sov_nicholas_ii
+				large = GFX_portrait_SOV_nicholas_ii
 			}
 		}
 		country_leader = {
@@ -13,12 +13,77 @@ characters = {
 		}
 	}
 
+	SOV_vladimir_lenin = {
+		name = SOV_vladimir_lenin
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SOV_vladimir_lenin
+			}
+		}
+		country_leader = {
+			ideology = revolutionary_t
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+
 	### Advisors ###
+	SOV_grigori_rasputin = {
+		name = SOV_grigori_rasputin
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SOV_grigori_rasputin
+			}
+			army = {
+				small = "GFX_idea_SOV_grigori_rasputin"
+			}
+		}
+		country_leader = {
+			ideology = established_t
+			traits = { empowered_holy_peasant }
+			on_add = {
+				effect_SOV_begin_rasputin_events = yes
+			}
+			on_remove = {
+				effect_SOV_end_rasputin_events = yes
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_grigori_rasputin
+			can_be_fired = no
+			allowed = {
+				original_tag = SOV
+			}
+			traits = { holy_peasant }
+			on_add = {
+				effect_SOV_begin_rasputin_events = yes
+			}
+			on_remove = {
+				effect_SOV_end_rasputin_events = yes
+			}
+			ai_will_do = {
+				factor = 0.5
+				modifier = {
+					factor = 2
+					has_country_leader = {
+						character = SOV_nicholas_ii
+						ruling_only = yes
+					}
+				}
+				modifier = {
+					factor = 2
+					has_idea = idea_SOV_autocratic_tsardom
+				}
+			}
+		}
+	}
+
 	SOV_pyotr_stolypin = {
 		name = SOV_pyotr_stolypin
 		portraits = {
 			army = {
-				small = "GFX_idea_generic_political_advisor_europe_1"
+				small = "GFX_idea_SOV_pyotr_stolypin"
 			}
 		}
 		advisor = {
@@ -38,6 +103,37 @@ characters = {
 				divide_variable = { land_reform_cost = 0.75 }
 				divide_variable = { land_reform_cost_cheap = 0.75 }
 				divide_variable = { land_reform_cost_discount = 0.75 }
+			}
+		}
+	}
+
+	### Special Generic ###
+	SOV_bad_army_chief = {
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = SOV_bad_army_chief
+			allowed = {
+				original_tag = SOV
+			}
+			visible = {
+				has_country_flag = flag_SOV_bad_army_chief_enabled
+			}
+			traits = {
+				bad_general_released_from_prison
+				prudent_defender
+			}
+			on_remove = {
+				effect_SOV_regenerate_bad_army_chief = yes
+				clr_country_flag = flag_SOV_bad_army_chief_enabled
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0
 			}
 		}
 	}

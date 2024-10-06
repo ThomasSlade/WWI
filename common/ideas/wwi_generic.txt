@@ -16,7 +16,6 @@ ideas = {
 			
 			modifier = {
 				expansionist_drift = 0.1
-				expansionist_acceptance = 85
 			}
 		}
 
@@ -35,7 +34,6 @@ ideas = {
 			
 			modifier = {
 				established_drift = 0.1
-				established_acceptance = 85
 			}
 		}
 
@@ -54,11 +52,10 @@ ideas = {
 			
 			modifier = {
 				revolutionary_drift = 0.1
-				revolutionary_acceptance = 85
 			}
 		}
 
-		expansionism_withers = {
+		expansionist_withers = {
 			allowed = {
 				always = no
 			}
@@ -109,6 +106,60 @@ ideas = {
 
 			modifier = {
 				revolutionary_drift = -0.07
+			}
+		}
+
+		expansionist_acceptance_medium = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_expansionist
+
+			modifier = {
+				expansionist_acceptance = 30
+			}
+		}
+
+		established_acceptance_medium = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_established
+
+			modifier = {
+				established_acceptance = 30
+			}
+		}
+
+		revolutionary_acceptance_medium = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_revolutionary
+
+			modifier = {
+				revolutionary_acceptance = 30
 			}
 		}
 

@@ -47,13 +47,20 @@ set_variable = { land_reform_cost_cheap = 25 }
 set_variable = { land_reform_cost_discount = 10 }
 set_variable = { civil_war_revolutionary_threshold = 0.75 }	# % Revolutionary ideology needed to trigger the civil war.
 set_variable = { civil_war_revolutionary_abort_threshold = 0.6 }
+set_variable = { rasputin_event_frequency_days = 90 }
+set_variable = { rasputin_event_random_days = 15 }
 effect_SOV_init_unreformed_land = yes
 
 #set_cosmetic_tag = SOV_EMPIRE
 
 recruit_character = SOV_nicholas_ii
 
+recruit_character = SOV_grigori_rasputin
+activate_advisor = SOV_grigori_rasputin
 recruit_character = SOV_pyotr_stolypin
+
+recruit_character = SOV_bad_army_chief
+SOV_bad_army_chief = { effect_SOV_regenerate_bad_army_chief = yes }
 
 recruit_character = SOV_generic_prudent_defender
 recruit_character = SOV_generic_bold_attacker

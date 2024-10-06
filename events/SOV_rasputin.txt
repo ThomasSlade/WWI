@@ -1,0 +1,646 @@
+add_namespace = event_SOV_rasputin
+
+country_event = {
+	id = event_SOV_rasputin.1
+
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Dispatching Rasputin event."
+
+		random_list = {
+			1 = {
+				# Try to find a state with over 2 mil factories.
+				random_owned_controlled_state = {
+					limit = {
+						check_variable = { arms_factory_level > 1 }
+					}
+					set_temp_variable = { temp_target_state = THIS }
+				}
+
+				if = {
+					limit = {
+						NOT = { has_variable = temp_target_state }
+					}
+					log = "Failed to find good candidate for 'target state' in Rasputin's Industrial Heiress event. Trying another event."
+					country_event = { id = event_SOV_rasputin.1 }
+				}
+				else = {
+					var:temp_target_state = { save_event_target_as = target_state }
+					country_event = { id = event_SOV_rasputin.2 days = rasputin_event_frequency_days random_days = rasputin_event_random_days }
+				}
+			}
+			1 = {
+				# Try to find a big country that likes us to offend. Failing that, try to find any country that likes us.
+				random_other_country = {
+					limit = {
+						NOT = { has_war_with = PREV }
+						has_opinion = {
+							target = PREV
+							value > 9
+						}
+						is_major = yes
+					}
+					set_temp_variable = { temp_offended_country = THIS }
+				}
+
+				if = {
+					limit = {
+						NOT = { has_variable = temp_offended_country }
+					}
+					random_other_country = {
+						limit = {
+							NOT = { has_war_with = PREV }
+							has_opinion = {
+								target = PREV
+								value > 9
+							}
+						}
+						set_temp_variable = { temp_offended_country = THIS }
+					}
+				}
+
+				if = {
+					limit = {
+						NOT = { has_variable = temp_offended_country }
+					}
+					log = "Failed to find good candidate for 'offended country' in Rasputin's Diplomatic Offense event. Trying another event."
+					country_event = { id = event_SOV_rasputin.1 }
+				}
+				else_if = {
+					limit = {
+						has_country_leader = { character = SOV_grigori_rasputin ruling_only = yes }
+						var:temp_offended_country = { check_variable = { enemies = 0 } }
+					}
+					log = "Candidate 'offended country' [?temp_offended_country.GetName] had no enemies to use in the extra option for the Rasputin event. Trying another event."
+					country_event = { id = event_SOV_rasputin.1 }
+				}
+				else = {
+					var:temp_offended_country = { save_event_target_as = offended_country } 
+					country_event = { id = event_SOV_rasputin.3 days = rasputin_event_frequency_days random_days = rasputin_event_random_days }
+				}
+			}
+			1 = {
+				# Try to find a metropolis or city state. Failing that, try a town or rural state with some factories
+				random_owned_controlled_state = {
+					limit = {
+						OR = {
+							has_state_category = metropolis
+							has_state_category = city
+						}
+						is_capital = no
+					}
+					set_temp_variable = { temp_offended_governor_state = THIS }
+				}
+
+				if = {
+					limit = {
+						NOT = { has_variable = offended_governor_state }
+					}
+					random_owned_controlled_state = {
+						limit = {
+							OR = {
+								has_state_category = town
+								has_state_category = rural
+							}
+							OR = {
+								set_temp_variable = { total_factories = arms_factory_level }
+								add_to_temp_variable = { total_factories = industrial_complex_level }
+								check_variable = { total_factories > 2 }
+							}
+							is_capital = no
+						}
+						set_temp_variable = { temp_offended_governor_state = THIS }
+					}
+				}
+
+				if = {
+					limit = {
+						NOT = { has_variable = temp_offended_governor_state }
+					}
+					log = "Failed to find good candidate for 'offended governor state' in Rasputin's Governor Wife Jam-Licking event. Trying another event."
+					country_event = { id = event_SOV_rasputin.1 }
+				}
+				else_if = {
+					limit = {
+						has_country_leader = { character = SOV_grigori_rasputin ruling_only = yes }
+						var:temp_offended_governor_state = {
+							# Ensure this keeps up to date with the actual building level.
+							check_variable = { infrastructure_level > 2 }
+						}
+						log = "State [?temp_offended_governor_state.GetName] already had max infrastructure for Governor Wife Jam-Licking event. Trying another event."
+					}
+				}
+				else = {
+					var:temp_offended_governor_state = { save_event_target_as = offended_governor_state } 
+					country_event = { id = event_SOV_rasputin.4 days = rasputin_event_frequency_days random_days = rasputin_event_random_days }
+				}
+			}
+			1 = {
+				if = {
+					limit = { has_idea = idea_SOV_engineer_exiled }
+					log = "Will not fire 'Rasputin Intimacy With Noblemen Event' because 'idea_SOV_engineer_exiled' is already present. Trying another event."
+					country_event = { id = event_SOV_rasputin.1 }
+				}
+				else = {
+					country_event = { id = event_SOV_rasputin.5 days = rasputin_event_frequency_days random_days = rasputin_event_random_days }
+				}
+			}
+			1 = {
+				random_owned_controlled_state = {
+					limit = {
+						any_neighbor_state = {
+							controller = {
+								NOT = { tag = ROOT }
+								has_opinion = {
+									target = ROOT
+									value < -20
+								}
+							}
+						}
+					}
+					set_temp_variable = { temp_monastary_state = THIS }
+				}
+
+				if = {
+					limit = {
+						NOT = { has_variable = temp_monastary_state }
+					}
+					log = "Failed to find good candidate for 'monastary state' in Rasputin's Archimandrate event. Trying another event."
+					country_event = { id = event_SOV_rasputin.1 }
+				}
+				else = {
+					var:temp_monastary_state = { save_event_target_as = monastary_state } 
+					country_event = { id = event_SOV_rasputin.6 days = rasputin_event_frequency_days random_days = rasputin_event_random_days }
+				}
+			}
+			1 = {
+				if = {
+					limit = { SOV_bad_army_chief = { is_hired_as_advisor = yes } }
+					log = "Aborting 'Rasputin Releases Prisoner' event because the 'SOV_bad_army_chief' is already recruited. Trying another event."
+					country_event = { id = event_SOV_rasputin.1 }
+				}
+				else = {
+					country_event = { id = event_SOV_rasputin.7 days = rasputin_event_frequency_days random_days = rasputin_event_random_days }
+				}
+			}
+			1 = {
+				if = {
+					limit = {
+						SOV_grigori_rasputin = { is_army_leader = yes }
+					}
+					log = "Rasputin is already a general, will not fire the Rasputin Military Advice event. Trying another event."
+					country_event = { id = event_SOV_rasputin.1 }
+				}
+				else = {
+					country_event = { id = event_SOV_rasputin.8 days = rasputin_event_frequency_days random_days = rasputin_event_random_days }
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = event_SOV_rasputin.2
+	title = event_SOV_rasputin.2.t
+	desc = event_SOV_rasputin.2.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Industrial Heiress Brings Note From Rasputin."
+
+		hidden_effect = {
+			country_event = { id = event_SOV_rasputin.1 }
+		}
+	}
+
+	# Allow
+	option = {
+		name = event_SOV_rasputin.2.a
+
+		effect_SOV_gain_1_tsar_favor = yes
+		event_target:target_state = {
+			remove_building = {
+				type = arms_factory
+				level = 2
+			}
+		}
+	}
+
+	# Deny
+	option = {
+		name = event_SOV_rasputin.2.b
+
+		trigger = {
+			trigger_SOV_at_least_1_tsar_favor_if_tsarist = yes
+		}
+
+		effect_SOV_spend_1_tsar_favor_if_tsarist = yes
+	}
+
+	# Zhuzh it up
+	option = {
+		name = event_SOV_rasputin.2.c
+
+		trigger = {
+			has_country_leader = { character = SOV_grigori_rasputin ruling_only = yes }
+		}
+
+		event_target:target_state = {
+			remove_building = {
+				type = arms_factory
+				level = 2
+			}
+		}
+		
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 500
+		}
+
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 200
+		}
+
+		effect_SOV_add_needed_equipment = yes
+	}
+}
+
+country_event = {
+	id = event_SOV_rasputin.3
+	title = event_SOV_rasputin.3.t
+	desc = event_SOV_rasputin.3.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Rasputin Offends Diplomat."
+
+		hidden_effect = {
+			country_event = { id = event_SOV_rasputin.1 }
+		}
+	}
+
+	# Allow
+	option = {
+		name = event_SOV_rasputin.3.a
+
+		effect_SOV_gain_1_tsar_favor = yes
+		event_target:offended_country = {
+			add_opinion_modifier = {
+				target = FROM
+				modifier = SOV_rasputin_offended_diplomat
+			}
+		}
+	}
+
+	# Deny
+	option = {
+		name = event_SOV_rasputin.3.b
+
+		trigger = {
+			trigger_SOV_at_least_1_tsar_favor_if_tsarist = yes
+		}
+
+		effect_SOV_spend_1_tsar_favor_if_tsarist = yes
+	}
+
+	# Zhuzh it up
+	option = {
+		name = event_SOV_rasputin.3.c
+
+		trigger = {
+			has_country_leader = { character = SOV_grigori_rasputin ruling_only = yes }
+		}
+
+		event_target:offended_country = {
+			add_opinion_modifier = {
+				target = FROM
+				modifier = SOV_rasputin_offended_diplomat
+			}
+		}
+		
+		event_target:offended_country = {
+			every_enemy_country = {
+				add_opinion_modifier = {
+					target = FROM
+					modifier = SOV_rasputin_offended_diplomat_pleased_enemies
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = event_SOV_rasputin.4
+	title = event_SOV_rasputin.4.t
+	desc = event_SOV_rasputin.4.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Rasputin Humiliates Governor's Wife."
+
+		hidden_effect = {
+			country_event = { id = event_SOV_rasputin.1 }
+		}
+	}
+
+	# Allow
+	option = {
+		name = event_SOV_rasputin.4.a
+
+		effect_SOV_gain_1_tsar_favor = yes
+		event_target:offended_governor_state = {
+			add_dynamic_modifier = {
+				modifier = modifier_SOV_governor_absent
+				days = 365
+			}
+		}
+	}
+
+	# Deny
+	option = {
+		name = event_SOV_rasputin.4.b
+
+		trigger = {
+			trigger_SOV_at_least_1_tsar_favor_if_tsarist = yes
+		}
+
+		effect_SOV_spend_1_tsar_favor_if_tsarist = yes
+	}
+
+	# Zhuzh it up
+	option = {
+		name = event_SOV_rasputin.4.c
+
+		trigger = {
+			has_country_leader = { character = SOV_grigori_rasputin ruling_only = yes }
+		}
+
+		event_target:offended_governor_state = {
+			add_dynamic_modifier = {
+				modifier = modifier_SOV_governor_absent
+				days = 365
+			}
+		}
+
+		event_target:offended_governor_state = {
+			add_building_construction = {
+			    type = infrastructure
+			    level = 1
+			    instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = event_SOV_rasputin.5
+	title = event_SOV_rasputin.5.t
+	desc = event_SOV_rasputin.5.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Rasputin's Intimacy With Noblemen."
+
+		hidden_effect = {
+			country_event = { id = event_SOV_rasputin.1 }
+		}
+	}
+
+	# Allow
+	option = {
+		name = event_SOV_rasputin.5.a
+
+		effect_SOV_gain_1_tsar_favor = yes
+		add_timed_idea = {
+			idea = idea_SOV_engineer_exiled
+			days = 120
+		}
+	}
+
+	# Deny
+	option = {
+		name = event_SOV_rasputin.5.b
+
+		trigger = {
+			trigger_SOV_at_least_1_tsar_favor_if_tsarist = yes
+		}
+
+		effect_SOV_spend_1_tsar_favor_if_tsarist = yes
+	}
+
+	# Zhuzh it up
+	option = {
+		name = event_SOV_rasputin.5.c
+
+		trigger = {
+			has_country_leader = { character = SOV_grigori_rasputin ruling_only = yes }
+		}
+
+		add_timed_idea = {
+			idea = idea_SOV_engineer_exiled
+			days = 120
+		}
+		# WWI TODO: Add building slot to Siberia?
+	}
+}
+
+country_event = {
+	id = event_SOV_rasputin.6
+	title = event_SOV_rasputin.6.t
+	desc = event_SOV_rasputin.6.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Archimandrate Confronts Rasputin."
+
+		hidden_effect = {
+			country_event = { id = event_SOV_rasputin.1 }
+		}
+	}
+
+	# Allow
+	option = {
+		name = event_SOV_rasputin.6.a
+
+		effect_SOV_gain_1_tsar_favor = yes
+		event_target:monastary_state = {
+			add_dynamic_modifier = {
+				modifier = modifier_SOV_archimandrate_absent
+				days = 90
+			}
+
+			every_neighbor_state = {
+				limit = { is_fully_controlled_by = THIS }
+				add_dynamic_modifier = {
+					modifier = modifier_SOV_archimandrate_absent
+					days = 90
+				}
+			}
+		}
+	}
+
+	# Deny
+	option = {
+		name = event_SOV_rasputin.6.b
+
+		trigger = {
+			trigger_SOV_at_least_1_tsar_favor_if_tsarist = yes
+		}
+
+		effect_SOV_spend_1_tsar_favor_if_tsarist = yes
+	}
+
+	# Zhuzh it up
+	option = {
+		name = event_SOV_rasputin.6.c
+
+		trigger = {
+			has_country_leader = { character = SOV_grigori_rasputin ruling_only = yes }
+		}
+
+		event_target:monastary_state = {
+			add_dynamic_modifier = {
+				modifier = modifier_SOV_archimandrate_forced_labour
+				days = 90
+			}
+
+			every_neighbor_state = {
+				limit = { is_fully_controlled_by = THIS }
+				add_dynamic_modifier = {
+					modifier = modifier_SOV_archimandrate_forced_labour
+					days = 90
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = event_SOV_rasputin.7
+	title = event_SOV_rasputin.7.t
+	desc = event_SOV_rasputin.7.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Rasputin Seeks Release of Prisoner."
+
+		hidden_effect = {
+			country_event = { id = event_SOV_rasputin.1 }
+		}
+	}
+
+	# Allow
+	option = {
+		name = event_SOV_rasputin.7.a
+
+		effect_SOV_gain_1_tsar_favor = yes
+		set_country_flag = flag_SOV_bad_army_chief_enabled
+		activate_advisor = SOV_bad_army_chief
+	}
+
+	# Deny
+	option = {
+		name = event_SOV_rasputin.7.b
+
+		trigger = {
+			trigger_SOV_at_least_1_tsar_favor_if_tsarist = yes
+		}
+
+		effect_SOV_spend_1_tsar_favor_if_tsarist = yes
+	}
+
+	# Zhuzh it up
+	option = {
+		name = event_SOV_rasputin.7.c
+
+		trigger = {
+			has_country_leader = { character = SOV_grigori_rasputin ruling_only = yes }
+		}
+
+		set_country_flag = flag_SOV_bad_army_chief_enabled
+		activate_advisor = SOV_bad_army_chief
+
+		add_popularity = {
+			ideology = revolutionary
+			popularity = -0.1
+		}
+	}
+}
+
+country_event = {
+	id = event_SOV_rasputin.8
+	title = event_SOV_rasputin.8.t
+	desc = event_SOV_rasputin.8.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Rasputin Offers Strategic Counsel."
+
+		hidden_effect = {
+			country_event = { id = event_SOV_rasputin.1 }
+		}
+	}
+
+	# Allow
+	option = {
+		name = event_SOV_rasputin.8.a
+
+		effect_SOV_gain_1_tsar_favor = yes
+		army_experience = -100
+		add_manpower = -1000
+	}
+
+	# Deny
+	option = {
+		name = event_SOV_rasputin.8.b
+
+		trigger = {
+			trigger_SOV_at_least_1_tsar_favor_if_tsarist = yes
+		}
+
+		effect_SOV_spend_1_tsar_favor_if_tsarist = yes
+	}
+
+	# Zhuzh it up
+	option = {
+		name = event_SOV_rasputin.8.c
+
+		trigger = {
+			has_country_leader = { character = SOV_grigori_rasputin ruling_only = yes }
+		}
+
+		army_experience = -100
+		add_manpower = -1000
+
+		SOV_grigori_rasputin = {
+			add_corps_commander_role = {
+				traits = {
+					peasant_priest
+					mystic
+				}
+				skill = 1
+				attack_skill = 1
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 2
+			}
+		}
+	}
+}

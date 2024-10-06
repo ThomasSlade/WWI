@@ -1,0 +1,42 @@
+﻿l_english:
+	event_SOV_rasputin.2.t: "Industrial Heiress Brings Note From Rasputin"
+	event_SOV_rasputin.2.d: "A young woman arrives at the [THIS.GetOldAdjective] state bureau and holds out a note:\n\n'Fix it up for her. She is all right. Grigori'\n\nThe unmistakeable command of Grigori Rasputin compounds the woman's impractical request: daughter to a powerful arms manufacturer, she demands the closure of an industrial rival and exclusive rights to their contracts."
+	event_SOV_rasputin.2.a: "We've no choice but to oblige."
+	event_SOV_rasputin.2.b: "This is no matter for Rasputin."
+	event_SOV_rasputin.2.c: "We can do more than just close them."
+
+	event_SOV_rasputin.3.t: "Rasputin Offends [offended_country.GetOldAdjective] Diplomat"
+	event_SOV_rasputin.3.d: "Scandalous rumours rebounding across the city precede official confirmation of Rasputin's custody at a [THIS.capital.GetCapitalVictoryPointName] jail.\n\nThe holy peasant, announcing his identity to strangers at a restaurant, was quick to pull down his trousers and make an authentic show of himself.\n\nUnfortunately, among these strangers was a senior [offended_country.GetOldAdjective] diplomat."
+	event_SOV_rasputin.3.a: "Dismiss the diplomat."
+	event_SOV_rasputin.3.b: "Assure the [offended_country.GetOldAdjective] of Rasputin's scolding."
+	event_SOV_rasputin.3.c: "The man has made known his opinion of [offended_country.GetOldName]."
+
+	event_SOV_rasputin.4.t: "Rasputin Humiliates Governor's Wife"
+	event_SOV_rasputin.4.d: "'Humble yourself, lick it clean!'\n\nSo says the holy peasant as he dips his finger into a plate of jam before holding it out to a guest of the Tsar's.\n\nThough [offended_governor_state.GetName] Governor's wife seemed quite thrilled by this encounter with the seductive Rasputin, the Governor himself was rather vexed. If the Tsar does not take action, he threatens to resign."
+	event_SOV_rasputin.4.a: "We must accept his resignation."
+	event_SOV_rasputin.4.b: "Grigori will control himself."
+	event_SOV_rasputin.4.c: "[offended_governor_state.GetName] will come under Rasputin's stewardship."
+
+	event_SOV_rasputin.5.t: "Rasputin's Intimacy With Noblemen"
+	event_SOV_rasputin.5.d: "'Yes, I lay with him', blurts the court mystic one night. 'All sinners are drawn to the confessor!'\n\nThe next day, Rasputin has little recollection of his outburst, but the student-engineer he exposed certainly does. And while the mad monk is shielded from judgement by the Tsar, the same cannot be said for his alleged lovers.\n\nThe young man already boards a train to Siberia, taking his research with him."
+	event_SOV_rasputin.5.a: "For the best."
+	event_SOV_rasputin.5.b: "Rasputin was clearly beyond his wits."
+	event_SOV_rasputin.5.c: "Grant him an estate there, courtesy of Grigori."
+
+	event_SOV_rasputin.6.t: "Archimandrate Confronts Rasputin"
+	event_SOV_rasputin.6.d: "Drunkenness, indecency, the bedding of wives - or worse ... The Archimandrate of [monastary_state.GetName] is ceaseless in his condemnation of the 'holy' peasant's misdemeanors.\n\nThough this priest wields great influence in both the court and church, Grigori appears unfazed, and merely glances at the Tsar between his rebuttals."
+	event_SOV_rasputin.6.a: "Imprison this Archimandrate."
+	event_SOV_rasputin.6.b: "Rasputin must repent."
+	event_SOV_rasputin.6.c: "Forced labour will teach him piety."
+
+	event_SOV_rasputin.7.t: "Rasputin Seeks Release of Prisoner"
+	event_SOV_rasputin.7.d: "'Do this for me, Grigori' reads the order.\n\nThe release of this particular prisoner - a prolific general found guilty of treason - is bound to send shockwaves through [THIS.GetOldNameDef]. The holy peasant's motives are clear enough: no doubt the general's wife has contacted him offering favours of her own."
+	event_SOV_rasputin.7.a: "Let him go."
+	event_SOV_rasputin.7.b: "We cannot allow this."
+	event_SOV_rasputin.7.c: "Set him on the dissenters."
+
+	event_SOV_rasputin.8.t: "Rasputin Offers Strategic Counsel"
+	event_SOV_rasputin.8.d: "'Move south faster, they will surely retreat in the north', insists Grigori.\n\nThe monk has been unrelenting in his letters of recent; note after note recounts what he 'saw in the night'. Even the Tsar hesitates to take military advice from a semi-literate peasant, but his word means much to the royal family ..."
+	event_SOV_rasputin.8.a: "Very well."
+	event_SOV_rasputin.8.b: "Rasputin goes too far."
+	event_SOV_rasputin.8.c: "Perhaps he would like to lead?"

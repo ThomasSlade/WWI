@@ -1,0 +1,169 @@
+effect_SOV_begin_rasputin_events = {
+	log = "Beggining Rasputin events."
+	# Having a small delay ensures that this still fires properly when the game is first starting and Rasputin is first hired.
+	country_event = { id = event_SOV_rasputin.1 days = 1 }
+	set_country_flag = rasputin_events_active
+}
+
+effect_SOV_end_rasputin_events = {
+	log = "Ending Rasputin events."
+	clr_country_flag = rasputin_events_active
+}
+
+effect_SOV_regenerate_bad_army_chief = {
+	random_list = {
+		1 = { set_character_name = "SOV_bad_army_chief_1" }
+		1 = { set_character_name = "SOV_bad_army_chief_2" }
+		1 = { set_character_name = "SOV_bad_army_chief_3" }
+		1 = { set_character_name = "SOV_bad_army_chief_4" }
+		1 = { set_character_name = "SOV_bad_army_chief_5" }
+		1 = { set_character_name = "SOV_bad_army_chief_6" }
+		1 = { set_character_name = "SOV_bad_army_chief_7" }
+		1 = { set_character_name = "SOV_bad_army_chief_8" }
+		1 = { set_character_name = "SOV_bad_army_chief_9" }
+		1 = { set_character_name = "SOV_bad_army_chief_10" }
+	}
+
+	if = {
+		limit = { has_trait = prudent_defender }
+		remove_trait = {
+			slot = army_chief
+			trait = prudent_defender
+		}
+	}
+	if = {
+		limit = { has_trait = bold_attacker }
+		remove_trait = {
+			slot = army_chief
+			trait = bold_attacker
+		}
+	}
+	if = {
+		limit = { has_trait = thorough_logistician }
+		remove_trait = {
+			slot = army_chief
+			trait = thorough_logistician
+		}
+	}
+	if = {
+		limit = { has_trait = master_planner }
+		remove_trait = {
+			slot = army_chief
+			trait = master_planner
+		}
+	}
+
+	random_list = {
+		1 = {
+			add_trait = {
+				slot = army_chief
+				trait = prudent_defender
+			}
+		}
+		1 = {
+			add_trait = {
+				slot = army_chief
+				trait = bold_attacker
+			}
+		}
+		1 = {
+			add_trait = {
+				slot = army_chief
+				trait = thorough_logistician
+			}
+		}
+		1 = {
+			add_trait = {
+				slot = army_chief
+				trait = master_planner
+			}
+		}
+	}
+}
+
+# Looks through a set of equipment to find the one most lacking, and grants a small amount of that equipment.
+effect_SOV_add_needed_equipment = {
+	log = "Deciding what free equipment to offer [THIS.GetName]."
+
+	if = {
+		limit = {
+			has_tech = basic_heavy_tank
+			stockpile_ratio = {
+				archetype = heavy_tank_chassis
+				ratio < 0.25
+			}
+		}
+
+		add_equipment_to_stockpile = {
+			type = heavy_tank_chassis
+			amount = 2
+		}
+	}
+	else_if = {
+		limit = {
+			has_tech = basic_medium_tank
+			stockpile_ratio = {
+				archetype = medium_tank_chassis
+				ratio < 0.25
+			}
+		}
+
+		add_equipment_to_stockpile = {
+			type = medium_tank_chassis
+			amount = 20
+		}
+	}
+	else_if = {
+		limit = {
+			has_tech = gwtank
+			stockpile_ratio = {
+				archetype = light_tank_chassis
+				ratio < 0.25
+			}
+		}
+
+		add_equipment_to_stockpile = {
+			type = light_tank_chassis
+			amount = 50
+		}
+	}
+	else_if = {
+		limit = {
+			has_tech = siege_artillery_1
+			stockpile_ratio = {
+				archetype = siege_artillery_equipment
+				ratio < 0.25
+			}
+		}
+
+		add_equipment_to_stockpile = {
+			type = siege_artillery_equipment
+			amount = 2
+		}
+	}
+	else_if = {
+		limit = {
+			has_tech = heavy_artillery_1
+			stockpile_ratio = {
+				archetype = heavy_artillery_equipment
+				ratio < 0.25
+			}
+		}
+
+		add_equipment_to_stockpile = {
+			type = heavy_artillery_equipment
+			amount = 20
+		}
+	}
+	else_if = {
+		limit = {
+			has_tech = field_artillery_1
+			# Don't check the stockpile ratio for this last one, just let the player get something if they have the tech to prevent a very VERY well stocked player getting nothing.
+		}
+
+		add_equipment_to_stockpile = {
+			type = field_artillery_equipment
+			amount = 50
+		}
+	}
+}

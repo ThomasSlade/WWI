@@ -46,3 +46,6 @@
   effect_kill_character: "is killed"
   SOV_change_law_to_liberal: "Change $cabinet$ to §Y$cab_liberal$§!"
   SOV_change_law_to_limited_democracy: "Change $government$ to §Y$gov_limited_democracy$§!"
+  effect_remove_1_research_slot: "Lose §R1§! Research Slot." # Copied from vanilla EFFECT_REMOVE_RESEARCH_SLOT
+  rasputin_events_tt: "§RRasputin Scandals:§!\nRasputin will cause a §RScandal§! every few months:\n §YShelter§! him to gain $tsar_favor_resource$ and a malus\n §YConfront§! him to lose $tsar_favor_resource$."
+  empowered_rasputin_events_tt: "§RRasputin Scandals:§!\nRasputin will cause a §RScandal§! every few months:\n §YShelter§! him to gain $tsar_favor_resource$ and a malus\n §YConfront§! him to lose $tsar_favor_resource$\n §YIndulge§! him for a malus and a bonus."

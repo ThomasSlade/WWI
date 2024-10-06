@@ -244,7 +244,7 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = SER_nacertanije
 			add_timed_idea  = {
-				idea = expansionism_withers
+				idea = expansionist_withers
 				days = 90
 			}
 		}
