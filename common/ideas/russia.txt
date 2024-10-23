@@ -26,7 +26,7 @@ ideas = {
 			}
 		}
 
-		idea_SOV_revolution_in_waiting = {
+		idea_SOV_revolution_in_waiting_0 = {
 			allowed = {
 				always = yes
 			}
@@ -40,8 +40,27 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				custom_modifier_tooltip = idea_SOV_revolution_in_waiting_civil_war_tt
+				custom_modifier_tooltip = idea_SOV_revolution_in_waiting_1_civil_war_tt
 				revolutionary_drift = 0.01
+			}
+		}
+
+		idea_SOV_revolution_in_waiting_1 = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_revolutionary
+
+			removal_cost = -1
+
+			modifier = {
+				custom_modifier_tooltip = idea_SOV_revolution_in_waiting_1_civil_war_tt
+				revolutionary_drift = 0.02
 			}
 		}
 
@@ -192,6 +211,29 @@ ideas = {
 				revolutionary_drift = -0.005
 				war_support_factor = 0.05
 				army_morale_factor = 0.25
+			}
+		}
+
+		idea_SOV_recruited_displaced_workers = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = revolutionary }
+			}
+
+			cancel = {
+				has_government = revolutionary
+			}
+
+			removal_cost = -1
+
+			picture = generic_construction
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.25
+				industry_repair_factor = 0.25
 			}
 		}
 	}

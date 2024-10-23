@@ -30,3 +30,10 @@ trigger_SOV_requires_3_tsar_favor_if_tsarist = {
 		trigger_SOV_at_least_3_tsar_favor = yes
 	}
 }
+
+trigger_SOV_is_unreformed_state = {
+	OR = {
+		has_dynamic_modifier = { modifier = modifier_SOV_unreformed_city }
+		has_dynamic_modifier = { modifier = modifier_SOV_unreformed_land }
+	}
+}

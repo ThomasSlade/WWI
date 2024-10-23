@@ -18,9 +18,54 @@ decision_category_SOV_russian_reform = {
         }
 	}
 
+	decision_pacify_city = {
+		state_target = yes
+		on_map_mode = map_only
+
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				has_dynamic_modifier = {
+					modifier = modifier_SOV_unreformed_city
+				}
+			}
+		}
+
+		available = {
+			FROM = {
+				all_neighbor_state = {
+					NOT = { 
+						has_dynamic_modifier = {
+							modifier = modifier_SOV_unreformed_land
+						}
+					}
+				}
+			}
+		}
+
+		cost = city_reform_cost
+
+		complete_effect = {
+			FROM = {
+				remove_dynamic_modifier = {
+					modifier = modifier_SOV_unreformed_city
+				}
+			}
+
+			add_to_variable = { reformed_states_count = 1 }
+			effect_SOV_determine_reformed_states_factor = yes
+
+			FROM = { save_event_target_as = reformed_state }
+			country_event = { id = event_SOV_russian_reform.1 }
+		}
+
+		icon = GFX_decision_gre_investment_decisions
+	}
+
 	decision_reform_land = {
 		state_target = yes
 		on_map_mode = map_only
+
 		target_trigger = {
 			check_variable = { free_land_reforms < 1 }
 
@@ -34,21 +79,18 @@ decision_category_SOV_russian_reform = {
 
 				# Checking all neighbor states can be expensive so try to check the cheapest failures first for these decisions.
 				all_neighbor_state = {
-					has_dynamic_modifier = { modifier = modifier_SOV_unreformed_land }
+					trigger_SOV_is_unreformed_state = yes
 				}
 			}
 		}
 
-		cost = land_reform_cost
-
 		available = {
-            FROM = {
-            	OR = {
-            		industrial_complex > 0
-            		arms_factory > 0
-            	}
-            }
-        }
+			FROM = {
+        		infrastructure > 1
+			}
+		}
+
+		cost = land_reform_cost
 
 		complete_effect = {
 			FROM = {
@@ -57,11 +99,11 @@ decision_category_SOV_russian_reform = {
 				}
 			}
 
-			FROM = { save_event_target_as = reformed_state }
-			country_event = { id = event_SOV_russian_reform.1 }
+			add_to_variable = { reformed_states_count = 1 }
+			effect_SOV_determine_reformed_states_factor = yes
 		}
 
-		icon = GFX_decision_category_border_war
+		icon = GFX_decision_generic_factory
 	}
 
 	decision_reform_land_cheap = {
@@ -79,7 +121,7 @@ decision_category_SOV_russian_reform = {
 				NOT = { has_state_flag = flag_land_reform_discount }
 
 				any_neighbor_state = {
-					NOT = { has_dynamic_modifier = { modifier = modifier_SOV_unreformed_land } }
+					NOT = { trigger_SOV_is_unreformed_state = yes }
 				}
 			}
 		}
@@ -88,11 +130,8 @@ decision_category_SOV_russian_reform = {
 
 		available = {
             FROM = {
-            	OR = {
-            		industrial_complex > 0
-            		arms_factory > 0
-            	}
-            }
+        		infrastructure > 1
+			}
         }
 
 		complete_effect = {
@@ -102,11 +141,11 @@ decision_category_SOV_russian_reform = {
 				}
 			}
 
-			FROM = { save_event_target_as = reformed_state }
-			country_event = { id = event_SOV_russian_reform.1 }
+			add_to_variable = { reformed_states_count = 1 }
+			effect_SOV_determine_reformed_states_factor = yes
 		}
 
-		icon = GFX_decision_category_border_war
+		icon = GFX_decision_generic_factory
 	}
 
 	decision_reform_land_very_cheap = {
@@ -129,11 +168,8 @@ decision_category_SOV_russian_reform = {
 
 		available = {
             FROM = {
-            	OR = {
-            		industrial_complex > 0
-            		arms_factory > 0
-            	}
-            }
+        		infrastructure > 1
+			}
         }
 
 		complete_effect = {
@@ -144,11 +180,11 @@ decision_category_SOV_russian_reform = {
 				clr_state_flag = flag_land_reform_discount
 			}
 
-			FROM = { save_event_target_as = reformed_state }
-			country_event = { id = event_SOV_russian_reform.1 }
+			add_to_variable = { reformed_states_count = 1 }
+			effect_SOV_determine_reformed_states_factor = yes
 		}
 
-		icon = GFX_decision_category_border_war
+		icon = GFX_decision_generic_factory
 	}
 
 	decision_reform_land_free = {
@@ -166,11 +202,8 @@ decision_category_SOV_russian_reform = {
 
 		available = {
             FROM = {
-            	OR = {
-            		industrial_complex > 0
-            		arms_factory > 0
-            	}
-            }
+        		infrastructure > 1
+			}
 
             # Need to add this extra gating because the target trigger updates only daily, so a player could pause and just keep using the free reform charges.
             check_variable = { free_land_reforms > 0 }
@@ -185,10 +218,110 @@ decision_category_SOV_russian_reform = {
 				}
 			}
 
-			FROM = { save_event_target_as = reformed_state }
-			country_event = { id = event_SOV_russian_reform.1 }
+			add_to_variable = { reformed_states_count = 1 }
+			effect_SOV_determine_reformed_states_factor = yes
 		}
 
-		icon = GFX_decision_category_border_war
+		icon = GFX_decision_generic_factory
+	}
+
+	decision_SOV_appeal_to_smallholders = {
+		cost = 50
+		fire_only_once = yes
+		icon = GFX_decision_generic_factory
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = decision_condition_land_reformed_15_percent
+				check_variable = { reformed_states_factor > 0.15 }
+			}
+		}
+
+		complete_effect = {
+			swap_ideas = {
+				remove_idea = idea_SOV_revolution_in_waiting_1
+				add_idea = idea_SOV_revolution_in_waiting_0
+			}
+		}
+	}
+
+	decision_SOV_recruit_displaced_workers = {
+		cost = 50
+		fire_only_once = yes
+		icon = GFX_decision_generic_factory
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = decision_condition_land_reformed_15_percent
+				check_variable = { reformed_states_factor > 0.15 }
+			}
+		}
+
+		complete_effect = {
+			add_ideas = idea_SOV_recruited_displaced_workers
+		}
+	}
+
+	decision_SOV_galvanize_middle_class = {
+		cost = 50
+		fire_only_once = yes
+		icon = GFX_decision_generic_factory
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = decision_condition_land_reformed_25_percent
+				check_variable = { reformed_states_factor > 0.25 }
+			}
+		}
+
+		complete_effect = {
+			add_war_support = 0.05
+		}
+	}
+
+	decision_SOV_seize_communal_assets = {
+		cost = 50
+		fire_only_once = yes
+		icon = GFX_decision_generic_factory
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = decision_condition_land_reformed_25_percent
+				check_variable = { reformed_states_factor > 0.25 }
+			}
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+			}
+
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 500
+			}
+		}
+	}
+
+	decision_SOV_purchase_agricultural_equipment = {
+		cost = 50
+		fire_only_once = yes
+		icon = GFX_decision_generic_factory
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = decision_condition_land_reformed_25_percent
+				check_variable = { reformed_states_factor > 0.25 }
+			}
+		}
+
+		complete_effect = {
+			# TODO: If I ever add horses as an equipment, should probably gain those here.
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 1000
+			}
+		}
 	}
 }

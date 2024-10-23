@@ -10,17 +10,14 @@ state={
 		add_core_of = TRS
 		add_core_of = SLV
 		buildings = {
+			arms_factory = 1
 			industrial_complex = 1
 			infrastructure = 2
-			arms_factory = 1
 			4646 = {
 				naval_base = 6
 			}
 			3942 = {
 				naval_base = 7
-			}
-			4385 = {
-				bunker = 3
 			}
 		}
 		victory_points = {3942 25

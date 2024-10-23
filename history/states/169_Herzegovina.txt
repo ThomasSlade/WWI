@@ -10,8 +10,8 @@ state={
 		add_core_of = BOS
 		add_core_of = CRO
 		buildings = {
-			infrastructure = 2
 			arms_factory = 1
+			infrastructure = 2
 		}
 		victory_points = {4504 5
 		}

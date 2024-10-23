@@ -28,7 +28,8 @@ effect_SOV_init_february_revolution = {
 
 effect_SOV_begin_civil_war_as_reds = {
 	remove_ideas = {
-		idea_SOV_revolution_in_waiting
+		idea_SOV_revolution_in_waiting_0
+		idea_SOV_revolution_in_waiting_1
 		idea_SOV_provisional_government
 	}
 
@@ -80,7 +81,8 @@ effect_SOV_begin_civil_war_as_reds = {
 
 effect_SOV_begin_civil_war_as_whites = {
 	remove_ideas = {
-		idea_SOV_revolution_in_waiting
+		idea_SOV_revolution_in_waiting_0
+		idea_SOV_revolution_in_waiting_1
 		idea_SOV_provisional_government
 	}
 

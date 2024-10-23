@@ -1,5 +1,4 @@
 effect_SOV_init_unreformed_land = {
-	add_to_temp_array = { russian_unreformed_states = 386 }
 	add_to_temp_array = { russian_unreformed_states = 349 }
 	add_to_temp_array = { russian_unreformed_states = 314 }
 	add_to_temp_array = { russian_unreformed_states = 302 }
@@ -16,19 +15,15 @@ effect_SOV_init_unreformed_land = {
 	add_to_temp_array = { russian_unreformed_states = 263 }
 	add_to_temp_array = { russian_unreformed_states = 326 }
 	add_to_temp_array = { russian_unreformed_states = 374 }
-	add_to_temp_array = { russian_unreformed_states = 299 }
 	add_to_temp_array = { russian_unreformed_states = 378 }
 	add_to_temp_array = { russian_unreformed_states = 373 }
 	add_to_temp_array = { russian_unreformed_states = 369 }
-	add_to_temp_array = { russian_unreformed_states = 361 }
 	add_to_temp_array = { russian_unreformed_states = 306 }
 	add_to_temp_array = { russian_unreformed_states = 287 }
 	add_to_temp_array = { russian_unreformed_states = 286 }
-	add_to_temp_array = { russian_unreformed_states = 332 }
 	add_to_temp_array = { russian_unreformed_states = 300 }
 	add_to_temp_array = { russian_unreformed_states = 282 }
 	add_to_temp_array = { russian_unreformed_states = 245 }
-	add_to_temp_array = { russian_unreformed_states = 393 }
 	add_to_temp_array = { russian_unreformed_states = 308 }
 	add_to_temp_array = { russian_unreformed_states = 319 }
 	add_to_temp_array = { russian_unreformed_states = 257 }
@@ -37,23 +32,18 @@ effect_SOV_init_unreformed_land = {
 	add_to_temp_array = { russian_unreformed_states = 334 }
 	add_to_temp_array = { russian_unreformed_states = 293 }
 	add_to_temp_array = { russian_unreformed_states = 346 }
-	add_to_temp_array = { russian_unreformed_states = 255 }
 	add_to_temp_array = { russian_unreformed_states = 279 }
 	add_to_temp_array = { russian_unreformed_states = 277 }
-	add_to_temp_array = { russian_unreformed_states = 281 }
 	add_to_temp_array = { russian_unreformed_states = 295 }
 	add_to_temp_array = { russian_unreformed_states = 340 }
 	add_to_temp_array = { russian_unreformed_states = 387 }
 	add_to_temp_array = { russian_unreformed_states = 360 }
 	add_to_temp_array = { russian_unreformed_states = 265 }
 	add_to_temp_array = { russian_unreformed_states = 376 }
-	add_to_temp_array = { russian_unreformed_states = 266 }
 	add_to_temp_array = { russian_unreformed_states = 354 }
 	add_to_temp_array = { russian_unreformed_states = 313 }
 	add_to_temp_array = { russian_unreformed_states = 344 }
 	add_to_temp_array = { russian_unreformed_states = 247 }
-	add_to_temp_array = { russian_unreformed_states = 372 }
-	add_to_temp_array = { russian_unreformed_states = 355 }
 	add_to_temp_array = { russian_unreformed_states = 341 }
 	add_to_temp_array = { russian_unreformed_states = 291 }
 	add_to_temp_array = { russian_unreformed_states = 350 }
@@ -67,13 +57,49 @@ effect_SOV_init_unreformed_land = {
 	add_to_temp_array = { russian_unreformed_states = 358 }
 	add_to_temp_array = { russian_unreformed_states = 356 }
 
+	set_variable = { initial_unreformed_states_count = 0 }
+
 	for_each_scope_loop = {
 		array = russian_unreformed_states
 
 		add_dynamic_modifier = {
 			modifier = modifier_SOV_unreformed_land
 		}
+
+		PREV = { add_to_variable = { initial_unreformed_states_count = 1 } }
 	}
+
+	add_to_temp_array = { russian_unreformed_cities = 386 }
+	add_to_temp_array = { russian_unreformed_cities = 361 }
+	add_to_temp_array = { russian_unreformed_cities = 355 }
+	add_to_temp_array = { russian_unreformed_cities = 266 }
+	add_to_temp_array = { russian_unreformed_cities = 255 }
+	add_to_temp_array = { russian_unreformed_cities = 332 }
+	add_to_temp_array = { russian_unreformed_cities = 372 }
+	add_to_temp_array = { russian_unreformed_cities = 281 }
+	add_to_temp_array = { russian_unreformed_cities = 393 }
+	add_to_temp_array = { russian_unreformed_cities = 299 }
+
+	for_each_scope_loop = {
+		array = russian_unreformed_cities
+
+		add_dynamic_modifier = {
+			modifier = modifier_SOV_unreformed_city
+		}
+
+		PREV = { add_to_variable = { initial_unreformed_states_count = 1 } }
+	}
+
+	set_variable = { reformed_states_count = 0 }
+	effect_SOV_determine_reformed_states_factor = yes
+}
+
+effect_SOV_determine_reformed_states_factor = {
+	set_temp_variable = { reformed_states_factor_temp = reformed_states_count }
+	log = "Reformed sttaes: [?reformed_states_factor_temp]"
+	divide_temp_variable = { reformed_states_factor_temp = initial_unreformed_states_count }
+	log = "Setting reformed state factor to [?reformed_states_factor_temp]"
+	set_variable = { reformed_states_factor = reformed_states_factor_temp }
 }
 
 effect_SOV_end_tsars_favour = {

@@ -7,8 +7,8 @@ state={
 		add_core_of = SOV
 		add_core_of = UKR
 		buildings = {
-			infrastructure = 2
 			arms_factory = 1
+			infrastructure = 2
 			6551 = {
 				naval_base = 2
 			}
@@ -28,5 +28,5 @@ state={
 	}
 	manpower=750435
 	buildings_max_level_factor=1.000
-	state_category = town
+	state_category = rural
 }

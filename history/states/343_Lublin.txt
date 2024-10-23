@@ -7,8 +7,8 @@ state={
 		add_core_of = SOV
 		add_core_of = POL
 		buildings = {
-			infrastructure = 1
 			arms_factory = 1
+			infrastructure = 1
 		}
 		victory_points = {8437 5
 		}
@@ -22,5 +22,5 @@ state={
 	}
 	manpower=660988
 	buildings_max_level_factor=1.000
-	state_category = town
+	state_category = rural
 }

@@ -6,8 +6,8 @@ state={
 		owner = SOV
 		add_core_of = SOV
 		buildings = {
-			infrastructure = 2
 			arms_factory = 1
+			infrastructure = 2
 			10621 = {
 				naval_base = 1
 			}

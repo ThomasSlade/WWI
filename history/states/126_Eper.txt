@@ -9,9 +9,6 @@ state={
 		add_core_of = SLO
 		buildings = {
 			infrastructure = 1
-			1581 = {
-				bunker = 1
-			}
 		}
 		victory_points = {1597 5
 		}

@@ -6,8 +6,8 @@ state={
 		owner = SOV
 		add_core_of = SOV
 		buildings = {
-			infrastructure = 1
 			arms_factory = 1
+			infrastructure = 1
 			8099 = {
 				naval_base = 1
 			}
@@ -28,5 +28,5 @@ state={
 	}
 	manpower=951237
 	buildings_max_level_factor=1.000
-	state_category = town
+	state_category = rural
 }

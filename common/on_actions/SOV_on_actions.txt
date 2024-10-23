@@ -4,7 +4,7 @@ on_actions = {
 			if = {
 				limit = {
 					NOT = { has_active_mission = mission_SOV_bolshevik_revolution_imminent }
-					has_idea = idea_SOV_revolution_in_waiting
+					trigger_SOV_has_revolution_in_waiting = yes
 					revolutionary > SOV.civil_war_revolutionary_threshold
 				}
 	

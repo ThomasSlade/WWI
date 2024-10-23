@@ -309,7 +309,7 @@ focus_tree = {
 		id = SOV_resettle_peasants_eastward
 		icon = GFX__shine
 		prerequisite = { focus = SOV_western_zemstvo_bill focus = SOV_cooperate_with_polish_nobility }
-		x = -5
+		x = -3
 		y = 1
 		relative_position_id = SOV_western_zemstvo_bill
 		cost = 10
@@ -328,8 +328,8 @@ focus_tree = {
 		id = SOV_complete_the_trans_siberian_railway
 		icon = GFX__shine
 		prerequisite = { focus = SOV_resettle_peasants_eastward }
-		x = 2
-		y = 1
+		x = 0
+		y = 2
 		relative_position_id = SOV_resettle_peasants_eastward
 		cost = 10
 		ai_will_do = {
@@ -347,7 +347,7 @@ focus_tree = {
 		id = SOV_hospital_trains
 		icon = GFX__shine
 		prerequisite = { focus = SOV_complete_the_trans_siberian_railway focus = SOV_zemgor }
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = SOV_complete_the_trans_siberian_railway
 		cost = 10
@@ -366,7 +366,7 @@ focus_tree = {
 		id = SOV_expand_the_ob_yenisei_canal
 		icon = GFX__shine
 		prerequisite = { focus = SOV_resettle_peasants_eastward }
-		x = -0
+		x = -1
 		y = 1
 		relative_position_id = SOV_resettle_peasants_eastward
 		cost = 10
@@ -827,10 +827,10 @@ focus_tree = {
 	focus = {
 		id = SOV_zemstvo_men
 		icon = GFX__shine
-		prerequisite = { focus = SOV_western_zemstvo_bill focus = SOV_cooperate_with_polish_nobility }
-		x = -1
+		prerequisite = { focus = SOV_stolypins_demand focus = SOV_the_peasant_land_bank }
+		x = -2
 		y = 1
-		relative_position_id = SOV_western_zemstvo_bill
+		relative_position_id = SOV_stolypins_demand
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -871,7 +871,7 @@ focus_tree = {
 		id = SOV_the_third_element
 		icon = GFX__shine
 		prerequisite = { focus = SOV_zemgor }
-		x = 0
+		x = 2
 		y = 1
 		relative_position_id = SOV_zemgor
 		cost = 10
@@ -1066,7 +1066,7 @@ focus_tree = {
 	focus = {
 		id = SOV_military_renaissance
 		icon = GFX__shine
-		x = -5
+		x = -6
 		y = 3
 		relative_position_id = SOV_western_zemstvo_bill
 		cost = 10
@@ -1104,7 +1104,7 @@ focus_tree = {
 		id = SOV_the_great_programme
 		icon = GFX__shine
 		prerequisite = { focus = SOV_junker_professionals }
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = SOV_junker_professionals
 		cost = 10
@@ -1294,7 +1294,7 @@ focus_tree = {
 		id = SOV_the_labour_group
 		icon = GFX__shine
 		prerequisite = { focus = SOV_war_industries_committee focus = SOV_special_council_for_artillery_supplies }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = SOV_war_industries_committee
 		cost = 10
@@ -1317,7 +1317,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_the_labour_group }
 		mutually_exclusive = { focus = SOV_underground_soviets }
 		x = 0
-		y = 3
+		y = 2
 		relative_position_id = SOV_the_third_element
 		cost = 10
 		ai_will_do = {
@@ -1335,7 +1335,7 @@ focus_tree = {
 		id = SOV_eight_hour_day
 		icon = GFX__shine
 		prerequisite = { focus = SOV_february_revolution }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = SOV_february_revolution
 		cost = 10
@@ -1393,7 +1393,7 @@ focus_tree = {
 		id = SOV_dislodge_the_clergy
 		icon = GFX__shine
 		prerequisite = { focus = SOV_february_revolution focus = SOV_underground_soviets }
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = SOV_february_revolution
 		cost = 10
@@ -1412,7 +1412,7 @@ focus_tree = {
 		id = SOV_april_theses
 		icon = GFX__shine
 		prerequisite = { focus = SOV_underground_soviets }
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = SOV_underground_soviets
 		cost = 10

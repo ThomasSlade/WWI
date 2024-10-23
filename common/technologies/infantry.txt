@@ -110,6 +110,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		research_cost = 1.5
+		start_year = 1913
 		folder = {
 			name = infantry_folder
 			position = { x = -2 y = @1913 }
@@ -300,6 +302,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		research_cost = 1.5
+		start_year = 1916
 		folder = {
 			name = infantry_folder
 			position = { x = 2 y = @1916 }
@@ -311,6 +315,8 @@ technologies = {
 	}
 
 	heavy_machine_gun_2 = {
+		research_cost = 1.5
+		start_year = 1917
 		folder = {
 			name = infantry_folder
 			position = { x = -2 y = @1917 }
@@ -369,6 +375,8 @@ technologies = {
 	}
 
 	shotgun_2 = {
+		research_cost = 1.5
+		start_year = 1919
 		folder = {
 			name = infantry_folder
 			position = { x = 2 y = @1919 }
@@ -1294,10 +1302,6 @@ technologies = {
 			position = { x = 7 y = 9 }
 		}
 		
-		sub_technologies = {
-			motorized_rocket_unit
-		}
-		
 		categories = {
 			motorized_equipment
 			mio_cat_tech_all_motorized_mechanized
@@ -1325,34 +1329,6 @@ technologies = {
 				is_major = no
 				factor = 0.5
 			}
-		}
-	}
-	motorized_rocket_unit = {
-
-		enable_subunits = {
-			motorized_rocket_brigade
-		}
-		enable_equipments = {
-			motorized_rocket_equipment_1
-		}
-		dependencies = {
-			rocket_artillery = 1
-		}
-	
-		research_cost = 1.5
-		start_year = 1914
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				tag = SOV
-			}
-		}
-		
-		categories = {
-			mot_rockets
 		}
 	}
 	

@@ -116,6 +116,17 @@ modifier_SER_martial_law_in_new_serbia = {
 	local_factories = 0.5
 }
 
+modifier_SOV_unreformed_city = {
+	enable = {
+		controller = { original_tag = SOV }
+	}
+
+	icon = GFX_modifiers_generic_military_industry
+
+	local_building_slots_factor = -0.5
+	local_factories = -0.5
+}
+
 modifier_SOV_unreformed_land = {
 	enable = {
 		controller = { original_tag = SOV }
@@ -123,21 +134,9 @@ modifier_SOV_unreformed_land = {
 
 	icon = GFX_modifiers_generic_military_industry
 
-	production_speed_infrastructure_factor = -0.75
-	local_building_slots_factor = -0.5
+	local_building_slots_factor = -10
 	local_manpower = -0.33
 	local_resources = -0.5
-}
-
-modifier_SOV_encouraged_industrialisation = {
-	enable = {
-		controller = { original_tag = SOV }
-	}
-
-	icon = GFX_modifiers_generic_military_industry
-
-	production_speed_industrial_complex_factor = 0.5
-	production_speed_arms_factory_factor = 0.5
 }
 
 modifier_SOV_exploited_resources = {
