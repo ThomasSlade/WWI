@@ -38,14 +38,25 @@ country_event = {
 		}
 	}
 
-	# Gain more resources
+	# Build infrastructure
 	option = {
 		name = event_SOV_russian_reform.1.c
 		event_target:reformed_state = {
-			add_dynamic_modifier = {
-				modifier = modifier_SOV_exploited_resources
+			every_neighbor_state = {
+				limit = { is_owned_by = ROOT }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
 			}
+		}
+	}
 
+	# Gain more resources
+	option = {
+		name = event_SOV_russian_reform.1.d
+		event_target:reformed_state = {
 			every_neighbor_state = {
 				limit = { is_owned_by = ROOT }
 				add_dynamic_modifier = {

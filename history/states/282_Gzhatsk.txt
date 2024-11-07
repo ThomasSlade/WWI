@@ -2,6 +2,9 @@
 state={
 	id=282
 	name=282_Gzhatsk
+	resources={
+		oil = 4
+	}
 	history={
 		owner = SOV
 		add_core_of = SOV

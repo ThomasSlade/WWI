@@ -2,6 +2,9 @@
 state={
 	id=378
 	name=378_Bely
+	resources={
+		aluminium = 3
+	}
 	history={
 		owner = SOV
 		add_core_of = SOV

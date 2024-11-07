@@ -61,7 +61,7 @@
   AUS_overpower_the_honved_tt: "Regions of §Y[HUN.GetOldNameDef]§! can be brought under §Y[AUS.GetAdjective]§! control by dispatching river flotillas."
   AUS_overpower_the_honved_budapest_tt: "§Y[189.GetName]§! can be taken once §Y[AUS.GetNameDef]§! controls §Y3§! of the following:\n§Y[141.GetName]§!\n§Y[213.GetName]§!\n§Y[232.GetName]§!\n§Y[223.GetName]§!"
   AUS_overpower_the_honved_hungary_annexation_tt: "§RThis will lead to our annexation!§!"
-  AUS_overpower_the_honved_hungary_warning_tt: "$AUS_overpower_the_honved_tt$\n$AUS_overpower_the_honved_budapest_tt$\n$AUS_overpower_the_honved_hungary_annexation_tt#"
+  AUS_overpower_the_honved_hungary_warning_tt: "$AUS_overpower_the_honved_tt$\n$AUS_overpower_the_honved_budapest_tt$\n$AUS_overpower_the_honved_hungary_annexation_tt$"
   AUS_overpower_the_honved_return_state_time_tt: "§Y[annexed_state.GetName]§! will return to §Y[HUN.GetAdjective]§! control in §Y90 days§!."
   AUS_overpower_the_honved_return_state_cancelled_tt: "States taken by §Y[FROM.GetName]§! will no longer return to §Y[THIS.GetName]§!."
   AUS_rail_import_submarines_rail_tt: "For §Y30 days§!, §Y25§! units of §Y$train_equipment$§! are used.\n"

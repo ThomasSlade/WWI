@@ -1,0 +1,59 @@
+SER_dont_invite_majors_to_balkan_league_before_reform = {
+	allowed = {
+		always = yes
+	}
+
+	enable = {
+		has_variable = global.balkan_league_leader
+		check_variable = { global.balkan_league_leader = THIS }
+		NOT = { has_global_flag = flag_SER_second_balkan_war_averted }
+	}
+
+	abort = {
+		has_global_flag = flag_SER_second_balkan_war_averted
+	}
+
+	# Make Serbia unlikely to accept other large nations into the Balkan League. This primarily stops Italy from automatically joining if the
+	# Italo-Ottoman war overlaps with the 1st Balkan War. Remove these strategies if Serbia successfully averts the 2nd Balkan War.
+	ai_strategy = {
+		type = diplo_action_acceptance
+		id = ITA
+		value = -1000
+		target = join_faction
+	}
+
+	ai_strategy = {
+		type = diplo_action_acceptance
+		id = AUS
+		value = -1000
+		target = join_faction
+	}
+
+	ai_strategy = {
+		type = diplo_action_acceptance
+		id = SOV
+		value = -1000
+		target = join_faction
+	}
+
+	ai_strategy = {
+		type = diplo_action_desire
+		id = ITA
+		value = -1000
+		target = offer_join_faction
+	}
+
+	ai_strategy = {
+		type = diplo_action_desire
+		id = AUS
+		value = -1000
+		target = offer_join_faction
+	}
+
+	ai_strategy = {
+		type = diplo_action_desire
+		id = SOV
+		value = -1000
+		target = offer_join_faction
+	}
+}

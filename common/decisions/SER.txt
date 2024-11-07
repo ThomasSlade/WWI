@@ -994,6 +994,8 @@ decision_category_SER_balkan_league = {
 				days = 5
 			}
 
+			FROM = { set_state_flag = flag_balkan_war_dispute_resolved }
+
 	    	if = {
 	    		limit = {
 		    		set_temp_variable = { remaining_disputes = 0 }
@@ -1006,7 +1008,7 @@ decision_category_SER_balkan_league = {
 		    				add_to_temp_variable = { remaining_disputes = 1 }
 		    			}
 		    		}
-	    			check_variable = { remaining_disputes < 2 }
+	    			check_variable = { remaining_disputes < 1 }
 	    		}
 
 	    		effect_SER_end_balkan_disputes = yes
@@ -1016,12 +1018,10 @@ decision_category_SER_balkan_league = {
 	    			limit = { has_active_mission = mission_SER_balkan_league_breakup }
 	    			add_days_mission_timeout = {
 	    				mission = mission_SER_balkan_league_breakup
-	    				days = 15
+	    				days = 10
 	    			}
 	    		}
 	    	}
-
-	    	FROM = { set_state_flag = flag_balkan_war_dispute_resolved }
 
 	    	every_other_country = {
 	    		limit = {
@@ -1055,15 +1055,17 @@ decision_category_SER_balkan_league = {
 	    		add = 50
 	    		has_country_flag = flag_is_balkan_league_leader
 	    	}
-	    	# If you're not sure you can beat the 2nd Balkan War instigator, this becomes more urgent.
 	    	modifier = {
-	    		add = 20
-	    		NOT = { check_variable = { global.country_with_most_balkan_war_disputes = THIS } }
-	    		var:global.country_with_most_balkan_war_disputes = {
-	    			strength_ratio = {
-	    				tag = ROOT
-	    				ratio < 0.66
-	    			}
+	    		add = 5
+	    		is_in_faction = yes
+	    		is_faction_leader = no
+	    		faction_leader = {
+	    		    ROOT = {
+	    		      has_opinion = {
+	    		        target = PREV
+	    		        value > 50
+	    		      }
+	    		    }
 	    		}
 	    	}
 	    	modifier = {

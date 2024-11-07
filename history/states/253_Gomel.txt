@@ -2,6 +2,9 @@
 state={
 	id=253
 	name=253_Gomel
+	resources={
+		chromium = 2
+	}
 	history={
 		owner = SOV
 		add_core_of = SOV

@@ -31,12 +31,12 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_siege_artillery_1_medium"
-		texturefile = "gfx/interface/technologies/Art_3_axis.dds"
+		texturefile = "gfx/interface/technologies/siege_artillery_1.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_siege_artillery_2_medium"
-		texturefile = "gfx/interface/technologies/Art_3_axis.dds"
+		texturefile = "gfx/interface/technologies/siege_artillery_2.dds"
 	}
 
 	SpriteType = {

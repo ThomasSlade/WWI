@@ -2,6 +2,9 @@
 state={
 	id=267
 	name=267_Poltava
+	resources={
+		aluminium = 4
+	}
 	history={
 		owner = SOV
 		add_core_of = SOV

@@ -905,6 +905,11 @@ focus_tree = {
 							}
 						}
 					}
+
+					add_named_threat = {
+						threat = 2
+						name = threat_austria_protect_albania
+					}
 				}
 				else = {
 					custom_effect_tooltip = AUS_preempt_albanian_independence_effect_tt
@@ -1847,6 +1852,11 @@ focus_tree = {
 				type = take_core_state
 				target = GER
 				expire = 730
+			}
+
+			add_named_threat = {
+				threat = 5
+				name = threat_austria_war_with_germany
 			}
 		}
 	}

@@ -2,6 +2,9 @@
 state={
 	id=372
 	name=372_Yaroslavl
+	resources={
+		chromium = 3
+	}
 	history={
 		owner = SOV
 		add_core_of = SOV

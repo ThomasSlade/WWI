@@ -1,0 +1,62 @@
+SOV_historical = {
+	name = "Russian historical plan"
+	desc = ""
+
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		is_historical_focus_on = yes
+	}
+
+	ai_national_focuses = {
+		# 1911
+		SOV_western_zemstvo_bill
+		SOV_the_peasant_land_bank
+		SOV_export_cheap_labour
+		SOV_children_of_russia
+		SOV_align_serbia
+
+		# 1912
+		SOV_restyle_st_petersburg_cathedrals
+		SOV_the_holy_city
+		SOV_military_renaissance
+		SOV_junker_professionals
+		SOV_oath_to_the_tsar
+		
+		# 1913
+		SOV_army_of_farmers_and_cobblers
+		SOV_romanov_pilgrimage
+		SOV_franco_russian_staff_talks
+		SOV_franco_russian_railway_loan
+		SOV_the_great_programme
+
+		# 1914
+		SOV_imperial_russian_air_service
+		SOV_anglo_russian_naval_talks
+		SOV_black_sea_investment
+		SOV_dissolve_the_majlis
+		SOV_resettle_peasants_eastward
+
+		# 1915
+		SOV_industrialization
+		SOV_nizhny_novgorod_metalwork
+		SOV_zemstvo_men
+		SOV_zemgor
+		SOV_the_druzina
+
+		# 1916
+		SOV_the_third_element
+		SOV_special_council_for_artillery_supplies
+		SOV_war_industries_committee
+		SOV_the_labour_group
+		SOV_february_revolution
+
+		# 1917
+		SOV_dislodge_the_clergy
+		SOV_eight_hour_day
+		SOV_liberty_loan
+		SOV_commisars
+		SOV_donets_coal_basin
+	}
+}

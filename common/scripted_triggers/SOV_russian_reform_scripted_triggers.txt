@@ -18,7 +18,7 @@ trigger_SOV_at_least_1_tsar_favor_if_tsarist = {
 trigger_SOV_at_least_3_tsar_favor = {
 	custom_trigger_tooltip = {
 		tooltip = tsar_favor_cost_3_tt
-		check_variable = { tsar_favor > 0 }
+		check_variable = { tsar_favor > 2 }
 	}
 }
 
@@ -32,8 +32,56 @@ trigger_SOV_requires_3_tsar_favor_if_tsarist = {
 }
 
 trigger_SOV_is_unreformed_state = {
-	OR = {
-		has_dynamic_modifier = { modifier = modifier_SOV_unreformed_city }
-		has_dynamic_modifier = { modifier = modifier_SOV_unreformed_land }
+	custom_trigger_tooltip = {
+		tooltip = trigger_SOV_is_unreformed_state_tt
+		OR = {
+			has_dynamic_modifier = { modifier = modifier_SOV_unreformed_city }
+			has_dynamic_modifier = { modifier = modifier_SOV_unreformed_land }
+		}
+	}
+}
+
+# Checks if FROM has resources required by ROOT (ROOT should be a country, FROM should be a state).
+# Keep this updated to list all resources in the game.
+trigger_SOV_has_required_resource = {
+	FROM = {
+		OR = {
+			AND = {
+				oil > 0
+				ROOT = {
+					check_variable = { resource@oil < 0 }
+				}
+			}
+			AND = {
+				aluminium > 0
+				ROOT = {
+					check_variable = { resource@aluminium < 0 }
+				}
+			}
+			AND = {
+				rubber > 0
+				ROOT = {
+					check_variable = { resource@rubber < 0 }
+				}
+			}
+			AND = {
+				tungsten > 0
+				ROOT = {
+					check_variable = { resource@tungsten < 0 }
+				}
+			}
+			AND = {
+				steel > 0
+				ROOT = {
+					check_variable = { resource@steel < 0 }
+				}
+			}
+			AND = {
+				chromium > 0
+				ROOT = {
+					check_variable = { resource@chromium < 0 }
+				}
+			}
+		}
 	}
 }

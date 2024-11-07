@@ -2,6 +2,9 @@
 state={
 	id=355
 	name=355_Nizhny_Novgorod
+	resources={
+		steel = 8
+	}
 	history={
 		owner = SOV
 		add_core_of = SOV

@@ -119,6 +119,7 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+			heavy_machine_gun
 		}
 	}
 	
@@ -324,6 +325,7 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+			heavy_machine_gun
 		}
 	}
 	

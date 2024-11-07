@@ -251,10 +251,9 @@ d_effect_SER_count_balkan_disputes = {
 
 # End the Balkan Disputes system, keeping the League together and averting the 2nd Balkan War.
 effect_SER_end_balkan_disputes = {
+	set_global_flag = flag_SER_second_balkan_war_averted
 	remove_mission = mission_SER_balkan_league_breakup
-
 	effect_SER_clear_balkan_disputes = yes
-
 	news_event = { id = event_WWI_balkan_league_second_balkan_war_averted.1 hours = 1 }
 }
 

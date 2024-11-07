@@ -67,6 +67,11 @@ country_event = {
 			target = SER
 			type = annex_everything
 		}
+
+		add_named_threat = {
+			threat = 5
+			name = threat_austria_war_with_serbia_after_assassination
+		}
 	}
 }
 

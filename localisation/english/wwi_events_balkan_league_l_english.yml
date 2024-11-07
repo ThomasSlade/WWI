@@ -6,7 +6,7 @@
   event_WWI_balkan_league_first_balkan_war.1.d_turkey_humiliated: "$event_WWI_balkan_league_first_balkan_war.1.d_start$A weakened [TUR.GetAdjective] grip on its European minorities, compounded by its recent [?global.turkish_humiliator.GetAdjective] humiliation, $event_WWI_balkan_league_first_balkan_war.1.d_end$"
   event_WWI_balkan_league_first_balkan_war.1.a_member: "We will dislodge [TUR.GetNameDef] at last."
   event_WWI_balkan_league_first_balkan_war.1.a_neutral: "Can [TUR.GetNameDef] be defeated by such ragtag nations?"
-  event_WWI_balkan_league_first_balkan_war.1.a_negative: "[TUR.GetNameDefCap] are a keystone of Balkan stability!"
+  event_WWI_balkan_league_first_balkan_war.1.a_negative: "[TUR.GetNameDefCap] is a keystone of Balkan stability!"
 
   event_WWI_balkan_league_first_balkan_war.2.t: "Infighting Looms Amid [?global.balkan_league_leader.GetFactionName] Victory"
   event_WWI_balkan_league_first_balkan_war.2.d: "We are triumphant in the Balkans. [THIS.GetNameDefCap] and her allies stand tall.\n\nBut beneath the jubilant pretense of [?global.balkan_league_leader.GetFactionName] solidarity, disagreements over the division of our winnings have already begun to fester. Such disputes, left unresolved, threaten to tear our alliance apart and plunge us into war against our cobelligerents.\n\nWill the [?global.balkan_league_leader.GetFactionName] survive the quibblings of its members?"

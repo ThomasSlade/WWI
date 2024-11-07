@@ -1,3 +1,18 @@
+@PACIFY_CITY_TARGET_CIV_WEIGHT = 0.5 # Each civ factory matters by this factor when the AI is selecting a pacify_city target
+@PACIFY_CITY_TARGET_MIL_WEIGHT = 0.5 # Each mil factory matters by this factor when the AI is selecting a pacify_city target
+
+# If a neighboring state has this resource (in any quantity), this value is added when evaluating it for pacify_city target.
+# WWI TODO: Rename these when resources are changed.
+@PACIFY_CITY_TARGET_OIL_WEIGHT = 1
+@PACIFY_CITY_TARGET_ALUMINIUM_WEIGHT = 2
+@PACIFY_CITY_TARGET_RUBBER_WEIGHT = 1
+@PACIFY_CITY_TARGET_TUNGSTEN_WEIGHT = 1
+@PACIFY_CITY_TARGET_STEEL_WEIGHT = 3
+@PACIFY_CITY_TARGET_CHROMIUM_WEIGHT = 1
+
+@PACIFY_CITY_TARGET_REFORMED_NEIGHBORS_WEIGHT = 3 # Add this much for each of the neighbors of the city that have been reformed, making it cheaper
+@PACIFY_CITY_TARGET_DISCOUNTED_NEIGHBORS_WEIGHT = 2 # Add this much for each of the neighbors of the city that have the discount, making it cheaper
+
 decision_category_SOV_russian_reform = {
 	decision_end_exporting_of_cheap_labour = {
 		visible = {
@@ -18,6 +33,197 @@ decision_category_SOV_russian_reform = {
         }
 	}
 
+	decision_end_army_labour = {
+		visible = {
+			has_idea = idea_SOV_army_labour
+		}
+
+		available = {
+            always = yes
+        }
+
+        complete_effect = {
+        	remove_ideas = idea_SOV_army_labour
+        }
+
+        ai_will_do = {
+        	base = 5
+
+        	modifier = {
+        		add = -5
+        		revolutionary < 0.6
+        	}
+        	
+        	modifier = {
+        		add = 5
+        		
+        	}
+
+        	modifier = {
+        		add = 5
+        		stockpile_ratio = {
+        			archetype = infantry_equipment
+        			ratio > 1
+        		}
+        	}
+        }
+	}
+
+		decision_demobilize_ratniki = {
+			visible = {
+				has_idea = idea_SOV_ratniki_conscripted
+			}
+
+			available = {
+	            always = yes
+	        }
+
+	        complete_effect = {
+	        	remove_ideas = idea_SOV_ratniki_conscripted
+	        }
+
+	        ai_will_do = {
+	        	base = 5
+
+	        	modifier = {
+	        		add = -5
+	        		NOR = {
+	        			check_variable = { resource@oil > -20 }
+	        			check_variable = { resource@aluminium > -20 }
+	        			check_variable = { resource@rubber > -20 }
+	        			check_variable = { resource@tungsten > -20 }
+	        			check_variable = { resource@steel > -20 }
+	        			check_variable = { resource@chromium > -20 }
+	        		}
+	        	}
+	        }
+		}
+
+	# This decision is used by the AI to set the state it wants to focus on to unlock pacify_city, so that the AI focuses on reforming land surrounding this city.
+	decision_ai_select_pacify_city_target = {
+		state_target = yes
+		on_map_mode = map_only
+
+		visible = {
+			is_ai = yes
+		}
+
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				has_dynamic_modifier = {
+					modifier = modifier_SOV_unreformed_city
+				}
+			}
+		}
+
+		complete_effect = {
+			set_variable = { pacify_city_target = FROM }
+			log = "([THIS.GetName] Land Reform) AI has selected target to focus on unlocking pacify_city decision: [?pacify_city_target.GetName]"
+		}
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				# If there's already a pacify city target, and it's still valid, don't pick a new one.
+				factor = 0
+				AND = {
+					has_variable = pacify_city_target
+					var:pacify_city_target = {
+						AND = {
+							is_owned_and_controlled_by = ROOT
+							has_dynamic_modifier = {
+								modifier = modifier_SOV_unreformed_city
+							}
+						}
+					}
+				}
+			}
+
+			modifier = {
+				set_temp_variable = { civ_score = building_level@industrial_complex }
+				multiply_temp_variable = { civ_score = @PACIFY_CITY_TARGET_CIV_WEIGHT }
+				add = civ_score
+			}
+
+			modifier = {
+				set_temp_variable = { mil_score = building_level@arms_factory }
+				multiply_temp_variable = { mil_score = @PACIFY_CITY_TARGET_MIL_WEIGHT }
+				add = mil_score
+			}
+			
+			# Each variety of resource in each neighboring state adds value. I don't go to the trouble of evaluating them proportional to the resource quantity.
+			modifier = {
+				set_temp_variable = { resource_score = 0 }
+				FROM = {
+					all_neighbor_state = {
+						if = {
+							limit = {
+								oil > 0
+							}
+
+							add_to_temp_variable = { resource_score = @PACIFY_CITY_TARGET_OIL_WEIGHT }
+						}
+						if = {
+							limit = {
+								aluminium > 0
+							}
+
+							add_to_temp_variable = { resource_score = @PACIFY_CITY_TARGET_ALUMINIUM_WEIGHT }
+						}
+						if = {
+							limit = {
+								rubber > 0
+							}
+
+							add_to_temp_variable = { resource_score = @PACIFY_CITY_TARGET_RUBBER_WEIGHT }
+						}
+						if = {
+							limit = {
+								tungsten > 0
+							}
+
+							add_to_temp_variable = { resource_score = @PACIFY_CITY_TARGET_TUNGSTEN_WEIGHT }
+						}
+						if = {
+							limit = {
+								steel > 0
+							}
+
+							add_to_temp_variable = { resource_score = @PACIFY_CITY_TARGET_STEEL_WEIGHT }
+						}
+						if = {
+							limit = {
+								chromium > 0
+							}
+
+							add_to_temp_variable = { resource_score = @PACIFY_CITY_TARGET_CHROMIUM_WEIGHT }
+						}
+
+						if = {
+							limit = {
+								trigger_SOV_is_unreformed_state = no
+							}
+
+							add_to_temp_variable = { resource_score = @PACIFY_CITY_TARGET_REFORMED_NEIGHBORS_WEIGHT }
+						}
+						else_if = {
+							limit = {
+								any_neighbor_state = {
+									trigger_SOV_is_unreformed_state = no
+								}
+							}
+
+							add_to_temp_variable = { resource_score = @PACIFY_CITY_TARGET_DISCOUNTED_NEIGHBORS_WEIGHT }
+						}
+					}
+				}
+
+				add = resource_score
+			}
+		}
+	}
+
 	decision_pacify_city = {
 		state_target = yes
 		on_map_mode = map_only
@@ -33,13 +239,23 @@ decision_category_SOV_russian_reform = {
 
 		available = {
 			FROM = {
-				all_neighbor_state = {
-					NOT = { 
-						has_dynamic_modifier = {
-							modifier = modifier_SOV_unreformed_land
+				custom_trigger_tooltip = {
+					tooltip = decision_condition_3_adjacent_reformed_states
+
+					all_neighbor_state = {
+						if = {
+							limit = {
+								NOT = {
+									has_dynamic_modifier = { modifier = modifier_SOV_unreformed_land }
+								}
+							}
+							add_to_temp_variable = { reformed_adjacent_states = 1 }
 						}
 					}
+
+					check_variable = { reformed_adjacent_states > 2 }
 				}
+				
 			}
 		}
 
@@ -57,6 +273,18 @@ decision_category_SOV_russian_reform = {
 
 			FROM = { save_event_target_as = reformed_state }
 			country_event = { id = event_SOV_russian_reform.1 }
+		}
+
+		ai_will_do = {
+			base = 15
+
+			modifier = {
+				add = building_level@industrial_complex
+			}
+
+			modifier = {
+				add = building_level@arms_factory
+			}
 		}
 
 		icon = GFX_decision_gre_investment_decisions
@@ -84,12 +312,6 @@ decision_category_SOV_russian_reform = {
 			}
 		}
 
-		available = {
-			FROM = {
-        		infrastructure > 1
-			}
-		}
-
 		cost = land_reform_cost
 
 		complete_effect = {
@@ -101,6 +323,24 @@ decision_category_SOV_russian_reform = {
 
 			add_to_variable = { reformed_states_count = 1 }
 			effect_SOV_determine_reformed_states_factor = yes
+		}
+
+		ai_will_do = {
+			base = 3
+
+			modifier = {
+				add = 5
+				FROM = {
+					any_neighbor_state = {
+						check_variable = { ROOT.pacify_city_target = THIS }
+					}
+				}
+			}
+
+			modifier = {
+				add = 5
+				FROM = { trigger_SOV_has_required_resource = yes }
+			}
 		}
 
 		icon = GFX_decision_generic_factory
@@ -128,12 +368,6 @@ decision_category_SOV_russian_reform = {
 
 		cost = land_reform_cost_cheap
 
-		available = {
-            FROM = {
-        		infrastructure > 1
-			}
-        }
-
 		complete_effect = {
 			FROM = {
 				remove_dynamic_modifier = {
@@ -143,6 +377,24 @@ decision_category_SOV_russian_reform = {
 
 			add_to_variable = { reformed_states_count = 1 }
 			effect_SOV_determine_reformed_states_factor = yes
+		}
+
+		ai_will_do = {
+			base = 6
+
+			modifier = {
+				add = 5
+				FROM = {
+					any_neighbor_state = {
+						check_variable = { ROOT.pacify_city_target = THIS }
+					}
+				}
+			}
+
+			modifier = {
+				add = 5
+				FROM = { trigger_SOV_has_required_resource = yes }
+			}
 		}
 
 		icon = GFX_decision_generic_factory
@@ -166,12 +418,6 @@ decision_category_SOV_russian_reform = {
 
 		cost = land_reform_cost_discount
 
-		available = {
-            FROM = {
-        		infrastructure > 1
-			}
-        }
-
 		complete_effect = {
 			FROM = {
 				remove_dynamic_modifier = {
@@ -182,6 +428,24 @@ decision_category_SOV_russian_reform = {
 
 			add_to_variable = { reformed_states_count = 1 }
 			effect_SOV_determine_reformed_states_factor = yes
+		}
+
+		ai_will_do = {
+			base = 9
+
+			modifier = {
+				add = 5
+				FROM = {
+					any_neighbor_state = {
+						check_variable = { ROOT.pacify_city_target = THIS }
+					}
+				}
+			}
+
+			modifier = {
+				add = 5
+				FROM = { trigger_SOV_has_required_resource = yes }
+			}
 		}
 
 		icon = GFX_decision_generic_factory
@@ -201,10 +465,6 @@ decision_category_SOV_russian_reform = {
 		}
 
 		available = {
-            FROM = {
-        		infrastructure > 1
-			}
-
             # Need to add this extra gating because the target trigger updates only daily, so a player could pause and just keep using the free reform charges.
             check_variable = { free_land_reforms > 0 }
         }
@@ -220,6 +480,24 @@ decision_category_SOV_russian_reform = {
 
 			add_to_variable = { reformed_states_count = 1 }
 			effect_SOV_determine_reformed_states_factor = yes
+		}
+
+		ai_will_do = {
+			base = 12
+
+			modifier = {
+				add = 5
+				FROM = {
+					any_neighbor_state = {
+						check_variable = { ROOT.pacify_city_target = THIS }
+					}
+				}
+			}
+
+			modifier = {
+				add = 5
+				FROM = { trigger_SOV_has_required_resource = yes }
+			}
 		}
 
 		icon = GFX_decision_generic_factory

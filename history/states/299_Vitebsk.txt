@@ -2,6 +2,9 @@
 state={
 	id=299
 	name=299_Vitebsk
+	resources={
+		aluminium = 2
+	}
 	history={
 		owner = SOV
 		add_core_of = SOV

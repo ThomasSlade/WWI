@@ -28,8 +28,6 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			effect_SOV_gain_2_tsar_favor = yes
-
 			326 = {
 				effect_SOV_add_land_reform_discount = yes
 			}
@@ -38,7 +36,7 @@ focus_tree = {
 				effect_SOV_add_land_reform_discount = yes
 			}
 
-			299 = {
+			360 = {
 				effect_SOV_add_land_reform_discount = yes
 			}
 
@@ -53,6 +51,8 @@ focus_tree = {
 			373 = {
 				effect_SOV_add_land_reform_discount = yes
 			}
+
+			country_event = { id = event_SOV_generic.2 }
 		}
 	}
 
@@ -61,7 +61,7 @@ focus_tree = {
 		id = SOV_cooperate_with_polish_nobility
 		icon = GFX__shine
 		mutually_exclusive = { focus = SOV_western_zemstvo_bill }
-		x = -30
+		x = -32
 		y = 0
 		cost = 10
 		relative_position_id = SOV_western_zemstvo_bill
@@ -71,8 +71,78 @@ focus_tree = {
 
 		available_if_capitulated = no
 
+		available = {
+			OR = {
+				controls_state = 316
+				controls_state = 312
+				controls_state = 246
+				controls_state = 337
+				controls_state = 254
+			}
+		}
+
 		completion_reward = {
-			
+			if = {
+				limit = { controls_state = 316 }
+				316 = {
+					add_extra_state_shared_building_slots = 2
+
+					add_building_construction = {
+					    type = industrial_complex
+					    level = 1
+					    instant_build = yes
+					}
+				}
+			}
+
+			if = {
+				limit = { controls_state = 312 }
+				312 = {
+					add_extra_state_shared_building_slots = 2
+
+					add_building_construction = {
+					    type = industrial_complex
+					    level = 1
+					    instant_build = yes
+					}
+				}
+			}
+
+			if = {
+				limit = { controls_state = 246 }
+				246 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+					    type = infrastructure
+					    level = 1
+					    instant_build = yes
+					}
+				}
+			}
+
+			if = {
+				limit = { controls_state = 337 }
+				337 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+					    type = infrastructure
+					    level = 2
+					    instant_build = yes
+					}
+				}
+			}
+
+			if = {
+				limit = { controls_state = 254 }
+				254 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+					    type = infrastructure
+					    level = 2
+					    instant_build = yes
+					}
+				}
+			}
 		}
 	}
 
@@ -80,7 +150,8 @@ focus_tree = {
 		id = SOV_repeal_language_laws
 		icon = GFX__shine
 		prerequisite = { focus = SOV_western_zemstvo_bill focus = SOV_cooperate_with_polish_nobility }
-		x = 2
+		mutually_exclusive = { focus = SOV_great_russification_programme }
+		x = 5
 		y = 1
 		cost = 10
 		relative_position_id = SOV_cooperate_with_polish_nobility
@@ -99,8 +170,8 @@ focus_tree = {
 		id = SOV_baltic_autonomy
 		icon = GFX__shine
 		prerequisite = { focus = SOV_repeal_language_laws }
-		x = 0
-		y = 1
+		x = -3
+		y = 2
 		cost = 10
 		relative_position_id = SOV_repeal_language_laws
 		ai_will_do = {
@@ -117,11 +188,11 @@ focus_tree = {
 	focus = {
 		id = SOV_autocephaly
 		icon = GFX__shine
-		prerequisite = { focus = SOV_western_zemstvo_bill focus = SOV_cooperate_with_polish_nobility }
-		x = 7
+		prerequisite = { focus = SOV_repeal_language_laws }
+		x = 2
 		y = 1
 		cost = 10
-		relative_position_id = SOV_cooperate_with_polish_nobility
+		relative_position_id = SOV_repeal_language_laws
 		ai_will_do = {
 			factor = 10
 		}
@@ -157,7 +228,7 @@ focus_tree = {
 		icon = GFX__shine
 		prerequisite = { focus = SOV_return_kholm }
 		x = 0
-		y = 1
+		y = 2
 		cost = 10
 		relative_position_id = SOV_return_kholm
 		ai_will_do = {
@@ -234,7 +305,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_autocephaly }
 		mutually_exclusive = { focus = SOV_protect_ottoman_christians }
 		x = 0
-		y = 3
+		y = 2
 		cost = 10
 		relative_position_id = SOV_autocephaly
 		ai_will_do = {
@@ -254,7 +325,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_autocephaly focus = SOV_romanov_pilgrimage }
 		mutually_exclusive = { focus = SOV_cooperate_with_the_jadids }
 		x = 2
-		y = 3
+		y = 2
 		cost = 10
 		relative_position_id = SOV_autocephaly
 		ai_will_do = {
@@ -291,7 +362,8 @@ focus_tree = {
 		id = SOV_great_russification_programme
 		icon = GFX__shine
 		prerequisite = { focus = SOV_western_zemstvo_bill focus = SOV_cooperate_with_polish_nobility }
-		x = -7
+		mutually_exclusive = { focus = SOV_repeal_language_laws }
+		x = -25
 		y = 1
 		relative_position_id = SOV_western_zemstvo_bill
 		cost = 10
@@ -302,110 +374,6 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = SOV_resettle_peasants_eastward
-		icon = GFX__shine
-		prerequisite = { focus = SOV_western_zemstvo_bill focus = SOV_cooperate_with_polish_nobility }
-		x = -3
-		y = 1
-		relative_position_id = SOV_western_zemstvo_bill
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = no
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = SOV_complete_the_trans_siberian_railway
-		icon = GFX__shine
-		prerequisite = { focus = SOV_resettle_peasants_eastward }
-		x = 0
-		y = 2
-		relative_position_id = SOV_resettle_peasants_eastward
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = no
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = SOV_hospital_trains
-		icon = GFX__shine
-		prerequisite = { focus = SOV_complete_the_trans_siberian_railway focus = SOV_zemgor }
-		x = 1
-		y = 1
-		relative_position_id = SOV_complete_the_trans_siberian_railway
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = no
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = SOV_expand_the_ob_yenisei_canal
-		icon = GFX__shine
-		prerequisite = { focus = SOV_resettle_peasants_eastward }
-		x = -1
-		y = 1
-		relative_position_id = SOV_resettle_peasants_eastward
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = no
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = SOV_stolypins_demand
-		icon = GFX__shine
-		prerequisite = { focus = SOV_western_zemstvo_bill focus = SOV_cooperate_with_polish_nobility }
-		x = 1
-		y = 1
-		relative_position_id = SOV_western_zemstvo_bill
-		cost = 10
-		bypass_if_unavailable = yes
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = no
-
-		available = {
-			has_character = SOV_pyotr_stolypin
-		}
-
-		completion_reward = {
-			add_political_power = 100
-			effect_SOV_gain_1_tsar_favor = yes
-
-			SOV_pyotr_stolypin = { effect_kill_character = yes }
-			country_event = { id = event_SOV_generic.1 }
 		}
 	}
 
@@ -413,7 +381,7 @@ focus_tree = {
 		id = SOV_restyle_st_petersburg_cathedrals
 		icon = GFX__shine
 		mutually_exclusive = { focus = SOV_window_on_europe }
-		x = -15
+		x = -12
 		y = 1
 		relative_position_id = SOV_western_zemstvo_bill
 		cost = 10
@@ -423,17 +391,17 @@ focus_tree = {
 
 		available_if_capitulated = no
 
-		completion_reward = {
-			386 = {
-				if = {
-					limit = { is_owned_and_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
+		available = {
+			OR = {
+				controls_state = 381
+				controls_state = 349
+				controls_state = 302
+				controls_state = 388
 			}
+		}
+
+		completion_reward = {
+			add_stability = 0.05
 
 			381 = {
 				if = {
@@ -456,6 +424,28 @@ focus_tree = {
 					}
 				}
 			}
+
+			302 = {
+				if = {
+					limit = { is_owned_and_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+			388 = {
+				if = {
+					limit = { is_owned_and_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 
@@ -463,7 +453,7 @@ focus_tree = {
 		id = SOV_window_on_europe
 		icon = GFX__shine
 		mutually_exclusive = { focus = SOV_restyle_st_petersburg_cathedrals }
-		x = -13
+		x = -10
 		y = 1
 		relative_position_id = SOV_western_zemstvo_bill
 		cost = 10
@@ -473,8 +463,80 @@ focus_tree = {
 
 		available_if_capitulated = no
 
+		available = {
+			controls_state = 386
+		}
+
 		completion_reward = {
-			
+			386 = {
+				add_extra_state_shared_building_slots = 3
+
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 2
+				    instant_build = yes
+				}
+
+				add_building_construction = {
+				    type = dockyard
+				    level = 1
+				    instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_expand_st_petersburg_suburbs
+		icon = GFX__shine
+		prerequisite = { focus = SOV_window_on_europe }
+		x = 0
+		y = 1
+		relative_position_id = SOV_window_on_europe
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		available = {
+			OR = {
+				controls_state = 381
+				controls_state = 349
+				controls_state = 302
+				controls_state = 388
+			}
+		}
+
+		completion_reward = {
+			381 = {
+				if = {
+					limit = { is_owned_and_controlled_by = ROOT }
+					effect_SOV_add_land_reform_discount = yes
+				}
+			}
+
+			349 = {
+				if = {
+					limit = { is_owned_and_controlled_by = ROOT }
+					effect_SOV_add_land_reform_discount = yes
+				}
+			}
+
+			302 = {
+				if = {
+					limit = { is_owned_and_controlled_by = ROOT }
+					effect_SOV_add_land_reform_discount = yes
+				}
+			}
+
+			388 = {
+				if = {
+					limit = { is_owned_and_controlled_by = ROOT }
+					effect_SOV_add_land_reform_discount = yes
+				}
+			}
 		}
 	}
 
@@ -492,18 +554,29 @@ focus_tree = {
 
 		available_if_capitulated = no
 
+		available = {
+			controls_state = 361
+		}
+
 		completion_reward = {
-			
+			361 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = SOV_lake_ladoga_water_pipeline
 		icon = GFX__shine
-		prerequisite = { focus = SOV_window_on_europe }
+		prerequisite = { focus = SOV_expand_st_petersburg_suburbs }
 		x = 0
 		y = 1
-		relative_position_id = SOV_window_on_europe
+		relative_position_id = SOV_expand_st_petersburg_suburbs
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -511,8 +584,22 @@ focus_tree = {
 
 		available_if_capitulated = no
 
+		available = {
+			386 = {
+				is_controlled_by = ROOT
+				trigger_SOV_is_unreformed_state = no
+			}
+		}
+
 		completion_reward = {
-			
+			386 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -520,7 +607,7 @@ focus_tree = {
 		id = SOV_romanov_pilgrimage
 		icon = GFX__shine
 		prerequisite = { focus = SOV_the_holy_city }
-		x = -4
+		x = -7
 		y = 1
 		relative_position_id = SOV_the_holy_city
 		cost = 10
@@ -825,12 +912,32 @@ focus_tree = {
 
 	# Liberal Zemstvo Branch
 	focus = {
+		id = SOV_the_peasant_land_bank
+		icon = GFX__shine
+		prerequisite = { focus = SOV_western_zemstvo_bill focus = SOV_cooperate_with_polish_nobility }
+		x = 3
+		y = 1
+		relative_position_id = SOV_western_zemstvo_bill
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_to_variable = { free_land_reforms = 3 }
+			custom_effect_tooltip = peasant_land_bank_free_land_reforms_tt
+		}
+	}
+
+	focus = {
 		id = SOV_zemstvo_men
 		icon = GFX__shine
-		prerequisite = { focus = SOV_stolypins_demand focus = SOV_the_peasant_land_bank }
-		x = -2
+		prerequisite = { focus = SOV_the_peasant_land_bank focus = SOV_russian_literacy }
+		x = 0
 		y = 1
-		relative_position_id = SOV_stolypins_demand
+		relative_position_id = SOV_the_peasant_land_bank
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -871,7 +978,7 @@ focus_tree = {
 		id = SOV_the_third_element
 		icon = GFX__shine
 		prerequisite = { focus = SOV_zemgor }
-		x = 2
+		x = 0
 		y = 1
 		relative_position_id = SOV_zemgor
 		cost = 10
@@ -889,33 +996,12 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = SOV_peaceful_reform
-		icon = GFX__shine
-		prerequisite = { focus = SOV_the_third_element }
-		x = 1
-		y = 1
-		relative_position_id = SOV_the_third_element
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = no
-
-		completion_reward = {
-			
-		}
-	}
-
-	
-
 	# Underground Bolshevik / Industrial Branch
 	focus = {
 		id = SOV_russian_literacy
 		icon = GFX__shine
 		prerequisite = { focus = SOV_western_zemstvo_bill focus = SOV_cooperate_with_polish_nobility }
-		x = 5
+		x = 9
 		y = 1
 		relative_position_id = SOV_western_zemstvo_bill
 		cost = 10
@@ -931,11 +1017,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SOV_pravda
+		id = SOV_industrialization
 		icon = GFX__shine
-		prerequisite = { focus = SOV_russian_literacy }
+		prerequisite = { focus = SOV_russian_literacy focus = SOV_the_peasant_land_bank }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = SOV_russian_literacy
 		cost = 10
 		ai_will_do = {
@@ -950,12 +1036,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SOV_the_peasant_land_bank
+		id = SOV_pravda
 		icon = GFX__shine
-		prerequisite = { focus = SOV_western_zemstvo_bill focus = SOV_cooperate_with_polish_nobility }
+		prerequisite = { focus = SOV_russian_literacy }
 		x = 3
 		y = 1
-		relative_position_id = SOV_western_zemstvo_bill
+		relative_position_id = SOV_russian_literacy
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -964,18 +1050,36 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_to_variable = { free_land_reforms = 3 }
-			custom_effect_tooltip = peasant_land_bank_free_land_reforms_tt
+			
+		}
+	}
+
+	focus = {
+		id = SOV_recall_exiles
+		icon = GFX__shine
+		prerequisite = { focus = SOV_pravda }
+		x = 0
+		y = 4
+		relative_position_id = SOV_pravda
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
 		}
 	}
 
 	focus = {
 		id = SOV_nizhny_novgorod_metalwork
 		icon = GFX__shine
-		prerequisite = { focus = SOV_the_peasant_land_bank }
-		x = 0
-		y = 1
-		relative_position_id = SOV_the_peasant_land_bank
+		prerequisite = { focus = SOV_resettle_peasants_eastward focus = SOV_industrialization }
+		x = -1
+		y = 3
+		relative_position_id = SOV_industrialization
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -991,6 +1095,60 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_donets_coal_basin
+		icon = GFX__shine
+		prerequisite = { focus = SOV_the_peasant_land_bank focus = SOV_russian_literacy }
+		x = 4
+		y = 1
+		relative_position_id = SOV_the_peasant_land_bank
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_russo_balt_wagon_factory
+		icon = GFX__shine
+		prerequisite = { focus = SOV_nizhny_novgorod_metalwork }
+		x = -3
+		y = 1
+		relative_position_id = SOV_nizhny_novgorod_metalwork
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		available = {
+			controls_state = 259
+		}
+
+		completion_reward = {
+			259 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			add_tech_bonus = {
+				bonus = 0.5
+				category = motorized_equipment
 			}
 		}
 	}
@@ -1022,14 +1180,128 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SOV_underground_soviets
+		id = SOV_putilov_works
 		icon = GFX__shine
-		prerequisite = { focus = SOV_pravda }
-		prerequisite = { focus = SOV_sormovo_factory }
-		mutually_exclusive = { focus = SOV_february_revolution }
-		x = -2
-		y = 3
-		relative_position_id = SOV_pravda
+		prerequisite = { focus = SOV_industrialization }
+		x = 1
+		y = 4
+		relative_position_id = SOV_industrialization
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		available = {
+			controls_state = 386
+		}
+
+		completion_reward = {
+			386 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			add_tech_bonus = {
+				bonus = 0.5
+				category = mio_cat_tech_all_destroyer_and_modules
+			}
+
+			add_tech_bonus = {
+				bonus = 0.5
+				category = mio_cat_tech_all_submarine_and_modules
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_resettle_peasants_eastward
+		icon = GFX__shine
+		prerequisite = { focus = SOV_the_peasant_land_bank focus = SOV_russian_literacy }
+		x = 2
+		y = 1
+		relative_position_id = SOV_the_peasant_land_bank
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_ural_coal_and_steel
+		icon = GFX__shine
+		prerequisite = { focus = SOV_resettle_peasants_eastward }
+		x = 2
+		y = 1
+		relative_position_id = SOV_resettle_peasants_eastward
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_expand_the_ob_yenisei_canal
+		icon = GFX__shine
+		prerequisite = { focus = SOV_resettle_peasants_eastward }
+		x = 0
+		y = 1
+		relative_position_id = SOV_resettle_peasants_eastward
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_complete_the_trans_siberian_railway
+		icon = GFX__shine
+		prerequisite = { focus = SOV_ural_coal_and_steel focus = SOV_expand_the_ob_yenisei_canal }
+		x = -1
+		y = 1
+		relative_position_id = SOV_ural_coal_and_steel
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_hospital_trains
+		icon = GFX__shine
+		prerequisite = { focus = SOV_complete_the_trans_siberian_railway focus = SOV_the_third_element }
+		x = -1
+		y = 1
+		relative_position_id = SOV_complete_the_trans_siberian_railway
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -1045,7 +1317,7 @@ focus_tree = {
 	focus = {
 		id = SOV_export_cheap_labour
 		icon = GFX__shine
-		prerequisite = { focus = SOV_the_peasant_land_bank focus = SOV_stolypins_demand }
+		prerequisite = { focus = SOV_the_peasant_land_bank }
 		x = -2
 		y = 1
 		relative_position_id = SOV_the_peasant_land_bank
@@ -1067,7 +1339,7 @@ focus_tree = {
 		id = SOV_military_renaissance
 		icon = GFX__shine
 		x = -6
-		y = 3
+		y = 2
 		relative_position_id = SOV_western_zemstvo_bill
 		cost = 10
 		ai_will_do = {
@@ -1086,7 +1358,7 @@ focus_tree = {
 		icon = GFX__shine
 		prerequisite = { focus = SOV_military_renaissance }
 		x = -2
-		y = 1
+		y = 2
 		relative_position_id = SOV_military_renaissance
 		cost = 10
 		ai_will_do = {
@@ -1104,7 +1376,7 @@ focus_tree = {
 		id = SOV_the_great_programme
 		icon = GFX__shine
 		prerequisite = { focus = SOV_junker_professionals }
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = SOV_junker_professionals
 		cost = 10
@@ -1115,17 +1387,17 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_ideas = idea_SOV_great_programme
 		}
 	}
 
 	focus = {
-		id = SOV_oath_to_the_tsar
+		id = SOV_officers_artillery_school
 		icon = GFX__shine
-		prerequisite = { focus = SOV_lake_ladoga_water_pipeline focus = SOV_the_holy_city }
-		x = 2
-		y = 2
-		relative_position_id = SOV_lake_ladoga_water_pipeline
+		prerequisite = { focus = SOV_the_great_programme }
+		x = 1
+		y = 1
+		relative_position_id = SOV_the_great_programme
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -1134,7 +1406,64 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 1
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_tula_arsenal
+		icon = GFX__shine
+		prerequisite = { focus = SOV_the_great_programme }
+		x = 0
+		y = 2
+		relative_position_id = SOV_the_great_programme
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		available = {
+			controls_state = 255
+		}
+
+		completion_reward = {
+			255 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				    type = arms_factory
+				    level = 2
+				    instant_build = yes
+				}
+			}
+
+			add_tech_bonus = {
+				bonus = 1
+				category = heavy_machine_guns
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_oath_to_the_tsar
+		icon = GFX__shine
+		prerequisite = { focus = SOV_expand_st_petersburg_suburbs focus = SOV_the_holy_city }
+		x = -1
+		y = 2
+		relative_position_id = SOV_expand_st_petersburg_suburbs
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = idea_SOV_oath_to_the_tsar_0
 		}
 	}
 
@@ -1153,7 +1482,10 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = idea_SOV_oath_to_the_tsar_0
+				add_idea = idea_SOV_oath_to_the_tsar_1
+			}
 		}
 	}
 
@@ -1162,7 +1494,7 @@ focus_tree = {
 		icon = GFX__shine
 		prerequisite = { focus = SOV_oath_to_the_tsar }
 		x = -1
-		y = 3
+		y = 4
 		relative_position_id = SOV_oath_to_the_tsar
 		cost = 10
 		ai_will_do = {
@@ -1210,6 +1542,25 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = idea_SOV_army_labour
+		}
+	}
+
+	focus = {
+		id = SOV_cossacks
+		icon = GFX__shine
+		prerequisite = { focus = SOV_army_of_farmers_and_cobblers }
+		x = 0
+		y = 1
+		relative_position_id = SOV_army_of_farmers_and_cobblers
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
 			
 		}
 	}
@@ -1234,9 +1585,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SOV_call_up_the_ratniki
+		id = SOV_imperial_russian_air_service
 		icon = GFX__shine
-		prerequisite = { focus = SOV_army_of_farmers_and_cobblers focus = SOV_the_great_programme }
+		prerequisite = { focus = SOV_the_great_programme focus = SOV_army_of_farmers_and_cobblers }
 		x = 2
 		y = 1
 		relative_position_id = SOV_army_of_farmers_and_cobblers
@@ -1248,7 +1599,83 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+
+		}
+	}
+
+	focus = {
+		id = SOV_dux_factory
+		icon = GFX__shine
+		prerequisite = { focus = SOV_imperial_russian_air_service }
+		x = -1
+		y = 1
+		relative_position_id = SOV_imperial_russian_air_service
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = SOV_russky_vityaz
+		icon = GFX__shine
+		prerequisite = { focus = SOV_imperial_russian_air_service }
+		x = 1
+		y = 1
+		relative_position_id = SOV_imperial_russian_air_service
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = SOV_ace_attaches
+		icon = GFX__shine
+		prerequisite = { focus = SOV_dux_factory focus = SOV_russky_vityaz }
+		x = 1
+		y = 1
+		relative_position_id = SOV_dux_factory
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = SOV_call_up_the_ratniki
+		icon = GFX__shine
+		prerequisite = { focus = SOV_army_of_farmers_and_cobblers focus = SOV_the_great_programme }
+		x = -1
+		y = 1
+		relative_position_id = SOV_the_great_programme
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = idea_SOV_ratniki_conscripted
 		}
 	}
 
@@ -1316,8 +1743,9 @@ focus_tree = {
 		prerequisite = { focus = SOV_the_third_element }
 		prerequisite = { focus = SOV_the_labour_group }
 		mutually_exclusive = { focus = SOV_underground_soviets }
+		mutually_exclusive = { focus = SOV_peaceful_reform }
 		x = 0
-		y = 2
+		y = 3
 		relative_position_id = SOV_the_third_element
 		cost = 10
 		ai_will_do = {
@@ -1332,9 +1760,62 @@ focus_tree = {
 	}
 
 	focus = {
+		id = SOV_peaceful_reform
+		icon = GFX__shine
+		prerequisite = { focus = SOV_the_third_element }
+		prerequisite = { focus = SOV_the_labour_group }
+		mutually_exclusive = { focus = SOV_underground_soviets }
+		mutually_exclusive = { focus = SOV_february_revolution }
+		x = -2
+		y = 0
+		relative_position_id = SOV_february_revolution
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = decision_condition_land_reformed_80_percent
+				check_variable = { reformed_states_factor > 0.8 }
+			}
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SOV_underground_soviets
+		icon = GFX__shine
+		prerequisite = { focus = SOV_recall_exiles }
+		prerequisite = { focus = SOV_sormovo_factory }
+		prerequisite = { focus = SOV_putilov_works }
+		prerequisite = { focus = SOV_russo_balt_wagon_factory }
+		mutually_exclusive = { focus = SOV_february_revolution }
+		mutually_exclusive = { focus = SOV_peaceful_reform }
+		x = 2
+		y = 0
+		relative_position_id = SOV_february_revolution
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
 		id = SOV_eight_hour_day
 		icon = GFX__shine
-		prerequisite = { focus = SOV_february_revolution }
+		prerequisite = { focus = SOV_february_revolution focus = SOV_peaceful_reform }
 		x = -1
 		y = 1
 		relative_position_id = SOV_february_revolution
@@ -1567,7 +2048,7 @@ focus_tree = {
 		id = SOV_children_of_russia
 		icon = GFX__shine
 		mutually_exclusive = { focus = SOV_durnovo_memorandum }
-		x = -27
+		x = -29
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -1577,6 +2058,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = idea_SOV_children_of_russia
+
 			every_other_country = {
 				limit = {
 					is_slavic = yes
@@ -1675,24 +2158,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = SOV_expand_st_petersburg_suburbs
-		icon = GFX__shine
-		prerequisite = { focus = SOV_european_courtly_ties focus = SOV_foreign_putilov_investment }
-		x = 1
-		y = 1
-		relative_position_id = SOV_european_courtly_ties
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = no
-
-		completion_reward = {
-			
-		}
-	}
+	
 
 	# Pan-Slavist Branch
 	focus = {
@@ -1722,6 +2188,12 @@ focus_tree = {
 					idea = var:ideology_influence_idea
 					days = 730
 				}
+			}
+
+			add_ai_strategy = {
+				type = protect
+				id = MNT
+				value = 100
 			}
 		}
 	}
@@ -1755,6 +2227,13 @@ focus_tree = {
 					days = 730
 				}
 			}
+
+			# Russia is extra likely to protect Serbia
+			add_ai_strategy = {
+				type = protect
+				id = SER
+				value = 300
+			}
 		}
 	}
 
@@ -1763,38 +2242,6 @@ focus_tree = {
 		icon = GFX__shine
 		prerequisite = { focus = SOV_children_of_russia focus = SOV_durnovo_memorandum }
 		mutually_exclusive = { focus = SOV_align_serbia focus = SOV_promise_transylvania }
-		x = -3
-		y = 1
-		relative_position_id = SOV_children_of_russia
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = no
-
-		available = {
-			BUL = {
-				exists = yes
-				NOT = { has_war_with = ROOT }
-			}
-		}
-
-		completion_reward = {
-			BUL = {
-				add_timed_idea = {
-					idea = var:ideology_influence_idea
-					days = 730
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_promise_transylvania
-		icon = GFX__shine
-		prerequisite = { focus = SOV_children_of_russia }
-		mutually_exclusive = { focus = SOV_align_bulgaria }
 		x = -1
 		y = 1
 		relative_position_id = SOV_children_of_russia
@@ -1806,6 +2253,45 @@ focus_tree = {
 		available_if_capitulated = no
 
 		available = {
+			BUL = {
+				exists = yes
+				NOT = { has_war_with = ROOT }
+			}
+		}
+
+		completion_reward = {
+			BUL = {
+				add_timed_idea = {
+					idea = var:ideology_influence_idea
+					days = 730
+				}
+			}
+
+			# Russia is extra likely to protect Serbia
+			add_ai_strategy = {
+				type = protect
+				id = BUL
+				value = 100
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_promise_transylvania
+		icon = GFX__shine
+		prerequisite = { focus = SOV_children_of_russia }
+		mutually_exclusive = { focus = SOV_align_bulgaria }
+		x = -3
+		y = 1
+		relative_position_id = SOV_children_of_russia
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		available = {
 			ROM = {
 				exists = yes
 				NOT = { has_war_with = ROOT }
@@ -1818,6 +2304,12 @@ focus_tree = {
 					idea = var:ideology_influence_idea
 					days = 730
 				}
+			}
+
+			add_ai_strategy = {
+				type = protect
+				id = BUL
+				value = 100
 			}
 		}
 	}

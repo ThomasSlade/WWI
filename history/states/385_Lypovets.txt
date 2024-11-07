@@ -2,6 +2,9 @@
 state={
 	id=385
 	name=385_Lypovets
+	resources={
+		oil = 2
+	}
 	history={
 		owner = SOV
 		add_core_of = SOV

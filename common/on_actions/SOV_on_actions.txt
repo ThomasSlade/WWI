@@ -7,7 +7,7 @@ on_actions = {
 					trigger_SOV_has_revolution_in_waiting = yes
 					revolutionary > SOV.civil_war_revolutionary_threshold
 				}
-	
+
 				country_event = { id = event_SOV_russian_revolution.1 }
 			}
 		}

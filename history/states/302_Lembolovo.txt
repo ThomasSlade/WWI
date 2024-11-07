@@ -2,6 +2,9 @@
 state={
 	id=302
 	name=302_Lembolovo
+	resources={
+		aluminium = 2
+	}
 	history={
 		owner = SOV
 		add_core_of = SOV

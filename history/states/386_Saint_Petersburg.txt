@@ -3,12 +3,9 @@ state={
 	id=386
 	name=386_Saint_Petersburg
 	resources={
-		chromium = 999
 		tungsten = 999
-		aluminium = 999
-		oil = 999
 		rubber = 999
-		steel = 999
+		steel = 3
 	}
 	history={
 		owner = SOV

@@ -963,6 +963,11 @@ focus_tree = {
  					224 146 169
  				}
  			}
+
+ 			add_named_threat = {
+ 				threat = 5
+ 				name = threat_serbia_war_with_austria_hungary
+ 			}
 		}
 	}
 
@@ -1933,6 +1938,11 @@ focus_tree = {
 
 			# TEMP: Firing the event to invite Greece to the Balkan League, which ought to come from Britain.
 			GRE = { country_event = wwi_greece.1 }
+
+			add_named_threat = {
+				threat = 5
+				name = threat_serbia_war_with_the_ottomans
+			}
 		}
 	}
 
@@ -2295,6 +2305,11 @@ focus_tree = {
 
 		completion_reward = {
 			BUL = { country_event = wwi_bulgaria.3 }
+
+			add_named_threat = {
+				threat = 2
+				name = threat_serbia_war_with_bulgaria
+			}
 		}
 	}
 

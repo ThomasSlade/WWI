@@ -12,11 +12,33 @@ country_event = {
 		log = "([THIS.GetName] event) Stolypin assassinated."
 	}
 
-	# Assure the Tsar
 	option = {
 		name = event_SOV_generic.1.a
-		effect_tooltip = {
-			SOV_pyotr_stolypin = { effect_kill_character = yes }
-		}
+		SOV_pyotr_stolypin = { effect_kill_character = yes }
+	}
+}
+
+country_event = {
+	id = event_SOV_generic.2
+	title = event_SOV_generic.2.t
+	desc = event_SOV_generic.2.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Western Zemstvo Bill passed."
+	}
+
+	# Kill Stolypin
+	option = {
+		name = event_SOV_generic.2.a
+		effect_SOV_gain_2_tsar_favor = yes
+		country_event = { id = event_SOV_generic.1 }
+	}
+
+	# Stolypin lives
+	option = {
+		name = event_SOV_generic.2.b
 	}
 }

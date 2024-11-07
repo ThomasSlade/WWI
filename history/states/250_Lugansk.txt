@@ -2,6 +2,10 @@
 state={
 	id=250
 	name=250_Lugansk
+	resources={
+		steel = 4
+		oil = 12
+	}
 	history={
 		owner = SOV
 		add_core_of = SOV

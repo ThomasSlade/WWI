@@ -2,6 +2,9 @@
 state={
 	id=277
 	name=277_Kozelsk
+	resources={
+		steel = 2
+	}
 	history={
 		owner = SOV
 		add_core_of = SOV

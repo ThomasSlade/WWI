@@ -2,6 +2,9 @@
 state={
 	id=497
 	name=497_Tsaritsyn
+	resources={
+		steel = 3
+	}
 	history={
 		owner = SOV
 		add_core_of = SOV

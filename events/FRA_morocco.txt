@@ -63,6 +63,11 @@ country_event = {
 		# If this changes, change the French focus tt too.
 		effect_boost_popularity_of_from_ideology_10 = yes
 
+		add_named_threat = {
+			threat = 5
+			name = threat_italy_accepted_prinetti_barrere_accord
+		}
+
 		ai_chance = { factor = 100 }
 	}
 

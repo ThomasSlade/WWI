@@ -2,6 +2,10 @@
 state={
 	id=363
 	name=363_Rostov_on_Don
+	resources={
+		steel = 2
+		aluminium = 2
+	}
 	history={
 		owner = SOV
 		add_core_of = SOV

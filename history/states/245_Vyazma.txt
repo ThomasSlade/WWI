@@ -2,6 +2,10 @@
 state={
 	id=245
 	name=245_Vyazma
+	resources={
+		oil = 5
+		chromium = 2
+	}
 	history={
 		owner = SOV
 		add_core_of = SOV

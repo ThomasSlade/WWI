@@ -2,6 +2,9 @@
 state={
 	id=286
 	name=286_Kolomna
+	resources={
+		aluminium = 8
+	}
 	history={
 		owner = SOV
 		add_core_of = SOV

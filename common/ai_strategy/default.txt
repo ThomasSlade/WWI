@@ -4,6 +4,8 @@
 # Modified by Daniel "Da9L" Sjöberg
 
 default_unit_production = {
+	abort_when_not_enabled = yes
+
 	enable = {
 		always = yes
 	}

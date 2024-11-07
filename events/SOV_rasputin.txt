@@ -129,8 +129,10 @@ country_event = {
 							# Ensure this keeps up to date with the actual building level.
 							check_variable = { infrastructure_level > 2 }
 						}
-						log = "State [?temp_offended_governor_state.GetName] already had max infrastructure for Governor Wife Jam-Licking event. Trying another event."
 					}
+
+					log = "State [?temp_offended_governor_state.GetName] already had max infrastructure for Governor Wife Jam-Licking event. Trying another event."
+					country_event = { id = event_SOV_rasputin.1 }
 				}
 				else = {
 					var:temp_offended_governor_state = { save_event_target_as = offended_governor_state } 
@@ -186,6 +188,13 @@ country_event = {
 				}
 			}
 			1 = {
+				if = {
+					limit = {
+						has_war = no
+					}
+					log = "[THIS.GetName] is not at war, cannot fire Rasputin Military Advice event. Trying another event."
+					country_event = { id = event_SOV_rasputin.1 }
+				}
 				if = {
 					limit = {
 						SOV_grigori_rasputin = { is_army_leader = yes }

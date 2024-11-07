@@ -96,9 +96,7 @@ effect_SOV_init_unreformed_land = {
 
 effect_SOV_determine_reformed_states_factor = {
 	set_temp_variable = { reformed_states_factor_temp = reformed_states_count }
-	log = "Reformed sttaes: [?reformed_states_factor_temp]"
 	divide_temp_variable = { reformed_states_factor_temp = initial_unreformed_states_count }
-	log = "Setting reformed state factor to [?reformed_states_factor_temp]"
 	set_variable = { reformed_states_factor = reformed_states_factor_temp }
 }
 

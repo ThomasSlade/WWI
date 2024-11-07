@@ -40,7 +40,7 @@ news_event = {
 			NOT = { is_in_faction_with = FROM }
 			has_opinion = {
 				target = FROM
-				value > -5
+				value > -20
 			}
 		}
 	}
@@ -53,7 +53,7 @@ news_event = {
 			NOT = { is_in_faction_with = FROM }
 			has_opinion = {
 				target = FROM
-				value < -4
+				value < -19
 			}
 		}
 	}
@@ -179,6 +179,11 @@ country_event = {
             }
 
             custom_effect_tooltip = second_balkan_war_neighbors_may_attack_tt
+		}
+
+		add_named_threat = {
+			threat = 3
+			name = threat_second_balkan_war_instigated
 		}
 
 		hidden_effect = {

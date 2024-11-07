@@ -25,6 +25,19 @@ defined_text = {
 }
 
 defined_text = {
+	name = GetReformedAdjacentStateCost3
+
+	text = {
+		trigger = { check_variable = { reformed_adjacent_states < 3 } }
+		localization_key = reformed_adjacent_states_unavailable_cost_3_tt
+	}
+
+	text = {
+		localization_key = reformed_adjacent_states_available_cost_3_tt
+	}
+}
+
+defined_text = {
 	name = GetOwnedRussianCityForStolypinAssassination
 
 	text = {
@@ -111,5 +124,63 @@ defined_text = {
 
 	text = {
 		localization_key = "Army"
+	}
+}
+
+defined_text = {
+	name = GetLeaderTitle
+
+	text = {
+		trigger = {
+			original_tag = SOV
+			OR = {
+				has_idea = gov_absolute_monarchy
+				has_idea = gov_constitutional_monarchy
+			}
+		}
+		localization_key = "Tsar"
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				has_idea = gov_absolute_monarchy
+				has_idea = gov_constitutional_monarchy
+			}
+		}
+		localization_key = "King"
+	}
+
+	text = {
+		localization_key = "President"
+	}
+}
+
+defined_text = {
+	name = GetRegimeName
+
+	text = {
+		trigger = {
+			original_tag = SOV
+			OR = {
+				has_idea = gov_absolute_monarchy
+				has_idea = gov_constitutional_monarchy
+			}
+		}
+		localization_key = "Tsardom"
+	}
+
+	text = {
+		trigger = {
+			OR = {
+				has_idea = gov_absolute_monarchy
+				has_idea = gov_constitutional_monarchy
+			}
+		}
+		localization_key = "Monarchy"
+	}
+
+	text = {
+		localization_key = "Republic"
 	}
 }

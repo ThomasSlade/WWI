@@ -2,6 +2,9 @@
 state={
 	id=380
 	name=380_Chernomorskaya
+	resources={
+		steel = 2
+	}
 	history={
 		owner = SOV
 		add_core_of = SOV
