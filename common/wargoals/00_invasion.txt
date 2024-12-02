@@ -12,14 +12,14 @@ wargoal_types = {
 		}
 
 		take_states = {
-
+			
 		}
 
 		generate_base_cost = 200
 		generate_per_state_cost = 50
 
-		take_states_limit = 5
-		take_states_cost = -20
+		#take_states_limit = 5
+		#take_states_cost = 100
 
 		expire = 60
 
@@ -45,8 +45,8 @@ wargoal_types = {
 		generate_base_cost = 200
 		generate_per_state_cost = 50
 
-		take_states_limit = 5
-		take_states_cost = -20
+		#take_states_limit = 5
+		#take_states_cost = 100
 
 		expire = 730
 
@@ -75,6 +75,48 @@ wargoal_types = {
 		threat = 2
 	}
 
+	#take_claimed_state = {
+	#	# PREV = original target country
+	#	# ROOT = goal owner country
+#
+	#	war_name = WAR_TAKE_CLAIM_NAME
+#
+	#	take_states = {
+	#		
+	#	}
+#
+	#	generate_base_cost = 125
+	#	generate_per_state_cost = 10
+#
+	#	take_states_limit = 5
+	#	take_states_cost = -100
+#
+	#	threat = 0.15
+	#}
+#
+	#take_core_state = {
+	#	# PREV = original target country
+	#	# ROOT = goal owner country
+#
+	#	war_name = WAR_TAKE_CORE_NAME
+#
+	#	allowed = {
+	#		
+	#	}
+#
+	#	take_states = {
+	#		
+	#	}
+#
+	#	generate_base_cost = 125
+	#	generate_per_state_cost = 0
+#
+	#	take_states_limit = 5
+	#	take_states_cost = 100
+#
+	#	threat = 0.1
+	#}
+
 	take_claimed_state = {
 		# PREV = original target country
 		# ROOT = goal owner country
@@ -93,6 +135,7 @@ wargoal_types = {
 		take_states_limit = 5
 		take_states_cost = -50
 
+
 		threat = 0.15
 	}
 
@@ -103,7 +146,7 @@ wargoal_types = {
 		war_name = WAR_TAKE_CORE_NAME
 
 		allowed = {
-			
+			#always = no
 		}
 
 		take_states = {
@@ -117,6 +160,7 @@ wargoal_types = {
 
 		take_states_limit = 5
 		take_states_cost = -80
+
 
 		threat = 0.1
 	}

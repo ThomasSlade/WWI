@@ -1,17 +1,17 @@
 spriteTypes = {
 	SpriteType = {
 		name = "GFX_field_artillery_1_medium"
-		texturefile = "gfx/interface/technologies/Art_1_axis.dds"
+		texturefile = "gfx/interface/technologies/field_artillery_1.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_field_artillery_2_medium"
-		texturefile = "gfx/interface/technologies/Art_1_axis.dds"
+		texturefile = "gfx/interface/technologies/field_artillery_2.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_field_artillery_3_medium"
-		texturefile = "gfx/interface/technologies/Art_1_axis.dds"
+		texturefile = "gfx/interface/technologies/field_artillery_3.dds"
 	}
 
 	SpriteType = {

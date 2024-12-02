@@ -55,7 +55,7 @@ country_event = {
 
 	# Gain more resources
 	option = {
-		name = event_SOV_russian_reform.1.d
+		name = event_SOV_russian_reform.1.e
 		event_target:reformed_state = {
 			every_neighbor_state = {
 				limit = { is_owned_by = ROOT }

@@ -35,7 +35,7 @@ characters = {
 				large = GFX_portrait_SOV_grigori_rasputin
 			}
 			army = {
-				small = "GFX_idea_SOV_grigori_rasputin"
+				small = GFX_idea_SOV_grigori_rasputin
 			}
 		}
 		country_leader = {

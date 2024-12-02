@@ -1,0 +1,8 @@
+effect_ITA_conquer_libya = {
+	start_peace_conference = {
+		tag = TUR
+		score_factor = 0.5
+		winner_scope = LIMITED
+		loser_scope = LIMITED
+	}
+}

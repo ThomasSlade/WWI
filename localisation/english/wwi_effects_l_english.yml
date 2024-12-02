@@ -1,5 +1,6 @@
 ﻿l_english:
   when_recruited_tt: "§YEffects when recruited:§!"
+  if_we_accept_tt: "\n§YEffects if we accept:§!"
   wwi_newline_tt: "  " # Required as newline_tt in vanilla doesn't seem to work.
   leader_target_assassinated_tt: "[?FROM.SER_assassination_target_leader.GetName] is assassinated"
   gain_control_of_border_states_tt: "§YWe gain control of all bordering states.§!"

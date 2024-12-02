@@ -49,11 +49,7 @@ effect_SOV_begin_civil_war_as_reds = {
 		size = 0.55
 		states = all
 		states_filter = {
-			NOT = {
-				has_dynamic_modifier = {
-					modifier = modifier_SOV_unreformed_land
-				}
-			}
+			trigger_SOV_is_unreformed_state = no
 		}
 	}
 
@@ -94,9 +90,7 @@ effect_SOV_begin_civil_war_as_whites = {
 		size = 0.55
 		states = all
 		states_filter = {
-			has_dynamic_modifier = {
-				modifier = modifier_SOV_unreformed_land
-			}
+			trigger_SOV_is_unreformed_state = yes
 		}
 	}
 

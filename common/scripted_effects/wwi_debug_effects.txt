@@ -22,3 +22,19 @@ d_print_occupied_states = {
 d_rasputin = {
 	effect_SOV_begin_rasputin_events = yes
 }
+
+d_start_balkan_war = {
+	FRA = {
+		complete_national_focus = FRA_dummy
+		complete_national_focus = FRA_occupy_fes
+	}
+
+	SER = {
+		complete_national_focus = SER_claim_old_serbia
+		complete_national_focus = SER_entice_montenegro
+		complete_national_focus = SER_ports_on_the_adriatic
+		complete_national_focus = SER_fund_macedonian_militia
+		complete_national_focus = SER_strike_a_deal_with_bulgaria
+		complete_national_focus = SER_war_with_the_ottomans
+	}
+}

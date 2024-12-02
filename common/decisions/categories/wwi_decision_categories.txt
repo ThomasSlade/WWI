@@ -247,3 +247,15 @@ decision_category_SOV_russian_revolution = {
 		original_tag = SOV
 	}
 }
+
+decision_category_ITA_italo_turkish_war = {
+	icon = border_conflicts
+
+	allowed = {
+		original_tag = ITA
+	}
+
+	visible = {
+		has_country_flag = flag_ITA_has_italo_turkish_war_goal
+	}
+}

@@ -1,0 +1,48 @@
+trigger_ITA_conquer_libya = {
+	TUR = {
+		OR = {
+			owns_state = 509
+			owns_state = 508
+			owns_state = 512
+			owns_state = 510
+			owns_state = 478
+			owns_state = 507
+			owns_state = 511
+		}
+	}
+
+	if = {
+		limit = { 509 = { is_owned_by = TUR } }
+		509 = { is_controlled_by_ROOT_or_ally = yes }
+	}
+
+	if = {
+		limit = { 508 = { is_owned_by = TUR } }
+		508 = { is_controlled_by_ROOT_or_ally = yes }
+	}
+
+	if = {
+		limit = { 512 = { is_owned_by = TUR } }
+		512 = { is_controlled_by_ROOT_or_ally = yes }
+	}
+
+	if = {
+		limit = { 510 = { is_owned_by = TUR } }
+		510 = { is_controlled_by_ROOT_or_ally = yes }
+	}
+
+	if = {
+		limit = { 478 = { is_owned_by = TUR } }
+		478 = { is_controlled_by_ROOT_or_ally = yes }
+	}
+
+	if = {
+		limit = { 507 = { is_owned_by = TUR } }
+		507 = { is_controlled_by_ROOT_or_ally = yes }
+	}
+
+	if = {
+		limit = { 511 = { is_owned_by = TUR } }
+		511 = { is_controlled_by_ROOT_or_ally = yes }
+	}
+}

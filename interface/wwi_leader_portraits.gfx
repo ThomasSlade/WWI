@@ -52,12 +52,12 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = GFX_portrait_SOV_grigori_rasputin.dds
+		name = GFX_portrait_SOV_grigori_rasputin
 		texturefile = "gfx/leaders/SOV/portrait_SOV_grigori_rasputin.dds"
 	}
 
 	spriteType = {
-		name = GFX_portrait_SOV_vladimir_lenin.dds
+		name = GFX_portrait_SOV_vladimir_lenin
 		texturefile = "gfx/leaders/SOV/portrait_SOV_vladimir_lenin.dds"
 	}
 
