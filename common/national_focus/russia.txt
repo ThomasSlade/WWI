@@ -499,41 +499,54 @@ focus_tree = {
 		}
 
 		available_if_capitulated = no
+		bypass_if_unavailable = yes
 
 		available = {
 			OR = {
-				controls_state = 381
-				controls_state = 349
-				controls_state = 302
-				controls_state = 388
+				381 = {
+					is_controlled_by = ROOT
+					trigger_SOV_is_unreformed_state = yes
+				}
+				349 = {
+					is_controlled_by = ROOT
+					trigger_SOV_is_unreformed_state = yes
+				}
+				302 = {
+					is_controlled_by = ROOT
+					trigger_SOV_is_unreformed_state = yes
+				}
+				388 = {
+					is_controlled_by = ROOT
+					trigger_SOV_is_unreformed_state = yes
+				}
 			}
 		}
 
 		completion_reward = {
 			381 = {
 				if = {
-					limit = { is_owned_and_controlled_by = ROOT }
+					limit = { is_controlled_by = ROOT }
 					effect_SOV_add_land_reform_discount = yes
 				}
 			}
 
 			349 = {
 				if = {
-					limit = { is_owned_and_controlled_by = ROOT }
+					limit = { is_controlled_by = ROOT }
 					effect_SOV_add_land_reform_discount = yes
 				}
 			}
 
 			302 = {
 				if = {
-					limit = { is_owned_and_controlled_by = ROOT }
+					limit = { is_controlled_by = ROOT }
 					effect_SOV_add_land_reform_discount = yes
 				}
 			}
 
 			388 = {
 				if = {
-					limit = { is_owned_and_controlled_by = ROOT }
+					limit = { is_controlled_by = ROOT }
 					effect_SOV_add_land_reform_discount = yes
 				}
 			}
@@ -573,7 +586,7 @@ focus_tree = {
 	focus = {
 		id = SOV_lake_ladoga_water_pipeline
 		icon = GFX__shine
-		prerequisite = { focus = SOV_expand_st_petersburg_suburbs }
+		prerequisite = { focus = SOV_expand_st_petersburg_suburbs focus = SOV_the_holy_city }
 		x = 0
 		y = 1
 		relative_position_id = SOV_expand_st_petersburg_suburbs
@@ -593,7 +606,7 @@ focus_tree = {
 
 		completion_reward = {
 			386 = {
-				add_extra_state_shared_building_slots = 4
+				set_state_category = metropolis
 				add_building_construction = {
 					type = infrastructure
 					level = 1

@@ -415,8 +415,7 @@ focus_tree = {
 	focus = {
 		id = AUS_the_seeflugwesen
 		icon = GFX__shine
-		prerequisite = { focus = AUS_imperial_visit_to_airshow  }
-		prerequisite = { focus = AUS_littoral_naval_schools  }
+		prerequisite = { focus = AUS_imperial_visit_to_airshow focus = AUS_littoral_naval_schools }
 		x = -1
 		y = 1
 		relative_position_id = AUS_imperial_visit_to_airshow
