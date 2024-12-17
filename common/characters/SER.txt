@@ -22,6 +22,7 @@ characters = {
 		}
 	}
 
+	### Army Chiefs ###
 	SER_radomir_putnik = {
 		name = SER_radomir_putnik
 		portraits = {
@@ -40,7 +41,7 @@ characters = {
 			}
 			cost = 100
 			ai_will_do = {
-				factor = 1
+				factor = 10
 			}
 		}
 	}
@@ -63,7 +64,7 @@ characters = {
 			}
 			cost = 100
 			ai_will_do = {
-				factor = 1
+				factor = 0
 			}
 		}
 	}
@@ -86,7 +87,7 @@ characters = {
 			}
 			cost = 100
 			ai_will_do = {
-				factor = 1
+				factor = 10
 			}
 		}
 	}
@@ -109,11 +110,12 @@ characters = {
 			}
 			cost = 100
 			ai_will_do = {
-				factor = 1
+				factor = 10
 			}
 		}
 	}
 
+	### Advisors ###
 	SER_jovan_jovanovic = {
 		name = SER_jovan_jovanovic
 		portraits = {
@@ -129,6 +131,9 @@ characters = {
 			}
 			traits = {
 				delicate_mediator
+			}
+			ai_will_do = {
+				factor = 10
 			}
 		}
 	}
@@ -149,6 +154,9 @@ characters = {
 			traits = {
 				state_architect
 			}
+			ai_will_do = {
+				factor = 10
+			}
 		}
 	}
 
@@ -167,6 +175,9 @@ characters = {
 			}
 			traits = {
 				stewardly_treasurer 
+			}
+			ai_will_do = {
+				factor = 10
 			}
 		}
 	}
@@ -187,6 +198,9 @@ characters = {
 			traits = {
 				public_works_tycoon 
 			}
+			ai_will_do = {
+				factor = 10
+			}
 		}
 	}
 
@@ -205,6 +219,9 @@ characters = {
 			}
 			traits = {
 				educative_chamberlain
+			}
+			ai_will_do = {
+				factor = 10
 			}
 		}
 	}
@@ -225,6 +242,9 @@ characters = {
 			traits = {
 				firm_adjudicator
 			}
+			ai_will_do = {
+				factor = 10
+			}
 		}
 	}
 
@@ -243,6 +263,9 @@ characters = {
 			}
 			traits = {
 				diplomatic_encircler
+			}
+			ai_will_do = {
+				factor = 10
 			}
 		}
 	}
@@ -267,6 +290,9 @@ characters = {
 			traits = {
 				ethnographer
 			}
+			ai_will_do = {
+				factor = 10
+			}
 		}
 	}
 
@@ -285,6 +311,9 @@ characters = {
 			}
 			traits = {
 				untraceable_conspirator
+			}
+			ai_will_do = {
+				factor = 0
 			}
 		}
 		country_leader = {
@@ -347,6 +376,9 @@ characters = {
 					}
 				}
 			}
+			ai_will_do = {
+				factor = 10
+			}
 		}
 	}
 
@@ -402,6 +434,9 @@ characters = {
 						}
 					}
 				}
+			}
+			ai_will_do = {
+				factor = 10
 			}
 		}
 
@@ -459,6 +494,9 @@ characters = {
 						}
 					}
 				}
+			}
+			ai_will_do = {
+				factor = 10
 			}
 		}
 	}

@@ -41,8 +41,8 @@ SER = {
 	color_ui = rgb { 105 51 117 }
 }
 ROM = {
-	color = rgb { 127 130 30 }
-	color_ui = rgb { 127 130 30 }
+	color = rgb { 140 143 34 }
+	color_ui = rgb { 140 143 34 }
 }
 BUL = {
 	color = rgb { 45 142 124 }
@@ -145,6 +145,6 @@ ITA = {
 	color_ui = rgb { 93 115 78 }
 }
 ENG = {
-	color = rgb { 158 65 65 }
-	color_ui = rgb { 158 65 65 }
+	color = rgb { 150 101 115 }
+	color_ui = rgb { 150 101 115 }
 }

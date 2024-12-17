@@ -55,13 +55,28 @@ effect_SOV_init_unreformed_land = yes
 recruit_character = SOV_nicholas_ii
 
 recruit_character = SOV_grigori_rasputin
-activate_advisor = SOV_grigori_rasputin
+activate_advisor = SOV_grigori_rasputin	# Needed to trigger Raspiton's activation effect (launches the Rasputin events)
 recruit_character = SOV_pyotr_stolypin
+recruit_character = SOV_pyotr_durnovo
+recruit_character = SOV_vladyka_evlogiy
+recruit_character = SOV_sergey_sazanov
+recruit_character = SOV_alexander_guchkov
+recruit_character = SOV_alexei_polivanov
+recruit_character = SOV_georgy_lvov
+recruit_character = SOV_irakli_tsereteli
+recruit_character = SOV_matvey_skobedev
+recruit_character = SOV_viktor_chernov
+recruit_character = SOV_boris_savinkov
+
+recruit_character = SOV_aleksei_evert
+recruit_character = SOV_aleksey_kuropatkin
+recruit_character = SOV_andrey_selivanov
+recruit_character = SOV_aleksei_brusilov
+recruit_character = SOV_lavr_kornilov
+recruit_character = SOV_yuri_danilov
+recruit_character = SOV_mikhail_alekseyev
+recruit_character = SOV_mikhail_belyaev
+recruit_character = SOV_nicholas_nicholaevich
 
 recruit_character = SOV_bad_army_chief
 SOV_bad_army_chief = { effect_SOV_regenerate_bad_army_chief = yes }
-
-recruit_character = SOV_generic_prudent_defender
-recruit_character = SOV_generic_bold_attacker
-recruit_character = SOV_generic_thorough_logistician
-recruit_character = SOV_generic_master_planner

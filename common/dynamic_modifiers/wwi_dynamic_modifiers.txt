@@ -124,6 +124,7 @@ modifier_SOV_unreformed_city = {
 	icon = GFX_modifiers_generic_military_industry
 
 	local_manpower = -0.5
+	local_resources = -0.5
 	local_building_slots_factor = -10
 	local_factories = -0.5
 }

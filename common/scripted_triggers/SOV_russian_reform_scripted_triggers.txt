@@ -31,6 +31,43 @@ trigger_SOV_requires_3_tsar_favor_if_tsarist = {
 	}
 }
 
+# These role-specific triggers are needed because a character gets fired from a role the moment they're no longer available, so if you spend 3 Tsar Points on an advisor and are left
+# with less than 3 Tsar Points, that character gets instantly removed again. They have to be role specific to prevent Brusilov being free as a Theorist once hired as an Army Chief, for example.
+trigger_SOV_requires_3_tsar_favor_if_tsarist_army_chief = {
+	if = {
+		limit = { is_army_chief = no }
+		trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
+	}
+}
+
+trigger_SOV_requires_3_tsar_favor_if_tsarist_navy_chief = {
+	if = {
+		limit = { is_navy_chief = no }
+		trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
+	}
+}
+
+trigger_SOV_requires_3_tsar_favor_if_tsarist_air_chief = {
+	if = {
+		limit = { is_air_chief = no }
+		trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
+	}
+}
+
+trigger_SOV_requires_3_tsar_favor_if_tsarist_political_advisor = {
+	if = {
+		limit = { is_political_advisor = no }
+		trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
+	}
+}
+
+trigger_SOV_requires_3_tsar_favor_if_tsarist_theorist = {
+	if = {
+		limit = { is_theorist = no }
+		trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
+	}
+}
+
 trigger_SOV_is_unreformed_state = {
 	custom_trigger_tooltip = {
 		tooltip = trigger_SOV_is_unreformed_state_tt

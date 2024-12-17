@@ -42,3 +42,20 @@ add_ideas = {
 recruit_character = TUR_mehmed_v
 
 recruit_character = TUR_enver_pasha
+recruit_character = TUR_djemal_pasha
+recruit_character = TUR_halil_kut
+recruit_character = TUR_mustafa_kemal
+recruit_character = TUR_generic_prudent_defender
+recruit_character = TUR_generic_thorough_logistician
+recruit_character = TUR_generic_master_planner
+
+recruit_character = TUR_generic_hawk
+recruit_character = TUR_generic_dove
+recruit_character = TUR_generic_stewardly_treasurer
+recruit_character = TUR_generic_state_architect
+recruit_character = TUR_educative_chamberlain
+recruit_character = TUR_diplomatic_encircler
+recruit_character = TUR_press_influencer
+recruit_character = TUR_firm_adjudicator
+recruit_character = TUR_arms_reformer
+recruit_character = TUR_public_works_tycoon

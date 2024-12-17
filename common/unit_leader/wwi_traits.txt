@@ -4,12 +4,9 @@ leader_traits = {
 		trait_type = personality_trait
 
 		modifier = {
-			max_planning_factor = 0.5
+			max_planning_factor = 0.3
+			army_morale_factor = -0.3
 		}
-		modifier = {
-			army_morale_factor = -0.5
-		}
-		
 	}
 
 	lion = {
@@ -18,8 +15,6 @@ leader_traits = {
 
 		modifier = {
 			defence = 0.2
-		}
-		modifier = {
 			army_infantry_defence_factor = 0.2
 		}
 	}
@@ -30,9 +25,18 @@ leader_traits = {
 
 		modifier = {
 			army_infantry_defence_factor = 0.1
-		}
-		modifier = {
 			experience_gain_factor = -0.5
+		}
+	}
+
+	rabbit = {
+		type = land
+		trait_type = personality_trait
+
+		modifier = {
+			initiative_factor = 0.2
+			planning_speed = -0.5
+			supply_consumption_factor = -0.2
 		}
 	}
 
@@ -53,8 +57,6 @@ leader_traits = {
 
 		modifier = {
 			army_org_regain = 0.33
-		}
-		modifier = {
 			org_loss_at_low_org_factor = 0.5
 		}
 	}
@@ -70,6 +72,86 @@ leader_traits = {
 
 		modifier = {
 			max_planning_factor = 0.5
+		}
+	}
+
+	iron_general = {
+		type = land
+		trait_type = personality_trait
+
+		modifier = {
+			max_planning_factor = 0.25
+			army_morale_factor = 0.25
+			experience_gain_factor = 0.25 
+		}
+	}
+
+	cossack = {
+		type = land
+		trait_type = personality_trait
+
+		modifier = {
+			cavalry_defense_factor = 0.1
+			cavalry_speed_factor = 0.25
+			equipment_capture = 0.03
+		}
+	}
+
+	besieger = {
+		type = land
+		trait_type = personality_trait
+
+		modifier = {
+			fort = {
+				breakthrough = 0.15
+			}
+		}
+	}
+
+	goat = {
+		type = land
+		trait_type = personality_trait
+
+		modifier = {
+			hills = {
+				defense = 0.15
+			}
+		}
+	}
+
+	ibex = {
+		type = land
+		trait_type = personality_trait
+
+		modifier = {
+			hills = {
+				defense = 0.15
+			}
+
+			desert = {
+				defense = 0.15
+			}
+		}
+	}
+
+	gull = {
+		trait_type = personality_trait
+
+		modifier = {
+			dig_in_speed_factor = 0.3
+
+			amphibious = {
+				defense = 0.15
+			}
+		}
+	}
+
+	well_oiled = {
+		trait_type = personality_trait
+
+		modifier = {
+			army_org_factor = 0.15
+			planning_speed = 0.3
 		}
 	}
 }

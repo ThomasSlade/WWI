@@ -1,10 +1,11 @@
 # WWI: Removed reference to vanilla idea for now. Obviously will be overhauling the entire doctrine tree for the mod.
+@early_doctrine_cost = 150
 
 technologies = {
 
 	early_reform = {
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = @early_doctrine_cost
 
 		doctrine = yes
 		research_cost = 1.1
@@ -59,7 +60,7 @@ technologies = {
 
 	pragmatic_uniform = {
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = @early_doctrine_cost
 
 		doctrine = yes
 		research_cost = 2.2
@@ -100,7 +101,7 @@ technologies = {
 
 	auftragstatik = {
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = @early_doctrine_cost
 
 		doctrine = yes
 		research_cost = 2.2
@@ -141,7 +142,7 @@ technologies = {
 
 	guerilla_warfare = {
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = @early_doctrine_cost
 
 		doctrine = yes
 		research_cost = 2.2
@@ -183,7 +184,7 @@ technologies = {
 
 	cult_of_the_offensive = {
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = @early_doctrine_cost
 
 		doctrine = yes
 		research_cost = 2.2
@@ -228,7 +229,7 @@ technologies = {
 
 	rapid_mobilisation = {
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = @early_doctrine_cost
 
 		doctrine = yes
 		research_cost = 2.2
@@ -271,7 +272,7 @@ technologies = {
 
 	indirect_artillery = {
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = @early_doctrine_cost
 
 		doctrine = yes
 		research_cost = 4.5
@@ -310,7 +311,7 @@ technologies = {
 		doctrine_name = "FREE_FIRE_DOCTRINE"
 
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = @early_doctrine_cost
 
 		doctrine = yes
 		research_cost = 4.5
@@ -349,7 +350,7 @@ technologies = {
 
 	digging_in = {
 		xp_research_type = army
-		xp_unlock_cost = 50
+		xp_unlock_cost = @early_doctrine_cost
 
 		doctrine = yes
 		research_cost = 4.5
@@ -382,7 +383,7 @@ technologies = {
 
 	trench_warfare = {
 		xp_research_type = army
-		xp_unlock_cost = 50
+		xp_unlock_cost = @early_doctrine_cost
 
 		doctrine = yes
 		research_cost = 4.5

@@ -1,0 +1,6 @@
+leader_traits = {
+	ataturk = {
+		land_reinforce_rate = 0.02
+		experience_gain_army_unit_factor = 0.25 
+	}
+}

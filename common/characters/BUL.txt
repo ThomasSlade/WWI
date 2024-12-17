@@ -31,7 +31,7 @@ characters = {
 			}
 			cost = 100
 			ai_will_do = {
-				factor = 1
+				factor = 10
 			}
 		}
 	}
@@ -54,7 +54,7 @@ characters = {
 			}
 			cost = 100
 			ai_will_do = {
-				factor = 1
+				factor = 10
 			}
 		}
 	}
@@ -77,7 +77,7 @@ characters = {
 			}
 			cost = 100
 			ai_will_do = {
-				factor = 1
+				factor = 10
 			}
 		}
 	}
@@ -100,7 +100,7 @@ characters = {
 			}
 			cost = 100
 			ai_will_do = {
-				factor = 1
+				factor = 10
 			}
 		}
 	}

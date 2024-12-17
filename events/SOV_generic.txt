@@ -34,7 +34,7 @@ country_event = {
 	option = {
 		name = event_SOV_generic.2.a
 		effect_SOV_gain_2_tsar_favor = yes
-		country_event = { id = event_SOV_generic.1 }
+		country_event = { id = event_SOV_generic.1 days = 3 }
 	}
 
 	# Stolypin lives

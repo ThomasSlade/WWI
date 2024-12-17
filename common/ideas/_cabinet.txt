@@ -24,7 +24,7 @@ ideas = {
 
 			modifier = {
 				resistance_activity = -0.5
-				training_time_army_factor = -0.33
+				training_time_army_factor = -0.15
 			}
 		}
 

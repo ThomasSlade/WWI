@@ -1,30 +1,60 @@
+@chief_experience_gain_medium = 0.30
+@chief_experience_gain_high = 0.40
+
 leader_traits = {
 	### Generic WWI Army Chief Traits ###
 	prudent_defender = {
 		random = yes
 		defence = 0.15
 		dig_in_speed_factor = 0.25
-		experience_gain_army = @chief_experience_gain
+		experience_gain_army = @chief_experience_gain_medium
 	}
 
 	bold_attacker = {
 		random = yes
 		offence = 0.15
 		army_attack_speed_factor = 0.5
-		experience_gain_army = @chief_experience_gain
+		experience_gain_army = @chief_experience_gain_medium
 	}
 
 	thorough_logistician = {
 		random = yes
 		supply_consumption_factor = -0.1
 		org_loss_when_moving = -0.25
-		experience_gain_army = @chief_experience_gain
+		experience_gain_army = @chief_experience_gain_medium
 	}
 
 	master_planner = {
 		random = yes
 		max_planning_factor = 0.25
 		coordination_bonus = 0.3
-		experience_gain_army = @chief_experience_gain
+		experience_gain_army = @chief_experience_gain_medium
+	}
+
+	### SOV ###
+	# Alexei Brusilov
+	iron_general = {
+		random = no
+		cavalry_attack_factor = 0.15
+		army_artillery_attack_factor = 0.15
+		army_org_factor = 0.15
+		experience_gain_army = @chief_experience_gain_high
+	}
+
+	# Lavr Kornilov
+	ambitious_disciplinarian = {
+		random = no
+		army_org_factor = 0.1
+		infantry_defense_factor = 0.15
+		resistance_activity = -0.15
+		experience_gain_army = @chief_experience_gain_medium
+	}
+
+	# Bad General
+	bad_general_released_from_prison = {
+		random = no
+		army_morale_factor = -0.25
+		command_power_gain = -0.2
+		experience_gain_army = @chief_experience_gain_medium
 	}
 }

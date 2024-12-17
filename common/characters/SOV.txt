@@ -27,6 +27,259 @@ characters = {
 		}
 	}
 
+	### Generals ###
+	SOV_aleksei_evert = {
+		name = SOV_aleksei_evert
+		portraits = {
+			army = {
+				small = GFX_idea_generic_political_advisor_europe_1
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			traits = {
+				donkey
+			}
+		}
+	}
+
+	SOV_aleksey_kuropatkin = {
+		name = SOV_aleksey_kuropatkin
+		portraits = {
+			army = {
+				small = GFX_idea_generic_political_advisor_europe_1
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			traits = {
+				rabbit
+			}
+		}
+	}
+
+	SOV_andrey_selivanov = {
+		name = SOV_andrey_selivanov
+		portraits = {
+			army = {
+				small = GFX_idea_generic_political_advisor_europe_1
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=2
+			traits = {
+				besieger
+			}
+		}
+	}
+
+	### Chief of Staff ###
+	SOV_aleksei_brusilov = {
+		name = SOV_alexei_brusilov
+		portraits = {
+			army = {
+				small = GFX_idea_generic_political_advisor_europe_1
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = SOV_alexei_brusilov
+			cost = 100
+
+			traits = { iron_general }
+
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+				trigger_SOV_requires_3_tsar_favor_if_tsarist_army_chief = yes
+			}
+			on_add = {
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		corps_commander={
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=2
+			traits = {
+				iron_general
+			}
+		}
+	}
+
+	SOV_lavr_kornilov = {
+		name = SOV_lavr_kornilov
+		portraits = {
+			army = {
+				small = GFX_idea_generic_political_advisor_europe_1
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = SOV_lavr_kornilov
+			cost = 100
+
+			traits = { ambitious_disciplinarian }
+
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+				trigger_SOV_requires_3_tsar_favor_if_tsarist_army_chief = yes
+			}
+			on_add = {
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=4
+			traits = {
+				cossack
+			}
+		}
+	}
+
+	SOV_yuri_danilov = {
+		name = SOV_yuri_danilov
+		portraits = {
+			army = {
+				small = GFX_idea_generic_political_advisor_europe_1
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = SOV_yuri_danilov
+			cost = 100
+
+			traits = { thorough_logistician }
+
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+				trigger_SOV_requires_3_tsar_favor_if_tsarist_army_chief = yes
+			}
+			on_add = {
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+
+	SOV_mikhail_alekseyev = {
+		name = SOV_mikhail_alekseyev
+		portraits = {
+			army = {
+				small = GFX_idea_generic_political_advisor_europe_1
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = SOV_mikhail_alekseyev
+			cost = 100
+
+			traits = { prudent_defender }
+
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+				trigger_SOV_requires_3_tsar_favor_if_tsarist_army_chief = yes
+			}
+			on_add = {
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+
+	SOV_mikhail_belyaev = {
+		name = SOV_mikhail_belyaev
+		portraits = {
+			army = {
+				small = GFX_idea_generic_political_advisor_europe_1
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = SOV_mikhail_belyaev
+			cost = 100
+
+			traits = { master_planner }
+
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+				trigger_SOV_requires_3_tsar_favor_if_tsarist_army_chief = yes
+			}
+			on_add = {
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+
+	SOV_nicholas_nicholaevich = {
+		name = SOV_nicholas_nicholaevich
+		portraits = {
+			army = {
+				small = GFX_idea_generic_political_advisor_europe_1
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = SOV_nicholas_nicholaevich
+			cost = 100
+
+			traits = { bold_attacker }
+
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+				trigger_SOV_requires_3_tsar_favor_if_tsarist_army_chief = yes
+			}
+			on_add = {
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+
 	### Advisors ###
 	SOV_grigori_rasputin = {
 		name = SOV_grigori_rasputin
@@ -52,10 +305,12 @@ characters = {
 			slot = political_advisor
 			idea_token = SOV_grigori_rasputin
 			can_be_fired = no
+
+			traits = { holy_peasant }
+
 			allowed = {
 				original_tag = SOV
 			}
-			traits = { holy_peasant }
 			on_add = {
 				effect_SOV_begin_rasputin_events = yes
 			}
@@ -63,7 +318,7 @@ characters = {
 				effect_SOV_end_rasputin_events = yes
 			}
 			ai_will_do = {
-				factor = 0.5
+				factor = 5
 				modifier = {
 					factor = 2
 					has_country_leader = {
@@ -89,11 +344,18 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_pyotr_stolypin
+
+			traits = { tsarist_land_reformer }
+
 			allowed = {
 				original_tag = SOV
 			}
-			traits = { tsarist_land_reformer }
+			available = {
+				trigger_SOV_requires_3_tsar_favor_if_tsarist_political_advisor = yes
+			}
 			on_add = {
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+
 				# If changing these values, change 'stolypin_effect_tt' localization
 				multiply_variable = { land_reform_cost = 0.75 }
 				multiply_variable = { land_reform_cost_cheap = 0.75 }
@@ -103,6 +365,297 @@ characters = {
 				divide_variable = { land_reform_cost = 0.75 }
 				divide_variable = { land_reform_cost_cheap = 0.75 }
 				divide_variable = { land_reform_cost_discount = 0.75 }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+
+	SOV_pyotr_durnovo = {
+		name = SOV_pyotr_durnovo
+		portraits = {
+			army = {
+				small = "GFX_idea_SOV_pyotr_stolypin"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_pyotr_durnovo
+
+			traits = { butcher_of_the_counter_revolution }
+
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+				trigger_SOV_requires_3_tsar_favor_if_tsarist_political_advisor = yes
+			}
+			on_add = {
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+
+	SOV_vladyka_evlogiy = {
+		name = SOV_vladyka_evlogiy
+		portraits = {
+			army = {
+				small = "GFX_idea_SOV_pyotr_stolypin"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_vladyka_evlogiy
+
+			traits = { russifier }
+
+			allowed = {
+				original_tag = SOV
+			}
+
+			available = {
+				trigger_SOV_requires_3_tsar_favor_if_tsarist_political_advisor = yes
+			}
+			on_add = {
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+
+	SOV_sergey_sazanov = {
+		name = SOV_sergey_sazanov
+		portraits = {
+			army = {
+				small = "GFX_idea_SOV_pyotr_stolypin"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_sergey_sazanov
+
+			traits = { wobbler }
+
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+				trigger_SOV_requires_3_tsar_favor_if_tsarist_political_advisor = yes
+			}
+			on_add = {
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+
+	SOV_alexander_guchkov = {
+		name = SOV_alexander_guchkov
+		portraits = {
+			army = {
+				small = "GFX_idea_SOV_pyotr_stolypin"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_alexander_guchkov
+
+			traits = { accomplished_industrialist }
+
+			allowed = {
+				original_tag = SOV
+			}
+
+			available = {
+				trigger_SOV_requires_3_tsar_favor_if_tsarist_political_advisor = yes
+			}
+			on_add = {
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+
+	SOV_alexei_polivanov = {
+		name = SOV_alexei_polivanov
+		portraits = {
+			army = {
+				small = "GFX_idea_SOV_pyotr_stolypin"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_alexei_polivanov
+
+			traits = { arms_reformer }
+
+			allowed = {
+				original_tag = SOV
+			}
+			
+			available = {
+				trigger_SOV_requires_3_tsar_favor_if_tsarist_political_advisor = yes
+			}
+			on_add = {
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+
+	SOV_georgy_lvov = {
+		name = SOV_georgy_lvov
+		portraits = {
+			army = {
+				small = "GFX_idea_SOV_pyotr_stolypin"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_georgy_lvov
+
+			traits = { national_organiser }
+
+			allowed = {
+				original_tag = SOV
+			}
+
+			available = {
+				trigger_SOV_requires_3_tsar_favor_if_tsarist_political_advisor = yes
+			}
+			on_add = {
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+
+	SOV_irakli_tsereteli = {
+		name = SOV_irakli_tsereteli
+		portraits = {
+			army = {
+				small = "GFX_idea_SOV_pyotr_stolypin"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_irakli_tsereteli
+
+			traits = { only_statesman_in_the_soviet }
+
+			allowed = {
+				original_tag = SOV
+			}
+
+			available = {
+				trigger_SOV_requires_3_tsar_favor_if_tsarist_political_advisor = yes
+			}
+			on_add = {
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+
+	SOV_matvey_skobedev = {
+		name = SOV_matvey_skobedev
+		portraits = {
+			army = {
+				small = "GFX_idea_SOV_pyotr_stolypin"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_matvey_skobedev
+
+			traits = { labor_mediator }
+
+			allowed = {
+				original_tag = SOV
+			}
+
+			available = {
+				trigger_SOV_requires_3_tsar_favor_if_tsarist_political_advisor = yes
+			}
+			on_add = {
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+
+	SOV_viktor_chernov = {
+		name = SOV_viktor_chernov
+		portraits = {
+			army = {
+				small = "GFX_idea_SOV_pyotr_stolypin"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_viktor_chernov
+
+			traits = { radical_land_reformer }
+
+			allowed = {
+				original_tag = SOV
+			}
+
+			available = {
+				trigger_SOV_requires_3_tsar_favor_if_tsarist_political_advisor = yes
+			}
+			on_add = {
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+
+	SOV_boris_savinkov = {
+		name = SOV_boris_savinkov
+		portraits = {
+			army = {
+				small = "GFX_idea_SOV_pyotr_stolypin"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_boris_savinkov
+
+			traits = { paramilitary_commander }
+
+			allowed = {
+				original_tag = SOV
+			}
+
+			available = {
+				trigger_SOV_requires_3_tsar_favor_if_tsarist_political_advisor = yes
+			}
+			on_add = {
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
+			ai_will_do = {
+				factor = 10
 			}
 		}
 	}
@@ -117,15 +670,16 @@ characters = {
 		advisor = {
 			slot = army_chief
 			idea_token = SOV_bad_army_chief
+
+			traits = {
+				bad_general_released_from_prison
+			}
+
 			allowed = {
 				original_tag = SOV
 			}
 			visible = {
 				has_country_flag = flag_SOV_bad_army_chief_enabled
-			}
-			traits = {
-				bad_general_released_from_prison
-				prudent_defender
 			}
 			on_remove = {
 				effect_SOV_regenerate_bad_army_chief = yes
@@ -134,95 +688,6 @@ characters = {
 			cost = 100
 			ai_will_do = {
 				factor = 0
-			}
-		}
-	}
-
-	### Generics ###
-	SOV_generic_prudent_defender = {
-		portraits = {
-			army = {
-				small = "GFX_idea_generic_political_advisor_europe_1"
-			}
-		}
-		advisor = {
-			slot = army_chief
-			idea_token = SOV_generic_prudent_defender
-			allowed = {
-				original_tag = SOV
-			}
-			traits = {
-				prudent_defender
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-	
-	SOV_generic_bold_attacker = {
-		portraits = {
-			army = {
-				small = "GFX_idea_generic_political_advisor_europe_1"
-			}
-		}
-		advisor = {
-			slot = army_chief
-			idea_token = SOV_generic_bold_attacker
-			allowed = {
-				original_tag = SOV
-			}
-			traits = {
-				bold_attacker
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-	
-	SOV_generic_thorough_logistician = {
-		portraits = {
-			army = {
-				small = "GFX_idea_generic_political_advisor_europe_1"
-			}
-		}
-		advisor = {
-			slot = army_chief
-			idea_token = SOV_generic_thorough_logistician
-			allowed = {
-				original_tag = SOV
-			}
-			traits = {
-				thorough_logistician
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-	
-	SOV_generic_master_planner = {
-		portraits = {
-			army = {
-				small = "GFX_idea_generic_political_advisor_europe_1"
-			}
-		}
-		advisor = {
-			slot = army_chief
-			idea_token = SOV_generic_master_planner
-			allowed = {
-				original_tag = SOV
-			}
-			traits = {
-				master_planner
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1
 			}
 		}
 	}

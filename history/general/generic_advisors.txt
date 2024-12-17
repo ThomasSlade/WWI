@@ -1,14 +1,23 @@
-# Political advisors
+### Political Advisors ###
 every_possible_country = {
 	limit = {
-		NOT = { OR = { tag = GER tag = AUS tag = ENG tag = SOV tag = FRA tag = SER tag = BUL } }
+		NOT = {
+			OR = {
+				tag = AUS
+				tag = SOV
+				tag = SER
+				tag = BUL
+			}
+		}
 		is_dynamic_country = no
 	}
 	generate_character = {
 		token_base = generic_dove
 		advisor = {
 			slot = political_advisor
+
 			traits = { dove }
+
 			ai_will_do = {
 				factor = 0
 			}
@@ -17,20 +26,247 @@ every_possible_country = {
 			army = { small = GFX_idea_generic_political_advisor_europe_1 }
 		}
 	}
-}
 
-every_possible_country = {
-	limit = {
-		NOT = { OR = { tag = GER tag = AUS tag = ENG tag = SOV tag = FRA tag = SER tag = BUL } }
-		is_dynamic_country = no
-	}
 	generate_character = {
 		token_base = generic_hawk
 		advisor = {
 			slot = political_advisor
+
 			traits = { hawk }
+
 			ai_will_do = {
 				factor = 0
+			}
+		}
+		portraits = { 
+			army = { small = GFX_idea_generic_political_advisor_europe_1 }
+		}
+	}
+
+	generate_character = {
+		token_base = generic_stewardly_treasurer
+		advisor = {
+			slot = political_advisor
+
+			traits = { stewardly_treasurer }
+			
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		portraits = { 
+			army = { small = GFX_idea_generic_political_advisor_europe_1 }
+		}
+	}
+
+	generate_character = {
+		token_base = generic_state_architect
+		advisor = {
+			slot = political_advisor
+
+			traits = { state_architect }
+			
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		portraits = { 
+			army = { small = GFX_idea_generic_political_advisor_europe_1 }
+		}
+	}
+
+	generate_character = {
+		token_base = generic_educative_chamberlain
+		advisor = {
+			slot = political_advisor
+
+			traits = { educative_chamberlain }
+			
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		portraits = { 
+			army = { small = GFX_idea_generic_political_advisor_europe_1 }
+		}
+	}
+
+	generate_character = {
+		token_base = generic_press_influencer
+		advisor = {
+			slot = political_advisor
+
+			traits = { press_influencer }
+			
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		portraits = { 
+			army = { small = GFX_idea_generic_political_advisor_europe_1 }
+		}
+	}
+
+	generate_character = {
+		token_base = generic_diplomatic_encircler
+		advisor = {
+			slot = political_advisor
+
+			traits = { diplomatic_encircler }
+			
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		portraits = { 
+			army = { small = GFX_idea_generic_political_advisor_europe_1 }
+		}
+	}
+
+	generate_character = {
+		token_base = generic_arms_reformer
+		advisor = {
+			slot = political_advisor
+
+			traits = { arms_reformer }
+			
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		portraits = { 
+			army = { small = GFX_idea_generic_political_advisor_europe_1 }
+		}
+	}
+
+	generate_character = {
+		token_base = generic_public_works_tycoon
+		advisor = {
+			slot = political_advisor
+
+			traits = { public_works_tycoon }
+			
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		portraits = { 
+			army = { small = GFX_idea_generic_political_advisor_europe_1 }
+		}
+	}
+
+	generate_character = {
+		token_base = generic_delicate_mediator
+		advisor = {
+			slot = political_advisor
+
+			traits = { delicate_mediator }
+			
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		portraits = { 
+			army = { small = GFX_idea_generic_political_advisor_europe_1 }
+		}
+	}
+}
+
+### Army Chiefs ###
+every_possible_country = {
+	limit = {
+		NOT = {
+			OR = {
+				tag = SOV
+				tag = SER
+				tag = TUR
+			}
+		}
+		is_dynamic_country = no
+	}
+	
+	generate_character = {
+		token_base = generic_prudent_defender
+		advisor = {
+			slot = army_chief
+
+			traits = { prudent_defender }
+			
+			ai_will_do = {
+				factor = 10
+
+				modifier = {
+					factor = 1.5
+
+					is_major = no
+				}
+
+				modifier = {
+					factor = 1.5
+
+					alliance_strength_ratio < 0.6
+				}
+			}
+		}
+		portraits = { 
+			army = { small = GFX_idea_generic_political_advisor_europe_1 }
+		}
+	}
+
+	generate_character = {
+		token_base = generic_master_planner
+		advisor = {
+			slot = army_chief
+
+			traits = { master_planner }
+			
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		portraits = { 
+			army = { small = GFX_idea_generic_political_advisor_europe_1 }
+		}
+	}
+
+	generate_character = {
+		token_base = generic_thorough_logistician
+		advisor = {
+			slot = army_chief
+
+			traits = { thorough_logistician }
+			
+			ai_will_do = {
+				factor = 10
+
+				modifier = {
+					factor = 1.5
+
+					# Germany has about 64 as of editing.
+					num_controlled_states > 80
+				}
+
+				modifier = {
+					factor = 1.5
+
+					num_controlled_states > 220
+				}
+			}
+		}
+		portraits = { 
+			army = { small = GFX_idea_generic_political_advisor_europe_1 }
+		}
+	}
+
+	generate_character = {
+		token_base = generic_bold_attacker
+		advisor = {
+			slot = army_chief
+
+			traits = { bold_attacker }
+			
+			ai_will_do = {
+				factor = 10
 			}
 		}
 		portraits = { 

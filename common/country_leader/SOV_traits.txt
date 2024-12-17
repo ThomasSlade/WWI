@@ -2,7 +2,7 @@ leader_traits = {
 	# Grigori Raspitin
 	holy_peasant = {
 		random = no
-		org_loss_at_low_org_factor = -0.5
+		org_loss_at_low_org_factor = -0.2
 		weekly_casualties_war_support = 0.002
 		custom_modifier_tooltip = rasputin_events_tt
 	}
@@ -28,10 +28,57 @@ leader_traits = {
 		stability_factor = 0.1
 	}
 
-	# Bad General
-	bad_general_released_from_prison = {
+	# Pyotr Durnovo
+	butcher_of_the_counter_revolution = {
 		random = no
-		army_morale_factor = -0.25
-		command_power_gain = -0.2
+		expansionist_drift = 0.05
+		party_popularity_stability_factor = 0.15
+		required_garrison_factor = -0.25
+	}
+
+	# Vladyka Evlogiy
+	russifier = {
+		random = no
+		resistance_target = -0.2
+		army_core_defence_factor = 0.1
+		justify_war_goal_time = -0.3
+	}
+
+	# Sergei Sazanov
+	wobbler = {
+		random = no
+		established_drift = 0.05
+		improve_relations_maintain_cost_factor = -0.3
+		trade_opinion_factor  = 0.25
+	}
+
+	# Irakli Tsereteli
+	only_statesman_in_the_soviet = {
+		random = no
+		political_power_factor = 0.2
+		stability_factor = 0.15
+	}
+
+	# Matvey Skobelev
+	labor_mediator = {
+		random = no
+		line_change_production_efficiency_factor = 0.33
+		industrial_capacity_factory = 0.15
+	}
+
+	# Viktor Chernov
+	radical_land_reformer = {
+		random = no
+		local_resources_factor = 0.15
+		conversion_cost_civ_to_mil_factor = -0.3
+		conversion_cost_mil_to_civ_factor = -0.3
+	}
+
+	# Boris Savinkov
+	paramilitary_commander = {
+		random = no
+		encryption = 1
+		resistance_target_on_our_occupied_states = 0.25
+		resistance_activity = -0.3
 	}
 }
