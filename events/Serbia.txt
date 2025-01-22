@@ -23,9 +23,10 @@ country_event = {
 		add_stability = -0.3
 		remove_state_core = 224
 		remove_state_core = 169
+		remove_state_core = 146
 		add_timed_idea = {
 			idea = SER_austrian_jurisdiction
-			days = 730
+			days = 365
 		}
 		AUS = { country_event = wwi_austria.4 }
 	}

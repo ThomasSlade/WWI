@@ -1,5 +1,10 @@
 spriteTypes = {
 	SpriteType = {
+		name = "GFX_field_artillery_0_medium"
+		texturefile = "gfx/interface/technologies/field_artillery_0.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_field_artillery_1_medium"
 		texturefile = "gfx/interface/technologies/field_artillery_1.dds"
 	}
@@ -10,8 +15,8 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_field_artillery_3_medium"
-		texturefile = "gfx/interface/technologies/field_artillery_3.dds"
+		name = "GFX_heavy_artillery_0_medium"
+		texturefile = "gfx/interface/technologies/Art_2_axis.dds"
 	}
 
 	SpriteType = {
@@ -25,8 +30,8 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_heavy_artillery_3_medium"
-		texturefile = "gfx/interface/technologies/Art_2_axis.dds"
+		name = "GFX_siege_artillery_0_medium"
+		texturefile = "gfx/interface/technologies/siege_artillery_0.dds"
 	}
 
 	SpriteType = {
@@ -35,17 +40,12 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_siege_artillery_2_medium"
-		texturefile = "gfx/interface/technologies/siege_artillery_2.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_heavy_machine_gun_1_medium"
+		name = "GFX_heavy_machine_gun_0_medium"
 		texturefile = "gfx/interface/technologies/support_weapons.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_heavy_machine_gun_2_medium"
+		name = "GFX_heavy_machine_gun_1_medium"
 		texturefile = "gfx/interface/technologies/support_weapons2.dds"
 	}
 

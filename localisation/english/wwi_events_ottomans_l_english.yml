@@ -1,6 +1,6 @@
 ﻿l_english:
   event_TUR_albanian_independence.4.t: "[ALB.GetAdjective] Independence Guaranteed by [AUS.GetName]"
-  event_TUR_albanian_independence.4.d: "Despite our longstanding interests in the [ALB.GetAdjective] region, the rancid opportunists in [AUS.capital.GetCapitalVictoryPointName] have announced their guarantee of an 'independent' [ALB.GetName], emboldening the [ALB.GetAdjective]s to throw off [TUR.GetNameDef] rule.\n\nThis dramatically complicates our intentions along the southern Adriatic.\n\nMore hawkish ministers insist we ignore the guarantee and subjugate the fledgeling state, but this would mean war with [AUS.GetNameDef]."
+  event_TUR_albanian_independence.4.d: "Despite our longstanding interests in the region, the rancid opportunists in [AUS.capital.GetCapitalVictoryPointName] have announced their guarantee of an 'independent' [ALB.GetName], emboldening the [ALB.GetAdjective]s to throw off [TUR.GetAdjective] rule and obstructing our designs along the southern Adriatic.\n\nMore hawkish ministers insist we ignore the guarantee and subjugate the fledgeling state, but this would mean war with [AUS.GetNameDef]."
   event_TUR_albanian_independence.4.a: "We cannot stand up to [AUS.GetNameDef]."
   event_TUR_albanian_independence.4.b: "So be it. [ALB.GetNameDef] is ours."
 

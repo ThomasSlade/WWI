@@ -32,7 +32,7 @@ set_popularities = {
 add_ideas = {
 	cab_conservative
 	gov_constitutional_monarchy
-	service_by_requirement
+	all_adults_serve
 }
 
 recruit_character = MNT_nikola_i

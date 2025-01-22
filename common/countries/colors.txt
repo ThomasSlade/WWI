@@ -21,8 +21,8 @@ HUN = {
 	color_ui = rgb { 99 48 19 }
 }
 TUR = {
-	color = rgb { 82 12 3 }
-	color_ui = rgb { 82 12 3 }
+	color = rgb { 130 61 36 }
+	color_ui = rgb { 130 61 36 }
 }
 BEL = {
 	color = rgb { 55 51 46 }

@@ -33,7 +33,7 @@ set_popularities = {
 
 add_ideas = {
 	sick_man_of_europe
-	limited_conscription
+	volunteer_only
 
 	cab_conservative
 	gov_constitutional_monarchy

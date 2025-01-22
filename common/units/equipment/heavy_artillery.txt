@@ -1,6 +1,6 @@
 equipments = {
 	heavy_artillery_equipment = {
-		year = 1910
+		year = 1912
 		picture = archetype_artillery_equipment
 		is_archetype = yes
 		type = {
@@ -34,11 +34,43 @@ equipments = {
 		}
 	}
 
-	heavy_artillery_equipment_1 = {
-		year = 1910
+	heavy_artillery_equipment_0 = {
+		year = 1912
 		
 		archetype = heavy_artillery_equipment
 		priority = 50
 		visual_level = 0
+	}
+
+	heavy_artillery_equipment_1 = {
+		year = 1916
+		
+		archetype = heavy_artillery_equipment
+		priority = 50
+		visual_level = 1
+
+		#Defensive Abilities
+		defense = 16
+		breakthrough = 14
+
+		#Offensive Abilities
+		soft_attack = 25
+		hard_attack = 6
+	}
+
+	heavy_artillery_equipment_2 = {
+		year = 1916
+		
+		archetype = heavy_artillery_equipment
+		priority = 50
+		visual_level = 2
+
+		#Defensive Abilities
+		defense = 19
+		breakthrough = 18
+
+		#Offensive Abilities
+		soft_attack = 29
+		hard_attack = 9
 	}
 }

@@ -13,7 +13,7 @@ set_war_support = 1.0
 set_technology = {
 	basic_train = 1
 	infantry_weapons = 1
-	field_artillery_1 = 1
+	field_artillery_0 = 1
 	tech_support = 1
 
 	early_destroyer = 1
@@ -42,7 +42,7 @@ set_popularities = {
 }
 
 add_ideas = {
-	limited_conscription
+	volunteer_only
 
 	cab_conservative
 	gov_limited_democracy

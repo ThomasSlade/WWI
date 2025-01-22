@@ -34,7 +34,7 @@ technologies = {
 		}	
 
 		path = {
-			leads_to_tech = heavy_machine_gun_1
+			leads_to_tech = heavy_machine_gun_0
 			research_cost_coeff = 1
 		}	
 
@@ -96,25 +96,25 @@ technologies = {
 		}
 	}	
 
-	heavy_machine_gun_1 = {
+	heavy_machine_gun_0 = {
 		enable_subunits = {
 			heavy_machine_gun
 		}
 
 		enable_equipments = {
-			heavy_machine_gun_equipment_1
+			heavy_machine_gun_equipment_0
 		}
 
 		path = {
-			leads_to_tech = heavy_machine_gun_2
+			leads_to_tech = heavy_machine_gun_1
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1.5
-		start_year = 1913
+		start_year = 1911
 		folder = {
 			name = infantry_folder
-			position = { x = -2 y = @1913 }
+			position = { x = -2 y = @1911 }
 		}
 		
 		categories = {
@@ -201,7 +201,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = heavy_machine_gun_2
+			leads_to_tech = heavy_machine_gun_1
 			research_cost_coeff = 1
 		}
 
@@ -315,12 +315,17 @@ technologies = {
 		}
 	}
 
-	heavy_machine_gun_2 = {
+	heavy_machine_gun_1 = {
 		research_cost = 1.5
-		start_year = 1917
+		start_year = 1916
+
+		enable_equipments = {
+			heavy_machine_gun_equipment_1
+		}
+
 		folder = {
 			name = infantry_folder
-			position = { x = -2 y = @1917 }
+			position = { x = -2 y = @1916 }
 		}
 		
 		categories = {

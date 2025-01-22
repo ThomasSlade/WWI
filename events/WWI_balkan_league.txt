@@ -306,7 +306,7 @@ country_event = {
 				factor = 0
 				strength_ratio = {
 					tag = FROM
-					ratio < 0.33
+					ratio < 0.2
 				}
 			}
 		}
@@ -322,7 +322,7 @@ country_event = {
 				add = 1
 				strength_ratio = {
 					tag = FROM
-					ratio < 0.33
+					ratio < 0.2
 				}
 			}
 		}

@@ -26,39 +26,8 @@ country_event = {
 			type = take_claimed_state
 			target = TUR
 		}
-		add_ai_strategy = {
-			type = consider_weak
-			id = TUR
-			value = 100
-		}
-		add_ai_strategy = {
-			type = declare_war
-			id = TUR
-			value = 100
-		}
-		add_ai_strategy = {
-		    type = naval_invasion_focus
-		    value = 100
-		}
-		add_ai_strategy = {
-		    type = area_priority
-		    id = libya
-		    value = 300
-		}
 		
-		# Reduce the likelihood of invading Albania for a while.
-		set_country_flag = {
-		    flag = flag_avoid_balkan_invasion
-		    days = 365
-		}
-		add_ai_strategy = {
-		    type = area_priority
-		    id = balkans
-		    value = -50
-		    abort = {
-		    	NOT = { has_country_flag = flag_avoid_balkan_invasion }
-		    }
-		}
+		country_event = { id = event_FRA_morocco_italy_agreement.2 days = 140 }
 
 		# If this changes, change the French focus tt too.
 		effect_boost_popularity_of_from_ideology_10 = yes
@@ -77,5 +46,45 @@ country_event = {
 	# No.
 	option = {
 		name = event_FRA_morocco_italy_agreement.1.b
+	}
+}
+
+country_event = {
+	id = event_FRA_morocco_italy_agreement.2
+
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		log = "([THIS.GetName] hidden event) Delaying AI's use of Italo Turkish war declaration complete: AI will now declare on Turkey."
+
+		add_ai_strategy = {
+			type = consider_weak
+			id = TUR
+			value = 100
+		}
+
+		add_ai_strategy = {
+			type = declare_war
+			id = TUR
+			value = 100
+		}
+
+		add_ai_strategy = {
+		    type = naval_invasion_focus
+		    value = 100
+		}
+
+		add_ai_strategy = {
+		    type = area_priority
+		    id = libya
+		    value = 300
+		}
+
+		# Reduce the likelihood of invading Albania for a while. This enables an AI strategy deprioritizing the Balkan region.
+		set_country_flag = {
+		    flag = flag_avoid_balkan_invasion
+		    days = 365
+		}
 	}
 }

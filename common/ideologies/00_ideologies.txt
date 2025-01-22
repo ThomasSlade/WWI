@@ -41,7 +41,7 @@ ideologies = {
 		faction_modifiers = {
 		}
 
-		ai_democratic = yes
+		ai_neutral = yes
 	}
 
 	expansionist = {
@@ -86,7 +86,7 @@ ideologies = {
 		faction_modifiers = {
 		}
 
-		ai_fascist = yes
+		ai_neutral = yes
 	}
 
 	revolutionary = {
@@ -131,6 +131,6 @@ ideologies = {
 		faction_modifiers = {
 		}
 
-		ai_communist = yes
+		ai_neutral = yes
 	}
 }

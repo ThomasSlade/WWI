@@ -1,5 +1,5 @@
 technologies = {
-	field_artillery_1 = {
+	field_artillery_0 = {
 		research_cost = 1.5
 		start_year = 1911
 
@@ -8,16 +8,16 @@ technologies = {
 		}
 
 		enable_equipments = {
-			field_artillery_equipment_1
+			field_artillery_equipment_0
 		}
 
 		path = {
-			leads_to_tech = field_artillery_2
+			leads_to_tech = field_artillery_1
 			research_cost_coeff = 1
 		}
 		
 		path = {
-			leads_to_tech = heavy_artillery_1
+			leads_to_tech = heavy_artillery_0
 			research_cost_coeff = 1
 		}
 
@@ -37,12 +37,16 @@ technologies = {
 		}
 	}
 
-	field_artillery_2 = {
+	field_artillery_1 = {
 		research_cost = 1.5
 		start_year = 1912
 
+		enable_equipments = {
+			field_artillery_equipment_1
+		}
+
 		path = {
-			leads_to_tech = field_artillery_3
+			leads_to_tech = field_artillery_2
 			research_cost_coeff = 1
 		}
 		
@@ -57,12 +61,16 @@ technologies = {
 		}
 	}
 
-	field_artillery_3 = {
+	field_artillery_2 = {
 		research_cost = 1.5
 		start_year = 1914
 
+		enable_equipments = {
+			field_artillery_equipment_2
+		}
+
 		path = {
-			leads_to_tech = heavy_artillery_2
+			leads_to_tech = heavy_artillery_1
 			research_cost_coeff = 1
 		}
 		
@@ -77,7 +85,7 @@ technologies = {
 		}
 	}
 
-	heavy_artillery_1 = {
+	heavy_artillery_0 = {
 		research_cost = 1.5
 		start_year = 1912
 
@@ -86,16 +94,16 @@ technologies = {
 		}
 
 		enable_equipments = {
-			heavy_artillery_equipment_1
+			heavy_artillery_equipment_0
 		}
 
 		path = {
-			leads_to_tech = heavy_artillery_2
+			leads_to_tech = heavy_artillery_1
 			research_cost_coeff = 1
 		}
 		
 		path = {
-			leads_to_tech = siege_artillery_1
+			leads_to_tech = siege_artillery_0
 			research_cost_coeff = 1
 		}
 		
@@ -110,12 +118,16 @@ technologies = {
 		}
 	}
 
-	heavy_artillery_2 = {
+	heavy_artillery_1 = {
 		research_cost = 1.5
 		start_year = 1915
 
+		enable_equipments = {
+			heavy_artillery_equipment_1
+		}
+
 		path = {
-			leads_to_tech = heavy_artillery_3
+			leads_to_tech = heavy_artillery_2
 			research_cost_coeff = 1
 		}
 		
@@ -130,9 +142,13 @@ technologies = {
 		}
 	}
 
-	heavy_artillery_3 = {
+	heavy_artillery_2 = {
 		research_cost = 1.5
 		start_year = 1918
+
+		enable_equipments = {
+			heavy_artillery_equipment_2
+		}
 		
 		folder = {
 			name = artillery_folder
@@ -145,7 +161,7 @@ technologies = {
 		}
 	}
 
-	siege_artillery_1 = {
+	siege_artillery_0 = {
 		research_cost = 1.5
 		start_year = 1913
 
@@ -154,11 +170,11 @@ technologies = {
 		}
 
 		enable_equipments = {
-			siege_artillery_equipment_1
+			siege_artillery_equipment_0
 		}
 
 		path = {
-			leads_to_tech = siege_artillery_2
+			leads_to_tech = siege_artillery_1
 			research_cost_coeff = 1
 		}
 		
@@ -173,12 +189,16 @@ technologies = {
 		}
 	}
 
-	siege_artillery_2 = {
+	siege_artillery_1 = {
 		research_cost = 1.5
 		start_year = 1917
 
+		enable_equipments = {
+			siege_artillery_equipment_1
+		}
+
 		path = {
-			leads_to_tech = heavy_artillery_3
+			leads_to_tech = heavy_artillery_2
 			research_cost_coeff = 1
 		}
 		

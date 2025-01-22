@@ -131,7 +131,7 @@ effect_SOV_add_needed_equipment = {
 	}
 	else_if = {
 		limit = {
-			has_tech = siege_artillery_1
+			has_tech = siege_artillery_0
 			stockpile_ratio = {
 				archetype = siege_artillery_equipment
 				ratio < 0.25
@@ -145,7 +145,7 @@ effect_SOV_add_needed_equipment = {
 	}
 	else_if = {
 		limit = {
-			has_tech = heavy_artillery_1
+			has_tech = heavy_artillery_0
 			stockpile_ratio = {
 				archetype = heavy_artillery_equipment
 				ratio < 0.25
@@ -159,7 +159,7 @@ effect_SOV_add_needed_equipment = {
 	}
 	else_if = {
 		limit = {
-			has_tech = field_artillery_1
+			has_tech = field_artillery_0
 			# Don't check the stockpile ratio for this last one, just let the player get something if they have the tech to prevent a very VERY well stocked player getting nothing.
 		}
 

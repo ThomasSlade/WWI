@@ -781,17 +781,17 @@ artillery_generic = {
 
 			modifier = {
 				add = 1
+				has_tech = field_artillery_0
+			}
+
+			modifier = {
+				add = 1
 				has_tech = field_artillery_1
 			}
 
 			modifier = {
 				add = 1
 				has_tech = field_artillery_2
-			}
-
-			modifier = {
-				add = 1
-				has_tech = field_artillery_3
 			}
 		}
 		
@@ -868,12 +868,12 @@ artillery_generic = {
 
 			modifier = {
 				add = 2
-				has_tech = heavy_artillery_1
+				has_tech = heavy_artillery_0
 			}
 
 			modifier = {
 				add = 4
-				has_tech = heavy_artillery_2
+				has_tech = heavy_artillery_1
 			}
 		}
 		

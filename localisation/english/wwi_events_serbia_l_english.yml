@@ -1,8 +1,8 @@
 ﻿l_english:
   wwi_serbia.1.t: "Austro-Hungarian Ultimatum"
-  wwi_serbia.1.d: "In the wake of the assassination of Archduke Franz Ferdinand by pro-Serb elements, Vienna has offered our foreign office a grave set of demands. The ultimatum insists upon Austrian control of our judicial process, the removal of Serbian officials implicated with the incident, and the cessation of all posturings from Belgrade on Austrian-controlled Serbdom.\n\nNaturally, accepting such conditions would amount to a forfeit of Serbian sovreignty. The Austrians have been quite clear, however, that the only alternative is war."
-  wwi_serbia.1.a: "An unmeetable set of demands! We knew nothing of this plot!"
-  wwi_serbia.1.b: "We cannot withstand the might of Austria-Hungary ..."
+  wwi_serbia.1.d: "In the wake of the assassination of their Archduke by, supposedly, Serb-nationalist elements, [FROM.capital.GetCapitalVictoryPointName] has presented us a grave list of demands.\n\nThe ultimatum insists on [FROM.GetOldAdjectiveCap] judicial oversight in [THIS.GetNameDef], the removal of allegedly complicit [THIS.GetOldAdjectiveCap] officials, and the withdrawal of our claims on [FROM.GetOldAdjectiveCap]-controlled Serbdom.\n\nNaturally, accepting would forfeit [THIS.GetOldAdjectiveCap] sovreignty. The [FROM.GetOldAdjectiveCap]s have been clear, however, that the only alternative is war."
+  wwi_serbia.1.a: "Unacceptable! We knew nothing of this plot!"
+  wwi_serbia.1.b: "We've no hope against [FROM.GetNameDefCap] ..."
   wwi_serbia.2.t: "[From.GetName] Joins Our League"
   wwi_serbia.2.d: "[From.GetName] has agreed to enter our defensive pact. What could stand in our way now?"
   wwi_serbia.2.a: "We knew they'd come around."

@@ -8,7 +8,7 @@
   wwi_austria.2.d: "Considering the crowds of jubilant Bosnians, it would seem that the royal visit to Bosnia-Herzegovina by Archduke Franz Ferdinand - heir to the Austro-Hungarian throne - could only be called a rousing success. The Archduke and his wife toured the recently annexed territory following renewed attempts to earn the loyalty of their south-slav subjects, amid ongoing talk of reform to the multi-ethnic empire.\n\nDespite moderate warnings of a potential terrorist attack in the region - long coveted by Serb nationalists as a gemstone of south-slav unity - the Archduke's visit proceeded in safety and comfort. He and his Duchess were particularly flattered by the territory's vibrant bazaars and hospitable locals."
   wwi_austria.2.a: "Perhaps Bosnia has a prosperous future in the empire after all."
   wwi_austria.3.t: "Serbia Rejects our Ultimatum"
-  wwi_austria.3.d: "In keeping with their tradition of diplomatic intransigence, the Serbian government has rejected our calls for judicial collaboration and an end to Serb expansionism. Grim as this eventuality may be, we made the alternative quite clear to [SER.GetLeader]."
+  wwi_austria.3.d: "Ever-insolent, [FROM.GetNameDef] has rejected our ultimatum.\n\nWe made the alternative quite clear."
   wwi_austria.3.a: "War it is."
   wwi_austria.4.t: "Serbia Accepts our Ultimatum"
   wwi_austria.4.d: "Despite the assumptions of the Austrian foreign office, the Serbian government, it seems, has come to its senses. We recieved word this morning that [SER.GetLeader]'s administration is willing to give us free reign of investigations into the murder of our beloved Archduke and - more importantly - will revoke claims over our rightful Bosnian holdings. Justice may yet be served to the perpetrators of this brutality. For now, at least, war is no longer a necessity."
@@ -260,7 +260,7 @@
   event_AUS_goad_bulgaria_into_war.5.c: "Highly suspect."
 
   event_AUS_buy_orient_railway_shares.1.t: "[FROM.GetName] Poised to Influence Balkan Railways"
-  event_AUS_buy_orient_railway_shares.1.d: "Credit Suisse has announced the sale of shares in the Chemins de fer Orientaux - the Orient Railway - to [FROM.GetAdjective] purchasers.\n\nThe railway company operates lines across the Southern Balkans. Though [FROM.capital.GetCapitalVictoryPointName] assures us that the purchase is routine, they clearly intend to exert influence in the region."
+  event_AUS_buy_orient_railway_shares.1.d: "Credit Suisse has announced the sale of shares in the Chemins de fer Orientaux - the Orient Railway - to [FROM.GetAdjective] purchasers.\n\nThe railway company operates lines across the Southern Balkans. Though [FROM.capital.GetCapitalVictoryPointName] assures us that the purchase is routine, they clearly intend to exert influence over [THIS.GetNameDef]."
   event_AUS_buy_orient_railway_shares.1.a: "We could make use of [FROM.GetAdjective] investment."
   event_AUS_buy_orient_railway_shares.1.b: "They can keep their railways away from us."
   event_AUS_buy_orient_railway_shares.2.t: "[FROM.GetName] Welcomes [THIS.GetAdjective] Rail Purchase"
