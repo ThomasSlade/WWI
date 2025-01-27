@@ -27,7 +27,13 @@ country_event = {
 			target = TUR
 		}
 		
-		country_event = { id = event_FRA_morocco_italy_agreement.2 days = 140 }
+		if = {
+			limit = { has_global_flag = flag_declare_italo_turkish_war_instantly }
+			country_event = { id = event_FRA_morocco_italy_agreement.2 }
+		}
+		else = {
+			country_event = { id = event_FRA_morocco_italy_agreement.2 days = 140 }
+		}
 
 		# If this changes, change the French focus tt too.
 		effect_boost_popularity_of_from_ideology_10 = yes

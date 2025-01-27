@@ -1,127 +1,25 @@
-add_namespace = wwi_austria
+add_namespace = event_AUS_generic
 
-# Assassination of Franz Ferdinand
 country_event = {
-	id = wwi_austria.1
-	title = wwi_austria.1.t
-	desc = wwi_austria.1.d
+	id = event_AUS_generic.1
+	title = event_AUS_generic.1.t
+	desc = event_AUS_generic.1.d
 	picture = GFX_report_event_german_speech
-
-	fire_only_once = yes
 
 	is_triggered_only = yes
 
 	immediate = {
-		hidden_effect = {
-			set_country_flag = AUS_ferdinand_dead
-			remove_ideas = franz_ferdinand
-		}
+		log = "([THIS.GetName] country event) Serbia Rearms the Vojvodina Serbs."
 	}
 
-	# Ultimatum.
 	option = {
-		name = wwi_austria.1.a
-		ai_chance = { factor = 100 }
-		SER = { country_event = { id = wwi_serbia.1 } }
-	}
-
-	# Back down.
-	option = {
-		name = wwi_austria.1.b
-		ai_chance = { factor = 0 }
-		add_stability = -0.1
-		add_timed_idea = {
-			idea = AUS_serbian_punching_bag
-			days = 730
-		}
-	}
-}
-
-# Franz Ferdinand Survives
-country_event = {
-	id = wwi_austria.2
-	title = wwi_austria.2.t
-	desc = wwi_austria.2.d
-	picture = GFX_report_event_german_speech
-
-	is_triggered_only = yes
-
-	option = {
-		name = wwi_austria.2.a
-		add_political_power = 100
-	}
-}
-
-# Serbia rejects the Ultimatum.
-country_event = {
-	id = wwi_austria.3
-	title = wwi_austria.3.t
-	desc = wwi_austria.3.d
-	picture = GFX_report_event_german_speech
-
-	is_triggered_only = yes
-
-	option = {
-		name = wwi_austria.3.a
-		declare_war_on = {
-			target = SER
-			type = annex_everything
-		}
-
-		add_named_threat = {
-			threat = 5
-			name = threat_austria_war_with_serbia_after_assassination
-		}
-	}
-}
-
-# Serbia accepts the Ultimatum.
-country_event = {
-	id = wwi_austria.4
-	title = wwi_austria.4.t
-	desc = wwi_austria.4.d
-	picture = GFX_report_event_german_speech
-
-	is_triggered_only = yes
-
-	option = {
-		name = wwi_austria.4.a
-	}
-}
-
-# Black Hand and Narodna Odbrana begin operating in Bosnia.
-country_event = {
-	id = wwi_austria.5
-	title = wwi_austria.5.t
-	desc = wwi_austria.5.d
-	picture = GFX_report_event_german_speech
-
-	is_triggered_only = yes
-
-	option = {
-		name = wwi_austria.5.a
-		custom_effect_tooltip = black_hand_and_narodna_odbrana_tt
-	}
-}
-
-# Serbia Rearms the Vojvodina Serbs.
-country_event = {
-	id = wwi_austria.6
-	title = wwi_austria.6.t
-	desc = wwi_austria.6.d
-	picture = GFX_report_event_german_speech
-
-	is_triggered_only = yes
-
-	option = {
-		name = wwi_austria.6.a
+		name = event_AUS_generic.1.a
 		custom_effect_tooltip = vojvodina_separatists_tt
 	}
 }
 
-# HIDDEN: Low stability leads to Bosnian secession (used to get the appropriate owners of Bosnia as the 'FROM' scope to Serbia's event chain)
 country_event = {
-	id = wwi_austria.7
+	id = event_AUS_generic.2
 	hidden = yes
 
 	trigger = {
@@ -139,6 +37,10 @@ country_event = {
 
 	fire_only_once = yes
 
+	immediate = {
+		log = "([THIS.GetName] country event) HIDDEN: Low stability leads to Bosnian secession (used to get the appropriate owners of Bosnia as the 'FROM' scope to Serbia's event chain)."
+	}
+
 	mean_time_to_happen = {
     	days = 1
 	}
@@ -148,38 +50,40 @@ country_event = {
 	}
 }
 
-# Bosnia Seceeds to Serbia Peacefully
 country_event = {
-	id = wwi_austria.8
-	title = wwi_austria.8.t
-	desc = wwi_austria.8.d
+	id = event_AUS_generic.3
+	title = event_AUS_generic.3.t
+	desc = event_AUS_generic.3.d
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
 
+	immediate = {
+		log = "([THIS.GetName] country event) Bosnia Seceeds to Serbia Peacefully."
+	}
+
 	option = {
-		name = wwi_austria.8.a
+		name = event_AUS_generic.3.a
 	}
 }
 
-# Serbian Vojvodina declares independence
 country_event = {
-	id = wwi_austria.9
-	title = wwi_austria.9.t
+	id = event_AUS_generic.4
+	title = event_AUS_generic.4.t
 	desc = {
-		text = wwi_austria.9.d.a
+		text = event_AUS_generic.4.d.a
 		trigger = {
 			check_variable = { SER.serb_vojvodina_armament < 2 }
 		}
 	}
 	desc = {
-		text = wwi_austria.9.d.b
+		text = event_AUS_generic.4.d.b
 		trigger = {
 			check_variable = { SER.serb_vojvodina_armament = 2 }
 		}
 	}
 	desc = {
-		text = wwi_austria.9.d.c
+		text = event_AUS_generic.4.d.c
 		trigger = {
 			check_variable = { SER.serb_vojvodina_armament > 2 }
 		}
@@ -200,6 +104,8 @@ country_event = {
 	}
 
 	immediate = {
+		log = "([THIS.GetName] country event) Serbian Vojvodina declares independence."
+
 		hidden_effect = {
 			release = SVO
 			set_global_flag = serb_vojvodina_revolted
@@ -238,7 +144,7 @@ country_event = {
 
 	# Declare war on Vojvodina
 	option = {
-		name = wwi_austria.9.a
+		name = event_AUS_generic.4.a
 		ai_chance = {
 			base = 1
 		}
@@ -255,22 +161,202 @@ country_event = {
 			NOT = { has_war_with = SER }
 		}
 
-		name = wwi_austria.9.b
+		name = event_AUS_generic.4.b
 	}
 }
 
-# Serbia asks for a slice of Bosnia
+add_namespace = event_AUS_assassination
+
+news_event = {
+	id = event_AUS_assassination.1
+	title = event_AUS_assassination.1.t
+	desc = event_AUS_assassination.1.d
+	picture = GFX_news_event_001
+
+	is_triggered_only = yes
+	major = yes
+	fire_for_sender = no
+
+	immediate = {
+		log = "([THIS.GetName] news event) Franz Ferdinand assassinated."
+	}
+
+	# Neutral
+	option = {
+		name = event_AUS_assassination.1.a
+		trigger = {
+			NOT = { is_ally_with = AUS }
+			NOT = { original_tag = SER }
+		}
+	}
+
+	# Austrian Ally
+	option = {
+		name = event_AUS_assassination.1.b
+		trigger = {
+			is_ally_with = AUS
+			NOT = { original_tag = SER }
+		}
+	}
+
+	# Serbia
+	option = {
+		name = event_AUS_assassination.1.c
+		trigger = {
+			original_tag = SER
+		}
+	}
+}
+
+news_event = {
+	id = event_AUS_assassination.2
+	title = event_AUS_assassination.2.t
+	desc = event_AUS_assassination.2.d
+	picture = GFX_news_event_001
+
+	is_triggered_only = yes
+	major = yes
+
+	immediate = {
+		log = "([THIS.GetName] news event) Franz Ferdinand not assassinated."
+	}
+
+	# Neutral
+	option = {
+		name = event_AUS_assassination.2.a
+		trigger = {
+			NOT = { is_ally_with = AUS }
+			NOT = { original_tag = AUS }
+		}
+	}
+
+	# Austrian Ally
+	option = {
+		name = event_AUS_assassination.2.b
+		trigger = {
+			is_ally_with = AUS
+			NOT = { original_tag = AUS }
+		}
+	}
+
+	# Austria
+	option = {
+		name = event_AUS_assassination.2.c
+		trigger = {
+			original_tag = AUS
+		}
+	}
+}
+
 country_event = {
-	id = wwi_austria.10
-	title = wwi_austria.10.t
-	desc = wwi_austria.10.d
+	id = event_AUS_assassination.3
+	title = event_AUS_assassination.3.t
+	desc = event_AUS_assassination.3.d
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
 
+	immediate = {
+		log = "([THIS.GetName] event) Franz Ferdinand assassinated."
+	}
+
+	# Ultimatum.
+	option = {
+		name = event_AUS_assassination.3.a
+		ai_chance = { factor = 100 }
+		SER = { country_event = { id = wwi_serbia.1 days = 3 } }
+	}
+
+	# Back down.
+	option = {
+		name = event_AUS_assassination.3.b
+		ai_chance = { factor = 0 }
+		add_stability = -0.1
+		add_timed_idea = {
+			idea = AUS_serbian_punching_bag
+			days = 730
+		}
+	}
+}
+
+country_event = {
+	id = event_AUS_assassination.4
+	title = event_AUS_assassination.4.t
+	desc = event_AUS_assassination.4.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Serbia rejects the Ultimatum."
+	}
+
+	option = {
+		name = event_AUS_assassination.4.a
+		declare_war_on = {
+			target = SER
+			type = annex_everything
+		}
+
+		add_named_threat = {
+			threat = 5
+			name = threat_austria_war_with_serbia_after_assassination
+		}
+	}
+}
+
+country_event = {
+	id = event_AUS_assassination.5
+	title = event_AUS_assassination.5.t
+	desc = event_AUS_assassination.5.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Serbia accepts the Ultimatum."
+	}
+
+	option = {
+		name = event_AUS_assassination.5.a
+	}
+}
+
+country_event = {
+	id = event_AUS_assassination.6
+	title = event_AUS_assassination.6.t
+	desc = event_AUS_assassination.6.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Black Hand and Narodna Odbrana begin operating in Bosnia."
+	}
+
+	option = {
+		name = event_AUS_assassination.6.a
+		custom_effect_tooltip = black_hand_and_narodna_odbrana_tt
+	}
+}
+
+add_namespace = event_AUS_serbian_reconciliation
+
+country_event = {
+	id = event_AUS_serbian_reconciliation.1
+	title = event_AUS_serbian_reconciliation.1.t
+	desc = event_AUS_serbian_reconciliation.1.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Serbia asks for a slice of Bosnia."
+	}
+
 	# Accept
 	option = {
-		name = wwi_austria.10.a
+		name = event_AUS_serbian_reconciliation.1.a
 		ai_chance = {
 			base = 1
 		}
@@ -315,23 +401,27 @@ country_event = {
 
 	# Decline
 	option = {
-		name = wwi_austria.10.b
+		name = event_AUS_serbian_reconciliation.1.b
 		ai_chance = {
 			base = 0
 		}
 	}
 }
 
-# Serbia reconciles with Austria.
 country_event = {
-	id = wwi_austria.11
-	title = wwi_austria.11.t
-	desc = wwi_austria.11.d
+	id = event_AUS_serbian_reconciliation.2
+	title = event_AUS_serbian_reconciliation.2.t
+	desc = event_AUS_serbian_reconciliation.2.d
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Serbia reconciles with Austria."
+	}
+
 	option = {
-		name = wwi_austria.11.a
+		name = event_AUS_serbian_reconciliation.2.a
 		effect_tooltip = {
 			remove_ideas = {
 				AUS_narodna_odbrana
@@ -360,18 +450,21 @@ country_event = {
 	}
 }
 
-# Serbia asks for treaty port.
 country_event = {
-	id = wwi_austria.12
-	title = wwi_austria.12.t
-	desc = wwi_austria.12.d
+	id = event_AUS_serbian_reconciliation.3
+	title = event_AUS_serbian_reconciliation.3.t
+	desc = event_AUS_serbian_reconciliation.3.d
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
 
+	immediate = {
+		log = "([THIS.GetName] country event) Serbia asks for treaty port."
+	}
+
 	# Accept
 	option = {
-		name = wwi_austria.12.a
+		name = event_AUS_serbian_reconciliation.3.a
 
 		ai_chance = {
 			base = 10
@@ -390,7 +483,7 @@ country_event = {
 
 	# Decline
 	option = {
-		name = wwi_austria.12.b
+		name = event_AUS_serbian_reconciliation.3.b
 
 		ai_chance = {
 			base = 0
@@ -416,18 +509,17 @@ country_event = {
 	}
 }
 
-# Serbia asks for a little bit more Bosnia
 country_event = {
-	id = wwi_austria.13
-	title = wwi_austria.13.t
+	id = event_AUS_serbian_reconciliation.4
+	title = event_AUS_serbian_reconciliation.4.t
 	desc = {
-		text = wwi_austria.13.d
+		text = event_AUS_serbian_reconciliation.4.d
 		trigger = {
 			NOT = { has_country_flag = austria_declined_bosnia_renegotation_2 }
 		}
 	}
 	desc = {
-		text = wwi_austria.13.d_second
+		text = event_AUS_serbian_reconciliation.4.d_second
 		trigger = {
 			has_global_flag = austria_declined_bosnia_renegotation_2
 		}
@@ -436,9 +528,13 @@ country_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+		log = "([THIS.GetName] country event) Serbia asks for a little bit more Bosnia."
+	}
+
 	# Accept
 	option = {
-		name = wwi_austria.13.a
+		name = event_AUS_serbian_reconciliation.4.a
 
 		ai_chance = {
 			base = 1
@@ -458,7 +554,7 @@ country_event = {
 
 	# Decline
 	option = {
-		name = wwi_austria.13.b
+		name = event_AUS_serbian_reconciliation.4.b
 
 		ai_chance = {
 			base = 0
@@ -474,18 +570,23 @@ country_event = {
 	}
 }
 
-# Austria offers Italy territory for allegiance
+add_namespace = event_AUS_italian_neutrality
+
 country_event = {
-	id = wwi_austria.14
-	title = wwi_austria.14.t
-	desc = wwi_austria.14.d
+	id = event_AUS_italian_neutrality.1
+	title = event_AUS_italian_neutrality.1.t
+	desc = event_AUS_italian_neutrality.1.d
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
 
+	immediate = {
+		log = "([THIS.GetName] country event) Austria offers Italy territory for allegiance."
+	}
+
 	# Accept
 	option = {
-		name = wwi_austria.14.a
+		name = event_AUS_italian_neutrality.1.a
 
 		ai_chance = {
 			base = 1
@@ -509,7 +610,7 @@ country_event = {
 			release = TRS
 			unlock_decision_category_tooltip = decision_category_AUS_influence_adriatic_territory
 
-			country_event = { id = wwi_austria.15 hours = 1 }
+			country_event = { id = event_AUS_italian_neutrality.2 hours = 1 }
 		}
 
 		hidden_effect = {
@@ -520,27 +621,30 @@ country_event = {
 
 	# Decline
 	option = {
-		name = wwi_austria.14.b
+		name = event_AUS_italian_neutrality.1.b
 
 		ai_chance = {
 			base = 0
 		}
 
-		FROM = { country_event = { id = wwi_austria.16 hours = 1 } }
+		FROM = { country_event = { id = event_AUS_italian_neutrality.3 hours = 1 } }
 	}
 }
 
-# Tell Austria that Italy accepted free city proposal
 country_event = {
-	id = wwi_austria.15
-	title = wwi_austria.15.t
-	desc = wwi_austria.15.d
+	id = event_AUS_italian_neutrality.2
+	title = event_AUS_italian_neutrality.2.t
+	desc = event_AUS_italian_neutrality.2.d
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
 
+	immediate = {
+		log = "([THIS.GetName] country event) Tell Austria that Italy accepted free city proposal."
+	}
+
 	option = {
-		name = wwi_austria.15.a
+		name = event_AUS_italian_neutrality.2.a
 
 		effect_tooltip = {
 			add_opinion_modifier = { target = ITA modifier = AUS_purchased_italian_neutrality }
@@ -562,26 +666,28 @@ country_event = {
 	}
 }
 
-# Tell Austria that Italy declined free city proposal
 country_event = {
-	id = wwi_austria.16
-	title = wwi_austria.16.t
-	desc = wwi_austria.16.d
+	id = event_AUS_italian_neutrality.3
+	title = event_AUS_italian_neutrality.3.t
+	desc = event_AUS_italian_neutrality.3.d
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
 
+	immediate = {
+		log = "([THIS.GetName] country event) Tell Austria that Italy declined free city proposal."
+	}
+
 	option = {
-		name = wwi_austria.16.a
+		name = event_AUS_italian_neutrality.3.a
 	}
 }
 
-# Austria or Italy influenced a free city
 country_event = {
-	id = wwi_austria.17
-	title = wwi_austria.17.t
+	id = event_AUS_italian_neutrality.4
+	title = event_AUS_italian_neutrality.4.t
 	desc = {
-		text = wwi_austria.17.d_increase_of_enemy_influence
+		text = event_AUS_italian_neutrality.4.d_increase_of_enemy_influence
 		trigger = {
 			# This idea means that the enemy country has influenced the city to their favour.
 			event_target:influenced_free_city = {
@@ -594,14 +700,18 @@ country_event = {
 	}
 	desc = {
 		# Otherwise, the city has become neutral.
-		text = wwi_austria.17.d_increase_of_enemy_influence
+		text = event_AUS_italian_neutrality.4.d_increase_of_enemy_influence
 	}
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
 
+	immediate = {
+		log = "([THIS.GetName] country event) Austria or Italy influenced a free city."
+	}
+
 	option = {
-		name = wwi_austria.17.a
+		name = event_AUS_italian_neutrality.4.a
 
 		effect_tooltip = {
 			event_target:influenced_free_city = { AUS_sway_free_city_tt = yes }
@@ -609,17 +719,20 @@ country_event = {
 	}
 }
 
-# Austria or Italy annexed a free city
 country_event = {
-	id = wwi_austria.18
-	title = wwi_austria.18.t
-	desc = wwi_austria.18.d
+	id = event_AUS_italian_neutrality.5
+	title = event_AUS_italian_neutrality.5.t
+	desc = event_AUS_italian_neutrality.5.d
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
 
+	immediate = {
+		log = "([THIS.GetName] country event) Austria or Italy annexed a free city."
+	}
+
 	option = {
-		name = wwi_austria.18.a
+		name = event_AUS_italian_neutrality.5.a
 
 		effect_tooltip = {
 			FROM = {
@@ -629,550 +742,24 @@ country_event = {
 	}
 }
 
-# United States of Greater Austria is formed
-news_event = {
-	id = wwi_austria.19
-	title = wwi_austria.19.t
-	desc = wwi_austria.19.d
-	picture = GFX_news_event_001
+add_namespace = event_AUS_pro_germany
 
-	is_triggered_only = yes
-	major = yes
-
-	# Austria
-	option = {
-		name = wwi_austria.19.a
-
-		trigger = {
-			original_tag = AUS
-		}
-	}
-
-	# Hungary
-	option = {
-		name = wwi_austria.19.d
-		effect_tooltip = {
-			FROM = { AUS_form_united_states_of_greater_austria = yes }
-		}
-
-		trigger = {
-			original_tag = HUN
-		}
-	}
-
-	# Angry
-	option = {
-		name = wwi_austria.19.c
-		effect_tooltip = {
-			FROM = { AUS_form_united_states_of_greater_austria = yes }
-		}
-
-		trigger = {
-			NOT = { original_tag = AUS }
-			NOT = { original_tag = HUN }
-			OR = {
-				has_opinion = {
-					target = FROM
-					value < -49
-				}
-				has_war_with = FROM
-			}
-		}
-	}
-
-	# Indifferent
-	option = {
-		name = wwi_austria.19.b
-		effect_tooltip = {
-			FROM = { AUS_form_united_states_of_greater_austria = yes }
-		}
-
-		trigger = {
-			NOT = { original_tag = AUS }
-			NOT = { original_tag = HUN }
-			AND = {
-				has_opinion = {
-					target = FROM
-					value > -50
-				}
-				NOT = { has_war_with = FROM }
-			}
-		}
-	}
-}
-
-# Releasing Croatia as a trialist kingdom
 country_event = {
-	id = wwi_austria.20
-	title = wwi_austria.20.t
-	desc = wwi_austria.trialist_reform_d
+	id = event_AUS_pro_germany.1
+	title = event_AUS_pro_germany.1.t
+	desc = event_AUS_pro_germany.1.d
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
 
-	option = {
-		name = wwi_austria.trialist_reform_a
-
-		effect_tooltip = {
-			release_puppet_on_controlled = SCS
-		}
+	immediate = {
+		log = "([THIS.GetName] country event) Telling Germany about Austria's Blank Cheque request."
 	}
-}
-
-# Releasing Poland as a trialist kingdom
-country_event = {
-	id = wwi_austria.21
-	title = wwi_austria.21.t
-	desc = wwi_austria.trialist_reform_d
-	picture = GFX_report_event_german_speech
-
-	is_triggered_only = yes
-
-	option = {
-		name = trialist_reform_a
-
-		effect_tooltip = {
-			release_puppet_on_controlled = GLD
-		}
-	}
-}
-
-# Get Littoral back from SCS in exchange for Serbian land
-country_event = {
-	id = wwi_austria.22
-	title = wwi_austria.22.t
-	desc = wwi_austria.22.d
-	picture = GFX_report_event_german_speech
-
-	is_triggered_only = yes
-
-	option = {
-		name = wwi_austria.22.a
-
-		effect_tooltip = {
-			AUS = {
-				AUS_trade_serbia_montenegro_for_littoral = yes
-			}
-		}
-
-		FROM = { country_event = { id = wwi_austria.23 hours = 1 } }
-	}
-}
-
-# Austria hears about SCS giving back Littoral.
-country_event = {
-	id = wwi_austria.23
-	title = wwi_austria.23.t
-	desc = wwi_austria.23.d
-	picture = GFX_report_event_german_speech
-
-	is_triggered_only = yes
-
-	option = {
-		name = wwi_austria.23.a
-
-		effect_tooltip = {
-			AUS_trade_serbia_montenegro_for_littoral = yes
-		}
-	}
-}
-
-# Tell Hungary about Austrian territory trade.
-country_event = {
-	id = wwi_austria.24
-	title = {
-		text = wwi_austria.23.t_croatia
-		trigger = { FROM = { check_variable = { territory_negotiation_demand = 0 } } }
-	}
-	title = {
-		text = wwi_austria.23.t_transylvania
-		trigger = { FROM = { check_variable = { territory_negotiation_demand = 1 } } }
-	}
-	desc = {
-		text = wwi_austria.23.d_croatia_serbia
-		trigger = { FROM = { check_variable = { territory_negotiation_demand = 0 } check_variable = { territory_negotiation_offer = 0 } } }
-	}
-	desc = {
-		text = wwi_austria.23.d_croatia_wallachia
-		trigger = { FROM = { check_variable = { territory_negotiation_demand = 0 } check_variable = { territory_negotiation_offer = 1 } } }
-	}
-	desc = {
-		text = wwi_austria.23.d_croatia_moldovia
-		trigger = { FROM = { check_variable = { territory_negotiation_demand = 0 } check_variable = { territory_negotiation_offer = 2 } } }
-	}
-	desc = {
-		text = wwi_austria.23.d_croatia_ruthenia
-		trigger = { FROM = { check_variable = { territory_negotiation_demand = 0 } check_variable = { territory_negotiation_offer = 3 } } }
-	}
-	desc = {
-		text = wwi_austria.23.d_croatia_poland
-		trigger = { FROM = { check_variable = { territory_negotiation_demand = 0 } check_variable = { territory_negotiation_offer = 4 } } }
-	}
-	desc = {
-		text = wwi_austria.23.d_transylvania_serbia
-		trigger = { FROM = { check_variable = { territory_negotiation_demand = 1 } check_variable = { territory_negotiation_offer = 0 } } }
-	}
-	desc = {
-		text = wwi_austria.23.d_transylvania_wallachia
-		trigger = { FROM = { check_variable = { territory_negotiation_demand = 1 } check_variable = { territory_negotiation_offer = 1 } } }
-	}
-	desc = {
-		text = wwi_austria.23.d_transylvania_moldovia
-		trigger = { FROM = { check_variable = { territory_negotiation_demand = 1 } check_variable = { territory_negotiation_offer = 2 } } }
-	}
-	desc = {
-		text = wwi_austria.23.d_transylvania_ruthenia
-		trigger = { FROM = { check_variable = { territory_negotiation_demand = 1 } check_variable = { territory_negotiation_offer = 3 } } }
-	}
-	desc = {
-		text = wwi_austria.23.d_transylvania_poland
-		trigger = { FROM = { check_variable = { territory_negotiation_demand = 1 } check_variable = { territory_negotiation_offer = 4 } } }
-	}
-
-	picture = GFX_report_event_german_speech
-
-	is_triggered_only = yes
-
-	option = {
-		name = wwi_austria.23.a
-
-		FROM = {
-			clear_variable = territory_negotiation_demand
-			clear_variable = territory_negotiation_offer
-		}
-	}
-}
-
-# News event about trialist reform.
-news_event = {
-	id = wwi_austria.25
-	title = {
-		text = wwi_austria.25.t_croatia
-		trigger = {
-			FROM = { has_completed_focus = AUS_croatian_trialism }
-		}
-	}
-	title = {
-		text = wwi_austria.25.t_poland
-		trigger = {
-			FROM = { has_completed_focus = AUS_polish_trialism }
-		}
-	}
-	desc = {
-		text = wwi_austria.25.d_croatia
-		trigger = {
-			FROM = { has_completed_focus = AUS_croatian_trialism }
-		}
-	}
-	desc = {
-		text = wwi_austria.25.d_poland
-		trigger = {
-			FROM = { has_completed_focus = AUS_polish_trialism }
-		}
-	}
-	picture = GFX_news_event_001
-
-	is_triggered_only = yes
-	major = yes
-
-	# Austria
-	option = {
-		name = wwi_austria.25.a
-
-		trigger = {
-			original_tag = AUS
-		}
-	}
-
-	# Hungary
-	option = {
-		name = wwi_austria.25.b
-
-		trigger = {
-			original_tag = HUN
-		}
-	}
-
-	# Indifferent
-	option = {
-		name = wwi_austria.25.c
-
-		trigger = {
-			NOT = { original_tag = AUS }
-			NOT = { original_tag = HUN }
-			AND = {
-				has_opinion = {
-					target = FROM
-					value > -50
-				}
-				NOT = { has_war_with = FROM }
-			}
-		}
-	}
-
-	# Angry
-	option = {
-		name = wwi_austria.25.d
-
-		trigger = {
-			NOT = { original_tag = AUS }
-			NOT = { original_tag = HUN }
-			OR = {
-				has_opinion = {
-					target = FROM
-					value < -49
-				}
-				has_war_with = FROM
-			}
-		}
-	}
-}
-
-# Get offered Bukovina
-country_event = {
-	id = wwi_austria.27
-	title = wwi_austria.27.t
-	desc = wwi_austria.27.d
-	picture = GFX_report_event_german_speech
-
-	is_triggered_only = yes
-
 	
 	option = {
-		name = wwi_austria.27.a
-		ai_chance = { base = 1 }
-
-		transfer_state = 236
-		add_timed_idea = { idea = AUS_trade_for_bukovina days = 730 }
-		add_opinion_modifier = {
-			target = FROM
-			modifier = AUS_received_bukovina
-		}
-		FROM = {
-			add_opinion_modifier = {
-				target = PREV
-				modifier = AUS_gave_bukovina
-			}
-		}
-	}
-
-	option = {
-		name = wwi_austria.27.b
-		ai_chance = { base = 0 }
-	}
-}
-
-# Tell Hungary you're taking their land
-country_event = {
-	id = wwi_austria.28
-	title = wwi_austria.28.t
-	desc = wwi_austria.28.d
-	picture = GFX_report_event_german_speech
-
-	is_triggered_only = yes
-	
-	option = {
-		name = wwi_austria.28.a
-	}
-}
-
-# Tell Hungary they're getting annexed
-country_event = {
-	id = wwi_austria.29
-	title = wwi_austria.29.t
-	desc = wwi_austria.29.d
-	picture = GFX_report_event_german_speech
-
-	is_triggered_only = yes
-	
-	option = {
-		name = wwi_austria.29.a
-		custom_effect_tooltip = GAME_OVER_TT
-		FROM = {
-			annex_country = {
-				target = HUN
-				transfer_troops = yes
-			}
-		}
-	}
-}
-
-# Tell Hungary you're taking their land (via referendum)
-country_event = {
-	id = wwi_austria.30
-	title = wwi_austria.30.t
-	desc = wwi_austria.30.d
-	picture = GFX_report_event_german_speech
-
-	is_triggered_only = yes
-	
-	option = {
-		name = wwi_austria.30.a
-	}
-}
-
-# Tell Hungary they're willingily uniting with Austria to get a cool new flag
-country_event = {
-	id = wwi_austria.31
-	title = wwi_austria.31.t
-	desc = wwi_austria.31.d
-	picture = GFX_report_event_german_speech
-
-	is_triggered_only = yes
-	
-	option = {
-		name = wwi_austria.31.a
-		custom_effect_tooltip = GAME_OVER_TT
-		FROM = {
-			annex_country = {
-				target = HUN
-				transfer_troops = yes
-			}
-		}
-		hidden_effect = {
-			FROM = { news_event = { id = wwi_austria.32 days = 1 } }
-		}
-	}
-}
-
-# News event about uniting of Austria-Hungary.
-news_event = {
-	id = wwi_austria.32
-	title = wwi_austria.32.t
-	desc = wwi_austria.32.d
-	picture = GFX_news_event_001
-
-	is_triggered_only = yes
-	major = yes
-
-	show_major = {
-		# Hungary gets a more personal event.
-		NOT = { tag = HUN }
-	}
-
-	# Austria
-	option = {
-		name = wwi_austria.32.a
-
-		trigger = {
-			original_tag = AUS
-		}
-	}
-
-	# Indifferent
-	option = {
-		name = wwi_austria.32.b
-
-		trigger = {
-			NOT = { original_tag = AUS }
-			AND = {
-				has_opinion = {
-					target = FROM
-					value > -50
-				}
-				NOT = { has_war_with = FROM }
-			}
-		}
-	}
-
-	# Angry
-	option = {
-		name = wwi_austria.32.c
-
-		trigger = {
-			NOT = { original_tag = AUS }
-			OR = {
-				has_opinion = {
-					target = FROM
-					value < -49
-				}
-				has_war_with = FROM
-			}
-		}
-	}
-}
-
-# News event about forming the Austrian Empire.
-news_event = {
-	id = wwi_austria.33
-	title = wwi_austria.33.t
-	desc = wwi_austria.33.d
-	picture = GFX_news_event_001
-
-	is_triggered_only = yes
-	major = yes
-
-	# Austria
-	option = {
-		name = wwi_austria.33.a
-
-		trigger = {
-			original_tag = AUS
-		}
-	}
-
-	# Supportive
-	option = {
-		name = wwi_austria.33.b
-
-		trigger = {
-			NOT = { original_tag = AUS }
-			AND = {
-				has_opinion = {
-					target = FROM
-					value > 50
-				}
-				NOT = { has_war_with = FROM }
-			}
-		}
-	}
-
-	# Apprehensive
-	option = {
-		name = wwi_austria.33.c
-
-		trigger = {
-			NOT = { original_tag = AUS }
-			AND = {
-				has_opinion = {
-					target = FROM
-					value > -50
-				}
-				NOT = { has_war_with = FROM }
-			}
-		}
-	}
-
-	# Angry
-	option = {
-		name = wwi_austria.33.d
-
-		trigger = {
-			NOT = { original_tag = AUS }
-			OR = {
-				has_opinion = {
-					target = FROM
-					value < -49
-				}
-				has_war_with = FROM
-			}
-		}
-	}
-}
-
-# Tell Germany about the blank cheque.
-country_event = {
-	id = wwi_austria.34
-	title = wwi_austria.34.t
-	desc = wwi_austria.34.d
-	picture = GFX_report_event_german_speech
-
-	is_triggered_only = yes
-	
-	option = {
-		name = wwi_austria.34.a
+		name = event_AUS_pro_germany.1.a
 		ai_chance = { factor = 100 }
-		FROM = { country_event = { id = wwi_austria.35 hours = 1 } }
+		FROM = { country_event = { id = event_AUS_pro_germany.2 hours = 1 } }
 		effect_tooltip = {
 			FROM = { add_ideas = AUS_blank_cheque }
 			add_opinion_modifier = {
@@ -1187,9 +774,9 @@ country_event = {
 	}
 
 	option = {
-		name = wwi_austria.34.b
+		name = event_AUS_pro_germany.1.b
 		ai_chance = { factor = 0 }
-		FROM = { country_event = { id = wwi_austria.36 hours = 1 } }
+		FROM = { country_event = { id = event_AUS_pro_germany.3 hours = 1 } }
 		effect_tooltip = {
 			reverse_add_opinion_modifier = {
 				target = FROM
@@ -1201,15 +788,19 @@ country_event = {
 
 # Tell Austria Germany accepts.
 country_event = {
-	id = wwi_austria.35
-	title = wwi_austria.35.t
-	desc = wwi_austria.35.d
+	id = event_AUS_pro_germany.2
+	title = event_AUS_pro_germany.2.t
+	desc = event_AUS_pro_germany.2.d
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Germany accepts giving Blank Cheque."
+	}
 	
 	option = {
-		name = wwi_austria.35.a
+		name = event_AUS_pro_germany.2.a
 		add_ideas = AUS_blank_cheque
 		add_opinion_modifier = {
 			target = FROM
@@ -1224,15 +815,19 @@ country_event = {
 
 # Tell Austria Germany declines.
 country_event = {
-	id = wwi_austria.36
-	title = wwi_austria.36.t
-	desc = wwi_austria.36.d
+	id = event_AUS_pro_germany.3
+	title = event_AUS_pro_germany.3.t
+	desc = event_AUS_pro_germany.3.d
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Germany declines giving Blank Cheque."
+	}
 	
 	option = {
-		name = wwi_austria.36.a
+		name = event_AUS_pro_germany.3.a
 		add_opinion_modifier = {
 			target = FROM
 			modifier = AUS_blank_cheque_declined
@@ -1242,16 +837,20 @@ country_event = {
 
 # Ask Germany to send submarines by train.
 country_event = {
-	id = wwi_austria.39
-	title = wwi_austria.39.t
-	desc = wwi_austria.39.d
+	id = event_AUS_pro_germany.4
+	title = event_AUS_pro_germany.4.t
+	desc = event_AUS_pro_germany.4.d
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Asking Germany for submarines by train."
+	}
 	
 	# Yes
 	option = {
-		name = wwi_austria.39.a
+		name = event_AUS_pro_germany.4.a
 		ai_chance = { factor = 100 }
 
 		create_equipment_variant = {
@@ -1264,7 +863,7 @@ country_event = {
 		AUS = {
 			custom_effect_tooltip = AUS_rail_import_submarines_delay_tt
 			custom_effect_tooltip = AUS_rail_import_submarines_equipment_tt
-			AUS = { country_event = { id = wwi_austria.41 hours = 1 } }
+			AUS = { country_event = { id = event_AUS_pro_germany.6 hours = 1 } }
 		}
 
 		# Update the focus tooltip if the delay changes.
@@ -1273,39 +872,43 @@ country_event = {
 				type = train_equipment
 				amount = -25
 			}
-			country_event = { id = wwi_austria.40 days = 30 }
-			AUS = { country_event = { id = wwi_austria.40 days = 30 } }
+			country_event = { id = event_AUS_pro_germany.5 days = 30 }
+			AUS = { country_event = { id = event_AUS_pro_germany.5 days = 30 } }
 		}
 	}
 
 	# No
 	option = {
-		name = wwi_austria.39.b
+		name = event_AUS_pro_germany.4.b
 		ai_chance = { factor = 0 }
 
-		AUS = { country_event = { id = wwi_austria.42 hours = 1 } }
+		AUS = { country_event = { id = event_AUS_pro_germany.7 hours = 1 } }
 	}
 }
 
 # Rail transfer of submarines complete.
 country_event = {
-	id = wwi_austria.40
-	title = wwi_austria.40.t
+	id = event_AUS_pro_germany.5
+	title = event_AUS_pro_germany.5.t
 	desc = {
-		text = wwi_austria.40.d_austria
+		text = event_AUS_pro_germany.5.d_austria
 		trigger = { original_tag = AUS }
 	}
 	desc = {
-		text = wwi_austria.40.d_germany
+		text = event_AUS_pro_germany.5.d_germany
 		trigger = { original_tag = GER }
 	}
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Rail transfer of submarines complete."
+	}
 	
 	# Okay (Austria)
 	option = {
-		name = wwi_austria.40.a
+		name = event_AUS_pro_germany.5.a
 
 		custom_effect_tooltip = AUS_rail_import_submarines_equipment_tt
 		hidden_effect = {
@@ -1322,7 +925,7 @@ country_event = {
 
 	# Okay (Germany)
 	option = {
-		name = wwi_austria.40.a
+		name = event_AUS_pro_germany.5.a
 
 		add_equipment_to_stockpile = {
 			type = train_equipment
@@ -1337,16 +940,20 @@ country_event = {
 
 # Germany accepted rail submarine deal.
 country_event = {
-	id = wwi_austria.41
-	title = wwi_austria.41.t
-	desc = wwi_austria.41.d
+	id = event_AUS_pro_germany.6
+	title = event_AUS_pro_germany.6.t
+	desc = event_AUS_pro_germany.6.d
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Germany accepts submarines by train."
+	}
 	
 	# Okay.
 	option = {
-		name = wwi_austria.41.a
+		name = event_AUS_pro_germany.6.a
 		custom_effect_tooltip = AUS_rail_import_submarines_delay_tt
 		custom_effect_tooltip = AUS_rail_import_submarines_equipment_tt
 	}
@@ -1354,38 +961,47 @@ country_event = {
 
 # Germany declined rail submarine deal.
 country_event = {
-	id = wwi_austria.42
-	title = wwi_austria.42.t
-	desc = wwi_austria.42.d
+	id = event_AUS_pro_germany.7
+	title = event_AUS_pro_germany.7.t
+	desc = event_AUS_pro_germany.7.d
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Germany declines submarines by train."
+	}
 	
 	# Okay.
 	option = {
-		name = wwi_austria.42.a
+		name = event_AUS_pro_germany.7.a
 	}
 }
 
-# Tell Albania you're puppeting them.
+add_namespace = event_AUS_albania
+
 country_event = {
-	id = wwi_austria.43
-	title = wwi_austria.43.t
+	id = event_AUS_albania.1
+	title = event_AUS_albania.1.t
 	desc = {
-		text = wwi_austria.43.d_fight
+		text = event_AUS_albania.1.d_fight
 		trigger = { strength_ratio = { tag = FROM ratio > 0.25  } }
 	}
 	desc = {
-		text = wwi_austria.43.d_hopeless
+		text = event_AUS_albania.1.d_hopeless
 	}
 	
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Telling Albania Austria is puppeting them."
+	}
 	
 	# Okay.
 	option = {
-		name = wwi_austria.43.a
+		name = event_AUS_albania.1.a
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -1394,7 +1010,7 @@ country_event = {
 			}
 		}
 
-		FROM = { country_event = { id = wwi_austria.44 hours = 1 } }
+		FROM = { country_event = { id = event_AUS_albania.2 hours = 1 } }
 		effect_tooltip = {
 			FROM = { puppet = { target = ROOT } }
 		}
@@ -1402,7 +1018,7 @@ country_event = {
 
 	# Go to war.
 	option = {
-		name = wwi_austria.43.b
+		name = event_AUS_albania.1.b
 		ai_chance = {
 			factor = 0
 			modifier = {
@@ -1411,7 +1027,7 @@ country_event = {
 			}
 		}
 
-		FROM = { country_event = { id = wwi_austria.45 hours = 1 } }
+		FROM = { country_event = { id = event_AUS_albania.3 hours = 1 } }
 		trigger = { strength_ratio = { tag = FROM ratio > 0.25  } }
 		effect_tooltip = {
 			FROM = {
@@ -1424,36 +1040,42 @@ country_event = {
 	}
 }
 
-# Albania submitted.
 country_event = {
-	id = wwi_austria.44
-	title = wwi_austria.44.t
-	desc = wwi_austria.44.d
+	id = event_AUS_albania.2
+	title = event_AUS_albania.2.t
+	desc = event_AUS_albania.2.d
 	
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Albania agrees to become protectorate."
+	}
 	
 	# Okay.
 	option = {
-		name = wwi_austria.44.a
+		name = event_AUS_albania.2.a
 		puppet = { target = FROM }
 	}
 }
 
-# Albania declined.
 country_event = {
-	id = wwi_austria.45
-	title = wwi_austria.45.t
-	desc = wwi_austria.45.d
+	id = event_AUS_albania.3
+	title = event_AUS_albania.3.t
+	desc = event_AUS_albania.3.d
 	
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Albania declines to become protectorate."
+	}
 	
 	# Okay.
 	option = {
-		name = wwi_austria.45.a
+		name = event_AUS_albania.3.a
 		create_wargoal = {
 			type = annex_everything
 			target = FROM
@@ -1461,21 +1083,26 @@ country_event = {
 	}
 }
 
-# Austria offers to strengthen Ottomans
+add_namespace = event_AUS_pro_ottomans
+
 country_event = {
-	id = wwi_austria.46
-	title = wwi_austria.46.t
-	desc = wwi_austria.46.d
+	id = event_AUS_pro_ottomans.1
+	title = event_AUS_pro_ottomans.1.t
+	desc = event_AUS_pro_ottomans.1.d
 	
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Austria offers to strengthen Ottomans."
+	}
 	
 	# Yes
 	option = {
-		name = wwi_austria.46.a
+		name = event_AUS_pro_ottomans.1.a
 		ai_chance = { factor = 1 }
-		FROM = { country_event = { id = wwi_austria.47 hours = 1 } }
+		FROM = { country_event = { id = event_AUS_pro_ottomans.2 hours = 1 } }
 		effect_tooltip = {
 			add_opinion_modifier = { target = FROM modifier = AUS_strengthen_the_ottomans }
 			reverse_add_opinion_modifier = { target = FROM modifier = AUS_strengthen_the_ottomans }
@@ -1492,25 +1119,28 @@ country_event = {
 
 	# No
 	option = {
-		name = wwi_austria.46.b
+		name = event_AUS_pro_ottomans.1.b
 		ai_chance = { factor = 0 }
-		FROM = { country_event = { id = wwi_austria.48 hours = 1 } }
+		FROM = { country_event = { id = event_AUS_pro_ottomans.3 hours = 1 } }
 	}
 }
 
-# Ottomans agreed.
 country_event = {
-	id = wwi_austria.47
-	title = wwi_austria.47.t
-	desc = wwi_austria.47.d
+	id = event_AUS_pro_ottomans.2
+	title = event_AUS_pro_ottomans.2.t
+	desc = event_AUS_pro_ottomans.2.d
 	
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Ottomans agreed to be strengthened by Austria."
+	}
 	
 	# Okay.
 	option = {
-		name = wwi_austria.47.a
+		name = event_AUS_pro_ottomans.2.a
 		add_opinion_modifier = { target = FROM modifier = AUS_strengthen_the_ottomans }
 		reverse_add_opinion_modifier = { target = FROM modifier = AUS_strengthen_the_ottomans }
 		FROM = {
@@ -1526,35 +1156,43 @@ country_event = {
 	}
 }
 
-# Ottomans declined.
 country_event = {
-	id = wwi_austria.48
-	title = wwi_austria.48.t
-	desc = wwi_austria.48.d
+	id = event_AUS_pro_ottomans.3
+	title = event_AUS_pro_ottomans.3.t
+	desc = event_AUS_pro_ottomans.3.d
 	
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Ottomans declined to be strengthened by Austria."
+	}
 	
 	# Okay.
 	option = {
-		name = wwi_austria.48.a
+		name = event_AUS_pro_ottomans.3.a
 	}
 }
 
-# Austria seeks closer ties with UK.
+add_namespace = event_AUS_pro_britain
+
 country_event = {
-	id = wwi_austria.49
-	title = wwi_austria.49.t
-	desc = wwi_austria.49.d
+	id = event_AUS_pro_britain.1
+	title = event_AUS_pro_britain.1.t
+	desc = event_AUS_pro_britain.1.d
 	
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Austria seeks closer ties with UK."
+	}
 	
 	# Okay
 	option = {
-		name = wwi_austria.49.a
+		name = event_AUS_pro_britain.1.a
 		effect_tooltip = {
 			FROM = {
 				add_timed_idea = {
@@ -1566,19 +1204,22 @@ country_event = {
 	}
 }
 
-# Anglo-Austrian Naval Treaty
 country_event = {
-	id = wwi_austria.50
-	title = wwi_austria.50.t
-	desc = wwi_austria.50.d
+	id = event_AUS_pro_britain.2
+	title = event_AUS_pro_britain.2.t
+	desc = event_AUS_pro_britain.2.d
 	
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Anglo-Austrian naval treaty."
+	}
 	
 	# Yes
 	option = {
-		name = wwi_austria.50.a
+		name = event_AUS_pro_britain.2.a
 		ai_chance = { factor = 1 }
 
 		effect_tooltip = {
@@ -1596,30 +1237,33 @@ country_event = {
 			}
 		}
 
-		FROM = { country_event = { id = wwi_austria.51 hours = 1 } }
+		FROM = { country_event = { id = event_AUS_pro_britain.3 hours = 1 } }
 	}
 
 	# No
 	option = {
-		name = wwi_austria.50.b
+		name = event_AUS_pro_britain.2.b
 		ai_chance = { factor = 0 }
-		FROM = { country_event = { id = wwi_austria.52 hours = 1 } }
+		FROM = { country_event = { id = event_AUS_pro_britain.4 hours = 1 } }
 	}
 }
 
-# Britain agreed.
 country_event = {
-	id = wwi_austria.51
-	title = wwi_austria.51.t
-	desc = wwi_austria.51.d
+	id = event_AUS_pro_britain.3
+	title = event_AUS_pro_britain.3.t
+	desc = event_AUS_pro_britain.3.d
 	
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Britain agrees to Anglo-Austrian naval treaty."
+	}
 	
 	# Okay.
 	option = {
-		name = wwi_austria.51.a
+		name = event_AUS_pro_britain.3.a
 
 		add_equipment_to_stockpile = {
 		    type = convoy
@@ -1636,22 +1280,24 @@ country_event = {
 	}
 }
 
-# Britain declined.
 country_event = {
-	id = wwi_austria.52
-	title = wwi_austria.52.t
-	desc = wwi_austria.52.d
+	id = event_AUS_pro_britain.4
+	title = event_AUS_pro_britain.4.t
+	desc = event_AUS_pro_britain.4.d
 	
 	picture = GFX_report_event_german_speech
+
+	immediate = {
+		log = "([THIS.GetName] country event) Britain declines Anglo-Austrian naval treaty."
+	}
 
 	is_triggered_only = yes
 	
 	# Okay.
 	option = {
-		name = wwi_austria.52.a
+		name = event_AUS_pro_britain.4.a
 	}
 }
-
 
 add_namespace = event_AUS_offer_military_alliance
 
@@ -1673,6 +1319,10 @@ country_event = {
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Invite Someone to Concert of Europe."
+	}
 	
 	# Yes
 	option = {
@@ -1724,6 +1374,10 @@ country_event = {
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Austria faction recipient accepted.""
+	}
 	
 	# Okay.
 	option = {
@@ -1732,7 +1386,7 @@ country_event = {
 	}
 }
 
-# Faction recipient declined.
+# 
 country_event = {
 	id = event_AUS_offer_military_alliance.3
 	title = event_AUS_offer_military_alliance.3.t
@@ -1741,6 +1395,10 @@ country_event = {
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Austria faction recipient declined."
+	}
 	
 	# Okay.
 	option = {
@@ -1750,7 +1408,6 @@ country_event = {
 
 add_namespace = event_AUS_south_german_influence
 
-# Warn Germany that Austria has taken the focus.
 news_event = {
 	id = event_AUS_south_german_influence.1
 	title = event_AUS_south_german_influence.1.t
@@ -1759,6 +1416,10 @@ news_event = {
 
 	is_triggered_only = yes
 	major = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Warn Germany that Austria has taken the south-german influence focus."
+	}
 	
 	# Germany is angry
 	option = {
@@ -1788,7 +1449,6 @@ news_event = {
 	} 
 }
 
-# Tell Germany Austria is giving economic aid for vassal autonomy
 country_event = {
 	id = event_AUS_south_german_influence.2
 	title = event_AUS_south_german_influence.2.t
@@ -1797,6 +1457,10 @@ country_event = {
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Tell Germany Austria is giving economic aid for vassal autonomy."
+	}
 	
 	# No
 	option = {
@@ -1876,7 +1540,6 @@ country_event = {
 	}
 }
 
-# Tell Austria autonomy was granted.
 country_event = {
 	id = event_AUS_south_german_influence.3
 	title = event_AUS_south_german_influence.3.t
@@ -1885,6 +1548,10 @@ country_event = {
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Tell Austria request for south-german autonomy was accepted."
+	}
 	
 	# Ok
 	option = {
@@ -1901,7 +1568,6 @@ country_event = {
 	}
 }
 
-# Tell Austria autonomy was denied.
 country_event = {
 	id = event_AUS_south_german_influence.4
 	title = event_AUS_south_german_influence.4.t
@@ -1911,6 +1577,10 @@ country_event = {
 
 	is_triggered_only = yes
 	
+	immediate = {
+		log = "([THIS.GetName] country event) Tell Austria request for south-german autonomy was denied."
+	}
+
 	# Ok
 	option = {
 		name = event_AUS_south_german_influence.4.a
@@ -1924,7 +1594,6 @@ country_event = {
 	}
 }
 
-# Tell Germany a state has seceded.
 country_event = {
 	id = event_AUS_south_german_influence.5
 	title = event_AUS_south_german_influence.5.t
@@ -1933,6 +1602,10 @@ country_event = {
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Tell Germany a south-german state has seceded."
+	}
 	
 	# Ok
 	option = {
@@ -1958,7 +1631,6 @@ country_event = {
 	}
 }
 
-# Tell Austria a state was re-absorbed.
 country_event = {
 	id = event_AUS_south_german_influence.6
 	title = event_AUS_south_german_influence.6.t
@@ -1967,6 +1639,10 @@ country_event = {
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Tell Austria a south-german state was re-absorbed."
+	}
 	
 	# Ok
 	option = {
@@ -1995,7 +1671,6 @@ country_event = {
 
 add_namespace = event_AUS_placate_romania
 
-# Offer Romania Transylvania
 country_event = {
 	id = event_AUS_placate_romania.1
 	title = event_AUS_placate_romania.1.t
@@ -2004,6 +1679,10 @@ country_event = {
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Placate Romania with Transylvania."
+	}
 	
 	# Yes
 	option = {
@@ -2063,7 +1742,6 @@ country_event = {
 	}
 }
 
-# Romania accepts
 country_event = {
 	id = event_AUS_placate_romania.2
 	title = event_AUS_placate_romania.2.t
@@ -2072,6 +1750,10 @@ country_event = {
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Romania accepts placation."
+	}
 	
 	# Ok
 	option = {
@@ -2112,7 +1794,6 @@ country_event = {
 	}
 }
 
-# Romania declines
 country_event = {
 	id = event_AUS_placate_romania.3
 	title = event_AUS_placate_romania.3.t
@@ -2121,6 +1802,10 @@ country_event = {
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Romania declines placation."
+	}
 	
 	# Ok
 	option = {
@@ -2130,7 +1815,6 @@ country_event = {
 
 add_namespace = event_AUS_goad_bulgaria_into_war
 
-# Bulgaria gets offered arms for partitioning Serbia
 country_event = {
 	id = event_AUS_goad_bulgaria_into_war.1
 	title = event_AUS_goad_bulgaria_into_war.1.t
@@ -2139,6 +1823,10 @@ country_event = {
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Bulgaria gets offered arms for partitioning Serbia."
+	}
 	
 	# Yes
 	option = {
@@ -2179,7 +1867,6 @@ country_event = {
 	}
 }
 
-# Bulgaria accepts.
 country_event = {
 	id = event_AUS_goad_bulgaria_into_war.2
 	title = event_AUS_goad_bulgaria_into_war.2.t
@@ -2188,6 +1875,10 @@ country_event = {
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Bulgaria accepts being goaded into war."
+	}
 	
 	# Ok
 	option = {
@@ -2200,7 +1891,6 @@ country_event = {
 	}
 }
 
-# Bulgaria declines.
 country_event = {
 	id = event_AUS_goad_bulgaria_into_war.3
 	title = event_AUS_goad_bulgaria_into_war.3.t
@@ -2209,6 +1899,10 @@ country_event = {
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Bulgaria declines being goaded into war."
+	}
 	
 	# Ok
 	option = {
@@ -2216,7 +1910,6 @@ country_event = {
 	}
 }
 
-# Tell Serbia they're getting attacked because Austria took a focus.
 country_event = {
 	id = event_AUS_goad_bulgaria_into_war.4
 	title = event_AUS_goad_bulgaria_into_war.4.t
@@ -2225,6 +1918,10 @@ country_event = {
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Tell Serbia they're getting attacked because Austria took a focus."
+	}
 	
 	# Ok
 	option = {
@@ -2242,6 +1939,8 @@ news_event = {
 	major = yes
 
 	immediate = {
+		log = "([THIS.GetName] country event) Austria absorbs remaining Serbian territory."
+
 		125 = {
 			if = {
 				limit = {
@@ -2311,7 +2010,6 @@ news_event = {
 
 add_namespace = event_AUS_buy_orient_railway_shares
 
-# Tell countries about Austrian rail shares
 country_event = {
 	id = event_AUS_buy_orient_railway_shares.1
 	title = event_AUS_buy_orient_railway_shares.1.t
@@ -2320,6 +2018,10 @@ country_event = {
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Tell countries about Austrian rail shares."
+	}
 	
 	# Yes
 	option = {
@@ -2352,7 +2054,6 @@ country_event = {
 	}
 }
 
-# A country accepts Austrian influence.
 country_event = {
 	id = event_AUS_buy_orient_railway_shares.2
 	title = event_AUS_buy_orient_railway_shares.2.t
@@ -2361,6 +2062,10 @@ country_event = {
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) A country accepts Austrian influence via railway shares."
+	}
 	
 	# Ok
 	option = {
@@ -2375,7 +2080,6 @@ country_event = {
 
 add_namespace = event_AUS_complete_the_novi_pazar_line
 
-# Tell the Sanjak owner the railway is built. Offer them an ideology boost.
 country_event = {
 	id = event_AUS_complete_the_novi_pazar_line.1
 	title = event_AUS_complete_the_novi_pazar_line.1.t
@@ -2384,6 +2088,10 @@ country_event = {
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Offer Sanjak owner ideology boost."
+	}
 	
 	# Yes
 	option = {
@@ -2420,6 +2128,10 @@ country_event = {
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Sanjak owner has accepted influence."
+	}
 	
 	# Ok
 	option = {
@@ -2451,6 +2163,10 @@ news_event = {
 
 	is_triggered_only = yes
 	major = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) BrAustria occupies the Sanjak."
+	}
 	
 	# Previous sanjak owner
 	option = {
@@ -2498,6 +2214,8 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "([THIS.GetName] country event) The Kaisermanover."
+
 		country_event = { id = event_AUS_kaisermanover.1 days = 365 }
 	}
 	
@@ -2536,6 +2254,10 @@ country_event = {
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Austria proposes handing off ships to subject for industry."
+	}
 	
 	# Yes
 	option = {
@@ -2563,7 +2285,6 @@ country_event = {
 	}
 }
 
-# Tell Austria yes
 country_event = {
 	id = events_AUS_ships_for_industry.2
 	title = events_AUS_ships_for_industry.2.t
@@ -2572,6 +2293,10 @@ country_event = {
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Subject accepts ships for industry."
+	}
 	
 	# Yes
 	option = {
@@ -2592,7 +2317,6 @@ country_event = {
 	}
 }
 
-# Tell Austria no
 country_event = {
 	id = events_AUS_ships_for_industry.3
 	title = events_AUS_ships_for_industry.3.t
@@ -2601,6 +2325,10 @@ country_event = {
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Subject declines ships for industry."
+	}
 	
 	# Yes
 	option = {
@@ -2610,7 +2338,6 @@ country_event = {
 
 add_namespace = events_AUS_foment_obrenovic_sympathies
 
-# Initial event to warn Serbia
 news_event = {
 	id = events_AUS_foment_obrenovic_sympathies.1
 	title = events_AUS_foment_obrenovic_sympathies.1.t
@@ -2619,6 +2346,10 @@ news_event = {
 
 	is_triggered_only = yes
 	major = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Initial event to warn Serbia about Obrenovic sympathies system."
+	}
 	
 	# Serbia
 	option = {
@@ -2653,7 +2384,6 @@ news_event = {
 	}
 }
 
-# Sympathies have been fomented
 country_event = {
 	id = events_AUS_foment_obrenovic_sympathies.2
 	title = events_AUS_foment_obrenovic_sympathies.2.t
@@ -2661,6 +2391,10 @@ country_event = {
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Obrenovic sympathies have been fomented."
+	}
 	
 	# Uh oh
 	option = {
@@ -2669,7 +2403,6 @@ country_event = {
 	}
 }
 
-# Sympathies wane
 country_event = {
 	id = events_AUS_foment_obrenovic_sympathies.3
 	title = events_AUS_foment_obrenovic_sympathies.3.t
@@ -2684,6 +2417,10 @@ country_event = {
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Obrenovic sympathies wane."
+	}
 	
 	# Ok
 	option = {
@@ -2699,7 +2436,6 @@ country_event = {
 	}
 }
 
-# Hidden event to select the province losing Obrenovic sympathies. To be fired in the scope of that province's controller (Serbia).
 country_event = {
 	id = events_AUS_foment_obrenovic_sympathies.4
 	title = events_AUS_foment_obrenovic_sympathies.4.t
@@ -2708,6 +2444,10 @@ country_event = {
 
 	is_triggered_only = yes
 	hidden = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Hidden event to select the province losing Obrenovic sympathies. To be fired in the scope of that province's controller (Serbia)."
+	}
 
 	immediate = {
 		log = "Finding state most recently flagged as fomented Obrenovic sympathies."
@@ -2746,7 +2486,6 @@ country_event = {
 	}
 }
 
-# Trigger the Obrenovic coup.
 country_event = {
 	id = events_AUS_foment_obrenovic_sympathies.5
 	title = events_AUS_foment_obrenovic_sympathies.5.t
@@ -2754,6 +2493,10 @@ country_event = {
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Trigger the Obrenovic coup."
+	}
 
 	option = {
 		name = events_AUS_foment_obrenovic_sympathies.5.a
@@ -2799,7 +2542,6 @@ country_event = {
 	}
 }
 
-# The Serbian Obrenovic coup.
 news_event = {
 	id = events_AUS_foment_obrenovic_sympathies.6
 	title = events_AUS_foment_obrenovic_sympathies.6.t
@@ -2809,6 +2551,10 @@ news_event = {
 	is_triggered_only = yes
 	major = yes
 	fire_for_sender = no
+
+	immediate = {
+		log = "([THIS.GetName] news event) The Serbian Obrenovic coup."
+	}
 
 	option = {
 		name = events_AUS_foment_obrenovic_sympathies.6.a_positive
@@ -2831,7 +2577,6 @@ news_event = {
 
 add_namespace = events_AUS_erode_hungarian_influence
 
-# Warn Hungary
 country_event = {
 	id = events_AUS_erode_hungarian_influence.1
 	title = events_AUS_erode_hungarian_influence.1.t
@@ -2839,6 +2584,10 @@ country_event = {
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Warn Hungary about eroding Hungarian influence."
+	}
 
 	option = {
 		name = events_AUS_erode_hungarian_influence.1.a
@@ -2849,7 +2598,6 @@ country_event = {
 	}
 }
 
-# Tell hungary a state was taken by flotilla.
 country_event = {
 	id = events_AUS_erode_hungarian_influence.2
 	title = events_AUS_erode_hungarian_influence.2.t
@@ -2857,6 +2605,10 @@ country_event = {
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Tell hungary a state was taken by flotilla."
+	}
 
 	option = {
 		name = events_AUS_erode_hungarian_influence.2.a
@@ -2875,7 +2627,6 @@ country_event = {
 	}
 }
 
-# Tell hungary and austria a state timed out.
 country_event = {
 	id = events_AUS_erode_hungarian_influence.3
 	title = events_AUS_erode_hungarian_influence.3.t
@@ -2894,6 +2645,10 @@ country_event = {
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Tell hungary and austria a state timed out."
+	}
 
 	option = {
 		name = events_AUS_erode_hungarian_influence.3.a_austria
@@ -2922,7 +2677,6 @@ country_event = {
 	}
 }
 
-# Tell Hungary Budapest was taken.
 country_event = {
 	id = events_AUS_erode_hungarian_influence.4
 	title = events_AUS_erode_hungarian_influence.4.t
@@ -2930,6 +2684,10 @@ country_event = {
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Tell Hungary Budapest was taken."
+	}
 
 	option = {
 		name = events_AUS_erode_hungarian_influence.4.a

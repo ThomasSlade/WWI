@@ -85,8 +85,8 @@ on_actions = {
 					}
 				}
 				# Attacker or defender could be Serbia/Serbia's opponent, and the event itself will filter Serbia out, so just fire to both of them.
-				ROOT = { country_event = { id = wwi_austria.9 random_days = 2 } }
-				FROM = { country_event = { id = wwi_austria.9 random_days = 2 } }
+				ROOT = { country_event = { id = event_AUS_generic.4 random_days = 2 } }
+				FROM = { country_event = { id = event_AUS_generic.4 random_days = 2 } }
 			}
 
 			# Clear partnership ideas that don't make sense if the countries are fighting.

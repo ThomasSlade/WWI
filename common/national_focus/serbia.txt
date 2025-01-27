@@ -46,9 +46,7 @@ focus_tree = {
 				}
 			}
 
-			hidden_effect = {
-				AUS = { country_event = wwi_austria.5 }
-			}
+			AUS = { country_event = { id = event_AUS_assassination.6 hours = 1 } }
 		}
 	}
 
@@ -914,11 +912,11 @@ focus_tree = {
 				}
 				if = {
 					limit = { has_war_with = 171.controller }
-					171 = { owner = { country_event = { id = wwi_austria.9 random_hours = 48 } } }
+					171 = { owner = { country_event = { id = event_AUS_generic.4 hours = 1 } } }
 				}
 				if = {
 					limit = { has_war_with = 232.controller }
-					232 = { owner = { country_event = { id = wwi_austria.9 random_hours = 48 } } }
+					232 = { owner = { country_event = { id = event_AUS_generic.4 hours = 1 } } }
 				}
 			}
 			else = {
@@ -929,6 +927,8 @@ focus_tree = {
 					var = serb_vojvodina_armament
 					value = 0
 				}
+
+				AUS = { country_event = { id = event_AUS_generic.1 hours = 1 } }
 			}
 		}
 	}
@@ -1327,7 +1327,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			AUS = { country_event = wwi_austria.10 }
+			AUS = { country_event = event_AUS_serbian_reconciliation.1 }
 			custom_effect_tooltip = if_they_accept
 			effect_tooltip = {
 				transfer_state = 224
@@ -1383,7 +1383,7 @@ focus_tree = {
 			}
 
 			effect_tooltip = {
-				AUS = { country_event = wwi_austria.13 }
+				AUS = { country_event = event_AUS_serbian_reconciliation.4 }
 				custom_effect_tooltip = if_they_accept
 				add_ideas = SER_idea_economic_subservience
 				custom_effect_tooltip = SER_renegotiate_bosnia_2_tt
@@ -1426,7 +1426,7 @@ focus_tree = {
 					target = SER
 					modifier = AUS_serb_rapproachment
 				}
-				country_event = wwi_austria.11
+				country_event = { id = event_AUS_serbian_reconciliation.2 hours = 1
 
 				if = {
 					limit = {

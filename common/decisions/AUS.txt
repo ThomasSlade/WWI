@@ -31,11 +31,11 @@ decision_category_AUS_influence_adriatic_territory = {
 				FROM = { save_event_target_as = influenced_free_city }
 				if = {
 					limit = { original_tag = AUS }
-					ITA = { country_event = { id = wwi_austria.17 hours = 1 } }
+					ITA = { country_event = { id = event_AUS_italian_neutrality.4 hours = 1 } }
 				}
 				else_if = {
 					limit = { original_tag = ITA }
-					AUS = { country_event = { id = wwi_austria.17 hours = 1 } }
+					AUS = { country_event = { id = event_AUS_italian_neutrality.4 hours = 1 } }
 				}
 			}
 		}
@@ -111,11 +111,11 @@ decision_category_AUS_influence_adriatic_territory = {
 				}
 				if = {
 					limit = { original_tag = AUS }
-					ITA = { country_event = { id = wwi_austria.18 hours = 1 } }
+					ITA = { country_event = { id = event_AUS_italian_neutrality.5 hours = 1 } }
 				}
 				else_if = {
 					limit = { original_tag = ITA }
-					AUS = { country_event = { id = wwi_austria.18 hours = 1 } }
+					AUS = { country_event = { id = event_AUS_italian_neutrality.5 hours = 1 } }
 				}
 			}
 		}
@@ -157,7 +157,7 @@ decision_category_AUS_negotiate_croatia = {
 			set_variable = { territory_negotiation_offer = 0 }
 			AUS_give_serbia = yes
 			AUS_receive_croatia = yes
-			HUN = { country_event = { id = wwi_austria.24 hours = 1 } }
+			HUN = { country_event = { id = event_AUS_reform.6 hours = 1 } }
 		}
 	}
 
@@ -179,7 +179,7 @@ decision_category_AUS_negotiate_croatia = {
 			set_variable = { territory_negotiation_offer = 1 }
 			AUS_give_wallachia = yes
 			AUS_receive_croatia = yes
-			HUN = { country_event = { id = wwi_austria.24 hours = 1 } }
+			HUN = { country_event = { id = event_AUS_reform.6 hours = 1 } }
 		}
 	}
 
@@ -202,7 +202,7 @@ decision_category_AUS_negotiate_croatia = {
 			set_variable = { territory_negotiation_offer = 2 }
 			AUS_give_moldovia = yes
 			AUS_receive_croatia = yes
-			HUN = { country_event = { id = wwi_austria.24 hours = 1 } }
+			HUN = { country_event = { id = event_AUS_reform.6 hours = 1 } }
 		}
 	}
 
@@ -224,7 +224,7 @@ decision_category_AUS_negotiate_croatia = {
 			set_variable = { territory_negotiation_offer = 3 }
 			AUS_give_ruthenia = yes
 			AUS_receive_croatia = yes
-			HUN = { country_event = { id = wwi_austria.24 hours = 1 } }
+			HUN = { country_event = { id = event_AUS_reform.6 hours = 1 } }
 		}
 	}
 
@@ -246,7 +246,7 @@ decision_category_AUS_negotiate_croatia = {
 			set_variable = { territory_negotiation_offer = 4 }
 			AUS_give_poland = yes
 			AUS_receive_croatia = yes
-			HUN = { country_event = { id = wwi_austria.24 hours = 1 } }
+			HUN = { country_event = { id = event_AUS_reform.6 hours = 1 } }
 		}
 	}
 }
@@ -270,7 +270,7 @@ decision_category_AUS_negotiate_transylvania = {
 			set_variable = { territory_negotiation_offer = 0 }
 			AUS_give_serbia = yes
 			AUS_receive_translyvania = yes
-			HUN = { country_event = { id = wwi_austria.24 hours = 1 } }
+			HUN = { country_event = { id = event_AUS_reform.6 hours = 1 } }
 		}
 	}
 
@@ -292,7 +292,7 @@ decision_category_AUS_negotiate_transylvania = {
 			set_variable = { territory_negotiation_offer = 1 }
 			AUS_give_wallachia = yes
 			AUS_receive_translyvania = yes
-			HUN = { country_event = { id = wwi_austria.24 hours = 1 } }
+			HUN = { country_event = { id = event_AUS_reform.6 hours = 1 } }
 		}
 	}
 
@@ -314,7 +314,7 @@ decision_category_AUS_negotiate_transylvania = {
 			set_variable = { territory_negotiation_offer = 2 }
 			AUS_give_moldovia = yes
 			AUS_receive_translyvania = yes
-			HUN = { country_event = { id = wwi_austria.24 hours = 1 } }
+			HUN = { country_event = { id = event_AUS_reform.6 hours = 1 } }
 		}
 	}
 
@@ -336,7 +336,7 @@ decision_category_AUS_negotiate_transylvania = {
 			set_variable = { territory_negotiation_offer = 3 }
 			AUS_give_ruthenia = yes
 			AUS_receive_translyvania = yes
-			HUN = { country_event = { id = wwi_austria.24 hours = 1 } }
+			HUN = { country_event = { id = event_AUS_reform.6 hours = 1 } }
 		}
 	}
 
@@ -358,7 +358,7 @@ decision_category_AUS_negotiate_transylvania = {
 			set_variable = { territory_negotiation_offer = 4 }
 			AUS_give_poland = yes
 			AUS_receive_translyvania = yes
-			HUN = { country_event = { id = wwi_austria.24 hours = 1 } }
+			HUN = { country_event = { id = event_AUS_reform.6 hours = 1 } }
 		}
 	}
 }
@@ -378,7 +378,7 @@ decision_category_AUS_give_away_bukovina = {
 		}
 
 		complete_effect = {
-			FROM = { country_event = { id = wwi_austria.27 hours = 1 } }
+			FROM = { country_event = { id = event_AUS_reform.8 hours = 1 } }
 			custom_effect_tooltip = if_they_accept_tt
 			effect_tooltip = {
 				FROM = {
@@ -460,7 +460,7 @@ decision_category_AUS_manage_the_empire = {
 		}
 
 		complete_effect = {
-			HUN = { country_event = { id = wwi_austria.29 hours = 1 } }
+			HUN = { country_event = { id = event_AUS_reform.10 hours = 1 } }
 		}
 
 		ai_will_do = {
@@ -501,7 +501,7 @@ decision_category_AUS_manage_the_empire = {
 			}
 
 			FROM = { save_event_target_as = seized_territory }
-			HUN = { country_event = { id = wwi_austria.30 hours = 1 } }
+			HUN = { country_event = { id = event_AUS_reform.11 hours = 1 } }
 		}
 
 		ai_will_do = {

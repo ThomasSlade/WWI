@@ -133,8 +133,8 @@ SAX = {
 	color_ui = rgb { 9 99 45 }
 }
 ALB = {
-	color = rgb { 125 51 35 }
-	color_ui = rgb { 125 51 35 }
+	color = rgb { 115 52 64 }
+	color_ui = rgb { 115 52 64 }
 }
 SWI = {
 	color = rgb { 122 34 32 }

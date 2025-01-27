@@ -13,7 +13,7 @@ country_event = {
 	option = {
 		name = wwi_serbia.1.a
 		ai_chance = { factor = 100 }
-		AUS = { country_event = wwi_austria.3 }
+		AUS = { country_event = { id = event_AUS_assassination.4 hours = 1 } }
 	}
 
 	# Accept the ultimatum.
@@ -28,7 +28,7 @@ country_event = {
 			idea = SER_austrian_jurisdiction
 			days = 365
 		}
-		AUS = { country_event = wwi_austria.4 }
+		AUS = { country_event = { id = event_AUS_assassination.5 hours = 1 } }
 	}
 }
 
@@ -152,7 +152,7 @@ country_event = {
 		}
 
 		hidden_effect = {
-			FROM = { country_event = wwi_austria.8 }
+			FROM = { country_event = event_AUS_generic.3 }
 			FROM = {
 				remove_ideas = {
 					AUS_narodna_odbrana
@@ -401,7 +401,7 @@ country_event = {
 		set_country_flag = requested_herzegovina
 
 		169 ={ save_event_target_as = requested_bosnia_province }
-		AUS = { country_event = { id = wwi_austria.13 hours = 1 } }
+		AUS = { country_event = { id = event_AUS_serbian_reconciliation.4 hours = 1 } }
 	}
 
 	# Herzegovina after refusal
@@ -424,7 +424,7 @@ country_event = {
 		set_country_flag = requested_herzegovina
 
 		169 ={ save_event_target_as = requested_bosnia_province }
-		AUS = { country_event = { id = wwi_austria.13 hours = 1 } }
+		AUS = { country_event = { id = event_AUS_serbian_reconciliation.4 hours = 1 } }
 	}
 
 	# Banja Luka
@@ -447,7 +447,7 @@ country_event = {
 		set_country_flag = requested_banja_luka
 
 		146 ={ save_event_target_as = requested_bosnia_province }
-		AUS = { country_event = { id = wwi_austria.13 hours = 1 } }
+		AUS = { country_event = { id = event_AUS_serbian_reconciliation.4 hours = 1 } }
 	}
 
 	# Banja Luka after refusal
@@ -470,7 +470,7 @@ country_event = {
 		set_country_flag = requested_banja_luka
 
 		146 ={ save_event_target_as = requested_bosnia_province }
-		AUS = { country_event = { id = wwi_austria.13 hours = 1 } }
+		AUS = { country_event = { id = event_AUS_serbian_reconciliation.4 hours = 1 } }
 	}
 
 	# Nevermind

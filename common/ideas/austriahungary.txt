@@ -385,7 +385,8 @@ ideas = {
 		AUS_austrian_influenced_free_city = {
 			picture = aus_austrian_free_city
 
-			modifier = {
+			targeted_modifier = {
+				tag = AUS
 				cic_to_target_factor = 0.5
 				mic_to_target_factor = 1
 				extra_trade_to_target_factor = 0.5
@@ -395,7 +396,8 @@ ideas = {
 		AUS_italian_influenced_free_city = {
 			picture = aus_italian_free_city
 
-			modifier = {
+			targeted_modifier = {
+				tag  = ITA
 				cic_to_target_factor = 0.5
 				mic_to_target_factor = 1
 				extra_trade_to_target_factor = 0.5

@@ -287,6 +287,18 @@ spriteTypes = {
 		name = "GFX_idea_aus_german_austrian_common_market"
 		texturefile = "gfx/interface/ideas/idea_aus_german_austrian_common_market.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_aus_austrian_influenced_free_city"
+		texturefile = "gfx/interface/ideas/idea_aus_austrian_influenced_free_city.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_aus_uninfluenced_free_city"
+		texturefile = "gfx/interface/ideas/idea_aus_uninfluenced_free_city.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_aus_italian_influenced_free_city"
+		texturefile = "gfx/interface/ideas/idea_aus_italian_influenced_free_city.dds"
+	}
 
 	# Austria resistances
 	spriteType = {

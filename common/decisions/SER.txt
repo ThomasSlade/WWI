@@ -49,7 +49,7 @@ political_actions = {
 			}
 
 			hidden_effect = {
-				FROM = { country_event = wwi_austria.8 }
+				FROM = { country_event = event_AUS_generic.3 }
 				FROM = {
 					remove_ideas = {
 						AUS_narodna_odbrana
@@ -233,10 +233,10 @@ decision_category_SER_insurgencies = {
 
 		complete_effect = {
 			171 = {
-				owner = { country_event = { id = wwi_austria.9 } }
+				owner = { country_event = { id = event_AUS_generic.4 } }
 			}
 			232 = {
-				owner = { country_event = { id = wwi_austria.9 } }
+				owner = { country_event = { id = event_AUS_generic.4 } }
 			}
 		}
 	}
@@ -260,7 +260,7 @@ decision_category_SER_treaty_ports = {
 		complete_effect = {
 			set_variable = { serbia_requested_port = 152 }
 
-			AUS = { country_event = { id = wwi_austria.12 hours = 1 } }
+			AUS = { country_event = { id = event_AUS_serbian_reconciliation.3 hours = 1 } }
 		}
 	}
 
@@ -281,7 +281,7 @@ decision_category_SER_treaty_ports = {
 		complete_effect = {
 			set_variable = { serbia_requested_port = 165 }
 
-			AUS = { country_event = { id = wwi_austria.12 hours = 1 } }
+			AUS = { country_event = { id = event_AUS_serbian_reconciliation.3 hours = 1 } }
 		}
 	}
 
@@ -302,7 +302,7 @@ decision_category_SER_treaty_ports = {
 		complete_effect = {
 			set_variable = { serbia_requested_port = 208 }
 
-			AUS = { country_event = { id = wwi_austria.12 hours = 1 } }
+			AUS = { country_event = { id = event_AUS_serbian_reconciliation.3 hours = 1 } }
 		}
 	}
 }

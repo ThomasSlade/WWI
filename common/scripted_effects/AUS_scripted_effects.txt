@@ -412,7 +412,7 @@ AUS_form_united_states_of_greater_austria = {
 	set_cosmetic_tag = AUS_USGA
 
 	hidden_effect = {
-		news_event = { id = wwi_austria.19 days = 1 }
+		news_event = { id = event_AUS_reform.1 days = 1 }
 	}
 }
 
@@ -423,7 +423,7 @@ AUS_form_austrian_empire = {
 	set_cosmetic_tag = AUS_EMPIRE
 
 	hidden_effect = {
-		news_event = { id = wwi_austria.33 days = 1 }
+		news_event = { id = event_AUS_reform.14 days = 1 }
 	}
 }
 
@@ -441,7 +441,7 @@ AUS_form_austria_hungary = {
 	hidden_effect = {
 		if = {
 			limit = { has_subject = HUN }
-			HUN = { country_event = { id =  wwi_austria.31 hours = 1 } }
+			HUN = { country_event = { id =  event_AUS_reform.12 hours = 1 } }
 		}
 	}
 }

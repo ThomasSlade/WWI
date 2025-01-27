@@ -1,0 +1,574 @@
+
+add_namespace = event_AUS_reform
+
+news_event = {
+	id = event_AUS_reform.1
+	title = event_AUS_reform.1.t
+	desc = event_AUS_reform.1.d
+	picture = GFX_news_event_001
+
+	is_triggered_only = yes
+	major = yes
+
+	immediate = {
+		log = "([THIS.GetName] news event) United States of Greater Austria is formed."
+	}
+
+	# Austria
+	option = {
+		name = event_AUS_reform.1.a
+
+		trigger = {
+			original_tag = AUS
+		}
+	}
+
+	# Hungary
+	option = {
+		name = event_AUS_reform.1.d
+		effect_tooltip = {
+			FROM = { AUS_form_united_states_of_greater_austria = yes }
+		}
+
+		trigger = {
+			original_tag = HUN
+		}
+	}
+
+	# Angry
+	option = {
+		name = event_AUS_reform.1.c
+		effect_tooltip = {
+			FROM = { AUS_form_united_states_of_greater_austria = yes }
+		}
+
+		trigger = {
+			NOT = { original_tag = AUS }
+			NOT = { original_tag = HUN }
+			OR = {
+				has_opinion = {
+					target = FROM
+					value < -49
+				}
+				has_war_with = FROM
+			}
+		}
+	}
+
+	# Indifferent
+	option = {
+		name = event_AUS_reform.1.b
+		effect_tooltip = {
+			FROM = { AUS_form_united_states_of_greater_austria = yes }
+		}
+
+		trigger = {
+			NOT = { original_tag = AUS }
+			NOT = { original_tag = HUN }
+			AND = {
+				has_opinion = {
+					target = FROM
+					value > -50
+				}
+				NOT = { has_war_with = FROM }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = event_AUS_reform.2
+	title = event_AUS_reform.2.t
+	desc = event_AUS_reform.trialist_reform_d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Releasing Croatia as a trialist kingdom."
+	}
+
+	option = {
+		name = event_AUS_reform.trialist_reform_a
+
+		effect_tooltip = {
+			release_puppet_on_controlled = SCS
+		}
+	}
+}
+
+country_event = {
+	id = event_AUS_reform.3
+	title = event_AUS_reform.3.t
+	desc = event_AUS_reform.trialist_reform_d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Releasing Poland as a trialist kingdom."
+	}
+
+	option = {
+		name = event_AUS_reform.trialist_reform_a
+
+		effect_tooltip = {
+			release_puppet_on_controlled = GLD
+		}
+	}
+}
+
+country_event = {
+	id = event_AUS_reform.4
+	title = event_AUS_reform.4.t
+	desc = event_AUS_reform.4.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Get Littoral back from SCS in exchange for Serbian land."
+	}
+
+	option = {
+		name = event_AUS_reform.4.a
+
+		effect_tooltip = {
+			AUS = {
+				AUS_trade_serbia_montenegro_for_littoral = yes
+			}
+		}
+
+		FROM = { country_event = { id = event_AUS_reform.5 hours = 1 } }
+	}
+}
+
+country_event = {
+	id = event_AUS_reform.5
+	title = event_AUS_reform.5.t
+	desc = event_AUS_reform.5.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Austria hears about SCS giving back Littoral."
+	}
+
+	option = {
+		name = event_AUS_reform.5.a
+
+		effect_tooltip = {
+			AUS_trade_serbia_montenegro_for_littoral = yes
+		}
+	}
+}
+
+country_event = {
+	id = event_AUS_reform.6
+	title = {
+		text = event_AUS_reform.6.t_croatia
+		trigger = { FROM = { check_variable = { territory_negotiation_demand = 0 } } }
+	}
+	title = {
+		text = event_AUS_reform.6.t_transylvania
+		trigger = { FROM = { check_variable = { territory_negotiation_demand = 1 } } }
+	}
+	desc = {
+		text = event_AUS_reform.6.d_croatia_serbia
+		trigger = { FROM = { check_variable = { territory_negotiation_demand = 0 } check_variable = { territory_negotiation_offer = 0 } } }
+	}
+	desc = {
+		text = event_AUS_reform.6.d_croatia_wallachia
+		trigger = { FROM = { check_variable = { territory_negotiation_demand = 0 } check_variable = { territory_negotiation_offer = 1 } } }
+	}
+	desc = {
+		text = event_AUS_reform.6.d_croatia_moldovia
+		trigger = { FROM = { check_variable = { territory_negotiation_demand = 0 } check_variable = { territory_negotiation_offer = 2 } } }
+	}
+	desc = {
+		text = event_AUS_reform.6.d_croatia_ruthenia
+		trigger = { FROM = { check_variable = { territory_negotiation_demand = 0 } check_variable = { territory_negotiation_offer = 3 } } }
+	}
+	desc = {
+		text = event_AUS_reform.6.d_croatia_poland
+		trigger = { FROM = { check_variable = { territory_negotiation_demand = 0 } check_variable = { territory_negotiation_offer = 4 } } }
+	}
+	desc = {
+		text = event_AUS_reform.6.d_transylvania_serbia
+		trigger = { FROM = { check_variable = { territory_negotiation_demand = 1 } check_variable = { territory_negotiation_offer = 0 } } }
+	}
+	desc = {
+		text = event_AUS_reform.6.d_transylvania_wallachia
+		trigger = { FROM = { check_variable = { territory_negotiation_demand = 1 } check_variable = { territory_negotiation_offer = 1 } } }
+	}
+	desc = {
+		text = event_AUS_reform.6.d_transylvania_moldovia
+		trigger = { FROM = { check_variable = { territory_negotiation_demand = 1 } check_variable = { territory_negotiation_offer = 2 } } }
+	}
+	desc = {
+		text = event_AUS_reform.6.d_transylvania_ruthenia
+		trigger = { FROM = { check_variable = { territory_negotiation_demand = 1 } check_variable = { territory_negotiation_offer = 3 } } }
+	}
+	desc = {
+		text = event_AUS_reform.6.d_transylvania_poland
+		trigger = { FROM = { check_variable = { territory_negotiation_demand = 1 } check_variable = { territory_negotiation_offer = 4 } } }
+	}
+
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Tell Hungary about Austrian territory trade."
+	}
+
+	option = {
+		name = event_AUS_reform.6.a
+
+		FROM = {
+			clear_variable = territory_negotiation_demand
+			clear_variable = territory_negotiation_offer
+		}
+	}
+}
+
+news_event = {
+	id = event_AUS_reform.7
+	title = {
+		text = event_AUS_reform.7.t_croatia
+		trigger = {
+			FROM = { has_completed_focus = AUS_croatian_trialism }
+		}
+	}
+	title = {
+		text = event_AUS_reform.7.t_poland
+		trigger = {
+			FROM = { has_completed_focus = AUS_polish_trialism }
+		}
+	}
+	desc = {
+		text = event_AUS_reform.7.d_croatia
+		trigger = {
+			FROM = { has_completed_focus = AUS_croatian_trialism }
+		}
+	}
+	desc = {
+		text = event_AUS_reform.7.d_poland
+		trigger = {
+			FROM = { has_completed_focus = AUS_polish_trialism }
+		}
+	}
+	picture = GFX_news_event_001
+
+	is_triggered_only = yes
+	major = yes
+
+	immediate = {
+		log = "([THIS.GetName] news event) News event about trialist reform."
+	}
+
+	# Austria
+	option = {
+		name = event_AUS_reform.7.a
+
+		trigger = {
+			original_tag = AUS
+		}
+	}
+
+	# Hungary
+	option = {
+		name = event_AUS_reform.7.b
+
+		trigger = {
+			original_tag = HUN
+		}
+	}
+
+	# Indifferent
+	option = {
+		name = event_AUS_reform.7.c
+
+		trigger = {
+			NOT = { original_tag = AUS }
+			NOT = { original_tag = HUN }
+			AND = {
+				has_opinion = {
+					target = FROM
+					value > -50
+				}
+				NOT = { has_war_with = FROM }
+			}
+		}
+	}
+
+	# Angry
+	option = {
+		name = event_AUS_reform.7.d
+
+		trigger = {
+			NOT = { original_tag = AUS }
+			NOT = { original_tag = HUN }
+			OR = {
+				has_opinion = {
+					target = FROM
+					value < -49
+				}
+				has_war_with = FROM
+			}
+		}
+	}
+}
+
+country_event = {
+	id = event_AUS_reform.8
+	title = event_AUS_reform.8.t
+	desc = event_AUS_reform.8.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Get offered Bukovina by Austria."
+	}
+	
+	option = {
+		name = event_AUS_reform.8.a
+		ai_chance = { base = 1 }
+
+		transfer_state = 236
+		add_timed_idea = { idea = AUS_trade_for_bukovina days = 730 }
+		add_opinion_modifier = {
+			target = FROM
+			modifier = AUS_received_bukovina
+		}
+		FROM = {
+			add_opinion_modifier = {
+				target = PREV
+				modifier = AUS_gave_bukovina
+			}
+		}
+	}
+
+	option = {
+		name = event_AUS_reform.8.b
+		ai_chance = { base = 0 }
+	}
+}
+
+country_event = {
+	id = event_AUS_reform.9
+	title = event_AUS_reform.9.t
+	desc = event_AUS_reform.9.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Tell Hungary you're taking their land."
+	}
+	
+	option = {
+		name = event_AUS_reform.9.a
+	}
+}
+
+country_event = {
+	id = event_AUS_reform.10
+	title = event_AUS_reform.10.t
+	desc = event_AUS_reform.10.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Tell Hungary they're getting annexed."
+	}
+	
+	option = {
+		name = event_AUS_reform.10.a
+		custom_effect_tooltip = GAME_OVER_TT
+		FROM = {
+			annex_country = {
+				target = HUN
+				transfer_troops = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = event_AUS_reform.11
+	title = event_AUS_reform.11.t
+	desc = event_AUS_reform.11.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Tell Hungary you're taking their land (via referendum)."
+	}
+	
+	option = {
+		name = event_AUS_reform.11.a
+	}
+}
+
+country_event = {
+	id = event_AUS_reform.12
+	title = event_AUS_reform.12.t
+	desc = event_AUS_reform.12.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] country event) Tell Hungary they're willingily uniting with Austria to get a cool new flag."
+	}
+	
+	option = {
+		name = event_AUS_reform.12.a
+		custom_effect_tooltip = GAME_OVER_TT
+		FROM = {
+			annex_country = {
+				target = HUN
+				transfer_troops = yes
+			}
+		}
+		hidden_effect = {
+			FROM = { news_event = { id = event_AUS_reform.13 days = 1 } }
+		}
+	}
+}
+
+news_event = {
+	id = event_AUS_reform.13
+	title = event_AUS_reform.13.t
+	desc = event_AUS_reform.13.d
+	picture = GFX_news_event_001
+
+	is_triggered_only = yes
+	major = yes
+
+	show_major = {
+		# Hungary gets a more personal event.
+		NOT = { tag = HUN }
+	}
+
+	immediate = {
+		log = "([THIS.GetName] country event) News event about uniting of Austria-Hungary.."
+	}
+
+	# Austria
+	option = {
+		name = event_AUS_reform.13.a
+
+		trigger = {
+			original_tag = AUS
+		}
+	}
+
+	# Indifferent
+	option = {
+		name = event_AUS_reform.13.b
+
+		trigger = {
+			NOT = { original_tag = AUS }
+			AND = {
+				has_opinion = {
+					target = FROM
+					value > -50
+				}
+				NOT = { has_war_with = FROM }
+			}
+		}
+	}
+
+	# Angry
+	option = {
+		name = event_AUS_reform.13.c
+
+		trigger = {
+			NOT = { original_tag = AUS }
+			OR = {
+				has_opinion = {
+					target = FROM
+					value < -49
+				}
+				has_war_with = FROM
+			}
+		}
+	}
+}
+
+news_event = {
+	id = event_AUS_reform.14
+	title = event_AUS_reform.14.t
+	desc = event_AUS_reform.14.d
+	picture = GFX_news_event_001
+
+	is_triggered_only = yes
+	major = yes
+
+	immediate = {
+		log = "([THIS.GetName] news event) News event about forming the Austrian Empire."
+	}
+
+	# Austria
+	option = {
+		name = event_AUS_reform.14.a
+
+		trigger = {
+			original_tag = AUS
+		}
+	}
+
+	# Supportive
+	option = {
+		name = event_AUS_reform.14.b
+
+		trigger = {
+			NOT = { original_tag = AUS }
+			AND = {
+				has_opinion = {
+					target = FROM
+					value > 50
+				}
+				NOT = { has_war_with = FROM }
+			}
+		}
+	}
+
+	# Apprehensive
+	option = {
+		name = event_AUS_reform.14.c
+
+		trigger = {
+			NOT = { original_tag = AUS }
+			AND = {
+				has_opinion = {
+					target = FROM
+					value > -50
+				}
+				NOT = { has_war_with = FROM }
+			}
+		}
+	}
+
+	# Angry
+	option = {
+		name = event_AUS_reform.14.d
+
+		trigger = {
+			NOT = { original_tag = AUS }
+			OR = {
+				has_opinion = {
+					target = FROM
+					value < -49
+				}
+				has_war_with = FROM
+			}
+		}
+	}
+}

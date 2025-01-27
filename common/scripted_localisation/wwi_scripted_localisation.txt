@@ -289,3 +289,29 @@ defined_text = {
 		localization_key = "[?balkan_war_disputed_states_count]"
 	}
 }
+
+# Demonyms used for 'The X Press' or 'The X Government' for example. So Viennese Press, Parisian Press works.
+# Berliner Press or Londoner Press doesn't sound right though.
+# Assumes the state capital VP hasn't changed.
+defined_text = {
+	name = GetStateCapitalDemonym
+
+	text = {
+		trigger = {
+			id = 227
+		}
+		localization_key = "Viennese"
+	}
+
+	text = {
+		trigger = {
+			id = 30
+		}
+		localization_key = "Parisian"
+	}
+
+	text = {
+		trigger = {}
+		localization_key = "[THIS.GetCapitalVictoryPointName]"
+	}
+}

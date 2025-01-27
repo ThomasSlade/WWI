@@ -1,0 +1,333 @@
+﻿l_english:
+  event_AUS_generic.1.t: "[SER.GetName] Agitates the Vojvodina Serb Nationalists"
+  event_AUS_generic.1.d: "Rightful lands of Saint Stephen for centuries, the Vojvodina and its majority of Serbs once flirted with separatism in the great revolutions of 1848. Support from independent [SER.GetName] for this treason was duly restrained in this time, yet the arrogance of today's [SER.Capital.GetCapitalVictoryPointName] has seen a return to this blithe nonsense. Arms once again flow from [SER.GetName] to Vojvodina, and the separatists are surely primed to stike at our next weakness."
+  event_AUS_generic.1.a: "Outrageous"
+  vojvodina_separatists_tt: "§YGain the following National Spirits:\nVojvodina Separatists:§ §RStability lower than 50% will result in [224.GetName] and [171.GetName] seceeding to [SER.GetName].§"
+
+  event_AUS_generic.3.t: "Bosnia Seceeds"
+  event_AUS_generic.3.d: "Serb activists in Bosnia, known to us for some time but stubborn to our dissuasions, have today made public their declaration of independence from [This.GetNameDef] and subsequent union with [SER.GetName]. Though clearly treasonous, this move has broad legitimacy with diplomatic circles and, in any case, [This.GetNameDef] is frankly too occupied with other crises to forcefully oppose it.\n\nHow could we let this happen?"
+  event_AUS_generic.3.a: "For now, at least, this isn't worth our time ..."
+
+  event_AUS_generic.4.t: "[SVO.GetNameDefCap] Revolts"
+  event_AUS_generic.4.d.base: "The Serb majority of our southernmost Hungarian lands have risen up in armed revolt!\n\n[SVO.GetNameDefCap] once challenged the Empire, during the 1848 revolutions. Now, they fly their flags once again, seeking to unify with [SER.GetNameDef] - no doubt the prime mover of this treachery."
+  event_AUS_generic.4.d.a: "$event_AUS_generic.4.d.base$\n\nThe rebels march with what weapons they can scrounge, but it appears that armaments from [SER.GetNameDef] haven't been forthcoming."
+  event_AUS_generic.4.d.b: "$event_AUS_generic.4.d.base$\n\nThe rebels are adequately armed and manned. [SER.GetNameDefCap] has wasted no time in smuggling ordnance across the Danube."
+  event_AUS_generic.4.d.c: "$event_AUS_generic.4.d.base$\n\nThe rebels are armed to the teeth, and concerningly numerous. [SER.GetNameDefCap] has spared no expense in arming its lapdog."
+  event_AUS_generic.4.a: "Put down this rabble as was done fifty years ago!"
+  event_AUS_generic.4.b: "[ROOT.GetNameDef] cannot handle another crisis."
+
+  event_AUS_assassination.1.t: "The Assassination of Franz Ferdinand"
+  event_AUS_assassination.1.d: "Franz Ferdinand, heir to the throne of Austria-Hungary, is dead.\n\nThe archduke's visit to recently-annexed Bosnia, amid [SER.GetAdjective] agitation for control of the predominantly south-slavic province, was made a fateful one when the heir's motorcade - after narrowly avoiding a bomb - came to a stop beside an unidentified gunman. Franz and his wife, also killed, leave three orphaned children.\n\nAs the empire settles into mourning, many in the Austrian government set their glare on [SER.GetNameDef] - presumed, by some, to be directly implicated in the murder."
+  event_AUS_assassination.1.a: "Unfortunate, but we've more pressing matters."
+  event_AUS_assassination.1.b: "A tragedy."
+  event_AUS_assassination.1.c: "An unfounded accusation!"
+
+  event_AUS_assassination.2.t: "[FROM.GetOldAdjectiveCap] Archduke's Visit to Sarajevo a Success"
+  event_AUS_assassination.2.d: "If the cheering crowds of Bosnians are anything to go by, the royal visit to Bosnia-Herzegovina by Archduke Franz Ferdinand - heir to the [FROM.GetOldAdjectiveCap] throne - could only be called a rousing success.\n\nThe Archduke and his wife toured the recently annexed territory in a renewed attempt to earn the loyalty of their south-slav subjects, amid ongoing talk of reform in the multi-ethnic empire.\n\nDespite warnings of a potential assassinaion attempt in the region - long coveted by Serb nationalists - the [FROM.GetAdjectiveCap] heir charmed [224.GetCapitalVictoryPointName]'s locals and browsed its vibrant bazaars without incident."
+  event_AUS_assassination.2.a: "Franz had nothing to worry about."
+  event_AUS_assassination.2.b: "Splendid."
+  event_AUS_assassination.2.c: "Perhaps Bosnia has a prosperous future in the empire after all."
+
+  event_AUS_assassination.3.t: "Franz Ferdinand Shot Dead in [224.GetCapitalVictoryPointName]"
+  event_AUS_assassination.3.d: "This morning, the [THIS.capital.GetStateCapitalDemonym] government received the devastating news of [THIS.GetNameDef] heir Archduke Franz Ferdinand's assasination, alongside that of his wife.\n\nThe killer has links to the secretive Black Hand - a paramilitary cell thought to be deeply rooted within the [SER.GetOldAdjectiveCap] government.\n\nThe Bosnian visit was intended to bolster regional loyalty in the face of such agitation. These efforts now seem foolhardy; many in [THIS.capital.GetCapitalVictoryPointName] are calling for war with [SER.GetNameDef]."
+  event_AUS_assassination.3.a: "Send an ultimatum! Either the Serbs cooperate, or we march on [SER.capital.GetCapitalVictoryPointName]!"
+  event_AUS_assassination.3.b: "Cooler heads must prevail ..."
+
+  event_AUS_assassination.4.t: "Serbia Rejects our Ultimatum"
+  event_AUS_assassination.4.d: "Ever-insolent, [FROM.GetNameDef] has rejected our ultimatum.\n\nWe made the alternative quite clear."
+  event_AUS_assassination.4.a: "War it is."
+
+  event_AUS_assassination.5.t: "Serbia Accepts our Ultimatum"
+  event_AUS_assassination.5.d: "Despite the assumptions of the Austrian foreign office, the Serbian government, it seems, has come to its senses. We recieved word this morning that [SER.GetLeader]'s administration is willing to give us free reign of investigations into the murder of our beloved Archduke and - more importantly - will revoke claims over our rightful Bosnian holdings. Justice may yet be served to the perpetrators of this brutality. For now, at least, war is no longer a necessity."
+  event_AUS_assassination.5.a: "Oh, umm ... splendid."
+
+  event_AUS_assassination.6.t: "Serb Nationalist Cells in Bosnia"
+  event_AUS_assassination.6.d: "Indignant for many years over [Root.GetName]'s' recent annexation of Bosnia, Serbs on either side of the Drina have come to form a network of national activists called the Narodna Odbrana, or 'National Defense'.\n\nThe network's official aims are to protect Serbian culture and, ultimately, seek unification with [SER.GetName]. But links are recognised between the highest ranking agents of Narodna Odbrana and the more sinister Black Hand - the intentions of which are suspected to involve terrorism against the Monarchy."
+  event_AUS_assassination.6.a: "We must tread carefully in Sarajevo"
+  black_hand_and_narodna_odbrana_tt: "§YGain the following National Spirits:\nBosnian Serb Activists:§ §RStability lower than 50% will result in [224.GetName], [146.GetName], and [169.GetName] seceeding to [SER.GetName].§ \n§YBlack Hand Cells:§ §R'Imperial Visit to Bosnia' focus: Delegate will be assassinated.§"
+
+  event_AUS_serbian_reconciliation.1.t: "[SER.GetNameDef] Seeks Partition of Bosnia"
+  event_AUS_serbian_reconciliation.1.d: "In a surprising change of tact, the [SER.GetName] government has come to us with an offer: if we grant them [224.GetName] as compensation, they will abandon designs on the rest of our south-slav territory.\n\nSuch an exchange would obstruct our expansion into the rest of the Balkans. To remedy this, [SER.GetNameDef] has openly suggested we occupy [MNT.GetNameDef]. Despite the historic friendship between the two nations, it seems [SER.Capital.GetCapitalVictoryPointName] is willing to look the other way ..."
+  event_AUS_serbian_reconciliation.1.a: "A pile of rocks in exchange for [SER.GetAdjective] compliance? Splendid!"
+  event_AUS_serbian_reconciliation.1.b: "The Serbs demanding compensation, whatever next ..."
+
+  event_AUS_serbian_reconciliation.2.t: "[SER.GetNameDef] Seeks Rapproachment"
+  event_AUS_serbian_reconciliation.2.d: "Recent diplomatic efforts from [SER.GetNameDef] have made it clear that, after their brief flirtation with [RUS.GetOldNameDef], our troublesome Balkan neighbour is ready to return to our orbit.\n\nRelations with the [SER.GetAdjective] government were once fruitful, but a decade of friction has left many in [AUS.Capital.GetCapitalVictoryPointName] fretful. Nonetheless, perhaps we still have an ally south of the Danube?"
+  event_AUS_serbian_reconciliation.2.a: "Back with their tails between their legs ..."
+
+  event_AUS_serbian_reconciliation.3.t: "Serbia Negotiates for Treaty Port"
+  event_AUS_serbian_reconciliation.3.d: "[ROOT.GetNameDef]'s policy has always been to prevent a [FROM.GetAdjective] presence on the Adriatic.\n\nBut in light of our detente, [SER.Capital.GetCapitalVictoryPointName] wants us to consider handing over [?FROM.serbia_requested_port] as a treaty port, promising agricultural compensation in return."
+  event_AUS_serbian_reconciliation.3.a: "The port is theirs"
+  event_AUS_serbian_reconciliation.3.b: "[?FROM.serbia_requested_port] is [ROOT.GetAdjective] soil!"
+
+  event_AUS_serbian_reconciliation.4.t: "[FROM.GetNameDefCap] Requests Greater Share of Bosnia"
+  event_AUS_serbian_reconciliation.4.d: "Unsatisfied with our concessions, [FROM.GetNameDef] have reopened negotiations over Bosnian territory, this time hoping to be additionally awarded [requested_bosnia_province.GetName].\n\nThough the offer raised eyebrows in [ROOT.Capital.GetCapitalVictoryPointName], the Serbs are willing to make it worth our while by guaranteeing their own economic subservience to [ROOT.GetNameDef]."
+  event_AUS_serbian_reconciliation.4.a: "Very well"
+  event_AUS_serbian_reconciliation.4.b: "We cannot oblige"
+  event_AUS_serbian_reconciliation.4.d_second: "Evidently not discouraged by our previous refusal, [FROM.GetNameDef] ask if [requested_bosnia_province.GetName] can be granted instead.\n\nOnce again, the Serbs offer lucrative compensation for this exchange."
+  event_AUS_serbian_reconciliation.4.a: "Very well"
+  event_AUS_serbian_reconciliation.4.b: "We cannot oblige"
+
+  event_AUS_italian_neutrality.1.t: "[FROM.GetNameDefCap] Offers Territory for Neutrality"
+  event_AUS_italian_neutrality.1.d: "Negotiations for [FROM.GetOldAdjectiveCap] territory, in exchange for our assurance of non-aggression, were long dormant. But [FROM.GetadjectiveCap] statesmen appear to have finally caved.\n\n[FROM.GetNameDefCap] offers [231.GetName]. In addition, [174.GetName.GetCapitalVictoryPointName] and [165.GetName.GetCapitalVictoryPointName], until now unnegotiable, will become free cities, which [FROM.GetOldNameDef] no doubt imagines she can re-absorb in good time."
+  event_AUS_italian_neutrality.1.a: "We will beat them to it."
+  event_AUS_italian_neutrality.1.b: "This fraction of unredeemed [ROOT.GetOldAdjectiveCap] will not do."
+
+  event_AUS_italian_neutrality.2.t: "[FROM.GetNameDefCap] Accepts Offer for Neutrality"
+  event_AUS_italian_neutrality.2.d: "[FROM.Capital.GetCapitalVictoryPointName] has agreed to our offer: they will remain neutral, in exchange for [231.GetName], and the independence of [174.GetName.GetCapitalVictoryPointName] and [165.GetName.GetCapitalVictoryPointName]."
+  event_AUS_italian_neutrality.2.a: "A temporary arrangement."
+
+  event_AUS_italian_neutrality.3.t: "[FROM.GetNameDefCap] Declines Offer for Neutrality"
+  event_AUS_italian_neutrality.3.d: "[FROM.capital.GetCapitalVictoryPointName] has declined our proposal to trade territory in exchange for a pledge of non-aggression.\n\nWith the continent rapidly polarising, it's unclear if anything can be done to dissuade an [FROM.GetOldAdjectiveCap] intervention against against us."
+  event_AUS_italian_neutrality.3.a: "Unfortunate."
+
+  event_AUS_italian_neutrality.4.t: "[FROM.GetNameDefCap] Exerts Influence on [influenced_free_city.GetNameDefCap]"
+  event_AUS_italian_neutrality.4.d: "Sources in [influenced_free_city.Capital.GetCapitalVictoryPointName] report a marked increase in [FROM.GetOldAdjectiveCap] ships and sailors traversing the supposedly free city."
+  event_AUS_italian_neutrality.4.d_loss_of_our_influence: "$event_AUS_italian_neutrality.4.d$\n\nThe result of this transparent sabre-rattling is a loosening of our own grasp on [influenced_free_city.GetNameDefCap]."
+  event_AUS_italian_neutrality.4.d_increase_of_enemy_influence: "$event_AUS_italian_neutrality.4.d$\n\nSuch intimidation has inevitably forced [influenced_free_city.GetNameDefCap] deeper into [FROM.GetOldAdjectiveCap] orbit. Without our intervention, [FROM.GetOldNameDef] may soon annex the territory outright."
+  event_AUS_italian_neutrality.4.a: "We must endeavor to reverse this affair."
+
+  event_AUS_italian_neutrality.5.t: "[FROM.GetNameDefCap] Annexes [influenced_free_city.GetNameDefCap]"
+  event_AUS_italian_neutrality.5.d: "[FROM.GetOldAdjectiveCap] troops have marched on the briefly free territory of [influenced_free_city.GetNameDef], despite our agreement to preserve the city's independence.\n\nAs the free port's statesmen, practically at gunpoint, proclaim its union with [FROM.GetNameDef], our diplomats fret over the loss of a potential pawn in the adriatic."
+  event_AUS_italian_neutrality.5.a: "Confound it!"
+  
+  event_AUS_pro_germany.1.t: "[FROM.GetNameDefCap] Seeks Blank Cheque"
+  event_AUS_pro_germany.1.d: "[FROM.GetOldAdjectiveCap] diplomats have recently aired their grievances over a lack of [THIS.GetAdjectiveCap] support in international affairs - a precaution which [FROM.capital.GetCapitalVictoryPointName] fears will cement their decline as a great power.\n\n[THIS.GetAdjectiveCap] ministers are sympathetic - [FROM.GetNameDef] remains a pivotal European ally - but is there a possibility that a [THIS.GetAdjectiveCap] 'Blank Cheque' could exacerbate the chances of preventable war?"
+  event_AUS_pro_germany.1.a: "They have our unconditional support."
+  event_AUS_pro_germany.1.b: "We should restrain ourselves and our ally."
+
+  event_AUS_pro_germany.2.t: "[FROM.GetNameDefCap] Agrees to 'Blank Cheque'"
+  event_AUS_pro_germany.2.d: "[FROM.GetNameDefCap] has reiterated their unconditional support of our actions in international affairs."
+  event_AUS_pro_germany.2.a: "We knew they would."
+
+  event_AUS_pro_germany.3.t: "[FROM.GetNameDefCap] Refuses to Promise 'Blank Cheque'"
+  event_AUS_pro_germany.3.d: "[FROM.GetNameDefCap] has rejected our request for unconditional support in international affairs, stating that such guarantee would endanger the peace of Europe."
+  event_AUS_pro_germany.3.a: "Then what purpose does this alliance serve?"
+
+  event_AUS_pro_germany.4.t: "[FROM.GetNameDefCap] Requests Overland U-Boat Delivery"
+  event_AUS_pro_germany.4.d: "In light of our naval vulnerability in the North Sea, [FROM.GetNameDef] has suggested relocating, by rail, a portion of our U-Boats to the Adriatic.\n\nThe vessels may well be of greater use away from Atlantic navies, though transporting them there will strain our railways"
+  event_AUS_pro_germany.4.a: "We'll do it."
+  event_AUS_pro_germany.4.b: "They are [THIS.GetNameDef]'s' U-Boats."
+
+  event_AUS_pro_germany.5.t: "U-Boats Reach [AUS.GetNameDef] by Train"
+  event_AUS_pro_germany.5.d_austria: "Our requested [GER.GetAdjectiveCap] U-Boat squadron has completed its railway transfer across the Alps."
+  event_AUS_pro_germany.5.d_germany: "Our U-Boats have crossed the Alps and redeployed from [AUS.GetAdjectiveCap] shores.\n\nThe trains that carried them are ready for service."
+  event_AUS_pro_germany.5.a: "Where Hannibal sent elephants, we sent U-Boats."
+
+  event_AUS_pro_germany.6.t: "[FROM.GetNameDefCap] Agrees to Deliver U-Boats"
+  event_AUS_pro_germany.6.d: "[FROM.GetNameDefCap] has agreed to contribute a U-Boat squadron to our Adriatic fleet. [FROM.GetAdjectiveCap] railway schedules are being adjusted as we speak."
+  event_AUS_pro_germany.6.a: "[THIS.GetOldAdjectiveCap] sailors, [FROM.GetOldAdjectiveCap] tenacity!"
+
+  event_AUS_pro_germany.7.t: "[FROM.GetNameDefCap] Refuses to Deliver U-Boats"
+  event_AUS_pro_germany.7.d: "[FROM.GetNameDefCap] has refused to relocate a U-Boat squadron to our command in the Adriatic, insisting that transporting the ships by rail would be impractical."
+  event_AUS_pro_germany.7.a: "They lack imagination."
+
+  event_AUS_albania.1.t: "[AUS.GetName] Insists on [ROOT.GetAdjective] Protectorate"
+  event_AUS_albania.1.d_base: "After first helping to cede our independence from [TUR.GetNameDef], [AUS.GetNameDef] has demanded we accept a status as one of their Imperial clients.\n\n"
+  event_AUS_albania.1.d_hopeless: "$event_AUS_albania.1.d_base$Though this would amount to an end of our brief sovreignty, the [FROM.GetAdjective] army dramatically outnumbers our own. We appear to have no choice."
+  event_AUS_albania.1.d_fight: "$event_AUS_albania.1.d_base$Though [FROM.GetNameDef] is a powerful enemy to make, some military planners contend that our situation is not hopeless. But can we endure such bloodshed so soon after our fight for sovreignty?"
+  event_AUS_albania.1.a: "Very well."
+  event_AUS_albania.1.b: "We shall win our independence once more."
+
+  event_AUS_albania.2.t: "[FROM.GetName] Becomes Our Protectorate"
+  event_AUS_albania.2.d: "Seeing the reason of our overwhelming influence, [FROM.GetNameDef] has agreed to formally enter the [THIS.GetAdjective] sphere."
+  event_AUS_albania.2.a: "Excellent."
+
+  event_AUS_albania.3.t: "[FROM.GetName] Refuses Our Demand"
+  event_AUS_albania.3.d: "Despite having our statesmen to thank for their freedom from the [TUR.GetAdjective] yoke - not to mention our military looming at their borders - the [FROM.GetAdjective] government has foolishly declined our offer of protectorate status."
+  event_AUS_albania.3.a: "Their independence will be short-lived."
+
+  event_AUS_pro_ottomans.1.t: "[FROM.GetName] Offers Support for Closer Ties"
+  event_AUS_pro_ottomans.1.d: "[FROM.GetNameDefCap], no exception to the clique of Great Powers which has historically benefited from a weak [THIS.GetName], has today proposed a change in affairs.\n\nSeeking a stronger [THIS.GetAdjective] ally, they offer firm assistance in our efforts to modernise the state.\n\nNo doubt this aid comes with strings attached."
+  event_AUS_pro_ottomans.1.a: "At last, we are treated as an equal."
+  event_AUS_pro_ottomans.1.b: "We are not [FROM.GetAdjective] pawns."
+
+  event_AUS_pro_ottomans.2.t: "[FROM.GetName] Accepts Support in Exchange for Closer Ties"
+  event_AUS_pro_ottomans.2.d: "[FROM.GetNameDefCap] has agreed to our modernisation proposal: the Sublime Porte will be teeming with [THIS.GetAdjective] statesment in short order."
+  event_AUS_pro_ottomans.2.a: "They'll soon fall within our orbit."
+
+  event_AUS_pro_ottomans.3.t: "[FROM.GetName] Declines Support in Exchange for Closer Ties"
+  event_AUS_pro_ottomans.3.d: "[FROM.GetNameDefCap] will not allow our officials to assist in modernising their state: one [FROM.GetAdjective] envoy went so far as to accuse [THIS.GetNameDef] of attempting to vassalise the Turks."
+  event_AUS_pro_ottomans.3.a: "Fools."
+
+  event_AUS_pro_britain.1.t: "[FROM.GetAdjective] Diplomat Insists Upon Closer Ties"
+  event_AUS_pro_britain.1.d: "[FROM.GetAdjective] ambassador Count Albert von Mensdorff, a cousin of of the new King and something of a persona gratissima in [capital.GetNameDefCap], has recently intensified his efforts to seek favour with Westminster.\n\nCiting concern over the looming polarisation of the continent, the Count advocates cooperation with his homeland in conducting the concert of Europe, and even suggests [FROM.GetNameDef] is willing to adopt a [THIS.GetAdjective] alignment in return.\n\nThe sincerity of this change in posture remains to be seen, but in the days of Metternich [FROM.GetNameDef] was once [THIS.GetNameDef]'s diplomatic accomplice. Could such an understanding be rekindled?"
+  event_AUS_pro_britain.1.a: "We can hope so."
+
+  event_AUS_pro_britain.2.t: "[FROM.GetName] Proposes Naval Treaty"
+  event_AUS_pro_britain.2.d: "In light of our common interest in the Eastern Mediterranean, [FROM.GetNameDef] has tabled an official understanding between our country's navies.\n\nThe proposal would see [THIS.GetAdjective] and [FROM.GetAdjective] naval patrols adopt even shares of the Aegean and Adriatic coastlines, reducing the burden of protecting our shipping lanes.\n\nWith the [THIS.GetAdjective] navy spread increasingly thin, the treaty certainly merits consideration."
+  event_AUS_pro_britain.2.a: "A sensible proposal."
+  event_AUS_pro_britain.2.b: "We can handle the region ourselves."
+
+  event_AUS_pro_britain.3.t: "[FROM.GetName] Agrees to Naval Treaty"
+  event_AUS_pro_britain.3.d: "[FROM.GetNameDefCap] has agreed to our proposed naval treaty.\n\nOur naval officers are consulting over patrol schedules as we speak."
+  event_AUS_pro_britain.3.a: "We knew they'd be interested."
+
+  event_AUS_pro_britain.4.t: "[FROM.GetName] Declines Naval Treaty"
+  event_AUS_pro_britain.4.d: "[FROM.GetNameDefCap] has turned down our proposed naval treaty, believing that its ratification would be an implicit admission of declining [FROM.GetAdjective] sea power."
+  event_AUS_pro_britain.4.a: "They shouldn't be so sensitive."
+
+  event_AUS_offer_military_alliance.1.t: "[FROM.GetName] Offers Military Alliance"
+  event_AUS_offer_military_alliance.1.d_britain: "Sharing our misgivings over the tightnening of diplomatic blocs on the continent, [FROM.GetLeader] addressed the [THIS.GetAdjective] cabinet today in an unprecedented state visit: in its historic mission to uphold the balance of power in Europe, he said, [THIS.GetNameDef] can no longer stand alone.\n\nIts best hope lies in [FROM.capital.GetCapitalVictoryPointName].\n\nThough met with raised eyebrows and the scoffs of more than a few [THIS.GetAdjective] ministers, the venerable [FROM.GetAdjective] statesmen stood with grim demeanor over [FROM.GetLeader.GetHerHis] audience: [FROM.GetLeader.GetHerHis] proposal is deadly serious."
+  event_AUS_offer_military_alliance.1.d: "Though we need no reminder of the precarious situation on the continent, [FROM.GetNameDef] was happy to provide it this afternoon in the form of a foreboding memorandum penned by [FROM.GetLeader] himself: the concert of Europe is undone, [FROM.GetLeader.GetSheHe] writes, and only an alliance with [FROM.capital.GetCapitalVictoryPointName] can restore it.\n\nFalling into [FROM.GetAdjective] orbit would secure our nation endurance these tumultous times, presuming that [FROM.GetNameDef] itself will not be responsible for a conflagration ..."
+  event_AUS_offer_military_alliance.1.a: "The time has come to side with [FROM.GetNameDef]."
+  event_AUS_offer_military_alliance.1.b: "We cannot make such a commitment."
+
+  event_AUS_offer_military_alliance.2.t: "[FROM.GetName] Accepts Military Alliance"
+  event_AUS_offer_military_alliance.2.d: "[FROM.GetNameDefCap] has agreed to enter into our military alliance.\n\nWith their support, we hold greater sway in the affairs of the continent."
+  event_AUS_offer_military_alliance.2.a: "Ours will be a triumphant partnership."
+
+  event_AUS_offer_military_alliance.3.t: "[FROM.GetName] Declines Military Alliance"
+  event_AUS_offer_military_alliance.3.d: "[FROM.GetNameDefCap] has refused our offer of a military alliance.\n\nThough [FROM.GetAdjective] statesmen were evasive in their reasons, it's clear that [FROM.GetNameDef] doubts our capacity to uphold the peace of Europe."
+  event_AUS_offer_military_alliance.3.a: "They will be disproven."
+
+  event_AUS_south_german_influence.1.t: "[FROM.GetName] Announces Mediary Role in South Germany"
+  event_AUS_south_german_influence.1.d: "The [FROM.GetAdjective] foreign office has publicly announced its intention to adopt a stewardly relationship with the southern member states of [GER.GetNameDef].\n\nWhile careful not to challenge the sovreignty of [GET.GetNameDef] in it's wording, the announcement is widely considered to signify a revival of [FROM.GetAdjective] influence, not seen since the German Confederation.\n\nThough some nations of South Germany have staunchly resisted Prussian leadership since the unification, the reach of [FROM.GetNameDef]'s' grasp in the 20th century remains to be seen."
+  event_AUS_south_german_influence.1.a: "Outrageous. South Germany is loyal to [THIS.GetNameDef]."
+  event_AUS_south_german_influence.1.b: "We will see the rights of South Germans protected."
+  event_AUS_south_german_influence.1.c: "A provocative statement."
+
+  event_AUS_south_german_influence.2.t: "[FROM.GetName] Offers Loans for [influenced_south_german_country.GetAdjective] Autonomy"
+  event_AUS_south_german_influence.2.d: "Amid our worsening economic realities, [FROM.GetNameDef] has sought to present itself as a saviour of sorts to [GER.GetAdjective] federal subjects.\n\nClaiming to have both [influenced_south_german_country.GetAdjective] and [THIS.GetAdjective] interests at heart, [FROM.capital.GetCapitalVictoryPointName] offers economic support on the condition of greater [influenced_south_german_country.GetAdjective] autonomy.\n\nThough clearly an attempt to revive [FROM.GetAdjective] influence in the region, the financial benefits are considerable."
+  event_AUS_south_german_influence.2.a: "We will grant our own investment instead."
+  event_AUS_south_german_influence.2.b: "Grant them their autonomy. It will not last long."
+
+  event_AUS_south_german_influence.3.t: "[influenced_south_german_country.GetAdjective] Granted Autonomy"
+  event_AUS_south_german_influence.3.d: "Our appeal to [FROM.GetNameDef] for a greater level of [influenced_south_german_country.GetAdjective] sovreignty has been accepted.\n\nIn return, [FROM.capital.GetCapitalVictoryPointName] expects our financial support."
+  event_AUS_south_german_influence.3.a: "South German freedoms should not have a price."
+
+  event_AUS_south_german_influence.4.t: "Germany Refuses to Grant [influenced_south_german_country.GetAdjective] Autonomy"
+  event_AUS_south_german_influence.4.d: "The stubborn [FROM.GetAdjective]s have naturally ignored our intervention on behalf of their [influenced_south_german_country.GetAdjective] subjects.\n\nPrefering to see themselves ruined before upholding the rights of South Germans, they have tabled a placation of their own to push [influenced_south_german_country.GetNameDef] back into line."
+  event_AUS_south_german_influence.4.a: "They cannot outbid us forever."
+
+  event_AUS_south_german_influence.5.t: "[seceding_south_german_country.GetName] Secedes With [FROM.GetAdjective] Backing"
+  event_AUS_south_german_influence.5.d: "The Landtag of [seceding_south_german_country.GetNameDef] voted unanimously today to secede from [THIS.GetNameDef].\n\nWhen pressed to justify this motion's legality, [seceding_south_german_country.GetAdjective] leadership directed our objections to [FROM.GetNameDef], which has promised to protect [seceding_south_german_country.GetAdjective] self-determination, by force if necessary.\n\nIndeed, the [seceding_south_german_country.GetAdjective] army is both well armed and united in its support of the secession. No doubt this is the work of [FROM.capital.GetCapitalVictoryPointName]."
+  event_AUS_south_german_influence.5.a: "This is an outrage."
+
+  event_AUS_south_german_influence.6.t: "[FROM.GetName] Terminates [reabsorbed_south_german_country.GetName] Autonomy"
+  event_AUS_south_german_influence.6.d: "[FROM.GetNameDefCap] has put an end to our short-lived agreement of an autonomous [reabsorbed_south_german_country.GetName], essentially reabsorbing the federal subject.\n\n[FROM.capital.GetCapitalVictoryPointName] was able to mollify [reabsorbed_south_german_country.GetAdjective] outrage at the change in policy with generous fiscal support overshadowing our own. Naturally, this puts an end to our bankrolling of [GER.GetNameDef]."
+  event_AUS_south_german_influence.6.a: "Confound it."
+
+  event_AUS_placate_romania.1.t: "[FROM.GetName] Offers Transylvania for Non-Aggression Pact"
+  event_AUS_placate_romania.1.d: "Once a valuable counterweight to [SOV.GetAdjective] posturings on [THIS.GetNameDef], [FROM.GetAdjective] relations have soured in the past decade over the treatment of our countrymen in [HUN.GetAdjective] Transylvania.\n\nOur ministers had lost hope in any detente, hence our alienation from [FROM.capital.GetCapitalVictoryPointName].\n\nHowever, [FROM.GetNameDef] has recently come into direct posession of the territory: they propose offer the southern half of Transylvania, in return for an agreement of non-aggression."
+  event_AUS_placate_romania.1.a: "We are pleased to gain Transylvania without bloodshed."
+  event_AUS_placate_romania.1.b: "Only the southern half?"
+
+  event_AUS_placate_romania.2.t: "[FROM.GetName] Accepts Transulvania for Non-Aggression Pact"
+  event_AUS_placate_romania.2.d: "[FROM.GetNameDefCap] has agreed to sign a non-aggression pact in return for the ceding of southern Transylvania.\n\nWe can rest assured that [ROM.capital.GetCapitalVictoryPointName] is no longer a threat to our borders."
+  event_AUS_placate_romania.2.a: "Worthwhile."
+
+  event_AUS_placate_romania.3.t: "[FROM.GetName] Declines Transulvania for Non-Aggression Pact"
+  event_AUS_placate_romania.3.d: "[FROM.GetNameDefCap] has refused to sign a non-aggression pact in exchange for our ceding of southern Transylvania.\n\n[ROM.capital.GetCapitalVictoryPointName] were mealy-mouthed in their reasoning as to why, but it's clear that [FROM.GetNameDef] has already decided to act against us."
+  event_AUS_placate_romania.3.a: "What more could they possibly want?"
+
+  event_AUS_goad_bulgaria_into_war.1.t: "[FROM.GetName] Offers Military Support for Attack on [SER.GetName]"
+  event_AUS_goad_bulgaria_into_war.1.d: "While visiting [FROM.capital.GetCapitalVictoryPointName], our functionaries were approached by [FROM.GetLeader] and lead to a quiet room. There, the [FROM.GetAdjective] statesman outlined a secret proposal:\n\nWhile each of our governments struggles against [SER.GetAdjective] aggression - we in the south and [FROM.GetNameDef] in the north - only [THIS.GetNameDef] is free to act against [SER.capital.GetCapitalVictoryPointName] without angering the Great Powers.\n\n[FROM.GetNameDefCap] proposes an under-the-table arrangement: they will provide us with armaments, we invade [SER.GetNameDef], and they will absorb the remaining territory."
+  event_AUS_goad_bulgaria_into_war.1.a: "At last, our chance to strike."
+  event_AUS_goad_bulgaria_into_war.1.b: "And spill [THIS.GetAdjective] blood for [FROM.GetAdjective] winnings?"
+
+  event_AUS_goad_bulgaria_into_war.2.t: "[FROM.GetName] Accepts Military Support for [SER.GetAdjective] Invasion"
+  event_AUS_goad_bulgaria_into_war.2.d: "[FROM.GetNameDef], sharing our anxieties over [SER.GetAdjective] aggression, has agreed to receive armaments from [THIS.capital.GetCapitalVictoryPointName] in exchange for an attack on their neighbor."
+  event_AUS_goad_bulgaria_into_war.2.a: "Once [FROM.capital.GetCapitalVictoryPointName] triumphs, we shall absorb the remains."
+  event_AUS_goad_bulgaria_into_war.3.t: "[FROM.GetName] Declines Military Support for [SER.GetAdjective] Invasion"
+
+  event_AUS_goad_bulgaria_into_war.3.d: "[FROM.GetNameDef] has refused our offer of armaments in exchange for an attack on [SER.GetNameDef].\n\nThough [FROM.capital.GetCapitalVictoryPointName] opposes [SER.GetNameDef] in Macedonia, they lack confidence in their prospects of victory."
+  event_AUS_goad_bulgaria_into_war.3.a: "Cowards."
+
+  event_AUS_goad_bulgaria_into_war.4.t: "[FROM.GetName] Declares War, [AUS.GetName] Involvement Suspected"
+  event_AUS_goad_bulgaria_into_war.4.d: "News of an [FROM.GetAdjective] invasion has sent shockwaves through the country, but as [THIS.GetNameDef] hastily prepares a defense, cooler heads in [THIS.capital.GetCapitalVictoryPointName] are beggining to suspect a more alarming truth underlying the attack.\n\nThough [FROM.capital.GetCapitalVictoryPointName] denies any such conspiracy, much of the [SER.GetAdjective] press is openly accusing [AUS.capital.GetCapitalVictoryPointName] of inciting the war with armanents support. If this is true, there can be no doubt that [AUS.GetNameDef] and [FROM.GetNameDef] intend to partition [THIS.GetNameDef] in the event of our defeat."
+  event_AUS_goad_bulgaria_into_war.4.a: "Then we must not lose."
+
+  event_AUS_goad_bulgaria_into_war.5.t: "[AUS.GetName] Absorbs Remaining [SER.GetAdjective] Territory"
+  event_AUS_goad_bulgaria_into_war.5.d: "Following the defeat of [SER.GetNameDef] at the hands of the [BUL.GetAdjective] army, [AUS.GetNameDef] has announced the crossing of the river Drina by its own forces to secure the northern reaches of the country.\n\nThough [AUS.capital.GetCapitalVictoryPointName] claims to be acting to protect Croat minorities, some in the international community are unnerved by this apparent partition of [SER.GetNameDef]."
+  event_AUS_goad_bulgaria_into_war.5.a: "[125.GetCapitalVictoryPointName] will be safer in our hands."
+  event_AUS_goad_bulgaria_into_war.5.b: "[AUS.GetNameDefCap] is entitled to secure her borders."
+  event_AUS_goad_bulgaria_into_war.5.c: "Highly suspect."
+
+  event_AUS_buy_orient_railway_shares.1.t: "[FROM.GetName] Poised to Influence Balkan Railways"
+  event_AUS_buy_orient_railway_shares.1.d: "Credit Suisse has announced the sale of shares in the Chemins de fer Orientaux - the Orient Railway - to [FROM.GetAdjective] purchasers.\n\nThe railway company operates lines across the Southern Balkans. Though [FROM.capital.GetCapitalVictoryPointName] assures us that the purchase is routine, they clearly intend to exert influence over [THIS.GetNameDef]."
+  event_AUS_buy_orient_railway_shares.1.a: "We could make use of [FROM.GetAdjective] investment."
+  event_AUS_buy_orient_railway_shares.1.b: "They can keep their railways away from us."
+
+  event_AUS_buy_orient_railway_shares.2.t: "[FROM.GetName] Welcomes [THIS.GetAdjective] Rail Purchase"
+  event_AUS_buy_orient_railway_shares.2.d: "[FROM.capital.GetCapitalVictoryPointName] has responded warmly to our purchasing of Orient Railway shares, going as far as to invite our investors to begin work in [FROM.GetNameDef]."
+  event_AUS_buy_orient_railway_shares.2.a: "Already, our neighbors embrace our influence"
+
+  event_AUS_complete_the_novi_pazar_line.1.t: "[FROM.GetName] Constructs the [novi_pazar_rail_state.GetName] Line"
+  event_AUS_complete_the_novi_pazar_line.1.d: "Crowds in [185.GetName] and [?novi_pazar_destination_state.GetName] alike have gathered to observe the opening of the [novi_pazar_rail_state.GetName] line - a much anticipated addition to the Balkan rail network providing passage from [140.GetCapitalVictoryPointName] to [227.GetCapitalVictoryPointName] and beyond.\n\nThe [AUS.GetAdjective] venture undoubtebly offers commercial boons to our nation, but unless we curb [AUS.GetAdjective] influence over our railways, it will surely soon impress itself on more than just infrastructure."
+  event_AUS_complete_the_novi_pazar_line.1.a: "Allow the [AUS.GetAdjective]s their trains."
+  event_AUS_complete_the_novi_pazar_line.1.b: "We will suffer no more of this encroachment."
+
+  event_AUS_complete_the_novi_pazar_line.2.t: "[FROM.GetName] Commends Novi Pazar Line"
+  event_AUS_complete_the_novi_pazar_line.2.d: "The government of [FROM.capital.GetCapitalVictoryPointName] has offered its congratulations to our investors for constructing the Novi Pazar line, and welcomes future developments into their territories.\n\n[FROM.GetLeader] [FROM.GetLeader.GetHerselfHimself] appears to recognise that the project is a testament to [THIS.GetAdjective] regional influence, stating that [FROM.GetNameDef] would do well to follow our lead."
+  event_AUS_complete_the_novi_pazar_line.2.a: "Our grip on the Balkans tightens."
+
+  event_AUS_occupy_the_sanjak.1.t: "[FROM.GetName] Occupies [occupied_state.GetName]"
+  event_AUS_occupy_the_sanjak.1.d: "Citizens of [occupied_state.GetName] awoke this morning to find themselves under [FROM.GetAdjective] occupation, for the first time since the neighboring Empire's wirthdrawal in 1908. [AUS.GetNameDef] claims to act in defense of commerce along the newly constructed Novi Pazar railway.\n\nThe Sanjaks of Novi Pazar had been of key [FROM.GetAdjective] interest since their handover following the Russo-Turkish war: their withdrawal from the territory had been taken as a sign of detente in the Balkan region.\n\nThe remote Sanjak, difficult for [previous_owner.GetNameDef] to defend, appears to be uncontestably in the hands of its larger neighbor."
+  event_AUS_occupy_the_sanjak.1.a_sanjak_owner: "There is nothing we can do ..."
+  event_AUS_occupy_the_sanjak.1.a_austria: "[occupied_state.GetName] is secured."
+  event_AUS_occupy_the_sanjak.1.a_positive: "The Sanjak was always better of with [AUS.GetNameDef]."
+  event_AUS_occupy_the_sanjak.1.a_negative: "This was not agreed at the Berlin congress!"
+
+  event_AUS_kaisermanover.1.t: "The Kaisermanöver"
+  event_AUS_kaisermanover.1.d: "The annual Imperial Maneuvers are upon us: each year, the [THIS.GetAdjective] army assembles an impressive military exercise, attended by [THIS.GetLeader] [THIS.GetLeader.GetHerselfHimself].\n\nThe maneuvers are our chance to revise the state of the military. What insights will this years's exercises bring about?"
+  event_AUS_kaisermanover.1.a: "We will adapt our terrestrial practises."
+  event_AUS_kaisermanover.1.b: "War at sea is changing, we must do the same."
+  event_AUS_kaisermanover.1.c: "Our future lies with the aeroplane."
+
+  events_AUS_ships_for_industry.1.t: "[FROM.GetName] Proposes Naval Handover Deal"
+  events_AUS_ships_for_industry.1.d: "Having little capacity to maintain its own navy after ceding much of its coastline to us, [FROM.GetNameDef] has suggested that the now homeless [FROM.GetAdjective] navy ought to be handed off to [THIS.GetNameDef].\n\nThe [FROM.GetAdjective] navy represents centuries of investment from [FROM.capital.GetCapitalVictoryPointName], and as such, [FROM.GetNameDef] has asked that a portion of our industry be granted to them in return."
+  events_AUS_ships_for_industry.1.a: "Croats by sea, Austrians by land."
+  events_AUS_ships_for_industry.1.b: "This burden is too great for our young nation."
+
+  events_AUS_ships_for_industry.2.t: "[FROM.GetName] Accepts Naval Handover Deal"
+  events_AUS_ships_for_industry.2.d: "[FROM.GetNameDefCap] has agreed to the adoption of our navy, providing a portion of their industrial output in return."
+  events_AUS_ships_for_industry.2.a: "They will rule the seas, we will rule the land."
+
+  events_AUS_ships_for_industry.3.t: "[FROM.GetName] Declines Naval Handover Deal"
+  events_AUS_ships_for_industry.3.d: "[FROM.GetNameDefCap] has declined our offer of the [THIS.GetAdjective] navy in exchange for a portion of their industrial output."
+  events_AUS_ships_for_industry.3.a: "What are we supposed to do with all these ships now?"
+
+  events_AUS_foment_obrenovic_sympathies.1.t: "[SER.SER_george_obrenovic.GetName] Renews Claim to [SER.GetAdjective] Throne"
+  events_AUS_foment_obrenovic_sympathies.1.d: "It has been a decade since the bloody regicide of Alexander I of [SER.GetOldNameDef] shook the world. But while international outrage over the May Coup may have waned, echoes of its controversy still ring out across the Balkans.\n\nOne such echo is [SER.SER_george_obrenovic.GetName], half-brother of the murdered king and last claimant to the Obrenović dynasty. Though [SER.SER_george_obrenovic.GetName] has pretended to the [SER.GetAdjective] throne since even before the Coup, he now finds himself backed by the endorsement of an inreasingly powerful circle, chief among them the [AUS.GetLeader].\n\n[SER.GetNameDefCap] makes no secret of its disdain for the old dynasty. Much will need to change if the pretender is to see his homeland again."
+  events_AUS_foment_obrenovic_sympathies.1.a_serbia: "We will deal with him as we did the last Obrenović."
+  events_AUS_foment_obrenovic_sympathies.1.a_austria: "An Obrenović restoration must be pursued."
+  events_AUS_foment_obrenovic_sympathies.1.a_positive: "Preferable to [SER.SER_apis.GetName]' brutes."
+  events_AUS_foment_obrenovic_sympathies.1.a_negative: "How dare they make a puppet of this young man?"
+
+  events_AUS_foment_obrenovic_sympathies.2.t: "Obrenović Sympathies Take Root in [obrenovic_sympathiser_province.GetName]"
+  events_AUS_foment_obrenovic_sympathies.2.d: "An intensifying of gossip surrounding the Obrenović pretender in [obrenovic_sympathiser_province.GetCapitalVictoryPointName] has coincided with an alarming discovery: a stash of armaments, of [AUS.GetAdjective] make, in a local farmhouse.\n\nMinisters wring their hands at the prospect of a looming insurgency."
+  events_AUS_foment_obrenovic_sympathies.2.a: "We must prepare for the worst."
+
+  events_AUS_foment_obrenovic_sympathies.3.t: "Obrenović Sympathies in [obrenovic_sympathiser_province.GetName] Wane"
+  events_AUS_foment_obrenovic_sympathies.3.d_serbia: "After prolongued activity surrounding the Obrenović pretender, [obrenovic_sympathiser_province.GetName] authorities report that the [AUS.GetAdjective] claimant's support among the [SER.GetAdjective] citizenry has declined."
+  events_AUS_foment_obrenovic_sympathies.3.a_serbia: "We Serbs are not so easily fooled."
+  events_AUS_foment_obrenovic_sympathies.3.d_austria: "Despite our efforts to legitimise the [SER.GetAdjective] pretender among his countrymen, a prolongued absence on our part has resulted in a waning of Obrenović sympathies in [obrenovic_sympathiser_province.GetName]\n\nWith an investment of the Empire's assets, we may yet win our [SER.GetAdjective] king his throne."
+  events_AUS_foment_obrenovic_sympathies.3.a_austria: "Let us see what we can do."
+
+  events_AUS_foment_obrenovic_sympathies.5.t: "[SER.SER_george_obrenovic.GetName] Crosses the Border"
+  events_AUS_foment_obrenovic_sympathies.5.d: "Provincial sources have informed the Skupština that [SER.SER_george_obrenovic.GetName] - [AUS.GetAdjective]-backed pretender to the [SER.GetAdjective] throne - was escorted across our border this morning by a cell of conspirators.\n\nWorse yet, rumours suggest that the claimant was received by the cheering crowds of his growing network of sympathisers: indeed, broad swathes of [SER.GetAdjective] countryside have responded only with apathy, or worse.\n\nAs an administration forms around the false King in his stolen townships, our government has no choice bu to make preparations for an impending civil war."
+  events_AUS_foment_obrenovic_sympathies.5.a: "What have the [AUS.GetAdjective]s done to our nation!?"
+
+  events_AUS_foment_obrenovic_sympathies.6.t: "[SER.SER_george_obrenovic.GetName] Makes Bid for [SER.GetAdjective] Throne"
+  events_AUS_foment_obrenovic_sympathies.6.d: "The crossing of the Austro-[SER.GetAdjective] border by [SER.SER_george_obrenovic.GetName] this morning has plunged the Balkan nation into a state of emergency, as across the countryside communities loyal to the pretender have erputed in support of their favoured monarch.\n\nThe [SER.GetAdjective] government, no longer able to ignore the threat, have disparaged all Obrenović loyalists as traitors. But as control of [SER.GetNameDef] slips away, it appears that the Skupština faces a civil war against the [AUS.GetAdjective]-backed dynasty."
+  events_AUS_foment_obrenovic_sympathies.6.a_positive: "The rightful King has returned to [SER.GetNameDef]."
+  events_AUS_foment_obrenovic_sympathies.6.a_negative: "Yet more bloodshed south of the Danube."
+
+  events_AUS_erode_hungarian_influence.1.t: "[FROM.GetName] Demands Honvéd Subservience"
+  events_AUS_erode_hungarian_influence.1.d: "To the outrage of the National Assembly, [FROM.GetLeader] has set forward plans to reintegrate the [THIS.GetAdjective] army into the Empire, placing [FROM.capital.GetCapitalVictoryPointName] on a firm footing against our aspirations of independence.\n\nHonvéd leadership remains loyal to [THIS.capital.GetCapitalVictoryPointName], but our position is a precarious one: already, [FROM.GetAdjective] defense ministers are dusting off plans to enforce our obedience by deploying the Danube river flotilla - a scheme not tabled since 1905.\n\n[FROM.GetNameDefCap] seeks our subjugation once more."
+  events_AUS_erode_hungarian_influence.1.a: "This is a violation of the Augsleich!"
+
+  events_AUS_erode_hungarian_influence.2.t: "[FROM.GetAdjective] River Flotilla Takes [annexed_state.GetName]"
+  events_AUS_erode_hungarian_influence.2.d: "The arrival of the [FROM.GetAdjective] river flotilla at [annexed_state.GetName] has forced the region's defection to [FROM.GetNameDef].\n\nAuthorities of the territory's riverbank cities had little choice in the face of riverborne artillery, which threatened bombardment in response to any dissident [THIS.GetAdjective]s."
+  events_AUS_erode_hungarian_influence.2.a: "The brutes threaten us from the waterways."
+
+  events_AUS_erode_hungarian_influence.3.t: "[HUN.GetName] Regains Control of [returned_state.GetName]"
+  events_AUS_erode_hungarian_influence.3.d_austria: "In the absence of our river flotilla looming at their shores, [HUN.GetAdjective] authorities in [returned_state.GetName] have fallen back into the orbit of [HUN.capital.GetCapitalVictoryPointName]."
+  events_AUS_erode_hungarian_influence.3.a_austria: "How many times must we teach them this lesson?"
+  events_AUS_erode_hungarian_influence.3.d_hungary: "Enough time has passed since the arrival of the [AUS.GetAdjective] flotilla for [returned_state.GetName] to reaffirm its loyalty to [THIS.GetNameDef]."
+  events_AUS_erode_hungarian_influence.3.a_hungary: "The territory is ours again."
+
+  events_AUS_erode_hungarian_influence.4.t: "[FROM.GetAdjective] River Flotillas Surround [189.GetCapitalVictoryPointName]"
+  events_AUS_erode_hungarian_influence.4.d: "The [FROM.GetAdjective] standoffs against the Honvéd have reached their conclusion with the Imperial flotilla threatening to bombard [189.GetCapitalVictoryPointName] itself.\n\nDespite [HUN.GetAdjective] indignation, mounting a military response is no longer an option - too many waterways leading to [189.GetCapitalVictoryPointName] are under [FROM.GetAdjective] control.\n\nWith the heart of our nation lost, how long can we hope to resist [FROM.GetAdjective] hegemony?"
+  events_AUS_erode_hungarian_influence.4.a: "Catastrophic."

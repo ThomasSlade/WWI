@@ -24,6 +24,8 @@ d_rasputin = {
 }
 
 d_start_balkan_war = {
+	set_global_flag = flag_declare_italo_turkish_war_instantly
+
 	FRA = {
 		complete_national_focus = FRA_dummy
 		complete_national_focus = FRA_occupy_fes
