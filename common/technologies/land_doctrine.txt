@@ -374,7 +374,7 @@ technologies = {
 		}
 
 		dig_in_speed_factor = 0.25
-		max_dig_in = 5
+		max_dig_in = 3
 
 		category_light_infantry = {
 			defense = 0.5
@@ -401,7 +401,7 @@ technologies = {
 			factor = 40
 		}
 
-		max_dig_in = 3
+		max_dig_in = 5
 
 		category_light_infantry = {
 			defense = 0.25

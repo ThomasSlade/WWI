@@ -28,7 +28,7 @@ sub_units = {
 		}
 		
 		max_strength = 0.3
-		max_organisation = 3
+		max_organisation = 6
 		default_morale = 0.03
 		training_time = 120
 		weight = 0.5

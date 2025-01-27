@@ -1,7 +1,7 @@
 
 NDefines.NGame.START_DATE = "1911.1.1.12"
 NDefines.NGame.END_DATE = "1923.1.1.1"
-NDefines.NGame.MAP_SCALE_PIXEL_TO_KM = 2.1589	-- Based on the distance between Paris and Istanbul on the game map (~1045px).
+NDefines.NGame.MAP_SCALE_PIXEL_TO_KM = 1.991	-- Based on the distance between Paris and Istanbul on the game map (~1132.81px) over the crow-flies distance from Paris to Istanbul (2255.27km)
 
 NDefines.NDiplomacy.PEACE_SCORE_SCALE_FACTOR = 0.03	-- Losers' total value times this factor becomes the default total peace conference score that is distributed to the winners.
 NDefines.NDiplomacy.FRONT_IS_DANGEROUS = -50 -- AI should be unwilling to enter accept a call to war if front is too dangerous.
