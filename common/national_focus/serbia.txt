@@ -607,9 +607,9 @@ focus_tree = {
 				add_opinion_modifier = { target = SER modifier = serbian_royal_visit_negative }
 			}
 			hidden_effect = {
-				country_event = { id = wwi_serbia.12 }
-				FRA = { id = wwi_serbia.12 }
-				AUS = { id = wwi_serbia.12 }
+				country_event = { id = wwi_serbia.12 hours = 1 }
+				FRA = { country_event = { id = wwi_serbia.12 hours = 1 } }
+				AUS = { country_event = { id = wwi_serbia.12 hours = 1 } }
 			}
 		}
 	}
@@ -1426,7 +1426,7 @@ focus_tree = {
 					target = SER
 					modifier = AUS_serb_rapproachment
 				}
-				country_event = { id = event_AUS_serbian_reconciliation.2 hours = 1
+				country_event = { id = event_AUS_serbian_reconciliation.2 hours = 1 }
 
 				if = {
 					limit = {
