@@ -1,61 +1,164 @@
-add_namespace = wwi_debug
+add_namespace = event_start_great_war
 
 country_event = {
-	id = wwi_debug.1
-	title = wwi_debug.1.t
-	desc = wwi_debug.1.d
+	id = event_start_great_war.1
+	title = event_start_great_war.1.t
+	desc = event_start_great_war.1.d
 	picture = GFX_report_event_german_speech
-	
-	major = yes
 
 	is_triggered_only = yes
+	hidden = yes
 
-	option = {
-		name = wwi_debug.1.a
+	immediate = {
+		log = "([THIS.GetName] event) start_great_war: Setting up powderkeg."
+
+		set_global_flag = flag_debug_start_great_war
+
+		SOV = {
+			complete_national_focus = SOV_children_of_russia
+			complete_national_focus = SOV_align_serbia
+
+			# Required to give guarantees to Serbia.
+			add_political_power = 20
+			add_threat = 20
+		}
+
+		SER = {
+			complete_national_focus = SER_support_the_narodna_odbrana
+		}
+
+		GER = {
+			set_technology = {
+				early_reform = 1
+				pragmatic_uniform = 1
+				indirect_artillery = 1
+				free_fire = 1
+				auftragstatik = 1
+				digging_in = 1
+			}
+		}
+
+		AUS = {
+			set_technology = {
+				early_reform = 1
+				pragmatic_uniform = 1
+				indirect_artillery = 1
+				cult_of_the_offensive = 1
+			}
+		}
+
+		FRA = {
+			set_technology = {
+				early_reform = 1
+				free_fire = 1
+				indirect_artillery = 1
+				cult_of_the_offensive = 1
+			}
+
+			remove_ideas = idea_FRA_le_pantalon_rouge
+		}
+
+		SOV = {
+			set_technology = {
+				early_reform = 1
+				free_fire = 1
+				pragmatic_uniform = 1
+				rapid_mobilisation = 1
+			}
+		}
+
+		SER = {
+			set_technology = {
+				early_reform = 1
+				free_fire = 1
+				pragmatic_uniform = 1
+				guerilla_warfare = 1
+			}
+		}
+
+		every_country = {
+			limit = {
+				NOT = {
+					OR = {
+						original_tag = GER
+						original_tag = AUS
+						original_tag = FRA
+						original_tag = SOV
+						original_tag = SER
+					}
+				}
+			}
+
+			set_technology = {
+				early_reform = 1
+				pragmatic_uniform = 1
+				free_fire = 1
+			}
+		}
+
+		every_country = {
+			# For an army chief.
+			add_political_power = 50
+		}
+
+		country_event = { id = event_start_great_war.2 days = 30 }
 	}
 }
 
 country_event = {
-	id = wwi_debug.2
-	title = wwi_debug.2.t
-	desc = wwi_debug.2.d
+	id = event_start_great_war.2
+	title = event_start_great_war.2.t
+	desc = event_start_great_war.2.d
 	picture = GFX_report_event_german_speech
 
-	major = yes
-
 	is_triggered_only = yes
+	hidden = yes
 
-	option = {
-		name = wwi_debug.2.a
+	immediate = {
+		log = "([THIS.GetName] event) start_great_war: Striking the spark."
+
+		AUS = {
+			complete_national_focus = AUS_imperial_visit_to_bosnia
+		}
+
+		country_event = { id = event_start_great_war.3 hours = 6 }
 	}
 }
 
 country_event = {
-	id = wwi_debug.3
-	title = wwi_debug.3.t
-	desc = wwi_debug.3.d
+	id = event_start_great_war.3
+	title = event_start_great_war_3.t
+	desc = event_start_great_war_3.d
 	picture = GFX_report_event_german_speech
 
-	major = yes
-
 	is_triggered_only = yes
+	hidden = yes
 
-	option = {
-		name = wwi_debug.3.a
-	}
-}
+	immediate = {
+		log = "([THIS.GetName] event) start_great_war: Schlieffen plan."
 
-country_event = {
-	id = wwi_debug.4
-	title = wwi_debug.4.t
-	desc = wwi_debug.4.d
-	picture = GFX_report_event_german_speech
+		GER = {
+			create_wargoal = {
+				target = BEL
+				type = puppet_wargoal_focus
+			}
 
-	major = yes
+			create_wargoal = {
+				target = LUX
+				type = annex_everything
+			}
 
-	is_triggered_only = yes
+			add_ai_strategy = {
+				type = declare_war
+				id = BEL
+				value = 500
+			}
 
-	option = {
-		name = wwi_debug.4.a
+			add_ai_strategy = {
+				type = declare_war
+				id = LUX
+				value = 500
+			}
+		}
 	}
 }

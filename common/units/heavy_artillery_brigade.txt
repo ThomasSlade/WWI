@@ -4,7 +4,7 @@ sub_units = {
 		sprite = artillery
 		map_icon_category = infantry
 		priority = 6200
-		ai_priority = 100
+		ai_priority = 2000
 		active = yes
 		
 		type = {
@@ -29,7 +29,7 @@ sub_units = {
 		
 		max_strength = 0.3
 		max_organisation = 0
-		default_morale = 0.02
+		default_morale = 0.1
 		training_time = 120
 		weight = 0.5
 		supply_consumption = 0.21

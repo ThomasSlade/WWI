@@ -18,6 +18,8 @@ country_event = {
 		name = event_ITA_italo_turkish_war.1.a
 
 		effect_ITA_conquer_libya = yes
+
+		ai_chance = { factor = 100 }
 	}
 
 	# Don't.

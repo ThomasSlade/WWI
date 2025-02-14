@@ -31,11 +31,13 @@ set_popularities = {
 
 add_ideas = {
 	limited_exports
-	extensive_conscription
+	limited_conscription
 	partial_economic_mobilisation
 
 	gov_limited_democracy
 	cab_conservative
+	
+	idea_BEL_brave_little_belgium
 }
 
 recruit_character = BEL_albert_i

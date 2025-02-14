@@ -1,9 +1,9 @@
 continents = {
 	balkans
-	east_europe
+	eastern_europe
 	central_europe
 	western_europe
-	south_europe
+	southern_europe
 	middle_east
 	north_africa
 }

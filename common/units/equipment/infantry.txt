@@ -20,13 +20,13 @@ equipments = {
 		maximum_speed = 4
 
 		#Defensive Abilities
-		defense = 7
-		breakthrough = 6
+		defense = 11
+		breakthrough = 7
 		hardness = 0
 		armor_value = 0
 
 		#Offensive Abilities
-		soft_attack = 5
+		soft_attack = 7
 		hard_attack = 0.5
 		ap_attack = 1
 		air_attack = 0
@@ -59,10 +59,10 @@ equipments = {
 		visual_level = 1
 
 		#Defensive Abilities
-		defense = 9
+		defense = 14
 
 		#Offensive Abilities
-		soft_attack = 6
+		soft_attack = 8
 	}
 
 	# Improved weapons  ~1939
@@ -75,11 +75,11 @@ equipments = {
 		visual_level = 2
 
 		#Defensive Abilities
-		defense = 11
-		breakthrough = 7
+		defense = 17
+		breakthrough = 8
 
 		#Offensive Abilities
-		soft_attack = 8
+		soft_attack = 9
 		hard_attack = 1.5
 		
 		build_cost_ic = 0.58
@@ -98,8 +98,8 @@ equipments = {
 		visual_level = 3
 
 		#Defensive Abilities
-		defense = 13
-		breakthrough = 8
+		defense = 20
+		breakthrough = 9
 
 		#Offensive Abilities
 		soft_attack = 10

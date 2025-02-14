@@ -1,0 +1,20 @@
+FRA_defend_vosges = {
+	allowed = {
+		original_tag = FRA
+	}
+
+	enable = {
+		# WWI TODO: Make this depend on focuses.
+		always = yes
+	}
+
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = GER
+		value = 200
+	}
+}

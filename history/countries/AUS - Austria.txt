@@ -16,6 +16,8 @@ set_technology = {
 	tech_engineers = 1
 
 	early_reform = 1
+	indirect_artillery = 1
+	cult_of_the_offensive = 1
 }
 
 set_convoys = 50

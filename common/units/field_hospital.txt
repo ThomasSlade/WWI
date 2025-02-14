@@ -26,7 +26,7 @@ sub_units = {
 		#Size Definitions
 		max_strength = 2
 		max_organisation = 20
-		default_morale = 0.3
+		default_morale = 0.1
 		manpower = 750
 		training_time = 120
 

@@ -1,0 +1,316 @@
+GER_schlieffen_prepare = {
+	allowed = {
+		original_tag = GER
+	}
+
+	enable = {
+		# WWI TODO: Should depend on German Schlieffen focus, probably.
+
+		OR = {
+			date > 1914.01.01
+			has_global_flag = flag_debug_start_great_war
+		}
+	}
+
+	abort = {
+		# All relevant countries are either defeated, or you're not at war with them.
+		OR = {
+			has_war_with = BEL
+			has_war_with = LUX
+		}
+
+		BEL = {
+			OR = {
+				NOT = { has_war_with = ROOT }
+				has_capitulated = yes
+			}
+		}
+
+		LUX = {
+			OR = {
+				NOT = { has_war_with = ROOT }
+				has_capitulated = yes
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = BEL
+		value = 500
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = LUX
+		value = 500
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = BEL
+		value = 600
+	}
+
+	ai_strategy = {
+		type = front_armor_score
+		id = BEL
+		value = 500
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = LUX
+		value = 300
+	}
+
+	ai_strategy = {
+		type = front_armor_score
+		id = LUX
+		value = 500
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = SOV
+		value = -100
+	}
+}
+
+GER_schlieffen_rush_benelux = {
+	allowed = {
+		original_tag = GER
+	}
+
+	enable = {
+		# WWI TODO: Should depend on German Schlieffen focus, probably.
+
+		OR = {
+			has_war_with = BEL
+			has_war_with = LUX
+		}
+	}
+
+	abort = {
+		OR = {
+			# All relevant countries are either defeated, or you're not at war with them.
+			AND = {
+				OR = {
+					has_war_with = BEL
+					has_war_with = LUX
+				}
+
+				BEL = {
+					OR = {
+						NOT = { has_war_with = ROOT }
+						has_capitulated = yes
+					}
+				}
+
+				LUX = {
+					OR = {
+						NOT = { has_war_with = ROOT }
+						has_capitulated = yes
+					}
+				}
+			}
+
+			war_length_with = {
+				tag = BEL
+				months > 6
+			}
+
+			war_length_with = {
+				tag = LUX
+				months > 6
+			}
+
+			count_triggers = {
+				amount = 2
+				# Eupen
+				17 = {
+					is_core_of = ROOT
+					NOT = { is_controlled_by = ROOT }
+				}
+				# Trier
+				73 = {
+					is_core_of = ROOT
+					NOT = { is_controlled_by = ROOT }
+				}
+				# Saarland
+				54 = {
+					is_core_of = ROOT
+					NOT = { is_controlled_by = ROOT }
+				}
+				# Pfalz
+				22 = {
+					is_core_of = ROOT
+					NOT = { is_controlled_by = ROOT }
+				}
+				# Koblenz
+				70 = {
+					is_core_of = ROOT
+					NOT = { is_controlled_by = ROOT }
+				}
+				# Aachen
+				52 = {
+					is_core_of = ROOT
+					NOT = { is_controlled_by = ROOT }
+				}
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = front_control
+		id = BEL
+		priority = 500
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+
+	ai_strategy = {
+		type = front_control
+		id = LUX
+		priority = 100
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+}
+
+GER_schlieffen_rush_france = {
+	abort_when_not_enabled = yes
+
+	allowed = {
+		original_tag = GER
+	}
+
+	enable = {
+		# WWI TODO: Should depend on German Schlieffen focus, probably.
+
+		has_war_with = FRA
+
+		# Relevant countries either defeated or you're not at war with them.
+		AND = {
+			BEL = {
+				OR = {
+					NOT = { has_war_with = ROOT }
+					has_capitulated = yes
+				}
+			}
+			LUX = {
+				OR = {
+					NOT = { has_war_with = ROOT }
+					has_capitulated = yes
+				}
+			}
+		}
+
+		any_controlled_state = {
+			any_neighbor_state = {
+				is_core_of = FRA
+				NOT = {
+					state = 77 # Vosges
+					state = 15	# Franche Comte
+				}
+			}
+		}
+	}
+
+	abort = {
+		OR = {
+			war_length_with = {
+				tag = FRA
+				months > 6
+			}
+
+			count_triggers = {
+				amount = 2
+				# Lothringen
+				107 = {
+					is_core_of = ROOT
+					NOT = { is_controlled_by = ROOT }
+				}
+				# Elsass
+				2 = {
+					is_core_of = ROOT
+					NOT = { is_controlled_by = ROOT }
+				}
+				# Saarland
+				54 = {
+					is_core_of = ROOT
+					NOT = { is_controlled_by = ROOT }
+				}
+				# Pfalz
+				22 = {
+					is_core_of = ROOT
+					NOT = { is_controlled_by = ROOT }
+				}
+				# Karlsruhe
+				31 = {
+					is_core_of = ROOT
+					NOT = { is_controlled_by = ROOT }
+				}
+				# Freiburg
+				99 = {
+					is_core_of = ROOT
+					NOT = { is_controlled_by = ROOT }
+				}
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = front_unit_request
+		tag = FRA
+		value = 600
+	}
+
+	ai_strategy = {
+		type = front_armor_score
+		id = FRA
+		value = 500
+	}
+
+	ai_strategy = {
+		type = front_control
+		tag = FRA
+		strategic_region = 2 # Flanders
+		priority = 100
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+
+	ai_strategy = {
+		type = front_control
+		tag = FRA
+		strategic_region = 10 # Marne
+		priority = 100
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+
+	ai_strategy = {
+		type = front_control
+		tag = FRA
+		strategic_region = 6 # Seine
+		priority = 100
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+
+	ai_strategy = {
+		type = front_control
+		tag = FRA
+		strategic_region = 11 # Normandy
+		priority = 100
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+}

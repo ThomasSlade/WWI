@@ -10,6 +10,9 @@ ability = {
 		type = army_leader
 		
 		allowed = {
+			# WWI Todo: Disabling all abilities. Consider removing later.
+			always = no
+
 			is_leading_army_group = no
 			is_border_war = no
 		}
@@ -58,6 +61,9 @@ ability = {
 		type = army_leader
 		
 		allowed = {
+			# WWI Todo: Disabling all abilities. Consider removing later.
+			always = no
+
 			is_leading_army_group = no
 			is_border_war = no
 		}
@@ -106,6 +112,9 @@ ability = {
 		type = army_leader
 		
 		allowed = {
+			# WWI Todo: Disabling all abilities. Consider removing later.
+			always = no
+
 			is_border_war = no
 		}
 		
@@ -140,6 +149,9 @@ ability = {
 		type = army_leader
 		
 		allowed = {
+			# WWI Todo: Disabling all abilities. Consider removing later.
+			always = no
+
 			has_ability = siege_artillery
 			is_border_war = no
 		}
@@ -180,6 +192,9 @@ ability = {
 		type = army_leader
 		
 		allowed = {
+			# WWI Todo: Disabling all abilities. Consider removing later.
+			always = no
+
 			has_ability = glider_planes
 			is_border_war = no
 		}
@@ -200,6 +215,9 @@ ability = {
 		type = army_leader
 		
 		allowed = {
+			# WWI Todo: Disabling all abilities. Consider removing later.
+			always = no
+
 			has_ability = faster_naval_invasion_planning
 			is_border_war = no
 		}
@@ -219,6 +237,9 @@ ability = {
 		type = army_leader
 		
 		allowed = {
+			# WWI Todo: Disabling all abilities. Consider removing later.
+			always = no
+
 			has_ability = probing_attack
 			is_border_war = no
 		}
@@ -240,6 +261,9 @@ ability = {
 		type = army_leader
 		
 		allowed = {
+			# WWI Todo: Disabling all abilities. Consider removing later.
+			always = no
+
 			has_ability = makeshift_bridges
 			is_border_war = no
 		}
@@ -275,6 +299,9 @@ ability = {
 		type = army_leader
 		
 		allowed = {
+			# WWI Todo: Disabling all abilities. Consider removing later.
+			always = no
+
 			has_ability = extra_suplies
 			is_border_war = no
 		}
@@ -299,6 +326,9 @@ ability = {
 		type = army_leader
 		
 		allowed = {
+			# WWI Todo: Disabling all abilities. Consider removing later.
+			always = no
+			
 			has_ability = requisition_winter_gear
 			is_border_war = no
 		}

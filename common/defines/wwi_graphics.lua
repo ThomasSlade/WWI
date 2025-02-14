@@ -19,6 +19,11 @@ NDefines_Graphics.NGraphics.VICTORY_POINT_MAP_ICON_TEXT_CUTOFF_MAX = 1400.0 -- M
 NDefines_Graphics.NGraphics.VICTORY_POINT_MAP_ICON_DOT_CUTOFF_MIN = 300.0 -- Min range for victory point dot
 NDefines_Graphics.NGraphics.VICTORY_POINT_MAP_ICON_DOT_CUTOFF_MAX = 1600.0 -- Max range for victory point text
 
+-- Icon Group distances
+NDefines_Graphics.NGraphics.MAP_ICONS_GROUP_CAM_DISTANCE = 150	-- camera distance at which the icons begin to group up
+NDefines_Graphics.NGraphics.MAP_ICONS_STATE_GROUP_CAM_DISTANCE = 300	-- Camera distance at which the icons begin to group up on state level
+NDefines_Graphics.NGraphics.MAP_ICONS_STRATEGIC_GROUP_CAM_DISTANCE = 550	-- second camera distance at which the icons begin to group up
+
 -- Other tweaks
 NDefines_Graphics.NGraphics.RAILWAY_CAMERA_CUTOFF = 300.0
 

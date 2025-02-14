@@ -4,12 +4,15 @@ sub_units = {
 		sprite = artillery
 		map_icon_category = infantry
 		priority = 6100
-		ai_priority = 100
+		ai_priority = 1500
 		active = yes
 		
 		type = {
 			infantry
 			artillery
+
+			# So that the game knows this is an offensive unit.
+			armor
 		}
 
 		group = combat_support
@@ -29,7 +32,7 @@ sub_units = {
 		
 		max_strength = 0.3
 		max_organisation = 6
-		default_morale = 0.03
+		default_morale = 0.1
 		training_time = 120
 		weight = 0.5
 		supply_consumption = 0.21

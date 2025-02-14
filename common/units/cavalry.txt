@@ -28,7 +28,7 @@ sub_units = {
 		#Size Definitions
 		max_organisation = 50
 		max_strength = 10
-		default_morale = 0.05
+		default_morale = 0.1
 		manpower = 800
 
 		#Misc Abilities

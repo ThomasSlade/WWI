@@ -1,12 +1,49 @@
 areas = {
-	libya = {
-		strategic_regions = {
-			109 110
-		}
-	}
 	balkans = {
 		continents = {
 			balkans
+		}
+	}
+
+	western_europe = {
+		continents = {
+			western_europe
+		}
+	}
+
+	eastern_europe = {
+		continents = {
+			eastern_europe
+		}
+	}
+
+	southern_europe = {
+		continents = {
+			southern_europe
+		}
+	}
+
+	central_europe = {
+		continents = {
+			central_europe
+		}
+	}
+
+	middle_east = {
+		continents = {
+			middle_east
+		}
+	}
+
+	north_africa = {
+		continents = {
+			north_africa
+		}
+	}
+
+	libya = {
+		strategic_regions = {
+			109 110
 		}
 	}
 }

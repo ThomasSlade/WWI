@@ -47,12 +47,26 @@ division_template = {
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
         infantry = { x = 0 y = 3 }
-		infantry = { x = 0 y = 4 }
 		infantry = { x = 1 y = 0 }
-        infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 1 }
+        infantry = { x = 1 y = 2 }
 		infantry = { x = 1 y = 3 }
-		field_artillery_brigade = { x = 1 y = 4 }
+		field_artillery_brigade = { x = 2 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Reserve-Division"
+
+	division_names_group = GER_Inf_01
+	template_counter = 7
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
 	}
 }
 
@@ -1639,37 +1653,7 @@ units = {
 		start_equipment_factor = 0.8
 	}
 
-	# 5 Infantry Units
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 3116
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 3116
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 3116
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
+	# 2 Infantry Units
 	division = {
 		division_name = {
 			is_name_ordered = yes
@@ -1691,14 +1675,14 @@ units = {
 		start_equipment_factor = 0.8
 	}
 
-	# 5 Infantry Units
+	# 10 Reserve Units
 	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
 		location = 3116
-		division_template = "Infanterie-Division"
+		division_template = "Reserve-Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
@@ -1708,7 +1692,7 @@ units = {
 			name_order = 2
 		}
 		location = 3116
-		division_template = "Infanterie-Division"
+		division_template = "Reserve-Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
@@ -1718,7 +1702,7 @@ units = {
 			name_order = 2
 		}
 		location = 3116
-		division_template = "Infanterie-Division"
+		division_template = "Reserve-Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
@@ -1728,7 +1712,7 @@ units = {
 			name_order = 2
 		}
 		location = 3116
-		division_template = "Infanterie-Division"
+		division_template = "Reserve-Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
@@ -1738,7 +1722,119 @@ units = {
 			name_order = 2
 		}
 		location = 3116
-		division_template = "Infanterie-Division"
+		division_template = "Reserve-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3116
+		division_template = "Reserve-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3116
+		division_template = "Reserve-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3116
+		division_template = "Reserve-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3116
+		division_template = "Reserve-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3116
+		division_template = "Reserve-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+
+	# 6 Reserve Units
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3116
+		division_template = "Reserve-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3116
+		division_template = "Reserve-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3116
+		division_template = "Reserve-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3116
+		division_template = "Reserve-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3116
+		division_template = "Reserve-Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3116
+		division_template = "Reserve-Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}

@@ -16,5 +16,9 @@ decision_category_ITA_italo_turkish_war = {
         		effect_ITA_conquer_libya = yes
         	}
         }
+
+        ai_will_do = {
+        	base = 100
+        }
 	}
 }

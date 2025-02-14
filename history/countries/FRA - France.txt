@@ -15,6 +15,7 @@ set_technology = {
 	tech_support = 1
 
 	early_reform = 1
+	indirect_artillery = 1
 	cult_of_the_offensive = 1
 }
 
@@ -36,6 +37,8 @@ add_ideas = {
 
 	cab_liberal
 	gov_liberal_democracy
+
+	idea_FRA_le_pantalon_rouge
 }
 
 recruit_character = FRA_raymond_poincare

@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		idea_BEL_brave_little_belgium = {
+			removal_cost = -1
+			picture = BEL_brave_little_belgium
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				forced_surrender_limit = 0.3
+			}
+		}
+	}
+}

@@ -15,6 +15,7 @@ set_technology = {
 	field_artillery_0 = 1
 
 	early_reform = 1
+	indirect_artillery = 1
 	rapid_mobilisation = 1
 }
 

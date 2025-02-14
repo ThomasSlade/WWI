@@ -21,14 +21,13 @@ sub_units = {
 			category_support_battalions
 			category_army
 		}
-
 	
 		combat_width = 0
 	
 		#Size Definitions
-		max_strength = 2
+		max_strength = 1
 		max_organisation = 20
-		default_morale = 0.3
+		default_morale = 0.1
 		manpower = 250
 		training_time = 120
 
@@ -36,16 +35,15 @@ sub_units = {
 		weight = 0.1
 		supply_consumption = 0.02
 		
-		entrenchment  = 5
+		entrenchment  = 3
 		
 		battalion_mult = {
 			category = category_light_infantry
 			entrenchment = 0.20
 			add = yes
 		}
-
 				
-		defense = 0.1
+		defense = 0.5
 		breakthrough = 0.5
 
 		# Support nerfs to combat abilities
@@ -63,7 +61,6 @@ sub_units = {
 		can_be_parachuted = yes
 		forest = {
 			defence = 0.25
-			movement = 0.05
 		}
 
 		hills = {
@@ -76,11 +73,11 @@ sub_units = {
 
 		marsh = {
 			defence = 0.25
-			movement = 0.2
+			movement = 0.25
 		}
 
 		fort = {
-			attack = 0.1
+			attack = 0.25
 			defence = 0.25
 		}
 

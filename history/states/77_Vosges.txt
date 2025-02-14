@@ -8,6 +8,63 @@ state={
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
+			726 = {
+				bunker = 5
+			}
+			1683 = {
+				bunker = 5
+			}
+			1645 = {
+				bunker = 5
+			}
+			1682 = {
+				bunker = 5
+			}
+			1630 = {
+				bunker = 5
+			}
+			1342 = {
+				bunker = 5
+			}
+			1574 = {
+				bunker = 5
+			}
+			1402 = {
+				bunker = 5
+			}
+			1589 = {
+				bunker = 5
+			}
+			1705 = {
+				bunker = 5
+			}
+			1687 = {
+				bunker = 5
+			}
+			1606 = {
+				bunker = 5
+			}
+			1492 = {
+				bunker = 5
+			}
+			1585 = {
+				bunker = 5
+			}
+			1695 = {
+				bunker = 5
+			}
+			1629 = {
+				bunker = 5
+			}
+			1405 = {
+				bunker = 5
+			}
+			1531 = {
+				bunker = 5
+			}
+			1434 = {
+				bunker = 5
+			}
 		}
 		victory_points = {1574 15
 		}

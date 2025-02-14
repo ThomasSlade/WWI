@@ -7,12 +7,12 @@ ITA_dont_invade_balkans_in_italo_turkish_war = {
 
 	enable = {
 		has_country_flag = flag_avoid_balkan_invasion
-		NOT = { has_war_with = TUR }
+		has_war_with = TUR
 	}
 
     ai_strategy = {
     	type = area_priority
     	id = balkans
-    	value = -50
+    	value = -1000
     }
 }

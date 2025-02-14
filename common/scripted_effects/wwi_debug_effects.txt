@@ -42,11 +42,5 @@ d_start_balkan_war = {
 }
 
 d_start_great_war = {
-	SER = {
-		complete_national_focus = SER_support_the_narodna_odbrana
-	}
-
-	AUS = {
-		complete_national_focus = AUS_imperial_visit_to_bosnia
-	}
+	country_event = { id = event_start_great_war.1 }
 }
