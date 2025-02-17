@@ -32,7 +32,7 @@ NDefines.NAI.DIVISION_SUPPLY_RATIO_TO_MOTORIZE = 0.00	-- If supply ratio is less
 NDefines.NAI.VARIANT_CREATION_XP_RESERVE_LAND = 20	-- If the AI lacks army XP to create a variant it will reserve this much XP for variant creation so that it will eventually be able to create a variant.
 
 NDefines.NProduction.BASE_FACTORY_SPEED = 5
-NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 2
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4.5
 NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 2.5
 
 NDefines.NSupply.INFRA_TO_SUPPLY = 0.5

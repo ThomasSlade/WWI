@@ -6,9 +6,6 @@
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-        infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
 	}
 }
 
@@ -19,9 +16,6 @@ division_template = {
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
 	}
 }
 
@@ -33,25 +27,12 @@ division_template = {
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-        infantry = { x = 0 y = 3 }
 		field_artillery_brigade = { x = 1 y = 0 }
 	}
 }
 
 units = {
 	# 2 Cavalry Units
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 1513
-		division_template = "Cavalry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-
 	division = {
 		division_name = {
 			is_name_ordered = yes
@@ -106,28 +87,6 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 1513
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 1513
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-
-	# 1 Infantry Units
 	division = {
 		division_name = {
 			is_name_ordered = yes

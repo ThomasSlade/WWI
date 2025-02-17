@@ -6,11 +6,11 @@ garrison_generic = {
 	}
 	
 	upgrade_prio = {
-		factor = 1
+		factor = 0.5
 
 		modifier = {
-			factor = 0
-			ai_has_role_template = garrison
+			factor = 20
+			NOT = { ai_has_role_template = garrison }
 		}
 	}
 	
@@ -94,7 +94,7 @@ suppression_generic = {
 	}
 	
 	upgrade_prio = {
-		factor = 1
+		base = 0.5
 
 		modifier = {
 			factor = 20
@@ -192,7 +192,7 @@ infantry_small = {
 	}
 
 	upgrade_prio = {
-		factor = 7
+		base = 0.5
 	}
 
 	match_to_count = 0.10
@@ -280,7 +280,7 @@ infantry_generic = {
 	}
 	
 	upgrade_prio = {
-		factor = 10
+		factor = 2
 	}
 
 	match_to_count = 0.10
@@ -459,6 +459,8 @@ mountaineers_generic = {
 			field_hospital
 			logistics_company
 			anti_tank
+			artillery_brigade
+			engineer
 		}
 	}
 }
@@ -552,6 +554,7 @@ marines_generic = {
 			marine
 			engineer
 			logistics_company
+			recon
 		}
 	}
 	marine_armored = {
@@ -648,10 +651,10 @@ artillery_generic = {
 	}
 	
 	upgrade_prio = {
-		factor = 4
+		factor = 3
 	}
 
-	match_to_count = 0.5
+	match_to_count = 0.75
 	
 	field_artillery_default = {
 		upgrade_prio = {
@@ -829,10 +832,17 @@ siege_artillery_generic = {
 	}
 
 	upgrade_prio = {
-		factor = 4
+		factor = 2
+
+		modifier = {
+			factor = 0
+			NOT = {
+				has_tech = siege_artillery_0
+			}
+		}
 	}
 
-	match_to_count = 0.5
+	match_to_count = 0.8
 
 	siege_artillery_default = {
 		upgrade_prio = {
@@ -912,10 +922,10 @@ machine_gun_generic = {
 	}
 
 	upgrade_prio = {
-		factor = 7
+		factor = 3
 	}
 
-	match_to_count = 0.5
+	match_to_count = 0.75
 
 	heavy_machine_gun_default = {
 		upgrade_prio = {

@@ -32,7 +32,7 @@ add_ideas = {
 	cab_liberal
 	gov_limited_democracy
 	limited_exports
-	scraping_the_barrel
+	limited_conscription
 	partial_economic_mobilisation
 }
 
