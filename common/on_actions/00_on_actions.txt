@@ -389,15 +389,6 @@ on_actions = {
 		}
 	}
 	
-	# root country that invades
-	# scope state that is invaded
-	# from scope state that the invasion started
-	# on_naval_invasion = {
-	# 	effect = {
-	# 	}
-	# }
-	
-	
 	# root country that paradrops
 	# scope state that is paradroped into
 	# from scope state that the paradrop started

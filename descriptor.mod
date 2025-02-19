@@ -3,7 +3,7 @@ tags={
 	"Alternative History"
 }
 name="WWI"
-supported_version="1.14.*"
+supported_version="1.15.*"
 replace_path="common/abilities"
 replace_path="common/ai_areas"
 replace_path="common/ai_equipment"

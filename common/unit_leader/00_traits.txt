@@ -692,7 +692,9 @@ leader_traits = {
 					original_tag = ITA
 					original_tag = SWI
 					original_tag = SWE
+					original_tag = AUS
 					original_tag = BRA
+					original_tag = GER
 				}
 			}
 		}
@@ -708,7 +710,9 @@ leader_traits = {
 					original_tag = ITA
 					original_tag = SWI
 					original_tag = SWE
+					original_tag = AUS
 					original_tag = BRA
+					original_tag = GER
 				}
 				NOT = {
 					OR = {
@@ -2046,7 +2050,7 @@ leader_traits = {
 	concealment_expert = { 
 		type = navy
 		modifier = {
-			navy_visibility = -0.2
+			navy_visibility = -0.1
 		}
 		
 		ai_will_do = {
@@ -2113,6 +2117,7 @@ leader_traits = {
 		
 		trait_type = assignable_trait
 		any_parent = { seawolf spotter fleet_protector superior_tactician }
+		mutually_exclusive = silent_hunter
 
 		gui_row = 3
 		gui_column = 1

@@ -24,6 +24,7 @@ sub_units = {
 			category_light_infantry
 			category_all_infantry
 			category_army
+			category_infantry_and_bicycle
 		}
 		
 		combat_width = 2
@@ -66,6 +67,7 @@ sub_units = {
 			category_light_infantry
 			category_all_infantry
 			category_army
+			category_infantry_and_bicycle
 		}
 		
 		combat_width = 2
@@ -141,6 +143,8 @@ sub_units = {
 			category_all_infantry
 			category_army
 			category_special_forces
+			category_marines
+			category_special_forces_leg_infantry
 		}
 		
 		combat_width = 2
@@ -197,6 +201,7 @@ sub_units = {
 			category_army
 			category_special_forces
 			category_mountaineers
+			category_special_forces_leg_infantry
 		}
 		
 		combat_width = 2
@@ -254,6 +259,7 @@ sub_units = {
 			category_army
 			category_special_forces
 			category_paratroopers
+			category_special_forces_leg_infantry
 		}
 		
 		combat_width = 2
@@ -296,6 +302,8 @@ sub_units = {
 			category_front_line
 			category_all_infantry
 			category_army
+			category_vehicle_infantry
+			category_mobile_and_mobile_combat_sup
 		}
 		
 		combat_width = 2
@@ -366,6 +374,8 @@ sub_units = {
 			category_front_line
 			category_all_infantry
 			category_army
+			category_vehicle_infantry
+			category_mobile_and_mobile_combat_sup
 		}
 
 		combat_width = 2

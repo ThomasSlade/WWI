@@ -19,6 +19,7 @@ sub_units = {
 		
 		categories = {
 			category_front_line
+			category_cavalry
 			category_army
 		}
 
@@ -87,6 +88,7 @@ sub_units = {
 		
 		categories = {
 			category_front_line
+			category_cavalry
 			category_army
 		}
 		
