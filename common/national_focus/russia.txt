@@ -1456,7 +1456,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				bonus = 1
-				category = heavy_machine_guns
+				category = heavy_machine_gun
 			}
 		}
 	}

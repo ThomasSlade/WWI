@@ -644,6 +644,18 @@ script_enum_equipment_bonus_type = {
 	amphibious_tank_equipment_2
 
 	# WWI
+	field_artillery_equipment
+	field_artillery_equipment_0
+	field_artillery_equipment_1
+	field_artillery_equipment_2
+	heavy_artillery_equipment
+	heavy_artillery_equipment_0
+	heavy_artillery_equipment_1
+	heavy_artillery_equipment_2
+	siege_artillery_equipment
+	siege_artillery_equipment_0
+	siege_artillery_equipment_1
 	heavy_machine_gun_equipment
+	heavy_machine_gun_equipment_0
 	heavy_machine_gun_equipment_1
 }
