@@ -7,6 +7,7 @@ state={
 		add_core_of = ITA
 		buildings = {
 			arms_factory = 1
+			air_base = 1
 			infrastructure = 2
 			9804 = {
 				naval_base = 1

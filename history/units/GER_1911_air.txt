@@ -1,0 +1,8 @@
+air_wings = {
+	36 = {
+		recon_plane_equipment_0 = {
+			owner = "GER"
+			amount = 25
+		}
+	}
+}

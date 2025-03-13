@@ -8,6 +8,7 @@ state={
 		add_core_of = WUR
 		buildings = {
 			arms_factory = 1
+			air_base = 1
 			infrastructure = 1
 		}
 		victory_points = {2084 5

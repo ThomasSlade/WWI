@@ -44,11 +44,6 @@ add_ideas = {
 
 recruit_character = HUN_istvan_tisza
 
-recruit_character = HUN_generic_prudent_defender
-recruit_character = HUN_generic_bold_attacker
-recruit_character = HUN_generic_thorough_logistician
-recruit_character = HUN_generic_master_planner
-
 # Apply the effects of the AUS_multi_lingual_empire idea manually.
 every_unit_leader = {
 	add_trait = { trait = multilingual_army }

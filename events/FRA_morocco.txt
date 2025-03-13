@@ -27,14 +27,16 @@ country_event = {
 			target = TUR
 		}
 		
-		if = {
-			limit = { has_global_flag = flag_declare_italo_turkish_war_instantly }
-			country_event = { id = event_FRA_morocco_italy_agreement.2 }
+		hidden_effect = {
+			if = {
+				limit = { has_global_flag = flag_declare_italo_turkish_war_instantly }
+				country_event = { id = event_FRA_morocco_italy_agreement.2 }
+			}
+			else = {
+				country_event = { id = event_FRA_morocco_italy_agreement.2 days = 140 }
+			}
 		}
-		else = {
-			country_event = { id = event_FRA_morocco_italy_agreement.2 days = 140 }
-		}
-
+		
 		# If this changes, change the French focus tt too.
 		effect_boost_popularity_of_from_ideology_10 = yes
 
@@ -43,8 +45,8 @@ country_event = {
 			name = threat_italy_accepted_prinetti_barrere_accord
 		}
 
-		unlock_decision_tooltip = decision_ITA_conquer_libya
-		set_country_flag = flag_ITA_has_italo_turkish_war_goal
+		unlock_decision_tooltip = decision_special_wargoal_italo_turkish
+		set_country_flag = flag_italo_turkish_war
 
 		ai_chance = { factor = 100 }
 	}
@@ -90,6 +92,7 @@ country_event = {
 		# Reduce the likelihood of invading Albania for a while. This enables an AI strategy deprioritizing the Balkan region.
 		set_country_flag = {
 		    flag = flag_avoid_balkan_invasion
+		    value = 1
 		    days = 365
 		}
 	}

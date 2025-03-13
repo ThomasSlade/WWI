@@ -1,0 +1,65 @@
+add_namespace = event_special_wargoal_italo_turkish
+
+country_event = {
+	id = event_special_wargoal_italo_turkish.1
+	title = event_special_wargoal_italo_turkish.1.t
+	desc = event_special_wargoal_italo_turkish.1.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Italy occupied all of Libya and able to end Italo-Turkish war."
+		set_country_flag = {
+			flag = flag_italo_turkish_war
+			value = 2
+		}
+	}
+
+	# End war
+	option = {
+		name = event_special_wargoal_italo_turkish.1.a
+
+		effect_special_wargoal_italo_turkish_victory = yes
+
+		ai_chance = { factor = 100 }
+	}
+
+	# Don't.
+	option = {
+		name = event_special_wargoal_italo_turkish.1.b
+	}
+}
+
+add_namespace = event_special_wargoal_first_balkan
+
+country_event = {
+	id = event_special_wargoal_first_balkan.1
+	title = event_special_wargoal_first_balkan.1.t
+	desc = event_special_wargoal_first_balkan.1.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Serbia pushed Turkey out of Europe and able to end First Balkan war."
+		set_country_flag = {
+			flag = flag_first_balkan_war
+			value = 2
+		}
+	}
+
+	# End war
+	option = {
+		name = event_special_wargoal_first_balkan.1.a
+
+		effect_special_wargoal_first_balkan_victory = yes
+
+		ai_chance = { factor = 100 }
+	}
+
+	# Don't.
+	option = {
+		name = event_special_wargoal_first_balkan.1.b
+	}
+}

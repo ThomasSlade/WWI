@@ -1,0 +1,56 @@
+# Checklist for creating special wargoals (it would be amazing if there was a way to generalize this into a reusable system):
+# 1. A flag, signifying that the wargoal isn available (a flag value of 2 is used to signify the victory event has fired once already).
+# 2. A decision, which the player can select given a certain condition to end the war early.
+# 3. A scripted trigger, which makes that decision available and also is checked on_daily for the relevant country.
+# 4. The on_daily check for the relevant country, which fires the information event telling the player the first time they have the option to end the war.
+# 5. The on_peace_conference check that removes the flag enabling the special wargoal.
+# 6. A victory effect which gives a limited peace conference.
+# I'd be able to do all this within decisions alone, but because I want to fire an initial event informing the player that the decision is available when the trigger is met, all this extra stuff is needed.
+
+decision_category_special_wargoals = {
+	decision_special_wargoal_italo_turkish = {
+		visible = {
+			has_country_flag = flag_italo_turkish_war
+		}
+
+		available = {
+			trigger_special_wargoal_italo_turkish = yes
+        }
+
+        complete_effect = {
+        	country_event = { id = event_special_wargoal_italo_turkish.1 }
+
+        	effect_tooltip = {
+        		custom_effect_tooltip = if_we_accept_tt
+        		effect_special_wargoal_italo_turkish_victory = yes
+        	}
+        }
+
+        ai_will_do = {
+        	base = 100
+        }
+	}
+
+	decision_special_wargoal_first_balkan = {
+		visible = {
+			has_country_flag = flag_first_balkan_war
+		}
+
+		available = {
+			trigger_special_wargoal_first_balkan = yes
+        }
+
+        complete_effect = {
+        	country_event = { id = event_special_wargoal_first_balkan.1 }
+
+        	effect_tooltip = {
+        		custom_effect_tooltip = if_we_accept_tt
+        		effect_special_wargoal_first_balkan_victory = yes
+        	}
+        }
+
+        ai_will_do = {
+        	base = 100
+        }
+	}
+}

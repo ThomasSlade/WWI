@@ -8,6 +8,7 @@ state={
 		add_core_of = HES
 		buildings = {
 			arms_factory = 1
+			air_base = 1
 			industrial_complex = 1
 			infrastructure = 2
 		}

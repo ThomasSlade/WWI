@@ -1,6 +1,7 @@
 ﻿capital = 30
 
-oob = "FRA_1911"
+set_oob = "FRA_1911"
+set_air_oob = "FRA_1911_air"
 set_fuel_ratio = 0.8
 set_research_slots = 4
 set_convoys = 200
@@ -13,6 +14,7 @@ set_technology = {
 	infantry_weapons = 1
 	field_artillery_0 = 1
 	tech_support = 1
+	recon_plane_0 = 1
 
 	early_reform = 1
 	indirect_artillery = 1
@@ -42,11 +44,6 @@ add_ideas = {
 }
 
 recruit_character = FRA_raymond_poincare
-
-recruit_character = FRA_generic_prudent_defender
-recruit_character = FRA_generic_bold_attacker
-recruit_character = FRA_generic_thorough_logistician
-recruit_character = FRA_generic_master_planner
 
 create_faction = ENTENTE
 add_to_faction = FRA

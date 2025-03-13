@@ -41,9 +41,41 @@ default_unit_production = {
 	}
 
 	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 80
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 100
+	}
+
+	ai_strategy = {
 		type = equipment_production_min_factories
 		id = convoy
 		value = 1
+	}
+}
+
+produce_recon_planes_until_fighters_available = {
+	abort_when_not_enabled = yes
+
+	enable = {
+		NOT = { has_tech = fighter_plane_0 }
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = recon_plane
+		value = 80
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 0
 	}
 }
 

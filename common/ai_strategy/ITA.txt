@@ -16,3 +16,26 @@ ITA_dont_invade_balkans_in_italo_turkish_war = {
     	value = -1000
     }
 }
+
+ITA_be_aggressive_in_libya = {
+	abort_when_not_enabled = yes
+
+	allowed = {
+		original_tag = ITA
+	}
+
+	enable = {
+		has_war_with = TUR
+		war_length_with = {
+			tag = TUR
+			months < 13
+		}
+	}
+
+    ai_strategy = {
+    	type = front_control
+    	area = libya
+    	ordertype = front
+    	execution_type = rush
+    }
+}

@@ -1,0 +1,99 @@
+# These triggers are used by special_wargoals.txt to determine when a country is meeting the requirement to finish a war early, without capitulating the enemy.
+# These are separate triggers since they're needed by the decision (for display to the player) and also by on_actions where the game checks them to fire the initial event.
+
+trigger_special_wargoal_italo_turkish = {
+	TUR = {
+		OR = {
+			owns_state = 509
+			owns_state = 508
+			owns_state = 512
+			owns_state = 510
+			owns_state = 478
+			owns_state = 507
+			owns_state = 511
+		}
+	}
+
+	if = {
+		limit = { 509 = { is_owned_by = TUR } }
+		509 = { is_controlled_by_ROOT_or_ally = yes }
+	}
+
+	if = {
+		limit = { 508 = { is_owned_by = TUR } }
+		508 = { is_controlled_by_ROOT_or_ally = yes }
+	}
+
+	if = {
+		limit = { 512 = { is_owned_by = TUR } }
+		512 = { is_controlled_by_ROOT_or_ally = yes }
+	}
+
+	if = {
+		limit = { 510 = { is_owned_by = TUR } }
+		510 = { is_controlled_by_ROOT_or_ally = yes }
+	}
+
+	if = {
+		limit = { 478 = { is_owned_by = TUR } }
+		478 = { is_controlled_by_ROOT_or_ally = yes }
+	}
+
+	if = {
+		limit = { 507 = { is_owned_by = TUR } }
+		507 = { is_controlled_by_ROOT_or_ally = yes }
+	}
+
+	if = {
+		limit = { 511 = { is_owned_by = TUR } }
+		511 = { is_controlled_by_ROOT_or_ally = yes }
+	}
+}
+
+trigger_special_wargoal_italo_turkish_peace = {
+	OR = {
+		AND = {
+			ROOT = { has_country_flag = flag_italo_turkish_war }
+			FROM = { original_tag = TUR }
+		}
+		AND = {
+			FROM = { has_country_flag = flag_italo_turkish_war }
+			ROOT = { original_tag = TUR }
+		}
+	}
+}
+
+trigger_special_wargoal_first_balkan = {
+	TUR = {
+		any_owned_state = {
+			NOT = { state = 195 }
+			NOT = { state = 196 }
+			NOT = { state = 147 }
+			is_on_continent = balkans
+			is_controlled_by_ROOT_or_ally = yes
+		}
+
+		all_owned_state = {
+			OR = {
+				NOT = { is_controlled_by = TUR }
+				NOT = { is_on_continent = balkans }
+				state = 195
+				state = 196
+				state = 147
+			}
+		}
+	}
+}
+
+trigger_special_wargoal_first_balkan_peace = {
+	OR = {
+		AND = {
+			ROOT = { has_country_flag = flag_first_balkan_war }
+			FROM = { original_tag = TUR }
+		}
+		AND = {
+			FROM = { has_country_flag = flag_first_balkan_war }
+			ROOT = { original_tag = TUR }
+		}
+	}
+}

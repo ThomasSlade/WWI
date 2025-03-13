@@ -6,6 +6,7 @@ state={
 		owner = GER
 		add_core_of = GER
 		buildings = {
+			air_base = 1
 			industrial_complex = 1
 			infrastructure = 1
 		}

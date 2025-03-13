@@ -36,8 +36,3 @@ add_ideas = {
 }
 
 recruit_character = MNT_nikola_i
-
-recruit_character = MNT_generic_prudent_defender
-recruit_character = MNT_generic_bold_attacker
-recruit_character = MNT_generic_thorough_logistician
-recruit_character = MNT_generic_master_planner

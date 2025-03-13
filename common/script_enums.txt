@@ -643,7 +643,7 @@ script_enum_equipment_bonus_type = {
 	amphibious_tank_equipment_1
 	amphibious_tank_equipment_2
 
-	# WWI
+	# WWI Equipments
 	field_artillery_equipment
 	field_artillery_equipment_0
 	field_artillery_equipment_1
@@ -658,4 +658,5 @@ script_enum_equipment_bonus_type = {
 	heavy_machine_gun_equipment
 	heavy_machine_gun_equipment_0
 	heavy_machine_gun_equipment_1
+	recon_plane_equipment_0
 }

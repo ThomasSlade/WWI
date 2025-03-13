@@ -1,5 +1,0 @@
-﻿l_english:
-	event_ITA_italo_turkish_war.1.t: "The Conquest of Libya"
-	event_ITA_italo_turkish_war.1.d: "With Libya firmly under [THIS.GetAdjective] control, we have little to gain from an invasion deeper into [TUR.GetNameDef] which, in turn, has little hope of regaining its lost territory.\n\nLibya is ours. The [THIS.GetAdjective] people call for peace."
-	event_ITA_italo_turkish_war.1.a: "[THIS.GetNameDefCap] is victorious."
-	event_ITA_italo_turkish_war.1.b: "We will conclude this war in the streets of [TUR.capital.GetCapitalVictoryPointName]."

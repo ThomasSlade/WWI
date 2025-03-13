@@ -36,8 +36,3 @@ set_popularities = {
 add_ideas = {
 	volunteer_only
 }
-
-recruit_character = SVO_generic_prudent_defender
-recruit_character = SVO_generic_bold_attacker
-recruit_character = SVO_generic_thorough_logistician
-recruit_character = SVO_generic_master_planner

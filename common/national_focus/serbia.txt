@@ -1938,6 +1938,9 @@ focus_tree = {
 				value = 1000
 			}
 
+			unlock_decision_tooltip = decision_special_wargoal_first_balkan
+			set_country_flag = flag_first_balkan_war
+
 			# TEMP: Firing the event to invite Greece to the Balkan League, which ought to come from Britain.
 			GRE = { country_event = wwi_greece.1 }
 

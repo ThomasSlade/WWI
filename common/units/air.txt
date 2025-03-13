@@ -1,0 +1,23 @@
+sub_units = {
+	recon_plane = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = fighter
+		need = { small_plane_airframe = 1 }
+		categories = { category_recon_plane }
+		land_air_wing_size = 25
+		mega_carrier_air_wing_size = 10
+	}
+
+	fighter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = fighter
+		need = { recon_plane_airframe = 1 }
+		categories = { category_fighter }
+		land_air_wing_size = 25
+		mega_carrier_air_wing_size = 10
+	}
+}

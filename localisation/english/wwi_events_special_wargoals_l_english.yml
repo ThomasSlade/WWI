@@ -1,0 +1,10 @@
+﻿l_english:
+	event_special_wargoal_italo_turkish.1.t: "The Conquest of Libya"
+	event_special_wargoal_italo_turkish.1.d: "With Libya firmly under [THIS.GetAdjective] control, we have little to gain from an invasion deeper into [TUR.GetNameDef] which, in turn, has little hope of regaining its lost territory.\n\nLibya is ours. The [THIS.GetAdjective] people call for peace."
+	event_special_wargoal_italo_turkish.1.a: "[THIS.GetNameDefCap] is victorious."
+	event_special_wargoal_italo_turkish.1.b: "We will conclude this war in the streets of [TUR.capital.GetCapitalVictoryPointName]."
+
+	event_special_wargoal_first_balkan.1.t: "[TUR.GetOldNameDefCap] Thrown Out of Europe"
+	event_special_wargoal_first_balkan.1.d: "We stand triumphant in our historic mission to overturn the last scrap of [TUR.GetAdjective] rule in Europe.\n\nThe Balkans are ours. The [THIS.GetAdjective] people call for peace."
+	event_special_wargoal_first_balkan.1.a: "[THIS.GetNameDefCap] is victorious."
+	event_special_wargoal_first_balkan.1.b: "We will conclude this war in the streets of [TUR.capital.GetCapitalVictoryPointName]."

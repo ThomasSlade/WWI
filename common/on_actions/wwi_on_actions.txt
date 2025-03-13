@@ -1,13 +1,13 @@
 on_actions = {
-	on_daily = {
-		effect = {
-			every_country = {
-				set_temp_variable = { expansionist_growth = var:num_of_factories }
-				divide_temp_variable = { expansionist_growth = 100000 }
-				add_popularity = { ideology = expansionist popularity = var:expansionist_growth }
-			}
-		}
-	}
+	#on_daily = {
+	#	effect = {
+	#		every_country = {
+	#			set_temp_variable = { expansionist_growth = var:num_of_factories }
+	#			divide_temp_variable = { expansionist_growth = 100000 }
+	#			add_popularity = { ideology = expansionist popularity = var:expansionist_growth }
+	#		}
+	#	}
+	#}
 
 	on_startup = {
 		effect = {

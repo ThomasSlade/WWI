@@ -1,0 +1,17 @@
+effect_special_wargoal_italo_turkish_victory = {
+	start_peace_conference = {
+		tag = TUR
+		score_factor = 0.4
+		winner_scope = LIMITED
+		loser_scope = LIMITED
+	}
+}
+
+effect_special_wargoal_first_balkan_victory = {
+	start_peace_conference = {
+		tag = TUR
+		score_factor = 0.4
+		winner_scope = FACTION
+		loser_scope = LIMITED
+	}
+}

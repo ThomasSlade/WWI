@@ -58,4 +58,19 @@ spriteTypes = {
 		name = "GFX_shotgun_2_medium"
 		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_2.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_recon_plane_0_medium"
+		texturefile = "gfx/interface/technologies/recon_plane_0.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_fighter_plane_0_medium"
+		texturefile = "gfx/interface/technologies/recon_plane_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_fighter_plane_1_medium"
+		texturefile = "gfx/interface/technologies/recon_plane_2.dds"
+	}
 }

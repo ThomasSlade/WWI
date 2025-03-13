@@ -37,8 +37,3 @@ add_ideas = {
 }
 
 recruit_character = GRE_eleftherios_venizelos
-
-recruit_character = GRE_generic_prudent_defender
-recruit_character = GRE_generic_bold_attacker
-recruit_character = GRE_generic_thorough_logistician
-recruit_character = GRE_generic_master_planner

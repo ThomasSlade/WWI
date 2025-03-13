@@ -1919,7 +1919,7 @@
 1918;26;231;57;land;false;plains;4
 1919;28;30;30;land;false;hills;4
 1920;29;107;54;land;false;urban;4
-1921;30;77;41;land;false;urban;4
+1921;30;77;41;land;false;plains;4
 1922;30;86;57;land;false;urban;4
 1923;30;90;51;land;false;forest;3
 1924;30;101;94;land;false;hills;4
@@ -1977,7 +1977,7 @@
 1976;40;80;45;land;false;plains;4
 1977;40;106;60;land;false;plains;4
 1978;40;148;54;land;true;plains;4
-1979;41;45;44;land;false;plains;4
+1979;41;45;44;land;false;urban;4
 1980;41;55;122;land;true;rural;4
 1981;41;82;47;land;false;rural;4
 1982;41;103;48;land;false;hills;4
@@ -1993,7 +1993,7 @@
 1992;43;98;92;land;false;forest;4
 1993;43;102;65;land;false;plains;3
 1994;43;119;77;land;false;rural;4
-1995;43;166;77;land;false;rural;4
+1995;43;166;77;land;false;urban;4
 1996;44;110;59;land;false;plains;3
 1997;44;123;80;land;false;urban;4
 1998;44;216;68;land;false;plains;4
@@ -2040,7 +2040,7 @@
 2039;54;80;243;land;false;plains;4
 2040;54;170;77;land;false;plains;4
 2041;55;150;82;land;false;rural;4
-2042;55;166;90;land;false;urban;4
+2042;55;166;90;land;false;rural;4
 2043;55;186;73;land;true;plains;4
 2044;56;254;67;land;false;marsh;4
 2045;57;62;61;land;false;plains;4
@@ -3261,7 +3261,7 @@
 3260;61;107;84;land;false;plains;3
 3261;61;116;86;land;false;plains;3
 3262;61;137;66;land;false;plains;3
-3263;61;171;82;land;false;plains;3
+3263;61;171;82;land;false;rural;3
 3264;62;66;66;land;false;forest;3
 3265;62;68;69;land;true;forest;3
 3266;62;81;158;land;false;forest;3
@@ -3382,7 +3382,7 @@
 3381;93;127;208;land;false;plains;3
 3382;93;134;124;land;false;plains;3
 3383;93;180;95;land;false;plains;3
-3384;93;201;165;land;true;rural;3
+3384;93;201;165;land;true;marsh;3
 3385;94;90;168;land;false;forest;3
 3386;94;94;94;land;false;forest;3
 3387;94;133;115;land;true;plains;3
@@ -3429,7 +3429,7 @@
 3428;106;133;125;land;false;plains;3
 3429;106;177;159;land;false;forest;3
 3430;106;213;10;land;false;forest;3
-3431;106;225;162;land;true;marsh;3
+3431;106;225;162;land;true;rural;3
 3432;70;39;89;land;true;marsh;4
 3433;107;107;107;land;false;hills;3
 3434;107;143;122;land;false;forest;3
@@ -3455,7 +3455,7 @@
 3454;111;163;137;land;false;urban;3
 3455;112;127;126;land;false;hills;3
 3456;112;154;141;land;false;hills;3
-3457;112;179;147;land;false;plains;3
+3457;112;179;147;land;false;rural;3
 3458;112;190;161;land;false;hills;3
 3459;70;102;96;land;true;marsh;3
 3460;113;103;223;land;false;hills;3

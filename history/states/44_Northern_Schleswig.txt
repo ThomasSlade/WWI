@@ -7,6 +7,7 @@ state={
 		add_core_of = GER
 		buildings = {
 			dockyard = 1
+			air_base = 3
 			industrial_complex = 1
 			infrastructure = 2
 			3051 = {
@@ -16,6 +17,8 @@ state={
 		victory_points = {3051 5
 		}
 		victory_points = {3373 2
+		}
+		victory_points = {3263 2
 		}
 	}
 	provinces={
