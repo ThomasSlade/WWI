@@ -67,10 +67,15 @@ trigger_special_wargoal_first_balkan = {
 	TUR = {
 		any_owned_state = {
 			NOT = { state = 195 }
+			NOT = { state = 226 }
 			NOT = { state = 196 }
 			NOT = { state = 147 }
 			is_on_continent = balkans
-			is_controlled_by_ROOT_or_ally = yes
+			OR = {
+				is_controlled_by_ROOT_or_ally = yes
+				controller = { has_idea = idea_SER_balkan_coalition_founder }
+				controller = { has_idea = idea_SER_balkan_coalition_member }
+			}
 		}
 
 		all_owned_state = {
@@ -78,6 +83,7 @@ trigger_special_wargoal_first_balkan = {
 				NOT = { is_controlled_by = TUR }
 				NOT = { is_on_continent = balkans }
 				state = 195
+				state = 226
 				state = 196
 				state = 147
 			}

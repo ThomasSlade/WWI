@@ -47,7 +47,7 @@ division_template = {
 }
 
 units = {
-	# 3 Cavalry Units
+	# 5 Cavalry Units
 	division = {
 		division_name = {
 			is_name_ordered = yes
@@ -56,7 +56,7 @@ units = {
 		location = 6153
 		division_template = "Suvari Tumeni"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -66,7 +66,7 @@ units = {
 		location = 6153
 		division_template = "Suvari Tumeni"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -76,7 +76,27 @@ units = {
 		location = 6153
 		division_template = "Suvari Tumeni"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Suvari Tumeni"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Suvari Tumeni"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
 	}
 
 	# 5 Cavalry Units
@@ -88,7 +108,7 @@ units = {
 		location = 6153
 		division_template = "Suvari Tumeni"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -98,7 +118,7 @@ units = {
 		location = 6153
 		division_template = "Suvari Tumeni"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -108,7 +128,7 @@ units = {
 		location = 6153
 		division_template = "Suvari Tumeni"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -118,7 +138,7 @@ units = {
 		location = 6153
 		division_template = "Suvari Tumeni"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -128,59 +148,7 @@ units = {
 		location = 6153
 		division_template = "Suvari Tumeni"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-	}
-
-	# 5 Cavalry Units
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Suvari Tumeni"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Suvari Tumeni"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Suvari Tumeni"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Suvari Tumeni"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Suvari Tumeni"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 
 	# 5 Cavalry Units
@@ -192,7 +160,7 @@ units = {
 		location = 6153
 		division_template = "Suvari Tumeni"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -202,7 +170,7 @@ units = {
 		location = 6153
 		division_template = "Suvari Tumeni"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -212,7 +180,7 @@ units = {
 		location = 6153
 		division_template = "Suvari Tumeni"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -222,7 +190,7 @@ units = {
 		location = 6153
 		division_template = "Suvari Tumeni"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -232,7 +200,7 @@ units = {
 		location = 6153
 		division_template = "Suvari Tumeni"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 
 	# 3 Infantry Units
@@ -244,7 +212,7 @@ units = {
 		location = 6153
 		division_template = "Piyade Tumeni"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -254,7 +222,7 @@ units = {
 		location = 6153
 		division_template = "Piyade Tumeni"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -264,59 +232,7 @@ units = {
 		location = 6153
 		division_template = "Piyade Tumeni"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-	}
-
-	# 5 Infantry Units
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Tumeni"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Tumeni"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Tumeni"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Tumeni"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Tumeni"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 
 	# 5 Infantry Units
@@ -328,7 +244,7 @@ units = {
 		location = 6153
 		division_template = "Piyade Tumeni"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -338,7 +254,7 @@ units = {
 		location = 6153
 		division_template = "Piyade Tumeni"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -348,7 +264,7 @@ units = {
 		location = 6153
 		division_template = "Piyade Tumeni"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -358,7 +274,7 @@ units = {
 		location = 6153
 		division_template = "Piyade Tumeni"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -368,59 +284,7 @@ units = {
 		location = 6153
 		division_template = "Piyade Tumeni"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-	}
-
-	# 5 Infantry Units
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Tumeni"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Tumeni"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Tumeni"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Tumeni"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Tumeni"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 
 	# 5 Infantry Units
@@ -432,7 +296,7 @@ units = {
 		location = 6153
 		division_template = "Piyade Tumeni"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -442,7 +306,7 @@ units = {
 		location = 6153
 		division_template = "Piyade Tumeni"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -452,7 +316,7 @@ units = {
 		location = 6153
 		division_template = "Piyade Tumeni"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -462,7 +326,7 @@ units = {
 		location = 6153
 		division_template = "Piyade Tumeni"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -472,59 +336,7 @@ units = {
 		location = 6153
 		division_template = "Piyade Tumeni"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-	}
-
-	# 5 Infantry Units
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Tumeni"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Tumeni"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Tumeni"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Tumeni"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Tumeni"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 
 	# 5 Infantry Units
@@ -536,7 +348,7 @@ units = {
 		location = 6153
 		division_template = "Piyade Tumeni"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -546,7 +358,7 @@ units = {
 		location = 6153
 		division_template = "Piyade Tumeni"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -556,7 +368,7 @@ units = {
 		location = 6153
 		division_template = "Piyade Tumeni"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -566,7 +378,7 @@ units = {
 		location = 6153
 		division_template = "Piyade Tumeni"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -576,10 +388,10 @@ units = {
 		location = 6153
 		division_template = "Piyade Tumeni"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 
-	# 3 Infantry Units
+	# 5 Infantry Units
 	division = {
 		division_name = {
 			is_name_ordered = yes
@@ -588,7 +400,7 @@ units = {
 		location = 6153
 		division_template = "Piyade Tumeni"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -598,7 +410,7 @@ units = {
 		location = 6153
 		division_template = "Piyade Tumeni"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -608,7 +420,131 @@ units = {
 		location = 6153
 		division_template = "Piyade Tumeni"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Piyade Tumeni"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Piyade Tumeni"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+
+	# 5 Infantry Units
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Piyade Tumeni"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Piyade Tumeni"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Piyade Tumeni"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Piyade Tumeni"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Piyade Tumeni"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+
+	# 5 Infantry Units
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Piyade Tumeni"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Piyade Tumeni"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Piyade Tumeni"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Piyade Tumeni"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6153
+		division_template = "Piyade Tumeni"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
 	}
 
 	# 10 Garrison Units
@@ -620,7 +556,7 @@ units = {
 		location = 6153
 		division_template = "Hisar Tugayi"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -630,7 +566,7 @@ units = {
 		location = 6153
 		division_template = "Hisar Tugayi"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -640,7 +576,7 @@ units = {
 		location = 6153
 		division_template = "Hisar Tugayi"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -650,7 +586,7 @@ units = {
 		location = 6153
 		division_template = "Hisar Tugayi"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -660,7 +596,7 @@ units = {
 		location = 6153
 		division_template = "Hisar Tugayi"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -670,7 +606,7 @@ units = {
 		location = 6153
 		division_template = "Hisar Tugayi"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -680,7 +616,7 @@ units = {
 		location = 6153
 		division_template = "Hisar Tugayi"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -690,7 +626,7 @@ units = {
 		location = 6153
 		division_template = "Hisar Tugayi"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -700,7 +636,7 @@ units = {
 		location = 6153
 		division_template = "Hisar Tugayi"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -710,7 +646,7 @@ units = {
 		location = 6153
 		division_template = "Hisar Tugayi"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 
 	# 10 Garrison Units
@@ -722,7 +658,7 @@ units = {
 		location = 6153
 		division_template = "Hisar Tugayi"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -732,7 +668,7 @@ units = {
 		location = 6153
 		division_template = "Hisar Tugayi"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -742,7 +678,7 @@ units = {
 		location = 6153
 		division_template = "Hisar Tugayi"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -752,7 +688,7 @@ units = {
 		location = 6153
 		division_template = "Hisar Tugayi"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -762,7 +698,7 @@ units = {
 		location = 6153
 		division_template = "Hisar Tugayi"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -772,7 +708,7 @@ units = {
 		location = 6153
 		division_template = "Hisar Tugayi"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -782,7 +718,7 @@ units = {
 		location = 6153
 		division_template = "Hisar Tugayi"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -792,7 +728,7 @@ units = {
 		location = 6153
 		division_template = "Hisar Tugayi"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -802,7 +738,7 @@ units = {
 		location = 6153
 		division_template = "Hisar Tugayi"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
@@ -812,48 +748,6 @@ units = {
 		location = 6153
 		division_template = "Hisar Tugayi"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-	}
-
-	# 4 Garrison Units
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Hisar Tugayi"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Hisar Tugayi"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Hisar Tugayi"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Hisar Tugayi"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 }

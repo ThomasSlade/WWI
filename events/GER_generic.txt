@@ -1,0 +1,48 @@
+add_namespace = event_GER_debug_schlieffen
+
+country_event = {
+	id = event_GER_debug_schlieffen.1
+	title = event_GER_debug_schlieffen.1.t
+	desc = event_GER_debug_schlieffen.1.d
+	picture = GFX_report_event_german_speech
+
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = GER
+		has_war_with = FRA
+	}
+
+	mean_time_to_happen = {days = 1 }
+
+	immediate = {
+		log = "([THIS.GetName] event) Debug giving Germany schlieffen wargoals."
+	}
+
+	option = {
+		name = event_GER_debug_schlieffen.1.a
+		GER = {
+			create_wargoal = {
+				target = BEL
+				type = puppet_wargoal_focus
+			}
+
+			create_wargoal = {
+				target = LUX
+				type = annex_everything
+			}
+
+			add_ai_strategy = {
+				type = declare_war
+				id = BEL
+				value = 500
+			}
+
+			add_ai_strategy = {
+				type = declare_war
+				id = LUX
+				value = 500
+			}
+		}
+	}
+}

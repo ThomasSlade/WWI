@@ -61,6 +61,11 @@
   SER_idea_follow_the_independent_radicals_desc: "Encircled by threats Serbia may be, but the delicate foreign policy of past governments must be done away with. Citizens of Serbia now turn to the Independent Radicals and their hardline revaunchism, even if this risks the wrath of powerful neighboring states."
   idea_SER_favoured_by_arbitrator: "Favoured by Arbitrator ([?global.balkan_arbitrator.GetNameWithFlag])"
   idea_SER_favoured_by_arbitrator_turkey_annexation_tt: "In peace conference against §Y[TUR.GetNameWithFlag]:§! Annex cost: §G-33.3%§!"
+  idea_SER_balkan_coalition_founder: "Leader of the Balkan League"
+  idea_SER_balkan_coalition_founder_desc: "Not yet a full-throated alliance, the Balkan League is a shaky coalition whose aims are limited to the defeat of [TUR.GetNameDef] in Europe.\n\nDisputes and mistrust prevent the forming of a lasting alliance. Should these disputes be overcome, a power bloc in the region may yet rise."
+  idea_SER_balkan_coalition_tt: "§YMembers can join each other in a war against [TUR.GetNameWithFlag]§!"
+  idea_SER_balkan_coalition_member: "Member of the Balkan League"
+  idea_SER_balkan_coalition_member_desc: "Not yet a full-throated alliance, the Balkan League is a shaky coalition whose aims are limited to the defeat of [TUR.GetNameDef] in Europe.\n\nDisputes and mistrust prevent the forming of a lasting alliance. Should these disputes be overcome, a power bloc in the region may yet rise."
 
   # Russia
   idea_SOV_autocratic_tsardom: "Autocratic Tsardom"

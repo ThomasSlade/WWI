@@ -63,3 +63,15 @@ country_event = {
 		name = event_special_wargoal_first_balkan.1.b
 	}
 }
+
+country_event = {
+	id = event_special_wargoal_first_balkan.2
+
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Making a white peace to end First Balkan War after small delay."
+		white_peace = TUR
+	}
+}

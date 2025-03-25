@@ -12,8 +12,10 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
+				industrial_capacity_factory = -0.25
 				consumer_goods_factor = 0.05
 				war_support_factor = -0.15
+				conscription_factor = -0.25
 			}
 		}
 	}

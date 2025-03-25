@@ -235,6 +235,14 @@ spriteTypes = {
 		name = "GFX_idea_ser_resurrection_of_serbia"
 		texturefile = "gfx/interface/ideas/idea_ser_resurrection_of_serbia.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_SER_balkan_coalition_founder"
+		texturefile = "gfx/interface/ideas/idea_ser_balkan_coalition_founder.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SER_balkan_coalition_member"
+		texturefile = "gfx/interface/ideas/idea_ser_balkan_coalition_member.dds"
+	}
 
 	# Bulgaria
 	spriteType = {

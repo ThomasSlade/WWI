@@ -171,7 +171,7 @@ news_event = {
 	id = event_AUS_assassination.1
 	title = event_AUS_assassination.1.t
 	desc = event_AUS_assassination.1.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_archduke_assassination
 
 	is_triggered_only = yes
 	major = yes
@@ -212,7 +212,7 @@ news_event = {
 	id = event_AUS_assassination.2
 	title = event_AUS_assassination.2.t
 	desc = event_AUS_assassination.2.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_archduke_survives
 
 	is_triggered_only = yes
 	major = yes
@@ -252,7 +252,7 @@ country_event = {
 	id = event_AUS_assassination.3
 	title = event_AUS_assassination.3.t
 	desc = event_AUS_assassination.3.d
-	picture = GFX_report_event_german_speech
+	picture = GFX_report_event_archduke_assassination
 
 	is_triggered_only = yes
 
@@ -1412,7 +1412,7 @@ news_event = {
 	id = event_AUS_south_german_influence.1
 	title = event_AUS_south_german_influence.1.t
 	desc = event_AUS_south_german_influence.1.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_british_trench
 
 	is_triggered_only = yes
 	major = yes
@@ -1933,7 +1933,7 @@ news_event = {
 	id = event_AUS_goad_bulgaria_into_war.5
 	title = event_AUS_goad_bulgaria_into_war.5.t
 	desc = event_AUS_goad_bulgaria_into_war.5.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_british_trench
 
 	is_triggered_only = yes
 	major = yes
@@ -2159,7 +2159,7 @@ news_event = {
 	id = event_AUS_occupy_the_sanjak.1
 	title = event_AUS_occupy_the_sanjak.1.t
 	desc = event_AUS_occupy_the_sanjak.1.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_british_trench
 
 	is_triggered_only = yes
 	major = yes
@@ -2342,7 +2342,7 @@ news_event = {
 	id = events_AUS_foment_obrenovic_sympathies.1
 	title = events_AUS_foment_obrenovic_sympathies.1.t
 	desc = events_AUS_foment_obrenovic_sympathies.1.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_british_trench
 
 	is_triggered_only = yes
 	major = yes
@@ -2546,7 +2546,7 @@ news_event = {
 	id = events_AUS_foment_obrenovic_sympathies.6
 	title = events_AUS_foment_obrenovic_sympathies.6.t
 	desc = events_AUS_foment_obrenovic_sympathies.6.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_british_trench
 
 	is_triggered_only = yes
 	major = yes

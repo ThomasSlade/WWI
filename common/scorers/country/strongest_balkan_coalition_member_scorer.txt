@@ -1,0 +1,6 @@
+strongest_balkan_coalition_member_scorer = {
+	target_array = global.balkan_coalition_members
+	score = {
+		factor = num_of_factories
+	}
+}

@@ -91,7 +91,7 @@ news_event = {
 		}
 		text = event_SOV_russian_revolution.3.d_not_tsarist
 	}
-	picture = GFX_news_event_001
+	picture = GFX_news_event_british_trench
 
 	is_triggered_only = yes
 	major = yes
@@ -132,7 +132,7 @@ news_event = {
 	id = event_SOV_russian_revolution.4
 	title = event_SOV_russian_revolution.4.t
 	desc = event_SOV_russian_revolution.4.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_british_trench
 
 	is_triggered_only = yes
 	major = yes
@@ -196,7 +196,7 @@ news_event = {
 		}
 		text = event_SOV_russian_revolution.6.d_not_tsarist
 	}
-	picture = GFX_news_event_001
+	picture = GFX_news_event_british_trench
 
 	is_triggered_only = yes
 	major = yes
@@ -287,7 +287,7 @@ news_event = {
 	id = event_SOV_russian_revolution.9
 	title = event_SOV_russian_revolution.9.t
 	desc = event_SOV_russian_revolution.9.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_british_trench
 
 	is_triggered_only = yes
 	major = yes

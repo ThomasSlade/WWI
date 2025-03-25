@@ -45,8 +45,8 @@ country_event = {
 	option = {
 		name = wwi_serbia.2.a
 
-		effect_SER_form_balkan_league = yes
-		FROM = { effect_SER_join_balkan_league = yes }
+		effect_SER_form_balkan_coalition = yes
+		FROM = { effect_SER_join_balkan_coalition = yes }
 	}
 }
 
@@ -82,21 +82,21 @@ country_event = {
 	}
 }
 
-#  Greece asks to join League.
+#  Greece asks to join Coalition.
 country_event = {
 	id = wwi_serbia.7
 	title = wwi_serbia.7.t
 	desc = {
 		text = wwi_serbia.7.d
 		trigger = {
-			BUL = { is_in_faction = no }
+			BUL = { NOT = { has_idea = idea_SER_balkan_coalition_member } }
 		}
 	}
 
 	desc = {
 		text = wwi_serbia.7.d_bulgaria
 		trigger = {
-			BUL = { is_in_faction = yes }
+			BUL = { has_idea = idea_SER_balkan_coalition_member }
 		}
 	}
 
@@ -108,8 +108,8 @@ country_event = {
 		name = wwi_serbia.7.a
 		ai_chance = { factor = 100 }
 
-		effect_SER_form_balkan_league = yes
-		FROM = { effect_SER_join_balkan_league = yes }
+		effect_SER_form_balkan_coalition = yes
+		FROM = { effect_SER_join_balkan_coalition = yes }
 	}
 
 	option = {
@@ -658,7 +658,7 @@ news_event = {
 	id = wwi_serbia.26
 	title = wwi_serbia.26.t
 	desc = wwi_serbia.26.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_british_trench
 
 	is_triggered_only = yes
 	major = yes
@@ -846,6 +846,10 @@ country_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+		log = "([THIS.GetName] event) Serbia gets to pick an arbitrator."
+	}
+
 	# Russia
 	option = {
 		name = wwi_events_SER_balkan_arbitration.3.a
@@ -896,7 +900,7 @@ country_event = {
 	}
 }
 
-# Bulgaria gets the offer to join the league under the arbitration the selected arbitrator.
+# Bulgaria gets the offer to join the coalition under the arbitration the selected arbitrator.
 country_event = {
 	id = wwi_events_SER_balkan_arbitration.4
 	title = wwi_events_SER_balkan_arbitration.4.t
@@ -904,6 +908,10 @@ country_event = {
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Offering Bulgaria Balkan League membership with the caveat of arbitration."
+	}
 
 	# Yes
 	option = {
@@ -918,20 +926,11 @@ country_event = {
 		add_state_core = 188
 		add_state_core = 140
 
-		effect_tooltip = {
-			FROM = {
-				add_to_faction = ROOT
-			}
-
-			custom_effect_tooltip = SER_strike_a_deal_with_bulgaria_choose_arbitration_rule_tt
-			add_ideas = idea_SER_favoured_by_arbitrator
+		FROM = {
+			country_event = { id = wwi_serbia.2 hours = 1 }
 		}
 
 		hidden_effect = {
-			FROM = {
-				country_event = { id = wwi_serbia.2 hours = 1 }
-			}
-
 			# Initiate the swappable arbitrator-favourite idea.
 			if = {
 				limit = {
@@ -946,6 +945,11 @@ country_event = {
 				log = "Initialising Balkan arbitration idea: Giving favour to [FROM.GetName]."
 				FROM = { country_event = { id = wwi_events_SER_balkan_arbitration.1 hours = 6 } }
 			}
+		}
+
+		effect_tooltip = {
+			custom_effect_tooltip = SER_strike_a_deal_with_bulgaria_choose_arbitration_rule_tt
+			add_ideas = idea_SER_favoured_by_arbitrator
 		}
 
 		ai_chance = {

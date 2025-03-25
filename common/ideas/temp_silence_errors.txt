@@ -1,0 +1,53 @@
+# Making this file to clear up my error log since HoI4 keeps spamming complaints about some missing ideas and I haven't gotten to cancelling out the source of the errors yet.
+
+ideas = {
+	country = {
+		BUL_army_restrictions = {
+			allowed = {
+
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+		}
+
+		best_of_the_best_naval_academy_spirit = {
+			allowed = {
+
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+		}
+
+		naval_academy_scholarships_spirit = {
+			allowed = {
+
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+		}
+
+		SOV_purged_junior_navy_officers_3 = {
+			allowed = {
+
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+		}
+	}
+}

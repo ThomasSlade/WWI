@@ -13,14 +13,13 @@ news_event = {
 	desc = {
 		text = event_WWI_balkan_league_first_balkan_war.1.d
 	}
-	picture = GFX_news_event_001
+	picture = GFX_news_event_british_trench
 
 	is_triggered_only = yes
 	major = yes
 
 	immediate = {
 		log = "([THIS.GetName] news event) First Balkan War"
-		set_global_flag = flag_first_balkan_war_started
 	}
 
 	# Member.
@@ -28,7 +27,7 @@ news_event = {
 		name = event_WWI_balkan_league_first_balkan_war.1.a_member
 
 		trigger = {
-			is_in_faction_with = FROM
+			has_country_flag = flag_balkan_coalition_member
 		}
 	}
 
@@ -37,7 +36,7 @@ news_event = {
 		name = event_WWI_balkan_league_first_balkan_war.1.a_neutral
 
 		trigger = {
-			NOT = { is_in_faction_with = FROM }
+			NOT = { has_country_flag = flag_balkan_coalition_member }
 			has_opinion = {
 				target = FROM
 				value > -20
@@ -50,7 +49,7 @@ news_event = {
 		name = event_WWI_balkan_league_first_balkan_war.1.a_negative
 
 		trigger = {
-			NOT = { is_in_faction_with = FROM }
+			NOT = { has_country_flag = flag_balkan_coalition_member }
 			has_opinion = {
 				target = FROM
 				value < -19
@@ -75,12 +74,7 @@ country_event = {
 	# Okay.
 	option = {
 		name = event_WWI_balkan_league_first_balkan_war.2.a
-
-		effect_tooltip = {
-			unlock_decision_category_tooltip = decision_category_SER_balkan_league
-			activate_mission = mission_SER_balkan_league_breakup
-			custom_effect_tooltip = mission_SER_balkan_league_breakup_tt
-		}
+		effect_SER_begin_balkan_disputes_tt = yes
 	}
 }
 
@@ -97,7 +91,7 @@ country_event = {
 
 	immediate = {
 		log = "([THIS.GetName] event) 2nd Balkan War Instigator must declare 2nd Balkan War."
-		set_global_flag = flag_second_balkan_war_started
+		set_variable = { global.second_balkan_war_state = 1 }
 	}
 
 	# Okay.
@@ -110,75 +104,44 @@ country_event = {
 		leave_faction = yes
 
 		# Have to do this absolutely insanely obtuse shit because is_in_faction doesn't actually fucking work with fucking variables.
-		var:global.balkan_league_leader = {
+
+		hidden_effect = {
+			every_other_country = {
+				limit = { has_country_flag = flag_balkan_coalition_member }
+
+				ROOT = {
+					create_wargoal = {
+					    type = take_core_state
+					    target = PREV
+					}
+
+					declare_war_on = {
+		                target = PREV
+		                type = take_core_state
+		            }
+				}
+
+				set_country_flag = flag_second_balkan_war_defender
+				country_event = { id = event_WWI_balkan_league_second_balkan_war.2 hours = 1 }
+			}
+
 			for_each_scope_loop = {
-				array = faction_members
-				ROOT = {
-					create_wargoal = {
-					    type = take_core_state
-					    target = PREV
+				array = neighbors
+				if = {
+					limit = {
+						NOT = { has_country_flag = flag_second_balkan_war_defender }
+						any_core_state = {
+							is_controlled_by = ROOT
+						}
 					}
-
-					declare_war_on = {
-		                target = PREV
-		                type = take_core_state
-		            }
+					country_event = { id = event_WWI_balkan_league_second_balkan_war.4 days = 10 }
 				}
-
-				set_country_flag = flag_second_balkan_war_defender
-				country_event = { id = event_WWI_balkan_league_second_balkan_war.2 hours = 1 }
 			}
 		}
-
-		for_each_scope_loop = {
-			array = countries
-			if = {
-				limit = {
-					trigger_SER_has_disputed_state_of_balkan_instigator = yes
-					NOT = { has_country_flag = flag_second_balkan_war_defender }
-				}
-				ROOT = {
-					create_wargoal = {
-					    type = take_core_state
-					    target = PREV
-					}
-
-					declare_war_on = {
-		                target = PREV
-		                type = take_core_state
-		            }
-				}
-
-				set_country_flag = flag_second_balkan_war_defender
-				country_event = { id = event_WWI_balkan_league_second_balkan_war.2 hours = 1 }
-			}
-		}
-
-		for_each_scope_loop = {
-			array = neighbors
-			if = {
-				limit = {
-					NOT = { has_country_flag = flag_second_balkan_war_defender }
-					any_core_state = {
-						is_controlled_by = ROOT
-					}
-				}
-				country_event = { id = event_WWI_balkan_league_second_balkan_war.4 days = 10 }
-			}
-		}
+		
 
 		effect_tooltip = {
-			create_wargoal = {
-			    type = take_core_state
-			    target = global.balkan_league_leader
-			}
-
-			declare_war_on = {
-                target = global.balkan_league_leader
-                type = take_core_state
-            }
-
-            custom_effect_tooltip = second_balkan_war_neighbors_may_attack_tt
+            effect_SER_second_balkan_war_tt = yes
 		}
 
 		add_named_threat = {
@@ -188,7 +151,7 @@ country_event = {
 
 		hidden_effect = {
 			news_event = { id = event_WWI_balkan_league_second_balkan_war.3 days = 2 }
-			var:global.balkan_league_leader = {
+			var:global.balkan_coalition_founder = {
 				country_event = { id = event_WWI_balkan_league_second_balkan_war.5 days = 3 }
 			}
 		}
@@ -213,7 +176,7 @@ country_event = {
 		name = event_WWI_balkan_league_second_balkan_war.2.a
 		
 		effect_tooltip = {
-			var:global.balkan_league_leader = {
+			var:global.balkan_coalition_founder = {
 				dismantle_faction = yes
 			}
 		}
@@ -225,7 +188,7 @@ news_event = {
 	id = event_WWI_balkan_league_second_balkan_war.3
 	title = event_WWI_balkan_league_second_balkan_war.3.t
 	desc = event_WWI_balkan_league_second_balkan_war.3.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_british_trench
 
 	is_triggered_only = yes
 	major = yes
@@ -336,23 +299,23 @@ news_event = {
 	desc = {
 		text = event_WWI_balkan_league_second_balkan_war.6.d
 		trigger = {
-			NOT = { has_global_flag = flag_attacker_win_second_balkan_war }
+			check_variable = { global.second_balkan_war_state = 3 }
 		}
 	}
 	desc = {
 		text = event_WWI_balkan_league_second_balkan_war.6.d_attacker_wins
 		trigger = {
-			has_global_flag = flag_attacker_win_second_balkan_war
+			check_variable = { global.second_balkan_war_state = 4 }
 		}
 	}
-	picture = GFX_news_event_001
+	picture = GFX_news_event_british_trench
 
 	is_triggered_only = yes
 	major = yes
 
 	immediate = {
 		if = {
-			limit = { has_global_flag = flag_attacker_win_second_balkan_war }
+			limit = { check_variable = { global.second_balkan_war_state = 4 } }
 			log = "([THIS.GetName] news event) 2nd Balkan War ends, instigator won."
 		}
 		else = {
@@ -369,11 +332,11 @@ news_event = {
 			OR = {
 				AND = {
 					has_country_flag = flag_second_balkan_war_attacker
-					NOT = { has_global_flag = flag_attacker_win_second_balkan_war }
+					check_variable = { global.second_balkan_war_state = 3 }
 				}
 				AND = {
 					has_country_flag = flag_second_balkan_war_defender
-					has_global_flag = flag_attacker_win_second_balkan_war
+					check_variable = { global.second_balkan_war_state = 4 }
 				}
 			}
 		}
@@ -386,12 +349,12 @@ news_event = {
 		trigger = {
 			OR = {
 				AND = {
-					has_country_flag = flag_second_balkan_war_defender
-					has_global_flag = flag_attacker_win_second_balkan_war
+					has_country_flag = flag_second_balkan_war_attacker
+					check_variable = { global.second_balkan_war_state = 4 }
 				}
 				AND = {
-					has_country_flag = flag_second_balkan_war_attacker
-					NOT = { has_global_flag = flag_attacker_win_second_balkan_war }
+					has_country_flag = flag_second_balkan_war_defender
+					check_variable = { global.second_balkan_war_state = 3 }
 				}
 			}
 		}
@@ -559,7 +522,7 @@ news_event = {
 	id = event_WWI_balkan_league_second_balkan_war_averted.1
 	title = event_WWI_balkan_league_second_balkan_war_averted.1.t
 	desc = event_WWI_balkan_league_second_balkan_war_averted.1.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_british_trench
 
 	is_triggered_only = yes
 	major = yes
@@ -575,7 +538,7 @@ news_event = {
 		trigger = {
 			OR = {
 				has_opinion = { target = FROM value > 0 }
-				is_in_faction_with = FROM
+				has_country_flag = flag_balkan_coalition_member
 			}
 		}
 	}
@@ -586,7 +549,94 @@ news_event = {
 
 		trigger = {
 			has_opinion = { target = FROM value < 1 }
-			NOT = { is_in_faction_with = FROM }
+			NOT = { has_country_flag = flag_balkan_coalition_member }
+		}
+	}
+}
+
+add_namespace = event_enter_first_balkan_war
+
+country_event = {
+	id = event_enter_first_balkan_war.1
+	title = event_enter_first_balkan_war.1.t
+	desc = {
+		text = event_enter_first_balkan_war.1.d_offensive
+		trigger = { FROM = { has_offensive_war_with = TUR } }
+	}
+	desc = {
+		text = event_enter_first_balkan_war.1.d_defensive
+		trigger = { FROM = { has_defensive_war_with = TUR } }
+	}
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Country prompted to join 1st Balkan War."
+	}
+
+	# Yes
+	option = {
+		name = event_enter_first_balkan_war.1.a
+
+		declare_war_on = {
+			target = TUR
+			type = take_core_state
+		}
+
+		ai_chance = {
+			base = 1
+		}
+	}
+
+	# No
+	option = {
+		name = event_enter_first_balkan_war.1.b
+
+		create_wargoal = {
+			target = TUR
+			type = take_core_state
+			expire = 30
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+add_namespace = event_wwi_balkan_league_new_leader
+
+# FROM needs to be the current balkan coalition leader.
+country_event = {
+	id = event_wwi_balkan_league_new_leader.1
+	title = event_wwi_balkan_league_new_leader.1.t
+	desc = event_wwi_balkan_league_new_leader.1.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) "Offering chance to become new Balkan Coalition leader.
+		if = {
+			limit = { NOT = { FROM = { has_idea = idea_SER_balkan_coalition_founder } } }
+			log = "ERROR: event_wwi_balkan_league_new_leader.1 called but FROM scope was '[FROM.GetName]'. Only call this event from the current Balkan Coalition leader."
+		}
+	}
+
+	# Yes
+	option = {
+		name = event_wwi_balkan_league_new_leader.1.a
+		effect_SER_assume_balkan_coalition_leadership = yes
+		FROM = { effect_SER_leave_balkan_coalition = yes }
+	}
+
+	# No
+	option = {
+		name = event_wwi_balkan_league_new_leader.1.b
+		effect_SER_leave_balkan_coalition = yes
+		hidden_effect = {
+			effect_SER_replace_balkan_coalition_leader = yes
 		}
 	}
 }

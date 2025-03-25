@@ -1,0 +1,20 @@
+TUR_defend_istanbul = {
+	abort_when_not_enabled = yes
+
+	allowed = {
+		original_tag = TUR
+	}
+
+	enable = {
+		any_state_in = {
+			ai_area = istanbul_borderlands
+			is_controlled_by = ROOT
+		}
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = istanbul_borderlands
+		value = 5000
+	}
+}

@@ -39,6 +39,11 @@ add_ideas = {
 	gov_limited_democracy
 }
 
+# 0 = not started, 1 = in progress, 2 = league_victory, 3 = league defeat
+set_variable = { global.first_balkan_war_state = 0 }
+# 0 = not started, 1 = in progress, 2 = defenders victory, 4 = instigator victory
+set_variable = { global.second_balkan_war_state = 0 }
+
 recruit_character = SER_nikola_pasic
 recruit_character = SER_jovan_jovanovic
 recruit_character = SER_stojan_protic

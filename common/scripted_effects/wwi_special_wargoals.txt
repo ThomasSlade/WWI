@@ -8,10 +8,39 @@ effect_special_wargoal_italo_turkish_victory = {
 }
 
 effect_special_wargoal_first_balkan_victory = {
-	start_peace_conference = {
-		tag = TUR
-		score_factor = 0.4
-		winner_scope = FACTION
-		loser_scope = LIMITED
+	every_country = {
+		limit = {
+			has_country_flag = flag_balkan_coalition_member
+		}
+	
+		hidden_effect = {
+			every_controlled_state = {
+				limit = {
+					is_owned_by = TUR
+					is_on_continent = balkans
+				}
+				CONTROLLER = {
+					transfer_state = PREV
+				}
+			}
+		}
+
+		# Don't actually white peace until all state transfers are done, because when we white peace it will trigger the state disputes counter.
+		# And it'll miscount if only some of the beliggerents have had their states transferred yet.
+		effect_tooltip = {
+			white_peace = TUR
+		}
+		custom_effect_tooltip = effect_special_wargoal_first_balkan_victory
+		unlock_decision_category_tooltip = decision_category_SER_balkan_coalition_disputes
+	}
+
+	hidden_effect = {
+		every_country = {
+			limit = {
+				has_country_flag = flag_balkan_coalition_member
+			}
+
+			white_peace = TUR
+		}
 	}
 }

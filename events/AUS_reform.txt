@@ -5,7 +5,7 @@ news_event = {
 	id = event_AUS_reform.1
 	title = event_AUS_reform.1.t
 	desc = event_AUS_reform.1.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_british_trench
 
 	is_triggered_only = yes
 	major = yes
@@ -259,7 +259,7 @@ news_event = {
 			FROM = { has_completed_focus = AUS_polish_trialism }
 		}
 	}
-	picture = GFX_news_event_001
+	picture = GFX_news_event_british_trench
 
 	is_triggered_only = yes
 	major = yes
@@ -446,7 +446,7 @@ news_event = {
 	id = event_AUS_reform.13
 	title = event_AUS_reform.13.t
 	desc = event_AUS_reform.13.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_british_trench
 
 	is_triggered_only = yes
 	major = yes
@@ -506,7 +506,7 @@ news_event = {
 	id = event_AUS_reform.14
 	title = event_AUS_reform.14.t
 	desc = event_AUS_reform.14.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_british_trench
 
 	is_triggered_only = yes
 	major = yes

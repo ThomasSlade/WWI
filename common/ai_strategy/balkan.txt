@@ -1,0 +1,149 @@
+first_balkan_war_rush_turkey = {
+	abort_when_not_enabled = yes
+
+	allowed = {
+		always = yes
+	}
+
+	enable = {
+		trigger_SER_is_in_balkan_coalition = yes
+		check_variable = { global.first_balkan_war_state = 1 }
+	}
+
+	abort = {
+		war_length_with = {
+			tag = TUR
+			months > 6
+		}
+	}
+
+	ai_strategy = {
+		type = front_control
+		id = TUR
+		priority = 500
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+}
+
+# Because Balkan League members get mutual military access, they tend to spread their troops over one anothers borders in the 1st balkan war. These strategues targetted at the usual Balkan League countries stops that.
+first_balkan_war_dont_defend_ally_borders_MNT = {
+	abort_when_not_enabled = yes
+
+	allowed = {
+		always = yes
+	}
+
+	enable = {
+		trigger_SER_is_in_balkan_coalition = yes
+
+		MNT = {
+			trigger_SER_is_in_balkan_coalition = yes
+		}
+
+		check_variable = { global.first_balkan_war_state = 1 }
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = MNT
+		value = 1
+	}
+}
+
+first_balkan_war_dont_defend_ally_borders_BUL = {
+	abort_when_not_enabled = yes
+
+	allowed = {
+		always = yes
+	}
+
+	enable = {
+		trigger_SER_is_in_balkan_coalition = yes
+
+		BUL = {
+			trigger_SER_is_in_balkan_coalition = yes
+		}
+
+		check_variable = { global.first_balkan_war_state = 1 }
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = BUL
+		value = 1
+	}
+}
+
+first_balkan_war_dont_defend_ally_borders_GRE = {
+	abort_when_not_enabled = yes
+
+	allowed = {
+		always = yes
+	}
+
+	enable = {
+		trigger_SER_is_in_balkan_coalition = yes
+
+		GRE = {
+			trigger_SER_is_in_balkan_coalition = yes
+		}
+
+		check_variable = { global.first_balkan_war_state = 1 }
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = GRE
+		value = 1
+	}
+}
+
+first_balkan_war_dont_defend_ally_borders_SER = {
+	abort_when_not_enabled = yes
+
+	allowed = {
+		always = yes
+	}
+
+	enable = {
+		trigger_SER_is_in_balkan_coalition = yes
+
+		SER = {
+			trigger_SER_is_in_balkan_coalition = yes
+		}
+
+		check_variable = { global.first_balkan_war_state = 1 }
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SER
+		value = 1
+	}
+}
+
+first_balkan_war_dont_defend_ally_borders_ROM = {
+	abort_when_not_enabled = yes
+
+	allowed = {
+		always = yes
+	}
+
+	enable = {
+		trigger_SER_is_in_balkan_coalition = yes
+
+		ROM = {
+			trigger_SER_is_in_balkan_coalition = yes
+		}
+
+		check_variable = { global.first_balkan_war_state = 1 }
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = ROM
+		value = 1
+	}
+}

@@ -1,0 +1,23 @@
+spriteTypes = {
+	# News Events
+	spriteType = {
+		name = "GFX_news_event_british_trench"
+		texturefile = "gfx/event_pictures/event_picture_british_trench.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_archduke_assassination"
+		texturefile = "gfx/event_pictures/news_event_archduke_assassination.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_archduke_survives"
+		texturefile = "gfx/event_pictures/news_event_archduke_survives.dds"
+	}
+	
+	# Report Events
+	spriteType = {
+		name = "GFX_report_event_archduke_assassination"
+		texturefile = "gfx/event_pictures/report_event_archduke_assassination.dds"
+	}
+}

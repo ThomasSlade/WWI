@@ -46,4 +46,11 @@ areas = {
 			109 110
 		}
 	}
+
+	istanbul_borderlands = {
+		strategic_regions = {
+			43 # Bosporus
+			54 # Maritsa
+		}
+	}
 }

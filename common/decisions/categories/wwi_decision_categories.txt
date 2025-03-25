@@ -93,7 +93,7 @@ decision_category_SER_bombard_kotor = {
 	}
 }
 
-decision_category_SER_balkan_league = {
+decision_category_SER_balkan_coalition_disputes = {
 	icon = border_conflicts
 	visible_when_empty = yes
 
@@ -102,12 +102,13 @@ decision_category_SER_balkan_league = {
 	}
 
 	visible = {
-		has_country_flag = flag_has_been_in_balkan_league
-		NOT = { has_global_flag = flag_second_balkan_war_started }
+		has_country_flag = flag_balkan_coalition_member
+		check_variable = { global.first_balkan_war_state = 2 }	# First Balkan War was won.
+		check_variable = { global.second_balkan_war_state = 0 }
 	}
 
 	available = {
-		NOT = { has_global_flag = flag_second_balkan_war_started }
+		check_variable = { global.second_balkan_war_state = 0 }
 	}
 }
 

@@ -1,32 +1,30 @@
 ﻿l_english:
   # Montenegro
-  wwi_montenegro.1.t: "Serbia Invites Us to Join the Balkan League"
-  wwi_montenegro.1.d: "Long have we coveted the Turkish lands on our borders, but our small kingdom could never stand up to the Ottoman Empire, even in its decline.\n\nNow, however, it seems that Serbia wants to make us an offer: they will support our claims, if we join them in the coming wars.\n\nThe Serbs are old friends of ours, but the Turks are not to be underestimated. How should we respond?"
+  wwi_montenegro.1.t: "[FROM.GetName] Invites Us to Balkan League"
+  wwi_montenegro.1.d: "Long have we coveted the [TUR.GetOldAdjective] lands on our borders, but our small kingdom could never stand up to the Ottoman Empire, even in its decline.\n\nNow, however, it seems that [FROM.GetNameDef] is assembling a military alliance, limited to a war against [TUR.GetNameDef].\n\nThey insist that we join forces to drive [TUR.GetNameDef] from [ROOT.GetOldAdjective] lands."
   wwi_montenegro.1.a: "How could we say no?"
   wwi_montenegro.1.b: "[Root.GetName] must stay out of trouble, for now."
 
-  wwi_montenegro.2.t: "[SER.GetNameDefCap] Offers Unification"
+  wwi_montenegro.2.t: "[FROM.GetName] Offers Unification"
   wwi_montenegro.2.d: "In light of the mounting perils of the Balkans, our Serb brethren across the Dinarides have tabled a radical maneuver: our unification with [SER.GetNameDefCap].\n\nWhile the proposal is certainly bombastic, it doesn't arrive without precedent. [ROOT.GetNameDefCap] and [SER.GetNameDefCap] share many centuries of history and language - unification has never been unthinkable to intellectuals in [ROOT.capital.GetCapitalVictoryPointName]. With the world changing so quickly, perhaps it's time to join our voices with [SER.capital.GetCapitalVictoryPointName]."
   wwi_montenegro.2.a: "We accept!"
   wwi_montenegro.2.b: "[ROOT.GetNameDefCap] will only join as an autonomous polity."
   wwi_montenegro.2.c: "No. [ROOT.GetNameDefCap] will remain independent."
 
   # Romania
-  wwi_romania.1.t: "Serbia Invites Us to Balkan League"
-  wwi_romania.1.d: "Diplomats from [FROM.capital.GetCapitalVictoryPointName] this morning expressed their hope that [ROOT.GetNameDef] might enter a military alliance - the 'Balkan League' - with them.\n\nThough the agenda of this proposal was less than obvious, [FROM.GetNameDef] has since clarified that signing on would be met with Serb diplomatic support in any simmering territorial disputes - [BUL.GetNameDef] and [AUS.GetNameDef] were not named explicitly."
+  wwi_romania.1.t: "[FROM.GetName] Invites Us to Balkan League"
+  wwi_romania.1.d: "Diplomats from [FROM.capital.GetCapitalVictoryPointName] this morning expressed their hope that [ROOT.GetNameDef] might join them in a military alliance, limited to a war against [TUR.GetNameDef].\n\nThough the agenda of this proposal was less than obvious, [FROM.GetNameDef] has since clarified that signing on would be met with [FROM.GetOldAdjective] diplomatic support in any simmering territorial disputes - [BUL.GetNameDef] and [AUS.GetNameDef] were not named explicitly."
   wwi_romania.1.a: "Our only good neighbors: Serbs and the Black Sea"
   wwi_romania.1.b: "Joining would be ill-advised"
 
   # Greece
-  wwi_greece.1.t: "Britain Encourages Greece to Join Balkan League"
-  wwi_greece.1.d: "After many decades of upholding [TUR.GetAdjective] stability in the Balkans, our historic allies in [ENG.capital.GetCapitalVictoryPointName] have signalled a reversal of attitudes.\n\nA [ENG.GetAdjective] telegram this morning insisted upon Greek entry into a military alliance with Serbia.\n\nSuch an alliance would surely aid in our reclamaition of Greek territory."
+  wwi_greece.1.t: "[ENG.GetName] Encourages [ROOT.GetName] to Join Balkan League"
+  wwi_greece.1.d: "After many decades of upholding [TUR.GetAdjective] stability in the Balkans, our historic allies in [ENG.capital.GetCapitalVictoryPointName] have signalled a reversal of attitudes.\n\nA [ENG.GetAdjective] telegram this morning insisted upon [ROOT.GetOldAdjective] entry into a military alliance with Serbia.\n\nSuch an alliance would surely aid in our reclamaition of [ROOT.GetOldAdjective] territory."
   wwi_greece.1.a: "Thessaloniki shall be ours again!"
   wwi_greece.1.b: "Throw our lot in with the Serbs? Perhaps not."
 
   # News
   wwi_news.1.t: "[TUR.GetNameDef] Humiliated in Italo-[TUR.GetAdjective] War"
-  wwi_news.1.d: "When war broke out between [ITA.GetNameDef] and the long-attested Sick Man of Europe, there was little wonder of who would emerge victorious. Still, the [ITA.GetAdjective] victory has left even the most speculative pundits stunned at the ageing empire's weakness.\n\nNow, as [ITA.GetNameDef] gathers up its winnings, it must be supposed that other [TUR.GetAdjective] neighbors might soon follow the [ITA.GetADjective] example."
+  wwi_news.1.d: "When war broke out between [ITA.GetNameDef] and the long-attested Sick Man of Europe, there was little wonder of who would emerge victorious. Still, the [ITA.GetAdjective] victory has left even the most speculative pundits stunned at the ageing empire's weakness.\n\nNow, as [ITA.GetNameDef] gathers up its winnings, it must be supposed that other [TUR.GetAdjective] neighbors might soon follow the [ITA.GetAdjective] example."
   wwi_news.1.a_neutral: "[TUR.GetNameDef] is surely on its last legs."
   wwi_news.1.a_enemy: "This could be our chance!"
-  wwi_news.3.t: "War in the Balkans"
-  wwi_news.3.d: "War in the Balkans"

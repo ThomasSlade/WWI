@@ -279,7 +279,7 @@ news_event = {
 	id = event_TUR_albanian_independence.7
 	title = event_TUR_albanian_independence.7.t
 	desc = event_TUR_albanian_independence.7.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_british_trench
 
 	is_triggered_only = yes
 	major = yes
@@ -314,7 +314,7 @@ news_event = {
 	id = event_TUR_albanian_independence.8
 	title = event_TUR_albanian_independence.8.t
 	desc = event_TUR_albanian_independence.8.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_british_trench
 
 	is_triggered_only = yes
 	major = yes
@@ -370,7 +370,7 @@ news_event = {
 	id = event_TUR_albanian_independence.9
 	title = event_TUR_albanian_independence.9.t
 	desc = event_TUR_albanian_independence.9.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_british_trench
 
 	major = yes
 	mean_time_to_happen = { days = 2 }

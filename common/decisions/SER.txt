@@ -823,15 +823,15 @@ decision_category_SER_bombard_kotor = {
 	}
 }
 
-decision_category_SER_balkan_league = {
-	mission_SER_balkan_league_breakup = {
+decision_category_SER_balkan_coalition_disputes = {
+	mission_SER_balkan_coalition_breakup = {
 		is_good = no
-		days_mission_timeout = 30 # Change mission_SER_balkan_league_breakup_tt if you change this.
+		days_mission_timeout = 30 # Change mission_SER_balkan_coalition_breakup_tt if you change this.
 
 		activation = {
 			has_global_flag = flag_balkan_disputes_ongoing
-			NOT = { has_global_flag = flag_second_balkan_war_started }
-			has_country_flag = flag_has_been_in_balkan_league
+			check_variable = { global.second_balkan_war_state = 0 }
+			has_country_flag = flag_balkan_coalition_member
 		}
 
 		available = {
@@ -864,8 +864,6 @@ decision_category_SER_balkan_league = {
 
 			effect_SER_clear_balkan_disputes = yes
 		}
-
-		war_with_on_timeout = global.balkan_league_leader
 
 		icon = GFX_decision_generic_ignite_civil_war
 
@@ -972,7 +970,7 @@ decision_category_SER_balkan_league = {
 		cost = 30
 
 		available = {
-			set_temp_variable = { recipients = FROM.balkan_league_claimants }
+			set_temp_variable = { recipients = FROM.balkan_coalition_claimants }
 
 			trigger_SER_get_balkan_dispute_concession_recipients = yes
 
@@ -1015,9 +1013,9 @@ decision_category_SER_balkan_league = {
 	    	}
 	    	else = {
 	    		every_country = {
-	    			limit = { has_active_mission = mission_SER_balkan_league_breakup }
+	    			limit = { has_active_mission = mission_SER_balkan_coalition_breakup }
 	    			add_days_mission_timeout = {
-	    				mission = mission_SER_balkan_league_breakup
+	    				mission = mission_SER_balkan_coalition_breakup
 	    				days = 10
 	    			}
 	    		}
@@ -1025,7 +1023,7 @@ decision_category_SER_balkan_league = {
 
 	    	every_other_country = {
 	    		limit = {
-	    			has_country_flag = flag_has_been_in_balkan_league
+	    			has_country_flag = flag_balkan_coalition_member
 	    			NOT = { controls_state = FROM }
 	    			FROM = { is_core_of = PREV }
 	    		}
@@ -1053,18 +1051,18 @@ decision_category_SER_balkan_league = {
 
 	    	modifier = {
 	    		add = 50
-	    		has_country_flag = flag_is_balkan_league_leader
+	    		check_variable = { global.balkan_coalition_founder = THIS }
 	    	}
 	    	modifier = {
 	    		add = 5
-	    		is_in_faction = yes
-	    		is_faction_leader = no
-	    		faction_leader = {
+	    		has_country_flag = flag_balkan_coalition_member
+	    		NOT = { check_variable = { global.balkan_coalition_founder = THIS } }
+	    		var:global.balkan_coalition_founder = {
 	    		    ROOT = {
-	    		      has_opinion = {
-	    		        target = PREV
-	    		        value > 50
-	    		      }
+	    		      	has_opinion = {
+    		      	  		target = PREV
+    		      	  		value > 50
+	    		      	}
 	    		    }
 	    		}
 	    	}

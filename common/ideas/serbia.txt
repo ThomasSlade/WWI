@@ -1,5 +1,31 @@
 ideas = {
 	country = {
+		idea_SER_balkan_coalition_founder = {
+			removal_cost = -1
+			picture = SER_balkan_coalition_founder
+		
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				custom_modifier_tooltip = idea_SER_balkan_coalition_tt
+			}
+		}
+
+		idea_SER_balkan_coalition_member = {
+			removal_cost = -1
+			picture = SER_balkan_coalition_member
+		
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				custom_modifier_tooltip = idea_SER_balkan_coalition_tt
+			}
+		}
+		
 		SER_idea_follow_the_independent_radicals = {
 			allowed = {
 				always = yes
@@ -51,7 +77,7 @@ ideas = {
 			picture = ser_nacertanije
 
 			modifier = {
-				land_doctrine_cost_factor = -0.3
+				forced_surrender_limit = 0.4
 				conscription = 0.015
 			}
 		}

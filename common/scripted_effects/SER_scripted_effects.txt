@@ -1,26 +1,177 @@
-effect_SER_form_balkan_league = {
+effect_SER_form_balkan_coalition = {
 	if = {
-		limit = { is_in_faction = no }
-		create_faction = BALKAN_LEAGUE
-		set_country_flag = flag_is_balkan_league_leader
-		set_variable = { global.balkan_league_leader = THIS }
-		effect_SER_register_balkan_league_member = yes
+		limit = { has_global_flag = flag_balkan_coalition_disbanded }
+		log = "WARNING: Ignoring [THIS.GetName] attempt to form Balkan Coalition because coalition is disbanded."
+	}
+	else_if = {
+		limit = {
+			has_variable = global.balkan_coalition_members
+			check_variable = { global.balkan_coalition_members^num > 0 }
+		}
+		log = "ERROR: Cannot call 'effect_SER_form_balkan_coalition' as there are already coalition members ([?balkan_coalition_members^num])."
+	}
+	else = {
+		log = "[THIS.GetName] founded Balkan Coalition."
+
+		effect_tooltip = {
+			add_ideas = { idea_SER_balkan_coalition_founder }
+		}
+		hidden_effect = {
+			effect_SER_register_balkan_coalition_member = yes
+		}
 	}
 }
 
-# PREV must be the balkan league faction leader
-effect_SER_join_balkan_league = {
-	log = "[THIS.GetName] joined Balkan League faction."
-	PREV = { add_to_faction = PREV }
-	effect_SER_register_balkan_league_member = yes
+# PREV must be the balkan coalition leader
+effect_SER_join_balkan_coalition = {
+	if = {
+		limit = { has_global_flag = flag_balkan_coalition_disbanded }
+		log = "WARNING: Ignoring [THIS.GetName] attempt to join Balkan Coalition because coalition is disbanded."
+	}
+	else = {
+		log = "[THIS.GetName] joined Balkan Coalition."
+
+		effect_tooltip = {
+			add_ideas = { idea_SER_balkan_coalition_member }
+		}
+		hidden_effect = {
+			effect_SER_register_balkan_coalition_member = yes
+			give_military_access = global.balkan_coalition_founder
+			var:global.balkan_coalition_founder = { give_military_access = PREV }
+		}
+	}
 }
 
-effect_SER_register_balkan_league_member = {
+# If the first country to enter the coalition member, they will be made the founder.
+effect_SER_register_balkan_coalition_member = {
 	if = {
-		limit = { NOT = { has_country_flag = flag_has_been_in_balkan_league } }
-		set_country_flag = flag_has_been_in_balkan_league
-		add_to_array = { global.has_been_in_balkan_league = THIS } # This array will contain every country that was every in the Balkan League.
+		limit = { NOT = { has_country_flag = flag_balkan_coalition_member } }
+
+		if = {
+			limit = { check_variable = { global.balkan_coalition_members^num = 0 } }
+			effect_SER_assume_balkan_coalition_leadership = yes
+		}
+		else = {
+			add_ideas = idea_SER_balkan_coalition_member
+		}
+		
+		set_country_flag = flag_balkan_coalition_member
+		add_to_array = { global.balkan_coalition_members = THIS }
+		add_to_array = { global.has_been_in_balkan_coalition = THIS } # This array will contain every country that was every in the Balkan Coalition.
 	}
+}
+
+effect_SER_leave_balkan_coalition = {
+	log = "[THIS.GetName] left Balkan Coalition."
+
+	effect_tooltip = {
+		remove_ideas = { idea_SER_balkan_coalition_member }
+	}
+	hidden_effect = {
+		effect_SER_unregister_balkan_coalition_member = yes
+		var:global.balkan_coalition_founder = {
+			PREV = {
+				diplomatic_relation = {
+					country = PREV
+					relation = military_access
+					active = no
+				}
+			}
+			diplomatic_relation = {
+				country = PREV
+				relation = military_access
+				active = no
+			}
+		}
+
+		if = {
+			limit = { check_variable = { global.balkan_coalition_members^num < 2 } }
+			log = "Disbanding Balkan Coalition because there are less than 2 members (currently '[?global.balkan_coalition_members^num]' members)."
+			effect_SER_end_balkan_coalition = yes
+		}
+	}
+}
+
+effect_SER_unregister_balkan_coalition_member = {
+	if = {
+		limit = { has_country_flag = flag_balkan_coalition_member }
+
+		if = {
+			limit = {
+				check_variable = { global.balkan_coalition_founder = THIS }
+				check_variable = { global.balkan_coalition_members^num > 1 }
+			}
+			log = "ERROR: Cannot remove '[THIS.GetName]' from Balkan Coalition while they are leader, unless they're the last member in which case the League disbands. Assign another leader before doing this."
+		}
+		else = {
+			remove_ideas = {
+				idea_SER_balkan_coalition_founder
+				idea_SER_balkan_coalition_member
+			}
+			clr_country_flag = flag_balkan_coalition_member
+			remove_from_array = { global.balkan_coalition_members = THIS }
+		}
+	}
+}
+
+effect_SER_assume_balkan_coalition_leadership = {
+	# Guards like this are here on the odd chance that the Coalition is disbanded while a member is reading the event to assume leadership
+	if = {
+		limit = { has_global_flag = flag_balkan_coalition_disbanded }
+		log = "WARNING: Ignoring [THIS.GetName] attempt to assume Balkan Coalition leadership because coalition is disbanded."
+	}
+	else = {
+		if = {
+			limit = { has_variable = global.balkan_coalition_founder }
+			var:global.balkan_coalition_founder = {
+				remove_ideas = { idea_SER_balkan_coalition_founder }
+				add_ideas = { idea_SER_balkan_coalition_member }
+			}
+		}
+		set_variable = { global.balkan_coalition_founder = THIS }
+		remove_ideas = { idea_SER_balkan_coalition_member }
+		add_ideas = { idea_SER_balkan_coalition_founder }
+	}
+}
+
+# Searches for a replacement coalition leader. Once found, the current leader is removed from the coalition entirely.
+# ROOT must be current Balkan Coalition leader.
+effect_SER_replace_balkan_coalition_leader = {
+	if = {
+		limit = { NOT = { has_idea = idea_SER_balkan_coalition_founder } }
+		log = "ERROR: 'effect_SER_replace_balkan_coalition_leader' called on [THIS.GetName], but this country is not the Balkan Coalition Leader."
+	}
+	else = {
+		get_highest_scored_country_temp = {
+			scorer = strongest_balkan_coalition_member_scorer
+			var = strongest_balkan_coalition_member
+		}
+
+		var:strongest_balkan_coalition_member = {
+			country_event = { id = event_wwi_balkan_league_new_leader.1 hours = 1 }
+		}
+	}
+}
+
+# Balkan Coalition ideas are removed (so that in the event of another war with Turkey, members can't rejoin the war). The flags remain, as they're used in the Disputes system.
+effect_SER_end_balkan_coalition = {
+	log = "Ending Balkan Coalition."
+
+	every_country = {
+		limit = {
+			trigger_SER_is_in_balkan_coalition = yes
+		}
+
+		remove_ideas = {
+			idea_SER_balkan_coalition_member
+			idea_SER_balkan_coalition_founder
+		}
+	}
+
+	clear_array = global.balkan_coalition_members
+	clear_variable = global.balkan_coalition_founder
+
+	set_global_flag = flag_balkan_coalition_disbanded
 }
 
 SER_increase_great_retreat = {
@@ -116,6 +267,14 @@ SER_bombard_kotor = {
 	}
 }
 
+effect_SER_begin_balkan_disputes_tt = {
+	effect_tooltip = {
+		unlock_decision_category_tooltip = decision_category_SER_balkan_coalition_disputes
+		activate_mission = mission_SER_balkan_coalition_breakup
+		custom_effect_tooltip = mission_SER_balkan_coalition_breakup_tt
+	}
+}
+
 effect_SER_count_balkan_disputes = {
 	# Clear existing variables to make debugging easier.
 	clr_global_flag = flag_balkan_disputes_ongoing
@@ -123,7 +282,7 @@ effect_SER_count_balkan_disputes = {
 
 	every_country = {
 		limit = {
-			has_country_flag = flag_has_been_in_balkan_league
+			has_country_flag = flag_balkan_coalition_member
 		}
 
 		set_variable = { balkan_war_disputed_states_count = 0 }
@@ -135,13 +294,15 @@ effect_SER_count_balkan_disputes = {
 		}
 
 		clr_state_flag = flag_balkan_war_disputed
-		set_variable = { balkan_league_claimants = 0 }
+		set_variable = { balkan_coalition_claimants = 0 }
 	}
 
+	# Begin by, for every state owned by a Balkan Coalition member, seeing if it is claimed by other members.
+	# If it is, that state is disputed. It increases the dispute count of all claimants who do not own the state by 1.
 	every_state = {
 		limit = {
 			is_on_continent = balkans
-			owner = { has_country_flag = flag_has_been_in_balkan_league }
+			owner = { has_country_flag = flag_balkan_coalition_member }
 		}
 
 		if = {
@@ -152,21 +313,21 @@ effect_SER_count_balkan_disputes = {
 			for_each_scope_loop = {
 				array = core_countries
 				if = {
-					limit = { has_country_flag = flag_has_been_in_balkan_league }
-					PREV = { add_to_variable = { balkan_league_claimants = 1 } }
+					limit = { has_country_flag = flag_balkan_coalition_member }
+					PREV = { add_to_variable = { balkan_coalition_claimants = 1 } }
 				}
 			}
 
 			if = {
-				limit = { check_variable = { balkan_league_claimants > 1 } }
-				log = "[THIS.GetName] is cored by [?balkan_league_claimants] members of the Balkan League. Marking as disputed."
+				limit = { check_variable = { balkan_coalition_claimants > 1 } }
+				log = "[THIS.GetName] is cored by [?balkan_coalition_claimants] members of the Balkan League. Marking as disputed."
 				set_state_flag = flag_balkan_war_disputed
 			
 				for_each_scope_loop = {
 					array = core_countries
 					if = {
 						limit = {
-							has_country_flag = flag_has_been_in_balkan_league
+							has_country_flag = flag_balkan_coalition_member
 							NOT = { owns_state = PREV }
 						}
 						add_to_variable = { balkan_war_disputed_states_count = 1 }
@@ -180,17 +341,19 @@ effect_SER_count_balkan_disputes = {
 
 	if = {
 		limit = { NOT = { has_variable = global.country_with_most_balkan_war_disputes } }
-		log = "No country yet considered to have the most balkan war disputes. Setting to faction leader."
-		set_variable = { global.country_with_most_balkan_war_disputes = THIS }
+		log = "No country yet considered to have the most balkan war disputes. Setting to coalition leader."
+		set_variable = { global.country_with_most_balkan_war_disputes = global.balkan_coalition_founder }
 	}
+
 	set_temp_variable = { most_disputes = global.country_with_most_balkan_war_disputes }
 	var:global.country_with_most_balkan_war_disputes = {
 		set_temp_variable = { most_disputes_amount = balkan_war_disputed_states_count }
 	}
 
+	# Finally, find which country has the most disputes. Mark that country as the Balkan Opponent (the one that will launch the 2nd Balkan War).
 	every_country = {
 		limit = {
-			has_country_flag = flag_has_been_in_balkan_league
+			has_country_flag = flag_balkan_coalition_member
 		}
 	
 		log = "[THIS.GetName] has [?balkan_war_disputed_states_count] disputed states from the Balkan War."
@@ -245,14 +408,10 @@ effect_SER_count_balkan_disputes = {
 	}
 }
 
-d_effect_SER_count_balkan_disputes = {
-	FROM = { effect_SER_count_balkan_disputes = yes }
-}
-
 # End the Balkan Disputes system, keeping the League together and averting the 2nd Balkan War.
 effect_SER_end_balkan_disputes = {
 	set_global_flag = flag_SER_second_balkan_war_averted
-	remove_mission = mission_SER_balkan_league_breakup
+	remove_mission = mission_SER_balkan_coalition_breakup
 	effect_SER_clear_balkan_disputes = yes
 	news_event = { id = event_WWI_balkan_league_second_balkan_war_averted.1 hours = 1 }
 }
@@ -266,7 +425,7 @@ effect_SER_clear_balkan_disputes = {
 
 	every_country = {
 		limit = {
-			has_country_flag = flag_has_been_in_balkan_league
+			has_country_flag = flag_balkan_coalition_member
 		}
 
 		clear_variable = balkan_war_disputed_states_count
@@ -278,7 +437,7 @@ effect_SER_clear_balkan_disputes = {
 		}
 
 		clr_state_flag = flag_balkan_war_disputed
-		clear_variable = balkan_league_claimants
+		clear_variable = balkan_coalition_claimants
 	}
 }
 
@@ -357,7 +516,7 @@ effect_SER_add_resolution_point = {
 effect_SER_second_balkan_war_tt = {
 	effect_tooltip = {
 		custom_effect_tooltip = second_balkan_war_declare_war_on_balkan_league_tt
-		custom_effect_tooltip = second_balkan_war_neighbors_may_attack_tt
 		custom_effect_tooltip = second_balkan_war_balkan_league_dissolves_tt
+		custom_effect_tooltip = second_balkan_war_neighbors_may_attack_tt
 	}
 }

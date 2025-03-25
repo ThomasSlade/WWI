@@ -93,7 +93,7 @@ leader_traits = {
 		modifier = {
 			cavalry_defense_factor = 0.1
 			cavalry_speed_factor = 0.25
-			equipment_capture = 0.03
+			equipment_capture = 0.05
 		}
 	}
 

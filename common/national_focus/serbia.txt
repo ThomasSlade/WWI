@@ -1635,7 +1635,7 @@ focus_tree = {
 			effect_tooltip = {
 				custom_effect_tooltip = if_they_accept_tt
 				MNT = {
-					effect_SER_join_balkan_league = yes
+					effect_SER_join_balkan_coalition = yes
 					add_state_core = 135
 					add_state_core = 161
 				}
@@ -1796,9 +1796,11 @@ focus_tree = {
 				custom_effect_tooltip = SER_strike_a_deal_with_bulgaria_choose_arbitration_rule_tt
 				add_ideas = idea_SER_favoured_by_arbitrator
 				custom_effect_tooltip = wwi_newline_tt
-				custom_effect_tooltip = if_they_accept
+				
 				BUL = {
-					effect_SER_join_balkan_league = yes
+					country_event = { id = wwi_events_SER_balkan_arbitration.4 }
+					custom_effect_tooltip = if_they_accept
+					effect_SER_join_balkan_coalition = yes
 					add_state_core = 157
 					add_state_core = 220
 					add_state_core = 133
