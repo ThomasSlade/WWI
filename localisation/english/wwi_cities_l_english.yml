@@ -1,6 +1,6 @@
 ﻿l_english:
-  event_WWI_cities.1.t: "[195.GetCapitalVictoryPointName] Falls to [?global.balkan_coalition_founder.GetFactionName]"
-  event_WWI_cities.1.d: "To the shock of Europe, the ancient city of [195.GetCapitalVictoryPointName] was captured this afternoon by [?global.balkan_coalition_founder.GetFactionName] troops.\n\nThe 'city of the world's desire' has occupied the strategic minds and cultural pedestals of Balkan statesmen for centuries. But it was [195.controller.GetAdjective] infantry who crossed the Theodosian walls and marched upon the Dival Yolu - the first conquerers to do so since the Turks themselves.\n\nThe city's capture represents a great triumph for [195.controller.GetNameDef] and a slight against its many other claimants."
+  event_WWI_cities.1.t: "[195.GetCapitalVictoryPointName] Falls to [?195.controller.GeetNameDefCap]"
+  event_WWI_cities.1.d: "To the shock of Europe, the ancient city of [195.GetCapitalVictoryPointName] was captured this afternoon by [?195.controller.GeetNameDefCap] troops.\n\nThe 'city of the world's desire' has occupied the strategic minds and cultural pedestals of Balkan statesmen for centuries. But it was [195.controller.GetAdjective] infantry who crossed the Theodosian walls and marched upon the Dival Yolu - the first conquerers to do so since the Turks themselves.\n\nThe city's capture represents a great triumph for [195.controller.GetNameDef] and a slight against its many other claimants."
   event_WWI_cities.1.d_conquerer_slavic: "Tsarigrad is ours!"
   event_WWI_cities.1.a_conquerer_greek: "Konstantinupoli is ours!"
   event_WWI_cities.1.a_conquerer: "The great city is ours!"

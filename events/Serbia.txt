@@ -46,7 +46,7 @@ country_event = {
 		name = wwi_serbia.2.a
 
 		effect_SER_form_balkan_coalition = yes
-		FROM = { effect_SER_join_balkan_coalition = yes }
+		FROM = { add_ideas = idea_SER_balkan_coalition_member }
 	}
 }
 
@@ -109,7 +109,7 @@ country_event = {
 		ai_chance = { factor = 100 }
 
 		effect_SER_form_balkan_coalition = yes
-		FROM = { effect_SER_join_balkan_coalition = yes }
+		FROM = { add_ideas = idea_SER_balkan_coalition_member }
 	}
 
 	option = {

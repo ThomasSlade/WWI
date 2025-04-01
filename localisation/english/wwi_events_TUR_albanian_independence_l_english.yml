@@ -14,8 +14,8 @@
   event_TUR_albanian_independence.6.a: "We cannot stand up to [AUS.GetNameDef]."
   event_TUR_albanian_independence.6.b: "So be it. [ALB.GetNameDef] is ours."
 
-  event_TUR_albanian_independence.7.t: "The Declaration of [ALB.GetAdjective] Independence"
-  event_TUR_albanian_independence.7.d: "Amid the [TUR.GetAdjective] retreat, its once subject peoples are finding the courage to break rank with [TUR.capital.GetCapitalVictoryPointName]. Chief among these is [ALB.GetNameDef].\n\nThough [TUR.GetNameDef] is powerless to challenge [ALB.GetAdjective] sovreignty, the new nation's security remains delicate: its administration falters, while fellow Balkan governments have previously laid claim to the region."
+  event_TUR_albanian_independence.7.t: "The All-[ALB.GetAdjective] Congress"
+  event_TUR_albanian_independence.7.d: "Amid the [TUR.GetAdjective] retreat in the Balkans, [ALB.GetAdjective] representatives have gathered to proclaim the nation's independence, the inevitable conclusion to a string of several recent [ALB.GetAdjective] revolts.\n\nThough [TUR.GetNameDef] is powerless to challenge [ALB.GetAdjective] sovreignty, the new nation's security remains delicate: several fellow Balkan governments had already laid claim to the region."
   event_TUR_albanian_independence.7.b: "A disaster."
   event_TUR_albanian_independence.7.d: "[ALB.GetNameDefCap] is free ... for now."
 

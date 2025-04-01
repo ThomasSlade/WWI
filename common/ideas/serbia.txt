@@ -8,6 +8,50 @@ ideas = {
 				always = yes
 			}
 
+			cancel = {
+				has_capitulated = yes
+			}
+
+			on_add = {
+				set_country_flag = flag_SER_has_been_in_balkan_coalition	# Used by some events to flavour things, even after these ideas have been removed.
+
+				every_country = {
+					limit = {
+						trigger_SER_is_in_balkan_coalition = yes
+					}
+					give_military_access = ROOT
+					ROOT = { give_military_access = PREV }
+				}
+			}
+
+			on_remove = {
+				if = {
+					limit = { NOT = { has_global_flag = flag_disbanding_balkan_coalition } }
+					effect_SER_end_balkan_coalition_if_one_or_less_members = yes
+					effect_SER_find_new_balkan_coalition_leader = yes
+				}
+
+				every_country = {
+					limit = {
+						trigger_SER_is_in_balkan_coalition = yes
+					}
+
+					diplomatic_relation = {
+						country = ROOT
+						relation = military_access
+						active = no
+					}
+
+					ROOT = {
+						diplomatic_relation = {
+							country = PREV
+							relation = military_access
+							active = no
+						}
+					}
+				}
+			}
+
 			modifier = {
 				custom_modifier_tooltip = idea_SER_balkan_coalition_tt
 			}
@@ -19,6 +63,45 @@ ideas = {
 		
 			allowed_civil_war = {
 				always = yes
+			}
+
+			on_add = {
+				set_country_flag = flag_SER_has_been_in_balkan_coalition
+
+				every_country = {
+					limit = {
+						trigger_SER_is_in_balkan_coalition = yes
+					}
+					give_military_access = ROOT
+					ROOT = { give_military_access = PREV }
+				}
+			}
+
+			on_remove = {
+				if = {
+					limit = { NOT = { has_global_flag = flag_disbanding_balkan_coalition } }
+					effect_SER_end_balkan_coalition_if_one_or_less_members = yes
+				}
+
+				every_country = {
+					limit = {
+						trigger_SER_is_in_balkan_coalition = yes
+					}
+
+					diplomatic_relation = {
+						country = ROOT
+						relation = military_access
+						active = no
+					}
+
+					ROOT = {
+						diplomatic_relation = {
+							country = PREV
+							relation = military_access
+							active = no
+						}
+					}
+				}
 			}
 
 			modifier = {

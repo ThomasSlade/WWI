@@ -102,7 +102,7 @@ decision_category_SER_balkan_coalition_disputes = {
 	}
 
 	visible = {
-		has_country_flag = flag_balkan_coalition_member
+		trigger_SER_is_in_balkan_coalition = yes
 		check_variable = { global.first_balkan_war_state = 2 }	# First Balkan War was won.
 		check_variable = { global.second_balkan_war_state = 0 }
 	}

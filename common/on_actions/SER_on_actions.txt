@@ -33,8 +33,8 @@ on_actions = {
 						ROOT = { original_tag = TUR }
 					}
 					OR = {
-						check_variable = { global.balkan_coalition_founder = FROM }
-						check_variable = { global.balkan_coalition_founder = ROOT }
+						FROM = { has_idea = idea_SER_balkan_coalition_founder }
+						ROOT = { has_idea = idea_SER_balkan_coalition_founder }
 					}
 				}
 
@@ -45,7 +45,8 @@ on_actions = {
 					country_event = { id = event_enter_first_balkan_war.1 hours = 1 }
 				}
 
-				var:global.balkan_coalition_founder = {
+				random_country = {
+					limit = { has_idea = idea_SER_balkan_coalition_founder }
 					news_event = { id = event_WWI_balkan_league_first_balkan_war.1 hours = 6 }
 				}
 			}
@@ -95,8 +96,8 @@ on_actions = {
 						ROOT = { original_tag = TUR }
 					}
 					OR = {
-						check_variable = { global.balkan_coalition_founder = FROM }
-						check_variable = { global.balkan_coalition_founder = ROOT }
+						FROM = { has_idea = idea_SER_balkan_coalition_founder }
+						ROOT = { has_idea = idea_SER_balkan_coalition_founder }
 					}
 				}
 				
@@ -106,19 +107,19 @@ on_actions = {
 
 				if = {
 					limit = {
-						check_variable = { global.balkan_coalition_founder = ROOT }
+						ROOT = { has_idea = idea_SER_balkan_coalition_founder }
 					}
 
 					log = "Balkan League won the First Balkan War. Initialising Balkan Disputes system."
 					set_variable = { global.first_balkan_war_state = 2 }
 
-					effect_SER_count_balkan_disputes = yes
+					effect_SER_begin_balkan_disputes = yes
 
 					if = {
 						limit = { has_global_flag = flag_balkan_disputes_ongoing }
 						log = "As Balkan disputes were detected (flag_balkan_disputes_ongoing = true), firing the event warning Balkan League members about the system."
 						every_country = {
-							limit = { has_country_flag = flag_balkan_coalition_member }
+							limit = { trigger_SER_is_in_balkan_coalition = yes }
 							country_event = { id = event_WWI_balkan_league_first_balkan_war.2 hours = 6 }
 						}
 					}
@@ -140,7 +141,14 @@ on_actions = {
 					FROM = { trigger_SER_is_in_balkan_coalition = yes }
 				}
 				FROM = {
-					effect_SER_leave_balkan_coalition = yes
+					if = {
+						limit = { has_idea = idea_SER_balkan_coalition_founder }
+						remove_ideas = idea_SER_balkan_coalition_founder
+					}
+					if = {
+						limit = { has_idea = idea_SER_balkan_coalition_member }
+						remove_ideas = idea_SER_balkan_coalition_member
+					}
 				}
 			}
 
@@ -192,11 +200,27 @@ on_actions = {
 				limit = { trigger_SER_is_in_balkan_coalition = yes }
 				if = {
 					limit = { has_idea = idea_SER_balkan_coalition_founder }
-					# It may take a while, but either another country will become coalition leader or the coalition will now be disbanded. Either way, the capitulated country leaves the coalition.
-					effect_SER_replace_balkan_coalition_leader = yes
+					remove_ideas = idea_SER_balkan_coalition_founder
 				}
-				else = {
-					effect_SER_leave_balkan_coalition = yes
+				if = {
+					limit = { has_idea = idea_SER_balkan_coalition_member }
+					remove_ideas = idea_SER_balkan_coalition_member
+				}
+
+				if = {
+					limit = {
+						all_country = {
+							if = {
+								limit = {
+									has_country_flag = flag_SER_has_been_in_balkan_coalition
+									has_war_with = TUR
+								}
+								has_capitulated = yes
+							}
+						}
+					}
+
+					news_event = { id = event_wwi_balkan_league_defeated.1 days = 2 }
 				}
 			}
 		}

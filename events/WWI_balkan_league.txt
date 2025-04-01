@@ -27,7 +27,7 @@ news_event = {
 		name = event_WWI_balkan_league_first_balkan_war.1.a_member
 
 		trigger = {
-			has_country_flag = flag_balkan_coalition_member
+			trigger_SER_is_in_balkan_coalition = yes
 		}
 	}
 
@@ -36,11 +36,12 @@ news_event = {
 		name = event_WWI_balkan_league_first_balkan_war.1.a_neutral
 
 		trigger = {
-			NOT = { has_country_flag = flag_balkan_coalition_member }
+			trigger_SER_is_in_balkan_coalition = no
 			has_opinion = {
 				target = FROM
 				value > -20
 			}
+			NOT = { original_tag = TUR }
 		}
 	}
 
@@ -49,11 +50,21 @@ news_event = {
 		name = event_WWI_balkan_league_first_balkan_war.1.a_negative
 
 		trigger = {
-			NOT = { has_country_flag = flag_balkan_coalition_member }
+			trigger_SER_is_in_balkan_coalition = no
 			has_opinion = {
 				target = FROM
 				value < -19
 			}
+			NOT = { original_tag = TUR }
+		}
+	}
+
+	# Turkey.
+	option = {
+		name = event_WWI_balkan_league_first_balkan_war.1.a_turkey
+
+		trigger = {
+			original_tag = TUR
 		}
 	}
 }
@@ -107,7 +118,7 @@ country_event = {
 
 		hidden_effect = {
 			every_other_country = {
-				limit = { has_country_flag = flag_balkan_coalition_member }
+				limit = { trigger_SER_is_in_balkan_coalition = yes }
 
 				ROOT = {
 					create_wargoal = {
@@ -151,9 +162,7 @@ country_event = {
 
 		hidden_effect = {
 			news_event = { id = event_WWI_balkan_league_second_balkan_war.3 days = 2 }
-			var:global.balkan_coalition_founder = {
-				country_event = { id = event_WWI_balkan_league_second_balkan_war.5 days = 3 }
-			}
+			effect_SER_end_balkan_coalition = yes
 		}
 	}
 }
@@ -174,12 +183,6 @@ country_event = {
 	# Okay.
 	option = {
 		name = event_WWI_balkan_league_second_balkan_war.2.a
-		
-		effect_tooltip = {
-			var:global.balkan_coalition_founder = {
-				dismantle_faction = yes
-			}
-		}
 	}
 }
 
@@ -223,19 +226,6 @@ news_event = {
 		trigger = {
 			has_country_flag = flag_second_balkan_war_defender
 		}
-	}
-}
-
-# Actually dismantle the League after no localisation needs it anymore.
-country_event = {
-	id = event_WWI_balkan_league_second_balkan_war.5
-
-	is_triggered_only = yes
-	hidden = yes
-
-	immediate = {
-		log = "([THIS.GetName] hidden event) Dismantling Balkan League."
-		dismantle_faction = yes
 	}
 }
 
@@ -517,11 +507,22 @@ country_event = {
 
 add_namespace = event_WWI_balkan_league_second_balkan_war_averted
 
-# Balkan dispute averted.
+# 2nd Balkan War averted.
 news_event = {
 	id = event_WWI_balkan_league_second_balkan_war_averted.1
 	title = event_WWI_balkan_league_second_balkan_war_averted.1.t
-	desc = event_WWI_balkan_league_second_balkan_war_averted.1.d
+	desc = {
+		text = event_WWI_balkan_league_second_balkan_war_averted.1.d_balkan_league_formed
+		trigger = {
+			FROM = { is_faction_leader = yes }
+		}
+	}
+	desc = {
+		text = event_WWI_balkan_league_second_balkan_war_averted.1.d_balkan_league_not_formed
+		trigger = {
+			FROM = { is_faction_leader = no }
+		}
+	}
 	picture = GFX_news_event_british_trench
 
 	is_triggered_only = yes
@@ -538,7 +539,7 @@ news_event = {
 		trigger = {
 			OR = {
 				has_opinion = { target = FROM value > 0 }
-				has_country_flag = flag_balkan_coalition_member
+				has_country_flag = flag_SER_has_been_in_balkan_coalition
 			}
 		}
 	}
@@ -549,8 +550,90 @@ news_event = {
 
 		trigger = {
 			has_opinion = { target = FROM value < 1 }
-			NOT = { has_country_flag = flag_balkan_coalition_member }
+			NOT = { has_country_flag = flag_SER_has_been_in_balkan_coalition }
 		}
+	}
+}
+
+country_event = {
+	id = event_WWI_balkan_league_second_balkan_war_averted.2
+	title = event_WWI_balkan_league_second_balkan_war_averted.2.t
+	desc = event_WWI_balkan_league_second_balkan_war_averted.2.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Offering the chance to turn Balkan Coalition into faction."
+	}
+
+	option = {
+		name = event_WWI_balkan_league_second_balkan_war_averted.2.a
+		if = {
+			limit = { is_faction_leader = yes }
+			set_faction_name = BALKAN_LEAGUE
+		}
+		else = {
+			if = {
+				limit = { is_in_faction = yes }
+				leave_faction = yes
+			}
+			create_faction = BALKAN_LEAGUE
+		}
+
+		every_country = {
+			limit = { has_idea = idea_SER_balkan_coalition_member }
+			country_event = { id = event_WWI_balkan_league_second_balkan_war_averted.3 hours = 1 }
+		}
+
+		news_event = { id = event_WWI_balkan_league_second_balkan_war_averted.1 days = 2 }
+
+		hidden_effect = {
+			effect_SER_end_balkan_coalition = yes
+		}
+
+		ai_chance = { base = 1 }
+	}
+
+	option = {
+		name = event_WWI_balkan_league_second_balkan_war_averted.2.b
+
+		news_event = { id = event_WWI_balkan_league_second_balkan_war_averted.1 days = 2 }
+
+		hidden_effect = {
+			effect_SER_end_balkan_coalition = yes
+		}
+
+		ai_chance = { base = 0 }
+	}
+}
+
+country_event = {
+	# This event has the same text content as the one for the Balkan League leader.
+	id = event_WWI_balkan_league_second_balkan_war_averted.3
+	title = event_WWI_balkan_league_second_balkan_war_averted.2.t
+	desc = event_WWI_balkan_league_second_balkan_war_averted.2.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Offering the chance to turn Balkan Coalition into faction."
+	}
+
+	option = {
+		name = event_WWI_balkan_league_second_balkan_war_averted.2.a
+		FROM = {
+			add_to_faction = ROOT
+		}
+
+		ai_chance = { base = 1 }
+	}
+
+	option = {
+		name = event_WWI_balkan_league_second_balkan_war_averted.2.b
+
+		ai_chance = { base = 0 }
 	}
 }
 
@@ -605,6 +688,45 @@ country_event = {
 	}
 }
 
+add_namespace = event_wwi_balkan_league_defeated
+
+news_event = {
+	id = event_wwi_balkan_league_defeated.1
+	title = event_wwi_balkan_league_defeated.1.t
+	desc = event_wwi_balkan_league_defeated.1.d
+	picture = GFX_news_event_british_trench
+
+	is_triggered_only = yes
+	major = yes
+
+	immediate = {
+		log = "([THIS.GetName] news event) Balkan League Defeated."
+	}
+
+	option = {
+		name = event_wwi_balkan_league_defeated.1.a_neutral
+		trigger = {
+			has_opinion = { target = TUR value > -10 }
+			NOT = { original_tag = TUR }
+		}
+	}
+
+	option = {
+		name = event_wwi_balkan_league_defeated.1.a_negative
+		trigger = {
+			has_opinion = { target = TUR value < -9 }
+			NOT = { original_tag = TUR }
+		}
+	}
+
+	option = {
+		name = event_wwi_balkan_league_defeated.1.a_turkey
+		trigger = {
+			original_tag = TUR
+		}
+	}
+}
+
 add_namespace = event_wwi_balkan_league_new_leader
 
 # FROM needs to be the current balkan coalition leader.
@@ -617,26 +739,46 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "([THIS.GetName] event) "Offering chance to become new Balkan Coalition leader.
-		if = {
-			limit = { NOT = { FROM = { has_idea = idea_SER_balkan_coalition_founder } } }
-			log = "ERROR: event_wwi_balkan_league_new_leader.1 called but FROM scope was '[FROM.GetName]'. Only call this event from the current Balkan Coalition leader."
+		log = "([THIS.GetName] event) Offering chance to become new Balkan Coalition leader."
+
+		# We actually add the Coalition leader idea before this country agrees. If they disagree, we remove it without them knowing.
+		# This is to try and prevent a situation where there's ever no Coalition leader, even briefly. The system assumes there always is one.
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = idea_SER_balkan_coalition_member
+				add_idea = idea_SER_balkan_coalition_founder
+			}
 		}
 	}
 
 	# Yes
 	option = {
 		name = event_wwi_balkan_league_new_leader.1.a
-		effect_SER_assume_balkan_coalition_leadership = yes
-		FROM = { effect_SER_leave_balkan_coalition = yes }
+
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = idea_SER_balkan_coalition_member
+				add_idea = idea_SER_balkan_coalition_founder
+			}
+		}
+
+		ai_chance = { base = 1 }
 	}
 
 	# No
 	option = {
 		name = event_wwi_balkan_league_new_leader.1.b
-		effect_SER_leave_balkan_coalition = yes
-		hidden_effect = {
-			effect_SER_replace_balkan_coalition_leader = yes
+		
+		# Player probably hasn't noticed they've temporarily been given the Leader idea. Just tell them they're losing their member idea to be more concise.
+		effect_tooltip = {
+			remove_ideas = idea_SER_balkan_coalition_member
 		}
+
+		hidden_effect = {
+			# Removing the idea restarts the 'find_new_balkan_coalition_leader' effect.
+			remove_ideas = idea_SER_balkan_coalition_founder
+		}
+
+		ai_chance = { base = 0 }
 	}
 }

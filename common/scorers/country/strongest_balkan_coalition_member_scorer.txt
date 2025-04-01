@@ -1,6 +1,17 @@
+# Gets a sorted list of Balkan Coalition MEMBERS (excludes the current leader) by strength.
 strongest_balkan_coalition_member_scorer = {
-	target_array = global.balkan_coalition_members
-	score = {
-		factor = num_of_factories
+	targets = {
+		target_array = global.countries
+		target_trigger = {
+			FROM = {
+				has_idea = idea_SER_balkan_coalition_member
+			}
+		}
+		score = {
+			base = 1
+			modifier = {
+				add = num_of_factories
+			}
+		}
 	}
 }

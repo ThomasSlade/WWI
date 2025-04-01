@@ -1,5 +1,5 @@
 ﻿l_english:
-  event_WWI_balkan_league_first_balkan_war.1.t: "[?global.balkan_coalition_founder.GetName] Declares Balkan War"
+  event_WWI_balkan_league_first_balkan_war.1.t: "[FROM.GetName] Declares Balkan War"
   event_WWI_balkan_league_first_balkan_war.1.d_start: "The Balkan region's reputation as a powderkeg has proven well-earned with the outbreak of war in Europe's South-East.\n\n"
   event_WWI_balkan_league_first_balkan_war.1.d_end: "has emboldened its upstart neighbors to proclaim themselves 'the Balkan League' and drive the last slither of [TUR.GetAdjective] influence from Europe.\n\nThe Balkan League's partnership is a brittle one: cynical observers do not imagine it will last."
   event_WWI_balkan_league_first_balkan_war.1.d: "$event_WWI_balkan_league_first_balkan_war.1.d_start$A weakened [TUR.GetAdjective] grip on its European minorities $event_WWI_balkan_league_first_balkan_war.1.d_end$"
@@ -7,6 +7,7 @@
   event_WWI_balkan_league_first_balkan_war.1.a_member: "We will dislodge [TUR.GetNameDef] at last."
   event_WWI_balkan_league_first_balkan_war.1.a_neutral: "Can [TUR.GetNameDef] be defeated by such ragtag nations?"
   event_WWI_balkan_league_first_balkan_war.1.a_negative: "[TUR.GetNameDefCap] is a keystone of Balkan stability!"
+  event_WWI_balkan_league_first_balkan_war.1.a_turkey: "We must defend the European Vilajets!"
 
   event_WWI_balkan_league_first_balkan_war.2.t: "Infighting Looms Amid Balkan League Victory"
   event_WWI_balkan_league_first_balkan_war.2.d: "We are triumphant in the Balkans. [THIS.GetNameDefCap] and her allies stand tall.\n\nBut beneath the jubilant pretense of Balkan League solidarity, disagreements over the division of our winnings have already begun to fester. Such disputes, left unresolved, threaten to plunge us into war against our former cobelligerents.\n\nWill the Balkan League survive the quibblings of its members?"
@@ -16,7 +17,7 @@
   event_WWI_balkan_league_second_balkan_war.1.d: "The refusal of the Balkan League to accept our claims has reached a boiling point in leadership and citizen alike: the time has come for war against our former allies\n\nThough [THIS.GetNameDef] has much to gain, more doveish ministers quietly comment that such a conflict would leave our nation vulnerable to an invasion from hostile neighbors."
   event_WWI_balkan_league_second_balkan_war.1.a: "[THIS.GetNameDefCap] will have what is rightfully hers."
   event_WWI_balkan_league_second_balkan_war.2.t: "The Balkan League Undone by [FROM.GetAdjective] Aggression"
-  event_WWI_balkan_league_second_balkan_war.2.d: "In what the press has described as an international betrayal, [FROM.GetNameDef] has withdrawn its ambassadors from [THIS.capital.GetCapitalVictoryPointName] and concentrated troops on the borders of it's claimed Balkan territories.\n\nThe turning of a Balkan League member on its allies is a blow to the alliance's integrity: already, remaining members speak of the arrangement in temporary terms."
+  event_WWI_balkan_league_second_balkan_war.2.d: "In what the press has described as a national betrayal, [FROM.GetNameDef] has withdrawn its ambassadors from [THIS.capital.GetCapitalVictoryPointName] and concentrated troops on the borders of it's claimed Balkan territories.\n\nThe turning of a League member on its allies represents a fatal blow to any hopes of a permanent alliance: already, remaining members speak of the arrangement as a forgone one."
   event_WWI_balkan_league_second_balkan_war.2.a: "A stab in the back."
   event_WWI_balkan_league_second_balkan_war.3.t: "[FROM.GetName] Ignites Second Balkan War"
   event_WWI_balkan_league_second_balkan_war.3.d: "Disagreements over the spoils of its recent victory have proven too great for the Balkan League: in a dramatic changing of diplomatic winds, [FROM.GetNameDef] has declared a war against its former allies to forcibly obtain its disputed Balkan territories.\n\nThe once promising Balkan League faces a devastating blow to its credibility as a worthwhile alliance: many of its members appear to consider the partnership finished."
@@ -52,9 +53,16 @@
   event_WWI_balkan_league_presence_intensified.1.a: "[occupied_state.GetName] was won with [THIS.GetAdjective] blood!"
 
   event_WWI_balkan_league_second_balkan_war_averted.1.t: "Balkan Victors Settle Their Disputes"
-  event_WWI_balkan_league_second_balkan_war_averted.1.d: "The formation of the Balkan League was broadly met with scepticism over the capacity of its quarelsome members to cooperate, and indeed, territorial disputes in the First Balkan War's aftermath seemed to foreshadow a second.\n\nHowever, [FROM.GetNameDef] and its peers have announced a hard-won settlement over the war's spoils, lead by [?global.most_balkan_resolutions_country.GetAdjective] negotiators.\n\nCynics of the League's formation now openly wonder if it might become a lasting alliance."
+  event_WWI_balkan_league_second_balkan_war_averted.1.d_intro: "The formation of the Balkan League was broadly met with scepticism over the capacity of its quarelsome members to cooperate, and indeed, territorial disputes in the First Balkan War's aftermath seemed to foreshadow a second.\n\nHowever, [FROM.GetNameDef] and its peers have announced a hard-won settlement over the war's spoils, lead by [?global.most_balkan_resolutions_country.GetAdjective] negotiators."
+  event_WWI_balkan_league_second_balkan_war_averted.1.d_balkan_league_formed: "$event_WWI_balkan_league_second_balkan_war_averted.1.d_intro$\n\nThe settlement announcement comes accompanied by the expansion of the Balkan League into a fully realized alliance. It now appears that the Balkan nations are primed to assert their interests on the world stage."
+  event_WWI_balkan_league_second_balkan_war_averted.1.d_balkan_league_not_formed: "$event_WWI_balkan_league_second_balkan_war_averted.1.d_intro$\n\nThough a conflict among the League's members has been averted, [FROM.capital.GetCapitalVictoryPointName] has dismissed proposals that the alliance be expanded into a permanent arrangement."
   event_WWI_balkan_league_second_balkan_war_averted.1.a_neutral: "[?global.most_balkan_resolutions_country.GetAdjective] diplomacy has proven tenacious."
-  event_WWI_balkan_league_second_balkan_war_averted.1.a_negative: "A grave threat to our Balkan interests!"
+  event_WWI_balkan_league_second_balkan_war_averted.1.a_negative: "These amicable relations will not last."
+
+  event_WWI_balkan_league_second_balkan_war_averted.2.t: "Formalizing the Balkan League"
+  event_WWI_balkan_league_second_balkan_war_averted.2.d: "The Balkan League was formed around the sole purpose of defeating [TUR.GetNameDef]; overlapping territorial interests of its members made any more permanent alliance impossible.\n\nBut with the last of these disputes resolved, an opportunity to transform this uneasy partnership into a regional power-bloc has presented itself.\n\nHas the time come to enshrine the League as a wholesale alliance?"
+  event_WWI_balkan_league_second_balkan_war_averted.2.a: "We stand together."
+  event_WWI_balkan_league_second_balkan_war_averted.2.b: "The League has served its purpose."
 
   event_enter_first_balkan_war.1.t: "[FROM.GetNameDefCap] Calls the Balkan League to War"
   event_enter_first_balkan_war.1.d_offensive: "With the establishment of the Balkan League, officials in [FROM.capital.GetCapitalVictoryPointName] believe the time has finally come to strike at the Turks. This morning, [FROM.GetOldAdjective] troops have crossed the [TUR.GetOldAdjective] border.\n\nPer our agreement, [FROM.GetNameDef] urges us to join the fight."
@@ -63,6 +71,12 @@
   event_enter_first_balkan_war.1.b: "Preparations are needed ..."
 
   event_wwi_balkan_league_new_leader.1.t: "Balkan League Leadership Falls to Us"
-  event_wwi_balkan_league_new_leader.1.d: "The defeat of [?global.balkan_coalition_founder] has made the Balkan League's future an uncertain one. Though the alliance's scope remains limited to [TUR.GetNameDef], any expansion of the treaty would have otherwise been overseen by its former head.\n\nAs the most powerful of the League's members, we now have the chance to formally assume its leadership."
+  event_wwi_balkan_league_new_leader.1.d: "The defeat of [FROM.GetNameDef] has made the Balkan League's future an uncertain one. Though the alliance's scope remains limited to [TUR.GetNameDef], any expansion of the treaty would have otherwise been overseen by its former head.\n\nAs the most powerful of the League's members, we now have the chance to formally assume its leadership."
   event_wwi_balkan_league_new_leader.1.a: "We will lead the League."
   event_wwi_balkan_league_new_leader.1.b: "This is not in [THIS.GetAdjective] interests."
+
+  event_wwi_balkan_league_defeated.1.t: "Balkan League Crushed"
+  event_wwi_balkan_league_defeated.1.d: "Though the upstart coalition of Balkan nations appeared a grave threat to the martially troubled [TUR.GetName], observers have been rudely awakened to the stubbornness of [TUR.GetAdjective] power in the Balkans.\n\nDespite its woeful matters of state, [TUR.GetNameDef] has met the Balkan League's invasion with a decisive counter-blow, each instigator falling to the allegedly hapless [TUR.GetAdjective] army.\n\nGovernments across Europe now wonder if the decline of the 'Sick Man of Europe' has been overstated."
+  event_wwi_balkan_league_defeated.1.a_neutral: "Has [TUR.GetAdjective] dominance returned to the Balkans?"
+  event_wwi_balkan_league_defeated.1.a_negative: "The Turks must be kept out of Europe!"
+  event_wwi_balkan_league_defeated.1.a_turkey: "We are triumphant."

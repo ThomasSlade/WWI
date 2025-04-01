@@ -1635,7 +1635,7 @@ focus_tree = {
 			effect_tooltip = {
 				custom_effect_tooltip = if_they_accept_tt
 				MNT = {
-					effect_SER_join_balkan_coalition = yes
+					add_ideas = idea_SER_balkan_coalition_member
 					add_state_core = 135
 					add_state_core = 161
 				}
@@ -1800,7 +1800,7 @@ focus_tree = {
 				BUL = {
 					country_event = { id = wwi_events_SER_balkan_arbitration.4 }
 					custom_effect_tooltip = if_they_accept
-					effect_SER_join_balkan_coalition = yes
+					add_ideas = idea_SER_balkan_coalition_member
 					add_state_core = 157
 					add_state_core = 220
 					add_state_core = 133

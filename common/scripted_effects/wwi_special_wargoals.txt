@@ -10,7 +10,7 @@ effect_special_wargoal_italo_turkish_victory = {
 effect_special_wargoal_first_balkan_victory = {
 	every_country = {
 		limit = {
-			has_country_flag = flag_balkan_coalition_member
+			trigger_SER_is_in_balkan_coalition = yes
 		}
 	
 		hidden_effect = {
@@ -37,7 +37,7 @@ effect_special_wargoal_first_balkan_victory = {
 	hidden_effect = {
 		every_country = {
 			limit = {
-				has_country_flag = flag_balkan_coalition_member
+				trigger_SER_is_in_balkan_coalition = yes
 			}
 
 			white_peace = TUR
