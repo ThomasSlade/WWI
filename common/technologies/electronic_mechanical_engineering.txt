@@ -1037,7 +1037,10 @@ technologies = {
 #    ##  #  #  #  ### #   ###  ##  #  #  #  ###  ##  #  #      #  ###  ##  #  # #  #  ##  ###  ##   ##    #       
 
 	basic_fortification_tech = {
-			
+		on_research_complete = {
+			effect_decrease_modern_doctrine_tech_penalty = yes
+		}
+		
 		path = {
 			leads_to_tech = coastal_fort_tech_1 
 			research_cost_coeff = 1

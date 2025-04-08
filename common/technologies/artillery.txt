@@ -45,6 +45,10 @@ technologies = {
 			field_artillery_equipment_1
 		}
 
+		on_research_complete = {
+			effect_decrease_modern_doctrine_tech_penalty = yes
+		}
+
 		path = {
 			leads_to_tech = field_artillery_2
 			research_cost_coeff = 1
@@ -95,6 +99,10 @@ technologies = {
 
 		enable_equipments = {
 			heavy_artillery_equipment_0
+		}
+
+		on_research_complete = {
+			effect_decrease_modern_doctrine_tech_penalty = yes
 		}
 
 		path = {

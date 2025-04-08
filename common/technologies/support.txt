@@ -23,7 +23,6 @@ technologies = {
 			support_equipment_1
 		}
 
-
 		path = {
 			leads_to_tech = tech_engineers
 			research_cost_coeff = 1
@@ -90,6 +89,10 @@ technologies = {
 
 		enable_subunits = {
 			engineer
+		}
+
+		on_research_complete = {
+			effect_decrease_modern_doctrine_tech_penalty = yes
 		}
 
 		path = {
@@ -441,6 +444,10 @@ technologies = {
 			light_tank_recon
 		}
 
+		on_research_complete = {
+			effect_decrease_modern_doctrine_tech_penalty = yes
+		}
+
 		path = {
 			leads_to_tech = tech_recon2
 			research_cost_coeff = 1
@@ -635,6 +642,10 @@ technologies = {
 
 		enable_subunits = {
 			military_police
+		}
+
+		on_research_complete = {
+			effect_decrease_modern_doctrine_tech_penalty = yes
 		}
 
 		path = {
@@ -837,6 +848,10 @@ technologies = {
 
 		enable_subunits = {
 			maintenance_company
+		}
+
+		on_research_complete = {
+			effect_decrease_modern_doctrine_tech_penalty = yes
 		}
 
 		path = {
@@ -1048,6 +1063,10 @@ technologies = {
 
 		enable_subunits = {
 			field_hospital
+		}
+
+		on_research_complete = {
+			effect_decrease_modern_doctrine_tech_penalty = yes
 		}
 
 		path = {
@@ -1294,6 +1313,10 @@ technologies = {
 			logistics_company
 		}
 
+		on_research_complete = {
+			effect_decrease_modern_doctrine_tech_penalty = yes
+		}
+
 		path = {
 			leads_to_tech = tech_logistics_company2
 			research_cost_coeff = 1
@@ -1504,6 +1527,10 @@ technologies = {
 
 		enable_subunits = {
 			signal_company
+		}
+
+		on_research_complete = {
+			effect_decrease_modern_doctrine_tech_penalty = yes
 		}
 
 		path = {

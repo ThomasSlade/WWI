@@ -47,7 +47,7 @@ leader_traits = {
 		attack_skill = 2
 
 		modifier = {
-			army_infantry_breakthrough_factor = 0.2
+			army_infantry_attack_factor = 0.2
 		}
 	}
 

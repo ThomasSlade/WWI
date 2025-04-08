@@ -21,6 +21,7 @@ NDefines.NMilitary.DIG_IN_FACTOR = 0.05	-- bonus factor for each dug-in level
 NDefines.NMilitary.UNIT_DIGIN_CAP = 2
 NDefines.NMilitary.UNIT_DIGIN_SPEED = 0.5
 NDefines.NMilitary.FIELD_EXPERIENCE_SCALE = 0.006
+NDefines.NMilitary.FIELD_EXPERIENCE_MAX_PER_DAY = 1	-- Most xp you can gain per day
 
 NDefines.NAir.AIR_WING_MAX_STATS_SPEED = 300	-- Beyond this, aircraft speed (irrelevant to the opponent, as opposed to the relative speed bonus) no longer gives a bonus to attack.
 NDefines.NAir.AIR_WING_MAX_STATS_SPEED = 1500	-- Max amount of aircrafts in region to give full detection bonus.

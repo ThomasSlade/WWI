@@ -80,7 +80,7 @@ news_event = {
 
 	# Positive
 	option = {
-		name = event_WWI_cities.1.d_positive
+		name = event_WWI_cities.1.a_positive
 		trigger = {
 			NOT = { controls_state = 195 }
 			NOT = { owns_state = 195 }
@@ -90,7 +90,7 @@ news_event = {
 
 	# Neutral
 	option = {
-		name = event_WWI_cities.1.d_neutral
+		name = event_WWI_cities.1.a_neutral
 		trigger = {
 			NOT = { controls_state = 195 }
 			NOT = { owns_state = 195 }
@@ -101,7 +101,7 @@ news_event = {
 
 	# Negative
 	option = {
-		name = event_WWI_cities.1.d_negative
+		name = event_WWI_cities.1.a_negative
 		trigger = {
 			NOT = { controls_state = 195 }
 			NOT = { owns_state = 195 }
@@ -114,7 +114,7 @@ news_event = {
 
 	# Captured from
 	option = {
-		name = event_WWI_cities.1.d_conquered
+		name = event_WWI_cities.1.a_conquered
 		trigger = {
 			owns_state = 195
 		}

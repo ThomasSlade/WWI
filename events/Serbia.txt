@@ -294,6 +294,10 @@ country_event = {
 	option = {
 		name = wwi_serbia.12.a_serbia
 
+		effect_tooltip = {
+			add_ideas = SER_king_of_all_the_serbs
+		}
+
 		trigger = {
 			original_tag = SER
 		}
@@ -302,6 +306,10 @@ country_event = {
 	option = {
 		name = wwi_serbia.12.a_france
 
+		effect_tooltip = {
+			FROM = { add_ideas = SER_king_of_all_the_serbs }
+		}
+
 		trigger = {
 			original_tag = FRA
 		}
@@ -309,6 +317,10 @@ country_event = {
 
 	option = {
 		name = wwi_serbia.12.a_austria
+
+		effect_tooltip = {
+			FROM = { add_ideas = SER_king_of_all_the_serbs }
+		}
 
 		trigger = {
 			original_tag = AUS

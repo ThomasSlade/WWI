@@ -42,6 +42,10 @@ technologies = {
 		enable_equipments = {
 			fighter_equipment_0
 		}
+
+		on_research_complete = {
+			effect_decrease_modern_doctrine_tech_penalty = yes
+		}
 		
 		path = {
 			leads_to_tech = fighter_plane_1

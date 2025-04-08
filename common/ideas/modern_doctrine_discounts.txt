@@ -1,0 +1,51 @@
+ideas = {
+	hidden_ideas = {
+		idea_modern_doctrine_discount_1 = {
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				cat_modern_doctrine_cost_factor = -0.125
+			}
+		}
+
+		idea_modern_doctrine_discount_2 = {
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				cat_modern_doctrine_cost_factor = -0.25
+			}
+		}
+
+		idea_modern_doctrine_discount_3 = {
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				cat_modern_doctrine_cost_factor = -0.375
+			}
+		}
+
+		idea_modern_doctrine_discount_4 = {
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				cat_modern_doctrine_cost_factor = -0.5
+			}
+		}
+	}
+}

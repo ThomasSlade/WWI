@@ -33,6 +33,10 @@ on_actions = {
 					set_variable = { ideology_acceptance_medium_idea = token:revolutionary_acceptance_medium }
 					log = "Setting [THIS.GetName] influence idea to Revolutionary."
 				}
+
+				set_variable = { modern_doctrine_tech_penalty = 1 }
+				add_dynamic_modifier = { modifier = modifier_modern_doctrine_tech_penalty }
+				effect_calculate_modern_doctrine_tech_penalty = yes
 			}
 		}
 	}

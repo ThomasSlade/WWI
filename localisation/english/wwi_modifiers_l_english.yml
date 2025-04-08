@@ -5,3 +5,6 @@
   established_acceptance: "Acceptance of Established Diplomacy"
   expansionist_acceptance: "Acceptance of Expansionist Diplomacy"
   revolutionary_acceptance: "Acceptance of Radical Diplomacy"
+
+  modifier_modern_doctrine_tech_penalty: "Modern Doctrine Technology Penalty"
+  modern_doctrine_tech_penalty_reduction_tt: "Modern Doctrine Technology Penalty: §G-25%§!"

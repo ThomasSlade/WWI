@@ -86,3 +86,78 @@ effect_promote_character_to_non_revolutionary_leader = {
 		ideology = expansionist_t
 	}
 }
+
+effect_decrease_modern_doctrine_tech_penalty = {
+	if = {
+		limit = { check_variable = { modern_doctrine_tech_penalty > 0 } }
+		subtract_from_variable = { modern_doctrine_tech_penalty = 0.25 }
+		force_update_dynamic_modifier = yes
+		custom_effect_tooltip = modern_doctrine_tech_penalty_reduction_tt
+	}
+}
+
+effect_calculate_modern_doctrine_tech_penalty = {
+	# Keep these updated by finding all techs that invoke effect_decrease_modern_doctrine_tech_penalty on research, and manually enacting the effect here.
+	# Sadly this is best way to do this, since the penalty reduction variable gets defined in on_startup, seemingly after techs get researched.
+	if = {
+		limit = { has_tech = infantry_weapons1 }
+		effect_decrease_modern_doctrine_tech_penalty = yes
+	}
+	if = {
+		limit = { has_tech = heavy_machine_gun_0 }
+		effect_decrease_modern_doctrine_tech_penalty = yes
+	}
+	if = {
+		limit = { has_tech = motorised_infantry }
+		effect_decrease_modern_doctrine_tech_penalty = yes
+	}
+
+	if = {
+		limit = { has_tech = tech_engineers }
+		effect_decrease_modern_doctrine_tech_penalty = yes
+	}
+	if = {
+		limit = { has_tech = tech_recon }
+		effect_decrease_modern_doctrine_tech_penalty = yes
+	}
+	if = {
+		limit = { has_tech = tech_military_police }
+		effect_decrease_modern_doctrine_tech_penalty = yes
+	}
+	if = {
+		limit = { has_tech = tech_maintenance_company }
+		effect_decrease_modern_doctrine_tech_penalty = yes
+	}
+	if = {
+		limit = { has_tech = tech_field_hospital }
+		effect_decrease_modern_doctrine_tech_penalty = yes
+	}
+	if = {
+		limit = { has_tech = tech_logistics_company }
+		effect_decrease_modern_doctrine_tech_penalty = yes
+	}
+	if = {
+		limit = { has_tech = tech_signal_company }
+		effect_decrease_modern_doctrine_tech_penalty = yes
+	}
+
+	if = {
+		limit = { has_tech = basic_fortification_tech }
+		effect_decrease_modern_doctrine_tech_penalty = yes
+	}
+
+	if = {
+		limit = { has_tech = field_artillery_1 }
+		effect_decrease_modern_doctrine_tech_penalty = yes
+	}
+	if = {
+		limit = { has_tech = heavy_artillery_0 }
+		effect_decrease_modern_doctrine_tech_penalty = yes
+	}
+
+	if = {
+		limit = { has_tech = fighter_plane_0 }
+		effect_decrease_modern_doctrine_tech_penalty = yes
+	}
+	force_update_dynamic_modifier = yes
+}
