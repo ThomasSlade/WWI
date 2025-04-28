@@ -1,0 +1,38 @@
+continuous_focus_palette = {
+	id = generic_focus
+	
+	country = {
+		factor = 1
+	}
+	
+	default = yes
+	reset_on_civilwar = no
+			
+	position = { x = 50 y = 1000 }
+
+	# Burns Political Power to avoid PP imbalances until I actually add a generic focus tree.
+	focus = {
+		id = continuous_burn_pp
+		
+		icon = GFX_goal_continuous_naval_production
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 0
+				OR = {
+					original_tag = SER
+					original_tag = AUS
+					original_tag = SOV
+				}
+			}
+		}
+		
+		daily_cost = 1
+		
+		available_if_capitulated = yes
+	}
+}
