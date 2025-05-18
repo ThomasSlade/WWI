@@ -34,7 +34,7 @@ set_popularities = {
 
 add_ideas = {
 	BUL_balkan_prussia
-	extensive_conscription
+	limited_conscription
 
 	cab_conservative
 	gov_constitutional_monarchy

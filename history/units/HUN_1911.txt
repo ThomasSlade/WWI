@@ -64,7 +64,7 @@ units = {
 		}
 		location = 4852
 		division_template = "Feldkanonen-Regimenter"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
@@ -74,7 +74,7 @@ units = {
 		}
 		location = 4852
 		division_template = "Feldkanonen-Regimenter"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
@@ -84,7 +84,7 @@ units = {
 		}
 		location = 4852
 		division_template = "Feldkanonen-Regimenter"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
@@ -94,7 +94,7 @@ units = {
 		}
 		location = 4852
 		division_template = "Feldkanonen-Regimenter"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
@@ -104,81 +104,7 @@ units = {
 		}
 		location = 4852
 		division_template = "Feldkanonen-Regimenter"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-
-	# 5 Artillery Units
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Feldkanonen-Regimenter"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Feldkanonen-Regimenter"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Feldkanonen-Regimenter"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Feldkanonen-Regimenter"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Feldkanonen-Regimenter"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-
-	# 2 Cavalry Units
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Dragoner"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Dragoner"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 
@@ -190,7 +116,7 @@ units = {
 		}
 		location = 4852
 		division_template = "Dragoner"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
@@ -200,7 +126,7 @@ units = {
 		}
 		location = 4852
 		division_template = "Dragoner"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
@@ -210,7 +136,7 @@ units = {
 		}
 		location = 4852
 		division_template = "Dragoner"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
@@ -220,7 +146,7 @@ units = {
 		}
 		location = 4852
 		division_template = "Dragoner"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
@@ -230,59 +156,7 @@ units = {
 		}
 		location = 4852
 		division_template = "Dragoner"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-
-	# 5 Cavalry Units
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Dragoner"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Dragoner"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Dragoner"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Dragoner"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Dragoner"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 
@@ -294,7 +168,7 @@ units = {
 		}
 		location = 4852
 		division_template = "Dragoner"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
@@ -304,7 +178,7 @@ units = {
 		}
 		location = 4852
 		division_template = "Dragoner"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
@@ -314,7 +188,7 @@ units = {
 		}
 		location = 4852
 		division_template = "Dragoner"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
@@ -324,7 +198,7 @@ units = {
 		}
 		location = 4852
 		division_template = "Dragoner"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
@@ -334,7 +208,7 @@ units = {
 		}
 		location = 4852
 		division_template = "Dragoner"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 
@@ -346,7 +220,7 @@ units = {
 		}
 		location = 4852
 		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
@@ -356,7 +230,7 @@ units = {
 		}
 		location = 4852
 		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
@@ -366,7 +240,7 @@ units = {
 		}
 		location = 4852
 		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
@@ -376,7 +250,7 @@ units = {
 		}
 		location = 4852
 		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
@@ -386,61 +260,11 @@ units = {
 		}
 		location = 4852
 		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 
+	# 5 Infantry Units
 	division = {
 		division_name = {
 			is_name_ordered = yes
@@ -448,7 +272,7 @@ units = {
 		}
 		location = 4852
 		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
@@ -458,7 +282,7 @@ units = {
 		}
 		location = 4852
 		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
@@ -468,7 +292,7 @@ units = {
 		}
 		location = 4852
 		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
@@ -478,7 +302,7 @@ units = {
 		}
 		location = 4852
 		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
@@ -488,61 +312,11 @@ units = {
 		}
 		location = 4852
 		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 
+	# 5 Infantry Units
 	division = {
 		division_name = {
 			is_name_ordered = yes
@@ -550,7 +324,7 @@ units = {
 		}
 		location = 4852
 		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
@@ -560,7 +334,7 @@ units = {
 		}
 		location = 4852
 		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
@@ -570,7 +344,7 @@ units = {
 		}
 		location = 4852
 		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
@@ -580,7 +354,7 @@ units = {
 		}
 		location = 4852
 		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
@@ -590,262 +364,7 @@ units = {
 		}
 		location = 4852
 		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4852
-		division_template = "Infanterierregiment"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 }

@@ -1376,7 +1376,7 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "([THIS.GetName] country event) Austria faction recipient accepted.""
+		log = "([THIS.GetName] country event) Austria faction recipient accepted."
 	}
 	
 	# Okay.
@@ -1386,7 +1386,6 @@ country_event = {
 	}
 }
 
-# 
 country_event = {
 	id = event_AUS_offer_military_alliance.3
 	title = event_AUS_offer_military_alliance.3.t

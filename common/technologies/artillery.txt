@@ -1,7 +1,7 @@
 technologies = {
 	field_artillery_0 = {
 		research_cost = 1.5
-		start_year = 1911
+		start_year = 1900
 
 		enable_subunits = {
 			field_artillery_brigade
@@ -39,7 +39,7 @@ technologies = {
 
 	field_artillery_1 = {
 		research_cost = 1.5
-		start_year = 1912
+		start_year = 1911
 
 		enable_equipments = {
 			field_artillery_equipment_1
@@ -91,7 +91,7 @@ technologies = {
 
 	heavy_artillery_0 = {
 		research_cost = 1.5
-		start_year = 1912
+		start_year = 1911
 
 		enable_subunits = {
 			heavy_artillery_brigade

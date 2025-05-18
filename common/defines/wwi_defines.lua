@@ -20,6 +20,7 @@ NDefines.NMilitary.MULTIPLE_COMBATS_PENALTY = -0.25	-- defender penalty if attac
 NDefines.NMilitary.DIG_IN_FACTOR = 0.05	-- bonus factor for each dug-in level
 NDefines.NMilitary.UNIT_DIGIN_CAP = 2
 NDefines.NMilitary.UNIT_DIGIN_SPEED = 0.5
+NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.0005
 NDefines.NMilitary.FIELD_EXPERIENCE_SCALE = 0.006
 NDefines.NMilitary.FIELD_EXPERIENCE_MAX_PER_DAY = 1	-- Most xp you can gain per day
 

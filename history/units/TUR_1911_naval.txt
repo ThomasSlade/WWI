@@ -10,7 +10,7 @@
 			ship = {
 				name = "Barbaros Hayreddin"
 				definition = battleship
-				start_experience_factor = 0.2
+				start_experience_factor = 0.1
 		start_equipment_factor = 0.85
 				equipment = {
 					ship_hull_heavy_1 = {

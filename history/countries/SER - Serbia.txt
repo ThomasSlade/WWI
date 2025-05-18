@@ -33,7 +33,7 @@ set_popularities = {
 
 add_ideas = {
 	SER_nacertanije
-	extensive_conscription
+	limited_conscription
 
 	cab_conservative
 	gov_limited_democracy

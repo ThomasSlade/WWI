@@ -30,7 +30,7 @@ set_popularities = {
 }
 
 add_ideas = {
-	extensive_conscription
+	limited_conscription
 
 	cab_liberal
 	gov_limited_democracy

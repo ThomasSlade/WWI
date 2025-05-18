@@ -26,43 +26,43 @@ units = {
 	division = {
 		location = 4442 # Neusatz
 		division_template = "Vojvodina Advanced Division"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
 		location = 4442 # Neusatz
 		division_template = "Vojvodina Advanced Division"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
 		location = 4442 # Neusatz
 		division_template = "Vojvodina Advanced Division"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
 		location = 5165 # Pancsova
 		division_template = "Vojvodina Advanced Division"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
 		location = 5165 # Pancsova
 		division_template = "Vojvodina Advanced Division"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
 		location = 5067 # Versecz
 		division_template = "Vojvodina Advanced Division"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
 		location = 5067 # Versecz
 		division_template = "Vojvodina Advanced Division"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 
@@ -70,25 +70,25 @@ units = {
 	division = {
 		location = 4068 # Semlin
 		division_template = "Vojvodina Advanced Division"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
 		location = 5153 # Obecse
 		division_template = "Vojvodina Advanced Division"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
 		location = 4944 # Zenta
 		division_template = "Vojvodina Advanced Division"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
 		location = 4944 # Zenta
 		division_template = "Vojvodina Advanced Division"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 
@@ -96,25 +96,25 @@ units = {
 	division = {
 		location = 4878 # Grossbetschkerek
 		division_template = "Vojvodina Advanced Division"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
 		location = 5165 # Pancsova
 		division_template = "Vojvodina Advanced Division"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
 		location = 5165 # Pancsova
 		division_template = "Vojvodina Advanced Division"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
 		location = 5067 # Versecz
 		division_template = "Vojvodina Advanced Division"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 
@@ -122,25 +122,25 @@ units = {
 	division = {
 		location = 4442 # Neusatz
 		division_template = "Vojvodina Advanced Division"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
 		location = 5139 # Zombor
 		division_template = "Vojvodina Advanced Division"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
 		location = 4811 # Maria Theresiopel
 		division_template = "Vojvodina Advanced Division"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 	division = {
 		location = 4811 # Maria Theresiopel
 		division_template = "Vojvodina Advanced Division"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 	}
 }
