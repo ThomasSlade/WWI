@@ -1,0 +1,5 @@
+free_civ_from_mils = {
+	color_type = good
+	value_type = number
+	precision = 2
+}

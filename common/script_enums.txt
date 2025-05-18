@@ -660,3 +660,21 @@ script_enum_equipment_bonus_type = {
 	heavy_machine_gun_equipment_1
 	recon_plane_equipment_0
 }
+
+# WWI Enum categories
+script_enum_parties = {
+	autocratic
+	conservative
+	liberal
+	socialist
+	communist
+}
+
+script_enum_law_type = {
+	manpower
+	economic
+	rationing
+	workers_rights
+	civil_rights
+	blockade_policy
+}

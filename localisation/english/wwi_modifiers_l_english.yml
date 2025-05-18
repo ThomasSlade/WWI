@@ -8,3 +8,8 @@
 
   modifier_modern_doctrine_tech_penalty: "Modern Doctrine Technology Penalty"
   modern_doctrine_tech_penalty_reduction_tt: "Modern Doctrine Technology Penalty: §G-25%§!"
+
+  free_civ_from_mils: "Offmap Civilian Factories from each Military Factory"
+
+  MODIFIER_INDUSTRIAL_CAPACITY_FACTOR: "$arms_factory$ Output"
+  MODIFIER_INDUSTRIAL_CAPACITY_FACTOR_DESC: "This effectively increases the amount of work each §Y$arms_factory$§! can do per hour."

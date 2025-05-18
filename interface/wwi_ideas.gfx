@@ -165,6 +165,23 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_idea_opp_socialist_0"
+		texturefile = "gfx/interface/ideas/laws/idea_opp_socialist_0.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_opp_socialist_1"
+		texturefile = "gfx/interface/ideas/laws/idea_opp_socialist_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_opp_socialist_2"
+		texturefile = "gfx/interface/ideas/laws/idea_opp_socialist_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_opp_socialist_3"
+		texturefile = "gfx/interface/ideas/laws/idea_opp_socialist_3.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_gov_absolute_monarchy"
 		texturefile = "gfx/interface/ideas/laws/idea_gov_absolute_monarchy.dds"
 	}
@@ -188,6 +205,174 @@ spriteTypes = {
 		name = "GFX_idea_gov_social_democracy"
 		texturefile = "gfx/interface/ideas/laws/idea_gov_social_democracy.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_national_service"
+		texturefile = "gfx/interface/ideas/laws/idea_mp_national_service.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_deployed_labourers_0"
+		texturefile = "gfx/interface/ideas/laws/idea_mp_deployed_labourers_0.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_deployed_labourers_1"
+		texturefile = "gfx/interface/ideas/laws/idea_mp_deployed_labourers_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_deployed_workers_0"
+		texturefile = "gfx/interface/ideas/laws/idea_mp_deployed_workers_0.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_deployed_workers_1"
+		texturefile = "gfx/interface/ideas/laws/idea_mp_deployed_workers_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_nationalisation_0"
+		texturefile = "gfx/interface/ideas/laws/idea_econ_nationalisation_0.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_nationalisation_1"
+		texturefile = "gfx/interface/ideas/laws/idea_econ_nationalisation_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_private_collaboration_0"
+		texturefile = "gfx/interface/ideas/laws/idea_econ_private_collaboration_0.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_private_collaboration_1"
+		texturefile = "gfx/interface/ideas/laws/idea_econ_private_collaboration_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_profit_seizure_0"
+		texturefile = "gfx/interface/ideas/laws/idea_econ_profit_seizure_0.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_profit_seizure_1"
+		texturefile = "gfx/interface/ideas/laws/idea_econ_profit_seizure_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_forced_labour"
+		texturefile = "gfx/interface/ideas/laws/idea_wr_forced_labour.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_quitting_illegal"
+		texturefile = "gfx/interface/ideas/laws/idea_wr_quitting_illegal.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_unions_illegal"
+		texturefile = "gfx/interface/ideas/laws/idea_wr_unions_illegal.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wage_controls_0"
+		texturefile = "gfx/interface/ideas/laws/idea_wr_wage_controls_0.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wage_controls_1"
+		texturefile = "gfx/interface/ideas/laws/idea_wr_wage_controls_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_worker_collaboration_0"
+		texturefile = "gfx/interface/ideas/laws/idea_wr_worker_collaboration_0.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_worker_collaboration_1"
+		texturefile = "gfx/interface/ideas/laws/idea_wr_worker_collaboration_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_no_rationing"
+		texturefile = "gfx/interface/ideas/laws/idea_rat_no_rationing.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_price_controls"
+		texturefile = "gfx/interface/ideas/laws/idea_rat_price_controls.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_government_confiscation_0"
+		texturefile = "gfx/interface/ideas/laws/idea_rat_government_confiscation_0.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_government_confiscation_1"
+		texturefile = "gfx/interface/ideas/laws/idea_rat_government_confiscation_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_government_distribution_0"
+		texturefile = "gfx/interface/ideas/laws/idea_rat_government_distribution_0.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_government_distribution_1"
+		texturefile = "gfx/interface/ideas/laws/idea_rat_government_distribution_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_harsh_rationing"
+		texturefile = "gfx/interface/ideas/laws/idea_rat_harsh_rationing.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_entrenched_nationalism"
+		texturefile = "gfx/interface/ideas/laws/idea_cr_entrenched_nationalism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ethnic_rights_0"
+		texturefile = "gfx/interface/ideas/laws/idea_cr_ethnic_rights_0.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ethnic_rights_1"
+		texturefile = "gfx/interface/ideas/laws/idea_cr_ethnic_rights_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ethnic_rights_2"
+		texturefile = "gfx/interface/ideas/laws/idea_cr_ethnic_rights_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_domestic_rights_0"
+		texturefile = "gfx/interface/ideas/laws/idea_cr_domestic_rights_0.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_domestic_rights_1"
+		texturefile = "gfx/interface/ideas/laws/idea_cr_domestic_rights_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_domestic_rights_2"
+		texturefile = "gfx/interface/ideas/laws/idea_cr_domestic_rights_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_women_minority_rights"
+		texturefile = "gfx/interface/ideas/laws/idea_cr_women_minority_rights.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_open_sealanes"
+		texturefile = "gfx/interface/ideas/laws/idea_bp_open_sealanes.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_cargo_interception"
+		texturefile = "gfx/interface/ideas/laws/idea_bp_cargo_interception.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_surface_blockade_0"
+		texturefile = "gfx/interface/ideas/laws/idea_bp_surface_blockade_0.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_surface_blockade_1"
+		texturefile = "gfx/interface/ideas/laws/idea_bp_surface_blockade_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_submarine_blockade_0"
+		texturefile = "gfx/interface/ideas/laws/idea_bp_submarine_blockade_0.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_submarine_blockade_1"
+		texturefile = "gfx/interface/ideas/laws/idea_bp_submarine_blockade_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_unrestricted_blockade"
+		texturefile = "gfx/interface/ideas/laws/idea_bp_unrestricted_blockade.dds"
+	}
+	
+	
 
 	### Country Specials ###
 	# Serbia

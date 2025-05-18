@@ -1,0 +1,85 @@
+ideas = {
+	opposition = {
+		law = yes
+		use_list_view = yes
+
+		opp_socialist_0 = {
+			cost = 150
+			removal_cost = -1
+			cancel_if_invalid = no
+
+			available = {
+				has_idea = opp_socialist_1
+			}
+
+			on_add = {
+				set_variable = { opposition_party = token:socialist }
+				set_variable = { opposition_level = 0 }
+			}
+
+			modifier = {
+				political_power_factor = 0.33
+				stability_factor = 0.1
+			}
+		}
+
+		opp_socialist_1 = {
+			cost = 150
+			removal_cost = -1
+			cancel_if_invalid = no
+
+			available = {
+				has_idea = opp_socialist_2
+			}
+
+			on_add = {
+				set_variable = { opposition_party = token:socialist }
+				set_variable = { opposition_level = 1 }
+			}
+
+			modifier = {
+
+			}
+		}
+
+		opp_socialist_2 = {
+			cost = 150
+			removal_cost = -1
+			cancel_if_invalid = no
+
+			available = {
+				has_idea = opp_socialist_3
+			}
+
+			on_add = {
+				set_variable = { opposition_party = token:socialist }
+				set_variable = { opposition_level = 2 }
+			}
+
+			modifier = {
+				political_power_factor = -0.33
+				stability_factor = -0.1
+			}
+		}
+
+		opp_socialist_3 = {
+			cost = 150
+			removal_cost = -1
+			cancel_if_invalid = no
+
+			available = {
+				always = no
+			}
+
+			on_add = {
+				set_variable = { opposition_party = token:socialist }
+				set_variable = { opposition_level = 3 }
+			}
+
+			modifier = {
+				political_power_factor = -0.66
+				stability_factor = -0.2
+			}
+		}
+	}
+}

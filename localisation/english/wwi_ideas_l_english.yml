@@ -1,20 +1,4 @@
 ﻿l_english:
-  # Laws
-  cabinet: "Cabinet"
-  government: "Government"
-  cab_autocratic: "Autocratic"
-  cab_conservative: "Conservative"
-  cab_liberal: "Liberal"
-  cab_socialist: "Socialist"
-  cab_communist: "Communist"
-  gov_military_dictatorship: "Military Dictatorship"
-  gov_absolute_monarchy: "Absolute Monarchy"
-  gov_constitutional_monarchy: "Constitutional Monarchy"
-  gov_limited_democracy: "Limited Democracy"
-  gov_liberal_democracy: "Liberal Democracy"
-  gov_social_democracy: "Social Democracy"
-
-
   # Generic
   territory_restored: "Territory Restored"
   territory_restored_desc: "Securing claimed territory has earned you the confidence in financiers and the pride of your citizens."

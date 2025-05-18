@@ -25,6 +25,7 @@ idea_categories = {
 	
 	government = {
 		slot = cabinet
+		slot = opposition
 		slot = government
 		character_slot = political_advisor
 		character_slot = political_advisor
@@ -39,10 +40,10 @@ idea_categories = {
 	# WWI: Laws are here now.
 	research_production = {
 		slot = mobilization_laws
-		slot = trade_laws
 		slot = economy
 		slot = rationing
 		slot = workers_rights
+		slot = civil_rights
 		slot = blockade_policy
 
 		ledger = civilian

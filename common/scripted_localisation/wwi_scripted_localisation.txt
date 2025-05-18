@@ -315,3 +315,47 @@ defined_text = {
 		localization_key = "[THIS.GetCapitalVictoryPointName]"
 	}
 }
+
+defined_text = {
+	name = GetColoredOppositionName
+
+	text = {
+		trigger = {
+			check_variable = { opposition_party = token:autocratic }
+		}
+
+		localization_key = "autocratic_colored"
+	}
+
+	text = {
+		trigger = {
+			check_variable = { opposition_party = token:conservative }
+		}
+
+		localization_key = "conservative_colored"
+	}
+
+	text = {
+		trigger = {
+			check_variable = { opposition_party = token:liberal }
+		}
+
+		localization_key = "liberal_colored"
+	}
+
+	text = {
+		trigger = {
+			check_variable = { opposition_party = token:socialist }
+		}
+
+		localization_key = "socialist_colored"
+	}
+
+	text = {
+		trigger = {
+			check_variable = { opposition_party = token:communist }
+		}
+
+		localization_key = "communist_colored"
+	}
+}

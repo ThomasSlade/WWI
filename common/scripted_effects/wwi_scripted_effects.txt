@@ -161,3 +161,30 @@ effect_calculate_modern_doctrine_tech_penalty = {
 	}
 	force_update_dynamic_modifier = yes
 }
+
+effect_update_civs_from_mils = {
+	set_temp_variable = { free_civs_gained_from_mils = modifier@free_civ_from_mils }
+	multiply_temp_variable = { free_civs_gained_from_mils = num_of_military_factories }
+
+	# Avoid all this malarky if the expected free civs has not changed since the last update. Removing and then re-adding a bunch of offmap civ factories might be bad for performance.
+	if = {
+		limit = {
+			NOT = { check_variable = { free_civs_gained_from_mils = current_free_civs_from_mils } }
+		}
+
+		set_temp_variable = { remove_prev_civ_from_mils = 0 }
+		subtract_from_temp_variable = { remove_prev_civ_from_mils = current_free_civs_from_mils }
+
+		add_offsite_building = {
+			type = industrial_complex
+			level = remove_prev_civ_from_mils
+		}
+
+		add_offsite_building = {
+			type = industrial_complex
+			level = free_civs_gained_from_mils
+		}
+
+		set_variable = { current_free_civs_from_mils = free_civs_gained_from_mils }
+	}
+}

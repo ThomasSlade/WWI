@@ -3,6 +3,30 @@ ideas = {
 		law = yes
 		use_list_view = yes
 
+		forced_labour = {
+			cost = 150
+			removal_cost = -1
+			cancel_if_invalid = no
+
+			on_add = {
+				set_temp_variable = { param_law_type = token:workers_rights }
+				set_temp_variable = { param_law = token:forced_labour }
+				effect_law_change_opposition = yes
+
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
+
+			on_add = {
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
+
+			modifier = {
+				industrial_capacity_factory = 0.3
+				production_factory_max_efficiency_factor = -0.2
+				production_factory_efficiency_gain_factor = -0.2
+			}
+		}
+
 		quitting_illegal = {
 			cost = 150
 			removal_cost = -1
@@ -13,26 +37,44 @@ ideas = {
 			}
 
 			on_add = {
+				set_temp_variable = { param_law_type = token:workers_rights }
+				set_temp_variable = { param_law = token:quitting_illegal }
+				effect_law_change_opposition = yes
+
 				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
+
+			modifier = {
+				industrial_capacity_factory = 0.2
+				production_factory_max_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
 			}
 		}
 
 		unions_illegal = {
 			cost = 150
 			removal_cost = -1
+			cancel_if_invalid = no
 			default = yes
-			cancel_if_invalid = no
 
 			available = {
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
+				set_temp_variable = { param_law_type = token:workers_rights }
+				set_temp_variable = { param_law = token:unions_illegal }
+				effect_law_change_opposition = yes
+
 				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
+
+			modifier = {
+				industrial_capacity_factory = 0.1
 			}
 		}
 
-		unions_legal = {
+		worker_collaboration_0 = {
 			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
@@ -42,11 +84,20 @@ ideas = {
 			}
 
 			on_add = {
+				set_temp_variable = { param_law_type = token:workers_rights }
+				set_temp_variable = { param_law = token:worker_collaboration_0 }
+				effect_law_change_opposition = yes
+
 				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
 			}
 		}
 
-		wage_controls = {
+		worker_collaboration_1 = {
 			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
@@ -56,11 +107,20 @@ ideas = {
 			}
 
 			on_add = {
+				set_temp_variable = { param_law_type = token:workers_rights }
+				set_temp_variable = { param_law = token:worker_collaboration_1 }
+				effect_law_change_opposition = yes
+
 				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
 			}
 		}
 
-		profit_confiscation = {
+		wage_controls_0 = {
 			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
@@ -70,11 +130,20 @@ ideas = {
 			}
 
 			on_add = {
+				set_temp_variable = { param_law_type = token:workers_rights }
+				set_temp_variable = { param_law = token:wage_controls_0 }
+				effect_law_change_opposition = yes
+
 				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
 			}
 		}
 
-		cooperative_ownership = {
+		wage_controls_1 = {
 			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
@@ -84,7 +153,16 @@ ideas = {
 			}
 
 			on_add = {
+				set_temp_variable = { param_law_type = token:workers_rights }
+				set_temp_variable = { param_law = token:wage_controls_1 }
+				effect_law_change_opposition = yes
+
 				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.2
+				production_factory_start_efficiency_factor = 0.2
 			}
 		}
 	}

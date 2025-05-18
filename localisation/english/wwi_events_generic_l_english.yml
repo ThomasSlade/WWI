@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 	event_enrtenchment.1.t: "[FROM.GetAdjective] Army Digs In"
 	event_enrtenchment.1.d_miracle: "After an initial succession of defeats on their own territory, the desperate [FROM.GetAdjective] have - with their backs to the wall - dug in.\n\nA system of earthworks, composed of crude trenches scarcely deep enough to shield a soldier, spreads from one battalion to the next. It will soon engulf the entire [FROM.GetAdjective] front.\n\nMore radical tacticians fret that these trenches will stall our advance for the years to come."
 	event_enrtenchment.1.d_offensive: "Though it was hoped that we could soon throw back the stubborn [FROM.GetAdjective] invaders, any hope of a decisive breakthrough been scuppered with the news of a dramatic change in tactics sweeping the enemy ranks. Everywhere, [FROM.GetAdjective] soldiers are digging in: one battalion after the next excavates a crude trench for itself, shielding its men from our assaults and opening a killing ground stretching the entire front.\n\nMore radical tacticians fret that these trenches will stall our advance for the years to come."
