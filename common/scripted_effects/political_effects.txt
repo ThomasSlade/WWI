@@ -221,7 +221,6 @@ effect_determine_law_tiers = {
 		}
 	}
 	set_variable = { law_tier_manpower = out_law_tier }
-	log = "[THIS.GetName] had law [?l.GetTokenKey] of tier [?out_law_tier]"
 
 	for_each_loop = {
 		array = global.economic_laws
@@ -244,7 +243,6 @@ effect_determine_law_tiers = {
 		}
 	}
 	set_variable = { law_tier_economic = out_law_tier }
-	log = "[THIS.GetName] had law [?l.GetTokenKey] of tier [?out_law_tier]"
 
 	for_each_loop = {
 		array = global.rationing_laws
@@ -267,7 +265,7 @@ effect_determine_law_tiers = {
 		}
 	}
 	set_variable = { law_tier_rationing = out_law_tier }
-	log = "[THIS.GetName] had law [?l.GetTokenKey] of tier [?out_law_tier]"
+	
 
 	for_each_loop = {
 		array = global.workers_rights_laws
@@ -290,7 +288,6 @@ effect_determine_law_tiers = {
 		}
 	}
 	set_variable = { law_tier_workers_rights = out_law_tier }
-	log = "[THIS.GetName] had law [?l.GetTokenKey] of tier [?out_law_tier]"
 
 	for_each_loop = {
 		array = global.civil_rights_laws
@@ -313,7 +310,6 @@ effect_determine_law_tiers = {
 		}
 	}
 	set_variable = { law_tier_civil_rights = out_law_tier }
-	log = "[THIS.GetName] had law [?l.GetTokenKey] of tier [?out_law_tier]"
 
 	for_each_loop = {
 		array = global.blockade_policy_laws
@@ -336,7 +332,6 @@ effect_determine_law_tiers = {
 		}
 	}
 	set_variable = { law_tier_blockade_policy = out_law_tier }
-	log = "[THIS.GetName] had law [?l.GetTokenKey] of tier [?out_law_tier]"
 }
 
 # Set up the global law arrays.
@@ -585,7 +580,6 @@ effect_law_change_opposition = {
 
 			if = {
 				limit = { check_variable = { opposition_party = out_opposing_party } }
-				log = "Opposing party is in power."
 				effect_increase_opposition = yes
 			}
 
@@ -602,12 +596,9 @@ effect_disliked_by_tt = {
 	# 1 = opposes decrease, 2 = opposes increase, 3 = dislikes in general
 	set_temp_variable = { will_increase_opposition = 0 }
 
-	log = "Creating Opposition tooltip for law [?param_law.GetTokenKey], tier [?param_tier], current tier [?param_current_tier]"
-
 	# If the law in question would be a 'decrease' of the current law:
 	if = {
 		limit = { check_variable = { param_tier < param_current_tier } }
-		log = "Querying for a decrease in law tier"
 		if = {
 			limit = { is_in_array = { array = law_oppose_decrease_autocratic value = param_law } }
 			custom_effect_tooltip = {
