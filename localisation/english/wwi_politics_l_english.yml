@@ -45,6 +45,10 @@
   opp_communist_3: "$communist_colored$ Opposition (Resurgent)"
 
   increase_opposition_tt: "Will §Rincrease§! [?opposition_party.GetColoredOppositionName] Opposition\n"
-  always_opposed_by_tt: "Always opposed by $OPPOSING_PARTY$"
-  increase_opposed_by_tt: "Increasing to this law opposed by $OPPOSING_PARTY$\n"
-  decrease_opposed_by_tt: "Decreasing to this law opposed by $OPPOSING_PARTY$\n"
+  decrease_opposition_tt: "Will §Gdecrease§! [?opposition_party.GetColoredOppositionName] Opposition\n"
+  law_oppose_increase_outline_tt: "Increasing to this law opposed by $OPPOSING_PARTY$\n"
+  law_oppose_decrease_outline_tt: "Decreasing to this law opposed by $OPPOSING_PARTY$\n"
+  law_oppose_always_outline_tt: "Always opposed by $OPPOSING_PARTY$"
+  law_endorse_increase_outline_tt: "Increasing to this law endorsed by $OPPOSING_PARTY$\n"
+  law_endorse_decrease_outline_tt: "Decreasing to this law endorsed by $OPPOSING_PARTY$\n"
+  law_endorse_always_outline_tt: "Always endorsed by $OPPOSING_PARTY$"

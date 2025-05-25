@@ -14,32 +14,36 @@ effect_get_law_tier = {
 		set_temp_variable = { out_law_tier = 1 }
 	}
 	else_if = {
-		limit = { check_variable = { param_law = token:limited_conscription } }
+		limit = { check_variable = { param_law = token:national_service } }
 		set_temp_variable = { out_law_tier = 2 }
 	}
 	else_if = {
-		limit = { check_variable = { param_law = token:extensive_conscription } }
+		limit = { check_variable = { param_law = token:limited_conscription } }
 		set_temp_variable = { out_law_tier = 3 }
 	}
 	else_if = {
-		limit = { check_variable = { param_law = token:deployed_workers_0 } }
+		limit = { check_variable = { param_law = token:extensive_conscription } }
 		set_temp_variable = { out_law_tier = 4 }
+	}
+	else_if = {
+		limit = { check_variable = { param_law = token:deployed_workers_0 } }
+		set_temp_variable = { out_law_tier = 5 }
 	}
 	else_if = {
 		limit = { check_variable = { param_law = token:deployed_workers_1 } }
-		set_temp_variable = { out_law_tier = 5 }
+		set_temp_variable = { out_law_tier = 6 }
 	}
 	else_if = {
 		limit = { check_variable = { param_law = token:deployed_labourers_0 } }
-		set_temp_variable = { out_law_tier = 4 }
-	}
-	else_if = {
-		limit = { check_variable = { param_law = token:deployed_labourers_1 } }
 		set_temp_variable = { out_law_tier = 5 }
 	}
 	else_if = {
-		limit = { check_variable = { param_law = token:scraping_the_barrel } }
+		limit = { check_variable = { param_law = token:deployed_labourers_1 } }
 		set_temp_variable = { out_law_tier = 6 }
+	}
+	else_if = {
+		limit = { check_variable = { param_law = token:scraping_the_barrel } }
+		set_temp_variable = { out_law_tier = 7 }
 	} ################################################################### Economic
 	else_if = {
 		limit = { check_variable = { param_law = token:civilian_economy } }
@@ -411,56 +415,58 @@ effect_setup_politics = {
 	add_to_array = { law_oppose_decrease_autocratic = token:volunteer_only }
 	add_to_array = { law_oppose_decrease_autocratic = token:national_service }
 	add_to_array = { law_oppose_decrease_autocratic = token:limited_conscription }
-	add_to_array = { disliked_laws_autocratic = token:deployed_labourers_0 }
-	add_to_array = { disliked_laws_autocratic = token:deployed_labourers_1 }
+	add_to_array = { law_oppose_always_autocratic = token:deployed_labourers_0 }
+	add_to_array = { law_oppose_always_autocratic = token:deployed_labourers_1 }
 
 	add_to_array = { law_oppose_decrease_conservative = token:disarmed_nation }
 	add_to_array = { law_oppose_decrease_conservative = token:volunteer_only }
 	add_to_array = { law_oppose_decrease_conservative = token:national_service }
-	add_to_array = { disliked_laws_conservative = token:deployed_labourers_0 }
-	add_to_array = { disliked_laws_conservative = token:deployed_labourers_1 }
+	add_to_array = { law_oppose_always_conservative = token:deployed_labourers_0 }
+	add_to_array = { law_oppose_always_conservative = token:deployed_labourers_1 }
 
 	add_to_array = { law_oppose_decrease_liberal = token:disarmed_nation }
-	add_to_array = { disliked_laws_liberal = token:deployed_workers_0 }
-	add_to_array = { disliked_laws_liberal = token:deployed_workers_1 }
+	add_to_array = { law_oppose_always_liberal = token:deployed_workers_0 }
+	add_to_array = { law_oppose_always_liberal = token:deployed_workers_1 }
 	add_to_array = { law_oppose_increase_liberal = token:scraping_the_barrel }
 
 	add_to_array = { law_oppose_increase_socialist = token:extensive_conscription }
-	add_to_array = { disliked_laws_socialist = token:deployed_workers_0 }
-	add_to_array = { disliked_laws_socialist = token:deployed_workers_1 }
+	add_to_array = { law_oppose_always_socialist = token:deployed_workers_0 }
+	add_to_array = { law_oppose_always_socialist = token:deployed_workers_1 }
 	add_to_array = { law_oppose_increase_socialist = token:scraping_the_barrel }
+	add_to_array = { law_endorse_always_socialist = token:deployed_labourers_0 }
+	add_to_array = { law_endorse_always_socialist = token:deployed_labourers_1 }
 
 	add_to_array = { law_oppose_increase_communist = token:national_service }
 	add_to_array = { law_oppose_increase_communist = token:limited_conscription }
 	add_to_array = { law_oppose_increase_communist = token:extensive_conscription }
-	add_to_array = { disliked_laws_communist = token:deployed_workers_0 }
-	add_to_array = { disliked_laws_communist = token:deployed_workers_1 }
+	add_to_array = { law_oppose_always_communist = token:deployed_workers_0 }
+	add_to_array = { law_oppose_always_communist = token:deployed_workers_1 }
 	add_to_array = { law_oppose_increase_communist = token:scraping_the_barrel }
 
 	# Economic
 	add_to_array = { law_oppose_decrease_autocratic = token:civilian_economy }
 	add_to_array = { law_oppose_decrease_autocratic = token:low_economic_mobilisation }
-	add_to_array = { disliked_laws_autocratic = token:profit_seizure_0 }
-	add_to_array = { disliked_laws_autocratic = token:profit_seizure_1 }
+	add_to_array = { law_oppose_always_autocratic = token:profit_seizure_0 }
+	add_to_array = { law_oppose_always_autocratic = token:profit_seizure_1 }
 
-	add_to_array = { disliked_laws_conservative = token:nationalisation_0 }
-	add_to_array = { disliked_laws_conservative = token:nationalisation_1 }
-	add_to_array = { disliked_laws_conservative = token:profit_seizure_0 }
-	add_to_array = { disliked_laws_conservative = token:profit_seizure_1 }
+	add_to_array = { law_oppose_always_conservative = token:nationalisation_0 }
+	add_to_array = { law_oppose_always_conservative = token:nationalisation_1 }
+	add_to_array = { law_oppose_always_conservative = token:profit_seizure_0 }
+	add_to_array = { law_oppose_always_conservative = token:profit_seizure_1 }
 
 	add_to_array = { law_oppose_increase_liberal = token:partial_economic_mobilisation }
-	add_to_array = { disliked_laws_liberal = token:nationalisation_0 }
-	add_to_array = { disliked_laws_liberal = token:nationalisation_1 }
+	add_to_array = { law_oppose_always_liberal = token:nationalisation_0 }
+	add_to_array = { law_oppose_always_liberal = token:nationalisation_1 }
 
-	add_to_array = { disliked_laws_socialist = token:private_collaboration_0 }
-	add_to_array = { disliked_laws_socialist = token:private_collaboration_1 }
+	add_to_array = { law_oppose_always_socialist = token:private_collaboration_0 }
+	add_to_array = { law_oppose_always_socialist = token:private_collaboration_1 }
 
-	add_to_array = { disliked_laws_communist = token:private_collaboration_0 }
-	add_to_array = { disliked_laws_communist = token:private_collaboration_1 }
+	add_to_array = { law_oppose_always_communist = token:private_collaboration_0 }
+	add_to_array = { law_oppose_always_communist = token:private_collaboration_1 }
 
 	# Worker's Rights
-	add_to_array = { disliked_laws_autocratic = token:worker_collaboration_0 }
-	add_to_array = { disliked_laws_autocratic = token:worker_collaboration_1 }
+	add_to_array = { law_oppose_always_autocratic = token:worker_collaboration_0 }
+	add_to_array = { law_oppose_always_autocratic = token:worker_collaboration_1 }
 
 	add_to_array = { law_oppose_decrease_conservative = token:forced_labour }
 	add_to_array = { law_oppose_increase_conservative = token:wage_controls_0 }
@@ -478,8 +484,8 @@ effect_setup_politics = {
 	add_to_array = { law_oppose_decrease_socialist = token:forced_labour }
 	add_to_array = { law_oppose_decrease_socialist = token:quitting_illegal }
 	add_to_array = { law_oppose_decrease_socialist = token:unions_illegal }
-	add_to_array = { disliked_laws_socialist = token:wage_controls_0 }
-	add_to_array = { disliked_laws_socialist = token:wage_controls_1 }
+	add_to_array = { law_oppose_always_socialist = token:wage_controls_0 }
+	add_to_array = { law_oppose_always_socialist = token:wage_controls_1 }
 
 	add_to_array = { law_oppose_decrease_communist = token:forced_labour }
 	add_to_array = { law_oppose_decrease_communist = token:quitting_illegal }
@@ -488,8 +494,8 @@ effect_setup_politics = {
 	# Rationing
 	add_to_array = { law_oppose_decrease_autocratic = token:no_rationing }
 
-	add_to_array = { disliked_laws_conservative = token:government_distribution_0 }
-	add_to_array = { disliked_laws_conservative = token:government_distribution_1 }
+	add_to_array = { law_oppose_always_conservative = token:government_distribution_0 }
+	add_to_array = { law_oppose_always_conservative = token:government_distribution_1 }
 	add_to_array = { law_oppose_increase_conservative = token:harsh_rationing }
 
 	add_to_array = { law_oppose_increase_liberal = token:price_controls }
@@ -500,8 +506,8 @@ effect_setup_politics = {
 	add_to_array = { law_oppose_increase_liberal = token:harsh_rationing }
 
 	add_to_array = { law_oppose_decrease_socialist = token:no_rationing }
-	add_to_array = { disliked_laws_socialist = token:government_confiscation_0 }
-	add_to_array = { disliked_laws_socialist = token:government_confiscation_1 }
+	add_to_array = { law_oppose_always_socialist = token:government_confiscation_0 }
+	add_to_array = { law_oppose_always_socialist = token:government_confiscation_1 }
 	add_to_array = { law_oppose_increase_socialist = token:harsh_rationing }
 
 	add_to_array = { law_oppose_decrease_communist = token:no_rationing }
@@ -559,8 +565,8 @@ effect_setup_politics = {
 	add_to_array = { law_oppose_increase_liberal = token:submarine_blockade_1 }
 	add_to_array = { law_oppose_increase_liberal = token:unrestricted_blockade }
 
-	add_to_array = { disliked_laws_socialist = token:submarine_blockade_0 }
-	add_to_array = { disliked_laws_socialist = token:submarine_blockade_1 }
+	add_to_array = { law_oppose_always_socialist = token:submarine_blockade_0 }
+	add_to_array = { law_oppose_always_socialist = token:submarine_blockade_1 }
 	add_to_array = { law_oppose_increase_socialist = token:unrestricted_blockade }
 
 	add_to_array = { law_oppose_decrease_communist = token:open_sealanes }
@@ -568,7 +574,7 @@ effect_setup_politics = {
 	effect_determine_law_tiers = yes
 }
 
-# Param: param_law (used by effects within this effect) must be set to the token of the law calling this.
+# param_law: used by effects within this effect) must be set to the token of the law calling this.
 effect_law_change_opposition = {
 	meta_effect = {
 		text = {
@@ -590,193 +596,121 @@ effect_law_change_opposition = {
 	}
 }
 
-# Param: param_law must be set to the token of the law calling this.
-# This method has a lot of boilerplate because meta_effects don't seem to work well with tooltips.
-effect_disliked_by_tt = {
-	# 1 = opposes decrease, 2 = opposes increase, 3 = dislikes in general
-	set_temp_variable = { will_increase_opposition = 0 }
+# Given a party and opposition set see if a law is opposed, e.g. for 'aurocratic' party and if 'decreasing' the law, is this law opposed?
+# This also creates tooltips outlining who opposes what.
+# param_party: token of the party you're checking opposes this law
+# param_opinion_set: token of the opposition set (i.e. for law decreases, law increases, etc.) to check
+# param_law: the law
+effect_is_law_in_opinion_set = {
+	log = "Checking if law [?param_law.GetTokenKey] is in opinion set [?param_opinion_set.GetTokenKey]_[?param_party.GetTokenKey]"
+	set_temp_variable = { out_is_opposed_by = 0 }
 
+	meta_effect = {
+		OPPOSITION_SET = "[?param_opinion_set.GetTokenKey]"
+		PARTY = "[?param_party.GetTokenKey]"
+
+		text = {
+			if = {
+				limit = { is_in_array = { array = [OPPOSITION_SET]_[PARTY] value = param_law } }
+				custom_effect_tooltip = {
+					localization_key = [OPPOSITION_SET]_outline_tt
+					OPPOSING_PARTY = "[PARTY]_colored"
+				}
+				set_temp_variable = { out_is_opposed_by = 1 }
+				log = "IT IS!"
+			}
+		}
+	}
+}
+
+# Needs to be recursive so that tooltips still work even though we want to iterate over all the parties (for-loops don't support tooltips).
+effect_get_opposition_effects_recursive = {
+	set_temp_variable = { param_party = all_parties^iter }
+
+	effect_is_law_in_opinion_set = yes
+	if = {
+		limit = {
+			check_variable = { out_is_opposed_by = 1 }
+			check_variable = { opposition_party = param_party }
+		}
+
+		set_temp_variable = { out_law_in_opinion_set = 1 }
+	}
+
+	add_to_temp_variable = { iter = 1 }
+	if = {
+		limit = { check_variable = { iter < all_parties^num } }
+		effect_get_opposition_effects_recursive = yes
+	}
+}
+
+effect_get_opposition_effects = {
+	set_temp_variable = { iter = 0 }
+	effect_get_opposition_effects_recursive = yes
+}
+
+# param_tier: the tier of the law being adopted
+# param_current_tier: the tier of the current law being replaced
+effect_disliked_by_tt = {
 	# If the law in question would be a 'decrease' of the current law:
 	if = {
 		limit = { check_variable = { param_tier < param_current_tier } }
+
+		set_temp_variable = { param_opinion_set = token:law_oppose_decrease }
+		effect_get_opposition_effects = yes
 		if = {
-			limit = { is_in_array = { array = law_oppose_decrease_autocratic value = param_law } }
-			custom_effect_tooltip = {
-				localization_key = decrease_opposed_by_tt
-				OPPOSING_PARTY = "autocratic_colored"
-			}
-			if = {
-				limit = { check_variable = { opposition_party = token:autocratic } }
-				set_temp_variable = { will_increase_opposition = 1 }
-			}
+			limit = { check_variable = { out_law_in_opinion_set > 0 } }
+			effect_increase_opposition = yes
 		}
+		set_temp_variable = { out_law_in_opinion_set = 0 }
+
+		set_temp_variable = { param_opinion_set = token:law_endorse_decrease }
+		effect_get_opposition_effects = yes
 		if = {
-			limit = { is_in_array = { array = law_oppose_decrease_conservative value = param_law } }
-			custom_effect_tooltip = {
-				localization_key = decrease_opposed_by_tt
-				OPPOSING_PARTY = "conservative_colored"
-			}
-			if = {
-				limit = { check_variable = { opposition_party = token:conservative } }
-				set_temp_variable = { will_increase_opposition = 1 }
-			}
+			limit = { check_variable = { out_law_in_opinion_set > 0 } }
+			effect_decrease_opposition = yes
 		}
-		if = {
-			limit = { is_in_array = { array = law_oppose_decrease_liberal value = param_law } }
-			custom_effect_tooltip = {
-				localization_key = decrease_opposed_by_tt
-				OPPOSING_PARTY = "liberal_colored"
-			}
-			if = {
-				limit = { check_variable = { opposition_party = token:liberal } }
-				set_temp_variable = { will_increase_opposition = 1 }
-			}
-		}
-		if = {
-			limit = { is_in_array = { array = law_oppose_decrease_socialist value = param_law } }
-			custom_effect_tooltip = {
-				localization_key = decrease_opposed_by_tt
-				OPPOSING_PARTY = "socialist_colored"
-			}
-			if = {
-				limit = { check_variable = { opposition_party = token:socialist } }
-				set_temp_variable = { will_increase_opposition = 1 }
-			}
-		}
-		if = {
-			limit = { is_in_array = { array = law_oppose_decrease_communist value = param_law } }
-			custom_effect_tooltip = {
-				localization_key = decrease_opposed_by_tt
-				OPPOSING_PARTY = "communist_colored"
-			}
-			if = {
-				limit = { check_variable = { opposition_party = token:communist } }
-				set_temp_variable = { will_increase_opposition = 1 }
-			}
-		}
+		set_temp_variable = { out_law_in_opinion_set = 0 }
 	}
 	# If the law in question would be an 'increase' of the current law:
 	else_if = {
 		limit = { check_variable = { param_tier > param_current_tier } }
+
+		set_temp_variable = { param_opinion_set = token:law_oppose_increase }
+		effect_get_opposition_effects = yes
 		if = {
-			limit = { is_in_array = { array = law_oppose_increase_autocratic value = param_law } }
-			custom_effect_tooltip = {
-				localization_key = increase_opposed_by_tt
-				OPPOSING_PARTY = "autocratic_colored"
-			}
-			if = {
-				limit = { check_variable = { opposition_party = token:autocratic } }
-				set_temp_variable = { will_increase_opposition = 2 }
-			}
+			limit = { check_variable = { out_law_in_opinion_set > 0 } }
+			effect_increase_opposition = yes
 		}
+		set_temp_variable = { out_law_in_opinion_set = 0 }
+		log = "Just set out_law_in_opinion_set to 0 and its actual value is [?out_law_in_opinion_set]"
+
+		set_temp_variable = { param_opinion_set = token:law_endorse_increase }
+		effect_get_opposition_effects = yes
 		if = {
-			limit = { is_in_array = { array = law_oppose_increase_conservative value = param_law } }
-			custom_effect_tooltip = {
-				localization_key = increase_opposed_by_tt
-				OPPOSING_PARTY = "conservative_colored"
-			}
-			if = {
-				limit = { check_variable = { opposition_party = token:conservative } }
-				set_temp_variable = { will_increase_opposition = 2 }
-			}
+			limit = { check_variable = { out_law_in_opinion_set > 0 } }
+			log = "Decreasing opposition because out_law_in_opinion_set = [?out_law_in_opinion_set]"
+			effect_decrease_opposition = yes
 		}
-		if = {
-			limit = { is_in_array = { array = law_oppose_increase_liberal value = param_law } }
-			custom_effect_tooltip = {
-				localization_key = increase_opposed_by_tt
-				OPPOSING_PARTY = "liberal_colored"
-			}
-			if = {
-				limit = { check_variable = { opposition_party = token:liberal } }
-				set_temp_variable = { will_increase_opposition = 2 }
-			}
-		}
-		if = {
-			limit = { is_in_array = { array = law_oppose_increase_socialist value = param_law } }
-			custom_effect_tooltip = {
-				localization_key = increase_opposed_by_tt
-				OPPOSING_PARTY = "socialist_colored"
-			}
-			if = {
-				limit = { check_variable = { opposition_party = token:socialist } }
-				set_temp_variable = { will_increase_opposition = 2 }
-			}
-		}
-		if = {
-			limit = { is_in_array = { array = law_oppose_increase_communist value = param_law } }
-			custom_effect_tooltip = {
-				localization_key = increase_opposed_by_tt
-				OPPOSING_PARTY = "communist_colored"
-			}
-			if = {
-				limit = { check_variable = { opposition_party = token:communist } }
-				set_temp_variable = { will_increase_opposition = 2 }
-			}
-		}
+		set_temp_variable = { out_law_in_opinion_set = 0 }
 	}
 
-	# These dislikes are ALWAYS applied no matter if we're increasing or decreasing the law.
+	# Some law effects happen whether a law is increasing or decreasing in tier (or staying the same)
+	set_temp_variable = { param_opinion_set = token:law_oppose_always }
+	effect_get_opposition_effects = yes
 	if = {
-		limit = { is_in_array = { array = disliked_laws_autocratic value = param_law } }
-		custom_effect_tooltip = {
-			localization_key = always_opposed_by_tt
-			OPPOSING_PARTY = "autocratic_colored"
-		}
-		if = {
-			limit = { check_variable = { opposition_party = token:autocratic } }
-			set_temp_variable = { will_increase_opposition = 3 }
-		}
-	}
-	if = {
-		limit = { is_in_array = { array = disliked_laws_conservative value = param_law } }
-		custom_effect_tooltip = {
-			localization_key = always_opposed_by_tt
-			OPPOSING_PARTY = "conservative_colored"
-		}
-		if = {
-			limit = { check_variable = { opposition_party = token:conservative } }
-			set_temp_variable = { will_increase_opposition = 3 }
-		}
-	}
-	if = {
-		limit = { is_in_array = { array = disliked_laws_liberal value = param_law } }
-		custom_effect_tooltip = {
-			localization_key = always_opposed_by_tt
-			OPPOSING_PARTY = "liberal_colored"
-		}
-		if = {
-			limit = { check_variable = { opposition_party = token:liberal } }
-			set_temp_variable = { will_increase_opposition = 3 }
-		}
-	}
-	if = {
-		limit = { is_in_array = { array = disliked_laws_socialist value = param_law } }
-		custom_effect_tooltip = {
-			localization_key = always_opposed_by_tt
-			OPPOSING_PARTY = "socialist_colored"
-		}
-		if = {
-			limit = { check_variable = { opposition_party = token:socialist } }
-			set_temp_variable = { will_increase_opposition = 3 }
-		}
-	}
-	if = {
-		limit = { is_in_array = { array = disliked_laws_communist value = param_law } }
-		custom_effect_tooltip = {
-			localization_key = always_opposed_by_tt
-			OPPOSING_PARTY = "communist_colored"
-		}
-		if = {
-			limit = { check_variable = { opposition_party = token:communist } }
-			set_temp_variable = { will_increase_opposition = 3 }
-		}
-	}
-
-	if = {
-		limit = { check_variable = { will_increase_opposition > 0 } }
-		set_temp_variable = { param_opposition_type = will_increase_opposition }
+		limit = { check_variable = { out_law_in_opinion_set > 0 } }
 		effect_increase_opposition = yes
 	}
+	set_temp_variable = { out_law_in_opinion_set = 0 }
+
+	set_temp_variable = { param_opinion_set = token:law_endorse_always }
+	effect_get_opposition_effects = yes
+	if = {
+		limit = { check_variable = { out_law_in_opinion_set > 0 } }
+		effect_decrease_opposition = yes
+	}
+	set_temp_variable = { out_law_in_opinion_set = 0 }
 }
 
 effect_increase_opposition = {
@@ -797,6 +731,8 @@ effect_increase_opposition = {
 }
 
 effect_decrease_opposition = {
+	custom_effect_tooltip = decrease_opposition_tt
+
 	hidden_effect = {
 		set_temp_variable = { next_opposition_level = opposition_level }
 		add_to_temp_variable = { next_opposition_level = -1 }
