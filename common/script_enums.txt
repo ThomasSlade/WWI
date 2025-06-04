@@ -678,14 +678,3 @@ script_enum_law_type = {
 	civil_rights
 	blockade_policy
 }
-
-# These correspond to the different arrays a law can be in to signify if, and how, a party will oppose its passing.
-# For example there's an array 'law_oppose_increase_autocratic' meaning the autocratic party opposes any laws in that array when they are increasing in tier.
-script_enum_opposition_set = {
-	law_oppose_increase
-	law_oppose_decrease
-	law_oppose_always
-	law_endorse_increase
-	law_endorse_decrease
-	law_endorse_always
-}

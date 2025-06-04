@@ -10,11 +10,16 @@ ideas = {
 			default = yes
 
 			available = {
+				OR = {
+					has_idea = price_controls
+				}
+
+				set_temp_variable = { param_law = token:no_rationing }
+				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law_type = token:rationing }
 				set_temp_variable = { param_law = token:no_rationing }
 				effect_law_change_opposition = yes
 
@@ -22,7 +27,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.35
+				consumer_goods_expected_value = 0.35
 				min_export = 0.8
 				production_speed_buildings_factor = 0.1
 				industrial_capacity_factory = 0.1
@@ -36,11 +41,17 @@ ideas = {
 			cancel_if_invalid = no
 
 			available = {
+				OR = {
+					has_idea = no_rationing
+					has_idea = government_confiscation_0
+				}
+
+				set_temp_variable = { param_law = token:price_controls }
+				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law_type = token:rationing }
 				set_temp_variable = { param_law = token:price_controls }
 				effect_law_change_opposition = yes
 
@@ -48,7 +59,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.3
+				consumer_goods_expected_value = 0.3
 				min_export = 0.5
 				production_speed_buildings_factor = 0.05
 				industrial_capacity_factory = 0.05
@@ -62,11 +73,18 @@ ideas = {
 			cancel_if_invalid = no
 
 			available = {
+				OR = {
+					has_idea = price_controls
+					has_idea = government_distribution_0
+					has_idea = government_confiscation_1
+				}
+
+				set_temp_variable = { param_law = token:government_confiscation_0 }
+				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law_type = token:rationing }
 				set_temp_variable = { param_law = token:government_confiscation_0 }
 				effect_law_change_opposition = yes
 
@@ -74,33 +92,9 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.2
+				consumer_goods_expected_value = 0.2
 				min_export = 0.3
 				local_resources_efficiency = 0.1
-			}
-		}
-
-		government_confiscation_1 = {
-			cost = 150
-			removal_cost = -1
-			cancel_if_invalid = no
-
-			available = {
-				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
-			}
-
-			on_add = {
-				set_temp_variable = { param_law_type = token:rationing }
-				set_temp_variable = { param_law = token:government_confiscation_1 }
-				effect_law_change_opposition = yes
-
-				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
-			}
-
-			modifier = {
-				consumer_goods_factor = 0.1
-				min_export = 0.1
-				local_resources_efficiency = 0.2
 			}
 		}
 
@@ -110,11 +104,18 @@ ideas = {
 			cancel_if_invalid = no
 
 			available = {
+				OR = {
+					has_idea = price_controls
+					has_idea = government_confiscation_0
+					has_idea = government_distribution_1
+				}
+
+				set_temp_variable = { param_law = token:government_distribution_0 }
+				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law_type = token:rationing }
 				set_temp_variable = { param_law = token:government_distribution_0 }
 				effect_law_change_opposition = yes
 
@@ -122,8 +123,39 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.2
+				consumer_goods_expected_value = 0.2
 				min_export = 0.3
+			}
+		}
+
+		government_confiscation_1 = {
+			cost = 150
+			removal_cost = -1
+			cancel_if_invalid = no
+
+			available = {
+				OR = {
+					has_idea = government_confiscation_0
+					has_idea = government_distribution_1
+					has_idea = harsh_rationing
+				}
+
+				set_temp_variable = { param_law = token:government_confiscation_1 }
+				trigger_opposition_allows_law_change = yes
+				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
+			}
+
+			on_add = {
+				set_temp_variable = { param_law = token:government_confiscation_1 }
+				effect_law_change_opposition = yes
+
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
+
+			modifier = {
+				consumer_goods_expected_value = 0.1
+				min_export = 0.1
+				local_resources_efficiency = 0.2
 			}
 		}
 
@@ -133,11 +165,18 @@ ideas = {
 			cancel_if_invalid = no
 
 			available = {
+				OR = {
+					has_idea = government_distribution_0
+					has_idea = government_confiscation_1
+					has_idea = harsh_rationing
+				}
+
+				set_temp_variable = { param_law = token:government_distribution_1 }
+				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law_type = token:rationing }
 				set_temp_variable = { param_law = token:government_distribution_1 }
 				effect_law_change_opposition = yes
 
@@ -145,7 +184,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.1
+				consumer_goods_expected_value = 0.1
 				min_export = 0.1
 			}
 		}
@@ -156,11 +195,17 @@ ideas = {
 			cancel_if_invalid = no
 
 			available = {
+				OR = {
+					has_idea = government_distribution_1
+					has_idea = government_confiscation_1
+				}
+
+				set_temp_variable = { param_law = token:harsh_rationing }
+				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law_type = token:rationing }
 				set_temp_variable = { param_law = token:harsh_rationing }
 				effect_law_change_opposition = yes
 
@@ -168,7 +213,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.5
+				consumer_goods_expected_value = 0.05
 				min_export = 0
 				local_resources_efficiency = 0.3
 			}

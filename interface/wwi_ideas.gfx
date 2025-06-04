@@ -236,6 +236,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/laws/idea_econ_nationalisation_1.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_nationalisation_2"
+		texturefile = "gfx/interface/ideas/laws/idea_econ_nationalisation_2.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_private_collaboration_0"
 		texturefile = "gfx/interface/ideas/laws/idea_econ_private_collaboration_0.dds"
 	}
@@ -244,12 +248,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/laws/idea_econ_private_collaboration_1.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_profit_seizure_0"
-		texturefile = "gfx/interface/ideas/laws/idea_econ_profit_seizure_0.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_profit_seizure_1"
-		texturefile = "gfx/interface/ideas/laws/idea_econ_profit_seizure_1.dds"
+		name = "GFX_idea_private_collaboration_2"
+		texturefile = "gfx/interface/ideas/laws/idea_econ_private_collaboration_2.dds"
 	}
 
 	spriteType = {

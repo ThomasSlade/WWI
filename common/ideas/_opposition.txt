@@ -20,6 +20,7 @@ ideas = {
 			modifier = {
 				political_power_factor = 0.33
 				stability_factor = 0.1
+				custom_modifier_tooltip = resurgent_opposition_will_pass_opposed_laws_tt
 			}
 		}
 
@@ -38,7 +39,7 @@ ideas = {
 			}
 
 			modifier = {
-
+				custom_modifier_tooltip = resurgent_opposition_will_pass_opposed_laws_tt
 			}
 		}
 
@@ -59,6 +60,7 @@ ideas = {
 			modifier = {
 				political_power_factor = -0.33
 				stability_factor = -0.1
+				custom_modifier_tooltip = resurgent_opposition_will_pass_opposed_laws_tt
 			}
 		}
 
@@ -79,6 +81,7 @@ ideas = {
 			modifier = {
 				political_power_factor = -0.66
 				stability_factor = -0.2
+				custom_modifier_tooltip = resurgent_opposition_will_not_pass_opposed_laws_tt
 			}
 		}
 	}

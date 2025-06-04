@@ -52,3 +52,7 @@
   law_endorse_increase_outline_tt: "Increasing to this law endorsed by $OPPOSING_PARTY$\n"
   law_endorse_decrease_outline_tt: "Decreasing to this law endorsed by $OPPOSING_PARTY$\n"
   law_endorse_always_outline_tt: "Always endorsed by $OPPOSING_PARTY$"
+
+  resurgent_opposition_will_pass_opposed_laws_tt: "§YCan pass laws opposed by this party§!"
+  resurgent_opposition_will_not_pass_opposed_laws_tt: "§RCannot pass laws opposed by this party§!"
+  will_not_exceed_opposition_limit_tt: "Opposition will accept"

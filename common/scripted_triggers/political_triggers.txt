@@ -1,0 +1,29 @@
+# param_law: The potential new law
+trigger_opposition_allows_law_change = {
+	meta_trigger = {
+		LAW_TYPE = "[global._law_type@var:param_law]"
+
+		text = {
+			set_temp_variable = { param_current_law = law_[LAW_TYPE] }
+		}
+	}
+
+	custom_trigger_tooltip = {
+		tooltip = will_not_exceed_opposition_limit_tt
+		if = {
+			limit = { check_variable = { opposition_level > 2 } }
+
+			NOT = {
+				AND = {
+					check_variable = { global._tier@var:param_law < global._tier@var:param_current_law }
+					is_in_array = { global._law_oppose_decrease@var:opposition_party = param_law }
+				}
+				AND = {
+					check_variable = { global._tier@var:param_law > global._tier@var:param_current_law }
+					is_in_array = { global._law_oppose_increase@var:opposition_party = param_law }
+				}
+				is_in_array = { global._law_oppose_always@var:opposition_party = param_law }
+			}
+		}
+	}
+}

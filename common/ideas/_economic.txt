@@ -1,5 +1,3 @@
-# WWI: Edited to remove any country-specific vanilla triggers or foci.
-
 ideas = {
 	economy = {
 		law = yes
@@ -12,11 +10,16 @@ ideas = {
 			cancel_if_invalid = no
 
 			available = {
+				OR = {
+					has_idea = low_economic_mobilisation
+				}
+
+				set_temp_variable = { param_law = token:civilian_economy }
+				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law_type = token:economic }
 				set_temp_variable = { param_law = token:civilian_economy }
 				effect_law_change_opposition = yes
 
@@ -25,8 +28,6 @@ ideas = {
 			
 			modifier = {
 				production_speed_arms_factory_factor = -0.3
-				conversion_cost_civ_to_mil_factor = 0.3
-				conversion_cost_mil_to_civ_factor = 0.3
 			}
 		}
 
@@ -36,11 +37,17 @@ ideas = {
 			cancel_if_invalid = no
 
 			available = {
+				OR = {
+					has_idea = civilian_economy
+					has_idea = partial_economic_mobilisation
+				}
+
+				set_temp_variable = { param_law = token:low_economic_mobilisation }
+				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law_type = token:economic }
 				set_temp_variable = { param_law = token:low_economic_mobilisation }
 				effect_law_change_opposition = yes
 
@@ -59,11 +66,18 @@ ideas = {
 			cancel_if_invalid = no
 
 			available = {
+				OR = {
+					has_idea = low_economic_mobilisation
+					has_idea = nationalisation_0
+					has_idea = private_collaboration_0
+				}
+
+				set_temp_variable = { param_law = token:partial_economic_mobilisation }
+				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law_type = token:economic }
 				set_temp_variable = { param_law = token:partial_economic_mobilisation }
 				effect_law_change_opposition = yes
 
@@ -77,56 +91,6 @@ ideas = {
 				conversion_cost_mil_to_civ_factor = -0.1
 			}
 		}
-
-		profit_seizure_0 = {
-			cost = 150
-			removal_cost = -1
-			cancel_if_invalid = no
-
-			available = {
-				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
-			}
-
-			on_add = {
-				set_temp_variable = { param_law_type = token:economic }
-				set_temp_variable = { param_law = token:profit_seizure_0 }
-				effect_law_change_opposition = yes
-
-				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
-			}
-			
-			modifier = {
-				production_speed_arms_factory_factor = 0.2
-				conversion_cost_civ_to_mil_factor = -0.2
-				conversion_cost_mil_to_civ_factor = -0.2
-				free_civ_from_mils = 0.2
-			}
-		}
-
-		profit_seizure_1 = {
-			cost = 150
-			removal_cost = -1
-			cancel_if_invalid = no
-
-			available = {
-				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
-			}
-
-			on_add = {
-				set_temp_variable = { param_law_type = token:economic }
-				set_temp_variable = { param_law = token:profit_seizure_1 }
-				effect_law_change_opposition = yes
-
-				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
-			}
-			
-			modifier = {
-				production_speed_arms_factory_factor = 0.3
-				conversion_cost_civ_to_mil_factor = -0.3
-				conversion_cost_mil_to_civ_factor = -0.3
-				free_civ_from_mils = 0.34
-			}
-		}
 		
 		nationalisation_0 = {
 			cost = 150
@@ -134,11 +98,18 @@ ideas = {
 			cancel_if_invalid = no
 
 			available = {
+				OR = {
+					has_idea = partial_economic_mobilisation
+					has_idea = private_collaboration_0
+					has_idea = nationalisation_1
+				}
+
+				set_temp_variable = { param_law = token:nationalisation_0 }
+				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law_type = token:economic }
 				set_temp_variable = { param_law = token:nationalisation_0 }
 				effect_law_change_opposition = yes
 
@@ -154,43 +125,24 @@ ideas = {
 			}
 		}
 
-		nationalisation_1 = {
-			cost = 150
-			removal_cost = -1
-			cancel_if_invalid = no
-
-			available = {
-				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
-			}
-
-			on_add = {
-				set_temp_variable = { param_law_type = token:economic }
-				set_temp_variable = { param_law = token:nationalisation_1 }
-				effect_law_change_opposition = yes
-
-				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
-			}
-			
-			modifier = {
-				production_speed_arms_factory_factor = 0.3
-				conversion_cost_civ_to_mil_factor = -0.3
-				conversion_cost_mil_to_civ_factor = -0.3
-				iproduction_factory_max_efficiency_factor = 0.3
-				production_lack_of_resource_penalty_factor = -0.5
-			}
-		}
-
 		private_collaboration_0 = {
 			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
 
 			available = {
+				OR = {
+					has_idea = partial_economic_mobilisation
+					has_idea = nationalisation_0
+					has_idea = private_collaboration_1
+				}
+
+				set_temp_variable = { param_law = token:private_collaboration_0 }
+				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law_type = token:economic }
 				set_temp_variable = { param_law = token:private_collaboration_0 }
 				effect_law_change_opposition = yes
 
@@ -205,17 +157,57 @@ ideas = {
 			}
 		}
 
+		nationalisation_1 = {
+			cost = 150
+			removal_cost = -1
+			cancel_if_invalid = no
+
+			available = {
+				OR = {
+					has_idea = nationalisation_0
+					has_idea = private_collaboration_1
+					has_idea = nationalisation_2
+				}
+
+				set_temp_variable = { param_law = token:nationalisation_1 }
+				trigger_opposition_allows_law_change = yes
+				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
+			}
+
+			on_add = {
+				set_temp_variable = { param_law = token:nationalisation_1 }
+				effect_law_change_opposition = yes
+
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.3
+				conversion_cost_civ_to_mil_factor = -0.3
+				conversion_cost_mil_to_civ_factor = -0.3
+				production_factory_max_efficiency_factor = 0.3
+				production_lack_of_resource_penalty_factor = -0.5
+			}
+		}
+
 		private_collaboration_1 = {
 			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
 
 			available = {
+				OR = {
+					has_idea = private_collaboration_0
+					has_idea = nationalisation_1
+					has_idea = private_collaboration_2
+				}
+
+				set_temp_variable = { param_law = token:private_collaboration_1 }
+				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law_type = token:economic }
 				set_temp_variable = { param_law = token:private_collaboration_1 }
 				effect_law_change_opposition = yes
 
@@ -227,6 +219,69 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = -0.3
 				conversion_cost_mil_to_civ_factor = -0.3
 				production_speed_buildings_factor = 0.3
+			}
+		}
+
+		nationalisation_2 = {
+			cost = 150
+			removal_cost = -1
+			cancel_if_invalid = no
+
+			available = {
+				OR = {
+					has_idea = nationalisation_1
+					has_idea = private_collaboration_2
+				}
+
+				set_temp_variable = { param_law = token:nationalisation_2 }
+				trigger_opposition_allows_law_change = yes
+				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
+			}
+
+			on_add = {
+				set_temp_variable = { param_law = token:nationalisation_2 }
+				effect_law_change_opposition = yes
+
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.3
+				conversion_cost_civ_to_mil_factor = -0.3
+				conversion_cost_mil_to_civ_factor = -0.3
+				iproduction_factory_max_efficiency_factor = 0.3
+				production_lack_of_resource_penalty_factor = -0.5
+			}
+		}
+
+		private_collaboration_2 = {
+			cost = 150
+			removal_cost = -1
+			cancel_if_invalid = no
+
+			available = {
+				OR = {
+					has_idea = private_collaboration_1
+					has_idea = nationalisation_2
+				}
+
+				set_temp_variable = { param_law = token:private_collaboration_2 }
+				trigger_opposition_allows_law_change = yes
+				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
+			}
+
+			on_add = {
+				set_temp_variable = { param_law = token:private_collaboration_2 }
+				effect_law_change_opposition = yes
+
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.4
+				conversion_cost_civ_to_mil_factor = -0.4
+				conversion_cost_mil_to_civ_factor = -0.4
+				production_speed_buildings_factor = 0.45
 			}
 		}
 	}

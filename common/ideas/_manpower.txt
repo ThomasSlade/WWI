@@ -1,22 +1,24 @@
-# WWI: Removed references to special country conditions.
-
 ideas = {
 	mobilization_laws = { 
 		law = yes
 		use_list_view = yes
-		
+
 		disarmed_nation = {	
 			cost = 150
 			removal_cost = -1
-			level = 1
 			cancel_if_invalid = no
 			
 			available = {
+				OR = {
+					has_idea = volunteer_only
+				}
+
+				set_temp_variable = { param_law = token:disarmed_nation }
+				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law_type = token:manpower }
 				set_temp_variable = { param_law = token:disarmed_nation }
 				effect_law_change_opposition = yes
 
@@ -31,16 +33,21 @@ ideas = {
 		volunteer_only = {
 			cost = 150
 			removal_cost = -1
-			level = 2
 			cancel_if_invalid = no
 			default = yes
 			
 			available = {
+				OR = {
+					has_idea = disarmed_nation
+					has_idea = national_service
+				}
+
+				set_temp_variable = { param_law = token:volunteer_only }
+				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law_type = token:manpower }
 				set_temp_variable = { param_law = token:volunteer_only }
 				effect_law_change_opposition = yes
 
@@ -55,16 +62,21 @@ ideas = {
 		national_service = {
 			cost = 150
 			removal_cost = -1
-			level = 3
 			cancel_if_invalid = no
 			default = yes
 			
 			available = {
+				OR = {
+					has_idea = volunteer_only
+					has_idea = limited_conscription
+				}
+
+				set_temp_variable = { param_law = token:national_service }
+				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law_type = token:manpower }
 				set_temp_variable = { param_law = token:national_service }
 				effect_law_change_opposition = yes
 
@@ -79,15 +91,20 @@ ideas = {
 		limited_conscription = {
 			cost = 150
 			removal_cost = -1
-			level = 4
 			cancel_if_invalid = no
 			
 			available = {
+				OR = {
+					has_idea = national_service
+					has_idea = extensive_conscription
+				}
+
+				set_temp_variable = { param_law = token:limited_conscription }
+				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law_type = token:manpower }
 				set_temp_variable = { param_law = token:limited_conscription }
 				effect_law_change_opposition = yes
 
@@ -102,15 +119,21 @@ ideas = {
 		extensive_conscription = {
 			cost = 150
 			removal_cost = -1
-			level = 5
 			cancel_if_invalid = no
 			
 			available = {
+				OR = {
+					has_idea = limited_conscription
+					has_idea = deployed_workers_0
+					has_idea = deployed_labourers_0
+				}
+
+				set_temp_variable = { param_law = token:extensive_conscription }
+				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law_type = token:manpower }
 				set_temp_variable = { param_law = token:extensive_conscription }
 				effect_law_change_opposition = yes
 
@@ -126,15 +149,21 @@ ideas = {
 		deployed_workers_0 = {
 			cost = 150
 			removal_cost = -1
-			level = 6
 			cancel_if_invalid = no
 			
 			available = {
+				OR = {
+					has_idea = extensive_conscription
+					has_idea = deployed_labourers_0
+					has_idea = deployed_workers_1
+				}
+
+				set_temp_variable = { param_law = token:deployed_workers_0 }
+				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law_type = token:manpower }
 				set_temp_variable = { param_law = token:deployed_workers_0 }
 				effect_law_change_opposition = yes
 
@@ -152,15 +181,21 @@ ideas = {
 		deployed_labourers_0 = {
 			cost = 150
 			removal_cost = -1
-			level = 6
 			cancel_if_invalid = no
 			
 			available = {
+				OR = {
+					has_idea = extensive_conscription
+					has_idea = deployed_workers_0
+					has_idea = deployed_labourers_1
+				}
+
+				set_temp_variable = { param_law = token:deployed_labourers_0 }
+				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law_type = token:manpower }
 				set_temp_variable = { param_law = token:deployed_labourers_0 }
 				effect_law_change_opposition = yes
 
@@ -178,15 +213,21 @@ ideas = {
 		deployed_workers_1 = {
 			cost = 150
 			removal_cost = -1
-			level = 7
 			cancel_if_invalid = no
 			
 			available = {
+				OR = {
+					has_idea = deployed_workers_0
+					has_idea = deployed_labourers_1
+					has_idea = scraping_the_barrel
+				}
+
+				set_temp_variable = { param_law = token:deployed_workers_1 }
+				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law_type = token:manpower }
 				set_temp_variable = { param_law = token:deployed_workers_1 }
 				effect_law_change_opposition = yes
 
@@ -204,15 +245,21 @@ ideas = {
 		deployed_labourers_1 = {
 			cost = 150
 			removal_cost = -1
-			level = 7
 			cancel_if_invalid = no
 			
 			available = {
+				OR = {
+					has_idea = deployed_labourers_0
+					has_idea = deployed_workers_1
+					has_idea = scraping_the_barrel
+				}
+
+				set_temp_variable = { param_law = token:deployed_labourers_1 }
+				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law_type = token:manpower }
 				set_temp_variable = { param_law = token:deployed_labourers_1 }
 				effect_law_change_opposition = yes
 
@@ -230,15 +277,20 @@ ideas = {
 		scraping_the_barrel = {
 			cost = 150
 			removal_cost = -1
-			level = 8
 			cancel_if_invalid = no
 			
 			available = {
+				OR = {
+					has_idea = deployed_labourers_1
+					has_idea = deployed_workers_1
+				}
+
+				set_temp_variable = { param_law = token:scraping_the_barrel }
+				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law_type = token:manpower }
 				set_temp_variable = { param_law = token:scraping_the_barrel }
 				effect_law_change_opposition = yes
 

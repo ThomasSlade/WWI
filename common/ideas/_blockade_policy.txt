@@ -10,11 +10,16 @@ ideas = {
 			default = yes
 
 			available = {
+				OR = {
+					has_idea = cargo_interception
+				}
+
+				set_temp_variable = { param_law = token:open_sealanes }
+				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law_type = token:blockade_policy }
 				set_temp_variable = { param_law = token:open_sealanes }
 				effect_law_change_opposition = yes
 
@@ -33,11 +38,18 @@ ideas = {
 			cancel_if_invalid = no
 
 			available = {
+				OR = {
+					has_idea = open_sealanes
+					has_idea = surface_blockade_0
+					has_idea = submarine_blockade_0
+				}
+
+				set_temp_variable = { param_law = token:cargo_interception }
+				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law_type = token:blockade_policy }
 				set_temp_variable = { param_law = token:cargo_interception }
 				effect_law_change_opposition = yes
 
@@ -56,36 +68,20 @@ ideas = {
 			cancel_if_invalid = no
 
 			available = {
+				OR = {
+					has_idea = cargo_interception
+					has_idea = submarine_blockade_0
+					has_idea = surface_blockade_1
+				}
+
+				set_temp_variable = { param_law = token:surface_blockade_0 }
+				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law_type = token:blockade_policy }
 				set_temp_variable = { param_law = token:surface_blockade_0 }
 				effect_law_change_opposition = yes
-
-				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
-			}
-
-			modifier = {
-				
-			}
-		}
-
-		surface_blockade_1 = {
-			cost = 150
-			removal_cost = -1
-			cancel_if_invalid = no
-
-			available = {
-				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
-			}
-
-			on_add = {
-				set_temp_variable = { param_law_type = token:blockade_policy }
-				set_temp_variable = { param_law = token:surface_blockade_1 }
-				effect_law_change_opposition = yes
-
 
 				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
 			}
@@ -101,11 +97,18 @@ ideas = {
 			cancel_if_invalid = no
 
 			available = {
+				OR = {
+					has_idea = cargo_interception
+					has_idea = surface_blockade_0
+					has_idea = submarine_blockade_1
+				}
+
+				set_temp_variable = { param_law = token:submarine_blockade_0 }
+				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law_type = token:blockade_policy }
 				set_temp_variable = { param_law = token:submarine_blockade_0 }
 				effect_law_change_opposition = yes
 
@@ -117,17 +120,54 @@ ideas = {
 			}
 		}
 
+		surface_blockade_1 = {
+			cost = 150
+			removal_cost = -1
+			cancel_if_invalid = no
+
+			available = {
+				OR = {
+					has_idea = surface_blockade_0
+					has_idea = submarine_blockade_1
+					has_idea = unrestricted_blockade
+				}
+
+				set_temp_variable = { param_law = token:surface_blockade_1 }
+				trigger_opposition_allows_law_change = yes
+				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
+			}
+
+			on_add = {
+				set_temp_variable = { param_law = token:surface_blockade_1 }
+				effect_law_change_opposition = yes
+
+
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
+
+			modifier = {
+				
+			}
+		}
+
 		submarine_blockade_1 = {
 			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
 
 			available = {
+				OR = {
+					has_idea = submarine_blockade_0
+					has_idea = surface_blockade_1
+					has_idea = unrestricted_blockade
+				}
+
+				set_temp_variable = { param_law = token:submarine_blockade_1 }
+				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law_type = token:blockade_policy }
 				set_temp_variable = { param_law = token:submarine_blockade_1 }
 				effect_law_change_opposition = yes
 
@@ -145,11 +185,17 @@ ideas = {
 			cancel_if_invalid = no
 
 			available = {
+				OR = {
+					has_idea = submarine_blockade_1
+					has_idea = surface_blockade_1
+				}
+
+				set_temp_variable = { param_law = token:unrestricted_blockade }
+				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law_type = token:blockade_policy }
 				set_temp_variable = { param_law = token:unrestricted_blockade }
 				effect_law_change_opposition = yes
 
