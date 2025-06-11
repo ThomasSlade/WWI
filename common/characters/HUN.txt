@@ -1,15 +1,19 @@
 characters = {
 	HUN_istvan_tisza = {
 		name = HUN_istvan_tisza
+		country_leader = {
+			ideology = established_t
+		}
+		country_leader = {
+			ideology = expansionist_t
+		}
+		country_leader = {
+			ideology = revolutionary_t
+		}
 		portraits = {
 			civilian = {
 				large = GFX_portrait_hun_istvan_tisza
 			}
-		}
-		country_leader = {
-			ideology = expansionist_t
-			expire = "1916.11.21.1"
-			id = -1
 		}
 	}
 }

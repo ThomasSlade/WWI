@@ -359,3 +359,87 @@ defined_text = {
 		localization_key = "communist_colored"
 	}
 }
+
+defined_text = {
+	name = GetRoyalTitle
+
+	text = {
+		trigger = {
+			ROOT = { original_tag = SOV }
+			is_female = yes
+		}
+	
+		localization_key = "title_tsarina"
+	}
+
+	text = {
+		trigger = {
+			ROOT = { original_tag = SOV }
+		}
+	
+		localization_key = "title_tsar"
+	}
+
+	text = {
+		trigger = {
+			ROOT = { original_tag = GER }
+			is_female = yes
+		}
+	
+		localization_key = "title_kaiserin"
+	}
+	
+	text = {
+		trigger = {
+			ROOT = { original_tag = GER }
+		}
+	
+		localization_key = "title_kaiser"
+	}
+
+	text = {
+		trigger = {
+			ROOT = { original_tag = AUS }
+			is_female = yes
+		}
+	
+		localization_key = "title_empress"
+	}
+	
+	text = {
+		trigger = {
+			ROOT = { original_tag = AUS }
+		}
+	
+		localization_key = "title_emperor"
+	}
+
+	text = {
+		trigger = {
+			ROOT = { original_tag = TUR }
+			is_female = yes
+		}
+	
+		localization_key = "title_sultana"
+	}
+	
+	text = {
+		trigger = {
+			ROOT = { original_tag = TUR }
+		}
+	
+		localization_key = "title_sultan"
+	}
+	
+	text = {
+		trigger = {
+			is_female = yes
+		}
+	
+		localization_key = "title_queen"
+	}
+
+	text = {
+		localization_key = "title_king"
+	}
+}

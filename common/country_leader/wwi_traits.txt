@@ -175,7 +175,7 @@ leader_traits = {
 
 	public_works_tycoon = {
 		random = no
-		production_speed_infrastructure_factor = 0.75
+		production_speed_infrastructure_factor = 0.6
 		production_speed_rail_way_factor = 0.5
 		conversion_cost_civ_to_mil_factor = -0.3
 		conversion_cost_mil_to_civ_factor = -0.3

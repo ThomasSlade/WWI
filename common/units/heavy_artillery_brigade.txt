@@ -22,7 +22,7 @@ sub_units = {
 
 		combat_width = 3
 
-		manpower = 350
+		manpower = 500
 		need = {
 			heavy_artillery_equipment = 18
 		}

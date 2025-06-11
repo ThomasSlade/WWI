@@ -270,5 +270,18 @@ ideas = {
 			    }
 			}
 		}
+
+		idea_collaborationg_with_sitting_opposition = {
+			removal_cost = -1
+			picture = idea_collaborationg_with_sitting_opposition
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				political_power_gain = -2
+			}
+		}
 	}
 }

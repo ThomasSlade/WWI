@@ -32,9 +32,7 @@ set_popularities = {
 
 add_ideas = {
 	limited_conscription
-
-	cab_liberal
-	gov_limited_democracy
 }
 
 recruit_character = HOL_wilhelmina
+set_variable = { monarch = HOL_wilhelmina }

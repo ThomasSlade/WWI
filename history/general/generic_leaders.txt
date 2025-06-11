@@ -1,0 +1,135 @@
+### Leaders ###
+every_possible_country = {
+	if = {
+		limit = { NOT = { has_variable = monarch } }
+		generate_character = {
+			token_base = generic_monarch
+			country_leader = {
+				ideology = established_t
+			}
+			country_leader = {
+				ideology = expansionist_t
+			}
+			country_leader = {
+				ideology = revolutionary_t
+			}
+			portraits = {
+				civilian={
+					large = GFX_portrait_europe_generic_land_13
+				}
+			}
+		}
+		set_variable = { monarch = generic_monarch }
+	}
+
+	
+	if = {
+		limit = { NOT = { has_variable = leader@token:autocratic } }
+		generate_character = {
+			token_base = generic_autocratic_leader
+			country_leader = {
+				ideology = established_t
+			}
+			country_leader = {
+				ideology = expansionist_t
+			}
+			country_leader = {
+				ideology = revolutionary_t
+			}
+			portraits = {
+				civilian={
+					large = GFX_portrait_europe_generic_6
+				}
+			}
+		}
+		set_variable = { leader@token:autocratic = generic_autocratic_leader }
+	}
+	
+	if = {
+		limit = { NOT = { has_variable = leader@token:conservative } }
+		generate_character = {
+			token_base = generic_conservative_leader
+			country_leader = {
+				ideology = established_t
+			}
+			country_leader = {
+				ideology = expansionist_t
+			}
+			country_leader = {
+				ideology = revolutionary_t
+			}
+			portraits = {
+				civilian={
+					large = GFX_portrait_Europe_Generic_2
+				}
+			}
+		}
+		set_variable = { leader@token:conservative = generic_conservative_leader }
+	}
+
+	if = {
+		limit = { NOT = { has_variable = leader@token:liberal } }
+		generate_character = {
+			token_base = generic_liberal_leader
+			country_leader = {
+				ideology = established_t
+			}
+			country_leader = {
+				ideology = expansionist_t
+			}
+			country_leader = {
+				ideology = revolutionary_t
+			}
+			portraits = {
+				civilian={
+					large = GFX_Portrait_Europe_Generic_land_1
+				}
+			}
+		}
+		set_variable = { leader@token:liberal = generic_liberal_leader }
+	}
+
+	if = {
+		limit = { NOT = { has_variable = leader@token:socialist } }
+		generate_character = {
+			token_base = generic_socialist_leader
+			country_leader = {
+				ideology = established_t
+			}
+			country_leader = {
+				ideology = expansionist_t
+			}
+			country_leader = {
+				ideology = revolutionary_t
+			}
+			portraits = {
+				civilian={
+					large = GFX_Portrait_Europe_Generic_land_3
+				}
+			}
+		}
+		set_variable = { leader@token:socialist = generic_socialist_leader }
+	}
+
+	if = {
+		limit = { NOT = { has_variable = leader@token:communist } }
+		generate_character = {
+			token_base = generic_communist_leader
+			country_leader = {
+				ideology = established_t
+			}
+			country_leader = {
+				ideology = expansionist_t
+			}
+			country_leader = {
+				ideology = revolutionary_t
+			}
+			portraits = {
+				civilian={
+					large = GFX_portrait_europe_generic_4
+				}
+			}
+		}
+		set_variable = { leader@token:communist = generic_communist_leader }
+	}
+}

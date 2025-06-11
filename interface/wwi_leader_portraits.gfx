@@ -37,8 +37,78 @@ spriteTypes = {
 		texturefile = "gfx/leaders/GER/portrait_ger_erich_ludendorff.dds"
 	}
 
+	spriteType = {
+		name = "GFX_portrait_ger_rupprecht_of_bavaria"
+		texturefile = "gfx/leaders/GER/portrait_ger_rupprecht_of_bavaria.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_ger_august_von_mackensen"
+		texturefile = "gfx/leaders/GER/portrait_ger_august_von_mackensen.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_alexander_von_kluck"
+		texturefile = "gfx/leaders/GER/portrait_alexander_von_kluck.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_ger_rosa_luxemburg"
+		texturefile = "gfx/leaders/GER/portrait_ger_rosa_luxemburg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_ger_friedrich_ebert"
+		texturefile = "gfx/leaders/GER/portrait_ger_friedrich_ebert.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_ger_gustav_stresemann"
+		texturefile = "gfx/leaders/GER/portrait_ger_gustav_stresemann.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_ger_theobald_von_bethmann_hollweg"
+		texturefile = "gfx/leaders/GER/portrait_ger_theobald_von_bethmann_hollweg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_ger_alfred_von_tirpitz"
+		texturefile = "gfx/leaders/GER/portrait_ger_alfred_von_tirpitz.dds"
+	}
+
 	### FRA
 
+	spriteType = {
+		name = "GFX_portrait_fra_alexandre_ribot"
+		texturefile = "gfx/leaders/FRA/portrait_fra_alexandre_ribot.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_fra_charles_maurras"
+		texturefile = "gfx/leaders/FRA/portrait_fra_charles_maurras.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_fra_georges_clemenceau"
+		texturefile = "gfx/leaders/FRA/portrait_fra_georges_clemenceau.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_fra_jaime_de_borbon"
+		texturefile = "gfx/leaders/FRA/portrait_fra_jaime_de_borbon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_fra_jean_jaures"
+		texturefile = "gfx/leaders/FRA/portrait_fra_jean_jaures.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_fra_ludovic_oscar_frossard"
+		texturefile = "gfx/leaders/FRA/portrait_fra_ludovic_oscar_frossard.dds"
+	}
+	
 	spriteType = {
 		name = GFX_portrait_fra_raymond_poincare
 		texturefile = "gfx/leaders/FRA/portrait_fra_raymond_poincare.dds"
@@ -80,6 +150,11 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_portrait_tur_mehmed_v
 		texturefile = "gfx/leaders/TUR/portrait_tur_mehmed_v.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_tur_enver_pasha"
+		texturefile = "gfx/leaders/TUR/portrait_tur_enver_pasha.dds"
 	}
 
 	### BUL

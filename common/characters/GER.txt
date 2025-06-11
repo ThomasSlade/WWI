@@ -1,40 +1,124 @@
 characters = {
 	GER_wilhelm_ii = {
 		name = GER_wilhelm_ii
+		country_leader = {
+			ideology = established_t
+		}
+		country_leader = {
+			ideology = expansionist_t
+		}
+		country_leader = {
+			ideology = revolutionary_t
+		}
 		portraits = {
 			civilian = {
 				large = GFX_portrait_ger_wilhelm_ii
 			}
 		}
+	}
+
+	GER_alfred_von_tirpitz = {
+		name = GER_alfred_von_tirpitz
+		country_leader = {
+			ideology = established_t
+		}
 		country_leader = {
 			ideology = expansionist_t
-			expire = "1965.1.1.1"
-			id = -1
+		}
+		country_leader = {
+			ideology = revolutionary_t
+		}
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ger_alfred_von_tirpitz
+			}
+		}
+	}
+
+	GER_theobald_von_bethmann_hollweg = {
+		name = GER_theobald_von_bethmann_hollweg
+		country_leader = {
+			ideology = established_t
+		}
+		country_leader = {
+			ideology = expansionist_t
+		}
+		country_leader = {
+			ideology = revolutionary_t
+		}
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ger_theobald_von_bethmann_hollweg
+			}
+		}
+	}
+
+	GER_gustav_stresemann = {
+		name = GER_gustav_stresemann
+		country_leader = {
+			ideology = established_t
+		}
+		country_leader = {
+			ideology = expansionist_t
+		}
+		country_leader = {
+			ideology = revolutionary_t
+		}
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ger_gustav_stresemann
+			}
+		}
+	}
+
+	GER_friedrich_ebert = {
+		name = GER_friedrich_ebert
+		country_leader = {
+			ideology = established_t
+		}
+		country_leader = {
+			ideology = expansionist_t
+		}
+		country_leader = {
+			ideology = revolutionary_t
+		}
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ger_friedrich_ebert
+			}
+		}
+	}
+
+	GER_rosa_luxemburg = {
+		name = GER_rosa_luxemburg
+		gender = female
+		country_leader = {
+			ideology = established_t
+		}
+		country_leader = {
+			ideology = expansionist_t
+		}
+		country_leader = {
+			ideology = revolutionary_t
+		}
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ger_rosa_luxemburg
+			}
 		}
 	}
 
 	### Generals ###
-
-	GER_erich_von_falkenhayn = {
-		name = GER_erich_von_falkenhayn
-		portraits = {
-			army = {
-				large = GFX_portrait_ger_erich_von_falkenhayn
-			}
-		}
-	}
-
-	GER_erich_ludendorff = {
-		name = GER_erich_ludendorff
-		portraits = {
-			army = {
-				large = GFX_portrait_ger_erich_ludendorff
-			}
-		}
-	}
-
 	GER_helmuth_von_moltke = {
+		# Nervous breakdown
 		name = GER_helmuth_von_moltke
+		field_marshal = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 1
+		}
 		portraits = {
 			army = {
 				large = GFX_portrait_ger_helmuth_von_moltke
@@ -42,11 +126,111 @@ characters = {
 		}
 	}
 
-	GER_paul_von_hindenburg = {
-		name = GER_paul_von_hindenburg
+	GER_erich_von_falkenhayn = {
+		# Indecisive over eastern and western front
+		# Architect of Verdun gambit
+		name = GER_erich_von_falkenhayn
+		corps_commander = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		portraits = {
+			army = {
+				large = GFX_portrait_ger_erich_von_falkenhayn
+			}
+		}
+	}
+
+	GER_alexander_von_kluck = {
+		# Spearhead of Schlieffen. Outpaced Bulow's caution, ultimately opening a gap for the Entente to exploit in the Marne.
+		# Historically died 1915 due to shrapnel.
+		name = GER_alexander_von_kluck
+		corps_commander = {
+			skill = 3
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
 		portraits = {
 			army = {
 				large = GFX_portrait_paul_von_hindenburg
+			}
+		}
+	}
+
+	GER_august_von_mackensen = {
+		# 'Tactful' and 'amicable', 'the instincts of a hunter'
+		# The 'last Hussar'
+		# Successful on many fronts in the east: Tannenberg, Gorlice-Tarnow, Serbia, Romania
+		name = GER_august_von_mackensen
+		corps_commander = {
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+		portraits = {
+			army = {
+				large = GFX_portrait_paul_von_hindenburg
+			}
+		}
+	}
+
+	GER_rupprecht_of_bavaria = {
+		# Extensively prepared for Schlieffen, even though he received his command through privilege
+		# Also visited airfield to see Max Immelmann!
+		name = GER_rupprecht_of_bavaria
+		corps_commander = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 2
+		}
+		portraits = {
+			army = {
+				large = GFX_portrait_paul_von_hindenburg
+			}
+		}
+	}
+
+	GER_paul_von_hindenburg = {
+		# Hero of Tannenberg
+		name = GER_paul_von_hindenburg
+		field_marshal = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+		portraits = {
+			army = {
+				large = GFX_portrait_paul_von_hindenburg
+			}
+		}
+	}
+
+	GER_erich_ludendorff = {
+		# Political meddler
+		# In actuality the senior partner to Hindenburg
+		# Helped assault Liege
+		name = GER_erich_ludendorff
+		corps_commander = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 2
+		}
+		portraits = {
+			army = {
+				large = GFX_portrait_ger_erich_ludendorff
 			}
 		}
 	}

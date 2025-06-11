@@ -1,25 +1,33 @@
 characters = {
 	TUR_mehmed_v = {
 		name = TUR_mehmed_v
+		country_leader = {
+			ideology = established_t
+		}
+		country_leader = {
+			ideology = expansionist_t
+		}
+		country_leader = {
+			ideology = revolutionary_t
+		}
 		portraits = {
 			civilian = {
 				large = GFX_portrait_tur_mehmed_v
 			}
-		}
-		country_leader = {
-			ideology = established_t
-			expire = "1965.1.1.1"
-			id = -1
 		}
 	}
 
 	### Generals and Advisors ###
 	TUR_enver_pasha = {
 		name = TUR_enver_pasha
-		portraits = {
-			army = {
-				small = "GFX_idea_generic_political_advisor_europe_1"
-			}
+		country_leader = {
+			ideology = established_t
+		}
+		country_leader = {
+			ideology = expansionist_t
+		}
+		country_leader = {
+			ideology = revolutionary_t
 		}
 		advisor = {
 			slot = army_chief
@@ -45,6 +53,14 @@ characters = {
 			logistics_skill=1
 			traits = {
 				butcher
+			}
+		}
+		portraits = {
+			civilian = {
+				small = GFX_portrait_tur_enver_pasha
+			}
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
 			}
 		}
 	}

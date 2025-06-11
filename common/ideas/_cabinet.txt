@@ -9,20 +9,25 @@ ideas = {
 			cancel_if_invalid = no
 
 			available = {
+				always = no
+
 				OR = {
 					has_idea = gov_absolute_monarchy
 					has_idea = gov_military_dictatorship
 					has_idea = gov_constitutional_monarchy
 				}
-
-				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
+				set_temp_variable = { param_party = token:autocratic }
+				effect_select_leader_using_current_government_type = yes
+
+				set_variable = { cabinet_party = token:autocratic }
 				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
 			}
 
 			modifier = {
+				custom_modifier_tooltip = autocratic_leader_tt
 				resistance_activity = -0.5
 				training_time_army_factor = -0.15
 			}
@@ -32,9 +37,10 @@ ideas = {
 			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
-			default = yes
 
 			available = {
+				always = no
+
 				OR = {
 					has_idea = gov_absolute_monarchy
 					has_idea = gov_military_dictatorship
@@ -43,15 +49,18 @@ ideas = {
 					has_idea = gov_liberal_democracy
 					has_idea = gov_social_democracy
 				}
-
-				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
+				set_temp_variable = { param_party = token:conservative }
+				effect_select_leader_using_current_government_type = yes
+
+				set_variable = { cabinet_party = token:conservative }
 				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
 			}
 
 			modifier = {
+				custom_modifier_tooltip = conservative_leader_tt
 				production_speed_arms_factory_factor = 0.25
 				local_resources_factor = 0.25
 			}
@@ -63,21 +72,26 @@ ideas = {
 			cancel_if_invalid = no
 
 			available = {
+				always = no
+
 				OR = {
 					has_idea = gov_constitutional_monarchy
 					has_idea = gov_limited_democracy
 					has_idea = gov_liberal_democracy
 					has_idea = gov_social_democracy
 				}
-
-				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
+				set_temp_variable = { param_party = token:liberal }
+				effect_select_leader_using_current_government_type = yes
+
+				set_variable = { cabinet_party = token:liberal }
 				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
 			}
 
 			modifier = {
+				custom_modifier_tooltip = liberal_leader_tt
 				production_speed_industrial_complex_factor = 0.25
 				production_factory_efficiency_gain_factor = 0.33
 			}
@@ -89,19 +103,24 @@ ideas = {
 			cancel_if_invalid = no
 
 			available = {
+				always = no
+
 				OR = {
 					has_idea = gov_liberal_democracy
 					has_idea = gov_social_democracy
 				}
-
-				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
+				set_temp_variable = { param_party = token:socialist }
+				effect_select_leader_using_current_government_type = yes
+
+				set_variable = { cabinet_party = token:socialist }
 				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
 			}
 
 			modifier = {
+				custom_modifier_tooltip = socialist_leader_tt
 				production_speed_infrastructure_factor = 0.25
 				production_speed_rail_way_factor = 0.25
 			}
@@ -113,20 +132,25 @@ ideas = {
 			cancel_if_invalid = no
 
 			available = {
+				always = no
+				
 				OR = {
 					has_idea = gov_liberal_democracy
 					has_idea = gov_social_democracy
 					has_idea = gov_military_dictatorship
 				}
-
-				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
+				set_temp_variable = { param_party = token:communist }
+				effect_select_leader_using_current_government_type = yes
+
+				set_variable = { cabinet_party = token:communist }
 				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
 			}
 
 			modifier = {
+				custom_modifier_tooltip = communist_leader_tt
 				conversion_cost_civ_to_mil_factor = 1
 				conversion_cost_mil_to_civ_factor = 1
 				consumer_goods_factor = -0.25

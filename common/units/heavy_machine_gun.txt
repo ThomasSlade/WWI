@@ -12,7 +12,7 @@ sub_units = {
 			artillery
 		}
 
-		group = combat_support
+		group = infantry
 
 		categories = {
 			category_army
@@ -22,7 +22,7 @@ sub_units = {
 
 		combat_width = 2
 
-		manpower = 500
+		manpower = 750
 		need = {
 			heavy_machine_gun_equipment = 50
 		}

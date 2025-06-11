@@ -26,18 +26,18 @@ effect_setup_law_tiers = {
 	set_variable = { global._law_type@token:low_economic_mobilisation = token:economic }
 	set_variable = { global._tier@token:partial_economic_mobilisation = 2 }
 	set_variable = { global._law_type@token:partial_economic_mobilisation = token:economic }
-	set_variable = { global._tier@token:profit_seizure_0 = 3 }
-	set_variable = { global._law_type@token:profit_seizure_0 = token:economic }
-	set_variable = { global._tier@token:profit_seizure_1 = 4 }
-	set_variable = { global._law_type@token:profit_seizure_1 = token:economic }
 	set_variable = { global._tier@token:nationalisation_0 = 3 }
 	set_variable = { global._law_type@token:nationalisation_0 = token:economic }
 	set_variable = { global._tier@token:nationalisation_1 = 4 }
 	set_variable = { global._law_type@token:nationalisation_1 = token:economic }
+	set_variable = { global._tier@token:nationalisation_2 = 5 }
+	set_variable = { global._law_type@token:nationalisation_2 = token:economic }
 	set_variable = { global._tier@token:private_collaboration_0 = 3 }
 	set_variable = { global._law_type@token:private_collaboration_0 = token:economic }
 	set_variable = { global._tier@token:private_collaboration_1 = 4 }
 	set_variable = { global._law_type@token:private_collaboration_1 = token:economic }
+	set_variable = { global._tier@token:private_collaboration_2 = 5 }
+	set_variable = { global._law_type@token:private_collaboration_2 = token:economic }
 
 	set_variable = { global._tier@token:no_rationing = 0 }
 	set_variable = { global._law_type@token:civilian_economy = token:rationing }
@@ -111,6 +111,13 @@ effect_setup_laws = {
 	# Be sure to keep this array updated. It needs to contain every law idea.
 	# Yes, I hate having to do this to determine law-tiers on game launch. Sadly I can't find another way.
 	# Also if you're thinking of putting this in an effect to shorten this file, don't bother. This on_action has a scope of NONE and it complains if you try to call scripted effects for some stupid reason.
+	add_to_array = { global._government_laws = token:gov_military_dictatorship }
+	add_to_array = { global._government_laws = token:gov_absolute_monarchy }
+	add_to_array = { global._government_laws = token:gov_constitutional_monarchy }
+	add_to_array = { global._government_laws = token:gov_limited_democracy }
+	add_to_array = { global._government_laws = token:gov_liberal_democracy }
+	add_to_array = { global._government_laws = token:gov_social_democracy }
+
 	add_to_array = { global._manpower_laws = token:disarmed_nation }
 	add_to_array = { global._manpower_laws = token:volunteer_only }
 	add_to_array = { global._manpower_laws = token:national_service }
@@ -125,12 +132,12 @@ effect_setup_laws = {
 	add_to_array = { global._economic_laws = token:civilian_economy }
 	add_to_array = { global._economic_laws = token:low_economic_mobilisation }
 	add_to_array = { global._economic_laws = token:partial_economic_mobilisation }
-	add_to_array = { global._economic_laws = token:profit_seizure_0 }
-	add_to_array = { global._economic_laws = token:profit_seizure_1 }
 	add_to_array = { global._economic_laws = token:nationalisation_0 }
 	add_to_array = { global._economic_laws = token:nationalisation_1 }
+	add_to_array = { global._economic_laws = token:nationalisation_2 }
 	add_to_array = { global._economic_laws = token:private_collaboration_0 }
 	add_to_array = { global._economic_laws = token:private_collaboration_1 }
+	add_to_array = { global._economic_laws = token:private_collaboration_2 }
 
 	add_to_array = { global._rationing_laws = token:no_rationing }
 	add_to_array = { global._rationing_laws = token:price_controls }
@@ -167,10 +174,47 @@ effect_setup_laws = {
 
 	# Create array of all parties
 	add_to_array = { global._all_parties = token:autocratic }
+	set_variable = { global._left@token:autocratic = token:conservative }
+	set_variable = { global._cabinet@token:autocratic = token:cab_autocratic }
+	add_to_array = { global._opposition@token:autocratic = token:opp_autocratic_0 }
+	add_to_array = { global._opposition@token:autocratic = token:opp_autocratic_1 }
+	add_to_array = { global._opposition@token:autocratic = token:opp_autocratic_2 }
+	add_to_array = { global._opposition@token:autocratic = token:opp_autocratic_3 }
+
 	add_to_array = { global._all_parties = token:conservative }
+	set_variable = { global._left@token:conservative = token:liberal }
+	set_variable = { global._right@token:conservative = token:autocratic }
+	set_variable = { global._cabinet@token:conservative = token:cab_conservative }
+	add_to_array = { global._opposition@token:conservative = token:opp_conservative_0 }
+	add_to_array = { global._opposition@token:conservative = token:opp_conservative_1 }
+	add_to_array = { global._opposition@token:conservative = token:opp_conservative_2 }
+	add_to_array = { global._opposition@token:conservative = token:opp_conservative_3 }
+
 	add_to_array = { global._all_parties = token:liberal }
+	set_variable = { global._left@token:liberal = token:socialist }
+	set_variable = { global._right@token:liberal = token:conservative }
+	set_variable = { global._cabinet@token:liberal = token:cab_liberal }
+	add_to_array = { global._opposition@token:liberal = token:opp_liberal_0 }
+	add_to_array = { global._opposition@token:liberal = token:opp_liberal_1 }
+	add_to_array = { global._opposition@token:liberal = token:opp_liberal_2 }
+	add_to_array = { global._opposition@token:liberal = token:opp_liberal_3 }
+
 	add_to_array = { global._all_parties = token:socialist }
+	set_variable = { global._left@token:socialist = token:communist }
+	set_variable = { global._right@token:socialist = token:liberal }
+	set_variable = { global._cabinet@token:socialist = token:cab_socialist }
+	add_to_array = { global._opposition@token:socialist = token:opp_socialist_0 }
+	add_to_array = { global._opposition@token:socialist = token:opp_socialist_1 }
+	add_to_array = { global._opposition@token:socialist = token:opp_socialist_2 }
+	add_to_array = { global._opposition@token:socialist = token:opp_socialist_3 }
+
 	add_to_array = { global._all_parties = token:communist }
+	set_variable = { global._right@token:communist = token:socialist }
+	set_variable = { global._cabinet@token:communist = token:cab_communist }
+	add_to_array = { global._opposition@token:communist = token:opp_communist_0 }
+	add_to_array = { global._opposition@token:communist = token:opp_communist_1 }
+	add_to_array = { global._opposition@token:communist = token:opp_communist_2 }
+	add_to_array = { global._opposition@token:communist = token:opp_communist_3 }
 
 	# Set up per-party liked and disliked laws.
 	# Manpower
@@ -363,10 +407,27 @@ effect_setup_laws = {
 }
 
 effect_setup_politics = {
-	# Adding opposition here applies the on_add_effect, doing it in the history files doesn't.
-	add_ideas = opp_socialist_1
+	# Assuming all countries start with level 1 opposition for now.
+	set_variable = { opposition_level = 1 }
 
 	# Cache laws at game start (the on_add behaviour won't be run at the start of the game so we have to do it manually here).
+	for_each_loop = {
+		array = global._government_laws
+		value = l
+		break = break
+		if = {
+			limit = {
+				meta_trigger = {
+					LAW_TOKEN = "[?l.GetTokenKey]"
+
+					text = { has_idea = [LAW_TOKEN] }
+				}
+			}
+			set_variable = { law_government = l }
+			set_temp_variable = { break = 1 }
+		}
+	}
+
 	for_each_loop = {
 		array = global._economic_laws
 		value = l
@@ -467,6 +528,34 @@ effect_setup_politics = {
 			set_variable = { law_blockade_policy = l }
 			set_temp_variable = { break = 1 }
 		}
+	}
+
+	# Define defaults for these three law sets here rather than in the law files. Cabinets, oppositions, and government types all apply effects on being added, so it's best to add them manually rather than in the history files (where 'on_add' doesn't run). So we use variables to carry them over from the history files instead.
+	if = {
+		limit = { has_variable = initial_cabinet }
+		add_ideas = var:initial_cabinet
+		clear_variable = initial_cabinet
+	}
+	else = {
+		add_ideas = cab_conservative
+	}
+
+	if = {
+		limit = { has_variable = initial_opposition }
+		add_ideas = var:initial_opposition
+		clear_variable = initial_opposition
+	}
+	else = {
+		add_ideas = opp_liberal_1
+	}
+
+	if = {
+		limit = { has_variable = initial_government }
+		add_ideas = var:initial_government
+		clear_variable = initial_government
+	}
+	else = {
+		add_ideas = gov_limited_democracy
 	}
 }
 
@@ -719,11 +808,11 @@ effect_increase_opposition = {
 			add_to_temp_variable = { next_opposition_level = 1 }
 
 			meta_effect = {
+				PARTY_TYPE = "[?opposition_party.GetTokenKey]"
+				NEXT_OPPOSITION_LEVEL = "[?next_opposition_level]"
 				text = {
 					add_ideas = opp_[PARTY_TYPE]_[NEXT_OPPOSITION_LEVEL]
 				}
-				PARTY_TYPE = "[?opposition_party.GetTokenKey]"
-				NEXT_OPPOSITION_LEVEL = "[?next_opposition_level]"
 			}
 		}
 	}
@@ -739,12 +828,183 @@ effect_decrease_opposition = {
 			add_to_temp_variable = { next_opposition_level = -1 }
 
 			meta_effect = {
+				PARTY_TYPE = "[?opposition_party.GetTokenKey]"
+				NEXT_OPPOSITION_LEVEL = "[?next_opposition_level]"
 				text = {
 					add_ideas = opp_[PARTY_TYPE]_[NEXT_OPPOSITION_LEVEL]
 				}
-				PARTY_TYPE = "[?opposition_party.GetTokenKey]"
-				NEXT_OPPOSITION_LEVEL = "[?next_opposition_level]"
 			}
 		}
 	}
+}
+
+# param_party: The party entering cabinet
+effect_change_cabinet = {
+	meta_effect = {
+		OLD_PARTY = "cab_[?cabinet_party.GetTokenKey]"
+		NEW_PARTY = "cab_[?param_party.GetTokenKey]"
+		text = {
+			custom_effect_tooltip = {
+				localization_key = change_cabinet_tt
+				OLD_PARTY_TEXT = [OLD_PARTY]
+				NEW_PARTY_TEXT = [NEW_PARTY]
+			}
+		}
+	}
+
+	hidden_effect = {
+		add_ideas = global._cabinet@var:param_party
+	}
+}
+
+# param_party: The party entering opposition
+effect_change_opposition = {
+	meta_effect = {
+		OLD_PARTY = "opp_[?opposition_party.GetTokenKey]_[?opposition_level]"
+		NEW_PARTY = "opp_[?param_party.GetTokenKey]_[?opposition_level]"
+		text = {
+			custom_effect_tooltip = {
+				localization_key = change_opposition_tt
+				OLD_PARTY_TEXT = [OLD_PARTY]
+				NEW_PARTY_TEXT = [NEW_PARTY]
+			}
+		}
+	}
+
+	hidden_effect = {
+		add_ideas = global._opposition@var:param_party^opposition_level
+	}
+}
+
+# param_party: The party we want the index of within the all_parties array
+# out_index: The index of the party
+effect_get_party_index = {
+	set_temp_variable = { out_index = -1 }
+	for_loop_effect = {
+		end = global._all_parties^num
+		value = p
+		break = break
+
+		if = {
+			limit = { check_variable = { param_party = global._all_parties^p } }
+			set_temp_variable = { out_index = p }
+			set_temp_variable = { break = 1 }
+		}
+	}
+}
+
+# Make the opposition more extreme that the current one for the sitting government, if possible.
+# param_current_cabinet: The party we're finding the more radical opposition relative to
+# param_current_opposition: The current opposition
+# out_radicalised_party: The more radical opposition. Unset if none is found.
+# out_switched_wings: If set, it means the radical result was not politically adjacent to the old opposition. For example, an opposition of autocrats was 'radicalised' to communists because the cabinet was conservative, and communist is further from conservative than autocratic is.
+effect_radicalise_opposition = {
+	log = "Attempting to pick more radical opposition for [THIS.GetName], current cabinet [?param_current_cabinet.GetTokenKey] and current opposition [?param_current_opposition.GetTokenKey]."
+
+	set_temp_variable = { param_party = param_current_cabinet }
+	effect_get_party_index = yes
+	set_temp_variable = { cabinet_index = out_index }
+
+	set_temp_variable = { param_party = param_current_opposition }
+	effect_get_party_index = yes
+	set_temp_variable = { opposition_index = out_index }
+
+	# If positive, the opposition is left of the cabinet. If negative, it's right of the cabinet.
+	set_temp_variable = { overton_distance = opposition_index }
+	subtract_from_temp_variable = { overton_distance = cabinet_index }
+
+	set_temp_variable = { max_party_index = global._all_parties^num }
+	subtract_from_temp_variable = { max_party_index = 1 }
+
+	set_temp_variable = { next_party_index = opposition_index }
+
+	if = {
+		limit = { check_variable = { overton_distance < 0 } }
+		add_to_temp_variable = { next_party_index = -1 }
+	}
+	else = {
+		add_to_temp_variable = { next_party_index = 1 }
+	}
+
+	if = {
+		limit = {
+			OR = {
+				check_variable = { next_party_index < 0 }
+				check_variable = { next_party_index > max_party_index }
+			}
+		}
+		log = "No"
+
+		set_temp_variable = { next_party_index = overton_distance }
+		multiply_temp_variable = { next_party_index = -1 }
+		add_to_temp_variable = { next_party_index = cabinet_index }
+		if = {
+			limit = { check_variable = { overton_distance < 0 } }
+			add_to_temp_variable = { next_party_index = 1 }
+		}
+		else = {
+			add_to_temp_variable = { next_party_index = -1 }
+		}
+
+		log = "Ran out of room to increment opposition so trying to reverse. Overton distance was [?overton_distance]. Negated and added to cabinet index is [?next_party_index]"
+
+		if = {
+			limit = {
+				OR = {
+					check_variable = { next_party_index < 0 }
+					check_variable = { next_party_index > max_party_index }
+				}
+			}
+
+			log = "Could not find a party more radical than [?param_current_opposition.GetTokenKey] is to [?param_current_cabinet]"
+		}
+		else = {
+			set_temp_variable = { out_radicalised_party = global._all_parties^next_party_index }
+			set_temp_variable = { out_switched_wings = 1 }
+
+			log = "Found radicalised party [?out_radicalised_party.GetTokenKey] (reversed extremism direction relative to cabinet)"
+		}
+	}
+	else = {
+		set_temp_variable = { out_radicalised_party = global._all_parties^next_party_index }
+
+		log = "Found radicalised party [?out_radicalised_party.GetTokenKey] (incremented from previous opposition)"
+	}
+}
+
+# param_party: The party in charge.
+# param_government_type: The current government law.
+effect_select_leader = {
+	if = {
+		limit = { trigger_government_uses_monarch = yes }
+
+		if = {
+			limit = { NOT = { check_variable = { country_leader = var:monarch } } }
+			var:monarch = {
+				custom_effect_tooltip = newline_tt
+				custom_effect_tooltip = newline_tt
+				effect_promote_character_to_all_ideologies = yes
+			}
+		}
+	}
+	else = {
+		if = {
+			limit = { NOT = { check_variable = { country_leader = var:leader@var:param_party } } }
+			var:leader@var:param_party = {
+				custom_effect_tooltip = newline_tt
+				custom_effect_tooltip = newline_tt
+				effect_promote_character_to_all_ideologies = yes
+			}
+		}
+	}
+}
+
+effect_select_leader_using_current_government_type = {
+	set_temp_variable = { param_government_type = law_government }
+	effect_select_leader = yes
+}
+
+effect_select_leader_using_current_cabinet = {
+	set_temp_variable = { param_party = cabinet_party }
+	effect_select_leader = yes
 }

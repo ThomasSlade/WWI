@@ -1,0 +1,38 @@
+﻿l_english:
+	event_WWI_politics.1.t: "Reforming the Cabinet"
+	event_WWI_politics.1.d: "[?monarch.GetHerHisCap] Majesty has requested the forming of a new cabinet to see the country through these precarious times.\n\nThe powers of the [?monarch.GetRoyalTitle] are not without limit: only a gradual shift in our cabinet's leaning is permitted."
+	event_WWI_politics.1.d_opposition_allowed: "$event_WWI_politics.1.d$ Alternatively, the [?opposition_party.GetTokenKey] Opposition holds a powerful mandate to take the reigns ..."
+	event_WWI_politics.1.a: "A right-leaning cabinet."
+	event_WWI_politics.1.b: "A left-leaning cabinet."
+	event_WWI_politics.1.c: "Give the Opposition a chance."
+
+	event_WWI_politics.2.t: "Election Called"
+	event_WWI_politics.2.d: "Amid dissatisfaction with the political status quo at home, and an increasingly uncertain future for [THIS.GetNameDef], the [?cabinet_party.GetTokenKey] party has opted to call an early election.\n\nExcitement and fervor sweep the streets of [THIS.capital.GetCapitalVictoryPointName], as the disaffected electorate weighs a modest changing of hats against the opportunity for radical upheaval."
+	event_WWI_politics.2.a: "A new government will be elected."
+	event_WWI_politics.2.b: "A new opposition gathers support."
+
+	event_WWI_politics.3.t: "The [GetYear] Election"
+	event_WWI_politics.3.d: "A term under the [?cabinet_party.GetTokenKey] party comes to an end, and its stewardship of the [THIS.GetAdjective] nation is once again contested.\n\nExcitement and fervor sweep the streets of [THIS.capital.GetCapitalVictoryPointName], as the disaffected electorate weighs a modest changing of hats against the opportunity for radical upheaval."
+	event_WWI_politics.3.a: "A new government will be elected."
+	event_WWI_politics.3.b: "A new opposition gathers support."
+	event_WWI_politics.3.c: "The political landscape endures."
+
+	event_WWI_politics.4.t: "Sitting Government's Support Falters in Election Polls"
+	event_WWI_politics.4.d: "Polling for the [?cabinet_party.GetTokenKey] party sinks in the early weeks of election campaigning. Weary with the established government, droves of [THIS.GetAdjective] voters abandon the [?cabinet_party.GetTokenKey] old guard in search of fresh leadership.\n\nA new majority is projected."
+	event_WWI_politics.4.a: "The electorate shifts right."
+	event_WWI_politics.4.b: "Voters demand left-leaning policy."
+	event_WWI_politics.4.c: "The Opposition gains the lead."
+
+	event_WWI_politics.5.t: "New Party Assumes the Opposition"
+	event_WWI_politics.5.d: "The popularity of the [?projected_cabinet.GetTokenKey] party has not gone unchallenged. Elements of the electorate threatened by this sudden change in majority have joined their radical counterparts to rally around the [?projected_opposition.GetTokenKey] banner.\n\nThough not strong enough to challenge the [?projected_cabinet.GetTokenKey] incumbants, they threaten to form an opposition more stifling than the last."
+	event_WWI_politics.5.a: "We can handle them."
+	event_WWI_politics.5.b: "Coordinate with the sitting government."
+
+	event_WWI_politics.5.d: "Though their supremacy in the polls is steady, the [?projected_cabinet.GetTokenKey] party is assaulted from all sides. The thickest mud is slung by [?projected_opposition.GetTokenKey] campaigners, who ride their own wave of surging support among the public."
+	event_WWI_politics.5.a: "We can handle their vitriol."
+	event_WWI_politics.5.b: "Coordinate with the sitting government."
+	event_WWI_politics.5.c: "Redouble our campaigning efforts."
+
+	event_WWI_politics.6.t: "The Votes are Counted"
+	event_WWI_politics.6.d: "A small army of civil servants pour over the nation's ballots, while exhausted officials nervously await the count. Come morning, news emerges of the [?projected_cabinet.GetTokenKey] victory. Supporters crowd the city squares of [THIS.capital.GetCapitalVictoryPointName], to the triumphant exultations of [?leader@var:projected_cabinet.GetName].\n\nEmbittered, but resilient, the [?projected_opposition.GetTokenKey] party accepts its close defeat and prepares to resist the new government at every turn."
+	event_WWI_politics.6.a: "[THIS.GetNameDefCap] has chosen [?leader@var:projected_cabinet.GetName]."

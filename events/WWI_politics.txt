@@ -1,0 +1,348 @@
+add_namespace = event_WWI_politics
+
+country_event = {
+	id = event_WWI_politics.1
+	title = event_WWI_politics.1.t
+	desc = {
+		text = event_WWI_politics.1.d
+		trigger = {
+			set_temp_variable = { param_party = opposition_party }
+			trigger_government_can_have_party_in_cabinet = no
+		}
+	}
+	desc = {
+		text = event_WWI_politics.1.d_opposition_allowed
+		trigger = {
+			set_temp_variable = { param_party = opposition_party }
+			trigger_government_can_have_party_in_cabinet = yes
+		}
+	}
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Reforming cabinet from current cabinet [?cabinet_party.GetTokenKey]."
+	}
+
+	# Go right.
+	option = {
+		name = event_WWI_politics.1.a
+		trigger = {
+			has_variable = global._right@var:cabinet_party
+			NOT = { check_variable = { global._right@var:cabinet_party = opposition_party } }
+			set_temp_variable = { param_party = global._right@var:cabinet_party }
+			trigger_government_can_have_party_in_cabinet = yes
+		}
+
+		set_temp_variable = { param_party = global._right@var:cabinet_party }
+		effect_change_cabinet = yes
+	}
+
+	# Go left.
+	option = {
+		name = event_WWI_politics.1.b
+		trigger = {
+			has_variable = global._left@var:cabinet_party
+			NOT = { check_variable = { global._left@var:cabinet_party = opposition_party } }
+			set_temp_variable = { param_party = global._left@var:cabinet_party }
+			trigger_government_can_have_party_in_cabinet = yes
+		}
+
+		set_temp_variable = { param_party = global._left@var:cabinet_party }
+		effect_change_cabinet = yes
+	}
+
+	# Swap in the opposition.
+	option = {
+		name = event_WWI_politics.1.c
+		trigger = {
+			set_temp_variable = { param_party = opposition_party }
+			trigger_government_can_have_party_in_cabinet = yes
+		}
+
+		set_temp_variable = { new_opposition = cabinet_party }
+
+		set_temp_variable = { param_party = opposition_party }
+		effect_change_cabinet = yes
+
+		set_temp_variable = { param_party = new_opposition }
+		effect_change_opposition = yes
+	}
+}
+
+country_event = {
+	id = event_WWI_politics.2
+	title = event_WWI_politics.2.t
+	desc = event_WWI_politics.2.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Election called."
+	}
+
+	# New govt
+	option = {
+		name = event_WWI_politics.2.a
+		country_event = { id = event_WWI_politics.4 }
+	}
+
+	# New opposition
+	option = {
+		name = event_WWI_politics.2.b
+	}
+}
+
+country_event = {
+	id = event_WWI_politics.3
+	title = event_WWI_politics.3.t
+	desc = event_WWI_politics.3.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Scheduled election held."
+	}
+
+	# New govt
+	option = {
+		name = event_WWI_politics.3.a
+		country_event = { id = event_WWI_politics.4 }
+	}
+
+	# New opposition
+	option = {
+		name = event_WWI_politics.3.b
+	}
+
+	# Nothing happens
+	option = {
+		name = event_WWI_politics.3.c
+	}
+}
+
+country_event = {
+	id = event_WWI_politics.4
+	title = event_WWI_politics.4.t
+	desc = event_WWI_politics.4.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) A new cabinet is selected in the election."
+	}
+
+	# Go right.
+	option = {
+		name = event_WWI_politics.4.a
+		trigger = {
+			has_variable = global._right@var:cabinet_party
+			NOT = { check_variable = { global._right@var:cabinet_party = opposition_party } }
+			set_temp_variable = { param_party = global._right@var:cabinet_party }
+			trigger_government_can_have_party_in_cabinet = yes
+		}
+
+		set_variable = { projected_cabinet = global._right@var:cabinet_party }
+		custom_effect_tooltip = after_election_tt
+		effect_tooltip = {
+			set_temp_variable = { param_party = global._right@var:cabinet_party }
+			effect_change_cabinet = yes
+		}
+
+		set_variable = { param_current_cabinet = projected_cabinet }
+		set_temp_variable = { param_current_opposition = opposition_party }
+		effect_radicalise_opposition = yes
+
+		if = {
+			limit = { has_variable = out_radicalised_party }
+			set_variable = { projected_opposition = out_radicalised_party }
+			custom_effect_tooltip = opposition_may_be_radicalised_tt
+
+			# These events may be inaccurate if we display them in tooltip.
+			hidden_effect = {
+				country_event = { id = event_WWI_politics.5 }
+			}
+		}
+		else = {
+			set_variable = { projected_opposition = opposition_party }
+		}
+	}
+
+	# Go left.
+	option = {
+		name = event_WWI_politics.4.b
+		trigger = {
+			has_variable = global._left@var:cabinet_party
+			NOT = { check_variable = { global._left@var:cabinet_party = opposition_party } }
+			set_temp_variable = { param_party = global._left@var:cabinet_party }
+			trigger_government_can_have_party_in_cabinet = yes
+		}
+
+		set_variable = { projected_cabinet = global._left@var:cabinet_party }
+		custom_effect_tooltip = after_election_tt
+		effect_tooltip = {
+			set_temp_variable = { param_party = global._left@var:cabinet_party }
+			effect_change_cabinet = yes
+		}
+
+		set_variable = { param_current_cabinet = projected_cabinet }
+		set_temp_variable = { param_current_opposition = opposition_party }
+		effect_radicalise_opposition = yes
+
+		if = {
+			limit = { has_variable = out_radicalised_party }
+			set_variable = { projected_opposition = out_radicalised_party }
+			custom_effect_tooltip = opposition_may_be_radicalised_tt
+
+			# These events may be inaccurate if we display them in tooltip.
+			hidden_effect = {
+				country_event = { id = event_WWI_politics.5 }
+			}
+		}
+		else = {
+			set_variable = { projected_opposition = opposition_party }
+		}
+	}
+
+	# Swap in the opposition.
+	option = {
+		name = event_WWI_politics.4.c
+		trigger = {
+			set_temp_variable = { param_party = opposition_party }
+			trigger_government_can_have_party_in_cabinet = yes
+		}
+
+		set_variable = { projected_cabinet = opposition_party }
+		set_variable = { projected_opposition = cabinet_party }
+
+		custom_effect_tooltip = after_election_tt
+		effect_tooltip = {
+			set_temp_variable = { param_party = opposition_party }
+			effect_change_cabinet = yes
+
+			set_temp_variable = { param_party = cabinet_party }
+			effect_change_opposition = yes
+		}
+	}
+}
+
+country_event = {
+	id = event_WWI_politics.5
+	title = event_WWI_politics.5.t
+	desc = {
+		text = event_WWI_politics.5.d
+		trigger = {
+			NOT = { has_variable = out_switched_wings }
+		}
+	}
+	desc = {
+		text = event_WWI_politics.5.d_wing_change
+		trigger = {
+			has_variable = out_switched_wings
+		}
+	}
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) A new opposition is emerging."
+	}
+
+	# Accept the new opposition.
+	option = {
+		name = event_WWI_politics.5.a
+
+		custom_effect_tooltip = after_election_tt
+		effect_tooltip = {
+			set_temp_variable = { param_party = projected_opposition }
+			effect_change_opposition = yes
+		}
+
+		country_event = { id = event_WWI_politics.6 }
+	}
+
+	# Bring back the old opposition.
+	option = {
+		name = event_WWI_politics.5.b
+
+		add_timed_idea = {
+			idea = idea_collaborationg_with_sitting_opposition
+			days = 60
+		}
+
+		
+		set_variable = { projected_opposition = opposition_party }
+		
+		custom_effect_tooltip = after_election_tt
+		meta_effect = {
+			PARTY = "[?opposition_party.GetTokenKey]_colored"
+			text = {
+				custom_effect_tooltip = {
+					localization_key = opposition_doesnt_change_tt
+					PARTY_TEXT = [PARTY]
+				}
+			}
+		}
+
+		country_event = { id = event_WWI_politics.6 }
+	}
+}
+
+country_event = {
+	id = event_WWI_politics.6
+	title = event_WWI_politics.6.t
+	desc = event_WWI_politics.6.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Concluding election with cabinet [?projected_cabinet] and opposition [?projected_opposition]."
+	}
+
+	option = {
+		name = event_WWI_politics.6.a
+
+		if = {
+			limit = { NOT = { check_variable = { projected_cabinet = cabinet_party } } }
+			set_temp_variable = { param_party = projected_cabinet }
+			effect_change_cabinet = yes
+		}
+		else = {
+			meta_effect = {
+				PARTY = "[?cabinet_party.GetTokenKey]_colored"
+				text = {
+					custom_effect_tooltip = {
+						localization_key = cabinet_doesnt_change_tt
+						PARTY_TEXT = [PARTY]
+					}
+				}
+			}
+		}
+
+		if = {
+			limit = { NOT = { check_variable = { projected_opposition = opposition_party } } }
+			set_temp_variable = { param_party = projected_opposition }
+			effect_change_opposition = yes
+		}
+		else = {
+			meta_effect = {
+				PARTY = "[?opposition_party.GetTokenKey]_colored"
+				text = {
+					custom_effect_tooltip = {
+						localization_key = opposition_doesnt_change_tt
+						PARTY_TEXT = [PARTY]
+					}
+				}
+			}
+		}
+
+		clear_variable = projected_cabinet
+		clear_variable = projected_opposition
+	}
+}

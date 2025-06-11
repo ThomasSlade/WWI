@@ -1,29 +1,37 @@
 characters = {
 	SOV_nicholas_ii = {
 		name = SOV_nicholas_ii
+		country_leader = {
+			ideology = established_t
+		}
+		country_leader = {
+			ideology = expansionist_t
+		}
+		country_leader = {
+			ideology = revolutionary_t
+		}
 		portraits = {
 			civilian = {
 				large = GFX_portrait_SOV_nicholas_ii
 			}
 		}
-		country_leader = {
-			ideology = established_t
-			expire = "1965.1.1.1"
-			id = -1
-		}
 	}
 
 	SOV_vladimir_lenin = {
 		name = SOV_vladimir_lenin
+		country_leader = {
+			ideology = established_t
+		}
+		country_leader = {
+			ideology = expansionist_t
+		}
+		country_leader = {
+			ideology = revolutionary_t
+		}
 		portraits = {
 			civilian = {
 				large = GFX_portrait_SOV_vladimir_lenin
 			}
-		}
-		country_leader = {
-			ideology = revolutionary_t
-			expire = "1965.1.1.1"
-			id = -1
 		}
 	}
 

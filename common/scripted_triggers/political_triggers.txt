@@ -27,3 +27,81 @@ trigger_opposition_allows_law_change = {
 		}
 	}
 }
+
+triger_government_can_reform_cabinet = {
+	custom_trigger_tooltip = {
+		tooltip = government_can_reform_cabinet_tt
+		OR = {
+			has_idea = gov_military_dictatorship
+			has_idea = gov_absolute_monarchy
+			has_idea = gov_constitutional_monarchy
+		}
+	}
+}
+
+triger_government_can_call_elections = {
+	custom_trigger_tooltip = {
+		tooltip = government_can_reform_cabinet_tt
+		OR = {
+			has_idea = gov_limited_democracy
+			has_idea = gov_liberal_democracy
+			has_idea = gov_social_democracy
+		}
+	}
+}
+
+# param_government_type: The current government_type
+trigger_government_uses_monarch = {
+	OR = {
+		check_variable = { param_government_type = token:gov_absolute_monarchy }
+		check_variable = { param_government_type = token:gov_constitutional_monarchy }
+	}
+}
+
+trigger_current_government_uses_monarch = {
+	set_temp_variable = { param_government_type = government_type }
+	OR = {
+		has_idea = gov_absolute_monarchy
+		has_idea = gov_constitutional_monarchy
+	}
+}
+
+# param_party: The party we're checking if they can be in cabinet.
+trigger_government_can_have_party_in_cabinet = {
+	custom_trigger_tooltip = {
+		tooltip = government_can_have_party_in_cabinet_tt
+		if = {
+			limit = {
+				OR = {
+					has_idea = gov_military_dictatorship
+					has_idea = gov_absolute_monarchy
+					has_idea = gov_constitutional_monarchy
+				}
+			}
+			NOT = { check_variable = { param_party = token:communist } }
+		}
+		if = {
+			limit = {
+				OR = {
+					has_idea = gov_military_dictatorship
+					has_idea = gov_absolute_monarchy
+				}
+			}
+			NOT = { check_variable = { param_party = token:socialist } }
+		}
+	}
+}
+
+trigger_has_recently_reformed_cabinet = {
+	custom_trigger_tooltip = {
+		tooltip = trigger_has_recently_reformed_cabinet_tt
+		has_country_flag = flag_recently_reformed_cabinet
+	}
+}
+
+trigger_has_recently_had_election = {
+	custom_trigger_tooltip = {
+		tooltip = trigger_has_recently_had_election_tt
+		has_country_flag = flag_recently_had_election
+	}
+}

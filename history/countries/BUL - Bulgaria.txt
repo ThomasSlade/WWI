@@ -35,12 +35,14 @@ set_popularities = {
 add_ideas = {
 	BUL_balkan_prussia
 	limited_conscription
-
-	cab_conservative
-	gov_constitutional_monarchy
 }
 
+set_variable = { initial_cabinet = token:cab_conservative }
+set_variable = { initial_opposition = token:opp_liberal_1 }
+set_variable = { initial_government = token:gov_constitutional_monarchy }
+
 recruit_character = BUL_ferdinand_i
+set_variable = { monarch = BUL_ferdinand_i }
 
 recruit_character = BUL_nikola_zhekov
 recruit_character = BUL_radko_dimitriev

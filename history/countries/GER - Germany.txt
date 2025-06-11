@@ -39,13 +39,32 @@ set_popularities = {
 add_ideas = {
 	volunteer_only
 
-	cab_conservative
-	gov_constitutional_monarchy
-
 	idea_GER_general_staff
 }
 
+set_variable = { initial_cabinet = token:cab_conservative }
+set_variable = { initial_opposition = token:opp_socialist_1 }
+set_variable = { initial_government = token:gov_constitutional_monarchy }
+
 recruit_character = GER_wilhelm_ii
+set_variable = { monarch = GER_wilhelm_ii }
+recruit_character = GER_alfred_von_tirpitz
+set_variable = { leader@token:autocratic = GER_alfred_von_tirpitz }
+recruit_character = GER_theobald_von_bethmann_hollweg
+set_variable = { leader@token:conservative = GER_theobald_von_bethmann_hollweg }
+recruit_character = GER_gustav_stresemann
+set_variable = { leader@token:liberal = GER_gustav_stresemann }
+recruit_character = GER_friedrich_ebert
+set_variable = { leader@token:socialist = GER_friedrich_ebert }
+recruit_character = GER_rosa_luxemburg
+set_variable = { leader@token:communist = GER_rosa_luxemburg }
+
+recruit_character = GER_erich_von_falkenhayn
+recruit_character = GER_erich_ludendorff
+recruit_character = GER_helmuth_von_moltke
+recruit_character = GER_august_von_mackensen
+recruit_character = GER_rupprecht_of_bavaria
+recruit_character = GER_alexander_von_kluck
 
 create_faction = CENTRAL_POWERS
 add_to_faction = GER

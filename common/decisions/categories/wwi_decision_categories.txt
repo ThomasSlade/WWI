@@ -1,3 +1,11 @@
+decision_category_politics = {
+	icon = generic_political_actions
+
+	allowed = {
+		always = yes
+	}
+}
+
 decision_category_SER_insurgencies = {
 	icon = generic_independence
 

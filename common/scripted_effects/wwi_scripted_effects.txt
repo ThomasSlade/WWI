@@ -75,15 +75,20 @@ effect_change_law_to_limited_democracy = {
 	custom_effect_tooltip = SOV_change_law_to_limited_democracy
 }
 
-effect_promote_character_to_non_revolutionary_leader = {
-	promote_character = {
-		character = SOV_grigori_rasputin
-		ideology = established_t
-	}
+effect_promote_character_to_all_ideologies = {
+	custom_effect_tooltip = becomes_leader_tt
+	hidden_effect = {
+		promote_character = {
+			ideology = established_t
+		}
 
-	promote_character = {
-		character = SOV_grigori_rasputin
-		ideology = expansionist_t
+		promote_character = {
+			ideology = expansionist_t
+		}
+
+		promote_character = {
+			ideology = revolutionary_t
+		}
 	}
 }
 
@@ -187,4 +192,18 @@ effect_update_civs_from_mils = {
 
 		set_variable = { current_free_civs_from_mils = free_civs_gained_from_mils }
 	}
+}
+
+# Must be called from the scope of a country we're counting for.
+effect_update_unowned_core_states = {
+	set_variable = { unowned_cores = 0 }
+
+	every_core_state = {
+		limit = { NOT = { is_owned_by = PREV } }
+		PREV = {
+			add_to_variable = { unowned_cores = 1 }
+		}
+	}
+
+	log = "[THIS.GetName] Recounting unowned cores: [?unowned_cores]"
 }

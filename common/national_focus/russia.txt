@@ -819,13 +819,14 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			remove_advisor_role = {
-				character = SOV_grigori_rasputin
-				slot = political_advisor
-			}
-
 			SOV_grigori_rasputin = {
-				effect_promote_character_to_non_revolutionary_leader = yes
+				custom_effect_tooltip = newline_tt
+
+				remove_advisor_role = {
+					slot = political_advisor
+				}
+
+				effect_promote_character_to_all_ideologies = yes
 			}
 		}
 	}

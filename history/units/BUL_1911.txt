@@ -100,29 +100,7 @@ units = {
 		start_equipment_factor = 0.7
 	}
 
-	# 1 Cavalry Divisions
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 5359
-		division_template = "Cavalry Division"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-
-	# 4 Cavalry Divisions
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 5359
-		division_template = "Cavalry Division"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
+	# 3 Cavalry Divisions
 	division = {
 		division_name = {
 			is_name_ordered = yes
@@ -154,49 +132,7 @@ units = {
 		start_equipment_factor = 0.7
 	}
 
-	# 2 Infantry Units
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 5359
-		division_template = "Infantry Division"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 5359
-		division_template = "Infantry Division"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-	
-	# 5 Infantry Units
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 5359
-		division_template = "Infantry Division"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 5359
-		division_template = "Infantry Division"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
+	# 3 Infantry Units
 	division = {
 		division_name = {
 			is_name_ordered = yes
@@ -228,7 +164,7 @@ units = {
 		start_equipment_factor = 0.7
 	}
 
-	# 5 Garrison Units
+	# 6 Garrison Units
 	division = {
 		division_name = {
 			is_name_ordered = yes
@@ -269,18 +205,6 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 5359
-		division_template = "Garrison Division"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-
-	# 3 Garrison Units
 	division = {
 		division_name = {
 			is_name_ordered = yes

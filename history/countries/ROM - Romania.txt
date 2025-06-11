@@ -31,9 +31,11 @@ set_popularities = {
 
 add_ideas = {
 	limited_conscription
-
-	cab_conservative
-	gov_constitutional_monarchy
 }
 
+set_variable = { initial_cabinet = token:cab_conservative }
+set_variable = { initial_opposition = token:opp_liberal_1 }
+set_variable = { initial_government = token:gov_constitutional_monarchy }
+
 recruit_character = ROM_ferdinand_i
+set_variable = { monarch = ROM_ferdinand_i }

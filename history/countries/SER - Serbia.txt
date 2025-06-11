@@ -34,10 +34,11 @@ set_popularities = {
 add_ideas = {
 	SER_nacertanije
 	limited_conscription
-
-	cab_conservative
-	gov_limited_democracy
 }
+
+set_variable = { initial_cabinet = token:cab_liberal }
+set_variable = { initial_opposition = token:opp_conservative_1 }
+set_variable = { initial_government = token:gov_limited_democracy }
 
 # 0 = not started, 1 = in progress, 2 = league_victory, 3 = league defeat
 set_variable = { global.first_balkan_war_state = 0 }
@@ -45,6 +46,9 @@ set_variable = { global.first_balkan_war_state = 0 }
 set_variable = { global.second_balkan_war_state = 0 }
 
 recruit_character = SER_nikola_pasic
+set_variable = { leader@token:liberal = SER_nikola_pasic }
+recruit_character = SER_apis
+set_variable = { leader@token:autocratic = SER_apis }
 recruit_character = SER_jovan_jovanovic
 recruit_character = SER_stojan_protic
 recruit_character = SER_lazar_pacu
@@ -52,7 +56,6 @@ recruit_character = SER_velikar_jankovic
 recruit_character = SER_ljuba_jovanobic
 recruit_character = SER_marko_djuricic
 recruit_character = SER_miroslav_spalajovic
-recruit_character = SER_apis
 recruit_character = SER_nicholas_hartwig
 recruit_character = SER_leon_descos
 recruit_character = SER_dayrell_crackanthorpe

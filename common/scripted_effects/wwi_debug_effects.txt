@@ -44,3 +44,10 @@ d_start_balkan_war = {
 d_start_great_war = {
 	country_event = { id = event_start_great_war.1 }
 }
+
+d_print_global_vars = {
+	print_variables = {
+		append = no
+		print_global = yes
+	}
+}

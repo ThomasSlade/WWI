@@ -67,7 +67,7 @@ units = {
 		location = 12190
 		division_template = "Royal Engineers"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 	}
 	division = {
 		division_name = {
@@ -77,7 +77,7 @@ units = {
 		location = 12190
 		division_template = "Royal Engineers"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 	}
 	division = {
 		division_name = {
@@ -87,7 +87,7 @@ units = {
 		location = 12190
 		division_template = "Royal Engineers"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 	}
 	division = {
 		division_name = {
@@ -97,17 +97,7 @@ units = {
 		location = 12190
 		division_template = "Royal Engineers"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 12190
-		division_template = "Royal Engineers"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 	}
 
 	# 4 Cavalry Divisions 
@@ -119,7 +109,7 @@ units = {
 		location = 12190
 		division_template = "Hussar Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 	}
 	division = {
 		division_name = {
@@ -129,7 +119,7 @@ units = {
 		location = 12190
 		division_template = "Hussar Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 	}
 	division = {
 		division_name = {
@@ -139,17 +129,7 @@ units = {
 		location = 12190
 		division_template = "Hussar Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 12190
-		division_template = "Hussar Division"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 	}
 
 	# 5 Infantry Divisions
@@ -161,7 +141,7 @@ units = {
 		location = 12190
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 	}
 	division = {
 		division_name = {
@@ -171,7 +151,7 @@ units = {
 		location = 12190
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 	}
 	division = {
 		division_name = {
@@ -181,7 +161,7 @@ units = {
 		location = 12190
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 	}
 	division = {
 		division_name = {
@@ -191,7 +171,7 @@ units = {
 		location = 12190
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 	}
 	division = {
 		division_name = {
@@ -201,7 +181,7 @@ units = {
 		location = 12190
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 	}
 
 	# 5 Infantry Divisions
@@ -213,7 +193,7 @@ units = {
 		location = 12190
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 	}
 	division = {
 		division_name = {
@@ -223,36 +203,6 @@ units = {
 		location = 12190
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 12190
-		division_template = "Infantry Division"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 12190
-		division_template = "Infantry Division"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 12190
-		division_template = "Infantry Division"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 	}
 }

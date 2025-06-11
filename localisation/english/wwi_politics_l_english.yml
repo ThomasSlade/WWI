@@ -1,4 +1,14 @@
 ﻿l_english:
+  # Titles
+  title_tsar: "Tsar"
+  title_tsarina: "Tsarina"
+  title_kaiser: "Kaiser"
+  title_kaiserin: "Kaiserin"
+  title_emperor: "Emperor"
+  title_empress: "Empress"
+  title_king: "King"
+  title_queen: "Queen"
+
   # Parties
   autocratic_colored: "§PAutocratic§!"
   conservative_colored: "§DConservative§!"
@@ -6,9 +16,16 @@
   socialist_colored: "§VSocialist§!"
   communist_colored: "§SCommunist§!"
 
+  autocratic_leader_tt: "Leader: §Y[?leader@token:autocratic.GetName]§!"
+  conservative_leader_tt: "Leader: §Y[?leader@token:conservative.GetName]§!"
+  liberal_leader_tt: "Leader: §Y[?leader@token:liberal.GetName]§!"
+  socialist_leader_tt: "Leader: §Y[?leader@token:socialist.GetName]§!"
+  communist_leader_tt: "Leader: §Y[?leader@token:communist.GetName]§!"
+
   # Laws
   cabinet: "Cabinet"
   government: "Government"
+  opposition: "Opposition"
   
   gov_military_dictatorship: "Military Dictatorship"
   gov_absolute_monarchy: "Absolute Monarchy"
@@ -56,3 +73,24 @@
   resurgent_opposition_will_pass_opposed_laws_tt: "§YCan pass laws opposed by this party§!"
   resurgent_opposition_will_not_pass_opposed_laws_tt: "§RCannot pass laws opposed by this party§!"
   will_not_exceed_opposition_limit_tt: "Opposition will accept"
+
+  government_can_reform_cabinet_tt: "§Y$government$§! allows §Y$decision_reform_cabinet$§!"
+  government_can_call_elections_tt: "§Y$government$§! allows §Y$decision_call_election$§!"
+  government_can_have_party_in_cabinet_tt: "§Y$government$§! allows [?param_party.GetTokenKey] in §Y$cabinet$§!"
+
+  change_cabinet_tt: "Replace $OLD_PARTY_TEXT$ with $NEW_PARTY_TEXT$"
+  change_opposition_tt: "Replace $OLD_PARTY_TEXT$ with $NEW_PARTY_TEXT$"
+
+  after_election_tt: "When the election is over:"
+  cabinet_doesnt_change_tt: "$PARTY_TEXT$ remains in §Y$cabinet$§!"
+  opposition_doesnt_change_tt: "$PARTY_TEXT$ remains in §Y$opposition$§!"
+  opposition_may_be_radicalised_tt: "§YThe opposition may change to a more radical party§Y"
+
+  becomes_leader_tt: "§Y[THIS.GetName]§! becomes leader of §Y[THIS.owner.GetName]§!"
+  monarch_becomes_leader_tt: "§Y[?monarch.GetName]§! becomes leader of §Y[THIS.owner.GetName]§!"
+  party_leader_becomes_leader_tt: "§YCabinet party leader§! becomes leader of §Y[THIS.owner.GetName]§!"
+
+  trigger_has_recently_reformed_cabinet_tt: "Has recently §YReformed Cabinet§!"
+  trigger_has_recently_reformed_cabinet_tt_NOT: "Has not recently §YReformed Cabinet§!"
+  trigger_has_recently_had_election_tt: "Has recently §YCalled Election§!"
+  trigger_has_recently_had_election_tt_NOT: "Has not recently §YCalled Election§!"

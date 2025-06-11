@@ -8,7 +8,7 @@ state={
 		add_core_of = POL
 		buildings = {
 			dockyard = 1
-			infrastructure = 2
+			infrastructure = 1
 		}
 		victory_points = {3245 5
 		}

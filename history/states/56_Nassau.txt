@@ -8,7 +8,7 @@ state={
 		add_core_of = NAS
 		buildings = {
 			industrial_complex = 1
-			infrastructure = 2
+			infrastructure = 1
 		}
 		victory_points = {2036 5
 		}

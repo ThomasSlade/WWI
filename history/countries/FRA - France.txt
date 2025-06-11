@@ -37,13 +37,25 @@ set_popularities = {
 add_ideas = {
 	volunteer_only
 
-	cab_liberal
-	gov_liberal_democracy
-
 	idea_FRA_le_pantalon_rouge
 }
 
+set_variable = { initial_cabinet = token:cab_liberal }
+set_variable = { initial_opposition = token:opp_socialist_1 }
+set_variable = { initial_government = token:gov_liberal_democracy }
+
 recruit_character = FRA_raymond_poincare
+set_variable = { leader@token:liberal = FRA_raymond_poincare }
+recruit_character = FRA_jaime_de_borbon
+set_variable = { monarch = FRA_jaime_de_borbon }
+recruit_character = FRA_charles_maurras
+set_variable = { leader@token:autocratic = FRA_charles_maurras }
+recruit_character = FRA_alexandre_ribot
+set_variable = { leader@token:conservative = FRA_alexandre_ribot }
+recruit_character = FRA_jean_jaures
+set_variable = { leader@token:socialist = FRA_jean_jaures }
+recruit_character = FRA_ludovic_oscar_frossard
+set_variable = { leader@token:communist = FRA_ludovic_oscar_frossard }
 
 create_faction = ENTENTE
 add_to_faction = FRA

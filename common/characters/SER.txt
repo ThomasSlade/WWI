@@ -1,15 +1,49 @@
 characters = {
 	SER_nikola_pasic = {
 		name = SER_nikola_pasic
+		country_leader = {
+			ideology = established_t
+		}
+		country_leader = {
+			ideology = expansionist_t
+		}
+		country_leader = {
+			ideology = revolutionary_t
+		}
 		portraits = {
 			civilian = {
 				large = GFX_portrait_ser_nikola_pasic
 			}
 		}
+	}
+
+	SER_apis = {
+		name = SER_apis
+		advisor = {
+			slot = political_advisor
+			idea_token = SER_apis
+			allowed = {
+				original_tag = SER
+			}
+			traits = {
+				untraceable_conspirator
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
 		country_leader = {
-			ideology = established_t
+			ideology = revolutionary_t
 			expire = "1965.1.1.1"
 			id = -1
+		}
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ser_apis
+			}
+			army = {
+				small = GFX_idea_generic_political_advisor_europe_1
+			}
 		}
 	}
 
@@ -293,33 +327,6 @@ characters = {
 			ai_will_do = {
 				factor = 10
 			}
-		}
-	}
-
-	SER_apis = {
-		name = SER_apis
-		portraits = {
-			army = {
-				small = "GFX_idea_generic_political_advisor_europe_1"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = SER_apis
-			allowed = {
-				original_tag = SER
-			}
-			traits = {
-				untraceable_conspirator
-			}
-			ai_will_do = {
-				factor = 0
-			}
-		}
-		country_leader = {
-			ideology = revolutionary_t
-			expire = "1965.1.1.1"
-			id = -1
 		}
 	}
 

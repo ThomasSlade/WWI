@@ -22,7 +22,7 @@ sub_units = {
 
 		combat_width = 3
 
-		manpower = 200
+		manpower = 300
 		need = {
 			siege_artillery_equipment = 4
 		}

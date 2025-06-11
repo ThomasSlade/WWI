@@ -1,15 +1,19 @@
 characters = {
 	LUX_paul_eyschen = {
 		name = LUX_paul_eyschen
+		country_leader = {
+			ideology = established_t
+		}
+		country_leader = {
+			ideology = expansionist_t
+		}
+		country_leader = {
+			ideology = revolutionary_t
+		}
 		portraits = {
 			civilian = {
 				large = GFX_portrait_lux_paul_eyschen
 			}
-		}
-		country_leader = {
-			ideology = established_t
-			expire = "1915.10.11.1"
-			id = -1
 		}
 	}
 }

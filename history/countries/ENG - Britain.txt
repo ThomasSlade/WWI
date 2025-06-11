@@ -33,7 +33,8 @@ set_popularities = {
 
 add_ideas = {
 	disarmed_nation
-
-	gov_limited_democracy
-	cab_liberal
 }
+
+set_variable = { initial_cabinet = token:cab_liberal }
+set_variable = { initial_opposition = token:opp_conservative_1 }
+set_variable = { initial_government = token:gov_limited_democracy }

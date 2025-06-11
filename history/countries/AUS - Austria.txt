@@ -39,11 +39,11 @@ add_ideas = {
 	AUS_hungarian_resistance_0
 	AUS_minority_resistance_1
 	AUS_multi_lingual_empire
-
-	cab_conservative
-	gov_constitutional_monarchy
-	limited_conscription
 }
+
+set_variable = { initial_cabinet = token:cab_conservative }
+set_variable = { initial_opposition = token:opp_liberal_1 }
+set_variable = { initial_government = token:gov_constitutional_monarchy }
 
 set_autonomy = {
 	target = HUN

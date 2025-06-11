@@ -165,6 +165,57 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_idea_opp_autocratic_0"
+		texturefile = "gfx/interface/ideas/laws/idea_opp_autocratic_0.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_opp_autocratic_1"
+		texturefile = "gfx/interface/ideas/laws/idea_opp_autocratic_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_opp_autocratic_2"
+		texturefile = "gfx/interface/ideas/laws/idea_opp_autocratic_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_opp_autocratic_3"
+		texturefile = "gfx/interface/ideas/laws/idea_opp_autocratic_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_opp_conservative_0"
+		texturefile = "gfx/interface/ideas/laws/idea_opp_conservative_0.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_opp_conservative_1"
+		texturefile = "gfx/interface/ideas/laws/idea_opp_conservative_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_opp_conservative_2"
+		texturefile = "gfx/interface/ideas/laws/idea_opp_conservative_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_opp_conservative_3"
+		texturefile = "gfx/interface/ideas/laws/idea_opp_conservative_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_opp_liberal_0"
+		texturefile = "gfx/interface/ideas/laws/idea_opp_liberal_0.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_opp_liberal_1"
+		texturefile = "gfx/interface/ideas/laws/idea_opp_liberal_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_opp_liberal_2"
+		texturefile = "gfx/interface/ideas/laws/idea_opp_liberal_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_opp_liberal_3"
+		texturefile = "gfx/interface/ideas/laws/idea_opp_liberal_3.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_opp_socialist_0"
 		texturefile = "gfx/interface/ideas/laws/idea_opp_socialist_0.dds"
 	}
@@ -179,6 +230,23 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_opp_socialist_3"
 		texturefile = "gfx/interface/ideas/laws/idea_opp_socialist_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_opp_communist_0"
+		texturefile = "gfx/interface/ideas/laws/idea_opp_communist_0.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_opp_communist_1"
+		texturefile = "gfx/interface/ideas/laws/idea_opp_communist_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_opp_communist_2"
+		texturefile = "gfx/interface/ideas/laws/idea_opp_communist_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_opp_communist_3"
+		texturefile = "gfx/interface/ideas/laws/idea_opp_communist_3.dds"
 	}
 
 	spriteType = {

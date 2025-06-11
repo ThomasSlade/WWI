@@ -16,6 +16,13 @@ ideas = {
 				}
 			}
 
+			on_add = {
+				set_temp_variable = { param_government_type = token:gov_military_dictatorship }
+				effect_select_leader_using_current_cabinet = yes
+
+				set_variable = { law_government = token:gov_military_dictatorship }
+			}
+
 			modifier = {
 				war_support_factor = 0.1
 				industrial_capacity_factory = 0.2
@@ -39,6 +46,13 @@ ideas = {
 				NOT = { has_idea = idea_SOV_autocratic_tsardom }
 			}
 
+			on_add = {
+				set_temp_variable = { param_government_type = token:gov_absolute_monarchy }
+				effect_select_leader_using_current_cabinet = yes
+
+				set_variable = { law_government = token:gov_absolute_monarchy }
+			}
+
 			modifier = {
 				drift_defence_factor = 0.5
 				weekly_convoys_war_support = -0.001
@@ -58,6 +72,13 @@ ideas = {
 				}
 			}
 
+			on_add = {
+				set_temp_variable = { param_government_type = token:gov_constitutional_monarchy }
+				effect_select_leader_using_current_cabinet = yes
+
+				set_variable = { law_government = token:gov_absolute_monarchy }
+			}
+
 			modifier = {
 				war_support_factor = 0.1
 				political_power_gain = 0.3
@@ -68,13 +89,19 @@ ideas = {
 			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
-			default = yes
 
 			available = {
 				OR = {
 					has_idea = cab_conservative
 					has_idea = cab_liberal
 				}
+			}
+
+			on_add = {
+				set_temp_variable = { param_government_type = token:gov_limited_democracy }
+				effect_select_leader_using_current_cabinet = yes
+
+				set_variable = { law_government = token:gov_limited_democracy }
 			}
 
 			modifier = {
@@ -97,6 +124,13 @@ ideas = {
 				}
 			}
 
+			on_add = {
+				set_temp_variable = { param_government_type = token:gov_liberal_democracy }
+				effect_select_leader_using_current_cabinet = yes
+
+				set_variable = { law_government = token:gov_liberal_democracy }
+			}
+
 			modifier = {
 				war_support_factor = 0.2
 				weekly_convoys_war_support = 0.001
@@ -114,6 +148,13 @@ ideas = {
 					has_idea = cab_socialist
 					has_idea = cab_communist
 				}
+			}
+
+			on_add = {
+				set_temp_variable = { param_government_type = token:gov_social_democracy }
+				effect_select_leader_using_current_cabinet = yes
+
+				set_variable = { law_government = token:gov_social_democracy }
 			}
 
 			modifier = {

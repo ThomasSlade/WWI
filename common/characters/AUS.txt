@@ -1,25 +1,32 @@
 characters = {
 	AUS_franz_joseph_i = {
 		name = AUS_franz_joseph_i
+		country_leader = {
+			ideology = established_t
+		}
+		country_leader = {
+			ideology = expansionist_t
+		}
+		country_leader = {
+			ideology = revolutionary_t
+		}
 		portraits = {
 			civilian = {
 				large = GFX_portrait_aus_franz_joseph_i
 			}
 		}
-		country_leader = {
-			ideology = expansionist_t
-			expire = "1916.11.21.1"
-			id = -1
-			traits = { first_bureaucrat }
-		}
 	}
 
 	AUS_franz_ferdinand = {
 		name = AUS_franz_ferdinand
-		portraits = {
-			army = {
-				small = "GFX_idea_generic_political_advisor_europe_1"
-			}
+		country_leader = {
+			ideology = established_t
+		}
+		country_leader = {
+			ideology = expansionist_t
+		}
+		country_leader = {
+			ideology = revolutionary_t
 		}
 		advisor = {
 			slot = political_advisor
@@ -36,6 +43,14 @@ characters = {
 			on_remove = {
 				AUS_minority_resistance_level_up = yes
 				AUS_remove_deutscher_nationalverband_stability = yes
+			}
+		}
+		portraits = {
+			civilian = {
+				large = GFX_portrait_franz_ferdinand
+			}
+			army = {
+				small = GFX_idea_generic_political_advisor_europe_1
 			}
 		}
 	}

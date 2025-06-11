@@ -35,12 +35,13 @@ set_popularities = {
 add_ideas = {
 	volunteer_only
 
-	cab_autocratic
-	gov_absolute_monarchy
-
 	idea_SOV_autocratic_tsardom
 	idea_SOV_revolution_in_waiting_1
 }
+
+set_variable = { initial_cabinet = token:cab_autocratic }
+set_variable = { initial_opposition = token:opp_conservative_1 }
+set_variable = { initial_government = token:gov_absolute_monarchy }
 
 set_variable = { tsar_favor = 0 }
 set_variable = { land_reform_cost = 50 }
@@ -54,6 +55,7 @@ set_variable = { rasputin_event_random_days = 15 }
 effect_SOV_init_unreformed_land = yes
 
 recruit_character = SOV_nicholas_ii
+set_variable = { monarch = SOV_nicholas_ii }
 
 recruit_character = SOV_grigori_rasputin
 activate_advisor = SOV_grigori_rasputin	# Needed to trigger Raspiton's activation effect (launches the Rasputin events)

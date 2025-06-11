@@ -10,8 +10,6 @@ on_actions = {
 	#}
 
 	on_startup = {
-		
-
 		effect = {
 			GER = {
 				# on_startup has a scope of NONE so you have to scope into a random country to do things which are actually just global operations.
@@ -23,6 +21,9 @@ on_actions = {
 			every_possible_country = {
 				set_variable = { free_civ_from_mils = 0 }
 				set_variable = { current_free_civs_from_mils = 0 }	# Necessary because the free_civ_from_mils mechanic is based on daily (there's no on_building_build sadly), so you need to track what it was last update and add the difference next update.
+				effect_update_civs_from_mils = yes
+				
+				effect_update_unowned_core_states = yes
 
 				effect_setup_politics = yes
 
@@ -59,6 +60,13 @@ on_actions = {
 		}
 	}
 
+	on_monthly = {
+		effect = {
+			# There are events to try and keep this value updated, but here we run it monthly for every country just in case something goes wrong.
+			effect_update_unowned_core_states = yes
+		}
+	}
+
 	on_ruling_party_change = {
 		effect = {
 			# Keep standard influence-idea variables up to date.
@@ -77,6 +85,14 @@ on_actions = {
 				set_variable = { ideology_influence_idea = token:revolutionary_influence }
 				log = "Setting [THIS.GetName] influence idea to Revolutionary."
 			}
+		}
+	}
+
+	# ROOT is new controller. FROM is old controller. FROM.FROM is state ID.
+	on_state_control_changed = {
+		effect = {
+			ROOT = { effect_update_unowned_core_states = yes }
+			FROM = { effect_update_unowned_core_states = yes }
 		}
 	}
 }

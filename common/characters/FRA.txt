@@ -1,15 +1,127 @@
 characters = {
+	FRA_jaime_de_borbon = {
+		name = FRA_jaime_de_borbon
+		country_leader = {
+			ideology = established_t
+		}
+		country_leader = {
+			ideology = expansionist_t
+		}
+		country_leader = {
+			ideology = revolutionary_t
+		}
+		portraits = {
+			civilian = {
+				large = GFX_portrait_fra_jaime_de_borbon
+			}
+		}
+	}
+
+	FRA_charles_maurras = {
+		name = FRA_charles_maurras
+		country_leader = {
+			ideology = established_t
+		}
+		country_leader = {
+			ideology = expansionist_t
+		}
+		country_leader = {
+			ideology = revolutionary_t
+		}
+		portraits = {
+			civilian = {
+				large = GFX_portrait_fra_charles_maurras
+			}
+		}
+	}
+
+	FRA_alexandre_ribot = {
+		name = FRA_alexandre_ribot
+		country_leader = {
+			ideology = established_t
+		}
+		country_leader = {
+			ideology = expansionist_t
+		}
+		country_leader = {
+			ideology = revolutionary_t
+		}
+		portraits = {
+			civilian = {
+				large = GFX_portrait_fra_alexandre_ribot
+			}
+		}
+	}
+
 	FRA_raymond_poincare = {
 		name = FRA_raymond_poincare
+		country_leader = {
+			ideology = established_t
+		}
+		country_leader = {
+			ideology = expansionist_t
+		}
+		country_leader = {
+			ideology = revolutionary_t
+		}
 		portraits = {
 			civilian = {
 				large = GFX_portrait_fra_raymond_poincare
 			}
 		}
+	}
+
+	FRA_georges_clemenceau = {
+		name = FRA_georges_clemenceau
 		country_leader = {
 			ideology = established_t
-			expire = "1965.1.1.1"
-			id = -1
+		}
+		country_leader = {
+			ideology = expansionist_t
+		}
+		country_leader = {
+			ideology = revolutionary_t
+		}
+		portraits = {
+			civilian = {
+				large = GFX_portrait_fra_georges_clemenceau
+			}
+		}
+	}
+
+	FRA_jean_jaures = {
+		name = FRA_jean_jaures
+		country_leader = {
+			ideology = established_t
+		}
+		country_leader = {
+			ideology = expansionist_t
+		}
+		country_leader = {
+			ideology = revolutionary_t
+		}
+		portraits = {
+			civilian = {
+				large = GFX_portrait_fra_jean_jaures
+			}
+		}
+	}
+
+	FRA_ludovic_oscar_frossard = {
+		name = FRA_ludovic_oscar_frossard
+		country_leader = {
+			ideology = established_t
+		}
+		country_leader = {
+			ideology = expansionist_t
+		}
+		country_leader = {
+			ideology = revolutionary_t
+		}
+		portraits = {
+			civilian = {
+				large = GFX_portrait_fra_ludovic_oscar_frossard
+			}
 		}
 	}
 }

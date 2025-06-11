@@ -32,14 +32,18 @@ set_popularities = {
 add_ideas = {
 	sick_man_of_europe
 	volunteer_only
-
-	cab_conservative
-	gov_constitutional_monarchy
 }
 
+set_variable = { initial_cabinet = token:cab_conservative }
+set_variable = { initial_opposition = token:opp_liberal_1 }
+set_variable = { initial_government = token:gov_constitutional_monarchy }
+
 recruit_character = TUR_mehmed_v
+set_variable = { monarch = TUR_mehmed_v }
 
 recruit_character = TUR_enver_pasha
+set_variable = { leader@token:autocratic = TUR_enver_pasha }
+
 recruit_character = TUR_djemal_pasha
 recruit_character = TUR_halil_kut
 recruit_character = TUR_mustafa_kemal

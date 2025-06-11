@@ -26,43 +26,43 @@ units = {
 		location = 4442 # Neusatz
 		division_template = "Vojvodina Regular Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 	}
 	division = {
 		location = 4442 # Neusatz
 		division_template = "Vojvodina Regular Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 	}
 	division = {
 		location = 4442 # Neusatz
 		division_template = "Vojvodina Regular Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 	}
 	division = {
 		location = 5165 # Pancsova
 		division_template = "Vojvodina Regular Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 	}
 	division = {
 		location = 5165 # Pancsova
 		division_template = "Vojvodina Regular Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 	}
 	division = {
 		location = 5067 # Versecz
 		division_template = "Vojvodina Regular Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 	}
 	division = {
 		location = 5067 # Versecz
 		division_template = "Vojvodina Regular Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 	}
 
 	# Level 1
@@ -70,25 +70,25 @@ units = {
 		location = 4068 # Semlin
 		division_template = "Vojvodina Regular Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 	}
 	division = {
 		location = 5153 # Obecse
 		division_template = "Vojvodina Regular Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 	}
 	division = {
 		location = 4944 # Zenta
 		division_template = "Vojvodina Regular Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 	}
 	division = {
 		location = 4944 # Zenta
 		division_template = "Vojvodina Regular Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 	}
 
 	# Level 2
@@ -96,24 +96,24 @@ units = {
 		location = 4878 # Grossbetschkerek
 		division_template = "Vojvodina Regular Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 	}
 	division = {
 		location = 5165 # Pancsova
 		division_template = "Vojvodina Regular Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 	}
 	division = {
 		location = 5165 # Pancsova
 		division_template = "Vojvodina Regular Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 	}
 	division = {
 		location = 5067 # Versecz
 		division_template = "Vojvodina Regular Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.7
 	}
 }
