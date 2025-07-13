@@ -1,0 +1,745 @@
+focus_tree = {
+	id = russian_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 100 y = 1400 }
+
+	# Root Industrial / Mobilisation Tree
+	focus = {
+		id = GER_german_domestic_investment
+		icon = GFX__shine
+		x = 0
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_machinery_exports
+		icon = GFX__shine
+		prerequisite = { focus = GER_german_domestic_investment }
+		x = -1
+		y = 1
+		relative_position_id = GER_german_domestic_investment
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_german_defence_league
+		icon = GFX__shine
+		prerequisite = { focus = GER_german_domestic_investment }
+		x = 1
+		y = 1
+		relative_position_id = GER_german_domestic_investment
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_war_council
+		icon = GFX__shine
+		prerequisite = { focus = GER_machinery_exports focus = GER_german_defence_league }
+		x = 1
+		y = 1
+		relative_position_id = GER_machinery_exports
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_wealth_tax
+		icon = GFX__shine
+		prerequisite = { focus = GER_war_council }
+		x = -1
+		y = 1
+		relative_position_id = GER_war_council
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_inheritance_tax
+		icon = GFX__shine
+		prerequisite = { focus = GER_war_council }
+		x = 1
+		y = 1
+		relative_position_id = GER_war_council
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_army_bill
+		icon = GFX__shine
+		prerequisite = { focus = GER_wealth_tax focus = GER_inheritance_tax }
+		x = 1
+		y = 1
+		relative_position_id = GER_wealth_tax
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_centralverbund_deutscher_industrieller
+		icon = GFX__shine
+		prerequisite = { focus = GER_army_bill }
+		x = -1
+		y = 1
+		relative_position_id = GER_army_bill
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_bund_der_landwirte
+		icon = GFX__shine
+		prerequisite = { focus = GER_army_bill }
+		x = 1
+		y = 1
+		relative_position_id = GER_army_bill
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_sammlungspolitik
+		icon = GFX__shine
+		prerequisite = { focus = GER_centralverbund_deutscher_industrieller }
+		prerequisite = { focus = GER_bund_der_landwirte }
+		x = 1
+		y = 2
+		relative_position_id = GER_centralverbund_deutscher_industrieller
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_austrian_blank_cheque
+		icon = GFX__shine
+		prerequisite = { focus = GER_war_council }
+		mutually_exclusive = { focus = GER_abandon_austria }
+		x = 3
+		y = 1
+		relative_position_id = GER_war_council
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_abandon_austria
+		icon = GFX__shine
+		prerequisite = { focus = GER_war_council }
+		mutually_exclusive = { focus = GER_austrian_blank_cheque }
+		x = 7
+		y = 1
+		relative_position_id = GER_war_council
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_redirect_austrian_designs
+		icon = GFX__shine
+		prerequisite = { focus = GER_austrian_blank_cheque }
+		x = 1
+		y = 1
+		relative_position_id = GER_austrian_blank_cheque
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_befriend_romania
+		icon = GFX__shine
+		prerequisite = { focus = GER_redirect_austrian_designs }
+		x = 0
+		y = 1
+		relative_position_id = GER_redirect_austrian_designs
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_befriend_italy
+		icon = GFX__shine
+		prerequisite = { focus = GER_abandon_austria }
+		x = -1
+		y = 1
+		relative_position_id = GER_abandon_austria
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_treaty_of_bufteau
+		icon = GFX__shine
+		prerequisite = { focus = GER_austrian_blank_cheque }
+		x = -1
+		y = 1
+		relative_position_id = GER_austrian_blank_cheque
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_repeal_lombardverbot
+		icon = GFX__shine
+		prerequisite = { focus = GER_redirect_austrian_designs focus = GER_abandon_austria }
+		x = 0
+		y = 2
+		relative_position_id = GER_abandon_austria
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Weltpolitik / Diplomatic Tree
+	focus = {
+		id = GER_weltpolitik
+		icon = GFX__shine
+		x = 12
+		y = 0
+		relative_position_id = GER_german_domestic_investment
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_potsdam_agreement
+		icon = GFX__shine
+		prerequisite = { focus = GER_weltpolitik }
+		x = -3
+		y = 1
+		relative_position_id = GER_weltpolitik
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_renew_reinsurance_treaty
+		icon = GFX__shine
+		prerequisite = { focus = GER_potsdam_agreement }
+		prerequisite = { focus = GER_repeal_lombardverbot }
+		mutually_exclusive = { focus = GER_von_sanders_mission }
+		x = 0
+		y = 5
+		relative_position_id = GER_potsdam_agreement
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_financial_interests_in_turkey
+		icon = GFX__shine
+		prerequisite = { focus = GER_weltpolitik }
+		x = -1
+		y = 1
+		relative_position_id = GER_weltpolitik
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_von_sanders_mission
+		icon = GFX__shine
+		prerequisite = { focus = GER_financial_interests_in_turkey }
+		mutually_exclusive = { focus = GER_renew_reinsurance_treaty }
+		x = 0
+		y = 5
+		relative_position_id = GER_financial_interests_in_turkey
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_befriend_turkey
+		icon = GFX__shine
+		prerequisite = { focus = GER_von_sanders_mission }
+		x = 0
+		y = 1
+		relative_position_id = GER_von_sanders_mission
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_preempt_russian_dominance
+		icon = GFX__shine
+		prerequisite = { focus = GER_befriend_turkey focus = GER_sammlungspolitik }
+		x = -1
+		y = 1
+		relative_position_id = GER_befriend_turkey
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_navy_league
+		icon = GFX__shine
+		prerequisite = { focus = GER_weltpolitik }
+		x = 3
+		y = 1
+		relative_position_id = GER_weltpolitik
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_brazilian_neudeutschland
+		icon = GFX__shine
+		prerequisite = { focus = GER_navy_league }
+		x = -3
+		y = 1
+		relative_position_id = GER_navy_league
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_send_warship_to_agadir
+		icon = GFX__shine
+		prerequisite = { focus = GER_navy_league }
+		x = -1
+		y = 1
+		relative_position_id = GER_navy_league
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_purchase_danish_virgin_islands
+		icon = GFX__shine
+		prerequisite = { focus = GER_navy_league }
+		x = 1
+		y = 1
+		relative_position_id = GER_navy_league
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_partition_portuguese_colonies
+		icon = GFX__shine
+		prerequisite = { focus = GER_navy_league }
+		x = 3
+		y = 1
+		relative_position_id = GER_navy_league
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_modus_vivendi_with_britain
+		icon = GFX__shine
+		prerequisite = { focus = GER_brazilian_neudeutschland focus = GER_send_warship_to_agadir focus = GER_purchase_danish_virgin_islands focus = GER_partition_portuguese_colonies }
+		mutually_exclusive = { focus = GER_third_naval_ammendment }
+		x = 1
+		y = 1
+		relative_position_id = GER_send_warship_to_agadir
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_third_naval_ammendment
+		icon = GFX__shine
+		prerequisite = { focus = GER_brazilian_neudeutschland focus = GER_send_warship_to_agadir focus = GER_purchase_danish_virgin_islands focus = GER_partition_portuguese_colonies }
+		mutually_exclusive = { focus = GER_modus_vivendi_with_britain }
+		x = 3
+		y = 1
+		relative_position_id = GER_send_warship_to_agadir
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_weltpolitik_und_kein_krieg
+		icon = GFX__shine
+		prerequisite = { focus = GER_brazilian_neudeutschland focus = GER_send_warship_to_agadir focus = GER_purchase_danish_virgin_islands focus = GER_partition_portuguese_colonies }
+		x = -1
+		y = 1
+		relative_position_id = GER_send_warship_to_agadir
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_befriend_britain
+		icon = GFX__shine
+		prerequisite = { focus = GER_weltpolitik_und_kein_krieg focus = GER_modus_vivendi_with_britain }
+		x = -1
+		y = 1
+		relative_position_id = GER_modus_vivendi_with_britain
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_expand_u_boat_production
+		icon = GFX__shine
+		prerequisite = { focus = GER_third_naval_ammendment }
+		x = -1
+		y = 1
+		relative_position_id = GER_third_naval_ammendment
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_the_scheer_programme
+		icon = GFX__shine
+		prerequisite = { focus = GER_expand_u_boat_production }
+		x = 0
+		y = 1
+		relative_position_id = GER_expand_u_boat_production
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_high_seas_fleet
+		icon = GFX__shine
+		prerequisite = { focus = GER_third_naval_ammendment }
+		x = 1
+		y = 1
+		relative_position_id = GER_third_naval_ammendment
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_widen_the_kiel
+		icon = GFX__shine
+		prerequisite = { focus = GER_high_seas_fleet }
+		x = 0
+		y = 1
+		relative_position_id = GER_high_seas_fleet
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_take_up_the_trident
+		icon = GFX__shine
+		prerequisite = { focus = GER_widen_the_kiel focus = GER_the_scheer_programme }
+		x = -1
+		y = 1
+		relative_position_id = GER_widen_the_kiel
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+}
