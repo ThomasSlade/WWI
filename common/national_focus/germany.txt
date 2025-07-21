@@ -12,7 +12,7 @@ focus_tree = {
 
 	default = no
 
-	continuous_focus_position = { x = 100 y = 1400 }
+	continuous_focus_position = { x = 100 y = 3000 }
 
 	# Root Industrial / Mobilisation Tree
 	focus = {
@@ -151,7 +151,7 @@ focus_tree = {
 		icon = GFX__shine
 		prerequisite = { focus = GER_army_bill }
 		x = -1
-		y = 1
+		y = 2
 		relative_position_id = GER_army_bill
 		cost = 10
 		ai_will_do = {
@@ -169,9 +169,50 @@ focus_tree = {
 		id = GER_bund_der_landwirte
 		icon = GFX__shine
 		prerequisite = { focus = GER_army_bill }
+		mutually_exclusive = { focus = GER_renew_reinsurance_treaty }
+		x = 1
+		y = 2
+		relative_position_id = GER_army_bill
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_expropriation_law
+		icon = GFX__shine
+		prerequisite = { focus = GER_bund_der_landwirte }
+		mutually_exclusive = { focus = GER_fraternize_with_the_polish_nobility }
 		x = 1
 		y = 1
-		relative_position_id = GER_army_bill
+		relative_position_id = GER_bund_der_landwirte
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_fraternize_with_the_polish_nobility
+		icon = GFX__shine
+		prerequisite = { focus = GER_bund_der_landwirte }
+		mutually_exclusive = { focus = GER_expropriation_law }
+		x = 3
+		y = 1
+		relative_position_id = GER_bund_der_landwirte
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -187,11 +228,48 @@ focus_tree = {
 	focus = {
 		id = GER_sammlungspolitik
 		icon = GFX__shine
-		prerequisite = { focus = GER_centralverbund_deutscher_industrieller }
-		prerequisite = { focus = GER_bund_der_landwirte }
+		prerequisite = { focus = GER_centralverbund_deutscher_industrieller focus = GER_bund_der_landwirte }
 		x = 1
 		y = 2
 		relative_position_id = GER_centralverbund_deutscher_industrieller
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_staatsreich_against_spd
+		icon = GFX__shine
+		prerequisite = { focus = GER_sammlungspolitik }
+		x = -1
+		y = 1
+		relative_position_id = GER_sammlungspolitik
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_sonderweg
+		icon = GFX__shine
+		prerequisite = { focus = GER_sammlungspolitik }
+		x = 1
+		y = 1
+		relative_position_id = GER_sammlungspolitik
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -460,8 +538,8 @@ focus_tree = {
 		id = GER_preempt_russian_dominance
 		icon = GFX__shine
 		prerequisite = { focus = GER_befriend_turkey focus = GER_sammlungspolitik }
-		x = -1
-		y = 1
+		x = 0
+		y = 2
 		relative_position_id = GER_befriend_turkey
 		cost = 10
 		ai_will_do = {
@@ -731,6 +809,934 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = GER_widen_the_kiel
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# SPD
+	focus = {
+		id = GER_accommodate_the_spd
+		icon = GFX__shine
+		prerequisite = { focus = GER_wealth_tax }
+		x = -6
+		y = 1
+		relative_position_id = GER_wealth_tax
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_national_economic_council
+		icon = GFX__shine
+		prerequisite = { focus = GER_accommodate_the_spd }
+		mutually_exclusive = { focus = GER_kriegsgesellschaften }
+		x = 0
+		y = 1
+		relative_position_id = GER_accommodate_the_spd
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_kriegsgesellschaften
+		icon = GFX__shine
+		prerequisite = { focus = GER_army_bill }
+		mutually_exclusive = { focus = GER_national_economic_council }
+		x = -3
+		y = 1
+		relative_position_id = GER_army_bill
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_aeg
+		icon = GFX__shine
+		prerequisite = { focus = GER_kriegsgesellschaften }
+		x = -1
+		y = 1
+		relative_position_id = GER_kriegsgesellschaften
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_basf
+		icon = GFX__shine
+		prerequisite = { focus = GER_kriegsgesellschaften }
+		x = 0
+		y = 2
+		relative_position_id = GER_kriegsgesellschaften
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_bank_der_deutschen_arbeit
+		icon = GFX__shine
+		prerequisite = { focus = GER_national_economic_council }
+		x = -2
+		y = 1
+		relative_position_id = GER_national_economic_council
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_gemeinwirtschaft
+		icon = GFX__shine
+		prerequisite = { focus = GER_bank_der_deutschen_arbeit }
+		x = 0
+		y = 2
+		relative_position_id = GER_bank_der_deutschen_arbeit
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_stinnes_legien_agreement
+		icon = GFX__shine
+		prerequisite = { focus = GER_accommodate_the_spd }
+		x = -2
+		y = 1
+		relative_position_id = GER_accommodate_the_spd
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_kriegsrohstoffabteilung
+		icon = GFX__shine
+		prerequisite = { focus = GER_kriegsgesellschaften focus = GER_national_economic_council }
+		x = -3
+		y = 1
+		relative_position_id = GER_kriegsgesellschaften
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_burgfrieden
+		icon = GFX__shine
+		prerequisite = { focus = GER_sammlungspolitik focus = GER_gemeinwirtschaft }
+		x = -3
+		y = 1
+		relative_position_id = GER_sammlungspolitik
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_the_schweinemord
+		icon = GFX__shine
+		prerequisite = { focus = GER_burgfrieden }
+		x = 2
+		y = 1
+		relative_position_id = GER_burgfrieden
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_war_credits
+		icon = GFX__shine
+		prerequisite = { focus = GER_burgfrieden }
+		x = -2
+		y = 1
+		relative_position_id = GER_burgfrieden
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_the_nail_men
+		icon = GFX__shine
+		prerequisite = { focus = GER_burgfrieden }
+		x = 0
+		y = 1
+		relative_position_id = GER_burgfrieden
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_war_food_office
+		icon = GFX__shine
+		prerequisite = { focus = GER_kriegsrohstoffabteilung }
+		x = 0
+		y = 2
+		relative_position_id = GER_kriegsrohstoffabteilung
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_national_womens_service
+		icon = GFX__shine
+		prerequisite = { focus = GER_kriegsrohstoffabteilung }
+		x = 1
+		y = 1
+		relative_position_id = GER_kriegsrohstoffabteilung
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_war_committee_for_warm_underwear
+		icon = GFX__shine
+		prerequisite = { focus = GER_kriegsrohstoffabteilung }
+		x = -1
+		y = 1
+		relative_position_id = GER_kriegsrohstoffabteilung
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# 3rd OHL
+	focus = {
+		id = GER_third_ohl
+		icon = GFX__shine
+		prerequisite = { focus = GER_the_nail_men focus = GER_war_credits focus = GER_the_schweinemord }
+		x = 0
+		y = 1
+		relative_position_id = GER_the_nail_men
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_hindenburg_programme
+		icon = GFX__shine
+		prerequisite = { focus = GER_third_ohl }
+		x = 0
+		y = 1
+		relative_position_id = GER_third_ohl
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_consolidate_plants
+		icon = GFX__shine
+		prerequisite = { focus = GER_third_ohl focus = GER_war_credits }
+		x = -2
+		y = 1
+		relative_position_id = GER_third_ohl
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_sell_foreign_securities
+		icon = GFX__shine
+		prerequisite = { focus = GER_consolidate_plants }
+		x = -1
+		y = 1
+		relative_position_id = GER_consolidate_plants
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_cull_non_war_industry
+		icon = GFX__shine
+		prerequisite = { focus = GER_consolidate_plants }
+		prerequisite = { focus = GER_hindenburg_programme }
+		x = -1
+		y = 1
+		relative_position_id = GER_hindenburg_programme
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_close_universities
+		icon = GFX__shine
+		prerequisite = { focus = GER_cull_non_war_industry }
+		x = 0
+		y = 1
+		relative_position_id = GER_cull_non_war_industry
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_army_mechanisation
+		icon = GFX__shine
+		prerequisite = { focus = GER_hindenburg_programme }
+		x = 1
+		y = 1
+		relative_position_id = GER_hindenburg_programme
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_amerika_programme
+		icon = GFX__shine
+		prerequisite = { focus = GER_hindenburg_programme }
+		mutually_exclusive = { focus = GER_expand_tank_production }
+		x = 3
+		y = 1
+		relative_position_id = GER_hindenburg_programme
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_expand_tank_production
+		icon = GFX__shine
+		prerequisite = { focus = GER_hindenburg_programme }
+		mutually_exclusive = { focus = GER_amerkia_programme }
+		x = 5
+		y = 1
+		relative_position_id = GER_hindenburg_programme
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_patriotic_auxilliary_service
+		icon = GFX__shine
+		prerequisite = { focus = GER_army_mechanisation focus = GER_amerika_programme focus = GER_expand_tank_production }
+		mutually_exclusive = { focus = GER_union_vetted_patriotic_auxilliary_service }
+		x = 0
+		y = 1
+		relative_position_id = GER_army_mechanisation
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_union_vetted_patriotic_auxilliary_service
+		icon = GFX__shine
+		prerequisite = { focus = GER_army_mechanisation focus = GER_amerika_programme focus = GER_expand_tank_production }
+		mutually_exclusive = { focus = GER_patriotic_auxilliary_service }
+		x = 2
+		y = 1
+		relative_position_id = GER_army_mechanisation
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_commandeer_allied_industry
+		icon = GFX__shine
+		prerequisite = { focus = GER_army_mechanisation focus = GER_amerika_programme focus = GER_expand_tank_production }
+		x = 4
+		y = 1
+		relative_position_id = GER_army_mechanisation
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_kriegsamt
+		icon = GFX__shine
+		prerequisite = { focus = GER_close_universities focus = GER_patriotic_auxilliary_service focus = GER_union_vetted_patriotic_auxilliary_service }
+		x = 1
+		y = 1
+		relative_position_id = GER_close_universities
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_unify_german_war_offices
+		icon = GFX__shine
+		prerequisite = { focus = GER_close_universities focus = GER_patriotic_auxilliary_service focus = GER_union_vetted_patriotic_auxilliary_service }
+		x = 3
+		y = 1
+		relative_position_id = GER_close_universities
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Alsace-Lorraine
+	focus = {
+		id = GER_the_reichsland_of_alsace_lorraine
+		icon = GFX__shine
+		x = -19
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_zabern_affair
+		icon = GFX__shine
+		prerequisite = { focus = GER_the_reichsland_of_alsace_lorraine }
+		mutually_exclusive = { focus = GER_alsace_lorraine_plebiscite }
+		x = 2
+		y = 1
+		relative_position_id = GER_the_reichsland_of_alsace_lorraine
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_alsace_lorraine_plebiscite
+		icon = GFX__shine
+		prerequisite = { focus = GER_the_reichsland_of_alsace_lorraine }
+		mutually_exclusive = { focus = GER_zabern_affair focus = GER_the_schlieffen_plan }
+		x = 0
+		y = 1
+		relative_position_id = GER_the_reichsland_of_alsace_lorraine
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_franco_german_economic_ties
+		icon = GFX__shine
+		prerequisite = { focus = GER_alsace_lorraine_plebiscite }
+		x = 0
+		y = 2
+		relative_position_id = GER_alsace_lorraine_plebiscite
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_morocco_for_an_alliance
+		icon = GFX__shine
+		prerequisite = { focus = GER_franco_german_economic_ties }
+		x = -1
+		y = 1
+		relative_position_id = GER_franco_german_economic_ties
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_franco_german_colonial_alliance
+		icon = GFX__shine
+		prerequisite = { focus = GER_franco_german_economic_ties }
+		x = 1
+		y = 1
+		relative_position_id = GER_franco_german_economic_ties
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_the_schlieffen_plan
+		icon = GFX__shine
+		prerequisite = { focus = GER_the_reichsland_of_alsace_lorraine }
+		mutually_exclusive = { focus = GER_alsace_lorraine_plebiscite }
+		x = -2
+		y = 1
+		relative_position_id = GER_the_reichsland_of_alsace_lorraine
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_schlieffen_unaltered
+		icon = GFX__shine
+		prerequisite = { focus = GER_the_schlieffen_plan }
+		mutually_exclusive = { focus = GER_dutch_wind_tunnel }
+		x = 1
+		y = 1
+		relative_position_id = GER_the_schlieffen_plan
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_dutch_wind_tunnel
+		icon = GFX__shine
+		prerequisite = { focus = GER_the_schlieffen_plan }
+		mutually_exclusive = { focus = GER_schlieffen_unaltered }
+		x = -1
+		y = 1
+		relative_position_id = GER_the_schlieffen_plan
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_the_alsatian_lander
+		icon = GFX__shine
+		prerequisite = { focus = GER_alsace_lorraine_plebiscite focus = GER_zabern_affair }
+		x = 1
+		y = 1
+		relative_position_id = GER_alsace_lorraine_plebiscite
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	# Army
+	focus = {
+		id = GER_the_german_army
+		icon = GFX__shine
+		prerequisite = { focus = GER_war_council focus = GER_zabern_affair }
+		x = -15
+		y = 1
+		relative_position_id = GER_war_council
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_artillery_test_commission
+		icon = GFX__shine
+		prerequisite = { focus = GER_the_german_army }
+		x = -2
+		y = 1
+		relative_position_id = GER_the_german_army
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_noblesse_oblige
+		icon = GFX__shine
+		prerequisite = { focus = GER_the_german_army }
+		mutually_exclusive = { focus = GER_the_great_memorandum }
+		x = 0
+		y = 1
+		relative_position_id = GER_the_german_army
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_the_great_memorandum
+		icon = GFX__shine
+		prerequisite = { focus = GER_the_german_army }
+		mutually_exclusive = { focus = GER_noblesse_oblige }
+		x = 4
+		y = 1
+		relative_position_id = GER_the_german_army
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_recruit_foreign_tank_designers
+		icon = GFX__shine
+		prerequisite = { focus = GER_the_great_memorandum }
+		x = 0
+		y = 1
+		relative_position_id = GER_the_great_memorandum
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_military_travel_plan
+		icon = GFX__shine
+		prerequisite = { focus = GER_noblesse_oblige focus = GER_the_great_memorandum }
+		x = 2
+		y = 1
+		relative_position_id = GER_noblesse_oblige
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_the_a7v
+		icon = GFX__shine
+		prerequisite = { focus = GER_recruit_foreign_tank_designers focus = GER_military_travel_plan }
+		x = -1
+		y = 1
+		relative_position_id = GER_recruit_foreign_tank_designers
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_sturmtruppen
+		icon = GFX__shine
+		prerequisite = { focus = GER_noblesse_oblige focus = GER_the_great_memorandum }
+		x = 0
+		y = 1
+		relative_position_id = GER_noblesse_oblige
 		cost = 10
 		ai_will_do = {
 			factor = 10
