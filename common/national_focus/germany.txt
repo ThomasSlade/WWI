@@ -412,6 +412,10 @@ focus_tree = {
 
 		available_if_capitulated = no
 
+		available = {
+			NOT = { has_idea = idea_GER_encirclement_3 }
+		}
+
 		completion_reward = {
 			
 		}
@@ -432,7 +436,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			effect_GER_encirclement_increase = yes
 		}
 	}
 
@@ -460,7 +464,7 @@ focus_tree = {
 		icon = GFX__shine
 		prerequisite = { focus = GER_potsdam_agreement }
 		prerequisite = { focus = GER_repeal_lombardverbot }
-		mutually_exclusive = { focus = GER_von_sanders_mission }
+		mutually_exclusive = { focus = GER_von_sanders_mission focus = GER_bund_der_landwirte }
 		x = 0
 		y = 5
 		relative_position_id = GER_potsdam_agreement
@@ -1287,7 +1291,7 @@ focus_tree = {
 		id = GER_expand_tank_production
 		icon = GFX__shine
 		prerequisite = { focus = GER_hindenburg_programme }
-		mutually_exclusive = { focus = GER_amerkia_programme }
+		mutually_exclusive = { focus = GER_amerika_programme }
 		x = 5
 		y = 1
 		relative_position_id = GER_hindenburg_programme

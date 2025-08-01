@@ -1,0 +1,47 @@
+effect_GER_encirclement_increase = {
+	if = {
+		limit = { has_idea = idea_GER_encirclement_2 }
+		swap_ideas = {
+			remove_idea = idea_GER_encirclement_2
+			add_idea = idea_GER_encirclement_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = idea_GER_encirclement_1 }
+		swap_ideas = {
+			remove_idea = idea_GER_encirclement_1
+			add_idea = idea_GER_encirclement_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = idea_GER_encirclement_0 }
+		swap_ideas = {
+			remove_idea = idea_GER_encirclement_0
+			add_idea = idea_GER_encirclement_1
+		}
+	}
+}
+
+effect_GER_encirclement_decrease = {
+	if = {
+		limit = { has_idea = idea_GER_encirclement_1 }
+		swap_ideas = {
+			remove_idea = idea_GER_encirclement_1
+			add_idea = idea_GER_encirclement_0
+		}
+	}
+	else_if = {
+		limit = { has_idea = idea_GER_encirclement_2 }
+		swap_ideas = {
+			remove_idea = idea_GER_encirclement_2
+			add_idea = idea_GER_encirclement_1
+		}
+	}
+	else_if = {
+		limit = { has_idea = idea_GER_encirclement_3 }
+		swap_ideas = {
+			remove_idea = idea_GER_encirclement_3
+			add_idea = idea_GER_encirclement_2
+		}
+	}
+}

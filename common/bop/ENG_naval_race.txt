@@ -1,0 +1,57 @@
+bop_ENG_naval_race = {
+	initial_value = 0
+
+	side = {
+		id = bop_ENG_british
+		range = {
+			id = bop_ENG_britain_0
+			min = -0.25
+			max = 0
+		}
+
+		range = {
+			id = bop_ENG_britain_1
+			min = -0.5
+			max = -0.25
+		}
+
+		range = {
+			id = bop_ENG_britain_2
+			min = -0.75
+			max = -0.5
+		}
+
+		range = {
+			id = bop_ENG_britain_3
+			min = -1
+			max = -0.75
+		}
+	}
+
+	side = {
+		id = bop_ENG_rival
+		range = {
+			id = bop_ENG_challenger_0
+			min = 0
+			max = 0.25
+		}
+
+		range = {
+			id = bop_ENG_challenger_1
+			min = 0.25
+			max = 0.5
+		}
+
+		range = {
+			id = bop_ENG_challenger_2
+			min = 0.5
+			max = 0.75
+		}
+
+		range = {
+			id = bop_ENG_challenger_3
+			min = 0.75
+			max = 1
+		}
+	}
+}

@@ -1,0 +1,25 @@
+units = {
+	fleet = {
+		name = "Grand Fleet"
+		naval_base = 12124 # Scapa Flow
+		task_force = {
+			name = "Strike Force"
+			location = 12124 # Scapa Flow
+
+			# Battleships
+			ship = {
+				name = "Regina Margherita"
+				definition = battleship
+				start_experience_factor = 0.1
+				start_equipment_factor = 0.75
+				equipment = {
+					ship_hull_heavy_1 = {
+						amount = 1
+						owner = ITA
+						version_name = "Regina Margherita-class"
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,38 @@
+on_actions = {
+	on_weekly = {
+		effect = {
+			if = {
+				limit = { has_power_balance = { id = bop_ENG_naval_race } }
+
+				if = {
+					limit = {
+						naval_strength_ratio = {
+							tag = ENG
+							ratio > 0.35
+						}
+					}
+
+					if = {
+						limit = {
+							naval_strength_ratio = {
+								tag = ENG
+								ratio > 0.45
+							}
+						}
+
+						add_power_balance_modifier = {
+							id = bop_ENG_naval_race
+							modifier = ENG_naval_race_britain_winning_1
+						}
+					}
+					else = {
+						add_power_balance_modifier = {
+							id = bop_ENG_naval_race
+							modifier = ENG_naval_race_britain_winning_0
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -15,5 +15,75 @@ ideas = {
 				experience_gain_artillery_training_factor = 0.5
 			}
 		}
+
+		idea_GER_encirclement_0 = {
+			removal_cost = -1
+			picture = GER_encirclement_0
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				# -20% influence with Great Powers
+				improve_relations_maintain_cost_factor = 0.05
+				conversion_cost_civ_to_mil_factor = 0.05
+				mobilization_laws_cost_factor = -0.05
+				economy_cost_factor = -0.05
+			}
+		}
+		
+		idea_GER_encirclement_1 = {
+			removal_cost = -1
+			picture = GER_encirclement_1
+		
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				# -40% influence with Great Powers
+				improve_relations_maintain_cost_factor = 0.1
+				conversion_cost_civ_to_mil_factor = 0.1
+				mobilization_laws_cost_factor = -0.1
+				economy_cost_factor = -0.1
+			}
+		}
+
+		idea_GER_encirclement_2 = {
+			removal_cost = -1
+			picture = GER_encirclement_2
+		
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				# -60% influence with Great Powers
+				# -20% influence with Minor Nations
+				improve_relations_maintain_cost_factor = 0.15
+				conversion_cost_civ_to_mil_factor = 0.15
+				mobilization_laws_cost_factor = -0.2
+				economy_cost_factor = -0.2
+			}
+		}
+
+		idea_GER_encirclement_3 = {
+			removal_cost = -1
+			picture = GER_encirclement_3
+		
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				# -80% influence with Great Powers
+				# -40% influence with Minor Nations
+				improve_relations_maintain_cost_factor = 0.2
+				conversion_cost_civ_to_mil_factor = 0.2
+				mobilization_laws_cost_factor = -0.3
+				economy_cost_factor = -0.3
+			}
+		}
 	}
 }

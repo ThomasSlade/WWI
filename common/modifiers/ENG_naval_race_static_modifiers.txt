@@ -1,0 +1,7 @@
+ENG_naval_race_britain_winning_0 = {
+	power_balance_weekly = 0.01
+}
+
+ENG_naval_race_britain_winning_1 = {
+	power_balance_weekly = 0.02
+}

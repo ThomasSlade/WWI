@@ -72,14 +72,14 @@ AUS_hungarian_resistance_level_down = {
 			add_idea = AUS_hungarian_resistance_0
 		}
 	}
-	if = {
+	else_if = {
 		limit = { has_idea = AUS_hungarian_resistance_2 }
 		swap_ideas = {
 			remove_idea = AUS_hungarian_resistance_2
 			add_idea = AUS_hungarian_resistance_1
 		}
 	}
-	if = {
+	else_if = {
 		limit = { has_idea = AUS_hungarian_resistance_3 }
 		swap_ideas = {
 			remove_idea = AUS_hungarian_resistance_3

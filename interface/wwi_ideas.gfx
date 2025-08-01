@@ -610,6 +610,22 @@ spriteTypes = {
 		name = "GFX_idea_GER_general_staff"
 		texturefile = "gfx/interface/ideas/idea_GER_general_staff.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_GER_encirclement_0"
+		texturefile = "gfx/interface/ideas/idea_ger_encirclement_0.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_encirclement_1"
+		texturefile = "gfx/interface/ideas/idea_ger_encirclement_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_encirclement_2"
+		texturefile = "gfx/interface/ideas/idea_ger_encirclement_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_encirclement_3"
+		texturefile = "gfx/interface/ideas/idea_ger_encirclement_3.dds"
+	}
 
 	# Belgium
 	spriteType = {
