@@ -145,6 +145,6 @@ ITA = {
 	color_ui = rgb { 93 115 78 }
 }
 ENG = {
-	color = rgb { 150 101 115 }
-	color_ui = rgb { 150 101 115 }
+	color = rgb { 148 93 108 }
+	color_ui = rgb { 148 93 108 }
 }

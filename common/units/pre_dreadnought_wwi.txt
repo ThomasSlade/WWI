@@ -1,11 +1,11 @@
 sub_units = {
-	battleship = {
-		sprite = battleship
+	pre_dreadnought_wwi = {
+		sprite = pre_dreadnought_wwi
 		map_icon_category = ship
-		priority = 11
+		priority = 8
 		active = yes
 		type = { capital_ship }
-		need_equipment = { ship_hull_heavy = 1 }
+		need_equipment = { ship_hull_pre_dreadnought_wwi = 1 }
 		need_equipment_modules = {
 			any = {
 				ship_armor_bb_1 = 1

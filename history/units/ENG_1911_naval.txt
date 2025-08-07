@@ -2,24 +2,291 @@ units = {
 	fleet = {
 		name = "Grand Fleet"
 		naval_base = 12124 # Scapa Flow
+
 		task_force = {
 			name = "Strike Force"
 			location = 12124 # Scapa Flow
 
-			# Battleships
-			ship = {
-				name = "Regina Margherita"
-				definition = battleship
-				start_experience_factor = 0.1
-				start_equipment_factor = 0.75
-				equipment = {
-					ship_hull_heavy_1 = {
-						amount = 1
-						owner = ITA
-						version_name = "Regina Margherita-class"
-					}
-				}
-			}
+			### Battleships
+			## Pre-Dreadnoughts
+			# Canopus Class
+			ship = { name = "Canopus" definition = pre_dreadnought_wwi equipment = { ship_hull_pre_dreadnought_wwi_1 = { amount = 1 owner = ENG version_name = "King Edward VII Class" } } }
+			# Swiftsure Class
+			ship = { name = "Swiftsure" definition = pre_dreadnought_wwi equipment = { ship_hull_pre_dreadnought_wwi_1 = { amount = 1 owner = ENG version_name = "King Edward VII Class" } } }
+			# Swiftsure Class
+			ship = { name = "Triumph" definition = pre_dreadnought_wwi equipment = { ship_hull_pre_dreadnought_wwi_1 = { amount = 1 owner = ENG version_name = "King Edward VII Class" } } }
+			# Lord Nelson Class
+			ship = { name = "Lord Nelson" definition = pre_dreadnought_wwi equipment = { ship_hull_pre_dreadnought_wwi_1 = { amount = 1 owner = ENG version_name = "King Edward VII Class" } } }
+			# Lord Nelson Class
+			ship = { name = "Agamemnon" definition = pre_dreadnought_wwi equipment = { ship_hull_pre_dreadnought_wwi_1 = { amount = 1 owner = ENG version_name = "King Edward VII Class" } } }
+			# London Class
+			ship = { name = "Bulwark" definition = pre_dreadnought_wwi equipment = { ship_hull_pre_dreadnought_wwi_1 = { amount = 1 owner = ENG version_name = "King Edward VII Class" } } }
+			# London Class
+			ship = { name = "London" definition = pre_dreadnought_wwi equipment = { ship_hull_pre_dreadnought_wwi_1 = { amount = 1 owner = ENG version_name = "King Edward VII Class" } } }
+			# London Class
+			ship = { name = "Prince of Wales" definition = pre_dreadnought_wwi equipment = { ship_hull_pre_dreadnought_wwi_1 = { amount = 1 owner = ENG version_name = "King Edward VII Class" } } }
+			# London Class
+			ship = { name = "Queen" definition = pre_dreadnought_wwi equipment = { ship_hull_pre_dreadnought_wwi_1 = { amount = 1 owner = ENG version_name = "King Edward VII Class" } } }
+			# London Class
+			ship = { name = "Venerable" definition = pre_dreadnought_wwi equipment = { ship_hull_pre_dreadnought_wwi_1 = { amount = 1 owner = ENG version_name = "King Edward VII Class" } } }
+			# King Edward VII Class
+			ship = { name = "Africa" definition = pre_dreadnought_wwi equipment = { ship_hull_pre_dreadnought_wwi_1 = { amount = 1 owner = ENG version_name = "King Edward VII Class" } } }
+			# King Edward VII Class
+			ship = { name = "Britannia" definition = pre_dreadnought_wwi equipment = { ship_hull_pre_dreadnought_wwi_1 = { amount = 1 owner = ENG version_name = "King Edward VII Class" } } }
+			# King Edward VII Class
+			ship = { name = "Commonwealth" definition = pre_dreadnought_wwi equipment = { ship_hull_pre_dreadnought_wwi_1 = { amount = 1 owner = ENG version_name = "King Edward VII Class" } } }
+			# King Edward VII Class
+			ship = { name = "Dominion" definition = pre_dreadnought_wwi equipment = { ship_hull_pre_dreadnought_wwi_1 = { amount = 1 owner = ENG version_name = "King Edward VII Class" } } }
+			# King Edward VII Class
+			ship = { name = "Hibernia" definition = pre_dreadnought_wwi equipment = { ship_hull_pre_dreadnought_wwi_1 = { amount = 1 owner = ENG version_name = "King Edward VII Class" } } }
+			# King Edward VII Class
+			ship = { name = "Hindustan" definition = pre_dreadnought_wwi equipment = { ship_hull_pre_dreadnought_wwi_1 = { amount = 1 owner = ENG version_name = "King Edward VII Class" } } }
+			# King Edward VII Class
+			ship = { name = "King Edward VII" definition = pre_dreadnought_wwi equipment = { ship_hull_pre_dreadnought_wwi_1 = { amount = 1 owner = ENG version_name = "King Edward VII Class" } } }
+			# King Edward VII Class
+			ship = { name = "New Zealand" definition = pre_dreadnought_wwi equipment = { ship_hull_pre_dreadnought_wwi_1 = { amount = 1 owner = ENG version_name = "King Edward VII Class" } } }
+
+			## Early Dreadnoughts
+			# Dreadnought Class
+			ship = { name = "Dreadnought" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Dreadnought Class" } } }
+			# Bellerephon Class
+			ship = { name = "Bellerephon" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Dreadnought Class" } } }
+			# Bellerephon Class
+			ship = { name = "Superb" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Dreadnought Class" } } }
+			# Bellerephon Class
+			ship = { name = "Temeraire" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Dreadnought Class" } } }
+			# St. Vincent Class
+			ship = { name = "St. Vincent" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Dreadnought Class" } } }
+			# St. Vincent Class
+			ship = { name = "Vanguard" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Dreadnought Class" } } }
+			# St. Vincent Class
+			ship = { name = "Collingwood" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Dreadnought Class" } } }
+
+			## Late Dreadnoughts
+			# Neptune Class
+			ship = { name = "Neptune" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "King George V Class" } } }
+			# Colossus Class
+			ship = { name = "Colossus" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "King George V Class" } } }
+			# Colossus Class
+			ship = { name = "Hercules" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "King George V Class" } } }
+			# Orion Class
+			ship = { name = "Orion" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "King George V Class" } } }
+
+			### Battlecruisers
+			# Invincible Class
+			ship = { name = "Invincible" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Invincible Class" } } }
+			# Invincible Class
+			ship = { name = "Inflexible" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Invincible Class" } } }
+			# Invincible Class
+			ship = { name = "Indomitable" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Invincible Class" } } }
+			# Indefatigable Class
+			ship = { name = "Indefatigable" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Invincible Class" } } }
+			# Lion Class
+			ship = { name = "Lion" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Invincible Class" } } }
+
+			### Armoured Cruisers
+			# Drake Class
+			ship = { name = "Good Hope" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Warrior Class" } } }
+			# Monmouth Class
+			ship = { name = "Cornwall" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Warrior Class" } } }
+			# Monmouth Class
+			ship = { name = "Monmouth" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Warrior Class" } } }
+			# Devonshire Class
+			ship = { name = "Carnavoron" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Warrior Class" } } }
+			# Warrior Class
+			ship = { name = "Cochrane" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Warrior Class" } } }
+			# Warrior Class
+			ship = { name = "Achilles" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Warrior Class" } } }
+			# Warrior Class
+			ship = { name = "Natal" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Warrior Class" } } }
+			# Warrior Class
+			ship = { name = "Warrior" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Warrior Class" } } }
+			# Minotaur Class
+			ship = { name = "Shannon" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Warrior Class" } } }
+			# Minotaur Class
+			ship = { name = "Defence" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Warrior Class" } } }
+			# Minotaur Class
+			ship = { name = "Minotaur" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Warrior Class" } } }
+			# Duke of Edinburgh Class
+			ship = { name = "Duke of Edinburgh" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Warrior Class" } } }
+			# Duke of Edinburgh Class
+			ship = { name = "Black Prince" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Warrior Class" } } }
+
+			### Light Cruisers
+			# Pelorus Class
+			ship = { name = "Pioneer" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Topaze Class" } } }
+			# Pelorus Class
+			ship = { name = "Psyche" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Topaze Class" } } }
+			# Diadem Class
+			ship = { name = "Amphitrite" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Topaze Class" } } }
+			# Diadem Class
+			ship = { name = "Andromeda" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Topaze Class" } } }
+			# Diadem Class
+			ship = { name = "Argonaut" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Topaze Class" } } }
+			# Diadem Class
+			ship = { name = "Ariadne" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Topaze Class" } } }
+			# Diadem Class
+			ship = { name = "Diadem" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Topaze Class" } } }
+			# Diadem Class
+			ship = { name = "Europa" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Topaze Class" } } }
+			# Diadem Class
+			ship = { name = "Spartiate" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Topaze Class" } } }
+			# Challenger Class
+			ship = { name = "Challenger" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Topaze Class" } } }
+			# Challenger Class
+			ship = { name = "Encounter" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Topaze Class" } } }
+			# Topaze Class
+			ship = { name = "Topaze" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Topaze Class" } } }
+			# Topaze Class
+			ship = { name = "Amethyst" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Topaze Class" } } }
+			# Topaze Class
+			ship = { name = "Diamond" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Topaze Class" } } }
+			# Topaze Class
+			ship = { name = "Saphire" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Topaze Class" } } }
+			# Sentinel Class
+			ship = { name = "Sentinel" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Topaze Class" } } }
+			# Sentinel Class
+			ship = { name = "Skirmisher" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Topaze Class" } } }
+			# Pathfinder Class
+			ship = { name = "Pathfinder" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Topaze Class" } } }
+			# Pathfinder Class
+			ship = { name = "Patrol" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Topaze Class" } } }
+			# Forward Class
+			ship = { name = "Foresight" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Topaze Class" } } }
+			# Forward Class
+			ship = { name = "Forward" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Topaze Class" } } }
+			# Boadicea Class
+			ship = { name = "Boadicea" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Topaze Class" } } }
+			# Boadicea Class
+			ship = { name = "Bellona" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Topaze Class" } } }
+			# Blonde Class
+			ship = { name = "Blonde" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Topaze Class" } } }
+			# Blonde Class
+			ship = { name = "Blanche" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Topaze Class" } } }
+			# Adventure Class
+			ship = { name = "Adventure" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Topaze Class" } } }
+			# Adventure Class
+			ship = { name = "Attentive" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Topaze Class" } } }
+
+			### Destroyers
+			# River Class
+			ship = { name = "Arun" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# River Class
+			ship = { name = "Boyne" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# River Class
+			ship = { name = "Chelmer" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# River Class
+			ship = { name = "Cherwell" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# River Class
+			ship = { name = "Colne" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# River Class
+			ship = { name = "Dee" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# River Class
+			ship = { name = "Derwent" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# River Class
+			ship = { name = "Doon" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# River Class
+			ship = { name = "Eden" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# River Class
+			ship = { name = "Erne" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# River Class
+			ship = { name = "Ettrick" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# River Class
+			ship = { name = "Exe" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# River Class
+			ship = { name = "Foyle" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# River Class
+			ship = { name = "Garry" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# River Class
+			ship = { name = "Itchen" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# River Class
+			ship = { name = "Jed" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# River Class
+			ship = { name = "Kale" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# River Class
+			ship = { name = "Kennet" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# River Class
+			ship = { name = "Liffey" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# River Class
+			ship = { name = "Moy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# River Class
+			ship = { name = "Ness" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# River Class
+			ship = { name = "Nith" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# River Class
+			ship = { name = "Ouse" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# River Class
+			ship = { name = "Ribble" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# River Class
+			ship = { name = "Rother" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# River Class
+			ship = { name = "Swale" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# River Class
+			ship = { name = "Test" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# River Class
+			ship = { name = "Teviot" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# River Class
+			ship = { name = "Ure" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# River Class
+			ship = { name = "Usk" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# River Class
+			ship = { name = "Wear" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# River Class
+			ship = { name = "Welland" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# River Class
+			ship = { name = "Stour" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Beagle Class
+			ship = { name = "Basilisk" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Beagle Class
+			ship = { name = "Beagle" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Beagle Class
+			ship = { name = "Bulldog" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Beagle Class
+			ship = { name = "Foxhound" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Beagle Class
+			ship = { name = "Grasshopper" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Beagle Class
+			ship = { name = "Harpy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Beagle Class
+			ship = { name = "Mosquito" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Beagle Class
+			ship = { name = "Nautilus" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Beagle Class
+			ship = { name = "Pincher" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Beagle Class
+			ship = { name = "Racoon" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Beagle Class
+			ship = { name = "Rattlesnake" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Beagle Class
+			ship = { name = "Renard" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Beagle Class
+			ship = { name = "Savage" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Beagle Class
+			ship = { name = "Scorpion" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Beagle Class
+			ship = { name = "Scourge" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Beagle Class
+			ship = { name = "Wolverine" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Acorn Class
+			ship = { name = "Larne" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Acorn Class
+			ship = { name = "Lyra" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Acorn Class
+			ship = { name = "Martin" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Acorn Class
+			ship = { name = "Nemesis" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Acorn Class
+			ship = { name = "Nereide" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Acorn Class
+			ship = { name = "Nymphe" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Acorn Class
+			ship = { name = "Redpole" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Acorn Class
+			ship = { name = "Rifleman" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Acorn Class
+			ship = { name = "Ruby" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Acorn Class
+			ship = { name = "Staunch" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
 		}
 	}
 }

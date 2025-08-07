@@ -567,7 +567,7 @@ technologies = {
 		
 	early_battleship = {
 
-		enable_equipments = { 
+		enable_equipments = {
 			battleship_1
 		}
 		
@@ -575,7 +575,11 @@ technologies = {
 			leads_to_tech = basic_battleship 
 			research_cost_coeff = 1
 		}
-		
+
+		path = {
+			leads_to_tech = pre_dreadnought_wwi 
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 1.5
 		start_year = 1922
@@ -590,6 +594,38 @@ technologies = {
 		folder = {
 			name = naval_folder
 			position = { x = 1 y = 1 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_artillery
+			naval_equipment
+			bb_tech
+			mio_cat_tech_all_capital_ship_and_modules
+		}
+		special_project_specialization = { specialization_naval }
+	}
+
+	pre_dreadnought_wwi = {
+
+		enable_equipments = {
+			pre_dreadnought_wwi_1
+		}
+		
+		path = {
+			leads_to_tech = basic_battleship 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1922
+
+		folder = {
+			name = naval_folder
+			position = { x = 3 y = 1 }
 		}
 		
 		ai_will_do = {

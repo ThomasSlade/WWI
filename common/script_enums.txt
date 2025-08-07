@@ -658,7 +658,11 @@ script_enum_equipment_bonus_type = {
 	heavy_machine_gun_equipment
 	heavy_machine_gun_equipment_0
 	heavy_machine_gun_equipment_1
+
 	recon_plane_equipment_0
+
+	ship_hull_pre_dreadnought_wwi_1
+	pre_dreadnought_wwi_1
 }
 
 # WWI Enum categories

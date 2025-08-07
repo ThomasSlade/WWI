@@ -1,0 +1,9 @@
+spriteTypes = {	
+	# Needed by 'Navy Overview' panel, which apparently doesn't use the identical sprites in subuniticons.
+	# Code expects GFX_navalcombat_ship_icon_ + sprite_name set in subunit defs
+	spriteType = { # "battleship"
+		name = "GFX_navalcombat_ship_icon_pre_dreadnought_wwi"
+		texturefile = "gfx/interface/navalcombat/ships/pre_dreadnought_wwi.dds"
+		noOfFrames = 2
+	}
+}

@@ -1,6 +1,5 @@
 spriteTypes = {
 	### Large Division Icons ###
-
 	spriteType = { name = "GFX_unit_field_artillery_brigade_icon_medium" textureFile = "gfx/interface/counters/divisions_large/unit_field_artillery_brigade_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_heavy_artillery_brigade_icon_medium" textureFile = "gfx/interface/counters/divisions_large/unit_heavy_artillery_brigade_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_siege_artillery_brigade_icon_medium" textureFile = "gfx/interface/counters/divisions_large/unit_siege_artillery_brigade_icon.dds" noOfFrames = 2 }
@@ -12,7 +11,6 @@ spriteTypes = {
 
 
 	### Medium (on-map) Division Icons ###
-
 	spriteType = { name = "GFX_unit_field_artillery_brigade_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_unit_field_artillery_brigade_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_heavy_artillery_brigade_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_artillery_brigade_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_siege_artillery_brigade_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_unit_siege_artillery_brigade_icon.dds" noOfFrames = 2 }
@@ -21,4 +19,18 @@ spriteTypes = {
 	spriteType = { name = "GFX_unit_polish_cavalry_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_unit_polish_cavalry_icon.dds" noOfFrames = 2}
 	spriteType = { name = "GFX_unit_croatian_guard_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_unit_croatian_guard_icon.dds" noOfFrames = 2}
 	spriteType = { name = "GFX_unit_croatian_guard_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_unit_standschutzen_icon.dds" noOfFrames = 2}
+
+
+	#################################
+	### On-map-counters for SHIPS ###
+	spriteType = { name = "GFX_unit_pre_dreadnought_wwi_icon_medium_white" texturefile = "gfx/interface/counters/ships_small/onmap_pre_dreadnought_wwi.dds" }
+
+	############################################
+	### On-map-counters for SHIPS - Inverted ###
+	spriteType = { name = "GFX_unit_pre_dreadnought_wwi_icon_medium_black" texturefile = "gfx/interface/counters/ships_small/onmap_pre_dreadnought_wwi_inverted.dds" }
+
+	#############################################################################
+	### Large ships images used in NAVAL-COMBAT-VIEW and SELECTED-FLEETS-VIEW ###
+	spriteType = { name = "GFX_unit_pre_dreadnought_wwi_icon_medium" texturefile = "gfx/interface/navalcombat/ships/pre_dreadnought_wwi.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_pre_dreadnought_wwi_1_icon_medium" texturefile = "gfx/interface/navalcombat/ships/pre_dreadnought_wwi.dds" noOfFrames = 2 }
 }
