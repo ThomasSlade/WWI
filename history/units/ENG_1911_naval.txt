@@ -169,6 +169,30 @@ units = {
 			ship = { name = "Attentive" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Topaze Class" } } }
 
 			### Destroyers
+			# Tribal Class
+			ship = { name = "Afridi" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Tribal Class
+			ship = { name = "Amazon" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Tribal Class
+			ship = { name = "Cossack" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Tribal Class
+			ship = { name = "Crusader" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Tribal Class
+			ship = { name = "Ghurka" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Tribal Class
+			ship = { name = "Maori" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Tribal Class
+			ship = { name = "Mohawk" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Tribal Class
+			ship = { name = "Nubian" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Tribal Class
+			ship = { name = "Saracen" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Tribal Class
+			ship = { name = "Tartar" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Tribal Class
+			ship = { name = "Viking" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
+			# Tribal Class
+			ship = { name = "Zulu" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
 			# River Class
 			ship = { name = "Arun" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "Beagle" } } }
 			# River Class
