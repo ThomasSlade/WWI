@@ -114,4 +114,13 @@ opinion_modifiers = {
 		value = 20
 		decay = -0.5
 	}
+
+	opinion_ENG_naval_race = {
+		value = -20
+	}
+
+	opinion_ENG_naval_race_loser = {
+		value = -30
+		decay = -0.5
+	}
 }

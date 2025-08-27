@@ -1,0 +1,244 @@
+ideas = {
+	country = {
+		idea_ENG_naval_race_neutral_british_bonus = {
+			removal_cost = -1
+			picture = ENG_naval_race_neutral
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				naval_race_coastal_infrastructure_bonus = 0.1
+			}
+		}
+
+		idea_ENG_naval_race_neutral_rival_malus = {
+			removal_cost = -1
+			picture = ENG_naval_race_neutral
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				production_speed_dockyard_factor = 0.025
+				experience_gain_navy = -0.05
+			}
+		}
+
+		idea_ENG_naval_race_britain_0_british_bonus = {
+			removal_cost = -1
+			picture = ENG_naval_race_britain_0
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				opinion_gain_monthly_factor = 0.2
+				experience_gain_navy = 0.2
+				naval_race_coastal_infrastructure_bonus = 0.2
+			}
+		}
+		
+		idea_ENG_naval_race_britain_1_british_bonus = {
+			removal_cost = -1
+			picture = ENG_naval_race_britain_1
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				opinion_gain_monthly_factor = 0.3
+				experience_gain_navy = 0.3
+				naval_race_coastal_infrastructure_bonus = 0.3
+			}
+		}
+
+		idea_ENG_naval_race_britain_2_british_bonus = {
+			removal_cost = -1
+			picture = ENG_naval_race_britain_2
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				opinion_gain_monthly_factor = 0.4
+				experience_gain_navy = 0.4
+				naval_race_coastal_infrastructure_bonus = 0.4
+			}
+		}
+
+		idea_ENG_naval_race_britain_0_rival_malus = {
+			removal_cost = -1
+			picture = ENG_naval_race_britain_0
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				production_speed_dockyard_factor = 0.05
+				experience_gain_navy = -0.1
+			}
+		}
+
+		idea_ENG_naval_race_britain_1_rival_malus = {
+			removal_cost = -1
+			picture = ENG_naval_race_britain_1
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				production_speed_dockyard_factor = 0.075
+				experience_gain_navy = -0.15
+			}
+		}
+
+		idea_ENG_naval_race_britain_2_rival_malus = {
+			removal_cost = -1
+			picture = ENG_naval_race_britain_1
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				production_speed_dockyard_factor = 0.1
+				experience_gain_navy = -0.2
+			}
+		}
+
+		idea_ENG_naval_race_rival_0_british_malus = {
+			removal_cost = -1
+			picture = ENG_naval_race_rival_0
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				experience_gain_navy = -0.1
+			}
+		}
+
+		idea_ENG_naval_race_rival_1_british_malus = {
+			removal_cost = -1
+			picture = ENG_naval_race_rival_1
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				experience_gain_navy = -0.2
+			}
+		}
+
+		idea_ENG_naval_race_rival_2_british_malus = {
+			removal_cost = -1
+			picture = ENG_naval_race_rival_2
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				experience_gain_navy = -0.3
+			}
+		}
+
+		idea_ENG_naval_race_rival_0_rival_bonus = {
+			removal_cost = -1
+			picture = ENG_naval_race_rival_0
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				opinion_gain_monthly_factor = 0.2
+				experience_gain_navy = 0.2
+				free_civ_from_navs = 0.25
+			}
+		}
+
+		idea_ENG_naval_race_rival_1_rival_bonus = {
+			removal_cost = -1
+			picture = ENG_naval_race_rival_1
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				opinion_gain_monthly_factor = 0.3
+				experience_gain_navy = 0.3
+				free_civ_from_navs = 0.5
+			}
+		}
+
+		idea_ENG_naval_race_rival_2_rival_bonus = {
+			removal_cost = -1
+			picture = ENG_naval_race_rival_2
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				opinion_gain_monthly_factor = 0.4
+				experience_gain_navy = 0.4
+				free_civ_from_navs = 0.75
+			}
+		}
+
+		idea_ENG_naval_race_victor_britain = {
+			removal_cost = -1
+			picture = ENG_naval_race_victor_britain
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				naval_has_potf_in_combat_attack = 0.15
+				navy_org_factor = 0.15
+			}
+
+			equipment_bonus = {
+				ship_hull_heavy = {
+					naval_speed = 0.25
+					surface_detection = 0.15
+					hg_attack = 0.2
+				}
+			}
+		}
+		
+		idea_ENG_naval_race_victor_rival = {
+			removal_cost = -1
+			picture = ENG_naval_race_victor_rival
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				naval_has_potf_in_combat_attack = 0.15
+				naval_enemy_fleet_size_ratio_penalty_factor = 0.5
+			}
+
+			equipment_bonus = {
+				ship_hull_heavy = {
+					build_cost_ic = -0.2
+					hg_attack = 0.2
+				}
+			}
+		}
+	}
+}

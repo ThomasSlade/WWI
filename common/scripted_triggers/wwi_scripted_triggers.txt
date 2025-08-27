@@ -72,6 +72,23 @@ is_in_southern_balkans = {
 	}
 }
 
+is_in_british_isles = {
+	OR = {
+		region = 116 # High Weald
+		region = 114 # Severn Estuary
+		region = 118 # The Fens
+		region = 120 # Merseyside
+		region = 119 # Humberside
+		region = 111 # Southern Uplands
+		region = 115 # Highlands
+		region = 113 # Shannon
+		region = 117 # Ulster
+		region = 112 # Barrow
+
+		state = 537 # Northern Isles
+	}
+}
+
 is_orthodox = {
 	OR = {
 		tag = SOV

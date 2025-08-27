@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_bop_ENG_naval_race_britain"
+		texturefile = "gfx/interface/bop/bop_ENG_naval_race_britain.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_ENG_naval_race_rival"
+		texturefile = "gfx/interface/bop/bop_ENG_naval_race_rival.dds"
+	}
+}

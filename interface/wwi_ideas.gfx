@@ -639,6 +639,44 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_FRA_le_pantalon_rouge.dds"
 	}
 
+	# Britain
+	spriteType = {
+		name = "GFX_idea_ENG_naval_race_neutral"
+		texturefile = "gfx/interface/ideas/idea_ENG_naval_race_neutral.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ENG_naval_race_britain_0"
+		texturefile = "gfx/interface/ideas/idea_eng_naval_race_britain_0.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ENG_naval_race_britain_1"
+		texturefile = "gfx/interface/ideas/idea_eng_naval_race_britain_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ENG_naval_race_britain_2"
+		texturefile = "gfx/interface/ideas/idea_eng_naval_race_britain_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ENG_naval_race_rival_0"
+		texturefile = "gfx/interface/ideas/idea_eng_naval_race_rival_0.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ENG_naval_race_rival_1"
+		texturefile = "gfx/interface/ideas/idea_eng_naval_race_rival_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ENG_naval_race_rival_2"
+		texturefile = "gfx/interface/ideas/idea_eng_naval_race_rival_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ENG_naval_race_victor_britain"
+		texturefile = "gfx/interface/ideas/idea_eng_naval_race_victor_britain.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ENG_naval_race_victor_rival"
+		texturefile = "gfx/interface/ideas/idea_eng_naval_race_victor_rival.dds"
+	}
+
 	### Country Related ###
 	# Grain To
 	spriteType = {

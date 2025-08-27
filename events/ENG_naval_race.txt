@@ -1,0 +1,232 @@
+add_namespace = event_ENG_naval_race
+
+country_event = {
+	id = event_ENG_naval_race.1
+	title = event_ENG_naval_race.1.t
+	desc = {
+		text = event_ENG_naval_race.1.d_britain
+		trigger = {
+			original_tag = ENG
+		}
+	}
+	desc = {
+		text = event_ENG_naval_race.1.d_rival
+		trigger = {
+			NOT = { original_tag = ENG }
+		}
+	}
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Britain takes lead in naval race."
+	}
+
+	option = {
+		name = event_ENG_naval_race.1.a_britain
+		trigger = {
+			original_tag = ENG
+		}
+	}
+
+	option = {
+		name = event_ENG_naval_race.1.a_rival
+		trigger = {
+			NOT = { original_tag = ENG }
+		}
+	}
+}
+
+country_event = {
+	id = event_ENG_naval_race.2
+	title = event_ENG_naval_race.2.t
+	desc = {
+		text = event_ENG_naval_race.2.d_britain
+		trigger = {
+			original_tag = ENG
+		}
+	}
+	desc = {
+		text = event_ENG_naval_race.2.d_rival
+		trigger = {
+			NOT = { original_tag = ENG }
+		}
+	}
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Britain close to winning naval race."
+	}
+
+	option = {
+		name = event_ENG_naval_race.2.a_britain
+		trigger = {
+			original_tag = ENG
+		}
+	}
+
+	option = {
+		name = event_ENG_naval_race.2.a_rival
+		trigger = {
+			NOT = { original_tag = ENG }
+		}
+	}
+}
+
+news_event = {
+	id = event_ENG_naval_race.3
+	title = event_ENG_naval_race.3.t
+	desc = event_ENG_naval_race.3.d
+	picture = GFX_news_event_british_trench
+
+	is_triggered_only = yes
+	major = yes
+
+	immediate = {
+		log = "([THIS.GetName] news event) Britain wins naval race."
+	}
+
+	option = {
+		name = event_ENG_naval_race.3.a_britain
+		trigger = {
+			original_tag = ENG
+		}
+	}
+
+	option = {
+		name = event_ENG_naval_race.3.a_rival
+		trigger = {
+			NOT = { original_tag = ENG }
+			check_variable = { ENG.naval_race_rival = THIS }
+		}
+	}
+
+	option = {
+		name = event_ENG_naval_race.3.a_neutral
+		trigger = {
+			NOT = { original_tag = ENG }
+			NOT = { check_variable = { ENG.naval_race_rival = THIS } }
+		}
+	}
+}
+
+
+country_event = {
+	id = event_ENG_naval_race.4
+	title = event_ENG_naval_race.4.t
+	desc = {
+		text = event_ENG_naval_race.4.d_britain
+		trigger = {
+			original_tag = ENG
+		}
+	}
+	desc = {
+		text = event_ENG_naval_race.4.d_rival
+		trigger = {
+			NOT = { original_tag = ENG }
+		}
+	}
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Rival takes lead in naval race."
+	}
+
+	option = {
+		name = event_ENG_naval_race.4.a_britain
+		trigger = {
+			original_tag = ENG
+		}
+	}
+
+	option = {
+		name = event_ENG_naval_race.4.a_rival
+		trigger = {
+			NOT = { original_tag = ENG }
+		}
+	}
+}
+
+country_event = {
+	id = event_ENG_naval_race.5
+	title = event_ENG_naval_race.5.t
+	desc = {
+		text = event_ENG_naval_race.5.d_britain
+		trigger = {
+			original_tag = ENG
+		}
+	}
+	desc = {
+		text = event_ENG_naval_race.5.d_rival
+		trigger = {
+			NOT = { original_tag = ENG }
+		}
+	}
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Rival close to winning naval race."
+	}
+
+	option = {
+		name = event_ENG_naval_race.5.a_britain
+		trigger = {
+			original_tag = ENG
+		}
+	}
+
+	option = {
+		name = event_ENG_naval_race.5.a_rival
+		trigger = {
+			NOT = { original_tag = ENG }
+		}
+	}
+}
+
+news_event = {
+	id = event_ENG_naval_race.6
+	title = event_ENG_naval_race.6.t
+	desc = event_ENG_naval_race.6.d
+	picture = GFX_news_event_british_trench
+
+	is_triggered_only = yes
+	major = yes
+
+	immediate = {
+		log = "([THIS.GetName] news event) Rival wins naval race."
+	}
+
+	option = {
+		name = event_ENG_naval_race.6.a_britain
+		trigger = {
+			original_tag = ENG
+		}
+	}
+
+	option = {
+		name = event_ENG_naval_race.6.a_rival
+		trigger = {
+			NOT = { original_tag = ENG }
+			check_variable = { ENG.naval_race_rival = THIS }
+		}
+	}
+
+	option = {
+		name = event_ENG_naval_race.6.a_neutral
+		trigger = {
+			NOT = { original_tag = ENG }
+			NOT = { check_variable = { ENG.naval_race_rival = THIS } }
+		}
+	}
+}

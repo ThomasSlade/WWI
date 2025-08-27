@@ -1,36 +1,310 @@
+@DREADNOUGHT_RATIO_RIVAL_LEAD_0 = 1.35	# If the ENG-to-rival dreadnought ratio is less than this, the rival has a weak lead.
+@DREADNOUGHT_RATIO_RIVAL_LEAD_1 = 1.2	# If the ENG-to-rival dreadnought ratio is less than this, the rival has a strong lead.
+@DREADNOUGHT_RATIO_ENG_LEAD_0 = 1.5	# If the ENG-to-rival dreadnought ratio is more than this, ENG has a weak lead.
+@DREADNOUGHT_RATIO_ENG_LEAD_1 = 2.0	# If the ENG-to-rival dreadnought ratio is more than this, ENG has a strong lead.
+# As above, with heavies.
+@HEAVY_RATIO_RIVAL_LEAD_0 = 1.35
+@HEAVY_RATIO_RIVAL_LEAD_1 = 1.2
+@HEAVY_RATIO_ENG_LEAD_0 = 1.5
+@HEAVY_RATIO_ENG_LEAD_1 = 2.0
+# As above, with lights.
+@LIGHT_RATIO_RIVAL_LEAD_0 = 1.35
+@LIGHT_RATIO_RIVAL_LEAD_1 = 1.2
+@LIGHT_RATIO_ENG_LEAD_0 = 1.5
+@LIGHT_RATIO_ENG_LEAD_1 = 2.0
+# As above, with submarines.
+@SUBMARINE_RATIO_RIVAL_LEAD_0 = 1.35
+@SUBMARINE_RATIO_RIVAL_LEAD_1 = 1.2
+@SUBMARINE_RATIO_ENG_LEAD_0 = 1.5
+@SUBMARINE_RATIO_ENG_LEAD_1 = 2.0
+
 on_actions = {
-	on_weekly = {
+	on_weekly_ENG = {
 		effect = {
 			if = {
 				limit = { has_power_balance = { id = bop_ENG_naval_race } }
 
+				# Get dreadnought ratio
+				set_temp_variable = { britain_dreadnoughts = num_ships_with_type@battleship }
+				var:naval_race_rival = {
+					set_temp_variable = { rival_dreadnoughts = num_ships_with_type@battleship }
+				}
+
+				# In cases where either side has 0 of a ship: if Britain has ships but the rival has 0, the ratio becomes 1000.
+				# If both have 0, the ratio becomes 1.
 				if = {
-					limit = {
-						naval_strength_ratio = {
-							tag = ENG
-							ratio > 0.35
-						}
-					}
-
+					limit = { check_variable = { rival_dreadnoughts = 0 } }
 					if = {
-						limit = {
-							naval_strength_ratio = {
-								tag = ENG
-								ratio > 0.45
-							}
-						}
-
-						add_power_balance_modifier = {
-							id = bop_ENG_naval_race
-							modifier = ENG_naval_race_britain_winning_1
-						}
+						limit = { check_variable = { britain_dreadnoughts = 0 } }
+						set_variable = { britain_to_rival_dreadnoughts = 1 }
 					}
 					else = {
-						add_power_balance_modifier = {
-							id = bop_ENG_naval_race
-							modifier = ENG_naval_race_britain_winning_0
+						set_variable = { britain_to_rival_dreadnoughts = 1000 }
+					}
+				}
+				else = {
+					set_variable = { britain_to_rival_dreadnoughts = britain_dreadnoughts }
+					divide_variable = { britain_to_rival_dreadnoughts = rival_dreadnoughts }
+				}
+
+				### Get heavy ratio
+				set_temp_variable = { britain_heavies = num_ships_with_type@battle_cruiser }
+				add_to_temp_variable = { britain_heavies = num_ships_with_type@heavy_cruiser }
+				add_to_temp_variable = { britain_heavies = num_ships_with_type@carrier }
+				add_to_temp_variable = { britain_heavies = num_ships_with_type@pre_dreadnought_wwi }
+				var:naval_race_rival = {
+					set_temp_variable = { rival_heavies = num_ships_with_type@battleship }
+					add_to_temp_variable = { rival_heavies = num_ships_with_type@heavy_cruiser }
+					add_to_temp_variable = { rival_heavies = num_ships_with_type@carrier }
+					add_to_temp_variable = { rival_heavies = num_ships_with_type@pre_dreadnought_wwi }
+				}
+
+				if = {
+					limit = { check_variable = { rival_heavies = 0 } }
+					if = {
+						limit = { check_variable = { britain_heavies = 0 } }
+						set_variable = { britain_to_rival_heavies = 1 }
+					}
+					else = {
+						set_variable = { britain_to_rival_heavies = 1000 }
+					}
+				}
+				else = {
+					set_variable = { britain_to_rival_heavies = britain_heavies }
+					divide_variable = { britain_to_rival_heavies = rival_heavies }
+				}
+
+				### Get light ratio
+				set_temp_variable = { britain_lights = num_ships_with_type@light_cruiser }
+				add_to_temp_variable = { britain_lights = num_ships_with_type@destroyer }
+				var:naval_race_rival = {
+
+					set_temp_variable = { rival_lights = num_ships_with_type@light_cruiser }
+					add_to_temp_variable = { rival_lights = num_ships_with_type@destroyer }
+				}
+
+				if = {
+					limit = { check_variable = { rival_lights = 0 } }
+					if = {
+						limit = { check_variable = { britain_lights = 0 } }
+						set_variable = { britain_to_rival_lights = 1 }
+					}
+					else = {
+						set_variable = { britain_to_rival_lights = 1000 }
+					}
+				}
+				else = {
+					set_variable = { britain_to_rival_lights = britain_lights }
+					divide_variable = { britain_to_rival_lights = rival_lights }
+				}
+
+				### Get submarine ratio
+				set_temp_variable = { britain_submarines = num_ships_with_type@submarine }
+				var:naval_race_rival = {
+					set_temp_variable = { rival_submarines = num_ships_with_type@submarine }
+				}
+
+				if = {
+					limit = { check_variable = { rival_submarines = 0 } }
+					if = {
+						limit = { check_variable = { britain_submarines = 0 } }
+						set_variable = { britain_to_rival_submarines = 1 }
+					}
+					else = {
+						set_variable = { britain_to_rival_submarines = 1000 }
+					}
+				}
+				else = {
+					set_variable = { britain_to_rival_submarines = britain_submarines }
+					divide_variable = { britain_to_rival_submarines = rival_submarines }
+				}
+
+				### Dreadnoughts
+				if = {
+					limit = {
+						AND = {
+							check_variable = { britain_to_rival_dreadnoughts < @DREADNOUGHT_RATIO_RIVAL_LEAD_0 }
+							check_variable = { var = britain_to_rival_dreadnoughts value = @DREADNOUGHT_RATIO_RIVAL_LEAD_1 compare = greater_than_or_equals }
 						}
 					}
+
+					add_power_balance_modifier = { id = bop_ENG_naval_race modifier = rival_more_dreadnoughts_0 }
+				}
+				else = {
+					remove_power_balance_modifier = { id = bop_ENG_naval_race modifier = rival_more_dreadnoughts_0 }
+				}
+
+				if = {
+					limit = { check_variable = { britain_to_rival_dreadnoughts < @DREADNOUGHT_RATIO_RIVAL_LEAD_1 } }
+
+					add_power_balance_modifier = { id = bop_ENG_naval_race modifier = rival_more_dreadnoughts_1 }
+				}
+				else = {
+					remove_power_balance_modifier = { id = bop_ENG_naval_race modifier = rival_more_dreadnoughts_1 }
+				}
+
+				if = {
+					limit = {
+						AND = {
+							check_variable = { britain_to_rival_dreadnoughts > @DREADNOUGHT_RATIO_ENG_LEAD_0 }
+							check_variable = { var = britain_to_rival_dreadnoughts value = @DREADNOUGHT_RATIO_ENG_LEAD_1 compare = less_than_or_equals }
+						}
+					}
+
+					add_power_balance_modifier = { id = bop_ENG_naval_race modifier = britain_more_dreadnoughts_0 }
+				}
+				else = {
+					remove_power_balance_modifier = { id = bop_ENG_naval_race modifier = britain_more_dreadnoughts_0 }
+				}
+
+				if = {
+					limit = { check_variable = { britain_to_rival_dreadnoughts > @DREADNOUGHT_RATIO_ENG_LEAD_1 } }
+
+					add_power_balance_modifier = { id = bop_ENG_naval_race modifier = britain_more_dreadnoughts_1 }
+				}
+				else = {
+					remove_power_balance_modifier = { id = bop_ENG_naval_race modifier = britain_more_dreadnoughts_1 }
+				}
+
+				### Heavies
+				if = {
+					limit = {
+						AND = {
+							check_variable = { britain_to_rival_heavies < @HEAVY_RATIO_RIVAL_LEAD_0 }
+							check_variable = { var = britain_to_rival_heavies value = @HEAVY_RATIO_RIVAL_LEAD_1 compare = greater_than_or_equals }
+						}
+					}
+
+					add_power_balance_modifier = { id = bop_ENG_naval_race modifier = rival_more_heavies_0 }
+				}
+				else = {
+					remove_power_balance_modifier = { id = bop_ENG_naval_race modifier = rival_more_heavies_0 }
+				}
+
+				if = {
+					limit = { check_variable = { britain_to_rival_heavies < @HEAVY_RATIO_RIVAL_LEAD_1 } }
+
+					add_power_balance_modifier = { id = bop_ENG_naval_race modifier = rival_more_heavies_1 }
+				}
+				else = {
+					remove_power_balance_modifier = { id = bop_ENG_naval_race modifier = rival_more_heavies_1 }
+				}
+
+				if = {
+					limit = {
+						AND = {
+							check_variable = { britain_to_rival_heavies > @HEAVY_RATIO_ENG_LEAD_0 }
+							check_variable = { var = britain_to_rival_heavies value = @HEAVY_RATIO_ENG_LEAD_1 compare = less_than_or_equals }
+						}
+					}
+
+					add_power_balance_modifier = { id = bop_ENG_naval_race modifier = britain_more_heavies_0 }
+				}
+				else = {
+					remove_power_balance_modifier = { id = bop_ENG_naval_race modifier = britain_more_heavies_0 }
+				}
+
+				if = {
+					limit = { check_variable = { britain_to_rival_heavies > @HEAVY_RATIO_ENG_LEAD_1 } }
+
+					add_power_balance_modifier = { id = bop_ENG_naval_race modifier = britain_more_heavies_1 }
+				}
+				else = {
+					remove_power_balance_modifier = { id = bop_ENG_naval_race modifier = britain_more_heavies_1 }
+				}
+
+				### Lights
+				if = {
+					limit = {
+						AND = {
+							check_variable = { britain_to_rival_lights < @LIGHT_RATIO_RIVAL_LEAD_0 }
+							check_variable = { var = britain_to_rival_lights value = @LIGHT_RATIO_RIVAL_LEAD_1 compare = greater_than_or_equals }
+						}
+					}
+
+					add_power_balance_modifier = { id = bop_ENG_naval_race modifier = rival_more_lights_0 }
+				}
+				else = {
+					remove_power_balance_modifier = { id = bop_ENG_naval_race modifier = rival_more_lights_0 }
+				}
+
+				if = {
+					limit = { check_variable = { britain_to_rival_lights < @LIGHT_RATIO_RIVAL_LEAD_1 } }
+
+					add_power_balance_modifier = { id = bop_ENG_naval_race modifier = rival_more_lights_1 }
+				}
+				else = {
+					remove_power_balance_modifier = { id = bop_ENG_naval_race modifier = rival_more_lights_1 }
+				}
+
+				if = {
+					limit = {
+						AND = {
+							check_variable = { britain_to_rival_lights > @LIGHT_RATIO_ENG_LEAD_0 }
+							check_variable = { var = britain_to_rival_lights value = @LIGHT_RATIO_ENG_LEAD_1 compare = less_than_or_equals }
+						}
+					}
+
+					add_power_balance_modifier = { id = bop_ENG_naval_race modifier = britain_more_lights_0 }
+				}
+				else = {
+					remove_power_balance_modifier = { id = bop_ENG_naval_race modifier = britain_more_lights_0 }
+				}
+
+				if = {
+					limit = { check_variable = { britain_to_rival_lights > @LIGHT_RATIO_ENG_LEAD_1 } }
+
+					add_power_balance_modifier = { id = bop_ENG_naval_race modifier = britain_more_lights_1 }
+				}
+				else = {
+					remove_power_balance_modifier = { id = bop_ENG_naval_race modifier = britain_more_lights_1 }
+				}
+
+				### Submarines
+				if = {
+					limit = {
+						AND = {
+							check_variable = { britain_to_rival_submarines < @SUBMARINE_RATIO_RIVAL_LEAD_0 }
+							check_variable = { var = britain_to_rival_submarines value = @SUBMARINE_RATIO_RIVAL_LEAD_1 compare = greater_than_or_equals }
+						}
+					}
+
+					add_power_balance_modifier = { id = bop_ENG_naval_race modifier = rival_more_submarines_0 }
+				}
+				else = {
+					remove_power_balance_modifier = { id = bop_ENG_naval_race modifier = rival_more_submarines_0 }
+				}
+
+				if = {
+					limit = { check_variable = { britain_to_rival_submarines < @SUBMARINE_RATIO_RIVAL_LEAD_1 } }
+
+					add_power_balance_modifier = { id = bop_ENG_naval_race modifier = rival_more_submarines_1 }
+				}
+				else = {
+					remove_power_balance_modifier = { id = bop_ENG_naval_race modifier = rival_more_submarines_1 }
+				}
+
+				if = {
+					limit = {
+						AND = {
+							check_variable = { britain_to_rival_submarines > @SUBMARINE_RATIO_ENG_LEAD_0 }
+							check_variable = { var = britain_to_rival_submarines value = @SUBMARINE_RATIO_ENG_LEAD_1 compare = less_than_or_equals }
+						}
+					}
+
+					add_power_balance_modifier = { id = bop_ENG_naval_race modifier = britain_more_submarines_0 }
+				}
+				else = {
+					remove_power_balance_modifier = { id = bop_ENG_naval_race modifier = britain_more_submarines_0 }
+				}
+
+				if = {
+					limit = { check_variable = { britain_to_rival_submarines > @SUBMARINE_RATIO_ENG_LEAD_1 } }
+
+					add_power_balance_modifier = { id = bop_ENG_naval_race modifier = britain_more_submarines_1 }
+				}
+				else = {
+					remove_power_balance_modifier = { id = bop_ENG_naval_race modifier = britain_more_submarines_1 }
 				}
 			}
 		}

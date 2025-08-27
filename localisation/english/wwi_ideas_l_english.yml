@@ -15,12 +15,12 @@
   # Germany
   idea_GER_encirclement_0: "Looming Encirclement"
   idea_GER_encirclement_0_desc: "[THIS.GetNameDefCap] is secure, yet diplomatic prospects remain precarious. The slightest incident is sure to stoke [THIS.GetAdjective] demands for rearmament."
-  idea_GER_encirclement_1: "Tightening Encirclement"
+  idea_GER_encirclement_1: "Encroaching Encirclement"
   idea_GER_encirclement_1_desc: "[THIS.GetNameDefCap] finds herself surrounded by potential foes. Public and government alike demand renewed defensive measures, even if that means raising the hackles of our neighbors."
-  idea_GER_encirclement_3: "Encroaching Encirclement"
-  idea_GER_encirclement_3_desc: "Diplomatic maneuvers on the continent further ensnare [THIS.GetNameDef]. [THIS.GetAdjective] citizens cannot ignore the threat: they demand yet greater military measures. The objections of our rivals be damned."
-  idea_GER_encirclement_4: "Unshakable Encirclement"
-  idea_GER_encirclement_4_desc: "From each direction, enemies menace [THIS.GetAdjective] borders. The assuasions of supposedly neutral neighbors do little to calm the stormy public mood. Preparations for war must be made."
+  idea_GER_encirclement_2: "Tightening Encirclement"
+  idea_GER_encirclement_2_desc: "Diplomatic maneuvers on the continent further ensnare [THIS.GetNameDef]. [THIS.GetAdjective] citizens cannot ignore the threat: they demand yet greater military measures. The objections of our rivals be damned."
+  idea_GER_encirclement_3: "Unshakable Encirclement"
+  idea_GER_encirclement_3_desc: "From each direction, enemies menace [THIS.GetAdjective] borders. The assuasions of supposedly neutral neighbors do little to calm the stormy public mood. Preparations for war must be made."
 
   # Austria
   AUS_hungarian_resistance_0: "Hungary Satisfied"

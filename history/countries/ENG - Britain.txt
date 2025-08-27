@@ -50,6 +50,8 @@ set_power_balance = {
 	id = bop_ENG_naval_race
 }
 
+effect_ENG_begin_naval_race = yes
+
 set_variable = { initial_cabinet = token:cab_liberal }
 set_variable = { initial_opposition = token:opp_conservative_1 }
 set_variable = { initial_government = token:gov_limited_democracy }

@@ -1,0 +1,36 @@
+﻿l_english:
+	event_ENG_naval_race.1.t: "[ENG.GetName] Leads in Naval Race"
+	event_ENG_naval_race.1.d_britain: "At great expense, the naval arms race against [?ENG.naval_race_rival.GetOldNameDef] now appears to be swinging to our favour.\n\nOur serious commitment to shipbuilding, pursued since [?ENG.naval_race_rival.GetNameDef] first sought to challenge us at sea, has borne fruit at last. If we continue this pace, victory is surely as good as ours."
+	event_ENG_naval_race.1.d_rival: "Our hopes of outpacing [ENG.GetAdjective] naval production have recently begun to waver.\n\nDespite monumental effort within the [THIS.GetAdjective] navy to expand our fleet, the [ENG.GetNameDef] fleet grows faster yet. Our chance to challenge [ENG.GetNameDef] at sea is slipping away."
+	event_ENG_naval_race.1.a_britain: "Hold fast."
+	event_ENG_naval_race.1.a_rival: "We must redouble our efforts."
+
+	event_ENG_naval_race.2.t: "Naval Race Victory Within [ENG.GetAdjective] Grasp"
+	event_ENG_naval_race.2.d_britain: "To the relief of the Admiralty, the speed at which we can expand our fleet persistently outpaces [?ENG.naval_race_rival.GetAdjective] capacity.\n\nNaval strategists now suspect that, should the Royal Navy continue to dwarf its rival, [?ENG.naval_race_rival:capital.GetCapitalVictoryPointName] will soon have no choice but to concede the naval race to us."
+	event_ENG_naval_race.2.d_rival: "In light of the growing gap between the superior [ENG.GetAdjective] fleet and our own, reservations of [THIS.GetAdjective] naval command as to continuing the naval race have only deepened.\n\nIf our arsenal of warships remains inferior the Royal Navy, pursuing the arms race will become impossible to justify to an increasingly cynical government."
+	event_ENG_naval_race.2.a_britain: "That's the ticket."
+	event_ENG_naval_race.2.a_rival: "Something must be done!"
+
+	event_ENG_naval_race.3.t: "[ENG.GetName] Triumphant in Naval Race Against [?naval_race_victor.GetName]"
+	event_ENG_naval_race.3.d: "Years of maritime rivalry between the upstart [?naval_race_victor.GetAdjective] navy and its unchallenged [ENG.GetAdjective] counterpart have come to a close, as [?naval_race_victor:capital.GetCapitalVictoryPointName] quietly moves to wind down warship production.\n\nThe nascent naval power had sought for some time to undermine [ENG.GetAdjective] naval predominance. But the historic ship-building industry of [ENG.GetNameDef], and its commitment to oceanic supremacy, has proven insurmountable, even to [?naval_race_victor.GetAdjective] ambition."
+	event_ENG_naval_race.3.a_britain: "We rule the waves."
+	event_ENG_naval_race.3.a_rival: "A navy has no wheels."
+	event_ENG_naval_race.3.a_neutral: "The Royal Navy remains supreme."
+
+	event_ENG_naval_race.4.t: "[?ENG.naval_race_rival.GetName] Leads in Naval Race"
+	event_ENG_naval_race.4.d_britain: "The quiet dismay of the Admiralty towards our numerous maritime rivals has become a full-blown panic, as the [?ENG.naval_race_rival.GetAdjective] fleet swells to a menacing strength.\n\nPolicy makers and citizens alike are quick to demand a renewed ship-building effort, to safeguard [THIS.GetAdjective] oceans and the historic keystone of its empire - absolute supremacy at sea."
+	event_ENG_naval_race.4.d_rival: "Efforts to out-produce [ENG.GetAdjective] warships have seen initial success, despite the daunting stature of the Royal Navy.\n\nAlready, strategists in [ENG.capital.GetCapitalVictoryPointName] speak nervously of the burgeoning [THIS.GetAdjective] fleet. Over bottles of champagne, our naval commanders are cheerfully planning the next batch of warships."
+	event_ENG_naval_race.4.a_britain: "This won't do."
+	event_ENG_naval_race.4.a_rival: "Here's to another Dreadnought."
+
+	event_ENG_naval_race.5.t: "Naval Race Victory Within [?ENG.naval_race_rival.GetAdjective] Grasp"
+	event_ENG_naval_race.5.d_britain: "Panic amongst naval planners has reached a fever-pitch, as the threat of the [?ENG.naval_race_rival.GetAdjective] high seas fleet to our oceans, commerce, and empire becomes perilous.\n\nIf the narrow lead held by the Royal Navy over [?ENG.naval_race_rival.GetAdjective] warships cannot be widened soon, public support for strenuous naval spending is bound to wane."
+	event_ENG_naval_race.5.d_rival: "After years of toil and sacrifice, the [THIS.GetAdjective] fleet has matured to a size that would make even the [ENG.GetAdjective] Admiralty shudder.\n\nOur naval command grows increasingly confident that, if production remains apace, [ENG.capital.GetCapitalVictoryPointName] will have no choice but to relent on their own ship-building expenditure."
+	event_ENG_naval_race.5.a_britain: "The Royal Navy must remain without peer."
+	event_ENG_naval_race.5.a_rival: "We will soon prevail."
+	
+	event_ENG_naval_race.6.t: "[?naval_race_victor.GetName] Triumphant in Naval Race Against [ENG.GetName]"
+	event_ENG_naval_race.6.d: "Years of maritime rivalry between the upstart [?naval_race_victor.GetAdjective] navy and its unchallenged [ENG.GetAdjective] counterpart have come to a close, with the now sizeable [?naval_race_victor.GetAdjective] fleet posing a critical threat to the Royal Navy. The mood in [ENG.capital.GetCapitalVictoryPointName] is sullen - the Admiralty announcing with despair that their protracted ship-building programme is too expensive to maintain.\n\n[ENG.GetAdjective] sea power, prevalant for centuries, has been humbled by [?naval_race_victor.GetNameDef]."
+	event_ENG_naval_race.6.a_britain: "Our fleet remains ready to face any threat."
+	event_ENG_naval_race.6.a_rival: "The trident is ours to take."
+	event_ENG_naval_race.6.a_neutral: "The Royal Navy no longer sails alone."

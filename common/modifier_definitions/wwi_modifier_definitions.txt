@@ -3,3 +3,15 @@ free_civ_from_mils = {
 	value_type = number
 	precision = 2
 }
+
+free_civ_from_navs = {
+	color_type = good
+	value_type = number
+	precision = 2
+}
+
+naval_race_coastal_infrastructure_bonus = {
+	color_type = good
+	value_type = percentage
+	precision = 2
+}

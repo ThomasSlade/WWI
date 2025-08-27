@@ -53,10 +53,6 @@ add_ideas = {
 	idea_GER_encirclement_1
 }
 
-set_power_balance = {
-	id = bop_ENG_naval_race
-}
-
 set_variable = { initial_cabinet = token:cab_conservative }
 set_variable = { initial_opposition = token:opp_socialist_1 }
 set_variable = { initial_government = token:gov_constitutional_monarchy }

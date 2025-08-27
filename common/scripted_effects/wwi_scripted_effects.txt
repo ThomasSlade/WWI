@@ -194,6 +194,32 @@ effect_update_civs_from_mils = {
 	}
 }
 
+effect_update_civs_from_navs = {
+	set_temp_variable = { free_civs_gained_from_navs = modifier@free_civs_from_navs }
+	multiply_temp_variable = { free_civs_gained_from_navs = num_of_naval_factories }
+
+	if = {
+		limit = {
+			NOT = { check_variable = { free_civs_gained_from_navs = current_free_civs_from_navs } }
+		}
+
+		set_temp_variable = { remove_prev_civ_from_navs = 0 }
+		subtract_from_temp_variable = { remove_prev_civ_from_navs = current_free_civs_from_navs }
+
+		add_offsite_building = {
+			type = dockyard
+			level = remove_prev_civ_from_navs
+		}
+
+		add_offsite_building = {
+			type = dockyard
+			level = free_civs_gained_from_navs
+		}
+
+		set_variable = { current_free_civs_from_navs = free_civs_gained_from_navs }
+	}
+}
+
 # Must be called from the scope of a country we're counting for.
 effect_update_unowned_core_states = {
 	set_variable = { unowned_cores = 0 }

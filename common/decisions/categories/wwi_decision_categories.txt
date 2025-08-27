@@ -264,3 +264,11 @@ decision_category_special_wargoals = {
 		always = yes
 	}
 }
+
+decision_category_ENG_naval_race = {
+	icon = decision_category_power_struggle
+
+	allowed = {
+		always = yes
+	}
+}

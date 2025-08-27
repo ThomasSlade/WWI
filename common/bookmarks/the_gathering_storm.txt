@@ -22,6 +22,11 @@ bookmarks = {
 			ideology = established
 		}
 
+		"ENG"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = established
+		}
+
 		"SOV"={
 			history = "SOV_CONCERT_OF_EUROPE"
 			ideology = established

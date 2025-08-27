@@ -1,0 +1,27 @@
+decision_category_ENG_naval_race = {
+	decision_ENG_debug_increase = {
+		visible = {
+			is_debug = yes
+		}
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = bop_ENG_naval_race
+				value = 0.2
+			}
+		}
+	}
+
+	decision_ENG_debug_decrease = {
+		visible = {
+			is_debug = yes
+		}
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = bop_ENG_naval_race
+				value = -0.2
+			}
+		}
+	}
+}

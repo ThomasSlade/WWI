@@ -1,7 +1,63 @@
-ENG_naval_race_britain_winning_0 = {
-	power_balance_weekly = 0.01
+britain_more_dreadnoughts_0 = {
+	power_balance_weekly = -0.002
 }
 
-ENG_naval_race_britain_winning_1 = {
-	power_balance_weekly = 0.02
+britain_more_dreadnoughts_1 = {
+	power_balance_weekly = -0.004
+}
+
+britain_more_heavies_0 = {
+	power_balance_weekly = -0.001
+}
+
+britain_more_heavies_1 = {
+	power_balance_weekly = -0.002
+}
+
+britain_more_lights_0 = {
+	power_balance_weekly = -0.001
+}
+
+britain_more_lights_1 = {
+	power_balance_weekly = -0.002
+}
+
+britain_more_submarines_0 = {
+	power_balance_weekly = -0.001
+}
+
+britain_more_submarines_1 = {
+	power_balance_weekly = -0.002
+}
+
+rival_more_dreadnoughts_0 = {
+	power_balance_weekly = 0.002
+}
+
+rival_more_dreadnoughts_1 = {
+	power_balance_weekly = 0.004
+}
+
+rival_more_heavies_0 = {
+	power_balance_weekly = 0.001
+}
+
+rival_more_heavies_1 = {
+	power_balance_weekly = 0.002
+}
+
+rival_more_lights_0 = {
+	power_balance_weekly = 0.001
+}
+
+rival_more_lights_1 = {
+	power_balance_weekly = 0.002
+}
+
+rival_more_submarines_0 = {
+	power_balance_weekly = 0.001
+}
+
+rival_more_submarines_1 = {
+	power_balance_weekly = 0.002
 }

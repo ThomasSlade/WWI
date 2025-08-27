@@ -42,6 +42,9 @@
 			# Helgoland Class
 			ship = { name = "Thüringen" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Helgoland Class" } } }
 
+			## Late Dreadnoughts
+			ship = { name = "Kaiser" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Kaiser Class" } } }
+
 			### Battlecruisers
 			# Moltke Class
 			ship = { name = "Moltke" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Moltke Class" } } }
@@ -78,7 +81,7 @@
 			# Dresden Class
 			ship = { name = "Dresden" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Dresden Class" } } }
 			# Emden Class
-			ship = { name = "Dresden" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Dresden Class" } } }
+			ship = { name = "Emden" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Dresden Class" } } }
 			# Königsberg Class
 			ship = { name = "Königsberg" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Königsberg Class" } } }
 			# Königsberg Class
@@ -179,12 +182,12 @@
 			ship = { name = "G175" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138" } } }
 			# S165 Class
 			ship = { name = "S165" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138" } } }
-			# S166 Class
-			ship = { name = "S165" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138" } } }
-			# S167 Class
-			ship = { name = "S165" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138" } } }
-			# S168 Class
-			ship = { name = "S165" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138" } } }
+			# S165 Class
+			ship = { name = "S166" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138" } } }
+			# S165 Class
+			ship = { name = "S167" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138" } } }
+			# S165 Class
+			ship = { name = "S168" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138" } } }
 			# S176 Class
 			ship = { name = "S176" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138" } } }
 			# S176 Class
@@ -208,5 +211,94 @@
 			# G192 Class
 			ship = { name = "G192" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "S138" } } }
 		}
+	}
+}
+
+instant_effect = {
+	### Dreadnoughts
+	# Aug 1910, pulled back to give GER a chance in the Naval Race
+	add_equipment_production = {
+		equipment = {
+			type = battleship_1
+			creator = "GER" 
+		}
+		name = "Friedrich der Grosse"
+		requested_factories = 3
+		progress = 0.75
+		amount = 1
+	}
+
+	# Jun 1911
+	add_equipment_production = {
+		equipment = {
+			type = battleship_1
+			creator = "GER" 
+		}
+		name = "Kaiserin"
+		requested_factories = 3
+		progress = 0.75
+		amount = 1
+	}
+
+	# Feb 1912
+	add_equipment_production = {
+		equipment = {
+			type = battleship_1
+			creator = "GER" 
+		}
+		name = "Prinzregent Luitpold"
+		requested_factories = 3
+		progress = 0.5
+		amount = 1
+	}
+
+	### Battlecruisers
+	# Mar 1911
+	add_equipment_production = {
+		equipment = {
+			type = battle_cruiser_1
+			creator = "GER" 
+		}
+		name = "Goeben"
+		requested_factories = 3
+		progress = 0.75
+		amount = 1
+	}
+
+	# Mar 1911
+	add_equipment_production = {
+		equipment = {
+			type = battle_cruiser_1
+			creator = "GER" 
+		}
+		name = "Seydlitz"
+		requested_factories = 3
+		progress = 0.25
+		amount = 1
+	}
+
+	### Light Cruisers
+	# May 1911, # Stralsund Nov 1911
+	add_equipment_production = {
+		equipment = {
+			type = light_cruiser_1
+			creator = "GER" 
+		}
+		name = "Breslau"
+		requested_factories = 3
+		progress = 0.5
+		amount = 2
+	}
+
+	# May 1911, Strassburg Aug 1911
+	add_equipment_production = {
+		equipment = {
+			type = light_cruiser_1
+			creator = "GER" 
+		}
+		name = "Magdeburg"
+		requested_factories = 3
+		progress = 0.5
+		amount = 2
 	}
 }

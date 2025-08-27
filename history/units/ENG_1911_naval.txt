@@ -314,3 +314,104 @@ units = {
 		}
 	}
 }
+
+instant_effect = {
+	### Dreadnoughts
+	# Aug 1910, pulled back to give GER a chance in the Naval Race
+	add_equipment_production = {
+		equipment = {
+			type = battleship_1
+			creator = "ENG" 
+		}
+		name = "Orion"
+		requested_factories = 3
+		progress = 0.9
+		amount = 1
+	}
+
+	# May 1911
+	add_equipment_production = {
+		equipment = {
+			type = battleship_1
+			creator = "ENG" 
+		}
+		name = "Conqueror"
+		requested_factories = 3
+		progress = 0.75
+		amount = 1
+	}
+
+	# Mar 1911
+	add_equipment_production = {
+		equipment = {
+			type = battleship_1
+			creator = "ENG" 
+		}
+		name = "Monarch"
+		requested_factories = 3
+		progress = 0.75
+		amount = 1
+	}
+
+	# Feb 1911
+	add_equipment_production = {
+		equipment = {
+			type = battleship_1
+			creator = "ENG" 
+		}
+		name = "Thunderer"
+		requested_factories = 3
+		progress = 0.9
+		amount = 1
+	}
+
+	### Battlecruisers
+	# Apr 1911
+	add_equipment_production = {
+		equipment = {
+			type = battle_cruiser_1
+			creator = "ENG" 
+		}
+		name = "Princess Royal"
+		requested_factories = 3
+		progress = 0.5
+		amount = 1
+	}
+
+	# Jul 1911
+	add_equipment_production = {
+		equipment = {
+			type = battle_cruiser_1
+			creator = "ENG" 
+		}
+		name = "Indefatigable"
+		requested_factories = 3
+		progress = 0.25
+		amount = 1
+	}
+
+	# Light Cruisers
+	# Sept 1911, Dartmouth Oct 1911
+	add_equipment_production = {
+		equipment = {
+			type = light_cruiser_1
+			creator = "ENG" 
+		}
+		name = "Falmouth"
+		requested_factories = 3
+		progress = 0.5
+		amount = 2
+	}
+
+	# Oct 1911, Yarmouth Apr 1912
+	add_equipment_production = {
+		equipment = {
+			type = light_cruiser_1
+			creator = "ENG" 
+		}
+		name = "Weymouth"
+		requested_factories = 3
+		progress = 0.5
+		amount = 2
+	}
+}

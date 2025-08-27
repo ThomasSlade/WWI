@@ -1,0 +1,203 @@
+effect_ENG_begin_naval_race = {
+	ENG = {
+		set_variable = { naval_race_coastal_infrastructure_bonus = 0.05 }
+
+		every_controlled_state = {
+			limit = {
+				is_in_british_isles = yes
+				is_coastal = yes
+			}
+
+			add_dynamic_modifier = {
+				modifier = modifier_ENG_naval_race_coastal_infrastructure_bonus
+			}
+		}
+	}
+
+	GER = {
+		effect_ENG_set_naval_race_rival = yes
+	}
+
+	effect_ENG_add_naval_race_opinion = yes
+}
+
+effect_ENG_clear_naval_race_rival = {
+	if = {
+		limit = { has_variable = naval_race_rival }
+
+		effect_ENG_remove_naval_race_opinion = yes
+		var:naval_race_rival = {
+			effect_ENG_remove_naval_race_opinion = yes
+			remove_power_balance = { id = bop_ENG_naval_race }
+		}
+
+		clear_variable = naval_race_rival
+	}
+}
+
+# THIS must be the desired naval rival.
+# PREV must be ENG.
+effect_ENG_set_naval_race_rival = {
+	effect_ENG_clear_naval_race_rival = yes
+
+	set_power_balance = {
+		id = bop_ENG_naval_race
+	}
+
+	PREV = {
+		set_variable = { naval_race_rival = PREV }
+	}
+
+	effect_ENG_add_naval_race_opinion = yes
+}
+
+# Set the British and Rival naval race ideas.
+# param_naval_race_idea_britain: The new idea for Britain
+# param_naval_race_idea_rival: The new idea for the rival.
+effect_ENG_set_naval_race_ideas = {
+	# This effect basically works by showing an actual effect for Britain, and a tooltip for the rival, if we're in the scope of Britain,
+	# or an actual effect for the rival, and a tooltip for Britain, if in the scope of the rival.
+	if = {
+		limit = { original_tag = ENG }
+
+		if = {
+			limit = { has_variable = current_naval_race_idea }
+			# If they already have this idea, don't do anything, but create a tooltip showing the idea's effects.
+			# The player is probably mousing over the BOP segment they're already on.
+			if = {
+				limit = { check_variable = { current_naval_race_idea = var:param_naval_race_idea_britain } }
+				effect_tooltip = {
+					add_ideas = var:param_naval_race_idea_britain
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = var:current_naval_race_idea
+					add_idea = var:param_naval_race_idea_britain
+				}
+			}
+		}
+		else = {
+			add_ideas = var:param_naval_race_idea_britain
+		}
+
+		set_variable = { current_naval_race_idea = param_naval_race_idea_britain }
+
+		effect_tooltip = {
+			var:naval_race_rival = {
+				if = {
+					limit = { has_variable = current_naval_race_idea }
+					if = {
+						limit = { check_variable = { current_naval_race_idea = var:param_naval_race_idea_rival } }
+						effect_tooltip = {
+							add_ideas = var:param_naval_race_idea_rival
+						}
+					}
+					else = {
+						swap_ideas = {
+							remove_idea = var:current_naval_race_idea
+							add_idea = var:param_naval_race_idea_rival
+						}
+					}
+				}
+			}
+		}
+	}
+	else = {
+		if = {
+			limit = { has_variable = current_naval_race_idea }
+			if = {
+				limit = { check_variable = { current_naval_race_idea = var:param_naval_race_idea_rival } }
+				effect_tooltip = {
+					add_ideas = var:param_naval_race_idea_rival
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = var:current_naval_race_idea
+					add_idea = var:param_naval_race_idea_rival
+				}
+			}
+		}
+		else = {
+			add_ideas = var:param_naval_race_idea_rival
+		}
+	
+		set_variable = { current_naval_race_idea = param_naval_race_idea_rival }
+	
+		effect_tooltip = {
+			ENG = {
+				if = {
+					limit = { has_variable = current_naval_race_idea }
+					if = {
+						limit = { check_variable = { current_naval_race_idea = var:param_naval_race_idea_britain } }
+						effect_tooltip = {
+							add_ideas = var:param_naval_race_idea_britain
+						}
+					}
+					else = {
+						swap_ideas = {
+							remove_idea = var:current_naval_race_idea
+							add_idea = var:param_naval_race_idea_britain
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+effect_ENG_end_naval_race = {
+	custom_override_tooltip = {
+		tooltip = end_naval_race_tt
+
+		ENG = {
+			remove_ideas = var:current_naval_race_idea
+			
+			var:naval_race_rival = {
+				remove_ideas = var:current_naval_race_idea
+			}
+
+			remove_power_balance = { id = bop_ENG_naval_race }
+
+			effect_ENG_remove_naval_race_opinion = yes
+			effect_ENG_clear_naval_race_rival = yes
+		}
+	}
+}
+
+effect_ENG_add_naval_race_opinion = {
+	set_temp_variable = { opinion_target = ENG }
+	if = {
+		limit = { original_tag = ENG }
+		set_temp_variable = { opinion_target = var:naval_race_rival }
+	}
+
+	meta_effect = {
+		ADD_OPINION_TARGET = "[?opinion_target.GetTag]"
+		text = {
+			add_opinion_modifier = {
+				target = [ADD_OPINION_TARGET]
+				modifier = opinion_ENG_naval_race
+			}
+		}
+	}
+}
+
+effect_ENG_remove_naval_race_opinion = {
+	set_temp_variable = { opinion_target = ENG }
+	if = {
+		limit = { original_tag = ENG }
+		set_temp_variable = { opinion_target = var:naval_race_rival }
+	}
+
+	meta_effect = {
+		REMOVE_OPINION_TARGET = "[?opinion_target.GetTag]"
+		text = {
+			remove_opinion_modifier = {
+				target = [REMOVE_OPINION_TARGET]
+				modifier = opinion_ENG_naval_race
+			}
+		}
+	}
+}

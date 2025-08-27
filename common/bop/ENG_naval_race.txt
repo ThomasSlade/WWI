@@ -1,57 +1,204 @@
 bop_ENG_naval_race = {
 	initial_value = 0
+	left_side = bop_ENG_british
+	right_side = bop_ENG_rival
+	decision_category = decision_category_ENG_naval_race
 
 	side = {
 		id = bop_ENG_british
+		icon = GFX_bop_ENG_naval_race_britain
+
 		range = {
 			id = bop_ENG_britain_0
-			min = -0.25
-			max = 0
+			min = -0.45
+			max = -0.15
+
+			on_activate = {
+				set_temp_variable = { param_naval_race_idea_britain = token:idea_ENG_naval_race_britain_0_british_bonus }
+				set_temp_variable = { param_naval_race_idea_rival = token:idea_ENG_naval_race_britain_0_rival_malus }
+				effect_ENG_set_naval_race_ideas = yes
+
+				hidden_effect = {
+					country_event = { id = event_ENG_naval_race.1 }
+				}
+			}
 		}
 
 		range = {
 			id = bop_ENG_britain_1
-			min = -0.5
-			max = -0.25
+			min = -0.75
+			max = -0.45
+		
+			on_activate = {
+				set_temp_variable = { param_naval_race_idea_britain = token:idea_ENG_naval_race_britain_1_british_bonus }
+				set_temp_variable = { param_naval_race_idea_rival = token:idea_ENG_naval_race_britain_1_rival_malus }
+				effect_ENG_set_naval_race_ideas = yes
+			}
 		}
-
+		
 		range = {
 			id = bop_ENG_britain_2
-			min = -0.75
-			max = -0.5
-		}
+			min = -0.99
+			max = -0.75
+		
+			on_activate = {
+				set_temp_variable = { param_naval_race_idea_britain = token:idea_ENG_naval_race_britain_2_british_bonus }
+				set_temp_variable = { param_naval_race_idea_rival = token:idea_ENG_naval_race_britain_2_rival_malus }
+				effect_ENG_set_naval_race_ideas = yes
 
+				hidden_effect = {
+					country_event = { id = event_ENG_naval_race.2 }
+				}
+			}
+		}
+	
 		range = {
 			id = bop_ENG_britain_3
 			min = -1
-			max = -0.75
+			max = -0.99
+		
+			on_activate = {
+				if = {
+					limit = { NOT = { original_tag = ENG } }
+
+					if = {
+						limit = { original_tag = GER }
+						effect_GER_encirclement_increase = yes
+					}
+
+					effect_tooltip = {
+						ENG = {
+							add_ideas = idea_ENG_naval_race_victor_britain
+						}
+					}
+
+					reverse_add_opinion_modifier = {
+						target = ENG
+						modifier = opinion_ENG_naval_race_loser
+					}
+				}
+				else = {
+					add_ideas = idea_ENG_naval_race_victor_britain
+
+					effect_tooltip = {
+						var:naval_race_rival = {
+							add_opinion_modifier = {
+								target = ENG
+								modifier = opinion_ENG_naval_race_loser
+							}
+						}
+					}
+
+					hidden_effect = {
+						save_event_target_as = naval_race_victor
+						news_event = { id = event_ENG_naval_race.3 }
+					}
+				}
+
+				effect_ENG_end_naval_race = yes
+			}
+		}
+	}
+
+	range = {
+		id = bop_ENG_neutral
+		min = -0.15
+		max = 0.15
+	
+		on_activate = {
+			set_temp_variable = { param_naval_race_idea_britain = token:idea_ENG_naval_race_neutral_british_bonus }
+			set_temp_variable = { param_naval_race_idea_rival = token:idea_ENG_naval_race_neutral_rival_malus }
+			effect_ENG_set_naval_race_ideas = yes
 		}
 	}
 
 	side = {
 		id = bop_ENG_rival
-		range = {
-			id = bop_ENG_challenger_0
-			min = 0
-			max = 0.25
-		}
+		icon = GFX_bop_ENG_naval_race_rival
 
 		range = {
-			id = bop_ENG_challenger_1
-			min = 0.25
-			max = 0.5
-		}
+			id = bop_ENG_rival_0
+			min = 0.15
+			max = 0.45
+		
+			on_activate = {
+				set_temp_variable = { param_naval_race_idea_britain = token:idea_ENG_naval_race_rival_0_british_malus }
+				set_temp_variable = { param_naval_race_idea_rival = token:idea_ENG_naval_race_rival_0_rival_bonus }
+				effect_ENG_set_naval_race_ideas = yes
 
+				hidden_effect = {
+					country_event = { id = event_ENG_naval_race.4 }
+				}
+			}
+		}
+		
 		range = {
-			id = bop_ENG_challenger_2
-			min = 0.5
+			id = bop_ENG_rival_1
+			min = 0.45
 			max = 0.75
+		
+			on_activate = {
+				set_temp_variable = { param_naval_race_idea_britain = token:idea_ENG_naval_race_rival_1_british_malus }
+				set_temp_variable = { param_naval_race_idea_rival = token:idea_ENG_naval_race_rival_1_rival_bonus }
+				effect_ENG_set_naval_race_ideas = yes
+			}
+		}
+		
+		range = {
+			id = bop_ENG_rival_2
+			min = 0.75
+			max = 0.99
+		
+			on_activate = {
+				set_temp_variable = { param_naval_race_idea_britain = token:idea_ENG_naval_race_rival_2_british_malus }
+				set_temp_variable = { param_naval_race_idea_rival = token:idea_ENG_naval_race_rival_2_rival_bonus }
+				effect_ENG_set_naval_race_ideas = yes
+
+				hidden_effect = {
+					country_event = { id = event_ENG_naval_race.5 }
+				}
+			}
 		}
 
 		range = {
-			id = bop_ENG_challenger_3
-			min = 0.75
+			id = bop_ENG_rival_3
+			min = 0.99
 			max = 1
+		
+			on_activate = {
+				if = {
+					limit = { NOT = { original_tag = ENG } }
+					add_ideas = idea_ENG_naval_race_victor_rival
+
+					effect_tooltip = {
+						reverse_add_opinion_modifier = {
+							target = ENG
+							modifier = opinion_ENG_naval_race_loser
+						}
+					}
+
+					hidden_effect = {
+						save_event_target_as = naval_race_victor
+						news_event = { id = event_ENG_naval_race.6 }
+					}
+				}
+				else = {
+					var:naval_race_rival = {
+						reverse_add_opinion_modifier = {
+							target = ENG
+							modifier = opinion_ENG_naval_race_loser
+						}
+					}
+					
+					effect_tooltip = {
+						var:naval_race_rival = {
+							add_ideas = idea_ENG_naval_race_victor_rival
+						}
+					}
+				}
+
+				effect_ENG_end_naval_race = yes
+			}
 		}
 	}
 }
