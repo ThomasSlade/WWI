@@ -70,6 +70,8 @@ set_variable = { leader@token:socialist = GER_friedrich_ebert }
 recruit_character = GER_rosa_luxemburg
 set_variable = { leader@token:communist = GER_rosa_luxemburg }
 
+set_variable = { alsace_lorraine_production_speed_buildings_factor = -0.2 }
+
 recruit_character = GER_erich_von_falkenhayn
 recruit_character = GER_erich_ludendorff
 recruit_character = GER_helmuth_von_moltke
@@ -80,3 +82,99 @@ recruit_character = GER_alexander_von_kluck
 create_faction = CENTRAL_POWERS
 add_to_faction = GER
 add_to_faction = AUS
+
+# Elass
+2 = {
+	start_resistance = yes
+	set_compliance = 20
+	set_resistance = 10
+
+	add_dynamic_modifier = {
+		modifier = modifier_GER_alsace_lorraine_not_integrated
+		scope = OWNER
+	}
+}
+
+# Lothringen
+107 = {
+	start_resistance = yes
+	set_compliance = 0
+	set_resistance = 25
+
+	add_dynamic_modifier = {
+		modifier = modifier_GER_alsace_lorraine_not_integrated
+		scope = OWNER
+	}
+}
+
+# Saarland
+54 = {
+	add_dynamic_modifier = {
+		modifier = modifier_GER_alsace_lorraine_not_integrated
+		scope = OWNER
+	}
+}
+
+# Trier
+73 = {
+	add_dynamic_modifier = {
+		modifier = modifier_GER_alsace_lorraine_not_integrated
+		scope = OWNER
+	}
+}
+
+# Koblenz
+70 = {
+	add_dynamic_modifier = {
+		modifier = modifier_GER_alsace_lorraine_not_integrated
+		scope = OWNER
+	}
+}
+
+# Aachen
+52 = {
+	add_dynamic_modifier = {
+		modifier = modifier_GER_alsace_lorraine_not_integrated
+		scope = OWNER
+	}
+}
+
+# Eupen-Malmedy
+17 = {
+	add_dynamic_modifier = {
+		modifier = modifier_GER_alsace_lorraine_not_integrated
+		scope = OWNER
+	}
+}
+
+# Cologne
+87 = {
+	add_dynamic_modifier = {
+		modifier = modifier_GER_alsace_lorraine_not_integrated
+		scope = OWNER
+	}
+}
+
+# Dusseldorf
+45 = {
+	add_dynamic_modifier = {
+		modifier = modifier_GER_alsace_lorraine_not_integrated
+		scope = OWNER
+	}
+}
+
+# Starkenburg
+75 = {
+	add_dynamic_modifier = {
+		modifier = modifier_GER_alsace_lorraine_not_integrated
+		scope = OWNER
+	}
+}
+
+# Pfalz
+22 = {
+	add_dynamic_modifier = {
+		modifier = modifier_GER_alsace_lorraine_not_integrated
+		scope = OWNER
+	}
+}

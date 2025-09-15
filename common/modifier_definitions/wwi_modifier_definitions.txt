@@ -15,3 +15,33 @@ naval_race_coastal_infrastructure_bonus = {
 	value_type = percentage
 	precision = 2
 }
+
+cannot_decrease_manpower_laws = {
+	color_type = bad
+	value_type = yes_no
+}
+
+cannot_decrease_economic_laws = {
+	color_type = bad
+	value_type = yes_no
+}
+
+cannot_decrease_rationing_laws = {
+	color_type = bad
+	value_type = yes_no
+}
+
+cannot_decrease_workers_rights_laws = {
+	color_type = bad
+	value_type = yes_no
+}
+
+cannot_decrease_civil_rights_laws = {
+	color_type = bad
+	value_type = yes_no
+}
+
+cannot_decrease_blockade_policy_laws = {
+	color_type = bad
+	value_type = yes_no
+}

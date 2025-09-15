@@ -1,0 +1,21 @@
+modifier_GER_alsace_lorraine_not_integrated = {
+	icon = GFX_modifiers_generic_military_industry
+
+	local_resources_factor = -0.1
+	local_supplies = -0.1
+	production_speed_buildings_factor = alsace_lorraine_production_speed_buildings_factor
+
+	enable = {
+		controller = { original_tag = GER }
+	}
+}
+
+modifier_GER_alsace_lorraine_constitution = {
+	icon = GFX_modifiers_generic_military_industry
+
+	compliance_growth = 0.5
+
+	enable = {
+		controller = { original_tag = GER }
+	}
+}

@@ -1,4 +1,17 @@
 ﻿l_english:
+  trigger_cannot_decrease_manpower_law_tt: "Cannot decrease $mobiliation_laws$"
+  trigger_cannot_decrease_manpower_law_tt_NOT: "Can decrease $mobiliation_laws$"
+  trigger_cannot_decrease_economic_law_tt: "Cannot decrease $economy$"
+  trigger_cannot_decrease_economic_law_tt_NOT: "Can decrease $economy$"
+  trigger_cannot_decrease_rationing_law_tt: "Cannot decrease $rationing$"
+  trigger_cannot_decrease_rationing_law_tt_NOT: "Can decrease $rationing$"
+  trigger_cannot_decrease_workers_rights_law_tt: "Cannot decrease $workers_rights$"
+  trigger_cannot_decrease_workers_rights_law_tt_NOT: "Can decrease $workers_rights$"
+  trigger_cannot_decrease_civil_rights_law_tt: "Cannot decrease $civil_rights$"
+  trigger_cannot_decrease_civil_rights_law_tt_NOT: "Can decrease $civil_rights$"
+  trigger_cannot_decrease_blockade_policy_law_tt: "Cannot decrease $blockade_policy$"
+  trigger_cannot_decrease_blockade_policy_law_tt_NOT: "Can decrease $blockade_policy$"
+
   AUS_has_any_hungarian_resistance_tt: "Has any level of §YHungarian Resistance§!"
   AUS_has_any_hungarian_resistance_tt_NOT: "Has minimum level of §YHungarian Resistance§!"
   AUS_has_any_minority_resistance_tt: "Has any level of §YMinority Resistance§!"

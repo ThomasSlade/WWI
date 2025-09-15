@@ -1,7 +1,5 @@
 effect_ENG_begin_naval_race = {
 	ENG = {
-		set_variable = { naval_race_coastal_infrastructure_bonus = 0.05 }
-
 		every_controlled_state = {
 			limit = {
 				is_in_british_isles = yes

@@ -46,3 +46,28 @@ country_event = {
 		}
 	}
 }
+
+add_namespace = event_GER_zabern_affair
+
+country_event = {
+	id = event_GER_zabern_affair.1
+	title = event_GER_zabern_affair.1.t
+	desc = event_GER_zabern_affair.1.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) The Zabern Affair."
+	}
+
+	option = {
+		name = event_GER_zabern_affair.1.a
+		effect_GER_zabern_side_with_officers = yes
+	}
+
+	option = {
+		name = event_GER_zabern_affair.1.b
+		effect_GER_zabern_side_with_citizens = yes
+	}
+}

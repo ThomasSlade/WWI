@@ -14,6 +14,7 @@ ideas = {
 				}
 
 				set_temp_variable = { param_law = token:forced_labour }
+				trigger_cannot_decrease_workers_rights_law = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
@@ -44,6 +45,7 @@ ideas = {
 				}
 
 				set_temp_variable = { param_law = token:quitting_illegal }
+				trigger_cannot_decrease_workers_rights_law = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
@@ -76,6 +78,7 @@ ideas = {
 				}
 
 				set_temp_variable = { param_law = token:unions_illegal }
+				trigger_cannot_decrease_workers_rights_law = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
@@ -105,6 +108,7 @@ ideas = {
 				}
 
 				set_temp_variable = { param_law = token:worker_collaboration_0 }
+				trigger_cannot_decrease_workers_rights_law = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
@@ -135,6 +139,7 @@ ideas = {
 				}
 
 				set_temp_variable = { param_law = token:wage_controls_0 }
+				trigger_cannot_decrease_workers_rights_law = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
@@ -164,6 +169,7 @@ ideas = {
 				}
 
 				set_temp_variable = { param_law = token:worker_collaboration_1 }
+				trigger_cannot_decrease_workers_rights_law = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
@@ -193,6 +199,7 @@ ideas = {
 				}
 
 				set_temp_variable = { param_law = token:wage_controls_1 }
+				trigger_cannot_decrease_workers_rights_law = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}

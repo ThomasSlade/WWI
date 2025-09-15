@@ -4,7 +4,7 @@ decision_category_politics = {
 		icon = SWI_no_elected_president
 
 		available = {
-			triger_government_can_reform_cabinet = yes
+			trigger_government_can_reform_cabinet = yes
 			trigger_has_recently_reformed_cabinet = no
         }
 
@@ -29,7 +29,7 @@ decision_category_politics = {
 		}
 
 		available = {
-			triger_government_can_call_elections = yes
+			trigger_government_can_call_elections = yes
 			trigger_has_recently_had_election = no
         }
 

@@ -26,6 +26,12 @@
   cabinet: "Cabinet"
   government: "Government"
   opposition: "Opposition"
+  mobiliation_laws: "Conscription Law"
+  economy: "Economy Law"
+  rationing: "Rationing Law"
+  workers_rights: "Workers' Rights Law"
+  civil_rights: "Civil Rights Law"
+  blockade_policy: "Blockade Policy Law"
   
   gov_military_dictatorship: "Military Dictatorship"
   gov_absolute_monarchy: "Absolute Monarchy"
@@ -90,7 +96,17 @@
   monarch_becomes_leader_tt: "§Y[?monarch.GetName]§! becomes leader of §Y[THIS.owner.GetName]§!"
   party_leader_becomes_leader_tt: "§YCabinet party leader§! becomes leader of §Y[THIS.owner.GetName]§!"
 
+  # Effects
+  effect_increase_left_opposition_or_move_opposition_left_tt: "§YOpposition will move to the left, or left-leaning Opposition will increase§!:"
+
+  # Triggers
   trigger_has_recently_reformed_cabinet_tt: "Has recently §YReformed Cabinet§!"
   trigger_has_recently_reformed_cabinet_tt_NOT: "Has not recently §YReformed Cabinet§!"
   trigger_has_recently_had_election_tt: "Has recently §YCalled Election§!"
   trigger_has_recently_had_election_tt_NOT: "Has not recently §YCalled Election§!"
+
+  trigger_has_leftist_opposition_tt: "Opposition is $socialist_colored$ or $communist_colored$"
+  trigger_has_leftist_cabinet_tt: "Cabinet is $socialist_colored$ or $communist_colored$"
+  trigger_has_rightist_opposition_tt: "Opposition is $conservative_colored$ or $autocratic_colored$"
+  trigger_has_rightist_cabinet_tt: "Cabinet is $conservative_colored$ or $autocratic_colored$"
+  trigger_has_rightist_cabinet_tt_NOT: "Cabinet is not $conservative_colored$ or $autocratic_colored$"

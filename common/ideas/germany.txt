@@ -85,5 +85,65 @@ ideas = {
 				economy_cost_factor = -0.3
 			}
 		}
+
+		idea_GER_domestic_investment = {
+			removal_cost = -1
+			picture = idea_generic_industry
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				production_speed_infrastructure_factor = 0.5
+				production_speed_industrial_complex_factor = 0.3
+			}
+		}
+
+		idea_GER_german_defence_league = {
+			removal_cost = -1
+			picture = idea_generic_arms_industry
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				production_speed_arms_factory_factor = 0.2
+				mobilization_speed = 0.3
+				mobilization_laws_cost_factor = -0.3
+				economy_cost_factor = -0.3
+				cannot_decrease_manpower_laws = 1
+				cannot_decrease_economic_laws = 1
+			}
+		}
+
+		idea_GER_wehrbeitrag = {
+			removal_cost = -1
+			picture = idea_generic_seize_wealth
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				consumer_goods_factor = -0.05
+				cic_construction_boost = 0.2
+			}
+		}
+
+		idea_GER_zabern_army_inquiry = {
+			removal_cost = -1
+			picture = idea_generic_justice
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				command_power_gain_mult = -0.5
+				experience_gain_army_factor = -0.3
+			}
+		}
 	}
 }

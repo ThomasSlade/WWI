@@ -22,7 +22,13 @@ on_actions = {
 				set_variable = { free_civ_from_mils = 0 }
 				set_variable = { current_free_civs_from_mils = 0 }	# Necessary because the free_civ_from_mils mechanic is based on daily (there's no on_building_build sadly), so you need to track what it was last update and add the difference next update.
 				set_variable = { free_civ_from_navs = 0 }
-				set_variable = { current_free_civs_from_navs = 0 }
+				set_variable = { current_free_civ_from_navs = 0 }
+				set_variable = { cannot_decrease_manpower_laws = 0 }
+				set_variable = { cannot_decrease_economic_laws = 0 }
+				set_variable = { cannot_decrease_rationing_laws = 0 }
+				set_variable = { cannot_decrease_workers_rights_laws = 0 }
+				set_variable = { cannot_decrease_civil_rights_laws = 0 }
+				set_variable = { cannot_decrease_blockade_policy_laws = 0 }
 
 				effect_update_civs_from_mils = yes
 				effect_update_civs_from_navs = yes

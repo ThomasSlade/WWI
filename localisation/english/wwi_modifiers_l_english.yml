@@ -9,6 +9,13 @@
   modifier_modern_doctrine_tech_penalty: "Modern Doctrine Technology Penalty"
   modern_doctrine_tech_penalty_reduction_tt: "Modern Doctrine Technology Penalty: §G-25%§!"
 
+  cannot_decrease_manpower_laws: "$trigger_cannot_decrease_manpower_law_tt$"
+  cannot_decrease_economic_laws: "$trigger_cannot_decrease_economic_law_tt$"
+  cannot_decrease_rationing_laws: "$trigger_cannot_decrease_rationing_law_tt$"
+  cannot_decrease_workers_rights_laws: "$trigger_cannot_decrease_workers_rights_law_tt$"
+  cannot_decrease_civil_rights_laws: "$trigger_cannot_decrease_civil_rights_law_tt$"
+  cannot_decrease_blockade_policy_laws: "$trigger_cannot_decrease_blockade_policy_law_tt$"
+
   free_civ_from_mils: "Offmap Civilian Factories from each Military Factory"
   free_civ_from_navs: "Offmap Civilian Factories from each Naval Dockyard"
 
@@ -21,3 +28,7 @@
   # ENG
   naval_race_coastal_infrastructure_bonus: "$modifier_production_speed_infrastructure_factor$ in coastal British Isles states"
   modifier_ENG_naval_race_coastal_infrastructure_bonus: "Naval Race"
+
+  # GER
+  modifier_GER_alsace_lorraine_not_integrated: "Alsace-Lorraine Unintegrated"
+  alsace_lorraine_production_speed_buildings_factor_tt: "(§Y$modifier_GER_alsace_lorraine_not_integrated$§!) $MODIFIER_PRODUCTION_SPEED_BUILDINGS_FACTOR$: $RIGHT|+=%1$"

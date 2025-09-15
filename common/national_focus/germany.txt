@@ -28,7 +28,10 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = idea_GER_domestic_investment
+				days = 365
+			}
 		}
 	}
 
@@ -47,7 +50,67 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			random_owned_state = {
+				prioritize = {
+					43 # Berlin
+					398 # Hamburg
+				}
+
+				add_extra_state_shared_building_slots = 1
+
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+			}
+
+			random_owned_state = {
+				prioritize = {
+					72 # Hesse Kassel
+					87 # Koln
+				}
+
+				add_extra_state_shared_building_slots = 1
+
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+			}
+
+			random_owned_state = {
+				prioritize = {
+					82 # Saxony
+					28 # Katoritz
+				}
+
+				add_extra_state_shared_building_slots = 1
+
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+			}
+
+			random_owned_state = {
+				prioritize = {
+					54 # Saarland
+					2 # Elass
+				}
+
+				add_extra_state_shared_building_slots = 1
+
+				add_building_construction = {
+				    type = arms_factory
+				    level = 1
+				    instant_build = yes
+				}
+			}
+
+			effect_increase_left_opposition_or_move_opposition_left_if_right_cabinet = yes
 		}
 	}
 
@@ -66,7 +129,10 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = idea_GER_german_defence_league
+				days = 730
+			}
 		}
 	}
 
@@ -85,12 +151,13 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_political_power = 100
+			army_experience = 50
 		}
 	}
 
 	focus = {
-		id = GER_wealth_tax
+		id = GER_wehrbeitrag
 		icon = GFX__shine
 		prerequisite = { focus = GER_war_council }
 		x = -1
@@ -104,7 +171,15 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = idea_GER_wehrbeitrag
+				days = 365
+			}
+
+			if = {
+				limit = { trigger_has_leftist_opposition = yes }
+				effect_decrease_opposition = yes
+			}
 		}
 	}
 
@@ -122,18 +197,94 @@ focus_tree = {
 
 		available_if_capitulated = no
 
+		available = {
+			trigger_has_rightist_cabinet = no
+		}
+
 		completion_reward = {
-			
+			random_owned_state = {
+				prioritize = {
+					48 # Nieder Lausitz
+					4 # South Potsdam
+				}
+
+				add_extra_state_shared_building_slots = 1
+
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+			}
+
+			random_owned_state = {
+				prioritize = {
+					37 # Stettin
+					84 # Mecklenburg
+				}
+
+				add_extra_state_shared_building_slots = 1
+
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+			}
+
+			48 = {
+				if = {
+					limit = { controlled_by = ROOT }
+					add_building_construction = {
+					    type = infrastructure
+					    level = 1
+					    instant_build = yes
+					}
+				}
+			}
+
+			4 = {
+				if = {
+					limit = { controlled_by = ROOT }
+					add_building_construction = {
+					    type = infrastructure
+					    level = 1
+					    instant_build = yes
+					}
+				}
+			}
+
+			37 = {
+				if = {
+					limit = { controlled_by = ROOT }
+					add_building_construction = {
+					    type = infrastructure
+					    level = 1
+					    instant_build = yes
+					}
+				}
+			}
+
+			84 = {
+				if = {
+					limit = { controlled_by = ROOT }
+					add_building_construction = {
+					    type = infrastructure
+					    level = 1
+					    instant_build = yes
+					}
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = GER_army_bill
 		icon = GFX__shine
-		prerequisite = { focus = GER_wealth_tax focus = GER_inheritance_tax }
+		prerequisite = { focus = GER_wehrbeitrag focus = GER_inheritance_tax }
 		x = 1
 		y = 1
-		relative_position_id = GER_wealth_tax
+		relative_position_id = GER_wehrbeitrag
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -142,7 +293,50 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			random_owned_state = {
+				prioritize = {
+					46 # Ruhr
+					45 # Dusseldorf
+				}
+
+				add_extra_state_shared_building_slots = 2
+
+				add_building_construction = {
+				    type = arms_factory
+				    level = 2
+				    instant_build = yes
+				}
+			}
+
+			random_owned_state = {
+				prioritize = {
+					43 # Berlin
+					4 # South Potsdam
+				}
+
+				add_extra_state_shared_building_slots = 1
+
+				add_building_construction = {
+				    type = arms_factory
+				    level = 1
+				    instant_build = yes
+				}
+			}
+
+			random_owned_state = {
+				prioritize = {
+					57 # Bremen
+					58 # Oldenburg
+				}
+
+				add_extra_state_shared_building_slots = 1
+
+				add_building_construction = {
+				    type = dockyard
+				    level = 1
+				    instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -829,10 +1023,10 @@ focus_tree = {
 	focus = {
 		id = GER_accommodate_the_spd
 		icon = GFX__shine
-		prerequisite = { focus = GER_wealth_tax }
+		prerequisite = { focus = GER_wehrbeitrag }
 		x = -6
 		y = 1
-		relative_position_id = GER_wealth_tax
+		relative_position_id = GER_wehrbeitrag
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -1417,8 +1611,23 @@ focus_tree = {
 
 		available_if_capitulated = no
 
+		available = {
+			OR = {
+				controls_state = 107
+				controls_state = 2
+			}
+		}
+
 		completion_reward = {
-			
+			every_controlled_state = {
+				limit = { is_in_alsace_lorraine = yes }
+				add_dynamic_modifier = { modifier = modifier_GER_alsace_lorraine_constitution }
+			}
+
+			add_to_variable = {
+				alsace_lorraine_production_speed_buildings_factor = 0.1
+				tooltip = alsace_lorraine_production_speed_buildings_factor_tt
+			}
 		}
 	}
 
@@ -1438,7 +1647,15 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			country_event = { id = event_GER_zabern_affair.1 }
+
+			effect_tooltip = {
+				custom_effect_tooltip = zabern_if_we_side_with_army_tt
+				effect_GER_zabern_side_with_officers = yes
+
+				custom_effect_tooltip = zabern_if_we_side_with_citizens_tt
+				effect_GER_zabern_side_with_citizens = yes
+			}
 		}
 	}
 
@@ -1593,8 +1810,39 @@ focus_tree = {
 
 		available_if_capitulated = no
 
+		available = {
+			OR = {
+				controls_state = 107
+				controls_state = 2
+			}
+
+			107 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					compliance > 50
+				}
+			}
+
+			2 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					compliance > 50
+				}
+			}
+		}
+
 		completion_reward = {
-			
+			every_controlled_state = {
+				limit = { is_in_alsace_lorraine = yes }
+				add_core_of = ROOT
+			}
+
+			every_state = {
+				limit = {
+					has_dynamic_modifier = { modifier = modifier_GER_alsace_lorraine_not_integrated scope = ROOT }
+				}
+				remove_dynamic_modifier = { modifier = modifier_GER_alsace_lorraine_not_integrated }
+			}
 		}
 	}
 

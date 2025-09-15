@@ -109,6 +109,11 @@ spriteTypes = {
 		name = "GFX_idea_generic_combat_lion"
 		texturefile = "gfx/interface/ideas/idea_generic_combat_lion.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_generic_seize_wealth"
+		texturefile = "gfx/interface/ideas/idea_generic_seize_wealth.dds"
+	}
+	
 
 	# Unit Targetting
 	spriteType = {

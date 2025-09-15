@@ -1,0 +1,5 @@
+﻿l_english:
+  event_GER_zabern_affair.1.t: "The Zabern Affair"
+  event_GER_zabern_affair.1.d: "'If you stab such a Wackes, you'll get ten marks from me.'\n\nThese words were spoken by a member of the Alsace-Lorraine garrison in Zabern, to the outrage of the 'Wackese' they disparage. A standoff between the townsfolk and its barracks escalated to civilian arrests, while the offending soldier has since struck down an unarmed heckler with his sabre.\n\nAlsace-Lorraine has been an uneasy member-territory of the Reich since its annexation from France, and with outrage over the affair reaching [THIS.capital.GetCapitalVictoryPointName], Erich von Falkenhayn must advocate for the officers' actions before a disapproving Reichstag."
+  event_GER_zabern_affair.1.a: "We must defend the officers."
+  event_GER_zabern_affair.1.b: "This is not the view of the Reichstag."

@@ -28,7 +28,7 @@ trigger_opposition_allows_law_change = {
 	}
 }
 
-triger_government_can_reform_cabinet = {
+trigger_government_can_reform_cabinet = {
 	custom_trigger_tooltip = {
 		tooltip = government_can_reform_cabinet_tt
 		OR = {
@@ -39,7 +39,7 @@ triger_government_can_reform_cabinet = {
 	}
 }
 
-triger_government_can_call_elections = {
+trigger_government_can_call_elections = {
 	custom_trigger_tooltip = {
 		tooltip = government_can_reform_cabinet_tt
 		OR = {
@@ -103,5 +103,130 @@ trigger_has_recently_had_election = {
 	custom_trigger_tooltip = {
 		tooltip = trigger_has_recently_had_election_tt
 		has_country_flag = flag_recently_had_election
+	}
+}
+
+# Leftist is considered socialist or beyond. It excludes liberals.
+trigger_has_leftist_opposition = {
+	custom_trigger_tooltip = {
+		tooltip = trigger_has_leftist_opposition_tt
+		OR = {
+			check_variable = { opposition_party = token:socialist }
+			check_variable = { opposition_party = token:communist }
+		}
+	}
+}
+
+trigger_has_leftist_cabinet = {
+	custom_trigger_tooltip = {
+		tooltip = trigger_has_leftist_cabinet_tt
+		OR = {
+			check_variable = { cabinet_party = token:socialist }
+		check_variable = { cabinet_party = token:communist }
+		}
+	}
+}
+
+trigger_has_rightist_opposition = {
+	custom_trigger_tooltip = {
+		tooltip = trigger_has_rightist_oppositoion_tt
+		OR = {
+			check_variable = { opposition_party = token:autocratic }
+			check_variable = { opposition_party = token:conservative }
+		}
+	}
+}
+
+trigger_has_rightist_cabinet = {
+	custom_trigger_tooltip = {
+		tooltip = trigger_has_rightist_cabinet_tt
+		OR = {
+			check_variable = { cabinet_party = token:autocratic }
+			check_variable = { cabinet_party = token:conservative }
+		}
+	}
+}
+
+# param_law: The law we want to see if we can decrease to
+trigger_cannot_decrease_manpower_law = {
+	if = {
+		limit = { check_variable = { global._tier@var:param_law < global._tier@var:law_manpower } }
+		custom_trigger_tooltip = {
+			tooltip = trigger_cannot_decrease_manpower_law_tt
+			check_variable = { modifier@cannot_decrease_manpower_laws > 0 }
+		}
+	}
+	else = {
+		hidden_trigger = { always = no }
+	}
+}
+
+# param_law: The law we want to see if we can decrease to
+trigger_cannot_decrease_economic_law = {
+	if = {
+		limit = { check_variable = { global._tier@var:param_law < global._tier@var:law_economic } }
+		custom_trigger_tooltip = {
+			tooltip = trigger_cannot_decrease_economic_law_tt
+			check_variable = { modifier@cannot_decrease_economic_laws > 0 }
+		}
+	}
+	else = {
+		hidden_trigger = { always = no }
+	}
+}
+
+# param_law: The law we want to see if we can decrease to
+trigger_cannot_decrease_rationing_law = {
+	if = {
+		limit = { check_variable = { global._tier@var:param_law < global._tier@var:law_rationing } }
+		custom_trigger_tooltip = {
+			tooltip = trigger_cannot_decrease_rationing_law_tt
+			check_variable = { modifier@cannot_decrease_rationing_laws > 0 }
+		}
+	}
+	else = {
+		hidden_trigger = { always = no }
+	}
+}
+
+# param_law: The law we want to see if we can decrease to
+trigger_cannot_decrease_workers_rights_law = {
+	if = {
+		limit = { check_variable = { global._tier@var:param_law < global._tier@var:law_workers_rights } }
+		custom_trigger_tooltip = {
+			tooltip = trigger_cannot_decrease_workers_rights_law_tt
+			check_variable = { modifier@cannot_decrease_workers_rights_laws > 0 }
+		}
+	}
+	else = {
+		hidden_trigger = { always = no }
+	}
+}
+
+# param_law: The law we want to see if we can decrease to
+trigger_cannot_decrease_civil_rights_law = {
+	if = {
+		limit = { check_variable = { global._tier@var:param_law < global._tier@var:law_civil_rights } }
+		custom_trigger_tooltip = {
+			tooltip = trigger_cannot_decrease_civil_rights_law_tt
+			check_variable = { modifier@cannot_decrease_civil_rights_laws > 0 }
+		}
+	}
+	else = {
+		hidden_trigger = { always = no }
+	}
+}
+
+# param_law: The law we want to see if we can decrease to
+trigger_cannot_decrease_blockade_policy_law = {
+	if = {
+		limit = { check_variable = { global._tier@var:param_law < global._tier@var:law_blockade_policy } }
+		custom_trigger_tooltip = {
+			tooltip = trigger_cannot_decrease_blockade_policy_law_tt
+			check_variable = { modifier@cannot_decrease_blockade_policy_laws > 0 }
+		}
+	}
+	else = {
+		hidden_trigger = { always = no }
 	}
 }

@@ -562,7 +562,7 @@ effect_setup_politics = {
 # param_law: The law we're changing to.
 effect_law_change_opposition = {
 	meta_effect = {
-		LAW_TYPE = "[global._law_type@var:param_law]"
+		LAW_TYPE = "[?global._law_type@var:param_law.GetTokenKey]"
 
 		text = {
 			set_temp_variable = { param_current_law = law_[LAW_TYPE] }
@@ -893,6 +893,32 @@ effect_get_party_index = {
 	}
 }
 
+# Get the next party to the left of the input party.
+# param_party: The party we want the party immediately left of.
+# param_disallow_cabinet: If set to 1, disallows the query to return the current cabinet. Gets the party left of that instead. So if the cabinet is socialist, and the opposition is liberal, this returns communist.
+# out_left: The party to the left of the input. -1 if there is no party left of the input.
+effect_get_left_of_opposition = {
+	set_temp_variable = { out_left = -1 }
+
+	effect_get_party_index = yes
+	add_to_temp_variable = { out_index = 1 }
+
+	if = {
+		limit = { check_variable = { out_index < global._all_parties^num } }
+		set_temp_variable = { out_left = global._all_parties^out_index }
+
+		if = {
+			limit = {
+				check_variable = { param_disallow_cabinet = 1 }
+				check_variable = { out_left = var:cabinet_party }
+			}
+
+			set_temp_variable = { param_party = var:cabinet_party }
+			effect_get_left_of_opposition = yes
+		}
+	}
+}
+
 # Make the opposition more extreme that the current one for the sitting government, if possible.
 # param_current_cabinet: The party we're finding the more radical opposition relative to
 # param_current_opposition: The current opposition
@@ -1007,4 +1033,40 @@ effect_select_leader_using_current_government_type = {
 effect_select_leader_using_current_cabinet = {
 	set_temp_variable = { param_party = cabinet_party }
 	effect_select_leader = yes
+}
+
+effect_increase_left_opposition_or_move_opposition_left_if_right_cabinet = {
+	if = {
+		limit = { trigger_has_leftist_cabinet = no }
+		effect_increase_left_opposition_or_move_opposition_left = yes
+	}
+}
+
+effect_increase_left_opposition_or_move_opposition_left = {
+	custom_effect_tooltip = effect_increase_left_opposition_or_move_opposition_left_tt
+	custom_effect_tooltip = indent_tt
+
+	if = {
+		limit = { trigger_has_leftist_opposition = no }
+
+		effect_get_left_of_opposition = yes
+		if = {
+			limit = { NOT = { check_variable = { out_left = -1 } } }
+			set_temp_variable = { param_party = out_left }
+			effect_change_opposition = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { opposition_level < 4 } }
+
+		effect_increase_opposition = yes
+	}
+	else = {
+		effect_get_left_of_opposition = yes
+		if = {
+			limit = { NOT = { check_variable = { out_left = -1 } } }
+			set_temp_variable = { param_party = out_left }
+			effect_change_opposition = yes
+		}
+	}
 }

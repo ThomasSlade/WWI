@@ -14,6 +14,7 @@ ideas = {
 				}
 
 				set_temp_variable = { param_law = token:disarmed_nation }
+				trigger_cannot_decrease_manpower_law = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
@@ -43,6 +44,7 @@ ideas = {
 				}
 
 				set_temp_variable = { param_law = token:volunteer_only }
+				trigger_cannot_decrease_manpower_law = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
@@ -72,6 +74,7 @@ ideas = {
 				}
 
 				set_temp_variable = { param_law = token:national_service }
+				trigger_cannot_decrease_manpower_law = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
@@ -100,6 +103,7 @@ ideas = {
 				}
 
 				set_temp_variable = { param_law = token:limited_conscription }
+				trigger_cannot_decrease_manpower_law = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
@@ -129,6 +133,7 @@ ideas = {
 				}
 
 				set_temp_variable = { param_law = token:extensive_conscription }
+				trigger_cannot_decrease_manpower_law = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
@@ -159,6 +164,7 @@ ideas = {
 				}
 
 				set_temp_variable = { param_law = token:deployed_workers_0 }
+				trigger_cannot_decrease_manpower_law = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
@@ -191,6 +197,7 @@ ideas = {
 				}
 
 				set_temp_variable = { param_law = token:deployed_labourers_0 }
+				trigger_cannot_decrease_manpower_law = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
@@ -223,6 +230,7 @@ ideas = {
 				}
 
 				set_temp_variable = { param_law = token:deployed_workers_1 }
+				trigger_cannot_decrease_manpower_law = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
@@ -255,6 +263,7 @@ ideas = {
 				}
 
 				set_temp_variable = { param_law = token:deployed_labourers_1 }
+				trigger_cannot_decrease_manpower_law = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
@@ -286,6 +295,7 @@ ideas = {
 				}
 
 				set_temp_variable = { param_law = token:scraping_the_barrel }
+				trigger_cannot_decrease_manpower_law = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}

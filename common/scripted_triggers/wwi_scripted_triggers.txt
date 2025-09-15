@@ -89,6 +89,13 @@ is_in_british_isles = {
 	}
 }
 
+is_in_alsace_lorraine = {
+	OR = {
+		state = 2 # Alsace
+		state = 107 # Lorraine
+	}
+}
+
 is_orthodox = {
 	OR = {
 		tag = SOV
