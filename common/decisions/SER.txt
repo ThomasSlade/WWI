@@ -1057,7 +1057,7 @@ decision_category_SER_balkan_coalition_disputes = {
 	    		add = 5
 	    		has_idea = idea_SER_balkan_coalition_member
 	    		any_country = {
-	    			limit = { has_idea = idea_SER_balkan_coalition_founder }
+	    			has_idea = idea_SER_balkan_coalition_founder
 	    		    ROOT = {
 	    		      	has_opinion = {
     		      	  		target = PREV
