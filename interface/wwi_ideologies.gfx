@@ -13,4 +13,84 @@ spriteTypes = {
 		name = "GFX_ideology_revolutionary_group"
 		texturefile = "gfx/interface/ideologies/revolutionary_group.dds"
 	}
+
+	spriteType = {
+		name = "GFX_ideology_alignment_unaligned_group"
+		texturefile = "gfx/interface/ideologies/alignment_unaligned_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_alignment_a_group"
+		texturefile = "gfx/interface/ideologies/alignment_german_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_alignment_b_group"
+		texturefile = "gfx/interface/ideologies/alignment_french_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_alignment_c_group"
+		texturefile = "gfx/interface/ideologies/alignment_russian_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_alignment_d_group"
+		texturefile = "gfx/interface/ideologies/alignment_british_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_alignment_e_group"
+		texturefile = "gfx/interface/ideologies/alignment_austrian_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_alignment_f_group"
+		texturefile = "gfx/interface/ideologies/alignment_turkish_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_alignment_g_group"
+		texturefile = "gfx/interface/ideologies/alignment_italian_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_alignment_h_group"
+		texturefile = "gfx/interface/ideologies/alignment_serbian_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_alignment_i_group"
+		texturefile = "gfx/interface/ideologies/alignment_american_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_alignment_j_group"
+		texturefile = "gfx/interface/ideologies/alignment_gold_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_alignment_k_group"
+		texturefile = "gfx/interface/ideologies/alignment_silver_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_alignment_l_group"
+		texturefile = "gfx/interface/ideologies/alignment_bronze_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_alignment_m_group"
+		texturefile = "gfx/interface/ideologies/alignment_emerald_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_alignment_n_group"
+		texturefile = "gfx/interface/ideologies/alignment_amethyst_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_alignment_o_group"
+		texturefile = "gfx/interface/ideologies/alignment_garnet_group.dds"
+	}
 }

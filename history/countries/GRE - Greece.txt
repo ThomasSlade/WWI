@@ -24,9 +24,10 @@ set_politics = {
 }
 
 set_popularities = {
-	established = 60
-	expansionist = 40
-	revolutionary = 0
+	alignment_unaligned = 65
+	alignment_d = 20
+	alignment_b = 5
+	alignment_a = 10
 }
 
 add_ideas = {

@@ -33,7 +33,7 @@ ideologies = {
 		faction_impact_on_world_tension = 0.1
 		
 		modifiers = {
-			join_faction_tension = 0.8
+			join_faction_tension = 0.5
 			send_volunteers_tension = 0.5
 			guarantee_tension = 0.3
 		}
@@ -125,6 +125,741 @@ ideologies = {
 		modifiers = {
 			join_faction_tension = 0.5
 			send_volunteers_tension = 0
+			guarantee_tension = 0.3
+		}
+		
+		faction_modifiers = {
+		}
+
+		ai_neutral = yes
+	}
+
+	alignment_unaligned = {
+		types = {
+			alignment_unaligned_t = {
+
+			}
+		}
+
+		color = { 124 124 124 }
+
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+
+		rules = {
+			can_create_collaboration_government = no
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+
+		can_host_government_in_exile = yes
+		war_impact_on_world_tension = 0.25
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			join_faction_tension = 0.5
+			send_volunteers_tension = 0.5
+			guarantee_tension = 0.3
+		}
+		
+		faction_modifiers = {
+		}
+
+		ai_neutral = yes
+	}
+
+	# German
+	alignment_a = {
+		types = {
+			alignment_a_t = {
+
+			}
+		}
+
+		color = { 100 131 166 }
+
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+
+		rules = {
+			can_create_collaboration_government = no
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+
+		can_host_government_in_exile = yes
+		war_impact_on_world_tension = 0.25
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			join_faction_tension = 0.5
+			send_volunteers_tension = 0.5
+			guarantee_tension = 0.3
+		}
+		
+		faction_modifiers = {
+		}
+
+		ai_neutral = yes
+	}
+
+	# French
+	alignment_b = {
+		types = {
+			alignment_b_t = {
+
+			}
+		}
+
+		color = { 16 23 106 }
+
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+
+		rules = {
+			can_create_collaboration_government = no
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+
+		can_host_government_in_exile = yes
+		war_impact_on_world_tension = 0.25
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			join_faction_tension = 0.5
+			send_volunteers_tension = 0.5
+			guarantee_tension = 0.3
+		}
+		
+		faction_modifiers = {
+		}
+
+		ai_neutral = yes
+	}
+
+	# Russian
+	alignment_c = {
+		types = {
+			alignment_c_t = {
+
+			}
+		}
+
+		color = { 18 82 42 }
+
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+
+		rules = {
+			can_create_collaboration_government = no
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+
+		can_host_government_in_exile = yes
+		war_impact_on_world_tension = 0.25
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			join_faction_tension = 0.5
+			send_volunteers_tension = 0.5
+			guarantee_tension = 0.3
+		}
+		
+		faction_modifiers = {
+		}
+
+		ai_neutral = yes
+	}
+
+	# British
+	alignment_d = {
+		types = {
+			alignment_d_t = {
+
+			}
+		}
+
+		color = { 148 93 108 }
+
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+
+		rules = {
+			can_create_collaboration_government = no
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+
+		can_host_government_in_exile = yes
+		war_impact_on_world_tension = 0.25
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			join_faction_tension = 0.5
+			send_volunteers_tension = 0.5
+			guarantee_tension = 0.3
+		}
+		
+		faction_modifiers = {
+		}
+
+		ai_neutral = yes
+	}
+
+	# Austrian
+	alignment_e = {
+		types = {
+			alignment_e_t = {
+
+			}
+		}
+
+		color = { 205 189 184 }
+
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+
+		rules = {
+			can_create_collaboration_government = no
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+
+		can_host_government_in_exile = yes
+		war_impact_on_world_tension = 0.25
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			join_faction_tension = 0.5
+			send_volunteers_tension = 0.5
+			guarantee_tension = 0.3
+		}
+		
+		faction_modifiers = {
+		}
+
+		ai_neutral = yes
+	}
+
+	# American
+	alignment_f = {
+		types = {
+			alignment_f_t = {
+
+			}
+		}
+
+		color = { 106 168 172 }
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+
+		rules = {
+			can_create_collaboration_government = no
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+
+		can_host_government_in_exile = yes
+		war_impact_on_world_tension = 0.25
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			join_faction_tension = 0.5
+			send_volunteers_tension = 0.5
+			guarantee_tension = 0.3
+		}
+		
+		faction_modifiers = {
+		}
+
+		ai_neutral = yes
+	}
+
+	# Turkish
+	alignment_g = {
+		types = {
+			alignment_g_t = {
+
+			}
+		}
+
+		color = { 130 61 36 }
+
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+
+		rules = {
+			can_create_collaboration_government = no
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+
+		can_host_government_in_exile = yes
+		war_impact_on_world_tension = 0.25
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			join_faction_tension = 0.5
+			send_volunteers_tension = 0.5
+			guarantee_tension = 0.3
+		}
+		
+		faction_modifiers = {
+		}
+
+		ai_neutral = yes
+	}
+
+	# Italian
+	alignment_h = {
+		types = {
+			alignment_h_t = {
+
+			}
+		}
+
+		color = { 93 115 78 }
+
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+
+		rules = {
+			can_create_collaboration_government = no
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+
+		can_host_government_in_exile = yes
+		war_impact_on_world_tension = 0.25
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			join_faction_tension = 0.5
+			send_volunteers_tension = 0.5
+			guarantee_tension = 0.3
+		}
+		
+		faction_modifiers = {
+		}
+
+		ai_neutral = yes
+	}
+
+	# Serbian
+	alignment_i = {
+		types = {
+			alignment_i_t = {
+
+			}
+		}
+
+		color = { 105 51 117 }
+
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+
+		rules = {
+			can_create_collaboration_government = no
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+
+		can_host_government_in_exile = yes
+		war_impact_on_world_tension = 0.25
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			join_faction_tension = 0.5
+			send_volunteers_tension = 0.5
+			guarantee_tension = 0.3
+		}
+		
+		faction_modifiers = {
+		}
+
+		ai_neutral = yes
+	}
+
+	# Gold
+	alignment_j = {
+		types = {
+			alignment_j_t = {
+
+			}
+		}
+
+		color = { 167 122 44 }
+
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+
+		rules = {
+			can_create_collaboration_government = no
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+
+		can_host_government_in_exile = yes
+		war_impact_on_world_tension = 0.25
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			join_faction_tension = 0.5
+			send_volunteers_tension = 0.5
+			guarantee_tension = 0.3
+		}
+		
+		faction_modifiers = {
+		}
+
+		ai_neutral = yes
+	}
+
+	# Silver
+	alignment_k = {
+		types = {
+			alignment_k_t = {
+
+			}
+		}
+
+		color = { 211 255 243 }
+
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+
+		rules = {
+			can_create_collaboration_government = no
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+
+		can_host_government_in_exile = yes
+		war_impact_on_world_tension = 0.25
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			join_faction_tension = 0.5
+			send_volunteers_tension = 0.5
+			guarantee_tension = 0.3
+		}
+		
+		faction_modifiers = {
+		}
+
+		ai_neutral = yes
+	}
+
+	# Bronze
+	alignment_l = {
+		types = {
+			alignment_l_t = {
+
+			}
+		}
+
+		color = { 161 82 41 }
+
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+
+		rules = {
+			can_create_collaboration_government = no
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+
+		can_host_government_in_exile = yes
+		war_impact_on_world_tension = 0.25
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			join_faction_tension = 0.5
+			send_volunteers_tension = 0.5
+			guarantee_tension = 0.3
+		}
+		
+		faction_modifiers = {
+		}
+
+		ai_neutral = yes
+	}
+
+	# Emerald
+	alignment_m = {
+		types = {
+			alignment_m_t = {
+
+			}
+		}
+
+		color = { 21 212 120 }
+
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+
+		rules = {
+			can_create_collaboration_government = no
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+
+		can_host_government_in_exile = yes
+		war_impact_on_world_tension = 0.25
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			join_faction_tension = 0.5
+			send_volunteers_tension = 0.5
+			guarantee_tension = 0.3
+		}
+		
+		faction_modifiers = {
+		}
+
+		ai_neutral = yes
+	}
+
+	# Amethyst
+	alignment_n = {
+		types = {
+			alignment_n_t = {
+
+			}
+		}
+
+		color = { 147 14 156 }
+
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+
+		rules = {
+			can_create_collaboration_government = no
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+
+		can_host_government_in_exile = yes
+		war_impact_on_world_tension = 0.25
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			join_faction_tension = 0.5
+			send_volunteers_tension = 0.5
+			guarantee_tension = 0.3
+		}
+		
+		faction_modifiers = {
+		}
+
+		ai_neutral = yes
+	}
+
+	# Garnet
+	alignment_o = {
+		types = {
+			alignment_o_t = {
+
+			}
+		}
+
+		color = { 186 33 13 }
+
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+
+		rules = {
+			can_create_collaboration_government = no
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+
+		can_host_government_in_exile = yes
+		war_impact_on_world_tension = 0.25
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			join_faction_tension = 0.5
+			send_volunteers_tension = 0.5
 			guarantee_tension = 0.3
 		}
 		

@@ -1,4 +1,16 @@
 ﻿l_english:
+  # Generic
+  trigger_most_popular_party_is: "Most popular party is $IDEOLOGY|H$"
+  trigger_most_popular_party_is_NOT: "Most popular party is not $IDEOLOGY|H$"
+  trigger_party_popularity_great_enough_to_adopt: "More than 40% support for $IDEOLOGY|H$."
+  trigger_party_popularity_great_enough_to_adopt_NOT: "Less than 40% support for $IDEOLOGY|H$."
+  trigger_has_5_more_popularity_than_ruling_party: "$IDEOLOGY|H$ at least §Y5%§! more popular than current government"
+  trigger_decision_align_dummy_tt: "Any §YAlignment§!:\n   Is the most popular §YAlignment§!.\n   Has more than 40% popularity.\n   Is at least §Y5%§! more popular than current government."
+  effect_decision_align_dummy_tt: "This §YAlignment§! becomes the ruling party."
+  effect_can_change_alignment_later_tt: "§YAlignment§! can be changed to §Y[alignment_target.GetAdjective] Alignment§! through the §YDiplomatic Realignment§! decision."
+  trigger_opposition_can_increase_tt: "Opposition is not at its maximum level"
+  trigger_opposition_can_increase_tt_NOT: "Opposition is at its maximum level"
+
   trigger_cannot_decrease_manpower_law_tt: "Cannot decrease $mobiliation_laws$"
   trigger_cannot_decrease_manpower_law_tt_NOT: "Can decrease $mobiliation_laws$"
   trigger_cannot_decrease_economic_law_tt: "Cannot decrease $economy$"
@@ -12,6 +24,7 @@
   trigger_cannot_decrease_blockade_policy_law_tt: "Cannot decrease $blockade_policy$"
   trigger_cannot_decrease_blockade_policy_law_tt_NOT: "Can decrease $blockade_policy$"
 
+  # Country Specific
   AUS_has_any_hungarian_resistance_tt: "Has any level of §YHungarian Resistance§!"
   AUS_has_any_hungarian_resistance_tt_NOT: "Has minimum level of §YHungarian Resistance§!"
   AUS_has_any_minority_resistance_tt: "Has any level of §YMinority Resistance§!"
@@ -27,3 +40,6 @@
   trigger_state_is_fully_controlled_tt: "Is fully controlled."
   trigger_state_is_fully_controlled_tt_NOT: "Is not fully controlled."
   trigger_AUS_more_factories_than_novi_pazar_route_undefined_tt: "The §Ydestination state§! of the Novi Pazar line has at least §Y3 Infrastructure§! and §Y4 Civilian Factories§!."
+
+  trigger_GER_encirclement_can_increase_tt: "Diplomatic Encirclement is not at its maximum level"
+  trigger_GER_encirclement_can_increase_tt_NOT: "Diplomatic Encirclement is at its maximum level"

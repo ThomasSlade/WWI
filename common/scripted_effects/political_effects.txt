@@ -798,7 +798,14 @@ effect_disliked_by_tt = {
 	}
 }
 
+# param_tooltip_party: If specified, this party token overrides the party that will be named in the tooltip, so it will read 'will increase [param_tooltip_party] opposition'. Useful for if you have an effect tooltip which changes the opposition and subsequently changes its level.
 effect_increase_opposition = {
+	set_temp_variable = { temp_party = opposition_party }
+	if = {
+		limit = { has_variable = param_tooltip_party }
+		set_temp_variable = { temp_party = param_tooltip_party }
+	}
+
 	if = {
 		limit = { check_variable = { opposition_level < 4 } }
 		custom_effect_tooltip = increase_opposition_tt
@@ -808,7 +815,7 @@ effect_increase_opposition = {
 			add_to_temp_variable = { next_opposition_level = 1 }
 
 			meta_effect = {
-				PARTY_TYPE = "[?opposition_party.GetTokenKey]"
+				PARTY_TYPE = "[?temp_party.GetTokenKey]"
 				NEXT_OPPOSITION_LEVEL = "[?next_opposition_level]"
 				text = {
 					add_ideas = opp_[PARTY_TYPE]_[NEXT_OPPOSITION_LEVEL]
@@ -818,7 +825,14 @@ effect_increase_opposition = {
 	}
 }
 
+# param_tooltip_party: If specified, this party token overrides the party that will be named in the tooltip, so it will read 'will decrease [param_tooltip_party] opposition'. Useful for if you have an effect tooltip which changes the opposition and subsequently changes its level.
 effect_decrease_opposition = {
+	set_temp_variable = { temp_party = opposition_party }
+	if = {
+		limit = { has_variable = param_tooltip_party }
+		set_temp_variable = { temp_party = param_tooltip_party }
+	}
+	
 	if = {
 		limit = { check_variable = { opposition_level > 0 } }
 		custom_effect_tooltip = decrease_opposition_tt
@@ -828,7 +842,7 @@ effect_decrease_opposition = {
 			add_to_temp_variable = { next_opposition_level = -1 }
 
 			meta_effect = {
-				PARTY_TYPE = "[?opposition_party.GetTokenKey]"
+				PARTY_TYPE = "[?temp_party.GetTokenKey]"
 				NEXT_OPPOSITION_LEVEL = "[?next_opposition_level]"
 				text = {
 					add_ideas = opp_[PARTY_TYPE]_[NEXT_OPPOSITION_LEVEL]
@@ -840,39 +854,45 @@ effect_decrease_opposition = {
 
 # param_party: The party entering cabinet
 effect_change_cabinet = {
-	meta_effect = {
-		OLD_PARTY = "cab_[?cabinet_party.GetTokenKey]"
-		NEW_PARTY = "cab_[?param_party.GetTokenKey]"
-		text = {
-			custom_effect_tooltip = {
-				localization_key = change_cabinet_tt
-				OLD_PARTY_TEXT = [OLD_PARTY]
-				NEW_PARTY_TEXT = [NEW_PARTY]
+	if = {
+		limit = { NOT = { check_variable = { cabinet_party = param_party } } }
+		meta_effect = {
+			OLD_PARTY = "cab_[?cabinet_party.GetTokenKey]"
+			NEW_PARTY = "cab_[?param_party.GetTokenKey]"
+			text = {
+				custom_effect_tooltip = {
+					localization_key = change_cabinet_tt
+					OLD_PARTY_TEXT = [OLD_PARTY]
+					NEW_PARTY_TEXT = [NEW_PARTY]
+				}
 			}
 		}
-	}
 
-	hidden_effect = {
-		add_ideas = global._cabinet@var:param_party
+		hidden_effect = {
+			add_ideas = global._cabinet@var:param_party
+		}
 	}
 }
 
 # param_party: The party entering opposition
 effect_change_opposition = {
-	meta_effect = {
-		OLD_PARTY = "opp_[?opposition_party.GetTokenKey]_[?opposition_level]"
-		NEW_PARTY = "opp_[?param_party.GetTokenKey]_[?opposition_level]"
-		text = {
-			custom_effect_tooltip = {
-				localization_key = change_opposition_tt
-				OLD_PARTY_TEXT = [OLD_PARTY]
-				NEW_PARTY_TEXT = [NEW_PARTY]
+	if = {
+		limit = { NOT = { check_variable = { opposition_party = param_party } } }
+		meta_effect = {
+			OLD_PARTY = "opp_[?opposition_party.GetTokenKey]_[?opposition_level]"
+			NEW_PARTY = "opp_[?param_party.GetTokenKey]_[?opposition_level]"
+			text = {
+				custom_effect_tooltip = {
+					localization_key = change_opposition_tt
+					OLD_PARTY_TEXT = [OLD_PARTY]
+					NEW_PARTY_TEXT = [NEW_PARTY]
+				}
 			}
 		}
-	}
 
-	hidden_effect = {
-		add_ideas = global._opposition@var:param_party^opposition_level
+		hidden_effect = {
+			add_ideas = global._opposition@var:param_party^opposition_level
+		}
 	}
 }
 

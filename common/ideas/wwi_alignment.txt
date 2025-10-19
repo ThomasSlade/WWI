@@ -1,0 +1,453 @@
+ideas = {
+	# Low Growth
+	country = {
+		idea_alignment_a_growth_low = {
+			removal_cost = -1
+			picture = idea_generic_alignment_a
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				alignment_a_drift = 0.02
+			}
+		}
+	}
+
+	country = {
+		idea_alignment_b_growth_low = {
+			removal_cost = -1
+			picture = idea_generic_alignment_b
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				alignment_b_drift = 0.02
+			}
+		}
+	}
+
+	country = {
+		idea_alignment_c_growth_low = {
+			removal_cost = -1
+			picture = idea_generic_alignment_c
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				alignment_c_drift = 0.02
+			}
+		}
+	}
+
+	country = {
+		idea_alignment_d_growth_low = {
+			removal_cost = -1
+			picture = idea_generic_alignment_d
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				alignment_d_drift = 0.02
+			}
+		}
+	}
+
+	country = {
+		idea_alignment_e_growth_low = {
+			removal_cost = -1
+			picture = idea_generic_alignment_e
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				alignment_e_drift = 0.02
+			}
+		}
+	}
+
+	country = {
+		idea_alignment_f_growth_low = {
+			removal_cost = -1
+			picture = idea_generic_alignment_f
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				alignment_f_drift = 0.02
+			}
+		}
+	}
+
+	country = {
+		idea_alignment_g_growth_low = {
+			removal_cost = -1
+			picture = idea_generic_alignment_g
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				alignment_g_drift = 0.02
+			}
+		}
+	}
+
+	country = {
+		idea_alignment_h_growth_low = {
+			removal_cost = -1
+			picture = idea_generic_alignment_h
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				alignment_h_drift = 0.02
+			}
+		}
+	}
+
+	country = {
+		idea_alignment_i_growth_low = {
+			removal_cost = -1
+			picture = idea_generic_alignment_i
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				alignment_i_drift = 0.02
+			}
+		}
+	}
+
+	country = {
+		idea_alignment_j_growth_low = {
+			removal_cost = -1
+			picture = idea_generic_alignment_j
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				alignment_j_drift = 0.02
+			}
+		}
+	}
+
+	country = {
+		idea_alignment_k_growth_low = {
+			removal_cost = -1
+			picture = idea_generic_alignment_k
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				alignment_k_drift = 0.02
+			}
+		}
+	}
+
+	country = {
+		idea_alignment_l_growth_low = {
+			removal_cost = -1
+			picture = idea_generic_alignment_l
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				alignment_l_drift = 0.02
+			}
+		}
+	}
+
+	country = {
+		idea_alignment_m_growth_low = {
+			removal_cost = -1
+			picture = idea_generic_alignment_m
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				alignment_m_drift = 0.02
+			}
+		}
+	}
+
+	country = {
+		idea_alignment_n_growth_low = {
+			removal_cost = -1
+			picture = idea_generic_alignment_n
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				alignment_n_drift = 0.02
+			}
+		}
+	}
+
+	country = {
+		idea_alignment_o_growth_low = {
+			removal_cost = -1
+			picture = idea_generic_alignment_o
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				alignment_o_drift = 0.02
+			}
+		}
+	}
+
+	# Medium Growth
+	country = {
+		idea_alignment_a_growth_med = {
+			removal_cost = -1
+			picture = idea_generic_alignment_a
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				alignment_a_drift = 0.04
+			}
+		}
+	}
+
+	country = {
+		idea_alignment_b_growth_med = {
+			removal_cost = -1
+			picture = idea_generic_alignment_b
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				alignment_b_drift = 0.04
+			}
+		}
+	}
+
+	country = {
+		idea_alignment_c_growth_med = {
+			removal_cost = -1
+			picture = idea_generic_alignment_c
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				alignment_c_drift = 0.04
+			}
+		}
+	}
+
+	country = {
+		idea_alignment_d_growth_med = {
+			removal_cost = -1
+			picture = idea_generic_alignment_d
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				alignment_d_drift = 0.04
+			}
+		}
+	}
+
+	country = {
+		idea_alignment_e_growth_med = {
+			removal_cost = -1
+			picture = idea_generic_alignment_e
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				alignment_e_drift = 0.04
+			}
+		}
+	}
+
+	country = {
+		idea_alignment_f_growth_med = {
+			removal_cost = -1
+			picture = idea_generic_alignment_f
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				alignment_f_drift = 0.04
+			}
+		}
+	}
+
+	country = {
+		idea_alignment_g_growth_med = {
+			removal_cost = -1
+			picture = idea_generic_alignment_g
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				alignment_g_drift = 0.04
+			}
+		}
+	}
+
+	country = {
+		idea_alignment_h_growth_med = {
+			removal_cost = -1
+			picture = idea_generic_alignment_h
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				alignment_h_drift = 0.04
+			}
+		}
+	}
+
+	country = {
+		idea_alignment_i_growth_med = {
+			removal_cost = -1
+			picture = idea_generic_alignment_i
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				alignment_i_drift = 0.04
+			}
+		}
+	}
+
+	country = {
+		idea_alignment_j_growth_med = {
+			removal_cost = -1
+			picture = idea_generic_alignment_j
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				alignment_j_drift = 0.04
+			}
+		}
+	}
+
+	country = {
+		idea_alignment_k_growth_med = {
+			removal_cost = -1
+			picture = idea_generic_alignment_k
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				alignment_k_drift = 0.04
+			}
+		}
+	}
+
+	country = {
+		idea_alignment_l_growth_med = {
+			removal_cost = -1
+			picture = idea_generic_alignment_l
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				alignment_l_drift = 0.04
+			}
+		}
+	}
+
+	country = {
+		idea_alignment_m_growth_med = {
+			removal_cost = -1
+			picture = idea_generic_alignment_m
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				alignment_m_drift = 0.04
+			}
+		}
+	}
+
+	country = {
+		idea_alignment_n_growth_med = {
+			removal_cost = -1
+			picture = idea_generic_alignment_n
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				alignment_n_drift = 0.04
+			}
+		}
+	}
+
+	country = {
+		idea_alignment_o_growth_med = {
+			removal_cost = -1
+			picture = idea_generic_alignment_o
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			modifier = {
+				alignment_o_drift = 0.04
+			}
+		}
+	}
+}

@@ -145,5 +145,32 @@ ideas = {
 				experience_gain_army_factor = -0.3
 			}
 		}
+
+		idea_GER_third_naval_bill = {
+			removal_cost = -1
+			picture = idea_generic_naval
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				custom_modifier_tooltip = GER_third_naval_bill_tt
+			}
+			
+			on_add = {
+				add_power_balance_modifier = {
+					id = bop_ENG_naval_race
+					modifier = GER_third_naval_bill
+				}
+			}
+
+			on_remove = {
+				remove_power_balance_modifier = {
+					id = bop_ENG_naval_race
+					modifier = GER_third_naval_bill
+				}
+			}
+		}
 	}
 }

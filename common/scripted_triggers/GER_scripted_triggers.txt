@@ -1,0 +1,10 @@
+trigger_GER_encirclement_can_increase = {
+	custom_trigger_tooltip = {
+		tooltip = trigger_GER_encirclement_can_increase_tt
+		OR = {
+			has_idea = idea_GER_encirclement_0
+			has_idea = idea_GER_encirclement_1
+			has_idea = idea_GER_encirclement_2
+		}
+	}
+}

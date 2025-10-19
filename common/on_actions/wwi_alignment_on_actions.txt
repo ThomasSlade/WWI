@@ -1,0 +1,78 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			GER = {
+				effect_init_alignment = yes
+			}
+			
+			every_country = {
+				limit = { is_major = yes }
+				if = {
+					limit = { NOT = { has_variable = leader_of_alignment } }
+					log = "WARNING: [THIS.GetName] is a major country but doesn't lead a particular alignment. They will receive the chance to pick one immediately, but should be given one by default or prevented from starting as a major."
+				}
+				else = {
+					set_country_flag = flag_great_power
+				}
+			}
+		}
+	}
+
+	on_weekly = {
+		effect = {
+			for_each_loop = {
+				array = global._alignments
+				value = alignment
+				break = break
+				if = {
+					limit = {
+						set_temp_variable = { param_alignment = alignment }
+						trigger_can_adopt_alignment = yes
+					}
+
+					if = {
+						limit = { NOT  = { has_variable = alignment_change_notif@var:alignment } }
+
+						var:global._alignment_leaders@var:alignment = {
+							save_event_target_as = alignment_target
+						}
+						country_event = { id = event_wwi_alignment.1 }
+						set_variable = { alignment_change_notif@var:alignment = 1 }
+					}
+
+					set_temp_variable = { break = 1 }
+				}
+				else = {
+					clear_variable = alignment_change_notif@var:alignment
+				}
+			}
+
+			if = {
+				limit = {
+					is_major = yes
+					NOT = { has_country_flag = flag_great_power }
+				}
+				log = "[THIS.GetName] being made Great Power"
+				country_event = { id = event_wwi_become_great_power.1 }
+			}
+		}
+	}
+
+	on_ruling_party_change = {
+		effect = {
+			# Necessary to cache this value, as using this variable accessor chain for some targetted ideas doesn't seem to work.
+			set_variable = { aligned_to = var:global._alignment_leaders@var:current_party_ideology_group }
+			var:aligned_to = {
+				country_event = { id = event_wwi_alignment.2 }
+
+				every_other_country = {
+					limit = {
+						NOT = { tag = ROOT }
+						has_government = ROOT
+					}
+					country_event = { id = event_wwi_alignment.2 }
+				}
+			}
+		}
+	}
+}

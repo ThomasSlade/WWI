@@ -15,7 +15,7 @@ ideas = {
 				}
 
 				set_temp_variable = { param_law = token:entrenched_nationalism }
-				trigger_cannot_decrease_civil_rights_law = yes
+				trigger_cannot_decrease_civil_rights_law = no
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
@@ -49,7 +49,7 @@ ideas = {
 				}
 
 				set_temp_variable = { param_law = token:ethnic_rights_0 }
-				trigger_cannot_decrease_civil_rights_law = yes
+				trigger_cannot_decrease_civil_rights_law = no
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
@@ -82,7 +82,7 @@ ideas = {
 				}
 
 				set_temp_variable = { param_law = token:domestic_rights_0 }
-				trigger_cannot_decrease_civil_rights_law = yes
+				trigger_cannot_decrease_civil_rights_law = no
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
@@ -113,7 +113,7 @@ ideas = {
 				}
 
 				set_temp_variable = { param_law = token:ethnic_rights_1 }
-				trigger_cannot_decrease_civil_rights_law = yes
+				trigger_cannot_decrease_civil_rights_law = no
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
@@ -147,7 +147,7 @@ ideas = {
 				}
 
 				set_temp_variable = { param_law = token:domestic_rights_1 }
-				trigger_cannot_decrease_civil_rights_law = yes
+				trigger_cannot_decrease_civil_rights_law = no
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
@@ -180,7 +180,7 @@ ideas = {
 				}
 
 				set_temp_variable = { param_law = token:ethnic_rights_2 }
-				trigger_cannot_decrease_civil_rights_law = yes
+				trigger_cannot_decrease_civil_rights_law = no
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
@@ -211,7 +211,7 @@ ideas = {
 				}
 
 				set_temp_variable = { param_law = token:domestic_rights_2 }
-				trigger_cannot_decrease_civil_rights_law = yes
+				trigger_cannot_decrease_civil_rights_law = no
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
@@ -241,7 +241,7 @@ ideas = {
 				}
 
 				set_temp_variable = { param_law = token:women_minority_rights }
-				trigger_cannot_decrease_civil_rights_law = yes
+				trigger_cannot_decrease_civil_rights_law = no
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}

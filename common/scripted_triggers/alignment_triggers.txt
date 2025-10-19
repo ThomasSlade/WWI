@@ -1,0 +1,71 @@
+# param_alignment: The tokenized ideology to check
+trigger_party_popularity_great_enough_to_adopt = {
+	custom_override_tooltip = {
+		tooltip = {
+			localization_key = trigger_party_popularity_great_enough_to_adopt
+			IDEOLOGY = "[?param_alignment.GetTokenLocalizedKey]"
+		}
+		not_tooltip = {
+			localization_key = trigger_party_popularity_great_enough_to_adopt_NOT
+			IDEOLOGY = "[?param_alignment.GetTokenLocalizedKey]"
+		}
+		# Update
+		# trigger_party_popularity_great_enough_to_adopt, trigger_party_popularity_great_enough_to_adopt_NOT, trigger_decision_align_dummy_tt
+		# if changing this value.
+		check_variable = { var:party_popularity@var:param_alignment > 0.40 }
+	}
+}
+
+# param_alignment: The tokenized ideology to check
+trigger_most_popular_party_is = {
+	custom_override_tooltip = {
+		tooltip = {
+			localization_key = trigger_most_popular_party_is
+			IDEOLOGY = "[?param_alignment.GetTokenLocalizedKey]"
+		}
+		not_tooltip = {
+			localization_key = trigger_most_popular_party_is_NOT
+			IDEOLOGY = "[?param_alignment.GetTokenLocalizedKey]"
+		}
+		check_variable = { highest_party_ideology = param_alignment }
+	}
+}
+
+# param_alignment: The tokenized ideology to check
+trigger_has_5_more_popularity_than_ruling_party = {
+	custom_override_tooltip = {
+		tooltip = {
+			localization_key = trigger_has_5_more_popularity_than_ruling_party
+			IDEOLOGY = "[?param_alignment.GetTokenLocalizedKey]"
+		}
+		set_temp_variable = { target_popularity = party_popularity@ruling_party }
+		add_to_temp_variable = { target_popularity = 5 }
+		check_variable = { highest_party_ideology > target_popularity }
+	}
+}
+
+# has_government doesn't accept a token of an ideology, this does.
+# param_alignment: The tokenized ideology to check
+trigger_has_government_token_friendly = {
+	custom_override_tooltip = {
+		tooltip = {
+			localization_key = TRIGGER_HAS_IDEOLOGY2
+			IDEOLOGY = "[?param_alignment.GetTokenLocalizedKey]"
+		}
+		not_tooltip = {
+			localization_key = TRIGGER_HAS_NOT_IDEOLOGY2
+			IDEOLOGY = "[?param_alignment.GetTokenLocalizedKey]"
+		}
+		check_variable = { current_party_ideology_group = param_alignment }
+	}
+}
+
+trigger_can_adopt_alignment = {
+	trigger_has_government_token_friendly = no
+
+	trigger_party_popularity_great_enough_to_adopt = yes
+
+	trigger_most_popular_party_is = yes
+
+	trigger_has_5_more_popularity_than_ruling_party = yes
+}

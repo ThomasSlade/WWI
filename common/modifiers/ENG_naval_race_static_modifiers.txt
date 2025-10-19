@@ -61,3 +61,7 @@ rival_more_submarines_0 = {
 rival_more_submarines_1 = {
 	power_balance_weekly = 0.002
 }
+
+GER_third_naval_bill = {
+	power_balance_weekly = 0.002
+}

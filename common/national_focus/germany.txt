@@ -234,7 +234,7 @@ focus_tree = {
 
 			48 = {
 				if = {
-					limit = { controlled_by = ROOT }
+					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 					    type = infrastructure
 					    level = 1
@@ -245,7 +245,7 @@ focus_tree = {
 
 			4 = {
 				if = {
-					limit = { controlled_by = ROOT }
+					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 					    type = infrastructure
 					    level = 1
@@ -256,7 +256,7 @@ focus_tree = {
 
 			37 = {
 				if = {
-					limit = { controlled_by = ROOT }
+					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 					    type = infrastructure
 					    level = 1
@@ -267,7 +267,7 @@ focus_tree = {
 
 			84 = {
 				if = {
-					limit = { controlled_by = ROOT }
+					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 					    type = infrastructure
 					    level = 1
@@ -477,7 +477,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_austrian_blank_cheque
+		id = GER_support_austria_diplomatically
 		icon = GFX__shine
 		prerequisite = { focus = GER_war_council }
 		mutually_exclusive = { focus = GER_abandon_austria }
@@ -492,7 +492,12 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			AUS = {	
+				add_popularity = {
+					ideology = ROOT
+					popularity = 0.15
+				}
+			}
 		}
 	}
 
@@ -500,7 +505,7 @@ focus_tree = {
 		id = GER_abandon_austria
 		icon = GFX__shine
 		prerequisite = { focus = GER_war_council }
-		mutually_exclusive = { focus = GER_austrian_blank_cheque }
+		mutually_exclusive = { focus = GER_support_austria_diplomatically }
 		x = 7
 		y = 1
 		relative_position_id = GER_war_council
@@ -511,18 +516,22 @@ focus_tree = {
 
 		available_if_capitulated = no
 
+		available = {
+			trigger_GER_encirclement_can_increase = yes
+		}
+
 		completion_reward = {
-			
+			effect_GER_encirclement_increase = yes
 		}
 	}
 
 	focus = {
 		id = GER_redirect_austrian_designs
 		icon = GFX__shine
-		prerequisite = { focus = GER_austrian_blank_cheque }
+		prerequisite = { focus = GER_support_austria_diplomatically }
 		x = 1
 		y = 1
-		relative_position_id = GER_austrian_blank_cheque
+		relative_position_id = GER_support_austria_diplomatically
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -550,7 +559,14 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			effect_get_alignment_growth_low = yes
+
+			ROM = {	
+				add_timed_idea = {
+					idea = var:out_idea
+					days = 1095
+				}
+			}
 		}
 	}
 
@@ -569,17 +585,24 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			effect_get_alignment_growth_low = yes
+
+			SOV = {	
+				add_timed_idea = {
+					idea = var:out_idea
+					days = 1095
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = GER_treaty_of_bufteau
 		icon = GFX__shine
-		prerequisite = { focus = GER_austrian_blank_cheque }
+		prerequisite = { focus = GER_support_austria_diplomatically }
 		x = -1
 		y = 1
-		relative_position_id = GER_austrian_blank_cheque
+		relative_position_id = GER_support_austria_diplomatically
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -607,11 +630,20 @@ focus_tree = {
 		available_if_capitulated = no
 
 		available = {
-			NOT = { has_idea = idea_GER_encirclement_3 }
+			trigger_opposition_can_increase = yes
 		}
 
 		completion_reward = {
-			
+			if = {
+				check_variable = { cabinet_party = token:conservative }
+				set_temp_variable = { param_party = token:liberal }
+				effect_change_cabinet = yes
+			}
+
+			set_temp_variable = { param_party = token:conservative }
+			effect_change_opposition = yes
+			set_temp_variable = { param_tooltip_party = token:conservative }
+			effect_increase_opposition = yes
 		}
 	}
 
@@ -628,6 +660,10 @@ focus_tree = {
 		}
 
 		available_if_capitulated = no
+
+		available = {
+			trigger_GER_encirclement_can_increase = yes
+		}
 
 		completion_reward = {
 			effect_GER_encirclement_increase = yes
@@ -649,7 +685,14 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			effect_get_alignment_growth_low = yes
+
+			SOV = {	
+				add_timed_idea = {
+					idea = var:out_idea
+					days = 1095
+				}
+			}
 		}
 	}
 
@@ -670,7 +713,12 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			SOV = {
+				add_popularity = {
+					ideology = ROOT
+					popularity = 0.15
+				}
+			}
 		}
 	}
 
@@ -689,7 +737,14 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			effect_get_alignment_growth_low = yes
+
+			TUR = {	
+				add_timed_idea = {
+					idea = var:out_idea
+					days = 1095
+				}
+			}
 		}
 	}
 
@@ -728,7 +783,12 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			TUR = {
+				add_popularity = {
+					ideology = ROOT
+					popularity = 0.15
+				}
+			}
 		}
 	}
 
@@ -745,6 +805,15 @@ focus_tree = {
 		}
 
 		available_if_capitulated = no
+
+		available = {
+			OR = {
+				SOV = {
+					num_of_controlled_factories > 70
+				}
+				threat > 0.75
+			}
+		}
 
 		completion_reward = {
 			
@@ -766,7 +835,10 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_power_balance_value = {
+				id = bop_ENG_naval_race
+				value = 0.15
+			}
 		}
 	}
 
@@ -862,7 +934,14 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			effect_get_alignment_growth_low = yes
+
+			ENG = {	
+				add_timed_idea = {
+					idea = var:out_idea
+					days = 1095
+				}
+			}
 		}
 	}
 
@@ -882,7 +961,10 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = idea_GER_third_naval_bill
+				days = 365
+			}
 		}
 	}
 
@@ -920,7 +1002,12 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			ENG = {
+				add_popularity = {
+					ideology = ROOT
+					popularity = 0.15
+				}
+			}
 		}
 	}
 

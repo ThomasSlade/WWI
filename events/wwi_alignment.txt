@@ -1,0 +1,169 @@
+add_namespace = event_wwi_alignment
+
+country_event = {
+	id = event_wwi_alignment.1
+	title = event_wwi_alignment.1.t
+	desc = event_wwi_alignment.1.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Has chance to adopt new alignment ideology."
+	}
+
+	option = {
+		name = event_wwi_alignment.1.a
+
+		set_temp_variable = { param_alignment = event_target:alignment_target.leader_of_alignment }
+		effect_set_politics_token_friendly = yes
+	}
+
+	option = {
+		name = event_wwi_alignment.1.b
+
+		custom_effect_tooltip = effect_can_change_alignment_later_tt
+	}
+}
+
+country_event = {
+	id = event_wwi_alignment.2
+	title = event_wwi_alignment.2.t
+	desc = event_wwi_alignment.2.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Informing that a country has flipped to their alignment."
+	}
+
+	option = {
+		name = event_wwi_alignment.2.a
+
+		effect_tooltip = {
+			FROM = {
+				set_politics = {
+					ruling_party = ROOT
+				}
+			}
+		}
+	}
+}
+
+add_namespace = event_wwi_become_great_power
+
+country_event = {
+	id = event_wwi_become_great_power.1
+	title = event_wwi_become_great_power.1.t
+	desc = event_wwi_become_great_power.1.desc
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Is now a great power and can adopt an influence of their own. (1st colour choice)"
+	}
+
+	option = {
+		name = event_wwi_become_great_power.1.a
+		set_temp_variable = { param_alignment = token:alignment_j }
+		effect_set_great_power_alignment = yes
+	}
+
+	option = {
+		name = event_wwi_become_great_power.1.b
+		set_temp_variable = { param_alignment = token:alignment_k }
+		effect_set_great_power_alignment = yes
+	}
+
+	option = {
+		name = event_wwi_become_great_power.1.c
+		set_temp_variable = { param_alignment = token:alignment_l }
+		effect_set_great_power_alignment = yes
+	}
+
+	option = {
+		name = event_wwi_become_great_power.1.d
+		country_event = { id = event_wwi_become_great_power.2 }
+	}
+}
+
+country_event = {
+	id = event_wwi_become_great_power.2
+	title = event_wwi_become_great_power.2.t
+	desc = event_wwi_become_great_power.2.desc
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Is now a great power and can adopt an influence of their own. (2nd colour choice)"
+	}
+
+	option = {
+		name = event_wwi_become_great_power.2.a
+		set_temp_variable = { param_alignment = token:alignment_m }
+		effect_set_great_power_alignment = yes
+	}
+
+	option = {
+		name = event_wwi_become_great_power.2.b
+		set_temp_variable = { param_alignment = token:alignment_n }
+		effect_set_great_power_alignment = yes
+	}
+
+	option = {
+		name = event_wwi_become_great_power.2.c
+		set_temp_variable = { param_alignment = token:alignment_o }
+		effect_set_great_power_alignment = yes
+	}
+
+	option = {
+		name = event_wwi_become_great_power.1.d
+		country_event = { id = event_wwi_become_great_power.1 }
+	}
+}
+
+news_event = {
+	id = event_wwi_become_great_power.3
+	title = event_wwi_become_great_power.3.t
+	desc = event_wwi_become_great_power.3.d
+	picture = GFX_news_event_british_trench
+
+	is_triggered_only = yes
+	major = yes
+
+	immediate = {
+		log = "([THIS.GetName] news event) Informing that [FROM] has become a great power and is using a custom influence colour."
+	}
+
+	option = {
+		name = event_wwi_become_great_power.3.a_self
+		trigger = {
+			tag = FROM
+		}
+
+		custom_effect_tooltip = effect_from_became_great_power_tt
+	}
+
+	option = {
+		name = event_wwi_become_great_power.3.a_neutral
+		trigger = {
+			NOT = { tag = FROM }
+			NOT = { has_war_with = FROM }
+		}
+
+		custom_effect_tooltip = effect_from_became_great_power_tt
+	}
+
+	option = {
+		name = event_wwi_become_great_power.3.a_negative
+		trigger = {
+			NOT = { tag = FROM }
+			has_war_with = FROM
+		}
+
+		custom_effect_tooltip = effect_from_became_great_power_tt
+	}
+}

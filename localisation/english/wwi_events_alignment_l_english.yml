@@ -1,0 +1,29 @@
+﻿l_english:
+  event_wwi_alignment.1.t: "Deepening Diplomatic Ties to [alignment_target.GetName]"
+  event_wwi_alignment.1.d: "Growing tension between the Great Powers has lead to an emerging consensus in [THIS.GetAdjective] diplomatic circles: we're in need of a new international partner, and [alignment_target.GetNameDef] stands as the pre-eminent choice."
+  event_wwi_alignment.1.a: "Inform [alignment_target.capital.GetCapitalVictoryPointName] of our desire for an understanding"
+  event_wwi_alignment.1.b: "We shan't fall into [alignment_target.GetAdjective] orbit just yet ..."
+
+  event_wwi_alignment.2.t: "[FROM.GetName] Enters [?FROM.aligned_to.GetAdjective] Sphere of Influence"
+  event_wwi_alignment.2.d: "Diplomats in [FROM.capital.GetCapitalVictoryPointName] have recently adopted a decidedly pro-[?FROM.aligned_to.GetAdjective] position in international matters. A [?FROM.aligned_to.GetAdjective]-sympathetic faction now guides the foreign policy of [FROM.GetLeader], favouring [?FROM.aligned_to.GetAdjective] commerce and seeking [?FROM.aligned_to.GetAdjective] protection.\n\nThough this remains an informal relationship, a future military alliance has been considered in [FROM.aligned_to.capital.GetCapitalVictoryPointName]."
+  event_wwi_alignment.2.a: "A welcome partner."
+
+  event_wwi_become_great_power.1.t: "[THIS.GetName] Sits Among the Great Powers"
+  event_wwi_become_great_power.1.desc: "Our nation's meteoric ascent on the world stage is now so difficult to ignore that the international order must be reshaped to accomodate us.#\n\nThe term on the lips of each [THIS.GetAdjective] minister is 'Great Power', and though the other powers still struggle to admit it, we exert the influence of one all the same.\n\nThe world is ours to paint; we've only to choose our color."
+  event_wwi_become_great_power.1.a: "Gold"
+  event_wwi_become_great_power.1.b: "Silver"
+  event_wwi_become_great_power.1.c: "Bronze"
+  event_wwi_become_great_power.1.d: "Other colours ..."
+
+  event_wwi_become_great_power.2.t: "[THIS.GetName] Sits Among the Great Powers"
+  event_wwi_become_great_power.2.desc: ""
+  event_wwi_become_great_power.2.a: "Emerald"
+  event_wwi_become_great_power.2.b: "Amethyst"
+  event_wwi_become_great_power.2.c: "Garnet"
+  event_wwi_become_great_power.2.d: "Other colours ..."
+
+  event_wwi_become_great_power.3.t: "[FROM.GetName] Joins the Powers"
+  event_wwi_become_great_power.3.d: "An evermore assertive [FROM.GetName], backed by steady growth in its international prestige, has led to lawmakers across the world to think increasingly of the nation as a Great Power.\n\nThe ascension of a state to this exclusive rank is nothing routine, but the unmistakeable influence of [FROM.GetAdjective] diplomacy - termed by some journalists as '[?FROM.leader_of_alignment.GetTokenLocalizedKey]' - is now difficult to ignore among foreign governments.\n\nA new Power delineates its sphere across the earth."
+  event_wwi_become_great_power.3.a_self: "We walk among giants!"
+  event_wwi_become_great_power.3.a_neutral: "[FROM.GetName] is not to be underestimated."
+  event_wwi_become_great_power.3.a_negative: "Our enemy ascends."

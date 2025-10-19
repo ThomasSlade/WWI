@@ -10,6 +10,22 @@ characters = {
 		country_leader = {
 			ideology = revolutionary_t
 		}
+		country_leader = { ideology = alignment_unaligned_t }
+		country_leader = { ideology = alignment_a_t }
+		country_leader = { ideology = alignment_b_t }
+		country_leader = { ideology = alignment_c_t }
+		country_leader = { ideology = alignment_d_t }
+		country_leader = { ideology = alignment_e_t }
+		country_leader = { ideology = alignment_f_t }
+		country_leader = { ideology = alignment_g_t }
+		country_leader = { ideology = alignment_h_t }
+		country_leader = { ideology = alignment_i_t }
+		country_leader = { ideology = alignment_j_t }
+		country_leader = { ideology = alignment_k_t }
+		country_leader = { ideology = alignment_l_t }
+		country_leader = { ideology = alignment_m_t }
+		country_leader = { ideology = alignment_n_t }
+		country_leader = { ideology = alignment_o_t }
 		portraits = {
 			civilian = {
 				large = GFX_portrait_ger_wilhelm_ii
@@ -28,6 +44,22 @@ characters = {
 		country_leader = {
 			ideology = revolutionary_t
 		}
+		country_leader = { ideology = alignment_unaligned_t }
+		country_leader = { ideology = alignment_a_t }
+		country_leader = { ideology = alignment_b_t }
+		country_leader = { ideology = alignment_c_t }
+		country_leader = { ideology = alignment_d_t }
+		country_leader = { ideology = alignment_e_t }
+		country_leader = { ideology = alignment_f_t }
+		country_leader = { ideology = alignment_g_t }
+		country_leader = { ideology = alignment_h_t }
+		country_leader = { ideology = alignment_i_t }
+		country_leader = { ideology = alignment_j_t }
+		country_leader = { ideology = alignment_k_t }
+		country_leader = { ideology = alignment_l_t }
+		country_leader = { ideology = alignment_m_t }
+		country_leader = { ideology = alignment_n_t }
+		country_leader = { ideology = alignment_o_t }
 		portraits = {
 			civilian = {
 				large = GFX_portrait_ger_alfred_von_tirpitz
@@ -46,6 +78,23 @@ characters = {
 		country_leader = {
 			ideology = revolutionary_t
 		}
+		country_leader = { ideology = alignment_unaligned_t }
+		country_leader = { ideology = alignment_a_t }
+		country_leader = { ideology = alignment_b_t }
+		country_leader = { ideology = alignment_c_t }
+		country_leader = { ideology = alignment_d_t }
+		country_leader = { ideology = alignment_e_t }
+		country_leader = { ideology = alignment_f_t }
+		country_leader = { ideology = alignment_g_t }
+		country_leader = { ideology = alignment_h_t }
+		country_leader = { ideology = alignment_i_t }
+		country_leader = { ideology = alignment_j_t }
+		country_leader = { ideology = alignment_k_t }
+		country_leader = { ideology = alignment_l_t }
+		country_leader = { ideology = alignment_m_t }
+		country_leader = { ideology = alignment_n_t }
+		country_leader = { ideology = alignment_o_t }
+
 		portraits = {
 			civilian = {
 				large = GFX_portrait_ger_theobald_von_bethmann_hollweg
@@ -64,6 +113,23 @@ characters = {
 		country_leader = {
 			ideology = revolutionary_t
 		}
+		country_leader = { ideology = alignment_unaligned_t }
+		country_leader = { ideology = alignment_a_t }
+		country_leader = { ideology = alignment_b_t }
+		country_leader = { ideology = alignment_c_t }
+		country_leader = { ideology = alignment_d_t }
+		country_leader = { ideology = alignment_e_t }
+		country_leader = { ideology = alignment_f_t }
+		country_leader = { ideology = alignment_g_t }
+		country_leader = { ideology = alignment_h_t }
+		country_leader = { ideology = alignment_i_t }
+		country_leader = { ideology = alignment_j_t }
+		country_leader = { ideology = alignment_k_t }
+		country_leader = { ideology = alignment_l_t }
+		country_leader = { ideology = alignment_m_t }
+		country_leader = { ideology = alignment_n_t }
+		country_leader = { ideology = alignment_o_t }
+
 		portraits = {
 			civilian = {
 				large = GFX_portrait_ger_gustav_stresemann
@@ -82,6 +148,23 @@ characters = {
 		country_leader = {
 			ideology = revolutionary_t
 		}
+		country_leader = { ideology = alignment_unaligned_t }
+		country_leader = { ideology = alignment_a_t }
+		country_leader = { ideology = alignment_b_t }
+		country_leader = { ideology = alignment_c_t }
+		country_leader = { ideology = alignment_d_t }
+		country_leader = { ideology = alignment_e_t }
+		country_leader = { ideology = alignment_f_t }
+		country_leader = { ideology = alignment_g_t }
+		country_leader = { ideology = alignment_h_t }
+		country_leader = { ideology = alignment_i_t }
+		country_leader = { ideology = alignment_j_t }
+		country_leader = { ideology = alignment_k_t }
+		country_leader = { ideology = alignment_l_t }
+		country_leader = { ideology = alignment_m_t }
+		country_leader = { ideology = alignment_n_t }
+		country_leader = { ideology = alignment_o_t }
+
 		portraits = {
 			civilian = {
 				large = GFX_portrait_ger_friedrich_ebert
@@ -101,6 +184,23 @@ characters = {
 		country_leader = {
 			ideology = revolutionary_t
 		}
+		country_leader = { ideology = alignment_unaligned_t }
+		country_leader = { ideology = alignment_a_t }
+		country_leader = { ideology = alignment_b_t }
+		country_leader = { ideology = alignment_c_t }
+		country_leader = { ideology = alignment_d_t }
+		country_leader = { ideology = alignment_e_t }
+		country_leader = { ideology = alignment_f_t }
+		country_leader = { ideology = alignment_g_t }
+		country_leader = { ideology = alignment_h_t }
+		country_leader = { ideology = alignment_i_t }
+		country_leader = { ideology = alignment_j_t }
+		country_leader = { ideology = alignment_k_t }
+		country_leader = { ideology = alignment_l_t }
+		country_leader = { ideology = alignment_m_t }
+		country_leader = { ideology = alignment_n_t }
+		country_leader = { ideology = alignment_o_t }
+		
 		portraits = {
 			civilian = {
 				large = GFX_portrait_ger_rosa_luxemburg

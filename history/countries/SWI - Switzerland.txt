@@ -19,7 +19,7 @@ set_technology = {
 set_convoys = 50
 
 set_politics = {
-	ruling_party = established
+	ruling_party = alignment_unaligned
 	last_election = "1911.1.1"
 	election_frequency = 48
 	elections_allowed = no

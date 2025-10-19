@@ -54,3 +54,6 @@
   rasputin_events_tt: "§RRasputin Scandals:§!\nRasputin will cause a §RScandal§! every few months:\n §YShelter§! him to gain $tsar_favor_resource$ and a malus.\n §YConfront§! him to lose $tsar_favor_resource$."
   empowered_rasputin_events_tt: "§RRasputin Scandals:§!\nRasputin will cause a §RScandal§! every few months:\n §YShelter§! him to gain $tsar_favor_resource$ and a malus\n §YConfront§! him to lose $tsar_favor_resource$.\n §YIndulge§! him for a malus and a bonus."
   effect_special_wargoal_first_balkan_victory: "Becomes owner of all occupied [TUR.GetAdjective] states in the §YBalkans§!."
+  effect_become_great_power_tt: "[THIS.GetName] will become a Great Power."
+  effect_set_great_power_alignment_tt: "[THIS.GetAdjective] influence overseas will be known as [?param_alignment.GetTokenLocalizedKey]."
+  effect_from_became_great_power_tt: "[FROM.GetAdjective] influence overseas will be known as [?FROM.leader_of_alignment.GetTokenLocalizedKey]."

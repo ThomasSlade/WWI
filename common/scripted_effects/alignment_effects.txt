@@ -1,0 +1,205 @@
+effect_init_alignment = {
+	add_to_array = { global._alignments = token:alignment_a }
+	add_to_array = { global._alignments = token:alignment_b }
+	add_to_array = { global._alignments = token:alignment_c }
+	add_to_array = { global._alignments = token:alignment_d }
+	add_to_array = { global._alignments = token:alignment_e }
+	add_to_array = { global._alignments = token:alignment_f }
+	add_to_array = { global._alignments = token:alignment_g }
+	add_to_array = { global._alignments = token:alignment_h }
+	add_to_array = { global._alignments = token:alignment_i }
+	add_to_array = { global._alignments = token:alignment_j }
+	add_to_array = { global._alignments = token:alignment_k }
+	add_to_array = { global._alignments = token:alignment_l }
+	add_to_array = { global._alignments = token:alignment_m }
+	add_to_array = { global._alignments = token:alignment_n }
+	add_to_array = { global._alignments = token:alignment_o }
+
+	GER = {
+		set_temp_variable = { param_alignment = token:a }
+		effect_set_alignment_leader = yes
+	}
+	FRA = {
+		set_temp_variable = { param_alignment = token:b }
+		effect_set_alignment_leader = yes
+	}
+	SOV = {
+		set_temp_variable = { param_alignment = token:c }
+		effect_set_alignment_leader = yes
+	}
+	ENG = {
+		set_temp_variable = { param_alignment = token:d }
+		effect_set_alignment_leader = yes
+	}
+	AUS = {
+		set_temp_variable = { param_alignment = token:e }
+		effect_set_alignment_leader = yes
+	}
+	USA = {
+		set_temp_variable = { param_alignment = token:f }
+		effect_set_alignment_leader = yes
+	}
+}
+
+# param_alignment: The alignment that THIS will be set the leader of.
+effect_set_alignment_leader = {
+	set_variable = { global._alignment_leaders@token:alignment_i = THIS }
+	set_variable = { leader_of_alignment = token:alignment_i }
+}
+
+# param_alignment: The tokenized ideology to set the ruling party to.
+effect_set_politics_token_friendly = {
+	meta_effect = {
+		ALIGNMENT = "[?param_alignment.GetTokenKey]"
+		text = {
+			set_politics = {
+				ruling_party = [ALIGNMENT]
+			}
+		}
+	}
+}
+
+# out_idea: The token of the idea corresponding to the current party of whatever was argued.
+effect_get_alignment_growth_low = {
+	if = {
+		limit = { check_variable = { current_party_ideology_group = token:alignment_a } }
+		set_temp_variable = { out_idea = token:idea_alignment_a_growth_low }
+	}
+	else_if = {
+		limit = { check_variable = { current_party_ideology_group = token:alignment_b } }
+		set_temp_variable = { out_idea = token:idea_alignment_b_growth_low }
+	}
+	else_if = {
+		limit = { check_variable = { current_party_ideology_group = token:alignment_c } }
+		set_temp_variable = { out_idea = token:idea_alignment_c_growth_low }
+	}
+	else_if = {
+		limit = { check_variable = { current_party_ideology_group = token:alignment_d } }
+		set_temp_variable = { out_idea = token:idea_alignment_d_growth_low }
+	}
+	else_if = {
+		limit = { check_variable = { current_party_ideology_group = token:alignment_e } }
+		set_temp_variable = { out_idea = token:idea_alignment_e_growth_low }
+	}
+	else_if = {
+		limit = { check_variable = { current_party_ideology_group = token:alignment_f } }
+		set_temp_variable = { out_idea = token:idea_alignment_f_growth_low }
+	}
+	else_if = {
+		limit = { check_variable = { current_party_ideology_group = token:alignment_g } }
+		set_temp_variable = { out_idea = token:idea_alignment_g_growth_low }
+	}
+	else_if = {
+		limit = { check_variable = { current_party_ideology_group = token:alignment_h } }
+		set_temp_variable = { out_idea = token:idea_alignment_h_growth_low }
+	}
+	else_if = {
+		limit = { check_variable = { current_party_ideology_group = token:alignment_i } }
+		set_temp_variable = { out_idea = token:idea_alignment_i_growth_low }
+	}
+	else_if = {
+		limit = { check_variable = { current_party_ideology_group = token:alignment_j } }
+		set_temp_variable = { out_idea = token:idea_alignment_j_growth_low }
+	}
+	else_if = {
+		limit = { check_variable = { current_party_ideology_group = token:alignment_k } }
+		set_temp_variable = { out_idea = token:idea_alignment_k_growth_low }
+	}
+	else_if = {
+		limit = { check_variable = { current_party_ideology_group = token:alignment_l } }
+		set_temp_variable = { out_idea = token:idea_alignment_l_growth_low }
+	}
+	else_if = {
+		limit = { check_variable = { current_party_ideology_group = token:alignment_m } }
+		set_temp_variable = { out_idea = token:idea_alignment_m_growth_low }
+	}
+	else_if = {
+		limit = { check_variable = { current_party_ideology_group = token:alignment_n } }
+		set_temp_variable = { out_idea = token:idea_alignment_n_growth_low }
+	}
+	else_if = {
+		limit = { check_variable = { current_party_ideology_group = token:alignment_o } }
+		set_temp_variable = { out_idea = token:idea_alignment_o_growth_low }
+	}
+}
+
+# out_idea: The token of the idea corresponding to the current party of whatever was argued.
+effect_get_alignment_growth_med = {
+	if = {
+		limit = { check_variable = { current_party_ideology_group = token:alignment_a } }
+		set_temp_variable = { out_idea = token:idea_alignment_a_growth_med }
+	}
+	else_if = {
+		limit = { check_variable = { current_party_ideology_group = token:alignment_b } }
+		set_temp_variable = { out_idea = token:idea_alignment_b_growth_med }
+	}
+	else_if = {
+		limit = { check_variable = { current_party_ideology_group = token:alignment_c } }
+		set_temp_variable = { out_idea = token:idea_alignment_c_growth_med }
+	}
+	else_if = {
+		limit = { check_variable = { current_party_ideology_group = token:alignment_d } }
+		set_temp_variable = { out_idea = token:idea_alignment_d_growth_med }
+	}
+	else_if = {
+		limit = { check_variable = { current_party_ideology_group = token:alignment_e } }
+		set_temp_variable = { out_idea = token:idea_alignment_e_growth_med }
+	}
+	else_if = {
+		limit = { check_variable = { current_party_ideology_group = token:alignment_f } }
+		set_temp_variable = { out_idea = token:idea_alignment_f_growth_med }
+	}
+	else_if = {
+		limit = { check_variable = { current_party_ideology_group = token:alignment_g } }
+		set_temp_variable = { out_idea = token:idea_alignment_g_growth_med }
+	}
+	else_if = {
+		limit = { check_variable = { current_party_ideology_group = token:alignment_h } }
+		set_temp_variable = { out_idea = token:idea_alignment_h_growth_med }
+	}
+	else_if = {
+		limit = { check_variable = { current_party_ideology_group = token:alignment_i } }
+		set_temp_variable = { out_idea = token:idea_alignment_i_growth_med }
+	}
+	else_if = {
+		limit = { check_variable = { current_party_ideology_group = token:alignment_j } }
+		set_temp_variable = { out_idea = token:idea_alignment_j_growth_med }
+	}
+	else_if = {
+		limit = { check_variable = { current_party_ideology_group = token:alignment_k } }
+		set_temp_variable = { out_idea = token:idea_alignment_k_growth_med }
+	}
+	else_if = {
+		limit = { check_variable = { current_party_ideology_group = token:alignment_l } }
+		set_temp_variable = { out_idea = token:idea_alignment_l_growth_med }
+	}
+	else_if = {
+		limit = { check_variable = { current_party_ideology_group = token:alignment_m } }
+		set_temp_variable = { out_idea = token:idea_alignment_m_growth_med }
+	}
+	else_if = {
+		limit = { check_variable = { current_party_ideology_group = token:alignment_n } }
+		set_temp_variable = { out_idea = token:idea_alignment_n_growth_med }
+	}
+	else_if = {
+		limit = { check_variable = { current_party_ideology_group = token:alignment_o } }
+		set_temp_variable = { out_idea = token:idea_alignment_o_growth_med }
+	}
+}
+
+# param_alignment: The tokenized ideology this country will be assigned the leader of.
+effect_set_great_power_alignment = {
+	set_country_flag = flag_great_power
+
+	custom_effect_tooltip = effect_become_great_power_tt
+	custom_effect_tooltip = effect_set_great_power_alignment_tt
+	set_variable = { leader_of_alignment = param_alignment }
+	add_popularity = {
+		ideology = var:param_alignment
+		popularity = 0.2
+	}
+
+	hidden_effect = {
+		news_event = { id = event_wwi_become_great_power.3 days = 1 }
+	}
+}

@@ -32,3 +32,4 @@
   # GER
   modifier_GER_alsace_lorraine_not_integrated: "Alsace-Lorraine Unintegrated"
   alsace_lorraine_production_speed_buildings_factor_tt: "(§Y$modifier_GER_alsace_lorraine_not_integrated$§!) $MODIFIER_PRODUCTION_SPEED_BUILDINGS_FACTOR$: $RIGHT|+=%1$"
+  GER_third_naval_bill_tt: "Adds modifier §Y$GER_third_naval_bill$§! to §Y$bop_ENG_naval_race$§! - Weekly Balance of Power Change: §Y+0.20%§!"

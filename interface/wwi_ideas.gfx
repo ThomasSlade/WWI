@@ -135,6 +135,66 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_revolutionary.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_generic_alignment_a"
+		texturefile = "gfx/interface/ideas/idea_generic_alignment_a.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_alignment_b"
+		texturefile = "gfx/interface/ideas/idea_generic_alignment_b.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_alignment_c"
+		texturefile = "gfx/interface/ideas/idea_generic_alignment_c.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_alignment_d"
+		texturefile = "gfx/interface/ideas/idea_generic_alignment_d.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_alignment_e"
+		texturefile = "gfx/interface/ideas/idea_generic_alignment_e.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_alignment_f"
+		texturefile = "gfx/interface/ideas/idea_generic_alignment_f.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_alignment_g"
+		texturefile = "gfx/interface/ideas/idea_generic_alignment_g.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_alignment_h"
+		texturefile = "gfx/interface/ideas/idea_generic_alignment_h.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_alignment_i"
+		texturefile = "gfx/interface/ideas/idea_generic_alignment_i.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_alignment_j"
+		texturefile = "gfx/interface/ideas/idea_generic_alignment_j.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_alignment_k"
+		texturefile = "gfx/interface/ideas/idea_generic_alignment_k.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_alignment_l"
+		texturefile = "gfx/interface/ideas/idea_generic_alignment_l.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_alignment_m"
+		texturefile = "gfx/interface/ideas/idea_generic_alignment_m.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_alignment_n"
+		texturefile = "gfx/interface/ideas/idea_generic_alignment_n.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_alignment_o"
+		texturefile = "gfx/interface/ideas/idea_generic_alignment_o.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_generic_established_decrease"
 		texturefile = "gfx/interface/ideas/idea_generic_established_decrease.dds"
 	}

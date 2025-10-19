@@ -61,4 +61,388 @@ decision_category_politics = {
         	}
 		}
 	}
+
+	decision_become_great_power = {
+		icon = GFX_decision_generic_form_nation
+	}
+
+	decision_align_dummy = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+
+		visible = {
+			NOT = {
+				set_temp_variable = { param_alignment = token:alignment_a }
+				trigger_can_adopt_alignment = yes
+				set_temp_variable = { param_alignment = token:alignment_b }
+				trigger_can_adopt_alignment = yes
+				set_temp_variable = { param_alignment = token:alignment_c }
+				trigger_can_adopt_alignment = yes
+				set_temp_variable = { param_alignment = token:alignment_d }
+				trigger_can_adopt_alignment = yes
+				set_temp_variable = { param_alignment = token:alignment_e }
+				trigger_can_adopt_alignment = yes
+				set_temp_variable = { param_alignment = token:alignment_f }
+				trigger_can_adopt_alignment = yes
+				set_temp_variable = { param_alignment = token:alignment_g }
+				trigger_can_adopt_alignment = yes
+				set_temp_variable = { param_alignment = token:alignment_h }
+				trigger_can_adopt_alignment = yes
+				set_temp_variable = { param_alignment = token:alignment_i }
+				trigger_can_adopt_alignment = yes
+				set_temp_variable = { param_alignment = token:alignment_j }
+				trigger_can_adopt_alignment = yes
+				set_temp_variable = { param_alignment = token:alignment_k }
+				trigger_can_adopt_alignment = yes
+				set_temp_variable = { param_alignment = token:alignment_l }
+				trigger_can_adopt_alignment = yes
+				set_temp_variable = { param_alignment = token:alignment_m }
+				trigger_can_adopt_alignment = yes
+				set_temp_variable = { param_alignment = token:alignment_n }
+				trigger_can_adopt_alignment = yes
+				set_temp_variable = { param_alignment = token:alignment_o }
+				trigger_can_adopt_alignment = yes
+			}
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = trigger_decision_align_dummy_tt
+				always = no
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = effect_decision_align_dummy_tt
+		}
+	}
+
+	decision_align_a = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+
+		visible = {
+			set_temp_variable = { param_alignment = token:alignment_a }
+			trigger_can_adopt_alignment = yes
+		}
+
+		available = {
+			set_temp_variable = { param_alignment = token:alignment_a }
+			trigger_can_adopt_alignment = yes
+		}
+
+		complete_effect = {
+			set_politics = { ruling_party = alignment_a }
+		}
+
+		ai_will_do = {
+		    base = 100
+		}
+	}
+
+	decision_align_b = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+
+		visible = {
+			set_temp_variable = { param_alignment = token:alignment_b }
+			trigger_can_adopt_alignment = yes
+		}
+
+		available = {
+			set_temp_variable = { param_alignment = token:alignment_b }
+			trigger_can_adopt_alignment = yes
+		}
+
+		complete_effect = {
+			set_politics = { ruling_party = alignment_b }
+		}
+
+		ai_will_do = {
+		    base = 100
+		}
+	}
+
+	decision_align_c = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+
+		visible = {
+			set_temp_variable = { param_alignment = token:alignment_c }
+			trigger_can_adopt_alignment = yes
+		}
+
+		available = {
+			set_temp_variable = { param_alignment = token:alignment_c }
+			trigger_can_adopt_alignment = yes
+		}
+
+		complete_effect = {
+			set_politics = { ruling_party = alignment_c }
+		}
+
+		ai_will_do = {
+		    base = 100
+		}
+	}
+
+	decision_align_d = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+
+		visible = {
+			set_temp_variable = { param_alignment = token:alignment_d }
+			trigger_can_adopt_alignment = yes
+		}
+
+		available = {
+			set_temp_variable = { param_alignment = token:alignment_d }
+			trigger_can_adopt_alignment = yes
+		}
+
+		complete_effect = {
+			set_politics = { ruling_party = alignment_d }
+		}
+
+		ai_will_do = {
+		    base = 100
+		}
+	}
+
+	decision_align_e = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+
+		visible = {
+			set_temp_variable = { param_alignment = token:alignment_e }
+			trigger_can_adopt_alignment = yes
+		}
+
+		available = {
+			set_temp_variable = { param_alignment = token:alignment_e }
+			trigger_can_adopt_alignment = yes
+		}
+
+		complete_effect = {
+			set_politics = { ruling_party = alignment_e }
+		}
+
+		ai_will_do = {
+		    base = 100
+		}
+	}
+
+	decision_align_f = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+
+		visible = {
+			set_temp_variable = { param_alignment = token:alignment_f }
+			trigger_can_adopt_alignment = yes
+		}
+
+		available = {
+			set_temp_variable = { param_alignment = token:alignment_f }
+			trigger_can_adopt_alignment = yes
+		}
+
+		complete_effect = {
+			set_politics = { ruling_party = alignment_f }
+		}
+
+		ai_will_do = {
+		    base = 100
+		}
+	}
+
+	decision_align_g = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+
+		visible = {
+			set_temp_variable = { param_alignment = token:alignment_g }
+			trigger_can_adopt_alignment = yes
+		}
+
+		available = {
+			set_temp_variable = { param_alignment = token:alignment_g }
+			trigger_can_adopt_alignment = yes
+		}
+
+		complete_effect = {
+			set_politics = { ruling_party = alignment_g }
+		}
+
+		ai_will_do = {
+		    base = 100
+		}
+	}
+
+	decision_align_h = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+
+		visible = {
+			set_temp_variable = { param_alignment = token:alignment_h }
+			trigger_can_adopt_alignment = yes
+		}
+
+		available = {
+			set_temp_variable = { param_alignment = token:alignment_h }
+			trigger_can_adopt_alignment = yes
+		}
+
+		complete_effect = {
+			set_politics = { ruling_party = alignment_h }
+		}
+
+		ai_will_do = {
+		    base = 100
+		}
+	}
+
+	decision_align_i = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+
+		visible = {
+			set_temp_variable = { param_alignment = token:alignment_i }
+			trigger_can_adopt_alignment = yes
+		}
+
+		available = {
+			set_temp_variable = { param_alignment = token:alignment_i }
+			trigger_can_adopt_alignment = yes
+		}
+
+		complete_effect = {
+			set_politics = { ruling_party = alignment_i }
+		}
+
+		ai_will_do = {
+		    base = 100
+		}
+	}
+
+	decision_align_j = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+
+		visible = {
+			set_temp_variable = { param_alignment = token:alignment_j }
+			trigger_can_adopt_alignment = yes
+		}
+
+		available = {
+			set_temp_variable = { param_alignment = token:alignment_j }
+			trigger_can_adopt_alignment = yes
+		}
+
+		complete_effect = {
+			set_politics = { ruling_party = alignment_j }
+		}
+
+		ai_will_do = {
+		    base = 100
+		}
+	}
+
+	decision_align_k = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+
+		visible = {
+			set_temp_variable = { param_alignment = token:alignment_k }
+			trigger_can_adopt_alignment = yes
+		}
+
+		available = {
+			set_temp_variable = { param_alignment = token:alignment_k }
+			trigger_can_adopt_alignment = yes
+		}
+
+		complete_effect = {
+			set_politics = { ruling_party = alignment_k }
+		}
+
+		ai_will_do = {
+		    base = 100
+		}
+	}
+
+	decision_align_l = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+
+		visible = {
+			set_temp_variable = { param_alignment = token:alignment_l }
+			trigger_can_adopt_alignment = yes
+		}
+
+		available = {
+			set_temp_variable = { param_alignment = token:alignment_l }
+			trigger_can_adopt_alignment = yes
+		}
+
+		complete_effect = {
+			set_politics = { ruling_party = alignment_l }
+		}
+
+		ai_will_do = {
+		    base = 100
+		}
+	}
+
+	decision_align_m = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+
+		visible = {
+			set_temp_variable = { param_alignment = token:alignment_m }
+			trigger_can_adopt_alignment = yes
+		}
+
+		available = {
+			set_temp_variable = { param_alignment = token:alignment_m }
+			trigger_can_adopt_alignment = yes
+		}
+
+		complete_effect = {
+			set_politics = { ruling_party = alignment_m }
+		}
+
+		ai_will_do = {
+		    base = 100
+		}
+	}
+
+	decision_align_n = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+
+		visible = {
+			set_temp_variable = { param_alignment = token:alignment_n }
+			trigger_can_adopt_alignment = yes
+		}
+
+		available = {
+			set_temp_variable = { param_alignment = token:alignment_n }
+			trigger_can_adopt_alignment = yes
+		}
+
+		complete_effect = {
+			set_politics = { ruling_party = alignment_n }
+		}
+
+		ai_will_do = {
+		    base = 100
+		}
+	}
+
+	decision_align_o = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+
+		visible = {
+			set_temp_variable = { param_alignment = token:alignment_o }
+			trigger_can_adopt_alignment = yes
+		}
+
+		available = {
+			set_temp_variable = { param_alignment = token:alignment_o }
+			trigger_can_adopt_alignment = yes
+		}
+
+		complete_effect = {
+			set_politics = { ruling_party = alignment_o }
+		}
+
+		ai_will_do = {
+		    base = 100
+		}
+	}
 }

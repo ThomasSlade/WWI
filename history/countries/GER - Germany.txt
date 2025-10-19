@@ -34,16 +34,16 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = expansionist
+	ruling_party = alignment_a
 	last_election = "1911.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	established = 25
-	expansionist = 75
-	revolutionary = 0
+	alignment_unaligned = 25
+	alignment_e = 10
+	alignment_a = 65
 }
 
 add_ideas = {

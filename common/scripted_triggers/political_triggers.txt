@@ -1,3 +1,10 @@
+trigger_opposition_can_increase = {
+	custom_trigger_tooltip = {
+		tooltip = trigger_opposition_can_increase_tt
+		check_variable = { opposition_level < 3 }
+	}
+}
+
 # param_law: The potential new law
 trigger_opposition_allows_law_change = {
 	meta_trigger = {

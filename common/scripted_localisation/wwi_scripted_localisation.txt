@@ -316,12 +316,13 @@ defined_text = {
 	}
 }
 
+# To use this, set a temp variable of the name 'temp_party' before using this localisation macro.
 defined_text = {
-	name = GetColoredOppositionName
+	name = GetColoredPartyName
 
 	text = {
 		trigger = {
-			check_variable = { opposition_party = token:autocratic }
+			check_variable = { temp_party = token:autocratic }
 		}
 
 		localization_key = "autocratic_colored"
@@ -329,7 +330,7 @@ defined_text = {
 
 	text = {
 		trigger = {
-			check_variable = { opposition_party = token:conservative }
+			check_variable = { temp_party = token:conservative }
 		}
 
 		localization_key = "conservative_colored"
@@ -337,7 +338,7 @@ defined_text = {
 
 	text = {
 		trigger = {
-			check_variable = { opposition_party = token:liberal }
+			check_variable = { temp_party = token:liberal }
 		}
 
 		localization_key = "liberal_colored"
@@ -345,7 +346,7 @@ defined_text = {
 
 	text = {
 		trigger = {
-			check_variable = { opposition_party = token:socialist }
+			check_variable = { temp_party = token:socialist }
 		}
 
 		localization_key = "socialist_colored"
@@ -353,7 +354,7 @@ defined_text = {
 
 	text = {
 		trigger = {
-			check_variable = { opposition_party = token:communist }
+			check_variable = { temp_party = token:communist }
 		}
 
 		localization_key = "communist_colored"

@@ -20,16 +20,17 @@ set_technology = {
 set_convoys = 50
 
 set_politics = {
-	ruling_party = established
+	ruling_party = alignment_unaligned
 	last_election = "1911.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	established = 60
-	expansionist = 40
-	revolutionary = 0
+	alignment_unaligned = 70
+	alignment_c = 15
+	alignment_a = 10
+	alignment_e = 5
 }
 
 add_ideas = {
