@@ -18,7 +18,6 @@ country_event = {
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	immediate = {
 		log = "([THIS.GetName] event) Britain takes lead in naval race."
@@ -57,7 +56,6 @@ country_event = {
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	immediate = {
 		log = "([THIS.GetName] event) Britain close to winning naval race."
@@ -134,7 +132,6 @@ country_event = {
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	immediate = {
 		log = "([THIS.GetName] event) Rival takes lead in naval race."
@@ -173,7 +170,6 @@ country_event = {
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	immediate = {
 		log = "([THIS.GetName] event) Rival close to winning naval race."
