@@ -1,8 +1,8 @@
 -- WWI: Make borders less invasive so that terrain can be more easily read.
 
 NDefines_Graphics.NGraphics.GRADIENT_BORDERS_THICKNESS_COUNTRY_LOW = 1.0 -- 5.0, -- thickness in pixels
-NDefines_Graphics.NGraphics.GRADIENT_BORDERS_COUNTRY_CENTER_THICKNESS = 1.0 -- 2.0, -- The center gradient is linear 1/255 per pixel for this many pixels
-NDefines_Graphics.NGraphics.GRADIENT_BORDERS_THICKNESS_COUNTRY_HIGH = 2.0 -- 25.0,
+NDefines_Graphics.NGraphics.GRADIENT_BORDERS_COUNTRY_CENTER_THICKNESS = 1.5 -- 2.0, -- The center gradient is linear 1/255 per pixel for this many pixels
+NDefines_Graphics.NGraphics.GRADIENT_BORDERS_THICKNESS_COUNTRY_HIGH = 12.0 -- 25.0,
 NDefines_Graphics.NGraphics.GRADIENT_BORDERS_THICKNESS_STATE = 1.0 -- 11.0,
 NDefines_Graphics.NGraphics.DRAW_FOW_CUTOFF = 400 -- 400
 NDefines_Graphics.NGraphics.DRAW_FOW_FADE_LENGTH = 700 -- 350
