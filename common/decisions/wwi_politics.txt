@@ -62,10 +62,6 @@ decision_category_politics = {
 		}
 	}
 
-	decision_become_great_power = {
-		icon = GFX_decision_generic_form_nation
-	}
-
 	decision_align_dummy = {
 		icon = GFX_decision_hol_exchange_intelligence_data
 
