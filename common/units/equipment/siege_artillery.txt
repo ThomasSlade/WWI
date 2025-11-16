@@ -46,6 +46,7 @@ equipments = {
 		year = 1918
 		
 		archetype = siege_artillery_equipment
+		parent = siege_artillery_equipment_0
 		priority = 50
 		visual_level = 1
 	}

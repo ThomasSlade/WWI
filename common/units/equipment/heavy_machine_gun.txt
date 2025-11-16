@@ -46,6 +46,7 @@ equipments = {
 		year = 1916
 		
 		archetype = heavy_machine_gun_equipment
+		parent = heavy_machine_gun_equipment_0
 		priority = 50
 		visual_level = 1
 
