@@ -20,6 +20,7 @@
   AUS_yuliian_romanchuk: "Yuliian Romanchuk"
   AUS_tomas_masaryk: "Tomáš Masaryk"
   AUS_heinrich_friedjung: "Heinrich Friedjung"
+  AUS_gunter_burstyn: "Günther Burstyn"
 
   # SOV
   SOV_pyotr_stolypin: "Pyotr Stolypin"
@@ -33,3 +34,21 @@
   SOV_bad_army_chief_8: "Alexey Vasilchikov"
   SOV_bad_army_chief_9: "Kazimir Kaledin"
   SOV_bad_army_chief_10: "Vladimir Lermontov"
+
+  # GER
+  GER_wilhelm_ii: "Wilhelm II"
+  GER_alfred_von_tirpitz: "Alfred von Tirpitz"
+  GER_theobald_von_bethmann_hollweg: "Theobald von Bethmann Hollweg"
+  GER_gustav_stresemann: "Gustav Stresemann"
+  GER_friedrich_ebert: "Friedrich Ebert"
+  GER_rosa_luxemburg: "Rosa Luxemburg"
+  GER_helmuth_von_moltke: "Helmuth von Moltke"
+  GER_erich_von_falkenhayn: "Erich von Falkenhayn"
+  GER_alexander_von_kluck: "Alexander von Kluck"
+  GER_august_von_mackensen: "August von Machensen"
+  GER_rupprecht_of_bavaria: "Crown Prince Rupprecht of Bavaria"
+  GER_paul_von_hindenburg: "Paul von Hindenburg"
+  GER_erich_ludendorff: "Erich Ludendorff"
+
+  # ENG
+  ENG_lancelot_de_mole: "Lancelot de Mole"
