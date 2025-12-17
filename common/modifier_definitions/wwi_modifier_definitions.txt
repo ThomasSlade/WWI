@@ -45,3 +45,21 @@ cannot_decrease_blockade_policy_laws = {
 	color_type = bad
 	value_type = yes_no
 }
+
+dummy_army_speed_factor = {
+	color_type = good
+	value_type = percentage
+	precision = 2
+}
+
+dummy_supply_factor = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+}
+
+dummy_train_build_cost_ic = {
+	color_type = bad
+	value_type = percentage
+	precision = 2
+}

@@ -1,0 +1,24 @@
+leader_traits = {
+	# Gunter Burstyn
+	motorgeschutz_inventor = {
+		equipment_bonus = {
+			heavy_armor = {
+				instant = yes
+				build_cost_ic = -0.2
+				breakthrough = 0.25
+			}
+		}
+	}
+
+	# Lancelot de Mole
+	unsung_tank_pioneer = {
+		equipment_bonus = {
+			armor = {
+				instant = yes
+				build_cost_ic = -0.1
+				maximum_speed = 0.25
+				reliability = 0.15
+			}
+		}
+	}
+}

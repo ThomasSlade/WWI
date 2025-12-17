@@ -428,4 +428,38 @@ characters = {
 			}
 		}
 	}
+
+	AUS_gunter_burstyn = {
+		name = AUS_gunter_burstyn
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = AUS_gunter_burstyn
+			ledger = army
+			traits = { motorgeschutz_inventor }
+			available = {
+				OR = {
+					AND = {
+						original_tag = AUS
+						NOT = { GER = { has_country_flag = flag_GER_stole_gunter_burstyn } }
+					}
+					
+					AND = {
+						original_tag = GER
+						has_country_flag = flag_GER_stole_gunter_burstyn
+					}
+				}
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_armored_specialist }
+			skills = {
+				specialization_land = 2
+			}
+		}
+	}
 }

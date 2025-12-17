@@ -1,0 +1,302 @@
+decision_category_GER_railways = {
+	decision_GER_devise_new_railway_scheme = {
+		available = {
+			trigger_GER_has_not_used_any_strategic_railway_charges = yes
+		}
+		
+		complete_effect = {
+			add_timed_idea = {
+				idea = idea_GER_devise_new_strategic_railway
+				days = 550
+			}
+
+			custom_effect_tooltip = decision_category_GER_devise_new_railway_scheme_tt
+		}
+	}
+
+	decision_GER_berlin_essen_line = {
+		complete_effect = {
+			build_railway = {
+				start_province = 3116 # Berlin
+				target_province = 1995 # Essen
+			}
+
+			effect_GER_spend_1_railway_project = yes
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+
+	decision_GER_berlin_kiel_line = {
+		complete_effect = {
+			build_railway = {
+				start_province = 3116 # Berlin
+				target_province = 3130 # Kiel
+			}
+
+			effect_GER_spend_1_railway_project = yes
+		}
+
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	decision_GER_berlin_mainz_line = {
+		complete_effect = {
+			build_railway = {
+				start_province = 3116 # Berlin
+				target_province = 2139 # Mainz
+			}
+
+			effect_GER_spend_1_railway_project = yes
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	decision_GER_berlin_konisberg_line = {
+		complete_effect = {
+			build_railway = {
+				start_province = 3116 # Berlin
+				target_province = 3466 # Konigsberg
+			}
+
+			effect_GER_spend_1_railway_project = yes
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	decision_GER_berlin_kattowitz_line = {
+		complete_effect = {
+			build_railway = {
+				start_province = 3116 # Berlin
+				target_province = 3027 # Katowitz
+			}
+
+			effect_GER_spend_1_railway_project = yes
+		}
+
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	decision_GER_berlin_munich_line = {
+		complete_effect = {
+			build_railway = {
+				start_province = 3116 # Berlin
+				target_province = 3335 # Munich
+			}
+
+			effect_GER_spend_1_railway_project = yes
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	decision_GER_essen_strassburg_line = {
+		complete_effect = {
+			build_railway = {
+				start_province = 1995 # Essen
+				target_province = 1946 # Strassburg
+			}
+
+			effect_GER_spend_1_railway_project = yes
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+
+	decision_GER_rhineland_supply_rails = {
+		complete_effect = {
+			build_railway = {
+				start_province = 1995 # Essen
+				target_province = 1997 # Aachen
+			}
+
+			build_railway = {
+				start_province = 1995 # Essen
+				target_province = 1910 # Osnabruck
+			}
+
+			build_railway = {
+				start_province = 1995 # Essen
+				target_province = 2102 # Prum
+			}
+
+			effect_GER_spend_1_railway_project = yes
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	decision_GER_alsatian_supply_rails = {
+		complete_effect = {
+			build_railway = {
+				start_province = 2139 # Mainz
+				target_province = 2102 # Prum
+			}
+
+			build_railway = {
+				start_province = 2139 # Mainz
+				target_province = 2216 # Metz
+			}
+
+			build_railway = {
+				start_province = 2139 # Mainz
+				target_province = 1958 # Kolmar
+			}
+
+			effect_GER_spend_1_railway_project = yes
+		}
+
+		ai_will_do = {
+			factor = 5-0
+		}
+	}
+
+	decision_GER_ostprussian_supply_rails = {
+		complete_effect = {
+			build_railway = {
+				start_province = 3466 # Konigsberg
+				target_province = 3222 # Memel
+			}
+
+			build_railway = {
+				start_province = 3466 # Konigsberg
+				target_province = 3219 # Gumbinnen
+			}
+
+			build_railway = {
+				start_province = 3466 # Konigsberg
+				target_province = 3064 # Lyk
+			}
+
+			effect_GER_spend_1_railway_project = yes
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+
+	decision_GER_posen_supply_rails = {
+		complete_effect = {
+			build_railway = {
+				start_province = 3050 # Frankfurt-an-der-Oder
+				target_province = 763 # Thorn
+			}
+
+			build_railway = {
+				start_province = 3173 # Ostrowo Junction onto Frankfurt-Liegnitz line
+				target_province = 3408 # Ostrowo
+			}
+
+			effect_GER_spend_1_railway_project = yes
+		}
+
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	decision_GER_bavarian_supply_rails = {
+		complete_effect = {
+			71 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					instant_build = yes
+					province = 2157 # Kempten
+				}
+			}
+
+			build_railway = {
+				start_province = 3335 # Munich
+				target_province = 2157 # Kempten
+			}
+			
+			83 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					instant_build = yes
+					province = 3619 # Passau
+				}
+			}
+
+			build_railway = {
+				start_province = 3646 # Regensburg
+				target_province = 3619 # Passau
+			}
+
+			build_railway = {
+				start_province = 3144 # Landshut
+				target_province = 2992 # Muhldorf
+			}
+
+			effect_GER_spend_1_railway_project = yes
+		}
+
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	decision_GER_bohemian_supply_rails = {
+		complete_effect = {
+			build_railway = {
+				start_province = 3116 # Berlin
+				target_province = 3461 # Dresden
+			}
+
+			50 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					instant_build = yes
+					province = 3150 # Glatz
+				}
+			}
+
+			build_railway = {
+				start_province = 3364 # Breslau
+				target_province = 3150 # Glatz
+			}
+			
+			82 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					instant_build = yes
+					province = 3377 # Bautzen
+				}
+			}
+
+			build_railway = {
+				start_province = 3461 # Dresden
+				target_province = 3377 # Bautzen
+			}
+
+			effect_GER_spend_1_railway_project = yes
+		}
+
+		ai_will_do = {
+			factor = 25
+		}
+	}
+}

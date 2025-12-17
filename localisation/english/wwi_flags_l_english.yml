@@ -1,3 +1,5 @@
 ﻿l_english:
   TUR_humiliated_by_war: "[TUR.GetName] has lost a war."
   flag_ALB_is_fighting_for_independence: "Is fighting war for independence."
+  flag_GER_stole_gunter_burstyn: "[GER.GetName] has recruited this character by completing the $GER_recruit_foreign_tank_designers$ focus"
+  flag_GER_lancelot_de_mole: "[GER.GetName] has recruited this character by completing the $GER_recruit_foreign_tank_designers$ focus"

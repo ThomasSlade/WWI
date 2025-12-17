@@ -53,6 +53,10 @@
   idea_GER_encirclement_2_desc: "Diplomatic maneuvers on the continent further ensnare [THIS.GetNameDef]. [THIS.GetAdjective] citizens cannot ignore the threat: they demand yet greater military measures. The objections of our rivals be damned."
   idea_GER_encirclement_3: "Unshakable Encirclement"
   idea_GER_encirclement_3_desc: "From each direction, enemies menace [THIS.GetAdjective] borders. The assuasions of supposedly neutral neighbors do little to calm the stormy public mood. Preparations for war must be made."
+  company_rhenish_westphalian_coal_syndicate: "Rhenish Westphalian Coal Syndicate"
+  idea_GER_military_travel_plan_primer: "Military Travel Plan (Inactive)"
+  idea_GER_military_travel_plan: "Military Travel Plan (Active)"
+  idea_GER_military_travel_plan_primer_tt: "Enabled for §Y365 days§! when [THIS.GetName] enters a war§!"
 
   # Austria
   AUS_hungarian_resistance_0: "Hungary Satisfied"

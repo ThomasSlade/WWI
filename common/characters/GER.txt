@@ -10,22 +10,22 @@ characters = {
 		country_leader = {
 			ideology = revolutionary_t
 		}
-		country_leader = { ideology = alignment_unaligned_t }
-		country_leader = { ideology = alignment_a_t }
-		country_leader = { ideology = alignment_b_t }
-		country_leader = { ideology = alignment_c_t }
-		country_leader = { ideology = alignment_d_t }
-		country_leader = { ideology = alignment_e_t }
-		country_leader = { ideology = alignment_f_t }
-		country_leader = { ideology = alignment_g_t }
-		country_leader = { ideology = alignment_h_t }
-		country_leader = { ideology = alignment_i_t }
-		country_leader = { ideology = alignment_j_t }
-		country_leader = { ideology = alignment_k_t }
-		country_leader = { ideology = alignment_l_t }
-		country_leader = { ideology = alignment_m_t }
-		country_leader = { ideology = alignment_n_t }
-		country_leader = { ideology = alignment_o_t }
+		country_leader = { ideology = alignment_unaligned_t	traits = { das_grossmaul } }
+		country_leader = { ideology = alignment_a_t 		traits = { das_grossmaul } }
+		country_leader = { ideology = alignment_b_t 		traits = { das_grossmaul } }
+		country_leader = { ideology = alignment_c_t 		traits = { das_grossmaul } }
+		country_leader = { ideology = alignment_d_t 		traits = { das_grossmaul } }
+		country_leader = { ideology = alignment_e_t 		traits = { das_grossmaul } }
+		country_leader = { ideology = alignment_f_t 		traits = { das_grossmaul } }
+		country_leader = { ideology = alignment_g_t 		traits = { das_grossmaul } }
+		country_leader = { ideology = alignment_h_t 		traits = { das_grossmaul } }
+		country_leader = { ideology = alignment_i_t 		traits = { das_grossmaul } }
+		country_leader = { ideology = alignment_j_t 		traits = { das_grossmaul } }
+		country_leader = { ideology = alignment_k_t 		traits = { das_grossmaul } }
+		country_leader = { ideology = alignment_l_t 		traits = { das_grossmaul } }
+		country_leader = { ideology = alignment_m_t 		traits = { das_grossmaul } }
+		country_leader = { ideology = alignment_n_t 		traits = { das_grossmaul } }
+		country_leader = { ideology = alignment_o_t 		traits = { das_grossmaul } }
 		portraits = {
 			civilian = {
 				large = GFX_portrait_ger_wilhelm_ii

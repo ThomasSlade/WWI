@@ -137,6 +137,313 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GER_ruhr_infrastructure
+		icon = GFX__shine
+		prerequisite = { focus = GER_german_domestic_investment }
+		x = -11
+		y = 1
+		relative_position_id = GER_german_domestic_investment
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			46 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+					    type = infrastructure
+					    level = 1
+					    instant_build = yes
+					}
+
+					add_extra_state_shared_building_slots = 2
+				}
+			}
+
+			45 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+					    type = infrastructure
+					    level = 1
+					    instant_build = yes
+					}
+
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+
+			87 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+					    type = infrastructure
+					    level = 1
+					    instant_build = yes
+					}
+
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_rhenish_westphalian_coal_syndicate
+		icon = GFX__shine
+		prerequisite = { focus = GER_ruhr_infrastructure }
+		x = 0
+		y = 1
+		relative_position_id = GER_ruhr_infrastructure
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			28 = {
+				add_resource = {
+					type = oil
+					amount = 30
+				}
+			}
+
+			45 = {
+				add_resource = {
+					type = oil
+					amount = 10
+				}
+			}
+
+			52 = {
+				add_resource = {
+					type = oil
+					amount = 10
+				}
+			}
+
+			custom_effect_tooltip = GER_rhenish_westphalian_coal_syndicate_unlock_tt
+		}
+	}
+
+	focus = {
+		id = GER_silesian_and_saxon_mining
+		icon = GFX__shine
+		prerequisite = { focus = GER_german_domestic_investment }
+		x = -15
+		y = 1
+		relative_position_id = GER_german_domestic_investment
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			28 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+
+					add_building_construction = {
+					    type = infrastructure
+					    level = 2
+					    instant_build = yes
+					}
+
+					add_extra_state_shared_building_slots = 1
+
+					add_resource = {
+						type = oil
+						amount = 30
+					}
+				}
+			}
+
+			82 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+
+					add_building_construction = {
+					    type = infrastructure
+					    level = 1
+					    instant_build = yes
+					}
+
+					add_extra_state_shared_building_slots = 1
+
+					add_resource = {
+						type = steel
+						amount = 30
+					}
+				}
+			}
+
+			50 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+
+					add_building_construction = {
+					    type = infrastructure
+					    level = 1
+					    instant_build = yes
+					}
+
+					add_extra_state_shared_building_slots = 1
+
+					add_resource = {
+						type = tungsten
+						amount = 30
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_mittellandkanal
+		icon = GFX__shine
+		prerequisite = { focus = GER_ruhr_infrastructure focus = GER_silesian_and_saxon_mining }
+		x = -2
+		y = 1
+		relative_position_id = GER_ruhr_infrastructure
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			13 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+					    type = infrastructure
+					    level = 1
+					    instant_build = yes
+					}
+				}
+			}
+
+			33 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+					    type = infrastructure
+					    level = 1
+					    instant_build = yes
+					}
+				}
+			}
+
+			1 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+					    type = infrastructure
+					    level = 1
+					    instant_build = yes
+					}
+				}
+			}
+
+			74 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+					    type = infrastructure
+					    level = 1
+					    instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_saxon_manufacturing
+		icon = GFX__shine
+		prerequisite = { focus = GER_silesian_and_saxon_mining }
+		x = 0
+		y = 1
+		relative_position_id = GER_silesian_and_saxon_mining
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			82 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+
+					add_extra_state_shared_building_slots = 2
+
+					add_building_construction = {
+					    type = industrial_complex
+					    level = 2
+					    instant_build = yes
+					}
+
+					add_resource = {
+						type = aluminium
+						amount = 30
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_land_of_cartels
+		icon = GFX__shine
+		prerequisite = { focus = GER_rhenish_westphalian_coal_syndicate }
+		x = 1
+		y = 2
+		relative_position_id = GER_rhenish_westphalian_coal_syndicate
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GER_strategic_rail_expansion
+		icon = GFX__shine
+		prerequisite = { focus = GER_saxon_manufacturing focus = GER_rhenish_westphalian_coal_syndicate focus = GER_mittellandkanal }
+		x = -3
+		y = 1
+		relative_position_id = GER_rhenish_westphalian_coal_syndicate
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			unlock_decision_category_tooltip = decision_category_GER_railways
+			custom_effect_tooltip = GER_strategic_rail_expansion_tt
+			set_variable = { strategic_railway_charges = 3 }
+		}
+	}
+
+	focus = {
 		id = GER_war_council
 		icon = GFX__shine
 		prerequisite = { focus = GER_machinery_exports focus = GER_german_defence_league }
@@ -526,11 +833,34 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GER_PLACEHOLDER_free_diplomatic_hand
+		icon = GFX__shine
+		prerequisite = { focus = GER_abandon_austria }
+		x = 0
+		y = 2
+		relative_position_id = GER_abandon_austria
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		available = {
+
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
 		id = GER_redirect_austrian_designs
 		icon = GFX__shine
 		prerequisite = { focus = GER_support_austria_diplomatically }
-		x = 1
-		y = 1
+		x = 0
+		y = 2
 		relative_position_id = GER_support_austria_diplomatically
 		cost = 10
 		ai_will_do = {
@@ -547,8 +877,8 @@ focus_tree = {
 	focus = {
 		id = GER_befriend_romania
 		icon = GFX__shine
-		prerequisite = { focus = GER_redirect_austrian_designs }
-		x = 0
+		prerequisite = { focus = GER_redirect_austrian_designs focus = GER_PLACEHOLDER_free_diplomatic_hand }
+		x = 2
 		y = 1
 		relative_position_id = GER_redirect_austrian_designs
 		cost = 10
@@ -597,6 +927,51 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GER_PLADEHOLDER_aus_help
+		icon = GFX__shine
+		prerequisite = { focus = GER_support_austria_diplomatically }
+		x = 1
+		y = 1
+		relative_position_id = GER_support_austria_diplomatically
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GER_train_allied_military
+		icon = GFX__shine
+		prerequisite = { focus = GER_befriend_italy focus = GER_PLADEHOLDER_aus_help }
+		x = -1
+		y = 1
+		relative_position_id = GER_befriend_italy
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			effect_get_alignment_growth_low = yes
+
+			SOV = {	
+				add_timed_idea = {
+					idea = var:out_idea
+					days = 1095
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = GER_treaty_of_bufteau
 		icon = GFX__shine
 		prerequisite = { focus = GER_support_austria_diplomatically }
@@ -618,9 +993,9 @@ focus_tree = {
 	focus = {
 		id = GER_repeal_lombardverbot
 		icon = GFX__shine
-		prerequisite = { focus = GER_redirect_austrian_designs focus = GER_abandon_austria }
+		prerequisite = { focus = GER_redirect_austrian_designs focus = GER_PLACEHOLDER_free_diplomatic_hand }
 		x = 0
-		y = 2
+		y = 3
 		relative_position_id = GER_abandon_austria
 		cost = 10
 		ai_will_do = {
@@ -635,7 +1010,7 @@ focus_tree = {
 
 		completion_reward = {
 			if = {
-				check_variable = { cabinet_party = token:conservative }
+				limit = { check_variable = { cabinet_party = token:conservative } }
 				set_temp_variable = { param_party = token:liberal }
 				effect_change_cabinet = yes
 			}
@@ -703,7 +1078,7 @@ focus_tree = {
 		prerequisite = { focus = GER_repeal_lombardverbot }
 		mutually_exclusive = { focus = GER_von_sanders_mission focus = GER_bund_der_landwirte }
 		x = 0
-		y = 5
+		y = 6
 		relative_position_id = GER_potsdam_agreement
 		cost = 10
 		ai_will_do = {
@@ -754,7 +1129,7 @@ focus_tree = {
 		prerequisite = { focus = GER_financial_interests_in_turkey }
 		mutually_exclusive = { focus = GER_renew_reinsurance_treaty }
 		x = 0
-		y = 5
+		y = 6
 		relative_position_id = GER_financial_interests_in_turkey
 		cost = 10
 		ai_will_do = {
@@ -1127,6 +1502,26 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GER_cartel_socialization
+		icon = GFX__shine
+		prerequisite = { focus = GER_accommodate_the_spd }
+		prerequisite = { focus = GER_land_of_cartels }
+		x = -3
+		y = 2
+		relative_position_id = GER_accommodate_the_spd
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
 		id = GER_national_economic_council
 		icon = GFX__shine
 		prerequisite = { focus = GER_accommodate_the_spd }
@@ -1208,7 +1603,7 @@ focus_tree = {
 		id = GER_bank_der_deutschen_arbeit
 		icon = GFX__shine
 		prerequisite = { focus = GER_national_economic_council }
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = GER_national_economic_council
 		cost = 10
@@ -1689,7 +2084,7 @@ focus_tree = {
 	focus = {
 		id = GER_the_reichsland_of_alsace_lorraine
 		icon = GFX__shine
-		x = -19
+		x = -23
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -1935,51 +2330,13 @@ focus_tree = {
 
 	# Army
 	focus = {
-		id = GER_the_german_army
-		icon = GFX__shine
-		prerequisite = { focus = GER_war_council focus = GER_zabern_affair }
-		x = -15
-		y = 1
-		relative_position_id = GER_war_council
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = no
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = GER_artillery_test_commission
-		icon = GFX__shine
-		prerequisite = { focus = GER_the_german_army }
-		x = -2
-		y = 1
-		relative_position_id = GER_the_german_army
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = no
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
 		id = GER_noblesse_oblige
 		icon = GFX__shine
-		prerequisite = { focus = GER_the_german_army }
+		prerequisite = { focus = GER_saxon_manufacturing focus = GER_zabern_affair }
 		mutually_exclusive = { focus = GER_the_great_memorandum }
-		x = 0
+		x = -5
 		y = 1
-		relative_position_id = GER_the_german_army
+		relative_position_id = GER_saxon_manufacturing
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -1988,18 +2345,34 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			custom_effect_tooltip = modifier_GER_general_staff_tt
+			add_to_variable = {
+				GER_general_staff_mobilization_laws_cost_factor = 0.5
+				tooltip = mobilization_laws_cost_factor_tt
+			}
+			add_to_variable = {
+				GER_general_staff_recruitable_population_factor = -0.15
+				tooltip = recruitable_population_factor_tt
+			}
+			add_to_variable = {
+				GER_general_staff_promote_cost_factor = -0.33
+				tooltip = promote_cost_factor_tt
+			}
+			add_to_variable = {
+				GER_general_staff_experience_gain_army_factor = 0.2
+				tooltip = experience_gain_army_factor_tt
+			}
 		}
 	}
 
 	focus = {
 		id = GER_the_great_memorandum
 		icon = GFX__shine
-		prerequisite = { focus = GER_the_german_army }
+		prerequisite = { focus = GER_saxon_manufacturing focus = GER_zabern_affair }
 		mutually_exclusive = { focus = GER_noblesse_oblige }
-		x = 4
+		x = -1
 		y = 1
-		relative_position_id = GER_the_german_army
+		relative_position_id = GER_saxon_manufacturing
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -2008,15 +2381,32 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			custom_effect_tooltip = modifier_GER_general_staff_tt
+			add_to_variable = {
+				GER_general_staff_mobilization_laws_cost_factor = -0.25
+				tooltip = mobilization_laws_cost_factor_tt
+			}
+			add_to_variable = {
+				GER_general_staff_experience_gain_army_unit_factor = 0.2
+				tooltip = experience_gain_army_factor_tt
+			}
+			add_to_variable = {
+				GER_general_staff_max_command_power_mult = 0.2
+				tooltip = max_command_power_mult_tt
+			}
+
+			add_timed_idea = {
+				idea = idea_GER_new_officers
+				days = 365
+			}
 		}
 	}
 
 	focus = {
-		id = GER_recruit_foreign_tank_designers
+		id = GER_land_doctrine
 		icon = GFX__shine
-		prerequisite = { focus = GER_the_great_memorandum }
-		x = 0
+		prerequisite = { focus = GER_the_great_memorandum focus = GER_noblesse_oblige }
+		x = -4
 		y = 1
 		relative_position_id = GER_the_great_memorandum
 		cost = 10
@@ -2027,17 +2417,22 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			army_experience = 150
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
 		}
 	}
 
 	focus = {
-		id = GER_military_travel_plan
+		id = GER_reform_gpk
 		icon = GFX__shine
-		prerequisite = { focus = GER_noblesse_oblige focus = GER_the_great_memorandum }
-		x = 2
+		prerequisite = { focus = GER_the_great_memorandum focus = GER_noblesse_oblige }
+		x = -2
 		y = 1
-		relative_position_id = GER_noblesse_oblige
+		relative_position_id = GER_the_great_memorandum
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -2046,36 +2441,21 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = GER_the_a7v
-		icon = GFX__shine
-		prerequisite = { focus = GER_recruit_foreign_tank_designers focus = GER_military_travel_plan }
-		x = -1
-		y = 1
-		relative_position_id = GER_recruit_foreign_tank_designers
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = no
-
-		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
 		}
 	}
 
 	focus = {
 		id = GER_sturmtruppen
 		icon = GFX__shine
-		prerequisite = { focus = GER_noblesse_oblige focus = GER_the_great_memorandum }
+		prerequisite = { focus = GER_land_doctrine focus = GER_reform_gpk }
 		x = 0
 		y = 1
-		relative_position_id = GER_noblesse_oblige
+		relative_position_id = GER_land_doctrine
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -2087,4 +2467,262 @@ focus_tree = {
 			
 		}
 	}
+
+	focus = {
+		id = GER_machine_guns
+		icon = GFX__shine
+		prerequisite = { focus = GER_land_doctrine focus = GER_reform_gpk }
+		x = 0
+		y = 1
+		relative_position_id = GER_reform_gpk
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				ahead_reduction = 1
+				uses = 1
+				category = heavy_machine_gun
+			}
+		}
+	}
+
+	focus = {
+		id = GER_artillery_test_commission
+		icon = GFX__shine
+		prerequisite = { focus = GER_the_great_memorandum focus = GER_noblesse_oblige }
+		x = 0
+		y = 2
+		relative_position_id = GER_the_great_memorandum
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_breakthrough_points = {
+				specialization = specialization_land
+				value = 1
+			}
+		}
+	}
+
+	focus = {
+		id = GER_light_artillery
+		icon = GFX__shine
+		prerequisite = { focus = GER_artillery_test_commission }
+		x = -1
+		y = 1
+		relative_position_id = GER_artillery_test_commission
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				ahead_reduction = 1
+				uses = 1
+				category = light_artillery
+			}
+		}
+	}
+
+	focus = {
+		id = GER_heavy_artillery
+		icon = GFX__shine
+		prerequisite = { focus = GER_artillery_test_commission }
+		x = 1
+		y = 1
+		relative_position_id = GER_artillery_test_commission
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				ahead_reduction = 1
+				uses = 1
+				category = heavy_artillery
+			}
+		}
+	}
+
+	focus = {
+		id = GER_recruit_foreign_tank_designers
+		icon = GFX__shine
+		prerequisite = { focus = GER_rhenish_westphalian_coal_syndicate focus = GER_mittellandkanal }
+		x = -1
+		y = 2
+		relative_position_id = GER_rhenish_westphalian_coal_syndicate
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		available = {
+			OR = {
+				NOT = { has_war_with = ENG }
+				NOT = { has_war_with = AUS }
+			}
+		}
+
+		completion_reward = {
+			add_breakthrough_points = {
+				specialization = specialization_land
+				value = 1
+			}
+
+			if = {
+				limit = { NOT = { has_war_with = ENG } }
+
+				custom_effect_tooltip = wwi_newline_tt
+
+				country_event = { id = event_GER_recruit_foreign_tank_designers.3 }
+				hidden_effect = {
+					AUS = { country_event = { id = event_GER_recruit_foreign_tank_designers.4 } }
+				}
+
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = ENG_lancelot_de_mole
+				set_country_flag = flag_GER_stole_lancelot_de_mole
+			}
+			if = {
+				limit = { NOT = { has_war_with = AUS } }
+
+				custom_effect_tooltip = wwi_newline_tt
+
+				country_event = { id = event_GER_recruit_foreign_tank_designers.1 }
+				hidden_effect = {
+					AUS = { country_event = { id = event_GER_recruit_foreign_tank_designers.2 } }
+				}
+
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = AUS_gunter_burstyn
+				set_country_flag = flag_GER_stole_gunter_burstyn
+			}
+		}
+	}
+
+	focus = {
+		id = GER_military_travel_plan
+		icon = GFX__shine
+		prerequisite = { focus = GER_the_great_memorandum }
+		prerequisite = { focus = GER_strategic_rail_expansion }
+		x = 0
+		y = 1
+		relative_position_id = GER_strategic_rail_expansion
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = {
+				limit = { has_war = no }
+				add_ideas = idea_GER_military_travel_plan_primer
+			}
+			else = {
+				add_timed_idea = {
+					idea = idea_GER_military_travel_plan
+					days = 365
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GER_motorisation
+		icon = GFX__shine
+		prerequisite = { focus = GER_military_travel_plan }
+		x = 0
+		y = 1
+		relative_position_id = GER_military_travel_plan
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = motorized_equipment
+			}
+
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = GER_encourage_industrial_tank_research
+		icon = GFX__shine
+		prerequisite = { focus = GER_land_of_cartels focus = GER_recruit_foreign_tank_designers }
+		x = -1
+		y = 1
+		relative_position_id = GER_land_of_cartels
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				ahead_reduction = 1
+				uses = 1
+				category = armor
+			}
+
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = GER_early_armour_doctrine
+		icon = GFX__shine
+		prerequisite = { focus = GER_motorisation }
+		prerequisite = { focus = GER_encourage_industrial_tank_research }
+		x = -1
+		y = 1
+		relative_position_id = GER_encourage_industrial_tank_research
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+
+	
 }

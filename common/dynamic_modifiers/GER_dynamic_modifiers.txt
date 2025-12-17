@@ -1,7 +1,24 @@
+modifier_GER_general_staff = {
+	icon = GFX_idea_GER_general_staff
+
+	max_planning_factor = GER_general_staff_max_planning_factor
+	experience_gain_infantry_training_factor = 	GER_general_staff_experience_gain_infantry_training_factor
+	experience_gain_cavalry_training_factor = 	GER_general_staff_experience_gain_cavalry_training_factor
+	experience_gain_artillery_training_factor = GER_general_staff_experience_gain_artillery_training_factor
+
+	recruitable_population_factor = 			GER_general_staff_recruitable_population_factor
+	experience_gain_army_factor = 				GER_general_staff_experience_gain_army_factor
+	promote_cost_factor = 						GER_general_staff_promote_cost_factor
+	mobilization_laws_cost_factor = 			GER_general_staff_mobilization_laws_cost_factor
+
+	experience_gain_army_unit_factor = 			GER_general_staff_experience_gain_army_unit_factor
+	max_command_power_mult = 					GER_general_staff_max_command_power_mult
+}
+
 modifier_GER_alsace_lorraine_not_integrated = {
 	icon = GFX_modifiers_generic_military_industry
 
-	local_resources_factor = -0.1
+	local_resources = -0.1
 	local_supplies = -0.1
 	production_speed_buildings_factor = alsace_lorraine_production_speed_buildings_factor
 
@@ -14,6 +31,178 @@ modifier_GER_alsace_lorraine_constitution = {
 	icon = GFX_modifiers_generic_military_industry
 
 	compliance_growth = 0.5
+
+	enable = {
+		controller = { original_tag = GER }
+	}
+}
+
+modifier_GER_staatenbund = {
+	icon = GFX_idea_GER_staatenbund
+
+	custom_modifier_tooltip = modifier_GER_staatenbund_loyalty
+
+	# TODO: Bavaria and Baden should impact influence boost.
+	max_planning = staatenbund_max_planning
+	production_factory_max_efficiency_factor = staatenbund_production_factory_max_efficiency_factor
+	production_speed_buildings_factor = staatenbund_production_speed_buildings_factor
+	industrial_capacity_dockyard = staatenbund_industrial_capacity_dockyard
+
+	consumer_goods_factor = staatenbund_consumer_goods_factor
+}
+
+modifier_GER_BAY_loyal_reserve_rights = {
+	icon = GFX_modifiers_generic_military_industry
+
+	local_resources = GER.staatenbund_local_resources_factor_loyal
+	local_supplies = GER.staatenbund_local_supply_loyal
+	recruitable_population = GER.staatenbund_local_manpower_loyal
+
+	custom_modifier_tooltip = rr_consumer_goods_factor_loyal_tt
+	custom_modifier_tooltip = rr_max_planning_loyal_tt
+
+	enable = {
+		controller = { original_tag = GER }
+	}
+}
+
+modifier_GER_BAY_disloyal_reserve_rights = {
+	icon = GFX_modifiers_generic_military_industry
+
+	local_resources = GER.staatenbund_local_resources_factor_disloyal
+	local_supplies = GER.staatenbund_local_supply_disloyal
+	recruitable_population = GER.staatenbund_local_manpower_disloyal
+
+	custom_modifier_tooltip = rr_consumer_goods_factor_disloyal_tt
+	custom_modifier_tooltip = rr_max_planning_disloyal_tt
+
+	enable = {
+		controller = { original_tag = GER }
+	}
+}
+
+modifier_GER_WUR_loyal_reserve_rights = {
+	icon = GFX_modifiers_generic_military_industry
+
+	local_resources = GER.staatenbund_local_resources_factor_loyal
+	local_supplies = GER.staatenbund_local_supply_loyal
+	recruitable_population = GER.staatenbund_local_manpower_loyal
+
+	custom_modifier_tooltip = rr_consumer_goods_factor_loyal_tt
+	custom_modifier_tooltip = rr_max_planning_loyal_tt
+	custom_modifier_tooltip = rr_production_factory_max_efficiency_factor_loyal_tt
+
+	enable = {
+		controller = { original_tag = GER }
+	}
+}
+
+modifier_GER_WUR_disloyal_reserve_rights = {
+	icon = GFX_modifiers_generic_military_industry
+
+	local_resources = GER.staatenbund_local_resources_factor_disloyal
+	local_supplies = GER.staatenbund_local_supply_disloyal
+	recruitable_population = GER.staatenbund_local_manpower_disloyal
+
+	custom_modifier_tooltip = rr_consumer_goods_factor_disloyal_tt
+	custom_modifier_tooltip = rr_max_planning_disloyal_tt
+	custom_modifier_tooltip = rr_production_factory_max_efficiency_factor_disloyal_tt
+
+	enable = {
+		controller = { original_tag = GER }
+	}
+}
+
+modifier_GER_BAD_loyal_reserve_rights = {
+	icon = GFX_modifiers_generic_military_industry
+
+	local_resources = GER.staatenbund_local_resources_factor_loyal
+	local_supplies = GER.staatenbund_local_supply_loyal
+	recruitable_population = GER.staatenbund_local_manpower_loyal
+
+	custom_modifier_tooltip = rr_consumer_goods_factor_loyal_tt
+	custom_modifier_tooltip = rr_german_scope_dummy_tt
+	custom_modifier_tooltip = rr_production_speed_buildings_factor_loyal_tt
+
+	enable = {
+		controller = { original_tag = GER }
+	}
+}
+
+modifier_GER_BAD_disloyal_reserve_rights = {
+	icon = GFX_modifiers_generic_military_industry
+
+	local_resources = GER.staatenbund_local_resources_factor_disloyal
+	local_supplies = GER.staatenbund_local_supply_disloyal
+	recruitable_population = GER.staatenbund_local_manpower_disloyal
+
+	custom_modifier_tooltip = rr_consumer_goods_factor_disloyal_tt
+	custom_modifier_tooltip = rr_german_scope_dummy_tt
+	custom_modifier_tooltip = rr_production_speed_buildings_factor_disloyal_tt
+
+	enable = {
+		controller = { original_tag = GER }
+	}
+}
+
+modifier_GER_SAX_loyal_reserve_rights = {
+	icon = GFX_modifiers_generic_military_industry
+
+	local_resources = GER.staatenbund_local_resources_factor_loyal
+	local_supplies = GER.staatenbund_local_supply_loyal
+	recruitable_population = GER.staatenbund_local_manpower_loyal
+
+	custom_modifier_tooltip = rr_consumer_goods_factor_loyal_tt
+	custom_modifier_tooltip = rr_production_factory_max_efficiency_factor_loyal_tt
+	custom_modifier_tooltip = rr_production_speed_buildings_factor_loyal_tt
+
+	enable = {
+		controller = { original_tag = GER }
+	}
+}
+
+modifier_GER_SAX_disloyal_reserve_rights = {
+	icon = GFX_modifiers_generic_military_industry
+
+	local_resources = GER.staatenbund_local_resources_factor_disloyal
+	local_supplies = GER.staatenbund_local_supply_disloyal
+	recruitable_population = GER.staatenbund_local_manpower_disloyal
+
+	custom_modifier_tooltip = rr_consumer_goods_factor_disloyal_tt
+	custom_modifier_tooltip = rr_production_factory_max_efficiency_factor_disloyal_tt
+	custom_modifier_tooltip = rr_production_speed_buildings_factor_disloyal_tt
+
+	enable = {
+		controller = { original_tag = GER }
+	}
+}
+
+modifier_GER_HNS_loyal_reserve_rights = {
+	icon = GFX_modifiers_generic_military_industry
+
+	local_resources = GER.staatenbund_local_resources_factor_loyal
+	local_supplies = GER.staatenbund_local_supply_loyal
+	recruitable_population = GER.staatenbund_local_manpower_loyal
+
+	custom_modifier_tooltip = rr_consumer_goods_factor_loyal_tt
+	custom_modifier_tooltip = rr_german_scope_dummy_tt
+	custom_modifier_tooltip = rr_industrial_capacity_dockyard_loyal_tt
+
+	enable = {
+		controller = { original_tag = GER }
+	}
+}
+
+modifier_GER_HNS_disloyal_reserve_rights = {
+	icon = GFX_modifiers_generic_military_industry
+
+	local_resources = GER.staatenbund_local_resources_factor_disloyal
+	local_supplies = GER.staatenbund_local_supply_disloyal
+	recruitable_population = GER.staatenbund_local_manpower_disloyal
+
+	custom_modifier_tooltip = rr_consumer_goods_factor_disloyal_tt
+	custom_modifier_tooltip = rr_german_scope_dummy_tt
+	custom_modifier_tooltip = rr_industrial_capacity_dockyard_disloyal_tt
 
 	enable = {
 		controller = { original_tag = GER }

@@ -139,6 +139,8 @@ technology_categories = {
 	# WWI
 	heavy_machine_gun
 	cat_modern_doctrine
+	light_artillery
+	heavy_artillery
 }
 
 technology_folders = {

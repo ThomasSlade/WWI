@@ -23,7 +23,7 @@
   event_wwi_become_great_power.2.d: "Other colours ..."
 
   event_wwi_become_great_power.3.t: "[FROM.GetName] Joins the Powers"
-  event_wwi_become_great_power.3.d: "An evermore assertive [FROM.GetName], backed by steady growth in its international prestige, has led to lawmakers across the world to think increasingly of the nation as a Great Power.\n\nThe ascension of a state to this exclusive rank is nothing routine, but the unmistakeable influence of [FROM.GetAdjective] diplomacy - termed by some journalists as '[?FROM.leader_of_alignment.GetTokenLocalizedKey]' - is now difficult to ignore among foreign governments.\n\nA new Power delineates its sphere across the earth."
+  event_wwi_become_great_power.3.d: "An evermore assertive [FROM.GetName], backed by steady growth in its international prestige, has led diplomats across the world to think increasingly of the nation as a Great Power.\n\nThe ascension of a state to this exclusive rank is nothing routine, but the unmistakeable influence of [FROM.GetAdjective] diplomacy - termed by some journalists as '[?FROM.leader_of_alignment.GetTokenLocalizedKey]' - is now difficult to ignore among foreign governments.\n\nA new power emerges."
   event_wwi_become_great_power.3.a_self: "We walk among giants!"
   event_wwi_become_great_power.3.a_neutral: "[FROM.GetName] is not to be underestimated."
   event_wwi_become_great_power.3.a_negative: "Our enemy ascends."

@@ -1,0 +1,35 @@
+characters = {
+	ENG_lancelot_de_mole = {
+		name = ENG_lancelot_de_mole
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = ENG_lancelot_de_mole
+			ledger = army
+			traits = { unsung_tank_pioneer }
+			available = {
+				OR = {
+					AND = {
+						original_tag = ENG
+						NOT = { GER = { has_country_flag = flag_GER_stole_lancelot_de_mole } }
+					}
+					
+					AND = {
+						original_tag = GER
+						has_country_flag = flag_GER_stole_lancelot_de_mole
+					}
+				}
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_armored_specialist }
+			skills = {
+				specialization_land = 2
+			}
+		}
+	}
+}

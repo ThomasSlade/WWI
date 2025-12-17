@@ -17,7 +17,7 @@
   event_AUS_generic.4.b: "[ROOT.GetNameDef] cannot handle another crisis."
 
   event_AUS_assassination.1.t: "The Assassination of Franz Ferdinand"
-  event_AUS_assassination.1.d: "Franz Ferdinand, heir to the throne of Austria-Hungary, is dead.\n\nThe archduke's visit to recently-annexed Bosnia, amid [SER.GetAdjective] agitation for control of the predominantly south-slavic province, was made a fateful one when the heir's motorcade - after narrowly avoiding a bomb - came to a stop beside an unidentified gunman. Franz and his wife, also killed, leave three orphaned children.\n\nAs the empire settles into mourning, many in the Austrian government set their glare on [SER.GetNameDef] - presumed, by some, to be directly implicated in the murder."
+  event_AUS_assassination.1.d: "Franz Ferdinand, heir to the throne of Austria-Hungary, is dead.\n\nThe archduke's visit to recently-annexed Bosnia, amid [SER.GetAdjective] agitation for control of the predominantly south-slavic province, was made a fateful one when the heir's motorcade - after narrowly avoiding a bomb - came to a stop beside an unidentified gunman. The Archduke and his wife, whose life the gunman also claimed, leave three orphaned children.\n\nAs the empire settles into mourning, many in the Austrian government set their gaze on [SER.GetNameDef] - presumed, by some, to be directly implicated in the murder."
   event_AUS_assassination.1.a: "Unfortunate, but we've more pressing matters."
   event_AUS_assassination.1.b: "A tragedy."
   event_AUS_assassination.1.c: "An unfounded accusation!"

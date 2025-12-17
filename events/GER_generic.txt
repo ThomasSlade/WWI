@@ -71,3 +71,145 @@ country_event = {
 		effect_GER_zabern_side_with_citizens = yes
 	}
 }
+
+add_namespace = event_GER_recruit_foreign_tank_designers
+
+country_event = {
+	id = event_GER_recruit_foreign_tank_designers.1
+	title = event_GER_recruit_foreign_tank_designers.1.t
+	desc = event_GER_recruit_foreign_tank_designers.1.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Telling Germany Gunter Burstyn is available."
+	}
+
+	option = {
+		name = event_GER_recruit_foreign_tank_designers.1.a
+		effect_GER_gain_gunter_burstyn = yes
+	}
+}
+
+country_event = {
+	id = event_GER_recruit_foreign_tank_designers.2
+	title = event_GER_recruit_foreign_tank_designers.2.t
+	desc = event_GER_recruit_foreign_tank_designers.2.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Telling Austria Gunter Burstyn has left."
+	}
+
+	option = {
+		name = event_GER_recruit_foreign_tank_designers.2.a
+		effect_GER_lose_gunter_burstyn = yes
+	}
+}
+
+country_event = {
+	id = event_GER_recruit_foreign_tank_designers.3
+	title = event_GER_recruit_foreign_tank_designers.3.t
+	desc = event_GER_recruit_foreign_tank_designers.3.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Telling Germany Lancelot de Mole is available."
+	}
+
+	option = {
+		name = event_GER_recruit_foreign_tank_designers.3.a
+
+		custom_effect_tooltip = available_political_advisor
+		effect_GER_gain_lancelot_de_mole = yes
+	}
+}
+
+country_event = {
+	id = event_GER_recruit_foreign_tank_designers.4
+	title = event_GER_recruit_foreign_tank_designers.4.t
+	desc = event_GER_recruit_foreign_tank_designers.4.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Telling Britain Lancelot de Molen has left."
+	}
+
+	option = {
+		name = event_GER_recruit_foreign_tank_designers.4.a
+
+		custom_effect_tooltip = remove_political_advisor
+		effect_GER_lose_lancelot_de_mole = yes
+	}
+}
+
+add_namespace = event_GER_reserve_rights
+
+country_event = {
+	id = event_GER_reserve_rights.1
+	title = event_GER_reserve_rights.1.t
+	desc = event_GER_reserve_rights.1.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Telling Germany a state has become disloyal."
+	}
+
+	option = {
+		name = event_GER_reserve_rights.1.a
+
+		effect_tooltip = {
+			set_temp_variable = { param_state = event_target:federated_state }
+			effect_GER_set_state_disloyal = yes
+		}
+	}
+}
+
+country_event = {
+	id = event_GER_reserve_rights.2
+	title = event_GER_reserve_rights.2.t
+	desc = event_GER_reserve_rights.2.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Telling Germany a state has become loyal."
+	}
+
+	option = {
+		name = event_GER_reserve_rights.2.a
+
+		effect_tooltip = {
+			set_temp_variable = { param_state = event_target:federated_state }
+			effect_GER_set_state_loyal = yes
+		}
+	}
+}
+
+
+country_event = {
+	id = event_GER_reserve_rights.3
+	title = event_GER_reserve_rights.3.t
+	desc = event_GER_reserve_rights.3.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Telling Germany a state may soon become disloyal."
+	}
+
+	option = {
+		name = event_GER_reserve_rights.3.a
+	}
+}

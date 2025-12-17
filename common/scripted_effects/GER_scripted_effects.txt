@@ -89,3 +89,280 @@ effect_GER_zabern_side_with_citizens = {
 		days = 365
 	}
 }
+
+effect_GER_spend_1_railway_project = {
+	custom_effect_tooltip = effect_GER_spend_1_railway_project_tt
+	add_to_variable = { strategic_railway_charges = -1 }
+
+	if = {
+		limit = { check_variable = { strategic_railway_charges = 0 } }
+		clear_variable = strategic_railway_charges
+	}
+}
+
+effect_GER_gain_gunter_burstyn = {
+	set_country_flag = flag_GER_stole_gunter_burstyn
+
+	custom_effect_tooltip = available_political_advisor
+	show_ideas_tooltip = AUS_gunter_burstyn
+	custom_effect_tooltip = {
+		localization_key = available_scientist_one_line_tt
+		CHARACTER = AUS_gunter_burstyn
+	}
+}
+
+effect_GER_lose_gunter_burstyn = {
+	custom_effect_tooltip = remove_political_advisor
+	show_ideas_tooltip = AUS_gunter_burstyn
+	custom_effect_tooltip = {
+		localization_key = remove_scientist_one_line_tt
+		CHARACTER = AUS_gunter_burstyn
+	}
+}
+
+effect_GER_gain_lancelot_de_mole = {
+	set_country_flag = flag_GER_stole_lancelot_de_mole
+
+	custom_effect_tooltip = available_political_advisor
+	show_ideas_tooltip = ENG_lancelot_de_mole
+	custom_effect_tooltip = {
+		localization_key = available_scientist_one_line_tt
+		CHARACTER = ENG_lancelot_de_mole
+	}
+}
+
+effect_GER_lose_lancelot_de_mole = {
+	custom_effect_tooltip = remove_political_advisor
+	show_ideas_tooltip = ENG_lancelot_de_mole
+	custom_effect_tooltip = {
+		localization_key = remove_scientist_one_line_tt
+		CHARACTER = ENG_lancelot_de_mole
+	}
+}
+
+effect_GER_init_staatenbund_industry_share = {
+	set_global_flag = rr_initialising
+
+	for_each_scope_loop = {
+		array = rr_countries
+
+		set_variable = { rr_loyalty = 0 }
+		set_variable = { rr_factories = 0 }
+		set_variable = { rr_factories_expected_warning_threshold = rr_factories_expected }
+		add_to_variable = { rr_factories_expected_warning_threshold = 0.005 }
+		
+		set_temp_variable = { param_state = THIS }
+		effect_GER_set_state_disloyal = yes
+	}
+
+	effect_GER_update_staatenbund_industry_share = yes
+	effect_GER_update_staatenbund_matrikularbeitrag = yes
+
+	clr_global_flag = rr_initialising
+}
+
+effect_GER_update_staatenbund_industry_share = {
+	set_variable = { core_factories = 0 }
+
+	for_each_scope_loop = {
+		array = core_states
+
+		add_to_variable = { PREV.core_factories = building_level@industrial_complex }
+		add_to_variable = { PREV.core_factories = building_level@arms_factory }
+	}
+
+	for_each_scope_loop = {
+		array = rr_countries
+
+		set_variable = { rr_factories = 0 }
+
+		for_each_scope_loop = {
+			array = core_states
+
+			add_to_variable = { PREV.rr_factories = building_level@industrial_complex }
+			add_to_variable = { PREV.rr_factories = building_level@arms_factory }
+		}
+	}
+
+	for_each_scope_loop = {
+		array = rr_countries
+
+		set_variable = { rr_factories_percentage = rr_factories }
+		divide_variable = { rr_factories_percentage = PREV.core_factories }
+	}
+
+	for_each_scope_loop = {
+		array = rr_countries
+
+		if = {
+			# Below expected value
+			limit = {
+				check_variable = { rr_factories_percentage < rr_factories_expected }
+			}
+
+			if = {
+				limit = {
+					NOT = { check_variable = { rr_loyalty = 0 } }
+				}
+
+				set_temp_variable = { param_state = THIS }
+				PREV = { effect_GER_set_state_disloyal = yes }
+
+				# Don't fire events if this is startup.
+				if = {
+					limit = { NOT = { has_global_flag = rr_initialising } }
+					save_event_target_as = federated_state
+					PREV = { country_event = { id = event_GER_reserve_rights.1 } }
+				}
+
+				set_variable = { rr_loyalty = 0 }
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					# Doing it this way also accounts for when the variable is not yet set.
+					NOT = { check_variable = { rr_loyalty = 1 } }
+					NOT = { check_variable = { rr_loyalty = 2 } }
+				}
+
+				set_temp_variable = { param_state = THIS }
+				PREV = { effect_GER_set_state_loyal = yes }
+			}
+
+			if = {
+				# Above expected value but below warning threshold
+				limit = {
+					check_variable = { rr_factories_percentage < rr_factories_expected_warning_threshold }
+				}
+
+				if = {
+					limit = {
+						check_variable = { rr_loyalty = 2 }
+					}
+					# Warn player
+					if = {
+						limit = { NOT = { has_global_flag = rr_initialising } }
+						save_event_target_as = federated_state
+						PREV = { country_event = { id = event_GER_reserve_rights.3 } }
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = { rr_loyalty = 0 }
+					}
+
+					if = {
+						limit = { NOT = { has_global_flag = rr_initialising } }
+						save_event_target_as = federated_state
+						PREV = { country_event = { id = event_GER_reserve_rights.2 } }
+					}
+				}
+
+				set_variable = { rr_loyalty = 1 }
+			}
+			else = {
+				# Above expected value and warning threshold
+				if = {
+					limit = {
+						check_variable = { rr_loyalty = 0 }
+					}
+
+					if = {
+						limit = { NOT = { has_global_flag = rr_initialising } }
+						save_event_target_as = federated_state
+						PREV = { country_event = { id = event_GER_reserve_rights.2 } }
+					}
+				}
+
+				set_variable = { rr_loyalty = 2 }
+			}
+		}
+	}
+}
+
+# param_state: The federated state tag.
+# THIS must be Germany.
+effect_GER_set_state_loyal = {
+	var:param_state = {
+		meta_effect = {
+			TAG = "[THIS.GetTag]"
+			text = {
+				every_core_state = {
+					remove_dynamic_modifier = { modifier = modifier_GER_[TAG]_disloyal_reserve_rights }
+
+					custom_effect_tooltip = wwi_newline_tt
+
+					add_dynamic_modifier = {
+						modifier = modifier_GER_[TAG]_loyal_reserve_rights
+					}
+				}
+			}
+		}
+
+		for_each_loop = {
+			array = PREV.rr_modifiers
+			value = m
+
+			meta_effect = {
+				MODIFIER_NAME = "[?m.GetTokenKey]"
+				text = {
+					if = {
+						limit = {
+							has_variable = rr_[MODIFIER_NAME]_disloyal
+						}
+						subtract_from_variable = { PREV.staatenbund_[MODIFIER_NAME] = rr_[MODIFIER_NAME]_disloyal }
+					}
+
+					if = {
+						limit = { has_variable = rr_[MODIFIER_NAME]_loyal }
+						add_to_variable = { PREV.staatenbund_[MODIFIER_NAME] = rr_[MODIFIER_NAME]_loyal }
+					}
+				}
+			}
+		}
+	}
+}
+
+# param_state: The federated state tag.
+# THIS must be Germany.
+effect_GER_set_state_disloyal = {
+	var:param_state = {
+		meta_effect = {
+			TAG = "[THIS.GetTag]"
+			text = {
+				every_core_state = {
+					remove_dynamic_modifier = { modifier = modifier_GER_[TAG]_loyal_reserve_rights }
+
+					custom_effect_tooltip = wwi_newline_tt
+
+					add_dynamic_modifier = {
+						modifier = modifier_GER_[TAG]_disloyal_reserve_rights
+					}
+				}
+			}
+		}
+
+		for_each_loop = {
+			array = PREV.rr_modifiers
+			value = m
+
+			meta_effect = {
+				MODIFIER_NAME = "[?m.GetTokenKey]"
+				text = {
+					if = {
+						limit = {
+							has_variable = rr_[MODIFIER_NAME]_loyal
+						}
+						subtract_from_variable = { PREV.staatenbund_[MODIFIER_NAME] = rr_[MODIFIER_NAME]_loyal }
+					}
+
+					if = {
+						limit = { has_variable = rr_[MODIFIER_NAME]_disloyal }
+						add_to_variable = { PREV.staatenbund_[MODIFIER_NAME] = rr_[MODIFIER_NAME]_disloyal }
+					}
+				}
+			}
+		}
+	}
+}

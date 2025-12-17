@@ -8,3 +8,10 @@ trigger_GER_encirclement_can_increase = {
 		}
 	}
 }
+
+trigger_GER_has_not_used_any_strategic_railway_charges = {
+	custom_trigger_tooltip = {
+		tooltip = trigger_GER_has_not_used_any_strategic_railway_charges_tt
+		check_variable = { strategic_railway_charges = 3 }
+	}
+}

@@ -5,3 +5,7 @@
 	GER_zabern_affair_desc: "The Alsatian majority of Elsaß–Lothringen - not least its French-speaking counterpart - are a volatile mix with their [THIS.GetNameDef] garrison. The Prussian army being what it is, conflict with its own citizens is bound to erupt at the Empire's fringes."
 	GER_the_alsatian_lander: "The Länder of Elsaß–Lothringen"
 	GER_the_alsatian_lander_desc: "Decades of animosity between [THIS.GetNameDef] and the Alsatians have finally given way to mutual understanding. We have the chance to win the loyalty of the Imperial Territory once and for all, by granting it equal status to that of Bavaria, Württemberg, and Baden."
+
+	GER_rhenish_westphalian_coal_syndicate_unlock_tt: "Unlocks §Y$company_rhenish_westphalian_coal_syndicate$§! as a Materiel Designer."
+
+	GER_strategic_rail_expansion_tt: "Choose between enacting §Y3§! railway construction projects, or receiving a temporary bonus to §Y$rail_way$§! and §Y$supply_node$§! construction speed."

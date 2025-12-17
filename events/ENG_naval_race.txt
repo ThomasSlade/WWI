@@ -28,6 +28,12 @@ country_event = {
 		trigger = {
 			original_tag = ENG
 		}
+
+		effect_tooltip = {
+			set_temp_variable = { param_naval_race_idea_britain = token:idea_ENG_naval_race_britain_0_british_bonus }
+			set_temp_variable = { param_naval_race_idea_rival = token:idea_ENG_naval_race_britain_0_rival_malus }
+			effect_ENG_set_naval_race_ideas = yes
+		}
 	}
 
 	option = {
@@ -66,12 +72,24 @@ country_event = {
 		trigger = {
 			original_tag = ENG
 		}
+
+		effect_tooltip = {
+			set_temp_variable = { param_naval_race_idea_britain = token:idea_ENG_naval_race_britain_2_british_bonus }
+			set_temp_variable = { param_naval_race_idea_rival = token:idea_ENG_naval_race_britain_2_rival_malus }
+			effect_ENG_set_naval_race_ideas = yes
+		}
 	}
 
 	option = {
 		name = event_ENG_naval_race.2.a_rival
 		trigger = {
 			NOT = { original_tag = ENG }
+		}
+
+		effect_tooltip = {
+			set_temp_variable = { param_naval_race_idea_britain = token:idea_ENG_naval_race_britain_1_british_bonus }
+			set_temp_variable = { param_naval_race_idea_rival = token:idea_ENG_naval_race_britain_1_rival_malus }
+			effect_ENG_set_naval_race_ideas = yes
 		}
 	}
 }
@@ -142,12 +160,24 @@ country_event = {
 		trigger = {
 			original_tag = ENG
 		}
+
+		effect_tooltip = {
+			set_temp_variable = { param_naval_race_idea_britain = token:idea_ENG_naval_race_rival_0_british_malus }
+			set_temp_variable = { param_naval_race_idea_rival = token:idea_ENG_naval_race_rival_0_rival_bonus }
+			effect_ENG_set_naval_race_ideas = yes
+		}
 	}
 
 	option = {
 		name = event_ENG_naval_race.4.a_rival
 		trigger = {
 			NOT = { original_tag = ENG }
+		}
+
+		effect_tooltip = {
+			set_temp_variable = { param_naval_race_idea_britain = token:idea_ENG_naval_race_rival_0_british_malus }
+			set_temp_variable = { param_naval_race_idea_rival = token:idea_ENG_naval_race_rival_0_rival_bonus }
+			effect_ENG_set_naval_race_ideas = yes
 		}
 	}
 }
@@ -180,12 +210,24 @@ country_event = {
 		trigger = {
 			original_tag = ENG
 		}
+
+		effect_tooltip = {
+			set_temp_variable = { param_naval_race_idea_britain = token:idea_ENG_naval_race_rival_2_british_malus }
+			set_temp_variable = { param_naval_race_idea_rival = token:idea_ENG_naval_race_rival_2_rival_bonus }
+			effect_ENG_set_naval_race_ideas = yes
+		}
 	}
 
 	option = {
 		name = event_ENG_naval_race.5.a_rival
 		trigger = {
 			NOT = { original_tag = ENG }
+		}
+
+		effect_tooltip = {
+			set_temp_variable = { param_naval_race_idea_britain = token:idea_ENG_naval_race_rival_2_british_malus }
+			set_temp_variable = { param_naval_race_idea_rival = token:idea_ENG_naval_race_rival_2_rival_bonus }
+			effect_ENG_set_naval_race_ideas = yes
 		}
 	}
 }

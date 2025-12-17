@@ -1,0 +1,176 @@
+defined_text = {
+	name = GetStaatenbundIndustryShares
+
+	text = {
+		trigger = { check_variable = { GER.rr_countries^num = 0 } }
+		localization_key = rr_owned_vs_expected_industry_0_tt
+	}
+	text = {
+		trigger = { check_variable = { GER.rr_countries^num = 1 } }
+		localization_key = rr_owned_vs_expected_industry_2_tt
+	}
+	text = {
+		trigger = { check_variable = { GER.rr_countries^num = 2 } }
+		localization_key = rr_owned_vs_expected_industry_2_tt
+	}
+	text = {
+		trigger = { check_variable = { GER.rr_countries^num = 3 } }
+		localization_key = rr_owned_vs_expected_industry_3_tt
+	}
+	text = {
+		trigger = { check_variable = { GER.rr_countries^num = 4 } }
+		localization_key = rr_owned_vs_expected_industry_4_tt
+	}
+	text = {
+		trigger = { check_variable = { GER.rr_countries^num = 5 } }
+		localization_key = rr_owned_vs_expected_industry_5_tt
+	}
+}
+
+defined_text = {
+	name = GetIndustryShare
+
+	text = {
+		trigger = {
+			check_variable = { rr_loyalty = 0 }
+		}
+		localization_key = rr_industry_share_disloyal_tt
+	}
+
+	text = {
+		localization_key = rr_industry_share_loyal_tt
+	}
+}
+
+defined_text = {
+	name = GetConsumerGoodsRREffect
+
+	text = {
+		trigger = {
+			check_variable = { rr_loyalty = 0 }
+		}
+
+		localization_key = rr_consumer_goods_factor_disloyal_tt
+	}
+
+	text = {
+		localization_key = rr_consumer_goods_factor_loyal_tt
+	}
+}
+
+defined_text = {
+	name = GetUniqueRREffect1
+
+	text = {
+		trigger = {
+			OR = { tag = BAY tag = WUR }
+			check_variable = { rr_loyalty = 0 }
+		}
+
+		localization_key = rr_max_planning_disloyal_tt
+	}
+
+	text = {
+		trigger = {
+			OR = { tag = BAY tag = WUR }
+		}
+
+		localization_key = rr_max_planning_loyal_tt
+	}
+
+	text = {
+		trigger = {
+			OR = { tag = BAD tag = SAX }
+			check_variable = { rr_loyalty = 0 }
+		}
+
+		localization_key = rr_production_speed_buildings_factor_disloyal_tt
+	}
+
+	text = {
+		trigger = {
+			OR = { tag = BAD tag = SAX }
+		}
+
+		localization_key = rr_production_speed_buildings_factor_loyal_tt
+	}
+
+	text = {
+		trigger = {
+			tag = HNS
+			check_variable = { rr_loyalty = 0 }
+		}
+
+		localization_key = rr_industrial_capacity_dockyard_disloyal_tt
+	}
+
+	text = {
+		trigger = {
+			tag = HNS
+		}
+
+		localization_key = rr_industrial_capacity_dockyard_loyal_tt
+	}
+}
+
+defined_text = {
+	name = GetUniqueRREffect2
+
+	text = {
+		trigger = {
+			OR = { tag = BAY tag = BAD }
+			check_variable = { rr_loyalty = 0 }
+		}
+
+		localization_key = rr_influence_drift_disloyal_tt
+	}
+
+	text = {
+		trigger = {
+			OR = { tag = BAY tag = BAD }
+		}
+
+		localization_key = rr_influence_drift_loyal_tt
+	}
+
+	text = {
+		trigger = {
+			OR = { tag = WUR tag = SAX }
+			check_variable = { rr_loyalty = 0 }
+		}
+
+		localization_key = rr_production_factory_max_efficiency_factor_disloyal_tt
+	}
+
+	text = {
+		trigger = {
+			OR = { tag = WUR tag = SAX }
+		}
+
+		localization_key = rr_production_factory_max_efficiency_factor_loyal_tt
+	}
+}
+
+defined_text = {
+	name = GetIndustryShareOutline
+
+	text = {
+		localization_key = rr_industry_share_outline_tt
+	}
+}
+
+defined_text = {
+	name = GetRRLoyalty
+
+	text = {
+		trigger = {
+			check_variable = { rr_loyalty = 0 }
+		}
+
+		localization_key = rr_disloyal
+	}
+
+	text = {
+		localization_key = rr_loyal
+	}
+}

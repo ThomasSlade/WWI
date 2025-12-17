@@ -148,3 +148,7 @@ ENG = {
 	color = rgb { 148 93 108 }
 	color_ui = rgb { 148 93 108 }
 }
+HNS = {
+	color = rgb { 209 65 77 }
+	color_ui = rgb { 209 65 77 }
+}

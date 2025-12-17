@@ -1,5 +1,33 @@
 ﻿l_english:
   event_GER_zabern_affair.1.t: "The Zabern Affair"
-  event_GER_zabern_affair.1.d: "'If you stab such a Wackes, you'll get ten marks from me.'\n\nThese words were spoken by a member of the Alsace-Lorraine garrison in Zabern, to the outrage of the 'Wackese' they disparage. A standoff between the townsfolk and its barracks escalated to civilian arrests, while the offending soldier has since struck down an unarmed heckler with his sabre.\n\nAlsace-Lorraine has been an uneasy member-territory of the Reich since its annexation from France, and with outrage over the affair reaching [THIS.capital.GetCapitalVictoryPointName], Erich von Falkenhayn must advocate for the officers' actions before a disapproving Reichstag."
+  event_GER_zabern_affair.1.d: "'If you stab such a Wackes, you'll get ten marks from me.'\n\nThese words were spoken by a member of the Alsace-Lorraine garrison in Zabern, to the outrage of the 'Wackese' they disparage. A standoff between the townsfolk and its barracks escalated to civilian arrests, while the offending soldier has since struck down an unarmed heckler with his sabre.\n\nWith outrage from Alsace-Lorraine now reaching [THIS.capital.GetCapitalVictoryPointName], [GER_erich_von_falkenhayn.GetName] must advocate for the officers' actions before a disapproving government."
   event_GER_zabern_affair.1.a: "We must defend the officers."
   event_GER_zabern_affair.1.b: "This is not the view of the Reichstag."
+
+  event_GER_recruit_foreign_tank_designers.1.t: "Armored-Vehicle Inventor [AUS_gunter_burstyn.GetName] Offers His Services"
+  event_GER_recruit_foreign_tank_designers.1.d: "Tiring of the disinterest of the [AUS.GetAdjective] military in his proposals, [AUS_gunter_burstyn.GetName] has been lobbying for the attention of our own engineering department.\n\nThe [AUS.GetAdjective] inventor has, for some years, insisted upon the development of an all-terrain, turreted, armored fighting vehicle. The Motorgeschütz, he claims, would be critical in a modern war made stagnant by otherwise unsurpassable firepower."
+  event_GER_recruit_foreign_tank_designers.1.a: "Perhaps we could use his ideas."
+
+  event_GER_recruit_foreign_tank_designers.2.t: "Armored-Vehicle Inventor [AUS_gunter_burstyn.GetName] Leaves [AUS.GetName] for [GER.GetAdjective] Employment"
+  event_GER_recruit_foreign_tank_designers.2.d: "Tiring of the disinterest of the [AUS.GetAdjective] military in his proposals, [AUS_gunter_burstyn.GetName] has found a new audience for his inventions in [GET.capital.GetCapitalVictoryPointName].\n\nThe [AUS.GetAdjective] inventor has, for some years, insisted upon the development of an all-terrain, turreted, armored fighting vehicle. The Motorgeschütz, he claims, could have been indespensible to [AUS.GetNameDef] in wars to come."
+  event_GER_recruit_foreign_tank_designers.2.a: "Disloyalty is of no use to us."
+
+  event_GER_recruit_foreign_tank_designers.3.t: "Armored-Vehicle Inventor [ENG_lancelot_de_mole.GetName] Offers His Services"
+  event_GER_recruit_foreign_tank_designers.3.d: "Our consulate in [AST.GetNameDef] has forwarded the interesting designs of a military engingeer by the name of [ENG_lancelot_de_mole.GetName]. Exhausted with the labyrinthine bureaucracy of the [ENG.GetAdjective] War Office, he now seeks [GER.GetAdjective] investment to prove out his concepts.\n\n[ENG_lancelot_de_mole.GetSurname]'s caterpillar-tracked vehicle would provide armored support on all terrains, including across trenches. Essential, he warns, in the fights to come."
+  event_GER_recruit_foreign_tank_designers.3.a: "Perhaps we could use his ideas."
+
+  event_GER_recruit_foreign_tank_designers.4.t: "Armored-Vehicle Inventor [ENG_lancelot_de_mole.GetName] Leaves [AST.GetName] for [GER.GetAdjective] Employment"
+  event_GER_recruit_foreign_tank_designers.4.d: "Exhausted with the labyrinthine bureaucracy of the [ENG.GetAdjective] War Office, vehicle engineer [ENG_lancelot_de_mole.GetName] has quietly offered up his services to the [GER.GetAdjective] government.\n\n[ENG_lancelot_de_mole.GetSurname]'s caterpillar-tracked vehicle would provide armored support on all terrains, including across trenches. Essential, he had warned, in the fights to come."
+  event_GER_recruit_foreign_tank_designers.4.a: "Rather unpatriotic."
+
+  event_GER_reserve_rights.1.t: "[federated_state.GetName] Objects to Low Share of Industry"
+  event_GER_reserve_rights.1.d: "The nobility of [federated_state.GetNameDef] have made known their outrage at the federated state's falling behind in industry, taking it as a deliberate snub on the part of [THIS.capital.GetCapitalVictoryPointName].\n\nUntil we correct this divergence, we can expect [federated_state.GetNameDef] to withhold its economic contributions from the Reich."
+  event_GER_reserve_rights.1.a: "Throw these scoundrels a bone."
+
+  event_GER_reserve_rights.2.t: "[federated_state.GetName] Satisfied with Increased Industry Share"
+  event_GER_reserve_rights.2.d: "After a renewed account of [THIS.GetAdjective] industry, the nobles of [federated_state.GetNameDef] have expressed a desire for a return to cooperation with [THIS.capital.GetCapitalVictoryPointName].\n\nSo long as their share in government contracts remains plump, we can count on the federated state's support."
+  event_GER_reserve_rights.2.a: "Enough of this nonsense, then."
+
+  event_GER_reserve_rights.3.t: "[federated_state.GetName] Concerned With Lagging Industry Share"
+  event_GER_reserve_rights.3.d: "Some federated states have retained substantial power following a reluctant ascent into the Reich. Among them is [federated_state.GetNameDef], whose delegates in the Bundesrat have expressed dismay over the region's lack of industrial investment from [THIS.capital.GetCapitalVictoryPointName].\n\nIf the [federated_state.GetAdjective] share in industry falls too low, its leadership may find ways to hamper our governing."
+  event_GER_reserve_rights.3.a: "We must invest each of our states fairly ..."

@@ -272,3 +272,15 @@ decision_category_ENG_naval_race = {
 		always = yes
 	}
 }
+
+decision_category_GER_railways = {
+	icon = generic_construction
+
+	allowed = {
+		original_tag = GER
+	}
+
+	visible = {
+		check_variable = { strategic_railway_charges > 0 }
+	}
+}

@@ -1,0 +1,30 @@
+on_actions = {
+	#ROOT = attacking side
+	#FROM = defending side
+	on_war_relation_added = {
+		effect = {
+			if = {
+				limit = { ROOT = { has_idea = idea_GER_military_travel_plan_primer } }
+				remove_ideas = idea_GER_military_travel_plan_primer
+			}
+			else_if = {
+				limit = { FROM = { has_idea = idea_GER_military_travel_plan_primer } }
+				FROM  = { remove_ideas = idea_GER_military_travel_plan_primer }
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			GER = {
+				effect_GER_init_staatenbund_industry_share = yes
+			}
+		}
+	}
+
+	on_weekly_GER = {
+		effect = {
+			effect_GER_update_staatenbund_industry_share = yes
+		}
+	}
+}

@@ -57,3 +57,5 @@
   effect_become_great_power_tt: "[THIS.GetName] will become a Great Power."
   effect_set_great_power_alignment_tt: "[THIS.GetAdjective] influence overseas will be known as [?param_alignment.GetTokenLocalizedKey]."
   effect_from_became_great_power_tt: "[FROM.GetAdjective] influence overseas will be known as [?FROM.leader_of_alignment.GetTokenLocalizedKey]."
+  remove_scientist_tt: "§RRemove§! as a §YScientist§!:"
+  remove_scientist_one_line_tt: "$remove_scientist_tt$ §Y$CHARACTER$§!"

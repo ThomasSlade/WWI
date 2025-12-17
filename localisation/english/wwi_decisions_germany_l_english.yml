@@ -1,0 +1,6 @@
+﻿l_english:
+  decision_category_GER_railways: "Strategic Railway Construction"
+  decision_category_GER_railways_desc: "We may enact §Y3§! Strategic Railway projects to improve our network.\nRemaining projects: §Y[?strategic_railway_charges]§!"
+  decision_category_GER_devise_new_railway_scheme_tt: "§RForfeits any further Strategic Railway projects.§!"
+  effect_GER_spend_1_railway_project_tt: "Expends §Y1§! Strategic Railway project"
+  trigger_GER_has_not_used_any_strategic_railway_charges_tt: "Has not enacted any Strategic Railway projects."
