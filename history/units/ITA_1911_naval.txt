@@ -578,8 +578,9 @@ units = {
 			}
 		}
 	}
+}
 
-	instant_effect = {
+instant_effect = {
 		add_equipment_production = {
 			equipment = {
 				type = ship_hull_heavy_1
@@ -640,4 +641,3 @@ units = {
 			amount = 1
 		}
 	}
-}

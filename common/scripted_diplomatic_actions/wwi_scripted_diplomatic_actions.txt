@@ -1,0 +1,57 @@
+scripted_diplomatic_actions = {
+	wwi_boost_party_popularity = {
+		requires_acceptance = no
+		send_description = WWI_BOOST_PARTY_POPULARITY_SEND_DESC
+
+		allowed = {
+			always = yes
+		}
+
+		visible = {
+			ROOT = {
+				NOT = { is_in_array = { boosting_alignment_of = PREV } }
+			}
+		}
+
+		selectable = {
+			always = yes
+		}
+
+		complete_effect = {
+			set_temp_variable = { param_booster = ROOT }
+			effect_PREV_boost_ideology = yes
+		}
+
+		ai_desire = {
+			base = -1000
+		}
+	}
+
+	wwi_cancel_boost_party_popularity = {
+		requires_acceptance = no
+		send_description = WWI_CANCEL_BOOST_PARTY_POPULARITY_SEND_DESC
+
+		allowed = {
+			always = yes
+		}
+
+		visible = {
+			ROOT = {
+				is_in_array = { boosting_alignment_of = PREV }
+			}
+		}
+
+		selectable = {
+			always = yes
+		}
+
+		complete_effect = {
+			set_temp_variable = { param_booster = ROOT }
+			effect_PREV_cancel_boost_ideology = yes
+		}
+
+		ai_desire = {
+			base = -1000
+		}
+	}
+}

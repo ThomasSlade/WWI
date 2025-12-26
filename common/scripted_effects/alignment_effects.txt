@@ -16,27 +16,27 @@ effect_init_alignment = {
 	add_to_array = { global._alignments = token:alignment_o }
 
 	GER = {
-		set_temp_variable = { param_alignment = token:a }
+		set_temp_variable = { param_alignment = token:alignment_a }
 		effect_set_alignment_leader = yes
 	}
 	FRA = {
-		set_temp_variable = { param_alignment = token:b }
+		set_temp_variable = { param_alignment = token:alignment_b }
 		effect_set_alignment_leader = yes
 	}
 	SOV = {
-		set_temp_variable = { param_alignment = token:c }
+		set_temp_variable = { param_alignment = token:alignment_c }
 		effect_set_alignment_leader = yes
 	}
 	ENG = {
-		set_temp_variable = { param_alignment = token:d }
+		set_temp_variable = { param_alignment = token:alignment_d }
 		effect_set_alignment_leader = yes
 	}
 	AUS = {
-		set_temp_variable = { param_alignment = token:e }
+		set_temp_variable = { param_alignment = token:alignment_e }
 		effect_set_alignment_leader = yes
 	}
 	USA = {
-		set_temp_variable = { param_alignment = token:f }
+		set_temp_variable = { param_alignment = token:alignment_f }
 		effect_set_alignment_leader = yes
 	}
 }
@@ -201,5 +201,53 @@ effect_set_great_power_alignment = {
 
 	hidden_effect = {
 		news_event = { id = event_wwi_become_great_power.3 days = 1 }
+	}
+}
+
+# param_booster: The tag of the country doing the boosting.
+effect_PREV_boost_ideology = {
+	meta_effect = {
+		ALIGNMENT_BOOST_MODIFIER = "modifier_boost_party_[?param_booster:current_party_ideology_group.GetTokenKey]"
+		text = {
+			add_dynamic_modifier = {
+				modifier = [ALIGNMENT_BOOST_MODIFIER]
+				scope = var:param_booster
+			}
+		}
+	}
+
+	var:param_booster = {
+		add_dynamic_modifier = {
+			modifier = modifier_boosting_party
+			scope = PREV
+		}
+
+		add_to_array = { boosting_alignment_of = PREV }
+	}
+}
+
+# param_booster: The tag of the country doing the boosting.
+effect_PREV_cancel_boost_ideology = {
+	meta_effect = {
+		ALIGNMENT_BOOST_MODIFIER = "modifier_boost_party_[?param_booster:current_party_ideology_group.GetTokenKey]"
+		text = {
+			remove_dynamic_modifier = {
+				modifier = [ALIGNMENT_BOOST_MODIFIER]
+				scope = var:param_booster
+			}
+		}
+	}
+
+	var:param_booster = {
+		remove_dynamic_modifier = {
+			modifier = modifier_boosting_party
+			scope = PREV
+		}
+
+		if = {
+			limit = { NOT = { is_in_array = { boosting_alignment_of = PREV } } }
+			log = "WARNING: cancel_boost_ideology was called by [THIS.GetName] to stop boosting [PREV.GetName]. However, [PREV.GetName] was not in the boosting_alignment_of array of [THIS.GetName]. This should not be possible."
+		}
+		remove_from_array = { boosting_alignment_of = PREV }
 	}
 }

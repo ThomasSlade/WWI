@@ -109,12 +109,14 @@ set_variable = { staatenbund_max_planning = -0.3 }
 set_variable = { staatenbund_production_factory_max_efficiency_factor = -0.3 }
 set_variable = { staatenbund_production_speed_buildings_factor = -0.3 }
 set_variable = { staatenbund_industrial_capacity_dockyard = -0.3 }
+set_variable = { staatenbund_boost_party_strength_factor = -0.3 }
 
 add_to_array = { rr_modifiers = token:consumer_goods_factor }
 add_to_array = { rr_modifiers = token:max_planning }
 add_to_array = { rr_modifiers = token:production_factory_max_efficiency_factor }
 add_to_array = { rr_modifiers = token:production_speed_buildings_factor }
 add_to_array = { rr_modifiers = token:industrial_capacity_dockyard }
+add_to_array = { rr_modifiers = token:boost_party_strength_factor }
 
 # These are the values that a state will apply if it's loyal or disloyal.
 set_variable = { rr_consumer_goods_factor_loyal = -0.2 }
@@ -127,12 +129,16 @@ set_variable = { rr_production_speed_buildings_factor_loyal = 0.05 }
 set_variable = { rr_production_speed_buildings_factor_disloyal = -0.15 }
 set_variable = { rr_industrial_capacity_dockyard_loyal = 0.1 }
 set_variable = { rr_industrial_capacity_dockyard_disloyal = -0.3 }
+set_variable = { rr_boost_party_strength_factor_loyal = 0.05 }
+set_variable = { rr_boost_party_strength_factor_disloyal = -0.15 }
 
 BAY = {
 	set_variable = { rr_consumer_goods_factor_loyal = PREV.rr_consumer_goods_factor_loyal }
 	set_variable = { rr_consumer_goods_factor_disloyal = PREV.rr_consumer_goods_factor_disloyal }
 	set_variable = { rr_max_planning_loyal = PREV.rr_max_planning_loyal }
 	set_variable = { rr_max_planning_disloyal = PREV.rr_max_planning_disloyal }
+	set_variable = { rr_boost_party_strength_factor_loyal = PREV.rr_boost_party_strength_factor_loyal }
+	set_variable = { rr_boost_party_strength_factor_disloyal = PREV.rr_boost_party_strength_factor_disloyal }
 }
 
 WUR = {
@@ -149,6 +155,8 @@ BAD = {
 	set_variable = { rr_consumer_goods_factor_disloyal = PREV.rr_consumer_goods_factor_disloyal }
 	set_variable = { rr_production_speed_buildings_factor_loyal = PREV.rr_production_speed_buildings_factor_loyal }
 	set_variable = { rr_production_speed_buildings_factor_disloyal = PREV.rr_production_speed_buildings_factor_disloyal }
+	set_variable = { rr_boost_party_strength_factor_loyal = PREV.rr_boost_party_strength_factor_loyal }
+	set_variable = { rr_boost_party_strength_factor_disloyal = PREV.rr_boost_party_strength_factor_disloyal }
 }
 
 SAX = {

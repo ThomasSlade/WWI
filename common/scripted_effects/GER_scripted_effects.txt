@@ -156,8 +156,7 @@ effect_GER_init_staatenbund_industry_share = {
 	}
 
 	effect_GER_update_staatenbund_industry_share = yes
-	effect_GER_update_staatenbund_matrikularbeitrag = yes
-
+	
 	clr_global_flag = rr_initialising
 }
 

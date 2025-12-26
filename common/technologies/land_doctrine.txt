@@ -337,7 +337,7 @@ technologies = {
 		on_research_complete = {
 			hidden_effect = {
 				all_enemy_country = {
-					country_event = { id = event_enrtenchment.1 hours = 1 }
+					country_event = { id = event_entrenchment.1 hours = 1 }
 				}
 			}
 		}

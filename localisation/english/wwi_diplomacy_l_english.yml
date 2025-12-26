@@ -1,3 +1,9 @@
 ﻿l_english:
   SER_refused_annexation_of_vojvodina: "Refused Annexation of Vojvodina"
-  DR_IDEOLOGICAL_ACCEPTANCE:1 "§Y$US|U$§! shares our alignment: "
+  DR_IDEOLOGICAL_ACCEPTANCE: "§Y$US|U$§! shares our alignment: "
+  WWI_BOOST_PARTY_POPULARITY_TITLE: "Boost alignment"
+  WWI_BOOST_PARTY_POPULARITY_ACTION_DESC: "Try to increase this country's diplomatic alignment toward us."
+  WWI_BOOST_PARTY_POPULARITY_SEND_DESC: "Daily [?ROOT.current_party_ideology_group.GetTokenLocalizedKey] drift [?ROOT.boost_party_strength|Y3] will cost [?ROOT.boost_party_cost|Y] Political Power per day"
+  WWI_CANCEL_BOOST_PARTY_POPULARITY_TITLE: "Cancel boost alignment"
+  WWI_CANCEL_BOOST_PARTY_POPULARITY_ACTION_DESC: "Cancel boost alignment"
+  WWI_CANCEL_BOOST_PARTY_POPULARITY_SEND_DESC: "Cancel §Yboosting alignment§! in §Y[THIS.GetNameDef]§!?"

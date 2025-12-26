@@ -1,10 +1,10 @@
 add_namespace = event_entrenchment
 
 country_event = {
-	id = event_enrtenchment.1
-	title = event_enrtenchment.1.t
+	id = event_entrenchment.1
+	title = event_entrenchment.1.t
 	desc = {
-		text = event_enrtenchment.1.d_miracle
+		text = event_entrenchment.1.d_miracle
 		trigger = {
 			FROM = {
 				any_owned_state = {
@@ -14,7 +14,7 @@ country_event = {
 		}
 	}
 	desc = {
-		text = event_enrtenchment.1.d_offensive
+		text = event_entrenchment.1.d_offensive
 		trigger = {
 			FROM = {
 				NOT = {
@@ -34,14 +34,14 @@ country_event = {
 	}
 
 	option = {
-		name = event_enrtenchment.1.a_sceptical
+		name = event_entrenchment.1.a_sceptical
 		trigger = {
 			NOT = { has_tech = digging_in }
 		}
 	}
 
 	option = {
-		name = event_enrtenchment.1.a_entrenched
+		name = event_entrenchment.1.a_entrenched
 		trigger = {
 			has_tech = digging_in
 		}

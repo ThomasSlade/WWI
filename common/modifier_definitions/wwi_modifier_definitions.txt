@@ -1,3 +1,27 @@
+boost_party_strength_base = {
+	color_type = good
+	value_type = number
+	precision = 2
+}
+
+boost_party_strength_factor = {
+	color_type = good
+	value_type = percentage
+	precision = 2
+}
+
+boost_party_cost_base = {
+	color_type = bad
+	value_type = number
+	precision = 2
+}
+
+boost_party_cost_factor = {
+	color_type = bad
+	value_type = percentage
+	precision = 2
+}
+
 free_civ_from_mils = {
 	color_type = good
 	value_type = number

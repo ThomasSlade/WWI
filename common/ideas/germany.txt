@@ -30,6 +30,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.05
 				mobilization_laws_cost_factor = -0.05
 				economy_cost_factor = -0.05
+				boost_party_cost_factor = 0.25
 			}
 		}
 		
@@ -47,6 +48,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.1
 				mobilization_laws_cost_factor = -0.1
 				economy_cost_factor = -0.1
+				boost_party_cost_factor = 0.5
 			}
 		}
 
@@ -65,6 +67,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.15
 				mobilization_laws_cost_factor = -0.2
 				economy_cost_factor = -0.2
+				boost_party_cost_factor = 0.75
 			}
 		}
 
@@ -83,6 +86,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = 0.2
 				mobilization_laws_cost_factor = -0.3
 				economy_cost_factor = -0.3
+				boost_party_cost_factor = 1
 			}
 		}
 

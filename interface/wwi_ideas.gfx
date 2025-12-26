@@ -121,7 +121,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_combat_mountaineers_artillery.dds"
 	}
 
-	# Ideologies
+	# Alignment
 	spriteType = {
 		name = "GFX_idea_generic_established"
 		texturefile = "gfx/interface/ideas/idea_generic_established.dds"
@@ -134,6 +134,7 @@ spriteTypes = {
 		name = "GFX_idea_generic_revolutionary"
 		texturefile = "gfx/interface/ideas/idea_generic_revolutionary.dds"
 	}
+	
 	spriteType = {
 		name = "GFX_idea_generic_alignment_a"
 		texturefile = "gfx/interface/ideas/idea_generic_alignment_a.dds"
@@ -194,6 +195,73 @@ spriteTypes = {
 		name = "GFX_idea_generic_alignment_o"
 		texturefile = "gfx/interface/ideas/idea_generic_alignment_o.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_generic_boost_party_a"
+		texturefile = "gfx/interface/ideas/idea_generic_boost_party_a.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_boost_party_b"
+		texturefile = "gfx/interface/ideas/idea_generic_boost_party_b.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_boost_party_c"
+		texturefile = "gfx/interface/ideas/idea_generic_boost_party_c.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_boost_party_d"
+		texturefile = "gfx/interface/ideas/idea_generic_boost_party_d.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_boost_party_e"
+		texturefile = "gfx/interface/ideas/idea_generic_boost_party_e.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_boost_party_f"
+		texturefile = "gfx/interface/ideas/idea_generic_boost_party_f.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_boost_party_g"
+		texturefile = "gfx/interface/ideas/idea_generic_boost_party_g.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_boost_party_h"
+		texturefile = "gfx/interface/ideas/idea_generic_boost_party_h.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_boost_party_i"
+		texturefile = "gfx/interface/ideas/idea_generic_boost_party_i.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_boost_party_j"
+		texturefile = "gfx/interface/ideas/idea_generic_boost_party_j.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_boost_party_k"
+		texturefile = "gfx/interface/ideas/idea_generic_boost_party_k.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_boost_party_l"
+		texturefile = "gfx/interface/ideas/idea_generic_boost_party_l.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_boost_party_m"
+		texturefile = "gfx/interface/ideas/idea_generic_boost_party_m.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_boost_party_n"
+		texturefile = "gfx/interface/ideas/idea_generic_boost_party_n.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_boost_party_o"
+		texturefile = "gfx/interface/ideas/idea_generic_boost_party_o.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_generic_boosting_party"
+		texturefile = "gfx/interface/ideas/idea_generic_boosting_party.dds"
+	}
+
 	spriteType = {
 		name = "GFX_idea_generic_established_decrease"
 		texturefile = "gfx/interface/ideas/idea_generic_established_decrease.dds"
@@ -738,8 +806,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_eng_naval_race_rival_2.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_ENG_naval_race_victor_britain"
-		texturefile = "gfx/interface/ideas/idea_eng_naval_race_victor_britain.dds"
+		name = "GFX_idea_ENG_naval_race_victor_british"
+		texturefile = "gfx/interface/ideas/idea_ENG_naval_race_victor_british.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_ENG_naval_race_victor_rival"

@@ -46,7 +46,7 @@ equipments = {
 		year = 1912
 		
 		archetype = field_artillery_equipment
-		parent = infantry_equipment_0
+		parent = field_artillery_equipment_0
 		priority = 50
 		visual_level = 1
 	}
@@ -55,7 +55,7 @@ equipments = {
 		year = 1914
 		
 		archetype = field_artillery_equipment
-		parent = infantry_equipment_1
+		parent = field_artillery_equipment_1
 		priority = 50
 		visual_level = 2
 	}

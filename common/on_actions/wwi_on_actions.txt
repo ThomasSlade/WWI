@@ -30,8 +30,11 @@ on_actions = {
 				set_variable = { cannot_decrease_civil_rights_laws = 0 }
 				set_variable = { cannot_decrease_blockade_policy_laws = 0 }
 
+				add_ideas = idea_base_values
+
 				effect_update_civs_from_mils = yes
 				effect_update_civs_from_navs = yes
+				effect_update_boost_party_strength = yes
 
 				effect_setup_politics = yes
 
@@ -63,6 +66,7 @@ on_actions = {
 		effect = {
 			effect_update_civs_from_mils = yes
 			effect_update_civs_from_navs = yes
+			effect_update_boost_party_strength = yes
 		}
 	}
 

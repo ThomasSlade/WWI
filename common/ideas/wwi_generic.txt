@@ -1,4 +1,17 @@
 ideas = {
+	hidden_ideas = {
+		# This idea sets the base values for some modifiers which are common to every country.
+		idea_base_values = {
+			modifier = {
+				boost_party_strength_base = 0.05
+				boost_party_strength_factor = 1
+
+				boost_party_cost_base = 0.25
+				boost_party_cost_factor = 1
+			}
+		}
+	}
+
 	country = {
 		### Alignment ###
 		expansionist_influence = {

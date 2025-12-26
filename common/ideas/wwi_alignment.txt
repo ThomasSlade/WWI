@@ -1,6 +1,6 @@
 ideas = {
-	# Low Growth
 	country = {
+		# Low Growth
 		idea_alignment_a_growth_low = {
 			removal_cost = -1
 			picture = idea_generic_alignment_a
@@ -13,9 +13,7 @@ ideas = {
 				alignment_a_drift = 0.02
 			}
 		}
-	}
 
-	country = {
 		idea_alignment_b_growth_low = {
 			removal_cost = -1
 			picture = idea_generic_alignment_b
@@ -28,9 +26,7 @@ ideas = {
 				alignment_b_drift = 0.02
 			}
 		}
-	}
 
-	country = {
 		idea_alignment_c_growth_low = {
 			removal_cost = -1
 			picture = idea_generic_alignment_c
@@ -43,9 +39,7 @@ ideas = {
 				alignment_c_drift = 0.02
 			}
 		}
-	}
 
-	country = {
 		idea_alignment_d_growth_low = {
 			removal_cost = -1
 			picture = idea_generic_alignment_d
@@ -58,9 +52,7 @@ ideas = {
 				alignment_d_drift = 0.02
 			}
 		}
-	}
 
-	country = {
 		idea_alignment_e_growth_low = {
 			removal_cost = -1
 			picture = idea_generic_alignment_e
@@ -73,9 +65,7 @@ ideas = {
 				alignment_e_drift = 0.02
 			}
 		}
-	}
 
-	country = {
 		idea_alignment_f_growth_low = {
 			removal_cost = -1
 			picture = idea_generic_alignment_f
@@ -88,9 +78,7 @@ ideas = {
 				alignment_f_drift = 0.02
 			}
 		}
-	}
 
-	country = {
 		idea_alignment_g_growth_low = {
 			removal_cost = -1
 			picture = idea_generic_alignment_g
@@ -103,9 +91,7 @@ ideas = {
 				alignment_g_drift = 0.02
 			}
 		}
-	}
 
-	country = {
 		idea_alignment_h_growth_low = {
 			removal_cost = -1
 			picture = idea_generic_alignment_h
@@ -118,9 +104,7 @@ ideas = {
 				alignment_h_drift = 0.02
 			}
 		}
-	}
 
-	country = {
 		idea_alignment_i_growth_low = {
 			removal_cost = -1
 			picture = idea_generic_alignment_i
@@ -133,9 +117,7 @@ ideas = {
 				alignment_i_drift = 0.02
 			}
 		}
-	}
 
-	country = {
 		idea_alignment_j_growth_low = {
 			removal_cost = -1
 			picture = idea_generic_alignment_j
@@ -148,9 +130,7 @@ ideas = {
 				alignment_j_drift = 0.02
 			}
 		}
-	}
 
-	country = {
 		idea_alignment_k_growth_low = {
 			removal_cost = -1
 			picture = idea_generic_alignment_k
@@ -163,9 +143,7 @@ ideas = {
 				alignment_k_drift = 0.02
 			}
 		}
-	}
 
-	country = {
 		idea_alignment_l_growth_low = {
 			removal_cost = -1
 			picture = idea_generic_alignment_l
@@ -178,9 +156,7 @@ ideas = {
 				alignment_l_drift = 0.02
 			}
 		}
-	}
 
-	country = {
 		idea_alignment_m_growth_low = {
 			removal_cost = -1
 			picture = idea_generic_alignment_m
@@ -193,9 +169,7 @@ ideas = {
 				alignment_m_drift = 0.02
 			}
 		}
-	}
 
-	country = {
 		idea_alignment_n_growth_low = {
 			removal_cost = -1
 			picture = idea_generic_alignment_n
@@ -208,9 +182,7 @@ ideas = {
 				alignment_n_drift = 0.02
 			}
 		}
-	}
 
-	country = {
 		idea_alignment_o_growth_low = {
 			removal_cost = -1
 			picture = idea_generic_alignment_o
@@ -223,10 +195,8 @@ ideas = {
 				alignment_o_drift = 0.02
 			}
 		}
-	}
 
-	# Medium Growth
-	country = {
+		# Medium Growth
 		idea_alignment_a_growth_med = {
 			removal_cost = -1
 			picture = idea_generic_alignment_a
@@ -239,9 +209,7 @@ ideas = {
 				alignment_a_drift = 0.04
 			}
 		}
-	}
 
-	country = {
 		idea_alignment_b_growth_med = {
 			removal_cost = -1
 			picture = idea_generic_alignment_b
@@ -254,9 +222,7 @@ ideas = {
 				alignment_b_drift = 0.04
 			}
 		}
-	}
 
-	country = {
 		idea_alignment_c_growth_med = {
 			removal_cost = -1
 			picture = idea_generic_alignment_c
@@ -269,9 +235,7 @@ ideas = {
 				alignment_c_drift = 0.04
 			}
 		}
-	}
 
-	country = {
 		idea_alignment_d_growth_med = {
 			removal_cost = -1
 			picture = idea_generic_alignment_d
@@ -284,9 +248,7 @@ ideas = {
 				alignment_d_drift = 0.04
 			}
 		}
-	}
 
-	country = {
 		idea_alignment_e_growth_med = {
 			removal_cost = -1
 			picture = idea_generic_alignment_e
@@ -299,9 +261,7 @@ ideas = {
 				alignment_e_drift = 0.04
 			}
 		}
-	}
 
-	country = {
 		idea_alignment_f_growth_med = {
 			removal_cost = -1
 			picture = idea_generic_alignment_f
@@ -314,9 +274,7 @@ ideas = {
 				alignment_f_drift = 0.04
 			}
 		}
-	}
 
-	country = {
 		idea_alignment_g_growth_med = {
 			removal_cost = -1
 			picture = idea_generic_alignment_g
@@ -329,9 +287,7 @@ ideas = {
 				alignment_g_drift = 0.04
 			}
 		}
-	}
 
-	country = {
 		idea_alignment_h_growth_med = {
 			removal_cost = -1
 			picture = idea_generic_alignment_h
@@ -344,9 +300,7 @@ ideas = {
 				alignment_h_drift = 0.04
 			}
 		}
-	}
 
-	country = {
 		idea_alignment_i_growth_med = {
 			removal_cost = -1
 			picture = idea_generic_alignment_i
@@ -359,9 +313,7 @@ ideas = {
 				alignment_i_drift = 0.04
 			}
 		}
-	}
 
-	country = {
 		idea_alignment_j_growth_med = {
 			removal_cost = -1
 			picture = idea_generic_alignment_j
@@ -374,9 +326,7 @@ ideas = {
 				alignment_j_drift = 0.04
 			}
 		}
-	}
 
-	country = {
 		idea_alignment_k_growth_med = {
 			removal_cost = -1
 			picture = idea_generic_alignment_k
@@ -389,9 +339,7 @@ ideas = {
 				alignment_k_drift = 0.04
 			}
 		}
-	}
 
-	country = {
 		idea_alignment_l_growth_med = {
 			removal_cost = -1
 			picture = idea_generic_alignment_l
@@ -404,9 +352,7 @@ ideas = {
 				alignment_l_drift = 0.04
 			}
 		}
-	}
 
-	country = {
 		idea_alignment_m_growth_med = {
 			removal_cost = -1
 			picture = idea_generic_alignment_m
@@ -419,9 +365,7 @@ ideas = {
 				alignment_m_drift = 0.04
 			}
 		}
-	}
 
-	country = {
 		idea_alignment_n_growth_med = {
 			removal_cost = -1
 			picture = idea_generic_alignment_n
@@ -434,9 +378,7 @@ ideas = {
 				alignment_n_drift = 0.04
 			}
 		}
-	}
 
-	country = {
 		idea_alignment_o_growth_med = {
 			removal_cost = -1
 			picture = idea_generic_alignment_o

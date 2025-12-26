@@ -16,12 +16,12 @@ leader_traits = {
 		line_change_production_efficiency_factor = 0.2
 	}
 
-	#
+	# Wilhelm II
 	das_grossmaul = {
 		random = no
-		opinion_gain_monthly_factor = -0.25
 		enemy_declare_war_tension = -0.15
 		send_volunteer_factor = -0.15
+		boost_party_strength_base = -0.02
 	}
 
 	### Special Character Traits ###

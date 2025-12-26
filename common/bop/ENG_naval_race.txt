@@ -68,7 +68,7 @@ bop_ENG_naval_race = {
 
 					effect_tooltip = {
 						ENG = {
-							add_ideas = idea_ENG_naval_race_victor_britain
+							add_ideas = idea_ENG_naval_race_victor_british
 						}
 					}
 
@@ -78,7 +78,7 @@ bop_ENG_naval_race = {
 					}
 				}
 				else = {
-					add_ideas = idea_ENG_naval_race_victor_britain
+					add_ideas = idea_ENG_naval_race_victor_british
 
 					effect_tooltip = {
 						var:naval_race_rival = {
@@ -168,6 +168,12 @@ bop_ENG_naval_race = {
 			on_activate = {
 				if = {
 					limit = { NOT = { original_tag = ENG } }
+
+					if = {
+						limit = { original_tag = GER }
+						effect_GER_encirclement_decrease = yes
+					}
+
 					add_ideas = idea_ENG_naval_race_victor_rival
 
 					effect_tooltip = {

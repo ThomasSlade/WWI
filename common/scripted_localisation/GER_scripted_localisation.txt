@@ -122,7 +122,7 @@ defined_text = {
 			check_variable = { rr_loyalty = 0 }
 		}
 
-		localization_key = rr_influence_drift_disloyal_tt
+		localization_key = rr_boost_party_strength_factor_disloyal_tt
 	}
 
 	text = {
@@ -130,7 +130,7 @@ defined_text = {
 			OR = { tag = BAY tag = BAD }
 		}
 
-		localization_key = rr_influence_drift_loyal_tt
+		localization_key = rr_boost_party_strength_factor_loyal_tt
 	}
 
 	text = {

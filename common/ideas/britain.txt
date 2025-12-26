@@ -36,9 +36,9 @@ ideas = {
 			}
 		
 			modifier = {
-				opinion_gain_monthly_factor = 0.2
 				experience_gain_navy = 0.2
 				naval_race_coastal_infrastructure_bonus = 0.2
+				boost_party_strength_factor = 0.1
 			}
 		}
 		
@@ -51,9 +51,9 @@ ideas = {
 			}
 		
 			modifier = {
-				opinion_gain_monthly_factor = 0.3
 				experience_gain_navy = 0.3
 				naval_race_coastal_infrastructure_bonus = 0.3
+				boost_party_strength_factor = 0.2
 			}
 		}
 
@@ -66,9 +66,9 @@ ideas = {
 			}
 		
 			modifier = {
-				opinion_gain_monthly_factor = 0.4
 				experience_gain_navy = 0.4
 				naval_race_coastal_infrastructure_bonus = 0.4
+				boost_party_strength_factor = 0.3
 			}
 		}
 
@@ -162,9 +162,9 @@ ideas = {
 			}
 		
 			modifier = {
-				opinion_gain_monthly_factor = 0.2
 				experience_gain_navy = 0.2
 				free_civ_from_navs = 0.25
+				boost_party_strength_factor = 0.1
 			}
 		}
 
@@ -177,9 +177,9 @@ ideas = {
 			}
 		
 			modifier = {
-				opinion_gain_monthly_factor = 0.3
 				experience_gain_navy = 0.3
 				free_civ_from_navs = 0.5
+				boost_party_strength_factor = 0.2
 			}
 		}
 
@@ -192,13 +192,13 @@ ideas = {
 			}
 		
 			modifier = {
-				opinion_gain_monthly_factor = 0.4
 				experience_gain_navy = 0.4
 				free_civ_from_navs = 0.75
+				boost_party_strength_factor = 0.3
 			}
 		}
 
-		idea_ENG_naval_race_victor_britain = {
+		idea_ENG_naval_race_victor_british = {
 			removal_cost = -1
 			picture = ENG_naval_race_victor_britain
 		
@@ -209,6 +209,7 @@ ideas = {
 			modifier = {
 				naval_has_potf_in_combat_attack = 0.15
 				navy_org_factor = 0.15
+				boost_party_strength_factor = 0.3
 			}
 
 			equipment_bonus = {
@@ -231,6 +232,7 @@ ideas = {
 			modifier = {
 				naval_has_potf_in_combat_attack = 0.15
 				naval_enemy_fleet_size_ratio_penalty_factor = 0.5
+				boost_party_strength_factor = 0.3
 			}
 
 			equipment_bonus = {

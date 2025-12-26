@@ -1,0 +1,161 @@
+modifier_boosting_party = {
+	icon = GFX_idea_generic_boosting_party
+
+	enable = { always = yes }
+
+	political_power_cost = ROOT.boost_party_cost
+}
+
+# Should never be used but needed to prevent a crash.
+modifier_boost_party_alignment_unaligned = {
+	icon = GFX_idea_generic_blank
+
+	enable = { always = yes }
+
+	alignment_unaligned_drift = ROOT.boost_party_strength
+}
+
+modifier_boost_party_alignment_a = {
+	icon = GFX_idea_generic_boost_party_a
+
+	enable = { always = yes }
+
+	alignment_a_drift = boost_party_strength
+}
+
+modifier_boost_party_alignment_b = {
+	icon = GFX_idea_generic_boost_party_b
+
+	enable = { always = yes }
+
+	alignment_b_drift = boost_party_strength
+}
+
+modifier_boost_party_alignment_c = {
+	icon = GFX_idea_generic_boost_party_c
+
+	enable = { always = yes }
+
+	alignment_c_drift = boost_party_strength
+}
+
+modifier_boost_party_alignment_d = {
+	icon = GFX_idea_generic_boost_party_d
+
+	enable = { always = yes }
+
+	alignment_d_drift = boost_party_strength
+}
+
+modifier_boost_party_alignment_e = {
+	icon = GFX_idea_generic_boost_party_e
+
+	enable = { always = yes }
+
+	alignment_e_drift = boost_party_strength
+}
+
+modifier_boost_party_alignment_f = {
+	icon = GFX_idea_generic_boost_party_f
+
+	enable = { always = yes }
+
+	alignment_f_drift = boost_party_strength
+}
+
+modifier_boost_party_alignment_g = {
+	icon = GFX_idea_generic_boost_party_g
+
+	enable = { always = yes }
+
+	alignment_g_drift = boost_party_strength
+}
+
+modifier_boost_party_alignment_h = {
+	icon = GFX_idea_generic_boost_party_h
+
+	enable = { always = yes }
+
+	alignment_h_drift = boost_party_strength
+}
+
+modifier_boost_party_alignment_i = {
+	icon = GFX_idea_generic_boost_party_i
+
+	enable = { always = yes }
+
+	alignment_i_drift = boost_party_strength
+}
+
+modifier_boost_party_alignment_j = {
+	icon = GFX_idea_generic_boost_party_j
+
+	enable = { always = yes }
+
+	alignment_j_drift = boost_party_strength
+}
+
+modifier_boost_party_alignment_k = {
+	icon = GFX_idea_generic_boost_party_k
+
+	enable = { always = yes }
+
+	alignment_k_drift = boost_party_strength
+}
+
+modifier_boost_party_alignment_l = {
+	icon = GFX_idea_generic_boost_party_l
+
+	enable = { always = yes }
+
+	alignment_l_drift = boost_party_strength
+}
+
+modifier_boost_party_alignment_m = {
+	icon = GFX_idea_generic_boost_party_m
+
+	enable = { always = yes }
+
+	alignment_m_drift = boost_party_strength
+}
+
+modifier_boost_party_alignment_n = {
+	icon = GFX_idea_generic_boost_party_n
+
+	enable = { always = yes }
+
+	alignment_n_drift = boost_party_strength
+}
+
+modifier_boost_party_alignment_o = {
+	icon = GFX_idea_generic_boost_party_o
+
+	enable = { always = yes }
+
+	alignment_o_drift = boost_party_strength
+}
+
+# WWI TODO: Unfortunately needed to prevent crashes, but remove these when you get rid of the old ideologies.
+modifier_boost_party_established = {
+	icon = GFX_idea_generic_blank
+
+	enable = { always = yes }
+
+	established_drift = boost_party_strength
+}
+
+modifier_boost_party_expansionist = {
+	icon = GFX_idea_generic_blank
+
+	enable = { always = yes }
+
+	expansionist_drift = boost_party_strength
+}
+
+modifier_boost_party_revolutionary = {
+	icon = GFX_idea_generic_blank
+
+	enable = { always = yes }
+
+	revolutionary_drift = boost_party_strength
+}

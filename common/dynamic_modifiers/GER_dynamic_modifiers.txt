@@ -42,11 +42,11 @@ modifier_GER_staatenbund = {
 
 	custom_modifier_tooltip = modifier_GER_staatenbund_loyalty
 
-	# TODO: Bavaria and Baden should impact influence boost.
 	max_planning = staatenbund_max_planning
 	production_factory_max_efficiency_factor = staatenbund_production_factory_max_efficiency_factor
 	production_speed_buildings_factor = staatenbund_production_speed_buildings_factor
 	industrial_capacity_dockyard = staatenbund_industrial_capacity_dockyard
+	boost_party_strength_factor = staatenbund_boost_party_strength_factor
 
 	consumer_goods_factor = staatenbund_consumer_goods_factor
 }

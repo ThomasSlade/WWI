@@ -18,6 +18,10 @@
 
   free_civ_from_mils: "Offmap Civilian Factories from each Military Factory"
   free_civ_from_navs: "Offmap Civilian Factories from each Naval Dockyard"
+  boost_party_strength_base: "Daily alignment boost"
+  boost_party_strength_factor: "Daily alignment boost factor"
+  boost_party_cost_base: "Boost alignment cost"
+  boost_party_cost_factor: "Boost alignment cost factor"
 
   MODIFIER_INDUSTRIAL_CAPACITY_FACTOR: "$arms_factory$ Output"
   MODIFIER_INDUSTRIAL_CAPACITY_FACTOR_DESC: "This effectively increases the amount of work each §Y$arms_factory$§! can do per hour."
@@ -56,10 +60,8 @@
   rr_production_speed_buildings_factor_disloyal_tt: "$MODIFIER_PRODUCTION_SPEED_BUILDINGS_FACTOR$: [?GER.rr_production_speed_buildings_factor_disloyal|+=%1]"
   rr_industrial_capacity_dockyard_loyal_tt: "$MODIFIER_INDUSTRIAL_CAPACITY_DOCKYARD_FACTOR$: [?GER.rr_industrial_capacity_dockyard_loyal|+=%1]"
   rr_industrial_capacity_dockyard_disloyal_tt: "$MODIFIER_INDUSTRIAL_CAPACITY_DOCKYARD_FACTOR$: [?GER.rr_industrial_capacity_dockyard_disloyal|+=%1]"
-
-  # TODO: These are here as placeholders. Fix them up when the feature is implemented.
-  rr_influence_drift_loyal_tt: "Influence Strength: §GX%§!"
-  rr_influence_drift_disloyal_tt: "Influence Strength: §RX%§!"
+  rr_boost_party_strength_factor_loyal_tt: "$boost_party_strength_factor$: [?GER.rr_boost_party_strength_factor_loyal|+=%1]"
+  rr_boost_party_strength_factor_disloyal_tt: "$boost_party_strength_factor$: [?GER.rr_boost_party_strength_factor_disloyal|+=%1]"
 
   rr_territorial_effect_loyal_tt: "    $MODIFIER_LOCAL_RESOURCES$: [?GER.staatenbund_local_resources_factor_loyal|+=%1]\n    $MODIFIER_LOCAL_SUPPLIES$: [?GER.staatenbund_local_supply_loyal|+=%1]\n    $MODIFIER_LOCAL_MANPOWER$: [?GER.staatenbund_local_manpower_loyal|+=%1]"
   rr_territorial_effect_disloyal_tt: "    $MODIFIER_LOCAL_RESOURCES$: [?GER.staatenbund_local_resources_factor_disloyal|+=%1]\n    $MODIFIER_LOCAL_SUPPLIES$: [?GER.staatenbund_local_supply_disloyal|+=%1]\n    $MODIFIER_LOCAL_MANPOWER$: [?GER.staatenbund_local_manpower_disloyal|+=%1]"

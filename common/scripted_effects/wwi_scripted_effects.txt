@@ -219,3 +219,11 @@ effect_update_civs_from_navs = {
 		set_variable = { current_free_civ_from_navs = free_civs_gained_from_navs }
 	}
 }
+
+effect_update_boost_party_strength = {
+	set_variable = { boost_party_strength = modifier@boost_party_strength_base }
+	multiply_variable = { boost_party_strength = modifier@boost_party_strength_factor }
+
+	set_variable = { boost_party_cost = modifier@boost_party_cost_base }
+	multiply_variable = { boost_party_cost = modifier@boost_party_cost_factor }
+}
