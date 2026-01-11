@@ -1,0 +1,28 @@
+decision_category_GER_states = {
+	mission_GER_alsatian_plebiscite = {
+		cost = 50
+		days_mission_timeout = 180
+
+		activation = {
+			has_global_flag = flag_alsatian_plebiscite_ongoing
+		}
+
+		available = {
+			always = no
+		}
+
+		timeout_effect = {
+			clr_global_flag = flag_alsatian_plebiscite_ongoing
+
+			if = {
+				limit = { original_tag = GER }
+				effect_GER_end_alsatian_plebiscite = yes
+			}
+			else = {
+				effect_tooltip = {
+					effect_GER_end_alsatian_plebiscite = yes
+				}
+			}
+		}
+	}
+}

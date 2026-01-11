@@ -52,6 +52,11 @@ add_ideas = {
 	idea_GER_encirclement_1
 }
 
+add_opinion_modifier = {
+	target = FRA
+	modifier = opinion_GER_bismarckian_containment
+}
+
 add_dynamic_modifier = { modifier = modifier_GER_general_staff }
 add_dynamic_modifier = { modifier = modifier_GER_staatenbund }
 
@@ -73,27 +78,6 @@ recruit_character = GER_rosa_luxemburg
 set_variable = { leader@token:communist = GER_rosa_luxemburg }
 
 # Reserve Right vars
-add_to_array = { rr_countries = BAY }
-add_to_array = { rr_countries = WUR }
-add_to_array = { rr_countries = BAD }
-add_to_array = { rr_countries = SAX }
-add_to_array = { rr_countries = HNS }
-BAY = {
-	set_variable = { rr_factories_expected = 0.08 }
-}
-WUR = {
-	set_variable = { rr_factories_expected = 0.03 }
-}
-BAD = {
-	set_variable = { rr_factories_expected = 0.03 }
-}
-SAX = {
-	set_variable = { rr_factories_expected = 0.03 }
-}
-HNS = {
-	set_variable = { rr_factories_expected = 0.05 }
-}
-
 set_variable = { alsace_lorraine_production_speed_buildings_factor = -0.2 }
 
 set_variable = { staatenbund_local_resources_factor_loyal = -0.15 }
@@ -103,13 +87,13 @@ set_variable = { staatenbund_local_supply_disloyal = -0.3 }
 set_variable = { staatenbund_local_manpower_loyal = -0.15 }
 set_variable = { staatenbund_local_manpower_disloyal = -0.3 }
 
-# These values should be initialised to what they would be if all states began as disloyal.
-set_variable = { staatenbund_consumer_goods_factor = 0.8 }
-set_variable = { staatenbund_max_planning = -0.3 }
-set_variable = { staatenbund_production_factory_max_efficiency_factor = -0.3 }
-set_variable = { staatenbund_production_speed_buildings_factor = -0.3 }
-set_variable = { staatenbund_industrial_capacity_dockyard = -0.3 }
-set_variable = { staatenbund_boost_party_strength_factor = -0.3 }
+set_variable = { staatenbund_consumer_goods_factor = 0 }
+set_variable = { staatenbund_max_planning = 0 }
+set_variable = { staatenbund_production_factory_max_efficiency_factor = 0 }
+set_variable = { staatenbund_production_speed_buildings_factor = 0 }
+set_variable = { staatenbund_industrial_capacity_dockyard = 0 }
+set_variable = { staatenbund_boost_party_strength_factor = 0 }
+set_variable = { staatenbund_land_bunker_effectiveness_factor = 0 }
 
 add_to_array = { rr_modifiers = token:consumer_goods_factor }
 add_to_array = { rr_modifiers = token:max_planning }
@@ -117,6 +101,7 @@ add_to_array = { rr_modifiers = token:production_factory_max_efficiency_factor }
 add_to_array = { rr_modifiers = token:production_speed_buildings_factor }
 add_to_array = { rr_modifiers = token:industrial_capacity_dockyard }
 add_to_array = { rr_modifiers = token:boost_party_strength_factor }
+add_to_array = { rr_modifiers = token:land_bunker_effectiveness_factor }
 
 # These are the values that a state will apply if it's loyal or disloyal.
 set_variable = { rr_consumer_goods_factor_loyal = -0.2 }
@@ -127,12 +112,18 @@ set_variable = { rr_production_factory_max_efficiency_factor_loyal = 0.05 }
 set_variable = { rr_production_factory_max_efficiency_factor_disloyal = -0.15 }
 set_variable = { rr_production_speed_buildings_factor_loyal = 0.05 }
 set_variable = { rr_production_speed_buildings_factor_disloyal = -0.15 }
+set_variable = { rr_production_speed_buildings_factor_loyal = 0.05 }
+set_variable = { rr_production_speed_buildings_factor_disloyal = -0.15 }
 set_variable = { rr_industrial_capacity_dockyard_loyal = 0.1 }
 set_variable = { rr_industrial_capacity_dockyard_disloyal = -0.3 }
 set_variable = { rr_boost_party_strength_factor_loyal = 0.05 }
 set_variable = { rr_boost_party_strength_factor_disloyal = -0.15 }
+set_variable = { rr_land_bunker_effectiveness_factor_loyal = 0.05 }
+set_variable = { rr_land_bunker_effectiveness_factor_disloyal = -0.15 }
 
 BAY = {
+	set_variable = { rr_base_factories_expected = 0.08 }
+
 	set_variable = { rr_consumer_goods_factor_loyal = PREV.rr_consumer_goods_factor_loyal }
 	set_variable = { rr_consumer_goods_factor_disloyal = PREV.rr_consumer_goods_factor_disloyal }
 	set_variable = { rr_max_planning_loyal = PREV.rr_max_planning_loyal }
@@ -142,6 +133,8 @@ BAY = {
 }
 
 WUR = {
+	set_variable = { rr_base_factories_expected = 0.03 }
+
 	set_variable = { rr_consumer_goods_factor_loyal = PREV.rr_consumer_goods_factor_loyal }
 	set_variable = { rr_consumer_goods_factor_disloyal = PREV.rr_consumer_goods_factor_disloyal }
 	set_variable = { rr_max_planning_loyal = PREV.rr_max_planning_loyal }
@@ -151,6 +144,8 @@ WUR = {
 }
 
 BAD = {
+	set_variable = { rr_base_factories_expected = 0.03 }
+
 	set_variable = { rr_consumer_goods_factor_loyal = PREV.rr_consumer_goods_factor_loyal }
 	set_variable = { rr_consumer_goods_factor_disloyal = PREV.rr_consumer_goods_factor_disloyal }
 	set_variable = { rr_production_speed_buildings_factor_loyal = PREV.rr_production_speed_buildings_factor_loyal }
@@ -160,6 +155,8 @@ BAD = {
 }
 
 SAX = {
+	set_variable = { rr_base_factories_expected = 0.03 }
+
 	set_variable = { rr_consumer_goods_factor_loyal = PREV.rr_consumer_goods_factor_loyal }
 	set_variable = { rr_consumer_goods_factor_disloyal = PREV.rr_consumer_goods_factor_disloyal }
 	set_variable = { rr_production_factory_max_efficiency_factor_loyal = PREV.rr_production_factory_max_efficiency_factor_loyal }
@@ -169,10 +166,31 @@ SAX = {
 }
 
 HNS = {
+	set_variable = { rr_base_factories_expected = 0.05 }
+
 	set_variable = { rr_consumer_goods_factor_loyal = PREV.rr_consumer_goods_factor_loyal }
 	set_variable = { rr_consumer_goods_factor_disloyal = PREV.rr_consumer_goods_factor_disloyal }
 	set_variable = { rr_industrial_capacity_dockyard_loyal = PREV.rr_industrial_capacity_dockyard_loyal }
 	set_variable = { rr_industrial_capacity_dockyard_disloyal = PREV.rr_industrial_capacity_dockyard_disloyal }
+}
+
+ELR = {
+	set_variable = { rr_base_factories_expected = 0.04 }
+
+	set_variable = { rr_consumer_goods_factor_loyal = PREV.rr_consumer_goods_factor_loyal }
+	set_variable = { rr_consumer_goods_factor_disloyal = PREV.rr_consumer_goods_factor_disloyal }
+	set_variable = { rr_production_speed_buildings_factor_loyal = PREV.rr_production_speed_buildings_factor_loyal }
+	set_variable = { rr_production_speed_buildings_factor_disloyal = PREV.rr_production_speed_buildings_factor_disloyal }
+	set_variable = { rr_land_bunker_effectiveness_factor_loyal = PREV.rr_land_bunker_effectiveness_factor_loyal }
+	set_variable = { rr_land_bunker_effectiveness_factor_disloyal = PREV.rr_land_bunker_effectiveness_factor_disloyal }
+}
+
+ELA = {
+	set_variable = { rr_base_factories_expected = 0.025 }
+}
+
+LOT = {
+	set_variable = { rr_base_factories_expected = 0.015 }
 }
 
 # General Staff vars
@@ -203,7 +221,7 @@ add_to_faction = GER
 add_to_faction = AUS
 
 # Alsace-Lorraine Unintegrated
-# Elass
+# Elsass
 2 = {
 	start_resistance = yes
 	set_compliance = 20

@@ -78,6 +78,8 @@ opinion_modifiers = {
 	FRA_serbian_royal_visit = { value = 20 }
 	serbian_royal_visit_negative = { value = -10 }
 
+	opinion_FRA_revanche = { value = -50 }
+
 	serbia_seeks_entente_membership = { value = 30 }
 
 	MNT_betrayed_by_serbia = { value = -50 }
@@ -123,4 +125,16 @@ opinion_modifiers = {
 		value = -30
 		decay = -0.5
 	}
+
+	opinion_GER_dutch_wind_tunnel = {
+		value = 30
+		decay = -0.5
+	}
+
+	opinion_GER_dutch_wind_tunnel_trade = {
+		trade = yes
+		value = 100
+	}
+
+	opinion_GER_bismarckian_containment = { value = -20 }
 }

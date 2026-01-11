@@ -1,13 +1,25 @@
 ﻿l_english:
-  when_recruited_tt: "§YEffects when recruited:§!"
-  if_we_accept_tt: "\n§YEffects if we accept:§!"
-  zabern_if_we_side_with_army_tt: "\n§YEffects if we side with the officers:§!"
-  zabern_if_we_side_with_citizens_tt: "\n§YEffects if we side with the citizens:§!"
   wwi_newline_tt: "  " # Required as newline_tt in vanilla doesn't seem to work.
   indent_tt: "\t"
+  when_recruited_tt: "§YEffects when recruited:§!"
+  if_we_accept_tt: "\n§YEffects if we accept:§!"
+  join_prev_faction_faction_tt: "Join the §Y[PREV.GetAdjective]§! faction." # Works even if the faction hasn't been created yet. PREV must be the faction creator.
   leader_target_assassinated_tt: "[?FROM.SER_assassination_target_leader.GetName] is assassinated."
   gain_control_of_border_states_tt: "§YWe gain control of all bordering states.§!"
-  join_prev_faction_faction_tt: "Join the §Y[PREV.GetAdjective]§! faction." # Works even if the faction hasn't been created yet. PREV must be the faction creator.
+  when_complete_tt: "§YWhen completed:§!"
+
+  # GER
+  zabern_if_we_side_with_army_tt: "\n§YEffects if we side with the officers:§!"
+  zabern_if_we_side_with_citizens_tt: "\n§YEffects if we side with the citizens:§!"
+  GER_alsatian_plebiscite_state_may_leave_tt: "If §Y[FROM.GetNameDef]§! becomes §Rdisloyal§!, it will §Rleave§! §Y[GER.GetNameDef]§! in the coming plebiscite."
+  GER_alsatian_plebiscite_state_will_leave_tt: "§Y[FROM.GetNameDef]§! will §Rleave§! §Y[GER.GetNameDef]§! in the coming plebiscite."
+  GER_alsatian_plebiscite_state_will_remain_tt: "§Y[FROM.GetNameDef]§! will §Gremain§! in §Y[GER.GetNameDef]§! in the coming plebiscite."
+  GER_alsatian_plebiscite_split_alsace_lorraine_tt: "§YFederated State§! [ELR.GetNameWithFlag] is temporarily split into [ELA.GetNameWithFlag] and [LOT.GetNameWithFlag]."
+  GER_alsatian_plebiscite_on_complete_tt: "Alsatian §YFederated States§! that are §Rdisloyal§! will be ceded to §Y[FRA.GetName]§!.\n§Y[GER.GetName]§! will lose core on states ceded to §Y[FRA.GetName]§!."
+  GER_alsatian_plebiscite_will_be_ceded_tt: "Will be ceded to §Y[FRA.GetNameDef]§!."
+  GER_alsatian_plebiscite_will_not_ceded_tt: "Will remain §Y[GER.GetAdjective]§!."
+
+  # AUS
   AUS_hungarian_resistance_up_tt: "§RIncreases§! [HUN.GetOldAdjectiveCap] resistance.\n"
   AUS_hungarian_resistance_down_tt: "§GDecreases§! [HUN.GetOldAdjectiveCap] resistance.\n"
   AUS_minority_resistance_up_tt: "§RIncreases§! minority disloyalty.\n"
@@ -59,3 +71,5 @@
   effect_from_became_great_power_tt: "[FROM.GetAdjective] influence overseas will be known as [?FROM.leader_of_alignment.GetTokenLocalizedKey]."
   remove_scientist_tt: "§RRemove§! as a §YScientist§!:"
   remove_scientist_one_line_tt: "$remove_scientist_tt$ §Y$CHARACTER$§!"
+  effect_GER_add_federal_state_tt: "§Y$STATE$§! will become a §YFederal State§!."
+  effect_GER_remove_federal_state_tt: "§Y$STATE$§! will no longer be a §YFederal State§!."

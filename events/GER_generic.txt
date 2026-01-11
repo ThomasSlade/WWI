@@ -1,52 +1,3 @@
-add_namespace = event_GER_debug_schlieffen
-
-country_event = {
-	id = event_GER_debug_schlieffen.1
-	title = event_GER_debug_schlieffen.1.t
-	desc = event_GER_debug_schlieffen.1.d
-	picture = GFX_report_event_german_speech
-
-	fire_only_once = yes
-
-	trigger = {
-		original_tag = GER
-		has_war_with = FRA
-	}
-
-	mean_time_to_happen = {days = 1 }
-
-	immediate = {
-		log = "([THIS.GetName] event) Debug giving Germany schlieffen wargoals."
-	}
-
-	option = {
-		name = event_GER_debug_schlieffen.1.a
-		GER = {
-			create_wargoal = {
-				target = BEL
-				type = puppet_wargoal_focus
-			}
-
-			create_wargoal = {
-				target = LUX
-				type = annex_everything
-			}
-
-			add_ai_strategy = {
-				type = declare_war
-				id = BEL
-				value = 500
-			}
-
-			add_ai_strategy = {
-				type = declare_war
-				id = LUX
-				value = 500
-			}
-		}
-	}
-}
-
 add_namespace = event_GER_zabern_affair
 
 country_event = {
@@ -155,7 +106,15 @@ add_namespace = event_GER_reserve_rights
 country_event = {
 	id = event_GER_reserve_rights.1
 	title = event_GER_reserve_rights.1.t
-	desc = event_GER_reserve_rights.1.d
+	desc = {
+		text = event_GER_reserve_rights.1.d_alsatian_plebiscite
+		trigger = {
+			FROM = { trigger_GER_is_undergoing_alsatian_plebiscite = yes }
+		}
+	}
+	desc = {
+		text = event_GER_reserve_rights.1.d
+	}
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
@@ -165,10 +124,27 @@ country_event = {
 	}
 
 	option = {
-		name = event_GER_reserve_rights.1.a
+		name = event_GER_reserve_rights.1.a_alsatian_plebiscite
+		trigger = {
+			FROM = { trigger_GER_is_undergoing_alsatian_plebiscite = yes }
+		}
 
 		effect_tooltip = {
-			set_temp_variable = { param_state = event_target:federated_state }
+			set_temp_variable = { param_state = FROM }
+			effect_GER_set_state_disloyal = yes
+		}
+
+		custom_effect_tooltip = GER_alsatian_plebiscite_state_will_leave_tt
+	}
+
+	option = {
+		name = event_GER_reserve_rights.1.a
+		trigger = {
+			FROM = { trigger_GER_is_undergoing_alsatian_plebiscite = no }
+		}
+
+		effect_tooltip = {
+			set_temp_variable = { param_state = FROM }
 			effect_GER_set_state_disloyal = yes
 		}
 	}
@@ -177,7 +153,15 @@ country_event = {
 country_event = {
 	id = event_GER_reserve_rights.2
 	title = event_GER_reserve_rights.2.t
-	desc = event_GER_reserve_rights.2.d
+	desc = {
+		text = event_GER_reserve_rights.2.d_alsatian_plebiscite
+		trigger = {
+			FROM = { trigger_GER_is_undergoing_alsatian_plebiscite = yes }
+		}
+	}
+	desc = {
+		text = event_GER_reserve_rights.2.d
+	}
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
@@ -187,20 +171,44 @@ country_event = {
 	}
 
 	option = {
-		name = event_GER_reserve_rights.2.a
+		name = event_GER_reserve_rights.2.a_alsatian_plebiscite
+		trigger = {
+			FROM = { trigger_GER_is_undergoing_alsatian_plebiscite = yes }
+		}
 
 		effect_tooltip = {
-			set_temp_variable = { param_state = event_target:federated_state }
+			set_temp_variable = { param_state = FROM }
+			effect_GER_set_state_loyal = yes
+		}
+
+		custom_effect_tooltip = GER_alsatian_plebiscite_state_will_remain_tt
+	}
+
+	option = {
+		name = event_GER_reserve_rights.2.a
+		trigger = {
+			FROM = { trigger_GER_is_undergoing_alsatian_plebiscite = no }
+		}
+
+		effect_tooltip = {
+			set_temp_variable = { param_state = FROM }
 			effect_GER_set_state_loyal = yes
 		}
 	}
 }
 
-
 country_event = {
 	id = event_GER_reserve_rights.3
 	title = event_GER_reserve_rights.3.t
-	desc = event_GER_reserve_rights.3.d
+	desc = {
+		text = event_GER_reserve_rights.3.d_alsatian_plebiscite
+		trigger = {
+			FROM = { trigger_GER_is_undergoing_alsatian_plebiscite = yes }
+		}
+	}
+	desc = {
+		text = event_GER_reserve_rights.3.d
+	}
 	picture = GFX_report_event_german_speech
 
 	is_triggered_only = yes
@@ -210,6 +218,292 @@ country_event = {
 	}
 
 	option = {
+		name = event_GER_reserve_rights.3.a_alsatian_plebiscite
+		trigger = {
+			FROM = { trigger_GER_is_undergoing_alsatian_plebiscite = yes }
+		}
+
+		custom_effect_tooltip = GER_alsatian_plebiscite_state_may_leave_tt
+	}
+
+	option = {
 		name = event_GER_reserve_rights.3.a
+		trigger = {
+			FROM = { trigger_GER_is_undergoing_alsatian_plebiscite = no }
+		}
+	}
+}
+
+# These hidden launcher events are needed so that I can get the FROM scope in the events they launch to be the German Federal State itself.
+country_event = {
+	id = event_GER_reserve_rights.4
+	title = event_GER_reserve_rights.4.t
+	desc = event_GER_reserve_rights.4.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Hidden launcher for event_GER_reserve_rights.1"
+		GER = { country_event = { id = event_GER_reserve_rights.1 } }
+	}
+}
+
+country_event = {
+	id = event_GER_reserve_rights.5
+	title = event_GER_reserve_rights.5.t
+	desc = event_GER_reserve_rights.5.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Hidden launcher for event_GER_reserve_rights.2"
+		GER = { country_event = { id = event_GER_reserve_rights.2 } }
+	}
+}
+
+country_event = {
+	id = event_GER_reserve_rights.6
+	title = event_GER_reserve_rights.6.t
+	desc = event_GER_reserve_rights.6.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Hidden launcher for event_GER_reserve_rights.3"
+		GER = { country_event = { id = event_GER_reserve_rights.3 } }
+	}
+}
+
+add_namespace = event_GER_schlieffen_plan
+
+country_event = {
+	id = event_GER_schlieffen_plan.1
+	title = event_GER_schlieffen_plan.1.t
+	desc = {
+		text = event_GER_schlieffen_plan.1.d_france
+		trigger = { has_war_with = FRA }
+	}
+	desc = {
+		text = event_GER_schlieffen_plan.1.d_generic
+		trigger = { NOT = { has_war_with = FRA } }
+	}
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Telling Germany they can do the Schlieffen Plan now."
+	}
+
+	# Invade all the targets
+	# Ensure these effects stay in sync with the 'modifier_GER_schlieffen_plan_tt' tooltip.
+	option = {
+		name = event_GER_schlieffen_plan.1.a_france
+		trigger = { has_war_with = FRA }
+		ai_chance = { base = 100 }
+
+		effect_GER_schlieffen_wargoals = yes
+
+		declare_war_on = {
+			target = BEL
+			type = puppet_wargoal_focus
+		}
+
+		declare_war_on = {
+			target = LUX
+			type = annex_everything
+		}
+
+		if = {
+			limit = { has_completed_focus = GER_schlieffen_unaltered }
+			declare_war_on = {
+				target = HOL
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+
+	option = {
+		name = event_GER_schlieffen_plan.1.a_generic
+		trigger = { NOT = { has_war_with = FRA } }
+		ai_chance = { base = 100 }
+
+		effect_GER_schlieffen_wargoals = yes
+
+		declare_war_on = {
+			target = BEL
+			type = puppet_wargoal_focus
+		}
+
+		declare_war_on = {
+			target = LUX
+			type = annex_everything
+		}
+
+		if = {
+			limit = { has_completed_focus = GER_schlieffen_unaltered }
+			declare_war_on = {
+				target = HOL
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+
+	# Invade the LUX and BEL but not HOL
+	option = {
+		name = event_GER_schlieffen_plan.1.b
+		trigger = { has_completed_focus = GER_schlieffen_unaltered }
+		ai_chance = { base = 0 }
+
+		effect_GER_schlieffen_wargoals = yes
+
+		declare_war_on = {
+			target = BEL
+			type = puppet_wargoal_focus
+		}
+
+		declare_war_on = {
+			target = LUX
+			type = annex_everything
+		}
+	}
+
+	# Don't invade
+	option = {
+		name = event_GER_schlieffen_plan.1.c
+		ai_chance = { base = 0 }
+
+		effect_GER_schlieffen_wargoals = yes
+	}
+}
+
+add_namespace = event_GER_alsace_plebiscite
+
+country_event = {
+	id = event_GER_alsace_plebiscite.1
+	title = event_GER_alsace_plebiscite.1.t
+	desc = {
+		text = event_GER_alsace_plebiscite.1.d_france
+		trigger = { original_tag = FRA }
+	}
+	desc = event_GER_alsace_plebiscite.1.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Germany begins the Alsace-Lorraine plebiscite."
+	}
+
+	option = {
+		name = event_GER_alsace_plebiscite.1.a_france
+		trigger = { original_tag = FRA }
+
+		effect_GER_alsatian_plebiscite_tt = yes
+	}
+
+	option = {
+		name = event_GER_alsace_plebiscite.1.a
+		trigger = { NOT = { original_tag = FRA } }
+
+		effect_GER_alsatian_plebiscite_tt = yes
+	}
+}
+
+news_event = {
+	id = event_GER_alsace_plebiscite.2
+	title = {
+		text = event_GER_alsace_plebiscite.2.t
+		trigger = { check_variable = { global.alsatian_plebiscite_result = 1 } }
+	}
+	title = {
+		text = event_GER_alsace_plebiscite.2.t_partial
+		trigger = { check_variable = { global.alsatian_plebiscite_result = 2 } }
+	}
+	title = {
+		text = event_GER_alsace_plebiscite.2.t_french
+		trigger = { check_variable = { global.alsatian_plebiscite_result = 3 } }
+	}
+	desc = {
+		text = event_GER_alsace_plebiscite.2.d
+		trigger = { check_variable = { global.alsatian_plebiscite_result = 1 } }
+	}
+	desc = {
+		text = event_GER_alsace_plebiscite.2.d_partial
+		trigger = { check_variable = { global.alsatian_plebiscite_result = 2 } }
+	}
+	desc = {
+		text = event_GER_alsace_plebiscite.2.d_french
+		trigger = { check_variable = { global.alsatian_plebiscite_result = 3 } }
+	}
+	picture = GFX_news_event_british_trench
+
+	is_triggered_only = yes
+	major = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Concluding the Alsace-Lorraine plebiscite."
+	}
+
+	option = {
+		name = event_GER_alsace_plebiscite.2.a
+		trigger = {
+			NOT = { original_tag = FRA }
+			NOT = { original_tag = GER }
+		}
+	}
+
+	option = {
+		name = event_GER_alsace_plebiscite.2.a_germany
+		trigger = {
+			original_tag = GER
+			check_variable = { global.alsatian_plebiscite_result = 1 }
+		}
+	}
+
+	option = {
+		name = event_GER_alsace_plebiscite.2.a_france
+		trigger = {
+			original_tag = FRA
+			check_variable = { global.alsatian_plebiscite_result = 1 }
+		}
+	}
+
+	option = {
+		name = event_GER_alsace_plebiscite.2.a_partial_germany
+		trigger = {
+			original_tag = GER
+			check_variable = { global.alsatian_plebiscite_result = 2 }
+		}
+	}
+
+	option = {
+		name = event_GER_alsace_plebiscite.2.a_partial_france
+		trigger = {
+			original_tag = FRA
+			check_variable = { global.alsatian_plebiscite_result = 2 }
+		}
+	}
+
+	option = {
+		name = event_GER_alsace_plebiscite.2.a_french_germany
+		trigger = {
+			original_tag = GER
+			check_variable = { global.alsatian_plebiscite_result = 3 }
+		}
+	}
+
+	option = {
+		name = event_GER_alsace_plebiscite.2.a_french_france
+		trigger = {
+			original_tag = FRA
+			check_variable = { global.alsatian_plebiscite_result = 3 }
+		}
 	}
 }

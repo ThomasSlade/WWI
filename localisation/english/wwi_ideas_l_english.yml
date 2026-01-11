@@ -25,6 +25,7 @@
   idea_GER_military_travel_plan_primer: "Military Travel Plan (Inactive)"
   idea_GER_military_travel_plan: "Military Travel Plan (Active)"
   idea_GER_military_travel_plan_primer_tt: "Enabled for §Y365 days§! when [THIS.GetName] enters a war§!"
+  idea_GER_schlieffen_plan: "The Schlieffen Plan"
 
   # Austria
   AUS_hungarian_resistance_0: "Hungary Satisfied"

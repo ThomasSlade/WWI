@@ -12,7 +12,7 @@
 			# Braunschweig Class
 			ship = { name = "Braunschweig" definition = pre_dreadnought_wwi equipment = { ship_hull_pre_dreadnought_wwi_1 = { amount = 1 owner = ENG version_name = "Braunschweig Class" } } }
 			# Braunschweig Class
-			ship = { name = "Elass" definition = pre_dreadnought_wwi equipment = { ship_hull_pre_dreadnought_wwi_1 = { amount = 1 owner = ENG version_name = "Braunschweig Class" } } }
+			ship = { name = "Elsass" definition = pre_dreadnought_wwi equipment = { ship_hull_pre_dreadnought_wwi_1 = { amount = 1 owner = ENG version_name = "Braunschweig Class" } } }
 			# Braunschweig Class
 			ship = { name = "Hessen" definition = pre_dreadnought_wwi equipment = { ship_hull_pre_dreadnought_wwi_1 = { amount = 1 owner = ENG version_name = "Braunschweig Class" } } }
 			# Braunschweig Class

@@ -1,0 +1,311 @@
+# param_state: The tag of the state to add
+effect_GER_add_federal_state = {
+	custom_effect_tooltip = 
+	{
+		localization_key = effect_GER_add_federal_state_tt
+		STATE = "[?param_state.GetName]"
+	}
+
+	if = {
+		limit = { NOT = { is_in_array = { rr_countries = var:param_state } } }
+		add_to_array = { rr_countries = var:param_state }
+	}
+}
+
+# param_state: The tag of the state to remove
+effect_GER_remove_federal_state = {
+	custom_effect_tooltip = 
+	{
+		localization_key = effect_GER_remove_federal_state_tt
+		STATE = "[?param_state.GetName]"
+	}
+	if = {
+		limit = { is_in_array = { rr_countries = var:param_state } }
+
+		effect_GER_clear_state_loyalty = yes
+		effect_GER_clear_state_disloyalty = yes
+
+		remove_from_array = { rr_countries = var:param_state }
+		var:param_state = {
+			clear_variable = rr_loyalty
+		}
+	}
+}
+
+effect_GER_init_staatenbund_industry_share = {
+	set_temp_variable = { param_state = BAY }
+	effect_GER_add_federal_state = yes
+	set_temp_variable = { param_state = WUR }
+	effect_GER_add_federal_state = yes
+	set_temp_variable = { param_state = BAD }
+	effect_GER_add_federal_state = yes
+	set_temp_variable = { param_state = SAX }
+	effect_GER_add_federal_state = yes
+	set_temp_variable = { param_state = HNS }
+	effect_GER_add_federal_state = yes
+
+	for_each_scope_loop = {
+		array = rr_countries
+
+		set_variable = { rr_factories = 0 }
+		set_variable = { rr_factories_expected = rr_base_factories_expected }
+		set_variable = { rr_cores_we_occupy_factor = 1 }
+
+		set_variable = { rr_factories_expected_warning_threshold = rr_factories_expected }
+		add_to_variable = { rr_factories_expected_warning_threshold = 0.005 }
+		
+		set_temp_variable = { param_state = THIS }
+		effect_GER_set_state_disloyal = yes
+	}
+
+	effect_GER_update_staatenbund_industry_share = yes
+}
+
+effect_GER_update_staatenbund_industry_share = {
+	set_variable = { core_factories = 0 }
+
+	for_each_scope_loop = {
+		array = core_states
+
+		add_to_variable = { PREV.core_factories = building_level@industrial_complex }
+		add_to_variable = { PREV.core_factories = building_level@arms_factory }
+	}
+
+	for_each_scope_loop = {
+		array = rr_countries
+
+		set_variable = { rr_factories = 0 }
+		set_variable = { rr_factories_expected = rr_base_factories_expected }
+		set_variable = { rr_cores_we_occupy_factor = 1 }
+
+		set_temp_variable = { rr_country_cores = core_states^num }
+		set_temp_variable = { rr_country_cores_we_occupy = 0 }
+
+		for_each_scope_loop = {
+			array = core_states
+
+			if = {
+				limit = { is_controlled_by = PREV.PREV }
+
+				add_to_temp_variable = { rr_country_cores_we_occupy = 1 }
+
+				add_to_variable = { PREV.rr_factories = building_level@industrial_complex }
+				add_to_variable = { PREV.rr_factories = building_level@arms_factory }
+			}
+		}
+
+		set_variable = { rr_cores_we_occupy_factor = rr_country_cores_we_occupy }
+		divide_variable = { rr_cores_we_occupy_factor = rr_country_cores }
+
+		multiply_variable = { rr_factories_expected = rr_cores_we_occupy_factor }
+	}
+
+	for_each_scope_loop = {
+		array = rr_countries
+
+		set_variable = { rr_factories_percentage = rr_factories }
+		divide_variable = { rr_factories_percentage = PREV.core_factories }
+	}
+
+	for_each_scope_loop = {
+		array = rr_countries
+
+		if = {
+			limit = {
+				check_variable = { rr_cores_we_occupy_factor = 0 }
+			}
+
+			if = {
+				limit = {
+					trigger_GER_rr_is_disabled = no
+				}
+
+				set_temp_variable = { param_state = THIS }
+				PREV = { effect_GER_clear_state_loyalty = yes }
+				PREV = { effect_GER_clear_state_disloyalty = yes }
+
+				set_variable = { rr_loyalty = 4 }
+			}
+		}
+		else_if = {
+			# Below expected value
+			limit = {
+				check_variable = { rr_factories_percentage < rr_factories_expected }
+			}
+
+			if = {
+				limit = {
+					trigger_GER_rr_is_disloyal = no
+				}
+
+				set_temp_variable = { param_state = THIS }
+				PREV = { effect_GER_set_state_disloyal = yes }
+
+				if = {
+					limit = { trigger_GER_rr_is_disabled = no }
+					# Note that unlike with other events, we warn the player about this even if this is the first time the state is being evaluated.
+					# We also don't fire it if the state was previously disabled, but now isn't, as this might cause some event spam as a state changes hands a lot.
+					country_event = { id = event_GER_reserve_rights.4 }
+				}
+
+				set_variable = { rr_loyalty = 1 }
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					trigger_GER_rr_is_loyal = no
+				}
+
+				set_temp_variable = { param_state = THIS }
+				PREV = { effect_GER_set_state_loyal = yes }
+			}
+
+			if = {
+				# Above expected value but below warning threshold
+				limit = {
+					check_variable = { rr_factories_percentage < rr_factories_expected_warning_threshold }
+				}
+
+				if = {
+					limit = {
+						check_variable = { rr_loyalty = 3 }
+					}
+					# Warn player
+					if = {
+						limit = { has_variable = rr_loyalty }
+						country_event = { id = event_GER_reserve_rights.6 }
+					}
+				}
+				else_if = {
+					limit = {
+						trigger_GER_rr_is_disloyal = yes
+					}
+
+					if = {
+						limit = { has_variable = rr_loyalty }
+						country_event = { id = event_GER_reserve_rights.5 }
+					}
+				}
+
+				set_variable = { rr_loyalty = 2 }
+			}
+			else = {
+				# Above expected value and warning threshold
+				if = {
+					limit = {
+						trigger_GER_rr_is_disloyal = yes
+					}
+
+					if = {
+						limit = { has_variable = rr_loyalty }
+						country_event = { id = event_GER_reserve_rights.5 }
+					}
+				}
+
+				set_variable = { rr_loyalty = 3 }
+			}
+		}
+	}
+}
+
+# It's necessary to remove and re-add this modifier whenever a loyalty modifier is removed and re-added, because it seems the modifiers
+# get evaluated in order of addition, and the staatenbund needs to be evaluated after all the loyalty modifiers which it depends on.
+effect_GER_refresh_staatenbund_modifier = {
+	hidden_effect = {
+		remove_dynamic_modifier = { modifier = modifier_GER_staatenbund }
+		add_dynamic_modifier = { modifier = modifier_GER_staatenbund }
+	}
+}
+
+# param_state: The federated state tag.
+# THIS must be Germany.
+effect_GER_clear_state_loyalty = {
+	var:param_state = {
+		meta_effect = {
+			TAG = "[THIS.GetTag]"
+			text = {
+				every_core_state = {
+					remove_dynamic_modifier = { modifier = modifier_GER_[TAG]_loyal_reserve_rights }
+				}
+
+				PREV = {
+					remove_dynamic_modifier = { modifier = modifier_GER_[TAG]_loyal }
+				}
+			}
+		}
+	}
+}
+
+# param_state: The federated state tag.
+# THIS must be Germany.
+effect_GER_clear_state_disloyalty = {
+	var:param_state = {
+		meta_effect = {
+			TAG = "[THIS.GetTag]"
+			text = {
+				every_core_state = {
+					remove_dynamic_modifier = { modifier = modifier_GER_[TAG]_disloyal_reserve_rights }
+				}
+
+				PREV = {
+					remove_dynamic_modifier = { modifier = modifier_GER_[TAG]_disloyal }
+				}
+			}
+		}
+	}
+}
+
+# param_state: The federated state tag.
+# THIS must be Germany.
+effect_GER_set_state_loyal = {
+	effect_GER_clear_state_disloyalty = yes
+
+	var:param_state = {
+		meta_effect = {
+			TAG = "[THIS.GetTag]"
+			text = {
+				every_core_state = {
+					custom_effect_tooltip = wwi_newline_tt
+
+					add_dynamic_modifier = {
+						modifier = modifier_GER_[TAG]_loyal_reserve_rights
+					}
+				}
+
+				PREV = {
+					add_dynamic_modifier = { modifier = modifier_GER_[TAG]_loyal scope = GER }
+				}
+			}
+		}
+	}
+
+	effect_GER_refresh_staatenbund_modifier = yes
+}
+
+# param_state: The federated state tag.
+# THIS must be Germany.
+effect_GER_set_state_disloyal = {
+	effect_GER_clear_state_loyalty = yes
+
+	var:param_state = {
+		meta_effect = {
+			TAG = "[THIS.GetTag]"
+			text = {
+				every_core_state = {
+					custom_effect_tooltip = wwi_newline_tt
+
+					add_dynamic_modifier = {
+						modifier = modifier_GER_[TAG]_disloyal_reserve_rights
+					}
+				}
+
+				PREV = {
+					add_dynamic_modifier = { modifier = modifier_GER_[TAG]_disloyal }
+				}
+			}
+		}
+	}
+
+	effect_GER_refresh_staatenbund_modifier = yes
+}

@@ -120,6 +120,10 @@ ELA = {
 	color = rgb { 135 103 118 }
 	color_ui = rgb { 135 103 118 }
 }
+LOT = {
+	color = rgb { 194 155 116 }
+	color_ui = rgb { 194 155 116 }
+}
 BAY = {
 	color = rgb { 50 84 117 }
 	color_ui = rgb { 50 84 117 }

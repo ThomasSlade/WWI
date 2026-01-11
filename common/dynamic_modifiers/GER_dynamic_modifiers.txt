@@ -42,13 +42,25 @@ modifier_GER_staatenbund = {
 
 	custom_modifier_tooltip = modifier_GER_staatenbund_loyalty
 
-	max_planning = staatenbund_max_planning
-	production_factory_max_efficiency_factor = staatenbund_production_factory_max_efficiency_factor
-	production_speed_buildings_factor = staatenbund_production_speed_buildings_factor
-	industrial_capacity_dockyard = staatenbund_industrial_capacity_dockyard
-	boost_party_strength_factor = staatenbund_boost_party_strength_factor
+	consumer_goods_factor = GER.modifier@staatenbund_consumer_goods_factor
+	max_planning = GER.modifier@staatenbund_max_planning
+	production_factory_max_efficiency_factor = GER.modifier@staatenbund_production_factory_max_efficiency_factor
+	production_speed_buildings_factor = GER.modifier@staatenbund_production_speed_buildings_factor
+	industrial_capacity_dockyard = GER.modifier@staatenbund_industrial_capacity_dockyard
+	boost_party_strength_factor = GER.modifier@staatenbund_boost_party_strength_factor
+	land_bunker_effectiveness_factor = GER.modifier@staatenbund_land_bunker_effectiveness_factor
+}
 
-	consumer_goods_factor = staatenbund_consumer_goods_factor
+modifier_GER_BAY_loyal = {
+	staatenbund_consumer_goods_factor = rr_consumer_goods_factor_loyal
+	staatenbund_max_planning = 0.05
+	staatenbund_boost_party_strength_factor = rr_boost_party_strength_factor_loyal
+}
+
+modifier_GER_BAY_disloyal = {
+	staatenbund_consumer_goods_factor = rr_consumer_goods_factor_disloyal
+	staatenbund_max_planning = rr_max_planning_disloyal
+	staatenbund_boost_party_strength_factor = rr_boost_party_strength_factor_disloyal
 }
 
 modifier_GER_BAY_loyal_reserve_rights = {
@@ -57,9 +69,6 @@ modifier_GER_BAY_loyal_reserve_rights = {
 	local_resources = GER.staatenbund_local_resources_factor_loyal
 	local_supplies = GER.staatenbund_local_supply_loyal
 	recruitable_population = GER.staatenbund_local_manpower_loyal
-
-	custom_modifier_tooltip = rr_consumer_goods_factor_loyal_tt
-	custom_modifier_tooltip = rr_max_planning_loyal_tt
 
 	enable = {
 		controller = { original_tag = GER }
@@ -73,12 +82,21 @@ modifier_GER_BAY_disloyal_reserve_rights = {
 	local_supplies = GER.staatenbund_local_supply_disloyal
 	recruitable_population = GER.staatenbund_local_manpower_disloyal
 
-	custom_modifier_tooltip = rr_consumer_goods_factor_disloyal_tt
-	custom_modifier_tooltip = rr_max_planning_disloyal_tt
-
 	enable = {
 		controller = { original_tag = GER }
 	}
+}
+
+modifier_GER_WUR_loyal = {
+	staatenbund_consumer_goods_factor = rr_consumer_goods_factor_loyal
+	staatenbund_max_planning = rr_max_planning_loyal
+	staatenbund_production_factory_max_efficiency_factor = rr_production_factory_max_efficiency_factor_loyal
+}
+
+modifier_GER_WUR_disloyal = {
+	staatenbund_consumer_goods_factor = rr_consumer_goods_factor_disloyal
+	staatenbund_max_planning = rr_max_planning_disloyal
+	staatenbund_production_factory_max_efficiency_factor = rr_production_factory_max_efficiency_factor_disloyal
 }
 
 modifier_GER_WUR_loyal_reserve_rights = {
@@ -87,10 +105,6 @@ modifier_GER_WUR_loyal_reserve_rights = {
 	local_resources = GER.staatenbund_local_resources_factor_loyal
 	local_supplies = GER.staatenbund_local_supply_loyal
 	recruitable_population = GER.staatenbund_local_manpower_loyal
-
-	custom_modifier_tooltip = rr_consumer_goods_factor_loyal_tt
-	custom_modifier_tooltip = rr_max_planning_loyal_tt
-	custom_modifier_tooltip = rr_production_factory_max_efficiency_factor_loyal_tt
 
 	enable = {
 		controller = { original_tag = GER }
@@ -104,13 +118,21 @@ modifier_GER_WUR_disloyal_reserve_rights = {
 	local_supplies = GER.staatenbund_local_supply_disloyal
 	recruitable_population = GER.staatenbund_local_manpower_disloyal
 
-	custom_modifier_tooltip = rr_consumer_goods_factor_disloyal_tt
-	custom_modifier_tooltip = rr_max_planning_disloyal_tt
-	custom_modifier_tooltip = rr_production_factory_max_efficiency_factor_disloyal_tt
-
 	enable = {
 		controller = { original_tag = GER }
 	}
+}
+
+modifier_GER_BAD_loyal = {
+	staatenbund_consumer_goods_factor = rr_consumer_goods_factor_loyal
+	staatenbund_boost_party_strength_factor = rr_boost_party_strength_factor_loyal
+	staatenbund_production_speed_buildings_factor = rr_production_speed_buildings_factor_loyal
+}
+
+modifier_GER_BAD_disloyal = {
+	staatenbund_consumer_goods_factor = rr_consumer_goods_factor_disloyal
+	staatenbund_boost_party_strength_factor = rr_boost_party_strength_factor_disloyal
+	staatenbund_production_speed_buildings_factor = rr_production_speed_buildings_factor_disloyal
 }
 
 modifier_GER_BAD_loyal_reserve_rights = {
@@ -119,10 +141,6 @@ modifier_GER_BAD_loyal_reserve_rights = {
 	local_resources = GER.staatenbund_local_resources_factor_loyal
 	local_supplies = GER.staatenbund_local_supply_loyal
 	recruitable_population = GER.staatenbund_local_manpower_loyal
-
-	custom_modifier_tooltip = rr_consumer_goods_factor_loyal_tt
-	custom_modifier_tooltip = rr_german_scope_dummy_tt
-	custom_modifier_tooltip = rr_production_speed_buildings_factor_loyal_tt
 
 	enable = {
 		controller = { original_tag = GER }
@@ -136,13 +154,21 @@ modifier_GER_BAD_disloyal_reserve_rights = {
 	local_supplies = GER.staatenbund_local_supply_disloyal
 	recruitable_population = GER.staatenbund_local_manpower_disloyal
 
-	custom_modifier_tooltip = rr_consumer_goods_factor_disloyal_tt
-	custom_modifier_tooltip = rr_german_scope_dummy_tt
-	custom_modifier_tooltip = rr_production_speed_buildings_factor_disloyal_tt
-
 	enable = {
 		controller = { original_tag = GER }
 	}
+}
+
+modifier_GER_SAX_loyal = {
+	staatenbund_consumer_goods_factor = rr_consumer_goods_factor_loyal
+	staatenbund_production_factory_max_efficiency_factor = rr_production_factory_max_efficiency_factor_loyal
+	staatenbund_production_speed_buildings_factor = rr_production_speed_buildings_factor_loyal
+}
+
+modifier_GER_SAX_disloyal = {
+	staatenbund_consumer_goods_factor = rr_consumer_goods_factor_disloyal
+	staatenbund_production_factory_max_efficiency_factor = rr_production_factory_max_efficiency_factor_disloyal
+	staatenbund_production_speed_buildings_factor = rr_production_speed_buildings_factor_disloyal
 }
 
 modifier_GER_SAX_loyal_reserve_rights = {
@@ -151,10 +177,6 @@ modifier_GER_SAX_loyal_reserve_rights = {
 	local_resources = GER.staatenbund_local_resources_factor_loyal
 	local_supplies = GER.staatenbund_local_supply_loyal
 	recruitable_population = GER.staatenbund_local_manpower_loyal
-
-	custom_modifier_tooltip = rr_consumer_goods_factor_loyal_tt
-	custom_modifier_tooltip = rr_production_factory_max_efficiency_factor_loyal_tt
-	custom_modifier_tooltip = rr_production_speed_buildings_factor_loyal_tt
 
 	enable = {
 		controller = { original_tag = GER }
@@ -168,13 +190,19 @@ modifier_GER_SAX_disloyal_reserve_rights = {
 	local_supplies = GER.staatenbund_local_supply_disloyal
 	recruitable_population = GER.staatenbund_local_manpower_disloyal
 
-	custom_modifier_tooltip = rr_consumer_goods_factor_disloyal_tt
-	custom_modifier_tooltip = rr_production_factory_max_efficiency_factor_disloyal_tt
-	custom_modifier_tooltip = rr_production_speed_buildings_factor_disloyal_tt
-
 	enable = {
 		controller = { original_tag = GER }
 	}
+}
+
+modifier_GER_HNS_loyal = {
+	staatenbund_consumer_goods_factor = rr_consumer_goods_factor_loyal
+	staatenbund_cindustrial_capacity_dockyard = rr_industrial_capacity_dockyard_loyal
+}
+
+modifier_GER_HNS_disloyal = {
+	staatenbund_consumer_goods_factor = rr_consumer_goods_factor_disloyal
+	staatenbund_cindustrial_capacity_dockyard = rr_industrial_capacity_dockyard_disloyal
 }
 
 modifier_GER_HNS_loyal_reserve_rights = {
@@ -183,10 +211,6 @@ modifier_GER_HNS_loyal_reserve_rights = {
 	local_resources = GER.staatenbund_local_resources_factor_loyal
 	local_supplies = GER.staatenbund_local_supply_loyal
 	recruitable_population = GER.staatenbund_local_manpower_loyal
-
-	custom_modifier_tooltip = rr_consumer_goods_factor_loyal_tt
-	custom_modifier_tooltip = rr_german_scope_dummy_tt
-	custom_modifier_tooltip = rr_industrial_capacity_dockyard_loyal_tt
 
 	enable = {
 		controller = { original_tag = GER }
@@ -200,9 +224,85 @@ modifier_GER_HNS_disloyal_reserve_rights = {
 	local_supplies = GER.staatenbund_local_supply_disloyal
 	recruitable_population = GER.staatenbund_local_manpower_disloyal
 
-	custom_modifier_tooltip = rr_consumer_goods_factor_disloyal_tt
-	custom_modifier_tooltip = rr_german_scope_dummy_tt
-	custom_modifier_tooltip = rr_industrial_capacity_dockyard_disloyal_tt
+	enable = {
+		controller = { original_tag = GER }
+	}
+}
+
+modifier_GER_ELR_loyal = {
+	staatenbund_consumer_goods_factor = rr_consumer_goods_factor_loyal
+	staatenbund_production_speed_buildings_factor = rr_production_speed_buildings_factor_loyal
+	staatenbund_land_bunker_effectiveness_factor = rr_land_bunker_effectiveness_factor_loyal
+}
+
+modifier_GER_ELR_disloyal = {
+	staatenbund_consumer_goods_factor = rr_consumer_goods_factor_disloyal
+	staatenbund_production_speed_buildings_factor = rr_production_speed_buildings_factor_disloyal
+	staatenbund_land_bunker_effectiveness_factor = rr_land_bunker_effectiveness_factor_disloyal
+}
+
+modifier_GER_ELR_loyal_reserve_rights = {
+	icon = GFX_modifiers_generic_military_industry
+
+	local_resources = GER.staatenbund_local_resources_factor_loyal
+	local_supplies = GER.staatenbund_local_supply_loyal
+	recruitable_population = GER.staatenbund_local_manpower_loyal
+
+	enable = {
+		controller = { original_tag = GER }
+	}
+}
+
+modifier_GER_ELR_disloyal_reserve_rights = {
+	icon = GFX_modifiers_generic_military_industry
+
+	local_resources = GER.staatenbund_local_resources_factor_disloyal
+	local_supplies = GER.staatenbund_local_supply_disloyal
+	recruitable_population = GER.staatenbund_local_manpower_disloyal
+
+	enable = {
+		controller = { original_tag = GER }
+	}
+}
+
+modifier_GER_ELA_loyal = {
+}
+
+modifier_GER_ELA_disloyal = {
+}
+
+modifier_GER_ELA_loyal_reserve_rights = {
+	icon = GFX_modifiers_generic_military_industry
+
+	enable = {
+		controller = { original_tag = GER }
+	}
+}
+
+modifier_GER_ELA_disloyal_reserve_rights = {
+	icon = GFX_modifiers_generic_military_industry
+
+	enable = {
+		controller = { original_tag = GER }
+	}
+}
+
+modifier_GER_LOT_loyal = {
+}
+
+modifier_GER_LOT_disloyal = {
+}
+
+modifier_GER_LOT_loyal_reserve_rights = {
+	icon = GFX_modifiers_generic_military_industry
+
+	enable = {
+		controller = { original_tag = GER }
+	}
+}
+
+modifier_GER_LOT_disloyal_reserve_rights = {
+	icon = GFX_modifiers_generic_military_industry
 
 	enable = {
 		controller = { original_tag = GER }

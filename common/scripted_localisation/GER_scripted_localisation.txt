@@ -25,6 +25,14 @@ defined_text = {
 		trigger = { check_variable = { GER.rr_countries^num = 5 } }
 		localization_key = rr_owned_vs_expected_industry_5_tt
 	}
+	text = {
+		trigger = { check_variable = { GER.rr_countries^num = 6 } }
+		localization_key = rr_owned_vs_expected_industry_6_tt
+	}
+	text = {
+		trigger = { check_variable = { GER.rr_countries^num = 7 } }
+		localization_key = rr_owned_vs_expected_industry_7_tt
+	}
 }
 
 defined_text = {
@@ -32,7 +40,7 @@ defined_text = {
 
 	text = {
 		trigger = {
-			check_variable = { rr_loyalty = 0 }
+			trigger_GER_rr_is_disloyal = yes
 		}
 		localization_key = rr_industry_share_disloyal_tt
 	}
@@ -47,14 +55,22 @@ defined_text = {
 
 	text = {
 		trigger = {
-			check_variable = { rr_loyalty = 0 }
+			trigger_GER_rr_is_disloyal = yes
 		}
 
 		localization_key = rr_consumer_goods_factor_disloyal_tt
 	}
 
 	text = {
+		trigger = {
+			trigger_GER_rr_is_loyal = yes
+		}
+
 		localization_key = rr_consumer_goods_factor_loyal_tt
+	}
+
+	text = {
+		localization_key = rr_no_effect
 	}
 }
 
@@ -64,7 +80,7 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = BAY tag = WUR }
-			check_variable = { rr_loyalty = 0 }
+			trigger_GER_rr_is_disloyal = yes
 		}
 
 		localization_key = rr_max_planning_disloyal_tt
@@ -73,6 +89,7 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = BAY tag = WUR }
+			trigger_GER_rr_is_loyal = yes
 		}
 
 		localization_key = rr_max_planning_loyal_tt
@@ -80,8 +97,8 @@ defined_text = {
 
 	text = {
 		trigger = {
-			OR = { tag = BAD tag = SAX }
-			check_variable = { rr_loyalty = 0 }
+			OR = { tag = BAD tag = SAX tag = ELR }
+			trigger_GER_rr_is_disloyal = yes
 		}
 
 		localization_key = rr_production_speed_buildings_factor_disloyal_tt
@@ -89,7 +106,8 @@ defined_text = {
 
 	text = {
 		trigger = {
-			OR = { tag = BAD tag = SAX }
+			OR = { tag = BAD tag = SAX tag = ELR }
+			trigger_GER_rr_is_loyal = yes
 		}
 
 		localization_key = rr_production_speed_buildings_factor_loyal_tt
@@ -98,7 +116,7 @@ defined_text = {
 	text = {
 		trigger = {
 			tag = HNS
-			check_variable = { rr_loyalty = 0 }
+			trigger_GER_rr_is_disloyal = yes
 		}
 
 		localization_key = rr_industrial_capacity_dockyard_disloyal_tt
@@ -107,9 +125,14 @@ defined_text = {
 	text = {
 		trigger = {
 			tag = HNS
+			trigger_GER_rr_is_loyal = yes
 		}
 
 		localization_key = rr_industrial_capacity_dockyard_loyal_tt
+	}
+
+	text = {
+		localization_key = rr_no_effect
 	}
 }
 
@@ -119,7 +142,7 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = BAY tag = BAD }
-			check_variable = { rr_loyalty = 0 }
+			trigger_GER_rr_is_disloyal = yes
 		}
 
 		localization_key = rr_boost_party_strength_factor_disloyal_tt
@@ -128,6 +151,7 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = BAY tag = BAD }
+			trigger_GER_rr_is_loyal = yes
 		}
 
 		localization_key = rr_boost_party_strength_factor_loyal_tt
@@ -136,7 +160,7 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = WUR tag = SAX }
-			check_variable = { rr_loyalty = 0 }
+			trigger_GER_rr_is_disloyal = yes
 		}
 
 		localization_key = rr_production_factory_max_efficiency_factor_disloyal_tt
@@ -145,9 +169,32 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = WUR tag = SAX }
+			trigger_GER_rr_is_loyal = yes
 		}
 
 		localization_key = rr_production_factory_max_efficiency_factor_loyal_tt
+	}
+
+	text = {
+		trigger = {
+			OR = { tag = ELR }
+			trigger_GER_rr_is_disloyal = yes
+		}
+
+		localization_key = rr_land_bunker_effectiveness_factor_disloyal_tt
+	}
+
+	text = {
+		trigger = {
+			OR = { tag = ELR }
+			trigger_GER_rr_is_loyal = yes
+		}
+
+		localization_key = rr_land_bunker_effectiveness_factor_loyal_tt
+	}
+
+	text = {
+		localization_key = rr_no_effect
 	}
 }
 
@@ -164,13 +211,37 @@ defined_text = {
 
 	text = {
 		trigger = {
-			check_variable = { rr_loyalty = 0 }
+			trigger_GER_rr_is_disloyal = yes
 		}
 
 		localization_key = rr_disloyal
 	}
 
 	text = {
+		trigger = {
+			trigger_GER_rr_is_disabled = yes
+		}
+
+		localization_key = rr_disabled
+	}
+
+	text = {
 		localization_key = rr_loyal
+	}
+}
+
+defined_text = {
+	name = GetSchlieffenEffect
+
+	text = {
+		trigger = {
+			has_completed_focus = GER_schlieffen_unaltered
+		}
+
+		localization_key = modifier_GER_schlieffen_plan_unaltered_tt
+	}
+
+	text = {
+		localization_key = modifier_GER_schlieffen_plan_tt
 	}
 }

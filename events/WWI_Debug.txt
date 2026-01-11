@@ -121,6 +121,8 @@ country_event = {
 			complete_national_focus = AUS_imperial_visit_to_bosnia
 		}
 
-		country_event = { id = event_GER_debug_schlieffen.1 hours = 6 }
+		GER = {
+			complete_national_focus = GER_the_schlieffen_plan
+		}
 	}
 }

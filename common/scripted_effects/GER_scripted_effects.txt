@@ -140,227 +140,183 @@ effect_GER_lose_lancelot_de_mole = {
 	}
 }
 
-effect_GER_init_staatenbund_industry_share = {
-	set_global_flag = rr_initialising
-
-	for_each_scope_loop = {
-		array = rr_countries
-
-		set_variable = { rr_loyalty = 0 }
-		set_variable = { rr_factories = 0 }
-		set_variable = { rr_factories_expected_warning_threshold = rr_factories_expected }
-		add_to_variable = { rr_factories_expected_warning_threshold = 0.005 }
-		
-		set_temp_variable = { param_state = THIS }
-		effect_GER_set_state_disloyal = yes
+effect_GER_schlieffen_wargoals = {
+	create_wargoal = {
+		type = puppet_wargoal_focus
+		target = BEL
 	}
 
-	effect_GER_update_staatenbund_industry_share = yes
-	
-	clr_global_flag = rr_initialising
-}
-
-effect_GER_update_staatenbund_industry_share = {
-	set_variable = { core_factories = 0 }
-
-	for_each_scope_loop = {
-		array = core_states
-
-		add_to_variable = { PREV.core_factories = building_level@industrial_complex }
-		add_to_variable = { PREV.core_factories = building_level@arms_factory }
+	create_wargoal = {
+		type = annex_everything
+		target = LUX
 	}
 
-	for_each_scope_loop = {
-		array = rr_countries
-
-		set_variable = { rr_factories = 0 }
-
-		for_each_scope_loop = {
-			array = core_states
-
-			add_to_variable = { PREV.rr_factories = building_level@industrial_complex }
-			add_to_variable = { PREV.rr_factories = building_level@arms_factory }
+	if = {
+		limit = { has_completed_focus = GER_schlieffen_unaltered }
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = HOL
 		}
 	}
+}
 
-	for_each_scope_loop = {
-		array = rr_countries
+effect_GER_begin_alsatian_plebiscite = {
+	set_temp_variable = { param_state = ELR }
+	effect_GER_remove_federal_state = yes
 
-		set_variable = { rr_factories_percentage = rr_factories }
-		divide_variable = { rr_factories_percentage = PREV.core_factories }
+	if = {
+		limit = { controls_state = 2 }
+		set_temp_variable = { param_state = ELA }
+		effect_GER_add_federal_state = yes
+	}
+	if = {
+		limit = { controls_state = 107 }
+		set_temp_variable = { param_state = LOT }
+		effect_GER_add_federal_state = yes
 	}
 
-	for_each_scope_loop = {
-		array = rr_countries
+	set_global_flag = flag_alsatian_plebiscite_ongoing
+
+	country_event = { id = event_GER_alsace_plebiscite.1 }
+
+	FRA = {
+		country_event = { id = event_GER_alsace_plebiscite.1 }
+	}
+}
+
+effect_GER_end_alsatian_plebiscite = {
+	set_temp_variable = { number_of_states = 0 }
+	set_temp_variable = { number_of_disloyal_states = 0 }
+
+	hidden_effect = {
+		2 = {
+			if = {
+				limit = { is_owned_by = GER }
+				add_to_temp_variable = { number_of_states = 1 }
+			}
+			if = {
+				limit = {
+					check_variable = { ELA.rr_loyalty = 1 }
+				}
+
+				add_to_temp_variable = { number_of_disloyal_states = 1 }
+
+				set_temp_variable = { param_state = ELA }
+				PREV = { effect_GER_remove_federal_state = yes }
+
+				FRA = { set_state_owner = PREV }
+				remove_core_of = GER
+			}
+		}
+
+		107 = {
+			if = {
+				limit = { is_owned_by = GER }
+				add_to_temp_variable = { number_of_states = 1 }
+			}
+			if = {
+				limit = {
+					check_variable = { LOT.rr_loyalty = 1 }
+				}
+
+				add_to_temp_variable = { number_of_disloyal_states = 1 }
+
+				set_temp_variable = { param_state = LOT }
+				PREV = { effect_GER_remove_federal_state = yes }
+
+				FRA = { set_state_owner = PREV }
+				remove_core_of = GER
+			}
+		}
 
 		if = {
-			# Below expected value
-			limit = {
-				check_variable = { rr_factories_percentage < rr_factories_expected }
-			}
-
-			if = {
-				limit = {
-					NOT = { check_variable = { rr_loyalty = 0 } }
-				}
-
-				set_temp_variable = { param_state = THIS }
-				PREV = { effect_GER_set_state_disloyal = yes }
-
-				# Don't fire events if this is startup.
-				if = {
-					limit = { NOT = { has_global_flag = rr_initialising } }
-					save_event_target_as = federated_state
-					PREV = { country_event = { id = event_GER_reserve_rights.1 } }
-				}
-
-				set_variable = { rr_loyalty = 0 }
-			}
+			limit = { check_variable = { number_of_disloyal_states = 0 } }
+			set_variable = { global.alsatian_plebiscite_result = 1 }
+		}
+		else_if = {
+			limit = { check_variable = { number_of_disloyal_states < number_of_states } }
+			set_variable = { global.alsatian_plebiscite_result = 2 }
 		}
 		else = {
-			if = {
-				limit = {
-					# Doing it this way also accounts for when the variable is not yet set.
-					NOT = { check_variable = { rr_loyalty = 1 } }
-					NOT = { check_variable = { rr_loyalty = 2 } }
-				}
-
-				set_temp_variable = { param_state = THIS }
-				PREV = { effect_GER_set_state_loyal = yes }
-			}
-
-			if = {
-				# Above expected value but below warning threshold
-				limit = {
-					check_variable = { rr_factories_percentage < rr_factories_expected_warning_threshold }
-				}
-
-				if = {
-					limit = {
-						check_variable = { rr_loyalty = 2 }
-					}
-					# Warn player
-					if = {
-						limit = { NOT = { has_global_flag = rr_initialising } }
-						save_event_target_as = federated_state
-						PREV = { country_event = { id = event_GER_reserve_rights.3 } }
-					}
-				}
-				else_if = {
-					limit = {
-						check_variable = { rr_loyalty = 0 }
-					}
-
-					if = {
-						limit = { NOT = { has_global_flag = rr_initialising } }
-						save_event_target_as = federated_state
-						PREV = { country_event = { id = event_GER_reserve_rights.2 } }
-					}
-				}
-
-				set_variable = { rr_loyalty = 1 }
-			}
-			else = {
-				# Above expected value and warning threshold
-				if = {
-					limit = {
-						check_variable = { rr_loyalty = 0 }
-					}
-
-					if = {
-						limit = { NOT = { has_global_flag = rr_initialising } }
-						save_event_target_as = federated_state
-						PREV = { country_event = { id = event_GER_reserve_rights.2 } }
-					}
-				}
-
-				set_variable = { rr_loyalty = 2 }
-			}
+			set_variable = { global.alsatian_plebiscite_result = 3 }
 		}
+
+		if = {
+			limit = { check_variable = { global.alsatian_plebiscite_result = 1 } }
+
+			set_temp_variable = { param_state = ELA }
+			effect_GER_remove_federal_state = yes
+			set_temp_variable = { param_state = LOT }
+			effect_GER_remove_federal_state = yes
+
+			set_temp_variable = { param_state = ELR }
+			effect_GER_add_federal_state = yes
+		}
+
+		news_event = { id = event_GER_alsace_plebiscite.2 hours = 1 }
 	}
-}
 
-# param_state: The federated state tag.
-# THIS must be Germany.
-effect_GER_set_state_loyal = {
-	var:param_state = {
-		meta_effect = {
-			TAG = "[THIS.GetTag]"
-			text = {
-				every_core_state = {
-					remove_dynamic_modifier = { modifier = modifier_GER_[TAG]_disloyal_reserve_rights }
-
-					custom_effect_tooltip = wwi_newline_tt
-
-					add_dynamic_modifier = {
-						modifier = modifier_GER_[TAG]_loyal_reserve_rights
-					}
+	effect_tooltip = {
+		custom_effect_tooltip = GER_alsatian_plebiscite_on_complete_tt
+		ELA = {
+			if = {
+				limit = { is_in_array = { GER.rr_countries = THIS } }
+				if = {
+					limit = { check_variable = { rr_loyalty = 1 } }
+					custom_effect_tooltip = GER_alsatian_plebiscite_will_be_ceded_tt
+				}
+				else = {
+					custom_effect_tooltip = GER_alsatian_plebiscite_will_not_be_ceded_tt
 				}
 			}
 		}
-
-		for_each_loop = {
-			array = PREV.rr_modifiers
-			value = m
-
-			meta_effect = {
-				MODIFIER_NAME = "[?m.GetTokenKey]"
-				text = {
-					if = {
-						limit = {
-							has_variable = rr_[MODIFIER_NAME]_disloyal
-						}
-						subtract_from_variable = { PREV.staatenbund_[MODIFIER_NAME] = rr_[MODIFIER_NAME]_disloyal }
-					}
-
-					if = {
-						limit = { has_variable = rr_[MODIFIER_NAME]_loyal }
-						add_to_variable = { PREV.staatenbund_[MODIFIER_NAME] = rr_[MODIFIER_NAME]_loyal }
-					}
+		LOT = {
+			if = {
+				limit = { is_in_array = { GER.rr_countries = THIS } }
+				if = {
+					limit = { check_variable = { rr_loyalty = 1 } }
+					custom_effect_tooltip = GER_alsatian_plebiscite_will_be_ceded_tt
+				}
+				else = {
+					custom_effect_tooltip = GER_alsatian_plebiscite_will_not_be_ceded_tt
 				}
 			}
 		}
 	}
+
+	GER = {
+		remove_opinion_modifier = {
+			target = FRA
+			modifier = opinion_GER_bismarckian_containment
+		}
+	}
+	FRA = {
+		remove_opinion_modifier = {
+			target = GER
+			modifier = opinion_FRA_revanche
+		}
+	}
+
+	clr_global_flag = flag_alsatian_plebiscite_ongoing
 }
 
-# param_state: The federated state tag.
-# THIS must be Germany.
-effect_GER_set_state_disloyal = {
-	var:param_state = {
-		meta_effect = {
-			TAG = "[THIS.GetTag]"
-			text = {
-				every_core_state = {
-					remove_dynamic_modifier = { modifier = modifier_GER_[TAG]_loyal_reserve_rights }
-
-					custom_effect_tooltip = wwi_newline_tt
-
-					add_dynamic_modifier = {
-						modifier = modifier_GER_[TAG]_disloyal_reserve_rights
-					}
-				}
+effect_GER_alsatian_plebiscite_tt = {
+	custom_effect_tooltip = GER_alsatian_plebiscite_split_alsace_lorraine_tt
+	custom_effect_tooltip = wwi_newline_tt
+	activate_mission = mission_GER_alsatian_plebiscite
+	custom_effect_tooltip = when_complete_tt
+	custom_effect_tooltip = GER_alsatian_plebiscite_on_complete_tt
+	effect_tooltip = {
+		GER = {
+			remove_opinion_modifier = {
+				target = FRA
+				modifier = opinion_GER_bismarckian_containment
 			}
 		}
-
-		for_each_loop = {
-			array = PREV.rr_modifiers
-			value = m
-
-			meta_effect = {
-				MODIFIER_NAME = "[?m.GetTokenKey]"
-				text = {
-					if = {
-						limit = {
-							has_variable = rr_[MODIFIER_NAME]_loyal
-						}
-						subtract_from_variable = { PREV.staatenbund_[MODIFIER_NAME] = rr_[MODIFIER_NAME]_loyal }
-					}
-
-					if = {
-						limit = { has_variable = rr_[MODIFIER_NAME]_disloyal }
-						add_to_variable = { PREV.staatenbund_[MODIFIER_NAME] = rr_[MODIFIER_NAME]_disloyal }
-					}
-				}
+		FRA = {
+			remove_opinion_modifier = {
+				target = GER
+				modifier = opinion_FRA_revanche
 			}
 		}
 	}

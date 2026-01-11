@@ -98,7 +98,7 @@ focus_tree = {
 			random_owned_state = {
 				prioritize = {
 					54 # Saarland
-					2 # Elass
+					2 # Elsass
 				}
 
 				add_extra_state_shared_building_slots = 1
@@ -2084,7 +2084,7 @@ focus_tree = {
 	focus = {
 		id = GER_the_reichsland_of_alsace_lorraine
 		icon = GFX__shine
-		x = -23
+		x = -24
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -2117,8 +2117,7 @@ focus_tree = {
 		id = GER_zabern_affair
 		icon = GFX__shine
 		prerequisite = { focus = GER_the_reichsland_of_alsace_lorraine }
-		mutually_exclusive = { focus = GER_alsace_lorraine_plebiscite }
-		x = 2
+		x = 0
 		y = 1
 		relative_position_id = GER_the_reichsland_of_alsace_lorraine
 		cost = 10
@@ -2142,13 +2141,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_alsace_lorraine_plebiscite
+		id = GER_the_alsatian_lander
 		icon = GFX__shine
-		prerequisite = { focus = GER_the_reichsland_of_alsace_lorraine }
-		mutually_exclusive = { focus = GER_zabern_affair focus = GER_the_schlieffen_plan }
-		x = 0
+		prerequisite = { focus = GER_zabern_affair }
+		x = 2
 		y = 1
-		relative_position_id = GER_the_reichsland_of_alsace_lorraine
+		relative_position_id = GER_zabern_affair
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -2156,8 +2154,75 @@ focus_tree = {
 
 		available_if_capitulated = no
 
+		available = {
+			OR = {
+				controls_state = 107
+				controls_state = 2
+			}
+
+			107 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					compliance > 50
+				}
+			}
+
+			2 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					compliance > 50
+				}
+			}
+		}
+
 		completion_reward = {
+			every_controlled_state = {
+				limit = { is_in_alsace_lorraine = yes }
+				add_core_of = ROOT
+				# The main reason for this is to allow the German player to build the industry needed to satisfy the states' industry share demands if they do the plebiscite.
+				add_extra_state_shared_building_slots = 2
+			}
+
+			every_state = {
+				limit = {
+					has_dynamic_modifier = { modifier = modifier_GER_alsace_lorraine_not_integrated scope = ROOT }
+				}
+				remove_dynamic_modifier = { modifier = modifier_GER_alsace_lorraine_not_integrated }
+			}
+
+			set_temp_variable = { param_state = ELR }
+			effect_GER_add_federal_state = yes
+		}
+	}
+
+	focus = {
+		id = GER_alsace_lorraine_plebiscite
+		icon = GFX__shine
+		prerequisite = { focus = GER_the_alsatian_lander }
+		mutually_exclusive = { focus = GER_the_schlieffen_plan }
+		x = 0
+		y = 1
+		relative_position_id = GER_the_alsatian_lander
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		available = {
+			OR = {
+				controls_state = 107
+				controls_state = 2
+			}
+		}
+
+		completion_reward = {
+			hidden_effect = {
+				effect_GER_begin_alsatian_plebiscite = yes
+			}
 			
+			effect_GER_alsatian_plebiscite_tt = yes
 		}
 	}
 
@@ -2166,7 +2231,7 @@ focus_tree = {
 		icon = GFX__shine
 		prerequisite = { focus = GER_alsace_lorraine_plebiscite }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = GER_alsace_lorraine_plebiscite
 		cost = 10
 		ai_will_do = {
@@ -2221,11 +2286,11 @@ focus_tree = {
 	focus = {
 		id = GER_the_schlieffen_plan
 		icon = GFX__shine
-		prerequisite = { focus = GER_the_reichsland_of_alsace_lorraine }
+		prerequisite = { focus = GER_zabern_affair }
 		mutually_exclusive = { focus = GER_alsace_lorraine_plebiscite }
-		x = -2
-		y = 1
-		relative_position_id = GER_the_reichsland_of_alsace_lorraine
+		x = -1
+		y = 2
+		relative_position_id = GER_zabern_affair
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -2234,7 +2299,9 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_state_core = 66
+
+			add_ideas = idea_GER_schlieffen_plan
 		}
 	}
 
@@ -2254,7 +2321,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			custom_effect_tooltip = modifier_GER_schlieffen_unaltered_tt
 		}
 	}
 
@@ -2274,17 +2341,27 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			HOL = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = opinion_GER_dutch_wind_tunnel
+				}
+
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = opinion_GER_dutch_wind_tunnel_trade
+				}
+			}
 		}
 	}
 
 	focus = {
-		id = GER_the_alsatian_lander
+		id = GER_war_with_france
 		icon = GFX__shine
-		prerequisite = { focus = GER_alsace_lorraine_plebiscite focus = GER_zabern_affair }
-		x = 1
+		prerequisite = { focus = GER_schlieffen_unaltered focus = GER_dutch_wind_tunnel }
+		x = -1
 		y = 1
-		relative_position_id = GER_alsace_lorraine_plebiscite
+		relative_position_id = GER_schlieffen_unaltered
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -2292,38 +2369,10 @@ focus_tree = {
 
 		available_if_capitulated = no
 
-		available = {
-			OR = {
-				controls_state = 107
-				controls_state = 2
-			}
-
-			107 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					compliance > 50
-				}
-			}
-
-			2 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					compliance > 50
-				}
-			}
-		}
-
 		completion_reward = {
-			every_controlled_state = {
-				limit = { is_in_alsace_lorraine = yes }
-				add_core_of = ROOT
-			}
-
-			every_state = {
-				limit = {
-					has_dynamic_modifier = { modifier = modifier_GER_alsace_lorraine_not_integrated scope = ROOT }
-				}
-				remove_dynamic_modifier = { modifier = modifier_GER_alsace_lorraine_not_integrated }
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = FRA
 			}
 		}
 	}

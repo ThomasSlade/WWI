@@ -15,3 +15,26 @@ trigger_GER_has_not_used_any_strategic_railway_charges = {
 		check_variable = { strategic_railway_charges = 3 }
 	}
 }
+
+# True if this country is an Alsace-Lorraine state and there's currently a referendum on German membership.
+trigger_GER_is_undergoing_alsatian_plebiscite = {
+	OR = {
+		tag = ELA
+		tag = LOT
+	}
+}
+
+trigger_GER_rr_is_loyal = {
+	OR = {
+		check_variable = { rr_loyalty = 2 }
+		check_variable = { rr_loyalty = 3 }
+	}
+}
+
+trigger_GER_rr_is_disloyal = {
+	check_variable = { rr_loyalty = 1 }
+}
+
+trigger_GER_rr_is_disabled = {
+	check_variable = { rr_loyalty = 4 }
+}

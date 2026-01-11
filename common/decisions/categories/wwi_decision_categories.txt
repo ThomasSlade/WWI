@@ -284,3 +284,14 @@ decision_category_GER_railways = {
 		check_variable = { strategic_railway_charges > 0 }
 	}
 }
+
+decision_category_GER_states = {
+	icon = generic_construction
+
+	allowed = {
+		OR = {
+			original_tag = GER
+			original_tag = FRA # France can intervene in the Alsatian Plebiscite.
+		}
+	}
+}

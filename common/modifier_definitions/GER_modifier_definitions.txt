@@ -1,0 +1,41 @@
+staatenbund_consumer_goods_factor = {
+	color_type = neutral
+	value_type = percentage
+	precision = 2
+}
+
+staatenbund_max_planning = {
+	color_type = good
+	value_type = percentage
+	precision = 2
+}
+
+staatenbund_production_factory_max_efficiency_factor = {
+	color_type = good
+	value_type = percentage
+	precision = 2
+}
+
+staatenbund_production_speed_buildings_factor = {
+	color_type = good
+	value_type = percentage
+	precision = 2
+}
+
+staatenbund_industrial_capacity_dockyard = {
+	color_type = good
+	value_type = percentage
+	precision = 2
+}
+
+staatenbund_boost_party_strength_factor = {
+	color_type = good
+	value_type = percentage
+	precision = 2
+}
+
+staatenbund_land_bunker_effectiveness_factor = {
+	color_type = good
+	value_type = percentage
+	precision = 2
+}
