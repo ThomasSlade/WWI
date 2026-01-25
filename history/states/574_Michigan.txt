@@ -1,0 +1,19 @@
+#COLOR 121 140 212
+state={
+	id=574
+	name=574_Michigan
+	history={
+		owner = USA
+		add_core_of = USA
+		buildings = {
+		}
+		victory_points = {12664 15
+		}
+	}
+	provinces={
+		12664 12737 12738
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

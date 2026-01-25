@@ -1,0 +1,10 @@
+#COLOR 178 113 197
+strategic_region={
+	id=150
+	name=150_Hudson_Bay
+	provinces={
+		12704 12705 12715 12689 12732
+	}
+	weather={
+	}
+}

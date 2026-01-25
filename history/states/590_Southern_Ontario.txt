@@ -1,0 +1,19 @@
+#COLOR 101 33 71
+state={
+	id=590
+	name=590_Southern_Ontario
+	history={
+		owner = CAN
+		add_core_of = CAN
+		buildings = {
+		}
+		victory_points = {1412 25
+		}
+	}
+	provinces={
+		12736 12651 1412
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

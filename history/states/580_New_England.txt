@@ -1,0 +1,19 @@
+#COLOR 171 144 232
+state={
+	id=580
+	name=580_New_England
+	history={
+		owner = USA
+		add_core_of = USA
+		buildings = {
+		}
+		victory_points = {12670 2
+		}
+	}
+	provinces={
+		12670
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

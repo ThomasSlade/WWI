@@ -1,0 +1,19 @@
+#COLOR 113 67 101
+state={
+	id=593
+	name=593_Manitoba
+	history={
+		owner = CAN
+		add_core_of = CAN
+		buildings = {
+		}
+		victory_points = {1604 15
+		}
+	}
+	provinces={
+		1604
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

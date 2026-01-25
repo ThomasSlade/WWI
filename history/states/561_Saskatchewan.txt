@@ -1,0 +1,19 @@
+#COLOR 234 120 137
+state={
+	id=561
+	name=561_Saskatchewan
+	history={
+		owner = CAN
+		add_core_of = CAN
+		buildings = {
+		}
+		victory_points = {12731 5
+		}
+	}
+	provinces={
+		12731
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

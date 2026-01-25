@@ -1,0 +1,19 @@
+#COLOR 70 103 213
+state={
+	id=570
+	name=570_Pacific_Northwest
+	history={
+		owner = USA
+		add_core_of = USA
+		buildings = {
+		}
+		victory_points = {12660 5
+		}
+	}
+	provinces={
+		12660
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

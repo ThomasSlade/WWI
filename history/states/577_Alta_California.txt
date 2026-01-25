@@ -1,0 +1,18 @@
+#COLOR 141 138 183
+state={
+	id=577
+	name=577_Alta_California
+	history={
+		owner = USA
+		buildings = {
+		}
+		victory_points = {12667 2
+		}
+	}
+	provinces={
+		12667
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

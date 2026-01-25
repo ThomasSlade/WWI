@@ -1,0 +1,19 @@
+#COLOR 133 216 247
+state={
+	id=576
+	name=576_Chesapeake
+	history={
+		owner = USA
+		add_core_of = USA
+		buildings = {
+		}
+		victory_points = {12666 50
+		}
+	}
+	provinces={
+		12666
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

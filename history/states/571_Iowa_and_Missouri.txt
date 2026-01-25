@@ -1,0 +1,19 @@
+#COLOR 77 35 209
+state={
+	id=571
+	name=571_Iowa_and_Missouri
+	history={
+		owner = USA
+		add_core_of = USA
+		buildings = {
+		}
+		victory_points = {12661 2
+		}
+	}
+	provinces={
+		12661
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

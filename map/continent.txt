@@ -6,4 +6,5 @@ continents = {
 	southern_europe
 	middle_east
 	north_africa
+	americas
 }

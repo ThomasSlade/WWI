@@ -1,0 +1,10 @@
+#COLOR 196 115 230
+strategic_region={
+	id=151
+	name=151_Iceland_Basin
+	provinces={
+		12674 12706 12708 12711 12681 12713 12686 12688 12695
+	}
+	weather={
+	}
+}

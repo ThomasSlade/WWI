@@ -1,0 +1,19 @@
+#COLOR 169 71 20
+state={
+	id=596
+	name=596_Saint_Laurent
+	history={
+		owner = CAN
+		add_core_of = CAN
+		buildings = {
+		}
+		victory_points = {12699 5
+		}
+	}
+	provinces={
+		12699
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,19 @@
+#COLOR 130 179 233
+state={
+	id=575
+	name=575_Great_Plains
+	history={
+		owner = USA
+		add_core_of = USA
+		buildings = {
+		}
+		victory_points = {12665 5
+		}
+	}
+	provinces={
+		12665
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

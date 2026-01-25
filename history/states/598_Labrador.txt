@@ -1,0 +1,19 @@
+#COLOR 184 35 86
+state={
+	id=598
+	name=598_Labrador
+	history={
+		owner = CAN
+		add_core_of = CAN
+		buildings = {
+		}
+		victory_points = {12707 2
+		}
+	}
+	provinces={
+		12707
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

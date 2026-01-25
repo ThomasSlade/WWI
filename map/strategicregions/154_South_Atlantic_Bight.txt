@@ -1,0 +1,10 @@
+#COLOR 227 138 209
+strategic_region={
+	id=154
+	name=154_South_Atlantic_Bight
+	provinces={
+		12728 12712 12720 12721 12694 12727 12696 12697
+	}
+	weather={
+	}
+}

@@ -1,0 +1,19 @@
+#COLOR 54 21 39
+state={
+	id=584
+	name=584_Nunavik
+	history={
+		owner = CAN
+		add_core_of = CAN
+		buildings = {
+		}
+		victory_points = {589 2
+		}
+	}
+	provinces={
+		589
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

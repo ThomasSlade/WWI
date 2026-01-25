@@ -1,0 +1,19 @@
+#COLOR 81 6 11
+state={
+	id=588
+	name=588_Nova_Scotia
+	history={
+		owner = CAN
+		add_core_of = CAN
+		buildings = {
+		}
+		victory_points = {1167 5
+		}
+	}
+	provinces={
+		1167
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

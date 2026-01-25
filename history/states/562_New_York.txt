@@ -1,0 +1,19 @@
+#COLOR 22 33 69
+state={
+	id=562
+	name=562_New_York
+	history={
+		owner = USA
+		add_core_of = USA
+		buildings = {
+		}
+		victory_points = {12652 25
+		}
+	}
+	provinces={
+		12652
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

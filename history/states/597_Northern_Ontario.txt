@@ -1,0 +1,19 @@
+#COLOR 176 59 39
+state={
+	id=597
+	name=597_Northern_Ontario
+	history={
+		owner = CAN
+		add_core_of = CAN
+		buildings = {
+		}
+		victory_points = {12703 5
+		}
+	}
+	provinces={
+		12703
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

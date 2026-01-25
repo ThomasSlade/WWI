@@ -1,0 +1,19 @@
+#COLOR 68 208 255
+state={
+	id=569
+	name=569_South_Atlantic_States
+	history={
+		owner = USA
+		add_core_of = USA
+		buildings = {
+		}
+		victory_points = {12659 2
+		}
+	}
+	provinces={
+		12659
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

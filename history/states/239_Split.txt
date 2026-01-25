@@ -8,8 +8,8 @@ state={
 		add_core_of = SCS
 		add_core_of = CRO
 		buildings = {
-			arms_factory = 1
 			infrastructure = 1
+			arms_factory = 1
 			5052 = {
 				naval_base = 4
 			}

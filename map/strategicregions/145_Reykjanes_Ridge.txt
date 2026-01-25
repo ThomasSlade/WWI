@@ -1,0 +1,10 @@
+#COLOR 68 42 159
+strategic_region={
+	id=145
+	name=145_Reykjanes_Ridge
+	provinces={
+		968 1128 1352 1738 690 786 918 1303 990
+	}
+	weather={
+	}
+}

@@ -1,0 +1,16 @@
+#COLOR 79 161 212
+state={
+	id=587
+	name=587_Alaskan_Interior
+	history={
+		owner = USA
+		buildings = {
+		}
+	}
+	provinces={
+		1158
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

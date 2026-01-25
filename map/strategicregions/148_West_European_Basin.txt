@@ -1,0 +1,10 @@
+#COLOR 107 9 188
+strategic_region={
+	id=148
+	name=148_West_European_Basin
+	provinces={
+		12672 1475 1252 12677 12682 12589 12687 12690 1269
+	}
+	weather={
+	}
+}

@@ -1,0 +1,10 @@
+#COLOR 213 190 201
+strategic_region={
+	id=153
+	name=153_Labrador_Sea
+	provinces={
+		12709 12718 12719 12722 12725 12729 12735
+	}
+	weather={
+	}
+}

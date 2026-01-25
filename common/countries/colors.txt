@@ -156,3 +156,11 @@ HNS = {
 	color = rgb { 209 65 77 }
 	color_ui = rgb { 209 65 77 }
 }
+USA = {
+	color = rgb { 81 138 150 }
+	color_ui = rgb { 181 138 150 }
+}
+CAN = {
+	color = rgb { 156 124 131 }
+	color_ui = rgb { 156 124 131 }
+}

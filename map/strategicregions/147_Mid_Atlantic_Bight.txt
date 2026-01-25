@@ -1,0 +1,10 @@
+#COLOR 87 40 252
+strategic_region={
+	id=147
+	name=147_Mid_Atlantic_Bight
+	provinces={
+		992 1443 1253 1609 12683 12592 1370
+	}
+	weather={
+	}
+}

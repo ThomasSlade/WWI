@@ -7,9 +7,9 @@ state={
 		add_core_of = GER
 		add_core_of = HNS
 		buildings = {
-			dockyard = 1
 			industrial_complex = 1
 			infrastructure = 1
+			dockyard = 1
 			3623 = {
 				naval_base = 1
 			}

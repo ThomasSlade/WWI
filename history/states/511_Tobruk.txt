@@ -7,8 +7,8 @@ state={
 		add_core_of = TUR
 		add_core_of = ITA
 		buildings = {
-			air_base = 1
 			infrastructure = 1
+			air_base = 1
 			11708 = {
 				naval_base = 1
 			}

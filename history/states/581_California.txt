@@ -1,0 +1,19 @@
+#COLOR 180 167 226
+state={
+	id=581
+	name=581_California
+	history={
+		owner = USA
+		add_core_of = USA
+		buildings = {
+		}
+		victory_points = {12671 15
+		}
+	}
+	provinces={
+		12671
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

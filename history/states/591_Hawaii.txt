@@ -1,0 +1,18 @@
+#COLOR 105 66 242
+state={
+	id=591
+	name=591_Hawaii
+	history={
+		owner = USA
+		buildings = {
+		}
+		victory_points = {1449 2
+		}
+	}
+	provinces={
+		1449
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

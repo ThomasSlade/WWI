@@ -1,0 +1,10 @@
+#COLOR 77 120 183
+strategic_region={
+	id=146
+	name=146_Puerto_Rico_Trench
+	provinces={
+		12673 1411 12675 12679 906 1035 1164 1009 1202 1365
+	}
+	weather={
+	}
+}

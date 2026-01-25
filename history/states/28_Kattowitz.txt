@@ -7,9 +7,9 @@ state={
 		add_core_of = GER
 		add_core_of = POL
 		buildings = {
-			arms_factory = 2
 			industrial_complex = 1
 			infrastructure = 2
+			arms_factory = 2
 		}
 		victory_points = {3027 15
 		}

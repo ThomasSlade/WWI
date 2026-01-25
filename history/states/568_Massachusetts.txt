@@ -1,0 +1,19 @@
+#COLOR 68 29 156
+state={
+	id=568
+	name=568_Massachusetts
+	history={
+		owner = USA
+		add_core_of = USA
+		buildings = {
+		}
+		victory_points = {12658 15
+		}
+	}
+	provinces={
+		12658
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

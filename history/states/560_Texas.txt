@@ -1,0 +1,19 @@
+#COLOR 14 54 69
+state={
+	id=560
+	name=560_Texas
+	history={
+		owner = USA
+		add_core_of = USA
+		buildings = {
+		}
+		victory_points = {12650 15
+		}
+	}
+	provinces={
+		12650
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

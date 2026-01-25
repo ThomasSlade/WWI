@@ -1,0 +1,10 @@
+#COLOR 55 173 169
+strategic_region={
+	id=144
+	name=144_Newfoundland_Basin
+	provinces={
+		865 454 590 1429 886 1242 572
+	}
+	weather={
+	}
+}

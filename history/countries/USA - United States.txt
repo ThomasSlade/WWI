@@ -1,0 +1,37 @@
+capital = 576
+
+set_fuel_ratio = 0.8
+set_research_slots = 4
+set_convoys = 200
+starting_train_buffer = 3
+set_stability = 0.75 
+set_war_support = 1.0
+
+# Starting tech
+set_technology = {
+	basic_train = 1
+	infantry_weapons = 1
+}
+
+set_politics = {
+	ruling_party = alignment_d
+	last_election = "1910.4.24"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	alignment_unaligned = 25
+	alignment_d = 45
+	alignment_b = 15
+	alignment_c = 10
+	alignment_a = 5
+}
+
+add_ideas = {
+	disarmed_nation
+}
+
+set_variable = { initial_cabinet = token:cab_liberal }
+set_variable = { initial_opposition = token:opp_conservative_1 }
+set_variable = { initial_government = token:gov_limited_democracy }

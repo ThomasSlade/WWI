@@ -6,8 +6,8 @@ state={
 		owner = TUR
 		add_core_of = TUR
 		buildings = {
-			arms_factory = 1
 			infrastructure = 2
+			arms_factory = 1
 		}
 		victory_points = {11368 15
 		}

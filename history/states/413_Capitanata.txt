@@ -6,8 +6,8 @@ state={
 		owner = ITA
 		add_core_of = ITA
 		buildings = {
-			arms_factory = 1
 			infrastructure = 1
+			arms_factory = 1
 			9502 = {
 				naval_base = 1
 			}

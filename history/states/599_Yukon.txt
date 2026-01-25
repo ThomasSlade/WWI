@@ -1,0 +1,19 @@
+#COLOR 206 64 110
+state={
+	id=599
+	name=599_Yukon
+	history={
+		owner = CAN
+		add_core_of = CAN
+		buildings = {
+		}
+		victory_points = {12717 2
+		}
+	}
+	provinces={
+		12717
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

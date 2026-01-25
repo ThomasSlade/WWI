@@ -1,0 +1,17 @@
+#COLOR 72 7 28
+state={
+	id=585
+	name=585_Northwest_Territories
+	history={
+		owner = CAN
+		add_core_of = CAN
+		buildings = {
+		}
+	}
+	provinces={
+		887
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,19 @@
+#COLOR 134 83 59
+state={
+	id=595
+	name=595_New_Brunswick
+	history={
+		owner = CAN
+		add_core_of = CAN
+		buildings = {
+		}
+		victory_points = {12680 2
+		}
+	}
+	provinces={
+		12680
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

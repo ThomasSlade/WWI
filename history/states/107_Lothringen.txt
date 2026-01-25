@@ -8,9 +8,9 @@ state={
 		add_core_of = ELR
 		add_core_of = LOT
 		buildings = {
-			air_base = 1
 			industrial_complex = 1
 			infrastructure = 2
+			air_base = 1
 		}
 		victory_points = {2216 5
 		}

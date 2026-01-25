@@ -1,0 +1,10 @@
+#COLOR 234 83 220
+strategic_region={
+	id=142
+	name=142_Galicia_Bank
+	provinces={
+		12710 12714 12716 12723 12726 12730 12701 12702 12733
+	}
+	weather={
+	}
+}

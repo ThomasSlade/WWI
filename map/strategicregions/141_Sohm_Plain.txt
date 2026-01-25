@@ -1,0 +1,10 @@
+#COLOR 31 33 73
+strategic_region={
+	id=141
+	name=141_Sohm_Plain
+	provinces={
+		451 230 109 110 175 111 306 253 254
+	}
+	weather={
+	}
+}

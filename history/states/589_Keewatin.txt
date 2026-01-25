@@ -1,0 +1,19 @@
+#COLOR 85 15 58
+state={
+	id=589
+	name=589_Keewatin
+	history={
+		owner = CAN
+		add_core_of = CAN
+		buildings = {
+		}
+		victory_points = {1220 2
+		}
+	}
+	provinces={
+		1220
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

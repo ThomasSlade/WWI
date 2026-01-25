@@ -6,8 +6,8 @@ state={
 		owner = ENG
 		add_core_of = ENG
 		buildings = {
-			dockyard = 1
 			infrastructure = 2
+			dockyard = 1
 			12318 = {
 				naval_base = 1
 			}
