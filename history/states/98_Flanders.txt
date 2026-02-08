@@ -6,9 +6,9 @@ state={
 		owner = BEL
 		add_core_of = BEL
 		buildings = {
+			arms_factory = 3
 			industrial_complex = 3
 			infrastructure = 3
-			arms_factory = 3
 		}
 		victory_points = {1334 15
 		}
@@ -24,7 +24,7 @@ state={
 	provinces={
 		1382 1578 1815 1744 1776 1808 1653 1334 1590 1718 1562 1724 1406
 	}
-	manpower=2272746
+	manpower=2265904
 	buildings_max_level_factor=1.000
 	state_category = city
 }

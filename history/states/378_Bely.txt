@@ -2,9 +2,6 @@
 state={
 	id=378
 	name=378_Bely
-	resources={
-		aluminium = 3
-	}
 	history={
 		owner = SOV
 		add_core_of = SOV
@@ -19,7 +16,10 @@ state={
 	provinces={
 		7425 6531 7427 7430 7176 7310 6546 6805 6806 6684 7080 6574 6576 7356 6605 7374 6740 6741 5221 7409 7286 6395
 	}
-	manpower=468379
+	manpower=468378
 	buildings_max_level_factor=1.000
 	state_category = rural
+	resources = {
+		aluminium = 3
+	}
 }

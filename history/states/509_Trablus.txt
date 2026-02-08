@@ -7,9 +7,9 @@ state={
 		add_core_of = TUR
 		add_core_of = ITA
 		buildings = {
+			air_base = 1
 			industrial_complex = 1
 			infrastructure = 2
-			air_base = 1
 			11715 = {
 				naval_base = 1
 			}
@@ -27,7 +27,7 @@ state={
 	provinces={
 		11776 11715 11686 11743 11725 11695 11736 11741 11711
 	}
-	manpower=214966
+	manpower=214963
 	buildings_max_level_factor=1.000
 	state_category=town
 }

@@ -2,21 +2,13 @@
 state={
 	id=121
 	name=121_Attica
-	resources={
-		chromium = 999
-		tungsten = 999
-		aluminium = 999
-		oil = 999
-		rubber = 999
-		steel = 999
-	}
 	history={
 		owner = GRE
 		add_core_of = GRE
 		buildings = {
+			arms_factory = 2
 			industrial_complex = 3
 			infrastructure = 3
-			arms_factory = 2
 			5317 = {
 				naval_base = 1
 			}
@@ -37,4 +29,12 @@ state={
 	manpower=812967
 	buildings_max_level_factor=1.000
 	state_category = city
+	resources = {
+		aluminium = 999
+		chromium = 999
+		oil = 999
+		rubber = 999
+		steel = 999
+		tungsten = 999
+	}
 }

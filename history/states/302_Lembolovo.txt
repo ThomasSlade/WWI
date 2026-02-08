@@ -2,9 +2,6 @@
 state={
 	id=302
 	name=302_Lembolovo
-	resources={
-		aluminium = 2
-	}
 	history={
 		owner = SOV
 		add_core_of = SOV
@@ -18,4 +15,7 @@ state={
 	manpower=17908
 	buildings_max_level_factor=1.000
 	state_category = pastoral
+	resources = {
+		aluminium = 2
+	}
 }

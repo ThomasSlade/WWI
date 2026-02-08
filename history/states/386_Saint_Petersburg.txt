@@ -2,18 +2,13 @@
 state={
 	id=386
 	name=386_Saint_Petersburg
-	resources={
-		tungsten = 999
-		rubber = 999
-		steel = 3
-	}
 	history={
 		owner = SOV
 		add_core_of = SOV
 		buildings = {
+			arms_factory = 2
 			industrial_complex = 1
 			infrastructure = 3
-			arms_factory = 2
 		}
 		victory_points = {6358 50
 		}
@@ -28,4 +23,9 @@ state={
 	manpower=1264920
 	buildings_max_level_factor=1.000
 	state_category = city
+	resources = {
+		rubber = 999
+		steel = 3
+		tungsten = 999
+	}
 }

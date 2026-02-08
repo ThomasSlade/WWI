@@ -2,21 +2,13 @@
 state={
 	id=125
 	name=125_Sumadija
-	resources={
-		chromium = 999
-		tungsten = 999
-		aluminium = 999
-		oil = 999
-		rubber = 999
-		steel = 999
-	}
 	history={
 		owner = SER
 		add_core_of = SER
 		buildings = {
+			arms_factory = 2
 			industrial_complex = 2
 			infrastructure = 2
-			arms_factory = 2
 		}
 		victory_points = {5323 25
 		}
@@ -33,4 +25,12 @@ state={
 	manpower=1276222
 	buildings_max_level_factor=1.000
 	state_category = city
+	resources = {
+		aluminium = 999
+		chromium = 999
+		oil = 999
+		rubber = 999
+		steel = 999
+		tungsten = 999
+	}
 }

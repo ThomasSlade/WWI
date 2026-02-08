@@ -2,9 +2,6 @@
 state={
 	id=372
 	name=372_Yaroslavl
-	resources={
-		chromium = 3
-	}
 	history={
 		owner = SOV
 		add_core_of = SOV
@@ -23,4 +20,7 @@ state={
 	manpower=441802
 	buildings_max_level_factor=1.000
 	state_category = town
+	resources = {
+		chromium = 3
+	}
 }

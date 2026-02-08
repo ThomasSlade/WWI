@@ -2,21 +2,13 @@
 state={
 	id=53
 	name=53_Brabant
-	resources={
-		chromium = 999
-		tungsten = 999
-		aluminium = 999
-		oil = 999
-		rubber = 999
-		steel = 999
-	}
 	history={
 		owner = BEL
 		add_core_of = BEL
 		buildings = {
+			arms_factory = 3
 			industrial_complex = 4
 			infrastructure = 3
-			arms_factory = 3
 		}
 		victory_points = {1424 50
 		}
@@ -30,7 +22,15 @@ state={
 	provinces={
 		323 516 869 1225 555 269 1165 1424 594 754 596 501 1209 1468 1244
 	}
-	manpower=2126029
+	manpower=2119630
 	buildings_max_level_factor=1.000
 	state_category = metropolis
+	resources = {
+		aluminium = 999
+		chromium = 999
+		oil = 999
+		rubber = 999
+		steel = 999
+		tungsten = 999
+	}
 }

@@ -2,9 +2,6 @@
 state={
 	id=299
 	name=299_Vitebsk
-	resources={
-		aluminium = 2
-	}
 	history={
 		owner = SOV
 		add_core_of = SOV
@@ -20,7 +17,10 @@ state={
 	provinces={
 		8515 9091 8488 8362 8878 8559 8687 8914 8979 8630 8667 8411 8796 8638 8923
 	}
-	manpower=584688
+	manpower=584687
 	buildings_max_level_factor=1.000
 	state_category = town
+	resources = {
+		aluminium = 2
+	}
 }

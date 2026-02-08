@@ -2,21 +2,13 @@
 state={
 	id=30
 	name=30_Paris
-	resources={
-		chromium = 999
-		tungsten = 999
-		aluminium = 999
-		oil = 999
-		rubber = 999
-		steel = 999
-	}
 	history={
 		owner = FRA
 		add_core_of = FRA
 		buildings = {
+			arms_factory = 3
 			industrial_complex = 3
 			infrastructure = 4
-			arms_factory = 3
 		}
 		victory_points = {1265 50
 		}
@@ -27,4 +19,12 @@ state={
 	manpower=4828112
 	buildings_max_level_factor=1.000
 	state_category = city
+	resources = {
+		aluminium = 999
+		chromium = 999
+		oil = 999
+		rubber = 999
+		steel = 999
+		tungsten = 999
+	}
 }

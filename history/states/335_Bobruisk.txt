@@ -2,15 +2,12 @@
 state={
 	id=335
 	name=335_Bobruisk
-	resources={
-		chromium = 2
-	}
 	history={
 		owner = SOV
 		add_core_of = SOV
 		buildings = {
-			infrastructure = 1
 			arms_factory = 1
+			infrastructure = 1
 		}
 		victory_points = {8292 5
 		}
@@ -20,7 +17,10 @@ state={
 	provinces={
 		8704 8452 8847 8596 8347 8864 8740 8869 8487 8615 8617 8746 8754 8499 8629 8631 8763 8795 8924 8541 8292 8423 8429 8813 8303 8440 8569 8315 8828
 	}
-	manpower=833166
+	manpower=833165
 	buildings_max_level_factor=1.000
 	state_category = rural
+	resources = {
+		chromium = 2
+	}
 }

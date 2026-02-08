@@ -2,21 +2,13 @@
 state={
 	id=120
 	name=120_Holland
-	resources={
-		chromium = 999
-		tungsten = 999
-		aluminium = 999
-		oil = 999
-		rubber = 999
-		steel = 999
-	}
 	history={
 		owner = HOL
 		add_core_of = HOL
 		buildings = {
+			arms_factory = 2
 			industrial_complex = 4
 			infrastructure = 3
-			arms_factory = 2
 		}
 		victory_points = {2788 50
 		}
@@ -37,4 +29,12 @@ state={
 	manpower=2233942
 	buildings_max_level_factor=1.000
 	state_category = metropolis
+	resources = {
+		aluminium = 999
+		chromium = 999
+		oil = 999
+		rubber = 999
+		steel = 999
+		tungsten = 999
+	}
 }

@@ -2,16 +2,13 @@
 state={
 	id=297
 	name=297_Zhitomir
-	resources={
-		aluminium = 3
-	}
 	history={
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = UKR
 		buildings = {
-			infrastructure = 2
 			arms_factory = 1
+			infrastructure = 2
 		}
 		victory_points = {6619 15
 		}
@@ -30,4 +27,7 @@ state={
 	manpower=1360842
 	buildings_max_level_factor=1.000
 	state_category = town
+	resources = {
+		aluminium = 3
+	}
 }

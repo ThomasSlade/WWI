@@ -7,10 +7,10 @@ state={
 		add_core_of = GER
 		add_core_of = HNS
 		buildings = {
-			infrastructure = 2
-			dockyard = 1
 			air_base = 1
 			arms_factory = 1
+			dockyard = 1
+			infrastructure = 2
 			3185 = {
 				naval_base = 3
 			}
@@ -27,7 +27,7 @@ state={
 	provinces={
 		4128 3169 4292 4038 3432 3274 4187 3185 3251 3285 4341 4314 3483 4221
 	}
-	manpower=494387
+	manpower=494410
 	buildings_max_level_factor=1.000
 	state_category = town
 }

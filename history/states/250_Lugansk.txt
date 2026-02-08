@@ -2,17 +2,13 @@
 state={
 	id=250
 	name=250_Lugansk
-	resources={
-		steel = 4
-		oil = 12
-	}
 	history={
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = UKR
 		buildings = {
-			infrastructure = 2
 			arms_factory = 1
+			infrastructure = 2
 		}
 		victory_points = {7299 5
 		}
@@ -31,4 +27,8 @@ state={
 	manpower=410367
 	buildings_max_level_factor=1.000
 	state_category = town
+	resources = {
+		oil = 12
+		steel = 4
+	}
 }

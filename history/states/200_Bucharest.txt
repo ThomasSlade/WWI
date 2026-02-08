@@ -2,21 +2,13 @@
 state={
 	id=200
 	name=200_Bucharest
-	resources={
-		chromium = 999
-		tungsten = 999
-		aluminium = 999
-		oil = 999
-		rubber = 999
-		steel = 999
-	}
 	history={
 		owner = ROM
 		add_core_of = ROM
 		buildings = {
+			arms_factory = 2
 			industrial_complex = 3
 			infrastructure = 3
-			arms_factory = 2
 		}
 		victory_points = {6216 50
 		}
@@ -31,4 +23,12 @@ state={
 	manpower=1161421
 	buildings_max_level_factor=1.000
 	state_category = city
+	resources = {
+		aluminium = 999
+		chromium = 999
+		oil = 999
+		rubber = 999
+		steel = 999
+		tungsten = 999
+	}
 }

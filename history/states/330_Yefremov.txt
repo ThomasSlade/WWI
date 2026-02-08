@@ -2,9 +2,6 @@
 state={
 	id=330
 	name=330_Yefremov
-	resources={
-		steel = 4
-	}
 	history={
 		owner = SOV
 		add_core_of = SOV
@@ -20,4 +17,7 @@ state={
 	manpower=189752
 	buildings_max_level_factor=1.000
 	state_category = rural
+	resources = {
+		steel = 4
+	}
 }

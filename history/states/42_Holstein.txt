@@ -6,11 +6,11 @@ state={
 		owner = GER
 		add_core_of = GER
 		buildings = {
-			industrial_complex = 1
-			infrastructure = 2
-			dockyard = 1
 			air_base = 1
 			arms_factory = 1
+			dockyard = 1
+			industrial_complex = 1
+			infrastructure = 2
 			3130 = {
 				naval_base = 4
 			}
@@ -23,7 +23,7 @@ state={
 	provinces={
 		3201 3171 3044 3459 3812 3048 3306 2987 3085 3213 2993 2963 3292 2999 3130 3419 3196 3870
 	}
-	manpower=1157221
+	manpower=1157273
 	buildings_max_level_factor=1.000
 	state_category = city
 }

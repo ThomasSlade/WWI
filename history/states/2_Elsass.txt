@@ -8,10 +8,10 @@ state={
 		add_core_of = ELR
 		add_core_of = ELA
 		buildings = {
-			industrial_complex = 1
-			infrastructure = 3
 			air_base = 1
 			arms_factory = 1
+			industrial_complex = 1
+			infrastructure = 3
 		}
 		victory_points = {1946 25
 		}
@@ -25,7 +25,7 @@ state={
 	provinces={
 		1988 581 198 1671 1958 329 1897 1989 2121 687 1936 1905 2031 1684 2009 1946
 	}
-	manpower=1807421
+	manpower=1807503
 	buildings_max_level_factor=1.000
 	state_category = city
 }

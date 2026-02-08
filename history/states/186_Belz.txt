@@ -9,8 +9,8 @@ state={
 		add_core_of = UKR
 		add_core_of = GLD
 		buildings = {
-			infrastructure = 1
 			arms_factory = 1
+			infrastructure = 1
 		}
 		victory_points = {4480 2
 		}

@@ -2,9 +2,6 @@
 state={
 	id=314
 	name=314_Novgorod
-	resources={
-		chromium = 4
-	}
 	history={
 		owner = SOV
 		add_core_of = SOV
@@ -20,4 +17,7 @@ state={
 	manpower=446374
 	buildings_max_level_factor=1.000
 	state_category = rural
+	resources = {
+		chromium = 4
+	}
 }

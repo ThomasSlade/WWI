@@ -2,10 +2,6 @@
 state={
 	id=245
 	name=245_Vyazma
-	resources={
-		oil = 5
-		chromium = 2
-	}
 	history={
 		owner = SOV
 		add_core_of = SOV
@@ -23,4 +19,8 @@ state={
 	manpower=241857
 	buildings_max_level_factor=1.000
 	state_category = rural
+	resources = {
+		chromium = 2
+		oil = 5
+	}
 }

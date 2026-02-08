@@ -7,8 +7,8 @@ state={
 		add_core_of = TUR
 		add_core_of = ALB
 		buildings = {
-			infrastructure = 2
 			arms_factory = 1
+			infrastructure = 2
 		}
 		victory_points = {5311 15
 		}
@@ -16,7 +16,7 @@ state={
 	provinces={
 		5505 5828 5448 5897 5264 5457 5298 5311
 	}
-	manpower=121649
+	manpower=121647
 	buildings_max_level_factor=1.000
 	state_category = town
 }

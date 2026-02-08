@@ -2,22 +2,14 @@
 state={
 	id=195
 	name=195_Konstantiyniyye
-	resources={
-		chromium = 999
-		tungsten = 999
-		aluminium = 999
-		oil = 999
-		rubber = 999
-		steel = 999
-	}
 	history={
 		owner = TUR
 		add_core_of = TUR
 		buildings = {
+			arms_factory = 1
+			dockyard = 1
 			industrial_complex = 2
 			infrastructure = 3
-			dockyard = 1
-			arms_factory = 1
 			6153 = {
 				naval_base = 8
 			}
@@ -33,4 +25,12 @@ state={
 	manpower=1042928
 	buildings_max_level_factor=1.000
 	state_category = metropolis
+	resources = {
+		aluminium = 999
+		chromium = 999
+		oil = 999
+		rubber = 999
+		steel = 999
+		tungsten = 999
+	}
 }

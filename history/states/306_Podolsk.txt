@@ -2,15 +2,12 @@
 state={
 	id=306
 	name=306_Podolsk
-	resources={
-		aluminium = 3
-	}
 	history={
 		owner = SOV
 		add_core_of = SOV
 		buildings = {
-			infrastructure = 2
 			arms_factory = 1
+			infrastructure = 2
 		}
 		victory_points = {7562 5
 		}
@@ -25,4 +22,7 @@ state={
 	manpower=558968
 	buildings_max_level_factor=1.000
 	state_category = town
+	resources = {
+		aluminium = 3
+	}
 }

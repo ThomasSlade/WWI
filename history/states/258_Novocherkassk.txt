@@ -2,9 +2,6 @@
 state={
 	id=258
 	name=258_Novocherkassk
-	resources={
-		oil = 6
-	}
 	history={
 		owner = SOV
 		add_core_of = SOV
@@ -25,7 +22,10 @@ state={
 	provinces={
 		8091 7687 8092 7946 7179 7565 7056 7827 7316 7829 8090 7067 7068 7451 7326 7070 7200 6943 7579 7580 7586 7972 7595 7596 8108 7471 7216 7348 7860 7737 7485 7486 7487 7999 6978 7749 7622 7878 7879 7880 7503 8144 7252 7254 8023 7643 7644 7389 7135 7519 7520 7522 7805 7402 7151 7412 8180 7675 7548 7549
 	}
-	manpower=1231007
+	manpower=1231006
 	buildings_max_level_factor=1.000
 	state_category = rural
+	resources = {
+		oil = 6
+	}
 }

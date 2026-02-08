@@ -2,9 +2,6 @@
 state={
 	id=264
 	name=264_Balta
-	resources={
-		oil = 3
-	}
 	history={
 		owner = SOV
 		add_core_of = SOV
@@ -20,7 +17,10 @@ state={
 	provinces={
 		7466 6860 7341 7086 7532 7856 7345 7314 7700 6973
 	}
-	manpower=289772
+	manpower=289771
 	buildings_max_level_factor=1.000
 	state_category = rural
+	resources = {
+		oil = 3
+	}
 }

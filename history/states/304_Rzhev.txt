@@ -2,9 +2,6 @@
 state={
 	id=304
 	name=304_Rzhev
-	resources={
-		oil = 2
-	}
 	history={
 		owner = SOV
 		add_core_of = SOV
@@ -22,4 +19,7 @@ state={
 	manpower=517388
 	buildings_max_level_factor=1.000
 	state_category = rural
+	resources = {
+		oil = 2
+	}
 }

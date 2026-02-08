@@ -2,9 +2,6 @@
 state={
 	id=244
 	name=244_Kharkoff
-	resources={
-		oil = 3
-	}
 	history={
 		owner = SOV
 		add_core_of = SOV
@@ -27,4 +24,7 @@ state={
 	}
 	manpower=869506
 	state_category = city
+	resources = {
+		oil = 3
+	}
 }

@@ -2,9 +2,6 @@
 state={
 	id=374
 	name=374_Mogilev
-	resources={
-		aluminium = 4
-	}
 	history={
 		owner = SOV
 		add_core_of = SOV
@@ -24,4 +21,7 @@ state={
 	manpower=524104
 	buildings_max_level_factor=1.000
 	state_category = rural
+	resources = {
+		aluminium = 4
+	}
 }

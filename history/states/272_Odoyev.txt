@@ -2,9 +2,6 @@
 state={
 	id=272
 	name=272_Odoyev
-	resources={
-		chromium = 5
-	}
 	history={
 		owner = SOV
 		add_core_of = SOV
@@ -20,4 +17,7 @@ state={
 	manpower=268243
 	buildings_max_level_factor=1.000
 	state_category = rural
+	resources = {
+		chromium = 5
+	}
 }

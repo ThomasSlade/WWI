@@ -6,8 +6,8 @@ state={
 		owner = GER
 		add_core_of = GER
 		buildings = {
-			infrastructure = 2
 			arms_factory = 1
+			infrastructure = 2
 		}
 		victory_points = {1956 5
 		}
@@ -17,7 +17,7 @@ state={
 	provinces={
 		1952 2016 548 1924 1956 615 1895 457 1928 1963 1992 909 1901 1779 1910 634 1083 2015
 	}
-	manpower=1014042
+	manpower=1014088
 	buildings_max_level_factor=1.000
 	state_category = town
 }

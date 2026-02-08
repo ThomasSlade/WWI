@@ -10,9 +10,9 @@ state={
 		add_core_of = TRS
 		add_core_of = SLV
 		buildings = {
+			arms_factory = 1
 			industrial_complex = 1
 			infrastructure = 2
-			arms_factory = 1
 			4646 = {
 				naval_base = 6
 			}

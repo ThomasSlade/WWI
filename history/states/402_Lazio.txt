@@ -2,22 +2,14 @@
 state={
 	id=402
 	name=402_Lazio
-	resources={
-		chromium = 999
-		tungsten = 999
-		aluminium = 999
-		oil = 999
-		rubber = 999
-		steel = 999
-	}
 	history={
 		owner = ITA
 		add_core_of = ITA
 		buildings = {
+			arms_factory = 2
+			dockyard = 1
 			industrial_complex = 1
 			infrastructure = 2
-			dockyard = 1
-			arms_factory = 2
 			9427 = {
 				naval_base = 2
 			}
@@ -44,4 +36,12 @@ state={
 	manpower=1212573
 	buildings_max_level_factor=1.000
 	state_category=city
+	resources = {
+		aluminium = 999
+		chromium = 999
+		oil = 999
+		rubber = 999
+		steel = 999
+		tungsten = 999
+	}
 }

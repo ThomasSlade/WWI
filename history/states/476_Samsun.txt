@@ -6,8 +6,8 @@ state={
 		owner = TUR
 		add_core_of = TUR
 		buildings = {
-			infrastructure = 2
 			arms_factory = 1
+			infrastructure = 2
 			11475 = {
 				naval_base = 1
 			}
@@ -29,7 +29,7 @@ state={
 	provinces={
 		11649 11651 10639 11168 10659 11299 10790 11558 11063 10822 11336 11215 11474 11475 10973 11495 11245 11380 10870 10491
 	}
-	manpower=286944
+	manpower=286940
 	buildings_max_level_factor=1.000
 	state_category=town
 }

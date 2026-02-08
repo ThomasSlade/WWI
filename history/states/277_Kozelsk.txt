@@ -2,9 +2,6 @@
 state={
 	id=277
 	name=277_Kozelsk
-	resources={
-		steel = 2
-	}
 	history={
 		owner = SOV
 		add_core_of = SOV
@@ -20,4 +17,7 @@ state={
 	manpower=134598
 	buildings_max_level_factor=1.000
 	state_category = pastoral
+	resources = {
+		steel = 2
+	}
 }
