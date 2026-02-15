@@ -5,6 +5,10 @@ state={
 	history={
 		owner = USA
 		buildings = {
+			infrastructure = 1
+			227 = {
+				naval_base = 1
+			}
 		}
 		victory_points = {227 2
 		}
@@ -14,5 +18,8 @@ state={
 	}
 	manpower=32178
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=pastoral
+	resources = {
+		tungsten = 1
+	}
 }

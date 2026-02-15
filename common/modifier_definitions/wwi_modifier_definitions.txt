@@ -87,3 +87,33 @@ dummy_train_build_cost_ic = {
 	value_type = percentage
 	precision = 2
 }
+
+food_shortage_threshold = {
+	color_type = bad
+	value_type = percentage
+	precision = 2
+}
+
+food_starvation_threshold = {
+	color_type = bad
+	value_type = percentage
+	precision = 2
+}
+
+max_stability_loss_from_food_shortage = {
+	color_type = bad
+	value_type = number
+	precision = 3
+}
+
+stability_loss_from_food_shortage_factor = {
+	color_type = bad
+	value_type = percentage
+	precision = 2
+}
+
+food_per_pop_per_day = {
+	color_type = bad
+	value_type = number
+	precision = 4
+}

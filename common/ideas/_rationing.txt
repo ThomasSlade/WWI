@@ -29,7 +29,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_expected_value = 0.35
-				min_export = 0.8
+				min_export = 0.6
 				production_speed_buildings_factor = 0.1
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
@@ -96,7 +96,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_expected_value = 0.2
-				min_export = 0.3
+				min_export = 0.35
 				local_resources_efficiency = 0.1
 			}
 		}
@@ -128,7 +128,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_expected_value = 0.2
-				min_export = 0.3
+				min_export = 0.35
 			}
 		}
 
@@ -159,7 +159,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_expected_value = 0.1
-				min_export = 0.1
+				min_export = 0.25
 				local_resources_efficiency = 0.2
 			}
 		}
@@ -191,7 +191,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_expected_value = 0.1
-				min_export = 0.1
+				min_export = 0.25
 			}
 		}
 
@@ -221,7 +221,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_expected_value = 0.05
-				min_export = 0
+				min_export = 0.1
 				local_resources_efficiency = 0.3
 			}
 		}

@@ -26,6 +26,5 @@ state={
 	resources = {
 		rubber = 999
 		steel = 3
-		tungsten = 999
 	}
 }

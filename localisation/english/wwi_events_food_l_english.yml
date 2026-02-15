@@ -1,0 +1,31 @@
+﻿l_english:
+  event_food_shortage.1.t: "Food Shortages in [THIS.GetName]"
+  event_food_shortage.1.d: "Weary shoppers across the markets of [THIS.GetNameDef] were dismayed to find many of their usual groceries absent this Saturday, as shortages take hold of the nation. When pressed, [THIS.capital.GetCapitalVictoryPointName] officials pointed to unfavourable trade and a weak harvest.\n\nThough not yet acute, food supplies threaten to plummet further - and take our government with them - unless something is done."
+  event_food_shortage.1.d_war: "Weary shoppers across the markets of [THIS.GetNameDef] were dismayed to find many of their usual groceries absent this Saturday, as shortages take hold of the nation.\n\nOfficials in [THIS.capital.GetCapitalVictoryPointName] point to the ongoing war and the collapse of maritime imports as the cause of disruption, and urge resoluteness in its wake. But it's unclear that the homefront will hold, should the shortages worsen."
+  event_food_shortage.1.a: "We will make do."
+
+  event_food_shortage.2.t: "Food Shortages Intensify"
+  event_food_shortage.2.d: "Breadlines snake across [THIS.GetAdjective] high-streets, as a dearth in cheeses and meats becomes one of oats and flour. Week on week, [THIS.GetAdjective] families find their pantries barer, and their stomachs emptier.\n\nGovernment attempts to redirect blame no longer butter any parsnips, with the public openly accusing [THIS.capital.GetCapitalVictoryPointName] of failure to feed its people. If this crisis is not reversed soon, this administration will not survive."
+  event_food_shortage.2.d_war: "Breadlines snake across [THIS.GetAdjective] high-streets, as a dearth in cheeses and meats becomes one of oats and flour. Week on week, [THIS.GetAdjective] families find their pantries barer, and their stomachs emptier.\n\nAs the war drags on, appeals to public perseverance fall on deaf ears - many now insist that the government is hoarding food to control prices. If this crisis is not reversed soon, this administration will not survive."
+  event_food_shortage.2.a: "[THIS.GetNameDefCap] goes hungry."
+
+  event_food_shortage.3.t: "Food Shortages Subside in [THIS.GetName]"
+  event_food_shortage.3.d: "With the return of numerous goods to market stalls and shop windows, [THIS.GetAdjective] citizens are once again going about their business safe in the knowledge that their families can be fed.\n\nIf food is kept plentiful, public opinion is bound to remain in our favour."
+  event_food_shortage.3.a_french: "Bon appetit."
+  event_food_shortage.3.a_italian: "Mangiamo."
+  event_food_shortage.3.a_german: "Guten appetit."
+  event_food_shortage.3.a_russian: "Priyatnogo appetita."
+  event_food_shortage.3.a_british: "Dinner is served."
+  event_food_shortage.3.a_neutral: "Dinner is served."
+
+  event_food_shortage.4.t: "Food Shortages Relieved in [THIS.GetName]"
+  event_food_shortage.4.d: "The critical lack of cereals and staples on [THIS.GetAdjective] markets has been steadily brought under control, thanks to the painstaking work of government officials.\n\nThough delighted to be rid of 'war loaves' and 'hero's butter', families across [THIS.GetNameDef] still grumble over high food prices and a dearth in fruits and meat. More needs to be done to regain the support of our public."
+  event_food_shortage.4.a: "Thank goodness."
+
+  event_food_shortage.5.t_turnip_winter: "The Turnip Winter"
+  event_food_shortage.5.t: "Food Scarcity Grips [FROM.GetName]"
+  event_food_shortage.5.d_body: "The ongoing war is taking its toll well behind the front-lines in [FROM.GetNameDef], as a lack of staple food deepens and households across the besieged nation go hungry.\n\nNeutral journalists have expressed alarm at the visibly weakened [FROM.GetAdjective] women and gaunt children, while officials quietly estimate that the caloric requirements of the public have not been met for some time."
+  event_food_shortage.5.d_no_blockade: "$event_food_shortage.5.d_body$\n\nShould this situation continue, [FROM.GetNameDef] is at risk of starvation."
+  event_food_shortage.5.d_blockade: "$event_food_shortage.5.d_body$\n\nLeader of [FROM.GetNameDef], [FROM.GetLeader], has expressed outrage at the blockade imposed on [FROM.GetHerHis] country, condemning [FROM.GetHerHis] enemies' actions as inhumane. Though some international voices support this view, there is no sign that the [FROM.GetAdjective] will soon be lifted."
+  event_food_shortage.5.a_neutral: "The [FROM.GetAdjective] people suffer."
+  event_food_shortage.5.a_negative: "This is a war they started."

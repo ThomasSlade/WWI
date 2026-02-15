@@ -6,6 +6,10 @@ state={
 		owner = CAN
 		add_core_of = CAN
 		buildings = {
+			infrastructure = 1
+			1220 = {
+				naval_base = 1
+			}
 		}
 		victory_points = {1220 2
 		}
@@ -15,5 +19,5 @@ state={
 	}
 	manpower=90753
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=pastoral
 }

@@ -1,6 +1,6 @@
 resources = {
 	oil = {
-		icon_frame = 1
+		icon_frame = 4
 		cic = 0.125
 		convoys = 0.1
 	}
@@ -19,7 +19,11 @@ resources = {
 	
 	# Grain
 	tungsten = {
-		icon_frame = 4
+		# WWI: Grain's icon MUST be at index 1. Why's that?
+		# If you look at the loc key FUEL_DAILY_GAIN_FROM_OIL in vanilla. 'Just change £resources_strip|1 to whatever index you want', you might say.
+		# Oh I tried. I originally had grain's icon at index 4. Yet when I changed this key's contents to '£resources_strip|4', it still showed the fuel icon.
+		# Someone at Paradox has evidently hard-coded something.
+		icon_frame = 1
 		cic = 0.125
 		convoys = 0.1
 	}

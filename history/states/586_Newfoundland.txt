@@ -3,9 +3,13 @@ state={
 	id=586
 	name=586_Newfoundland
 	history={
-		owner = CAN
-		add_core_of = CAN
+		owner = ENG
+		add_core_of = ENG
 		buildings = {
+			infrastructure = 1
+			12734 = {
+				naval_base = 2
+			}
 		}
 		victory_points = {12734 5
 		}

@@ -1,0 +1,84 @@
+effect_consume_food = {
+	set_variable = { food_consumed_daily = max_manpower_k }
+	multiply_variable = { food_consumed_daily = modifier@food_per_pop_per_day }
+	set_variable = { food_consumed_hourly = food_consumed_daily }
+	divide_variable = { food_consumed_hourly = 24 }
+}
+
+effect_update_food_shortages = {
+	set_temp_variable = { prev_state = food_shortage_state }
+
+	if = {
+		limit = { check_variable = { fuel_ratio < modifier@food_shortage_threshold } }
+		if = {
+			limit = { check_variable = { fuel_ratio < modifier@food_starvation_threshold } }
+			set_variable = { food_shortage_state = 3 }
+		}
+		else = {
+			set_variable = { food_shortage_state = 2 }
+		}
+
+		# Negate the loss base value. It's positive for display comprehension.
+		set_temp_variable = { stability_loss = 0 }
+
+		subtract_from_temp_variable = { stability_loss = modifier@max_stability_loss_from_food_shortage }
+		multiply_temp_variable = { stability_loss = modifier@stability_loss_from_food_shortage_factor }
+
+		set_variable = { food_shortage_stability_weekly = stability_loss }
+	}
+	else = {
+		set_variable = { food_shortage_state = 1 }
+
+		set_variable = { food_shortage_stability_weekly = 0 }
+	}
+
+	if = {
+		limit = { NOT = { check_variable = { prev_state = food_shortage_state } } }
+
+		if = {
+			limit = { check_variable = { prev_state = 3 } }
+			# Starvation ended
+			country_event = { id = event_food_shortage.4 }
+		}
+		else_if = {
+			limit = { check_variable = { prev_state = 2 } }
+			if = {
+				limit = { check_variable = { food_shortage_state = 1 } }
+				# Shortage ended
+				country_event = { id = event_food_shortage.3 }
+			}
+			else_if = {
+				limit = { check_variable = { food_shortage_state = 3 } }
+				# Starvation began
+				country_event = { id = event_food_shortage.2 }
+				if = {
+					limit = {
+						is_major = yes
+						NOT = { has_global_flag = flag_starvation_news_event_happened }
+					}
+					news_event = { id = event_food_shortage.5 days = 7 }
+				}
+			}
+		}
+		else_if = {
+			limit = { check_variable = { prev_state = 1 } }
+			if = {
+				limit = { check_variable = { food_shortage_state = 2 } }
+				# Shortage began
+				country_event = { id = event_food_shortage.1 }
+			}
+			else_if = {
+				limit = { check_variable = { food_shortage_state = 3 } }
+				# Starvation began
+				country_event = { id = event_food_shortage.2 }
+				if = {
+					limit = {
+						is_major = yes
+						NOT = { has_global_flag = flag_starvation_news_event_happened }
+					}
+					news_event = { id = event_food_shortage.5 days = 7 }
+				}
+			}
+		}
+	}
+}

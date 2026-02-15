@@ -1,0 +1,182 @@
+add_namespace = event_food_shortage
+
+country_event = {
+	id = event_food_shortage.1
+	title = event_food_shortage.1.t
+	desc = {
+		text = event_food_shortage.1.d_war
+		trigger = {
+			has_war = yes
+		}
+	}
+	desc = event_food_shortage.1.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Food shortage begins."
+	}
+
+	option = {
+		name = event_food_shortage.1.a
+		custom_effect_tooltip = effect_food_shortages_begin_tt
+		custom_effect_tooltip = effect_food_shortages_recover_tt
+	}
+}
+
+country_event = {
+	id = event_food_shortage.2
+	title = event_food_shortage.2.t
+	desc = {
+		text = event_food_shortage.2.d_war
+		trigger = {
+			has_war = yes
+		}
+	}
+	desc = event_food_shortage.2.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Food starvation begins."
+	}
+
+	option = {
+		name = event_food_shortage.2.a
+	}
+}
+
+country_event = {
+	id = event_food_shortage.3
+	title = event_food_shortage.3.t
+	desc = event_food_shortage.3.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Food shortage ends."
+	}
+
+	option = {
+		name = event_food_shortage.3.a_french
+		trigger = {
+			is_francophone = yes
+		}
+	}
+
+	option = {
+		name = event_food_shortage.3.a_german
+		trigger = {
+			is_germanophone = yes
+		}
+	}
+
+	option = {
+		name = event_food_shortage.3.a_russian
+		trigger = {
+			is_russophone = yes
+		}
+	}
+
+	option = {
+		name = event_food_shortage.3.a_italian
+		trigger = {
+			is_italophone = yes
+		}
+	}
+
+	option = {
+		name = event_food_shortage.3.a_english
+		trigger = {
+			is_anglophone = yes
+		}
+	}
+
+	option = {
+		name = event_food_shortage.3.a_english
+		trigger = {
+			is_francophone = no
+			is_germanophone = no
+			is_russophone = no
+			is_italophone = no
+			is_anglophone = no
+		}
+	}
+}
+
+country_event = {
+	id = event_food_shortage.4
+	title = event_food_shortage.4.t
+	desc = event_food_shortage.4.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "([THIS.GetName] event) Food starvation ends."
+	}
+
+	option = {
+		name = event_food_shortage.4.a
+	}
+}
+
+news_event = {
+	id = event_food_shortage.5
+	title = {
+		text = event_food_shortage.5.t_turnip_winter
+		trigger = {
+			trigger_is_spring_or_summer = no
+			NOT = { has_global_flag = flag_turnip_winter_happened }
+		}
+	}
+	title = {
+		text = event_food_shortage.5.t
+	}
+	desc = {
+		text = event_food_shortage.5.d_no_blockade
+		trigger = {
+			any_enemy_country = {
+				is_major = yes
+				NOT = { has_idea = open_sealanes }
+			}
+		}
+	}
+	desc = {
+		text = event_food_shortage.5.d_blockade
+	}
+	picture = GFX_news_event_british_trench
+
+	is_triggered_only = yes
+	major = yes
+
+	immediate = {
+		log = "([THIS.GetName] news event) Starvation news event."
+		set_global_flag = { flag = flag_starvation_news_event_happened value = 1 days = 60 }
+
+		if = {
+			trigger = {
+				trigger_is_spring_or_summer = no
+				NOT = { has_global_flag = flag_turnip_winter_happened }
+			}
+			set_global_flag = flag_turnip_winter_happened
+		}
+	}
+
+	option = {
+		name = event_food_shortage.5.a_neutral
+		trigger = {
+			NOT = { has_war_with = FROM }
+		}
+	}
+
+	option = {
+		name = event_food_shortage.5.a_negative
+		trigger = {
+			has_war_with = FROM
+		}
+	}
+}

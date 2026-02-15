@@ -129,3 +129,61 @@ is_slavic = {
 		tag = MNT
 	}
 }
+
+is_francophone = {
+	OR = {
+		tag = FRA
+		tag = OCC
+		tag = LOT
+	}
+}
+
+is_germanophone = {
+	OR = {
+		tag = GER
+		tag = AUS
+		tag = SWI
+		tag = BAY
+		tag = SAX
+		tag = WUR
+		tag = BAD
+		tag = HNS
+		tag = ELR
+		tag = ELA
+	}
+}
+
+is_anglophone = {
+	OR = {
+		tag = ENG
+		tag = AUS
+		tag = CAN
+		tag = USA
+		tag = NZL
+		tag = IRE
+	}
+}
+
+is_italophone = {
+	OR = {
+		tag = ITA
+	}
+}
+
+is_russophone = {
+	OR = {
+		tag = SOV
+		tag = UKR
+		tag = BLR
+	}
+}
+
+trigger_is_spring_or_summer = {
+	meta_trigger = {
+		YEAR = "[GetYear]"
+	    text = {
+	        date > [YEAR].3.1
+	        date < [YEAR].9.1
+	    }
+	}
+}

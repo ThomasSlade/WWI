@@ -6,6 +6,13 @@ state={
 		owner = USA
 		add_core_of = USA
 		buildings = {
+			arms_factory = 2
+			dockyard = 1
+			industrial_complex = 2
+			infrastructure = 2
+			12666 = {
+				naval_base = 3
+			}
 		}
 		victory_points = {12666 50
 		}
@@ -15,5 +22,5 @@ state={
 	}
 	manpower=5959961
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=city
 }

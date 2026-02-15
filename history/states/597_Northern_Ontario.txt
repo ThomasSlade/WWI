@@ -6,6 +6,8 @@ state={
 		owner = CAN
 		add_core_of = CAN
 		buildings = {
+			industrial_complex = 1
+			infrastructure = 1
 		}
 		victory_points = {12703 5
 		}
@@ -15,5 +17,8 @@ state={
 	}
 	manpower=631823
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=town
+	resources = {
+		tungsten = 1
+	}
 }

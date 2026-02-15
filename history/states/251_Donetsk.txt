@@ -23,5 +23,6 @@ state={
 	state_category = pastoral
 	resources = {
 		chromium = 3
+		tungsten = 6
 	}
 }

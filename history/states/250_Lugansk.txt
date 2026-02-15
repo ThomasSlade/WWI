@@ -30,5 +30,6 @@ state={
 	resources = {
 		oil = 12
 		steel = 4
+		tungsten = 11
 	}
 }

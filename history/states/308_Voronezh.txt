@@ -22,5 +22,6 @@ state={
 	state_category = rural
 	resources = {
 		aluminium = 5
+		tungsten = 2
 	}
 }

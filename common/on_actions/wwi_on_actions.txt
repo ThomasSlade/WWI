@@ -14,11 +14,18 @@ on_actions = {
 			GER = {
 				# on_startup has a scope of NONE so you have to scope into a random country to do things which are actually just global operations.
 				effect_setup_laws = yes
+				effect_setup_offmap_states = yes
 			}
 
 			SOV = { set_cosmetic_tag = SOV_EMPIRE }
 
 			every_possible_country = {
+				set_variable = { food_shortage_stability_weekly = 0 }
+				set_variable = { food_consumed_daily = 0 }
+				set_variable = { food_consumed_hourly = 0 }
+				# Set to invalid to prevent giving the player an alert event on startup.
+				# 1 = No shortage, 2 = Shortage, 3 = Starvation
+				set_variable = { food_shortage_state = -1 }
 				set_variable = { free_civ_from_mils = 0 }
 				set_variable = { current_free_civs_from_mils = 0 }	# Necessary because the free_civ_from_mils mechanic is based on daily (there's no on_building_build sadly), so you need to track what it was last update and add the difference next update.
 				set_variable = { free_civ_from_navs = 0 }
@@ -31,10 +38,14 @@ on_actions = {
 				set_variable = { cannot_decrease_blockade_policy_laws = 0 }
 
 				add_ideas = idea_base_values
+				add_dynamic_modifier = { modifier = modifier_food_shortage }
 
 				effect_update_civs_from_mils = yes
 				effect_update_civs_from_navs = yes
 				effect_update_boost_party_strength = yes
+
+				effect_consume_food = yes
+				effect_update_food_shortages = yes
 
 				effect_setup_politics = yes
 
@@ -67,6 +78,13 @@ on_actions = {
 			effect_update_civs_from_mils = yes
 			effect_update_civs_from_navs = yes
 			effect_update_boost_party_strength = yes
+		}
+	}
+
+	on_weekly = {
+		effect = {
+			effect_consume_food = yes
+			effect_update_food_shortages = yes
 		}
 	}
 

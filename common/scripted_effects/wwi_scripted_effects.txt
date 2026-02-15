@@ -227,3 +227,11 @@ effect_update_boost_party_strength = {
 	set_variable = { boost_party_cost = modifier@boost_party_cost_base }
 	multiply_variable = { boost_party_cost = modifier@boost_party_cost_factor }
 }
+
+effect_setup_offmap_states = {
+	every_state = {
+		limit = { is_on_continent = americas }
+
+		add_dynamic_modifier = { modifier = modifier_offmap_state }
+	}
+}

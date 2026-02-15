@@ -22,5 +22,6 @@ state={
 	state_category = town
 	resources = {
 		aluminium = 8
+		tungsten = 1
 	}
 }

@@ -184,3 +184,18 @@ modifier_ENG_naval_race_coastal_infrastructure_bonus = {
 
 	production_speed_infrastructure_factor = ENG.modifier@naval_race_coastal_infrastructure_bonus
 }
+
+modifier_food_shortage = {
+	icon = GFX_idea_generic_resistance
+
+	stability_weekly = food_shortage_stability_weekly
+	fuel_cost = food_consumed_hourly
+}
+
+modifier_offmap_state = {
+	icon = GFX_modifiers_generic_military_industry
+
+	production_speed_infrastructure_factor = -0.5
+	production_speed_rail_way_factor = -0.5
+	local_building_slots_factor = 1
+}

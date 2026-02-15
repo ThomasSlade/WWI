@@ -35,6 +35,5 @@ state={
 		oil = 999
 		rubber = 999
 		steel = 999
-		tungsten = 999
 	}
 }
