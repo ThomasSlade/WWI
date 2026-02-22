@@ -3,7 +3,7 @@ strategic_region={
 	id=131
 	name=131_Porcupine_Basin
 	provinces={
-		513 515 644 392 588 307 439 730 188 317
+		513 515 644 392 1242 588 307 439 730 188 317
 	}
 	weather={
 	}

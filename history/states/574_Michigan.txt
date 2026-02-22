@@ -14,12 +14,14 @@ state={
 		}
 	}
 	provinces={
-		12664 12737 12738
+		12664 12642 12644
 	}
 	manpower=2810173
 	buildings_max_level_factor=1.000
 	state_category=town
 	resources = {
+		chromium = 4
+		steel = 10
 		tungsten = 27
 	}
 }

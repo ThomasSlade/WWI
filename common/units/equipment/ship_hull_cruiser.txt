@@ -431,9 +431,10 @@ equipments = {
 		surface_visibility = 15
 		naval_speed = 29
 		reliability = 0.8
+
 		resources = {
-			#oil = 1
-			steel = 2
+			steel = 1
+			coal = 1
 		}
 	}
 
@@ -480,10 +481,12 @@ equipments = {
 			anti_air
 		}
 		build_cost_ic = 1650
+
 		resources = {
-			#oil = 1
-			steel = 3
+			steel = 1
+			coal = 1
 		}
+
 		manpower = 800
 	}
 	light_cruiser_3 = {
@@ -531,10 +534,12 @@ equipments = {
 			anti_air
 		}
 		build_cost_ic = 1700
+
 		resources = {
-			#oil = 2
-			steel = 3
+			steel = 1
+			oil = 1
 		}
+
 		manpower = 960
 	}
 	
@@ -583,11 +588,13 @@ equipments = {
 			anti_air
 		}
 		build_cost_ic = 2000
+
 		resources = {
-			#oil = 2
-			steel = 4
-			chromium = 1
+			steel = 1
+			copper = 1
+			oil = 1
 		}
+
 		manpower = 1140
 	}
 
@@ -700,9 +707,10 @@ equipments = {
 		fuel_consumption = 33
 		
 		build_cost_ic = 2200
+
 		resources = {
-			#oil = 1
-			steel = 3
+			steel = 2
+			coal = 1
 		}
 		
 		manpower = 1500
@@ -750,10 +758,12 @@ equipments = {
 
 
 		build_cost_ic = 2600
+
 		resources = {
-			#oil = 1
-			steel = 4
-		}		
+			steel = 2
+			coal = 1
+		}
+
 		manpower = 1700
 	}
 	
@@ -800,10 +810,12 @@ equipments = {
 
 
 		build_cost_ic = 3000
+
 		resources = {
-			#oil = 2
-			steel = 4
-		}		
+			steel = 2
+			coal = 1
+		}
+
 		manpower = 1900
 	}
 	
@@ -851,11 +863,13 @@ equipments = {
 
 
 		build_cost_ic = 3400
+
 		resources = {
-			#oil = 2
-			steel = 5
-			chromium = 1
-		}		
+			steel = 2
+			copper = 1
+			coal = 1
+		}
+
 		manpower = 2200
 	}
 	

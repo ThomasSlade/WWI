@@ -28,6 +28,8 @@ state={
 	buildings_max_level_factor=1.000
 	state_category = town
 	resources = {
-		tungsten = 9
+		coal = 2
+		oil = 7
+		steel = 4
 	}
 }

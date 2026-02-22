@@ -30,7 +30,8 @@ equipments = {
 		
 		build_cost_ic = 350
 		resources = {
-			steel = 4
+			steel = 2
+			chromium = 2
 		}
 	}
 
@@ -49,5 +50,10 @@ equipments = {
 		parent = siege_artillery_equipment_0
 		priority = 50
 		visual_level = 1
+
+		resources = {
+			steel = 3
+			chromium = 2
+		}
 	}
 }

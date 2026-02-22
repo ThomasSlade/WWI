@@ -30,7 +30,8 @@ equipments = {
 		
 		build_cost_ic = 40
 		resources = {
-			steel = 3
+			steel = 1
+			chromium = 1
 		}
 	}
 
@@ -49,6 +50,11 @@ equipments = {
 		parent = heavy_artillery_equipment_0
 		priority = 50
 		visual_level = 1
+
+		resources = {
+			steel = 2
+			chromium = 1
+		}
 	}
 
 	heavy_artillery_equipment_2 = {
@@ -58,5 +64,10 @@ equipments = {
 		parent = heavy_artillery_equipment_1
 		priority = 50
 		visual_level = 2
+
+		resources = {
+			steel = 2
+			chromium = 1
+		}
 	}
 }

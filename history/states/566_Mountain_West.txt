@@ -17,4 +17,8 @@ state={
 	manpower=522018
 	buildings_max_level_factor=1.000
 	state_category=pastoral
+	resources = {
+		coal = 2
+		copper = 2
+	}
 }

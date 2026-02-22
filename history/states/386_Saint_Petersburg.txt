@@ -25,6 +25,5 @@ state={
 	state_category = city
 	resources = {
 		rubber = 999
-		steel = 3
 	}
 }

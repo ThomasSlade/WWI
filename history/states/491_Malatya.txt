@@ -22,4 +22,8 @@ state={
 	manpower=311220
 	buildings_max_level_factor=1.000
 	state_category=rural
+	resources = {
+		oil = 1
+		steel = 4
+	}
 }

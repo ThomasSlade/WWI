@@ -31,6 +31,9 @@ state={
 	buildings_max_level_factor=1.000
 	state_category = metropolis
 	resources = {
+		chromium = 3
+		coal = 5
+		steel = 5
 		tungsten = 12
 	}
 }

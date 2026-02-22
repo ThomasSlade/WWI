@@ -30,6 +30,11 @@ equipments = {
 
 		manpower = 20
 		fuel_consumption = 0.21
+
+		resources = {
+			aluminium = 1
+			oil = 1
+		}
 	}
 
 	fighter_equipment_0 = {
@@ -60,6 +65,11 @@ equipments = {
 
 		manpower = 20
 		fuel_consumption = 0.21
+
+		resources = {
+			aluminium = 1
+			oil = 1
+		}
 	}
 
 	fighter_equipment_1 = {
@@ -90,5 +100,11 @@ equipments = {
 
 		manpower = 20
 		fuel_consumption = 0.21
+
+		resources = {
+			aluminium = 1
+			rubber = 1
+			oil = 1
+		}
 	}
 }

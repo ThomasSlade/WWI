@@ -24,10 +24,8 @@ state={
 	buildings_max_level_factor=1.000
 	state_category = city
 	resources = {
-		aluminium = 999
-		chromium = 999
-		oil = 999
+		copper = 3
 		rubber = 999
-		steel = 999
+		steel = 4
 	}
 }

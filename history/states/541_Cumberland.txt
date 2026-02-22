@@ -26,6 +26,8 @@ state={
 	buildings_max_level_factor=1.000
 	state_category=rural
 	resources = {
-		tungsten = 1
+		coal = 2
+		copper = 1
+		steel = 5
 	}
 }

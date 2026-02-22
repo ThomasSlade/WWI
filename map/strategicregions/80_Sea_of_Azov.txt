@@ -3,7 +3,7 @@ strategic_region={
 	id=80
 	name=80_Sea_of_Azov
 	provinces={
-		12641 649 9166 176 9180
+		176 649 9180 9166
 	}
 	weather={
 	}

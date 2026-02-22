@@ -29,4 +29,8 @@ state={
 	manpower=2150463
 	buildings_max_level_factor=1.000
 	state_category=metropolis
+	resources = {
+		coal = 5
+		steel = 3
+	}
 }

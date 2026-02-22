@@ -32,4 +32,8 @@ state={
 	manpower=3936190
 	buildings_max_level_factor=1.000
 	state_category = metropolis
+	resources = {
+		chromium = 5
+		coal = 3
+	}
 }
