@@ -207,24 +207,24 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			28 = {
+			46 = {
 				add_resource = {
-					type = oil
-					amount = 30
+					type = coal
+					amount = 8
 				}
 			}
 
 			45 = {
 				add_resource = {
-					type = oil
-					amount = 10
+					type = coal
+					amount = 4
 				}
 			}
 
 			52 = {
 				add_resource = {
-					type = oil
-					amount = 10
+					type = coal
+					amount = 4
 				}
 			}
 
@@ -246,27 +246,16 @@ focus_tree = {
 
 		available_if_capitulated = no
 
+		available = {
+			OR = {
+				controls_state = 28
+				controls_state = 64
+				controls_state = 50
+			}
+		}
+
 		completion_reward = {
 			28 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-
-					add_building_construction = {
-					    type = infrastructure
-					    level = 2
-					    instant_build = yes
-					}
-
-					add_extra_state_shared_building_slots = 1
-
-					add_resource = {
-						type = oil
-						amount = 30
-					}
-				}
-			}
-
-			82 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 
@@ -276,11 +265,26 @@ focus_tree = {
 					    instant_build = yes
 					}
 
-					add_extra_state_shared_building_slots = 1
+					add_resource = {
+						type = coal
+						amount = 8
+					}
+				}
+			}
+
+			64 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+
+					add_building_construction = {
+					    type = infrastructure
+					    level = 1
+					    instant_build = yes
+					}
 
 					add_resource = {
-						type = steel
-						amount = 30
+						type = copper
+						amount = 8
 					}
 				}
 			}
@@ -293,13 +297,6 @@ focus_tree = {
 					    type = infrastructure
 					    level = 1
 					    instant_build = yes
-					}
-
-					add_extra_state_shared_building_slots = 1
-
-					add_resource = {
-						type = tungsten
-						amount = 30
 					}
 				}
 			}
@@ -381,22 +378,41 @@ focus_tree = {
 
 		available_if_capitulated = no
 
+		available = {
+			controls_state = 82
+		}
+
 		completion_reward = {
 			82 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 4
 
 					add_building_construction = {
 					    type = industrial_complex
-					    level = 2
+					    level = 1
 					    instant_build = yes
 					}
 
-					add_resource = {
-						type = aluminium
-						amount = 30
+					add_building_construction = {
+					    type = arms_factory
+					    level = 1
+					    instant_build = yes
+					}
+
+					add_building_construction = {
+					    type = infrastructure
+					    level = 1
+					    instant_build = yes
+					}
+
+					SAX = {
+						add_to_variable = {
+							var = rr_base_factories_expected
+							value = 0.02
+							tooltip = rr_base_factories_expected_tt
+						}
 					}
 				}
 			}
@@ -2566,6 +2582,7 @@ focus_tree = {
 		id = GER_light_artillery
 		icon = GFX__shine
 		prerequisite = { focus = GER_artillery_test_commission }
+		mutually_exclusive = { focus = GER_heavy_artillery }
 		x = -1
 		y = 1
 		relative_position_id = GER_artillery_test_commission
@@ -2589,6 +2606,7 @@ focus_tree = {
 		id = GER_heavy_artillery
 		icon = GFX__shine
 		prerequisite = { focus = GER_artillery_test_commission }
+		mutually_exclusive = { focus = GER_light_artillery }
 		x = 1
 		y = 1
 		relative_position_id = GER_artillery_test_commission

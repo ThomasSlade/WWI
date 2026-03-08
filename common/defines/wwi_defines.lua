@@ -14,7 +14,7 @@ NDefines.NCountry.WAR_SUPPORT_DEFENSIVE_WAR = 0.0	-- Impact of being in defensiv
 NDefines.NCountry.WAR_SUPPORT_TENSION_IMPACT = 0.0	-- Total impact of world tension
 NDefines.NCountry.MIN_FOCUSES_FOR_CONTINUOUS = 0	-- Focuses needed to unlock continuous focuses
 NDefines.NCountry.BASE_FUEL_GAIN_PER_OIL = 2		-- base amount of fuel gained hourly per excess oil
-NDefines.NCountry.BASE_FUEL_CAPACITY = 250000		-- base amount of fuel capacity
+NDefines.NCountry.BASE_FUEL_CAPACITY = 500000		-- base amount of fuel capacity
 
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 10 	--Base cost to unlock a regiment slot,
 NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.053
@@ -37,11 +37,12 @@ NDefines.NAir.COMBAT_DAMAGE_STATS_MULTILPIER = 0.4	-- Multiplier for damage done
 -- Below is the daily desire gain for each action.
 NDefines.NAI.DESIRE_USE_XP_TO_UNLOCK_LAND_DOCTRINE = 1.0	-- How quickly is desire to unlock land doctrines accumulated?
 NDefines.NAI.DESIRE_USE_XP_TO_UPDATE_LAND_TEMPLATE = 1.0	-- How quickly is desire to update/create templates accumulated?
+NDefines.NAI.MAX_FACTORY_TO_TRADE_FOR_FUEL = 2
 
 NDefines.NAI.DIVISION_SUPPLY_RATIO_TO_MOTORIZE = 0.00	-- If supply ratio is less than this, consider motorizing any applicable nearby supply hub
 -- Changed so that AI more urgently pursues entrenchment doctrines.
 NDefines.NAI.VARIANT_CREATION_XP_RESERVE_LAND = 20	-- If the AI lacks army XP to create a variant it will reserve this much XP for variant creation so that it will eventually be able to create a variant.
-NDefines.NAI.MIN_WANTED_MAX_FUEL = 150	-- minimum value for wanted fuel buffers for AI (in thousands)
+NDefines.NAI.MIN_WANTED_MAX_FUEL = 600	-- minimum value for wanted fuel buffers for AI (in thousands)
 NDefines.NAI.MAX_FACTORY_TO_TRADE_FOR_FUEL = 1
 
 NDefines.NProduction.BASE_FACTORY_SPEED = 5

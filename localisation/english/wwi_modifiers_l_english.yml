@@ -55,6 +55,8 @@
   modifier_GER_schlieffen_plan_tt: "When at war with §Y[FRA.GetNameDef]§! or §Y[ENG.GetNameDef]§!:\nGains §Y$puppet_wargoal_focus$§! war goal against §Y[BEL.GetName]§!\nGains §Y$annex_everything$§! war goal against §Y[LUX.GetName]§!"
   modifier_GER_schlieffen_plan_netherlands_tt: "Gains §Y$puppet_wargoal_focus$§! war goal against §Y[HOL.GetName]§!"
   modifier_GER_schlieffen_plan_unaltered_tt: "$modifier_GER_schlieffen_plan_tt$\n$modifier_GER_schlieffen_plan_netherlands_tt$"
+  rr_base_factories_expected: "Expected industry share" 
+  rr_base_factories_expected_tt: " $rr_base_factories_expected$ $RIGHT|+=%1$"
 
   modifier_GER_BAY_loyal_reserve_rights: "Loyal Federated State"
   modifier_GER_BAY_disloyal_reserve_rights: "Disloyal Federated State"
@@ -129,8 +131,8 @@
 
   rr_industry_share_outline_tt: "[THIS.GetNameWithFlag] ([THIS.GetRRLoyalty])\n    [THIS.GetIndustryShare]\n        [THIS.GetConsumerGoodsRREffect]        [THIS.GetUniqueRREffect1]        [THIS.GetUniqueRREffect2]"
 
-  rr_industry_share_disloyal_tt: "[?rr_factories_percentage|%R] (Expects [?rr_factories_expected|%Y])"
-  rr_industry_share_loyal_tt: "[?rr_factories_percentage|%Y]  (Expects [?rr_factories_expected|%Y])"
+  rr_industry_share_disloyal_tt: "[?rr_factories_percentage|%R] ($rr_base_factories_expected$ [?rr_factories_expected|%Y])"
+  rr_industry_share_loyal_tt: "[?rr_factories_percentage|%Y]  ($rr_base_factories_expected$ [?rr_factories_expected|%Y])"
   rr_disloyal: "§RDisloyal§!"
   rr_loyal: "§GLoyal§!"
   rr_disabled: "§YOccupied§!"

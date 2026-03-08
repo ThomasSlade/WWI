@@ -4,7 +4,7 @@ ideas = {
 		use_list_view = yes
 
 		disarmed_nation = {	
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 			
@@ -62,7 +62,7 @@ ideas = {
 		}
 
 		national_service = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 			default = yes
@@ -88,11 +88,12 @@ ideas = {
 
 			modifier = {
 				conscription = 0.02
+				fuel_gain_factor = -0.05
 			}
 		}
 
 		limited_conscription = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 			
@@ -117,12 +118,12 @@ ideas = {
 
 			modifier = {
 				conscription = 0.03
-				fuel_gain_factor = -0.05
+				fuel_gain_factor = -0.1
 			}
 		}
 
 		extensive_conscription = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 			
@@ -149,12 +150,12 @@ ideas = {
 			modifier = {
 				conscription = 0.05
 				training_time_factor = 0.1
-				fuel_gain_factor = -0.1
+				fuel_gain_factor = -0.2
 			}
 		}
 
 		deployed_workers_0 = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 			
@@ -183,12 +184,12 @@ ideas = {
 				training_time_factor = 0.1
 				industrial_capacity_factory = -0.15
 				industrial_capacity_dockyard = -0.15
-				fuel_gain_factor = -0.2
+				fuel_gain_factor = -0.3
 			}
 		}
 
 		deployed_labourers_0 = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 			
@@ -217,12 +218,12 @@ ideas = {
 				training_time_factor = 0.1
 				local_resources_factor = -0.1
 				production_speed_buildings_factor = -0.1
-				fuel_gain_factor = -0.3
+				fuel_gain_factor = -0.4
 			}
 		}
 
 		deployed_workers_1 = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 			
@@ -251,12 +252,12 @@ ideas = {
 				training_time_factor = 0.25
 				industrial_capacity_factory = -0.3
 				industrial_capacity_dockyard = -0.3
-				fuel_gain_factor = -0.3
+				fuel_gain_factor = -0.4
 			}
 		}
 
 		deployed_labourers_1 = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 			
@@ -285,12 +286,12 @@ ideas = {
 				training_time_factor = 0.25
 				local_resources_factor = -0.2
 				production_speed_buildings_factor = -0.2
-				fuel_gain_factor = -0.4
+				fuel_gain_factor = -0.5
 			}
 		}
 
 		scraping_the_barrel = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 			
@@ -320,7 +321,7 @@ ideas = {
 				industrial_capacity_dockyard = -0.4
 				local_resources_factor = -0.3
 				production_speed_buildings_factor = -0.3
-				fuel_gain_factor = -0.45
+				fuel_gain_factor = -0.6
 			}
 		}
 	}

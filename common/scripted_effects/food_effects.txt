@@ -20,9 +20,16 @@ effect_update_food_shortages = {
 
 		# Negate the loss base value. It's positive for display comprehension.
 		set_temp_variable = { stability_loss = 0 }
-
 		subtract_from_temp_variable = { stability_loss = modifier@max_stability_loss_from_food_shortage }
 		multiply_temp_variable = { stability_loss = modifier@stability_loss_from_food_shortage_factor }
+
+		# Value represents how far into the shortage we are, 0 being only just, 1 being completely out of food.
+		set_temp_variable = { shortage_severity = fuel_ratio }
+		divide_temp_variable = { shortage_severity = modifier@food_shortage_threshold }
+		multiply_temp_variable = { shortage_severity = -1 }
+		add_to_temp_variable = { shortage_severity = 1 }
+
+		multiply_temp_variable = { stability_loss = shortage_severity }
 
 		set_variable = { food_shortage_stability_weekly = stability_loss }
 	}

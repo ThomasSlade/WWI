@@ -4,7 +4,7 @@ ideas = {
 		use_list_view = yes
 		
 		civilian_economy = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			default = yes
 			cancel_if_invalid = no
@@ -33,7 +33,7 @@ ideas = {
 		}
 
 		low_economic_mobilisation = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -63,7 +63,7 @@ ideas = {
 		}
 
 		partial_economic_mobilisation = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -96,7 +96,7 @@ ideas = {
 		}
 		
 		nationalisation_0 = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -130,7 +130,7 @@ ideas = {
 		}
 
 		private_collaboration_0 = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -163,7 +163,7 @@ ideas = {
 		}
 
 		nationalisation_1 = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -197,7 +197,7 @@ ideas = {
 		}
 
 		private_collaboration_1 = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -230,7 +230,7 @@ ideas = {
 		}
 
 		nationalisation_2 = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -263,7 +263,7 @@ ideas = {
 		}
 
 		private_collaboration_2 = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 

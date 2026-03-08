@@ -104,8 +104,8 @@ add_to_array = { rr_modifiers = token:boost_party_strength_factor }
 add_to_array = { rr_modifiers = token:land_bunker_effectiveness_factor }
 
 # These are the values that a state will apply if it's loyal or disloyal.
-set_variable = { rr_consumer_goods_factor_loyal = -0.2 }
-set_variable = { rr_consumer_goods_factor_disloyal = 0 }
+set_variable = { rr_consumer_goods_factor_loyal = -0.05 }
+set_variable = { rr_consumer_goods_factor_disloyal = 0.1 }
 set_variable = { rr_max_planning_loyal = 0.05 }
 set_variable = { rr_max_planning_disloyal = -0.15 }
 set_variable = { rr_production_factory_max_efficiency_factor_loyal = 0.05 }
