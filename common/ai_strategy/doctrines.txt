@@ -1,4 +1,21 @@
-stop_making_horsies = {
+############
+### LAND ###
+############
+# armor
+# infantry
+# motorized
+# mechanized
+# air_transport
+# anti_air
+# artillery
+# anti_tank
+# cavalry
+# marines
+# mountaineer
+
+##### AI strategies to discriminate against horses #####
+
+DOCTRINE_stop_making_horsies = {
 	enable = {
 		num_of_factories > 20
 		date > 1938.1.1
@@ -13,21 +30,6 @@ stop_making_horsies = {
 		value = -100 # -100% cav
 	}		
 }
-
-############
-### LAND ###
-############
-#armor
-#infantry
-#motorized
-#mechanized
-#air_transport
-#anti_air
-#artillery
-#anti_tank
-#cavalry
-#marines
-#mountaineer
 
 # No cav if we have motor inf
 DOCTRINE_no_cavalry = {
@@ -59,7 +61,7 @@ DOCTRINE_no_cavalry = {
 #Fleet in being tree
 DOCTRINE_fleet_in_being_ratios = {
 	enable = {
-		has_tech = fleet_in_being
+		has_doctrine = new_fleet_in_being
 	}
 	abort = {
 		always = no
@@ -75,7 +77,7 @@ DOCTRINE_fleet_in_being_ratios = {
 #Trade Interdiction tree
 DOCTRINE_trade_interdiction_ratios = {
 	enable = {
-		has_tech = trade_interdiction
+		has_doctrine = new_convoy_raiding
 	}
 	abort = {
 		always = no
@@ -92,7 +94,7 @@ DOCTRINE_trade_interdiction_ratios = {
 #Base Strike tree
 DOCTRINE_base_strike_ratios = {
 	enable = {
-		has_tech = base_strike
+		has_doctrine = new_base_strike
 	}
 	abort = {
 		always = no
@@ -125,7 +127,7 @@ DOCTRINE_base_strike_ratios = {
 #Strategic Destruction tree
 DOCTRINE_air_superiority_ratios = {
 	enable = {
-		has_tech = air_superiority
+		has_doctrine = new_strategic_destruction
 	}
 	abort = {
 		always = no
@@ -140,10 +142,7 @@ DOCTRINE_air_superiority_ratios = {
 
 DOCTRINE_air_night_day_bombing_ratios = {
 	enable = {
-		OR = {
-			has_tech = night_bombing
-			has_tech = day_bombing		
-		}
+		has_doctrine = new_strategic_destruction
 	}
 	abort = {
 		always = no
@@ -160,7 +159,7 @@ DOCTRINE_air_night_day_bombing_ratios = {
 #Battlefield Support tree
 DOCTRINE_formation_flying = {
 	enable = {
-		has_tech = formation_flying
+		has_doctrine = new_battlefield_support
 	}
 	abort = {
 		always = no
@@ -182,7 +181,7 @@ DOCTRINE_formation_flying = {
 #Operational Integrity tree
 DOCTRINE_force_rotation = {
 	enable = {
-		has_tech = force_rotation
+		has_doctrine = new_operational_integrity
 	}
 	abort = {
 		always = no
@@ -193,5 +192,4 @@ DOCTRINE_force_rotation = {
 		id = fighter
 		value = 30
 	}
-	
 }

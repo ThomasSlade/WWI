@@ -1,6 +1,19 @@
+#### COMBAT TACTICS ###########################################################
+#
+# NOTE: tactics must start with "tactic_" in their name to work with techs.
+###############################################################################
+
+phases = { # phase = no is the standard phase
+	close_combat
+	tactical_withdrawal
+	seize_bridge
+	hold_bridge
+	street_fighting
+}
+
 tactic_basic_attack = {
 	is_attacker = yes
-	trigger = {
+	trigger = { # combined scope for both country and combatant
 		is_attacker = yes
 		phase = no
 	}

@@ -3,7 +3,7 @@ technologies = {
 	basic_machine_tools = {
 	
 		production_factory_max_efficiency_factor = 0.1
-
+		equipment_conversion_speed = 0.2
 		
 		path = {
 			leads_to_tech = improved_machine_tools 
@@ -41,6 +41,7 @@ technologies = {
 	improved_machine_tools = {
 	
 		production_factory_max_efficiency_factor = 0.1
+		equipment_conversion_speed = 0.2
 
 		path = {
 			leads_to_tech = advanced_machine_tools 
@@ -78,6 +79,7 @@ technologies = {
 	advanced_machine_tools = {
 	
 		production_factory_max_efficiency_factor = 0.1
+		equipment_conversion_speed = 0.2
 		
 		path = {
 			leads_to_tech = assembly_line_production 
@@ -110,11 +112,7 @@ technologies = {
 	assembly_line_production = {
 	
 		production_factory_max_efficiency_factor = 0.1
-		
-		#path = {
-		#	leads_to_tech = improved_machine_tools 
-		#	research_cost_coeff = 1
-		#}
+		equipment_conversion_speed = 0.2
 		
 		path = {
 			leads_to_tech = flexible_line
@@ -215,14 +213,10 @@ technologies = {
 		}
 	}
 
-	#Conversion branch - Enabled in DoD
+	#Conversion branch - Enabled in DoD - Repurposed for Coal Energy Gain in NCNS - To be replaced in future
 	improved_equipment_conversion = {
-	
-		equipment_conversion_speed = 0.40
-
-		allow_branch = {
-			has_dlc = "Death or Dishonor"
-		}
+		energy_gain_factor = 0.15
+		#equipment_conversion_speed = 0.40
 
 		path = {
 			leads_to_tech = advanced_equipment_conversion
@@ -241,20 +235,32 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 2
-				date > "1912.1.1"
+				factor = 10
+			
+				has_resources_in_country = {
+					resource = coal
+					amount > 0
+					only_imported = yes
+				}
+			}
+
+			modifier = {
+				factor = 5
+				energy_ratio < 0.9
 			}
 		}
 		
 		categories = {
 			industry
 			cat_production
+			construction_tech
+			excavation_tech		
 		}
 	}
 	
 	advanced_equipment_conversion = {
-		
-		equipment_conversion_speed = 0.40
+		energy_gain_factor = 0.15
+		#equipment_conversion_speed = 0.40
 
 		research_cost = 2
 		start_year = 1914
@@ -268,14 +274,26 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 2
-				date > "1912.1.1"
+				factor = 5
+			
+				has_resources_in_country = {
+					resource = coal
+					amount > 0
+					only_imported = yes
+				}
+			}
+			
+			modifier = {
+				factor = 5
+				energy_ratio < 0.9
 			}
 		}
 		
 		categories = {
 			industry
 			cat_production
+			construction_tech
+			excavation_tech	
 		}
 	}
 
@@ -284,6 +302,8 @@ technologies = {
 
 		industrial_capacity_factory = 0.15
 		industrial_capacity_dockyard = 0.1
+		#industrial_capacity_factory_powered = 0.075 
+		#industrial_capacity_dockyard_powered = 0.05 
 		global_building_slots_factor = 0.20
 		
 		path = {
@@ -355,6 +375,8 @@ technologies = {
 
 		industrial_capacity_factory = 0.15
 		industrial_capacity_dockyard = 0.1
+		#industrial_capacity_factory_powered = 0.1 
+		#industrial_capacity_dockyard_powered = 0.075 
 		global_building_slots_factor = 0.20
 		
 		path = {
@@ -394,6 +416,8 @@ technologies = {
 
 		industrial_capacity_factory = 0.15
 		industrial_capacity_dockyard = 0.1
+		#industrial_capacity_factory_powered = 0.125 
+		#industrial_capacity_dockyard_powered = 0.1 
 		global_building_slots_factor = 0.20
 		
 		path = {
@@ -432,6 +456,8 @@ technologies = {
 
 		industrial_capacity_factory = 0.15
 		industrial_capacity_dockyard = 0.1
+		#industrial_capacity_factory_powered = 0.15 
+		#industrial_capacity_dockyard_powered = 0.1 
 		global_building_slots_factor = 0.20
 		
 		path = {
@@ -470,6 +496,8 @@ technologies = {
 
 		industrial_capacity_factory = 0.15
 		industrial_capacity_dockyard = 0.1
+		#industrial_capacity_factory_powered = 0.15 
+		#industrial_capacity_dockyard_powered = 0.1 
 		global_building_slots_factor = 0.20
 		
 		research_cost = 2
@@ -508,6 +536,8 @@ technologies = {
 
 		industrial_capacity_factory = 0.1
 		industrial_capacity_dockyard = 0.1
+		#industrial_capacity_factory_powered = 0.05 
+		#industrial_capacity_dockyard_powered = 0.05 
 		line_change_production_efficiency_factor = 0.1
 		production_factory_start_efficiency_factor = 0.05
 		industry_air_damage_factor = -0.15
@@ -582,6 +612,8 @@ technologies = {
 
 		industrial_capacity_factory = 0.1
 		industrial_capacity_dockyard = 0.1
+		#industrial_capacity_factory_powered = 0.075 
+		#industrial_capacity_dockyard_powered = 0.075 
 		line_change_production_efficiency_factor = 0.1
 		production_factory_start_efficiency_factor = 0.05
 		industry_air_damage_factor = -0.10
@@ -623,6 +655,8 @@ technologies = {
 
 		industrial_capacity_factory = 0.1
 		industrial_capacity_dockyard = 0.1
+		#industrial_capacity_factory_powered = 0.075 #TODO SEA set value
+		#industrial_capacity_dockyard_powered = 0.075 #TODO SEA set value
 		line_change_production_efficiency_factor = 0.1
 		production_factory_start_efficiency_factor = 0.05
 		industry_air_damage_factor = -0.10
@@ -664,6 +698,8 @@ technologies = {
 
 		industrial_capacity_factory = 0.1
 		industrial_capacity_dockyard = 0.1
+		#industrial_capacity_factory_powered = 0.1 
+		#industrial_capacity_dockyard_powered = 0.1 
 		line_change_production_efficiency_factor = 0.1
 		production_factory_start_efficiency_factor = 0.05
 		industry_air_damage_factor = -0.10
@@ -705,6 +741,8 @@ technologies = {
 
 		industrial_capacity_factory = 0.1
 		industrial_capacity_dockyard = 0.1
+		#industrial_capacity_factory_powered = 0.1 
+		#industrial_capacity_dockyard_powered = 0.1 
 		line_change_production_efficiency_factor = 0.1
 		production_factory_start_efficiency_factor = 0.05
 		industry_air_damage_factor = -0.10
@@ -1596,7 +1634,8 @@ technologies = {
 	
 	construction1 = {
 		
-		production_speed_buildings_factor = 0.10
+		production_speed_buildings_factor = 0.1
+		#production_speed_buildings_powered_factor = 0.05 
 		industry_repair_factor = 0.10
 
 		path = {
@@ -1633,6 +1672,7 @@ technologies = {
 	excavation1 = {
 		
 		local_resources_factor = 0.10
+		local_resources_coal_factor = 0.05
 		
 		path = {
 			research_cost_coeff = 1
@@ -1663,6 +1703,8 @@ technologies = {
 					tungsten > 0
 					steel > 0
 					chromium > 0
+					coal > 0
+					copper > 0
 				}
 			}
 			
@@ -1675,6 +1717,8 @@ technologies = {
 					tungsten > 8
 					steel > 8
 					chromium > 8
+					coal > 8
+					copper > 8
 				}
 			}
 		}
@@ -1682,7 +1726,8 @@ technologies = {
 	
 	construction2 = {
 
-		production_speed_buildings_factor = 0.10
+		production_speed_buildings_factor = 0.1
+		#production_speed_buildings_powered_factor = 0.075 
 		industry_repair_factor = 0.10
 		
 		path = {
@@ -1720,6 +1765,7 @@ technologies = {
 	excavation2 = {
 		
 		local_resources_factor = 0.10
+		local_resources_coal_factor = 0.05
 		
 		path = {
 			research_cost_coeff = 1
@@ -1751,6 +1797,8 @@ technologies = {
 					tungsten > 0
 					steel > 0
 					chromium > 0
+					coal > 0 
+					copper > 0
 				}
 			}
 			
@@ -1763,6 +1811,8 @@ technologies = {
 					tungsten > 8
 					steel > 8
 					chromium > 8
+					coal > 8
+					copper > 8
 				}
 			}
 		}
@@ -1770,7 +1820,8 @@ technologies = {
 	
 	construction3 = {
 
-		production_speed_buildings_factor = 0.10
+		production_speed_buildings_factor = 0.1
+		#production_speed_buildings_powered_factor = 0.075
 		industry_repair_factor = 0.10
 		
 		path = {
@@ -1820,6 +1871,7 @@ technologies = {
 	excavation3 = {
 		
 		local_resources_factor = 0.10
+		local_resources_coal_factor = 0.05
 		
 		path = {
 			research_cost_coeff = 1
@@ -1851,6 +1903,8 @@ technologies = {
 					tungsten > 0
 					steel > 0
 					chromium > 0
+					coal > 0
+					copper > 0
 				}
 			}
 			
@@ -1863,6 +1917,8 @@ technologies = {
 					tungsten > 8
 					steel > 8
 					chromium > 8
+					coal > 8
+					copper > 8
 				}
 			}
 		}
@@ -1870,8 +1926,16 @@ technologies = {
 	
 	construction4 = {
 
-		production_speed_buildings_factor = 0.10
+		production_speed_buildings_factor = 0.1
+		#production_speed_buildings_powered_factor = 0.1 
 		industry_repair_factor = 0.10
+		
+		on_research_complete = {
+			custom_effect_tooltip = {
+				localization_key = SP_UNLOCK_PROJECT
+				PROJECT = sp_commercial_nuclear_reactor	
+			}
+		}
 		
 		path = {
 			leads_to_tech = construction5 
@@ -1908,6 +1972,7 @@ technologies = {
 	excavation4 = {
 		
 		local_resources_factor = 0.10
+		local_resources_coal_factor = 0.05
 		
 		path = {
 			research_cost_coeff = 1
@@ -1939,6 +2004,8 @@ technologies = {
 					tungsten > 0
 					steel > 0
 					chromium > 0
+					coal > 0
+					copper > 0
 				}
 			}
 			
@@ -1951,6 +2018,8 @@ technologies = {
 					tungsten > 8
 					steel > 8
 					chromium > 8
+					coal > 8
+					copper > 8
 				}
 			}
 		}
@@ -1958,7 +2027,8 @@ technologies = {
 	
 	construction5 = {
 
-		production_speed_buildings_factor = 0.10
+		production_speed_buildings_factor = 0.1
+		#production_speed_buildings_powered_factor = 0.1
 		industry_repair_factor = 0.10
 		
 		path = {
@@ -1994,6 +2064,7 @@ technologies = {
 	excavation5 = {
 		
 		local_resources_factor = 0.10
+		local_resources_coal_factor = 0.05
 		
 		path = {
 			research_cost_coeff = 1
@@ -2025,6 +2096,8 @@ technologies = {
 					tungsten > 0
 					steel > 0
 					chromium > 0
+					coal > 0
+					copper > 0
 				}
 			}
 			
@@ -2037,6 +2110,8 @@ technologies = {
 					tungsten > 8
 					steel > 8
 					chromium > 8
+					coal > 8
+					copper > 8
 				}
 			}
 		}

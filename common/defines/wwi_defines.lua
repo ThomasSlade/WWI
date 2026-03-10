@@ -44,7 +44,16 @@ NDefines.NAI.DIVISION_SUPPLY_RATIO_TO_MOTORIZE = 0.00	-- If supply ratio is less
 NDefines.NAI.VARIANT_CREATION_XP_RESERVE_LAND = 20	-- If the AI lacks army XP to create a variant it will reserve this much XP for variant creation so that it will eventually be able to create a variant.
 NDefines.NAI.MIN_WANTED_MAX_FUEL = 600	-- minimum value for wanted fuel buffers for AI (in thousands)
 NDefines.NAI.MAX_FACTORY_TO_TRADE_FOR_FUEL = 1
-
+NDefines.NAI.MIN_FACTORIES_TO_WANT_TO_IMPORT = {  -- minimum number of civilian factories the AI must have to consider importing a resource - per strategic resource. Default 0, array -should- be updated with new resources, or if the order changes.
+	0, -- oil
+	0, -- aluminium
+	0, -- rubber
+	0, -- grain
+	0, -- steel
+	0, -- chemicals
+	10, -- coal
+	0, -- copper
+}
 NDefines.NProduction.BASE_FACTORY_SPEED = 5
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 2.5
 NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 2.5

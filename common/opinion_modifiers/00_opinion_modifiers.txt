@@ -16,6 +16,10 @@ opinion_modifiers = {
 		value = 200
 	}
 
+	cheat_opinion_modifier_bad = {
+		value = -200
+	}
+
 	hostile_status = { #special used for civil wars that are on hold and blocks faction stuff
 		value = -100
 	}
@@ -149,8 +153,7 @@ opinion_modifiers = {
 		decay = 2
 	}
 	
-	puppet_opinion = 
-	{
+	puppet_opinion = {
 		value = 50
 	}
 

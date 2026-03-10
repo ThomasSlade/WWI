@@ -8,6 +8,7 @@ sub_units = {
 		ai_priority = 0
 		active = yes
 		affects_speed = no
+		is_artillery_brigade = yes
 
 		type = {
 			infantry
@@ -56,6 +57,7 @@ sub_units = {
 		ai_priority = 0
 		active = yes
 		affects_speed = no
+		is_artillery_brigade = yes
 		
 		type = {
 			infantry
@@ -69,6 +71,7 @@ sub_units = {
 			category_army
 			category_artillery
 			category_support_artillery
+			category_rocket_artillery
 		}		
 
 		combat_width = 0

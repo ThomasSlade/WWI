@@ -2,7 +2,7 @@ sub_units = {
 	pre_dreadnought_wwi = {
 		sprite = pre_dreadnought_wwi
 		map_icon_category = ship
-		priority = 8
+		priority = 9
 		active = yes
 		type = { capital_ship }
 		need_equipment = { ship_hull_pre_dreadnought_wwi = 1 }
@@ -17,7 +17,7 @@ sub_units = {
 		
 		max_organisation = 50
 
-		supply_consumption = 0.2
+		supply_consumption = 0.8
 		
 		critical_parts = { rudder_jammed destroyed_ammo_storage broken_propeller on_fire }
 		critical_part_damage_chance_mult = 1 
