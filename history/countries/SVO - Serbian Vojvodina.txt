@@ -1,6 +1,7 @@
 capital = 171
 
 starting_train_buffer = 3
+set_grand_doctrine = wwi_land
 
 # Starting tech
 set_technology = {

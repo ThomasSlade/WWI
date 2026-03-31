@@ -26,7 +26,7 @@ state={
 	buildings_max_level_factor=1.000
 	state_category = city
 	resources = {
-		coal = 4
+		coal = 8
 		steel = 4
 	}
 }

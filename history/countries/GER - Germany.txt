@@ -9,6 +9,12 @@ set_convoys = 200
 starting_train_buffer = 3
 set_stability = 0.75 
 set_war_support = 1.0
+set_grand_doctrine = wwi_land
+set_sub_doctrine = free_tactics
+add_mastery = {
+	amount = 100
+	sub_doctrine = free_tactics
+}
 
 # Starting tech
 set_technology = {
@@ -19,18 +25,10 @@ set_technology = {
 	tech_engineers = 1
 	recon_plane_0 = 1
 
-	early_destroyer = 1
-	early_light_cruiser = 1
-	early_heavy_cruiser = 1
-	early_battlecruiser = 1
-	early_battleship = 1
-	basic_battleship = 1
-	pre_dreadnought_wwi = 1
-	early_submarine = 1
-
-	early_reform = 1
-	auftragstatik = 1
-	pragmatic_uniform = 1
+	early_ship_hull_light = 1
+	early_ship_hull_cruiser = 1
+	early_ship_hull_heavy = 1
+	early_ship_hull_submarine = 1
 }
 
 set_politics = {
@@ -104,7 +102,7 @@ add_to_array = { rr_modifiers = token:boost_party_strength_factor }
 add_to_array = { rr_modifiers = token:land_bunker_effectiveness_factor }
 
 # These are the values that a state will apply if it's loyal or disloyal.
-set_variable = { rr_consumer_goods_factor_loyal = -0.05 }
+set_variable = { rr_consumer_goods_factor_loyal = -0.02 }
 set_variable = { rr_consumer_goods_factor_disloyal = 0.1 }
 set_variable = { rr_max_planning_loyal = 0.05 }
 set_variable = { rr_max_planning_disloyal = -0.15 }
@@ -211,10 +209,6 @@ recruit_character = GER_helmuth_von_moltke
 recruit_character = GER_august_von_mackensen
 recruit_character = GER_rupprecht_of_bavaria
 recruit_character = GER_alexander_von_kluck
-
-# Stolen Tank Scientists
-recruit_character = AUS_gunter_burstyn
-recruit_character = ENG_lancelot_de_mole
 
 create_faction = CENTRAL_POWERS
 add_to_faction = GER

@@ -1,4 +1,7 @@
 sub_unit_categories = {
-	category_cavalry
+	category_field_artillery
+	category_heavy_artillery
+	category_siege_artillery
+	category_heavy_machine_gun
 	category_recon_plane
 }

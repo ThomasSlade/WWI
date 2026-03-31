@@ -26,7 +26,7 @@ state={
 	buildings_max_level_factor=1.000
 	state_category = pastoral
 	resources = {
-		coal = 1
+		coal = 6
 		tungsten = 2
 	}
 }

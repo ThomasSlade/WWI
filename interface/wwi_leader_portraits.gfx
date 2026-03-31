@@ -49,7 +49,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_portrait_alexander_von_kluck"
-		texturefile = "gfx/leaders/GER/portrait_alexander_von_kluck.dds"
+		texturefile = "gfx/leaders/GER/portrait_ger_alexander_von_kluck.dds"
 	}
 
 	spriteType = {
@@ -112,6 +112,46 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_portrait_fra_raymond_poincare
 		texturefile = "gfx/leaders/FRA/portrait_fra_raymond_poincare.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_fra_edouard_de_castelnau"
+		texturefile = "gfx/leaders/FRA/portrait_fra_edouard_de_castelnau.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_fra_ferdinand_foch"
+		texturefile = "gfx/leaders/FRA/portrait_fra_ferdinand_foch.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_fra_joseph_gallieni"
+		texturefile = "gfx/leaders/FRA/portrait_fra_joseph_gallieni.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_fra_joseph_joffre"
+		texturefile = "gfx/leaders/FRA/portrait_fra_joseph_joffre.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_fra_louis_franchet_d_esperay"
+		texturefile = "gfx/leaders/FRA/portrait_fra_louis_franchet_d_esperay.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrai_fra_philippe_petain"
+		texturefile = "gfx/leaders/FRA/portrait_fra_philippe_petain.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_fra_robert_nivelle"
+		texturefile = "gfx/leaders/FRA/portrait_fra_robert_nivelle.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_fra_maurice_sarrail"
+		texturefile = "gfx/leaders/FRA/portrait_fra_maurice_sarrail.dds"
 	}
 
 	### SOV

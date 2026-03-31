@@ -54,6 +54,8 @@ NDefines.NAI.MIN_FACTORIES_TO_WANT_TO_IMPORT = {  -- minimum number of civilian 
 	10, -- coal
 	0, -- copper
 }
+
+NDefines.NProduction.BASE_ENERGY_COST = 0.1	-- How much energy per factory consumes
 NDefines.NProduction.BASE_FACTORY_SPEED = 5
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 2.5
 NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 2.5

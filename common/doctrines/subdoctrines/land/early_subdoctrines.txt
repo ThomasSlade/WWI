@@ -1,0 +1,194 @@
+cult_of_the_offensive = {
+	track = early
+	name = SUBDOCTRINE_CULT_OF_THE_OFFENSIVE
+	description = SUBDOCTRINE_CULT_OF_THE_OFFENSIVE_DESC
+	icon = GFX_doctrine_grand_assault_medium
+	xp_cost = 100
+	xp_type = army
+
+	available = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 1
+	}
+
+	rewards = {
+		elan = {
+			category_light_infantry = {
+				default_morale = 0.025
+			}
+
+			category_cavalry = {
+				default_morale = 0.025
+			}
+		}
+		
+		relief_offensive = {
+			planning_speed = 0.2
+			land_reinforce_rate = 0.1
+		}
+
+		orderly_retreat = {
+			army_retreat_speed_factor = 0.3
+			army_org_regain = 0.2
+
+			category_light_infantry = {
+				defense = 0.05
+			}
+
+			category_field_artillery = {
+				defense = 0.05
+			}
+		}
+
+		digging_in = {
+			dig_in_speed_factor = 0.25
+			max_dig_in = 3
+			army_morale_factor = 0.1
+
+			category_light_infantry = {
+				max_organisation = 10
+				defense = 0.5
+			}
+		}
+
+		trench_warfare = {
+			max_dig_in = 5
+			enable_tactic = tactic_trench_defense
+
+			category_light_infantry = {
+				defense = 0.25
+			}
+
+			category_artillery = {
+				defense = 0.25
+			}
+		}
+	}
+}
+
+free_tactics = {
+	track = early
+	name = SUBDOCTRINE_FREE_TACTICS
+	description = SUBDOCTRINE_FREE_TACTICS_DESC
+	icon = GFX_doctrine_grand_assault_medium
+	xp_cost = 100
+	xp_type = army
+
+	available = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+
+	rewards = {
+		auftragstatik = {
+			initiative_factor = 0.2
+			org_loss_when_moving = -0.33
+			enable_tactic = tactic_strike_out
+
+			category_light_infantry = {
+				default_morale = 0.075
+			}
+		}
+
+		free_fire = {
+			category_light_infantry = {
+				soft_attack = 0.3
+				default_morale = 0.025
+			}
+		}
+
+		indirect_artillery = {
+			category_artillery = {
+				breakthrough = 0.3
+				soft_attack = 0.3
+			}
+		}
+
+		digging_in = {
+			dig_in_speed_factor = 0.25
+			max_dig_in = 3
+			army_morale_factor = 0.1
+
+			category_light_infantry = {
+				max_organisation = 10
+				defense = 0.5
+			}
+		}
+
+		trench_warfare = {
+			max_dig_in = 5
+			enable_tactic = tactic_trench_defense
+
+			category_light_infantry = {
+				defense = 0.25
+			}
+
+			category_artillery = {
+				defense = 0.25
+			}
+		}
+	}
+}
+
+mobility_and_mass = {
+	track = early
+	name = SUBDOCTRINE_MOBILITY_AND_MASS
+	description = SUBDOCTRINE_MOBILITY_AND_MASS
+	icon = GFX_doctrine_grand_assault_medium
+	xp_cost = 100
+	xp_type = army
+
+	available = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 1
+	}
+
+	rewards = {
+		primacy_of_the_bayonet = {
+			category_light_infantry = {
+				reliability = 0.1
+			}
+		}
+
+		mounted_infantry = {
+
+		}
+
+		chain_formation = {
+
+		}
+
+		digging_in = {
+			dig_in_speed_factor = 0.25
+			max_dig_in = 3
+			army_morale_factor = 0.1
+
+			category_light_infantry = {
+				max_organisation = 10
+				defense = 0.5
+			}
+		}
+
+		trench_warfare = {
+			max_dig_in = 5
+			enable_tactic = tactic_trench_defense
+
+			category_light_infantry = {
+				defense = 0.25
+			}
+
+			category_artillery = {
+				defense = 0.25
+			}
+		}
+	}
+}

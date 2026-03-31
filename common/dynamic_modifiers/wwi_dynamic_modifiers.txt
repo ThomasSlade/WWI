@@ -1,9 +1,3 @@
-modifier_modern_doctrine_tech_penalty = {
-	enable = { always = yes }
-
-	cat_modern_doctrine_cost_factor = modern_doctrine_tech_penalty
-}
-
 SER_belgrade_investment = {
 	enable = { always = yes }
 

@@ -7,16 +7,18 @@ set_convoys = 200
 starting_train_buffer = 3
 set_stability = 0.75 
 set_war_support = 1.0
+set_grand_doctrine = wwi_land
+set_sub_doctrine = mobility_and_mass
+add_mastery = {
+	amount = 100
+	sub_doctrine = cult_of_the_offensive
+}
 
 # Starting tech
 set_technology = {
 	basic_train = 1
 	infantry_weapons = 1
 	field_artillery_0 = 1
-
-	early_reform = 1
-	indirect_artillery = 1
-	rapid_mobilisation = 1
 }
 
 set_politics = {

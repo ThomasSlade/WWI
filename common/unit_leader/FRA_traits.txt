@@ -1,0 +1,54 @@
+leader_traits = {
+	# Joffre
+	# Known for his calm manner, even during 1914.
+	papa = {
+		type = land
+		trait_type = personality_trait
+
+		defense_skill = -1
+		planning_skill = 1
+
+		modifier = {
+			army_org_factor = 0.1
+			army_morale_factor = 0.2
+			planning_speed = 0.1
+		}
+	}
+
+	# d'Esperay
+	# Nicknamed by British soldiers for his energetic demeanor and frequent travel, d'Esperay was fearless and tenacious.
+	# He was also a harsh commander, instilling fear in his officers through threats. 'March of die', he once said to a subordinate who objected to his order.
+	desperate_frankie = {
+		type = land
+		trait_type = personality_trait
+
+		attack_skill = 1
+		defense_skill = 1
+
+		modifier = {
+			army_morale_factor = -0.10
+			army_speed_factor = 0.2
+			initiative_factor = 0.05
+			command_abilities_cost_factor = -0.5
+		}
+	}
+	
+	# Foch
+	# Excellent at collaborating with allied commanders, including foreign commanders. Steadfast defender. Offensively minded.
+	le_patron = {
+		type = land
+		trait_type = personality_trait
+
+		defense_skill = 1
+		planning_skill = 1
+
+		modifier = {
+			coordination_bonus = 0.3
+			army_morale_factor = 0.15
+		}
+
+		field_marshal_modifier = {
+			max_army_group_size = 2
+		}
+	}
+}

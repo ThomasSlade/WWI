@@ -6,6 +6,7 @@ set_convoys = 200
 starting_train_buffer = 3
 set_stability = 0.75 
 set_war_support = 1.0
+set_grand_doctrine = wwi_land
 
 # Starting tech
 set_technology = {

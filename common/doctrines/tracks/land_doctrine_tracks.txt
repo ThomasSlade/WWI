@@ -1,0 +1,15 @@
+early = {
+    name = DOCTRINE_TRACK_EARLY
+    background = "GFX_grand_battleplan_bg"
+    icon = "GFX_doctrine_milestone_infantry_land"
+    icon_frame = "GFX_doctrine_decor_land"
+    mastery = {
+        multiplier = 1.0
+        categories = {
+            category_light_infantry
+            category_cavalry
+            category_field_artillery
+            category_heavy_machine_gun
+        }
+    }
+}

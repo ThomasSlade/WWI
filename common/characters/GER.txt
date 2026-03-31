@@ -249,6 +249,7 @@ characters = {
 		# Historically died 1915 due to shrapnel.
 		name = GER_alexander_von_kluck
 		corps_commander = {
+			traits = { hound }
 			skill = 3
 			attack_skill = 5
 			defense_skill = 2
@@ -257,7 +258,7 @@ characters = {
 		}
 		portraits = {
 			army = {
-				large = GFX_portrait_paul_von_hindenburg
+				large = GFX_portrait_alexander_von_kluck
 			}
 		}
 	}
@@ -276,7 +277,7 @@ characters = {
 		}
 		portraits = {
 			army = {
-				large = GFX_portrait_paul_von_hindenburg
+				large = GFX_portrait_ger_august_von_mackensen
 			}
 		}
 	}
@@ -294,7 +295,7 @@ characters = {
 		}
 		portraits = {
 			army = {
-				large = GFX_portrait_paul_von_hindenburg
+				large = GFX_portrait_ger_rupprecht_of_bavaria
 			}
 		}
 	}
@@ -311,7 +312,7 @@ characters = {
 		}
 		portraits = {
 			army = {
-				large = GFX_portrait_paul_von_hindenburg
+				large = GFX_portrait_ger_paul_von_hindenburg
 			}
 		}
 	}

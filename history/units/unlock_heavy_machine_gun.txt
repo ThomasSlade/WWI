@@ -1,0 +1,13 @@
+division_template = {
+	name = "Heavy Machine Gun Division"
+
+	regiments = {
+		heavy_machine_gun = { x = 0 y = 0 }
+        infantry = { x = 1 y = 0 }
+        infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+        infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}

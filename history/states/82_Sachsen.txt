@@ -34,6 +34,6 @@ state={
 	state_category = metropolis
 	resources = {
 		chromium = 5
-		coal = 3
+		coal = 7
 	}
 }

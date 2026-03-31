@@ -6,9 +6,6 @@
   expansionist_acceptance: "Acceptance of Expansionist Diplomacy"
   revolutionary_acceptance: "Acceptance of Radical Diplomacy"
 
-  modifier_modern_doctrine_tech_penalty: "Modern Doctrine Technology Penalty"
-  modern_doctrine_tech_penalty_reduction_tt: "Modern Doctrine Technology Penalty: §G-25%§!"
-
   cannot_decrease_manpower_laws: "$trigger_cannot_decrease_manpower_law_tt$"
   cannot_decrease_economic_laws: "$trigger_cannot_decrease_economic_law_tt$"
   cannot_decrease_rationing_laws: "$trigger_cannot_decrease_rationing_law_tt$"

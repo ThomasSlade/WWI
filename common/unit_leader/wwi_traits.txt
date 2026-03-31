@@ -51,13 +51,27 @@ leader_traits = {
 		}
 	}
 
-	papa = {
+	hound = {
+		type = land
+		trait_type = personality_trait
+
+		attack_skill = 1
+		planning_skill = -1
+
+		modifier = {
+			army_speed_factor = 0.25
+			army_attack_speed_factor = 0.5
+			coordination_bonus = -0.2
+		}
+	}
+
+	artilleryman = {
 		type = land
 		trait_type = personality_trait
 
 		modifier = {
-			army_org_regain = 0.33
-			org_loss_at_low_org_factor = 0.5
+			modifier_army_sub_unit_field_artillery_brigade_attack_factor = 0.15
+			modifier_army_sub_unit_heavy_artillery_brigade_attack_factor = 0.15
 		}
 	}
 
@@ -104,6 +118,27 @@ leader_traits = {
 		modifier = {
 			fort = {
 				attack = 0.15
+			}
+		}
+	}
+
+	military_governor = {
+		type = land
+		trait_type = personality_trait
+
+		defense_skill = 1
+		logistics_skill = 1
+
+		modifier = {
+			dig_in_speed_factor = 0.2
+			light_infantry_speed_factor = 0.25
+
+			rural = {
+				defense = 0.15
+			}
+
+			urban = {
+				defense = 0.15
 			}
 		}
 	}

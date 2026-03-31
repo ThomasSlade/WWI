@@ -20,56 +20,14 @@ on_actions = {
 			SOV = { set_cosmetic_tag = SOV_EMPIRE }
 
 			every_possible_country = {
-				set_variable = { food_shortage_stability_weekly = 0 }
-				set_variable = { food_consumed_daily = 0 }
-				set_variable = { food_consumed_hourly = 0 }
-				# Set to invalid to prevent giving the player an alert event on startup.
-				# 1 = No shortage, 2 = Shortage, 3 = Starvation
-				set_variable = { food_shortage_state = -1 }
-				set_variable = { free_civ_from_mils = 0 }
-				set_variable = { current_free_civs_from_mils = 0 }	# Necessary because the free_civ_from_mils mechanic is based on daily (there's no on_building_build sadly), so you need to track what it was last update and add the difference next update.
-				set_variable = { free_civ_from_navs = 0 }
-				set_variable = { current_free_civ_from_navs = 0 }
-				set_variable = { cannot_decrease_manpower_laws = 0 }
-				set_variable = { cannot_decrease_economic_laws = 0 }
-				set_variable = { cannot_decrease_rationing_laws = 0 }
-				set_variable = { cannot_decrease_workers_rights_laws = 0 }
-				set_variable = { cannot_decrease_civil_rights_laws = 0 }
-				set_variable = { cannot_decrease_blockade_policy_laws = 0 }
-
-				add_ideas = idea_base_values
-				add_dynamic_modifier = { modifier = modifier_food_shortage }
-
-				effect_update_civs_from_mils = yes
-				effect_update_civs_from_navs = yes
-				effect_update_boost_party_strength = yes
-
-				effect_consume_food = yes
-				effect_update_food_shortages = yes
-
-				effect_setup_politics = yes
-
-				# Keep standard influence-idea variables up to date.
-				if = {
-					limit = { has_government = established }
-					set_variable = { ideology_influence_idea = token:established_influence }
-					set_variable = { ideology_acceptance_medium_idea = token:established_acceptance_medium }
-				}
-				else_if = {
-					limit = { has_government = expansionist }
-					set_variable = { ideology_influence_idea = token:expansionist_influence }
-					set_variable = { ideology_acceptance_medium_idea = token:expansionist_acceptance_medium }
-				}
-				else_if = {
-					limit = { has_government = revolutionary }
-					set_variable = { ideology_influence_idea = token:revolutionary_influence }
-					set_variable = { ideology_acceptance_medium_idea = token:revolutionary_acceptance_medium }
-				}
-
-				set_variable = { modern_doctrine_tech_penalty = 1 }
-				add_dynamic_modifier = { modifier = modifier_modern_doctrine_tech_penalty }
-				effect_calculate_modern_doctrine_tech_penalty = yes
+				effect_setup_country = yes
 			}
+		}
+	}
+
+	on_puppet = {
+		effect = {
+			effect_setup_country = yes
 		}
 	}
 

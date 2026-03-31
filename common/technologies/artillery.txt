@@ -11,6 +11,13 @@ technologies = {
 			field_artillery_equipment_0
 		}
 
+		on_research_complete = {
+			hidden_effect = {
+				load_oob = "unlock_field_artillery_brigade"
+			}
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+
 		path = {
 			leads_to_tech = field_artillery_1
 			research_cost_coeff = 1
@@ -44,10 +51,6 @@ technologies = {
 
 		enable_equipments = {
 			field_artillery_equipment_1
-		}
-
-		on_research_complete = {
-			effect_decrease_modern_doctrine_tech_penalty = yes
 		}
 
 		path = {
@@ -105,7 +108,10 @@ technologies = {
 		}
 
 		on_research_complete = {
-			effect_decrease_modern_doctrine_tech_penalty = yes
+			hidden_effect = {
+				load_oob = "unlock_heavy_artillery_brigade"
+			}
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 
 		path = {

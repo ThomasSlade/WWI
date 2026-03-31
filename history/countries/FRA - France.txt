@@ -8,6 +8,12 @@ set_convoys = 200
 starting_train_buffer = 3
 set_stability = 0.75 
 set_war_support = 1.0
+set_grand_doctrine = wwi_land
+set_sub_doctrine = cult_of_the_offensive
+add_mastery = {
+	amount = 100
+	sub_doctrine = cult_of_the_offensive
+}
 
 set_technology = {
 	basic_train = 1
@@ -15,10 +21,6 @@ set_technology = {
 	field_artillery_0 = 1
 	tech_support = 1
 	recon_plane_0 = 1
-
-	early_reform = 1
-	indirect_artillery = 1
-	cult_of_the_offensive = 1
 }
 
 set_politics = {
@@ -66,3 +68,9 @@ set_variable = { leader@token:communist = FRA_ludovic_oscar_frossard }
 create_faction = ENTENTE
 add_to_faction = FRA
 add_to_faction = SOV
+
+recruit_character = FRA_joseph_joffre
+recruit_character = FRA_louis_franchet_d_esperay
+recruit_character = FRA_joseph_gallieni
+recruit_character = FRA_edouard_de_castelnau
+recruit_character = FRA_maurice_sarrail

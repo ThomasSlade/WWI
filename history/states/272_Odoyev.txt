@@ -19,5 +19,6 @@ state={
 	state_category = rural
 	resources = {
 		chromium = 5
+		coal = 2
 	}
 }

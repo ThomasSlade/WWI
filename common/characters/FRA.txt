@@ -124,4 +124,145 @@ characters = {
 			}
 		}
 	}
+
+	### Generals ###
+	FRA_joseph_joffre = {
+		name = FRA_joseph_joffre
+		field_marshal = {
+			traits = { papa }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		portraits = {
+			army = {
+				large = GFX_portrait_fra_joseph_joffre
+			}
+		}
+	}
+
+	FRA_louis_franchet_d_esperay = {
+		name = FRA_louis_franchet_d_esperay
+		corps_commander = {
+			traits = { desperate_frankie }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+		}
+		portraits = {
+			army = {
+				large = GFX_portrait_fra_louis_franchet_d_esperay
+			}
+		}
+	}
+
+	FRA_joseph_gallieni = {
+		name = FRA_joseph_gallieni
+		corps_commander = {
+			traits = { military_governor }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+		}
+		portraits = {
+			army = {
+				large = GFX_portrait_fra_joseph_gallieni
+			}
+		}
+	}
+
+	FRA_edouard_de_castelnau = {
+		name = FRA_edouard_de_castelnau
+		corps_commander = {
+			traits = { goat }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+		portraits = {
+			army = {
+				large = GFX_portrait_fra_edouard_de_castelnau
+			}
+		}
+	}
+
+	FRA_maurice_sarrail = {
+		# TODO: Many historians consider Sarrail to have only been promoted for political expedience. He was inclined to political meddling,
+		# encouraging the Venizelist coup.
+		name = FRA_maurice_sarrail
+		corps_commander = {
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
+		}
+		portraits = {
+			army = {
+				large = GFX_portrait_fra_maurice_sarrail
+			}
+		}
+	}
+
+	### Locked Generals ###
+	FRA_ferdinand_foch = {
+		name = FRA_ferdinand_foch
+		corps_commander = {
+			traits = { le_patron }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		portraits = {
+			army = {
+				large = GFX_portrait_fra_ferdinand_foch
+			}
+		}
+		# TODO: Foch was connected to allied commanders from before the war (particualrly Henry Wilson). Should be reflected in his advisor modifiers.
+	}
+
+	FRA_robert_nivelle = {
+		name = FRA_robert_nivelle
+		corps_commander = {
+			traits = { butcher artilleryman }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+		}
+		portraits = {
+			army = {
+				large = GFX_portrait_fra_robert_nivelle
+			}
+		}
+	}
+
+	FRA_philippe_petain = {
+		name = FRA_philippe_petain
+		corps_commander = {
+			traits = { lion artilleryman }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 1
+		}
+		portraits = {
+			army = {
+				large = GFX_portrait_fra_philippe_petain
+			}
+		}
+		# TODO: Petain hated politicians, and had authoritarian tendencies even in World War 1.
+	}
 }

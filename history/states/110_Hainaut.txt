@@ -23,7 +23,7 @@ state={
 	state_category = town
 	resources = {
 		chromium = 6
-		coal = 1
+		coal = 3
 		tungsten = 5
 	}
 }
