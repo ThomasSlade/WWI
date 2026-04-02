@@ -1,6 +1,6 @@
 air_wings = {
 	418 = {
-		recon_plane_equipment_0 = {
+		wwi_recon_plane_equipment_0 = {
 			owner = "ITA"
 			amount = 25
 		}

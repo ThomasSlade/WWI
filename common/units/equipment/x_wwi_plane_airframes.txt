@@ -1,7 +1,7 @@
 equipments = {
-	recon_plane_equipment_0 = {
+	wwi_recon_plane_equipment_0 = {
 		year = 1910
-		archetype = recon_plane_airframe
+		archetype = wwi_recon_plane_airframe
 		priority = 5
 
 		allow_mission_type = {
@@ -37,9 +37,9 @@ equipments = {
 		}
 	}
 
-	fighter_equipment_0 = {
+	wwi_fighter_equipment_0 = {
 		year = 1912
-		archetype = small_plane_airframe
+		archetype = wwi_small_plane_airframe
 		priority = 5
 
 		allow_mission_type = {
@@ -72,9 +72,9 @@ equipments = {
 		}
 	}
 
-	fighter_equipment_1 = {
+	wwi_fighter_equipment_1 = {
 		year = 1914
-		archetype = small_plane_airframe
+		archetype = wwi_small_plane_airframe
 		priority = 5
 
 		allow_mission_type = {

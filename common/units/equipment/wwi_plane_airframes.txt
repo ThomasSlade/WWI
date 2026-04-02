@@ -1,5 +1,5 @@
 equipments = {
-	recon_plane_airframe = {
+	wwi_recon_plane_airframe = {
 		year = 1910
 		is_archetype = yes
 		is_convertable = yes
@@ -27,7 +27,7 @@ equipments = {
 		lend_lease_cost = 8
 	}
 
-	small_plane_airframe = {
+	wwi_small_plane_airframe = {
 		year = 1914
 		is_archetype = yes
 		is_convertable = yes

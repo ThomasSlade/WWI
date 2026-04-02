@@ -4,7 +4,7 @@ technologies = {
 		start_year = 1910
 
 		enable_equipments = {
-			recon_plane_equipment_0
+			wwi_recon_plane_equipment_0
 		}
 		
 		path = {
@@ -40,7 +40,7 @@ technologies = {
 		start_year = 1912
 
 		enable_equipments = {
-			fighter_equipment_0
+			wwi_fighter_equipment_0
 		}
 		
 		path = {
@@ -76,7 +76,7 @@ technologies = {
 		start_year = 1914
 
 		enable_equipments = {
-			fighter_equipment_1
+			wwi_fighter_equipment_1
 		}
 		
 		folder = {

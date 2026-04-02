@@ -1,11 +1,11 @@
 air_wings = {
 	80 = {
-		recon_plane_equipment_0 = {
+		wwi_recon_plane_equipment_0 = {
 			owner = "FRA"
 			amount = 25
 		}
 
-		recon_plane_equipment_0 = {
+		wwi_recon_plane_equipment_0 = {
 			owner = "FRA"
 			amount = 25
 		}
