@@ -33,6 +33,7 @@ MAC = "countries/Macedonia.txt"
 SLV = "countries/Slovenia"
 BOS = "countries/Bosnia.txt"
 DEN = "countries/Denmark.txt"
+AST = "countries/Australia.txt"
 
 # Countries added by this mod should go here.
 SVO = "countries/Serbian Vojvodina.txt"

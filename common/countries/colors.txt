@@ -168,3 +168,7 @@ DEN = {
 	color = rgb { 87 26 16 }
 	color_ui = rgb { 87 26 16 }
 }
+AST = {
+	color = rgb { 94 51 81 }
+	color_ui = rgb { 94 51 81 }
+}
