@@ -674,6 +674,9 @@ script_enum_equipment_bonus_type = {
 	heavy_machine_gun_equipment_0
 	heavy_machine_gun_equipment_1
 
+	wwi_heavy_tank_chassis
+	wwi_heavy_tank_equipment_0
+
 	wwi_recon_plane_airframe
 	wwi_recon_plane_equipment_0
 

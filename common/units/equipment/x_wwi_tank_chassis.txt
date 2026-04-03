@@ -1,8 +1,8 @@
 equipments = {
-	heavy_tank_equipment_0 = {
+	wwi_heavy_tank_equipment_0 = {
 		year = 1914
 	
-		archetype = heavy_tank_chassis
+		archetype = wwi_heavy_tank_chassis
 		priority = 5
 		visual_level = 0
 

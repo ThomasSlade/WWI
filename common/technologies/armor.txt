@@ -4,11 +4,11 @@ technologies = {
 		start_year = 1916
 
 		enable_equipments = {
-			heavy_tank_equipment_0
+			wwi_heavy_tank_equipment_0
 		}
 
 		enable_subunits = {
-			heavy_armor
+			wwi_heavy_armor
 		}
 
 		folder = {

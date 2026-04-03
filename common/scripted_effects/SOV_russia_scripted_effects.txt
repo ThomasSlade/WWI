@@ -91,13 +91,13 @@ effect_SOV_add_needed_equipment = {
 		limit = {
 			has_tech = basic_heavy_tank
 			stockpile_ratio = {
-				archetype = heavy_tank_chassis
+				archetype = wwi_heavy_tank_chassis
 				ratio < 0.25
 			}
 		}
 
 		add_equipment_to_stockpile = {
-			type = heavy_tank_chassis
+			type = wwi_heavy_tank_chassis
 			amount = 2
 		}
 	}
