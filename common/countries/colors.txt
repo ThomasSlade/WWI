@@ -164,3 +164,7 @@ CAN = {
 	color = rgb { 156 124 131 }
 	color_ui = rgb { 156 124 131 }
 }
+DEN = {
+	color = rgb { 87 26 16 }
+	color_ui = rgb { 87 26 16 }
+}
