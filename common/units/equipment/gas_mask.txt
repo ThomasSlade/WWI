@@ -1,0 +1,54 @@
+equipments = {
+	gas_mask_equipment = {
+		year = 1915
+		picture = archetype_support_equipment
+		is_archetype = yes
+		type = {
+			infantry
+		}
+		group_by = archetype
+		interface_category = interface_category_land
+
+		#Misc Abilities
+		reliability = 0.8
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+
+		# Important Ability
+		ap_attack = 5
+		
+		build_cost_ic = 3
+		resources = {
+			aluminium = 1
+		}
+	}
+
+	# Basic Gas Mask
+	gas_mask_equipment_0 = {
+		year = 1915
+		
+		archetype = gas_mask_equipment
+		priority = 20
+		visual_level = 0
+	}
+
+	# Advanced Gas Mask
+	gas_mask_equipment_1 = {
+		year = 1915
+		
+		archetype = gas_mask_equipment
+		parent = gas_mask_equipment_0
+		priority = 20
+		visual_level = 1
+
+		# Important Ability
+		ap_attack = 10
+
+		build_cost_ic = 4
+		resources = {
+			aluminium = 1
+			chromium = 1
+		}
+	}
+}

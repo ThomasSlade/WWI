@@ -7,7 +7,9 @@ default_unit_production = {
 	abort_when_not_enabled = yes
 
 	enable = {
-		always = yes
+		NOT = {
+			original_tag = GER
+		}
 	}
 
 	ai_strategy = {
@@ -18,38 +20,32 @@ default_unit_production = {
 
 	ai_strategy = {
 		type = role_ratio
+		id = infantry_specialist
+		value = 20
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry
+		value = 20
+	}
+
+	ai_strategy = {
+		type = role_ratio
 		id = artillery
 		value = 10
 	}
 
 	ai_strategy = {
 		type = role_ratio
-		id = machine_gun
-		value = 10
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = mountaineers
-		value = 0
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = marines
-		value = 0
+		id = gas
+		value = 5
 	}
 
 	ai_strategy = {
 		type = unit_ratio
 		id = fighter
 		value = 80
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = fighter
-		value = 100
 	}
 
 	ai_strategy = {
@@ -133,20 +129,20 @@ default_surplus_management = {
 
 	ai_strategy = {
 		type = equipment_production_surplus_management
-		id = artillery_equipment
+		id = field_artillery_equipment
+		value = 2
+	}
+
+	ai_strategy = {
+		type = equipment_production_surplus_management
+		id = heavy_artillery_equipment
 		value = 5
 	}
 
-	ai_strategy = {  # Potentially move into a "specialization" strategy
+	ai_strategy = {
 		type = equipment_production_surplus_management
-		id = anti_air_equipment
-		value = 3
-	}
-
-	ai_strategy = {  # Potentially move into a "specialization" strategy
-		type = equipment_production_surplus_management
-		id = anti_tank_equipment
-		value = 2
+		id = heavy_machine_gun_equipment
+		value = 5
 	}
 
 	ai_strategy = {
@@ -193,24 +189,9 @@ default_garrison_production = {
 	}
 }
 
-default_stockpile_management = {
-	enable = {
-		num_divisions > 150
-	}
-
-	abort = {
-		num_divisions < 130
-	}
-
-	ai_strategy = {
-		type = equipment_stockpile_surplus_ratio
-		value = 35 # add this to default PRODUCTION_EQUIPMENT_SURPLUS_FACTOR
-	}
-}
-
 default_early_template_design = {
 	enable = {
-		date < 1915.1.1				
+		date < 1914.1.1				
 	}
 	abort = { 
 		date > 1915.1.1
@@ -219,13 +200,19 @@ default_early_template_design = {
 	ai_strategy = {
 		type = template_prio
 		id = infantry
-		value = 60
+		value = 50
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = infantry_specialist
+		value = 50
 	}
 
 	ai_strategy = {
 		type = template_prio
 		id = cavalry
-		value = 5
+		value = 30
 	}
 
 	ai_strategy = {
@@ -236,14 +223,14 @@ default_early_template_design = {
 
 	ai_strategy = {
 		type = template_prio
-		id = machine_gun
-		value = 50
+		id = siege_artillery
+		value = 20
 	}
 
 	ai_strategy = {
 		type = template_prio
-		id = siege_artillery
-		value = 20
+		id = gas
+		value = 25
 	}
 }
 
@@ -251,13 +238,19 @@ default_midlate_template_design = {
 	abort_when_not_enabled = yes
 
 	enable = {
-		date > 1940.1.1
+		date > 1914.1.1
 	}
 
 	ai_strategy = {
 		type = template_prio
 		id = infantry
-		value = 60
+		value = 30
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = infantry_specialist
+		value = 70
 	}
 
 	ai_strategy = {
@@ -269,19 +262,19 @@ default_midlate_template_design = {
 	ai_strategy = {
 		type = template_prio
 		id = artillery
-		value = 50
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = machine_gun
-		value = 50
+		value = 70
 	}
 
 	ai_strategy = {
 		type = template_prio
 		id = siege_artillery
-		value = 20
+		value = 30
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = gas
+		value = 50
 	}
 }
 
@@ -646,7 +639,6 @@ default_siege_artillery_production = {
 	enable = {
 		is_major = yes
 		OR = {
-			original_tag = GER
 			original_tag = AUS
 			original_tag = BEL
 		}
@@ -655,7 +647,7 @@ default_siege_artillery_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = siege_artillery
-		value = 10
+		value = 5
 	}
 }
 

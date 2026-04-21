@@ -40,6 +40,36 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+		name = "GFX_gas_0_medium"
+		texturefile = "gfx/interface/technologies/gas_0.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_gas_1_medium"
+		texturefile = "gfx/interface/technologies/gas_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_gas_2_medium"
+		texturefile = "gfx/interface/technologies/gas_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_gas_3_medium"
+		texturefile = "gfx/interface/technologies/gas_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_gas_mask_0_medium"
+		texturefile = "gfx/interface/technologies/gas_mask_0.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_gas_mask_1_medium"
+		texturefile = "gfx/interface/technologies/gas_mask_1.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_heavy_machine_gun_0_medium"
 		texturefile = "gfx/interface/technologies/support_weapons.dds"
 	}

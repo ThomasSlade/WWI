@@ -4,12 +4,7 @@ garrison_generic = {
 	role = garrison
 
 	upgrade_prio = {
-		factor = 0.5
-
-		modifier = {
-			factor = 20
-			NOT = { ai_has_role_template = garrison }
-		}
+		base = 1
 	}
 
 	garrison_generic = {
@@ -17,7 +12,7 @@ garrison_generic = {
 		custom_icon = 7
 	
 		upgrade_prio = {
-			factor = 2
+			base = 2
 
 			modifier = {
 				factor = 1
@@ -36,12 +31,7 @@ suppression_generic = {
 	role = suppression
 
 	upgrade_prio = {
-		base = 0.2
-
-		modifier = {
-			factor = 20
-			has_war = yes
-		}
+		base = 1
 	}
 
 	suppression_generic = {
@@ -49,7 +39,7 @@ suppression_generic = {
 		custom_icon = 13
 	
 		upgrade_prio = {
-			factor = 2
+			base = 1
 		}
 		
 		target_template = {
@@ -68,16 +58,12 @@ infantry_generic = {
 	role = infantry
 	
 	upgrade_prio = {
-		factor = 2
+		base = 1
 	}
 
 	infantry_early = {
-		replace_at_match = 1.5
-		replace_with = infantry_mid
-		target_min_match = 0.5
-
 		upgrade_prio = {
-			factor = 2
+			base = 1
 		}
 		
 		target_template = {
@@ -93,13 +79,17 @@ infantry_generic = {
 
 	infantry_mid = {
 		upgrade_prio = {
-			factor = 2
+			base = 1
+
+			modifier = {
+				factor = 3
+				date > 1915.1.1
+			}
 		}
 		
 		target_template = {
 			support = {
 				engineer = 1
-				artillery = 1
 			}
 			
 			regiments = {
@@ -110,148 +100,18 @@ infantry_generic = {
 	}
 }
 
-artillery_generic = {
-	role = artillery
-	
-	upgrade_prio = {
-		factor = 3
-	}
-
-	field_artillery_early = {
-		replace_at_match = 1.5
-		replace_with = field_artillery_mid
-		target_min_match = 0.5
-
-		upgrade_prio = {
-			factor = 2
-		}
-		
-		target_template = {
-			support = {
-				engineer = 1
-				artillery = 1
-			}
-			
-			regiments = {
-				infantry = 8
-				field_artillery_brigade = 1
-			}
-		}
-	}
-
-	field_artillery_mid = {
-		upgrade_prio = {
-			factor = 2
-		}
-		
-		target_template = {
-			support = {
-				engineer = 1
-				artillery = 1
-			}
-			
-			regiments = {
-				infantry = 7
-				field_artillery_brigade = 2
-			}
-		}
-	}
-
-	heavy_artillery_early = {
-		replace_at_match = 1.5
-		replace_with = heavy_artillery_mid
-		target_min_match = 0.5
-
-		upgrade_prio = {
-			factor = 1
-
-			modifier = {
-				factor = 3
-				OR = {
-					has_tech = heavy_artillery_0
-				}
-			}
-		}
-		
-		target_template = {
-			support = {
-				engineer = 1
-				artillery = 1
-			}
-			
-			regiments = {
-				infantry = 7
-				heavy_artillery_brigade = 1
-			}
-		}
-	}
-
-	heavy_artillery_mid = {
-		upgrade_prio = {
-			factor = 1
-		}
-		
-		target_template = {
-			support = {
-				engineer = 1
-				artillery = 1
-			}
-			
-			regiments = {
-				infantry = 7
-				heavy_artillery_brigade = 2
-			}
-		}
-	}
-}
-
-siege_artillery_generic = {
-	role = siege_artillery
+# A minority of frontline infantry are better equipped than others.
+#Germany, for example, will want to use the 'infantry_generic' role on the eastern front, while all their 'infantry_specialists' are on the western front.
+infantry_specialist = {
+	role = infantry_specialist
 
 	upgrade_prio = {
-		factor = 0.5
-	}
-
-	upgrade_prio = {
-		factor = 2
-
-		modifier = {
-			factor = 0
-			NOT = {
-				has_tech = siege_artillery_0
-			}
-		}
-	}
-
-	siege_artillery_default = {
-		upgrade_prio = {
-			factor = 1
-		}
-		
-		target_template = {
-			support = {
-				engineer = 1
-				artillery = 1
-			}
-			
-			regiments = {
-				infantry = 7
-				siege_artillery_brigade = 1
-			}
-		}
-	}
-}
-
-machine_gun_generic = {
-	role = machine_gun
-
-	upgrade_prio = {
-		factor = 2
+		base = 1
 	}
 
 	heavy_machine_gun_early = {
 		upgrade_prio = {
-			factor = 1
+			base = 1
 		}
 		
 		target_template = {
@@ -270,7 +130,12 @@ machine_gun_generic = {
 		target_min_match = 1.0
 
 		upgrade_prio = {
-			factor = 1
+			base = 1
+
+			modifier = {
+				factor = 3
+				date > 1915.1.1
+			}
 		}
 		
 		target_template = {
@@ -281,6 +146,167 @@ machine_gun_generic = {
 			regiments = {
 				infantry = 8
 				heavy_machine_gun = 2
+			}
+		}
+	}
+}
+
+mobile_generic = {
+	role = mobile
+
+	cavalry_early = {
+		upgrade_prio = {
+			base = 1
+		}
+		
+		target_template = {
+			regiments = {
+				cavalry = 8
+			}
+		}
+	}
+}
+
+artillery_generic = {
+	role = artillery
+	
+	upgrade_prio = {
+		base = 1
+	}
+
+	field_artillery = {
+		replace_at_match = 1.5
+		replace_with = field_artillery_mid
+		target_min_match = 0.5
+
+		upgrade_prio = {
+			base = 1
+		}
+		
+		target_template = {
+			support = {
+				engineer = 1
+			}
+			
+			regiments = {
+				infantry = 8
+				field_artillery_brigade = 1
+			}
+		}
+	}
+
+	field__heavy_artillery = {
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 2
+				date > 1913.1.1
+			}
+		}
+		
+		target_template = {
+			support = {
+				engineer = 1
+			}
+			
+			regiments = {
+				infantry = 7
+				field_artillery_brigade = 1
+				heavy_artillery_brigade = 1
+			}
+		}
+	}
+
+	heavy_artillery = {
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 2
+				date > 1916.1.1
+			}
+		}
+		
+		target_template = {
+			support = {
+				engineer = 1
+			}
+			
+			regiments = {
+				infantry = 7
+				heavy_artillery_brigade = 2
+			}
+		}
+	}
+}
+
+siege_artillery_generic = {
+	role = siege_artillery
+
+	upgrade_prio = {
+		base = 1
+	}
+
+	siege_artillery_default = {
+		upgrade_prio = {
+			base = 1
+		}
+		
+		target_template = {
+			support = {
+				engineer = 1
+			}
+			
+			regiments = {
+				infantry = 7
+				siege_artillery_brigade = 1
+			}
+		}
+	}
+}
+
+gas_generic = {
+	role = gas
+
+	upgrade_prio = {
+		base = 1
+	}
+
+	gas_early = {
+		upgrade_prio = {
+			base = 1
+		}
+
+		target_template = {
+			support = {
+				gas_regiment
+			}
+
+			regiments = {
+				infantry = 9
+			}
+		}
+	}
+
+	gas_mid = {
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 3
+				date > 1916.1.1
+			}
+		}
+
+		target_template = {
+			support = {
+				gas_regiment
+			}
+
+			regiments = {
+				infantry = 8
+				heavy_machine_gun = 1
 			}
 		}
 	}

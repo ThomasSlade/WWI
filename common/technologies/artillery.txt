@@ -27,11 +27,6 @@ technologies = {
 			leads_to_tech = heavy_artillery_0
 			research_cost_coeff = 1
 		}
-
-		path = {
-			leads_to_tech = gas_1
-			research_cost_coeff = 1
-		}
 		
 		folder = {
 			name = artillery_folder
@@ -235,9 +230,40 @@ technologies = {
 		}
 	}
 
-	gas_1 = {
+	gas_0 = {
 		research_cost = 1.5
 		start_year = 1911
+
+		enable_subunits = {
+			gas_regiment
+		}
+
+		enable_equipments = {
+			gas_equipment_0
+		}
+
+		path = {
+			leads_to_tech = gas_1
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 13 y = 2 }
+		}
+		
+		categories = {
+			chemical
+		}
+	}
+
+	gas_1 = {
+		research_cost = 1.5
+		start_year = 1913
+
+		enable_equipments = {
+			gas_equipment_1
+		}
 
 		path = {
 			leads_to_tech = gas_2
@@ -246,67 +272,52 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 14 y = 2 }
+			position = { x = 13 y = 4 }
 		}
 		
 		categories = {
-			artillery
-			mio_cat_all_artillery_equipment
+			chemical
 		}
 	}
 
 	gas_2 = {
 		research_cost = 1.5
-		start_year = 1913
+		start_year = 1915
+
+		enable_equipments = {
+			gas_equipment_2
+		}
 
 		path = {
 			leads_to_tech = gas_3
 			research_cost_coeff = 1
 		}
-
-		path = {
-			leads_to_tech = gas_4
-			research_cost_coeff = 1
-		}
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 14 y = 4 }
+			position = { x = 13 y = 8 }
 		}
 		
 		categories = {
-			artillery
-			mio_cat_all_artillery_equipment
+			chemical
 		}
 	}
 
 	gas_3 = {
 		research_cost = 1.5
-		start_year = 1915
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 12 y = 8 }
-		}
-		
-		categories = {
-			artillery
-			mio_cat_all_artillery_equipment
-		}
-	}
+		start_year = 1917
 
-	gas_4 = {
-		research_cost = 1.5
-		start_year = 1915
+		enable_equipments = {
+			gas_equipment_3
+		}
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 16 y = 8 }
+			position = { x = 13 y = 12 }
 		}
 		
 		categories = {
-			artillery
-			mio_cat_all_artillery_equipment
+			chemical
 		}
 	}
 }

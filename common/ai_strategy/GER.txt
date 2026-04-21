@@ -1,3 +1,65 @@
+GER_unit_production = {
+	allowed = {
+		original_tag = GER
+	}
+
+	enable = {
+		always = yes
+	}
+
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 80
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry_specialist
+		value = 40
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry
+		value = 5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = artillery
+		value = 20
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = gas
+		value = 20
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = siege_artillery
+		value = 10
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 80
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = convoy
+		value = 1
+	}
+}
+
 GER_schlieffen_prepare = {
 	allowed = {
 		original_tag = GER

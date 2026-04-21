@@ -1,0 +1,89 @@
+equipments = {
+	gas_equipment = {
+		year = 1911
+		picture = archetype_support_equipment
+		is_archetype = yes
+		type = {
+			infantry
+		}
+		group_by = archetype
+		interface_category = interface_category_land
+
+		#Misc Abilities
+		reliability = 0.5
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+
+		# Important Ability
+		armor_value = 5
+		
+		build_cost_ic = 6
+		resources = {
+			chromium = 1
+		}
+	}
+
+	# Tear Gas
+	gas_equipment_0 = {
+		year = 1911
+		
+		archetype = gas_equipment
+		priority = 20
+		visual_level = 0
+	}
+
+	# Chlorine
+	gas_equipment_1 = {
+		year = 1914
+		
+		archetype = gas_equipment
+		parent = gas_equipment_0
+		priority = 20
+		visual_level = 1
+
+		# Important Ability
+		armor_value = 10
+
+		build_cost_ic = 6
+		resources = {
+			chromium = 2
+		}
+	}
+
+	# Phosgene
+	gas_equipment_2 = {
+		year = 1916
+		
+		archetype = gas_equipment
+		parent = gas_equipment_1
+		priority = 20
+		visual_level = 2
+
+		# Important Ability
+		armor_value = 15
+
+		build_cost_ic = 6
+		resources = {
+			chromium = 2
+		}
+	}
+
+	# Mustard Gas
+	gas_equipment_3 = {
+		year = 1918
+		
+		archetype = gas_equipment
+		parent = gas_equipment_2
+		priority = 20
+		visual_level = 3
+
+		# Important Ability
+		armor_value = 20
+
+		build_cost_ic = 6
+		resources = {
+			chromium = 3
+		}
+	}
+}

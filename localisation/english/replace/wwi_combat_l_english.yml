@@ -1,0 +1,3 @@
+﻿l_english:
+ PIERCING_THRESHOLD_ENTRY: "$NUM|H$ Enemy Divisions can resist this Division's gas, and $PIERCE_VALUE|%H$ of damage."
+ NON_PIERCING_THRESHOLD_ENTRY: "$NUM|H$ Enemy Divisions lack resistance to this Division's gas, and deal $PIERCE_VALUE|%H$ of damage."

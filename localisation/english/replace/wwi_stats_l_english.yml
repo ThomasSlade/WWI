@@ -1,0 +1,7 @@
+﻿l_english:
+  STAT_NAME_ARMOR: "Gas"
+  STAT_NAME_PIERCING: "Gas Resistance"
+  STAT_COMMON_ARMOR: "$STAT_NAME_ARMOR$: "
+  STAT_COMMON_ARMOR_DESC: "Having §H$STAT_NAME_ARMOR$§! that is higher than the opponents §H$STAT_NAME_PIERCING$§! value makes you take less damage and also makes it possible to perform more attacks in combat as the enemy is disabled by toxic fumes."
+  STAT_COMMON_PIERCING: "$STAT_NAME_PIERCING$: "
+  STAT_COMMON_PIERCING_DESC: "Having equal or greater §H$STAT_NAME_PIERCING$§! to the targets §H$STAT_NAME_ARMOR$§! value allow you to do more damage and more effectively repel gas attacks."

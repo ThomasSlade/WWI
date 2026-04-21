@@ -1,0 +1,5 @@
+﻿l_english:
+ GOOD_ARMOR_DEFENSE_DESC: "If an Enemy Division attacking us is unable to resist our gas, we will take up to $ORG|%0G$ less organization and strength damage.\n"
+ GOOD_ARMOR_ATTACK_DESC_STR: "If attacking an Enemy Division that cannot resist our gas we will do more damage.\n"
+ GOOD_ARMOR_ATTACK_DESC_ORG: "\nIf attacking an Enemy Division that can resist less than §H50%§! of our gas we will do additional damage."
+ PIERCING_GOOD_DESC: "The division will not get extra bonuses from being able to resist an Enemy Division's gas, but that division will not receive bonuses from its gas."
