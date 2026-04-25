@@ -15,8 +15,14 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 1
 
+		#Offensive Abilities
+		soft_attack = 30
+		hard_attack = 0
+		ap_attack = 0
+		air_attack = 0
+
 		# Important Ability
-		armor_value = 5
+		armor_value = 2
 		
 		build_cost_ic = 6
 		resources = {
@@ -42,6 +48,9 @@ equipments = {
 		priority = 20
 		visual_level = 1
 
+		#Offensive Abilities
+		soft_attack = 75
+
 		# Important Ability
 		armor_value = 10
 
@@ -60,6 +69,9 @@ equipments = {
 		priority = 20
 		visual_level = 2
 
+		#Offensive Abilities
+		soft_attack = 100
+
 		# Important Ability
 		armor_value = 15
 
@@ -77,6 +89,9 @@ equipments = {
 		parent = gas_equipment_2
 		priority = 20
 		visual_level = 3
+
+		#Offensive Abilities
+		soft_attack = 140
 
 		# Important Ability
 		armor_value = 20

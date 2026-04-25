@@ -32,6 +32,16 @@ technologies = {
 				factor = 2
 				is_major = yes
 			}
+
+			modifier = {
+				factor = 2
+				date > "1912.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1913.1.1"
+			}
 		}
 	}
 
@@ -68,6 +78,21 @@ technologies = {
 				factor = 2
 				is_major = yes
 			}
+
+			modifier = {
+				factor = 1.5
+				date > "1913.1.1"
+			}
+			
+			modifier = {
+				factor = 1.5
+				date > "1914.1.1"
+			}
+			
+			modifier = {
+				factor = 1.5
+				date > "1915.1.1"
+			}
 		}
 	}
 
@@ -98,6 +123,21 @@ technologies = {
 			modifier = {
 				factor = 2
 				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.5
+				date > "1915.1.1"
+			}
+			
+			modifier = {
+				factor = 1.5
+				date > "1916.1.1"
+			}
+			
+			modifier = {
+				factor = 1.5
+				date > "1917.1.1"
 			}
 		}
 	}

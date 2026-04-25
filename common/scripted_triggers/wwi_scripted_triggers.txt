@@ -187,3 +187,8 @@ trigger_is_spring_or_summer = {
 	    }
 	}
 }
+
+# If this is true, this country could be building tanks and siege artillery.
+trigger_is_military_power = {
+	num_of_military_factories > 40
+}

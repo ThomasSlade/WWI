@@ -1,0 +1,83 @@
+sub_units = {
+	field_artillery_gas_brigade = {
+		abbreviation = "FARG"
+		sprite = artillery
+		map_icon_category = infantry
+		priority = 6150
+		ai_priority = 1500
+		active = yes
+		is_artillery_brigade = yes
+		
+		type = {
+			infantry
+			artillery
+
+			# So that the game knows this is an offensive unit.
+			armor
+		}
+
+		group = infantry
+		
+		categories = {
+			category_army
+			category_line_artillery
+			category_artillery
+			category_field_artillery
+		}
+
+		combat_width = 2
+
+		manpower = 750
+
+		essential = {
+			gas_equipment
+		}
+
+		need = {
+			field_artillery_equipment = 36
+			gas_equipment = 20
+		}
+		
+		max_strength = 0.3
+		max_organisation = 6
+		default_morale = 0.1
+		training_time = 120
+		weight = 0.5
+		supply_consumption = 0.21
+
+		# Gas artillery stat modifiers
+		defense = -0.3
+		soft_attack = -0.5
+		hard_attack = -1.0
+		armor_value = 0.25
+
+		forest = {
+			attack = -0.2
+			movement = -0.2
+		}
+		hills = {
+			movement = -0.05
+		}
+		mountain = {
+			movement = -0.2
+		}
+		jungle = {
+			attack = -0.25
+			movement = -0.2
+		}
+		marsh = {
+			attack = -0.2
+			movement = -0.3
+		}
+		fort = {
+			attack = 0.1
+		}
+		river = {
+			attack = -0.2
+			movement = -0.2
+		}
+		amphibious = {
+			attack = -0.4
+		}
+	}
+}

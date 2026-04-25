@@ -16,6 +16,24 @@ NDefines.NCountry.MIN_FOCUSES_FOR_CONTINUOUS = 0	-- Focuses needed to unlock con
 NDefines.NCountry.BASE_FUEL_GAIN_PER_OIL = 2		-- base amount of fuel gained hourly per excess oil
 NDefines.NCountry.BASE_FUEL_CAPACITY = 500000		-- base amount of fuel capacity
 
+NDefines.NMilitary.PIERCING_THRESHOLDS = {	-- Our gas resist / their gas must be this value to deal damage fraction equal to the index in the array below [higher number = higher gas survivability]. If gas is 0, 1.00 will be returned.
+		1.00,
+		0.75,
+		0.50,
+		0.00, --there isn't much point setting this higher than 0
+	}
+NDefines.NMilitary.PIERCING_THRESHOLD_DAMAGE_VALUES = {	-- 0 gas will always receive maximum damage (so add overmatching at your own peril). the system expects at least 2 values, with no upper limit.
+		1.00,
+		0.80,
+		0.65,
+		0.50,
+	}
+NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_DEFLECTION_FACTOR = 0.25 -- damage reduction if gas outclassing enemy
+NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_DEFLECTION_FACTOR = 0.25 -- damage reduction if gas outclassing enemy
+NDefines.NMilitary.LAND_COMBAT_STR_DICE_SIZE = 2              	-- nr of damage dice (used by ground to ground)
+NDefines.NMilitary.LAND_COMBAT_ORG_DICE_SIZE = 4              	-- nr of damage dice (used by ground to ground)
+NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_ON_SOFT_DICE_SIZE = 2	-- extra damage dice if our gas outclasses enemy
+NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_ON_SOFT_DICE_SIZE = 5	-- extra damage dice if our gas outclasses enemy
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 10 	--Base cost to unlock a regiment slot,
 NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.053
 NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.07
@@ -63,6 +81,7 @@ NDefines.NProduction.ANNEX_FUEL_RATIO = 0.2	-- How much fuel will be transferred
 NDefines.NProduction.CAPITULATE_FUEL_RATIO = 0.2	-- How much fuel will be transferred on capitulation
 
 NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 25	-- Each level of airbase building multiplied by this, gives capacity (max operational value). Value is int. 1 for each airplane.
+NDefines.NBuildings.INFRASTRUCTURE_MUD_EFFECT = -0.4	-- multiplicative effect on mud growth for max infra
 
 NDefines.NSupply.INFRA_TO_SUPPLY = 0.5
 NDefines.NSupply.NODE_STARTING_PENALTY_PER_PROVINCE = 0.3

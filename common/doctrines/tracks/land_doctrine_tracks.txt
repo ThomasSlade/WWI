@@ -4,7 +4,7 @@ early = {
     icon = "GFX_doctrine_milestone_infantry_land"
     icon_frame = "GFX_doctrine_decor_land"
     mastery = {
-        multiplier = 1.0
+        multiplier = 3.0
         categories = {
             category_light_infantry
             category_cavalry

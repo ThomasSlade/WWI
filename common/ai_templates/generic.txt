@@ -27,33 +27,6 @@ garrison_generic = {
 	}
 }
 
-suppression_generic = {
-	role = suppression
-
-	upgrade_prio = {
-		base = 1
-	}
-
-	suppression_generic = {
-		reinforce_prio = 0
-		custom_icon = 13
-	
-		upgrade_prio = {
-			base = 1
-		}
-		
-		target_template = {
-			support = { 
-				military_police = 1
-			}
-			
-			regiments = {
-				cavalry = 6
-			}
-		}
-	}
-}
-
 infantry_generic = {
 	role = infantry
 	
@@ -107,6 +80,11 @@ infantry_specialist = {
 
 	upgrade_prio = {
 		base = 1
+
+		modifier = {
+			factor = 0
+			NOT = { has_tech = heavy_machine_gun_0 }
+		}
 	}
 
 	heavy_machine_gun_early = {
@@ -246,6 +224,11 @@ siege_artillery_generic = {
 
 	upgrade_prio = {
 		base = 1
+
+		modifier = {
+			factor = 0
+			NOT = { has_tech = siege_artillery_0 }
+		}
 	}
 
 	siege_artillery_default = {
@@ -271,6 +254,11 @@ gas_generic = {
 
 	upgrade_prio = {
 		base = 1
+
+		modifier = {
+			factor = 0
+			NOT = { has_tech = gas_0 }
+		}
 	}
 
 	gas_early = {

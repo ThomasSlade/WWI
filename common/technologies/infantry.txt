@@ -50,7 +50,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 100
 		}
 	}
 	
@@ -77,21 +77,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
 			
 			modifier = {
-				factor = 10
-				tag = CHI
-				
-				OR = {
-					date > "1912.1.1"
-					JAP = { is_ai = no }
-				}
-			}
-			
-			modifier = {
-				factor = 10
+				factor = 3
 				date > "1911.1.3"
+			}
+
+			modifier = {
+				factor = 3
+				date > "1912.1.1"
+			}
+
+			modifier = {
+				factor = 3
+				date > "1913.1.1"
 			}
 		}
 	}
@@ -128,6 +128,25 @@ technologies = {
 		categories = {
 			infantry_weapons
 			heavy_machine_gun
+		}
+
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 5
+				date > "1911.1.3"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1912.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1913.1.1"
+			}
 		}
 	}
 	
@@ -170,24 +189,20 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 2
-			
-			modifier = {
-				factor = 5
 
-				OR = {
-					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
-				}
+			modifier = {
+				factor = 3
+				date > "1914.1.1"
 			}
 
 			modifier = {
-				factor = 5
-				date > "1914.1.1"
+				factor = 2
+				date > "1915.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1916.1.1"
 			}
 		}
 	}
@@ -225,27 +240,22 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
-						
+			factor = 2
+
 			modifier = {
-				factor = 10
-				date > "1914.1.1"
+				factor = 3
+				date > "1915.1.1"
 			}
+
 			modifier = {
-				num_of_military_factories < 50
-				factor = 0.5
+				factor = 5
+				date > "1916.1.1"
 			}
+
 			modifier = {
-				factor = 0
-				tag = SOV
-				OR = {
-					date < "1919.1.1" # stock up on lots of rifles, we got the manpower
-					AND = {
-						date > "1918.1.1"
-						surrender_progress < 0.1 # if we arent losing badly its ok
-					}
-				}				
-			}			
+				factor = 5
+				date > "1917.1.1"
+			}
 		}
 	}
 
@@ -292,21 +302,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
-			
+			factor = 2
+
 			modifier = {
-				factor = 2
-				date > "1915.1.6"
-			}
-			
-			modifier = {
-				factor = 2
+				factor = 3
 				date > "1916.1.1"
 			}
-			
+
 			modifier = {
 				factor = 5
 				date > "1917.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1918.1.1"
 			}
 		}
 	}
@@ -336,6 +346,25 @@ technologies = {
 		categories = {
 			infantry_weapons
 		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				date > "1916.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1917.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1918.1.1"
+			}
+		}
 	}
 
 	gas_mask_1 = {
@@ -353,6 +382,25 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				date > "1918.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1919.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1920.1.1"
+			}
 		}
 	}
 
@@ -373,6 +421,10 @@ technologies = {
 		categories = {
 			infantry_weapons
 		}
+
+		ai_will_do = {
+			factor = 0
+		}
 	}
 
 	heavy_machine_gun_1 = {
@@ -391,6 +443,10 @@ technologies = {
 		categories = {
 			infantry_weapons
 			heavy_machine_gun
+		}
+
+		ai_will_do = {
+			factor = 0
 		}
 	}
 	
@@ -422,20 +478,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.8
-			
+			factor = 2
+
 			modifier = {
-				tag = GER
-				factor = 2.5
+				factor = 3
+				date > "1918.1.1"
 			}
+
 			modifier = {
-				num_of_military_factories > 150
-				factor = 2.5
+				factor = 3
+				date > "1919.1.1"
 			}
-			
+
 			modifier = {
-				num_of_military_factories < 50
-				factor = 0.5
+				factor = 5
+				date > "1920.1.1"
 			}
 		}
 	}
@@ -451,6 +508,10 @@ technologies = {
 		
 		categories = {
 			infantry_weapons
+		}
+
+		ai_will_do = {
+			factor = 0
 		}
 	}
 	
@@ -488,21 +549,21 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				date > "1919.1.6"
-			}
+			factor = 2
 			
 			modifier = {
 				factor = 2
 				date > "1920.1.1"
 			}
-			
+
 			modifier = {
-				factor = 2
+				factor = 5
 				date > "1921.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1922.1.1"
 			}
 		}
 	}
@@ -544,22 +605,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.5
-			
-			modifier = {
-				factor = 2
-				tag = USA
-			}
-			
-			modifier = {
-				factor = 2
-				tag = GER
-			}
-			
-			modifier = {
-				factor = 2
-				tag = ENG
-			}
+			factor = 0
 		}
 	}
 	
@@ -588,22 +634,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.5
-			
-			modifier = {
-				factor = 2
-				tag = USA
-			}
-			
-			modifier = {
-				factor = 2
-				tag = GER
-			}
-			
-			modifier = {
-				factor = 2
-				tag = ENG
-			}
+			factor = 0
 		}
 	}
 
@@ -627,22 +658,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.5
-			
-			modifier = {
-				factor = 2
-				tag = USA
-			}
-			
-			modifier = {
-				factor = 2
-				tag = GER
-			}
-			
-			modifier = {
-				factor = 2
-				tag = ENG
-			}
+			factor = 0
 		}
 	}
 	
@@ -683,22 +699,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
-			
-			modifier = {
-				factor = 3
-				tag = USA
-			}
-			
-			modifier = {
-				factor = 3
-				tag = JAP
-			}
-			
-			modifier = {
-				factor = 5
-				tag = ENG
-			}
+			factor = 0
 		}
 	}
 	
@@ -726,17 +727,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
-			
-			modifier = {
-				factor = 3
-				tag = USA
-			}
-			
-			modifier = {
-				factor = 3
-				tag = JAP
-			}
+			factor = 0
 		}
 	}
 	
@@ -759,17 +750,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
-			
-			modifier = {
-				factor = 3
-				tag = USA
-			}
-			
-			modifier = {
-				factor = 3
-				tag = JAP
-			}
+			factor = 0
 		}
 	}	
 	
@@ -811,7 +792,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 0
 		}
 	}
 	
@@ -840,7 +821,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 0
 		}
 	}
 	
@@ -864,7 +845,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 0
 		}
 	}
 
@@ -909,27 +890,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
-			
-			modifier = {
-				factor = 2
-				tag = USA
-			}
-			
-			modifier = {
-				factor = 5
-				tag = JAP
-			}
-
-			modifier = {
-				factor = 5
-				tag = BRA
-			}
-			
-			modifier = {
-				factor = 2
-				tag = ENG
-			}
+			factor = 0
 		}
 	}
 
@@ -958,7 +919,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 0
 		}
 	}
 
@@ -982,7 +943,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 0
 		}
 	}
 
@@ -1028,7 +989,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 0
 		}
 	}
 
@@ -1066,7 +1027,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 0
 		}
 	}
 
@@ -1100,7 +1061,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 0
 		}
 	}
 
@@ -1136,7 +1097,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 0
 		}
 	}
 
@@ -1170,7 +1131,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 0
 		}
 	}
 
@@ -1199,7 +1160,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 0
 		}
 	}
 
@@ -1321,27 +1282,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
-			
-			modifier = {
-				factor = 2
-				date > "1917.1.9"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1918.1.1"
-			}
-			
-			modifier = {
-				factor = 5
-				date > "1918.1.6"
-			}
-			
-			modifier = {
-				factor = 5
-				date > "1921.1.1"
-			}
+			factor = 0
 		}
 	}
 	
@@ -1361,22 +1302,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
-			
-			modifier = {
-				factor = 2
-				date > "1920.1.9"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1921.1.1"
-			}
-			
-			modifier = {
-				factor = 5
-				date > "1921.1.6"
-			}
+			factor = 0
 		}
 	}
 
@@ -1420,25 +1346,26 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
+
+			modifier = {
+				is_major = no
+				factor = 0.5
+			}
 			
 			modifier = {
 				factor = 2
+				date > "1911.1.3"
+			}
+			
+			modifier = {
+				factor = 5
 				date > "1912.1.1"
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 5
 				date > "1913.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1914.1.1"
-			}
-			modifier = {
-				is_major = no
-				factor = 0.75
 			}
 		}
 	}
@@ -1494,26 +1421,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				date > "1912.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1913.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1914.1.1"
-			}
-			modifier = {
-				is_major = no
-				factor = 0.5
-			}
+			factor = 0
 		}
 	}
 	
@@ -1546,26 +1454,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				date > "1912.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1913.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1914.1.1"
-			}
-			modifier = {
-				is_major = no
-				factor = 0.5
-			}
+			factor = 0
 		}
 	}
 
@@ -1594,26 +1483,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				date > "1912.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1913.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1914.1.1"
-			}
-			modifier = {
-				is_major = no
-				factor = 0.5
-			}
+			factor = 0
 		}
 	}
 
@@ -1641,26 +1511,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				date > "1912.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1913.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1914.1.1"
-			}
-			modifier = {
-				is_major = no
-				factor = 0.5
-			}
+			factor = 0
 		}
 	}
 
@@ -1680,26 +1531,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				date > "1912.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1913.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1914.1.1"
-			}
-			modifier = {
-				is_major = no
-				factor = 0.5
-			}
+			factor = 0
 		}
 	}
 
@@ -1762,11 +1594,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
-			modifier = {
-				tag = USA
-				factor = 2
-			}
+			factor = 0
 		}
 	}
 
@@ -1805,11 +1633,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
-			modifier = {
-				tag = USA
-				factor = 2
-			}
+			factor = 0
 		}
 	}
 
@@ -1835,7 +1659,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 0
 		}
 	}
 	
@@ -1865,7 +1689,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
@@ -1895,7 +1719,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
@@ -1915,7 +1739,7 @@ technologies = {
 	
 	camelry = {
 		research_cost = 1
-		start_year = 1936
+		start_year = 1911
 		
 		allow = {
 			always = no

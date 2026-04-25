@@ -17,11 +17,11 @@ cult_of_the_offensive = {
 	rewards = {
 		elan = {
 			category_light_infantry = {
-				default_morale = 0.025
+				default_morale = 0.04
 			}
 
 			category_cavalry = {
-				default_morale = 0.025
+				default_morale = 0.04
 			}
 		}
 		
