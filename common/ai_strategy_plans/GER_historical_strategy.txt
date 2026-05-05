@@ -1,0 +1,45 @@
+AUS_historical = {
+	name = "German historical plan"
+	desc = "."
+
+	allowed = {
+		original_tag = GER
+	}
+	enable = {
+		is_historical_focus_on = yes
+	}
+
+	ai_national_focuses = {
+		# 1911
+		GER_the_reichsland_of_alsace_lorraine
+		GER_the_schlieffen_plan
+		GER_german_domestic_investment
+		GER_machinery_exports
+		GER_silesian_and_saxon_mining
+
+		# 1912
+		GER_german_defence_league
+		GER_navy_league
+		GER_send_warship_to_agadir
+		# GER_third_naval_ammendment 1912.2
+		GER_saxon_manufacturing
+		GER_war_council
+
+		# 1913
+		GER_the_great_memorandum
+		GER_wehrbeitrag
+		GER_army_bill
+		GER_land_doctrine
+		GER_artillery_test_commission
+
+		# 1914
+		GER_heavy_artillery
+		GER_support_austria_diplomatically
+		GER_widen_the_kiel
+
+		# Everything after this is placeholder, need to do more work to figure out historic focuses.
+		GER_mittellandkanal
+		GER_strategic_rail_expansion
+		GER_machine_guns
+	}
+}
