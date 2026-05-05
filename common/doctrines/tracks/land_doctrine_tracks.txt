@@ -4,12 +4,11 @@ early = {
     icon = "GFX_doctrine_milestone_infantry_land"
     icon_frame = "GFX_doctrine_decor_land"
     mastery = {
-        multiplier = 3.0
+        multiplier = 10.0
         categories = {
-            category_light_infantry
-            category_cavalry
-            category_field_artillery
+            category_artillery
             category_heavy_machine_gun
+            category_support_battalions
         }
     }
 }

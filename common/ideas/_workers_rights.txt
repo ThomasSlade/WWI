@@ -4,7 +4,7 @@ ideas = {
 		use_list_view = yes
 
 		forced_labour = {
-			cost = 100
+			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -34,7 +34,7 @@ ideas = {
 		}
 
 		quitting_illegal = {
-			cost = 100
+			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -65,7 +65,7 @@ ideas = {
 		}
 
 		unions_illegal = {
-			cost = 100
+			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
 			default = yes
@@ -96,7 +96,7 @@ ideas = {
 		}
 
 		worker_collaboration_0 = {
-			cost = 100
+			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -127,7 +127,7 @@ ideas = {
 		}
 
 		wage_controls_0 = {
-			cost = 100
+			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -158,7 +158,7 @@ ideas = {
 		}
 
 		worker_collaboration_1 = {
-			cost = 100
+			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -188,7 +188,7 @@ ideas = {
 		}
 
 		wage_controls_1 = {
-			cost = 100
+			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
 

@@ -208,6 +208,8 @@ effect_setup_offmap_states = {
 	every_state = {
 		limit = { is_on_continent = americas }
 
+		log = "[THIS.GetName] is an offmap state"
+
 		add_dynamic_modifier = { modifier = modifier_offmap_state }
 	}
 }

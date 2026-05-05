@@ -43,17 +43,17 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > "1.1.1912"
+				date > "1912.1.1"
 			}
 
 			modifier = {
 				factor = 5
-				date > "1.1.1913"
+				date > "1913.1.1"
 			}
 
 			modifier = {
 				factor = 5
-				date > "1.1.1939"
+				date > "1939.1.1"
 			}
 		}
 	}
@@ -91,17 +91,17 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > "1.1.1912"
+				date > "1912.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "1.1.1913"
+				date > "1913.1.1"
 			}
 
 			modifier = {
 				factor = 5
-				date > "1.1.1914"
+				date > "1914.1.1"
 			}
 		}
 	}
@@ -133,17 +133,17 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > "1.1.1912"
+				date > "1912.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "1.1.1913"
+				date > "1913.1.1"
 			}
 
 			modifier = {
 				factor = 3
-				date > "1.1.1914"
+				date > "1914.1.1"
 			}
 		}
 	}
@@ -176,17 +176,17 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > "1.1.1915"
+				date > "1915.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "1.1.1916"
+				date > "1916.1.1"
 			}
 
 			modifier = {
 				factor = 5
-				date > "1.1.1917"
+				date > "1917.1.1"
 			}
 		}
 	}
@@ -240,17 +240,17 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > "1.1.1912"
+				date > "1912.1.1"
 			}
 
 			modifier = {
 				factor = 3
-				date > "1.1.1913"
+				date > "1913.1.1"
 			}
 
 			modifier = {
 				factor = 10
-				date > "1.1.1914"
+				date > "1914.1.1"
 			}
 		}
 	}
@@ -282,17 +282,17 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > "1.1.1912"
+				date > "1912.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "1.1.1913"
+				date > "1913.1.1"
 			}
 
 			modifier = {
 				factor = 3
-				date > "1.1.1914"
+				date > "1914.1.1"
 			}
 		}
 	}
@@ -325,17 +325,17 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > "1.1.1916"
+				date > "1916.1.1"
 			}
 
 			modifier = {
 				factor = 5
-				date > "1.1.1917"
+				date > "1917.1.1"
 			}
 
 			modifier = {
 				factor = 5
-				date > "1.1.1918"
+				date > "1918.1.1"
 			}
 		}
 	}
@@ -363,17 +363,17 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > "1.1.1919"
+				date > "1919.1.1"
 			}
 
 			modifier = {
 				factor = 5
-				date > "1.1.1920"
+				date > "1920.1.1"
 			}
 
 			modifier = {
 				factor = 5
-				date > "1.1.1921"
+				date > "1921.1.1"
 			}
 		}
 	}
@@ -415,17 +415,17 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > "1.1.1914"
+				date > "1914.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "1.1.1915"
+				date > "1914.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "1.1.1916"
+				date > "1916.1.1"
 			}
 		}
 	}
@@ -463,17 +463,17 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > "1.1.1918"
+				date > "1918.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "1.1.1919"
+				date > "1919.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "1.1.1920"
+				date > "1920.1.1"
 			}
 		}
 	}
@@ -509,24 +509,24 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > "1.1.1912"
+				date > "1912.1.1"
 			}
 
 			modifier = {
 				factor = 5
-				date > "1.1.1913"
+				date > "1913.1.1"
 			}
 
 			modifier = {
 				factor = 10
-				date > "1.1.1914"
+				date > "1914.1.1"
 			}
 		}
 	}
 
 	gas_1 = {
 		research_cost = 1.5
-		start_year = 1913
+		start_year = 1914
 
 		enable_equipments = {
 			gas_equipment_1
@@ -539,7 +539,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 13 y = 4 }
+			position = { x = 13 y = 6 }
 		}
 		
 		categories = {
@@ -551,24 +551,24 @@ technologies = {
 
 			modifier = {
 				factor = 5
-				date > "1.1.1914"
+				date > "1915.1.1"
 			}
 
 			modifier = {
 				factor = 5
-				date > "1.1.1915"
+				date > "1916.1.1"
 			}
 
 			modifier = {
 				factor = 5
-				date > "1.1.1916"
+				date > "1917.1.1"
 			}
 		}
 	}
 
 	gas_2 = {
 		research_cost = 1.5
-		start_year = 1915
+		start_year = 1916
 
 		enable_equipments = {
 			gas_equipment_2
@@ -581,7 +581,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 13 y = 8 }
+			position = { x = 13 y = 10 }
 		}
 		
 		categories = {
@@ -593,17 +593,17 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > "1.1.1916"
+				date > "1917.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "1.1.1917"
+				date > "1918.1.1"
 			}
 
 			modifier = {
 				factor = 5
-				date > "1.1.1918"
+				date > "1919.1.1"
 			}
 		}
 	}
@@ -630,17 +630,17 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > "1.1.1918"
+				date > "1918.1.1"
 			}
 
 			modifier = {
 				factor = 2
-				date > "1.1.1919"
+				date > "1919.1.1"
 			}
 
 			modifier = {
 				factor = 5
-				date > "1.1.1920"
+				date > "1920.1.1"
 			}
 		}
 	}
