@@ -23,34 +23,12 @@ set_technology = {
 	field_artillery_0 = 1
 	tech_support = 1
 	recon_plane_0 = 1
-}
 
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	set_technology = {
-		early_ship_hull_heavy = 1
-		early_ship_hull_cruiser = 1
-		early_ship_hull_light = 1
-		early_ship_hull_submarine = 1
-
-		basic_cruiser_armor_scheme = 1
-		basic_battery = 1
-		basic_light_battery = 1
-		basic_heavy_battery = 1
-		basic_torpedo = 1
-		mtg_transport = 1
-	}
-	
-	else = {
-		set_technology = {
-			early_ship_hull_light = 1
-			early_ship_hull_cruiser = 1
-			early_ship_hull_heavy = 1
-			early_ship_hull_submarine = 1
-
-			transport = 1
-		}
-	}
+	early_ship_hull_light = 1
+	early_ship_hull_cruiser = 1
+	early_ship_hull_heavy = 1
+	early_ship_hull_submarine = 1
+	mtg_transport = 1
 }
 
 set_convoys = 50
@@ -75,123 +53,3 @@ add_ideas = {
 set_variable = { initial_cabinet = token:cab_conservative }
 set_variable = { initial_opposition = token:opp_liberal_1 }
 set_variable = { initial_government = token:gov_limited_democracy }
-
-if = {
-	limit = { has_dlc = "Man the Guns" }
-
-	create_equipment_variant = {
-		name = "Conte di Cavour-class"
-		type = ship_hull_pre_dreadnought_wwi_1
-		name_group = ITA_BB_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_heavy_battery_1
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = heavy_ship_engine_2
-			fixed_ship_secondaries_slot = ship_secondaries_1
-			fixed_ship_armor_slot = ship_armor_bb_1
-			front_1_custom_slot = ship_anti_air_1
-			mid_1_custom_slot = empty
-			rear_1_custom_slot = empty
-		}
-	}
-
-	create_equipment_variant = {
-		name = "Regina Margherita-class"
-		type = ship_hull_pre_dreadnought_wwi_1
-		name_group = ITA_BB_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_heavy_battery_1
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = heavy_ship_engine_2
-			fixed_ship_secondaries_slot = ship_secondaries_1
-			fixed_ship_armor_slot = ship_armor_bb_1
-			front_1_custom_slot = ship_anti_air_1
-			mid_1_custom_slot = empty
-			rear_1_custom_slot = empty
-		}
-	}
-
-	create_equipment_variant = {
-		name = "Giuseppe Garibaldi-class"
-		type = ship_hull_cruiser_1
-		name_group = ITA_CL_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_medium_battery_1
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_2
-			fixed_ship_armor_slot = ship_armor_cruiser_2
-			fixed_ship_secondaries_slot = empty
-			mid_1_custom_slot = ship_medium_battery_1
-			mid_2_custom_slot = ship_airplane_launcher_1
-			rear_1_custom_slot = ship_anti_air_1
-		}
-	}
-
-	create_equipment_variant = {
-		name = "Argodat-class"
-		type = ship_hull_cruiser_1
-		name_group = ITA_CL_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-			fixed_ship_armor_slot = ship_armor_cruiser_1
-			mid_1_custom_slot = ship_torpedo_1
-			mid_2_custom_slot = empty
-			rear_1_custom_slot = ship_mine_layer_1
-		}
-	}
-
-	create_equipment_variant = {
-		name = "Nembo-class"
-		type = ship_hull_light_1
-		name_group = ITA_DD_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_1
-			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = empty
-			rear_1_custom_slot = empty
-		}
-	}
-
-	create_equipment_variant = {
-		name = "Glauco Class"
-		type = ship_hull_submarine_1
-		name_group = ITA_SS_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = empty
-		}
-	}
-
-	create_equipment_variant = {
-		name = "Medusa Class"
-		type = ship_hull_submarine_1
-		name_group = ITA_SS_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = ship_torpedo_sub_1
-		}
-	}
-}

@@ -4,7 +4,7 @@ ideas = {
 		use_list_view = yes
 
 		open_sealanes = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 			default = yes
@@ -34,7 +34,7 @@ ideas = {
 		}
 
 		cargo_interception = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -65,7 +65,7 @@ ideas = {
 		}
 
 		surface_blockade_0 = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -95,7 +95,7 @@ ideas = {
 		}
 
 		submarine_blockade_0 = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -125,7 +125,7 @@ ideas = {
 		}
 
 		surface_blockade_1 = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -156,7 +156,7 @@ ideas = {
 		}
 
 		submarine_blockade_1 = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -186,7 +186,7 @@ ideas = {
 		}
 
 		unrestricted_blockade = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 

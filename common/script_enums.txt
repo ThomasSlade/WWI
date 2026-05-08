@@ -673,14 +673,6 @@ script_enum_equipment_bonus_type = {
 	heavy_machine_gun_equipment
 	heavy_machine_gun_equipment_0
 	heavy_machine_gun_equipment_1
-	gas_equipment
-	gas_equipment_0
-	gas_equipment_1
-	gas_equipment_2
-	gas_equipment_3
-	gas_mask_equipment
-	gas_mask_equipment_0
-	gas_mask_equipment_1
 
 	wwi_heavy_tank_chassis
 	wwi_heavy_tank_equipment_0

@@ -4,7 +4,7 @@ ideas = {
 		use_list_view = yes
 
 		no_rationing = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 			default = yes
@@ -37,7 +37,7 @@ ideas = {
 		}
 
 		price_controls = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -70,7 +70,7 @@ ideas = {
 		}
 
 		government_confiscation_0 = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -102,7 +102,7 @@ ideas = {
 		}
 
 		government_distribution_0 = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -133,7 +133,7 @@ ideas = {
 		}
 
 		government_confiscation_1 = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -165,7 +165,7 @@ ideas = {
 		}
 
 		government_distribution_1 = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -196,7 +196,7 @@ ideas = {
 		}
 
 		harsh_rationing = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 

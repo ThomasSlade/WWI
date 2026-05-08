@@ -4,7 +4,7 @@ ideas = {
 		use_list_view = yes
 
 		disarmed_nation = {	
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 			
@@ -62,7 +62,7 @@ ideas = {
 		}
 
 		national_service = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 			default = yes
@@ -93,7 +93,7 @@ ideas = {
 		}
 
 		limited_conscription = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 			
@@ -123,7 +123,7 @@ ideas = {
 		}
 
 		extensive_conscription = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 			
@@ -155,7 +155,7 @@ ideas = {
 		}
 
 		deployed_workers_0 = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 			
@@ -189,7 +189,7 @@ ideas = {
 		}
 
 		deployed_labourers_0 = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 			
@@ -223,7 +223,7 @@ ideas = {
 		}
 
 		deployed_workers_1 = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 			
@@ -257,7 +257,7 @@ ideas = {
 		}
 
 		deployed_labourers_1 = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 			
@@ -291,7 +291,7 @@ ideas = {
 		}
 
 		scraping_the_barrel = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 			

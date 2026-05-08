@@ -28,9 +28,9 @@ sub_units = {
 			heavy_machine_gun_equipment = 50
 		}
 
-		max_strength = 4
-		max_organisation = 12
-		default_morale = 0.03
+		max_strength = 3
+		max_organisation = 6
+		default_morale = 0.1
 		training_time = 90
 		weight = 0.5
 		supply_consumption = 0.1

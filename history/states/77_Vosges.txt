@@ -42,7 +42,7 @@ state={
 				bunker = 5
 			}
 			1606 = {
-				bunker = 4
+				bunker = 5
 			}
 			1492 = {
 				bunker = 5
@@ -60,7 +60,7 @@ state={
 				bunker = 5
 			}
 			1531 = {
-				bunker = 4
+				bunker = 5
 			}
 			1434 = {
 				bunker = 5

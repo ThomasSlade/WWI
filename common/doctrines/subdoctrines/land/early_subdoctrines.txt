@@ -30,10 +30,16 @@ cult_of_the_offensive = {
 			land_reinforce_rate = 0.1
 		}
 
-		free_fire = {
+		orderly_retreat = {
+			army_retreat_speed_factor = 0.3
+			army_org_regain = 0.2
+
 			category_light_infantry = {
-				soft_attack = 0.3
-				default_morale = 0.025
+				defense = 0.05
+			}
+
+			category_field_artillery = {
+				defense = 0.05
 			}
 		}
 
@@ -89,18 +95,18 @@ free_tactics = {
 				default_morale = 0.075
 			}
 		}
-		
-		indirect_artillery = {
-			category_artillery = {
-				breakthrough = 0.3
-				soft_attack = 0.3
-			}
-		}
 
 		free_fire = {
 			category_light_infantry = {
 				soft_attack = 0.3
 				default_morale = 0.025
+			}
+		}
+
+		indirect_artillery = {
+			category_artillery = {
+				breakthrough = 0.3
+				soft_attack = 0.3
 			}
 		}
 
@@ -157,11 +163,8 @@ mobility_and_mass = {
 
 		}
 
-		free_fire = {
-			category_light_infantry = {
-				soft_attack = 0.3
-				default_morale = 0.025
-			}
+		chain_formation = {
+
 		}
 
 		digging_in = {

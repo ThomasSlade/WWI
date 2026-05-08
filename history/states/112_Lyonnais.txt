@@ -6,7 +6,7 @@ state={
 		owner = FRA
 		add_core_of = FRA
 		buildings = {
-			arms_factory = 2
+			arms_factory = 1
 			industrial_complex = 2
 			infrastructure = 3
 		}
@@ -22,7 +22,7 @@ state={
 	}
 	manpower=1096482
 	buildings_max_level_factor=1.000
-	state_category = metropolis
+	state_category = city
 	resources = {
 		coal = 2
 		copper = 2

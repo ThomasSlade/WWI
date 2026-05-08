@@ -66,26 +66,4 @@ focus_tree = {
 			}
 		}
 	}
-
-	focus = {
-		id = FRA_revise_doctrine
-		icon = GFX__shine
-		x = 2
-		y = 0
-		cost = 5
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = no
-
-		available = {
-			has_defensive_war = yes
-		}
-
-		completion_reward = {
-			remove_ideas = idea_FRA_le_pantalon_rouge
-		}
-	}
 }
