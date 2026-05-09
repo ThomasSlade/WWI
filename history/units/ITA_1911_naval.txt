@@ -2,30 +2,184 @@ units = {
 	fleet = {
 		name = "Tyrrhenian Fleet"
 		naval_base = 9591 # La Spezia
+
+		task_force = {
+			name = "Patrol Force"
+			location = 9591 # La Spezia
+
+			### Light Cruisers
+			# Argodat-class
+			ship = {
+				name = "Argodat"
+				definition = light_cruiser
+				start_experience_factor = 0.1
+				equipment = {
+					ship_hull_cruiser_1 = {
+						amount = 1
+						owner = ITA
+						version_name = "Argodat-class"
+					}
+				}
+			}
+			# Argodat-class
+			ship = {
+				name = "Coatit"
+				definition = light_cruiser
+				start_experience_factor = 0.1
+				equipment = {
+					ship_hull_cruiser_1 = {
+						amount = 1
+						owner = ITA
+						version_name = "Argodat-class"
+					}
+				}
+			}
+
+			### Destroyers
+			# Soldato-class
+			ship = {
+				name = "Granatiere"
+				definition = destroyer
+				start_experience_factor = 0.1
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = ITA
+						version_name = "Nembo-class"
+					}
+				}
+			}
+			# Soldato-class
+			ship = {
+				name = "Lanciere"
+				definition = destroyer
+				start_experience_factor = 0.1
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = ITA
+						version_name = "Nembo-class"
+					}
+				}
+			}
+			# Soldato-class
+			ship = {
+				name = "Alpino"
+				definition = destroyer
+				start_experience_factor = 0.1
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = ITA
+						version_name = "Nembo-class"
+					}
+				}
+			}
+			# Soldato-class
+			ship = {
+				name = "Carabiniere"
+				definition = destroyer
+				start_experience_factor = 0.1
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = ITA
+						version_name = "Nembo-class"
+					}
+				}
+			}
+			# Soldato-class
+			ship = {
+				name = "Fuciliere"
+				definition = destroyer
+				start_experience_factor = 0.1
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = ITA
+						version_name = "Nembo-class"
+					}
+				}
+			}
+			# Soldato-class
+			ship = {
+				name = "Pontiere"
+				definition = destroyer
+				start_experience_factor = 0.1
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = ITA
+						version_name = "Nembo-class"
+					}
+				}
+			}
+		}
+
 		task_force = {
 			name = "Strike Force"
 			location = 9591 # La Spezia
 
-			# Battleships
+			### Battleships
+			# Regina Margherita-class
 			ship = {
 				name = "Regina Margherita"
 				definition = battleship
 				start_experience_factor = 0.1
 				equipment = {
-					ship_hull_heavy_1 = {
+					ship_hull_pre_dreadnought_wwi_1 = {
 						amount = 1
 						owner = ITA
 						version_name = "Regina Margherita-class"
 					}
 				}
 			}
-
+			# Regina Margherita-class
 			ship = {
 				name = "Regina Benedetto Brin"
 				definition = battleship
 				start_experience_factor = 0.1
 				equipment = {
-					ship_hull_heavy_1 = {
+					ship_hull_pre_dreadnought_wwi_1 = {
+						amount = 1
+						owner = ITA
+						version_name = "Regina Margherita-class"
+					}
+				}
+			}
+			# Regina Elena-class
+			ship = {
+				name = "Regina Elena"
+				definition = battleship
+				start_experience_factor = 0.1
+				equipment = {
+					ship_hull_pre_dreadnought_wwi_1 = {
+						amount = 1
+						owner = ITA
+						version_name = "Regina Margherita-class"
+					}
+				}
+			}
+			# Regina Elena-class
+			ship = {
+				name = "Roma"
+				definition = battleship
+				start_experience_factor = 0.1
+				equipment = {
+					ship_hull_pre_dreadnought_wwi_1 = {
+						amount = 1
+						owner = ITA
+						version_name = "Regina Margherita-class"
+					}
+				}
+			}
+			# Regina Elena-class
+			ship = {
+				name = "Napoli"
+				definition = battleship
+				start_experience_factor = 0.1
+				equipment = {
+					ship_hull_pre_dreadnought_wwi_1 = {
 						amount = 1
 						owner = ITA
 						version_name = "Regina Margherita-class"
@@ -33,46 +187,8 @@ units = {
 				}
 			}
 
-			ship = {
-				name = "Regina Elena"
-				definition = battleship
-				start_experience_factor = 0.1
-				equipment = {
-					ship_hull_heavy_1 = {
-						amount = 1
-						owner = ITA
-						version_name = "Regina Elena-class"
-					}
-				}
-			}
-
-			ship = {
-				name = "Roma"
-				definition = battleship
-				start_experience_factor = 0.1
-				equipment = {
-					ship_hull_heavy_1 = {
-						amount = 1
-						owner = ITA
-						version_name = "Regina Elena-class"
-					}
-				}
-			}
-
-			ship = {
-				name = "Napoli"
-				definition = battleship
-				start_experience_factor = 0.1
-				equipment = {
-					ship_hull_heavy_1 = {
-						amount = 1
-						owner = ITA
-						version_name = "Regina Elena-class"
-					}
-				}
-			}
-
-			# Heavy Cruisers
+			### Heavy Cruisers
+			# Giuseppe Garibaldi-class
 			ship = {
 				name = "Giuseppe Garibaldi"
 				definition = heavy_cruiser
@@ -81,12 +197,11 @@ units = {
 					ship_hull_cruiser_1 = {
 						amount = 1
 						owner = ITA
-						# From 1895
 						version_name = "Giuseppe Garibaldi-class"
 					}
 				}
 			}
-
+			# Giuseppe Garibaldi-class
 			ship = {
 				name = "Varese"
 				definition = heavy_cruiser
@@ -99,7 +214,7 @@ units = {
 					}
 				}
 			}
-
+			# Giuseppe Garibaldi-class
 			ship = {
 				name = "Francesco Ferruccio"
 				definition = heavy_cruiser
@@ -112,7 +227,7 @@ units = {
 					}
 				}
 			}
-
+			# Pisa-class
 			ship = {
 				name = "Pisa"
 				definition = heavy_cruiser
@@ -122,11 +237,11 @@ units = {
 						amount = 1
 						owner = ITA
 						# From 1905
-						version_name = "Pisa-class"
+						version_name = "Giuseppe Garibaldi-class"
 					}
 				}
 			}
-
+			# Pisa-class
 			ship = {
 				name = "Amalfi"
 				definition = heavy_cruiser
@@ -135,11 +250,11 @@ units = {
 					ship_hull_cruiser_1 = {
 						amount = 1
 						owner = ITA
-						version_name = "Pisa-class"
+						version_name = "Giuseppe Garibaldi-class"
 					}
 				}
 			}
-
+			# San Giorgio-class
 			ship = {
 				name = "San Giorgio"
 				definition = heavy_cruiser
@@ -148,12 +263,11 @@ units = {
 					ship_hull_cruiser_1 = {
 						amount = 1
 						owner = ITA
-						# From 1905
-						version_name = "San Giorgio-class"
+						version_name = "Giuseppe Garibaldi-class"
 					}
 				}
 			}
-
+			# San Giorgio-class
 			ship = {
 				name = "San Marco"
 				definition = heavy_cruiser
@@ -162,12 +276,11 @@ units = {
 					ship_hull_cruiser_1 = {
 						amount = 1
 						owner = ITA
-						version_name = "San Giorgio-class"
+						version_name = "Giuseppe Garibaldi-class"
 					}
 				}
 			}
-
-			# 'Protected' Cruisers?
+			# Regioni-class
 			ship = {
 				name = "Umbria"
 				definition = heavy_cruiser
@@ -176,12 +289,11 @@ units = {
 					ship_hull_cruiser_1 = {
 						amount = 1
 						owner = ITA
-						# From 1888
-						version_name = "Regioni-class"
+						version_name = "Giuseppe Garibaldi-class"
 					}
 				}
 			}
-
+			# Regioni-class
 			ship = {
 				name = "Lombardia"
 				definition = heavy_cruiser
@@ -190,12 +302,11 @@ units = {
 					ship_hull_cruiser_1 = {
 						amount = 1
 						owner = ITA
-						# From 1888
-						version_name = "Regioni-class"
+						version_name = "Giuseppe Garibaldi-class"
 					}
 				}
 			}
-
+			# Regioni-class
 			ship = {
 				name = "Etruria"
 				definition = heavy_cruiser
@@ -204,12 +315,11 @@ units = {
 					ship_hull_cruiser_1 = {
 						amount = 1
 						owner = ITA
-						# From 1888
-						version_name = "Regioni-class"
+						version_name = "Giuseppe Garibaldi-class"
 					}
 				}
 			}
-
+			# Regioni-class
 			ship = {
 				name = "Liguria"
 				definition = heavy_cruiser
@@ -218,12 +328,11 @@ units = {
 					ship_hull_cruiser_1 = {
 						amount = 1
 						owner = ITA
-						# From 1888
-						version_name = "Regioni-class"
+						version_name = "Giuseppe Garibaldi-class"
 					}
 				}
 			}
-
+			# Regioni-class
 			ship = {
 				name = "Elba"
 				definition = heavy_cruiser
@@ -232,12 +341,11 @@ units = {
 					ship_hull_cruiser_1 = {
 						amount = 1
 						owner = ITA
-						# From 1888
-						version_name = "Regioni-class"
+						version_name = "Giuseppe Garibaldi-class"
 					}
 				}
 			}
-
+			# Regioni-class
 			ship = {
 				name = "Puglia"
 				definition = heavy_cruiser
@@ -246,42 +354,13 @@ units = {
 					ship_hull_cruiser_1 = {
 						amount = 1
 						owner = ITA
-						# From 1888
-						version_name = "Regioni-class"
+						version_name = "Giuseppe Garibaldi-class"
 					}
 				}
 			}
 
-			# Light Cruisers
-			ship = {
-				name = "Argodat"
-				definition = light_cruiser
-				start_experience_factor = 0.1
-				equipment = {
-					ship_hull_cruiser_1 = {
-						amount = 1
-						owner = ITA
-						# From 1897
-						version_name = "Argodat-class"
-					}
-				}
-			}
-
-			ship = {
-				name = "Coatit"
-				definition = light_cruiser
-				start_experience_factor = 0.1
-				equipment = {
-					ship_hull_cruiser_1 = {
-						amount = 1
-						owner = ITA
-						# From 1897
-						version_name = "Argodat-class"
-					}
-				}
-			}
-
-			# Destroyers
+			### Destroyers
+			# Nembo-class
 			ship = {
 				name = "Nembo"
 				definition = destroyer
@@ -290,12 +369,11 @@ units = {
 					ship_hull_light_1 = {
 						amount = 1
 						owner = ITA
-						# From 1899
 						version_name = "Nembo-class"
 					}
 				}
 			}
-
+			# Nembo-class
 			ship = {
 				name = "Turbine"
 				definition = destroyer
@@ -304,12 +382,11 @@ units = {
 					ship_hull_light_1 = {
 						amount = 1
 						owner = ITA
-						# From 1899
 						version_name = "Nembo-class"
 					}
 				}
 			}
-
+			# Nembo-class
 			ship = {
 				name = "Aquilone"
 				definition = destroyer
@@ -318,12 +395,11 @@ units = {
 					ship_hull_light_1 = {
 						amount = 1
 						owner = ITA
-						# From 1899
 						version_name = "Nembo-class"
 					}
 				}
 			}
-
+			# Nembo-class
 			ship = {
 				name = "Borea"
 				definition = destroyer
@@ -332,12 +408,11 @@ units = {
 					ship_hull_light_1 = {
 						amount = 1
 						owner = ITA
-						# From 1899
 						version_name = "Nembo-class"
 					}
 				}
 			}
-
+			# Nembo-class
 			ship = {
 				name = "Zeffiro"
 				definition = destroyer
@@ -346,12 +421,11 @@ units = {
 					ship_hull_light_1 = {
 						amount = 1
 						owner = ITA
-						# From 1899
 						version_name = "Nembo-class"
 					}
 				}
 			}
-
+			# Nembo-class
 			ship = {
 				name = "Espero"
 				definition = destroyer
@@ -360,12 +434,11 @@ units = {
 					ship_hull_light_1 = {
 						amount = 1
 						owner = ITA
-						# From 1899
 						version_name = "Nembo-class"
 					}
 				}
 			}
-
+			# Soldato-class
 			ship = {
 				name = "Artigliere"
 				definition = destroyer
@@ -374,12 +447,11 @@ units = {
 					ship_hull_light_1 = {
 						amount = 1
 						owner = ITA
-						# From 1905
-						version_name = "Soldato-class"
+						version_name = "Nembo-class"
 					}
 				}
 			}
-
+			# Soldato-class
 			ship = {
 				name = "Bersagliere"
 				definition = destroyer
@@ -388,12 +460,11 @@ units = {
 					ship_hull_light_1 = {
 						amount = 1
 						owner = ITA
-						# From 1905
-						version_name = "Soldato-class"
+						version_name = "Nembo-class"
 					}
 				}
 			}
-
+			# Soldato-class
 			ship = {
 				name = "Corazziere"
 				definition = destroyer
@@ -402,12 +473,11 @@ units = {
 					ship_hull_light_1 = {
 						amount = 1
 						owner = ITA
-						# From 1905
-						version_name = "Soldato-class"
+						version_name = "Nembo-class"
 					}
 				}
 			}
-
+			# Soldato-class
 			ship = {
 				name = "Garibaldino"
 				definition = destroyer
@@ -416,97 +486,13 @@ units = {
 					ship_hull_light_1 = {
 						amount = 1
 						owner = ITA
-						# From 1905
-						version_name = "Soldato-class"
+						version_name = "Nembo-class"
 					}
 				}
 			}
 
-			ship = {
-				name = "Granatiere"
-				definition = destroyer
-				start_experience_factor = 0.1
-				equipment = {
-					ship_hull_light_1 = {
-						amount = 1
-						owner = ITA
-						# From 1905
-						version_name = "Soldato-class"
-					}
-				}
-			}
-
-			ship = {
-				name = "Lanciere"
-				definition = destroyer
-				start_experience_factor = 0.1
-				equipment = {
-					ship_hull_light_1 = {
-						amount = 1
-						owner = ITA
-						# From 1905
-						version_name = "Soldato-class"
-					}
-				}
-			}
-
-			ship = {
-				name = "Alpino"
-				definition = destroyer
-				start_experience_factor = 0.1
-				equipment = {
-					ship_hull_light_1 = {
-						amount = 1
-						owner = ITA
-						# From 1905
-						version_name = "Soldato-class"
-					}
-				}
-			}
-
-			ship = {
-				name = "Carabiniere"
-				definition = destroyer
-				start_experience_factor = 0.1
-				equipment = {
-					ship_hull_light_1 = {
-						amount = 1
-						owner = ITA
-						# From 1905
-						version_name = "Soldato-class"
-					}
-				}
-			}
-
-			ship = {
-				name = "Fuciliere"
-				definition = destroyer
-				start_experience_factor = 0.1
-				equipment = {
-					ship_hull_light_1 = {
-						amount = 1
-						owner = ITA
-						# From 1905
-						version_name = "Soldato-class"
-					}
-				}
-			}
-
-			ship = {
-				name = "Pontiere"
-				definition = destroyer
-				start_experience_factor = 0.1
-				equipment = {
-					ship_hull_light_1 = {
-						amount = 1
-						owner = ITA
-						# From 1905
-						version_name = "Soldato-class"
-					}
-				}
-			}
-
-			# Submarines
+			### Submarines
+			# Glauco-class
 			ship = {
 				name = "Glauco"
 				definition = submarine
@@ -515,12 +501,11 @@ units = {
 					ship_hull_submarine_1 = {
 						amount = 1
 						owner = ITA
-						# From 1903
 						version_name = "Glauco-class"
 					}
 				}
 			}
-
+			# Glauco-class
 			ship = {
 				name = "Narvallo"
 				definition = submarine
@@ -529,12 +514,11 @@ units = {
 					ship_hull_submarine_1 = {
 						amount = 1
 						owner = ITA
-						# From 1903
 						version_name = "Glauco-class"
 					}
 				}
 			}
-
+			# Glauco-class
 			ship = {
 				name = "Otria"
 				definition = submarine
@@ -543,12 +527,11 @@ units = {
 					ship_hull_submarine_1 = {
 						amount = 1
 						owner = ITA
-						# From 1903
 						version_name = "Glauco-class"
 					}
 				}
 			}
-
+			# Glauco-class
 			ship = {
 				name = "Squalo"
 				definition = submarine
@@ -557,12 +540,11 @@ units = {
 					ship_hull_submarine_1 = {
 						amount = 1
 						owner = ITA
-						# From 1903
 						version_name = "Glauco-class"
 					}
 				}
 			}
-
+			# Glauco-class
 			ship = {
 				name = "Tricheco"
 				definition = submarine
@@ -571,7 +553,6 @@ units = {
 					ship_hull_submarine_1 = {
 						amount = 1
 						owner = ITA
-						# From 1903
 						version_name = "Glauco-class"
 					}
 				}
@@ -581,63 +562,77 @@ units = {
 }
 
 instant_effect = {
-		add_equipment_production = {
-			equipment = {
-				type = ship_hull_heavy_1
-				creator = "ITA" 
-				version_name = "Dante Alighieri"
-			}
-			name = "Conte di Cavour"
-			requested_factories = 1
-			progress = 0.25
-			amount = 1
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_1
+			creator = "ITA" 
+			version_name = "Conte di Cavour-class"
 		}
-
-		add_equipment_production = {
-			equipment = {
-				type = ship_hull_heavy_1
-				creator = "ITA" 
-				version_name = "Conte di Cavour-class"
-			}
-			name = "Conte di Cavour"
-			requested_factories = 1
-			progress = 0.5
-			amount = 1
-		}
-
-		add_equipment_production = {
-			equipment = {
-				type = ship_hull_cruiser_1
-				creator = "ITA" 
-				version_name = "Pisa-class"
-			}
-			name = "Georgios Averof"
-			requested_factories = 1
-			progress = 0.25
-			amount = 1
-		}
-
-		add_equipment_production = {
-			equipment = {
-				type = ship_hull_cruiser_1
-				creator = "ITA" 
-				version_name = "Quarto-class"
-			}
-			name = "Quarto"
-			requested_factories = 1
-			progress = 0.5
-			amount = 1
-		}
-
-		add_equipment_production = {
-			equipment = {
-				type = ship_hull_submarine_1
-				creator = "ITA" 
-				version_name = "Medusa-class"
-			}
-			name = "Velella"
-			requested_factories = 1
-			progress = 0.75
-			amount = 1
-		}
+		name = "Conte di Cavour"
+		requested_factories = 1
+		progress = 0.5
+		amount = 1
 	}
+
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_1
+			creator = "ITA" 
+			version_name = "Conte di Cavour-class"
+		}
+		name = "Giulio Cesare"
+		requested_factories = 1
+		progress = 0.25
+		amount = 1
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_1
+			creator = "ITA" 
+			version_name = "Conte di Cavour-class"
+		}
+		name = "Leonardo da Vinci"
+		requested_factories = 1
+		progress = 0.25
+		amount = 1
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_1
+			creator = "ITA" 
+			version_name = "Giuseppe Garibaldi-class"
+		}
+		# Gets renamed to Georgios Averof when aquired by Greece. Seems to have had no Italian name selected, so I picked a random coastal city.
+		name = "Perscara"
+		requested_factories = 1
+		progress = 0.25
+		amount = 1
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_1
+			creator = "ITA" 
+			# Was actually a Quatro class protected-cruiser.
+			version_name = "Giuseppe Garibaldi-class"
+		}
+		name = "Quarto"
+		requested_factories = 1
+		progress = 0.5
+		amount = 1
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_1
+			creator = "ITA" 
+			version_name = "Medusa-class"
+		}
+		name = "Velella"
+		requested_factories = 1
+		progress = 0.75
+		amount = 1
+	}
+}

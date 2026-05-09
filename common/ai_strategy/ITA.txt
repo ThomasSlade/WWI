@@ -1,3 +1,39 @@
+ITA_invade_libya = {
+	abort_when_not_enabled = yes
+
+	allowed = {
+		original_tag = ITA
+	}
+
+	enable = {
+		has_country_flag = flag_italo_turkish_war
+		has_country_flag = flag_italo_turkish_war_ai_ready
+	}
+
+	ai_strategy = {
+		type = consider_weak
+		id = TUR
+		value = 100
+	}
+
+	ai_strategy = {
+		type = declare_war
+		id = TUR
+		value = 100
+	}
+
+	ai_strategy = {
+	    type = naval_invasion_focus
+	    value = 300
+	}
+
+	ai_strategy = {
+	    type = area_priority
+	    id = libya
+	    value = 300
+	}
+}
+
 ITA_dont_invade_balkans_in_italo_turkish_war = {
 	abort_when_not_enabled = yes
 

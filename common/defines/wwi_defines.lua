@@ -40,9 +40,9 @@ NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.07
 NDefines.NMilitary.BASE_FORT_PENALTY = -0.2	-- fort penalty
 NDefines.NMilitary.MULTIPLE_COMBATS_PENALTY = -0.25	-- defender penalty if attacked from multiple directions
 NDefines.NMilitary.DIG_IN_FACTOR = 0.05	-- bonus factor for each dug-in level
-NDefines.NMilitary.UNIT_DIGIN_CAP = 2
+NDefines.NMilitary.UNIT_DIGIN_CAP = 3
 NDefines.NMilitary.UNIT_DIGIN_SPEED = 0.5
-NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.0003
+NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.0001
 NDefines.NMilitary.FIELD_EXPERIENCE_SCALE = 0.006
 NDefines.NMilitary.FIELD_EXPERIENCE_MAX_PER_DAY = 1	-- Most xp you can gain per day
 
@@ -56,6 +56,8 @@ NDefines.NAir.COMBAT_DAMAGE_STATS_MULTILPIER = 0.4	-- Multiplier for damage done
 NDefines.NAI.DESIRE_USE_XP_TO_UNLOCK_LAND_DOCTRINE = 1.0	-- How quickly is desire to unlock land doctrines accumulated?
 NDefines.NAI.DESIRE_USE_XP_TO_UPDATE_LAND_TEMPLATE = 1.0	-- How quickly is desire to update/create templates accumulated?
 NDefines.NAI.MAX_FACTORY_TO_TRADE_FOR_FUEL = 2
+
+--NDefines.NNavy.NAVAL_RANGE_TO_INGAME_DISTANCE = 0.25	-- Scale the ship stats "naval_range" to the ingame distance
 
 NDefines.NAI.DIVISION_SUPPLY_RATIO_TO_MOTORIZE = 0.00	-- If supply ratio is less than this, consider motorizing any applicable nearby supply hub
 -- Changed so that AI more urgently pursues entrenchment doctrines.
@@ -72,10 +74,25 @@ NDefines.NAI.MIN_FACTORIES_TO_WANT_TO_IMPORT = {  -- minimum number of civilian 
 	10, -- coal
 	0, -- copper
 }
+-- these are all 3 numbers for min, desired, max unit need weights for area defense
+NDefines.NAI.AREA_DEFENSE_CAPITAL_PEACE_VP_WEIGHT = { 0.0, 0.0, 0.0 }
+NDefines.NAI.AREA_DEFENSE_CAPITAL_VP_WEIGHT = { 0.0, 0.0, 0.0 }
+NDefines.NAI.AREA_DEFENSE_HOME_VP_WEIGHT = { 0.0, 0.0, 0.0 }
+NDefines.NAI.AREA_DEFENSE_OTHER_VP_WEIGHT = { 0.0, 0.0, 0.0 }
+
+NDefines.NAI.AREA_DEFENSE_CAPITAL_PEACE_COAST_WEIGHT = { 0.0, 0.0, 0.0 }
+NDefines.NAI.AREA_DEFENSE_CAPITAL_COAST_WEIGHT = { 0.0, 0.0, 0.0 }
+NDefines.NAI.AREA_DEFENSE_HOME_COAST_WEIGHT = { 0.0, 0.0, 0.0 }
+NDefines.NAI.AREA_DEFENSE_OTHER_COAST_WEIGHT = { 0.0, 0.0, 0.0 }
+
+NDefines.NAI.AREA_DEFENSE_CAPITAL_PEACE_BASE_WEIGHT = { 0.0, 0.0, 0.0 }
+NDefines.NAI.AREA_DEFENSE_CAPITAL_BASE_WEIGHT = { 0.0, 0.0, 0.0 }
+NDefines.NAI.AREA_DEFENSE_HOME_BASE_WEIGHT = { 0.0, 0.0, 0.0 }
+NDefines.NAI.AREA_DEFENSE_OTHER_BASE_WEIGHT = { 0.0, 0.0, 0.0 }
 
 NDefines.NProduction.BASE_ENERGY_COST = 0.1	-- How much energy per factory consumes
 NDefines.NProduction.BASE_FACTORY_SPEED = 5
-NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 2.5
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 1.5
 NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 2.5
 NDefines.NProduction.ANNEX_FUEL_RATIO = 0.2	-- How much fuel will be transferred on annexation
 NDefines.NProduction.CAPITULATE_FUEL_RATIO = 0.2	-- How much fuel will be transferred on capitulation

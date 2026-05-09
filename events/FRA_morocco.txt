@@ -66,28 +66,7 @@ country_event = {
 	immediate = {
 		log = "([THIS.GetName] hidden event) Delaying AI's use of Italo Turkish war declaration complete: AI will now declare on Turkey."
 
-		add_ai_strategy = {
-			type = consider_weak
-			id = TUR
-			value = 100
-		}
-
-		add_ai_strategy = {
-			type = declare_war
-			id = TUR
-			value = 100
-		}
-
-		add_ai_strategy = {
-		    type = naval_invasion_focus
-		    value = 100
-		}
-
-		add_ai_strategy = {
-		    type = area_priority
-		    id = libya
-		    value = 300
-		}
+		set_country_flag = flag_italo_turkish_war_ai_ready
 
 		# Reduce the likelihood of invading Albania for a while. This enables an AI strategy deprioritizing the Balkan region.
 		set_country_flag = {
