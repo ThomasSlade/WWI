@@ -35,15 +35,15 @@ country_event = {
 
 	option = {
 		name = event_entrenchment.1.a_sceptical
-		trigger = {
-			NOT = { has_tech = digging_in }
-		}
+		#trigger = {
+		#	NOT = { has_tech = digging_in }
+		#}
 	}
 
 	option = {
 		name = event_entrenchment.1.a_entrenched
-		trigger = {
-			has_tech = digging_in
-		}
+		#trigger = {
+		#	has_tech = digging_in
+		#}
 	}
 }

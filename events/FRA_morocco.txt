@@ -33,7 +33,7 @@ country_event = {
 				country_event = { id = event_FRA_morocco_italy_agreement.2 }
 			}
 			else = {
-				country_event = { id = event_FRA_morocco_italy_agreement.2 days = 140 }
+				country_event = { id = event_FRA_morocco_italy_agreement.2 days = 50 }
 			}
 		}
 		

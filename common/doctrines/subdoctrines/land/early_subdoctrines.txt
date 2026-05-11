@@ -30,41 +30,19 @@ cult_of_the_offensive = {
 			land_reinforce_rate = 0.1
 		}
 
-		orderly_retreat = {
-			army_retreat_speed_factor = 0.3
-			army_org_regain = 0.2
-
+		coto_free_fire = {
 			category_light_infantry = {
-				defense = 0.05
-			}
-
-			category_field_artillery = {
-				defense = 0.05
+				soft_attack = 0.3
+				default_morale = 0.025
 			}
 		}
 
-		digging_in = {
-			dig_in_speed_factor = 0.25
-			max_dig_in = 3
-			army_morale_factor = 0.1
+		coto_digging_in = {
 
-			category_light_infantry = {
-				max_organisation = 10
-				defense = 0.5
-			}
 		}
 
-		trench_warfare = {
-			max_dig_in = 5
-			enable_tactic = tactic_trench_defense
+		coto_trench_warfare = {
 
-			category_light_infantry = {
-				defense = 0.25
-			}
-
-			category_artillery = {
-				defense = 0.25
-			}
 		}
 	}
 }
@@ -96,13 +74,6 @@ free_tactics = {
 			}
 		}
 
-		free_fire = {
-			category_light_infantry = {
-				soft_attack = 0.3
-				default_morale = 0.025
-			}
-		}
-
 		indirect_artillery = {
 			category_artillery = {
 				breakthrough = 0.3
@@ -110,28 +81,19 @@ free_tactics = {
 			}
 		}
 
-		digging_in = {
-			dig_in_speed_factor = 0.25
-			max_dig_in = 3
-			army_morale_factor = 0.1
-
+		ft_free_fire = {
 			category_light_infantry = {
-				max_organisation = 10
-				defense = 0.5
+				soft_attack = 0.3
+				default_morale = 0.025
 			}
 		}
 
-		trench_warfare = {
-			max_dig_in = 5
-			enable_tactic = tactic_trench_defense
+		ft_digging_in = {
 
-			category_light_infantry = {
-				defense = 0.25
-			}
+		}
 
-			category_artillery = {
-				defense = 0.25
-			}
+		ft_trench_warfare = {
+			
 		}
 	}
 }
@@ -163,32 +125,19 @@ mobility_and_mass = {
 
 		}
 
-		chain_formation = {
-
-		}
-
-		digging_in = {
-			dig_in_speed_factor = 0.25
-			max_dig_in = 3
-			army_morale_factor = 0.1
-
+		mam_free_fire = {
 			category_light_infantry = {
-				max_organisation = 10
-				defense = 0.5
+				soft_attack = 0.3
+				default_morale = 0.025
 			}
 		}
 
-		trench_warfare = {
-			max_dig_in = 5
-			enable_tactic = tactic_trench_defense
+		mam_digging_in = {
 
-			category_light_infantry = {
-				defense = 0.25
-			}
+		}
 
-			category_artillery = {
-				defense = 0.25
-			}
+		mam_trench_warfare = {
+			
 		}
 	}
 }

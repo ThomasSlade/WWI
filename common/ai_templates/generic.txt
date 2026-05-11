@@ -268,7 +268,7 @@ gas_generic = {
 
 		target_template = {
 			support = {
-				gas_regiment
+				gas_regiment = 1
 			}
 
 			regiments = {
@@ -289,7 +289,7 @@ gas_generic = {
 
 		target_template = {
 			support = {
-				gas_regiment
+				gas_regiment = 1
 			}
 
 			regiments = {
