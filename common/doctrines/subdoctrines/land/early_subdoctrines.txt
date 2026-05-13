@@ -30,6 +30,9 @@ cult_of_the_offensive = {
 			land_reinforce_rate = 0.1
 		}
 
+		# I have no idea why, but unless I put a prefix on this reward that's shared between all early subdoctrines, AI Italy
+		# doesn't use its navy to invade Libya. Until I figure out why, I have to put these suffixes here, but NOT on the following
+		# two shared rewards, because doing that reintroduces the Italy AI bug. I lost 2 weeks to debugging this. It's so fucked.
 		coto_free_fire = {
 			category_light_infantry = {
 				soft_attack = 0.3
@@ -37,12 +40,28 @@ cult_of_the_offensive = {
 			}
 		}
 
-		coto_digging_in = {
+		digging_in = {
+			dig_in_speed_factor = 0.25
+			max_dig_in = 3
+			army_morale_factor = 0.1
 
+			category_light_infantry = {
+				max_organisation = 10
+				defense = 0.5
+			}
 		}
 
-		coto_trench_warfare = {
+		trench_warfare = {
+			max_dig_in = 5
+			enable_tactic = tactic_trench_defense
 
+			category_light_infantry = {
+				defense = 0.25
+			}
+
+			category_artillery = {
+				defense = 0.25
+			}
 		}
 	}
 }
@@ -88,12 +107,28 @@ free_tactics = {
 			}
 		}
 
-		ft_digging_in = {
+		digging_in = {
+			dig_in_speed_factor = 0.25
+			max_dig_in = 3
+			army_morale_factor = 0.1
 
+			category_light_infantry = {
+				max_organisation = 10
+				defense = 0.5
+			}
 		}
 
-		ft_trench_warfare = {
-			
+		trench_warfare = {
+			max_dig_in = 5
+			enable_tactic = tactic_trench_defense
+
+			category_light_infantry = {
+				defense = 0.25
+			}
+
+			category_artillery = {
+				defense = 0.25
+			}
 		}
 	}
 }
@@ -132,12 +167,28 @@ mobility_and_mass = {
 			}
 		}
 
-		mam_digging_in = {
+		digging_in = {
+			dig_in_speed_factor = 0.25
+			max_dig_in = 3
+			army_morale_factor = 0.1
 
+			category_light_infantry = {
+				max_organisation = 10
+				defense = 0.5
+			}
 		}
 
-		mam_trench_warfare = {
-			
+		trench_warfare = {
+			max_dig_in = 5
+			enable_tactic = tactic_trench_defense
+
+			category_light_infantry = {
+				defense = 0.25
+			}
+
+			category_artillery = {
+				defense = 0.25
+			}
 		}
 	}
 }
