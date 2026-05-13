@@ -8,6 +8,20 @@ ideas = {
 				always = yes
 			}
 
+			on_add = {
+				if = {
+					limit = {
+						has_idea = idea_GER_schlieffen_plan
+						OR = {
+							has_war_with = FRA
+							has_war_with = ENG
+						}
+					}
+
+					effect_GER_enable_schlieffen_plan = yes
+				}
+			}
+
 			modifier = {
 				custom_modifier_tooltip = modifier_GER_schlieffen_plan_effect_tt
 			}

@@ -321,3 +321,23 @@ effect_GER_alsatian_plebiscite_tt = {
 		}
 	}
 }
+
+effect_GER_enable_schlieffen_plan = {
+	if = {
+		limit = {
+			# If there's actually anyone in the Schlieffen plan to attack that you're not already attacking.
+			OR = {
+				NOT = { has_war_with = BEL }
+				NOT = { has_war_with = LUX }
+				AND = {
+					has_completed_focus = GER_schlieffen_unaltered
+					NOT = { has_war_with = HOL }
+				}
+			}
+		}
+
+		country_event = { id = event_GER_schlieffen_plan.1 hours = 12 }
+	}
+
+	remove_ideas = idea_GER_schlieffen_plan
+}

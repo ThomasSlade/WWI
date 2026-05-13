@@ -1038,13 +1038,12 @@ focus_tree = {
 		}
 	}
 
-	# Weltpolitik / Diplomatic Tree
+	# Diplomatic / Naval Tree
 	focus = {
-		id = GER_weltpolitik
+		id = GER_navy_league
 		icon = GFX__shine
-		x = 12
+		x = 15
 		y = 0
-		relative_position_id = GER_german_domestic_investment
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -1052,11 +1051,12 @@ focus_tree = {
 
 		available_if_capitulated = no
 
-		available = {
-			trigger_GER_encirclement_can_increase = yes
-		}
-
 		completion_reward = {
+			add_power_balance_value = {
+				id = bop_ENG_naval_race
+				value = 0.15
+			}
+			
 			effect_GER_encirclement_increase = yes
 		}
 	}
@@ -1064,10 +1064,10 @@ focus_tree = {
 	focus = {
 		id = GER_potsdam_agreement
 		icon = GFX__shine
-		prerequisite = { focus = GER_weltpolitik }
-		x = -3
+		prerequisite = { focus = GER_navy_league }
+		x = -7
 		y = 1
-		relative_position_id = GER_weltpolitik
+		relative_position_id = GER_navy_league
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -1116,10 +1116,10 @@ focus_tree = {
 	focus = {
 		id = GER_financial_interests_in_turkey
 		icon = GFX__shine
-		prerequisite = { focus = GER_weltpolitik }
-		x = -1
+		prerequisite = { focus = GER_navy_league }
+		x = -5
 		y = 1
-		relative_position_id = GER_weltpolitik
+		relative_position_id = GER_navy_league
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -1208,28 +1208,6 @@ focus_tree = {
 
 		completion_reward = {
 			
-		}
-	}
-
-	focus = {
-		id = GER_navy_league
-		icon = GFX__shine
-		prerequisite = { focus = GER_weltpolitik }
-		x = 3
-		y = 1
-		relative_position_id = GER_weltpolitik
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_power_balance_value = {
-				id = bop_ENG_naval_race
-				value = 0.15
-			}
 		}
 	}
 
@@ -2133,7 +2111,7 @@ focus_tree = {
 		id = GER_zabern_affair
 		icon = GFX__shine
 		prerequisite = { focus = GER_the_reichsland_of_alsace_lorraine }
-		x = 0
+		x = 2
 		y = 1
 		relative_position_id = GER_the_reichsland_of_alsace_lorraine
 		cost = 10
@@ -2160,7 +2138,7 @@ focus_tree = {
 		id = GER_the_alsatian_lander
 		icon = GFX__shine
 		prerequisite = { focus = GER_zabern_affair }
-		x = 2
+		x = 0
 		y = 1
 		relative_position_id = GER_zabern_affair
 		cost = 10
@@ -2302,11 +2280,11 @@ focus_tree = {
 	focus = {
 		id = GER_the_schlieffen_plan
 		icon = GFX__shine
-		prerequisite = { focus = GER_zabern_affair }
+		prerequisite = { focus = GER_the_reichsland_of_alsace_lorraine }
 		mutually_exclusive = { focus = GER_alsace_lorraine_plebiscite }
 		x = -1
-		y = 2
-		relative_position_id = GER_zabern_affair
+		y = 3
+		relative_position_id = GER_the_reichsland_of_alsace_lorraine
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -2452,7 +2430,7 @@ focus_tree = {
 				tooltip = mobilization_laws_cost_factor_tt
 			}
 			add_to_variable = {
-				GER_general_staff_experience_gain_army_unit_factor = 0.2
+				GER_general_staff_land_mastery_gain_factor = 0.2
 				tooltip = experience_gain_army_factor_tt
 			}
 			add_to_variable = {
