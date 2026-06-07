@@ -26,6 +26,32 @@
   modifier_experience_gain_pre_dreadnought_wwi_training_factor: "Pre-Dreadnought Training Experience Gain"
   modifier_experience_gain_pre_dreadnought_wwi_combat_factor: "Pre-Dreadnought Combat Experience Gain"
 
+  # Hard-coding the entire effect list for opposition sadly needed as I can't control the order of all the custom tooltips.
+  opp_autocratic_0_tt: "$autocratic_leader_tt$\nLaws Cost (Excl. Social Policy): §G-15%§!\nPolitical and Military Advisor Cost: §G-15%§!\n$MODIFIER_WEEKLY_CASUALTIES_WAR_SUPPORT$: §G+0.10%§!\n$resurgent_opposition_will_pass_opposed_laws_tt$"
+  opp_autocratic_1_tt: "$autocratic_leader_tt$\n$resurgent_opposition_will_pass_opposed_laws_tt$"
+  opp_autocratic_2_tt: "$autocratic_leader_tt$\nLaws Cost (Excl. Social Policy): §R15%§!\nPolitical and Military Advisor Cost: §R15%§!\n$MODIFIER_WEEKLY_CASUALTIES_WAR_SUPPORT$: §R-0.10%§!\n$resurgent_opposition_will_pass_opposed_laws_tt$"
+  opp_autocratic_3_tt: "$autocratic_leader_tt$\nLaws Cost (Excl. Social Policy): §R30%§!\nPolitical and Military Advisor Cost: §R30%§!\n$MODIFIER_WEEKLY_CASUALTIES_WAR_SUPPORT$: §R-0.20%§!\n$resurgent_opposition_will_not_pass_opposed_laws_tt$"
+
+  opp_conservative_0_tt: "$conservative_leader_tt$\nLaws Cost (Excl. Social Policy): §G-15%§!\nPolitical and Military Advisor Cost: §G-15%§!\n$MODIFIER_WEEKLY_CASUALTIES_WAR_SUPPORT$: §G+0.10%§!\n$resurgent_opposition_will_pass_opposed_laws_tt$"
+  opp_conservative_1_tt: "$conservative_leader_tt$\n$resurgent_opposition_will_pass_opposed_laws_tt$"
+  opp_conservative_2_tt: "$conservative_leader_tt$\nLaws Cost (Excl. Social Policy): §R15%§!\nPolitical and Military Advisor Cost: §R15%§!\n$MODIFIER_WEEKLY_CASUALTIES_WAR_SUPPORT$: §R-0.10%§!\n$resurgent_opposition_will_pass_opposed_laws_tt$"
+  opp_conservative_3_tt: "$conservative_leader_tt$\nLaws Cost (Excl. Social Policy): §R30%§!\nPolitical and Military Advisor Cost: §R30%§!\n$MODIFIER_WEEKLY_CASUALTIES_WAR_SUPPORT$: §R-0.20%§!\n$resurgent_opposition_will_not_pass_opposed_laws_tt$"
+
+  opp_liberal_0_tt: "$liberal_leader_tt$\nLaws Cost (Excl. Social Policy): §G-15%§!\nPolitical and Military Advisor Cost: §G-15%§!\n$MODIFIER_WEEKLY_CASUALTIES_WAR_SUPPORT$: §G+0.10%§!\n$resurgent_opposition_will_pass_opposed_laws_tt$"
+  opp_liberal_1_tt: "$liberal_leader_tt$\n$resurgent_opposition_will_pass_opposed_laws_tt$"
+  opp_liberal_2_tt: "$liberal_leader_tt$\nLaws Cost (Excl. Social Policy): §R15%§!\nPolitical and Military Advisor Cost: §R15%§!\n$MODIFIER_WEEKLY_CASUALTIES_WAR_SUPPORT$: §R-0.10%§!\n$resurgent_opposition_will_pass_opposed_laws_tt$"
+  opp_liberal_3_tt: "$liberal_leader_tt$\nLaws Cost (Excl. Social Policy): §R30%§!\nPolitical and Military Advisor Cost: §R30%§!\n$MODIFIER_WEEKLY_CASUALTIES_WAR_SUPPORT$: §R-0.20%§!\n$resurgent_opposition_will_not_pass_opposed_laws_tt$"
+
+  opp_socialist_0_tt: "$socialist_leader_tt$\nLaws Cost (Excl. Social Policy): §G-15%§!\nPolitical and Military Advisor Cost: §G-15%§!\n$MODIFIER_WEEKLY_CASUALTIES_WAR_SUPPORT$: §G+0.10%§!\n$resurgent_opposition_will_pass_opposed_laws_tt$"
+  opp_socialist_1_tt: "$socialist_leader_tt$\n$resurgent_opposition_will_pass_opposed_laws_tt$"
+  opp_socialist_2_tt: "$socialist_leader_tt$\nLaws Cost (Excl. Social Policy): §R15%§!\nPolitical and Military Advisor Cost: §R15%§!\n$MODIFIER_WEEKLY_CASUALTIES_WAR_SUPPORT$: §R-0.10%§!\n$resurgent_opposition_will_pass_opposed_laws_tt$"
+  opp_socialist_3_tt: "$socialist_leader_tt$\nLaws Cost (Excl. Social Policy): §R30%§!\nPolitical and Military Advisor Cost: §R30%§!\n$MODIFIER_WEEKLY_CASUALTIES_WAR_SUPPORT$: §R-0.20%§!\n$resurgent_opposition_will_not_pass_opposed_laws_tt$"
+
+  opp_communist_0_tt: "$communist_leader_tt$\nLaws Cost (Excl. Social Policy): §G-15%§!\nPolitical and Military Advisor Cost: §G-15%§!\n$MODIFIER_WEEKLY_CASUALTIES_WAR_SUPPORT$: §G+0.10%§!\n$resurgent_opposition_will_pass_opposed_laws_tt$"
+  opp_communist_1_tt: "$communist_leader_tt$\n$resurgent_opposition_will_pass_opposed_laws_tt$"
+  opp_communist_2_tt: "$communist_leader_tt$\nLaws Cost (Excl. Social Policy): §R15%§!\nPolitical and Military Advisor Cost: §R15%§!\n$MODIFIER_WEEKLY_CASUALTIES_WAR_SUPPORT$: §R-0.10%§!\n$resurgent_opposition_will_pass_opposed_laws_tt$"
+  opp_communist_3_tt: "$communist_leader_tt$\nLaws Cost (Excl. Social Policy): §R30%§!\nPolitical and Military Advisor Cost: §R30%§!\n$MODIFIER_WEEKLY_CASUALTIES_WAR_SUPPORT$: §R-0.20%§!\n$resurgent_opposition_will_not_pass_opposed_laws_tt$"
+
   # Missing from vanilla modifiers_l_english, for some reason
   promote_cost_factor_tt: " $MODIFIER_UNIT_LEADER_PROMOTE_COST_FACTOR$ $RIGHT|-=%1$"
 

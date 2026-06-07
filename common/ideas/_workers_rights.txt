@@ -3,24 +3,25 @@ ideas = {
 		law = yes
 		use_list_view = yes
 
-		forced_labour = {
-			cost = 150
+		restricted_labour_freedoms = {
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
 			available = {
 				OR = {
-					has_idea = quitting_illegal
+					has_idea = limited_labour_freedoms
 				}
 
-				set_temp_variable = { param_law = token:forced_labour }
+				set_temp_variable = { param_law = token:restricted_labour_freedoms }
 				trigger_cannot_decrease_workers_rights_law = no
+				trigger_cabinet_allows_law_change = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law = token:forced_labour }
+				set_temp_variable = { param_law = token:restricted_labour_freedoms }
 				effect_law_change_opposition = yes
 
 				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
@@ -33,25 +34,26 @@ ideas = {
 			}
 		}
 
-		quitting_illegal = {
-			cost = 150
+		limited_labour_freedoms = {
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
 			available = {
 				OR = {
-					has_idea = forced_labour
-					has_idea = unions_illegal
+					has_idea = restricted_labour_freedoms
+					has_idea = unions_marginalised
 				}
 
-				set_temp_variable = { param_law = token:quitting_illegal }
+				set_temp_variable = { param_law = token:limited_labour_freedoms }
 				trigger_cannot_decrease_workers_rights_law = no
+				trigger_cabinet_allows_law_change = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law = token:quitting_illegal }
+				set_temp_variable = { param_law = token:limited_labour_freedoms }
 				effect_law_change_opposition = yes
 
 				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
@@ -64,27 +66,58 @@ ideas = {
 			}
 		}
 
-		unions_illegal = {
-			cost = 150
+		unions_marginalised = {
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 			default = yes
 
 			available = {
 				OR = {
-					has_idea = quitting_illegal
-					has_idea = worker_collaboration_0
-					has_idea = worker_collaboration_1
+					has_idea = limited_labour_freedoms
+					has_idea = unions_legitimised
 				}
 
-				set_temp_variable = { param_law = token:unions_illegal }
+				set_temp_variable = { param_law = token:unions_marginalised }
 				trigger_cannot_decrease_workers_rights_law = no
+				trigger_cabinet_allows_law_change = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law = token:unions_illegal }
+				set_temp_variable = { param_law = token:unions_marginalised }
+				effect_law_change_opposition = yes
+
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		unions_legitimised = {
+			cost = 100
+			removal_cost = -1
+			cancel_if_invalid = no
+
+			available = {
+				OR = {
+					has_idea = unions_marginalised
+					has_idea = worker_collaboration_0
+					has_idea = worker_collaboration_1
+				}
+
+				set_temp_variable = { param_law = token:unions_legitimised }
+				trigger_cannot_decrease_workers_rights_law = no
+				trigger_cabinet_allows_law_change = yes
+				trigger_opposition_allows_law_change = yes
+				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
+			}
+
+			on_add = {
+				set_temp_variable = { param_law = token:unions_legitimised }
 				effect_law_change_opposition = yes
 
 				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
@@ -96,19 +129,20 @@ ideas = {
 		}
 
 		worker_collaboration_0 = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
 			available = {
 				OR = {
-					has_idea = unions_illegal
-					has_idea = wage_controls_0
+					has_idea = unions_marginalised
+					has_idea = profit_controls_0
 					has_idea = worker_collaboration_1
 				}
 
 				set_temp_variable = { param_law = token:worker_collaboration_0 }
 				trigger_cannot_decrease_workers_rights_law = no
+				trigger_cabinet_allows_law_change = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
@@ -126,26 +160,27 @@ ideas = {
 			}
 		}
 
-		wage_controls_0 = {
-			cost = 150
+		profit_controls_0 = {
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
 			available = {
 				OR = {
-					has_idea = unions_illegal
+					has_idea = unions_marginalised
 					has_idea = worker_collaboration_0
-					has_idea = wage_controls_1
+					has_idea = profit_controls_1
 				}
 
-				set_temp_variable = { param_law = token:wage_controls_0 }
+				set_temp_variable = { param_law = token:profit_controls_0 }
 				trigger_cannot_decrease_workers_rights_law = no
+				trigger_cabinet_allows_law_change = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law = token:wage_controls_0 }
+				set_temp_variable = { param_law = token:profit_controls_0 }
 				effect_law_change_opposition = yes
 
 				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
@@ -158,18 +193,19 @@ ideas = {
 		}
 
 		worker_collaboration_1 = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
 			available = {
 				OR = {
 					has_idea = worker_collaboration_0
-					has_idea = wage_controls_1
+					has_idea = profit_controls_1
 				}
 
 				set_temp_variable = { param_law = token:worker_collaboration_1 }
 				trigger_cannot_decrease_workers_rights_law = no
+				trigger_cabinet_allows_law_change = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
@@ -187,25 +223,26 @@ ideas = {
 			}
 		}
 
-		wage_controls_1 = {
-			cost = 150
+		profit_controls_1 = {
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
 			available = {
 				OR = {
-					has_idea = wage_controls_0
+					has_idea = profit_controls_0
 					has_idea = worker_collaboration_1
 				}
 
-				set_temp_variable = { param_law = token:wage_controls_1 }
+				set_temp_variable = { param_law = token:profit_controls_1 }
 				trigger_cannot_decrease_workers_rights_law = no
+				trigger_cabinet_allows_law_change = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law = token:wage_controls_1 }
+				set_temp_variable = { param_law = token:profit_controls_1 }
 				effect_law_change_opposition = yes
 
 				effect_SOV_spend_3_tsar_favor_if_tsarist = yes

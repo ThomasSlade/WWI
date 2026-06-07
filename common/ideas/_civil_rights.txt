@@ -4,7 +4,7 @@ ideas = {
 		use_list_view = yes
 
 		entrenched_nationalism = {
-			cost = 150
+			cost = 200
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -37,7 +37,7 @@ ideas = {
 		}
 
 		ethnic_rights_0 = {
-			cost = 150
+			cost = 200
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -69,7 +69,7 @@ ideas = {
 		}
 
 		domestic_rights_0 = {
-			cost = 150
+			cost = 200
 			removal_cost = -1
 			cancel_if_invalid = no
 			default = yes
@@ -101,7 +101,7 @@ ideas = {
 		}
 
 		ethnic_rights_1 = {
-			cost = 150
+			cost = 200
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -135,7 +135,7 @@ ideas = {
 		}
 
 		domestic_rights_1 = {
-			cost = 150
+			cost = 200
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -168,7 +168,7 @@ ideas = {
 		}
 
 		ethnic_rights_2 = {
-			cost = 150
+			cost = 200
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -199,7 +199,7 @@ ideas = {
 		}
 
 		domestic_rights_2 = {
-			cost = 150
+			cost = 200
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -230,7 +230,7 @@ ideas = {
 		}
 
 		women_minority_rights = {
-			cost = 150
+			cost = 200
 			removal_cost = -1
 			cancel_if_invalid = no
 

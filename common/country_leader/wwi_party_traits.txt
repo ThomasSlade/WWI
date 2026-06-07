@@ -1,0 +1,26 @@
+leader_traits = {
+	trait_autocratic = {
+		random = no
+		sprite = 2
+	}
+
+	trait_conservative = {
+		random = no
+		sprite = 3
+	}
+
+	trait_liberal = {
+		random = no
+		sprite = 4
+	}
+
+	trait_socialist = {
+		random = no
+		sprite = 5
+	}
+
+	trait_communist = {
+		random = no
+		sprite = 6
+	}
+}

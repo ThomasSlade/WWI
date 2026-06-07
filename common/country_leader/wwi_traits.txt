@@ -3,7 +3,7 @@
 leader_traits = {
 	disliked_moderate = {
 		random = no
-		sprite = 13
+		sprite = 23
 		political_power_factor = 0.2
 	}
 
@@ -139,84 +139,240 @@ leader_traits = {
 	### Generic WWI Advisor Traits ###
 	dove = {
 		random = no
-		sprite = 10
+		sprite = 0
 		established_drift = 0.1
 		opinion_gain_monthly_factor = 0.3
+
+		custom_modifier_tooltip = liberal_unempowered_tt
+	}
+
+	dove_empowered = {
+		random = no
+		sprite = 0
+		established_drift = 0.2
+		opinion_gain_monthly_factor = 0.6
+
+		custom_modifier_tooltip = liberal_empowered_tt
 	}
 
 	hawk = {
 		random = no
-		sprite = 10
+		sprite = 0
 		expansionist_drift = 0.1
 		war_support_factor = 0.05
+
+		custom_modifier_tooltip = autocratic_unempowered_tt
+	}
+
+	hawk_empowered = {
+		random = no
+		sprite = 0
+		expansionist_drift = 0.2
+		war_support_factor = 0.1
+
+		custom_modifier_tooltip = autocratic_empowered_tt
 	}
 
 	delicate_mediator = {
 		random = no
-		improve_relations_maintain_cost_factor = -0.5
+		sprite = 0
+		improve_relations_maintain_cost_factor = -0.25
 		opinion_gain_monthly = 15
+
+		custom_modifier_tooltip = conservative_unempowered_tt
+	}
+
+	delicate_mediator_empowered = {
+		random = no
+		sprite = 0
+		improve_relations_maintain_cost_factor = -0.5
+		opinion_gain_monthly = 30
+
+		custom_modifier_tooltip = conservative_empowered_tt
 	}
 
 	state_architect = {
 		random = no
+		sprite = 0
 		stability_factor = 0.05
 		drift_defence_factor = 0.3
+
+		custom_modifier_tooltip = socialist_unempowered_tt
+	}
+
+	state_architect_empowered = {
+		random = no
+		sprite = 0
+		stability_factor = 0.1
+		drift_defence_factor = 0.6
+
+		custom_modifier_tooltip = socialist_empowered_tt
 	}
 
 	accomplished_industrialist = {
 		random = no
+		sprite = 0
 		production_speed_industrial_complex_factor = 0.2
 		production_factory_start_efficiency_factor = 0.15
+
+		custom_modifier_tooltip = liberal_unempowered_tt
+	}
+
+	accomplished_industrialist_empowered = {
+		random = no
+		sprite = 0
+		production_speed_industrial_complex_factor = 0.4
+		production_factory_start_efficiency_factor = 0.3
+
+		custom_modifier_tooltip = liberal_empowered_tt
 	}
 
 	arms_reformer = {
 		random = no
+		sprite = 0
 		production_speed_arms_factory_factor = 0.2
 		supply_consumption_factor = -0.05
+
+		custom_modifier_tooltip = socialist_unempowered_tt
+	}
+
+	arms_reformer_empowered = {
+		random = no
+		sprite = 0
+		production_speed_arms_factory_factor = 0.4
+		supply_consumption_factor = -0.1
+
+		custom_modifier_tooltip = socialist_empowered_tt
 	}
 
 	stewardly_treasurer = {
 		random = no
-		trade_opinion_factor = 1
+		sprite = 0
+		trade_opinion_factor = 0.5
 		production_speed_industrial_complex_factor = 0.2
+
+		custom_modifier_tooltip = conservative_unempowered_tt
+	}
+
+	stewardly_treasurer_empowered = {
+		random = no
+		sprite = 0
+		trade_opinion_factor = 1
+		production_speed_industrial_complex_factor = 0.4
+
+		custom_modifier_tooltip = conservative_empowered_tt
 	}
 
 	public_works_tycoon = {
 		random = no
+		sprite = 0
+		production_speed_infrastructure_factor = 0.3
+		production_speed_rail_way_factor = 0.3
+		conversion_cost_civ_to_mil_factor = -0.25
+		conversion_cost_mil_to_civ_factor = -0.25
+
+		custom_modifier_tooltip = liberal_unempowered_tt
+	}
+
+	public_works_tycoon_empowered = {
+		random = no
+		sprite = 0
 		production_speed_infrastructure_factor = 0.6
-		production_speed_rail_way_factor = 0.5
-		conversion_cost_civ_to_mil_factor = -0.3
-		conversion_cost_mil_to_civ_factor = -0.3
+		production_speed_rail_way_factor = 0.6
+		conversion_cost_civ_to_mil_factor = -0.5
+		conversion_cost_mil_to_civ_factor = -0.5
+
+		custom_modifier_tooltip = liberal_empowered_tt
 	}
 
 	educative_chamberlain = {
 		random = no
+		sprite = 0
 		research_speed_factor = 0.1
+
+		custom_modifier_tooltip = liberal_unempowered_tt
+	}
+
+	educative_chamberlain_empowered = {
+		random = no
+		sprite = 0
+		research_speed_factor = 0.2
+
+		custom_modifier_tooltip = liberal_empowered_tt
 	}
 
 	firm_adjudicator = {
 		random = no
-		resistance_activity = -0.3
+		sprite = 0
+		resistance_activity = -0.25
+
+		custom_modifier_tooltip = liberal_unempowered_tt
+	}
+
+	firm_adjudicator_empowered = {
+		random = no
+		sprite = 0
+		resistance_activity = -0.5
+
+		custom_modifier_tooltip = liberal_empowered_tt
 	}
 
 	diplomatic_encircler = {
 		random = no
-		opinion_gain_monthly_same_ideology = 20
+		sprite = 0
+		opinion_gain_monthly_same_ideology = 15
+		guarantee_cost = -0.25
+
+		custom_modifier_tooltip = conservative_unempowered_tt
+	}
+
+	diplomatic_encircler_empowered = {
+		random = no
+		sprite = 0
+		opinion_gain_monthly_same_ideology = 30
 		guarantee_cost = -0.5
+
+		custom_modifier_tooltip = conservative_empowered_tt
 	}
 
 	press_influencer = {
 		random = no
+		sprite = 0
 		conscription_factor = 0.1
-		army_core_attack_factor = 0.2
+		army_core_attack_factor = 0.15
+
+		custom_modifier_tooltip = communist_unempowered_tt
+	}
+
+	press_influencer_empowered = {
+		random = no
+		sprite = 0
+		conscription_factor = 0.2
+		army_core_attack_factor = 0.3
+
+		custom_modifier_tooltip = communist_empowered_tt
 	}
 
 	national_organiser = {
 		random = no
-		production_lack_of_resource_penalty_factor = -0.33
+		sprite = 0
+		production_lack_of_resource_penalty_factor = -0.25
 		production_factory_max_efficiency_factor = 0.15
-		conversion_cost_civ_to_mil_factor = -0.33
+		conversion_cost_civ_to_mil_factor = -0.25
+		consumer_goods_factor = -0.1
+
+		custom_modifier_tooltip = liberal_unempowered_tt
+	}
+
+	national_organiser_empowered = {
+		random = no
+		sprite = 0
+		production_lack_of_resource_penalty_factor = -0.5
+		production_factory_max_efficiency_factor = 0.3
+		conversion_cost_civ_to_mil_factor = -0.5
 		consumer_goods_factor = -0.2
+
+		custom_modifier_tooltip = liberal_empowered_tt
 	}
 
 	# Law and Focus Traits

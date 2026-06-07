@@ -163,9 +163,11 @@ characters = {
 			allowed = {
 				original_tag = SER
 			}
-			traits = {
-				delicate_mediator
-			}
+
+			traits = { trait_conservative delicate_mediator }
+			on_add = { effect_add_advisor_party_effect = yes }
+			on_remove = { effect_remove_advisor_party_effect = yes }
+
 			ai_will_do = {
 				factor = 10
 			}
@@ -185,9 +187,11 @@ characters = {
 			allowed = {
 				original_tag = SER
 			}
-			traits = {
-				state_architect
-			}
+
+			traits = { trait_socialist state_architect }
+			on_add = { effect_add_advisor_party_effect = yes }
+			on_remove = { effect_remove_advisor_party_effect = yes }
+
 			ai_will_do = {
 				factor = 10
 			}
@@ -207,9 +211,11 @@ characters = {
 			allowed = {
 				original_tag = SER
 			}
-			traits = {
-				stewardly_treasurer 
-			}
+
+			traits = { trait_conservative stewardly_treasurer }
+			on_add = { effect_add_advisor_party_effect = yes }
+			on_remove = { effect_remove_advisor_party_effect = yes }
+
 			ai_will_do = {
 				factor = 10
 			}
@@ -229,9 +235,10 @@ characters = {
 			allowed = {
 				original_tag = SER
 			}
-			traits = {
-				public_works_tycoon 
-			}
+			traits = { trait_liberal public_works_tycoon  }
+			on_add = { effect_add_advisor_party_effect = yes }
+			on_remove = { effect_remove_advisor_party_effect = yes }
+
 			ai_will_do = {
 				factor = 10
 			}
@@ -251,9 +258,11 @@ characters = {
 			allowed = {
 				original_tag = SER
 			}
-			traits = {
-				educative_chamberlain
-			}
+
+			traits = { trait_liberal educative_chamberlain }
+			on_add = { effect_add_advisor_party_effect = yes }
+			on_remove = { effect_remove_advisor_party_effect = yes }
+
 			ai_will_do = {
 				factor = 10
 			}
@@ -273,9 +282,11 @@ characters = {
 			allowed = {
 				original_tag = SER
 			}
-			traits = {
-				firm_adjudicator
-			}
+
+			traits = { trait_liberal firm_adjudicator }
+			on_add = { effect_add_advisor_party_effect = yes }
+			on_remove = { effect_remove_advisor_party_effect = yes }
+
 			ai_will_do = {
 				factor = 10
 			}
@@ -295,9 +306,10 @@ characters = {
 			allowed = {
 				original_tag = SER
 			}
-			traits = {
-				diplomatic_encircler
-			}
+			traits = { trait_conservative diplomatic_encircler }
+			on_add = { effect_add_advisor_party_effect = yes }
+			on_remove = { effect_remove_advisor_party_effect = yes }
+
 			ai_will_do = {
 				factor = 10
 			}

@@ -39,35 +39,39 @@ effect_setup_law_tiers = {
 	set_variable = { global._tier@token:private_collaboration_2 = 5 }
 	set_variable = { global._law_type@token:private_collaboration_2 = token:economic }
 
-	set_variable = { global._tier@token:no_rationing = 0 }
+	set_variable = { global._tier@token:free_market = 0 }
 	set_variable = { global._law_type@token:civilian_economy = token:rationing }
-	set_variable = { global._tier@token:price_controls = 1 }
+	set_variable = { global._tier@token:regulated_market = 1 }
+	set_variable = { global._law_type@token:regulated_market = token:rationing }
+	set_variable = { global._tier@token:price_controls = 2 }
 	set_variable = { global._law_type@token:price_controls = token:rationing }
-	set_variable = { global._tier@token:government_confiscation_0 = 2 }
-	set_variable = { global._law_type@token:government_confiscation_0 = token:rationing }
-	set_variable = { global._tier@token:government_confiscation_1 = 3 }
-	set_variable = { global._law_type@token:government_confiscation_1 = token:rationing }
-	set_variable = { global._tier@token:government_distribution_0 = 2 }
-	set_variable = { global._law_type@token:government_distribution_0 = token:rationing }
-	set_variable = { global._tier@token:government_distribution_1 = 3 }
-	set_variable = { global._law_type@token:government_distribution_1 = token:rationing }
-	set_variable = { global._tier@token:harsh_rationing = 4 }
+	set_variable = { global._tier@token:civilian_rationing_0 = 3 }
+	set_variable = { global._law_type@token:civilian_rationing_0 = token:rationing }
+	set_variable = { global._tier@token:civilian_rationing_1 = 4 }
+	set_variable = { global._law_type@token:civilian_rationing_1 = token:rationing }
+	set_variable = { global._tier@token:army_rationing_0 = 3 }
+	set_variable = { global._law_type@token:army_rationing_0 = token:rationing }
+	set_variable = { global._tier@token:army_rationing_1 = 4 }
+	set_variable = { global._law_type@token:army_rationing_1 = token:rationing }
+	set_variable = { global._tier@token:harsh_rationing = 5 }
 	set_variable = { global._law_type@token:harsh_rationing = token:rationing }
 
-	set_variable = { global._tier@token:forced_labour = 0 }
-	set_variable = { global._law_type@token:forced_labour = token:workers_rights }
-	set_variable = { global._tier@token:quitting_illegal = 1 }
-	set_variable = { global._law_type@token:quitting_illegal = token:workers_rights }
-	set_variable = { global._tier@token:unions_illegal = 2 }
-	set_variable = { global._law_type@token:unions_illegal = token:workers_rights }
-	set_variable = { global._tier@token:worker_collaboration_0 = 3 }
+	set_variable = { global._tier@token:restricted_labour_freedoms = 0 }
+	set_variable = { global._law_type@token:restricted_labour_freedoms = token:workers_rights }
+	set_variable = { global._tier@token:limited_labour_freedoms = 1 }
+	set_variable = { global._law_type@token:limited_labour_freedoms = token:workers_rights }
+	set_variable = { global._tier@token:unions_marginalised = 2 }
+	set_variable = { global._law_type@token:unions_marginalised = token:workers_rights }
+	set_variable = { global._tier@token:unions_legitimised = 3 }
+	set_variable = { global._law_type@token:unions_legitimised = token:workers_rights }
+	set_variable = { global._tier@token:worker_collaboration_0 = 4 }
 	set_variable = { global._law_type@token:worker_collaboration_0 = token:workers_rights }
-	set_variable = { global._tier@token:worker_collaboration_1 = 4 }
+	set_variable = { global._tier@token:worker_collaboration_1 = 5 }
 	set_variable = { global._law_type@token:worker_collaboration_1 = token:workers_rights }
-	set_variable = { global._tier@token:wage_controls_0 = 3 }
-	set_variable = { global._law_type@token:wage_controls_0 = token:workers_rights }
-	set_variable = { global._tier@token:wage_controls_1 = 4 }
-	set_variable = { global._law_type@token:wage_controls_1 = token:workers_rights }
+	set_variable = { global._tier@token:profit_controls_0 = 4 }
+	set_variable = { global._law_type@token:profit_controls_0 = token:workers_rights }
+	set_variable = { global._tier@token:profit_controls_1 = 5 }
+	set_variable = { global._law_type@token:profit_controls_1 = token:workers_rights }
 
 	set_variable = { global._tier@token:entrenched_nationalism = 0 }
 	set_variable = { global._law_type@token:entrenched_nationalism = token:civil_rights }
@@ -139,21 +143,23 @@ effect_setup_laws = {
 	add_to_array = { global._economic_laws = token:private_collaboration_1 }
 	add_to_array = { global._economic_laws = token:private_collaboration_2 }
 
-	add_to_array = { global._rationing_laws = token:no_rationing }
+	add_to_array = { global._rationing_laws = token:free_market }
+	add_to_array = { global._rationing_laws = token:regulated_market }
 	add_to_array = { global._rationing_laws = token:price_controls }
-	add_to_array = { global._rationing_laws = token:government_confiscation_0 }
-	add_to_array = { global._rationing_laws = token:government_confiscation_1 }
-	add_to_array = { global._rationing_laws = token:government_distribution_0 }
-	add_to_array = { global._rationing_laws = token:government_distribution_1 }
+	add_to_array = { global._rationing_laws = token:civilian_rationing_0 }
+	add_to_array = { global._rationing_laws = token:civilian_rationing_1 }
+	add_to_array = { global._rationing_laws = token:army_rationing_0 }
+	add_to_array = { global._rationing_laws = token:army_rationing_1 }
 	add_to_array = { global._rationing_laws = token:harsh_rationing }
 
-	add_to_array = { global._workers_rights_laws = token:forced_labour }
-	add_to_array = { global._workers_rights_laws = token:quitting_illegal }
-	add_to_array = { global._workers_rights_laws = token:unions_illegal }
+	add_to_array = { global._workers_rights_laws = token:restricted_labour_freedoms }
+	add_to_array = { global._workers_rights_laws = token:limited_labour_freedoms }
+	add_to_array = { global._workers_rights_laws = token:unions_marginalised }
+	add_to_array = { global._workers_rights_laws = token:unions_legitimised }
 	add_to_array = { global._workers_rights_laws = token:worker_collaboration_0 }
 	add_to_array = { global._workers_rights_laws = token:worker_collaboration_1 }
-	add_to_array = { global._workers_rights_laws = token:wage_controls_0 }
-	add_to_array = { global._workers_rights_laws = token:wage_controls_1 }
+	add_to_array = { global._workers_rights_laws = token:profit_controls_0 }
+	add_to_array = { global._workers_rights_laws = token:profit_controls_1 }
 
 	add_to_array = { global._civil_rights_laws = token:entrenched_nationalism }
 	add_to_array = { global._civil_rights_laws = token:ethnic_rights_0 }
@@ -217,193 +223,288 @@ effect_setup_laws = {
 	add_to_array = { global._opposition@token:communist = token:opp_communist_3 }
 
 	# Set up per-party liked and disliked laws.
-	# Manpower
-	add_to_array = { global._law_oppose_decrease@token:autocratic = token:disarmed_nation }
-	add_to_array = { global._law_oppose_decrease@token:autocratic = token:volunteer_only }
-	add_to_array = { global._law_oppose_decrease@token:autocratic = token:national_service }
-	add_to_array = { global._law_oppose_decrease@token:autocratic = token:limited_conscription }
-	add_to_array = { global._law_oppose_always@token:autocratic = token:deployed_labourers_0 }
-	add_to_array = { global._law_oppose_always@token:autocratic = token:deployed_labourers_1 }
-
-	add_to_array = { global._law_oppose_decrease@token:conservative = token:disarmed_nation }
-	add_to_array = { global._law_oppose_decrease@token:conservative = token:volunteer_only }
-	add_to_array = { global._law_oppose_decrease@token:conservative = token:national_service }
-	add_to_array = { global._law_oppose_always@token:conservative = token:deployed_labourers_0 }
-	add_to_array = { global._law_oppose_always@token:conservative = token:deployed_labourers_1 }
-
-	add_to_array = { global._law_oppose_decrease@token:liberal = token:disarmed_nation }
-	add_to_array = { global._law_oppose_always@token:liberal = token:deployed_workers_0 }
-	add_to_array = { global._law_oppose_always@token:liberal = token:deployed_workers_1 }
-	add_to_array = { global._law_oppose_increase@token:liberal = token:scraping_the_barrel }
-
-	add_to_array = { global._law_oppose_increase@token:socialist = token:extensive_conscription }
-	add_to_array = { global._law_oppose_always@token:socialist = token:deployed_workers_0 }
-	add_to_array = { global._law_oppose_always@token:socialist = token:deployed_workers_1 }
-	add_to_array = { global._law_oppose_increase@token:socialist = token:scraping_the_barrel }
-	add_to_array = { global._law_endorse_always@token:socialist = token:deployed_labourers_0 }
-	add_to_array = { global._law_endorse_always@token:socialist = token:deployed_labourers_1 }
-
+	### Manpower ###
+	# Early
+	add_to_array = { global._law_oppose_increase@token:socialist = token:national_service }
 	add_to_array = { global._law_oppose_increase@token:communist = token:national_service }
+	add_to_array = { global._law_oppose_increase@token:socialist = token:limited_conscription }
 	add_to_array = { global._law_oppose_increase@token:communist = token:limited_conscription }
+	add_to_array = { global._law_oppose_increase@token:socialist = token:extensive_conscription }
 	add_to_array = { global._law_oppose_increase@token:communist = token:extensive_conscription }
-	add_to_array = { global._law_oppose_always@token:communist = token:deployed_workers_0 }
-	add_to_array = { global._law_oppose_always@token:communist = token:deployed_workers_1 }
+
+	add_to_array = { global._law_endorse_increase@token:conservative = token:national_service }
+	add_to_array = { global._law_endorse_increase@token:conservative = token:limited_conscription }
+	add_to_array = { global._law_endorse_increase@token:conservative = token:extensive_conscription }
+
+	# Deployed Workers
+	add_to_array = { global._law_oppose_increase@token:socialist = token:deployed_workers_0 }
+	add_to_array = { global._law_oppose_increase@token:communist = token:deployed_workers_0 }
+	add_to_array = { global._law_oppose_increase@token:socialist = token:deployed_workers_1 }
+	add_to_array = { global._law_oppose_increase@token:communist = token:deployed_workers_1 }
+
+	add_to_array = { global.law_oppose_always@token:liberal = token:deployed_workers_0 }
+	add_to_array = { global.law_oppose_always@token:liberal = token:deployed_workers_1 }
+
+	add_to_array = { global._law_endorse_increase@token:autocratic = token:deployed_workers_0 }
+	add_to_array = { global._law_endorse_increase@token:autocratic = token:deployed_workers_1 }
+
+	# Deployed Labourers
+	add_to_array = { global._law_oppose_increase@token:socialist = token:deployed_labourers_0 }
+	add_to_array = { global._law_oppose_increase@token:communist = token:deployed_labourers_0 }
+	add_to_array = { global._law_oppose_increase@token:socialist = token:deployed_labourers_1 }
+	add_to_array = { global._law_oppose_increase@token:communist = token:deployed_labourers_1 }
+
+	add_to_array = { global.law_oppose_always@token:conservative = token:deployed_labourers_0 }
+	add_to_array = { global.law_oppose_always@token:conservative = token:deployed_labourers_1 }
+
+	add_to_array = { global._law_endorse_increase@token:autocratic = token:deployed_labourers_0 }
+	add_to_array = { global._law_endorse_increase@token:autocratic = token:deployed_labourers_1 }
+
+	# Late
+	add_to_array = { global._law_oppose_increase@token:conservative = token:scraping_the_barrel }
+	add_to_array = { global._law_oppose_increase@token:liberal = token:scraping_the_barrel }
+	add_to_array = { global._law_oppose_increase@token:socialist = token:scraping_the_barrel }
 	add_to_array = { global._law_oppose_increase@token:communist = token:scraping_the_barrel }
 
-	# Economic
-	add_to_array = { global._law_oppose_decrease@token:autocratic = token:civilian_economy }
-	add_to_array = { global._law_oppose_decrease@token:autocratic = token:low_economic_mobilisation }
-	
-	add_to_array = { global._law_oppose_always@token:conservative = token:nationalisation_0 }
-	add_to_array = { global._law_oppose_always@token:conservative = token:nationalisation_1 }
-	add_to_array = { global._law_oppose_always@token:conservative = token:nationalisation_2 }
-	add_to_array = { global._law_endorse_always@token:conservative = token:private_collaboration_0 }
-	add_to_array = { global._law_endorse_always@token:conservative = token:private_collaboration_1 }
-	add_to_array = { global._law_endorse_always@token:conservative = token:private_collaboration_2 }
-	
+	### Economic ###
+	# Early
+	add_to_array = { global._law_oppose_increase@token:liberal = token:low_economic_mobilisation }
+	add_to_array = { global._law_oppose_increase@token:socialist = token:low_economic_mobilisation }
 	add_to_array = { global._law_oppose_increase@token:liberal = token:partial_economic_mobilisation }
-	add_to_array = { global._law_oppose_always@token:liberal = token:nationalisation_0 }
-	add_to_array = { global._law_oppose_always@token:liberal = token:nationalisation_1 }
-	add_to_array = { global._law_oppose_always@token:liberal = token:nationalisation_2 }
-	add_to_array = { global._law_endorse_always@token:liberal = token:private_collaboration_0 }
-	add_to_array = { global._law_endorse_always@token:liberal = token:private_collaboration_1 }
-	add_to_array = { global._law_endorse_always@token:liberal = token:private_collaboration_2 }
-	
-	add_to_array = { global._law_oppose_always@token:socialist = token:private_collaboration_0 }
-	add_to_array = { global._law_oppose_always@token:socialist = token:private_collaboration_1 }
-	add_to_array = { global._law_oppose_always@token:socialist = token:private_collaboration_2 }
-	add_to_array = { global._law_endorse_always@token:socialist = token:nationalisation_0 }
-	add_to_array = { global._law_endorse_always@token:socialist = token:nationalisation_1 }
-	add_to_array = { global._law_endorse_always@token:socialist = token:nationalisation_2 }
-	
-	add_to_array = { global._law_oppose_always@token:communist = token:private_collaboration_0 }
-	add_to_array = { global._law_oppose_always@token:communist = token:private_collaboration_1 }
-	add_to_array = { global._law_oppose_always@token:communist = token:private_collaboration_2 }
-	add_to_array = { global._law_endorse_always@token:communist = token:nationalisation_0 }
-	add_to_array = { global._law_endorse_always@token:communist = token:nationalisation_1 }
-	add_to_array = { global._law_endorse_always@token:communist = token:nationalisation_2 }
+	add_to_array = { global._law_oppose_increase@token:socialist = token:partial_economic_mobilisation }
 
-	# Worker's Rights
+	add_to_array = { global._law_endorse_increase@token:conservative = token:low_economic_mobilisation }
+	add_to_array = { global._law_endorse_increase@token:conservative = token:partial_economic_mobilisation }
+
+	# Nationalisation
+	add_to_array = { global._law_oppose_always@token:conservative = token:nationalisation_0 }
+	add_to_array = { global._law_oppose_always@token:liberal = token:nationalisation_0 }
+	add_to_array = { global._law_oppose_always@token:conservative = token:nationalisation_1 }
+	add_to_array = { global._law_oppose_always@token:liberal = token:nationalisation_1 }
+	add_to_array = { global._law_oppose_always@token:conservative = token:nationalisation_2 }
+	add_to_array = { global._law_oppose_always@token:liberal = token:nationalisation_2 }
+
+	add_to_array = { global._law_endorse_increase@token:socialist = token:nationalisation_0 }
+	add_to_array = { global._law_endorse_increase@token:socialist = token:nationalisation_1 }
+	add_to_array = { global._law_endorse_increase@token:socialist = token:nationalisation_2 }
+
+	# Private Collaboration
+	add_to_array = { global._law_oppose_always@token:socialist = token:private_collaboration_0 }
+	add_to_array = { global._law_oppose_always@token:communist = token:private_collaboration_0 }
+	add_to_array = { global._law_oppose_always@token:socialist = token:private_collaboration_1 }
+	add_to_array = { global._law_oppose_always@token:communist = token:private_collaboration_1 }
+	add_to_array = { global._law_oppose_always@token:socialist = token:private_collaboration_2 }
+	add_to_array = { global._law_oppose_always@token:communist = token:private_collaboration_2 }
+
+	add_to_array = { global._law_endorse_increase@token:liberal = token:private_collaboration_0 }
+	add_to_array = { global._law_endorse_increase@token:liberal = token:private_collaboration_1 }
+	add_to_array = { global._law_endorse_increase@token:liberal = token:private_collaboration_2 }
+
+	### Rationing ###
+	# Early
+	add_to_array = { global._law_oppose_increase@token:conservative = token:regulated_market }
+	add_to_array = { global._law_oppose_increase@token:liberal = token:regulated_market }
+	add_to_array = { global._law_oppose_increase@token:conservative = token:price_controls }
+	add_to_array = { global._law_oppose_increase@token:liberal = token:price_controls }
+
+	add_to_array = { global._law_endorse_increase@token:communist = token:regulated_market }
+	add_to_array = { global._law_endorse_increase@token:communist = token:price_controls }
+
+	# Civilian Rationing
+	add_to_array = { global._law_oppose_always@token:liberal = token:civilian_rationing_0 }
+	add_to_array = { global._law_oppose_always@token:socialist = token:civilian_rationing_0 }
+	add_to_array = { global._law_oppose_always@token:liberal = token:civilian_rationing_1 }
+	add_to_array = { global._law_oppose_always@token:socialist = token:civilian_rationing_1 }
+
+	add_to_array = { global._law_endorse_increase@token:communist = token:civilian_rationing_0 }
+	add_to_array = { global._law_endorse_increase@token:communist = token:civilian_rationing_1 }
+
+	# Army Rationing
+	add_to_array = { global._law_oppose_always@token:conservative = token:army_rationing_0 }
+	add_to_array = { global._law_oppose_always@token:autocratic = token:army_rationing_0 }
+	add_to_array = { global._law_oppose_always@token:conservative = token:army_rationing_1 }
+	add_to_array = { global._law_oppose_always@token:autocratic = token:army_rationing_1 }
+
+	add_to_array = { global._law_endorse_increase@token:liberal = token:army_rationing_0 }
+	add_to_array = { global._law_endorse_increase@token:liberal = token:army_rationing_1 }
+
+	# Late
+	add_to_array = { global._law_oppose_increase@token:conservative = token:harsh_rationing }
+	add_to_array = { global._law_oppose_increase@token:liberal = token:harsh_rationing }
+	add_to_array = { global._law_oppose_increase@token:socialist = token:harsh_rationing }
+
+	### Workers' Rights ###
+	# Regressive
+	add_to_array = { global._law_oppose_decrease@token:liberal = token:limited_labour_freedoms }
+	add_to_array = { global._law_oppose_decrease@token:socialist = token:limited_labour_freedoms }
+
+	add_to_array = { global._law_oppose_decrease@token:liberal = token:restricted_labour_freedoms }
+	add_to_array = { global._law_oppose_decrease@token:socialist = token:restricted_labour_freedoms }
+
+	add_to_array = { global._law_endorse_decrease@token:autocratic = token:limited_labour_freedoms }
+	add_to_array = { global._law_endorse_decrease@token:autocratic = token:restricted_labour_freedoms }
+
+	# Early
+	add_to_array = { global._law_oppose_increase@token:autocratic = token:unions_marginalised }
+	add_to_array = { global._law_oppose_increase@token:conservative = token:unions_marginalised }
+	add_to_array = { global._law_oppose_increase@token:autocratic = token:unions_legitimised }
+	add_to_array = { global._law_oppose_increase@token:conservative = token:unions_legitimised }
+
+	add_to_array = { global._law_endorse_increase@token:socialist = token:unions_marginalised }
+	add_to_array = { global._law_endorse_increase@token:socialist = token:unions_legitimised }
+
+	# Worker Collaboration
+	add_to_array = { global._law_oppose_increase@token:conservative = token:worker_collaboration_0 }
+	add_to_array = { global._law_oppose_increase@token:conservative = token:worker_collaboration_1 }
+
 	add_to_array = { global._law_oppose_always@token:autocratic = token:worker_collaboration_0 }
 	add_to_array = { global._law_oppose_always@token:autocratic = token:worker_collaboration_1 }
-	add_to_array = { global._law_endorse_always@token:socialist = token:wage_controls_0 }
-	add_to_array = { global._law_endorse_always@token:socialist = token:wage_controls_1 }
-	
-	add_to_array = { global._law_oppose_decrease@token:conservative = token:forced_labour }
-	add_to_array = { global._law_oppose_always@token:conservative = token:worker_collaboration_0 }
-	add_to_array = { global._law_oppose_always@token:conservative = token:worker_collaboration_1 }
-	
-	add_to_array = { global._law_oppose_decrease@token:liberal = token:forced_labour }
-	add_to_array = { global._law_oppose_decrease@token:liberal = token:quitting_illegal }
-	add_to_array = { global._law_oppose_always@token:liberal = token:wage_controls_0 }
-	add_to_array = { global._law_oppose_always@token:liberal = token:wage_controls_1 }
-	
-	add_to_array = { global._law_oppose_decrease@token:socialist = token:forced_labour }
-	add_to_array = { global._law_oppose_decrease@token:socialist = token:quitting_illegal }
-	add_to_array = { global._law_oppose_decrease@token:socialist = token:unions_illegal }
-	add_to_array = { global._law_endorse_always@token:socialist = token:worker_collaboration_0 }
-	add_to_array = { global._law_endorse_always@token:socialist = token:worker_collaboration_1 }
-	
-	add_to_array = { global._law_oppose_decrease@token:communist = token:forced_labour }
-	add_to_array = { global._law_oppose_decrease@token:communist = token:quitting_illegal }
-	add_to_array = { global._law_oppose_decrease@token:communist = token:unions_illegal }
-	add_to_array = { global._law_endorse_always@token:socialist = token:wage_controls_0 }
-	add_to_array = { global._law_endorse_always@token:socialist = token:wage_controls_1 }
 
-	# Rationing
-	add_to_array = { global._law_oppose_decrease@token:autocratic = token:no_rationing }
-	add_to_array = { global._law_endorse_always@token:autocratic = token:government_confiscation_0 }
-	add_to_array = { global._law_endorse_always@token:autocratic = token:government_confiscation_1 }
-	
-	add_to_array = { global._law_oppose_always@token:conservative = token:government_distribution_0 }
-	add_to_array = { global._law_oppose_always@token:conservative = token:government_distribution_1 }
-	add_to_array = { global._law_oppose_increase@token:conservative = token:harsh_rationing }
-	
-	add_to_array = { global._law_oppose_increase@token:liberal = token:price_controls }
-	add_to_array = { global._law_oppose_increase@token:liberal = token:government_confiscation_0 }
-	add_to_array = { global._law_oppose_increase@token:liberal = token:government_confiscation_1 }
-	add_to_array = { global._law_oppose_increase@token:liberal = token:government_distribution_0 }
-	add_to_array = { global._law_oppose_increase@token:liberal = token:government_distribution_1 }
-	add_to_array = { global._law_oppose_increase@token:liberal = token:harsh_rationing }
-	
-	add_to_array = { global._law_oppose_decrease@token:socialist = token:no_rationing }
-	add_to_array = { global._law_oppose_always@token:socialist = token:government_confiscation_0 }
-	add_to_array = { global._law_oppose_always@token:socialist = token:government_confiscation_1 }
-	add_to_array = { global._law_oppose_increase@token:socialist = token:harsh_rationing }
-	add_to_array = { global._law_endorse_always@token:socialist = token:government_distribution_0 }
-	add_to_array = { global._law_endorse_always@token:socialist = token:government_distribution_1 }
-	
-	add_to_array = { global._law_oppose_decrease@token:communist = token:no_rationing }
-	add_to_array = { global._law_oppose_increase@token:communist = token:harsh_rationing }
-	add_to_array = { global._law_endorse_always@token:communist = token:government_confiscation_0 }
-	add_to_array = { global._law_endorse_always@token:communist = token:government_confiscation_1 }
+	add_to_array = { global._law_endorse_increase@token:socialist = token:worker_collaboration_0 }
+	add_to_array = { global._law_endorse_increase@token:socialist = token:worker_collaboration_1 }
 
-	# Civil Rights
+	# Profit Controls
+	add_to_array = { global._law_oppose_increase@token:conservative = token:profit_controls_0 }
+	add_to_array = { global._law_oppose_increase@token:conservative = token:profit_controls_1 }
+
+	add_to_array = { global._law_oppose_always@token:liberal = token:profit_controls_0 }
+	add_to_array = { global._law_oppose_always@token:liberal = token:profit_controls_1 }
+
+	add_to_array = { global._law_endorse_increase@token:communist = token:profit_controls_0 }
+	add_to_array = { global._law_endorse_increase@token:communist = token:profit_controls_1 }
+
+	### Civil Rights ###
+	# Ethnic Rights
 	add_to_array = { global._law_oppose_increase@token:autocratic = token:ethnic_rights_0 }
+	add_to_array = { global._law_oppose_increase@token:conservative = token:ethnic_rights_0 }
 	add_to_array = { global._law_oppose_increase@token:autocratic = token:ethnic_rights_1 }
-	add_to_array = { global._law_oppose_increase@token:autocratic = token:ethnic_rights_2 }
-	add_to_array = { global._law_oppose_increase@token:autocratic = token:domestic_rights_0 }
-	add_to_array = { global._law_oppose_increase@token:autocratic = token:domestic_rights_1 }
-	add_to_array = { global._law_oppose_increase@token:autocratic = token:domestic_rights_2 }
-	add_to_array = { global._law_oppose_increase@token:autocratic = token:women_minority_rights }
-	add_to_array = { global._law_endorse_decrease@token:autocratic = token:entrenched_nationalism }
-	
 	add_to_array = { global._law_oppose_increase@token:conservative = token:ethnic_rights_1 }
+	add_to_array = { global._law_oppose_increase@token:autocratic = token:ethnic_rights_2 }
 	add_to_array = { global._law_oppose_increase@token:conservative = token:ethnic_rights_2 }
-	add_to_array = { global._law_oppose_increase@token:conservative = token:domestic_rights_1 }
-	add_to_array = { global._law_oppose_increase@token:conservative = token:domestic_rights_2 }
-	add_to_array = { global._law_oppose_increase@token:conservative = token:women_minority_rights }
-	
-	add_to_array = { global._law_oppose_decrease@token:liberal = token:entrenched_nationalism }
+
 	add_to_array = { global._law_endorse_increase@token:liberal = token:ethnic_rights_0 }
-	add_to_array = { global._law_endorse_increase@token:liberal = token:ethnic_rights_1 }
-	add_to_array = { global._law_endorse_increase@token:liberal = token:ethnic_rights_2 }
-	add_to_array = { global._law_endorse_increase@token:liberal = token:domestic_rights_0 }
-	add_to_array = { global._law_endorse_increase@token:liberal = token:domestic_rights_1 }
-	add_to_array = { global._law_endorse_increase@token:liberal = token:domestic_rights_2 }
-	
-	add_to_array = { global._law_oppose_decrease@token:socialist = token:entrenched_nationalism }
 	add_to_array = { global._law_endorse_increase@token:socialist = token:ethnic_rights_0 }
-	add_to_array = { global._law_endorse_increase@token:socialist = token:ethnic_rights_1 }
-	add_to_array = { global._law_endorse_increase@token:socialist = token:ethnic_rights_2 }
-	add_to_array = { global._law_endorse_increase@token:socialist = token:domestic_rights_0 }
-	add_to_array = { global._law_endorse_increase@token:socialist = token:domestic_rights_1 }
-	add_to_array = { global._law_endorse_increase@token:socialist = token:domestic_rights_2 }
-	add_to_array = { global._law_endorse_increase@token:socialist = token:women_minority_rights }
-	
-	add_to_array = { global._law_oppose_decrease@token:communist = token:entrenched_nationalism }
 	add_to_array = { global._law_endorse_increase@token:communist = token:ethnic_rights_0 }
+	add_to_array = { global._law_endorse_increase@token:liberal = token:ethnic_rights_1 }
+	add_to_array = { global._law_endorse_increase@token:socialist = token:ethnic_rights_1 }
 	add_to_array = { global._law_endorse_increase@token:communist = token:ethnic_rights_1 }
+	add_to_array = { global._law_endorse_increase@token:liberal = token:ethnic_rights_2 }
+	add_to_array = { global._law_endorse_increase@token:socialist = token:ethnic_rights_2 }
 	add_to_array = { global._law_endorse_increase@token:communist = token:ethnic_rights_2 }
+
+	# Domestic Rights
+	add_to_array = { global._law_oppose_increase@token:autocratic = token:domestic_rights_0 }
+	add_to_array = { global._law_oppose_increase@token:conservative = token:domestic_rights_0 }
+	add_to_array = { global._law_oppose_increase@token:autocratic = token:domestic_rights_1 }
+	add_to_array = { global._law_oppose_increase@token:conservative = token:domestic_rights_1 }
+	add_to_array = { global._law_oppose_increase@token:autocratic = token:domestic_rights_2 }
+	add_to_array = { global._law_oppose_increase@token:conservative = token:domestic_rights_2 }
+
+	add_to_array = { global._law_endorse_increase@token:liberal = token:domestic_rights_0 }
+	add_to_array = { global._law_endorse_increase@token:socialist = token:domestic_rights_0 }
 	add_to_array = { global._law_endorse_increase@token:communist = token:domestic_rights_0 }
+	add_to_array = { global._law_endorse_increase@token:liberal = token:domestic_rights_1 }
+	add_to_array = { global._law_endorse_increase@token:socialist = token:domestic_rights_1 }
 	add_to_array = { global._law_endorse_increase@token:communist = token:domestic_rights_1 }
+	add_to_array = { global._law_endorse_increase@token:liberal = token:domestic_rights_2 }
+	add_to_array = { global._law_endorse_increase@token:socialist = token:domestic_rights_2 }
 	add_to_array = { global._law_endorse_increase@token:communist = token:domestic_rights_2 }
+
+	# Late
+	add_to_array = { global._law_oppose_increase@token:autocratic = token:women_minority_rights }
+	add_to_array = { global._law_oppose_increase@token:conservative = token:women_minority_rights }
+
+	add_to_array = { global._law_endorse_increase@token:socialist = token:women_minority_rights }
 	add_to_array = { global._law_endorse_increase@token:communist = token:women_minority_rights }
 
-	# Blockade Policy
-	add_to_array = { global._law_oppose_decrease@token:autocratic = token:open_sealanes }
-	add_to_array = { global._law_oppose_decrease@token:autocratic = token:cargo_interception }
-	add_to_array = { global._law_endorse_always@token:conservative = token:submarine_blockade_0 }
-	add_to_array = { global._law_endorse_always@token:conservative = token:submarine_blockade_1 }
-	
-	add_to_array = { global._law_oppose_decrease@token:conservative = token:open_sealanes }
-	add_to_array = { global._law_oppose_increase@token:conservative = token:unrestricted_blockade }
-	add_to_array = { global._law_endorse_always@token:conservative = token:surface_blockade_0 }
-	add_to_array = { global._law_endorse_always@token:conservative = token:surface_blockade_1 }
-	
+	### Blockade Policy ###
+	# Early
 	add_to_array = { global._law_oppose_increase@token:liberal = token:cargo_interception }
+	add_to_array = { global._law_oppose_increase@token:socialist = token:cargo_interception }
+
+	add_to_array = { global._law_endorse_increase@token:autocratic = token:cargo_interception }
+
+	# Surface Blockade
 	add_to_array = { global._law_oppose_increase@token:liberal = token:surface_blockade_0 }
+	add_to_array = { global._law_oppose_increase@token:socialist = token:surface_blockade_0 }
 	add_to_array = { global._law_oppose_increase@token:liberal = token:surface_blockade_1 }
+	add_to_array = { global._law_oppose_increase@token:socialist = token:surface_blockade_1 }
+
+	add_to_array = { global._law_endorse_increase@token:conservative = token:surface_blockade_0 }
+	add_to_array = { global._law_endorse_increase@token:conservative = token:surface_blockade_1 }
+
+	# Submarine Blockade
 	add_to_array = { global._law_oppose_increase@token:liberal = token:submarine_blockade_0 }
+	add_to_array = { global._law_oppose_increase@token:socialist = token:submarine_blockade_0 }
 	add_to_array = { global._law_oppose_increase@token:liberal = token:submarine_blockade_1 }
+	add_to_array = { global._law_oppose_increase@token:socialist = token:submarine_blockade_1 }
+
+	add_to_array = { global._law_endorse_increase@token:autocratic = token:submarine_blockade_0 }
+	add_to_array = { global._law_endorse_increase@token:autocratic = token:submarine_blockade_1 }
+
+	# Late
+	add_to_array = { global._law_oppose_increase@token:conservative = token:unrestricted_blockade }
 	add_to_array = { global._law_oppose_increase@token:liberal = token:unrestricted_blockade }
-	add_to_array = { global._law_endorse_decrease@token:liberal = token:open_sealanes }
-	
-	add_to_array = { global._law_oppose_always@token:socialist = token:submarine_blockade_0 }
-	add_to_array = { global._law_oppose_always@token:socialist = token:submarine_blockade_1 }
 	add_to_array = { global._law_oppose_increase@token:socialist = token:unrestricted_blockade }
-	
-	add_to_array = { global._law_oppose_decrease@token:communist = token:open_sealanes }
+
+	add_to_array = { global._law_endorse_increase@token:autocratic = token:unrestricted_blockade }
+}
+
+# Reverse map all of the party opinions on each law so that we can get the party which opposes or endorses a law from that law's token.
+effect_setup_law_support = {
+	for_each_loop = {
+		array = global._all_parties
+		value = p
+		break = break
+
+		for_each_loop = {
+			array = global._law_oppose_increase@var:p
+			value = l
+			break = break
+
+			add_to_array = { global._law_oppose_increase_by@var:l = p }
+		}
+
+		for_each_loop = {
+			array = global._law_oppose_decrease@var:p
+			value = l
+			break = break
+
+			add_to_array = { global._law_oppose_decrease_by@var:l = p }
+		}
+
+		for_each_loop = {
+			array = global._law_oppose_always@var:p
+			value = l
+			break = break
+
+			add_to_array = { global._law_oppose_always_by@var:l = p }
+		}
+
+		for_each_loop = {
+			array = global._law_endorse_increase@var:p
+			value = l
+			break = break
+
+			add_to_array = { global._law_endorse_increase_by@var:l = p }
+		}
+
+		for_each_loop = {
+			array = global._law_endorse_decrease@var:p
+			value = l
+			break = break
+
+			add_to_array = { global._law_endorse_decrease_by@var:l = p }
+		}
+
+		for_each_loop = {
+			array = global._law_endorse_always@var:p
+			value = l
+			break = break
+
+			add_to_array = { global._law_endorse_always_by@var:l = p }
+		}
+	}
 }
 
 effect_setup_politics = {
@@ -1088,5 +1189,180 @@ effect_increase_left_opposition_or_move_opposition_left = {
 			set_temp_variable = { param_party = out_left }
 			effect_change_opposition = yes
 		}
+	}
+}
+
+effect_setup_empowered_advisor_traits = {
+	add_to_array = { global.party_traits = token:trait_autocratic }
+	add_to_array = { global.party_traits = token:trait_conservative }
+	add_to_array = { global.party_traits = token:trait_liberal }
+	add_to_array = { global.party_traits = token:trait_socialist }
+	add_to_array = { global.party_traits = token:trait_communist }
+
+	add_to_array = { global.unempowered_traits = token:dove }
+	add_to_array = { global.unempowered_traits = token:hawk }
+	add_to_array = { global.unempowered_traits = token:delicate_mediator }
+	add_to_array = { global.unempowered_traits = token:state_architect }
+	add_to_array = { global.unempowered_traits = token:accomplished_industrialist }
+	add_to_array = { global.unempowered_traits = token:arms_reformer }
+	add_to_array = { global.unempowered_traits = token:stewardly_treasurer }
+	add_to_array = { global.unempowered_traits = token:public_works_tycoon }
+	add_to_array = { global.unempowered_traits = token:educative_chamberlain }
+	add_to_array = { global.unempowered_traits = token:firm_adjudicator }
+	add_to_array = { global.unempowered_traits = token:diplomatic_encircler }
+	add_to_array = { global.unempowered_traits = token:press_influencer }
+	add_to_array = { global.unempowered_traits = token:national_organiser }
+
+	add_to_array = { global.empowered_traits = token:dove_empowered }
+	add_to_array = { global.empowered_traits = token:hawk_empowered }
+	add_to_array = { global.empowered_traits = token:delicate_mediator_empowered }
+	add_to_array = { global.empowered_traits = token:state_architect_empowered }
+	add_to_array = { global.empowered_traits = token:accomplished_industrialist_empowered }
+	add_to_array = { global.empowered_traits = token:arms_reformer_empowered }
+	add_to_array = { global.empowered_traits = token:stewardly_treasurer_empowered }
+	add_to_array = { global.empowered_traits = token:public_works_tycoon_empowered }
+	add_to_array = { global.empowered_traits = token:educative_chamberlain_empowered }
+	add_to_array = { global.empowered_traits = token:firm_adjudicator_empowered }
+	add_to_array = { global.empowered_traits = token:diplomatic_encircler_empowered }
+	add_to_array = { global.empowered_traits = token:press_influencer_empowered }
+	add_to_array = { global.empowered_traits = token:national_organiser_empowered }
+
+	if = {
+		limit = { NOT = { check_variable = { global.unempowered_traits^num = global.empowered_traits^num } } }
+		log = "ERROR: global.unempowered_traits had [?global.unempowered_traits^num] elements while global.empowered_traits had [?global.empowered_traits^num]. These arrays must have corresponding elements of an equal number."
+	}
+	
+	every_possible_country = {
+		for_loop_effect = {
+			end = global.unempowered_traits^num
+			value = t
+			break = break
+
+			meta_effect = {
+				UNEMPOWERED_TRAIT = "[?global.unempowered_traits^t.GetTokenKey]"
+				EMPOWERED_TRAIT = "[?global.empowered_traits^t.GetTokenKey]"
+
+				text = {
+					every_character = {
+						if = {
+							limit = { has_trait = [UNEMPOWERED_TRAIT] }
+							set_variable = { unempowered_trait = token:[UNEMPOWERED_TRAIT] }
+							set_variable = { empowered_trait = token:[EMPOWERED_TRAIT] }
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# All advisors whose party is in cabinet have their empowered traits activated. All who don't, lose their empowered traits.
+effect_update_empowered_advisor_traits = {
+	meta_effect = {
+		CABINET_PARTY_TRAIT = "trait_[?cabinet_party.GetTokenKey]"
+
+		text = {
+			every_character = {
+				if = {
+					limit = { has_trait = [CABINET_PARTY_TRAIT] }
+					effect_empower_character = yes
+				}
+				else = {
+					effect_unempower_character = yes
+				}
+			}
+		}
+	}
+}
+
+# Scope is Character
+effect_empower_character = {
+	if = {
+		limit = { has_variable = unempowered_trait }
+
+		meta_effect = {
+			UNEMPOWERED_TRAIT = "[?unempowered_trait.GetTokenKey]"
+			EMPOWERED_TRAIT = "[?empowered_trait.GetTokenKey]"
+
+			text = {
+				if = {
+					limit = { has_trait = [UNEMPOWERED_TRAIT] }
+					remove_trait = {
+						trait = [UNEMPOWERED_TRAIT]
+						slot = political_advisor
+					}
+				}
+				if = {
+					limit = { NOT = { has_trait = [EMPOWERED_TRAIT] } }
+					add_trait = {
+						trait = [EMPOWERED_TRAIT]
+						slot = political_advisor
+					}
+				}
+			}
+		}
+	}
+}
+
+# Scope is Character
+effect_unempower_character = {
+	if = {
+		limit = { has_variable = empowered_trait }
+		
+		meta_effect = {
+			UNEMPOWERED_TRAIT = "[?unempowered_trait.GetTokenKey]"
+			EMPOWERED_TRAIT = "[?empowered_trait.GetTokenKey]"
+
+			text = {
+				if = {
+					limit = { has_trait = [EMPOWERED_TRAIT] }
+					remove_trait = {
+						trait = [EMPOWERED_TRAIT]
+						slot = political_advisor
+					}
+				}
+				if = {
+					limit = { NOT = { has_trait = [UNEMPOWERED_TRAIT] } }
+					add_trait = {
+						trait = [UNEMPOWERED_TRAIT]
+						slot = political_advisor
+					}
+				}
+			}
+		}
+	}
+}
+
+effect_add_advisor_party_effect = {
+	add_political_power = 100
+
+	if = {
+		limit = {
+			meta_trigger = {
+				OPPOSITION_PARTY = "[?opposition_party.GetTokenKey]"
+				text = {
+					has_trait = trait_[OPPOSITION_PARTY]
+				}
+			}
+		}
+
+		effect_decrease_opposition = yes
+	}
+}
+
+effect_remove_advisor_party_effect = {
+	add_political_power = -100
+
+	if = {
+		limit = {
+			meta_trigger = {
+				OPPOSITION_PARTY = "[?opposition_party.GetTokenKey]"
+				text = {
+					has_trait = trait_[OPPOSITION_PARTY]
+				}
+			}
+		}
+
+		effect_increase_opposition = yes
 	}
 }

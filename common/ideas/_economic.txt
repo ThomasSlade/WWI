@@ -4,7 +4,7 @@ ideas = {
 		use_list_view = yes
 		
 		civilian_economy = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			default = yes
 			cancel_if_invalid = no
@@ -16,6 +16,7 @@ ideas = {
 
 				set_temp_variable = { param_law = token:civilian_economy }
 				trigger_cannot_decrease_economic_law = no
+				trigger_cabinet_allows_law_change = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
@@ -33,7 +34,7 @@ ideas = {
 		}
 
 		low_economic_mobilisation = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -45,6 +46,7 @@ ideas = {
 
 				set_temp_variable = { param_law = token:low_economic_mobilisation }
 				trigger_cannot_decrease_economic_law = no
+				trigger_cabinet_allows_law_change = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
@@ -63,7 +65,7 @@ ideas = {
 		}
 
 		partial_economic_mobilisation = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -76,6 +78,7 @@ ideas = {
 
 				set_temp_variable = { param_law = token:partial_economic_mobilisation }
 				trigger_cannot_decrease_economic_law = no
+				trigger_cabinet_allows_law_change = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
@@ -96,7 +99,7 @@ ideas = {
 		}
 		
 		nationalisation_0 = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -109,6 +112,7 @@ ideas = {
 
 				set_temp_variable = { param_law = token:nationalisation_0 }
 				trigger_cannot_decrease_economic_law = no
+				trigger_cabinet_allows_law_change = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
@@ -130,7 +134,7 @@ ideas = {
 		}
 
 		private_collaboration_0 = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -143,6 +147,7 @@ ideas = {
 
 				set_temp_variable = { param_law = token:private_collaboration_0 }
 				trigger_cannot_decrease_economic_law = no
+				trigger_cabinet_allows_law_change = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
@@ -163,7 +168,7 @@ ideas = {
 		}
 
 		nationalisation_1 = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -176,6 +181,7 @@ ideas = {
 
 				set_temp_variable = { param_law = token:nationalisation_1 }
 				trigger_cannot_decrease_economic_law = no
+				trigger_cabinet_allows_law_change = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
@@ -197,7 +203,7 @@ ideas = {
 		}
 
 		private_collaboration_1 = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -210,6 +216,7 @@ ideas = {
 
 				set_temp_variable = { param_law = token:private_collaboration_1 }
 				trigger_cannot_decrease_economic_law = no
+				trigger_cabinet_allows_law_change = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
@@ -230,7 +237,7 @@ ideas = {
 		}
 
 		nationalisation_2 = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -242,6 +249,7 @@ ideas = {
 
 				set_temp_variable = { param_law = token:nationalisation_2 }
 				trigger_cannot_decrease_economic_law = no
+				trigger_cabinet_allows_law_change = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
@@ -263,7 +271,7 @@ ideas = {
 		}
 
 		private_collaboration_2 = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -275,6 +283,7 @@ ideas = {
 
 				set_temp_variable = { param_law = token:private_collaboration_2 }
 				trigger_cannot_decrease_economic_law = no
+				trigger_cabinet_allows_law_change = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}

@@ -24,6 +24,7 @@ ideas = {
 
 				set_variable = { cabinet_party = token:autocratic }
 				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+				effect_update_empowered_advisor_traits = yes
 			}
 
 			modifier = {
@@ -57,6 +58,7 @@ ideas = {
 
 				set_variable = { cabinet_party = token:conservative }
 				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+				effect_update_empowered_advisor_traits = yes
 			}
 
 			modifier = {
@@ -88,6 +90,7 @@ ideas = {
 
 				set_variable = { cabinet_party = token:liberal }
 				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+				effect_update_empowered_advisor_traits = yes
 			}
 
 			modifier = {
@@ -117,6 +120,7 @@ ideas = {
 
 				set_variable = { cabinet_party = token:socialist }
 				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+				effect_update_empowered_advisor_traits = yes
 			}
 
 			modifier = {
@@ -147,6 +151,7 @@ ideas = {
 
 				set_variable = { cabinet_party = token:communist }
 				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+				effect_update_empowered_advisor_traits = yes
 			}
 
 			modifier = {

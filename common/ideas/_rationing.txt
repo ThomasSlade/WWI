@@ -3,25 +3,60 @@ ideas = {
 		law = yes
 		use_list_view = yes
 
-		no_rationing = {
-			cost = 150
+		free_market = {
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 			default = yes
 
 			available = {
 				OR = {
-					has_idea = price_controls
+					has_idea = regulated_market
 				}
 
-				set_temp_variable = { param_law = token:no_rationing }
+				set_temp_variable = { param_law = token:free_market }
 				trigger_cannot_decrease_rationing_law = no
+				trigger_cabinet_allows_law_change = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law = token:no_rationing }
+				set_temp_variable = { param_law = token:free_market }
+				effect_law_change_opposition = yes
+
+				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
+			}
+
+			modifier = {
+				consumer_goods_expected_value = 0.35
+				min_export = 0.5
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+
+		regulated_market = {
+			cost = 100
+			removal_cost = -1
+			cancel_if_invalid = no
+
+			available = {
+				OR = {
+					has_idea = free_market
+					has_idea = price_controls
+				}
+
+				set_temp_variable = { param_law = token:regulated_market }
+				trigger_cannot_decrease_rationing_law = no
+				trigger_cabinet_allows_law_change = yes
+				trigger_opposition_allows_law_change = yes
+				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
+			}
+
+			on_add = {
+				set_temp_variable = { param_law = token:regulated_market }
 				effect_law_change_opposition = yes
 
 				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
@@ -37,18 +72,19 @@ ideas = {
 		}
 
 		price_controls = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
 			available = {
 				OR = {
-					has_idea = no_rationing
-					has_idea = government_confiscation_0
+					has_idea = regulated_market
+					has_idea = civilian_rationing_0
 				}
 
 				set_temp_variable = { param_law = token:price_controls }
 				trigger_cannot_decrease_rationing_law = no
+				trigger_cabinet_allows_law_change = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
@@ -69,26 +105,27 @@ ideas = {
 			}
 		}
 
-		government_confiscation_0 = {
-			cost = 150
+		civilian_rationing_0 = {
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
 			available = {
 				OR = {
 					has_idea = price_controls
-					has_idea = government_distribution_0
-					has_idea = government_confiscation_1
+					has_idea = army_rationing_0
+					has_idea = civilian_rationing_1
 				}
 
-				set_temp_variable = { param_law = token:government_confiscation_0 }
+				set_temp_variable = { param_law = token:civilian_rationing_0 }
 				trigger_cannot_decrease_rationing_law = no
+				trigger_cabinet_allows_law_change = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law = token:government_confiscation_0 }
+				set_temp_variable = { param_law = token:civilian_rationing_0 }
 				effect_law_change_opposition = yes
 
 				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
@@ -101,26 +138,27 @@ ideas = {
 			}
 		}
 
-		government_distribution_0 = {
-			cost = 150
+		army_rationing_0 = {
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
 			available = {
 				OR = {
 					has_idea = price_controls
-					has_idea = government_confiscation_0
-					has_idea = government_distribution_1
+					has_idea = civilian_rationing_0
+					has_idea = army_rationing_1
 				}
 
-				set_temp_variable = { param_law = token:government_distribution_0 }
+				set_temp_variable = { param_law = token:army_rationing_0 }
 				trigger_cannot_decrease_rationing_law = no
+				trigger_cabinet_allows_law_change = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law = token:government_distribution_0 }
+				set_temp_variable = { param_law = token:army_rationing_0 }
 				effect_law_change_opposition = yes
 
 				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
@@ -132,26 +170,27 @@ ideas = {
 			}
 		}
 
-		government_confiscation_1 = {
-			cost = 150
+		civilian_rationing_1 = {
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
 			available = {
 				OR = {
-					has_idea = government_confiscation_0
-					has_idea = government_distribution_1
+					has_idea = civilian_rationing_0
+					has_idea = army_rationing_1
 					has_idea = harsh_rationing
 				}
 
-				set_temp_variable = { param_law = token:government_confiscation_1 }
+				set_temp_variable = { param_law = token:civilian_rationing_1 }
 				trigger_cannot_decrease_rationing_law = no
+				trigger_cabinet_allows_law_change = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law = token:government_confiscation_1 }
+				set_temp_variable = { param_law = token:civilian_rationing_1 }
 				effect_law_change_opposition = yes
 
 				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
@@ -164,26 +203,27 @@ ideas = {
 			}
 		}
 
-		government_distribution_1 = {
-			cost = 150
+		army_rationing_1 = {
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
 			available = {
 				OR = {
-					has_idea = government_distribution_0
-					has_idea = government_confiscation_1
+					has_idea = army_rationing_0
+					has_idea = civilian_rationing_1
 					has_idea = harsh_rationing
 				}
 
-				set_temp_variable = { param_law = token:government_distribution_1 }
+				set_temp_variable = { param_law = token:army_rationing_1 }
 				trigger_cannot_decrease_rationing_law = no
+				trigger_cabinet_allows_law_change = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}
 
 			on_add = {
-				set_temp_variable = { param_law = token:government_distribution_1 }
+				set_temp_variable = { param_law = token:army_rationing_1 }
 				effect_law_change_opposition = yes
 
 				effect_SOV_spend_3_tsar_favor_if_tsarist = yes
@@ -196,18 +236,19 @@ ideas = {
 		}
 
 		harsh_rationing = {
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			cancel_if_invalid = no
 
 			available = {
 				OR = {
-					has_idea = government_distribution_1
-					has_idea = government_confiscation_1
+					has_idea = army_rationing_1
+					has_idea = civilian_rationing_1
 				}
 
 				set_temp_variable = { param_law = token:harsh_rationing }
 				trigger_cannot_decrease_rationing_law = no
+				trigger_cabinet_allows_law_change = yes
 				trigger_opposition_allows_law_change = yes
 				trigger_SOV_requires_3_tsar_favor_if_tsarist = yes
 			}

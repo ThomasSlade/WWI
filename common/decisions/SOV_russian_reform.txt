@@ -22,8 +22,8 @@ decision_category_SOV_russian_reform = {
 		available = {
             NOT = {
             	OR = {
-            		has_idea = quitting_illegal
-            		has_idea = unions_illegal
+            		has_idea = limited_labour_freedoms
+            		has_idea = unions_marginalised
             	}
             }
         }

@@ -11,12 +11,15 @@ every_possible_country = {
 		}
 		is_dynamic_country = no
 	}
+	
 	generate_character = {
 		token_base = generic_dove
 		advisor = {
 			slot = political_advisor
 
-			traits = { dove }
+			traits = { trait_liberal dove }
+			on_add = { effect_add_advisor_party_effect = yes }
+			on_remove = { effect_remove_advisor_party_effect = yes }
 
 			ai_will_do = {
 				factor = 0
@@ -32,7 +35,9 @@ every_possible_country = {
 		advisor = {
 			slot = political_advisor
 
-			traits = { hawk }
+			traits = { trait_autocratic hawk }
+			on_add = { effect_add_advisor_party_effect = yes }
+			on_remove = { effect_remove_advisor_party_effect = yes }
 
 			ai_will_do = {
 				factor = 0
@@ -48,7 +53,9 @@ every_possible_country = {
 		advisor = {
 			slot = political_advisor
 
-			traits = { stewardly_treasurer }
+			traits = { trait_conservative stewardly_treasurer }
+			on_add = { effect_add_advisor_party_effect = yes }
+			on_remove = { effect_remove_advisor_party_effect = yes }
 			
 			ai_will_do = {
 				factor = 10
@@ -64,7 +71,9 @@ every_possible_country = {
 		advisor = {
 			slot = political_advisor
 
-			traits = { state_architect }
+			traits = { trait_socialist state_architect }
+			on_add = { effect_add_advisor_party_effect = yes }
+			on_remove = { effect_remove_advisor_party_effect = yes }
 			
 			ai_will_do = {
 				factor = 10
@@ -80,7 +89,9 @@ every_possible_country = {
 		advisor = {
 			slot = political_advisor
 
-			traits = { educative_chamberlain }
+			traits = { trait_liberal educative_chamberlain }
+			on_add = { effect_add_advisor_party_effect = yes }
+			on_remove = { effect_remove_advisor_party_effect = yes }
 			
 			ai_will_do = {
 				factor = 10
@@ -96,7 +107,9 @@ every_possible_country = {
 		advisor = {
 			slot = political_advisor
 
-			traits = { press_influencer }
+			traits = { trait_communist press_influencer }
+			on_add = { effect_add_advisor_party_effect = yes }
+			on_remove = { effect_remove_advisor_party_effect = yes }
 			
 			ai_will_do = {
 				factor = 10
@@ -112,7 +125,9 @@ every_possible_country = {
 		advisor = {
 			slot = political_advisor
 
-			traits = { diplomatic_encircler }
+			traits = { trait_conservative diplomatic_encircler }
+			on_add = { effect_add_advisor_party_effect = yes }
+			on_remove = { effect_remove_advisor_party_effect = yes }
 			
 			ai_will_do = {
 				factor = 10
@@ -128,7 +143,9 @@ every_possible_country = {
 		advisor = {
 			slot = political_advisor
 
-			traits = { arms_reformer }
+			traits = { trait_socialist arms_reformer }
+			on_add = { effect_add_advisor_party_effect = yes }
+			on_remove = { effect_remove_advisor_party_effect = yes }
 			
 			ai_will_do = {
 				factor = 10
@@ -144,7 +161,9 @@ every_possible_country = {
 		advisor = {
 			slot = political_advisor
 
-			traits = { public_works_tycoon }
+			traits = { trait_liberal public_works_tycoon }
+			on_add = { effect_add_advisor_party_effect = yes }
+			on_remove = { effect_remove_advisor_party_effect = yes }
 			
 			ai_will_do = {
 				factor = 10
@@ -160,7 +179,9 @@ every_possible_country = {
 		advisor = {
 			slot = political_advisor
 
-			traits = { delicate_mediator }
+			traits = { trait_communist delicate_mediator }
+			on_add = { effect_add_advisor_party_effect = yes }
+			on_remove = { effect_remove_advisor_party_effect = yes }
 			
 			ai_will_do = {
 				factor = 10

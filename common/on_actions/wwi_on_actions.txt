@@ -14,6 +14,8 @@ on_actions = {
 			GER = {
 				# on_startup has a scope of NONE so you have to scope into a random country to do things which are actually just global operations.
 				effect_setup_laws = yes
+				effect_setup_law_support = yes
+				effect_setup_empowered_advisor_traits = yes
 				effect_setup_offmap_states = yes
 			}
 

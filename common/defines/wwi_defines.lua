@@ -100,6 +100,8 @@ NDefines.NProduction.CAPITULATE_FUEL_RATIO = 0.2	-- How much fuel will be transf
 NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 25	-- Each level of airbase building multiplied by this, gives capacity (max operational value). Value is int. 1 for each airplane.
 NDefines.NBuildings.INFRASTRUCTURE_MUD_EFFECT = -0.4	-- multiplicative effect on mud growth for max infra
 
+NDefines.NCharacter.DEFAULT_PP_COST_FOR_POLITICAL_ADVISOR = 100
+
 NDefines.NSupply.INFRA_TO_SUPPLY = 0.5
 NDefines.NSupply.NODE_STARTING_PENALTY_PER_PROVINCE = 0.3
 NDefines.NSupply.NODE_ADDED_PENALTY_PER_PROVINCE = 0.4

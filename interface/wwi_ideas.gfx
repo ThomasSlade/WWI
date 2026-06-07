@@ -1,4 +1,9 @@
 spriteTypes = {
+	SpriteType = {
+		name = "GFX_idea_traits_strip"
+		texturefile = "gfx/interface/ideas/idea_traits_strip.dds"
+		noOfFrames = 6
+	}
 
 	# Generic
 	spriteType = {
@@ -454,24 +459,28 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_idea_forced_labour"
-		texturefile = "gfx/interface/ideas/laws/idea_wr_forced_labour.dds"
+		name = "GFX_idea_restricted_labour_freedoms"
+		texturefile = "gfx/interface/ideas/laws/idea_wr_restricted_labour_freedoms.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_quitting_illegal"
-		texturefile = "gfx/interface/ideas/laws/idea_wr_quitting_illegal.dds"
+		name = "GFX_idea_limited_labour_freedoms"
+		texturefile = "gfx/interface/ideas/laws/idea_wr_limited_labour_freedoms.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_unions_illegal"
-		texturefile = "gfx/interface/ideas/laws/idea_wr_unions_illegal.dds"
+		name = "GFX_idea_unions_marginalised"
+		texturefile = "gfx/interface/ideas/laws/idea_wr_unions_marginalised.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_wage_controls_0"
-		texturefile = "gfx/interface/ideas/laws/idea_wr_wage_controls_0.dds"
+		name = "GFX_idea_unions_legitimised"
+		texturefile = "gfx/interface/ideas/laws/idea_wr_unions_legitimised.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_wage_controls_1"
-		texturefile = "gfx/interface/ideas/laws/idea_wr_wage_controls_1.dds"
+		name = "GFX_idea_profit_controls_0"
+		texturefile = "gfx/interface/ideas/laws/idea_wr_profit_controls_0.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_profit_controls_1"
+		texturefile = "gfx/interface/ideas/laws/idea_wr_profit_controls_1.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_worker_collaboration_0"
@@ -483,28 +492,32 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_idea_no_rationing"
-		texturefile = "gfx/interface/ideas/laws/idea_rat_no_rationing.dds"
+		name = "GFX_idea_free_market"
+		texturefile = "gfx/interface/ideas/laws/idea_rat_free_market.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_regulated_market"
+		texturefile = "gfx/interface/ideas/laws/idea_rat_regulated_market.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_price_controls"
 		texturefile = "gfx/interface/ideas/laws/idea_rat_price_controls.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_government_confiscation_0"
-		texturefile = "gfx/interface/ideas/laws/idea_rat_government_confiscation_0.dds"
+		name = "GFX_idea_civilian_rationing_0"
+		texturefile = "gfx/interface/ideas/laws/idea_rat_civilian_rationing_0.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_government_confiscation_1"
-		texturefile = "gfx/interface/ideas/laws/idea_rat_government_confiscation_1.dds"
+		name = "GFX_idea_civilian_rationing_1"
+		texturefile = "gfx/interface/ideas/laws/idea_rat_civilian_rationing_1.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_government_distribution_0"
-		texturefile = "gfx/interface/ideas/laws/idea_rat_government_distribution_0.dds"
+		name = "GFX_idea_army_rationing_0"
+		texturefile = "gfx/interface/ideas/laws/idea_rat_army_rationing_0.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_government_distribution_1"
-		texturefile = "gfx/interface/ideas/laws/idea_rat_government_distribution_1.dds"
+		name = "GFX_idea_army_rationing_1"
+		texturefile = "gfx/interface/ideas/laws/idea_rat_army_rationing_1.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_harsh_rationing"

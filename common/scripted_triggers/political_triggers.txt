@@ -6,6 +6,105 @@ trigger_opposition_can_increase = {
 }
 
 # param_law: The potential new law
+trigger_cabinet_allows_law_change = {
+	OR = {
+		trigger_is_opposed_by_cabinet = no
+		trigger_is_endorsed_by_advisor = yes
+	}
+}
+
+# param_law: The potential new law
+trigger_is_endorsed_by_advisor = {
+	custom_trigger_tooltip = {
+		tooltip = is_endorsed_by_advisor_tt
+
+		meta_trigger = {
+			LAW_TYPE = "[?global._law_type@var:param_law.GetTokenKey]"
+
+			text = {
+				set_temp_variable = { param_current_law = law_[LAW_TYPE] }
+			}
+		}
+
+		OR = {
+			# Whether decreasing, increasing, or sidegrading law tier
+			any_of = {
+				array = global._law_endorse_always_by@var:param_law
+				value = endorsing_party
+			
+				meta_trigger = {
+					ENDORSING_PARTY_TRAIT = "trait_[?endorsing_party.GetTokenKey]"
+			
+					text = {
+						has_idea_with_trait = [ENDORSING_PARTY_TRAIT]
+					}
+				}
+			}
+
+			AND = {
+				# If decreasing law tier
+				check_variable = { global._tier@var:param_law < global._tier@var:param_current_law }
+				any_of = {
+					array = global._law_endorse_decrease_by@var:param_law
+					value = endorsing_party
+				
+					meta_trigger = {
+						ENDORSING_PARTY_TRAIT = "trait_[?endorsing_party.GetTokenKey]"
+				
+						text = {
+							has_idea_with_trait = [ENDORSING_PARTY_TRAIT]
+						}
+					}
+				}
+			}
+
+			AND = {
+				# Increasing law tier
+				check_variable = { global._tier@var:param_law > global._tier@var:param_current_law }
+				any_of = {
+					array = global._law_endorse_increase_by@var:param_law
+					value = endorsing_party
+				
+					meta_trigger = {
+						ENDORSING_PARTY_TRAIT = "trait_[?endorsing_party.GetTokenKey]"
+				
+						text = {
+							has_idea_with_trait = [ENDORSING_PARTY_TRAIT]
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# param_law: The potential new law
+trigger_is_opposed_by_cabinet = {
+	custom_trigger_tooltip = {
+		tooltip = is_opposed_by_cabinet_limit_tt
+
+		meta_trigger = {
+			LAW_TYPE = "[?global._law_type@var:param_law.GetTokenKey]"
+
+			text = {
+				set_temp_variable = { param_current_law = law_[LAW_TYPE] }
+			}
+		}
+
+		OR = {
+			AND = {
+				check_variable = { global._tier@var:param_law < global._tier@var:param_current_law }
+				is_in_array = { global._law_oppose_decrease@var:cabinet_party = param_law }
+			}
+			AND = {
+				check_variable = { global._tier@var:param_law > global._tier@var:param_current_law }
+				is_in_array = { global._law_oppose_increase@var:cabinet_party = param_law }
+			}
+		}
+	}
+}
+
+# param_law: The potential new law
 trigger_opposition_allows_law_change = {
 	meta_trigger = {
 		LAW_TYPE = "[?global._law_type@var:param_law.GetTokenKey]"

@@ -164,7 +164,7 @@ modifier_SOV_archimandrate_absent = {
 	local_supplies = -0.25
 }
 
-modifier_SOV_archimandrate_forced_labour = {
+modifier_SOV_archimandrate_restricted_labour_freedoms = {
 	icon = GFX_modifiers_generic_military_industry
 
 	recruitable_population = -0.5

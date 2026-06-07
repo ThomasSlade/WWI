@@ -10,6 +10,10 @@
   effect_can_change_alignment_later_tt: "§YAlignment§! can be changed to §Y[alignment_target.GetAdjective] Alignment§! through the §YDiplomatic Realignment§! decision."
   trigger_opposition_can_increase_tt: "Opposition is not at its maximum level"
   trigger_opposition_can_increase_tt_NOT: "Opposition is at its maximum level"
+  is_opposed_by_cabinet_limit_tt: "Is opposed by Cabinet"
+  is_opposed_by_cabinet_limit_tt_NOT: "Is not opposed by Cabinet"
+  is_endorsed_by_advisor_tt: "Is endorsed by an Advisor"
+  is_endorsed_by_advisor_tt_NOT: "Is not endorsed by an Advisor"
 
   trigger_cannot_decrease_manpower_law_tt: "Cannot decrease $mobiliation_laws$"
   trigger_cannot_decrease_manpower_law_tt_NOT: "Can decrease $mobiliation_laws$"
