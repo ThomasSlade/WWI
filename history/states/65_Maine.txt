@@ -30,7 +30,7 @@ state={
 	state_category = city
 	resources = {
 		coal = 2
-		copper = 1
+		copper = 6
 		tungsten = 6
 	}
 }

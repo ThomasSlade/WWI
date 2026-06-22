@@ -36,6 +36,6 @@ state={
 	state_category=town
 	resources = {
 		coal = 5
-		copper = 1
+		copper = 4
 	}
 }

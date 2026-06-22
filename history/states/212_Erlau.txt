@@ -25,7 +25,7 @@ state={
 	buildings_max_level_factor=1.000
 	state_category = town
 	resources = {
-		copper = 5
+		copper = 6
 		steel = 1
 	}
 }
