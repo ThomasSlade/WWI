@@ -211,3 +211,42 @@ effect_setup_offmap_states = {
 		add_dynamic_modifier = { modifier = modifier_offmap_state }
 	}
 }
+
+effect_update_devastation = {
+	every_state = {
+		if = {
+			limit = { NOT = { is_fully_controlled_by = owner } }
+
+			set_temp_variable = { num_destructive_divisions = 0 }
+
+			every_state_division = {
+				if = {
+					limit = {
+						OR = {
+							division_has_battalion_in_template = heavy_artillery_brigade
+							division_has_battalion_in_template = siege_artillery_brigade
+						}
+					}
+
+					add_to_temp_variable = { num_destructive_divisions = 1 }
+				}
+			}
+
+			if = { 
+				limit = { check_variable = { num_destructive_divisions > 3 } }
+				effect_apply_devastation = yes
+			}
+		}
+	}
+}
+
+effect_apply_devastation = {
+	add_province_modifier = {
+		static_modifiers = { flooded }
+		province = {
+			all_provinces = yes
+			limit_to_border = yes
+		}
+		days = 730
+	}
+}

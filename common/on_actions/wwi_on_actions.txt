@@ -48,6 +48,12 @@ on_actions = {
 		}
 	}
 
+	on_weekly_GER = {
+		effect = {
+			effect_update_devastation = yes
+		}
+	}
+
 	on_ruling_party_change = {
 		effect = {
 			# Keep standard influence-idea variables up to date.
