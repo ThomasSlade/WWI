@@ -69,12 +69,20 @@
 
   increase_opposition_tt: "Will §Rincrease§! [?opposition_party.GetColoredPartyName] Opposition\n"
   decrease_opposition_tt: "Will §Gdecrease§! [?opposition_party.GetColoredPartyName] Opposition\n"
-  law_oppose_increase_outline_tt: "Increasing to this law opposed by $OPPOSING_PARTY$\n"
-  law_oppose_decrease_outline_tt: "Decreasing to this law opposed by $OPPOSING_PARTY$\n"
-  law_oppose_always_outline_tt: "Always opposed by $OPPOSING_PARTY$"
-  law_endorse_increase_outline_tt: "Increasing to this law endorsed by $OPPOSING_PARTY$\n"
-  law_endorse_decrease_outline_tt: "Decreasing to this law endorsed by $OPPOSING_PARTY$\n"
+  law_oppose_increase_outline_tt: "Increasing law $OPPOSITION_TIER$ by $OPPOSING_PARTY$\n"
+  law_oppose_decrease_outline_tt: "Decreasing law $OPPOSITION_TIER$ by $OPPOSING_PARTY$\n"
+  law_oppose_always_outline_tt: "Law always $OPPOSITION_TIER$ by $OPPOSING_PARTY$\n"
+  law_endorse_increase_outline_tt: "Increasing law §GEndorsed§! by $OPPOSING_PARTY$\n"
+  law_endorse_decrease_outline_tt: "Decreasing law §GEndorsed§! by $OPPOSING_PARTY$\n"
   law_endorse_always_outline_tt: "Always endorsed by $OPPOSING_PARTY$"
+
+  # Last number signifies whether the opposition is currently active. Turn the text grey when it isn't.
+  opposition_tier_1_1: "§ROpposed§!"
+  opposition_tier_2_1: "§RStrongly Opposed§!"
+  opposition_tier_3_1: "§ROutright Opposed§!"
+  opposition_tier_1_0: "§gOpposed§!"
+  opposition_tier_2_0: "§gStrongly Opposed§!"
+  opposition_tier_3_0: "§gOutright Opposed§!"
 
   resurgent_opposition_will_pass_opposed_laws_tt: "§YCan pass laws opposed by this party§!"
   resurgent_opposition_will_not_pass_opposed_laws_tt: "§RCannot pass laws opposed by this party§!"
@@ -98,6 +106,10 @@
 
   # Effects
   effect_increase_left_opposition_or_move_opposition_left_tt: "§YOpposition will move to the left, or left-leaning Opposition will increase§!:"
+  effect_threat_thresholds_tt: "\nAt [?global.threat|%Y] World Tension, this Cabinet can pass laws even if $OPPOSITION_TIER$ to them."
+  effect_threat_thresholds_cannot_pass_opposed_tt: "\nAt [?global.threat|%Y] World Tension, this Cabinet cannot pass any $opposition_tier_1_1$ laws."
+  effect_threat_thresholds_list_opener_tt: "\nAble to pass:"
+  effect_threat_thresholds_list_tt: "    $OPPOSITION_TIER$ laws at [?$OPPOSITION_THRESHOLD$|%Y] World Tension"
 
   # Triggers
   trigger_has_recently_reformed_cabinet_tt: "Has recently §YReformed Cabinet§!"

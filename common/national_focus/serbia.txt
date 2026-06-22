@@ -1947,7 +1947,7 @@ focus_tree = {
 			GRE = { country_event = wwi_greece.1 }
 
 			add_named_threat = {
-				threat = 5
+				threat = 10
 				name = threat_serbia_war_with_the_ottomans
 			}
 		}

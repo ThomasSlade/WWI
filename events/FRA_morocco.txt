@@ -41,7 +41,7 @@ country_event = {
 		effect_boost_popularity_of_from_ideology_10 = yes
 
 		add_named_threat = {
-			threat = 5
+			threat = 10
 			name = threat_italy_accepted_prinetti_barrere_accord
 		}
 

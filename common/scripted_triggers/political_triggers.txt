@@ -78,34 +78,30 @@ trigger_is_endorsed_by_advisor = {
 	}
 }
 
-# param_law: The potential new law
-trigger_is_opposed_by_cabinet = {
-	custom_trigger_tooltip = {
-		tooltip = is_opposed_by_cabinet_limit_tt
-
-		meta_trigger = {
-			LAW_TYPE = "[?global._law_type@var:param_law.GetTokenKey]"
-
-			text = {
-				set_temp_variable = { param_current_law = law_[LAW_TYPE] }
-			}
-		}
-
-		OR = {
-			AND = {
-				check_variable = { global._tier@var:param_law < global._tier@var:param_current_law }
-				is_in_array = { global._law_oppose_decrease@var:cabinet_party = param_law }
-			}
-			AND = {
-				check_variable = { global._tier@var:param_law > global._tier@var:param_current_law }
-				is_in_array = { global._law_oppose_increase@var:cabinet_party = param_law }
-			}
-		}
+# out_opposition_tier: The highest opposition tier of law that the cabinet can currently pass, given World Tension.
+# 0 means no opposed laws can be passed.
+trigger_get_allowed_opposition_tier = {
+	set_temp_variable = { out_opposition_tier = 0 }
+	if = {
+		limit = { threat > oppose_2_threat_threshold }
+		set_temp_variable = { out_opposition_tier = 2 }
 	}
+	else_if = {
+		limit = { threat > oppose_1_threat_threshold }
+		set_temp_variable = { out_opposition_tier = 1 }
+	}
+	
+	always = yes
+}
+
+# param_opposition_tier
+trigger_is_opposition_tier_active = {
+	trigger_get_allowed_opposition_tier = yes
+	check_variable = { var = param_opposition_tier value = out_opposition_tier compare = greater_than_or_equals }
 }
 
 # param_law: The potential new law
-trigger_opposition_allows_law_change = {
+trigger_is_opposed_by_cabinet = {
 	meta_trigger = {
 		LAW_TYPE = "[?global._law_type@var:param_law.GetTokenKey]"
 
@@ -114,11 +110,86 @@ trigger_opposition_allows_law_change = {
 		}
 	}
 
+	set_temp_variable = { is_opposed = 0 }
+
+	if = {
+		limit = { check_variable = { global._tier@var:param_law < global._tier@var:param_current_law } }
+
+		if = {
+			limit = {
+				is_in_array = { global._law_oppose_1_decrease@var:cabinet_party = param_law }
+				set_temp_variable = { param_opposition_tier = 0 }
+				trigger_is_opposition_tier_active = yes
+			}
+			set_temp_variable = { is_opposed = 1 }
+		}
+		if = {
+			limit = {
+				is_in_array = { global._law_oppose_2_decrease@var:cabinet_party = param_law }
+				set_temp_variable = { param_opposition_tier = 1 }
+				trigger_is_opposition_tier_active = yes
+			}
+			set_temp_variable = { is_opposed = 1 }
+		}
+		if = {
+			limit = {
+				is_in_array = { global._law_oppose_3_decrease@var:cabinet_party = param_law }
+				set_temp_variable = { param_opposition_tier = 2 }
+				trigger_is_opposition_tier_active = yes
+			}
+			set_temp_variable = { is_opposed = 1 }
+		}
+	}
+	else_if = {
+		limit = { check_variable = { global._tier@var:param_law > global._tier@var:param_current_law } }
+
+		if = {
+			limit = {
+				is_in_array = { global._law_oppose_1_increase@var:cabinet_party = param_law }
+				set_temp_variable = { param_opposition_tier = 0 }
+				trigger_is_opposition_tier_active = yes
+			}
+			set_temp_variable = { is_opposed = 1 }
+		}
+		if = {
+			limit = {
+				is_in_array = { global._law_oppose_2_increase@var:cabinet_party = param_law }
+				set_temp_variable = { param_opposition_tier = 1 }
+				trigger_is_opposition_tier_active = yes
+			}
+			set_temp_variable = { is_opposed = 1 }
+		}
+		if = {
+			limit = {
+				is_in_array = { global._law_oppose_3_increase@var:cabinet_party = param_law }
+				set_temp_variable = { param_opposition_tier = 2 }
+				trigger_is_opposition_tier_active = yes
+			}
+			set_temp_variable = { is_opposed = 1 }
+		}
+	}
+
+	custom_trigger_tooltip = {
+		tooltip = is_opposed_by_cabinet_limit_tt
+		check_variable = { is_opposed = 1 }
+	}
+}
+
+# param_law: The potential new law
+trigger_opposition_allows_law_change = {
+	meta_trigger = {
+		LAW_TYPE = "[?global._law_type@var:param_law.GetTokenKey]"
+	
+		text = {
+			set_temp_variable = { param_current_law = law_[LAW_TYPE] }
+		}
+	}
+	
 	custom_trigger_tooltip = {
 		tooltip = will_not_exceed_opposition_limit_tt
 		if = {
 			limit = { check_variable = { opposition_level > 2 } }
-
+	
 			NOT = {
 				AND = {
 					check_variable = { global._tier@var:param_law < global._tier@var:param_current_law }
