@@ -298,14 +298,14 @@ defined_text = {
 
 	text = {
 		trigger = {
-			id = 227
+			state = 227
 		}
 		localization_key = "Viennese"
 	}
 
 	text = {
 		trigger = {
-			id = 30
+			state = 30
 		}
 		localization_key = "Parisian"
 	}

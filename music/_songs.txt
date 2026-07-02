@@ -1,4 +1,4 @@
-# WWI: Commenting out all references to vanilla game triggers (such as fascism). Will likely replace or adapt later.
+# WWI: Removing references to vanilla ideologies.
 
 music_station = "base_music"
 
@@ -56,7 +56,6 @@ music = {
 			factor = 2
 
 			has_war = no
-			has_government = democratic
 		}		
 	}	
 }
@@ -69,7 +68,6 @@ music = {
 			factor = 2
 
 			has_war = no
-			has_government = democratic
 		}		
 	}	
 }
@@ -82,7 +80,6 @@ music = {
 			factor = 2
 
 			has_war = no
-			#has_government = fascism
 		}		
 	}	
 }
@@ -95,7 +92,6 @@ music = {
 			factor = 2
 
 			has_war = no
-			#has_government = fascism
 		}		
 	}	
 }
@@ -134,7 +130,6 @@ music = {
 			factor = 2
 
 			has_war = yes
-			#has_government = fascism
 		}		
 	}	
 }
@@ -147,7 +142,6 @@ music = {
 			factor = 2
 
 			has_war = yes
-			#has_government = fascism
 		}		
 	}	
 }
@@ -160,7 +154,6 @@ music = {
 			factor = 2
 
 			has_war = yes
-			#has_government = fascism
 		}		
 	}	
 }
@@ -173,7 +166,6 @@ music = {
 			factor = 2
 
 			has_war = yes
-			#has_government = fascism
 		}		
 	}	
 }
@@ -186,7 +178,6 @@ music = {
 			factor = 2
 
 			has_war = yes
-			has_government = democratic
 		}		
 	}	
 }
@@ -199,7 +190,6 @@ music = {
 			factor = 2
 
 			has_war = yes
-			has_government = democratic
 		}		
 	}	
 }
@@ -212,7 +202,6 @@ music = {
 			factor = 2
 
 			has_war = no
-			has_government = communism
 		}		
 	}	
 }
@@ -225,7 +214,6 @@ music = {
 			factor = 2
 
 			has_war = no
-			has_government = communism
 		}		
 	}	
 }
@@ -238,7 +226,6 @@ music = {
 			factor = 2
 
 			has_war = no
-			has_government = communism
 		}		
 	}	
 }
@@ -252,7 +239,6 @@ music = {
 			factor = 2
 
 			has_war = yes
-			has_government = communism
 		}		
 	}	
 }
@@ -265,7 +251,6 @@ music = {
 			factor = 2
 
 			has_war = yes
-			has_government = communism
 		}		
 	}	
 }
@@ -278,7 +263,6 @@ music = {
 			factor = 2
 
 			has_war = yes
-			has_government = communism
 		}		
 	}	
 }

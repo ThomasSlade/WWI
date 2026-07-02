@@ -1,0 +1,21 @@
+# WWI: Only includes the most generic dynamic modifiers from the vanilla file. Most of them are content-specific.
+
+# WWI: This needs to be kept updated to the mod;s unique resources.
+sabotaged_resources = {
+	remove_trigger = { 
+		ROOT = {
+			has_resistance = no
+		}
+	}
+	
+	icon = GFX_modifiers_sabotaged_resource
+	
+	temporary_state_resource_oil = sabotaged_oil
+	temporary_state_resource_aluminium = sabotaged_aluminium
+	temporary_state_resource_rubber = sabotaged_rubber
+	temporary_state_resource_tungsten = sabotaged_tungsten
+	temporary_state_resource_steel = sabotaged_steel
+	temporary_state_resource_chromium = sabotaged_chromium
+	temporary_state_resource_coal = sabotaged_coal
+	temporary_state_resource_copper = sabotaged_copper
+}

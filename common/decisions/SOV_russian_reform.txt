@@ -69,7 +69,7 @@ decision_category_SOV_russian_reform = {
         }
 	}
 
-		decision_demobilize_ratniki = {
+	decision_demobilize_ratniki = {
 			visible = {
 				has_idea = idea_SOV_ratniki_conscripted
 			}
@@ -87,14 +87,17 @@ decision_category_SOV_russian_reform = {
 
 	        	modifier = {
 	        		add = -5
-	        		NOR = {
-	        			check_variable = { resource@oil > -20 }
-	        			check_variable = { resource@aluminium > -20 }
-	        			check_variable = { resource@rubber > -20 }
-	        			check_variable = { resource@tungsten > -20 }
-	        			check_variable = { resource@steel > -20 }
-	        			check_variable = { resource@chromium > -20 }
-	        		}
+	        		NOT = {
+	        			OR = {
+		        			check_variable = { resource@oil > -20 }
+		        			check_variable = { resource@aluminium > -20 }
+		        			check_variable = { resource@rubber > -20 }
+		        			check_variable = { resource@tungsten > -20 }
+		        			check_variable = { resource@steel > -20 }
+		        			check_variable = { resource@chromium > -20 }
+		        			check_variable = { resource@copper > -20 }
+		        		}
+		        	}
 	        	}
 	        }
 		}

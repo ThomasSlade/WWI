@@ -17,17 +17,19 @@ sub_units = {
 		categories = {
 			category_front_line
 			category_support_battalions
+			category_divisional_support_battalions
 			category_army
 			category_recon
 		}
 
 	
+		regimental = no
 		combat_width = 0
 	
 		#Size Definitions
 		max_strength = 2
 		max_organisation = 20
-		default_morale = 0.1
+		default_morale = 0.3
 		manpower = 750
 		training_time = 120
 
@@ -106,6 +108,7 @@ sub_units = {
 		categories = {
 			category_front_line
 			category_support_battalions
+			category_divisional_support_battalions
 			category_army
 			category_recon
 		}
@@ -115,12 +118,13 @@ sub_units = {
 			soft_attack = 0.10
 		}
 	
+		regimental = no
 		combat_width = 0
 	
 		#Size Definitions
 		max_strength 		= 2
 		max_organisation 	= 20
-		default_morale 		= 0.1
+		default_morale 		= 0.3
 		manpower 			= 750
 		training_time 		= 120
 
@@ -195,6 +199,7 @@ sub_units = {
 		categories = {
 			category_front_line
 			category_support_battalions
+			category_divisional_support_battalions
 			category_army
 			category_recon
 		}
@@ -204,12 +209,13 @@ sub_units = {
 			soft_attack = 0.10
 		}
 	
+		regimental = no
 		combat_width = 0
 	
 		#Size Definitions
 		max_strength = 2
 		max_organisation = 20
-		default_morale = 0.1
+		default_morale = 0.3
 		manpower = 750
 		training_time = 120
 
@@ -284,18 +290,20 @@ sub_units = {
 		categories = {
 			category_front_line
 			category_support_battalions
+			category_divisional_support_battalions
 			category_army
 			category_all_armor
 			category_recon
 		}
 
 	
+		regimental = no
 		combat_width = 0
 	
 		#Size Definitions
 		max_strength = 2
 		max_organisation = 20
-		default_morale = 0.1
+		default_morale = 0.3
 		manpower = 750
 		training_time = 120
 

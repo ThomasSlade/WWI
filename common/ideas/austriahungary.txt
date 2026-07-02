@@ -512,7 +512,7 @@ ideas = {
 			modifier = {
 				mobilization_laws_cost_factor = -0.33
 				economy_cost_factor = -0.33
-				trade_laws_cost_factor = -0.33
+				rationing_cost_factor = -0.33
 				command_power_gain_mult = 0.33
 				production_speed_industrial_complex_factor = 0.2
 			}

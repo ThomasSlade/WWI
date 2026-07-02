@@ -197,12 +197,12 @@ modifier_GER_SAX_disloyal_reserve_rights = {
 
 modifier_GER_HNS_loyal = {
 	staatenbund_consumer_goods_factor = rr_consumer_goods_factor_loyal
-	staatenbund_cindustrial_capacity_dockyard = rr_industrial_capacity_dockyard_loyal
+	staatenbund_industrial_capacity_dockyard = rr_industrial_capacity_dockyard_loyal
 }
 
 modifier_GER_HNS_disloyal = {
 	staatenbund_consumer_goods_factor = rr_consumer_goods_factor_disloyal
-	staatenbund_cindustrial_capacity_dockyard = rr_industrial_capacity_dockyard_disloyal
+	staatenbund_industrial_capacity_dockyard = rr_industrial_capacity_dockyard_disloyal
 }
 
 modifier_GER_HNS_loyal_reserve_rights = {

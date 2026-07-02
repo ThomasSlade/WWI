@@ -16,7 +16,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_western_zemstvo_bill
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		mutually_exclusive = { focus = SOV_cooperate_with_polish_nobility }
 		x = 8
 		y = 0
@@ -59,7 +59,7 @@ focus_tree = {
 	# Federal Russia Branch
 	focus = {
 		id = SOV_cooperate_with_polish_nobility
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		mutually_exclusive = { focus = SOV_western_zemstvo_bill }
 		x = -32
 		y = 0
@@ -148,7 +148,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_repeal_language_laws
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_western_zemstvo_bill focus = SOV_cooperate_with_polish_nobility }
 		mutually_exclusive = { focus = SOV_great_russification_programme }
 		x = 5
@@ -168,7 +168,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_baltic_autonomy
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_repeal_language_laws }
 		x = -3
 		y = 2
@@ -187,7 +187,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_autocephaly
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_repeal_language_laws }
 		x = 2
 		y = 1
@@ -206,7 +206,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_return_kholm
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_cooperate_with_polish_nobility }
 		x = 0
 		y = 1
@@ -225,7 +225,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_kingdom_of_poland
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_return_kholm }
 		x = 0
 		y = 2
@@ -244,7 +244,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_ukrainian_first_universal
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_autocephaly }
 		x = -3
 		y = 1
@@ -263,7 +263,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_belarusian_autonomy
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_ukrainian_first_universal focus = SOV_kingdom_of_poland focus = SOV_baltic_autonomy}
 		x = -2
 		y = 1
@@ -282,7 +282,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_special_transcaucasian_committee
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_autocephaly }
 		x = -1
 		y = 1
@@ -301,7 +301,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_cooperate_with_the_jadids
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_autocephaly }
 		mutually_exclusive = { focus = SOV_protect_ottoman_christians }
 		x = 0
@@ -321,7 +321,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_protect_ottoman_christians
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_autocephaly focus = SOV_romanov_pilgrimage }
 		mutually_exclusive = { focus = SOV_cooperate_with_the_jadids }
 		x = 2
@@ -341,7 +341,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_rights_of_the_nations_of_russia
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_kingdom_of_poland focus = SOV_ukrainian_first_universal focus = SOV_special_transcaucasian_committee focus = SOV_baltic_autonomy }
 		x = 0
 		y = 1
@@ -360,7 +360,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_great_russification_programme
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_western_zemstvo_bill focus = SOV_cooperate_with_polish_nobility }
 		mutually_exclusive = { focus = SOV_repeal_language_laws }
 		x = -25
@@ -379,7 +379,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_restyle_st_petersburg_cathedrals
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		mutually_exclusive = { focus = SOV_window_on_europe }
 		x = -12
 		y = 1
@@ -451,7 +451,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_window_on_europe
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		mutually_exclusive = { focus = SOV_restyle_st_petersburg_cathedrals }
 		x = -10
 		y = 1
@@ -488,7 +488,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_expand_st_petersburg_suburbs
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_window_on_europe }
 		x = 0
 		y = 1
@@ -555,7 +555,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_the_holy_city
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_restyle_st_petersburg_cathedrals }
 		x = 0
 		y = 1
@@ -585,7 +585,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_lake_ladoga_water_pipeline
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_expand_st_petersburg_suburbs focus = SOV_the_holy_city }
 		x = 0
 		y = 1
@@ -618,7 +618,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_romanov_pilgrimage
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_the_holy_city }
 		x = -7
 		y = 1
@@ -638,7 +638,7 @@ focus_tree = {
 	# Naval
 	focus = {
 		id = SOV_rebuild_the_navy
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		x = 3
 		y = 0
 		relative_position_id = SOV_romanov_pilgrimage
@@ -655,7 +655,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_baltic_fleet
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_rebuild_the_navy }
 		mutually_exclusive = { focus = SOV_black_sea_fleet }
 		x = 1
@@ -674,7 +674,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_pacific_fleet
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_baltic_fleet }
 		x = 0
 		y = 1
@@ -692,7 +692,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_secure_the_seas
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_pacific_fleet }
 		x = 0
 		y = 1
@@ -711,7 +711,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_black_sea_fleet
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_rebuild_the_navy }
 		mutually_exclusive = { focus = SOV_baltic_fleet }
 		x = -1
@@ -730,7 +730,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_racconigi_bargain
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_black_sea_fleet }
 		x = 0
 		y = 1
@@ -748,7 +748,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_the_straits_must_be_ours
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_racconigi_bargain focus = SOV_holy_peasant_diplomacy }
 		x = 0
 		y = 1
@@ -767,7 +767,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_secure_grain_exports
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_the_straits_must_be_ours }
 		x = -1
 		y = 1
@@ -786,7 +786,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_claim_trezibond
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_the_straits_must_be_ours }
 		x = 1
 		y = 1
@@ -806,7 +806,7 @@ focus_tree = {
 	# Empower Rasputin Branch
 	focus = {
 		id = SOV_empower_rasputin
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_romanov_pilgrimage }
 		x = 0
 		y = 1
@@ -833,7 +833,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_seduce_the_court
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_empower_rasputin }
 		x = -2
 		y = 1
@@ -853,7 +853,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_holy_peasant_diplomacy
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_empower_rasputin }
 		x = 0
 		y = 1
@@ -906,7 +906,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_cult_of_the_peasant
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_seduce_the_court }
 		prerequisite = { focus = SOV_holy_peasant_diplomacy }
 		x = 1
@@ -927,7 +927,7 @@ focus_tree = {
 	# Liberal Zemstvo Branch
 	focus = {
 		id = SOV_the_peasant_land_bank
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_western_zemstvo_bill focus = SOV_cooperate_with_polish_nobility }
 		x = 3
 		y = 1
@@ -947,7 +947,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_zemstvo_men
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_the_peasant_land_bank focus = SOV_russian_literacy }
 		x = 0
 		y = 1
@@ -971,7 +971,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_zemgor
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_zemstvo_men }
 		x = 0
 		y = 1
@@ -990,7 +990,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_the_third_element
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_zemgor }
 		x = 0
 		y = 1
@@ -1013,7 +1013,7 @@ focus_tree = {
 	# Underground Bolshevik / Industrial Branch
 	focus = {
 		id = SOV_russian_literacy
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_western_zemstvo_bill focus = SOV_cooperate_with_polish_nobility }
 		x = 9
 		y = 1
@@ -1032,7 +1032,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_industrialization
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_russian_literacy focus = SOV_the_peasant_land_bank }
 		x = 0
 		y = 1
@@ -1051,7 +1051,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_pravda
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_russian_literacy }
 		x = 3
 		y = 1
@@ -1070,7 +1070,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_recall_exiles
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_pravda }
 		x = 0
 		y = 4
@@ -1089,7 +1089,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_nizhny_novgorod_metalwork
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_resettle_peasants_eastward focus = SOV_industrialization }
 		x = -1
 		y = 3
@@ -1115,7 +1115,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_donets_coal_basin
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_the_peasant_land_bank focus = SOV_russian_literacy }
 		x = 4
 		y = 1
@@ -1134,7 +1134,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_russo_balt_wagon_factory
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_nizhny_novgorod_metalwork }
 		x = -3
 		y = 1
@@ -1169,7 +1169,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_sormovo_factory
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_nizhny_novgorod_metalwork }
 		x = 0
 		y = 1
@@ -1195,7 +1195,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_putilov_works
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_industrialization }
 		x = 1
 		y = 4
@@ -1235,7 +1235,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_resettle_peasants_eastward
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_the_peasant_land_bank focus = SOV_russian_literacy }
 		x = 2
 		y = 1
@@ -1254,7 +1254,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_ural_coal_and_steel
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_resettle_peasants_eastward }
 		x = 2
 		y = 1
@@ -1273,7 +1273,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_expand_the_ob_yenisei_canal
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_resettle_peasants_eastward }
 		x = 0
 		y = 1
@@ -1292,7 +1292,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_complete_the_trans_siberian_railway
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_ural_coal_and_steel focus = SOV_expand_the_ob_yenisei_canal }
 		x = -1
 		y = 1
@@ -1311,7 +1311,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_hospital_trains
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_complete_the_trans_siberian_railway focus = SOV_the_third_element }
 		x = -1
 		y = 1
@@ -1330,7 +1330,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_export_cheap_labour
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_the_peasant_land_bank }
 		x = -2
 		y = 1
@@ -1351,7 +1351,7 @@ focus_tree = {
 	# New Professionals Military Branch
 	focus = {
 		id = SOV_military_renaissance
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		x = -6
 		y = 2
 		relative_position_id = SOV_western_zemstvo_bill
@@ -1369,7 +1369,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_junker_professionals
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_military_renaissance }
 		x = -2
 		y = 2
@@ -1388,7 +1388,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_the_great_programme
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_junker_professionals }
 		x = 2
 		y = 1
@@ -1407,7 +1407,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_officers_artillery_school
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_the_great_programme }
 		x = 1
 		y = 1
@@ -1429,7 +1429,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_tula_arsenal
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_the_great_programme }
 		x = 0
 		y = 2
@@ -1464,7 +1464,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_oath_to_the_tsar
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_expand_st_petersburg_suburbs focus = SOV_the_holy_city }
 		x = -1
 		y = 2
@@ -1483,7 +1483,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_promise_land_to_soldiers
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_oath_to_the_tsar }
 		x = -2
 		y = 1
@@ -1505,7 +1505,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_liquidation_law
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_oath_to_the_tsar }
 		x = -1
 		y = 4
@@ -1524,7 +1524,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_black_hundreds
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_liquidation_law }
 		x = 0
 		y = 1
@@ -1543,7 +1543,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_army_of_farmers_and_cobblers
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_oath_to_the_tsar }
 		x = 0
 		y = 1
@@ -1562,7 +1562,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_cossacks
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_army_of_farmers_and_cobblers }
 		x = 0
 		y = 1
@@ -1581,7 +1581,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_tsar_tank
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_oath_to_the_tsar focus = SOV_junker_professionals }
 		x = 2
 		y = 1
@@ -1600,7 +1600,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_imperial_russian_air_service
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_the_great_programme focus = SOV_army_of_farmers_and_cobblers }
 		x = 2
 		y = 1
@@ -1619,7 +1619,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_dux_factory
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_imperial_russian_air_service }
 		x = -1
 		y = 1
@@ -1638,7 +1638,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_russky_vityaz
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_imperial_russian_air_service }
 		x = 1
 		y = 1
@@ -1657,7 +1657,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_ace_attaches
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_dux_factory focus = SOV_russky_vityaz }
 		x = 1
 		y = 1
@@ -1676,7 +1676,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_call_up_the_ratniki
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_army_of_farmers_and_cobblers focus = SOV_the_great_programme }
 		x = -1
 		y = 1
@@ -1695,7 +1695,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_special_council_for_artillery_supplies
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_military_renaissance }
 		x = 0
 		y = 1
@@ -1714,7 +1714,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_war_industries_committee
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_military_renaissance }
 		x = 2
 		y = 1
@@ -1733,7 +1733,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_the_labour_group
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_war_industries_committee focus = SOV_special_council_for_artillery_supplies }
 		x = -1
 		y = 1
@@ -1753,7 +1753,7 @@ focus_tree = {
 	# February Revolution Branch
 	focus = {
 		id = SOV_february_revolution
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_the_third_element }
 		prerequisite = { focus = SOV_the_labour_group }
 		mutually_exclusive = { focus = SOV_underground_soviets }
@@ -1775,7 +1775,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_peaceful_reform
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_the_third_element }
 		prerequisite = { focus = SOV_the_labour_group }
 		mutually_exclusive = { focus = SOV_underground_soviets }
@@ -1804,7 +1804,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_underground_soviets
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_recall_exiles }
 		prerequisite = { focus = SOV_sormovo_factory }
 		prerequisite = { focus = SOV_putilov_works }
@@ -1828,7 +1828,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_eight_hour_day
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_february_revolution focus = SOV_peaceful_reform }
 		x = -1
 		y = 1
@@ -1847,7 +1847,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_liberty_loan
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_eight_hour_day }
 		x = 0
 		y = 1
@@ -1866,7 +1866,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_remove_unreliables_from_the_capitol
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_eight_hour_day }
 		prerequisite = { focus = SOV_liquidation_law }
 		x = -2
@@ -1886,7 +1886,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_dislodge_the_clergy
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_february_revolution focus = SOV_underground_soviets }
 		x = 1
 		y = 1
@@ -1905,7 +1905,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_april_theses
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_underground_soviets }
 		x = 1
 		y = 1
@@ -1924,7 +1924,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_commisars
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_dislodge_the_clergy focus = SOV_april_theses focus = SOV_eight_hour_day }
 		x = 0
 		y = 1
@@ -1943,7 +1943,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_kronstadt_sailors
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_april_theses }
 		x = 0
 		y = 1
@@ -1962,7 +1962,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_first_machine_gun_regiment
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_april_theses }
 		x = 2
 		y = 1
@@ -1981,7 +1981,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_red_guard
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_first_machine_gun_regiment }
 		x = 0
 		y = 1
@@ -2000,7 +2000,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_october_revolution
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_kronstadt_sailors focus = SOV_first_machine_gun_regiment }
 		x = 0
 		y = 1
@@ -2019,7 +2019,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_dissolve_the_soviet
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_liberty_loan focus = SOV_remove_unreliables_from_the_capitol }
 		mutually_exclusive = { focus = SOV_kornilov_deal }
 		x = 0
@@ -2039,7 +2039,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_kornilov_deal
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_remove_unreliables_from_the_capitol }
 		mutually_exclusive = { focus = SOV_dissolve_the_soviet }
 		x = 0
@@ -2060,7 +2060,7 @@ focus_tree = {
 	# Diplomatic Branch
 	focus = {
 		id = SOV_children_of_russia
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		mutually_exclusive = { focus = SOV_durnovo_memorandum }
 		x = -29
 		y = 0
@@ -2097,7 +2097,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_durnovo_memorandum
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		mutually_exclusive = { focus = SOV_children_of_russia focus = SOV_franco_russian_staff_talks }
 		x = -5
 		y = 0
@@ -2116,7 +2116,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_franco_russian_staff_talks
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		mutually_exclusive = { focus = SOV_durnovo_memorandum }
 		x = -10
 		y = 0
@@ -2136,7 +2136,7 @@ focus_tree = {
 	# Shared Foreign Support Branch
 	focus = {
 		id = SOV_foreign_putilov_investment
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_durnovo_memorandum focus = SOV_franco_russian_staff_talks }
 		x = 4
 		y = 1
@@ -2155,7 +2155,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_european_courtly_ties
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_durnovo_memorandum focus = SOV_franco_russian_staff_talks }
 		x = 1
 		y = 1
@@ -2177,7 +2177,7 @@ focus_tree = {
 	# Pan-Slavist Branch
 	focus = {
 		id = SOV_align_montenegro
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_children_of_russia }
 		x = 3
 		y = 1
@@ -2214,7 +2214,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_align_serbia
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_children_of_russia }
 		mutually_exclusive = { focus = SOV_align_bulgaria }
 		x = 1
@@ -2253,7 +2253,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_align_bulgaria
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_children_of_russia focus = SOV_durnovo_memorandum }
 		mutually_exclusive = { focus = SOV_align_serbia focus = SOV_promise_transylvania }
 		x = -1
@@ -2292,7 +2292,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_promise_transylvania
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_children_of_russia }
 		mutually_exclusive = { focus = SOV_align_bulgaria }
 		x = -3
@@ -2330,7 +2330,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_pan_slavic_conference
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_align_montenegro focus = SOV_align_serbia focus = SOV_align_bulgaria }
 		x = 0
 		y = 3
@@ -2353,7 +2353,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_stage_slav_uprisings
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_pan_slavic_conference focus = SOV_rights_of_the_nations_of_russia }
 		x = 2
 		y = 1
@@ -2372,7 +2372,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_the_slavic_league
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_pan_slavic_conference }
 		x = 0
 		y = 1
@@ -2391,7 +2391,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_the_druzina
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_align_montenegro focus = SOV_align_serbia focus = SOV_align_bulgaria }
 		x = -2
 		y = 3
@@ -2414,7 +2414,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_thirteen_points
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_the_druzina focus = SOV_pan_slavic_conference }
 		x = 1
 		y = 2
@@ -2438,7 +2438,7 @@ focus_tree = {
 	# Pro-German Branch
 	focus = {
 		id = SOV_ratify_bjorko_treaty
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_durnovo_memorandum }
 		x = 0
 		y = 3
@@ -2457,7 +2457,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_end_german_protectionism
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_ratify_bjorko_treaty }
 		x = 2
 		y = 1
@@ -2477,7 +2477,7 @@ focus_tree = {
 	# Pro French Branch
 	focus = {
 		id = SOV_franco_russian_railway_loan
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_franco_russian_staff_talks }
 		x = 0
 		y = 3
@@ -2496,7 +2496,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_murmansk_railway
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_franco_russian_railway_loan }
 		x = -2
 		y = 1
@@ -2516,7 +2516,7 @@ focus_tree = {
 	# Pro / Anti British Decision
 	focus = {
 		id = SOV_undermine_anglo_russian_convention
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_franco_russian_railway_loan focus = SOV_ratify_bjorko_treaty }
 		mutually_exclusive = { focus = SOV_anglo_russian_naval_talks }
 		x = 0
@@ -2536,7 +2536,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_anglo_russian_naval_talks
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_franco_russian_railway_loan focus = SOV_ratify_bjorko_treaty }
 		mutually_exclusive = { focus = SOV_undermine_anglo_russian_convention }
 		x = 5
@@ -2557,7 +2557,7 @@ focus_tree = {
 	# Pro British Branch
 	focus = {
 		id = SOV_balmoral_agreement
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_anglo_russian_naval_talks }
 		x = 0
 		y = 1
@@ -2576,7 +2576,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_black_sea_investment
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_anglo_russian_naval_talks }
 		x = 1
 		y = 3
@@ -2595,7 +2595,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_dissolve_the_majlis
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_anglo_russian_naval_talks focus = SOV_undermine_anglo_russian_convention }
 		x = -2
 		y = 1
@@ -2615,7 +2615,7 @@ focus_tree = {
 	# Anti British Branch
 	focus = {
 		id = SOV_strengthen_the_shah
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_dissolve_the_majlis }
 		prerequisite = { focus = SOV_undermine_anglo_russian_convention }
 		x = -1
@@ -2635,7 +2635,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_trans_persian_railway
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_strengthen_the_shah }
 		x = 0
 		y = 1
@@ -2654,7 +2654,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_arm_tibet
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_undermine_anglo_russian_convention }
 		x = 0
 		y = 1
@@ -2673,7 +2673,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_bribe_emir_of_afghanistan
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_arm_tibet }
 		x = 0
 		y = 1
@@ -2692,7 +2692,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_duhamel_plan
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_arm_tibet }
 		x = -2
 		y = 1
@@ -2711,7 +2711,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_landing_effort
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_black_sea_investment focus = SOV_duhamel_plan }
 		x = 0
 		y = 2
@@ -2730,7 +2730,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_invade_india
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SOV_strengthen_the_shah focus = SOV_bribe_emir_of_afghanistan focus = SOV_duhamel_plan }
 		x = -2
 		y = 1

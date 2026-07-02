@@ -16,7 +16,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_dummy
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		x = 0
 		y = 0
 		cost = 10
@@ -34,7 +34,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_occupy_fes
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = FRA_dummy }
 		x = 0
 		y = 1
@@ -69,7 +69,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_revise_doctrine
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		x = 2
 		y = 0
 		cost = 5

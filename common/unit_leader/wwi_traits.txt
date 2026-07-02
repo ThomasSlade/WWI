@@ -70,8 +70,8 @@ leader_traits = {
 		trait_type = personality_trait
 
 		modifier = {
-			modifier_army_sub_unit_field_artillery_brigade_attack_factor = 0.15
-			modifier_army_sub_unit_heavy_artillery_brigade_attack_factor = 0.15
+			modifier_field_artillery_brigade_attack_factor = 0.15
+			modifier_heavy_artillery_brigade_attack_factor = 0.15
 		}
 	}
 
@@ -80,8 +80,8 @@ leader_traits = {
 		trait_type = personality_trait
 
 		modifier = {
-			modifier_army_sub_unit_heavy_artillery_brigade_attack_factor = 0.25
-			modifier_army_sub_unit_heavy_artillery_brigade_defence_factor = 0.1
+			modifier_heavy_artillery_brigade_attack_factor = 0.25
+			modifier_heavy_artillery_brigade_defence_factor = 0.1
 		}
 
 		modifier = {

@@ -3,7 +3,16 @@
 music_station = "base_music"
 
 music = {
-	song = "Aggression"
+	song = "claustrophobic_march"
+
+	chance = {
+		factor = 1
+	}
+
+}
+
+music = {
+	song = "communist_america"
 
 	chance = {
 		factor = 1
@@ -11,7 +20,7 @@ music = {
 }
 
 music = {
-	song = "Escalation"
+	song = "confederate_flags"
 
 	chance = {
 		factor = 1
@@ -19,7 +28,7 @@ music = {
 }
 
 music = {
-	song = "Retribution"
+	song = "democratic_movements"
 
 	chance = {
 		factor = 1

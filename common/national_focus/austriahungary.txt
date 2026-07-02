@@ -17,7 +17,7 @@ focus_tree = {
 	### Political Tree ###
 	focus = {
 		id = AUS_acknowledge_agram_trials_blunder
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		mutually_exclusive = { focus = AUS_disenfranchise_croatian_serbs }
 		x = 0
 		y = 0
@@ -42,7 +42,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_disenfranchise_croatian_serbs
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		mutually_exclusive = { focus = AUS_acknowledge_agram_trials_blunder }
 		x = -2
 		y = 0
@@ -61,7 +61,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_expand_the_military_chancellry
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_acknowledge_agram_trials_blunder focus = AUS_disenfranchise_croatian_serbs }
 		x = -1
 		y = 1
@@ -83,7 +83,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_general_staff_report
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_expand_the_military_chancellry  }
 		x = 0
 		y = 1
@@ -106,7 +106,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_establish_war_surveilance_office
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_general_staff_report  }
 		x = -1
 		y = 2
@@ -130,7 +130,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_kinder_aufs_land
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_establish_war_surveilance_office  }
 		x = -1
 		y = 1
@@ -154,7 +154,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_exchange_ethnic_garrisons
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_establish_war_surveilance_office  }
 		x = -3
 		y = 1
@@ -180,7 +180,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_replace_statthalters_with_generals
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_establish_war_surveilance_office focus = AUS_suspend_the_bosnian_constitution }
 		x = -5
 		y = 1
@@ -204,7 +204,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_steyr_arms
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_general_staff_report  }
 		x = 1
 		y = 1
@@ -239,7 +239,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_expand_erzberg_mines
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_steyr_arms focus = AUS_the_pionier_kadettenschule }
 		x = 1
 		y = 1
@@ -262,7 +262,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_kaisermanover
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_expand_the_military_chancellry  }
 		x = 5
 		y = 1
@@ -282,7 +282,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_the_artilleriekadettenschule
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_kaisermanover  }
 		x = 0
 		y = 1
@@ -305,7 +305,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_the_pionier_kadettenschule
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_kaisermanover  }
 		x = -2
 		y = 1
@@ -328,7 +328,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_pension_off_inept_officers
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_kaisermanover  }
 		x = 2
 		y = 1
@@ -348,7 +348,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_panzerautomobil_commission
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_pension_off_inept_officers  }
 		x = 1
 		y = 1
@@ -371,7 +371,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_fund_burstyns_machine
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_pension_off_inept_officers  }
 		prerequisite = { focus = AUS_the_artilleriekadettenschule  }
 		x = -1
@@ -395,7 +395,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_imperial_visit_to_airshow
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_general_staff_report  }
 		x = -2
 		y = 1
@@ -414,7 +414,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_the_seeflugwesen
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_imperial_visit_to_airshow focus = AUS_littoral_naval_schools }
 		x = -1
 		y = 1
@@ -460,7 +460,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_abolish_bosnian_serfdom
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_acknowledge_agram_trials_blunder focus = AUS_disenfranchise_croatian_serbs }
 		available = {
 			OR = {
@@ -517,7 +517,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_suspend_the_bosnian_constitution
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_acknowledge_agram_trials_blunder focus = AUS_disenfranchise_croatian_serbs }
 		available = {
 			OR = {
@@ -547,7 +547,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_grant_bosnia_to_hungary
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_suspend_the_bosnian_constitution focus = AUS_abolish_bosnian_serfdom }
 		mutually_exclusive = { focus = AUS_expand_bosnian_railways }
 		x = 0
@@ -578,7 +578,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_expand_bosnian_railways
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_suspend_the_bosnian_constitution focus = AUS_abolish_bosnian_serfdom }
 		mutually_exclusive = { focus = AUS_grant_bosnia_to_hungary }
 		x = 2
@@ -654,7 +654,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_bosnian_komitadji
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_abolish_bosnian_serfdom }
 		x = -2
 		y = 1
@@ -685,7 +685,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_pula_and_cattaro_shipyards
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_expand_the_military_chancellry }
 		mutually_exclusive = { focus = AUS_purchase_italian_neutrality }
 		x = -4
@@ -728,7 +728,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_littoral_naval_schools
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_pula_and_cattaro_shipyards }
 		x = 0
 		y = 1
@@ -755,7 +755,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_purchase_italian_neutrality
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_expand_the_military_chancellry }
 		mutually_exclusive = { focus = AUS_pula_and_cattaro_shipyards }
 		x = -2
@@ -801,7 +801,7 @@ focus_tree = {
 	### Foreign Policy Branch ###
 	focus = {
 		id = AUS_matshenko_memorandum
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		x = 18
 		y = 5
 		cost = 10
@@ -818,7 +818,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_mensdorff_mission
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_matshenko_memorandum }
 		mutually_exclusive = { focus = AUS_the_blank_cheque }
 		x = 0
@@ -848,7 +848,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_preempt_albanian_independence
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_the_blank_cheque focus = AUS_mensdorff_mission }
 		mutually_exclusive = { focus = AUS_strengthen_the_ottomans }
 		x = -4
@@ -950,7 +950,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_blockade_fleet
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_preempt_albanian_independence focus = AUS_strengthen_the_ottomans }
 		x = 1
 		y = 1
@@ -978,7 +978,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_strengthen_the_ottomans
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_mensdorff_mission focus = AUS_the_blank_cheque }
 		mutually_exclusive = { focus = AUS_preempt_albanian_independence }
 		x = -2
@@ -1013,7 +1013,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_secure_albania
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_preempt_albanian_independence }
 		x = -1
 		y = 1
@@ -1050,7 +1050,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_anglo_austrian_naval_treaty
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_mensdorff_mission }
 		x = 0
 		y = 2
@@ -1089,7 +1089,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_uphold_the_concert_of_europe
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_anglo_austrian_naval_treaty focus = AUS_strengthen_the_ottomans focus = AUS_placate_romania }
 		mutually_exclusive = { focus = AUS_restore_austrian_preeminence }
 		x = 1
@@ -1134,7 +1134,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_restore_austrian_preeminence
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_strengthen_the_ottomans }
 		mutually_exclusive = { focus = AUS_uphold_the_concert_of_europe }
 		x = -1
@@ -1179,7 +1179,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_invite_britain
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_uphold_the_concert_of_europe focus = AUS_restore_austrian_preeminence }
 		x = -1
 		y = 1
@@ -1208,7 +1208,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_invite_the_ottomans
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_strengthen_the_ottomans }
 		prerequisite = { focus = AUS_uphold_the_concert_of_europe focus = AUS_restore_austrian_preeminence }
 		x = -3
@@ -1238,7 +1238,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_invite_romania
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_placate_romania }
 		prerequisite = { focus = AUS_uphold_the_concert_of_europe focus = AUS_restore_austrian_preeminence }
 		mutually_exclusive = { focus = AUS_invite_bulgaria }
@@ -1269,7 +1269,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_invite_bulgaria
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_goad_bulgaria_into_war focus = AUS_uphold_the_concert_of_europe focus = AUS_restore_austrian_preeminence }
 		mutually_exclusive = { focus = AUS_invite_romania }
 		x = 7
@@ -1299,7 +1299,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_buy_orient_railway_shares
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_matshenko_memorandum }
 		x = 4
 		y = 1
@@ -1328,7 +1328,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_complete_the_novi_pazar_line
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_buy_orient_railway_shares }
 		x = 0
 		y = 1
@@ -1447,7 +1447,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_goad_bulgaria_into_war
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_buy_orient_railway_shares }
 		mutually_exclusive = { focus = AUS_obrenovic_pretender }
 		x = 4
@@ -1485,7 +1485,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_obrenovic_pretender
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_buy_orient_railway_shares }
 		mutually_exclusive = { focus = AUS_goad_bulgaria_into_war }
 		x = 2
@@ -1513,7 +1513,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_restore_the_sajkasi
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_obrenovic_pretender }
 		x = 0
 		y = 1
@@ -1537,7 +1537,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_garrison_the_sanjak
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_complete_the_novi_pazar_line }
 		x = 0
 		y = 1
@@ -1599,7 +1599,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_secure_salonika
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_garrison_the_sanjak focus = AUS_goad_bulgaria_into_war }
 		x = -1
 		y = 2
@@ -1678,7 +1678,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_negotiate_transylvania
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_buy_orient_railway_shares focus = AUS_mensdorff_mission }
 		x = -2
 		y = 1
@@ -1697,7 +1697,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_romanian_grain
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = {  focus = AUS_negotiate_transylvania }
 		x = 1
 		y = 2
@@ -1716,7 +1716,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_placate_romania
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_negotiate_transylvania }
 		x = 0
 		y = 1
@@ -1769,7 +1769,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_reassert_south_german_influence
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_invite_the_ottomans focus = AUS_invite_britain focus = AUS_invite_romania focus = AUS_invite_bulgaria }
 		x = 0
 		y = 1
@@ -1799,7 +1799,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_war_with_germany
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_reassert_south_german_influence }
 		x = 0
 		y = 1
@@ -1863,7 +1863,7 @@ focus_tree = {
 	### Root of the Reform Tree ###
 	focus = {
 		id = AUS_challenge_the_1867_compromise
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_general_staff_report }
 		x = 0
 		y = 3
@@ -1883,7 +1883,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_galician_compromise
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_challenge_the_1867_compromise }
 		x = 1
 		y = 1
@@ -1902,7 +1902,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_ruthenian_university
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_galician_compromise }
 		x = 4
 		y = 1
@@ -1938,7 +1938,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_ruthenian_food_purchasing_agencies
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_ruthenian_university }
 		x = -1
 		y = 1
@@ -1957,7 +1957,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_the_graycoats
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_ruthenian_university }
 		x = 0
 		y = 3
@@ -2028,7 +2028,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_the_polish_legion
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_galician_compromise }
 		x = 6
 		y = 1
@@ -2056,7 +2056,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_ministries_of_welfare_and_food
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_ruthenian_university focus = AUS_the_polish_legion }
 		x = 1
 		y = 1
@@ -2076,7 +2076,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_afford_south_slav_press_freedoms
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_challenge_the_1867_compromise }
 		x = -1
 		y = 1
@@ -2096,7 +2096,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_balkanstreitkrafte
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_challenge_the_1867_compromise }
 		x = -5
 		y = 1
@@ -2121,7 +2121,7 @@ focus_tree = {
 	# This is where Franz Ferdinand is likely to get shot.
 	focus = {
 		id = AUS_imperial_visit_to_bosnia
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_galician_compromise focus = AUS_afford_south_slav_press_freedoms }
 		x = 1
 		y = 2
@@ -2157,7 +2157,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_invest_in_bosnia
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_imperial_visit_to_bosnia }
 		x = 0
 		y = 2
@@ -2215,7 +2215,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_royal_croatian_home_guard
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_galician_compromise }
 		x = 1
 		y = 1
@@ -2247,7 +2247,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_win_croatian_support
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_royal_croatian_home_guard }
 		x = 0
 		y = 1
@@ -2270,7 +2270,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_croatian_naval_experience
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_win_croatian_support focus = AUS_imperial_visit_to_bosnia }
 		x = 1
 		y = 1
@@ -2295,7 +2295,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_negotiate_croatia
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_win_croatian_support focus = AUS_imperial_visit_to_bosnia }
 		x = -1
 		y = 1
@@ -2314,7 +2314,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_croat_parliament
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_negotiate_croatia }
 		x = 1
 		y = 1
@@ -2350,7 +2350,7 @@ focus_tree = {
 	# Austrian Nationalist Branch
 	focus = {
 		id = AUS_empower_deutscher_nationalverband
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_challenge_the_1867_compromise }
 		x = 10
 		y = 1
@@ -2375,7 +2375,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_viennese_nepotism
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_empower_deutscher_nationalverband }
 		x = -1
 		y = 1
@@ -2449,7 +2449,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_summon_the_standschutzen
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_empower_deutscher_nationalverband }
 		x = 1
 		y = 1
@@ -2468,7 +2468,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_the_blank_cheque
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_matshenko_memorandum }
 		mutually_exclusive = { focus = AUS_mensdorff_mission }
 		x = -5
@@ -2504,7 +2504,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_rail_import_submarines
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_the_blank_cheque }
 		x = -1
 		y = 1
@@ -2534,7 +2534,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_submarine_fleet
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_rail_import_submarines }
 		x = -1
 		y = 2
@@ -2558,7 +2558,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_adriatic_fleet
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_submarine_fleet focus = AUS_blockade_fleet }
 		x = 2
 		y = 1
@@ -2620,7 +2620,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_austrian_german_economic_union
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_empower_deutscher_nationalverband }
 		prerequisite = { focus = AUS_the_blank_cheque }
 		x = 0
@@ -2641,7 +2641,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_krakow_supreme_national_committee
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_empower_deutscher_nationalverband focus = AUS_the_polish_legion }
 		x = -2
 		y = 4
@@ -2721,7 +2721,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_regain_the_littoral
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_croatian_trialism }
 		mutually_exclusive = { focus = AUS_ships_for_industry }
 		x = -1
@@ -2763,7 +2763,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_ships_for_industry
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_croatian_trialism }
 		mutually_exclusive = { focus = AUS_regain_the_littoral }
 		x = 1
@@ -2862,7 +2862,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_give_away_bukovina
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_polish_trialism }
 		x = 0
 		y = 1
@@ -2890,7 +2890,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_oktroi
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_croat_parliament focus = AUS_krakow_supreme_national_committee }
 		x = 2
 		y = 1
@@ -2910,7 +2910,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_easter_demands
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_croat_parliament focus = AUS_krakow_supreme_national_committee }
 		x = 4
 		y = 1
@@ -2930,7 +2930,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_cast_minorities_from_the_reichsrat
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_oktroi }
 		prerequisite = { focus = AUS_easter_demands }
 		x = 1
@@ -2962,7 +2962,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_erode_hungarian_influence
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_cast_minorities_from_the_reichsrat focus = AUS_austrian_german_economic_union }
 		x = 4
 		y = 1
@@ -3014,7 +3014,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_foster_danube_industry
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_challenge_the_1867_compromise focus = AUS_grant_bosnia_to_hungary }
 		x = -9
 		y = 1
@@ -3095,7 +3095,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_the_ZAMG
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_foster_danube_industry }
 		x = -2
 		y = 1
@@ -3121,7 +3121,7 @@ focus_tree = {
 	# Hungarian Concessions Branch
 	focus = {
 		id = AUS_economic_placations_to_hungary
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_foster_danube_industry }
 		x = 0
 		y = 1
@@ -3140,7 +3140,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_lift_customs_duty_on_hungarian_imports
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_foster_danube_industry }
 		x = 2
 		y = 1
@@ -3160,7 +3160,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_formalise_army_slavic
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_afford_south_slav_press_freedoms }
 		mutually_exclusive = { focus = AUS_endorse_magyarization }
 		x = -5
@@ -3183,7 +3183,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_endorse_magyarization
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_economic_placations_to_hungary }
 		mutually_exclusive = { focus = AUS_formalise_army_slavic }
 		x = 0
@@ -3204,7 +3204,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_expand_the_neuner_programme
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_endorse_magyarization }
 		x = 0
 		y = 3
@@ -3224,7 +3224,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_guarantee_hungarian_privileges
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_expand_the_neuner_programme focus = AUS_enfranchise_cisleithanian_minorities }
 		mutually_exclusive = { focus = AUS_universal_suffrage_across_the_empire }
 		x = 5
@@ -3441,7 +3441,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_request_national_representatives
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_win_czech_support focus = AUS_imperial_visit_to_bosnia focus = AUS_grant_amnesty_to_dissidents }
 		x = -1
 		y = 1
@@ -3468,7 +3468,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_enfranchise_cisleithanian_minorities
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_request_national_representatives }
 		x = -2
 		y = 2
@@ -3488,7 +3488,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_enfranchise_veterans
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_request_national_representatives }
 		x = 0
 		y = 2
@@ -3512,7 +3512,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_universal_suffrage_across_the_empire
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_enfranchise_cisleithanian_minorities }
 		prerequisite = { focus = AUS_enfranchise_veterans }
 		mutually_exclusive = { focus = AUS_guarantee_hungarian_privileges }
@@ -3537,7 +3537,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_subjugate_hungary
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_erode_hungarian_influence focus = AUS_universal_suffrage_across_the_empire }
 		x = 5
 		y = 1
@@ -3636,7 +3636,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_minority_universities
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_united_states_of_greater_austria focus = AUS_croatian_trialism_bypass focus = AUS_polish_trialism_bypass }
 		x = 0
 		y = 1
@@ -3655,7 +3655,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_war_with_italy
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_restore_austrian_empire focus = AUS_croatian_trialism_bypass }
 		x = 1
 		y = 1
@@ -3674,7 +3674,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_war_with_romania
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_austro_hungarian_parliament }
 		x = 0
 		y = 1
@@ -3693,7 +3693,7 @@ focus_tree = {
 
 	focus = {
 		id = AUS_war_with_russia
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = AUS_restore_austrian_empire focus = AUS_united_states_of_greater_austria }
 		x = -6
 		y = 1

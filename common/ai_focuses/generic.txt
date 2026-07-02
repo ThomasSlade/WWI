@@ -1,4 +1,4 @@
-# WWI: Direct copy of the vanilla HOI generic ai_focus file.
+# WWI: Vanilla copy
 
 ai_focus_defense = {
 	research = {

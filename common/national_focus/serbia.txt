@@ -52,7 +52,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_moderate_nationalist_rhetoric
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_support_the_narodna_odbrana }
 		mutually_exclusive = { focus = SER_follow_the_independent_radicals }
 		x = -1
@@ -73,7 +73,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_follow_the_independent_radicals
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_support_the_narodna_odbrana }
 		mutually_exclusive = { focus = SER_moderate_nationalist_rhetoric }
 		x = 1
@@ -97,7 +97,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_retire_the_may_coup_conspirators
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_moderate_nationalist_rhetoric focus = SER_follow_the_independent_radicals }
 		x = -2
 		y = 1
@@ -118,7 +118,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_build_a_conciliatory_cabinet
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_moderate_nationalist_rhetoric focus = SER_follow_the_independent_radicals }
 		x = 0
 		y = 1
@@ -171,7 +171,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_revise_education_budget
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_moderate_nationalist_rhetoric focus = SER_follow_the_independent_radicals }
 		x = 2
 		y = 1
@@ -200,7 +200,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_expand_the_grande_ecole
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_revise_education_budget }
 		prerequisite = { focus = SER_build_a_conciliatory_cabinet }
 		x = -1
@@ -224,7 +224,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_ban_publications_of_the_nacertanije
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_retire_the_may_coup_conspirators }
 		mutually_exclusive = {
 			focus = SER_unite_the_south_slavs
@@ -250,7 +250,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_root_out_the_black_hand
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_ban_publications_of_the_nacertanije }
 		mutually_exclusive = {
 			focus = SER_seize_belgrade_for_the_black_hand
@@ -274,7 +274,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_inflamatory_articles_in_the_pijemont
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_moderate_nationalist_rhetoric focus = SER_follow_the_independent_radicals }
 		x = 2
 		y = 1
@@ -294,7 +294,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_covert_cell_training
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_inflamatory_articles_in_the_pijemont }
 		x = 0
 		y = 1
@@ -315,7 +315,7 @@ focus_tree = {
 	# Black Hand Serbia Tree #
 	focus = {
 		id = SER_seize_belgrade_for_the_black_hand
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_covert_cell_training }
 		mutually_exclusive = { focus = SER_root_out_the_black_hand }
 		mutually_exclusive = { focus = SER_royal_visit_to_paris }
@@ -342,7 +342,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_assassinate_heads_of_state
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_seize_belgrade_for_the_black_hand }
 		x = 0
 		y = 1
@@ -361,7 +361,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_montenegro_coup
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_assassinate_heads_of_state }
 		x = -2
 		y = 1
@@ -403,7 +403,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_albania_coup
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_assassinate_heads_of_state }
 		x = 0
 		y = 1
@@ -499,7 +499,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_invite_entente_dignitaries
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_seek_new_markets focus = SER_concede_the_pig_war }
 		x = 1
 		y = 1
@@ -567,7 +567,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_royal_visit_to_paris
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_seek_new_markets }
 		mutually_exclusive = { focus = SER_seize_belgrade_for_the_black_hand }
 		x = -1
@@ -616,7 +616,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_french_finance
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_royal_visit_to_paris }
 		x = 0
 		y = 1
@@ -669,7 +669,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_french_military_contracts
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_french_finance focus = SER_fight_like_lions }
 		x = 1
 		y = 1
@@ -728,7 +728,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_russian_weapon_imports
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_invite_entente_dignitaries }
 		x = 0
 		y = 1
@@ -764,7 +764,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_fight_like_lions
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_russian_weapon_imports }
 		x = 0
 		y = 2
@@ -783,7 +783,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_danube_adriatic_railway
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_russian_weapon_imports focus = SER_foreign_railway_loans }
 		x = 1
 		y = 1
@@ -823,7 +823,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_pursue_entente_alliance
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_french_military_contracts focus = SER_root_out_the_black_hand }
 		x = 0
 		y = 3
@@ -873,7 +873,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_rearm_the_vojvodina
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_french_military_contracts }
 		x = 0
 		y = 1
@@ -935,7 +935,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_war_with_austria_hungary
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_rearm_the_vojvodina }
 		x = 0
 		y = 1
@@ -975,7 +975,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_reclaim_albania
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_rearm_the_vojvodina focus = SER_the_great_retreat }
 		x = 2
 		y = 2
@@ -1005,7 +1005,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_unite_the_south_slavs
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_war_with_austria_hungary }
 		mutually_exclusive = {
 			focus = SER_ban_publications_of_the_nacertanije
@@ -1048,7 +1048,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_lovcen_heights_mountain_guns
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_rearm_the_vojvodina }
 		x = -2
 		y = 1
@@ -1127,7 +1127,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_educate_engineers
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_concede_the_pig_war focus = SER_seek_new_markets }
 		x = 4
 		y = 1
@@ -1156,7 +1156,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_foreign_engineering
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_educate_engineers }
 		x = 0
 		y = 2
@@ -1211,7 +1211,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_french_curriculum
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_foreign_engineering }
 		mutually_exclusive = { focus = SER_german_curriculum }
 		x = -1
@@ -1241,7 +1241,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_german_curriculum
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_foreign_engineering }
 		mutually_exclusive = { focus = SER_french_curriculum }
 		x = 1
@@ -1273,7 +1273,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_recognition_for_ports
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_concede_the_pig_war }
 		x = 1
 		y = 1
@@ -1304,7 +1304,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_renegotiate_bosnia
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_concede_the_pig_war }
 		mutually_exclusive = { focus = SER_entice_montenegro }
 		x = 3
@@ -1352,7 +1352,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_renegotiate_bosnia_2
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_renegotiate_bosnia }
 		x = -1
 		y = 1
@@ -1395,7 +1395,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_rapproachment_with_austria_hungary
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_renegotiate_bosnia }
 		x = 1
 		y = 1
@@ -1445,7 +1445,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_negotiate_treaty_port
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_recognition_for_ports }
 		prerequisite = { focus = SER_rapproachment_with_austria_hungary }
 		x = 0
@@ -1479,7 +1479,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_joint_serb_croat_drills
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_rapproachment_with_austria_hungary }
 		x = 1
 		y = 3
@@ -1516,7 +1516,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_foreign_railway_loans
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_educate_engineers }
 		x = -1
 		y = 1
@@ -1538,7 +1538,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_found_the_srpska_avijatika
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_french_military_contracts focus = SER_joint_serb_croat_drills }
 		x = 7
 		y = 1
@@ -1559,7 +1559,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_order_foreign_planes
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_found_the_srpska_avijatika }
 		x = 0
 		y = 1
@@ -1588,7 +1588,7 @@ focus_tree = {
 	### Foreign Affairs and Expansion Tree ###
 	focus = {
 		id = SER_claim_old_serbia
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		x = 17
 		y = 0
 		cost = 10
@@ -1608,7 +1608,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_entice_montenegro
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_claim_old_serbia }
 		mutually_exclusive = { focus = SER_renegotiate_bosnia }
 		available = {
@@ -1648,7 +1648,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_ports_on_the_adriatic
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_claim_old_serbia }
 		x = 2
 		y = 1
@@ -1671,7 +1671,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_serb_naval_armament
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_ports_on_the_adriatic }
 		x = 0
 		y = 1
@@ -1727,7 +1727,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_fund_macedonian_militia
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		x = 23
 		y = 0
 		cost = 10
@@ -1749,7 +1749,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_promote_serb_guerilla_forces
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_fund_macedonian_militia }
 		x = 4
 		y = 2
@@ -1775,7 +1775,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_strike_a_deal_with_bulgaria
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_fund_macedonian_militia }
 		mutually_exclusive = { focus = SER_befriend_romania }
 		x = -2
@@ -1816,7 +1816,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_befriend_romania
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_fund_macedonian_militia }
 		mutually_exclusive = { focus = SER_strike_a_deal_with_bulgaria }
 		x = 0
@@ -1840,7 +1840,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_danube_trade
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_befriend_romania focus = SER_strike_a_deal_with_bulgaria }
 		x = -1
 		y = 1
@@ -1880,7 +1880,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_expand_belgrade_docks
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_danube_trade focus = SER_german_arms }
 		x = 0
 		y = 2
@@ -1909,7 +1909,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_war_with_the_ottomans
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_entice_montenegro focus = SER_strike_a_deal_with_bulgaria focus = SER_joint_serb_croat_drills }
 		available = {
 			OR = {
@@ -1955,7 +1955,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_provisional_government_in_occupied_lands
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		mutually_exclusive = { focus = SER_martial_law_in_new_serbia }
 		prerequisite = { focus = SER_war_with_the_ottomans focus = SER_end_bulgarian_posturing_in_macedonia }
 		x = 1
@@ -2037,7 +2037,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_martial_law_in_new_serbia
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		mutually_exclusive = { focus = SER_provisional_government_in_occupied_lands }
 		prerequisite = { focus = SER_war_with_the_ottomans focus = SER_end_bulgarian_posturing_in_macedonia }
 		x = 3
@@ -2120,7 +2120,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_resurrection_of_serbia
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_provisional_government_in_occupied_lands focus = SER_martial_law_in_new_serbia }
 		x = 2
 		y = 1
@@ -2137,7 +2137,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_settle_territory
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_provisional_government_in_occupied_lands focus = SER_martial_law_in_new_serbia }
 		x = 0
 		y = 1
@@ -2191,7 +2191,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_opanci
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_promote_serb_guerilla_forces }
 		mutually_exclusive = { focus = SER_modernise_infantry }
 		x = -1
@@ -2211,7 +2211,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_modernise_infantry
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_promote_serb_guerilla_forces }
 		mutually_exclusive = { focus = SER_opanci }
 		x = 1
@@ -2235,7 +2235,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_the_third_ban
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_opanci focus = SER_modernise_infantry }
 		x = 0
 		y = 2
@@ -2254,7 +2254,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_mobilise_the_cheta
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_opanci focus = SER_modernise_infantry }
 		x = 2
 		y = 2
@@ -2297,7 +2297,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_end_bulgarian_posturing_in_macedonia
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_mobilise_the_cheta }
 		prerequisite = { focus = SER_the_third_ban }
 		x = 1
@@ -2322,7 +2322,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_french_arms
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_modernise_infantry }
 		x = 3
 		y = 1
@@ -2354,7 +2354,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_british_arms
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_modernise_infantry }
 		x = 5
 		y = 1
@@ -2386,7 +2386,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_russian_arms
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_opanci }
 		x = -1
 		y = 1
@@ -2418,7 +2418,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_german_arms
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_opanci }
 		x = -3
 		y = 1
@@ -2454,7 +2454,7 @@ focus_tree = {
 	# Great Retreat and Defensive Measures
 	focus = {
 		id = SER_form_tanasko_rajic_regiment
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_french_military_contracts focus = SER_joint_serb_croat_drills }
 		x = 9
 		y = 1
@@ -2504,7 +2504,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_relocate_nbs_treasury
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_french_military_contracts focus = SER_joint_serb_croat_drills }
 		x = 4
 		y = 1
@@ -2553,7 +2553,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_first_serbian_volunteer_division
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_french_military_contracts focus = SER_joint_serb_croat_drills }
 		x = 2
 		y = 1
@@ -2612,7 +2612,7 @@ focus_tree = {
 
 	focus = {
 		id = SER_the_great_retreat
-		icon = GFX__shine
+		icon = GFX_goal_unknown
 		prerequisite = { focus = SER_relocate_nbs_treasury }
 		x = -1
 		y = 1

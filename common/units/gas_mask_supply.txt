@@ -5,8 +5,10 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 0
 		ai_priority = 0
+		same_support_type = gas_mask_supply
 		active = no
 		affects_speed = no
+		regimental = no
 
 		type = {
 			infantry

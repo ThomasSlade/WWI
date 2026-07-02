@@ -17,6 +17,7 @@ sub_units = {
 		
 		categories = {
 			category_support_battalions
+			category_divisional_support_battalions
 			category_army
 		}
 
@@ -25,12 +26,13 @@ sub_units = {
 			default_morale = 0.20
 		}
 	
+		regimental = no
 		combat_width = 0
 	
 		#Size Definitions
 		max_strength = 1
 		max_organisation = 0	
-		default_morale = 0.1
+		default_morale = 0.3
 		manpower = 750
 		training_time = 180
 
@@ -51,6 +53,7 @@ sub_units = {
 			support_equipment = 10
 			infantry_equipment = 40
 		}
-
+		
+		same_support_type = military_police # blocks adding other MP types to template
 	}
 }
