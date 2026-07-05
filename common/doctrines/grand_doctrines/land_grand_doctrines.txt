@@ -11,4 +11,10 @@ wwi_land = {
     tracks = {
     	early
     }
+
+    milestones = {
+        {
+            
+        }
+    }
 }
