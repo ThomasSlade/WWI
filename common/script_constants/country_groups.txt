@@ -1,0 +1,2 @@
+#WWI: Removed all vanilla content.
+# todo: add country triggers here.
