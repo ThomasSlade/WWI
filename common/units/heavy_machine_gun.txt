@@ -5,19 +5,24 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 6000
 		ai_priority = 1000
-		active = yes
+		same_support_type = heavy_machine_gun
+		active = no
+		affects_speed = no
+		is_artillery_brigade = no
+		divisional = no
 
 		type = {
 			infantry
 			artillery
 		}
 
-		group = infantry
+		group = support
+		allowed_battalion_groups = { infantry mobile combat_support }
 
 		categories = {
 			category_army
-			category_line_artillery
-			category_artillery
+			category_support_battalions
+			category_regimental_support_battalions
 			category_heavy_machine_gun
 		}
 

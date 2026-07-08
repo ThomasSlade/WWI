@@ -5,6 +5,7 @@ technologies = {
 
 		enable_subunits = {
 			field_artillery_brigade
+			field_artillery_support
 		}
 
 		enable_equipments = {

@@ -5,8 +5,10 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 0
 		ai_priority = 0
+		same_support_type = gas_regiment
 		active = no
 		affects_speed = no
+		divisional = no
 
 		type = {
 			infantry
@@ -14,11 +16,13 @@ sub_units = {
 		}
 
 		group = support
+		allowed_battalion_groups = { infantry mobile combat_support }
 
 		categories = {
 			category_front_line
-			category_support_battalions
 			category_army
+			category_support_battalions
+			category_regimental_support_battalions
 		}
 
 		combat_width = 0

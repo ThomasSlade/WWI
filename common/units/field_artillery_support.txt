@@ -1,13 +1,12 @@
 sub_units = {
-	gas_mask_supply = {
-		abbreviation = "GMS"
-		sprite = infantry
+	field_artillery_support = {
+		abbreviation = "FAR"
+		sprite = artillery
 		map_icon_category = infantry
 		priority = 0
 		ai_priority = 0
-		same_support_type = gas_mask_supply
 		active = no
-		affects_speed = no
+		is_artillery_brigade = yes
 		divisional = no
 
 		type = {
@@ -22,27 +21,32 @@ sub_units = {
 			category_army
 			category_support_battalions
 			category_regimental_support_battalions
+			category_artillery
+			category_field_artillery
 		}
 
 		combat_width = 0
 
 		#Size Definitions
-		max_strength = 0
-		max_organisation = 15
+		max_strength = 1
+		max_organisation = 2
 		default_morale = 0.1
+		manpower = 400
 		training_time = 120
+
+		# Support nerfs to combat abilities
+		defense = -0.5
+		breakthrough = -0.5
+		soft_attack = -0.5
+		hard_attack = -0.5
 
 		#Misc Abilities
 		weight = 0.1
-		supply_consumption = 0.02
+		supply_consumption = 0.1
 		can_be_parachuted = yes
-
-		essential = {
-			gas_mask_equipment
-		}
-
+		
 		need = {
-			gas_mask_equipment = 30
+			field_artillery_equipment = 18
 		}
 	}
 }
