@@ -19,6 +19,11 @@ ITA_prepare_to_invade_libya = {
 	    id = libya
 	    value = 300
 	}
+
+	ai_strategy = {
+		type = naval_invasion_dominance_weight
+		value = 50
+	}
 }
 
 ITA_invade_libya = {
