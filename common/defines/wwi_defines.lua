@@ -91,8 +91,8 @@ NDefines.NAI.AREA_DEFENSE_HOME_BASE_WEIGHT = { 0.0, 0.0, 0.0 }
 NDefines.NAI.AREA_DEFENSE_OTHER_BASE_WEIGHT = { 0.0, 0.0, 0.0 }
 
 NDefines.NProduction.BASE_ENERGY_COST = 0.1	-- How much energy per factory consumes
-NDefines.NProduction.BASE_FACTORY_SPEED = 5
-NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 1.5
+NDefines.NProduction.BASE_FACTORY_SPEED = 2
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 0.5
 NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 2.5
 NDefines.NProduction.ANNEX_FUEL_RATIO = 0.2	-- How much fuel will be transferred on annexation
 NDefines.NProduction.CAPITULATE_FUEL_RATIO = 0.2	-- How much fuel will be transferred on capitulation
