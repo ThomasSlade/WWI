@@ -1,7 +1,7 @@
 decision_category_ENG_naval_race = {
 	decision_ENG_debug_increase = {
 		visible = {
-			is_debug = yes
+			always = no
 		}
 
 		complete_effect = {
@@ -14,7 +14,7 @@ decision_category_ENG_naval_race = {
 
 	decision_ENG_debug_decrease = {
 		visible = {
-			is_debug = yes
+			always = no
 		}
 
 		complete_effect = {
