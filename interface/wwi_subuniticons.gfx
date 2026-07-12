@@ -1,6 +1,7 @@
 spriteTypes = {
 	### Large Division Icons ###
 	spriteType = { name = "GFX_unit_field_artillery_brigade_icon_medium" textureFile = "gfx/interface/counters/divisions_large/unit_field_artillery_brigade_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_field_artillery_support_icon_medium" textureFile = "gfx/interface/counters/divisions_large/unit_field_artillery_support_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_heavy_artillery_brigade_icon_medium" textureFile = "gfx/interface/counters/divisions_large/unit_heavy_artillery_brigade_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_siege_artillery_brigade_icon_medium" textureFile = "gfx/interface/counters/divisions_large/unit_siege_artillery_gas_brigade_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_field_artillery_gas_brigade_icon_medium" textureFile = "gfx/interface/counters/divisions_large/unit_field_artillery_gas_brigade_icon.dds" noOfFrames = 2 }
@@ -19,6 +20,7 @@ spriteTypes = {
 
 	### Medium (on-map) Division Icons ###
 	spriteType = { name = "GFX_unit_field_artillery_brigade_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_unit_field_artillery_brigade_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_field_artillery_support_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_unit_field_artillery_support_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_heavy_artillery_brigade_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_artillery_brigade_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_siege_artillery_brigade_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_unit_siege_artillery_brigade_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_field_artillery_gas_brigade_icon_medium_white" textureFile = "gfx/interface/counters/divisions_small/onmap_unit_field_artillery_gas_brigade_icon.dds" noOfFrames = 2 }

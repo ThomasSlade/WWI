@@ -22,13 +22,6 @@ ideas = {
 
 				set_variable = { law_government = token:gov_military_dictatorship }
 			}
-
-			modifier = {
-				war_support_factor = 0.1
-				industrial_capacity_factory = 0.2
-				weekly_convoys_war_support = -0.001
-				weekly_casualties_war_support = -0.001
-			}
 		}
 
 		gov_absolute_monarchy = {
@@ -52,12 +45,6 @@ ideas = {
 
 				set_variable = { law_government = token:gov_absolute_monarchy }
 			}
-
-			modifier = {
-				drift_defence_factor = 0.5
-				weekly_convoys_war_support = -0.001
-				weekly_casualties_war_support = -0.001
-			}
 		}
 
 		gov_constitutional_monarchy = {
@@ -77,11 +64,6 @@ ideas = {
 				effect_select_leader_using_current_cabinet = yes
 
 				set_variable = { law_government = token:gov_absolute_monarchy }
-			}
-
-			modifier = {
-				war_support_factor = 0.1
-				political_power_gain = 0.3
 			}
 		}
 
@@ -103,13 +85,6 @@ ideas = {
 
 				set_variable = { law_government = token:gov_limited_democracy }
 			}
-
-			modifier = {
-				war_support_factor = 0.15
-				political_power_gain = 0.15
-				weekly_convoys_war_support = 0.0005
-				weekly_casualties_war_support = 0.0005
-			}
 		}
 
 		gov_liberal_democracy = {
@@ -130,12 +105,6 @@ ideas = {
 
 				set_variable = { law_government = token:gov_liberal_democracy }
 			}
-
-			modifier = {
-				war_support_factor = 0.2
-				weekly_convoys_war_support = 0.001
-				weekly_casualties_war_support = 0.001
-			}
 		}
 
 		gov_social_democracy = {
@@ -155,13 +124,6 @@ ideas = {
 				effect_select_leader_using_current_cabinet = yes
 
 				set_variable = { law_government = token:gov_social_democracy }
-			}
-
-			modifier = {
-				war_support_factor = 0.2
-				weekly_convoys_war_support = 0.002
-				weekly_casualties_war_support = 0.002
-				cic_construction_boost = -0.2
 			}
 		}
 	}

@@ -1,35 +1,11 @@
 spriteTypes = {
 	# WWI new terrain assets.
 	spriteType = {
-		name = "GFX_terrain_road"
-		textureFile = "gfx/interface/terrains/terrain_road.dds"
-	}
-	spriteType = {
-		name = "GFX_terrain_road_winter"
-		textureFile = "gfx/interface/terrains/terrain_road_winter.dds"
-	}
-	spriteType = {
-		name = "GFX_terrain_rail"
-		textureFile = "gfx/interface/terrains/terrain_rail.dds"
-	}
-	spriteType = {
-		name = "GFX_terrain_rail_winter"
-		textureFile = "gfx/interface/terrains/terrain_rail_winter.dds"
-	}
-	spriteType = {
 		name = "GFX_terrain_rural"
 		textureFile = "gfx/interface/terrains/terrain_rural.dds"
 	}
 	spriteType = {
 		name = "GFX_terrain_rural_winter"
 		textureFile = "gfx/interface/terrains/terrain_road_rural.dds"
-	}
-	spriteType = {
-		name = "GFX_terrain_fortified"
-		textureFile = "gfx/interface/terrains/terrain_fortified.dds"
-	}
-	spriteType = {
-		name = "GFX_terrain_fortified_winter"
-		textureFile = "gfx/interface/terrains/terrain_fortified_winter.dds"
 	}
 }

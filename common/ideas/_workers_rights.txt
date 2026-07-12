@@ -135,7 +135,7 @@ ideas = {
 
 			available = {
 				OR = {
-					has_idea = unions_marginalised
+					has_idea = unions_legitimised
 					has_idea = profit_controls_0
 					has_idea = worker_collaboration_1
 				}
@@ -167,7 +167,7 @@ ideas = {
 
 			available = {
 				OR = {
-					has_idea = unions_marginalised
+					has_idea = unions_legitimised
 					has_idea = worker_collaboration_0
 					has_idea = profit_controls_1
 				}

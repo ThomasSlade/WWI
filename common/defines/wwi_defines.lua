@@ -45,6 +45,8 @@ NDefines.NMilitary.UNIT_DIGIN_SPEED = 0.5
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.0001
 NDefines.NMilitary.FIELD_EXPERIENCE_SCALE = 0.006
 NDefines.NMilitary.FIELD_EXPERIENCE_MAX_PER_DAY = 1	-- Most xp you can gain per day
+NDefines.NMilitary.TRAINING_ATTRITION = 0.1	-- amount of extra attrition from being in training. Increased because training gives more Mastery than vanilla.
+
 
 NDefines.NAir.AIR_WING_MAX_STATS_SPEED = 300	-- Beyond this, aircraft speed (irrelevant to the opponent, as opposed to the relative speed bonus) no longer gives a bonus to attack.
 NDefines.NAir.AIR_WING_MAX_STATS_SPEED = 1500	-- Max amount of aircrafts in region to give full detection bonus.
@@ -105,3 +107,6 @@ NDefines.NCharacter.DEFAULT_PP_COST_FOR_POLITICAL_ADVISOR = 100
 NDefines.NSupply.INFRA_TO_SUPPLY = 0.5
 NDefines.NSupply.NODE_STARTING_PENALTY_PER_PROVINCE = 0.3
 NDefines.NSupply.NODE_ADDED_PENALTY_PER_PROVINCE = 0.4
+
+NDefines.NDoctrines.BASE_MASTERY_GAIN_TARGET_MANPOWER = 150000.0	-- Beyond this amount of manpower contributing to mastery, mastery gain will start having diminishing returns (see doctrines documentation)
+NDefines.NDoctrines.TRAINING_MASTERY_GAIN_FACTOR = 0.3
