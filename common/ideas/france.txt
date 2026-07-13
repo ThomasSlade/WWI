@@ -9,7 +9,7 @@ ideas = {
 			}
 		
 			modifier = {
-				land_mastery_gain_factor = -0.33
+				land_mastery_gain_factor = -0.3
 				custom_modifier_tooltip = idea_FRA_le_pantalon_rouge_tt
 			}
 		}
