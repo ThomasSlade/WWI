@@ -12,11 +12,7 @@ garrison_generic = {
 		custom_icon = 7
 	
 		upgrade_prio = {
-			base = 2
-
-			modifier = {
-				factor = 1
-			}
+			base = 1
 		}
 		
 		target_template = {
@@ -40,10 +36,6 @@ infantry_generic = {
 		}
 		
 		target_template = {
-			support = {
-				engineer = 1
-			}
-			
 			regiments = {
 				infantry = 10
 			}
@@ -55,19 +47,22 @@ infantry_generic = {
 			base = 1
 
 			modifier = {
-				factor = 3
+				factor = 2
 				date > 1915.1.1
 			}
 		}
 		
 		target_template = {
-			support = {
-				engineer = 1
-			}
-			
 			regiments = {
 				infantry = 9
-				field_artillery_brigade = 1
+			}
+
+			regimental_support = {
+				field_artillery_support = 1
+			}
+
+			support = {
+				engineer = 1
 			}
 		}
 	}
@@ -78,52 +73,85 @@ infantry_generic = {
 infantry_specialist = {
 	role = infantry_specialist
 
-	upgrade_prio = {
-		base = 1
-
-		modifier = {
-			factor = 0
-			NOT = { has_tech = heavy_machine_gun_0 }
-		}
+	blocked_for = {
+		GER
 	}
 
-	heavy_machine_gun_early = {
+	upgrade_prio = {
+		base = 1
+	}
+
+	infantry_specialist_basic = {
 		upgrade_prio = {
 			base = 1
 		}
-		
+
 		target_template = {
+			regiments = {
+				infantry = 8
+				field_artillery_brigade = 1
+			}
+
+			regimental_support = {
+				field_artillery_support = 1
+			}
+
 			support = {
 				engineer = 1
-			}
-			
-			regiments = {
-				infantry = 9
-				heavy_machine_gun = 1
 			}
 		}
 	}
 
-	heavy_machine_gun_mid = {
-		target_min_match = 1.0
-
+	infantry_specialist_early = {
 		upgrade_prio = {
 			base = 1
 
 			modifier = {
-				factor = 3
-				date > 1915.1.1
+				factor = 2
+				date > 1912.1.1
 			}
 		}
-		
+
 		target_template = {
+			regiments = {
+				infantry = 8
+				heavy_artillery_brigade = 1
+			}
+
+			regimental_support = {
+				field_artillery_support = 1
+				heavy_machine_gun = 1
+			}
+
 			support = {
 				engineer = 1
 			}
-			
+		}
+	}
+
+	infantry_specialist_mid = {
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 2
+				date > 1914.1.1
+			}
+		}
+
+		target_template = {
 			regiments = {
 				infantry = 8
-				heavy_machine_gun = 2
+				heavy_artillery_brigade = 1
+			}
+
+			regimental_support = {
+				field_artillery_support = 1
+				heavy_machine_gun = 1
+			}
+
+			support = {
+				engineer = 1
 			}
 		}
 	}
@@ -147,9 +175,18 @@ mobile_generic = {
 
 artillery_generic = {
 	role = artillery
+
+	blocked_for = {
+		GER
+	}
 	
 	upgrade_prio = {
 		base = 1
+
+		modifier = {
+			factor = 0
+			NOT = { has_tech = field_artillery_0 }
+		}
 	}
 
 	field_artillery = {
@@ -162,18 +199,18 @@ artillery_generic = {
 		}
 		
 		target_template = {
-			support = {
-				engineer = 1
-			}
-			
 			regiments = {
 				infantry = 8
 				field_artillery_brigade = 1
 			}
+
+			support = {
+				engineer = 1
+			}
 		}
 	}
 
-	field__heavy_artillery = {
+	field_and_heavy_artillery = {
 		upgrade_prio = {
 			base = 1
 
@@ -231,7 +268,7 @@ siege_artillery_generic = {
 		}
 	}
 
-	siege_artillery_default = {
+	siege_artillery = {
 		upgrade_prio = {
 			base = 1
 		}

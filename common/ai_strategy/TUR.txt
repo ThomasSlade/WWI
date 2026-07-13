@@ -6,9 +6,16 @@ TUR_defend_istanbul = {
 	}
 
 	enable = {
-		any_state_in = {
-			ai_area = istanbul_borderlands
-			is_controlled_by = ROOT
+		# Have to list the contents of istanbul_borderlands manually as an ai_area is not accepted by 'any_state_in', despite what the docs say.
+		OR = {
+			any_state_in = {
+				strategic_region = 43 # Bosporus
+				is_controlled_by = ROOT
+			}
+			any_state_in = {
+				strategic_region = 54 # Maritsa
+				is_controlled_by = ROOT
+			}
 		}
 	}
 

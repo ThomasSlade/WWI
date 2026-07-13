@@ -11,14 +11,20 @@ default_unit_production = {
 
 	ai_strategy = {
 		type = role_ratio
+		id = garrison
+		value = 15
+	}
+
+	ai_strategy = {
+		type = role_ratio
 		id = infantry
-		value = 80
+		value = 70
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = infantry_specialist
-		value = 20
+		value = 30
 	}
 
 	ai_strategy = {
