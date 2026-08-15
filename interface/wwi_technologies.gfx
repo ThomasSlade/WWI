@@ -1,5 +1,10 @@
 spriteTypes = {
 	SpriteType = {
+		name = "GFX_tech_sappers_medium"
+		texturefile = "gfx/interface/technologies/tech_sappers.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_field_artillery_0_medium"
 		texturefile = "gfx/interface/technologies/field_artillery_0.dds"
 	}

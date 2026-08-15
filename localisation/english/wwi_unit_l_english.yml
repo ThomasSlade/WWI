@@ -1,4 +1,6 @@
 ﻿l_english:
+ sapper: "Sapper Company"
+ sapper_desc: "Tunnelers and minelayers employed to drive the assault of fortified enemy positions."
  gas_regiment: "Gas Regiment"
  gas_regiment_desc: "Infantry deployed to release gas from cannisters, blistering or suffocating the enemy."
  field_artillery_brigade: "Field Artillery Brigade"

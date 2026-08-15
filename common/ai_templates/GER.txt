@@ -10,7 +10,9 @@ infantry_specialist_GER = {
 		base = 1
 	}
 
-	infantry_specialist_basic = {
+	infantry_specialist_0 = {
+		custom_icon = 0
+
 		upgrade_prio = {
 			base = 1
 		}
@@ -18,7 +20,6 @@ infantry_specialist_GER = {
 		target_template = {
 			regiments = {
 				infantry = 8
-				field_artillery_brigade = 1
 			}
 
 			regimental_support = {
@@ -31,13 +32,41 @@ infantry_specialist_GER = {
 		}
 	}
 
-	infantry_specialist_early = {
+	infantry_specialist_1 = {
+		custom_icon = 0
+		
 		upgrade_prio = {
 			base = 1
 
 			modifier = {
 				factor = 2
-				date > 1913.1.1
+				date > 1912.1.1
+			}
+		}
+
+		target_template = {
+			regiments = {
+				infantry = 8
+				field_artillery_brigade = 1
+			}
+
+			regimental_support = {
+				heavy_machine_gun = 2
+			}
+
+			support = {
+				engineer = 1
+			}
+		}
+	}
+
+	infantry_specialist_2 = {
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 2
+				date > 1915.1.1
 			}
 		}
 
@@ -53,64 +82,6 @@ infantry_specialist_GER = {
 
 			support = {
 				engineer = 1
-			}
-		}
-	}
-}
-
-# Similar to artillery_generic but heavier, earlier.
-artillery_generic_GER = {
-	role = artillery
-
-	available_for = {
-		GER
-	}
-	
-	upgrade_prio = {
-		base = 1
-
-		modifier = {
-			factor = 0
-			NOT = { has_tech = field_artillery_0 }
-		}
-	}
-
-	field_and_heavy_artillery = {
-		upgrade_prio = {
-			base = 1
-		}
-		
-		target_template = {
-			support = {
-				engineer = 1
-			}
-			
-			regiments = {
-				infantry = 7
-				field_artillery_brigade = 1
-				heavy_artillery_brigade = 1
-			}
-		}
-	}
-
-	heavy_artillery = {
-		upgrade_prio = {
-			base = 1
-
-			modifier = {
-				factor = 2
-				date > 1914.1.1
-			}
-		}
-		
-		target_template = {
-			support = {
-				engineer = 1
-			}
-			
-			regiments = {
-				infantry = 7
-				heavy_artillery_brigade = 2
 			}
 		}
 	}

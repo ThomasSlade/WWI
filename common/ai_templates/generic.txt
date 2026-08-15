@@ -4,12 +4,17 @@ garrison_generic = {
 	role = garrison
 
 	upgrade_prio = {
-		base = 1
+		base = 0.5
+
+		modifier = {
+			factor = 20
+			NOT = { ai_has_role_template = garrison }
+		}
 	}
 
 	garrison_generic = {
 		reinforce_prio = 0
-		custom_icon = 7
+		custom_icon = 10
 	
 		upgrade_prio = {
 			base = 1
@@ -30,9 +35,26 @@ infantry_generic = {
 		base = 1
 	}
 
+	infantry_basic = {
+		upgrade_prio = {
+			base = 1
+		}
+		
+		target_template = {
+			regiments = {
+				infantry = 9
+			}
+		}
+	}
+
 	infantry_early = {
 		upgrade_prio = {
 			base = 1
+
+			modifier = {
+				factor = 2
+				date > 1911.1.1
+			}
 		}
 		
 		target_template = {
@@ -47,7 +69,7 @@ infantry_generic = {
 			base = 1
 
 			modifier = {
-				factor = 2
+				factor = 3
 				date > 1915.1.1
 			}
 		}
@@ -81,9 +103,38 @@ infantry_specialist = {
 		base = 1
 	}
 
-	infantry_specialist_basic = {
+	infantry_specialist_0 = {
+		custom_icon = 1
+
 		upgrade_prio = {
 			base = 1
+		}
+
+		target_template = {
+			regiments = {
+				infantry = 8
+			}
+
+			regimental_support = {
+				field_artillery_support = 1
+			}
+
+			support = {
+				engineer = 1
+			}
+		}
+	}
+
+	infantry_specialist_1 = {
+		custom_icon = 1
+
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 2
+				date > 1912.1.1
+			}
 		}
 
 		target_template = {
@@ -102,13 +153,15 @@ infantry_specialist = {
 		}
 	}
 
-	infantry_specialist_early = {
+	infantry_specialist_2 = {
+		custom_icon = 0
+
 		upgrade_prio = {
 			base = 1
 
 			modifier = {
-				factor = 2
-				date > 1912.1.1
+				factor = 3
+				date > 1913.1.1
 			}
 		}
 
@@ -129,12 +182,14 @@ infantry_specialist = {
 		}
 	}
 
-	infantry_specialist_mid = {
+	infantry_specialist_3 = {
+		custom_icon = 0
+
 		upgrade_prio = {
 			base = 1
 
 			modifier = {
-				factor = 2
+				factor = 4
 				date > 1914.1.1
 			}
 		}
@@ -173,34 +228,21 @@ mobile_generic = {
 	}
 }
 
-artillery_generic = {
-	role = artillery
-
-	blocked_for = {
-		GER
-	}
+field_artillery_generic = {
+	role = field_artillery
 	
 	upgrade_prio = {
 		base = 1
-
-		modifier = {
-			factor = 0
-			NOT = { has_tech = field_artillery_0 }
-		}
 	}
 
-	field_artillery = {
-		replace_at_match = 1.5
-		replace_with = field_artillery_mid
-		target_min_match = 0.5
-
+	field_artillery_0 = {
 		upgrade_prio = {
 			base = 1
 		}
 		
 		target_template = {
 			regiments = {
-				infantry = 8
+				infantry = 7
 				field_artillery_brigade = 1
 			}
 
@@ -210,13 +252,35 @@ artillery_generic = {
 		}
 	}
 
-	field_and_heavy_artillery = {
+	field_artillery_2 = {
 		upgrade_prio = {
 			base = 1
 
 			modifier = {
 				factor = 2
-				date > 1913.1.1
+				date > 1912.1.1
+			}
+		}
+		
+		target_template = {
+			regiments = {
+				infantry = 8
+				field_artillery_brigade = 2
+			}
+
+			support = {
+				engineer = 1
+			}
+		}
+	}
+
+	artillery_2 = {
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 2
+				date > 1913.6.1
 			}
 		}
 		
@@ -251,6 +315,57 @@ artillery_generic = {
 			regiments = {
 				infantry = 7
 				heavy_artillery_brigade = 2
+			}
+		}
+	}
+}
+
+heavy_artillery_generic = {
+	role = heavy_artillery
+
+	upgrade_prio = {
+		base = 1
+	}
+
+	heavy_artillery_0 = {
+		upgrade_prio = {
+			base = 1
+		}
+		
+		target_template = {
+			regiments = {
+				infantry = 7
+				heavy_artillery_brigade = 1
+			}
+
+			support = {
+				engineer = 1
+			}
+		}
+	}
+
+	heavy_artillery_1 = {
+		upgrade_prio = {
+			base = 1
+		}
+
+		upgrade_prio = {
+			base = 1
+
+			modifier = {
+				factor = 2
+				date > 1915.6.1
+			}
+		}
+		
+		target_template = {
+			regiments = {
+				infantry = 7
+				heavy_artillery_brigade = 2
+			}
+
+			support = {
+				engineer = 1
 			}
 		}
 	}
@@ -299,22 +414,26 @@ gas_generic = {
 	}
 
 	gas_early = {
+		custom_icon = 5
+
 		upgrade_prio = {
 			base = 1
 		}
 
 		target_template = {
-			support = {
-				gas_regiment = 1
+			regiments = {
+				infantry = 8
 			}
 
-			regiments = {
-				infantry = 9
+			regimental_support = {
+				gas_regiment = 1
 			}
 		}
 	}
 
 	gas_mid = {
+		custom_icon = 5
+
 		upgrade_prio = {
 			base = 1
 
@@ -325,13 +444,13 @@ gas_generic = {
 		}
 
 		target_template = {
-			support = {
-				gas_regiment = 1
-			}
-
 			regiments = {
 				infantry = 8
 				heavy_machine_gun = 1
+			}
+
+			regimental_support = {
+				gas_regiment = 1
 			}
 		}
 	}

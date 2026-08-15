@@ -8,6 +8,7 @@ sub_units = {
 		same_support_type = gas_mask_supply
 		active = no
 		affects_speed = no
+		can_be_parachuted = yes
 		divisional = no
 
 		type = {
@@ -19,9 +20,9 @@ sub_units = {
 		allowed_battalion_groups = { infantry mobile combat_support }
 
 		categories = {
-			category_army
 			category_support_battalions
 			category_regimental_support_battalions
+			category_army
 		}
 
 		combat_width = 0

@@ -4,7 +4,7 @@ sub_units = {
 		sprite = artillery
 		map_icon_category = infantry
 		priority = 12000
-		ai_priority = 2000
+		ai_priority = 12000
 		active = yes
 		is_artillery_brigade = yes
 		

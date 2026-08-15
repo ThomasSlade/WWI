@@ -7,13 +7,16 @@ sub_units = {
 		ai_priority = 0
 		active = no
 		affects_speed = no
+		can_be_parachuted = yes
+		regimental = no
+
+		group = support
+		same_support_type = engineer
 
 		type = {
 			infantry
 			support
 		}
-		
-		group = support
 		
 		categories = {
 			category_front_line
@@ -21,15 +24,13 @@ sub_units = {
 			category_divisional_support_battalions
 			category_army
 		}
-	
 
-		regimental = no
 		combat_width = 0
 	
 		#Size Definitions
 		max_strength = 2
-		max_organisation = 20
-		default_morale = 0.3
+		max_organisation = 12
+		default_morale = 0.1
 		manpower = 400
 		training_time = 120
 
@@ -37,20 +38,18 @@ sub_units = {
 		weight = 0.1
 		supply_consumption = 0.02
 		
-		entrenchment = 2
-		
+		entrenchment = 3
+		defense = 0.1
+
+		# Support nerfs to combat abilities
+		soft_attack = -0.5
+		breakthrough = -0.5
+
 		battalion_mult = {
 			category = category_light_infantry
 			entrenchment = 0.20
 			add = yes
 		}
-				
-				
-		defense = 0.1
-		breakthrough = 0.5
-
-		# Support nerfs to combat abilities
-		soft_attack = -0.5
 
 		essential = {
 			support_equipment
@@ -61,49 +60,40 @@ sub_units = {
 			support_equipment = 30
 		}
 
-		can_be_parachuted = yes
-		forest = {
-			defence = 0.25
-			movement = 0.05
-		}
-
 		hills = {
-			defence = 0.1
+			defence = 0.15
 		}
 
-		jungle = {
-			defence = 0.25
-		}
-
-		marsh = {
-			defence = 0.25
-			movement = 0.2
-		}
-
-		fort = {
-			attack = 0.1
-			defence = 0.25
-		}
-
-		river = {
-			defence = 0.25
+		forest = {
+			defence = 0.15
 			movement = 0.25
 		}
 
-		fort = {
-			attack = 0.25
-			defence = 0.25
+		marsh = {
+			defence = 0.15
+			movement = 0.25
 		}
 
 		river = {
-			defence = 0.25
+			defence = 0.15
 			movement = 0.25
 		}
 
 		amphibious = {
-			attack = 0.25
+			defence = 0.15
+			movement = 0.25
 		}
 
-		same_support_type = engineer
+		fort = {
+			defence = 0.3
+		}
+
+		urban = {
+			defence = 0.3
+		}
+
+		rural = {
+			defence = 0.3
+		}
 	}
 }

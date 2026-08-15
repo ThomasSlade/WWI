@@ -72,7 +72,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 5359
 		division_template = "Artillery-Support Division"
@@ -82,7 +82,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 5359
 		division_template = "Artillery-Support Division"
@@ -92,7 +92,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 5359
 		division_template = "Artillery-Support Division"
@@ -104,7 +104,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 5359
 		division_template = "Cavalry Division"
@@ -114,7 +114,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 5359
 		division_template = "Cavalry Division"
@@ -124,7 +124,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 5359
 		division_template = "Cavalry Division"
@@ -136,7 +136,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 5359
 		division_template = "Infantry Division"
@@ -146,7 +146,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 5359
 		division_template = "Infantry Division"
@@ -156,7 +156,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 5359
 		division_template = "Infantry Division"
@@ -168,7 +168,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 5359
 		division_template = "Garrison Division"
@@ -178,7 +178,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 5359
 		division_template = "Garrison Division"
@@ -188,7 +188,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 5359
 		division_template = "Garrison Division"
@@ -198,7 +198,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 5359
 		division_template = "Garrison Division"
@@ -208,7 +208,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 5359
 		division_template = "Garrison Division"
@@ -218,7 +218,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 5359
 		division_template = "Garrison Division"

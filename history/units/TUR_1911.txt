@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "Piyade Tumeni" # Piyade Tümeni
+	name = "Piyade Fırkası"
 
 	division_names_group = GER_Inf_01
 
@@ -7,30 +7,13 @@
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-        infantry = { x = 0 y = 3 }
         infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-        infantry = { x = 1 y = 3 }
-	}
-}
-
-division_template = {
-	name = "Hisar Tugayi" # Hisar Tugayi
-
-	division_names_group = GER_Inf_01
-	template_counter = 7
-
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 1 y = 0 }
         infantry = { x = 1 y = 1 }
 	}
 }
 
 division_template = {
-	name = "Suvari Tumeni" # Süvari Tümeni
+	name = "Süvari Fırkası"
 
 	division_names_group = GER_Inf_01
 
@@ -42,7 +25,22 @@ division_template = {
         cavalry = { x = 1 y = 0 }
 		cavalry = { x = 1 y = 1 }
 		cavalry = { x = 1 y = 2 }
-        cavalry = { x = 1 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Topçu Fırkası"
+
+	division_names_group = GER_Inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+        infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		field_artillery_brigade = { x = 2 y = 0 }
 	}
 }
 
@@ -51,124 +49,82 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 6153
-		division_template = "Suvari Tumeni"
+		division_template = "Süvari Fırkası"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 6153
-		division_template = "Suvari Tumeni"
+		division_template = "Süvari Fırkası"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 6153
-		division_template = "Suvari Tumeni"
+		division_template = "Süvari Fırkası"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 6153
-		division_template = "Suvari Tumeni"
+		division_template = "Süvari Fırkası"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 6153
-		division_template = "Suvari Tumeni"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-
-	# 2 Cavalry Units
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Suvari Tumeni"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Suvari Tumeni"
+		division_template = "Süvari Fırkası"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
 
-	# 5 Infantry Units
+	# 3 Cavalry Units
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 6153
-		division_template = "Piyade Tumeni"
+		division_template = "Süvari Fırkası"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 6153
-		division_template = "Piyade Tumeni"
+		division_template = "Süvari Fırkası"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 6153
-		division_template = "Piyade Tumeni"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Tumeni"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Piyade Tumeni"
+		division_template = "Süvari Fırkası"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
@@ -177,204 +133,310 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 6153
-		division_template = "Piyade Tumeni"
+		division_template = "Piyade Fırkası"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 6153
-		division_template = "Piyade Tumeni"
+		division_template = "Piyade Fırkası"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 6153
-		division_template = "Piyade Tumeni"
+		division_template = "Piyade Fırkası"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 6153
-		division_template = "Piyade Tumeni"
+		division_template = "Piyade Fırkası"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 6153
-		division_template = "Piyade Tumeni"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-
-	# 10 Garrison Units
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Hisar Tugayi"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Hisar Tugayi"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Hisar Tugayi"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Hisar Tugayi"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Hisar Tugayi"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Hisar Tugayi"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Hisar Tugayi"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Hisar Tugayi"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Hisar Tugayi"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 6153
-		division_template = "Hisar Tugayi"
+		division_template = "Piyade Fırkası"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
 
-	# 5 Garrison Units
+	# 5 Infantry Units
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 6153
-		division_template = "Hisar Tugayi"
+		division_template = "Piyade Fırkası"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 6153
-		division_template = "Hisar Tugayi"
+		division_template = "Piyade Fırkası"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 6153
-		division_template = "Hisar Tugayi"
+		division_template = "Piyade Fırkası"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 6153
-		division_template = "Hisar Tugayi"
+		division_template = "Piyade Fırkası"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 6153
-		division_template = "Hisar Tugayi"
+		division_template = "Piyade Fırkası"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+
+	# 5 Infantry Units
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6153
+		division_template = "Piyade Fırkası"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6153
+		division_template = "Piyade Fırkası"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6153
+		division_template = "Piyade Fırkası"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6153
+		division_template = "Piyade Fırkası"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6153
+		division_template = "Piyade Fırkası"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+
+	# 5 Infantry Units
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6153
+		division_template = "Piyade Fırkası"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6153
+		division_template = "Piyade Fırkası"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6153
+		division_template = "Piyade Fırkası"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6153
+		division_template = "Piyade Fırkası"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6153
+		division_template = "Piyade Fırkası"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+
+	# 5 Infantry Units
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6153
+		division_template = "Piyade Fırkası"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6153
+		division_template = "Piyade Fırkası"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6153
+		division_template = "Piyade Fırkası"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6153
+		division_template = "Piyade Fırkası"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6153
+		division_template = "Piyade Fırkası"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+
+	# 5 Artillery Units
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6153
+		division_template = "Topçu Fırkası"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6153
+		division_template = "Topçu Fırkası"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6153
+		division_template = "Topçu Fırkası"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6153
+		division_template = "Topçu Fırkası"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6153
+		division_template = "Topçu Fırkası"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}

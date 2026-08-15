@@ -57,7 +57,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 2788
 		division_template = "Cavalry Division"
@@ -67,7 +67,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 2788
 		division_template = "Cavalry Division"
@@ -79,7 +79,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 2788
 		division_template = "Artillery Division"
@@ -89,7 +89,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 2788
 		division_template = "Artillery Division"
@@ -101,7 +101,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 2788
 		division_template = "Infantry Division"
@@ -111,7 +111,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 2788
 		division_template = "Infantry Division"
@@ -121,7 +121,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 2788
 		division_template = "Infantry Division"
@@ -131,7 +131,7 @@ units = {
 	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 1
 		}
 		location = 2788
 		division_template = "Infantry Division"

@@ -7,36 +7,35 @@ sub_units = {
 		ai_priority = 0
 		active = no
 		affects_speed = no
+		can_be_parachuted = yes
+		regimental = no
+
+		group = support
+		same_support_type = signal_company
 
 		type = {
 			infantry
 			support
 		}
 		
-		group = support
-		
 		categories = {
 			category_support_battalions
 			category_divisional_support_battalions
 			category_army
 		}
-
-	
-
-		regimental = no
+		
 		combat_width = 0
 	
 		#Size Definitions
 		max_strength = 1
-		max_organisation = 20
-		default_morale = 0.3
-		manpower = 750
+		max_organisation = 12
+		default_morale = 0.1
+		manpower = 650
 		training_time = 120
 
 		#Misc Abilities
 		weight = 0.1
 		supply_consumption = 0.02
-		can_be_parachuted = yes
 		
 		# Important Ability
 		initiative = 0.1
@@ -45,14 +44,20 @@ sub_units = {
 		
 		essential = {
 			support_equipment
-			motorized_equipment
 		}
 
 		need = {
-			support_equipment = 20
-			motorized_equipment = 10
+			support_equipment = 30
 		}
 
-		same_support_type = signal_company
+		battalion_mult = {
+			category = category_heavy_artillery
+			defense = 0.15
+		}
+
+		battalion_mult = {
+			category = category_siege_artillery
+			defense = 0.15
+		}
 	}
 }

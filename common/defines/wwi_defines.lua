@@ -34,7 +34,8 @@ NDefines.NMilitary.LAND_COMBAT_STR_DICE_SIZE = 2              	-- nr of damage d
 NDefines.NMilitary.LAND_COMBAT_ORG_DICE_SIZE = 4              	-- nr of damage dice (used by ground to ground)
 NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_ON_SOFT_DICE_SIZE = 2	-- extra damage dice if our gas outclasses enemy
 NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_ON_SOFT_DICE_SIZE = 5	-- extra damage dice if our gas outclasses enemy
-NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 10 	--Base cost to unlock a regiment slot,
+NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 15 	--Base cost to unlock a regiment slot,
+NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 10	--Base cost to change a regiment column.
 NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.053
 NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.07
 NDefines.NMilitary.BASE_FORT_PENALTY = -0.2	-- fort penalty
@@ -46,6 +47,10 @@ NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.0001
 NDefines.NMilitary.FIELD_EXPERIENCE_SCALE = 0.006
 NDefines.NMilitary.FIELD_EXPERIENCE_MAX_PER_DAY = 1	-- Most xp you can gain per day
 NDefines.NMilitary.TRAINING_ATTRITION = 0.1	-- amount of extra attrition from being in training. Increased because training gives more Mastery than vanilla.
+NDefines.NMilitary.STRATEGIC_SPEED_INFRA_BASE = 1	-- Base speed of strategic redeployment when not on railways
+NDefines.NMilitary.STRATEGIC_SPEED_INFRA_MAX = 2	-- Additional speed of strategic redeployment on max-level infrastructure
+NDefines.NMilitary.STRATEGIC_SPEED_RAIL_BASE = 1	-- Base speed of strategic redeployment when on railways
+NDefines.NMilitary.STRATEGIC_SPEED_RAIL_MAX = 5	-- Additional speed of strategic redeployment on max-level railways
 
 
 NDefines.NAir.AIR_WING_MAX_STATS_SPEED = 300	-- Beyond this, aircraft speed (irrelevant to the opponent, as opposed to the relative speed bonus) no longer gives a bonus to attack.
@@ -102,7 +107,7 @@ NDefines.NProduction.CAPITULATE_FUEL_RATIO = 0.2	-- How much fuel will be transf
 NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 25	-- Each level of airbase building multiplied by this, gives capacity (max operational value). Value is int. 1 for each airplane.
 NDefines.NBuildings.INFRASTRUCTURE_MUD_EFFECT = -0.4	-- multiplicative effect on mud growth for max infra
 
-NDefines.NCharacter.DEFAULT_PP_COST_FOR_POLITICAL_ADVISOR = 100
+NDefines.NCharacter.DEFAULT_PP_COST_FOR_POLITICAL_ADVISOR = 150
 
 NDefines.NSupply.INFRA_TO_SUPPLY = 0.5
 NDefines.NSupply.NODE_STARTING_PENALTY_PER_PROVINCE = 0.3

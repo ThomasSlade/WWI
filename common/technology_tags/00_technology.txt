@@ -144,6 +144,7 @@ technology_categories = {
 	cat_modern_doctrine
 	light_artillery
 	heavy_artillery
+	sappers_tech
 	chemical
 }
 

@@ -37,8 +37,14 @@ GER_unit_production = {
 
 	ai_strategy = {
 		type = role_ratio
-		id = artillery
-		value = 20
+		id = field_artillery
+		value = 5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = heavy_artillery
+		value = 10
 	}
 
 	ai_strategy = {
@@ -63,6 +69,32 @@ GER_unit_production = {
 		type = equipment_production_min_factories
 		id = convoy
 		value = 1
+	}
+}
+
+GER_replace_field_with_heavy_artillery = {
+	abort_when_not_enabled = yes
+
+	allowed = {
+		NOT = {
+			original_tag = GER
+		}
+	}
+
+	enable = {
+		date > 1913.1.1
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = field_artillery
+		value = -5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = heavy_artillery
+		value = 10
 	}
 }
 

@@ -3,8 +3,8 @@ sub_units = {
 		abbreviation = "FAR"
 		sprite = artillery
 		map_icon_category = infantry
-		priority = 6100
-		ai_priority = 1500
+		priority = 4250	# Should take over portrait in a division of 7 inf and 1 arty
+		ai_priority = 4250
 		active = no
 		is_artillery_brigade = yes
 		

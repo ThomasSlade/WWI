@@ -1311,6 +1311,11 @@ technologies = {
 			name = infantry_folder
 			position = { x = 0 y = -1 }
 		}
+
+		folder = {
+			name = support_folder
+			position = { x = 0 y = 0 }
+		}
 		
 		categories = {
 			motorized_equipment

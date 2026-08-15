@@ -7,38 +7,40 @@ sub_units = {
 		ai_priority = 0
 		active = no
 		affects_speed = no
+		can_be_parachuted = yes
+		regimental = no
+
+		group = support
+		same_support_type = field_hospital
 
 		type = {
 			infantry
 			support
 		}
 		
-		group = support
-		
 		categories = {
 			category_support_battalions
 			category_divisional_support_battalions
 			category_army
 		}
-
-		regimental = no
+		
 		combat_width = 0
 	
 		#Size Definitions
-		max_strength = 2
-		max_organisation = 20
-		default_morale = 0.3
-		manpower = 750
+		max_strength = 1
+		max_organisation = 12
+		default_morale = 0.1
+		manpower = 650
 		training_time = 120
 
 		#Misc Abilities
 		weight = 0.1
 		supply_consumption = 0.05
-		can_be_parachuted = yes
 
 		# Important Ability
 		casualty_trickleback = 0.20
 		experience_loss_factor = -0.15
+		ap_attack = 5
 
 		own_equipment_fuel_consumption_mult = 0.0 # no fuel use
 
@@ -54,10 +56,8 @@ sub_units = {
 		
 		need = {
 			support_equipment = 30
-			motorized_equipment = 20
+			motorized_equipment = 10
 		}
-
-		same_support_type = field_hospital
 	}
 }
 
