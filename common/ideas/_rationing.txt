@@ -4,7 +4,7 @@ ideas = {
 		use_list_view = yes
 
 		free_market = {
-			cost = 100
+			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
 			default = yes
@@ -38,7 +38,7 @@ ideas = {
 		}
 
 		regulated_market = {
-			cost = 100
+			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -72,7 +72,7 @@ ideas = {
 		}
 
 		price_controls = {
-			cost = 100
+			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -106,7 +106,7 @@ ideas = {
 		}
 
 		civilian_rationing_0 = {
-			cost = 100
+			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -139,7 +139,7 @@ ideas = {
 		}
 
 		army_rationing_0 = {
-			cost = 100
+			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -171,7 +171,7 @@ ideas = {
 		}
 
 		civilian_rationing_1 = {
-			cost = 100
+			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -204,7 +204,7 @@ ideas = {
 		}
 
 		army_rationing_1 = {
-			cost = 100
+			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -236,7 +236,7 @@ ideas = {
 		}
 
 		harsh_rationing = {
-			cost = 100
+			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
 

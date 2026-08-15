@@ -4,7 +4,7 @@ ideas = {
 		use_list_view = yes
 
 		gov_military_dictatorship = {
-			cost = 150
+			cost = 200
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -25,7 +25,7 @@ ideas = {
 		}
 
 		gov_absolute_monarchy = {
-			cost = 150
+			cost = 200
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -48,7 +48,7 @@ ideas = {
 		}
 
 		gov_constitutional_monarchy = {
-			cost = 150
+			cost = 200
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -68,7 +68,7 @@ ideas = {
 		}
 
 		gov_limited_democracy = {
-			cost = 150
+			cost = 200
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -88,7 +88,7 @@ ideas = {
 		}
 
 		gov_liberal_democracy = {
-			cost = 150
+			cost = 200
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -108,7 +108,7 @@ ideas = {
 		}
 
 		gov_social_democracy = {
-			cost = 150
+			cost = 200
 			removal_cost = -1
 			cancel_if_invalid = no
 

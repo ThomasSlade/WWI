@@ -4,7 +4,7 @@ ideas = {
 		use_list_view = yes
 
 		cab_autocratic = {
-			cost = 150
+			cost = 200
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -37,7 +37,7 @@ ideas = {
 		}
 
 		cab_conservative = {
-			cost = 150
+			cost = 200
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -73,7 +73,7 @@ ideas = {
 		}
 
 		cab_liberal = {
-			cost = 150
+			cost = 200
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -107,7 +107,7 @@ ideas = {
 		}
 
 		cab_socialist = {
-			cost = 150
+			cost = 200
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -139,7 +139,7 @@ ideas = {
 		}
 
 		cab_communist = {
-			cost = 150
+			cost = 200
 			removal_cost = -1
 			cancel_if_invalid = no
 

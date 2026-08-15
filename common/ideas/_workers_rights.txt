@@ -4,7 +4,7 @@ ideas = {
 		use_list_view = yes
 
 		restricted_labour_freedoms = {
-			cost = 100
+			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -35,7 +35,7 @@ ideas = {
 		}
 
 		limited_labour_freedoms = {
-			cost = 100
+			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -67,7 +67,7 @@ ideas = {
 		}
 
 		unions_marginalised = {
-			cost = 100
+			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
 			default = yes
@@ -98,7 +98,7 @@ ideas = {
 		}
 
 		unions_legitimised = {
-			cost = 100
+			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -129,7 +129,7 @@ ideas = {
 		}
 
 		worker_collaboration_0 = {
-			cost = 100
+			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -161,7 +161,7 @@ ideas = {
 		}
 
 		profit_controls_0 = {
-			cost = 100
+			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -193,7 +193,7 @@ ideas = {
 		}
 
 		worker_collaboration_1 = {
-			cost = 100
+			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
 
@@ -224,7 +224,7 @@ ideas = {
 		}
 
 		profit_controls_1 = {
-			cost = 100
+			cost = 150
 			removal_cost = -1
 			cancel_if_invalid = no
 
