@@ -27,7 +27,8 @@ first_balkan_war_rush_turkey = {
 	}
 }
 
-# Because Balkan League members get mutual military access, they tend to spread their troops over one anothers borders in the 1st balkan war. These strategues targetted at the usual Balkan League countries stops that.
+# Because Balkan League members get mutual military access, they tend to spread their troops over one anothers borders in the 1st balkan war. These strategies targetted at the usual Balkan League countries stops that.
+# Eventually some Balkan countries might need help clearing out Turkey, so it's disabled after a while.
 first_balkan_war_dont_defend_ally_borders_MNT = {
 	abort_when_not_enabled = yes
 
@@ -43,6 +44,13 @@ first_balkan_war_dont_defend_ally_borders_MNT = {
 		}
 
 		check_variable = { global.first_balkan_war_state = 1 }
+	}
+
+	abort = {
+		war_length_with = {
+			tag = TUR
+			months > 6
+		}
 	}
 
 	ai_strategy = {
@@ -69,6 +77,13 @@ first_balkan_war_dont_defend_ally_borders_BUL = {
 		check_variable = { global.first_balkan_war_state = 1 }
 	}
 
+	abort = {
+		war_length_with = {
+			tag = TUR
+			months > 6
+		}
+	}
+
 	ai_strategy = {
 		type = dont_defend_ally_borders
 		id = BUL
@@ -91,6 +106,13 @@ first_balkan_war_dont_defend_ally_borders_GRE = {
 		}
 
 		check_variable = { global.first_balkan_war_state = 1 }
+	}
+
+	abort = {
+		war_length_with = {
+			tag = TUR
+			months > 6
+		}
 	}
 
 	ai_strategy = {
@@ -117,6 +139,13 @@ first_balkan_war_dont_defend_ally_borders_SER = {
 		check_variable = { global.first_balkan_war_state = 1 }
 	}
 
+	abort = {
+		war_length_with = {
+			tag = TUR
+			months > 6
+		}
+	}
+
 	ai_strategy = {
 		type = dont_defend_ally_borders
 		id = SER
@@ -139,6 +168,13 @@ first_balkan_war_dont_defend_ally_borders_ROM = {
 		}
 
 		check_variable = { global.first_balkan_war_state = 1 }
+	}
+
+	abort = {
+		war_length_with = {
+			tag = TUR
+			months > 6
+		}
 	}
 
 	ai_strategy = {
