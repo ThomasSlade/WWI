@@ -3,9 +3,9 @@ sub_units = {
 		sprite = light_plane
 		priority = 1
 		active = yes
-		type = fighter
+		type = scout_plane
 		need = { wwi_recon_plane_airframe = 1 }
-		categories = { category_recon_plane }
+		categories = { category_scout_plane }
 		land_air_wing_size = 25
 		mega_carrier_air_wing_size = 10
 	}

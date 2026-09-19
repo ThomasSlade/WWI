@@ -1,0 +1,15 @@
+sp_land_wheeled_tank_prototype = {
+	specialization = specialization_land
+	project_tags = sp_tag_tank
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = {
+				localization_key = SP_UNLOCK_TECH
+				TECH = sp_wheeled_tank_prototype
+			}
+		}
+	}
+}

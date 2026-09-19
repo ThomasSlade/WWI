@@ -1,0 +1,16 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sp_land_siege_artillery"
+		texturefile = "gfx/interface/special_project/project_icons/sp_land_siege_artillery.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_land_heavy_tank_prototype"
+		texturefile = "gfx/interface/special_project/project_icons/sp_land_heavy_tank_prototype.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_land_wheeled_tank_prototype"
+		texturefile = "gfx/interface/special_project/project_icons/sp_land_wheeled_tank_prototype.dds"
+	}
+}

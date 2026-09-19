@@ -1,0 +1,43 @@
+equipments = {
+	motorized_equipment = {
+		year = 1900
+		is_archetype = yes
+		picture = archetype_motorized_equipment		
+		is_buildable = no
+		supply_truck = yes
+
+		type = {
+			motorized
+		}
+
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		#Misc Abilities
+		reliability = 0.8
+		maximum_speed = 0.5
+
+		# Defensive Abilities
+		breakthrough = 5
+		hardness = 0.1
+
+		# Economic Abilities
+		build_cost_ic = 2.5
+		lend_lease_cost = 5
+		fuel_consumption = 1.2
+
+		resources = {
+			oil = 1
+			rubber = 1
+			steel = 1
+		}
+	}
+
+	motorized_equipment_0 = {
+		year = 1900
+
+		archetype = motorized_equipment
+		priority = 30			
+	}
+}

@@ -1,0 +1,40 @@
+sub_units = {
+	wwi_light_armor = {
+		abbreviation = "LTK"
+		sprite = light_armor
+		map_icon_category = armored
+		priority = 6000
+		ai_priority = 6000
+		active = yes
+
+		type = {
+			armor
+		}
+		
+		group = armor
+		
+		categories = {
+			category_tanks
+			category_front_line
+			category_all_armor
+			category_army
+		}
+		
+		# Size Definitions
+		combat_width = 2
+		max_strength = 2
+		max_organisation = 5
+		default_morale = 0.1
+		manpower = 200
+		weight = 1.5
+		supply_consumption = 0.32
+
+		# Misc Abilities
+		training_time = 180
+		breakthrough = 0.15
+
+		need = {
+			wwi_light_tank_chassis = 30
+		}
+	}
+}

@@ -6,7 +6,6 @@ state={
 		owner = BEL
 		add_core_of = BEL
 		buildings = {
-			air_base = 1
 			arms_factory = 4
 			industrial_complex = 1
 			infrastructure = 3

@@ -119,4 +119,24 @@ ideas = {
 			}
 		}
 	}
+
+	materiel_manufacturer = {
+		heavy_tank_manufacturer = {
+			picture = generic_tank_manufacturer_1
+			cost = 150
+
+			traits = { heavy_tank_manufacturer }
+		}
+
+		heavy_tank_prototype_manufacturer = {
+			picture = generic_tank_manufacturer_2
+			cost = 50
+
+			traits = { heavy_tank_prototype_manufacturer }
+
+			available = {
+				is_special_project_completed = sp_land_heavy_tank_prototype
+			}
+		}
+	}
 }

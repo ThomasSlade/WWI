@@ -1,0 +1,36 @@
+sp_complexity = {
+    schema = {
+        any_key = yes
+        data = {
+            {
+                key = min
+                data = int
+            }
+            {
+                key = max
+                data = int
+            }
+        }
+    }
+
+    medium = {
+        min = 15
+        max = 20
+    }
+}
+
+sp_time = {
+	schema = {
+	    any_key = yes
+	    data = {
+	        {
+	            any_key = yes
+	            data = int
+	        }
+	    }
+	}
+
+	prototype = {
+		medium = 60
+	}
+}

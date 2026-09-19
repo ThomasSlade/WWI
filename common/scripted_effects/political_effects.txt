@@ -827,8 +827,6 @@ effect_get_opinion_tt = {
 	if = {
 		limit = { check_variable = { param_direction = -1 } }
 
-		log = "Getting opinion for decreasing law to [?param_law.GetTokenKey]"
-
 		set_temp_variable = { iter = 0 }
 		effect_get_opposition_effects_oppose_decrease = yes
 
@@ -837,8 +835,6 @@ effect_get_opinion_tt = {
 	}
 	else_if = {
 		limit = { check_variable = { param_direction = 1 } }
-
-		log = "Getting opinion for increasing law to [?param_law.GetTokenKey]"
 
 		set_temp_variable = { iter = 0 }
 		effect_get_opposition_effects_oppose_increase = yes

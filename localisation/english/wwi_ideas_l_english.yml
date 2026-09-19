@@ -1,5 +1,5 @@
 ﻿l_english:
-  # Generic
+  ### Generic ###
   territory_restored: "Territory Restored"
   territory_restored_desc: "Securing claimed territory has earned you the confidence in financiers and the pride of your citizens."
   foreign_investment: "Foreign Investment"
@@ -11,6 +11,10 @@
   rail_loans: "Railway Loans"
   rail_loans_desc: "Seeing the great potential of [ROOT.GetDefName], tycoons and capitalists readily shell` money into your railways."
   mountain_training_tt: "£unit_infantry_icon_small£Infantry and £unit_artillery_brigade_icon_small£Artillery:\n §YMountains§!:\n Attack: §G+20%§!\n Defense: §G+10%§!\n Movement: §G+30%§!\n \n§YHills§!:\n Attack: §G+20%§!\n Defense: §G+10%§!\n Movement: §G+30%§!"
+
+  # Industrial Concerns #
+  heavy_tank_manufacturer: "Heavy Tank Manufacturer"
+  heavy_tank_prototype_manufacturer: "Heavy Tank Prototyper"
 
   # Germany
   idea_GER_encirclement_0: "Looming Encirclement"

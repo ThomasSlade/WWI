@@ -3,8 +3,8 @@ sub_units = {
 		abbreviation = "HAR"
 		sprite = artillery
 		map_icon_category = infantry
-		priority = 3500
-		ai_priority = 2000
+		priority = 3700
+		ai_priority = 3700
 		active = yes
 		is_artillery_brigade = yes
 		

@@ -11,12 +11,6 @@ default_unit_production = {
 
 	ai_strategy = {
 		type = role_ratio
-		id = garrison
-		value = 15
-	}
-
-	ai_strategy = {
-		type = role_ratio
 		id = infantry
 		value = 70
 	}
@@ -119,7 +113,7 @@ produce_recon_planes_until_fighters_available = {
 
 	ai_strategy = {
 		type = unit_ratio
-		id = wwi_recon_plane
+		id = scout_plane
 		value = 80
 	}
 

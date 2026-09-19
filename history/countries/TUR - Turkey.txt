@@ -13,6 +13,7 @@ set_grand_doctrine = wwi_land
 set_technology = {
 	basic_train = 1
 	infantry_weapons = 1
+	field_artillery_0 = 1
 }
 
 set_convoys = 50

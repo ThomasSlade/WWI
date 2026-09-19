@@ -1,0 +1,18 @@
+sp_land_heavy_tank_prototype = {
+	specialization = specialization_land
+	project_tags = sp_tag_tank
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = {
+				localization_key = SP_UNLOCK_TECH
+				TECH = sp_heavy_tank_prototype
+			}
+
+			custom_effect_tooltip = available_industrial_concern
+			show_ideas_tooltip = heavy_tank_prototype_manufacturer
+		}
+	}
+}

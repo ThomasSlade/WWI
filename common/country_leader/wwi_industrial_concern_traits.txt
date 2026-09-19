@@ -1,0 +1,24 @@
+leader_traits = {
+	heavy_tank_manufacturer = {
+		random = no
+
+		equipment_bonus = {
+			armor = {
+				hardness = 0.05
+				soft_attack = 0.10
+			}
+		}
+	}
+
+	heavy_tank_prototype_manufacturer = {
+		random = no
+
+		equipment_bonus = {
+			wwi_heavy_tank_chassis = {
+				maximum_speed = 0.2
+				reliability = 0.05
+				build_cost_ic = -0.1
+			}
+		}
+	}
+}

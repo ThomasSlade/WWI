@@ -382,6 +382,11 @@ technologies = {
 	siege_artillery_0 = {
 		research_cost = 1.5
 		start_year = 1913
+		is_special_project_tech = yes
+
+		allow = {
+	 		ROOT = { is_special_project_completed = sp:sp_land_siege_artillery }
+		}
 
 		enable_subunits = {
 			siege_artillery_brigade
@@ -434,14 +439,14 @@ technologies = {
 	siege_artillery_1 = {
 		research_cost = 1.5
 		start_year = 1917
+		is_special_project_tech = yes
+
+		allow = {
+	 		ROOT = { is_special_project_completed = sp:sp_land_siege_artillery }
+		}
 
 		enable_equipments = {
 			siege_artillery_equipment_1
-		}
-
-		path = {
-			leads_to_tech = heavy_artillery_2
-			research_cost_coeff = 1
 		}
 		
 		folder = {

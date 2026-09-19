@@ -406,6 +406,7 @@ script_enum_equipment_bonus_type = {
 	medium_tank_chassis_2
 	medium_tank_chassis_3
 	heavy_tank_chassis
+	heavy_tank_chassis
 	heavy_tank_chassis_0
 	heavy_tank_chassis_1
 	heavy_tank_chassis_2
@@ -683,7 +684,14 @@ script_enum_equipment_bonus_type = {
 	gas_mask_equipment_1
 
 	wwi_heavy_tank_chassis
+	wwi_heavy_tank_equipment_prototype
 	wwi_heavy_tank_equipment_0
+
+	wheeled_tank_chassis
+	wheeled_tank_equipment_prototype
+
+	wwi_light_tank_chassis
+	wwi_light_tank_equipment_0
 
 	wwi_recon_plane_airframe
 	wwi_recon_plane_equipment_0

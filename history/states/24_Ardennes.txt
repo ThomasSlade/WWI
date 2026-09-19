@@ -8,11 +8,11 @@ state={
 		buildings = {
 			arms_factory = 1
 			infrastructure = 2
-			445 = {
-				bunker = 5
-			}
 			842 = {
 				bunker = 4
+			}
+			445 = {
+				bunker = 5
 			}
 			155 = {
 				bunker = 5

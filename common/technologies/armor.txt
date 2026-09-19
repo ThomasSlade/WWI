@@ -1,10 +1,15 @@
 technologies = {
-	heavy_tank_0 = {
+	sp_heavy_tank_prototype = {
 		research_cost = 2
-		start_year = 1916
+		start_year = 1911
+		is_special_project_tech = yes
+
+		allow = {
+	 		ROOT = { is_special_project_completed = sp:sp_land_heavy_tank_prototype }
+		}
 
 		enable_equipments = {
-			wwi_heavy_tank_equipment_0
+			wwi_heavy_tank_equipment_prototype
 		}
 
 		enable_subunits = {
@@ -21,6 +26,118 @@ technologies = {
 			mio_cat_tech_all_armor_and_modules
 			cat_heavy_armor
 			mio_cat_tech_heavy_armor_and_modules
+		}
+
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	heavy_tank_0 = {
+		research_cost = 2
+		start_year = 1916
+
+		enable_equipments = {
+			wwi_heavy_tank_equipment_0
+		}
+
+		enable_subunits = {
+			wwi_heavy_armor
+		}
+
+		path = {
+			leads_to_tech = light_tank_0
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 2 }
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
+		}
+
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	sp_wheeled_tank_prototype = {
+		research_cost = 2
+		start_year = 1911
+		is_special_project_tech = yes
+
+		allow = {
+	 		ROOT = { is_special_project_completed = sp:sp_land_wheeled_tank_prototype }
+		}
+
+		enable_equipments = {
+			wheeled_tank_equipment_prototype
+		}
+
+		enable_subunits = {
+			wheeled_armor
+		}
+
+		folder = {
+			name = armour_folder
+			position = { x = 4 y = 0 }
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
+		}
+
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
+	light_tank_0 = {
+		research_cost = 2
+		start_year = 1917
+
+		enable_equipments = {
+			wwi_light_tank_equipment_0
+		}
+
+		enable_subunits = {
+			wwi_light_armor
+		}
+
+		folder = {
+			name = armour_folder
+			position = { x = -4 y = 4 }
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
 		}
 
 		ai_will_do = {

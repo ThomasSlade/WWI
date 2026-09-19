@@ -110,8 +110,23 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+		name = "GFX_sp_heavy_tank_prototype_medium"
+		texturefile = "gfx/interface/technologies/heavy_tank_prototype.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_heavy_tank_0_medium"
 		texturefile = "gfx/interface/technologies/heavy_tank_0.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_sp_wheeled_tank_prototype_medium"
+		texturefile = "gfx/interface/technologies/wheeled_tank_prototype.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_light_tank_0_medium"
+		texturefile = "gfx/interface/technologies/light_tank_0.dds"
 	}
 
 	SpriteType = {

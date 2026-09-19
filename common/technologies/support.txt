@@ -308,6 +308,10 @@ technologies = {
 		enable_subunits = {
 			sapper
 		}
+
+		dependencies = {
+			heavy_artillery_0 = 1
+		}
 		
 		folder = {
 			name = support_folder
