@@ -1,0 +1,12 @@
+# Units in here are added to prevent technical issues, often based on vanilla units, but aren't ever available in the mod.
+
+sub_units = {
+	# Vanilla unit. Required as the game crashes if it looks for a gun emplacement type of unit but can't find one.
+	explosive_ammo = {
+		sprite = missile_default
+		priority = 8
+		active = yes
+		type = emplacement_gun_ammo
+		land_air_wing_size = 1
+	}
+}
