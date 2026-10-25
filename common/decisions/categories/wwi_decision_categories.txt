@@ -1,3 +1,11 @@
+decision_category_test_countries = {
+	icon = border_war
+
+	allowed = {
+		is_debug = yes
+	}
+}
+
 decision_category_politics = {
 	icon = generic_political_actions
 

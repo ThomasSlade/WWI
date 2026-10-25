@@ -1,4 +1,10 @@
 ﻿l_english:
+  TSA: "Test A"
+  TSA_DEF: "Test A"
+  TSA_ADJ: "Test A"
+  TSB: "Test B"
+  TSB_DEF: "Test B"
+  TSB_ADJ: "Test B"
   SVO: "Serbian Vojvodina"
   SVO_DEF: "the Serbian Vojvodina"
   SVO_ADJ: "Serbian Vojvodina"

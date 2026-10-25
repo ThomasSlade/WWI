@@ -36,6 +36,8 @@ DEN = "countries/Denmark.txt"
 AST = "countries/Australia.txt"
 
 # Countries added by this mod should go here.
+TSA = "countries/Test A.txt"
+TSB = "countries/Test B.txt"
 SVO = "countries/Serbian Vojvodina.txt"
 SCS = "countries/State of Slovenes Croats and Serbs.txt"
 TRS = "countries/Trieste.txt"

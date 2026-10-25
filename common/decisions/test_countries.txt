@@ -1,0 +1,285 @@
+decision_category_test_countries = {
+	decision_release_test_countries = {
+		visible = {
+			all_test_countries_exist = no
+		}
+
+		complete_effect = {
+			TSA = {
+				add_state_core = 30
+				add_state_core = 119
+				add_state_core = 29
+				add_state_core = 100
+				add_state_core = 47
+				add_state_core = 85
+				add_state_core = 395
+				add_state_core = 24
+				add_state_core = 77
+				add_state_core = 5
+				add_state_core = 80
+				add_state_core = 10
+			}
+
+			TSB = {
+				add_state_core = 66
+				add_state_core = 115
+				add_state_core = 114
+				add_state_core = 110
+				add_state_core = 98
+				add_state_core = 53
+				add_state_core = 117
+				add_state_core = 104
+				add_state_core = 109
+				add_state_core = 101
+				add_state_core = 81
+				add_state_core = 120
+				add_state_core = 51
+				add_state_core = 105
+				add_state_core = 118
+			}
+
+			every_state = {
+				limit = {
+					is_core_of = TSA
+				}
+				TSA = { transfer_state = PREV }
+			}
+
+			every_state = {
+				limit = {
+					is_core_of = TSB
+				}
+				TSB = { transfer_state = PREV }
+			}
+
+			TSA = {
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 200
+				}
+			}
+
+			TSB = {
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 200
+				}
+			}
+		}
+
+		ai_will_do = {
+        	base = 0
+        }
+	}
+
+	decision_load_1911_standard_army = {
+		target_trigger = { FROM = { trigger_is_test_country = yes } }
+
+		complete_effect = {
+			FROM = {
+				meta_effect = {
+					COUNTY_TAG = "[THIS.GetTag]"
+					text = {
+						load_oob = "[COUNTY_TAG]_1911_standard"
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+        	base = 0
+        }
+	}
+
+	decision_load_1911_weak_army = {
+		target_trigger = { FROM = { trigger_is_test_country = yes } }
+
+		complete_effect = {
+			FROM = {
+				meta_effect = {
+					COUNTY_TAG = "[THIS.GetTag]"
+					text = {
+						load_oob = "[COUNTY_TAG]_1911_weak"
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+        	base = 0
+        }
+	}
+
+	decision_declare_war_on_other = {
+		target_trigger = {
+			FROM = { trigger_is_test_country = yes }
+			NOT = {
+				any_country = {
+					trigger_is_test_country = yes
+					has_war_with = FROM
+				}
+			}
+		}
+
+		complete_effect = {
+			every_country = {
+				limit = {
+					NOT = { tag = FROM }
+					trigger_is_test_country = yes
+				}
+				FROM = {
+					declare_war_on = {
+						target = PREV
+						type = annex_everything
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+        	base = 0
+        }
+	}
+
+	decision_add_early_doctrine_mastery_0 = {
+		target_trigger = {
+			FROM = {
+				trigger_is_test_country = yes
+				NOT = { has_mastery = { amount = 100 track = early } }
+				has_mastery = { amount = 0 track = early }
+			}
+		}
+
+		complete_effect = {
+			FROM = {
+				add_mastery = {
+					amount = 100
+					track = early
+				}
+			}
+		}
+
+		ai_will_do = {
+        	base = 0
+        }
+	}
+
+	decision_add_early_doctrine_mastery_1 = {
+		target_trigger = {
+			FROM = {
+				trigger_is_test_country = yes
+				NOT = { has_mastery = { amount = 200 track = early } }
+				has_mastery = { amount = 100 track = early }
+			}
+		}
+
+		complete_effect = {
+			FROM = {
+				add_mastery = {
+					amount = 100
+					track = early
+				}
+			}
+		}
+
+		ai_will_do = {
+        	base = 0
+        }
+	}
+
+	decision_add_early_doctrine_mastery_2 = {
+		target_trigger = {
+			FROM = {
+				trigger_is_test_country = yes
+				NOT = { has_mastery = { amount = 300 track = early } }
+				has_mastery = { amount = 200 track = early }
+			}
+		}
+
+		complete_effect = {
+			FROM = {
+				add_mastery = {
+					amount = 100
+					track = early
+				}
+			}
+		}
+
+		ai_will_do = {
+        	base = 0
+        }
+	}
+
+	decision_add_early_doctrine_mastery_3 = {
+		target_trigger = {
+			FROM = {
+				trigger_is_test_country = yes
+				NOT = { has_mastery = { amount = 400 track = early } }
+				has_mastery = { amount = 300 track = early }
+			}
+		}
+
+		complete_effect = {
+			FROM = {
+				add_mastery = {
+					amount = 100
+					track = early
+				}
+			}
+		}
+
+		ai_will_do = {
+        	base = 0
+        }
+	}
+
+	decision_add_early_doctrine_mastery_4 = {
+		target_trigger = {
+			FROM = {
+				trigger_is_test_country = yes
+				NOT = { has_mastery = { amount = 500 track = early } }
+				has_mastery = { amount = 400 track = early }
+			}
+		}
+
+		complete_effect = {
+			FROM = {
+				add_mastery = {
+					amount = 100
+					track = early
+				}
+			}
+		}
+
+		ai_will_do = {
+        	base = 0
+        }
+	}
+
+	decision_replenish_infantry_equipment = {
+		target_array = countries
+
+		target_trigger = {
+			FROM = {
+				trigger_is_test_country = yes
+				stockpile_ratio = {
+					archetype = infantry_equipment
+					ratio < 3
+				}
+			}
+		}
+
+		complete_effect = {
+			FROM = {
+				add_equipment_to_stockpile = {
+				    type = infantry_equipment_0
+				    amount = 2000
+				}
+			}
+		}
+
+		ai_will_do = {
+        	base = 0
+        }
+	}
+}

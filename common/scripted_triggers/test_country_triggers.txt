@@ -1,0 +1,13 @@
+trigger_is_test_country = {
+	OR = {
+		tag = TSA
+		tag = TSB
+	}
+}
+
+all_test_countries_exist = {
+	AND = {
+		country_exists = TSA
+		country_exists = TSB
+	}
+}

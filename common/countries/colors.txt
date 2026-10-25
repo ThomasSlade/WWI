@@ -1,5 +1,13 @@
 #reload countrycolors
 
+TSA = {
+	color = rgb { 214 49 49 }
+	color_ui = rgb { 214 49 49 }
+}
+TSB = {
+	color = rgb { 49 104 214 }
+	color_ui = rgb { 49 104 214 }
+}
 FRA = {
 	color = rgb { 16 23 106 }
 	color_ui = rgb { 16 23 106 }
