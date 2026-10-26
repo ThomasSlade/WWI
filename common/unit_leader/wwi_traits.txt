@@ -29,7 +29,7 @@ leader_traits = {
 		}
 	}
 
-	rabbit = {
+	hare = {
 		type = land
 		trait_type = personality_trait
 
