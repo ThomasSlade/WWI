@@ -1,5 +1,5 @@
 ideas = {
-	government = {
+	wwi_government = {
 		law = yes
 		use_list_view = yes
 

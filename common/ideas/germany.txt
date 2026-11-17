@@ -39,8 +39,8 @@ ideas = {
 				# -20% influence with Great Powers
 				improve_relations_maintain_cost_factor = 0.05
 				conversion_cost_civ_to_mil_factor = 0.05
-				mobilization_laws_cost_factor = -0.05
-				economy_cost_factor = -0.05
+				wwi_mobilization_laws_cost_factor = -0.05
+				wwi_economy_cost_factor = -0.05
 				boost_party_cost_factor = 0.25
 			}
 		}
@@ -57,8 +57,8 @@ ideas = {
 				# -40% influence with Great Powers
 				improve_relations_maintain_cost_factor = 0.1
 				conversion_cost_civ_to_mil_factor = 0.1
-				mobilization_laws_cost_factor = -0.1
-				economy_cost_factor = -0.1
+				wwi_mobilization_laws_cost_factor = -0.1
+				wwi_economy_cost_factor = -0.1
 				boost_party_cost_factor = 0.5
 			}
 		}
@@ -76,8 +76,8 @@ ideas = {
 				# -20% influence with Minor Nations
 				improve_relations_maintain_cost_factor = 0.15
 				conversion_cost_civ_to_mil_factor = 0.15
-				mobilization_laws_cost_factor = -0.2
-				economy_cost_factor = -0.2
+				wwi_mobilization_laws_cost_factor = -0.2
+				wwi_economy_cost_factor = -0.2
 				boost_party_cost_factor = 0.75
 			}
 		}
@@ -95,8 +95,8 @@ ideas = {
 				# -40% influence with Minor Nations
 				improve_relations_maintain_cost_factor = 0.2
 				conversion_cost_civ_to_mil_factor = 0.2
-				mobilization_laws_cost_factor = -0.3
-				economy_cost_factor = -0.3
+				wwi_mobilization_laws_cost_factor = -0.3
+				wwi_economy_cost_factor = -0.3
 				boost_party_cost_factor = 1
 			}
 		}
@@ -126,8 +126,8 @@ ideas = {
 			modifier = {
 				production_speed_arms_factory_factor = 0.2
 				mobilization_speed = 0.3
-				mobilization_laws_cost_factor = -0.3
-				economy_cost_factor = -0.3
+				wwi_mobilization_laws_cost_factor = -0.3
+				wwi_economy_cost_factor = -0.3
 				cannot_decrease_manpower_laws = 1
 				cannot_decrease_economic_laws = 1
 			}

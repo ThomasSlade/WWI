@@ -1,5 +1,5 @@
 ideas = {
-	workers_rights = {
+	wwi_workers_rights = {
 		law = yes
 		use_list_view = yes
 
@@ -32,6 +32,10 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.2
 				production_factory_efficiency_gain_factor = -0.2
 			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
 		}
 
 		limited_labour_freedoms = {
@@ -64,6 +68,16 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.1
 				production_factory_efficiency_gain_factor = -0.1
 			}
+
+			ai_will_do = {
+   				factor = 25
+
+   				modifier = {
+					factor = 0
+
+					NOT = { has_idea = restricted_labour_freedoms }
+				}
+   			}
 		}
 
 		unions_marginalised = {
@@ -95,6 +109,16 @@ ideas = {
 			modifier = {
 				industrial_capacity_factory = 0.1
 			}
+
+			ai_will_do = {
+   				factor = 15
+
+   				modifier = {
+					factor = 0
+
+					NOT = { has_idea = limited_labour_freedoms }
+				}
+   			}
 		}
 
 		unions_legitimised = {
@@ -106,7 +130,7 @@ ideas = {
 				OR = {
 					has_idea = unions_marginalised
 					has_idea = worker_collaboration_0
-					has_idea = worker_collaboration_1
+					has_idea = profit_controls_0
 				}
 
 				set_temp_variable = { param_law = token:unions_legitimised }
@@ -124,8 +148,18 @@ ideas = {
 			}
 
 			modifier = {
-				industrial_capacity_factory = 0.1
+				industrial_capacity_factory = 0.5
 			}
+
+			ai_will_do = {
+   				factor = 15
+
+   				modifier = {
+					factor = 0
+
+					NOT = { has_idea = unions_marginalised }
+				}
+   			}
 		}
 
 		worker_collaboration_0 = {
@@ -158,6 +192,17 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.1
 			}
+
+			ai_will_do = {
+   				factor = 10
+
+   				modifier = {
+					factor = 0
+
+					NOT = { has_idea = unions_legitimised }
+					NOT = { has_idea = profit_controls_0 }
+				}
+   			}
 		}
 
 		profit_controls_0 = {
@@ -190,6 +235,10 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.1
 				production_factory_start_efficiency_factor = 0.1
 			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
 		}
 
 		worker_collaboration_1 = {
@@ -221,6 +270,17 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.2
 				production_factory_efficiency_gain_factor = 0.2
 			}
+
+			ai_will_do = {
+   				factor = 5
+
+   				modifier = {
+					factor = 0
+
+					NOT = { has_idea = worker_collaboration_0 }
+					NOT = { has_idea = profit_controls_1 }
+				}
+   			}
 		}
 
 		profit_controls_1 = {
@@ -252,6 +312,10 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.2
 				production_factory_start_efficiency_factor = 0.2
 			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
 		}
 	}
 }

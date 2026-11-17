@@ -1,5 +1,5 @@
 ideas = {
-	civil_rights = {
+	wwi_civil_rights = {
 		law = yes
 		use_list_view = yes
 
@@ -34,6 +34,10 @@ ideas = {
 				mobilization_speed = 0.2
 				industry_free_repair_factor = 0.5
 			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
 		}
 
 		ethnic_rights_0 = {
@@ -66,6 +70,10 @@ ideas = {
 				production_speed_infrastructure_factor = 0.1
 				production_speed_rail_way_factor = 0.1
 			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
 		}
 
 		domestic_rights_0 = {
@@ -98,6 +106,17 @@ ideas = {
 				mobilization_speed = 0.2
 				industry_free_repair_factor = 0.5
 			}
+
+			ai_will_do = {
+   				factor = 15
+
+   				modifier = {
+					factor = 0
+
+					NOT = { has_idea = entrenched_nationalism }
+					NOT = { has_idea = ethnic_rights_0 }
+				}
+   			}
 		}
 
 		ethnic_rights_1 = {
@@ -132,6 +151,10 @@ ideas = {
 				recruitable_population_factor = 0.01
 				war_support_factor = 0.05
 			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
 		}
 
 		domestic_rights_1 = {
@@ -165,6 +188,17 @@ ideas = {
 				industrial_capacity_factory = 0.1
 				war_support_factor = 0.05
 			}
+
+			ai_will_do = {
+   				factor = 5
+
+   				modifier = {
+					factor = 0
+
+					NOT = { has_idea = domestic_rights_0 }
+					NOT = { has_idea = ethnic_rights_1 }
+				}
+   			}
 		}
 
 		ethnic_rights_2 = {
@@ -196,6 +230,10 @@ ideas = {
 				recruitable_population_factor = 0.02
 				war_support_factor = 0.15
 			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
 		}
 
 		domestic_rights_2 = {
@@ -227,6 +265,17 @@ ideas = {
 				industrial_capacity_factory = 0.2
 				war_support_factor = 0.15
 			}
+
+			ai_will_do = {
+   				factor = 1
+
+   				modifier = {
+					factor = 0
+
+					NOT = { has_idea = domestic_rights_1 }
+					NOT = { has_idea = ethnic_rights_2 }
+				}
+   			}
 		}
 
 		women_minority_rights = {
@@ -258,6 +307,10 @@ ideas = {
 				industrial_capacity_factory = 0.2
 				war_support_factor = 0.25
 			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
 		}
 	}
 }

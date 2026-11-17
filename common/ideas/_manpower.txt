@@ -1,5 +1,5 @@
 ideas = {
-	mobilization_laws = { 
+	wwi_mobilization_laws = { 
 		law = yes
 		use_list_view = yes
 
@@ -30,6 +30,10 @@ ideas = {
 			modifier = {
 				conscription = 0.005
 			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
 		}
 
 		volunteer_only = {
@@ -61,6 +65,16 @@ ideas = {
 			modifier = {
 				conscription = 0.015
 			}
+
+			ai_will_do = {
+   				factor = 50
+
+   				modifier = {
+					factor = 0
+
+					NOT = { has_idea = disarmed_nation }
+				}
+   			}
 		}
 
 		national_service = {
@@ -93,6 +107,16 @@ ideas = {
 				conscription = 0.02
 				fuel_gain_factor = -0.05
 			}
+
+			ai_will_do = {
+   				factor = 20
+
+   				modifier = {
+					factor = 0
+
+					NOT = { has_idea = volunteer_only }
+				}
+   			}
 		}
 
 		limited_conscription = {
@@ -124,6 +148,16 @@ ideas = {
 				conscription = 0.03
 				fuel_gain_factor = -0.1
 			}
+
+			ai_will_do = {
+   				factor = 15
+
+   				modifier = {
+					factor = 0
+
+					NOT = { has_idea = national_service }
+				}
+   			}
 		}
 
 		extensive_conscription = {
@@ -157,6 +191,16 @@ ideas = {
 				training_time_factor = 0.1
 				fuel_gain_factor = -0.2
 			}
+
+			ai_will_do = {
+   				factor = 13
+
+   				modifier = {
+					factor = 0
+
+					NOT = { has_idea = limited_conscription }
+				}
+   			}
 		}
 
 		deployed_workers_0 = {
@@ -192,6 +236,10 @@ ideas = {
 				industrial_capacity_dockyard = -0.15
 				fuel_gain_factor = -0.3
 			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
 		}
 
 		deployed_labourers_0 = {
@@ -227,6 +275,17 @@ ideas = {
 				production_speed_buildings_factor = -0.1
 				fuel_gain_factor = -0.4
 			}
+
+			ai_will_do = {
+   				factor = 7
+
+   				modifier = {
+					factor = 0
+
+					NOT = { has_idea = extensive_conscription }
+					NOT = { has_idea = deployed_workers_0 }
+				}
+   			}
 		}
 
 		deployed_workers_1 = {
@@ -262,6 +321,10 @@ ideas = {
 				industrial_capacity_dockyard = -0.3
 				fuel_gain_factor = -0.4
 			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
 		}
 
 		deployed_labourers_1 = {
@@ -297,6 +360,17 @@ ideas = {
 				production_speed_buildings_factor = -0.2
 				fuel_gain_factor = -0.5
 			}
+
+			ai_will_do = {
+   				factor = 2
+
+   				modifier = {
+					factor = 0
+
+					NOT = { has_idea = deployed_labourers_0 }
+					NOT = { has_idea = deployed_workers_1 }
+				}
+   			}
 		}
 
 		scraping_the_barrel = {
@@ -333,6 +407,10 @@ ideas = {
 				production_speed_buildings_factor = -0.3
 				fuel_gain_factor = -0.6
 			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
 		}
 	}
 }

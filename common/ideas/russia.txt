@@ -102,7 +102,7 @@ ideas = {
 
 			modifier = {
 				cic_construction_boost = 0.2
-				workers_rights_cost_factor = 1
+				wwi_workers_rights_cost_factor = 1
 			}
 		}
 

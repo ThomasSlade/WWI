@@ -1,5 +1,5 @@
 ideas = {
-	rationing = {
+	wwi_rationing = {
 		law = yes
 		use_list_view = yes
 
@@ -35,6 +35,10 @@ ideas = {
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
 			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
 		}
 
 		regulated_market = {
@@ -63,12 +67,22 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_expected_value = 0.35
+				consumer_goods_expected_value = 0.34
 				min_export = 0.5
 				production_speed_buildings_factor = 0.1
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
 			}
+
+			ai_will_do = {
+   				factor = 15
+
+   				modifier = {
+					factor = 0
+
+					NOT = { has_idea = free_market }
+				}
+   			}
 		}
 
 		price_controls = {
@@ -103,6 +117,16 @@ ideas = {
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
 			}
+
+			ai_will_do = {
+   				factor = 13
+
+   				modifier = {
+					factor = 0
+
+					NOT = { has_idea = regulated_market }
+				}
+   			}
 		}
 
 		civilian_rationing_0 = {
@@ -136,6 +160,17 @@ ideas = {
 				min_export = 0.3
 				local_resources_factor = 0.1
 			}
+
+			ai_will_do = {
+   				factor = 10
+
+   				modifier = {
+					factor = 0
+
+					NOT = { has_idea = price_controls }
+					NOT = { has_idea = army_rationing_0 }
+				}
+   			}
 		}
 
 		army_rationing_0 = {
@@ -168,6 +203,10 @@ ideas = {
 				consumer_goods_expected_value = 0.2
 				min_export = 0.3
 			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
 		}
 
 		civilian_rationing_1 = {
@@ -201,6 +240,17 @@ ideas = {
 				min_export = 0.2
 				local_resources_factor = 0.2
 			}
+
+			ai_will_do = {
+   				factor = 5
+
+   				modifier = {
+					factor = 0
+
+					NOT = { has_idea = civilian_rationing_0 }
+					NOT = { has_idea = army_rationing_1 }
+				}
+   			}
 		}
 
 		army_rationing_1 = {
@@ -233,6 +283,10 @@ ideas = {
 				consumer_goods_expected_value = 0.1
 				min_export = 0.2
 			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
 		}
 
 		harsh_rationing = {
@@ -265,6 +319,10 @@ ideas = {
 				min_export = 0.1
 				local_resources_factor = 0.3
 			}
+
+			ai_will_do = {
+   				factor = 0
+   			}
 		}
 	}
 }

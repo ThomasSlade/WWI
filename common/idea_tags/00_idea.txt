@@ -24,9 +24,9 @@ idea_categories = {
 	}
 	
 	government = {
-		slot = cabinet
-		slot = opposition
-		slot = government
+		slot = wwi_cabinet
+		slot = wwi_opposition
+		slot = wwi_government
 		character_slot = political_advisor
 		character_slot = political_advisor
 		character_slot = political_advisor
@@ -39,12 +39,12 @@ idea_categories = {
 	
 	# WWI: Laws are here now.
 	research_production = {
-		slot = mobilization_laws
-		slot = economy
-		slot = rationing
-		slot = workers_rights
-		slot = civil_rights
-		slot = blockade_policy
+		slot = wwi_mobilization_laws
+		slot = wwi_economy
+		slot = wwi_rationing
+		slot = wwi_workers_rights
+		slot = wwi_civil_rights
+		slot = wwi_blockade_policy
 
 		ledger = civilian
 		
@@ -188,7 +188,4 @@ slot_ledgers = {
 	
 	theorist = invalid # must be overridden
 	high_command = invalid # must be overridden
-	
-	
-	mobilization_laws = civilian
 }

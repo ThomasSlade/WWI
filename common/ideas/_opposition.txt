@@ -1,5 +1,5 @@
 ideas = {
-	opposition = {
+	wwi_opposition = {
 		law = yes
 		use_list_view = yes
 
@@ -31,11 +31,11 @@ ideas = {
 					air_chief_cost_factor = -0.15
 					theorist_cost_factor = -0.15
 
-					mobilization_laws_cost_factor = -0.15
-					economy_cost_factor = -0.15
-					rationing_cost_factor = -0.15
-					workers_rights_cost_factor = -0.15
-					blockade_policy_cost_factor = -0.15
+					wwi_mobilization_laws_cost_factor = -0.15
+					wwi_economy_cost_factor = -0.15
+					wwi_rationing_cost_factor = -0.15
+					wwi_workers_rights_cost_factor = -0.15
+					wwi_blockade_policy_cost_factor = -0.15
 
 					weekly_casualties_war_support = 0.001
 				}
@@ -93,11 +93,11 @@ ideas = {
 					air_chief_cost_factor = 0.15
 					theorist_cost_factor = 0.15
 
-					mobilization_laws_cost_factor = 0.15
-					economy_cost_factor = 0.15
-					rationing_cost_factor = 0.15
-					workers_rights_cost_factor = 0.15
-					blockade_policy_cost_factor = 0.15
+					wwi_mobilization_laws_cost_factor = 0.15
+					wwi_economy_cost_factor = 0.15
+					wwi_rationing_cost_factor = 0.15
+					wwi_workers_rights_cost_factor = 0.15
+					wwi_blockade_policy_cost_factor = 0.15
 
 					weekly_casualties_war_support = -0.001
 				}
@@ -132,11 +132,11 @@ ideas = {
 					air_chief_cost_factor = 0.3
 					theorist_cost_factor = 0.3
 
-					mobilization_laws_cost_factor = 0.3
-					economy_cost_factor = 0.3
-					rationing_cost_factor = 0.3
-					workers_rights_cost_factor = 0.3
-					blockade_policy_cost_factor = 0.3
+					wwi_mobilization_laws_cost_factor = 0.3
+					wwi_economy_cost_factor = 0.3
+					wwi_rationing_cost_factor = 0.3
+					wwi_workers_rights_cost_factor = 0.3
+					wwi_blockade_policy_cost_factor = 0.3
 
 					weekly_casualties_war_support = -0.002
 				}
@@ -171,11 +171,11 @@ ideas = {
 					air_chief_cost_factor = -0.15
 					theorist_cost_factor = -0.15
 
-					mobilization_laws_cost_factor = -0.15
-					economy_cost_factor = -0.15
-					rationing_cost_factor = -0.15
-					workers_rights_cost_factor = -0.15
-					blockade_policy_cost_factor = -0.15
+					wwi_mobilization_laws_cost_factor = -0.15
+					wwi_economy_cost_factor = -0.15
+					wwi_rationing_cost_factor = -0.15
+					wwi_workers_rights_cost_factor = -0.15
+					wwi_blockade_policy_cost_factor = -0.15
 
 					weekly_casualties_war_support = 0.001
 				}
@@ -233,11 +233,11 @@ ideas = {
 					air_chief_cost_factor = 0.15
 					theorist_cost_factor = 0.15
 
-					mobilization_laws_cost_factor = 0.15
-					economy_cost_factor = 0.15
-					rationing_cost_factor = 0.15
-					workers_rights_cost_factor = 0.15
-					blockade_policy_cost_factor = 0.15
+					wwi_mobilization_laws_cost_factor = 0.15
+					wwi_economy_cost_factor = 0.15
+					wwi_rationing_cost_factor = 0.15
+					wwi_workers_rights_cost_factor = 0.15
+					wwi_blockade_policy_cost_factor = 0.15
 
 					weekly_casualties_war_support = -0.001
 				}
@@ -272,11 +272,11 @@ ideas = {
 					air_chief_cost_factor = 0.3
 					theorist_cost_factor = 0.3
 
-					mobilization_laws_cost_factor = 0.3
-					economy_cost_factor = 0.3
-					rationing_cost_factor = 0.3
-					workers_rights_cost_factor = 0.3
-					blockade_policy_cost_factor = 0.3
+					wwi_mobilization_laws_cost_factor = 0.3
+					wwi_economy_cost_factor = 0.3
+					wwi_rationing_cost_factor = 0.3
+					wwi_workers_rights_cost_factor = 0.3
+					wwi_blockade_policy_cost_factor = 0.3
 
 					weekly_casualties_war_support = -0.002
 				}
@@ -311,11 +311,11 @@ ideas = {
 					air_chief_cost_factor = -0.15
 					theorist_cost_factor = -0.15
 
-					mobilization_laws_cost_factor = -0.15
-					economy_cost_factor = -0.15
-					rationing_cost_factor = -0.15
-					workers_rights_cost_factor = -0.15
-					blockade_policy_cost_factor = -0.15
+					wwi_mobilization_laws_cost_factor = -0.15
+					wwi_economy_cost_factor = -0.15
+					wwi_rationing_cost_factor = -0.15
+					wwi_workers_rights_cost_factor = -0.15
+					wwi_blockade_policy_cost_factor = -0.15
 
 					weekly_casualties_war_support = 0.001
 				}
@@ -373,11 +373,11 @@ ideas = {
 					air_chief_cost_factor = 0.15
 					theorist_cost_factor = 0.15
 
-					mobilization_laws_cost_factor = 0.15
-					economy_cost_factor = 0.15
-					rationing_cost_factor = 0.15
-					workers_rights_cost_factor = 0.15
-					blockade_policy_cost_factor = 0.15
+					wwi_mobilization_laws_cost_factor = 0.15
+					wwi_economy_cost_factor = 0.15
+					wwi_rationing_cost_factor = 0.15
+					wwi_workers_rights_cost_factor = 0.15
+					wwi_blockade_policy_cost_factor = 0.15
 
 					weekly_casualties_war_support = -0.001
 				}
@@ -412,11 +412,11 @@ ideas = {
 					air_chief_cost_factor = 0.3
 					theorist_cost_factor = 0.3
 
-					mobilization_laws_cost_factor = 0.3
-					economy_cost_factor = 0.3
-					rationing_cost_factor = 0.3
-					workers_rights_cost_factor = 0.3
-					blockade_policy_cost_factor = 0.3
+					wwi_mobilization_laws_cost_factor = 0.3
+					wwi_economy_cost_factor = 0.3
+					wwi_rationing_cost_factor = 0.3
+					wwi_workers_rights_cost_factor = 0.3
+					wwi_blockade_policy_cost_factor = 0.3
 
 					weekly_casualties_war_support = -0.002
 				}
@@ -451,11 +451,11 @@ ideas = {
 					air_chief_cost_factor = -0.15
 					theorist_cost_factor = -0.15
 
-					mobilization_laws_cost_factor = -0.15
-					economy_cost_factor = -0.15
-					rationing_cost_factor = -0.15
-					workers_rights_cost_factor = -0.15
-					blockade_policy_cost_factor = -0.15
+					wwi_mobilization_laws_cost_factor = -0.15
+					wwi_economy_cost_factor = -0.15
+					wwi_rationing_cost_factor = -0.15
+					wwi_workers_rights_cost_factor = -0.15
+					wwi_blockade_policy_cost_factor = -0.15
 
 					weekly_casualties_war_support = 0.001
 				}
@@ -513,11 +513,11 @@ ideas = {
 					air_chief_cost_factor = 0.15
 					theorist_cost_factor = 0.15
 
-					mobilization_laws_cost_factor = 0.15
-					economy_cost_factor = 0.15
-					rationing_cost_factor = 0.15
-					workers_rights_cost_factor = 0.15
-					blockade_policy_cost_factor = 0.15
+					wwi_mobilization_laws_cost_factor = 0.15
+					wwi_economy_cost_factor = 0.15
+					wwi_rationing_cost_factor = 0.15
+					wwi_workers_rights_cost_factor = 0.15
+					wwi_blockade_policy_cost_factor = 0.15
 
 					weekly_casualties_war_support = -0.001
 				}
@@ -552,11 +552,11 @@ ideas = {
 					air_chief_cost_factor = 0.3
 					theorist_cost_factor = 0.3
 
-					mobilization_laws_cost_factor = 0.3
-					economy_cost_factor = 0.3
-					rationing_cost_factor = 0.3
-					workers_rights_cost_factor = 0.3
-					blockade_policy_cost_factor = 0.3
+					wwi_mobilization_laws_cost_factor = 0.3
+					wwi_economy_cost_factor = 0.3
+					wwi_rationing_cost_factor = 0.3
+					wwi_workers_rights_cost_factor = 0.3
+					wwi_blockade_policy_cost_factor = 0.3
 
 					weekly_casualties_war_support = -0.002
 				}
@@ -591,11 +591,11 @@ ideas = {
 					air_chief_cost_factor = -0.15
 					theorist_cost_factor = -0.15
 
-					mobilization_laws_cost_factor = -0.15
-					economy_cost_factor = -0.15
-					rationing_cost_factor = -0.15
-					workers_rights_cost_factor = -0.15
-					blockade_policy_cost_factor = -0.15
+					wwi_mobilization_laws_cost_factor = -0.15
+					wwi_economy_cost_factor = -0.15
+					wwi_rationing_cost_factor = -0.15
+					wwi_workers_rights_cost_factor = -0.15
+					wwi_blockade_policy_cost_factor = -0.15
 
 					weekly_casualties_war_support = 0.001
 				}
@@ -653,11 +653,11 @@ ideas = {
 					air_chief_cost_factor = 0.15
 					theorist_cost_factor = 0.15
 
-					mobilization_laws_cost_factor = 0.15
-					economy_cost_factor = 0.15
-					rationing_cost_factor = 0.15
-					workers_rights_cost_factor = 0.15
-					blockade_policy_cost_factor = 0.15
+					wwi_mobilization_laws_cost_factor = 0.15
+					wwi_economy_cost_factor = 0.15
+					wwi_rationing_cost_factor = 0.15
+					wwi_workers_rights_cost_factor = 0.15
+					wwi_blockade_policy_cost_factor = 0.15
 
 					weekly_casualties_war_support = -0.001
 				}
@@ -692,11 +692,11 @@ ideas = {
 					air_chief_cost_factor = 0.3
 					theorist_cost_factor = 0.3
 
-					mobilization_laws_cost_factor = 0.3
-					economy_cost_factor = 0.3
-					rationing_cost_factor = 0.3
-					workers_rights_cost_factor = 0.3
-					blockade_policy_cost_factor = 0.3
+					wwi_mobilization_laws_cost_factor = 0.3
+					wwi_economy_cost_factor = 0.3
+					wwi_rationing_cost_factor = 0.3
+					wwi_workers_rights_cost_factor = 0.3
+					wwi_blockade_policy_cost_factor = 0.3
 
 					weekly_casualties_war_support = -0.002
 				}
