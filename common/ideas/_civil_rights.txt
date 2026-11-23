@@ -112,9 +112,14 @@ ideas = {
 
    				modifier = {
 					factor = 0
-
 					NOT = { has_idea = entrenched_nationalism }
 					NOT = { has_idea = ethnic_rights_0 }
+				}
+
+				modifier = {
+					factor = 2
+					set_temp_variable = { param_law = token:domestic_rights_0 }
+					trigger_is_endorsed_by_opposition = yes
 				}
    			}
 		}
@@ -194,9 +199,14 @@ ideas = {
 
    				modifier = {
 					factor = 0
-
 					NOT = { has_idea = domestic_rights_0 }
 					NOT = { has_idea = ethnic_rights_1 }
+				}
+
+				modifier = {
+					factor = 2
+					set_temp_variable = { param_law = token:domestic_rights_1 }
+					trigger_is_endorsed_by_opposition = yes
 				}
    			}
 		}
@@ -267,13 +277,18 @@ ideas = {
 			}
 
 			ai_will_do = {
-   				factor = 1
+   				factor = 2
 
    				modifier = {
 					factor = 0
-
 					NOT = { has_idea = domestic_rights_1 }
 					NOT = { has_idea = ethnic_rights_2 }
+				}
+
+				modifier = {
+					factor = 2
+					set_temp_variable = { param_law = token:domestic_rights_2 }
+					trigger_is_endorsed_by_opposition = yes
 				}
    			}
 		}

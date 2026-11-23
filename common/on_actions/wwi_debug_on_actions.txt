@@ -1,0 +1,15 @@
+on_monthly = {
+	effect = {
+		if = {
+			limit = {
+				has_country_flag = {
+					flag = flag_max_opposition_debug_alert
+					days > 365
+				}
+			}
+
+			log = "WARNING: [THIS.GetName] has had maximum opposition for a year. Is the AI failing to reduce its opposition?"
+			clr_country_flag = flag_max_opposition_debug_alert
+		}
+	}
+}

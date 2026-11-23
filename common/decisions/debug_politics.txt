@@ -1,0 +1,29 @@
+decision_category_debug_politics = {
+	decision_enable_debug_politics = {
+		visible = {
+			NOT = { has_global_flag = flag_debug_politics }
+		}
+
+		complete_effect = {
+			set_global_flag = flag_debug_politics
+		}
+
+		ai_will_do = {
+        	base = 0
+        }
+	}
+
+	decision_disable_debug_politics = {
+		visible = {
+			has_global_flag = flag_debug_politics
+		}
+
+		complete_effect = {
+			clr_global_flag = flag_debug_politics
+		}
+
+		ai_will_do = {
+        	base = 0
+        }
+	}
+}

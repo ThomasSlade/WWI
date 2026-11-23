@@ -9,11 +9,17 @@ ideas = {
 			cancel_if_invalid = no
 
 			visible = {
-				check_variable = { opposition_party = token:autocratic }
+				if = {
+					limit = { has_global_flag = flag_debug_politics }
+					always = yes
+				}
+				else = {
+					check_variable = { opposition_party = token:autocratic }
+				}
 			}
 
 			available = {
-				always = no
+				has_global_flag = flag_debug_politics
 			}
 
 			on_add = {
@@ -48,11 +54,17 @@ ideas = {
 			cancel_if_invalid = no
 
 			visible = {
-				check_variable = { opposition_party = token:autocratic }
+				if = {
+					limit = { has_global_flag = flag_debug_politics }
+					always = yes
+				}
+				else = {
+					check_variable = { opposition_party = token:autocratic }
+				}
 			}
 
 			available = {
-				always = no
+				has_global_flag = flag_debug_politics
 			}
 
 			on_add = {
@@ -71,11 +83,17 @@ ideas = {
 			cancel_if_invalid = no
 
 			visible = {
-				check_variable = { opposition_party = token:autocratic }
+				if = {
+					limit = { has_global_flag = flag_debug_politics }
+					always = yes
+				}
+				else = {
+					check_variable = { opposition_party = token:autocratic }
+				}
 			}
 
 			available = {
-				always = no
+				has_global_flag = flag_debug_politics
 			}
 
 			on_add = {
@@ -110,16 +128,28 @@ ideas = {
 			cancel_if_invalid = no
 
 			visible = {
-				check_variable = { opposition_party = token:autocratic }
+				if = {
+					limit = { has_global_flag = flag_debug_politics }
+					always = yes
+				}
+				else = {
+					check_variable = { opposition_party = token:autocratic }
+				}
 			}
 
 			available = {
-				always = no
+				has_global_flag = flag_debug_politics
 			}
 
 			on_add = {
 				set_variable = { opposition_party = token:autocratic }
 				set_variable = { opposition_level = 3 }
+
+				set_country_flag = flag_max_opposition_debug_alert
+			}
+
+			on_remove = {
+				clr_country_flag = flag_max_opposition_debug_alert
 			}
 
 			modifier = {
@@ -149,11 +179,17 @@ ideas = {
 			cancel_if_invalid = no
 
 			visible = {
-				check_variable = { opposition_party = token:conservative }
+				if = {
+					limit = { has_global_flag = flag_debug_politics }
+					always = yes
+				}
+				else = {
+					check_variable = { opposition_party = token:conservative }
+				}
 			}
 
 			available = {
-				always = no
+				has_global_flag = flag_debug_politics
 			}
 
 			on_add = {
@@ -188,11 +224,17 @@ ideas = {
 			cancel_if_invalid = no
 
 			visible = {
-				check_variable = { opposition_party = token:conservative }
+				if = {
+					limit = { has_global_flag = flag_debug_politics }
+					always = yes
+				}
+				else = {
+					check_variable = { opposition_party = token:conservative }
+				}
 			}
 
 			available = {
-				always = no
+				has_global_flag = flag_debug_politics
 			}
 
 			on_add = {
@@ -211,11 +253,17 @@ ideas = {
 			cancel_if_invalid = no
 
 			visible = {
-				check_variable = { opposition_party = token:conservative }
+				if = {
+					limit = { has_global_flag = flag_debug_politics }
+					always = yes
+				}
+				else = {
+					check_variable = { opposition_party = token:conservative }
+				}
 			}
 
 			available = {
-				always = no
+				has_global_flag = flag_debug_politics
 			}
 
 			on_add = {
@@ -250,16 +298,28 @@ ideas = {
 			cancel_if_invalid = no
 
 			visible = {
-				check_variable = { opposition_party = token:conservative }
+				if = {
+					limit = { has_global_flag = flag_debug_politics }
+					always = yes
+				}
+				else = {
+					check_variable = { opposition_party = token:conservative }
+				}
 			}
 
 			available = {
-				always = no
+				has_global_flag = flag_debug_politics
 			}
 
 			on_add = {
 				set_variable = { opposition_party = token:conservative }
 				set_variable = { opposition_level = 3 }
+				
+				set_country_flag = flag_max_opposition_debug_alert
+			}
+
+			on_remove = {
+				clr_country_flag = flag_max_opposition_debug_alert
 			}
 
 			modifier = {
@@ -289,11 +349,17 @@ ideas = {
 			cancel_if_invalid = no
 
 			visible = {
-				check_variable = { opposition_party = token:liberal }
+				if = {
+					limit = { has_global_flag = flag_debug_politics }
+					always = yes
+				}
+				else = {
+					check_variable = { opposition_party = token:liberal }
+				}
 			}
 
 			available = {
-				always = no
+				has_global_flag = flag_debug_politics
 			}
 
 			on_add = {
@@ -328,11 +394,17 @@ ideas = {
 			cancel_if_invalid = no
 
 			visible = {
-				check_variable = { opposition_party = token:liberal }
+				if = {
+					limit = { has_global_flag = flag_debug_politics }
+					always = yes
+				}
+				else = {
+					check_variable = { opposition_party = token:liberal }
+				}
 			}
 
 			available = {
-				always = no
+				has_global_flag = flag_debug_politics
 			}
 
 			on_add = {
@@ -351,11 +423,17 @@ ideas = {
 			cancel_if_invalid = no
 
 			visible = {
-				check_variable = { opposition_party = token:liberal }
+				if = {
+					limit = { has_global_flag = flag_debug_politics }
+					always = yes
+				}
+				else = {
+					check_variable = { opposition_party = token:liberal }
+				}
 			}
 
 			available = {
-				always = no
+				has_global_flag = flag_debug_politics
 			}
 
 			on_add = {
@@ -390,16 +468,28 @@ ideas = {
 			cancel_if_invalid = no
 
 			visible = {
-				check_variable = { opposition_party = token:liberal }
+				if = {
+					limit = { has_global_flag = flag_debug_politics }
+					always = yes
+				}
+				else = {
+					check_variable = { opposition_party = token:liberal }
+				}
 			}
 
 			available = {
-				always = no
+				has_global_flag = flag_debug_politics
 			}
 
 			on_add = {
 				set_variable = { opposition_party = token:liberal }
 				set_variable = { opposition_level = 3 }
+				
+				set_country_flag = flag_max_opposition_debug_alert
+			}
+
+			on_remove = {
+				clr_country_flag = flag_max_opposition_debug_alert
 			}
 
 			modifier = {
@@ -429,11 +519,17 @@ ideas = {
 			cancel_if_invalid = no
 
 			visible = {
-				check_variable = { opposition_party = token:socialist }
+				if = {
+					limit = { has_global_flag = flag_debug_politics }
+					always = yes
+				}
+				else = {
+					check_variable = { opposition_party = token:socialist }
+				}
 			}
 
 			available = {
-				always = no
+				has_global_flag = flag_debug_politics
 			}
 
 			on_add = {
@@ -468,11 +564,17 @@ ideas = {
 			cancel_if_invalid = no
 
 			visible = {
-				check_variable = { opposition_party = token:socialist }
+				if = {
+					limit = { has_global_flag = flag_debug_politics }
+					always = yes
+				}
+				else = {
+					check_variable = { opposition_party = token:socialist }
+				}
 			}
 
 			available = {
-				always = no
+				has_global_flag = flag_debug_politics
 			}
 
 			on_add = {
@@ -491,11 +593,17 @@ ideas = {
 			cancel_if_invalid = no
 
 			visible = {
-				check_variable = { opposition_party = token:socialist }
+				if = {
+					limit = { has_global_flag = flag_debug_politics }
+					always = yes
+				}
+				else = {
+					check_variable = { opposition_party = token:socialist }
+				}
 			}
 
 			available = {
-				always = no
+				has_global_flag = flag_debug_politics
 			}
 
 			on_add = {
@@ -530,16 +638,28 @@ ideas = {
 			cancel_if_invalid = no
 
 			visible = {
-				check_variable = { opposition_party = token:socialist }
+				if = {
+					limit = { has_global_flag = flag_debug_politics }
+					always = yes
+				}
+				else = {
+					check_variable = { opposition_party = token:socialist }
+				}
 			}
 
 			available = {
-				always = no
+				has_global_flag = flag_debug_politics
 			}
 
 			on_add = {
 				set_variable = { opposition_party = token:socialist }
 				set_variable = { opposition_level = 3 }
+				
+				set_country_flag = flag_max_opposition_debug_alert
+			}
+
+			on_remove = {
+				clr_country_flag = flag_max_opposition_debug_alert
 			}
 
 			modifier = {
@@ -569,11 +689,17 @@ ideas = {
 			cancel_if_invalid = no
 
 			visible = {
-				check_variable = { opposition_party = token:communist }
+				if = {
+					limit = { has_global_flag = flag_debug_politics }
+					always = yes
+				}
+				else = {
+					check_variable = { opposition_party = token:communist }
+				}
 			}
 
 			available = {
-				always = no
+				has_global_flag = flag_debug_politics
 			}
 
 			on_add = {
@@ -608,11 +734,17 @@ ideas = {
 			cancel_if_invalid = no
 
 			visible = {
-				check_variable = { opposition_party = token:communist }
+				if = {
+					limit = { has_global_flag = flag_debug_politics }
+					always = yes
+				}
+				else = {
+					check_variable = { opposition_party = token:communist }
+				}
 			}
 
 			available = {
-				always = no
+				has_global_flag = flag_debug_politics
 			}
 
 			on_add = {
@@ -631,11 +763,17 @@ ideas = {
 			cancel_if_invalid = no
 
 			visible = {
-				check_variable = { opposition_party = token:communist }
+				if = {
+					limit = { has_global_flag = flag_debug_politics }
+					always = yes
+				}
+				else = {
+					check_variable = { opposition_party = token:communist }
+				}
 			}
 
 			available = {
-				always = no
+				has_global_flag = flag_debug_politics
 			}
 
 			on_add = {
@@ -670,16 +808,28 @@ ideas = {
 			cancel_if_invalid = no
 
 			visible = {
-				check_variable = { opposition_party = token:communist }
+				if = {
+					limit = { has_global_flag = flag_debug_politics }
+					always = yes
+				}
+				else = {
+					check_variable = { opposition_party = token:communist }
+				}
 			}
 
 			available = {
-				always = no
+				has_global_flag = flag_debug_politics
 			}
 
 			on_add = {
 				set_variable = { opposition_party = token:communist }
 				set_variable = { opposition_level = 3 }
+				
+				set_country_flag = flag_max_opposition_debug_alert
+			}
+
+			on_remove = {
+				clr_country_flag = flag_max_opposition_debug_alert
 			}
 
 			modifier = {

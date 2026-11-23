@@ -9,12 +9,17 @@ ideas = {
 			cancel_if_invalid = no
 
 			available = {
-				always = no
-
-				OR = {
-					has_idea = gov_absolute_monarchy
-					has_idea = gov_military_dictatorship
-					has_idea = gov_constitutional_monarchy
+				if = {
+					limit = { has_global_flag = flag_debug_politics }
+					always = yes
+				}
+				else = {
+					always = no
+					OR = {
+						has_idea = gov_absolute_monarchy
+						has_idea = gov_military_dictatorship
+						has_idea = gov_constitutional_monarchy
+					}
 				}
 			}
 
@@ -42,15 +47,20 @@ ideas = {
 			cancel_if_invalid = no
 
 			available = {
-				always = no
-
-				OR = {
-					has_idea = gov_absolute_monarchy
-					has_idea = gov_military_dictatorship
-					has_idea = gov_constitutional_monarchy
-					has_idea = gov_limited_democracy
-					has_idea = gov_liberal_democracy
-					has_idea = gov_social_democracy
+				if = {
+					limit = { has_global_flag = flag_debug_politics }
+					always = yes
+				}
+				else = {
+					always = no
+					OR = {
+						has_idea = gov_absolute_monarchy
+						has_idea = gov_military_dictatorship
+						has_idea = gov_constitutional_monarchy
+						has_idea = gov_limited_democracy
+						has_idea = gov_liberal_democracy
+						has_idea = gov_social_democracy
+					}
 				}
 			}
 
@@ -78,13 +88,18 @@ ideas = {
 			cancel_if_invalid = no
 
 			available = {
-				always = no
-
-				OR = {
-					has_idea = gov_constitutional_monarchy
-					has_idea = gov_limited_democracy
-					has_idea = gov_liberal_democracy
-					has_idea = gov_social_democracy
+				if = {
+					limit = { has_global_flag = flag_debug_politics }
+					always = yes
+				}
+				else = {
+					always = no
+					OR = {
+						has_idea = gov_constitutional_monarchy
+						has_idea = gov_limited_democracy
+						has_idea = gov_liberal_democracy
+						has_idea = gov_social_democracy
+					}
 				}
 			}
 
@@ -112,11 +127,16 @@ ideas = {
 			cancel_if_invalid = no
 
 			available = {
-				always = no
-
-				OR = {
-					has_idea = gov_liberal_democracy
-					has_idea = gov_social_democracy
+				if = {
+					limit = { has_global_flag = flag_debug_politics }
+					always = yes
+				}
+				else = {
+					always = no
+					OR = {
+						has_idea = gov_liberal_democracy
+						has_idea = gov_social_democracy
+					}
 				}
 			}
 
@@ -144,12 +164,17 @@ ideas = {
 			cancel_if_invalid = no
 
 			available = {
-				always = no
-				
-				OR = {
-					has_idea = gov_liberal_democracy
-					has_idea = gov_social_democracy
-					has_idea = gov_military_dictatorship
+				if = {
+					limit = { has_global_flag = flag_debug_politics }
+					always = yes
+				}
+				else = {
+					always = no
+					OR = {
+						has_idea = gov_liberal_democracy
+						has_idea = gov_social_democracy
+						has_idea = gov_military_dictatorship
+					}
 				}
 			}
 

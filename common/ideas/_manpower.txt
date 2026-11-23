@@ -71,8 +71,13 @@ ideas = {
 
    				modifier = {
 					factor = 0
-
 					NOT = { has_idea = disarmed_nation }
+				}
+
+				modifier = {
+					factor = 2
+					set_temp_variable = { param_law = token:volunteer_only }
+					trigger_is_endorsed_by_opposition = yes
 				}
    			}
 		}
@@ -109,12 +114,17 @@ ideas = {
 			}
 
 			ai_will_do = {
-   				factor = 20
+   				factor = 18
 
    				modifier = {
 					factor = 0
-
 					NOT = { has_idea = volunteer_only }
+				}
+
+				modifier = {
+					factor = 2
+					set_temp_variable = { param_law = token:national_service }
+					trigger_is_endorsed_by_opposition = yes
 				}
    			}
 		}
@@ -150,12 +160,17 @@ ideas = {
 			}
 
 			ai_will_do = {
-   				factor = 15
+   				factor = 14
 
    				modifier = {
 					factor = 0
-
 					NOT = { has_idea = national_service }
+				}
+
+				modifier = {
+					factor = 2
+					set_temp_variable = { param_law = token:limited_conscription }
+					trigger_is_endorsed_by_opposition = yes
 				}
    			}
 		}
@@ -197,8 +212,13 @@ ideas = {
 
    				modifier = {
 					factor = 0
-
 					NOT = { has_idea = limited_conscription }
+				}
+
+				modifier = {
+					factor = 2
+					set_temp_variable = { param_law = token:extensive_conscription }
+					trigger_is_endorsed_by_opposition = yes
 				}
    			}
 		}
@@ -238,7 +258,19 @@ ideas = {
 			}
 
 			ai_will_do = {
-   				factor = 0
+				factor = 6
+
+   				modifier = {
+					factor = 0
+					NOT = { has_idea = extensive_conscription }
+					NOT = { has_idea = deployed_labourers_0 }
+				}
+
+   				modifier = {
+					factor = 2
+					set_temp_variable = { param_law = token:deployed_workers_0 }
+					trigger_is_endorsed_by_opposition = yes
+				}
    			}
 		}
 
@@ -281,9 +313,14 @@ ideas = {
 
    				modifier = {
 					factor = 0
-
 					NOT = { has_idea = extensive_conscription }
 					NOT = { has_idea = deployed_workers_0 }
+				}
+
+				modifier = {
+					factor = 2
+					set_temp_variable = { param_law = token:deployed_labourers_0 }
+					trigger_is_endorsed_by_opposition = yes
 				}
    			}
 		}
@@ -323,7 +360,19 @@ ideas = {
 			}
 
 			ai_will_do = {
-   				factor = 0
+				factor = 3
+
+				modifier = {
+					factor = 0
+					NOT = { has_idea = deployed_workers_0 }
+					NOT = { has_idea = deployed_labourers_1 }
+				}
+
+   				modifier = {
+					factor = 2
+					set_temp_variable = { param_law = token:deployed_workers_1 }
+					trigger_is_endorsed_by_opposition = yes
+				}
    			}
 		}
 
@@ -362,13 +411,18 @@ ideas = {
 			}
 
 			ai_will_do = {
-   				factor = 2
+   				factor = 4
 
    				modifier = {
 					factor = 0
-
 					NOT = { has_idea = deployed_labourers_0 }
 					NOT = { has_idea = deployed_workers_1 }
+				}
+
+				modifier = {
+					factor = 2
+					set_temp_variable = { param_law = token:deployed_labourers_1 }
+					trigger_is_endorsed_by_opposition = yes
 				}
    			}
 		}

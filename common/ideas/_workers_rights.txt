@@ -74,8 +74,13 @@ ideas = {
 
    				modifier = {
 					factor = 0
-
 					NOT = { has_idea = restricted_labour_freedoms }
+				}
+
+				modifier = {
+					factor = 2
+					set_temp_variable = { param_law = token:limited_labour_freedoms }
+					trigger_is_endorsed_by_opposition = yes
 				}
    			}
 		}
@@ -115,8 +120,13 @@ ideas = {
 
    				modifier = {
 					factor = 0
-
 					NOT = { has_idea = limited_labour_freedoms }
+				}
+
+				modifier = {
+					factor = 2
+					set_temp_variable = { param_law = token:unions_marginalised }
+					trigger_is_endorsed_by_opposition = yes
 				}
    			}
 		}
@@ -156,8 +166,13 @@ ideas = {
 
    				modifier = {
 					factor = 0
-
 					NOT = { has_idea = unions_marginalised }
+				}
+
+				modifier = {
+					factor = 2
+					set_temp_variable = { param_law = token:unions_legitimised }
+					trigger_is_endorsed_by_opposition = yes
 				}
    			}
 		}
@@ -198,9 +213,14 @@ ideas = {
 
    				modifier = {
 					factor = 0
-
 					NOT = { has_idea = unions_legitimised }
 					NOT = { has_idea = profit_controls_0 }
+				}
+
+				modifier = {
+					factor = 2
+					set_temp_variable = { param_law = token:worker_collaboration_0 }
+					trigger_is_endorsed_by_opposition = yes
 				}
    			}
 		}
@@ -237,7 +257,19 @@ ideas = {
 			}
 
 			ai_will_do = {
-   				factor = 0
+   				factor = 9
+
+   				modifier = {
+					factor = 0
+					NOT = { has_idea = unions_legitimised }
+					NOT = { has_idea = worker_collaboration_0 }
+				}
+
+   				modifier = {
+					factor = 2
+					set_temp_variable = { param_law = token:profit_controls_0 }
+					trigger_is_endorsed_by_opposition = yes
+				}
    			}
 		}
 
@@ -276,9 +308,14 @@ ideas = {
 
    				modifier = {
 					factor = 0
-
 					NOT = { has_idea = worker_collaboration_0 }
 					NOT = { has_idea = profit_controls_1 }
+				}
+
+				modifier = {
+					factor = 2
+					set_temp_variable = { param_law = token:worker_collaboration_1 }
+					trigger_is_endorsed_by_opposition = yes
 				}
    			}
 		}
@@ -314,7 +351,19 @@ ideas = {
 			}
 
 			ai_will_do = {
-   				factor = 0
+   				factor = 4
+
+   				modifier = {
+					factor = 0
+					NOT = { has_idea = profit_controls_0 }
+					NOT = { has_idea = worker_collaboration_1 }
+				}
+
+				modifier = {
+					factor = 2
+					set_temp_variable = { param_law = token:profit_controls_1 }
+					trigger_is_endorsed_by_opposition = yes
+				}
    			}
 		}
 	}

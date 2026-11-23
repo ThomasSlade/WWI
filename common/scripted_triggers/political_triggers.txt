@@ -102,6 +102,27 @@ trigger_is_opposition_tier_active = {
 
 # param_law: The potential new law
 trigger_is_opposed_by_cabinet = {
+	set_temp_variable = { param_party = cabinet_party }
+
+	custom_trigger_tooltip = {
+		tooltip = is_opposed_by_cabinet_limit_tt
+		trigger_is_opposed_by_party = yes
+	}
+}
+
+# param_law: The potential new law
+trigger_is_opposed_by_cabinet = {
+	set_temp_variable = { param_party = opposition_party }
+
+	custom_trigger_tooltip = {
+		tooltip = is_opposed_by_opposition_limit_tt
+		trigger_is_opposed_by_party = yes
+	}
+}
+
+# param_law: The potential new law
+# param_party: The party to check for
+trigger_is_opposed_by_party = {
 	meta_trigger = {
 		LAW_TYPE = "[?global._law_type@var:param_law.GetTokenKey]"
 
@@ -113,31 +134,140 @@ trigger_is_opposed_by_cabinet = {
 	set_temp_variable = { is_opposed = 0 }
 
 	if = {
+		limit = {
+			is_in_array = { global._law_oppose_1_always@var:param_party = param_law }
+			set_temp_variable = { param_opposition_tier = 0 }
+			trigger_is_opposition_tier_active = yes
+		}
+		set_temp_variable = { is_opposed = 1 }
+	}
+	else_if = {
+		limit = {
+			is_in_array = { global._law_oppose_2_always@var:param_party = param_law }
+			set_temp_variable = { param_opposition_tier = 1 }
+			trigger_is_opposition_tier_active = yes
+		}
+		set_temp_variable = { is_opposed = 1 }
+	}
+	else_if = {
+		limit = {
+			is_in_array = { global._law_oppose_3_always@var:param_party = param_law }
+			set_temp_variable = { param_opposition_tier = 2 }
+			trigger_is_opposition_tier_active = yes
+		}
+		set_temp_variable = { is_opposed = 1 }
+	}
+
+	if = {
+		limit = { NOT = { check_variable = { is_opposed = 1 } } }
+
+		if = {
+			limit = { check_variable = { global._tier@var:param_law < global._tier@var:param_current_law } }
+
+			if = {
+				limit = {
+					is_in_array = { global._law_oppose_1_decrease@var:param_party = param_law }
+					set_temp_variable = { param_opposition_tier = 0 }
+					trigger_is_opposition_tier_active = yes
+				}
+				set_temp_variable = { is_opposed = 1 }
+			}
+			if = {
+				limit = {
+					is_in_array = { global._law_oppose_2_decrease@var:param_party = param_law }
+					set_temp_variable = { param_opposition_tier = 1 }
+					trigger_is_opposition_tier_active = yes
+				}
+				set_temp_variable = { is_opposed = 1 }
+			}
+			if = {
+				limit = {
+					is_in_array = { global._law_oppose_3_decrease@var:param_party = param_law }
+					set_temp_variable = { param_opposition_tier = 2 }
+					trigger_is_opposition_tier_active = yes
+				}
+				set_temp_variable = { is_opposed = 1 }
+			}
+		}
+		else_if = {
+			limit = { check_variable = { global._tier@var:param_law > global._tier@var:param_current_law } }
+
+			if = {
+				limit = {
+					is_in_array = { global._law_oppose_1_increase@var:param_party = param_law }
+					set_temp_variable = { param_opposition_tier = 0 }
+					trigger_is_opposition_tier_active = yes
+				}
+				set_temp_variable = { is_opposed = 1 }
+			}
+			if = {
+				limit = {
+					is_in_array = { global._law_oppose_2_increase@var:param_party = param_law }
+					set_temp_variable = { param_opposition_tier = 1 }
+					trigger_is_opposition_tier_active = yes
+				}
+				set_temp_variable = { is_opposed = 1 }
+			}
+			if = {
+				limit = {
+					is_in_array = { global._law_oppose_3_increase@var:param_party = param_law }
+					set_temp_variable = { param_opposition_tier = 2 }
+					trigger_is_opposition_tier_active = yes
+				}
+				set_temp_variable = { is_opposed = 1 }
+			}
+		}
+	}
+
+	check_variable = { is_opposed = 1 }
+}
+
+# param_law: The potential new law
+trigger_is_endorsed_by_cabinet = {
+	set_temp_variable = { param_party = cabinet_party }
+
+	custom_trigger_tooltip = {
+		tooltip = is_opposed_by_cabinet_limit_tt
+		trigger_is_endorsed_by_party = yes
+	}
+}
+
+# param_law: The potential new law
+trigger_is_endorsed_by_opposition = {
+	set_temp_variable = { param_party = opposition_party }
+
+	custom_trigger_tooltip = {
+		tooltip = is_opposed_by_opposition_limit_tt
+		trigger_is_endorsed_by_party = yes
+	}
+}
+
+# param_law: The potential new law
+# param_party: The party to check for
+trigger_is_endorsed_by_party = {
+	meta_trigger = {
+		LAW_TYPE = "[?global._law_type@var:param_law.GetTokenKey]"
+
+		text = {
+			set_temp_variable = { param_current_law = law_[LAW_TYPE] }
+		}
+	}
+
+	set_temp_variable = { is_endorsed = 0 }
+
+	if = {
+		limit = { is_in_array = { global._law_endorse_always@var:param_party = param_law } }
+
+		set_temp_variable = { is_endorsed = 1 }
+	}
+	else_if = {
 		limit = { check_variable = { global._tier@var:param_law < global._tier@var:param_current_law } }
 
 		if = {
 			limit = {
-				is_in_array = { global._law_oppose_1_decrease@var:cabinet_party = param_law }
-				set_temp_variable = { param_opposition_tier = 0 }
-				trigger_is_opposition_tier_active = yes
+				is_in_array = { global._law_endorse_decrease@var:param_party = param_law }
 			}
-			set_temp_variable = { is_opposed = 1 }
-		}
-		if = {
-			limit = {
-				is_in_array = { global._law_oppose_2_decrease@var:cabinet_party = param_law }
-				set_temp_variable = { param_opposition_tier = 1 }
-				trigger_is_opposition_tier_active = yes
-			}
-			set_temp_variable = { is_opposed = 1 }
-		}
-		if = {
-			limit = {
-				is_in_array = { global._law_oppose_3_decrease@var:cabinet_party = param_law }
-				set_temp_variable = { param_opposition_tier = 2 }
-				trigger_is_opposition_tier_active = yes
-			}
-			set_temp_variable = { is_opposed = 1 }
+			set_temp_variable = { is_endorsed = 1 }
 		}
 	}
 	else_if = {
@@ -145,34 +275,13 @@ trigger_is_opposed_by_cabinet = {
 
 		if = {
 			limit = {
-				is_in_array = { global._law_oppose_1_increase@var:cabinet_party = param_law }
-				set_temp_variable = { param_opposition_tier = 0 }
-				trigger_is_opposition_tier_active = yes
+				is_in_array = { global._law_endorse_increase@var:param_party = param_law }
 			}
-			set_temp_variable = { is_opposed = 1 }
-		}
-		if = {
-			limit = {
-				is_in_array = { global._law_oppose_2_increase@var:cabinet_party = param_law }
-				set_temp_variable = { param_opposition_tier = 1 }
-				trigger_is_opposition_tier_active = yes
-			}
-			set_temp_variable = { is_opposed = 1 }
-		}
-		if = {
-			limit = {
-				is_in_array = { global._law_oppose_3_increase@var:cabinet_party = param_law }
-				set_temp_variable = { param_opposition_tier = 2 }
-				trigger_is_opposition_tier_active = yes
-			}
-			set_temp_variable = { is_opposed = 1 }
+			set_temp_variable = { is_endorsed = 1 }
 		}
 	}
 
-	custom_trigger_tooltip = {
-		tooltip = is_opposed_by_cabinet_limit_tt
-		check_variable = { is_opposed = 1 }
-	}
+	check_variable = { is_endorsed = 1 }
 }
 
 # param_law: The potential new law
@@ -405,5 +514,14 @@ trigger_cannot_decrease_blockade_policy_law = {
 	}
 	else = {
 		hidden_trigger = { always = no }
+	}
+}
+
+# Check if passing this law would decrease opposition, and if opposition is currently 2 or above
+# param_law: The law to check if passing it will decrease the opposition
+trigger_will_decrease_opposition_2 = {
+	AND = {
+		trigger_is_endorsed_by_cabinet = yes
+		check_variable = { opposition_level > 1 }
 	}
 }
